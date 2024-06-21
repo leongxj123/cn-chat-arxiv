@@ -1,7 +1,7 @@
 name: Fetch arxiv daily
 on:
   schedule:
-    - cron: '20 2,3 * * *'
+    - cron: '30 2,3,6 * * *'
   workflow_dispatch:
 jobs:
   build:
