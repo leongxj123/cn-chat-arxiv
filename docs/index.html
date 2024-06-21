@@ -227,7 +227,7 @@
         function loadFeed(forceRefresh = false) {
             currentCategory = document.getElementById('category-select').value;
             const useProxy = document.getElementById('use-proxy').checked;
-            let feedUrl = `https://github.com/leongxj123/cn-chat-arxiv/${currentCategory}.xml`;
+            let feedUrl = `https://github.com/leongxj123/cn-chat-arxiv/blob/master/${currentCategory}.xml`;
             
             if (useProxy) {
                 feedUrl = proxyUrl + encodeURIComponent(feedUrl);
