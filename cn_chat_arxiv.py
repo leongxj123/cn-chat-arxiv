@@ -302,7 +302,7 @@ Abstract: {description_text}'''
 
 
 if __name__ == '__main__':
-    cs = '''AI,CL,CV,LG,IR,MA,NE,SD'''.split(',')
+    cs = '''AI,CL,CV,IR,LG,MA,NE,SD'''.split(',')
     for c in cs:
         chat_arxiv(f'cs.{c}')
     others = '''econ,q-fin,stat.ML'''.split(',')
