@@ -222,12 +222,12 @@
         let itemsPerPage = 10;
         let searchTerm = '';
         let currentCategory = '';
-        const proxyUrl = 'https://api.allorigins.win/raw?url=';
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
         function loadFeed(forceRefresh = false) {
             currentCategory = document.getElementById('category-select').value;
             const useProxy = document.getElementById('use-proxy').checked;
-            let feedUrl = `https://github.com/leongxj123/cn-chat-arxiv/blob/master/${currentCategory}.xml`;
+            let feedUrl = `https://github.com/leongxj123/cn-chat-arxiv/raw/master/${currentCategory}.xml`;
             
             if (useProxy) {
                 feedUrl = proxyUrl + encodeURIComponent(feedUrl);
