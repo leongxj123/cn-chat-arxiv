@@ -21,6 +21,7 @@ jobs:
     - name: download
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
       run: |
         python cn_chat_arxiv.py
     - name: Create local changes
