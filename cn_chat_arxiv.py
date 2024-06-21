@@ -305,6 +305,6 @@ if __name__ == '__main__':
     cs = '''AI, AR, CC, CE, CG, CL, CR, CV, CY, DB, DC, DL, DM, DS, ET, FL, GL, GR, GT, HC, IR, IT, LG, LO, MA, MM, MS, NA, NE, NI, OH, OS, PF, PL, RO, SC, SD, SE, SI, SY'''.split(',')
     for c in cs:
         chat_arxiv(f'cs.{c}')
-    others = '''econ,q-fin,stat.ML'''.split(',')
+    others = '''econ,q-fin,stat.ML,q-bio'''.split(',')
     for c in others:
         chat_arxiv(c)
