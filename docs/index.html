@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arXiv 计算机科学论文 RSS 阅读器</title>
+    <style>
+        :root {
+            --bg-color: #f4f4f4;
+            --text-color: #333333;
+            --link-color: #0066cc;
+            --button-bg: #4CAF50;
+            --button-text: #ffffff;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        #controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        #controls > * {
+            margin: 5px;
+        }
+        select, input[type="text"], input[type="number"], button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: var(--button-bg);
+            color: var(--button-text);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #feed-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feed-item {
+            background-color: var(--card-bg);
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .feed-item:hover {
+            transform: translateY(-5px);
+        }
+        .feed-item h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .feed-item a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        .feed-item a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        #pagination, #page-numbers {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #pagination button, #page-numbers button {
+            margin: 0 5px;
+            padding: 10px 15px;
+        }
+        .loading {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+        }
+        #dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        .dark-mode {
+            --bg-color: #2c3e50;
+            --text-color: #ecf0f1;
+            --link-color: #3498db;
+            --button-bg: #2980b9;
+            --button-text: #ffffff;
+            --card-bg: #34495e;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            #controls {
+                flex-direction: column;
+            }
+            #controls > * {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>arXiv 计算机科学论文 RSS 阅读器</h1>
+    <button id="dark-mode-toggle">🌓</button>
+    <div id="controls">
+        <select id="category-select">
+            <option value="cs.AI">AI: 人工智能</option>
+            <option value="cs.AR">AR: 硬件架构</option>
+            <option value="cs.CC">CC: 计算复杂性</option>
+            <option value="cs.CE">CE: 计算工程、金融和科学</option>
+            <option value="cs.CG">CG: 计算几何</option>
+            <option value="cs.CL">CL: 计算与语言</option>
+            <option value="cs.CR">CR: 密码学与安全</option>
+            <option value="cs.CV">CV: 计算机视觉与模式识别</option>
+            <option value="cs.CY">CY: 控制理论</option>
+            <option value="cs.DB">DB: 数据库</option>
+            <option value="cs.DC">DC: 分布式、并行和集群计算</option>
+            <option value="cs.DL">DL: 数字图书馆</option>
+            <option value="cs.DM">DM: 离散数学</option>
+            <option value="cs.DS">DS: 数据结构与算法</option>
+            <option value="cs.ET">ET: 新兴技术</option>
+            <option value="cs.FL">FL: 形式语言与自动机理论</option>
+            <option value="cs.GL">GL: 通用文献</option>
+            <option value="cs.GR">GR: 图形学</option>
+            <option value="cs.GT">GT: 计算机科学与博弈论</option>
+            <option value="cs.HC">HC: 人机交互</option>
+            <option value="cs.IR">IR: 信息检索</option>
+            <option value="cs.IT">IT: 信息理论</option>
+            <option value="cs.LG">LG: 机器学习</option>
+            <option value="cs.LO">LO: 计算机科学中的逻辑</option>
+            <option value="cs.MA">MA: 多智能体系统</option>
+            <option value="cs.MM">MM: 多媒体</option>
+            <option value="cs.MS">MS: 数学软件</option>
+            <option value="cs.NA">NA: 数值分析</option>
+            <option value="cs.NE">NE: 神经和进化计算</option>
+            <option value="cs.NI">NI: 网络和互联网架构</option>
+            <option value="cs.OH">OH: 其他计算机科学</option>
+            <option value="cs.OS">OS: 操作系统</option>
+            <option value="cs.PF">PF: 性能</option>
+            <option value="cs.PL">PL: 编程语言</option>
+            <option value="cs.RO">RO: 机器人学</option>
+            <option value="cs.SC">SC: 符号计算</option>
+            <option value="cs.SD">SD: 声音</option>
+            <option value="cs.SE">SE: 软件工程</option>
+            <option value="cs.SI">SI: 社会和信息网络</option>
+            <option value="cs.SY">SY: 系统与控制</option>
+            <option value="econ">econ: 经济学</option>
+            <option value="q-fin">q-fin: 量化金融学</option>
+            <option value="q-bio">q-bio: 定量生物学</option>
+            <option value="math.ST">math.ST: 统计理论</option>
+            <option value="physics.data-an">数据分析、 统计和概率</option>
+            <option value="physics.soc-ph">物理学与社会</option>
+            <option value="q-bio.BM">生物分子</option>
+            <option value="q-fin.RM">风险管理</option>
+            <option value="stat.AP">应用统计</option>
+            <option value="stat.ME">统计方法论</option>
+            <option value="stat.ML">(统计)机器学习</option>
+        </select>
+        <select id="sort-select">
+            <option value="date">按日期排序</option>
+            <option value="relevance">按相关性排序</option>
+        </select>
+        <select id="items-per-page">
+            <option value="5">每页 5 条</option>
+            <option value="10" selected>每页 10 条</option>
+            <option value="20">每页 20 条</option>
+            <option value="50">每页 50 条</option>
+        </select>
+        <div>
+            <input type="checkbox" id="use-proxy" name="use-proxy">
+            <label for="use-proxy">使用代理</label>
+        </div>
+        <input type="text" id="search-input" placeholder="搜索论文...">
+        <button onclick="loadFeed(true)">加载最新论文</button>
+    </div>
+    <ul id="feed-list"></ul>
+    <div id="pagination"></div>
+    <div id="page-numbers"></div>
+    <div id="jump-container" style="text-align: center; margin-top: 20px;">
+        <input type="number" id="page-jump" placeholder="跳转到页数" min="1" style="width: 100px;">
+        <button onclick="jumpToPage()">跳转</button>
+    </div>
+
+    <script>
+        let allItems = [];
+        let currentPage = 1;
+        let itemsPerPage = 10;
+        let searchTerm = '';
+        let currentCategory = '';
+        const proxyUrl = 'https://api.allorigins.win/raw?url=';
+
+        function loadFeed(forceRefresh = false) {
+            currentCategory = document.getElementById('category-select').value;
+            const useProxy = document.getElementById('use-proxy').checked;
+            let feedUrl = `https://github.com/leongxj123/cn-chat-arxiv/raw/master/${currentCategory}.xml`;
+            
+            if (useProxy) {
+                feedUrl = proxyUrl + encodeURIComponent(feedUrl);
+            }
+
+            const feedList = document.getElementById('feed-list');
+            feedList.innerHTML = '<div class="loading">加载中...</div>';
+
+            const cachedData = localStorage.getItem(currentCategory);
+            if (!forceRefresh && cachedData) {
+                const parsedData = JSON.parse(cachedData);
+                if (new Date().getTime() - parsedData.timestamp < 3600000) {
+                    allItems = parsedData.items;
+                    currentPage = 1;
+                    displayPage();
+                    return;
+                }
+            }
+
+            fetch(feedUrl)
+                .then(response => response.text())
+                .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+                .then(data => {
+                    allItems = Array.from(data.querySelectorAll('item')).map(item => ({
+                        title: item.querySelector('title').textContent,
+                        link: item.querySelector('link').textContent,
+                        description: item.querySelector('description').textContent
+                    }));
+                    localStorage.setItem(currentCategory, JSON.stringify({
+                        timestamp: new Date().getTime(),
+                        items: allItems
+                    }));
+                    currentPage = 1;
+                    displayPage();
+                })
+                .catch(error => {
+                    feedList.innerHTML = '加载失败。请稍后再试。';
+                    console.error('Error:', error);
+                });
+        }
+
+        function displayPage() {
+            const feedList = document.getElementById('feed-list');
+            feedList.innerHTML = '';
+
+            const keywords = searchTerm.toLowerCase().split(' ').filter(kw => kw.trim().length > 0);
+            const filteredItems = keywords.length
+                ? allItems.filter(item => 
+                    keywords.every(kw => item.title.toLowerCase().includes(kw) || item.description.toLowerCase().includes(kw))
+                  )
+                : allItems;
+
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const pageItems = filteredItems.slice(startIndex, endIndex);
+
+            pageItems.forEach((item, index) => {
+                const highlightedTitle = highlightKeywords(item.title, keywords);
+                const highlightedDescription = highlightKeywords(item.description, keywords);
+
+                const li = document.createElement('li');
+                li.className = 'feed-item';
+                li.innerHTML = `
+                    <h2>${startIndex + index + 1}. <a href="${item.link}" target="_blank">${highlightedTitle}</a></h2>
+                    <p>${highlightedDescription}</p>
+                `;
+                feedList.appendChild(li);
+            });
+
+            updatePagination(filteredItems.length);
+        }
+
+        function highlightKeywords(text, keywords) {
+            if (!keywords.length) return text;
+            let highlightedText = text;
+            keywords.forEach(kw => {
+                const regex = new RegExp(`(${kw})`, 'gi');
+                highlightedText = highlightedText.replace(regex, '<span class="highlight">\$1</span>');
+            });
+            return highlightedText;
+        }
+
+        function updatePagination(totalItems) {
+            const paginationDiv = document.getElementById('pagination');
+            const pageNumbersDiv = document.getElementById('page-numbers');
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+            let paginationHTML = '';
+            if (currentPage > 1) {
+                paginationHTML += `<button onclick="changePage(${currentPage - 1})">上一页</button>`;
+            }
+            paginationHTML += `<span>第 ${currentPage} 页，共 ${totalPages} 页</span>`;
+            if (currentPage < totalPages) {
+                paginationHTML += `<button onclick="changePage(${currentPage + 1})">下一页</button>`;
+            }
+
+            paginationDiv.innerHTML = paginationHTML;
+            document.getElementById('page-jump').max = totalPages;
+
+            let pageNumbersHTML = '';
+            const pageRange = 2;
+            let startPage = Math.max(1, currentPage - pageRange);
+            let endPage = Math.min(totalPages, currentPage + pageRange);
+
+            if (startPage > 1) {
+                pageNumbersHTML += `<button onclick="changePage(1)">1</button>`;
+                if (startPage > 2) {
+                    pageNumbersHTML += '<span>...</span>';
+                }
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                if (i === currentPage) {
+                    pageNumbersHTML += `<button disabled>${i}</button>`;
+                } else {
+                    pageNumbersHTML += `<button onclick="changePage(${i})">${i}</button>`;
+                }
+            }
+
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                    pageNumbersHTML += '<span>...</span>';
+                }
+                pageNumbersHTML += `<button onclick="changePage(${totalPages})">${totalPages}</button>`;
+            }
+
+            pageNumbersDiv.innerHTML = pageNumbersHTML;
+        }
+
+        function changePage(newPage) {
+            currentPage = newPage;
+            displayPage();
+        }
+
+        function jumpToPage() {
+            const pageNumber = parseInt(document.getElementById('page-jump').value);
+            if (pageNumber && pageNumber > 0 && pageNumber <= Math.ceil(allItems.length / itemsPerPage)) {
+                currentPage = pageNumber;
+                displayPage();
+            } else {
+                alert('请输入有效的页码');
+            }
+        }
+
+        document.getElementById('items-per-page').addEventListener('change', function() {
+            itemsPerPage = parseInt(this.value);
+            currentPage = 1;
+            displayPage();
+        });
+
+        document.getElementById('search-input').addEventListener('input', function() {
+            searchTerm = this.value;
+            currentPage = 1;
+            displayPage();
+        });
+
+        document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        document.getElementById('category-select').addEventListener('change', function() {
+            localStorage.setItem('lastCategory', this.value);
+            loadFeed(true);
+        });
+
+        document.getElementById('items-per-page').addEventListener('change', function() {
+            localStorage.setItem('lastItemsPerPage', this.value);
+        });
+
+        document.getElementById('use-proxy').addEventListener('change', function() {
+            localStorage.setItem('lastUseProxy', this.checked);
+        });
+
+        window.addEventListener('load', function() {
+            const lastCategory = localStorage.getItem('lastCategory');
+            const lastItemsPerPage = localStorage.getItem('lastItemsPerPage');
+            const lastUseProxy = localStorage.getItem('lastUseProxy');
+            if (lastCategory) {
+                document.getElementById('category-select').value = lastCategory;
+            }
+            if (lastItemsPerPage) {
+                document.getElementById('items-per-page').value = lastItemsPerPage;
+                itemsPerPage = parseInt(lastItemsPerPage);
+            }
+            if (lastUseProxy) {
+                document.getElementById('use-proxy').checked = JSON.parse(lastUseProxy);
+            }
+            loadFeed();
+        });
+    </script>
+</body>
+</html>
