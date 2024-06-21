@@ -1,7 +1,7 @@
 name: Fetch arxiv daily
 on:
   schedule:
-    - cron: '*/3 * * * *'
+    - cron: '0 3,9,15,21 * * *'
   workflow_dispatch:
 jobs:
   build:
@@ -21,7 +21,6 @@ jobs:
     - name: download
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
       run: |
         python cn_chat_arxiv.py
     - name: Create local changes
