@@ -2,9 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-
+| [^1] | [Who Plays First? Optimizing the Order of Play in Stackelberg Games with Many Robots](https://arxiv.org/abs/2402.09246) | 本论文研究了在Stackelberg博弈中优化众多机器人的行动顺序的问题，并引入了一个高效准确的算法(B&P)来求解相关的优化问题和均衡。该算法具有广泛的实际应用。 |
+| [^2] | [Sigma-point Kalman Filter with Nonlinear Unknown Input Estimation via Optimization and Data-driven Approach for Dynamic Systems.](http://arxiv.org/abs/2306.12361) | 本文提出了一种不需要假设未知输入为线性的方法，结合非线性优化和数据驱动方法可以实现对未知输入的估计，并通过联合 sigma-point 变换方案将状态和未知输入的不确定性纳入估计中，确保其稳定性。这个方法适用于许多智能自主系统。 |
 
 # 详细
 
+[^1]: 谁先行动？优化Stackelberg博弈中众多机器人的行动顺序
 
+    Who Plays First? Optimizing the Order of Play in Stackelberg Games with Many Robots
+
+    [https://arxiv.org/abs/2402.09246](https://arxiv.org/abs/2402.09246)
+
+    本论文研究了在Stackelberg博弈中优化众多机器人的行动顺序的问题，并引入了一个高效准确的算法(B&P)来求解相关的优化问题和均衡。该算法具有广泛的实际应用。
+
+    
+
+    我们考虑计算多智能体空间导航问题的社会最优行动顺序的问题，即智能体决策顺序，以及与之相关的N人Stackelberg轨迹博弈的均衡。我们将这个问题建模为一个混合整数优化问题，涉及到所有可能的行动顺序的Stackelberg博弈空间。为了解决这个问题，我们引入了Branch and Play (B&P)，这是一个高效且准确的算法，可以收敛到社会最优行动顺序及其Stackelberg均衡。作为B&P的一个子例程，我们提出并扩展了顺序轨迹规划，即一种流行的多智能体控制方法，以便为任何给定的行动顺序可扩展地计算有效的本地Stackelberg均衡。我们证明了B&P在协调空中交通控制、群体形成和交付车队方面的实际效用。我们发现B&P的结果是一致的。
+
+    arXiv:2402.09246v1 Announce Type: cross Abstract: We consider the multi-agent spatial navigation problem of computing the socially optimal order of play, i.e., the sequence in which the agents commit to their decisions, and its associated equilibrium in an N-player Stackelberg trajectory game. We model this problem as a mixed-integer optimization problem over the space of all possible Stackelberg games associated with the order of play's permutations. To solve the problem, we introduce Branch and Play (B&P), an efficient and exact algorithm that provably converges to a socially optimal order of play and its Stackelberg equilibrium. As a subroutine for B&P, we employ and extend sequential trajectory planning, i.e., a popular multi-agent control approach, to scalably compute valid local Stackelberg equilibria for any given order of play. We demonstrate the practical utility of B&P to coordinate air traffic control, swarm formation, and delivery vehicle fleets. We find that B&P consistent
+    
+[^2]: 基于优化和数据驱动的 sigma-point 卡尔曼滤波器与非线性未知输入估计器
+
+    Sigma-point Kalman Filter with Nonlinear Unknown Input Estimation via Optimization and Data-driven Approach for Dynamic Systems. (arXiv:2306.12361v1 [eess.SY])
+
+    [http://arxiv.org/abs/2306.12361](http://arxiv.org/abs/2306.12361)
+
+    本文提出了一种不需要假设未知输入为线性的方法，结合非线性优化和数据驱动方法可以实现对未知输入的估计，并通过联合 sigma-point 变换方案将状态和未知输入的不确定性纳入估计中，确保其稳定性。这个方法适用于许多智能自主系统。
+
+    
+
+    多数关于状态和未知输入(UI)估计的文献都要求UI是线性的，这个限制可能太严格了，因为它并不适用于许多智能自主系统。为了克服这一限制，我们提出了一种无导数未知输入 Sigma-point 卡尔曼滤波器(SPKE-nUI)，其中 SPKF 与普通非线性 UI 估计器相互连接，可以通过非线性优化和数据驱动方法实现。非线性 UI 估计器使用后验状态估计，这对状态预测误差不太敏感。此外，我们引入了联合 sigma-point 变换方案，将状态和 UI 的不确定性纳入 SPKF-nUI 的估计中。深入的随机稳定性分析证明了在合理的假设下，所提出的 SPKF-nUI 可以产生指数级收敛的估计误差界限。最后，我们在基于模拟的路面车辆控制问题上进行了两个案例研究。
+
+    Most works on joint state and unknown input (UI) estimation require the assumption that the UIs are linear; this is potentially restrictive as it does not hold in many intelligent autonomous systems. To overcome this restriction and circumvent the need to linearize the system, we propose a derivative-free Unknown Input Sigma-point Kalman Filter (SPKF-nUI) where the SPKF is interconnected with a general nonlinear UI estimator that can be implemented via nonlinear optimization and data-driven approaches. The nonlinear UI estimator uses the posterior state estimate which is less susceptible to state prediction error. In addition, we introduce a joint sigma-point transformation scheme to incorporate both the state and UI uncertainties in the estimation of SPKF-nUI. An in-depth stochastic stability analysis proves that the proposed SPKF-nUI yields exponentially converging estimation error bounds under reasonable assumptions. Finally, two case studies are carried out on a simulation-based ri
+    
 

@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Predictions Based on Pixel Data: Insights from PDEs and Finite Differences.](http://arxiv.org/abs/2305.00723) | 本文介绍了基于像素数据的预测，通过对离散卷积和有限差分算子之间联系的利用，证明了逼近自偏微分方程空时离散出的序列可以使用相对较小的卷积(残差)网络进行。 |
+| [^1] | [A practical existence theorem for reduced order models based on convolutional autoencoders](https://arxiv.org/abs/2402.00435) | 本论文提出了基于卷积自编码器的降阶模型的实用存在定理，解决了在处理复杂非线性问题方面传统方法的不足，并讨论了如何学习潜在特征的挑战。 |
+| [^2] | [Improving physics-informed DeepONets with hard constraints.](http://arxiv.org/abs/2309.07899) | 本研究提出了一种改进的物理信息深度学习策略，消除了对初始条件的学习需求，并确保在多次应用时得到的函数是连续的。 |
 
 # 详细
 
-[^1]: 基于像素数据的预测: PDE和有限差分的深入探索
+[^1]: 基于卷积自编码器的降阶模型的实用存在定理
 
-    Predictions Based on Pixel Data: Insights from PDEs and Finite Differences. (arXiv:2305.00723v1 [math.NA])
+    A practical existence theorem for reduced order models based on convolutional autoencoders
 
-    [http://arxiv.org/abs/2305.00723](http://arxiv.org/abs/2305.00723)
+    [https://arxiv.org/abs/2402.00435](https://arxiv.org/abs/2402.00435)
 
-    本文介绍了基于像素数据的预测，通过对离散卷积和有限差分算子之间联系的利用，证明了逼近自偏微分方程空时离散出的序列可以使用相对较小的卷积(残差)网络进行。
+    本论文提出了基于卷积自编码器的降阶模型的实用存在定理，解决了在处理复杂非线性问题方面传统方法的不足，并讨论了如何学习潜在特征的挑战。
 
     
 
-    神经网络是高维空间中许多逼近任务的最先进技术，这得到了大量实验证据的支持。然而，我们仍需要对它们可以逼近的内容以及以何种代价和精度逼近有一个坚实的理论理解。其中一个在涉及图像的逼近任务中有实际用途的网络体系结构是卷积(残差)网络。然而，由于这些网络中涉及的线性算子的局部性质，它们的分析比通用全连接神经网络更为复杂。本文重点介绍的是序列逼近任务，其中每个观察值由矩阵或高阶张量表示。我们证明，当逼近自偏微分方程空时离散出的序列时，可以使用相对较小的网络。我们通过利用离散卷积和有限差分算子之间的联系来构造这些结果。在整个过程中，我们设计了我们的网络。
+    近年来，深度学习在偏微分方程和降阶建模领域越发受欢迎，提供了基于物理知识的神经网络、神经算子、深度算子网络和深度学习降阶模型等强大的数据驱动技术。在这种情况下，基于卷积神经网络的深度自编码器表现出极高的效果，在处理复杂的非线性问题时，优于传统的降阶方法。然而，尽管基于CNN的自编码器在实践中取得了成功，但目前只有少数理论结果支持这些架构，通常以万能逼近定理的形式陈述。尤其是，尽管现有文献为设计卷积自编码器提供了指导方针，但学习潜在特征的后续挑战几乎没有被探究。
 
-    Neural networks are the state-of-the-art for many approximation tasks in high-dimensional spaces, as supported by an abundance of experimental evidence. However, we still need a solid theoretical understanding of what they can approximate and, more importantly, at what cost and accuracy. One network architecture of practical use, especially for approximation tasks involving images, is convolutional (residual) networks. However, due to the locality of the linear operators involved in these networks, their analysis is more complicated than for generic fully connected neural networks. This paper focuses on sequence approximation tasks, where a matrix or a higher-order tensor represents each observation. We show that when approximating sequences arising from space-time discretisations of PDEs we may use relatively small networks. We constructively derive these results by exploiting connections between discrete convolution and finite difference operators. Throughout, we design our network a
+    In recent years, deep learning has gained increasing popularity in the fields of Partial Differential Equations (PDEs) and Reduced Order Modeling (ROM), providing domain practitioners with new powerful data-driven techniques such as Physics-Informed Neural Networks (PINNs), Neural Operators, Deep Operator Networks (DeepONets) and Deep-Learning based ROMs (DL-ROMs). In this context, deep autoencoders based on Convolutional Neural Networks (CNNs) have proven extremely effective, outperforming established techniques, such as the reduced basis method, when dealing with complex nonlinear problems. However, despite the empirical success of CNN-based autoencoders, there are only a few theoretical results supporting these architectures, usually stated in the form of universal approximation theorems. In particular, although the existing literature provides users with guidelines for designing convolutional autoencoders, the subsequent challenge of learning the latent features has been barely inv
+    
+[^2]: 改进具有硬约束的物理信息DeepONets
+
+    Improving physics-informed DeepONets with hard constraints. (arXiv:2309.07899v1 [cs.LG])
+
+    [http://arxiv.org/abs/2309.07899](http://arxiv.org/abs/2309.07899)
+
+    本研究提出了一种改进的物理信息深度学习策略，消除了对初始条件的学习需求，并确保在多次应用时得到的函数是连续的。
+
+    
+
+    当前的物理信息神经网络（标准或操作符）仍然依赖于准确地学习所解决系统的初始条件。相比之下，标准的数值方法在不需要学习这些条件的情况下演化这些初始条件。在这项研究中，我们提出改进当前的物理信息深度学习策略，使得不需要学习初始条件，并且将其准确地表示在预测的解中。此外，该方法保证当将DeepONet多次应用于时间步长解上时，得到的函数是连续的。
+
+    Current physics-informed (standard or operator) neural networks still rely on accurately learning the initial conditions of the system they are solving. In contrast, standard numerical methods evolve such initial conditions without needing to learn these. In this study, we propose to improve current physics-informed deep learning strategies such that initial conditions do not need to be learned and are represented exactly in the predicted solution. Moreover, this method guarantees that when a DeepONet is applied multiple times to time step a solution, the resulting function is continuous.
     
 

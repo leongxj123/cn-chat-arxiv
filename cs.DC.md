@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Solution Simplex Clustering for Heterogeneous Federated Learning](https://arxiv.org/abs/2403.03333) | 提出了Solution Simplex Clustered Federated Learning（SosicFL），通过学习解决方案单纯形的思想，为每个客户端分配单一区域，从而同时实现了学习本地和全局模型的目标。 |
-| [^2] | [SRL: Scaling Distributed Reinforcement Learning to Over Ten Thousand Cores.](http://arxiv.org/abs/2306.16688) | SRL是一个可扩展，高效，可扩展的分布式强化学习系统，通过一种新的抽象框架统一了各种实际强化学习训练，并实现了精细优化。 |
+| [^1] | [OMPGPT: A Generative Pre-trained Transformer Model for OpenMP.](http://arxiv.org/abs/2401.16445) | OMPGPT是一种为了OpenMP pragma生成而设计的生成式预训练Transformer模型，采用了来自NLP领域的提示工程技术，并创建了一种创新的策略chain-of-OMP。 |
 
 # 详细
 
-[^1]: Solution Simplex Clustering for Heterogeneous Federated Learning
+[^1]: OMPGPT: 一种用于OpenMP的生成式预训练Transformer模型
 
-    Solution Simplex Clustering for Heterogeneous Federated Learning
+    OMPGPT: A Generative Pre-trained Transformer Model for OpenMP. (arXiv:2401.16445v1 [cs.SE])
 
-    [https://arxiv.org/abs/2403.03333](https://arxiv.org/abs/2403.03333)
+    [http://arxiv.org/abs/2401.16445](http://arxiv.org/abs/2401.16445)
 
-    提出了Solution Simplex Clustered Federated Learning（SosicFL），通过学习解决方案单纯形的思想，为每个客户端分配单一区域，从而同时实现了学习本地和全局模型的目标。
-
-    
-
-    我们针对联邦学习（FL）中的一个主要挑战提出了解决方案，即在高度异构的客户分布下实现良好的性能。这种困难部分源于两个看似矛盾的目标：通过聚合来自客户端的信息来学习一个通用模型，以及学习应适应每个本地分布的本地个性化模型。在这项工作中，我们提出了Solution Simplex Clustered Federated Learning（SosicFL）来消除这种矛盾。基于学习解决方案单纯形的最新思想，SosicFL为每个客户端分配一个单纯形中的子区域，并执行FL来学习一个通用解决方案单纯形。这使得客户端模型在解决方案单纯形的自由度范围内具有其特征，同时实现了学习一个全局通用模型的目标。我们的实验证明，SosicFL改善了性能，并加速了全局和训练过程。
-
-    arXiv:2403.03333v1 Announce Type: new  Abstract: We tackle a major challenge in federated learning (FL) -- achieving good performance under highly heterogeneous client distributions. The difficulty partially arises from two seemingly contradictory goals: learning a common model by aggregating the information from clients, and learning local personalized models that should be adapted to each local distribution. In this work, we propose Solution Simplex Clustered Federated Learning (SosicFL) for dissolving such contradiction. Based on the recent ideas of learning solution simplices, SosicFL assigns a subregion in a simplex to each client, and performs FL to learn a common solution simplex. This allows the client models to possess their characteristics within the degrees of freedom in the solution simplex, and at the same time achieves the goal of learning a global common model. Our experiments show that SosicFL improves the performance and accelerates the training process for global and 
-    
-[^2]: SRL: 将分布式强化学习扩展到一万多个核心
-
-    SRL: Scaling Distributed Reinforcement Learning to Over Ten Thousand Cores. (arXiv:2306.16688v1 [cs.DC])
-
-    [http://arxiv.org/abs/2306.16688](http://arxiv.org/abs/2306.16688)
-
-    SRL是一个可扩展，高效，可扩展的分布式强化学习系统，通过一种新的抽象框架统一了各种实际强化学习训练，并实现了精细优化。
+    OMPGPT是一种为了OpenMP pragma生成而设计的生成式预训练Transformer模型，采用了来自NLP领域的提示工程技术，并创建了一种创新的策略chain-of-OMP。
 
     
 
-    强化学习（RL）任务的不断复杂化要求分布式RL系统可以高效地生成和处理大量数据以训练智能Agent。然而，现有的开源库存在各种限制，阻碍了它们在需要大规模训练的挑战性场景中的实际应用。虽然OpenAI和DeepMind的工业系统已经成功实现了大规模RL训练，但是它们的系统架构和实现细节对社区来说仍然不公开。在本文中，我们提出了RL训练数据流的新抽象，将各种应用中的实际RL训练统一成一个通用框架，并实现了精细优化。根据这个抽象，我们开发了一个可扩展、高效、可扩展的分布式RL系统，名为"ReaLly Scalable RL（SRL）"。
+    大型语言模型（LLMs），如ChatGPT等模型，已经在自然语言处理领域引起了革命。随着这一趋势，基于代码的大型语言模型，如StarCoder、WizardCoder和CodeLlama等，已经涌现出来，在大量的代码数据库上进行了广泛的训练。然而，由于设计固有的原因，这些模型主要关注代码生成、代码完成和注释生成等生成任务，以及对多种编程语言的一般支持。虽然代码LLMs的通用能力对许多程序员来说很有用，但高性能计算（HPC）领域具有更窄的需求集，使得更小、更具领域特定的LM成为一个更明智的选择。本文介绍了OMPGPT，这是一种精心设计的新型模型，旨在充分利用语言模型在OpenMP pragma生成方面的固有优势。此外，我们采用并改进了来自NLP领域的提示工程技术，创建了链式OMP（chain-of-OMP），这是一种创新策略。
 
-    The ever-growing complexity of reinforcement learning (RL) tasks demands a distributed RL system to efficiently generate and process a massive amount of data to train intelligent agents. However, existing open-source libraries suffer from various limitations, which impede their practical use in challenging scenarios where large-scale training is necessary. While industrial systems from OpenAI and DeepMind have achieved successful large-scale RL training, their system architecture and implementation details remain undisclosed to the community. In this paper, we present a novel abstraction on the dataflows of RL training, which unifies practical RL training across diverse applications into a general framework and enables fine-grained optimizations. Following this abstraction, we develop a scalable, efficient, and extensible distributed RL system called ReaLly Scalable RL (SRL). The system architecture of SRL separates major RL computation components and allows massively parallelized trai
+    Large language models (LLMs), as epitomized by models like ChatGPT, have revolutionized the field of natural language processing (NLP). Along with this trend, code-based large language models such as StarCoder, WizardCoder, and CodeLlama have emerged, trained extensively on vast repositories of code data. Yet, inherent in their design, these models primarily focus on generative tasks like code generation, code completion, and comment generation, and general support for multiple programming languages. While the generic abilities of code LLMs are useful for many programmers, the area of high-performance computing (HPC) has a narrower set of requirements that make a smaller and more domain-specific LM a smarter choice. This paper introduces OMPGPT, a novel model meticulously designed to harness the inherent strengths of language models for OpenMP pragma generation. Furthermore, we adopt and adapt prompt engineering techniques from the NLP domain to create chain-of-OMP, an innovative strat
     
 

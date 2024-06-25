@@ -2,52 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Impact of Decentralized Learning on Player Utilities in Stackelberg Games](https://arxiv.org/abs/2403.00188) | 研究了分散学习对斯塔克尔贝格博弈中玩家效用的影响，提出了一种放松遗憾基准来更好捕捉系统特征，并开发了实现近乎最优遗憾的算法。 |
-| [^2] | [One-Shot Strategic Classification Under Unknown Costs](https://arxiv.org/abs/2311.02761) | 本研究首次研究了在未知响应下一次性策略分类的情景，针对用户成本函数不确定性，提出解决方案并将任务定义为极小-极大问题。 |
-| [^3] | [Incentivizing High-Quality Content in Online Recommender Systems.](http://arxiv.org/abs/2306.07479) | 本文研究了在线推荐系统中激励高质量内容的算法问题，经典的在线学习算法会激励生产者创建低质量的内容，但本文提出的一种算法通过惩罚低质量内容的创建者，成功地激励了生产者创造高质量的内容。 |
+| [^1] | [A Slingshot Approach to Learning in Monotone Games.](http://arxiv.org/abs/2305.16610) | 本文提出了一种新的框架, 通过正则化游戏的支付或效用和更新投石索策略，无论是否存在噪声都能够实现在单调博弈中计算均衡。 |
+| [^2] | [Game Transformations That Preserve Nash Equilibria or Best Response Sets.](http://arxiv.org/abs/2111.00076) | 本研究探讨了对N人博弈应用的游戏变换中，哪些变换可以保持最佳反应集或纳什均衡集。我们证明了正仿射变换可以保持最佳反应集。这个研究提供了一个明确的描述，说明哪些游戏变换可以保持最佳反应集或纳什均衡集。 |
 
 # 详细
 
-[^1]: 分散学习对斯塔克尔贝格博弈中玩家效用的影响
+[^1]: 学习单调博弈的投石索方法
 
-    Impact of Decentralized Learning on Player Utilities in Stackelberg Games
+    A Slingshot Approach to Learning in Monotone Games. (arXiv:2305.16610v1 [cs.GT])
 
-    [https://arxiv.org/abs/2403.00188](https://arxiv.org/abs/2403.00188)
+    [http://arxiv.org/abs/2305.16610](http://arxiv.org/abs/2305.16610)
 
-    研究了分散学习对斯塔克尔贝格博弈中玩家效用的影响，提出了一种放松遗憾基准来更好捕捉系统特征，并开发了实现近乎最优遗憾的算法。
-
-    
-
-    当学习代理（如推荐系统或聊天机器人）在现实世界中部署时，通常会随时间反复与另一个学习代理（如用户）交互。在许多这样的双代理系统中，每个代理单独学习，而两个代理的奖励并不完全一致。为了更好地理解这类情况，我们研究了两代理系统的学习动态以及对每个代理目标的影响。我们将这些系统建模为具有分散学习的斯塔克尔贝格博弈，并展示标准遗憾基准（如斯塔克尔贝格均衡回报）导致至少有一名玩家出现最坏情况的线性遗憾。为了更好地捕捉这些系统，我们构建了一种对代理的学习误差容忍的放松遗憾基准。我们展示了标准学习算法未能提供次线性遗憾，并开发了算法，实现了对于双方玩家而言与理想$O(T^{2/3})$遗憾接近最优。
-
-    arXiv:2403.00188v1 Announce Type: new  Abstract: When deployed in the world, a learning agent such as a recommender system or a chatbot often repeatedly interacts with another learning agent (such as a user) over time. In many such two-agent systems, each agent learns separately and the rewards of the two agents are not perfectly aligned. To better understand such cases, we examine the learning dynamics of the two-agent system and the implications for each agent's objective. We model these systems as Stackelberg games with decentralized learning and show that standard regret benchmarks (such as Stackelberg equilibrium payoffs) result in worst-case linear regret for at least one player. To better capture these systems, we construct a relaxed regret benchmark that is tolerant to small learning errors by agents. We show that standard learning algorithms fail to provide sublinear regret, and we develop algorithms to achieve near-optimal $O(T^{2/3})$ regret for both players with respect to 
-    
-[^2]: 一次性策略分类在未知成本下的研究
-
-    One-Shot Strategic Classification Under Unknown Costs
-
-    [https://arxiv.org/abs/2311.02761](https://arxiv.org/abs/2311.02761)
-
-    本研究首次研究了在未知响应下一次性策略分类的情景，针对用户成本函数不确定性，提出解决方案并将任务定义为极小-极大问题。
+    本文提出了一种新的框架, 通过正则化游戏的支付或效用和更新投石索策略，无论是否存在噪声都能够实现在单调博弈中计算均衡。
 
     
 
-    策略分类的目标是学习对策略输入操纵具有鲁棒性的决策规则。之前的研究假设这些响应是已知的；而最近的一些研究处理未知响应，但它们专门研究重复模型部署的在线设置。然而，在许多领域，特别是在公共政策中，一个常见的激励用例中，多次部署是不可行的，甚至一个糟糕的轮次都是不可接受的。为了填补这一空白，我们首次引入了在未知响应下的一次性策略分类的正式研究，这需要在一次性选择一个分类器。着重关注用户成本函数中的不确定性，我们首先证明对于一类广泛的成本，即使对真实成本的小误差也可能在最坏情况下导致准确性降至极低水平。鉴于此，我们将任务框定为极小-极大问题，目标是识别
+    本文解决了在单调博弈中计算均衡的问题。传统的遵循正则化领导者算法即使在双人零和游戏中也无法收敛到均衡。虽然已经提出了这些算法的乐观版本并具有最后迭代的收敛保证，但它们需要无噪声的梯度反馈。为了克服这个限制，我们提出了一个新的框架，即使在存在噪声的情况下也能实现最后一次迭代的收敛。我们的关键思想是扰动或正则化游戏的支付或效用。这种扰动有助于将当前策略拉向一个锚定策略，我们称之为“投石索”策略。首先，我们建立了框架的收敛速度，从而获得靠近均衡点的稳定点，无论是否存在噪声。接下来，我们介绍了一种方法，定期更新投石索策略和当前策略。我们将这种方法解释为近端p
 
-    arXiv:2311.02761v2 Announce Type: replace  Abstract: The goal of strategic classification is to learn decision rules which are robust to strategic input manipulation. Earlier works assume that these responses are known; while some recent works handle unknown responses, they exclusively study online settings with repeated model deployments. But there are many domains$\unicode{x2014}$particularly in public policy, a common motivating use case$\unicode{x2014}$where multiple deployments are infeasible, or where even one bad round is unacceptable. To address this gap, we initiate the formal study of one-shot strategic classification under unknown responses, which requires committing to a single classifier once. Focusing on uncertainty in the users' cost function, we begin by proving that for a broad class of costs, even a small mis-estimation of the true cost can entail trivial accuracy in the worst case. In light of this, we frame the task as a minimax problem, with the goal of identifying
+    In this paper, we address the problem of computing equilibria in monotone games. The traditional Follow the Regularized Leader algorithms fail to converge to an equilibrium even in two-player zero-sum games. Although optimistic versions of these algorithms have been proposed with last-iterate convergence guarantees, they require noiseless gradient feedback. To overcome this limitation, we present a novel framework that achieves last-iterate convergence even in the presence of noise. Our key idea involves perturbing or regularizing the payoffs or utilities of the games. This perturbation serves to pull the current strategy to an anchored strategy, which we refer to as a {\it slingshot} strategy. First, we establish the convergence rates of our framework to a stationary point near an equilibrium, regardless of the presence or absence of noise. Next, we introduce an approach to periodically update the slingshot strategy with the current strategy. We interpret this approach as a proximal p
     
-[^3]: 在在线推荐系统中激励高质量内容
+[^2]: 保持纳什均衡或最佳反应集的游戏变换
 
-    Incentivizing High-Quality Content in Online Recommender Systems. (arXiv:2306.07479v1 [cs.GT])
+    Game Transformations That Preserve Nash Equilibria or Best Response Sets. (arXiv:2111.00076v2 [cs.GT] UPDATED)
 
-    [http://arxiv.org/abs/2306.07479](http://arxiv.org/abs/2306.07479)
+    [http://arxiv.org/abs/2111.00076](http://arxiv.org/abs/2111.00076)
 
-    本文研究了在线推荐系统中激励高质量内容的算法问题，经典的在线学习算法会激励生产者创建低质量的内容，但本文提出的一种算法通过惩罚低质量内容的创建者，成功地激励了生产者创造高质量的内容。
+    本研究探讨了对N人博弈应用的游戏变换中，哪些变换可以保持最佳反应集或纳什均衡集。我们证明了正仿射变换可以保持最佳反应集。这个研究提供了一个明确的描述，说明哪些游戏变换可以保持最佳反应集或纳什均衡集。
 
     
 
-    对于像TikTok和YouTube这样的内容推荐系统，平台的决策算法塑造了内容生产者的激励，包括生产者在内容质量上投入多少努力。许多平台采用在线学习，这会产生跨时间的激励，因为今天生产的内容会影响未来内容的推荐。在本文中，我们研究了在线学习产生的激励，分析了在纳什均衡下生产的内容质量。我们发现，像Hedge和EXP3这样的经典在线学习算法会激励生产者创建低质量的内容。特别地，内容质量在学习率方面有上限，并且随着典型学习率进展而趋近于零。在这一负面结果的基础上，我们设计了一种不同的学习算法——基于惩罚创建低质量内容的生产者——正确激励生产者创建高质量内容。我们的算法依赖于新颖的策略性赌博机问题，并克服了在组合设置中应用对抗性技术的挑战。在模拟和真实数据的实验中，我们的算法成功地激励生产者创建高质量内容。
+    在同时非合作博弈的文献中，广泛使用的事实是，效用收益的正仿射（线性）变换既不改变最佳反应集，也不改变纳什均衡集。我们研究了哪些其他游戏变换在应用于任意N人游戏（N≥2）时也具有这两种属性之一：（i）纳什均衡集保持不变；（ii）最佳反应集保持不变。对于以玩家和策略为基础的游戏变换，我们证明（i）意味着（ii），具有属性（ii）的变换必须是正仿射的。得到的等价链明确描述了那些总是保持纳什均衡集（或最佳反应集）的游戏变换。同时，我们获得了正仿射变换类的两个新特征描述。
 
-    For content recommender systems such as TikTok and YouTube, the platform's decision algorithm shapes the incentives of content producers, including how much effort the content producers invest in the quality of their content. Many platforms employ online learning, which creates intertemporal incentives, since content produced today affects recommendations of future content. In this paper, we study the incentives arising from online learning, analyzing the quality of content produced at a Nash equilibrium. We show that classical online learning algorithms, such as Hedge and EXP3, unfortunately incentivize producers to create low-quality content. In particular, the quality of content is upper bounded in terms of the learning rate and approaches zero for typical learning rate schedules. Motivated by this negative result, we design a different learning algorithm -- based on punishing producers who create low-quality content -- that correctly incentivizes producers to create high-quality co
+    In the literature on simultaneous non-cooperative games, it is a widely used fact that a positive affine (linear) transformation of the utility payoffs neither changes the best response sets nor the Nash equilibrium set. We investigate which other game transformations also possess one of these two properties when being applied to an arbitrary N-player game (N >= 2):  (i) The Nash equilibrium set stays the same.  (ii) The best response sets stay the same.  For game transformations that operate player-wise and strategy-wise, we prove that (i) implies (ii) and that transformations with property (ii) must be positive affine. The resulting equivalence chain gives an explicit description of all those game transformations that always preserve the Nash equilibrium set (or, respectively, the best response sets). Simultaneously, we obtain two new characterizations of the class of positive affine transformations.
     
 

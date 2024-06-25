@@ -2,67 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Provable Privacy with Non-Private Pre-Processing](https://arxiv.org/abs/2403.13041) | 提出了一个框架，能够评估非私密数据相关预处理算法引起的额外隐私成本，并利用平滑DP和预处理算法的有界敏感性建立整体隐私保证的上限 |
-| [^2] | [Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems](https://arxiv.org/abs/2402.17840) | 研究揭示了检索增强生成系统中的数据泄露风险，指出对手可以利用LMs的指示遵循能力轻松地从数据存储中直接提取文本数据，并设计了攻击对生产RAG模型GPTs造成数据存储泄漏。 |
-| [^3] | [The Normal Distributions Indistinguishability Spectrum and its Application to Privacy-Preserving Machine Learning](https://arxiv.org/abs/2309.01243) | 本文提出了正态分布不可区分性谱定理 (NDIS Theorem)，旨在利用查询本身的随机性改进随机化机器学习查询的差分隐私机制。 |
-| [^4] | [FedMLSecurity: A Benchmark for Attacks and Defenses in Federated Learning and LLMs.](http://arxiv.org/abs/2306.04959) | 本文介绍了一个名为FedMLSecurity的基准测试，它可以模拟在联邦学习中可能出现的对抗攻击并提供相应的防御策略。该测试对各种机器学习模型和联合优化器都可以适用，并且能够轻松应用于大规模语言模型中。 |
+| [^1] | [Jailbreaking is Best Solved by Definition](https://arxiv.org/abs/2403.14725) | 语言模型中"越狱"攻击的关键是通过定义好的不安全响应来进行防御，而不是依赖于执行策略。 |
+| [^2] | [Private Benchmarking to Prevent Contamination and Improve Comparative Evaluation of LLMs](https://arxiv.org/abs/2403.00393) | 本论文提出了私人基准设定方法，通过保持测试数据的私密性，使模型在不揭露测试数据的情况下进行评估，解决了当前基准设定中存在数据污染的问题。 |
+| [^3] | [Watermark Stealing in Large Language Models](https://arxiv.org/abs/2402.19361) | LLM水印技术可能存在水印窃取漏洞，我们提出了自动WS算法并展示了攻击者可以在不到50美元的成本下通过欺骗和擦除攻击破解之前认为安全的最先进方案，成功率超过80%。 |
+| [^4] | [Pandora's White-Box: Increased Training Data Leakage in Open LLMs](https://arxiv.org/abs/2402.17012) | 本文对开源大型语言模型（LLMs）进行了隐私攻击研究，提出了首个能同时实现高真正率和低误分类率的预训练LLMs会员推理攻击（MIAs），以及展示了在自然环境中可以从微调LLM中提取超过50%的微调数据集。 |
 
 # 详细
 
-[^1]: 具有非私密预处理的可证明隐私
+[^1]: Jailbreaking的最佳解决方案是通过定义
 
-    Provable Privacy with Non-Private Pre-Processing
+    Jailbreaking is Best Solved by Definition
 
-    [https://arxiv.org/abs/2403.13041](https://arxiv.org/abs/2403.13041)
+    [https://arxiv.org/abs/2403.14725](https://arxiv.org/abs/2403.14725)
 
-    提出了一个框架，能够评估非私密数据相关预处理算法引起的额外隐私成本，并利用平滑DP和预处理算法的有界敏感性建立整体隐私保证的上限
-
-    
-
-    当分析差分私密（DP）机器学习管道时，通常会忽略数据相关的预处理的潜在隐私成本。在这项工作中，我们提出了一个通用框架，用于评估由非私密数据相关预处理算法引起的额外隐私成本。我们的框架通过利用两个新的技术概念建立了整体隐私保证的上限：一种称为平滑DP的DP变体以及预处理算法的有界敏感性。
-
-    arXiv:2403.13041v1 Announce Type: cross  Abstract: When analysing Differentially Private (DP) machine learning pipelines, the potential privacy cost of data-dependent pre-processing is frequently overlooked in privacy accounting. In this work, we propose a general framework to evaluate the additional privacy cost incurred by non-private data-dependent pre-processing algorithms. Our framework establishes upper bounds on the overall privacy guarantees by utilising two new technical notions: a variant of DP termed Smooth DP and the bounded sensitivity of the pre-processing algorithms. In addition to the generic framework, we provide explicit overall privacy guarantees for multiple data-dependent pre-processing algorithms, such as data imputation, quantization, deduplication and PCA, when used in combination with several DP algorithms. Notably, this framework is also simple to implement, allowing direct integration into existing DP pipelines.
-    
-[^2]: 遵循我的指示并说出真相：来自检索增强生成系统的可扩展数据提取
-
-    Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems
-
-    [https://arxiv.org/abs/2402.17840](https://arxiv.org/abs/2402.17840)
-
-    研究揭示了检索增强生成系统中的数据泄露风险，指出对手可以利用LMs的指示遵循能力轻松地从数据存储中直接提取文本数据，并设计了攻击对生产RAG模型GPTs造成数据存储泄漏。
+    语言模型中"越狱"攻击的关键是通过定义好的不安全响应来进行防御，而不是依赖于执行策略。
 
     
 
-    检索增强生成（RAG）通过在测试时将外部知识纳入预训练模型，从而实现定制适应，提升了模型性能。本研究探讨了Retrieval-In-Context RAG语言模型（LMs）中的数据泄露风险。我们展示了当对使用指令调整的LMs构建的RAG系统进行提示注入时，对手可以利用LMs的指示遵循能力轻松地从数据存储中直接提取文本数据。这种漏洞存在于覆盖Llama2、Mistral/Mixtral、Vicuna、SOLAR、WizardLM、Qwen1.5和Platypus2等多种现代LMs的广泛范围内，并且随着模型规模的扩大，利用能力加剧。将研究扩展到生产RAG模型GPTs，我们设计了一种攻击，可以在对25个随机选择的定制GPTs施加最多2个查询时以100%成功率导致数据存储泄漏，并且我们能够以77,000字的书籍中的文本数据的提取率为41%，以及在含有1,569,00词的语料库中的文本数据的提取率为3%。
+    语言模型上"越狱"攻击的增多引发了大量防御工作，旨在防止产生不良回应。在这项工作中，我们批判性地审视了防御管道的两个阶段：（i）定义何为不安全输出，和（ii）通过输入处理或微调等方法来执行该定义。我们严重怀疑现有的执行机制的有效性，通过展示它们即使对于简单的不安全输出定义--包含单词"purple"的输出也无法防御。相比之下，对输出进行后处理对于这样的定义是完全健壮的。基于我们的结果，我们提出我们的观点，即在防御越狱攻击中真正的挑战在于得到一个良好的不安全响应定义：没有良好的定义，任何执行策略都无法成功，但有了良好的定义，输出处理已经作为一个强大的基线。
 
-    arXiv:2402.17840v1 Announce Type: cross  Abstract: Retrieval-Augmented Generation (RAG) improves pre-trained models by incorporating external knowledge at test time to enable customized adaptation. We study the risk of datastore leakage in Retrieval-In-Context RAG Language Models (LMs). We show that an adversary can exploit LMs' instruction-following capabilities to easily extract text data verbatim from the datastore of RAG systems built with instruction-tuned LMs via prompt injection. The vulnerability exists for a wide range of modern LMs that span Llama2, Mistral/Mixtral, Vicuna, SOLAR, WizardLM, Qwen1.5, and Platypus2, and the exploitability exacerbates as the model size scales up. Extending our study to production RAG models GPTs, we design an attack that can cause datastore leakage with a 100% success rate on 25 randomly selected customized GPTs with at most 2 queries, and we extract text data verbatim at a rate of 41% from a book of 77,000 words and 3% from a corpus of 1,569,00
+    arXiv:2403.14725v1 Announce Type: cross  Abstract: The rise of "jailbreak" attacks on language models has led to a flurry of defenses aimed at preventing the output of undesirable responses. In this work, we critically examine the two stages of the defense pipeline: (i) the definition of what constitutes unsafe outputs, and (ii) the enforcement of the definition via methods such as input processing or fine-tuning. We cast severe doubt on the efficacy of existing enforcement mechanisms by showing that they fail to defend even for a simple definition of unsafe outputs--outputs that contain the word "purple". In contrast, post-processing outputs is perfectly robust for such a definition. Drawing on our results, we present our position that the real challenge in defending jailbreaks lies in obtaining a good definition of unsafe responses: without a good definition, no enforcement strategy can succeed, but with a good definition, output processing already serves as a robust baseline albeit 
     
-[^3]: 正态分布不可区分性谱及其在隐私保护机器学习中的应用
+[^2]: 防止污染和提高LLM比较评估的私人基准设定
 
-    The Normal Distributions Indistinguishability Spectrum and its Application to Privacy-Preserving Machine Learning
+    Private Benchmarking to Prevent Contamination and Improve Comparative Evaluation of LLMs
 
-    [https://arxiv.org/abs/2309.01243](https://arxiv.org/abs/2309.01243)
+    [https://arxiv.org/abs/2403.00393](https://arxiv.org/abs/2403.00393)
 
-    本文提出了正态分布不可区分性谱定理 (NDIS Theorem)，旨在利用查询本身的随机性改进随机化机器学习查询的差分隐私机制。
-
-    
-
-    要实现差分隐私(DP)，通常需要随机化基础查询的输出。在大数据分析中，人们经常使用随机化草图/聚合算法来使处理高维数据变得可行。直观地，这样的机器学习(ML)算法应该提供一些固有的隐私性，但现有的大部分DP机制并没有利用这种固有的随机性，导致潜在的多余噪音。我们工作的动机问题是：(如何)可以通过利用查询本身的随机性来提高随机化ML查询的DP机制的效用？为了给出积极的答案，我们证明了正态分布不可区分性谱定理(简称为NDIS定理)，这是一个具有深远实际影响的理论结果。总的来说，NDIS是一个用于$(\epsilon,\delta)$-不可区分性谱(简称为$
-
-    arXiv:2309.01243v2 Announce Type: replace-cross  Abstract: To achieve differential privacy (DP) one typically randomizes the output of the underlying query. In big data analytics, one often uses randomized sketching/aggregation algorithms to make processing high-dimensional data tractable. Intuitively, such machine learning (ML) algorithms should provide some inherent privacy, yet most if not all existing DP mechanisms do not leverage this inherent randomness, resulting in potentially redundant noising.   The motivating question of our work is:   (How) can we improve the utility of DP mechanisms for randomized ML queries, by leveraging the randomness of the query itself?   Towards a (positive) answer, we prove the Normal Distributions Indistinguishability Spectrum Theorem (in short, NDIS Theorem), a theoretical result with far-reaching practical implications. In a nutshell, NDIS is a closed-form analytic computation for the $(\epsilon,\delta)$-indistinguishability-spectrum (in short, $
-    
-[^4]: FedMLSecurity：联邦学习与LLMs中攻击与防御的基准测试
-
-    FedMLSecurity: A Benchmark for Attacks and Defenses in Federated Learning and LLMs. (arXiv:2306.04959v1 [cs.CR])
-
-    [http://arxiv.org/abs/2306.04959](http://arxiv.org/abs/2306.04959)
-
-    本文介绍了一个名为FedMLSecurity的基准测试，它可以模拟在联邦学习中可能出现的对抗攻击并提供相应的防御策略。该测试对各种机器学习模型和联合优化器都可以适用，并且能够轻松应用于大规模语言模型中。
+    本论文提出了私人基准设定方法，通过保持测试数据的私密性，使模型在不揭露测试数据的情况下进行评估，解决了当前基准设定中存在数据污染的问题。
 
     
 
-    本文介绍了FedMLSecurity，这是一个在联邦学习（FL）中模拟对抗攻击和相应防御机制的基准测试。作为开源库FedML的一个重要模块，FedMLSecurity增强了FedML的安全评估能力。FedMLSecurity包含两个主要组件：FedMLAttacker模拟在FL训练中注入的攻击，而FedMLDefender则模拟旨在减轻攻击影响的防御策略。FedMLSecurity是开源的，可适用于各种机器学习模型（例如逻辑回归，ResNet，GAN等）和联合优化器（例如FedAVG，FedOPT，FedNOVA等）。本文的实验评估还展示了将FedMLSecurity轻松应用于LLMs的便利性，进一步强化了其各种场景下的通用性和实用性。
+    基准设定是评估LLM的事实标准，因为它速度快、可复制且成本低廉。然而，最近的研究指出，今天大多数开源基准设定已经被污染或泄露到LLM中，这意味着LLM在预训练和/或微调期间可以访问测试数据。这对迄今为止进行的基准研究的有效性以及未来使用基准进行评估提出了严重关切。为了解决这个问题，我们提出了Private Benchmarking，这是一个方案，其中测试数据集保持私密，模型在不向模型透露测试数据的情况下进行评估。我们描述了各种场景（取决于对模型所有者或数据集所有者的信任），并提出了使用私人基准设定避免数据污染的解决方案。对于需要保护模型权重的情况，我们描述了来自机密计算和密码学的解决方案。
 
-    This paper introduces FedMLSecurity, a benchmark that simulates adversarial attacks and corresponding defense mechanisms in Federated Learning (FL). As an integral module of the open-sourced library FedML that facilitates FL algorithm development and performance comparison, FedMLSecurity enhances the security assessment capacity of FedML. FedMLSecurity comprises two principal components: FedMLAttacker, which simulates attacks injected into FL training, and FedMLDefender, which emulates defensive strategies designed to mitigate the impacts of the attacks. FedMLSecurity is open-sourced 1 and is customizable to a wide range of machine learning models (e.g., Logistic Regression, ResNet, GAN, etc.) and federated optimizers (e.g., FedAVG, FedOPT, FedNOVA, etc.). Experimental evaluations in this paper also demonstrate the ease of application of FedMLSecurity to Large Language Models (LLMs), further reinforcing its versatility and practical utility in various scenarios.
+    arXiv:2403.00393v1 Announce Type: cross  Abstract: Benchmarking is the de-facto standard for evaluating LLMs, due to its speed, replicability and low cost. However, recent work has pointed out that the majority of the open source benchmarks available today have been contaminated or leaked into LLMs, meaning that LLMs have access to test data during pretraining and/or fine-tuning. This raises serious concerns about the validity of benchmarking studies conducted so far and the future of evaluation using benchmarks. To solve this problem, we propose Private Benchmarking, a solution where test datasets are kept private and models are evaluated without revealing the test data to the model. We describe various scenarios (depending on the trust placed on model owners or dataset owners), and present solutions to avoid data contamination using private benchmarking. For scenarios where the model weights need to be kept private, we describe solutions from confidential computing and cryptography t
+    
+[^3]: 大型语言模型中的水印窃取
+
+    Watermark Stealing in Large Language Models
+
+    [https://arxiv.org/abs/2402.19361](https://arxiv.org/abs/2402.19361)
+
+    LLM水印技术可能存在水印窃取漏洞，我们提出了自动WS算法并展示了攻击者可以在不到50美元的成本下通过欺骗和擦除攻击破解之前认为安全的最先进方案，成功率超过80%。
+
+    
+
+    LLM水印技术作为一种检测AI生成内容的有效方式，受到了关注。然而，我们在这项研究中争辩称当前方案可能已经可以部署，我们认为水印窃取（WS）是这些方案的一个根本性漏洞。我们展示了通过查询带有水印的LLM的API来近似逆向水印，从而实现实用的欺骗攻击，同时大幅增加了之前未被注意到的擦除攻击。我们是第一个提出自动WS算法并将其用于在现实环境中进行欺骗和擦除的全面研究。我们展示了仅需不到50美元的成本，攻击者就能够欺骗并擦除之前被认为是安全的最先进方案，平均成功率超过80%。我们的研究挑战了关于LLM水印技术的常见信念，强调了更加健壮方案的必要性。
+
+    arXiv:2402.19361v1 Announce Type: cross  Abstract: LLM watermarking has attracted attention as a promising way to detect AI-generated content, with some works suggesting that current schemes may already be fit for deployment. In this work we dispute this claim, identifying watermark stealing (WS) as a fundamental vulnerability of these schemes. We show that querying the API of the watermarked LLM to approximately reverse-engineer a watermark enables practical spoofing attacks, as suggested in prior work, but also greatly boosts scrubbing attacks, which was previously unnoticed. We are the first to propose an automated WS algorithm and use it in the first comprehensive study of spoofing and scrubbing in realistic settings. We show that for under $50 an attacker can both spoof and scrub state-of-the-art schemes previously considered safe, with average success rate of over 80%. Our findings challenge common beliefs about LLM watermarking, stressing the need for more robust schemes. We mak
+    
+[^4]: Pandora's White-Box：开放LLMs中训练数据泄漏的增加
+
+    Pandora's White-Box: Increased Training Data Leakage in Open LLMs
+
+    [https://arxiv.org/abs/2402.17012](https://arxiv.org/abs/2402.17012)
+
+    本文对开源大型语言模型（LLMs）进行了隐私攻击研究，提出了首个能同时实现高真正率和低误分类率的预训练LLMs会员推理攻击（MIAs），以及展示了在自然环境中可以从微调LLM中提取超过50%的微调数据集。
+
+    
+
+    在本文中，我们对开源的大型语言模型（LLMs）遭受的隐私攻击进行了系统研究，其中对手可以访问模型权重、梯度或损失，试图利用它们来了解底层训练数据。我们的主要结果是针对预训练LLMs的第一个会员推理攻击（MIAs），能够同时实现高TPR和低FPR，并展示了在自然环境中可以从微调LLM中提取超过50%的微调数据集。我们考虑了对底层模型的不同访问程度、语言模型的定制化以及攻击者可以使用的资源。在预训练设置中，我们提出了三种新的白盒MIAs：基于梯度范数的攻击、监督神经网络分类器和单步损失比攻击。所有这些都优于现有的黑盒基线，并且我们的.....
+
+    arXiv:2402.17012v1 Announce Type: cross  Abstract: In this paper we undertake a systematic study of privacy attacks against open source Large Language Models (LLMs), where an adversary has access to either the model weights, gradients, or losses, and tries to exploit them to learn something about the underlying training data. Our headline results are the first membership inference attacks (MIAs) against pre-trained LLMs that are able to simultaneously achieve high TPRs and low FPRs, and a pipeline showing that over $50\%$ (!) of the fine-tuning dataset can be extracted from a fine-tuned LLM in natural settings. We consider varying degrees of access to the underlying model, customization of the language model, and resources available to the attacker. In the pre-trained setting, we propose three new white-box MIAs: an attack based on the gradient norm, a supervised neural network classifier, and a single step loss ratio attack. All outperform existing black-box baselines, and our supervi
     
 
