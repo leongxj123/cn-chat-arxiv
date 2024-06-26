@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Efficient LLM inference solution on Intel GPU.](http://arxiv.org/abs/2401.05391) | 本文提出了一种在Intel GPU上高效的LLM推理解决方案，通过简化LLM解码层和引入分段KV缓存策略，实现了低延迟和高吞吐量。 |
+| [^1] | [A Cost-Efficient FPGA Implementation of Tiny Transformer Model using Neural ODE.](http://arxiv.org/abs/2401.02721) | 本文提出了一种利用神经ODE作为骨干架构的高性价比FPGA实现微型Transformer模型。该模型相比于基于CNN的模型将参数大小减少了94.6%且保持准确性，适用于边缘计算。 |
 
 # 详细
 
-[^1]: 在Intel GPU上高效的LLM推理解决方案
+[^1]: 利用神经ODE的高性价比FPGA实现微型Transformer模型
 
-    Efficient LLM inference solution on Intel GPU. (arXiv:2401.05391v1 [cs.AR])
+    A Cost-Efficient FPGA Implementation of Tiny Transformer Model using Neural ODE. (arXiv:2401.02721v1 [cs.LG])
 
-    [http://arxiv.org/abs/2401.05391](http://arxiv.org/abs/2401.05391)
+    [http://arxiv.org/abs/2401.02721](http://arxiv.org/abs/2401.02721)
 
-    本文提出了一种在Intel GPU上高效的LLM推理解决方案，通过简化LLM解码层和引入分段KV缓存策略，实现了低延迟和高吞吐量。
+    本文提出了一种利用神经ODE作为骨干架构的高性价比FPGA实现微型Transformer模型。该模型相比于基于CNN的模型将参数大小减少了94.6%且保持准确性，适用于边缘计算。
 
     
 
-    基于Transformer的大型语言模型（LLM）在许多领域广泛应用，LLM推理的效率成为实际应用中的热门话题。然而，LLM通常在模型结构上设计复杂，具有大量操作，并以自回归模式进行推理，这使得设计一个高效的系统成为一项具有挑战性的任务。在本文中，我们提出了一种高效的LLM推理解决方案，具有低延迟和高吞吐量。首先，我们通过融合数据移动和逐元素操作简化了LLM解码层，以减少内存访问频率并降低系统延迟。我们还提出了一种分段KV缓存策略，将请求和响应令牌的键/值分别保存在不同的物理内存中，以实现有效的设备内存管理，有助于增大运行时批处理大小并提高系统吞吐量。我们设计了一个定制的Scaled-Dot-Product-Attention内核，以匹配我们的融合策略，基于分段KV缓存解决方案。我们实验证明，该解决方案在Intel GPU上实现了高效的LLM推理。
+    Transformer是一种具有注意机制的新兴神经网络模型。它已经被用于各种任务，并且相比于CNN和RNN取得了良好的准确性。虽然注意机制被认为是一种通用的组件，但是许多Transformer模型与基于CNN的模型相比需要大量的参数。为了减少计算复杂性，最近提出了一种混合方法，它使用ResNet作为骨干架构，并将部分卷积层替换为MHSA（多头自注意）机制。在本文中，我们通过使用神经ODE（常微分方程）而不是ResNet作为骨干架构，显著减少了这种模型的参数大小。所提出的混合模型相比于基于CNN的模型将参数大小减少了94.6%，而且没有降低准确性。接着，我们将所提出的模型部署在一台适度规模的FPGA设备上进行边缘计算。
 
-    Transformer based Large Language Models (LLMs) have been widely used in many fields, and the efficiency of LLM inference becomes hot topic in real applications. However, LLMs are usually complicatedly designed in model structure with massive operations and perform inference in the auto-regressive mode, making it a challenging task to design a system with high efficiency.  In this paper, we propose an efficient LLM inference solution with low latency and high throughput. Firstly, we simplify the LLM decoder layer by fusing data movement and element-wise operations to reduce the memory access frequency and lower system latency. We also propose a segment KV cache policy to keep key/value of the request and response tokens in separate physical memory for effective device memory management, helping enlarge the runtime batch size and improve system throughput. A customized Scaled-Dot-Product-Attention kernel is designed to match our fusion policy based on the segment KV cache solution. We im
+    Transformer is an emerging neural network model with attention mechanism. It has been adopted to various tasks and achieved a favorable accuracy compared to CNNs and RNNs. While the attention mechanism is recognized as a general-purpose component, many of the Transformer models require a significant number of parameters compared to the CNN-based ones. To mitigate the computational complexity, recently, a hybrid approach has been proposed, which uses ResNet as a backbone architecture and replaces a part of its convolution layers with an MHSA (Multi-Head Self-Attention) mechanism. In this paper, we significantly reduce the parameter size of such models by using Neural ODE (Ordinary Differential Equation) as a backbone architecture instead of ResNet. The proposed hybrid model reduces the parameter size by 94.6% compared to the CNN-based ones without degrading the accuracy. We then deploy the proposed model on a modest-sized FPGA device for edge computing. To further reduce FPGA resource u
     
 

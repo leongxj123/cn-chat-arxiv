@@ -2,292 +2,112 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [EGTR: Extracting Graph from Transformer for Scene Graph Generation](https://arxiv.org/abs/2404.02072) | 提出了一种从Transformer中提取图形以用于场景图生成的轻量级单阶段模型，有效地提取了关系图。 |
-| [^2] | [LSKNet: A Foundation Lightweight Backbone for Remote Sensing](https://arxiv.org/abs/2403.11735) | LSKNet是一种轻量级的大型选择核网络骨干，能动态调整其较大的空间感受野，以更好地模拟遥感场景中各种对象的远程上下文。 |
-| [^3] | [Unleashing the Power of Meta-tuning for Few-shot Generalization Through Sparse Interpolated Experts](https://arxiv.org/abs/2403.08477) | 本文提出了一种名为Sparse MetA-Tuning（SMAT）的方法，通过灵感来自稀疏专家混合方法，成功克服了域外任务敏感性，实现了增强视觉基础模型转移能力的目标。 |
-| [^4] | [SWAP-NAS: Sample-Wise Activation Patterns For Ultra-Fast NAS](https://arxiv.org/abs/2403.04161) | 提出了一种新颖的高性能无需训练的度量SWAP-Score，能够在不同搜索空间和任务中测量网络在一批输入样本上的表现能力，并通过正则化进一步提高相关性，实现模型大小的控制。 |
-| [^5] | [EFUF: Efficient Fine-grained Unlearning Framework for Mitigating Hallucinations in Multimodal Large Language Models](https://arxiv.org/abs/2402.09801) | EFUF是一种高效精细化去学习框架，可以消除多模态大语言模型中的物体幻觉，并不需要人工注释配对数据。 |
-| [^6] | [Source-Free Domain Adaptation with Diffusion-Guided Source Data Generation](https://arxiv.org/abs/2402.04929) | 本文提出了一种无源域自适应的新方法，利用扩散模型生成上下文相关的领域特定图像，通过微调预训练模型和无监督领域自适应技术实现了显著的性能改进。 |
-| [^7] | [AdaTreeFormer: Few Shot Domain Adaptation for Tree Counting from a Single High-Resolution Image](https://arxiv.org/abs/2402.02956) | AdaTreeFormer是一种从源领域学习并适应只有有限数量标注树木的目标领域的框架，利用一个共享的编码器和分层特征提取方案，实现了树木计数的少样本领域自适应。 |
-| [^8] | [Diffusion Models, Image Super-Resolution And Everything: A Survey](https://arxiv.org/abs/2401.00736) | 扩散模型（DMs）在图像超分辨率（SR）领域产生了颠覆性的影响，缩小了图像质量与人类感知偏好之间的差距。该研究调查了DM的理论基础，分析了其独特特点和方法，探索了替代输入领域等当前的研究方向。 |
-| [^9] | [EasyEdit: An Easy-to-use Knowledge Editing Framework for Large Language Models](https://arxiv.org/abs/2308.07269) | EasyEdit提出了一种易于使用的知识编辑框架，针对大型语言模型的知识截断或谬误问题，支持各种最新的知识编辑方法，并可应用于多个知名的LLMs。 |
-| [^10] | [Knowledge Accumulation in Continually Learned Representations and the Issue of Feature Forgetting](https://arxiv.org/abs/2304.00933) | 揭示了持续学习表示中的知识积累和特征遗忘问题，表明即使特征遗忘的绝对程度可能较小，新学习的信息在表示层面也面临着严重遗忘。 |
-| [^11] | [Bringing Back the Context: Camera Trap Species Identification as Link Prediction on Multimodal Knowledge Graphs.](http://arxiv.org/abs/2401.00608) | 本研究利用相机陷阱图像的结构化上下文，提高其在物种识别任务中的泛化能力，并解决了数据稀缺和泛化能力增强的问题。 |
-| [^12] | [Advancing Surgical VQA with Scene Graph Knowledge.](http://arxiv.org/abs/2312.10251) | 本研究通过场景图知识推进了手术环境中的视觉问答（VQA），解决了手术VQA系统中的问题条件偏倚和缺乏场景感知推理的挑战。 |
-| [^13] | [GAMIX-VAE: A VAE with Gaussian Mixture Based Posterior.](http://arxiv.org/abs/2309.13160) | 本文提出了一种基于高斯混合后验的VAE方法，重新定义了ELBO，引入正则化项和PatchGAN鉴别器，能够生成逼真的人脸。 |
-| [^14] | [A Systematic Review of Few-Shot Learning in Medical Imaging.](http://arxiv.org/abs/2309.11433) | 本文系统综述了医学影像中的少样本学习技术，发现少样本学习可以缓解数据稀缺问题并提升医学影像分析性能，特别是在元学习方面。 |
-| [^15] | [Unified and Dynamic Graph for Temporal Character Grouping in Long Videos.](http://arxiv.org/abs/2308.14105) | 本文提出了一种统一动态图（UniDG）框架，通过统一的表示网络学习多模态表示，并保留模态的独特性。采用动态图聚类方法构建可靠的亲和图，并提出了一种渐进式的关联方法。 |
-| [^16] | [Manipulating Embeddings of Stable Diffusion Prompts.](http://arxiv.org/abs/2308.12059) | 本论文提出了一种直接改变提示嵌入的方法，促进了用户对生成图像细粒度和目标化的控制。这种方法将生成模型视为连续函数，并在图像空间和提示嵌入空间之间传递梯度。 |
-| [^17] | [Of Mice and Mates: Automated Classification and Modelling of Mouse Behaviour in Groups using a Single Model across Cages.](http://arxiv.org/abs/2306.03066) | 本文提供了自动分类和模拟群体老鼠行为的工具，通过单一模型跨笼使用置换矩阵匹配老鼠身份，在家鼠环境下研究老鼠可以捕捉到个体行为的时间因素，而且无需人为干预。 |
-| [^18] | [CLCIFAR: CIFAR-Derived Benchmark Datasets with Human Annotated Complementary Labels.](http://arxiv.org/abs/2305.08295) | 本研究开发了由人类标注的互补标签，创造了两个真实世界的CLL数据集，进一步揭示了现实表现下CLL算法的性能，为这一领域的研究提供了更实际的评估标准。 |
-| [^19] | [Linking Representations with Multimodal Contrastive Learning.](http://arxiv.org/abs/2304.03464) | 本文提出了一种名为CLIPPINGS的多模态框架，用于记录链接。该框架利用深度学习和对比学习的方法，通过端到端训练对称的视觉和语言编码器，在度量空间中学习相近或不同类别的表示方法，用于多个应用场景，如构建全面的补充专利注册表和识别不同社交媒体平台上的个人。 |
+| [^1] | [RESSA: Repair Sparse Vision-Language Models via Sparse Cross-Modality Adaptation](https://arxiv.org/abs/2404.02424) | 通过稀疏跨模态适应修复稀疏视觉-语言模型，探索了VLM修剪中的两个主要问题，提出稀疏比率对性能的影响，展示了修复稀疏VLMs性能所需的专门技术。 |
+| [^2] | [MagicLens: Self-Supervised Image Retrieval with Open-Ended Instructions](https://arxiv.org/abs/2403.19651) | 本研究提出了MagicLens，一系列支持开放式指令的自监督图像检索模型，核心创新在于利用文本指令使得图像检索可以检索到比视觉相似性更丰富关系的图像。 |
+| [^3] | [Large Window-based Mamba UNet for Medical Image Segmentation: Beyond Convolution and Self-attention](https://arxiv.org/abs/2403.07332) | 该论文提出了一个基于大窗口的Mamba UNet用于医学图像分割，相比传统方法，在局部空间建模方面有优势，同时在全局建模方面保持高效率。 |
+| [^4] | [Universal Prompt Optimizer for Safe Text-to-Image Generation](https://arxiv.org/abs/2402.10882) | 提出了第一个通用提示优化器，用于在黑盒场景中安全生成文本到图像，通过构建毒素-清洁提示对数据集，设计奖励函数，并通过 Proximal Policy Optimization 训练优化器，成功降低各种 T2I 模型生成不安全内容的可能性。 |
+| [^5] | [Revisiting Active Learning in the Era of Vision Foundation Models.](http://arxiv.org/abs/2401.14555) | 本文评估了基础视觉模型对有效主动学习的三个关键组成部分的影响，并提出了一个新的简单优雅的主动学习策略，该策略通过平衡不确定性估计和样本多样性来实现。 |
+| [^6] | [SoK: Facial Deepfake Detectors.](http://arxiv.org/abs/2401.04364) | 本文对最新的面部深度伪造检测器进行了全面回顾和分析，提供了对其有效性影响因素的深入见解，并在各种攻击场景中进行了评估。 |
+| [^7] | [A Probabilistic Fluctuation based Membership Inference Attack for Generative Models.](http://arxiv.org/abs/2308.12143) | 本研究针对生成模型提出了一种概率波动评估成员推断攻击方法(PFAMI)，通过检测概率分布的波动性来推断模型中是否存在某条训练记录的成员身份。 |
 
 # 详细
 
-[^1]: 从Transformer中提取图形用于场景图生成
+[^1]: 通过稀疏跨模态适应修复稀疏视觉-语言模型
 
-    EGTR: Extracting Graph from Transformer for Scene Graph Generation
+    RESSA: Repair Sparse Vision-Language Models via Sparse Cross-Modality Adaptation
 
-    [https://arxiv.org/abs/2404.02072](https://arxiv.org/abs/2404.02072)
+    [https://arxiv.org/abs/2404.02424](https://arxiv.org/abs/2404.02424)
 
-    提出了一种从Transformer中提取图形以用于场景图生成的轻量级单阶段模型，有效地提取了关系图。
-
-    
-
-    场景图生成（SGG）是一项具有挑战性的任务，涉及检测对象并预测对象之间的关系。提出了一个轻量级的单阶段SGG模型，它从DETR解码器的多头自注意力层中学习的各种关系中提取关系图。
-
-    arXiv:2404.02072v1 Announce Type: cross  Abstract: Scene Graph Generation (SGG) is a challenging task of detecting objects and predicting relationships between objects. After DETR was developed, one-stage SGG models based on a one-stage object detector have been actively studied. However, complex modeling is used to predict the relationship between objects, and the inherent relationship between object queries learned in the multi-head self-attention of the object detector has been neglected. We propose a lightweight one-stage SGG model that extracts the relation graph from the various relationships learned in the multi-head self-attention layers of the DETR decoder. By fully utilizing the self-attention by-products, the relation graph can be extracted effectively with a shallow relation extraction head. Considering the dependency of the relation extraction task on the object detection task, we propose a novel relation smoothing technique that adjusts the relation label adaptively accor
-    
-[^2]: LSKNet：一种用于遥感的轻量级基础架构
-
-    LSKNet: A Foundation Lightweight Backbone for Remote Sensing
-
-    [https://arxiv.org/abs/2403.11735](https://arxiv.org/abs/2403.11735)
-
-    LSKNet是一种轻量级的大型选择核网络骨干，能动态调整其较大的空间感受野，以更好地模拟遥感场景中各种对象的远程上下文。
+    通过稀疏跨模态适应修复稀疏视觉-语言模型，探索了VLM修剪中的两个主要问题，提出稀疏比率对性能的影响，展示了修复稀疏VLMs性能所需的专门技术。
 
     
 
-    遥感图像由于其固有的复杂性对下游任务提出了独特的挑战。尽管已经有大量研究致力于遥感分类、目标检测和语义分割，但其中大多数研究都忽视了嵌入在遥感场景中的宝贵先验知识。这些先验知识可能会很有用，因为在没有参考足够长程上下文的情况下，遥感对象可能会被错误识别，而这可以因不同对象而异。本文考虑了这些先验知识，并提出了一种轻量级的大型选择核网络（LSKNet）骨干网络。LSKNet可以动态调整其较大的空间感受野，以更好地模拟遥感场景中各种对象的远距离上下文。据我们所知，先前尚未在遥感图像中探索过大型和选择性核机制。我们的轻量级方法没有太多复杂性。
+    视觉-语言模型(VLMs)整合了来自多个模态的不同信息，在各种任务中表现出显著成功。但是，在资源受限的场景中部署包括大规模视觉和语言模型在内的VLMs会带来挑战。尽管修剪后微调提供了一种保持更小模型大小性能的潜在解决方案，但其在VLMs中的应用相对未被探索，这提出了两个主要问题：如何在不同模态特定模型之间分配稀疏性，以及如何修复被修剪稀疏的VLMs的性能。为了回答第一个问题，我们进行了关于VLM修剪的初步研究，发现使用相同稀疏比率修剪视觉模型和语言模型有助于实现接近最佳性能。对于第二个问题，与微调单模稀疏模型不同，稀疏VLMs涉及跨模态交互，需要专门的技术。
 
-    arXiv:2403.11735v1 Announce Type: cross  Abstract: Remote sensing images pose distinct challenges for downstream tasks due to their inherent complexity. While a considerable amount of research has been dedicated to remote sensing classification, object detection and semantic segmentation, most of these studies have overlooked the valuable prior knowledge embedded within remote sensing scenarios. Such prior knowledge can be useful because remote sensing objects may be mistakenly recognized without referencing a sufficiently long-range context, which can vary for different objects. This paper considers these priors and proposes a lightweight Large Selective Kernel Network (LSKNet) backbone. LSKNet can dynamically adjust its large spatial receptive field to better model the ranging context of various objects in remote sensing scenarios. To our knowledge, large and selective kernel mechanisms have not been previously explored in remote sensing images. Without bells and whistles, our lightw
+    arXiv:2404.02424v1 Announce Type: new  Abstract: Vision-Language Models (VLMs), integrating diverse information from multiple modalities, have shown remarkable success across various tasks. However, deploying VLMs, comprising large-scale vision and language models poses challenges in resource-constrained scenarios. While pruning followed by finetuning offers a potential solution to maintain performance with smaller model sizes, its application to VLMs remains relatively unexplored, presenting two main questions: how to distribute sparsity across different modality-specific models, and how to repair the performance of pruned sparse VLMs. To answer the first question, we conducted preliminary studies on VLM pruning and found that pruning vision models and language models with the same sparsity ratios contribute to nearly optimal performance. For the second question, unlike finetuning unimodal sparse models, sparse VLMs involve cross-modality interactions, requiring specialized techniques
     
-[^3]: 通过稀疏插值专家释放元调整的力量，用于少样本泛化
+[^2]: MagicLens：自监督图像检索与开放式指令
 
-    Unleashing the Power of Meta-tuning for Few-shot Generalization Through Sparse Interpolated Experts
+    MagicLens: Self-Supervised Image Retrieval with Open-Ended Instructions
 
-    [https://arxiv.org/abs/2403.08477](https://arxiv.org/abs/2403.08477)
+    [https://arxiv.org/abs/2403.19651](https://arxiv.org/abs/2403.19651)
 
-    本文提出了一种名为Sparse MetA-Tuning（SMAT）的方法，通过灵感来自稀疏专家混合方法，成功克服了域外任务敏感性，实现了增强视觉基础模型转移能力的目标。
-
-    
-
-    传统智慧建议参数高效的微调基础模型，是视觉迁移学习的最先进方法，取代了诸如元学习之类的丰富文献。为了兼顾两者的利益，元调整引入了基础模型的随后优化阶段，但迄今只展现了有限的成功，关键地在域外（OOD）任务上表现不佳。本文介绍了一种灵感来自稀疏专家混合方法的 Sparse MetA-Tuning（SMAT）方法，它经过训练以自动地为每个任务隔离预训练参数子集以进行元调整。SMAT成功克服了OOD敏感性，并实现了增强视觉基础模型转移能力的承诺。我们在Meta-Dataset与额外的OO挑战组合上建立了新的最先进结果。
-
-    arXiv:2403.08477v1 Announce Type: cross  Abstract: Conventional wisdom suggests parameter-efficient fine-tuning of foundation models as the state-of-the-art method for transfer learning in vision, replacing the rich literature of alternatives such as meta-learning. In trying to harness the best of both worlds, meta-tuning introduces a subsequent optimization stage of foundation models but has so far only shown limited success and crucially tends to underperform on out-of-domain (OOD) tasks. In this paper, we introduce Sparse MetA-Tuning (SMAT), a method inspired by sparse mixture-of-experts approaches and trained to isolate subsets of pre-trained parameters automatically for meta-tuning on each task. SMAT successfully overcomes OOD sensitivity and delivers on the promise of enhancing the transfer abilities of vision foundation models beyond parameter-efficient finetuning. We establish new state-of-the-art results on a challenging combination of Meta-Dataset augmented with additional OO
-    
-[^4]: SWAP-NAS: 适用于超快速NAS的样本级激活模式
-
-    SWAP-NAS: Sample-Wise Activation Patterns For Ultra-Fast NAS
-
-    [https://arxiv.org/abs/2403.04161](https://arxiv.org/abs/2403.04161)
-
-    提出了一种新颖的高性能无需训练的度量SWAP-Score，能够在不同搜索空间和任务中测量网络在一批输入样本上的表现能力，并通过正则化进一步提高相关性，实现模型大小的控制。
+    本研究提出了MagicLens，一系列支持开放式指令的自监督图像检索模型，核心创新在于利用文本指令使得图像检索可以检索到比视觉相似性更丰富关系的图像。
 
     
 
-    无需训练的度量（即零成本代理）被广泛用于避免资源密集型的神经网络训练，尤其是在神经结构搜索（NAS）中。最近的研究表明，现有的无需训练的度量存在一些局限，比如在不同搜索空间和任务之间存在有限的关联性和差劲的泛化能力。因此，我们提出了样本级激活模式及其衍生物SWAP-Score，这是一种新颖的高性能无需训练的度量。它测量了网络在一批输入样本上的表现能力。SWAP-Score与不同搜索空间和任务中的真实性能强相关，在NAS-Bench-101/201/301和TransNAS-Bench-101上胜过了15种现有的无需训练的度量。SWAP-Score可以通过正则化进一步增强，这在基于单元的搜索空间中可以实现更高的相关性，并且在搜索过程中实现模型大小控制。例如，Spearman的排序
+    图像检索，即根据参考图像查找所需图像，固有地包含难以仅使用基于图像的度量捕捉到的丰富、多方面的搜索意图。最近的工作利用文本指令允许用户更自由地表达他们的搜索意图。然而，现有工作主要集中在那些视觉上相似和/或可以用一小组预定义关系来表征的图像对上。本文的核心论点是文本指令可以使图像检索能够检索到比视觉相似性更丰富关系的图像。为了证明这一点，我们引入了MagicLens，一系列支持开放式指令的自监督图像检索模型。MagicLens建立在一个重要的新颖见解上：自然发生在同一网页上的图像对包含着大量隐式关系（例如，内部视图），我们可以通过综合指令将这些隐式关系变为显式。
 
-    arXiv:2403.04161v1 Announce Type: new  Abstract: Training-free metrics (a.k.a. zero-cost proxies) are widely used to avoid resource-intensive neural network training, especially in Neural Architecture Search (NAS). Recent studies show that existing training-free metrics have several limitations, such as limited correlation and poor generalisation across different search spaces and tasks. Hence, we propose Sample-Wise Activation Patterns and its derivative, SWAP-Score, a novel high-performance training-free metric. It measures the expressivity of networks over a batch of input samples. The SWAP-Score is strongly correlated with ground-truth performance across various search spaces and tasks, outperforming 15 existing training-free metrics on NAS-Bench-101/201/301 and TransNAS-Bench-101. The SWAP-Score can be further enhanced by regularisation, which leads to even higher correlations in cell-based search space and enables model size control during the search. For example, Spearman's rank
+    arXiv:2403.19651v1 Announce Type: cross  Abstract: Image retrieval, i.e., finding desired images given a reference image, inherently encompasses rich, multi-faceted search intents that are difficult to capture solely using image-based measures. Recent work leverages text instructions to allow users to more freely express their search intents. However, existing work primarily focuses on image pairs that are visually similar and/or can be characterized by a small set of pre-defined relations. The core thesis of this paper is that text instructions can enable retrieving images with richer relations beyond visual similarity. To show this, we introduce MagicLens, a series of self-supervised image retrieval models that support open-ended instructions. MagicLens is built on a key novel insight: image pairs that naturally occur on the same web pages contain a wide range of implicit relations (e.g., inside view of), and we can bring those implicit relations explicit by synthesizing instructions
     
-[^5]: EFUF: 高效精细化去学习多模态大语言模型中减轻幻像的框架
+[^3]: 基于大窗口的Mamba UNet用于医学图像分割：超越卷积和自注意力
 
-    EFUF: Efficient Fine-grained Unlearning Framework for Mitigating Hallucinations in Multimodal Large Language Models
+    Large Window-based Mamba UNet for Medical Image Segmentation: Beyond Convolution and Self-attention
 
-    [https://arxiv.org/abs/2402.09801](https://arxiv.org/abs/2402.09801)
+    [https://arxiv.org/abs/2403.07332](https://arxiv.org/abs/2403.07332)
 
-    EFUF是一种高效精细化去学习框架，可以消除多模态大语言模型中的物体幻觉，并不需要人工注释配对数据。
-
-    
-
-    多模态大语言模型（MLLMs）近年来受到越来越多的关注，但它们可能仍会生成包含图像中不存在的物体的描述，这种现象称为物体幻觉。为了消除幻觉，现有方法手动注释包含和不包含幻觉的配对响应，并采用各种对齐算法来提高图像和文本之间的对齐能力。然而，它们不仅在微调阶段需要大量计算资源，还需要昂贵的人工注释来构建对齐算法所需的配对数据。为了解决这些问题，我们借鉴了去学习的思想，提出了一种高效精细化去学习框架（EFUF），可以在不需要配对数据的情况下消除幻觉。大量实验证明，我们的方法能够持续减少幻觉同时保留准确的描述。
-
-    arXiv:2402.09801v1 Announce Type: new  Abstract: Multimodal large language models (MLLMs) have attracted increasing attention in the past few years, but they may still generate descriptions that include objects not present in the corresponding images, a phenomenon known as object hallucination. To eliminate hallucinations, existing methods manually annotate paired responses with and without hallucinations, and then employ various alignment algorithms to improve the alignment capability between images and text. However, they not only demand considerable computation resources during the finetuning stage but also require expensive human annotation to construct paired data needed by the alignment algorithms. To address these issues, we borrow the idea of unlearning and propose an efficient fine-grained unlearning framework (EFUF), which can eliminate hallucinations without the need for paired data. Extensive experiments show that our method consistently reduces hallucinations while preserv
-    
-[^6]: 无源域自适应的扩散引导源数据生成
-
-    Source-Free Domain Adaptation with Diffusion-Guided Source Data Generation
-
-    [https://arxiv.org/abs/2402.04929](https://arxiv.org/abs/2402.04929)
-
-    本文提出了一种无源域自适应的新方法，利用扩散模型生成上下文相关的领域特定图像，通过微调预训练模型和无监督领域自适应技术实现了显著的性能改进。
+    该论文提出了一个基于大窗口的Mamba UNet用于医学图像分割，相比传统方法，在局部空间建模方面有优势，同时在全局建模方面保持高效率。
 
     
 
-    本文引入了一种利用扩散模型的泛化能力进行无源域自适应（DM-SFDA）的新方法。我们提出的DM-SFDA方法包括对预训练的文本到图像扩散模型进行微调，并使用目标图像的特征来指导扩散过程生成源域图像。具体而言，预训练的扩散模型被微调以生成最小化熵并最大化预训练源模型置信度的源样本。然后，我们应用已建立的无监督领域自适应技术将生成的源图像与目标域数据进行对齐。我们通过在一系列数据集上进行全面实验验证了我们的方法，包括Office-31、Office-Home和VisDA。结果显示，在无源域自适应的性能方面取得了显著的改进，展示了扩散模型在生成上下文相关的、领域特定的图像方面的潜力。
+    在临床实践中，医学图像分割提供了有关目标器官或组织轮廓和尺寸的有用信息，有助于改进诊断、分析和治疗。最近几年，卷积神经网络（CNN）和Transformer在这一领域占据主导地位，但它们仍然存在一定问题，如有限的感知范围或昂贵的远程建模。Mamba，作为一种具有线性复杂度的长程依赖性建模的状态空间序列模型（SSM），最近出现为一种有前途的范式。在本文中，我们介绍了一种用于2D和3D医学图像分割的基于大窗口的Mamba U-形网络，即LMa-UNet。我们LMa-UNet的一个突出特点是利用大窗口，在局部空间建模方面优于基于小核的CNN和基于小窗口的Transformer，同时与具有二次复杂度的自注意力相比，在全局建模方面保持卓越的效率。
 
-    This paper introduces a novel approach to leverage the generalizability capability of Diffusion Models for Source-Free Domain Adaptation (DM-SFDA). Our proposed DM-SFDA method involves fine-tuning a pre-trained text-to-image diffusion model to generate source domain images using features from the target images to guide the diffusion process. Specifically, the pre-trained diffusion model is fine-tuned to generate source samples that minimize entropy and maximize confidence for the pre-trained source model. We then apply established unsupervised domain adaptation techniques to align the generated source images with target domain data. We validate our approach through comprehensive experiments across a range of datasets, including Office-31, Office-Home, and VisDA. The results highlight significant improvements in SFDA performance, showcasing the potential of diffusion models in generating contextually relevant, domain-specific images.
+    arXiv:2403.07332v1 Announce Type: cross  Abstract: In clinical practice, medical image segmentation provides useful information on the contours and dimensions of target organs or tissues, facilitating improved diagnosis, analysis, and treatment. In the past few years, convolutional neural networks (CNNs) and Transformers have dominated this area, but they still suffer from either limited receptive fields or costly long-range modeling. Mamba, a State Space Sequence Model (SSM), recently emerged as a promising paradigm for long-range dependency modeling with linear complexity. In this paper, we introduce a Large Window-based Mamba U}-shape Network, or LMa-UNet, for 2D and 3D medical image segmentation. A distinguishing feature of our LMa-UNet is its utilization of large windows, excelling in locally spatial modeling compared to small kernel-based CNNs and small window-based Transformers, while maintaining superior efficiency in global modeling compared to self-attention with quadratic co
     
-[^7]: AdaTreeFormer: 从一张高分辨率图像中进行树木计数的少样本领域自适应
+[^4]: 通用提示优化器用于安全文本到图像生成
 
-    AdaTreeFormer: Few Shot Domain Adaptation for Tree Counting from a Single High-Resolution Image
+    Universal Prompt Optimizer for Safe Text-to-Image Generation
 
-    [https://arxiv.org/abs/2402.02956](https://arxiv.org/abs/2402.02956)
+    [https://arxiv.org/abs/2402.10882](https://arxiv.org/abs/2402.10882)
 
-    AdaTreeFormer是一种从源领域学习并适应只有有限数量标注树木的目标领域的框架，利用一个共享的编码器和分层特征提取方案，实现了树木计数的少样本领域自适应。
-
-    
-
-    仅使用一张航空或卫星图像来估计和计数树木密度是摄影测量和遥感领域中一项困难的任务。然而，它在森林管理中起着至关重要的作用。不同地形上各种各样的树木种类严重阻碍了树木计数模型的良好表现。本文旨在提出一个从具有足够标注树木的源领域学习并适应只有有限数量标注树木的目标领域的框架。我们的方法称为AdaTreeFormer，包含一个共享的编码器和一个分层特征提取方案，用于从源领域和目标领域中提取稳健的特征。它还包括三个子网络：两个用于分别从源领域和目标领域提取自注意力图，并一个用于提取跨领域注意力图。对于后者，引入了一种注意力适应机制，用于从不同领域中提取相关信息。
-
-    The process of estimating and counting tree density using only a single aerial or satellite image is a difficult task in the fields of photogrammetry and remote sensing. However, it plays a crucial role in the management of forests. The huge variety of trees in varied topography severely hinders tree counting models to perform well. The purpose of this paper is to propose a framework that is learnt from the source domain with sufficient labeled trees and is adapted to the target domain with only a limited number of labeled trees. Our method, termed as AdaTreeFormer, contains one shared encoder with a hierarchical feature extraction scheme to extract robust features from the source and target domains. It also consists of three subnets: two for extracting self-domain attention maps from source and target domains respectively and one for extracting cross-domain attention maps. For the latter, an attention-to-adapt mechanism is introduced to distill relevant information from different doma
-    
-[^8]: 扩散模型、图像超分辨率和一切：一项调查研究
-
-    Diffusion Models, Image Super-Resolution And Everything: A Survey
-
-    [https://arxiv.org/abs/2401.00736](https://arxiv.org/abs/2401.00736)
-
-    扩散模型（DMs）在图像超分辨率（SR）领域产生了颠覆性的影响，缩小了图像质量与人类感知偏好之间的差距。该研究调查了DM的理论基础，分析了其独特特点和方法，探索了替代输入领域等当前的研究方向。
+    提出了第一个通用提示优化器，用于在黑盒场景中安全生成文本到图像，通过构建毒素-清洁提示对数据集，设计奖励函数，并通过 Proximal Policy Optimization 训练优化器，成功降低各种 T2I 模型生成不安全内容的可能性。
 
     
 
-    扩散模型（DMs）在图像超分辨率（SR）领域中产生了颠覆性的影响，进一步缩小了图像质量与人类感知偏好之间的差距。它们易于训练，并能生成比以前的生成方法产生的样本更高质量的图像。尽管取得了有希望的结果，但它们也带来了新的挑战，需要进一步的研究：高计算需求、可比性、缺乏可解释性、色彩偏移等。不幸的是，由于大量的出版物，进入这个领域令人难以应对。为了解决这个问题，我们提供了一个统一的叙述，阐明了应用于图像超分辨率的DM的理论基础，并提供了一份详细的分析，突出了该领域内与其他综述文章不同的独特特点和方法。这项调查研究对DM的原则进行了一个连贯的理解，并探索了当前的研究方向，包括替代输入领域等。
+    文本到图像（T2I）模型在根据文字提示生成图像方面表现出色。然而，这些模型容易受到不安全输入的影响，从而生成不安全内容，如色情、骚扰和非法活动图像。基于图像检查器、模型微调和嵌入式阻止的现有研究在真实世界应用中不可行。因此，我们提出了第一个用于黑盒场景中安全 T2I 生成的通用提示优化器。
 
-    Diffusion Models (DMs) have disrupted the image Super-Resolution (SR) field and further closed the gap between image quality and human perceptual preferences. They are easy to train and can produce very high-quality samples that exceed the realism of those produced by previous generative methods. Despite their promising results, they also come with new challenges that need further research: high computational demands, comparability, lack of explainability, color shifts, and more. Unfortunately, entry into this field is overwhelming because of the abundance of publications. To address this, we provide a unified recount of the theoretical foundations underlying DMs applied to image SR and offer a detailed analysis that underscores the unique characteristics and methodologies within this domain, distinct from broader existing reviews in the field. This survey articulates a cohesive understanding of DM principles and explores current research avenues, including alternative input domains, c
+    arXiv:2402.10882v1 Announce Type: cross  Abstract: Text-to-Image (T2I) models have shown great performance in generating images based on textual prompts. However, these models are vulnerable to unsafe input to generate unsafe content like sexual, harassment and illegal-activity images. Existing studies based on image checker, model fine-tuning and embedding blocking are impractical in real-world applications. Hence, \textit{we propose the first universal prompt optimizer for safe T2I generation in black-box scenario}. We first construct a dataset consisting of toxic-clean prompt pairs by GPT-3.5 Turbo. To guide the optimizer to have the ability of converting toxic prompt to clean prompt while preserving semantic information, we design a novel reward function measuring toxicity and text alignment of generated images and train the optimizer through Proximal Policy Optimization. Experiments show that our approach can effectively reduce the likelihood of various T2I models in generating in
     
-[^9]: EasyEdit：一种易于使用的大型语言模型知识编辑框架
+[^5]: 在视觉基础模型时代重新审视主动学习
 
-    EasyEdit: An Easy-to-use Knowledge Editing Framework for Large Language Models
+    Revisiting Active Learning in the Era of Vision Foundation Models. (arXiv:2401.14555v1 [cs.CV])
 
-    [https://arxiv.org/abs/2308.07269](https://arxiv.org/abs/2308.07269)
+    [http://arxiv.org/abs/2401.14555](http://arxiv.org/abs/2401.14555)
 
-    EasyEdit提出了一种易于使用的知识编辑框架，针对大型语言模型的知识截断或谬误问题，支持各种最新的知识编辑方法，并可应用于多个知名的LLMs。
-
-    
-
-    大型语言模型（LLMs）通常遭受知识截断或谬误问题，这意味着它们对未见事件不知情或生成具有不正确事实的文本，原因是数据过时/嘈杂。为此，出现了许多针对LLMs的知识编辑方法，旨在微妙地注入/编辑更新的知识或调整不良行为，同时将对不相关输入的影响最小化。然而，由于各种知识编辑方法之间存在显著差异，以及任务设置中的变化，社区中没有可用于知识编辑的标准实施框架，这妨碍了从业者将知识编辑应用于应用程序。为解决这些问题，我们提出了EasyEdit，一种易于使用的LLMs知识编辑框架。它支持各种尖端的知识编辑方法，并可以轻松应用于许多著名的LLMs，如T5、GPT-J、LlaMA等。从经验上来看，我们报告了kno
-
-    arXiv:2308.07269v2 Announce Type: replace-cross  Abstract: Large Language Models (LLMs) usually suffer from knowledge cutoff or fallacy issues, which means they are unaware of unseen events or generate text with incorrect facts owing to outdated/noisy data. To this end, many knowledge editing approaches for LLMs have emerged -- aiming to subtly inject/edit updated knowledge or adjust undesired behavior while minimizing the impact on unrelated inputs. Nevertheless, due to significant differences among various knowledge editing methods and the variations in task setups, there is no standard implementation framework available for the community, which hinders practitioners from applying knowledge editing to applications. To address these issues, we propose EasyEdit, an easy-to-use knowledge editing framework for LLMs. It supports various cutting-edge knowledge editing approaches and can be readily applied to many well-known LLMs such as T5, GPT-J, LlaMA, etc. Empirically, we report the kno
-    
-[^10]: 在不断学习的表示中的知识积累与特征遗忘问题
-
-    Knowledge Accumulation in Continually Learned Representations and the Issue of Feature Forgetting
-
-    [https://arxiv.org/abs/2304.00933](https://arxiv.org/abs/2304.00933)
-
-    揭示了持续学习表示中的知识积累和特征遗忘问题，表明即使特征遗忘的绝对程度可能较小，新学习的信息在表示层面也面临着严重遗忘。
+    本文评估了基础视觉模型对有效主动学习的三个关键组成部分的影响，并提出了一个新的简单优雅的主动学习策略，该策略通过平衡不确定性估计和样本多样性来实现。
 
     
 
-    连续学习研究表明，神经网络在“输出级别”遭受灾难性遗忘，但有争议的是是否在学习的表示级别也存在这种情况。多个最近的研究将表示归因为具有一定程度的固有抗遗忘性 - 仅会最小程度忘记且不会遗失关键信息。我们重新审视并扩展了揭示这种遗忘差异的实验，说明了影响持续学习表示质量的两种现象共存：知识积累和特征遗忘。我们谨慎考虑了这两个方面，表明尽管绝对值上特征遗忘可能较小，新学习的信息在表示层面与输出层面一样面临灾难性遗忘。接下来，我们展示了这种特征遗忘问题
+    基础视觉或视觉-语言模型是在大规模无标签或噪声数据上训练的，并学习到可以在各种任务上实现令人印象深刻的零标注或少标注性能的鲁棒表示。鉴于这些特性，它们是主动学习（AL）的自然选择，旨在实现标记效率的最大化，但在低预算条件下，基础模型的全部潜力在AL环境中尚未得到探索。在这项工作中，我们评估了基础模型对有效AL的三个关键组成部分的影响，即1）初始标记样本池的选择，2）确保多样性抽样，以及3）代表性和不确定性抽样之间的权衡。我们系统地研究了基础模型（DINOv2、OpenCLIP）的鲁棒表示如何挑战已有的主动学习结果。我们的观察结果为一个新的简单优雅的AL策略的有原则构建提供了指导，该策略通过使用dropout估计不确定性和样本多样性之间的平衡。
 
-    arXiv:2304.00933v3 Announce Type: replace  Abstract: Continual learning research has shown that neural networks suffer from catastrophic forgetting "at the output level", but it is debated whether this is also the case at the level of learned representations. Multiple recent studies ascribe representations a certain level of innate robustness against forgetting - that they only forget minimally and no critical information. We revisit and expand upon the experiments that revealed this difference in forgetting and illustrate the coexistence of two phenomena that affect the quality of continually learned representations: knowledge accumulation and feature forgetting. Carefully taking both aspects into account, we show that, even though it is true that feature forgetting can be small in absolute terms, newly learned information tends to be forgotten just as catastrophically at the level of the representation as it is at the output level. Next we show that this feature forgetting is problem
+    Foundation vision or vision-language models are trained on large unlabeled or noisy data and learn robust representations that can achieve impressive zeroor few-shot performance on diverse tasks. Given these properties, they are a natural fit for active learning (AL), which aims to maximize labeling efficiency, but the full potential of foundation models has not been explored in the context of AL, specifically in the low-budget regime. In this work, we evaluate how foundation models influence three critical components of effective AL, namely, 1) initial labeled pool selection, 2) ensuring diverse sampling, and 3) the trade-off between representative and uncertainty sampling. We systematically study how the robust representations of foundation models (DINOv2, OpenCLIP) challenge existing findings in active learning. Our observations inform the principled construction of a new simple and elegant AL strategy that balances uncertainty estimated via dropout with sample diversity. We exten
     
-[^11]: 将上下文带回来：多模态知识图谱上的相机陷阱物种识别作为链接预测
+[^6]: SoK：面部深度伪造检测器
 
-    Bringing Back the Context: Camera Trap Species Identification as Link Prediction on Multimodal Knowledge Graphs. (arXiv:2401.00608v2 [cs.CV] UPDATED)
+    SoK: Facial Deepfake Detectors. (arXiv:2401.04364v1 [cs.CV])
 
-    [http://arxiv.org/abs/2401.00608](http://arxiv.org/abs/2401.00608)
+    [http://arxiv.org/abs/2401.04364](http://arxiv.org/abs/2401.04364)
 
-    本研究利用相机陷阱图像的结构化上下文，提高其在物种识别任务中的泛化能力，并解决了数据稀缺和泛化能力增强的问题。
-
-    
-
-    相机陷阱在动物生态学中是宝贵的工具，用于生物多样性监测和保护。然而，挑战如在新的未知位置部署时的糟糕泛化限制了它们的实际应用。图像自然与可能在不同模态下的异质上下文相关联。在这项工作中，我们利用与相机陷阱图像相关联的结构化上下文，改善在相机陷阱中物种识别这个任务的超出分布的泛化能力。例如，一张野生动物的照片可能与拍摄地点和时间以及关于动物物种的结构化生物学知识相关联。虽然现有的工作通常忽视这一点，但将这样的上下文带回来可以带来一些潜在的好处，如解决数据稀缺和增强泛化能力。然而，有效地将这样的异质上下文整合到视觉领域是一个具有挑战性的问题。
-
-    Camera traps are valuable tools in animal ecology for biodiversity monitoring and conservation. However, challenges like poor generalization to deployment at new unseen locations limit their practical application. Images are naturally associated with heterogeneous forms of context possibly in different modalities. In this work, we leverage the structured context associated with the camera trap images to improve out-of-distribution generalization for the task of species identification in camera traps. For example, a photo of a wild animal may be associated with information about where and when it was taken, as well as structured biology knowledge about the animal species. While typically overlooked by existing work, bringing back such context offers several potential benefits for better image understanding, such as addressing data scarcity and enhancing generalization. However, effectively integrating such heterogeneous context into the visual domain is a challenging problem. To address
-    
-[^12]: 通过场景图知识推进外科视觉问答
-
-    Advancing Surgical VQA with Scene Graph Knowledge. (arXiv:2312.10251v2 [cs.CV] UPDATED)
-
-    [http://arxiv.org/abs/2312.10251](http://arxiv.org/abs/2312.10251)
-
-    本研究通过场景图知识推进了手术环境中的视觉问答（VQA），解决了手术VQA系统中的问题条件偏倚和缺乏场景感知推理的挑战。
+    本文对最新的面部深度伪造检测器进行了全面回顾和分析，提供了对其有效性影响因素的深入见解，并在各种攻击场景中进行了评估。
 
     
 
-    现代手术室越来越复杂，需要创新的术中支持系统。尽管外科数据科学的重点主要在于视频分析，但将外科计算机视觉与语言能力相结合成为必要的趋势。我们的工作旨在通过场景图知识推进手术环境中的视觉问答（VQA），解决当前手术VQA系统中的两个主要挑战：消除手术VQA数据集中的问题条件偏倚，以及在手术VQA模型设计中融入场景感知推理。首先，我们提出了一个基于手术场景图的数据集SSG-QA，通过在公开数据集上应用分割和检测模型来生成。我们使用仪器和解剖结构的空间和动作信息构建手术场景图。这些图被输入到一个问题引擎中，产生多样化的问答对。我们的SSG-QA数据集提供了一个更复杂、多样化、几何基础、无偏倚的数据集。
+    深度伪造技术迅速成为对社会构成深远和严重威胁的原因之一，主要由于其易于制作和传播。这种情况加速了深度伪造检测技术的发展。然而，许多现有的检测器在验证时 heavily 依赖实验室生成的数据集，这可能无法有效地让它们应对新颖、新兴和实际的深度伪造技术。本文对最新的深度伪造检测器进行广泛全面的回顾和分析，根据几个关键标准对它们进行评估。这些标准将这些检测器分为 4 个高级组别和 13 个细粒度子组别，都遵循一个统一的标准概念框架。这种分类和框架提供了对影响检测器功效的因素的深入和实用的见解。我们对 16 个主要的检测器在各种标准的攻击场景中的普适性进行评估，包括黑盒攻击场景。
 
-    Modern operating room is becoming increasingly complex, requiring innovative intra-operative support systems. While the focus of surgical data science has largely been on video analysis, integrating surgical computer vision with language capabilities is emerging as a necessity. Our work aims to advance Visual Question Answering (VQA) in the surgical context with scene graph knowledge, addressing two main challenges in the current surgical VQA systems: removing question-condition bias in the surgical VQA dataset and incorporating scene-aware reasoning in the surgical VQA model design. First, we propose a Surgical Scene Graph-based dataset, SSG-QA, generated by employing segmentation and detection models on publicly available datasets. We build surgical scene graphs using spatial and action information of instruments and anatomies. These graphs are fed into a question engine, generating diverse QA pairs. Our SSG-QA dataset provides a more complex, diverse, geometrically grounded, unbiase
+    Deepfakes have rapidly emerged as a profound and serious threat to society, primarily due to their ease of creation and dissemination. This situation has triggered an accelerated development of deepfake detection technologies. However, many existing detectors rely heavily on lab-generated datasets for validation, which may not effectively prepare them for novel, emerging, and real-world deepfake techniques. In this paper, we conduct an extensive and comprehensive review and analysis of the latest state-of-the-art deepfake detectors, evaluating them against several critical criteria. These criteria facilitate the categorization of these detectors into 4 high-level groups and 13 fine-grained sub-groups, all aligned with a unified standard conceptual framework. This classification and framework offer deep and practical insights into the factors that affect detector efficacy. We assess the generalizability of 16 leading detectors across various standard attack scenarios, including black-bo
     
-[^13]: GAMIX-VAE: 一种基于高斯混合后验的VAE
+[^7]: 一种基于概率波动的生成模型成员推断攻击方法
 
-    GAMIX-VAE: A VAE with Gaussian Mixture Based Posterior. (arXiv:2309.13160v1 [cs.LG])
+    A Probabilistic Fluctuation based Membership Inference Attack for Generative Models. (arXiv:2308.12143v1 [cs.LG])
 
-    [http://arxiv.org/abs/2309.13160](http://arxiv.org/abs/2309.13160)
+    [http://arxiv.org/abs/2308.12143](http://arxiv.org/abs/2308.12143)
 
-    本文提出了一种基于高斯混合后验的VAE方法，重新定义了ELBO，引入正则化项和PatchGAN鉴别器，能够生成逼真的人脸。
-
-    
-
-    变分自动编码器（VAEs）已成为机器学习中生成建模和表示学习的基石。本文探讨了VAEs的一个细微方面，重点是解释KL Divergence，这是Evidence Lower Bound（ELBO）中的关键组成部分，它控制了重构准确性和正则化之间的权衡。虽然KL Divergence让潜变量分布与先验分布对齐，给整个潜空间加上结构约束，但却不限制各个变量分布。所提出的方法重新定义了带有高斯混合的后验概率的ELBO，引入了正则化项以防止方差崩溃，并使用PatchGAN鉴别器来增强纹理逼真度。实现细节涉及Encoder和Decoder的ResNetV2架构。实验证明了生成逼真的人脸的能力，为提供了一个有希望的解决方案。
-
-    Variational Autoencoders (VAEs) have become a cornerstone in generative modeling and representation learning within machine learning. This paper explores a nuanced aspect of VAEs, focusing on interpreting the Kullback Leibler (KL) Divergence, a critical component within the Evidence Lower Bound (ELBO) that governs the trade-off between reconstruction accuracy and regularization. While the KL Divergence enforces alignment between latent variable distributions and a prior imposing a structure on the overall latent space but leaves individual variable distributions unconstrained. The proposed method redefines the ELBO with a mixture of Gaussians for the posterior probability, introduces a regularization term to prevent variance collapse, and employs a PatchGAN discriminator to enhance texture realism. Implementation details involve ResNetV2 architectures for both the Encoder and Decoder. The experiments demonstrate the ability to generate realistic faces, offering a promising solution for
-    
-[^14]: 医学影像领域的少样本学习系统综述
-
-    A Systematic Review of Few-Shot Learning in Medical Imaging. (arXiv:2309.11433v1 [cs.CV])
-
-    [http://arxiv.org/abs/2309.11433](http://arxiv.org/abs/2309.11433)
-
-    本文系统综述了医学影像中的少样本学习技术，发现少样本学习可以缓解数据稀缺问题并提升医学影像分析性能，特别是在元学习方面。
+    本研究针对生成模型提出了一种概率波动评估成员推断攻击方法(PFAMI)，通过检测概率分布的波动性来推断模型中是否存在某条训练记录的成员身份。
 
     
 
-    缺乏标注的医学影像限制了深度学习模型的性能，而这些模型通常需要大规模标记的数据集。少样本学习技术可以减少数据稀缺问题，并增强医学影像分析，尤其是在元学习方面。本系统综述全面概述了医学影像中的少样本学习。我们系统地搜索了相关文献，并从2018年到2023年选择了80篇相关文章。我们基于医学结果（如肿瘤分割、疾病分类和图像配准）、研究的解剖结构（即心脏、肺等）以及所使用的元学习方法对这些文章进行了聚类。对于每个聚类，我们研究了论文的分布以及最先进模型提供的结果。此外，我们还确定了所有研究中的共享通用流程。综述表明少样本学习可以在大多数结果中克服数据稀缺问题，并且元学习是一个流行的选择。
+    成员推断攻击(MIA)通过查询模型来识别机器学习模型的训练集中是否存在某条记录。对经典分类模型的MIA已有很多研究，最近的工作开始探索如何将MIA应用到生成模型上。我们的研究表明，现有的面向生成模型的MIA主要依赖于目标模型的过拟合现象。然而，过拟合可以通过采用各种正则化技术来避免，而现有的MIA在实践中表现不佳。与过拟合不同，记忆对于深度学习模型实现最佳性能是至关重要的，使其成为一种更为普遍的现象。生成模型中的记忆导致生成记录的概率分布呈现出增长的趋势。因此，我们提出了一种基于概率波动的成员推断攻击方法(PFAMI)，它是一种黑盒MIA，通过检测概率波动来推断成员身份。
 
-    The lack of annotated medical images limits the performance of deep learning models, which usually need large-scale labelled datasets. Few-shot learning techniques can reduce data scarcity issues and enhance medical image analysis, especially with meta-learning. This systematic review gives a comprehensive overview of few-shot learning in medical imaging. We searched the literature systematically and selected 80 relevant articles published from 2018 to 2023. We clustered the articles based on medical outcomes, such as tumour segmentation, disease classification, and image registration; anatomical structure investigated (i.e. heart, lung, etc.); and the meta-learning method used. For each cluster, we examined the papers' distributions and the results provided by the state-of-the-art. In addition, we identified a generic pipeline shared among all the studies. The review shows that few-shot learning can overcome data scarcity in most outcomes and that meta-learning is a popular choice to 
-    
-[^15]: 长视频中的时间性角色分组的统一动态图
-
-    Unified and Dynamic Graph for Temporal Character Grouping in Long Videos. (arXiv:2308.14105v2 [cs.CV] UPDATED)
-
-    [http://arxiv.org/abs/2308.14105](http://arxiv.org/abs/2308.14105)
-
-    本文提出了一种统一动态图（UniDG）框架，通过统一的表示网络学习多模态表示，并保留模态的独特性。采用动态图聚类方法构建可靠的亲和图，并提出了一种渐进式的关联方法。
-
-    
-
-    视频时间性角色分组根据角色的身份在视频中定位出现的时刻。 为此，最近的研究从无监督聚类发展到基于图的有监督聚类。 然而，图方法建立在固定的亲和图前提下，带来了许多不精确的连接。 此外，它们使用各种模型提取多模态特征，对部署不友好。在本文中，我们提出了一种用于时间性角色分组的统一动态图（UniDG）框架。首先，通过一个统一的表示网络，我们学习了同一空间中多个模态的表示，并同时保留了模态的独特性。其次，我们提出了一种动态图聚类方法，通过循环匹配策略为每个节点动态构建不同数量的邻居，以获得更可靠的亲和图。 第三，我们提出了一个渐进式的关联方法
-
-    Video temporal character grouping locates appearing moments of major characters within a video according to their identities. To this end, recent works have evolved from unsupervised clustering to graph-based supervised clustering. However, graph methods are built upon the premise of fixed affinity graphs, bringing many inexact connections. Besides, they extract multi-modal features with kinds of models, which are unfriendly to deployment. In this paper, we present a unified and dynamic graph (UniDG) framework for temporal character grouping. This is accomplished firstly by a unified representation network that learns representations of multiple modalities within the same space and still preserves the modality's uniqueness simultaneously. Secondly, we present a dynamic graph clustering where the neighbors of different quantities are dynamically constructed for each node via a cyclic matching strategy, leading to a more reliable affinity graph. Thirdly, a progressive association method 
-    
-[^16]: 操作稳定扩散提示的嵌入
-
-    Manipulating Embeddings of Stable Diffusion Prompts. (arXiv:2308.12059v1 [cs.CV])
-
-    [http://arxiv.org/abs/2308.12059](http://arxiv.org/abs/2308.12059)
-
-    本论文提出了一种直接改变提示嵌入的方法，促进了用户对生成图像细粒度和目标化的控制。这种方法将生成模型视为连续函数，并在图像空间和提示嵌入空间之间传递梯度。
-
-    
-
-    生成文本到图像的模型，如稳定扩散，允许用户根据文本描述生成图像。改变提示仍然是用户想要改变生成图像的主要方式。然而，通过重新构思提示来改变图像仍然是一个困难的试错过程，这导致了提示工程作为一个新的研究领域的出现。我们提出并分析了直接改变提示嵌入的方法，而不是提示文本。它允许更精细和有针对性的控制，考虑到用户的意图。我们的方法将生成的文本到图像模型视为一个连续函数，并在图像空间和提示嵌入空间之间传递梯度。通过解决不同的用户交互问题，我们可以在三个场景中应用这个想法：（1）优化图像空间中定义的度量，可以测量图像风格等。（2）帮助用户进行创造性的图像编辑。
-
-    Generative text-to-image models such as Stable Diffusion allow users to generate images based on a textual description, the prompt. Changing the prompt is still the primary means for the user to change a generated image as desired. However, changing the image by reformulating the prompt remains a difficult process of trial and error, which has led to the emergence of prompt engineering as a new field of research. We propose and analyze methods to change the embedding of a prompt directly instead of the prompt text. It allows for more fine-grained and targeted control that takes into account user intentions. Our approach treats the generative text-to-image model as a continuous function and passes gradients between the image space and the prompt embedding space. By addressing different user interaction problems, we can apply this idea in three scenarios: (1) Optimization of a metric defined in image space that could measure, for example, image style. (2) Assistance of users in creative 
-    
-[^17]: 《鼠类与配偶：单一模型自动对群体中的老鼠行为进行分类和建模跨笼》
-
-    Of Mice and Mates: Automated Classification and Modelling of Mouse Behaviour in Groups using a Single Model across Cages. (arXiv:2306.03066v1 [cs.CV])
-
-    [http://arxiv.org/abs/2306.03066](http://arxiv.org/abs/2306.03066)
-
-    本文提供了自动分类和模拟群体老鼠行为的工具，通过单一模型跨笼使用置换矩阵匹配老鼠身份，在家鼠环境下研究老鼠可以捕捉到个体行为的时间因素，而且无需人为干预。
-
-    
-
-    行为实验通常在专门的竞技场中进行，但这可能会混淆分析。为了解决这个问题，我们提供了工具来研究家鼠环境中的老鼠，为生物学家提供了捕捉个体行为的时间因素和模拟最小人为干预下笼友之间互动和相互依赖的可能性。我们开发了“活动标签模块”（ALM）来自动对老鼠行为进行分类，并开发了一种新的“群体行为模型”（GBM）来概括他们在笼子中的联合行为，使用置换矩阵将每个笼子中的老鼠身份与模型匹配。我们还发布了两个数据集，用于训练行为分类器（ABODe）和行为建模（IMADGE）。
-
-    Behavioural experiments often happen in specialised arenas, but this may confound the analysis. To address this issue, we provide tools to study mice in the homecage environment, equipping biologists with the possibility to capture the temporal aspect of the individual's behaviour and model the interaction and interdependence between cage-mates with minimal human intervention. We develop the Activity Labelling Module (ALM) to automatically classify mouse behaviour from video, and a novel Group Behaviour Model (GBM) for summarising their joint behaviour across cages, using a permutation matrix to match the mouse identities in each cage to the model. We also release two datasets, ABODe for training behaviour classifiers and IMADGE for modelling behaviour.
-    
-[^18]: CLCIFAR：带人类标注互补标签的CIFAR派生基准数据集
-
-    CLCIFAR: CIFAR-Derived Benchmark Datasets with Human Annotated Complementary Labels. (arXiv:2305.08295v2 [cs.LG] UPDATED)
-
-    [http://arxiv.org/abs/2305.08295](http://arxiv.org/abs/2305.08295)
-
-    本研究开发了由人类标注的互补标签，创造了两个真实世界的CLL数据集，进一步揭示了现实表现下CLL算法的性能，为这一领域的研究提供了更实际的评估标准。
-
-    
-
-    互补标签学习（CLL）是一种弱监督学习范式，旨在仅使用互补标签（标示实例不属于哪些类别）来训练多类分类器。尽管已经提出了多种CLL算法，但由于两个原因，它们的实际表现仍不清楚。首先，这些算法通常依赖于对互补标签生成的假设。其次，它们的评估仅限于合成数据集。为了获取有关CLL算法的真实世界表现的见解，我们开发了一种协议来收集由人类注释者注释的互补标签。这一努力导致创建了两个数据集，CLCIFAR10和CLCIFAR20，分别由CIFAR10和CIFAR100派生而来。这些数据集在https://github.com/ntucllab/complementary_cifar上公开发布，代表了第一个真实世界的CLL数据集。通过广泛的基准实验，我们发现相较于合成数据集，当使用人类注释的互补标签时，性能有明显下降。但是，我们也观察到，真实世界的CLL数据集使得在更接近实际应用条件下评估算法成为可能，从而更真实地评估其性能。
-
-    Complementary-label learning (CLL) is a weakly-supervised learning paradigm that aims to train a multi-class classifier using only complementary labels, which indicate classes to which an instance does not belong. Despite numerous algorithmic proposals for CLL, their practical performance remains unclear for two reasons. Firstly, these algorithms often rely on assumptions about the generation of complementary labels. Secondly, their evaluation has been limited to synthetic datasets. To gain insights into the real-world performance of CLL algorithms, we developed a protocol to collect complementary labels annotated by human annotators. This effort resulted in the creation of two datasets, CLCIFAR10 and CLCIFAR20, derived from CIFAR10 and CIFAR100, respectively. These datasets, publicly released at https://github.com/ntucllab/complementary_cifar, represent the very first real-world CLL datasets. Through extensive benchmark experiments, we discovered a notable decline in performance when 
-    
-[^19]: 用多模态对比学习连接表示
-
-    Linking Representations with Multimodal Contrastive Learning. (arXiv:2304.03464v1 [cs.CV])
-
-    [http://arxiv.org/abs/2304.03464](http://arxiv.org/abs/2304.03464)
-
-    本文提出了一种名为CLIPPINGS的多模态框架，用于记录链接。该框架利用深度学习和对比学习的方法，通过端到端训练对称的视觉和语言编码器，在度量空间中学习相近或不同类别的表示方法，用于多个应用场景，如构建全面的补充专利注册表和识别不同社交媒体平台上的个人。
-
-    
-
-    许多应用需要将包含在各种文档数据集中的实例分组成类。最广泛使用的方法不使用深度学习，也不利用文档固有的多模态性质。值得注意的是，记录链接通常被概念化为字符串匹配问题。本研究开发了 CLIPPINGS，一种用于记录链接的多模态框架。CLIPPINGS 采用端到端训练对称的视觉和语言双编码器，通过对比语言-图像预训练进行对齐，学习一个度量空间，其中给定实例的汇总图像-文本表示靠近同一类中的表示，并远离不同类中的表示。在推理时，可以通过从离线示例嵌入索引中检索它们最近的邻居或聚类它们的表示来链接实例。本研究研究了两个具有挑战性的应用：通过将专利与其对应的监管文件链接来构建全面的补充专利注册表，以及在不同的社交媒体平台上识别个人。
-
-    Many applications require grouping instances contained in diverse document datasets into classes. Most widely used methods do not employ deep learning and do not exploit the inherently multimodal nature of documents. Notably, record linkage is typically conceptualized as a string-matching problem. This study develops CLIPPINGS, (Contrastively Linking Pooled Pre-trained Embeddings), a multimodal framework for record linkage. CLIPPINGS employs end-to-end training of symmetric vision and language bi-encoders, aligned through contrastive language-image pre-training, to learn a metric space where the pooled image-text representation for a given instance is close to representations in the same class and distant from representations in different classes. At inference time, instances can be linked by retrieving their nearest neighbor from an offline exemplar embedding index or by clustering their representations. The study examines two challenging applications: constructing comprehensive suppl
+    Membership Inference Attack (MIA) identifies whether a record exists in a machine learning model's training set by querying the model. MIAs on the classic classification models have been well-studied, and recent works have started to explore how to transplant MIA onto generative models. Our investigation indicates that existing MIAs designed for generative models mainly depend on the overfitting in target models. However, overfitting can be avoided by employing various regularization techniques, whereas existing MIAs demonstrate poor performance in practice. Unlike overfitting, memorization is essential for deep learning models to attain optimal performance, making it a more prevalent phenomenon. Memorization in generative models leads to an increasing trend in the probability distribution of generating records around the member record. Therefore, we propose a Probabilistic Fluctuation Assessing Membership Inference Attack (PFAMI), a black-box MIA that infers memberships by detecting t
     
 

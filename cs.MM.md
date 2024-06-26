@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Diffusion Models, Image Super-Resolution And Everything: A Survey](https://arxiv.org/abs/2401.00736) | 扩散模型（DMs）在图像超分辨率（SR）领域产生了颠覆性的影响，缩小了图像质量与人类感知偏好之间的差距。该研究调查了DM的理论基础，分析了其独特特点和方法，探索了替代输入领域等当前的研究方向。 |
+| [^1] | [MagicLens: Self-Supervised Image Retrieval with Open-Ended Instructions](https://arxiv.org/abs/2403.19651) | 本研究提出了MagicLens，一系列支持开放式指令的自监督图像检索模型，核心创新在于利用文本指令使得图像检索可以检索到比视觉相似性更丰富关系的图像。 |
 
 # 详细
 
-[^1]: 扩散模型、图像超分辨率和一切：一项调查研究
+[^1]: MagicLens：自监督图像检索与开放式指令
 
-    Diffusion Models, Image Super-Resolution And Everything: A Survey
+    MagicLens: Self-Supervised Image Retrieval with Open-Ended Instructions
 
-    [https://arxiv.org/abs/2401.00736](https://arxiv.org/abs/2401.00736)
+    [https://arxiv.org/abs/2403.19651](https://arxiv.org/abs/2403.19651)
 
-    扩散模型（DMs）在图像超分辨率（SR）领域产生了颠覆性的影响，缩小了图像质量与人类感知偏好之间的差距。该研究调查了DM的理论基础，分析了其独特特点和方法，探索了替代输入领域等当前的研究方向。
+    本研究提出了MagicLens，一系列支持开放式指令的自监督图像检索模型，核心创新在于利用文本指令使得图像检索可以检索到比视觉相似性更丰富关系的图像。
 
     
 
-    扩散模型（DMs）在图像超分辨率（SR）领域中产生了颠覆性的影响，进一步缩小了图像质量与人类感知偏好之间的差距。它们易于训练，并能生成比以前的生成方法产生的样本更高质量的图像。尽管取得了有希望的结果，但它们也带来了新的挑战，需要进一步的研究：高计算需求、可比性、缺乏可解释性、色彩偏移等。不幸的是，由于大量的出版物，进入这个领域令人难以应对。为了解决这个问题，我们提供了一个统一的叙述，阐明了应用于图像超分辨率的DM的理论基础，并提供了一份详细的分析，突出了该领域内与其他综述文章不同的独特特点和方法。这项调查研究对DM的原则进行了一个连贯的理解，并探索了当前的研究方向，包括替代输入领域等。
+    图像检索，即根据参考图像查找所需图像，固有地包含难以仅使用基于图像的度量捕捉到的丰富、多方面的搜索意图。最近的工作利用文本指令允许用户更自由地表达他们的搜索意图。然而，现有工作主要集中在那些视觉上相似和/或可以用一小组预定义关系来表征的图像对上。本文的核心论点是文本指令可以使图像检索能够检索到比视觉相似性更丰富关系的图像。为了证明这一点，我们引入了MagicLens，一系列支持开放式指令的自监督图像检索模型。MagicLens建立在一个重要的新颖见解上：自然发生在同一网页上的图像对包含着大量隐式关系（例如，内部视图），我们可以通过综合指令将这些隐式关系变为显式。
 
-    Diffusion Models (DMs) have disrupted the image Super-Resolution (SR) field and further closed the gap between image quality and human perceptual preferences. They are easy to train and can produce very high-quality samples that exceed the realism of those produced by previous generative methods. Despite their promising results, they also come with new challenges that need further research: high computational demands, comparability, lack of explainability, color shifts, and more. Unfortunately, entry into this field is overwhelming because of the abundance of publications. To address this, we provide a unified recount of the theoretical foundations underlying DMs applied to image SR and offer a detailed analysis that underscores the unique characteristics and methodologies within this domain, distinct from broader existing reviews in the field. This survey articulates a cohesive understanding of DM principles and explores current research avenues, including alternative input domains, c
+    arXiv:2403.19651v1 Announce Type: cross  Abstract: Image retrieval, i.e., finding desired images given a reference image, inherently encompasses rich, multi-faceted search intents that are difficult to capture solely using image-based measures. Recent work leverages text instructions to allow users to more freely express their search intents. However, existing work primarily focuses on image pairs that are visually similar and/or can be characterized by a small set of pre-defined relations. The core thesis of this paper is that text instructions can enable retrieving images with richer relations beyond visual similarity. To show this, we introduce MagicLens, a series of self-supervised image retrieval models that support open-ended instructions. MagicLens is built on a key novel insight: image pairs that naturally occur on the same web pages contain a wide range of implicit relations (e.g., inside view of), and we can bring those implicit relations explicit by synthesizing instructions
     
 

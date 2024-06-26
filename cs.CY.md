@@ -2,52 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [ClaimVer: Explainable Claim-Level Verification and Evidence Attribution of Text Through Knowledge Graphs](https://arxiv.org/abs/2403.09724) | ClaimVer是一个人为中心的框架，通过知识图谱实现可解释的声明级验证和证据归因，致力于提高用户对文本验证方法的信任并强调细粒度证据的重要性。 |
-| [^2] | [Content Conditional Debiasing for Fair Text Embedding](https://arxiv.org/abs/2402.14208) | 通过在内容条件下确保敏感属性与文本嵌入之间的条件独立性，我们提出了一种可以改善公平性的新方法，在保持效用的同时，解决了缺乏适当训练数据的问题。 |
-| [^3] | [Causal Fair Machine Learning via Rank-Preserving Interventional Distributions.](http://arxiv.org/abs/2307.12797) | 通过保持排序的干预分布，我们提出了一种因果公平的机器学习方法，通过在一个理想的世界中消除受保护属性对目标的因果影响来减少不公平。 |
+| [^1] | [MiMiC: Minimally Modified Counterfactuals in the Representation Space](https://arxiv.org/abs/2402.09631) | 提出了一种新颖的对抗事实生成方法，利用闭式解决方案在表示空间中生成富有表达力的对抗事实，以减轻语言模型中的不良行为，该方法在地球移动问题方面提供理论上的保证，并对表示空间的几何组织进行改进。 |
+| [^2] | [A Survey on Safe Multi-Modal Learning System](https://arxiv.org/abs/2402.05355) | 这项研究提出了第一个多模态学习系统安全的分类法，对当前发展状态下的关键限制进行了审查，并提出了未来研究的潜在方向。 |
+| [^3] | [Art-ificial Intelligence: The Effect of AI Disclosure on Evaluations of Creative Content.](http://arxiv.org/abs/2303.06217) | 本研究探讨了披露使用AI创作创意内容如何影响人类对此类内容的评价。结果表明，AI披露对于创意或描述性短篇小说的评价没有实质性影响，但是对于以第一人称写成的情感诱发诗歌的评价有负面影响。这表明，当内容被视为明显“人类”时，对AI生成内容的反应可能是负面的。 |
 
 # 详细
 
-[^1]: ClaimVer：通过知识图谱实现可解释的声明级验证和证据归因
+[^1]: MiMiC：表示空间中最小修改的对抗事实
 
-    ClaimVer: Explainable Claim-Level Verification and Evidence Attribution of Text Through Knowledge Graphs
+    MiMiC: Minimally Modified Counterfactuals in the Representation Space
 
-    [https://arxiv.org/abs/2403.09724](https://arxiv.org/abs/2403.09724)
+    [https://arxiv.org/abs/2402.09631](https://arxiv.org/abs/2402.09631)
 
-    ClaimVer是一个人为中心的框架，通过知识图谱实现可解释的声明级验证和证据归因，致力于提高用户对文本验证方法的信任并强调细粒度证据的重要性。
-
-    
-
-    在广泛传播的信息误导和社交媒体以及人工智能生成的文本的激增中，验证和信任所遇到的信息变得日益困难。许多事实核查方法和工具已被开发，但它们往往缺乏适当的可解释性或细粒度，无法在各种情境中发挥作用。一种易于使用、可访问且能够执行细粒度证据归因的文本验证方法变得至关重要。更重要的是，建立用户对这种方法的信任需要呈现每个预测背后的理由，因为研究表明这显著影响人们对自动化系统的信任。将用户关注重点放在具体的问题内容上，而不是提供简单的笼统标签也非常重要。在本文中，我们提出了$\textit{ClaimVer，一个以人为中心的框架}$，旨在满足用户的信息需求。
-
-    arXiv:2403.09724v1 Announce Type: new  Abstract: In the midst of widespread misinformation and disinformation through social media and the proliferation of AI-generated texts, it has become increasingly difficult for people to validate and trust information they encounter. Many fact-checking approaches and tools have been developed, but they often lack appropriate explainability or granularity to be useful in various contexts. A text validation method that is easy to use, accessible, and can perform fine-grained evidence attribution has become crucial. More importantly, building user trust in such a method requires presenting the rationale behind each prediction, as research shows this significantly influences people's belief in automated systems. It is also paramount to localize and bring users' attention to the specific problematic content, instead of providing simple blanket labels. In this paper, we present $\textit{ClaimVer, a human-centric framework}$ tailored to meet users' info
-    
-[^2]: 面向公平文本嵌入的内容条件去偏方法
-
-    Content Conditional Debiasing for Fair Text Embedding
-
-    [https://arxiv.org/abs/2402.14208](https://arxiv.org/abs/2402.14208)
-
-    通过在内容条件下确保敏感属性与文本嵌入之间的条件独立性，我们提出了一种可以改善公平性的新方法，在保持效用的同时，解决了缺乏适当训练数据的问题。
+    提出了一种新颖的对抗事实生成方法，利用闭式解决方案在表示空间中生成富有表达力的对抗事实，以减轻语言模型中的不良行为，该方法在地球移动问题方面提供理论上的保证，并对表示空间的几何组织进行改进。
 
     
 
-    在自然语言处理（NLP）中，减轻机器学习模型中的偏见引起了越来越多的关注。然而，只有少数研究集中在公平的文本嵌入上，这对实际应用至关重要且具有挑战性。本文提出了一种学习公平文本嵌入的新方法。我们通过确保在内容条件下敏感属性与文本嵌入之间的条件独立性来实现公平性，同时保持效用权衡。具体来说，我们强制要求具有不同敏感属性但相同内容的文本的嵌入与其对应中立文本的嵌入保持相同的距离。此外，我们通过使用大型语言模型（LLMs）将文本增强为不同的敏感组，来解决缺乏适当训练数据的问题。我们广泛的评估表明，我们的方法有效地提高了公平性同时保持了嵌入的效用。
+    arXiv:2402.09631v1 公告类型：交叉学科 简介：语言模型经常表现出不良行为，如性别偏见或有毒语言。通过对表示空间进行干预，可以有效减轻这些问题，但两种常见的干预技术，即线性擦除和定向向量，并不能提供高度可控和表达丰富度。因此，我们提出了一种新颖的干预方法，旨在在表示空间中生成富有表达力的对抗事实，使源类别（例如“有毒”）的表示与目标类别（例如“非有毒”）的表示相似。这种方法利用高斯假设下的闭式解决方案，在地球移动问题方面提供了理论上的保证，并对表示空间的几何组织提供了进一步的改进。
 
-    arXiv:2402.14208v1 Announce Type: cross  Abstract: Mitigating biases in machine learning models has gained increasing attention in Natural Language Processing (NLP). Yet, only a few studies focus on fair text embeddings, which are crucial yet challenging for real-world applications. In this paper, we propose a novel method for learning fair text embeddings. We achieve fairness while maintaining utility trade-off by ensuring conditional independence between sensitive attributes and text embeddings conditioned on the content. Specifically, we enforce that embeddings of texts with different sensitive attributes but identical content maintain the same distance toward the embedding of their corresponding neutral text. Furthermore, we address the issue of lacking proper training data by using Large Language Models (LLMs) to augment texts into different sensitive groups. Our extensive evaluations demonstrate that our approach effectively improves fairness while preserving the utility of embed
+    arXiv:2402.09631v1 Announce Type: cross  Abstract: Language models often exhibit undesirable behaviors, such as gender bias or toxic language. Interventions in the representation space were shown effective in mitigating such issues by altering the LM behavior. We first show that two prominent intervention techniques, Linear Erasure and Steering Vectors, do not enable a high degree of control and are limited in expressivity.   We then propose a novel intervention methodology for generating expressive counterfactuals in the representation space, aiming to make representations of a source class (e.g., ``toxic'') resemble those of a target class (e.g., ``non-toxic''). This approach, generalizing previous linear intervention techniques, utilizes a closed-form solution for the Earth Mover's problem under Gaussian assumptions and provides theoretical guarantees on the representation space's geometric organization. We further build on this technique and derive a nonlinear intervention that ena
     
-[^3]: 通过保持排序的干预分布实现因果公平的机器学习
+[^2]: 安全多模态学习系统调研
 
-    Causal Fair Machine Learning via Rank-Preserving Interventional Distributions. (arXiv:2307.12797v1 [cs.LG])
+    A Survey on Safe Multi-Modal Learning System
 
-    [http://arxiv.org/abs/2307.12797](http://arxiv.org/abs/2307.12797)
+    [https://arxiv.org/abs/2402.05355](https://arxiv.org/abs/2402.05355)
 
-    通过保持排序的干预分布，我们提出了一种因果公平的机器学习方法，通过在一个理想的世界中消除受保护属性对目标的因果影响来减少不公平。
+    这项研究提出了第一个多模态学习系统安全的分类法，对当前发展状态下的关键限制进行了审查，并提出了未来研究的潜在方向。
 
     
 
-    如果相同的个体得到相同的对待，而不同的个体得到不同的对待，那么一个决策被定义为公平的。根据这个定义，在设计机器学习模型以减少自动决策系统中的不公平时，必须引入因果思考来引入受保护属性。根据最近的提议，我们将个体定义为在一个假设的、理想的（FiND）世界中是规范上相等的，这个世界中受保护属性对目标没有（直接或间接）的因果影响。我们提出保持排序的干预分布来定义这个FiND世界的估计目标，并提出了一个估计方法。通过模拟和实证数据的验证，我们提供了对方法和生成模型的评价标准。通过这些，我们展示了我们的干预方法有效地识别出最受歧视的个体并减少不公平。
+    随着多模态学习系统在现实场景中的广泛应用，安全问题变得越来越突出。对于这一领域的安全问题缺乏系统性研究已成为一个重要的障碍。为了解决这个问题，我们提出了第一个多模态学习系统安全的分类法，确定了这些问题的四个关键支柱。借助这一分类法，我们对每个支柱进行了深入审查，突出了当前发展状态的关键限制。最后，我们指出了多模态学习系统安全面临的独特挑战，并提供了未来研究的潜在方向。
 
-    A decision can be defined as fair if equal individuals are treated equally and unequals unequally. Adopting this definition, the task of designing machine learning models that mitigate unfairness in automated decision-making systems must include causal thinking when introducing protected attributes. Following a recent proposal, we define individuals as being normatively equal if they are equal in a fictitious, normatively desired (FiND) world, where the protected attribute has no (direct or indirect) causal effect on the target. We propose rank-preserving interventional distributions to define an estimand of this FiND world and a warping method for estimation. Evaluation criteria for both the method and resulting model are presented and validated through simulations and empirical data. With this, we show that our warping approach effectively identifies the most discriminated individuals and mitigates unfairness.
+    With the wide deployment of multimodal learning systems (MMLS) in real-world scenarios, safety concerns have become increasingly prominent. The absence of systematic research into their safety is a significant barrier to progress in this field. To bridge the gap, we present the first taxonomy for MMLS safety, identifying four essential pillars of these concerns. Leveraging this taxonomy, we conduct in-depth reviews for each pillar, highlighting key limitations based on the current state of development. Finally, we pinpoint unique challenges in MMLS safety and provide potential directions for future research.
+    
+[^3]: 人工智能对创意内容评价的影响：AI披露对创意内容评价的影响
+
+    Art-ificial Intelligence: The Effect of AI Disclosure on Evaluations of Creative Content. (arXiv:2303.06217v1 [cs.CY])
+
+    [http://arxiv.org/abs/2303.06217](http://arxiv.org/abs/2303.06217)
+
+    本研究探讨了披露使用AI创作创意内容如何影响人类对此类内容的评价。结果表明，AI披露对于创意或描述性短篇小说的评价没有实质性影响，但是对于以第一人称写成的情感诱发诗歌的评价有负面影响。这表明，当内容被视为明显“人类”时，对AI生成内容的反应可能是负面的。
+
+    This study explores how disclosure regarding the use of AI in the creation of creative content affects human evaluation of such content. The results show that AI disclosure has no meaningful effect on evaluation either for creative or descriptive short stories, but has a negative effect on evaluations for emotionally evocative poems written in the first person. This suggests that reactions to AI-generated content may be negative when the content is viewed as distinctly "human."
+
+    生成式AI技术的出现，如OpenAI的ChatGPT聊天机器人，扩大了AI工具可以完成的任务范围，并实现了AI生成的创意内容。在本研究中，我们探讨了关于披露使用AI创作创意内容如何影响人类对此类内容的评价。在一系列预先注册的实验研究中，我们发现AI披露对于创意或描述性短篇小说的评价没有实质性影响，但是AI披露对于以第一人称写成的情感诱发诗歌的评价有负面影响。我们解释这个结果表明，当内容被视为明显“人类”时，对AI生成内容的反应可能是负面的。我们讨论了这项工作的影响，并概述了计划研究的途径，以更好地了解AI披露是否会影响创意内容的评价以及何时会影响。
+
+    The emergence of generative AI technologies, such as OpenAI's ChatGPT chatbot, has expanded the scope of tasks that AI tools can accomplish and enabled AI-generated creative content. In this study, we explore how disclosure regarding the use of AI in the creation of creative content affects human evaluation of such content. In a series of pre-registered experimental studies, we show that AI disclosure has no meaningful effect on evaluation either for creative or descriptive short stories, but that AI disclosure has a negative effect on evaluations for emotionally evocative poems written in the first person. We interpret this result to suggest that reactions to AI-generated content may be negative when the content is viewed as distinctly "human." We discuss the implications of this work and outline planned pathways of research to better understand whether and when AI disclosure may affect the evaluation of creative content.
     
 

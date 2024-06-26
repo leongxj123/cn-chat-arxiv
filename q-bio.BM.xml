@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv q-bio.BM</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for q-bio.BM</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv q-bio.BM</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for q-bio.BM</description><item><title>EvolMPNN&#36890;&#36807;&#36827;&#21270;&#24863;&#30693;&#30340;&#26041;&#24335;&#25429;&#25417;&#34507;&#30333;&#36136;&#31361;&#21464;&#23545;&#20110;&#38170;&#23450;&#34507;&#30333;&#36136;&#30340;&#24433;&#21709;&#65292;&#24182;&#26368;&#32456;&#29983;&#25104;&#32508;&#21512;&#34507;&#30333;&#36136;&#23884;&#20837;&#12290;</title><link>https://arxiv.org/abs/2402.13418</link><description>&lt;p&gt;
+EvolMPNN&#65306;&#36890;&#36807;&#36827;&#21270;&#32534;&#30721;&#39044;&#27979;&#21516;&#28304;&#34507;&#30333;&#36136;&#30340;&#31361;&#21464;&#25928;&#24212;
+&lt;/p&gt;
+&lt;p&gt;
+EvolMPNN: Predicting Mutational Effect on Homologous Proteins by Evolution Encoding
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.13418
+&lt;/p&gt;
+&lt;p&gt;
+EvolMPNN&#36890;&#36807;&#36827;&#21270;&#24863;&#30693;&#30340;&#26041;&#24335;&#25429;&#25417;&#34507;&#30333;&#36136;&#31361;&#21464;&#23545;&#20110;&#38170;&#23450;&#34507;&#30333;&#36136;&#30340;&#24433;&#21709;&#65292;&#24182;&#26368;&#32456;&#29983;&#25104;&#32508;&#21512;&#34507;&#30333;&#36136;&#23884;&#20837;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#39044;&#27979;&#34507;&#30333;&#36136;&#23646;&#24615;&#23545;&#29983;&#29289;&#21644;&#21307;&#23398;&#36827;&#27493;&#33267;&#20851;&#37325;&#35201;&#12290;&#24403;&#21069;&#30340;&#34507;&#30333;&#24037;&#31243;&#36890;&#36807;&#23545;&#20856;&#22411;&#34507;&#30333;&#36136;&#65288;&#31216;&#20026;&#37326;&#29983;&#22411;&#65289;&#36827;&#34892;&#31361;&#21464;&#65292;&#26500;&#24314;&#21516;&#28304;&#34507;&#30333;&#36136;&#23478;&#26063;&#24182;&#30740;&#31350;&#20854;&#23646;&#24615;&#12290;&#28982;&#32780;&#65292;&#29616;&#26377;&#26041;&#27861;&#24456;&#23481;&#26131;&#24573;&#30053;&#32454;&#24494;&#30340;&#31361;&#21464;&#65292;&#26080;&#27861;&#25429;&#25417;&#34507;&#30333;&#36136;&#23646;&#24615;&#30340;&#24433;&#21709;&#12290;&#20026;&#27492;&#65292;&#25105;&#20204;&#25552;&#20986;&#20102;EvolMPNN&#65292;&#19968;&#31181;&#20855;&#26377;&#36827;&#21270;&#24863;&#30693;&#30340;&#28040;&#24687;&#20256;&#36882;&#31070;&#32463;&#32593;&#32476;&#65292;&#29992;&#20110;&#23398;&#20064;&#36827;&#21270;&#24863;&#30693;&#30340;&#34507;&#30333;&#36136;&#23884;&#20837;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2402.13418v1 Announce Type: new  Abstract: Predicting protein properties is paramount for biological and medical advancements. Current protein engineering mutates on a typical protein, called the wild-type, to construct a family of homologous proteins and study their properties. Yet, existing methods easily neglect subtle mutations, failing to capture the effect on the protein properties. To this end, we propose EvolMPNN, Evolution-aware Message Passing Neural Network, to learn evolution-aware protein embeddings. EvolMPNN samples sets of anchor proteins, computes evolutionary information by means of residues and employs a differentiable evolution-aware aggregation scheme over these sampled anchors. This way EvolMPNNcan capture the mutation effect on proteins with respect to the anchor proteins. Afterwards, the aggregated evolution-aware embeddings are integrated with sequence embeddings to generate final comprehensive protein embeddings. Our model shows up to 6.4% better than sta
+&lt;/p&gt;</description></item></channel></rss>
