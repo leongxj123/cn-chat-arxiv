@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [MagicLens: Self-Supervised Image Retrieval with Open-Ended Instructions](https://arxiv.org/abs/2403.19651) | 本研究提出了MagicLens，一系列支持开放式指令的自监督图像检索模型，核心创新在于利用文本指令使得图像检索可以检索到比视觉相似性更丰富关系的图像。 |
+| [^1] | [Land-cover change detection using paired OpenStreetMap data and optical high-resolution imagery via object-guided Transformer.](http://arxiv.org/abs/2310.02674) | 本文通过直接利用配对的OSM数据和光学图像进行土地覆盖变化检测，提出了一种基于对象引导的Transformer架构，从而拓宽了变化检测任务的范围，并显著减少了计算开销和内存负担。 |
 
 # 详细
 
-[^1]: MagicLens：自监督图像检索与开放式指令
+[^1]: 利用配对的OpenStreetMap数据和光学高分辨率影像进行土地覆盖变化检测
 
-    MagicLens: Self-Supervised Image Retrieval with Open-Ended Instructions
+    Land-cover change detection using paired OpenStreetMap data and optical high-resolution imagery via object-guided Transformer. (arXiv:2310.02674v1 [cs.CV])
 
-    [https://arxiv.org/abs/2403.19651](https://arxiv.org/abs/2403.19651)
+    [http://arxiv.org/abs/2310.02674](http://arxiv.org/abs/2310.02674)
 
-    本研究提出了MagicLens，一系列支持开放式指令的自监督图像检索模型，核心创新在于利用文本指令使得图像检索可以检索到比视觉相似性更丰富关系的图像。
+    本文通过直接利用配对的OSM数据和光学图像进行土地覆盖变化检测，提出了一种基于对象引导的Transformer架构，从而拓宽了变化检测任务的范围，并显著减少了计算开销和内存负担。
 
     
 
-    图像检索，即根据参考图像查找所需图像，固有地包含难以仅使用基于图像的度量捕捉到的丰富、多方面的搜索意图。最近的工作利用文本指令允许用户更自由地表达他们的搜索意图。然而，现有工作主要集中在那些视觉上相似和/或可以用一小组预定义关系来表征的图像对上。本文的核心论点是文本指令可以使图像检索能够检索到比视觉相似性更丰富关系的图像。为了证明这一点，我们引入了MagicLens，一系列支持开放式指令的自监督图像检索模型。MagicLens建立在一个重要的新颖见解上：自然发生在同一网页上的图像对包含着大量隐式关系（例如，内部视图），我们可以通过综合指令将这些隐式关系变为显式。
+    光学高分辨率影像和OpenStreetMap（OSM）数据是土地覆盖变化检测的两个重要数据源。先前的研究主要利用OSM数据来辅助多时期光学高分辨率图像的变化检测。本文通过直接利用配对的OSM数据和光学图像进行土地覆盖变化检测，拓宽了变化检测任务的范围，涵盖更多动态地球观测。为此，我们提出了一种基于对象引导的Transformer（ObjFormer）架构，将流行的基于对象的图像分析（OBIA）技术与先进的视觉Transformer架构自然地结合起来。引入OBIA可以显著减少自注意力模块中的计算开销和内存负担。具体而言，所提出的ObjFormer具有层次伪孪生编码器，包含对象引导自注意力模块，用于提取代表性特征。
 
-    arXiv:2403.19651v1 Announce Type: cross  Abstract: Image retrieval, i.e., finding desired images given a reference image, inherently encompasses rich, multi-faceted search intents that are difficult to capture solely using image-based measures. Recent work leverages text instructions to allow users to more freely express their search intents. However, existing work primarily focuses on image pairs that are visually similar and/or can be characterized by a small set of pre-defined relations. The core thesis of this paper is that text instructions can enable retrieving images with richer relations beyond visual similarity. To show this, we introduce MagicLens, a series of self-supervised image retrieval models that support open-ended instructions. MagicLens is built on a key novel insight: image pairs that naturally occur on the same web pages contain a wide range of implicit relations (e.g., inside view of), and we can bring those implicit relations explicit by synthesizing instructions
+    Optical high-resolution imagery and OpenStreetMap (OSM) data are two important data sources for land-cover change detection. Previous studies in these two data sources focus on utilizing the information in OSM data to aid the change detection on multi-temporal optical high-resolution images. This paper pioneers the direct detection of land-cover changes utilizing paired OSM data and optical imagery, thereby broadening the horizons of change detection tasks to encompass more dynamic earth observations. To this end, we propose an object-guided Transformer (ObjFormer) architecture by naturally combining the prevalent object-based image analysis (OBIA) technique with the advanced vision Transformer architecture. The introduction of OBIA can significantly reduce the computational overhead and memory burden in the self-attention module. Specifically, the proposed ObjFormer has a hierarchical pseudo-siamese encoder consisting of object-guided self-attention modules that extract representative
     
 

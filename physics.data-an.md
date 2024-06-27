@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Local primordial non-Gaussianity from the large-scale clustering of photometric DESI luminous red galaxies.](http://arxiv.org/abs/2307.01753) | 本研究利用DESI成像调查的亮红星系的角聚类信息限制了局部原初非高斯性参数fNL，发现在假设宇宙规律性关系的情况下，fNL为47^{+14(+29)}_{-11(-22)}，使用更积极的处理方法后，最大似然值略微偏离fNL≈5。 |
+| [^1] | [Coarse graining correlation matrices according to macrostructures: Financial markets as a paradigm](https://arxiv.org/abs/2402.05364) | 本文通过将Pearson相关矩阵粗粒化，根据市场部门来分析金融市场的相关结构，并比较了粗粒化和Pearson矩阵在市场状态演变和转换矩阵上的结果。结果表明，粗粒化和Pearson矩阵对市场状态的行为是相似的，并且相关变量数量减少了数个数量级。 |
+| [^2] | [Autoencoder-based Anomaly Detection System for Online Data Quality Monitoring of the CMS Electromagnetic Calorimeter.](http://arxiv.org/abs/2309.10157) | 本文介绍了一种基于自编码器的实时异常检测系统，通过半监督机器学习方法检测CMS电磁量能器数据中的异常，利用异常的时域演化和探测器响应的空间变化，最大化异常检测性能，并通过验证实验证明了系统的有效性。 |
 
 # 详细
 
-[^1]: 来自DESI亮红星系大尺度聚类的局部原初非高斯性翻译标题
+[^1]: 根据宏观结构来粗粒化相关矩阵：以金融市场为范例
 
-    Local primordial non-Gaussianity from the large-scale clustering of photometric DESI luminous red galaxies. (arXiv:2307.01753v1 [astro-ph.CO])
+    Coarse graining correlation matrices according to macrostructures: Financial markets as a paradigm
 
-    [http://arxiv.org/abs/2307.01753](http://arxiv.org/abs/2307.01753)
+    [https://arxiv.org/abs/2402.05364](https://arxiv.org/abs/2402.05364)
 
-    本研究利用DESI成像调查的亮红星系的角聚类信息限制了局部原初非高斯性参数fNL，发现在假设宇宙规律性关系的情况下，fNL为47^{+14(+29)}_{-11(-22)}，使用更积极的处理方法后，最大似然值略微偏离fNL≈5。
+    本文通过将Pearson相关矩阵粗粒化，根据市场部门来分析金融市场的相关结构，并比较了粗粒化和Pearson矩阵在市场状态演变和转换矩阵上的结果。结果表明，粗粒化和Pearson矩阵对市场状态的行为是相似的，并且相关变量数量减少了数个数量级。
 
     
 
-    我们使用来自Dark Energy Spectroscopic Instrument (DESI)成像调查的亮红星系的角聚类信息来限制局部原初非高斯性参数fNL。我们的样本包括超过1200万个目标，覆盖了14000平方度的天空区域，红移范围为0.2 < z < 1.35。我们确定了银河消光、调查深度和观测条件是系统误差的主要来源，并采用线性回归和人工神经网络来减轻大尺度上的非宇宙学过度聚类。我们的方法经过了包含和不包含fNL和系统误差的对数正态模拟的测试，结果显示了神经网络处理在减小剩余系统误差方面的卓越性能。在假设宇宙规律性关系的情况下，我们发现fNL的68\%（95\%）置信区间为fNL = 47^{+14(+29)}_{-11(-22)}。通过更积极的处理方法，包括对所有成像图集进行回归，我们的最大似然值略微偏离fNL≈5。
+    我们通过将Pearson相关矩阵根据市场部门进行粗粒化，使用Guhr的相关方法得到Guhr矩阵，来分析金融市场的相关结构。我们将市场状态的演变和相应的转换矩阵的结果与使用Pearson相关矩阵得到的进行比较。我们发现，粗粒化和Pearson矩阵对于市场状态的行为是相似的。然而，相关变量的数量减少了数个数量级。
 
-    We use angular clustering of luminous red galaxies from the Dark Energy Spectroscopic Instrument (DESI) imaging surveys to constrain the local primordial non-Gaussianity parameter fNL. Our sample comprises over 12 million targets, covering 14,000 square degrees of the sky, with redshifts in the range 0.2< z < 1.35. We identify Galactic extinction, survey depth, and astronomical seeing as the primary sources of systematic error, and employ linear regression and artificial neural networks to alleviate non-cosmological excess clustering on large scales. Our methods are tested against log-normal simulations with and without fNL and systematics, showing superior performance of the neural network treatment in reducing remaining systematics. Assuming the universality relation, we find fNL $= 47^{+14(+29)}_{-11(-22)}$ at 68\%(95\%) confidence. With a more aggressive treatment, including regression against the full set of imaging maps, our maximum likelihood value shifts slightly to fNL$ \sim 5
+    We analyze correlation structures in financial markets by coarse graining the Pearson correlation matrices according to market sectors to obtain Guhr matrices using Guhr's correlation method according to Ref. [P. Rinn {\it et. al.}, Europhysics Letters 110, 68003 (2015)]. We compare the results for the evolution of market states and the corresponding transition matrices with those obtained using Pearson correlation matrices. The behavior of market states is found to be similar for both the coarse grained and Pearson matrices. However, the number of relevant variables is reduced by orders of magnitude.
+    
+[^2]: 基于自编码器的CMS电磁量能器在线数据质量监测的异常检测系统
+
+    Autoencoder-based Anomaly Detection System for Online Data Quality Monitoring of the CMS Electromagnetic Calorimeter. (arXiv:2309.10157v1 [physics.ins-det])
+
+    [http://arxiv.org/abs/2309.10157](http://arxiv.org/abs/2309.10157)
+
+    本文介绍了一种基于自编码器的实时异常检测系统，通过半监督机器学习方法检测CMS电磁量能器数据中的异常，利用异常的时域演化和探测器响应的空间变化，最大化异常检测性能，并通过验证实验证明了系统的有效性。
+
+    
+
+    CMS探测器是在LHC上探测高能碰撞产生的通用装置。CMS电磁量能器在线数据质量监测是一个重要的操作工具，能够让探测器专家快速识别、定位和诊断可能影响物理数据质量的各种探测器问题。本文提出了一种基于半监督机器学习的实时自编码器异常检测系统，能够检测CMS电磁量能器数据中的异常。介绍了一种新颖的方法，通过利用异常的时域演化和探测器响应的空间变化，最大化了异常检测性能。这个基于自编码器的系统能够高效地检测异常，同时保持非常低的误报率。该系统的性能通过在2018年和2022年LHC碰撞数据中发现的异常进行验证。此外，还首次报道了部署该系统后的初步结果。
+
+    The CMS detector is a general-purpose apparatus that detects high-energy collisions produced at the LHC. Online Data Quality Monitoring of the CMS electromagnetic calorimeter is a vital operational tool that allows detector experts to quickly identify, localize, and diagnose a broad range of detector issues that could affect the quality of physics data. A real-time autoencoder-based anomaly detection system using semi-supervised machine learning is presented enabling the detection of anomalies in the CMS electromagnetic calorimeter data. A novel method is introduced which maximizes the anomaly detection performance by exploiting the time-dependent evolution of anomalies as well as spatial variations in the detector response. The autoencoder-based system is able to efficiently detect anomalies, while maintaining a very low false discovery rate. The performance of the system is validated with anomalies found in 2018 and 2022 LHC collision data. Additionally, the first results from deploy
     
 

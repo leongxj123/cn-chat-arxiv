@@ -2,52 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Minimax-Regret Sample Selection in Randomized Experiments](https://arxiv.org/abs/2403.01386) | 通过最小后悔框架，提出了在随机试验中优化样本选择以实现异质人群中最佳福利的问题，并在不同条件下推导出最优的样本选择方案。 |
-| [^2] | [Accelerating Look-ahead in Bayesian Optimization: Multilevel Monte Carlo is All you Need](https://arxiv.org/abs/2402.02111) | 本文利用多层蒙特卡洛方法加速贝叶斯优化中的前瞻过程，并证明在涉及嵌套期望和最大化的问题中具有优势。 |
-| [^3] | [An Embedded Diachronic Sense Change Model with a Case Study from Ancient Greek.](http://arxiv.org/abs/2311.00541) | 本论文介绍了一个嵌入式历时语义变化模型（EDiSC），结合了词嵌入和DiSC模型，通过无监督学习分析古希腊文本中目标词汇的意义变化。实验证明EDiSC具有优越的性能。 |
+| [^1] | [Robustly estimating heterogeneity in factorial data using Rashomon Partitions](https://arxiv.org/abs/2404.02141) | 通过使用拉细孟划分集，我们能够在因子数据中稳健地估计异质性，并将因子空间划分成协变量组合的“池”，以便区分结果的差异。 |
+| [^2] | [Hierarchical Causal Models.](http://arxiv.org/abs/2401.05330) | 提出了一种分层因果模型来解决关于分层数据的因果问题，通过添加内部板来扩展结构因果模型和因果图模型。发现分层数据可以实现因果识别，即使使用非分层数据是不可能的。开发了用于分层数据的估计技术。 |
+| [^3] | [A Meta-Learning Method for Estimation of Causal Excursion Effects to Assess Time-Varying Moderation.](http://arxiv.org/abs/2306.16297) | 这项研究介绍了一种元学习方法，用于评估因果偏离效应，以评估干预效果随时间的变化或通过个体特征、环境或过去的反应来调节。目前的数据分析方法需要预先指定观察到的高维历史的特征来构建重要干扰参数的工作模型，而机器学习算法可以自动进行特征构建，但其朴素应用存在问题。 |
+| [^4] | [STEEL: Singularity-aware Reinforcement Learning.](http://arxiv.org/abs/2301.13152) | 这篇论文介绍了一种新的批量强化学习算法STEEL，在具有连续状态和行动的无限时马尔可夫决策过程中，不依赖于绝对连续假设，通过最大均值偏差和分布鲁棒优化确保异常情况下的性能。 |
 
 # 详细
 
-[^1]: 随机实验中的最小后悔样本选择
+[^1]: 使用拉细孟划分在因子数据中稳健估计异质性
 
-    Minimax-Regret Sample Selection in Randomized Experiments
+    Robustly estimating heterogeneity in factorial data using Rashomon Partitions
 
-    [https://arxiv.org/abs/2403.01386](https://arxiv.org/abs/2403.01386)
+    [https://arxiv.org/abs/2404.02141](https://arxiv.org/abs/2404.02141)
 
-    通过最小后悔框架，提出了在随机试验中优化样本选择以实现异质人群中最佳福利的问题，并在不同条件下推导出最优的样本选择方案。
-
-    
-
-    随机对照试验（RCTs）经常在存在许多可能对所评估的治疗效果有差异的子人群中进行。我们考虑了样本选择问题，即在异质人群中如何选择入组RRT，以优化福利。我们在最小后悔框架下形式化了这个问题，并在多种条件下推导出最优的样本选择方案。我们还强调了不同的目标和决策如何导致明显不同的关于最佳样本分配的指导，通过利用历史COVID-19试验数据进行了一项合成实验。
-
-    arXiv:2403.01386v1 Announce Type: cross  Abstract: Randomized controlled trials (RCTs) are often run in settings with many subpopulations that may have differential benefits from the treatment being evaluated. We consider the problem of sample selection, i.e., whom to enroll in an RCT, such as to optimize welfare in a heterogeneous population. We formalize this problem within the minimax-regret framework, and derive optimal sample-selection schemes under a variety of conditions. We also highlight how different objectives and decisions can lead to notably different guidance regarding optimal sample allocation through a synthetic experiment leveraging historical COVID-19 trial data.
-    
-[^2]: 加速贝叶斯优化中的前瞻：多层蒙特卡洛就够了
-
-    Accelerating Look-ahead in Bayesian Optimization: Multilevel Monte Carlo is All you Need
-
-    [https://arxiv.org/abs/2402.02111](https://arxiv.org/abs/2402.02111)
-
-    本文利用多层蒙特卡洛方法加速贝叶斯优化中的前瞻过程，并证明在涉及嵌套期望和最大化的问题中具有优势。
+    通过使用拉细孟划分集，我们能够在因子数据中稳健地估计异质性，并将因子空间划分成协变量组合的“池”，以便区分结果的差异。
 
     
 
-    我们利用多层蒙特卡洛(MLMC)来提高涉及嵌套期望和最大化的多步前瞻贝叶斯优化(BO)方法的性能。普通蒙特卡洛的复杂度在嵌套操作中会降低，而MLMC能够以规范蒙特卡洛收敛速度解决这类问题，而且不依赖于维度和平滑性假设。我们的理论研究主要关注一步和两步前瞻采集函数的近似改进，但正如我们所讨论的，这种方法在多种方面是可推广的，包括超越BO的背景。我们通过数值验证了我们的发现，并在几个基准示例中展示了MLMC在BO中的优势。代码在这里获取：https://github.com/Shangda-Yang/MLMCBO。
+    许多统计分析，无论是在观测数据还是随机对照试验中，都会问：感兴趣的结果如何随可观察协变量组合变化？不同的药物组合如何影响健康结果，科技采纳如何依赖激励和人口统计学？我们的目标是将这个因子空间划分成协变量组合的“池”，在这些池中结果会发生差异（但池内部不会发生），而现有方法要么寻找一个单一的“最优”分割，要么从可能分割的整个集合中抽样。这两种方法都忽视了这样一个事实：特别是在协变量之间存在相关结构的情况下，可能以许多种方式划分协变量空间，在统计上是无法区分的，尽管对政策或科学有着非常不同的影响。我们提出了一种名为拉细孟划分集的替代视角
 
-    We leverage multilevel Monte Carlo (MLMC) to improve the performance of multi-step look-ahead Bayesian optimization (BO) methods that involve nested expectations and maximizations. The complexity rate of naive Monte Carlo degrades for nested operations, whereas MLMC is capable of achieving the canonical Monte Carlo convergence rate for this type of problem, independently of dimension and without any smoothness assumptions. Our theoretical study focuses on the approximation improvements for one- and two-step look-ahead acquisition functions, but, as we discuss, the approach is generalizable in various ways, including beyond the context of BO. Findings are verified numerically and the benefits of MLMC for BO are illustrated on several benchmark examples. Code is available here https://github.com/Shangda-Yang/MLMCBO.
+    arXiv:2404.02141v1 Announce Type: cross  Abstract: Many statistical analyses, in both observational data and randomized control trials, ask: how does the outcome of interest vary with combinations of observable covariates? How do various drug combinations affect health outcomes, or how does technology adoption depend on incentives and demographics? Our goal is to partition this factorial space into ``pools'' of covariate combinations where the outcome differs across the pools (but not within a pool). Existing approaches (i) search for a single ``optimal'' partition under assumptions about the association between covariates or (ii) sample from the entire set of possible partitions. Both these approaches ignore the reality that, especially with correlation structure in covariates, many ways to partition the covariate space may be statistically indistinguishable, despite very different implications for policy or science. We develop an alternative perspective, called Rashomon Partition Set
     
-[^3]: 一个带有嵌入式历时语义变化模型的论文与一个关于古希腊的案例研究
+[^2]: 分层因果模型
 
-    An Embedded Diachronic Sense Change Model with a Case Study from Ancient Greek. (arXiv:2311.00541v1 [cs.CL])
+    Hierarchical Causal Models. (arXiv:2401.05330v1 [stat.ME])
 
-    [http://arxiv.org/abs/2311.00541](http://arxiv.org/abs/2311.00541)
+    [http://arxiv.org/abs/2401.05330](http://arxiv.org/abs/2401.05330)
 
-    本论文介绍了一个嵌入式历时语义变化模型（EDiSC），结合了词嵌入和DiSC模型，通过无监督学习分析古希腊文本中目标词汇的意义变化。实验证明EDiSC具有优越的性能。
+    提出了一种分层因果模型来解决关于分层数据的因果问题，通过添加内部板来扩展结构因果模型和因果图模型。发现分层数据可以实现因果识别，即使使用非分层数据是不可能的。开发了用于分层数据的估计技术。
 
     
 
-    词汇的意义随着时间的推移而变化，词义在这个过程中会演变、出现或消失。对于古代语言来说，由于语料库通常较小、稀疏且嘈杂，准确建模这种变化变得具有挑战性，因此对于意义变化估计的不确定性进行量化变得重要。GASC和DiSC是现有的生成模型，已经被用来分析古希腊文本语料库中目标词汇的意义变化，使用了无监督学习并没有借助任何预训练的帮助。这些模型将给定目标词汇（如"kosmos"，意为装饰、秩序或世界）的意义表示为上下文词汇的分布，并将意义的普遍性表示为意义的分布。这些模型使用马尔科夫链蒙特卡洛方法进行拟合，以测量这些表示中的时间变化。在本文中，我们介绍了EDiSC，这是DiSC的嵌入版本，它将词嵌入与DiSC相结合，提供了更优秀的模型性能。我们通过实验证明，EDiSC提供了改进的性能。
+    科学家们经常想要从分层数据中学习因果关系，这些数据是从嵌套在单位内部的子单元收集的。比如学校中的学生、病人的细胞或州中的城市。在这种情况下，单位级变量（例如每个学校的预算）可能会影响子单位级变量（例如每个学校每个学生的考试成绩），反之亦然。为了解决关于分层数据的因果问题，我们提出了分层因果模型，它通过添加内部板来扩展结构因果模型和因果图模型。我们开发了一种用于分层因果模型的通用图形识别技术，该技术扩展了do-计算。我们发现许多情况下，即使使用非分层数据是不可能的，分层数据也可以实现因果识别，也就是说，如果我们只有子单位级变量的单位级汇总（例如学校的平均考试成绩，而不是每个学生的成绩）。我们开发了用于分层数据的估计技术。
 
-    Word meanings change over time, and word senses evolve, emerge or die out in the process. For ancient languages, where the corpora are often small, sparse and noisy, modelling such changes accurately proves challenging, and quantifying uncertainty in sense-change estimates consequently becomes important. GASC and DiSC are existing generative models that have been used to analyse sense change for target words from an ancient Greek text corpus, using unsupervised learning without the help of any pre-training. These models represent the senses of a given target word such as "kosmos" (meaning decoration, order or world) as distributions over context words, and sense prevalence as a distribution over senses. The models are fitted using MCMC methods to measure temporal changes in these representations. In this paper, we introduce EDiSC, an embedded version of DiSC, which combines word embeddings with DiSC to provide superior model performance. We show empirically that EDiSC offers improved p
+    Scientists often want to learn about cause and effect from hierarchical data, collected from subunits nested inside units. Consider students in schools, cells in patients, or cities in states. In such settings, unit-level variables (e.g. each school's budget) may affect subunit-level variables (e.g. the test scores of each student in each school) and vice versa. To address causal questions with hierarchical data, we propose hierarchical causal models, which extend structural causal models and causal graphical models by adding inner plates. We develop a general graphical identification technique for hierarchical causal models that extends do-calculus. We find many situations in which hierarchical data can enable causal identification even when it would be impossible with non-hierarchical data, that is, if we had only unit-level summaries of subunit-level variables (e.g. the school's average test score, rather than each student's score). We develop estimation techniques for hierarchical 
+    
+[^3]: 一种用于评估时变调节因素的因果偏离效应估计的元学习方法
+
+    A Meta-Learning Method for Estimation of Causal Excursion Effects to Assess Time-Varying Moderation. (arXiv:2306.16297v1 [stat.ME])
+
+    [http://arxiv.org/abs/2306.16297](http://arxiv.org/abs/2306.16297)
+
+    这项研究介绍了一种元学习方法，用于评估因果偏离效应，以评估干预效果随时间的变化或通过个体特征、环境或过去的反应来调节。目前的数据分析方法需要预先指定观察到的高维历史的特征来构建重要干扰参数的工作模型，而机器学习算法可以自动进行特征构建，但其朴素应用存在问题。
+
+    
+
+    可穿戴技术和智能手机提供的数字化健康干预的双重革命显著增加了移动健康（mHealth）干预在各个健康科学领域的可及性和采纳率。顺序随机实验称为微随机试验（MRTs）已经越来越受欢迎，用于实证评估这些mHealth干预组成部分的有效性。MRTs产生了一类新的因果估计量，称为“因果偏离效应”，使健康科学家能够评估干预效果随时间的变化或通过个体特征、环境或过去的反应来调节。然而，目前用于估计因果偏离效应的数据分析方法需要预先指定观察到的高维历史的特征来构建重要干扰参数的工作模型。虽然机器学习算法在自动特征构建方面具有优势，但其朴素应用导致了问题。
+
+    Twin revolutions in wearable technologies and smartphone-delivered digital health interventions have significantly expanded the accessibility and uptake of mobile health (mHealth) interventions across various health science domains. Sequentially randomized experiments called micro-randomized trials (MRTs) have grown in popularity to empirically evaluate the effectiveness of these mHealth intervention components. MRTs have given rise to a new class of causal estimands known as "causal excursion effects", which enable health scientists to assess how intervention effectiveness changes over time or is moderated by individual characteristics, context, or responses in the past. However, current data analysis methods for estimating causal excursion effects require pre-specified features of the observed high-dimensional history to construct a working model of an important nuisance parameter. While machine learning algorithms are ideal for automatic feature construction, their naive application
+    
+[^4]: STEEL: 奇异性感知的强化学习
+
+    STEEL: Singularity-aware Reinforcement Learning. (arXiv:2301.13152v3 [stat.ML] UPDATED)
+
+    [http://arxiv.org/abs/2301.13152](http://arxiv.org/abs/2301.13152)
+
+    这篇论文介绍了一种新的批量强化学习算法STEEL，在具有连续状态和行动的无限时马尔可夫决策过程中，不依赖于绝对连续假设，通过最大均值偏差和分布鲁棒优化确保异常情况下的性能。
+
+    
+
+    批量强化学习旨在利用预先收集的数据，在动态环境中找到最优策略，以最大化期望总回报。然而，几乎所有现有算法都依赖于目标策略诱导的分布绝对连续假设，以便通过变换测度使用批量数据来校准目标策略。本文提出了一种新的批量强化学习算法，不需要在具有连续状态和行动的无限时马尔可夫决策过程中绝对连续性假设。我们称这个算法为STEEL：SingulariTy-awarE rEinforcement Learning。我们的算法受到关于离线评估的新误差分析的启发，其中我们使用了最大均值偏差，以及带有分布鲁棒优化的策略定向误差评估方法，以确保异常情况下的性能，并提出了一种用于处理奇异情况的定向算法。
+
+    Batch reinforcement learning (RL) aims at leveraging pre-collected data to find an optimal policy that maximizes the expected total rewards in a dynamic environment. Nearly all existing algorithms rely on the absolutely continuous assumption on the distribution induced by target policies with respect to the data distribution, so that the batch data can be used to calibrate target policies via the change of measure. However, the absolute continuity assumption could be violated in practice (e.g., no-overlap support), especially when the state-action space is large or continuous. In this paper, we propose a new batch RL algorithm without requiring absolute continuity in the setting of an infinite-horizon Markov decision process with continuous states and actions. We call our algorithm STEEL: SingulariTy-awarE rEinforcement Learning. Our algorithm is motivated by a new error analysis on off-policy evaluation, where we use maximum mean discrepancy, together with distributionally robust opti
     
 
