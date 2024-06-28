@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [On Convex Data-Driven Inverse Optimal Control for Nonlinear, Non-stationary and Stochastic Systems.](http://arxiv.org/abs/2306.13928) | 本文提出了一个凸数据驱动逆最优控制方案，能够有效解决非线性、非平稳和随机系统下的成本估计问题。 |
-| [^2] | [Pointwise convergence theorem of gradient descent in sparse deep neural network.](http://arxiv.org/abs/2304.08172) | 本文研究了稀疏深度神经网络中梯度下降的点对点收敛定理，针对非光滑指示函数构造了一种特殊形状的DNN，实现了梯度下降过程的点对点收敛。 |
+| [^1] | [Towards understanding neural collapse in supervised contrastive learning with the information bottleneck method.](http://arxiv.org/abs/2305.11957) | 本文将神经网络崩溃建模为信息瓶颈问题，证明神经网络崩溃导致良好的泛化，特别是当它接近分类问题的最优信息瓶颈解时。 |
 
 # 详细
 
-[^1]: 针对非线性、非平稳和随机系统的凸数据驱动逆最优控制研究
+[^1]: 通过信息瓶颈方法探索监督对比学习中神经网络崩溃的理解
 
-    On Convex Data-Driven Inverse Optimal Control for Nonlinear, Non-stationary and Stochastic Systems. (arXiv:2306.13928v1 [math.OC])
+    Towards understanding neural collapse in supervised contrastive learning with the information bottleneck method. (arXiv:2305.11957v1 [cs.LG])
 
-    [http://arxiv.org/abs/2306.13928](http://arxiv.org/abs/2306.13928)
+    [http://arxiv.org/abs/2305.11957](http://arxiv.org/abs/2305.11957)
 
-    本文提出了一个凸数据驱动逆最优控制方案，能够有效解决非线性、非平稳和随机系统下的成本估计问题。
-
-    
-
-    本文主要论述了一个有限时域的逆控制问题，其目的是从观测值中推断出驱动智能体行动的成本，即使这个成本是非凸和非平稳的，同时受到非线性、非平稳和随机因素的影响。在这种情况下，我们提出了一个解决方案，通过解决一个优化问题来实现成本估计，即使代理成本不是凸的，本文也能够生成凸问题。为了得出这个结果，我们还研究了一个以随机策略为决策变量的有限时域前向控制问题，并给出了最优解的显式表达式。此外，我们将我们的发现转化为算法流程，并通过虚拟实验和真实硬件实验验证了我们的方法的有效性。所有的实验结果都证实了我们方法的有效性。
-
-    This paper is concerned with a finite-horizon inverse control problem, which has the goal of inferring, from observations, the possibly non-convex and non-stationary cost driving the actions of an agent. In this context, we present a result that enables cost estimation by solving an optimization problem that is convex even when the agent cost is not and when the underlying dynamics is nonlinear, non-stationary and stochastic. To obtain this result, we also study a finite-horizon forward control problem that has randomized policies as decision variables. For this problem, we give an explicit expression for the optimal solution. Moreover, we turn our findings into algorithmic procedures and we show the effectiveness of our approach via both in-silico and experimental validations with real hardware. All the experiments confirm the effectiveness of our approach.
-    
-[^2]: 稀疏深度神经网络中梯度下降的点对点收敛定理
-
-    Pointwise convergence theorem of gradient descent in sparse deep neural network. (arXiv:2304.08172v2 [cs.LG] UPDATED)
-
-    [http://arxiv.org/abs/2304.08172](http://arxiv.org/abs/2304.08172)
-
-    本文研究了稀疏深度神经网络中梯度下降的点对点收敛定理，针对非光滑指示函数构造了一种特殊形状的DNN，实现了梯度下降过程的点对点收敛。
+    本文将神经网络崩溃建模为信息瓶颈问题，证明神经网络崩溃导致良好的泛化，特别是当它接近分类问题的最优信息瓶颈解时。
 
     
 
-    深度神经网络（DNN）的理论结构逐渐得到了阐明。Imaizumi-Fukumizu（2019）和Suzuki（2019）指出，当目标函数为非光滑函数时，DNN的学习能力优于先前的理论。然而，据作者所知，迄今为止的众多研究尝试在没有任何统计论证的情况下进行数学研究，探究真正能够引发梯度下降的DNN架构的点对点收敛性，这一尝试似乎更贴近实际DNN。本文将目标函数限制为非光滑指示函数，并在ReLU-DNN中构造了一个稀疏且具有特殊形状的DNN，从而实现了梯度下降过程中的点对点收敛。
+    神经网络崩溃是指在超出性能平台训练时，深度神经网络最后一层激活的几何学表现。目前存在的问题包括神经网络崩溃是否会导致更好的泛化，如果是，超出性能平台的训练如何帮助神经网络崩溃。本文将神经网络崩溃建模为信息瓶颈问题，以探究是否存在这样一种紧凑的表示，并发现其与泛化性的关联。我们证明神经网络崩溃导致良好的泛化，特别是当它接近分类问题的最优信息瓶颈解时。最近的研究表明，使用相同的对比损失目标独立训练的两个深度神经网络是线性可识别的，这意味着得到的表示等效于矩阵变换。我们利用线性可识别性来近似信息瓶颈问题的解析解。这个近似表明，当类平均值相等时，最优解非常接近端到端模型，并提供了进一步的理论分析。
 
-    The theoretical structure of deep neural network (DNN) has been clarified gradually. Imaizumi-Fukumizu (2019) and Suzuki (2019) clarified that the learning ability of DNN is superior to the previous theories when the target function is non-smooth functions. However, as far as the author is aware, none of the numerous works to date attempted to mathematically investigate what kind of DNN architectures really induce pointwise convergence of gradient descent (without any statistical argument), and this attempt seems to be closer to the practical DNNs. In this paper we restrict target functions to non-smooth indicator functions, and construct a deep neural network inducing pointwise convergence provided by gradient descent process in ReLU-DNN. The DNN has a sparse and a special shape, with certain variable transformations.
+    Neural collapse describes the geometry of activation in the final layer of a deep neural network when it is trained beyond performance plateaus. Open questions include whether neural collapse leads to better generalization and, if so, why and how training beyond the plateau helps. We model neural collapse as an information bottleneck (IB) problem in order to investigate whether such a compact representation exists and discover its connection to generalization. We demonstrate that neural collapse leads to good generalization specifically when it approaches an optimal IB solution of the classification problem. Recent research has shown that two deep neural networks independently trained with the same contrastive loss objective are linearly identifiable, meaning that the resulting representations are equivalent up to a matrix transformation. We leverage linear identifiability to approximate an analytical solution of the IB problem. This approximation demonstrates that when class means exh
     
 

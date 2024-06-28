@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Empathy Detection Using Machine Learning on Text, Audiovisual, Audio or Physiological Signals.](http://arxiv.org/abs/2311.00721) | 本论文对共情检测领域的机器学习研究进行了综述和分析，包括文本、视听、音频和生理信号四种输入模态的处理和网络设计，以及评估协议和数据集的描述。 |
+| [^1] | [A Survey on Human-AI Teaming with Large Pre-Trained Models](https://arxiv.org/abs/2403.04931) | 本文调查了大型预训练模型与人工智能合作的重要性，强调了这些模型如何超越传统方法增强协作智能，并探讨了其在增强人类能力、改善AI模型、有效团队合作、道德考虑以及在各个领域广泛应用方面的潜在作用。 |
+| [^2] | [Assessing the nature of large language models: A caution against anthropocentrism.](http://arxiv.org/abs/2309.07683) | 通过评估GPT3.5，我们发现它具有有趣的个性问卷回答能力，但不太可能发展出意识，并显示出较大的认知和个性变异。 |
 
 # 详细
 
-[^1]: 使用机器学习在文本、视听、音频或生理信号上进行共情检测
+[^1]: 人工智能与大型预训练模型合作调查
 
-    Empathy Detection Using Machine Learning on Text, Audiovisual, Audio or Physiological Signals. (arXiv:2311.00721v1 [cs.HC])
+    A Survey on Human-AI Teaming with Large Pre-Trained Models
 
-    [http://arxiv.org/abs/2311.00721](http://arxiv.org/abs/2311.00721)
+    [https://arxiv.org/abs/2403.04931](https://arxiv.org/abs/2403.04931)
 
-    本论文对共情检测领域的机器学习研究进行了综述和分析，包括文本、视听、音频和生理信号四种输入模态的处理和网络设计，以及评估协议和数据集的描述。
+    本文调查了大型预训练模型与人工智能合作的重要性，强调了这些模型如何超越传统方法增强协作智能，并探讨了其在增强人类能力、改善AI模型、有效团队合作、道德考虑以及在各个领域广泛应用方面的潜在作用。
 
     
 
-    共情是一个社交技能，表明一个个体理解他人的能力。近年来，共情引起了包括情感计算、认知科学和心理学在内的各个学科的关注。共情是一个依赖于上下文的术语，因此检测或识别共情在社会、医疗和教育等领域具有潜在的应用。尽管共情检测领域涉及范围广泛且有重叠，但从整体文献角度来看，利用机器学习的共情检测研究仍然相对较少。为此，我们系统收集和筛选了来自10个知名数据库的801篇论文，并分析了选定的54篇论文。我们根据共情检测系统的输入模态，即文本、视听、音频和生理信号，对论文进行分组。我们分别研究了特定模态的预处理和网络架构设计协议、常见数据集的描述和可用性详情，以及评估协议。
+    在人工智能（AI）迅速发展的景观中，人类智能和AI系统之间的协作，即人工智能（HAI）合作，已成为推进问题解决和决策过程的基石。大型预训练模型（LPtM）的出现显著改变了这一景观，通过利用大量数据来理解和预测复杂模式，为人类提供了前所未有的能力。本文调查了LPtMs与HAI的关键整合，强调了这些模型如何超越传统方法增强协作智能。重点探讨了LPtMs在增强人类能力方面的协同潜力，讨论了这种协作对AI模型改进、有效的团队合作、道德考虑以及在各个领域的广泛应用影响。通过这一探索，研究揭示了LPtM增强HAI的变革性影响。
 
-    Empathy is a social skill that indicates an individual's ability to understand others. Over the past few years, empathy has drawn attention from various disciplines, including but not limited to Affective Computing, Cognitive Science and Psychology. Empathy is a context-dependent term; thus, detecting or recognising empathy has potential applications in society, healthcare and education. Despite being a broad and overlapping topic, the avenue of empathy detection studies leveraging Machine Learning remains underexplored from a holistic literature perspective. To this end, we systematically collect and screen 801 papers from 10 well-known databases and analyse the selected 54 papers. We group the papers based on input modalities of empathy detection systems, i.e., text, audiovisual, audio and physiological signals. We examine modality-specific pre-processing and network architecture design protocols, popular dataset descriptions and availability details, and evaluation protocols. We fur
+    arXiv:2403.04931v1 Announce Type: new  Abstract: In the rapidly evolving landscape of artificial intelligence (AI), the collaboration between human intelligence and AI systems, known as Human-AI (HAI) Teaming, has emerged as a cornerstone for advancing problem-solving and decision-making processes. The advent of Large Pre-trained Models (LPtM) has significantly transformed this landscape, offering unprecedented capabilities by leveraging vast amounts of data to understand and predict complex patterns. This paper surveys the pivotal integration of LPtMs with HAI, emphasizing how these models enhance collaborative intelligence beyond traditional approaches. It examines the synergistic potential of LPtMs in augmenting human capabilities, discussing this collaboration for AI model improvements, effective teaming, ethical considerations, and their broad applied implications in various sectors. Through this exploration, the study sheds light on the transformative impact of LPtM-enhanced HAI 
+    
+[^2]: 评估大规模语言模型的性质：对人类中心主义的警告
+
+    Assessing the nature of large language models: A caution against anthropocentrism. (arXiv:2309.07683v1 [cs.AI])
+
+    [http://arxiv.org/abs/2309.07683](http://arxiv.org/abs/2309.07683)
+
+    通过评估GPT3.5，我们发现它具有有趣的个性问卷回答能力，但不太可能发展出意识，并显示出较大的认知和个性变异。
+
+    
+
+    生成式人工智能模型通过OpenAI的聊天机器人ChatGPT的发布引起了公众的关注和猜测。目前存在两种意见阵营：一方对这些模型为人类任务带来的基本变革的可能性感到兴奋，另一方对这些模型的强大能力感到高度关切。为了应对这些关切，我们使用了标准、规范化和经过验证的认知和个性测量工具来评估GPT3.5。在这个初步项目中，我们开发了一套测试，可以估计这些模型的能力边界，它们在短时间内的稳定性以及与人类的比较。我们的结果表明，GPT 3.5很可能没有产生意识，尽管它对个性问卷的回答能力令人感兴趣。它在重复观察过程中显示出认知和个性测量方面的大量变异，这与具有人类般个性的模型是不符合预期的。
+
+    Generative AI models garnered a large amount of public attention and speculation with the release of OpenAIs chatbot, ChatGPT. At least two opinion camps exist: one excited about possibilities these models offer for fundamental changes to human tasks, and another highly concerned about power these models seem to have. To address these concerns, we assessed GPT3.5 using standard, normed, and validated cognitive and personality measures. For this seedling project, we developed a battery of tests that allowed us to estimate the boundaries of some of these models capabilities, how stable those capabilities are over a short period of time, and how they compare to humans.  Our results indicate that GPT 3.5 is unlikely to have developed sentience, although its ability to respond to personality inventories is interesting. It did display large variability in both cognitive and personality measures over repeated observations, which is not expected if it had a human-like personality. Variability 
     
 
