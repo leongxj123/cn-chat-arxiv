@@ -2,52 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Exploring the Dynamics between Cobot's Production Rhythm, Locus of Control and Emotional State in a Collaborative Assembly Scenario](https://arxiv.org/abs/2402.00808) | 本研究探索了在协作装配场景中，Cobot的生产节奏对参与者的经验性定位控制和情绪状态的影响。虽然在情绪状态和定位控制方面未发现差异，但考虑到其他心理变量，结果表明需要考虑个体的心理特征来提供更好的互动体验。 |
-| [^2] | [UINav: A Practical Approach to Train On-Device Automation Agents](https://arxiv.org/abs/2312.10170) | UINav提出了一种基于演示的方法，用于训练适合移动设备的自动化代理，成功率高，训练数据少。 |
-| [^3] | [Generative AI-Driven Human Digital Twin in IoT-Healthcare: A Comprehensive Survey.](http://arxiv.org/abs/2401.13699) | 该论文调查了在物联网健康护理中利用生成式人工智能驱动的人类数字孪生的应用。人类数字孪生作为多功能、生动的人类数字测试平台，可以模拟结果并指导实际治疗，从而提高物联网健康护理的能力。 |
+| [^1] | [If in a Crowdsourced Data Annotation Pipeline, a GPT-4](https://arxiv.org/abs/2402.16795) | 本文比较了 GPT-4 和 MTurk 管道的数据标注准确性，发现尽管 MTurk 采用了最佳实践，但 GPT-4 的准确率更高，并且结合 GPT-4 和众包标签使用聚合算法可以提高准确率。 |
+| [^2] | [Bringing Generative AI to Adaptive Learning in Education](https://arxiv.org/abs/2402.14601) | 生成式人工智能技术与自适应学习概念的交叉研究将对教育中下一阶段学习格式的发展做出重要贡献。 |
+| [^3] | [Does Writing with Language Models Reduce Content Diversity?](https://arxiv.org/abs/2309.05196) | 写作时使用InstructGPT（而不是GPT3）会显著降低内容多样性，增加不同作者之间的相似性，并减少整体的词汇和内容多样性。 |
+| [^4] | ['Team-in-the-loop' organisational oversight of high-stakes AI.](http://arxiv.org/abs/2303.14007) | 本论文通过对团队在 AI 系统中的监管流程的纵向观察，探讨了 AI 系统对临床决策制定中团队监管的影响，研究发现此前的专业团队监管方法主要依靠解释和问询来获取信息，而 AI 的引入将可能在信息披露和决策制定方面造成一定程度的影响。 |
 
 # 详细
 
-[^1]: 在协作装配场景中，探索Cobot的生产节奏、控制定位和情绪状态之间的动态关系
+[^1]: 如果在一个众包数据标注管道中，GPT-4
 
-    Exploring the Dynamics between Cobot's Production Rhythm, Locus of Control and Emotional State in a Collaborative Assembly Scenario
+    If in a Crowdsourced Data Annotation Pipeline, a GPT-4
 
-    [https://arxiv.org/abs/2402.00808](https://arxiv.org/abs/2402.00808)
+    [https://arxiv.org/abs/2402.16795](https://arxiv.org/abs/2402.16795)
 
-    本研究探索了在协作装配场景中，Cobot的生产节奏对参与者的经验性定位控制和情绪状态的影响。虽然在情绪状态和定位控制方面未发现差异，但考虑到其他心理变量，结果表明需要考虑个体的心理特征来提供更好的互动体验。
-
-    
-
-    在工业场景中，协作机器人（cobots）被广泛使用，并且对评估和测量cobots的某些特征对人的影响产生了日益增长的兴趣。在本次试点研究中，研究了一个cobots的生产节奏（C1-慢、C2-快、C3-根据参与者的步调调整）对31名参与者的经验性定位控制（ELoC）和情绪状态的影响。还考虑了操作人员的绩效、基本内部定位控制程度和对机器人的态度。关于情绪状态和ELoC，在三种条件下没有发现差异，但考虑到其他心理变量，出现了更复杂的情况。总体而言，结果似乎表明需要考虑个体的心理特征，以提供不同和最佳的互动体验。
-
-    In industrial scenarios, there is widespread use of collaborative robots (cobots), and growing interest is directed at evaluating and measuring the impact of some characteristics of the cobot on the human factor. In the present pilot study, the effect that the production rhythm (C1 - Slow, C2 - Fast, C3 - Adapted to the participant's pace) of a cobot has on the Experiential Locus of Control (ELoC) and the emotional state of 31 participants has been examined. The operators' performance, the degree of basic internal Locus of Control, and the attitude towards the robots were also considered. No difference was found regarding the emotional state and the ELoC in the three conditions, but considering the other psychological variables, a more complex situation emerges. Overall, results seem to indicate a need to consider the person's psychological characteristics to offer a differentiated and optimal interaction experience.
-    
-[^2]: UINav：一种训练设备端自动化代理的实用方法
-
-    UINav: A Practical Approach to Train On-Device Automation Agents
-
-    [https://arxiv.org/abs/2312.10170](https://arxiv.org/abs/2312.10170)
-
-    UINav提出了一种基于演示的方法，用于训练适合移动设备的自动化代理，成功率高，训练数据少。
+    本文比较了 GPT-4 和 MTurk 管道的数据标注准确性，发现尽管 MTurk 采用了最佳实践，但 GPT-4 的准确率更高，并且结合 GPT-4 和众包标签使用聚合算法可以提高准确率。
 
     
 
-    具有自主驱动应用程序用户界面以完成用户任务的自动化系统，尤其是当用户处于情境性或永久性受损时，具有巨大的益处。之前的自动化系统不能产生具有普遍适用性的模型，而基于人工智能的自动化代理仅在简单的手工制作应用程序中可靠工作，或者会产生高计算成本。我们提出了UINav，这是一种基于演示的方法，用于训练适合移动设备的自动化代理，同时可以在演示数量不多的情况下实现高成功率。为了减少演示的工作量，UINav使用了一个裁判模型，在代理失败的任务上为用户提供即时反馈，并自动增加人类演示以增加训练数据的多样性。我们的评估表明，仅需10次演示，UINav就可以实现70%的准确率，而有足够多次演示时，它可以超过90%的准确率。
+    最近的研究表明GPT-4在数据标注准确性方面优于在线众包工作者，尤其是来自亚马逊机械土耳其（MTurk）的工作者。然而，这些研究因偏离标准众包实践并强调个别工作者的表现而受到批评，而不是整个数据标注过程。本文比较了GPT-4和一个道德且执行良好的MTurk管道，使用415名工作者标注了来自200篇学术文章的3,177个句段，使用了CODA-19方案。两个工作者界面产生了127,080个标签，然后通过八种标签聚合算法推断出最终的标签。我们的评估结果显示，尽管采用了最佳实践，MTurk管道的最高准确率为81.5%，而GPT-4达到了83.6%。有趣的是，当将GPT-4的标签与通过先进工作者界面收集的众包标签结合起来进行聚合时，8种算法中有2种实现了更高的准确率。
 
-    arXiv:2312.10170v2 Announce Type: replace-cross  Abstract: Automation systems that can autonomously drive application user interfaces to complete user tasks are of great benefit, especially when users are situationally or permanently impaired. Prior automation systems do not produce generalizable models while AI-based automation agents work reliably only in simple, hand-crafted applications or incur high computation costs. We propose UINav, a demonstration-based approach to train automation agents that fit mobile devices, yet achieving high success rates with modest numbers of demonstrations. To reduce the demonstration overhead, UINav uses a referee model that provides users with immediate feedback on tasks where the agent fails, and automatically augments human demonstrations to increase diversity in training data. Our evaluation shows that with only 10 demonstrations UINav can achieve 70% accuracy, and that with enough demonstrations it can surpass 90% accuracy.
+    arXiv:2402.16795v1 Announce Type: cross  Abstract: Recent studies indicated GPT-4 outperforms online crowd workers in data labeling accuracy, notably workers from Amazon Mechanical Turk (MTurk). However, these studies were criticized for deviating from standard crowdsourcing practices and emphasizing individual workers' performances over the whole data-annotation process. This paper compared GPT-4 and an ethical and well-executed MTurk pipeline, with 415 workers labeling 3,177 sentence segments from 200 scholarly articles using the CODA-19 scheme. Two worker interfaces yielded 127,080 labels, which were then used to infer the final labels through eight label-aggregation algorithms. Our evaluation showed that despite best practices, MTurk pipeline's highest accuracy was 81.5%, whereas GPT-4 achieved 83.6%. Interestingly, when combining GPT-4's labels with crowd labels collected via an advanced worker interface for aggregation, 2 out of the 8 algorithms achieved an even higher accuracy (
     
-[^3]: 生成式人工智能驱动的物联网健康护理中的人类数字孪生：一项综合调查
+[^2]: 将生成式人工智能引入教育中的自适应学习
 
-    Generative AI-Driven Human Digital Twin in IoT-Healthcare: A Comprehensive Survey. (arXiv:2401.13699v1 [cs.HC])
+    Bringing Generative AI to Adaptive Learning in Education
 
-    [http://arxiv.org/abs/2401.13699](http://arxiv.org/abs/2401.13699)
+    [https://arxiv.org/abs/2402.14601](https://arxiv.org/abs/2402.14601)
 
-    该论文调查了在物联网健康护理中利用生成式人工智能驱动的人类数字孪生的应用。人类数字孪生作为多功能、生动的人类数字测试平台，可以模拟结果并指导实际治疗，从而提高物联网健康护理的能力。
+    生成式人工智能技术与自适应学习概念的交叉研究将对教育中下一阶段学习格式的发展做出重要贡献。
 
     
 
-    物联网可以显著提高人类生活的质量，特别是在健康护理方面吸引了广泛的关注。同时，人类数字孪生被提出作为一种创新的范式，可以全面地描述个体人体在数字世界中的复制，并实时反映其物理状况。自然地，人类数字孪生被设想为通过充当多功能、生动的人类数字测试平台来增强物联网健康护理的能力，模拟结果并指导实际治疗。然而，成功建立人类数字孪生需要高保真度的虚拟建模和强大的信息交互，但可能存在稀缺、偏倚和噪声数据。幸运的是，最近流行的一种名为生成式人工智能（GAI）的技术可能是一个有前途的解决方案，因为它可以利用先进的人工智能算法自动生成、操作和修改渐变视图。
+    最近生成式人工智能技术的激增，如大型语言模型和扩散模型，推动了人工智能在科学、金融和教育等各个领域的应用发展。与此同时，自适应学习这一概念在教育领域引起了极大关注，并证明其在提高学生学习效率方面的有效性。在本立场论文中，我们旨在探讨将生成式人工智能与自适应学习概念结合起来的交叉研究。通过讨论这一领域的好处、挑战和潜力，我们认为这种结合将为教育中下一阶段学习形式的发展做出重要贡献。
 
-    The Internet of things (IoT) can significantly enhance the quality of human life, specifically in healthcare, attracting extensive attentions to IoT-healthcare services. Meanwhile, the human digital twin (HDT) is proposed as an innovative paradigm that can comprehensively characterize the replication of the individual human body in the digital world and reflect its physical status in real time. Naturally, HDT is envisioned to empower IoT-healthcare beyond the application of healthcare monitoring by acting as a versatile and vivid human digital testbed, simulating the outcomes and guiding the practical treatments. However, successfully establishing HDT requires high-fidelity virtual modeling and strong information interactions but possibly with scarce, biased and noisy data. Fortunately, a recent popular technology called generative artificial intelligence (GAI) may be a promising solution because it can leverage advanced AI algorithms to automatically create, manipulate, and modify val
+    arXiv:2402.14601v1 Announce Type: cross  Abstract: The recent surge in generative AI technologies, such as large language models and diffusion models, have boosted the development of AI applications in various domains, including science, finance, and education. Concurrently, adaptive learning, a concept that has gained substantial interest in the educational sphere, has proven its efficacy in enhancing students' learning efficiency. In this position paper, we aim to shed light on the intersectional studies of these two methods, which combine generative AI with adaptive learning concepts. By presenting discussions about the benefits, challenges, and potentials in this field, we argue that this union will contribute significantly to the development of the next stage learning format in education.
+    
+[^3]: 语言模型写作是否会降低内容多样性？
+
+    Does Writing with Language Models Reduce Content Diversity?
+
+    [https://arxiv.org/abs/2309.05196](https://arxiv.org/abs/2309.05196)
+
+    写作时使用InstructGPT（而不是GPT3）会显著降低内容多样性，增加不同作者之间的相似性，并减少整体的词汇和内容多样性。
+
+    
+
+    大型语言模型（LLMs）引发了与模型辅助合作写作的激增。当不同用户纳入同一模型的建议时，会存在内容多样性减少的风险，可能限制公共话语中的多元观点。本研究通过控制实验测量了协同写作对多样性的影响，在该实验中，用户以三种设置撰写议论性文章--使用基本LLM（GPT3）、经过反馈调整的LLM（InstructGPT）以及不使用模型帮助写作。我们开发了一组多样性指标，并发现使用InstructGPT进行写作（而不是GPT3）会导致多样性明显降低。具体而言，它增加了不同作者的写作之间的相似性，减少了整体的词汇和内容多样性。此外，我们还发现这种影响主要来源于InstructGPT对共同撰写的文本贡献较少。
+
+    arXiv:2309.05196v2 Announce Type: replace  Abstract: Large language models (LLMs) have led to a surge in collaborative writing with model assistance. As different users incorporate suggestions from the same model, there is a risk of decreased diversity in the produced content, potentially limiting diverse perspectives in public discourse. In this work, we measure the impact of co-writing on diversity via a controlled experiment, where users write argumentative essays in three setups -- using a base LLM (GPT3), a feedback-tuned LLM (InstructGPT), and writing without model help. We develop a set of diversity metrics and find that writing with InstructGPT (but not the GPT3) results in a statistically significant reduction in diversity. Specifically, it increases the similarity between the writings of different authors and reduces the overall lexical and content diversity. We additionally find that this effect is mainly attributable to InstructGPT contributing less diverse text to co-writt
+    
+[^4]: 高风险 AI 的团队监管：团队在循环中
+
+    'Team-in-the-loop' organisational oversight of high-stakes AI. (arXiv:2303.14007v1 [cs.CY])
+
+    [http://arxiv.org/abs/2303.14007](http://arxiv.org/abs/2303.14007)
+
+    本论文通过对团队在 AI 系统中的监管流程的纵向观察，探讨了 AI 系统对临床决策制定中团队监管的影响，研究发现此前的专业团队监管方法主要依靠解释和问询来获取信息，而 AI 的引入将可能在信息披露和决策制定方面造成一定程度的影响。
+
+    
+
+    监管对于高风险公共部门 AI 应用程序至关重要，因为决策可能会对个人和集体产生深远影响。目前在公共部门中关于 AI 监管机制的许多思考都围绕着人类决策者处于 "循环中 "这一概念，并且能够干预以防止错误和潜在危害。然而，在许多高风险公共部门背景下，决策的运营监管是由专业团队而不是个人进行的。部署的 AI 系统如何整合到这些现有的团队监管流程中，尚未引起太多注意。我们通过制度分析探讨 AI 对临床决策制定的现有监管的影响，填补该方面的空白。我们发现，现有的监管嵌套在专业培训要求中，并且在征询关键信息时 heavilyrely  于解释和提问。专业团队使用各种会计披露技术来警告同事和监管行为。我们考虑了在 AI 系统引入到现有的团队监管流程中，信息披露和决策制定可能发生改变的几种方式。
+
+    Oversight is rightly recognised as vital within high-stakes public sector AI applications, where decisions can have profound individual and collective impacts. Much current thinking regarding forms of oversight mechanisms for AI within the public sector revolves around the idea of human decision makers being 'in-the-loop' and thus being able to intervene to prevent errors and potential harm. However, in a number of high-stakes public sector contexts, operational oversight of decisions is made by expert teams rather than individuals. The ways in which deployed AI systems can be integrated into these existing operational team oversight processes has yet to attract much attention. We address this gap by exploring the impacts of AI upon pre-existing oversight of clinical decision-making through institutional analysis. We find that existing oversight is nested within professional training requirements and relies heavily upon explanation and questioning to elicit vital information. Professio
     
 

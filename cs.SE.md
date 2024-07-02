@@ -2,52 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Effort and Size Estimation in Software Projects with Large Language Model-based Intelligent Interfaces](https://arxiv.org/abs/2402.07158) | 本文提出了一种基于大型语言模型的智能界面在软件项目中进行工作量和规模估计的方法，并通过比较传统方法，探讨了如何通过增强基于自然语言的问题规范来实现开发工作量的准确估计。 |
-| [^2] | [ChIRAAG: ChatGPT Informed Rapid and Automated Assertion Generation](https://arxiv.org/abs/2402.00093) | 本研究设计了一个基于大语言模型的流水线，通过自然语言规格生成英语、线性时态逻辑和SVA断言，并成功减少了断言错误率。 |
-| [^3] | [A New Era in Software Security: Towards Self-Healing Software via Large Language Models and Formal Verification.](http://arxiv.org/abs/2305.14752) | 本文介绍了一个结合大语言模型和形式验证的方法来自动验证和修复软件漏洞，并通过ESBMC-AI做出了概念验证。 |
+| [^1] | [CONLINE: Complex Code Generation and Refinement with Online Searching and Correctness Testing](https://arxiv.org/abs/2403.13583) | CONLINE框架提出了通过在线搜索和正确性测试来增强复杂代码生成的方法，通过实验证明了其显著提高了代码生成质量。 |
+| [^2] | [LangGPT: Rethinking Structured Reusable Prompt Design Framework for LLMs from the Programming Language](https://arxiv.org/abs/2402.16929) | LangGPT提出了一个双层提示设计框架，作为LLMs的编程语言，大大增强了LLMs产生高质量响应的能力，并在引导LLMs生成高质量提示方面具有显著效果。 |
 
 # 详细
 
-[^1]: 基于大型语言模型的智能界面在软件项目中的工作量和规模估计
+[^1]: CONLINE: 复杂代码生成与在线搜索和正确性测试的精炼
 
-    Effort and Size Estimation in Software Projects with Large Language Model-based Intelligent Interfaces
+    CONLINE: Complex Code Generation and Refinement with Online Searching and Correctness Testing
 
-    [https://arxiv.org/abs/2402.07158](https://arxiv.org/abs/2402.07158)
+    [https://arxiv.org/abs/2403.13583](https://arxiv.org/abs/2403.13583)
 
-    本文提出了一种基于大型语言模型的智能界面在软件项目中进行工作量和规模估计的方法，并通过比较传统方法，探讨了如何通过增强基于自然语言的问题规范来实现开发工作量的准确估计。
-
-    
-
-    大型语言模型（LLM）的发展也导致其应用的广泛增加。软件设计作为其中之一，在使用LLM作为扩展固定用户故事的接口组件方面获得了巨大的好处。然而，将基于LLM的人工智能代理包含在软件设计中常常带来意想不到的挑战，特别是在开发工作量的估计方面。通过基于用户界面的用户故事的例子，我们对比了传统方法，并提出了一种新的方法来增强基于自然语言的问题的规范，通过考虑数据源、接口和算法来进行开发工作量的估计。
-
-    The advancement of Large Language Models (LLM) has also resulted in an equivalent proliferation in its applications. Software design, being one, has gained tremendous benefits in using LLMs as an interface component that extends fixed user stories. However, inclusion of LLM-based AI agents in software design often poses unexpected challenges, especially in the estimation of development efforts. Through the example of UI-based user stories, we provide a comparison against traditional methods and propose a new way to enhance specifications of natural language-based questions that allows for the estimation of development effort by taking into account data sources, interfaces and algorithms.
-    
-[^2]: ChIRAAG: 通过ChatGPT生成快速和自动断言的方法
-
-    ChIRAAG: ChatGPT Informed Rapid and Automated Assertion Generation
-
-    [https://arxiv.org/abs/2402.00093](https://arxiv.org/abs/2402.00093)
-
-    本研究设计了一个基于大语言模型的流水线，通过自然语言规格生成英语、线性时态逻辑和SVA断言，并成功减少了断言错误率。
+    CONLINE框架提出了通过在线搜索和正确性测试来增强复杂代码生成的方法，通过实验证明了其显著提高了代码生成质量。
 
     
 
-    System Verilog Assertion (SVA)的形式化是Formal Property Verification (FPV)过程中的一个关键但复杂的任务。传统上，SVA的形式化需要经验丰富的专家解释规格。这是耗时且容易出错的。然而，最近大语言模型（LLM）的进展使得基于LLM的自动断言生成引起了人们的兴趣。我们设计了一种新颖的基于LLM的流水线，用于从自然语言规格中生成英语、线性时态逻辑和SVA的断言。我们开发了一个基于OpenAI GPT4的自定义LLM用于实验。此外，我们还开发了测试平台来验证LLM生成的断言。只有43%的LLM生成的原始断言存在错误，包括语法和逻辑错误。通过使用从测试案例失败中得出的精心设计的提示，迭代地促使LLM，该流水线在最多九次提示迭代后可以生成正确的SVA。
+    大型语言模型（LLMs）通过将自然语言描述转换为可执行代码，彻底改变了代码生成能力。然而，在真实场景下生成复杂代码仍然具有挑战性，原因在于复杂的结构、微妙的错误、对高级数据类型的理解以及缺少辅助内容。为了解决这些挑战，我们引入了CONLINE框架，通过计划的在线搜索信息检索和自动正确性测试来增强代码生成，进行迭代精炼。CONLINE还串行化了复杂的输入和输出，以改善理解，并生成测试用例，确保框架适用于现实应用。CONLINE通过对DS-1000和ClassEval数据集进行严格实验验证。结果表明，CONLINE显著提高了复杂代码生成的质量，突显了其提升实践应用潜力。
 
-    System Verilog Assertion (SVA) formulation, a critical yet complex task, is a pre-requisite in the Formal Property Verification (FPV) process. Traditionally, SVA formulation involves expert-driven interpretation of specifications. This is time consuming and prone to human error. However, recent advances in Large Language Models (LLM), LLM-informed automatic assertion generation is gaining interest. We designed a novel LLM-based pipeline to generate assertions in English Language, Linear Temporal Logic, and SVA from natural language specifications. We developed a custom LLM-based on OpenAI GPT4 for our experiments. Furthermore, we developed testbenches to verify/validate the LLM-generated assertions. Only 43% of LLM-generated raw assertions had errors, including syntax and logical errors. By iteratively prompting the LLMs using carefully crafted prompts derived from test case failures, the pipeline could generate correct SVAs after a maximum of nine iterations of prompting. Our results 
+    arXiv:2403.13583v1 Announce Type: cross  Abstract: Large Language Models (LLMs) have revolutionized code generation ability by converting natural language descriptions into executable code. However, generating complex code within real-world scenarios remains challenging due to intricate structures, subtle bugs, understanding of advanced data types, and lack of supplementary contents. To address these challenges, we introduce the CONLINE framework, which enhances code generation by incorporating planned online searches for information retrieval and automated correctness testing for iterative refinement. CONLINE also serializes the complex inputs and outputs to improve comprehension and generate test case to ensure the framework's adaptability for real-world applications. CONLINE is validated through rigorous experiments on the DS-1000 and ClassEval datasets. It shows that CONLINE substantially improves the quality of complex code generation, highlighting its potential to enhance the pra
     
-[^3]: 走向软件自愈：结合大语言模型和形式验证解决软件安全问题
+[^2]: LangGPT：重新思考面向LLMs的结构化可重复使用提示设计框架从编程语言出发
 
-    A New Era in Software Security: Towards Self-Healing Software via Large Language Models and Formal Verification. (arXiv:2305.14752v1 [cs.SE])
+    LangGPT: Rethinking Structured Reusable Prompt Design Framework for LLMs from the Programming Language
 
-    [http://arxiv.org/abs/2305.14752](http://arxiv.org/abs/2305.14752)
+    [https://arxiv.org/abs/2402.16929](https://arxiv.org/abs/2402.16929)
 
-    本文介绍了一个结合大语言模型和形式验证的方法来自动验证和修复软件漏洞，并通过ESBMC-AI做出了概念验证。
+    LangGPT提出了一个双层提示设计框架，作为LLMs的编程语言，大大增强了LLMs产生高质量响应的能力，并在引导LLMs生成高质量提示方面具有显著效果。
 
     
 
-    本文提出了一种新方法，将大语言模型和形式化验证策略相结合，使得软件漏洞可以得到验证和自动修复。首先利用有限模型检查（BMC）定位软件漏洞和派生反例。然后，将反例和源代码提供给大语言模型引擎进行代码调试和生成，从而找到漏洞的根本原因并修复代码。最后，则使用BMC验证大语言模型生成的修正版本的代码。 作为概念证明，我们创建了ESBMC-AI，它基于高效的基于SMT的上下文有界模型检查器（ESBMC）和一个预训练的Transformer模型gpt-3.5-turbo来检测和修复C程序中的错误。
+    LLMs已经展示出在不同领域取得了令人瞩目的性能。然而，为了有效指导LLMs制定高质量的提示对于非AI专家来说是一个挑战。现有的提示工程研究建议了一些略显零碎的优化原则和设计，以及凭经验依赖的提示优化器。不幸的是，这些努力缺乏一个结构化的设计模板，导致学习成本高，重复使用性低。受结构化可重复使用的编程语言的启发，我们提出了LangGPT，作为LLMs的编程语言的双层提示设计框架。LangGPT具有易于学习的规范结构，并提供了一个扩展结构以进行迁移和重用。实验证明，与基准相比，LangGPT显著增强了LLMs产生高质量响应的能力。此外，LangGPT已被证明在引导LLMs生成高质量提示方面是有效的。
 
-    In this paper we present a novel solution that combines the capabilities of Large Language Models (LLMs) with Formal Verification strategies to verify and automatically repair software vulnerabilities. Initially, we employ Bounded Model Checking (BMC) to locate the software vulnerability and derive a counterexample. The counterexample provides evidence that the system behaves incorrectly or contains a vulnerability. The counterexample that has been detected, along with the source code, are provided to the LLM engine. Our approach involves establishing a specialized prompt language for conducting code debugging and generation to understand the vulnerability's root cause and repair the code. Finally, we use BMC to verify the corrected version of the code generated by the LLM. As a proof of concept, we create ESBMC-AI based on the Efficient SMT-based Context-Bounded Model Checker (ESBMC) and a pre-trained Transformer model, specifically gpt-3.5-turbo, to detect and fix errors in C program
+    arXiv:2402.16929v1 Announce Type: cross  Abstract: LLMs have demonstrated commendable performance across diverse domains. Nevertheless, formulating high-quality prompts to effectively instruct LLMs poses a challenge for non-AI experts. Existing research in prompt engineering suggests somewhat fragmented optimization principles and designs empirically dependent prompt optimizers. Unfortunately, these endeavors lack a structured design template, incurring high learning costs and resulting in low reusability. Inspired by structured reusable programming languages, we propose LangGPT, a dual-layer prompt design framework as the programming language for LLMs. LangGPT has an easy-to-learn normative structure and provides an extended structure for migration and reuse. Experiments illustrate that LangGPT significantly enhances the capacity of LLMs to produce responses of superior quality compared to baselines. Moreover, LangGPT has proven effective in guiding LLMs to generate high-quality promp
     
 
