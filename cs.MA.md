@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Shall We Talk: Exploring Spontaneous Collaborations of Competing LLM Agents](https://arxiv.org/abs/2402.12327) | 该研究揭示了LLM代理甚至在竞争环境中也能自发形成合作关系的能力，验证了计算社会科学的愿景，表明LLM代理可以用于模拟人类社会互动，包括自发合作的互动，为社会现象提供洞察。 |
+| [^1] | [Collaborative Multi-Agent Heterogeneous Multi-Armed Bandits.](http://arxiv.org/abs/2305.18784) | 本研究研究了一个新的合作多智能体老虎机设置，并发展了去中心化算法以减少代理之间的集体遗憾，在数学分析中证明了该算法实现了近乎最优性能。 |
 
 # 详细
 
-[^1]: 我们应该交流吗：探索竞争LLM代理之间的自发合作
+[^1]: 合作多智能体异构多臂老虎机翻译论文
 
-    Shall We Talk: Exploring Spontaneous Collaborations of Competing LLM Agents
+    Collaborative Multi-Agent Heterogeneous Multi-Armed Bandits. (arXiv:2305.18784v1 [cs.LG])
 
-    [https://arxiv.org/abs/2402.12327](https://arxiv.org/abs/2402.12327)
+    [http://arxiv.org/abs/2305.18784](http://arxiv.org/abs/2305.18784)
 
-    该研究揭示了LLM代理甚至在竞争环境中也能自发形成合作关系的能力，验证了计算社会科学的愿景，表明LLM代理可以用于模拟人类社会互动，包括自发合作的互动，为社会现象提供洞察。
+    本研究研究了一个新的合作多智能体老虎机设置，并发展了去中心化算法以减少代理之间的集体遗憾，在数学分析中证明了该算法实现了近乎最优性能。
 
     
 
-    最近的进展表明，由大型语言模型（LLMs）驱动的代理具有模拟人类行为和社会动态的能力。然而，尚未研究LLM代理在没有明确指令的情况下自发建立合作关系的潜力。为了弥补这一空白，我们进行了三项案例研究，揭示了LLM代理甚至在竞争环境中也能自发形成合作关系的能力。这一发现不仅展示了LLM代理模拟人类社会中竞争与合作的能力，也验证了计算社会科学的一个有前途的愿景。具体来说，这表明LLM代理可以用于建模人类社会互动，包括那些自发合作的互动，从而提供对社会现象的洞察。这项研究的源代码可在https://github.com/wuzengqing001225/SABM_ShallWe 找到。
+    最近合作多智能体老虎机的研究吸引了很多关注。因此，我们开始研究一个新的合作设置，其中$N$个智能体中的每个智能体正在学习$M$个具有随机性的多臂老虎机，以减少他们的集体累计遗憾。我们开发了去中心化算法，促进了代理之间的合作，并针对两种情况进行了性能表征。通过推导每个代理的累积遗憾和集体遗憾的上限，我们对这些算法的性能进行了表征。我们还证明了这种情况下集体遗憾的下限，证明了所提出算法的近乎最优性能。
 
-    arXiv:2402.12327v1 Announce Type: new  Abstract: Recent advancements have shown that agents powered by large language models (LLMs) possess capabilities to simulate human behaviors and societal dynamics. However, the potential for LLM agents to spontaneously establish collaborative relationships in the absence of explicit instructions has not been studied. To address this gap, we conduct three case studies, revealing that LLM agents are capable of spontaneously forming collaborations even within competitive settings. This finding not only demonstrates the capacity of LLM agents to mimic competition and cooperation in human societies but also validates a promising vision of computational social science. Specifically, it suggests that LLM agents could be utilized to model human social interactions, including those with spontaneous collaborations, thus offering insights into social phenomena. The source codes for this study are available at https://github.com/wuzengqing001225/SABM_ShallWe
+    The study of collaborative multi-agent bandits has attracted significant attention recently. In light of this, we initiate the study of a new collaborative setting, consisting of $N$ agents such that each agent is learning one of $M$ stochastic multi-armed bandits to minimize their group cumulative regret. We develop decentralized algorithms which facilitate collaboration between the agents under two scenarios. We characterize the performance of these algorithms by deriving the per agent cumulative regret and group regret upper bounds. We also prove lower bounds for the group regret in this setting, which demonstrates the near-optimal behavior of the proposed algorithms.
     
 

@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Interpretable Semiotics Networks Representing Awareness](https://arxiv.org/abs/2310.05212) | 这个研究描述了一个计算模型，通过追踪和模拟物体感知以及其在交流中所传达的表示来模拟人类的意识。相比于大多数无法解释的神经网络，该模型具有解释性，并可以通过构建新网络来定义物体感知。 |
-| [^2] | [STANCE-C3: Domain-adaptive Cross-target Stance Detection via Contrastive Learning and Counterfactual Generation.](http://arxiv.org/abs/2309.15176) | STANCE-C3是一种通过对比学习和反事实生成进行领域自适应的跨目标立场检测模型，用于推断人们对于普遍或有争议话题的观点。在解决数据分布偏移和缺乏领域特定标注数据的挑战上具有重要贡献。 |
+| [^1] | [Collaborative Multi-Agent Heterogeneous Multi-Armed Bandits.](http://arxiv.org/abs/2305.18784) | 本研究研究了一个新的合作多智能体老虎机设置，并发展了去中心化算法以减少代理之间的集体遗憾，在数学分析中证明了该算法实现了近乎最优性能。 |
+| [^2] | [Visual Analytics of Multivariate Networks with Representation Learning and Composite Variable Construction.](http://arxiv.org/abs/2303.09590) | 本文提出了一种用于研究多变量网络的视觉分析工作流程，其中包括神经网络学习阶段、降维和优化阶段以及用户交互式可视化接口进行解释。关键的组合变量构建步骤将非线性特征重塑为线性特征，以方便检查和理解。案例研究表明该工作流程具有有效性和可理解性。 |
 
 # 详细
 
-[^1]: 可解释的符号网络代表意识的知觉
+[^1]: 合作多智能体异构多臂老虎机翻译论文
 
-    Interpretable Semiotics Networks Representing Awareness
+    Collaborative Multi-Agent Heterogeneous Multi-Armed Bandits. (arXiv:2305.18784v1 [cs.LG])
 
-    [https://arxiv.org/abs/2310.05212](https://arxiv.org/abs/2310.05212)
+    [http://arxiv.org/abs/2305.18784](http://arxiv.org/abs/2305.18784)
 
-    这个研究描述了一个计算模型，通过追踪和模拟物体感知以及其在交流中所传达的表示来模拟人类的意识。相比于大多数无法解释的神经网络，该模型具有解释性，并可以通过构建新网络来定义物体感知。
-
-    
-
-    人类每天都感知物体，并通过各种渠道传达他们的感知。在这里，我们描述了一个计算模型，追踪和模拟物体的感知以及它们在交流中所传达的表示。我们描述了我们内部表示的两个关键组成部分（"观察到的"和"看到的"），并将它们与熟悉的计算机视觉概念（编码和解码）相关联。这些元素被合并在一起形成符号网络，模拟了物体感知和人类交流中的意识。如今，大多数神经网络都是不可解释的。另一方面，我们的模型克服了这个限制。实验证明了该模型的可见性。我们人的物体感知模型使我们能够通过网络定义物体感知。我们通过构建一个包括基准分类器和额外层的新网络来演示这一点。这个层产生了图像的感知。
-
-    Humans perceive objects daily and communicate their perceptions using various channels. Here, we describe a computational model that tracks and simulates objects' perception and their representations as they are conveyed in communication.   We describe two key components of our internal representation ("observed" and "seen") and relate them to familiar computer vision notions (encoding and decoding). These elements are joined together to form semiotics networks, which simulate awareness in object perception and human communication.   Nowadays, most neural networks are uninterpretable. On the other hand, our model overcomes this limitation. The experiments demonstrates the visibility of the model.   Our model of object perception by a person allows us to define object perception by a network. We demonstrate this with an example of an image baseline classifier by constructing a new network that includes the baseline classifier and an additional layer. This layer produces the images "perc
-    
-[^2]: STANCE-C3: 通过对比学习和反事实生成进行领域自适应的跨目标立场检测
-
-    STANCE-C3: Domain-adaptive Cross-target Stance Detection via Contrastive Learning and Counterfactual Generation. (arXiv:2309.15176v1 [cs.CL])
-
-    [http://arxiv.org/abs/2309.15176](http://arxiv.org/abs/2309.15176)
-
-    STANCE-C3是一种通过对比学习和反事实生成进行领域自适应的跨目标立场检测模型，用于推断人们对于普遍或有争议话题的观点。在解决数据分布偏移和缺乏领域特定标注数据的挑战上具有重要贡献。
+    本研究研究了一个新的合作多智能体老虎机设置，并发展了去中心化算法以减少代理之间的集体遗憾，在数学分析中证明了该算法实现了近乎最优性能。
 
     
 
-    立场检测是通过推断一个人在特定问题上的立场或观点，以推断对于普遍或有争议的话题的普遍看法，例如COVID-19疫情期间的健康政策。现有的立场检测模型在训练时往往在单个领域（例如COVID-19）和特定目标话题（例如口罩规定）上表现良好，但在其他领域或目标中往往表现不佳，这是由于数据的分布偏移。然而，构建高性能的领域特定立场检测模型需要大量与目标领域相关的已标注数据，但这样的数据集往往不容易获取。这就面临着一个挑战，因为标注数据的过程代价高昂且耗时。为了应对这些挑战，我们提出了一种新颖的立场检测模型，称为通过对比学习和反事实生成进行领域自适应的跨目标立场检测（STANCE-C3）。
+    最近合作多智能体老虎机的研究吸引了很多关注。因此，我们开始研究一个新的合作设置，其中$N$个智能体中的每个智能体正在学习$M$个具有随机性的多臂老虎机，以减少他们的集体累计遗憾。我们开发了去中心化算法，促进了代理之间的合作，并针对两种情况进行了性能表征。通过推导每个代理的累积遗憾和集体遗憾的上限，我们对这些算法的性能进行了表征。我们还证明了这种情况下集体遗憾的下限，证明了所提出算法的近乎最优性能。
 
-    Stance detection is the process of inferring a person's position or standpoint on a specific issue to deduce prevailing perceptions toward topics of general or controversial interest, such as health policies during the COVID-19 pandemic. Existing models for stance detection are trained to perform well for a single domain (e.g., COVID-19) and a specific target topic (e.g., masking protocols), but are generally ineffectual in other domains or targets due to distributional shifts in the data. However, constructing high-performing, domain-specific stance detection models requires an extensive corpus of labeled data relevant to the targeted domain, yet such datasets are not readily available. This poses a challenge as the process of annotating data is costly and time-consuming. To address these challenges, we introduce a novel stance detection model coined domain-adaptive Cross-target STANCE detection via Contrastive learning and Counterfactual generation (STANCE-C3) that uses counterfactua
+    The study of collaborative multi-agent bandits has attracted significant attention recently. In light of this, we initiate the study of a new collaborative setting, consisting of $N$ agents such that each agent is learning one of $M$ stochastic multi-armed bandits to minimize their group cumulative regret. We develop decentralized algorithms which facilitate collaboration between the agents under two scenarios. We characterize the performance of these algorithms by deriving the per agent cumulative regret and group regret upper bounds. We also prove lower bounds for the group regret in this setting, which demonstrates the near-optimal behavior of the proposed algorithms.
+    
+[^2]: 用表示学习和组合变量构建多变量网络的视觉分析
+
+    Visual Analytics of Multivariate Networks with Representation Learning and Composite Variable Construction. (arXiv:2303.09590v1 [cs.SI])
+
+    [http://arxiv.org/abs/2303.09590](http://arxiv.org/abs/2303.09590)
+
+    本文提出了一种用于研究多变量网络的视觉分析工作流程，其中包括神经网络学习阶段、降维和优化阶段以及用户交互式可视化接口进行解释。关键的组合变量构建步骤将非线性特征重塑为线性特征，以方便检查和理解。案例研究表明该工作流程具有有效性和可理解性。
+
+    
+
+    多变量网络在真实世界的数据驱动应用中经常被发现。发掘和理解多变量网络中的关系并不是一项简单的任务。本文提出了一种用于研究多变量网络以提取网络不同结构和语义特征之间关联的视觉分析工作流程（例如，什么是在社交网络密度方面与不同属性的组合关系）。该工作流程包括基于神经网络的学习阶段，根据所选输入和输出属性来对数据进行分类，降维和优化阶段以产生一个简化的结果集合以便检查，最后通过用户交互式可视化接口进行解释阶段的操作。我们设计的一个关键部分是组合变量构建步骤，该步骤将由神经网络获得的非线性特征重塑为直观解释的线性特征。我们通过对大型组织员工之间的电子邮件通信数据集进行案例研究，证明了工作流程的有效性和可理解性。
+
+    Multivariate networks are commonly found in real-world data-driven applications. Uncovering and understanding the relations of interest in multivariate networks is not a trivial task. This paper presents a visual analytics workflow for studying multivariate networks to extract associations between different structural and semantic characteristics of the networks (e.g., what are the combinations of attributes largely relating to the density of a social network?). The workflow consists of a neural-network-based learning phase to classify the data based on the chosen input and output attributes, a dimensionality reduction and optimization phase to produce a simplified set of results for examination, and finally an interpreting phase conducted by the user through an interactive visualization interface. A key part of our design is a composite variable construction step that remodels nonlinear features obtained by neural networks into linear features that are intuitive to interpret. We demon
     
 
