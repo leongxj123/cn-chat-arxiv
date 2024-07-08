@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.IT</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.IT</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.IT</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.IT</description><item><title>&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#22522;&#20110;&#36125;&#21494;&#26031;&#20248;&#21270;&#30340;&#26041;&#27861;&#65292;&#26080;&#35770;&#32422;&#26463;&#20989;&#25968;&#30340;&#29305;&#24615;&#22914;&#20309;&#65292;&#37117;&#33021;&#28385;&#36275;&#23433;&#20840;&#35201;&#27714;&#12290;</title><link>http://arxiv.org/abs/2306.17815</link><description>&lt;p&gt;
+&#36890;&#36807;&#22312;&#32447;&#20449;&#24515;&#39044;&#27979;&#23454;&#29616;&#20855;&#22791;&#24418;&#24335;&#23433;&#20840;&#20445;&#35777;&#30340;&#36125;&#21494;&#26031;&#20248;&#21270;
+&lt;/p&gt;
+&lt;p&gt;
+Bayesian Optimization with Formal Safety Guarantees via Online Conformal Prediction. (arXiv:2306.17815v1 [cs.LG])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2306.17815
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#22522;&#20110;&#36125;&#21494;&#26031;&#20248;&#21270;&#30340;&#26041;&#27861;&#65292;&#26080;&#35770;&#32422;&#26463;&#20989;&#25968;&#30340;&#29305;&#24615;&#22914;&#20309;&#65292;&#37117;&#33021;&#28385;&#36275;&#23433;&#20840;&#35201;&#27714;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#40657;&#30418;&#38646;&#38454;&#20248;&#21270;&#26159;&#37329;&#34701;&#12289;&#29289;&#29702;&#21644;&#24037;&#31243;&#31561;&#39046;&#22495;&#24212;&#29992;&#30340;&#26680;&#24515;&#22522;&#26412;&#25805;&#20316;&#12290;&#22312;&#36825;&#20010;&#38382;&#39064;&#30340;&#24120;&#35265;&#24418;&#24335;&#20013;&#65292;&#35774;&#35745;&#32773;&#39034;&#24207;&#23581;&#35797;&#20505;&#36873;&#35299;&#65292;&#24182;&#20174;&#31995;&#32479;&#20013;&#25509;&#25910;&#21040;&#20851;&#20110;&#27599;&#20010;&#23581;&#35797;&#20540;&#30340;&#22122;&#22768;&#21453;&#39304;&#12290;&#26412;&#25991;&#30740;&#31350;&#20102;&#22312;&#36825;&#20123;&#22330;&#26223;&#20013;&#36824;&#25552;&#20379;&#20102;&#26377;&#20851;&#23581;&#35797;&#35299;&#30340;&#23433;&#20840;&#24615;&#30340;&#21453;&#39304;&#65292;&#24182;&#19988;&#20248;&#21270;&#22120;&#34987;&#38480;&#21046;&#22312;&#25972;&#20010;&#20248;&#21270;&#36807;&#31243;&#20013;&#23581;&#35797;&#30340;&#19981;&#23433;&#20840;&#35299;&#30340;&#25968;&#37327;&#19978;&#12290;&#22312;&#22522;&#20110;&#36125;&#21494;&#26031;&#20248;&#21270;&#65288;BO&#65289;&#30340;&#26041;&#27861;&#19978;&#65292;&#20808;&#21069;&#30340;&#30740;&#31350;&#24341;&#20837;&#20102;&#19968;&#31181;&#34987;&#31216;&#20026;SAFEOPT&#30340;&#20248;&#21270;&#26041;&#26696;&#65292;&#21482;&#35201;&#28385;&#36275;&#23545;&#23433;&#20840;&#32422;&#26463;&#20989;&#25968;&#30340;&#20005;&#26684;&#20551;&#35774;&#65292;&#23601;&#33021;&#22815;&#20197;&#21487;&#25511;&#30340;&#27010;&#29575;&#22312;&#21453;&#39304;&#22122;&#22768;&#19978;&#36991;&#20813;&#36873;&#25321;&#20219;&#20309;&#19981;&#23433;&#20840;&#30340;&#35299;&#12290;&#26412;&#25991;&#20171;&#32461;&#20102;&#19968;&#31181;&#26032;&#30340;&#22522;&#20110;BO&#30340;&#26041;&#27861;&#65292;&#26080;&#35770;&#32422;&#26463;&#20989;&#25968;&#30340;&#29305;&#24615;&#22914;&#20309;&#65292;&#37117;&#33021;&#28385;&#36275;&#23433;&#20840;&#35201;&#27714;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+Black-box zero-th order optimization is a central primitive for applications in fields as diverse as finance, physics, and engineering. In a common formulation of this problem, a designer sequentially attempts candidate solutions, receiving noisy feedback on the value of each attempt from the system. In this paper, we study scenarios in which feedback is also provided on the safety of the attempted solution, and the optimizer is constrained to limit the number of unsafe solutions that are tried throughout the optimization process. Focusing on methods based on Bayesian optimization (BO), prior art has introduced an optimization scheme -- referred to as SAFEOPT -- that is guaranteed not to select any unsafe solution with a controllable probability over feedback noise as long as strict assumptions on the safety constraint function are met. In this paper, a novel BO-based approach is introduced that satisfies safety requirements irrespective of properties of the constraint function. This s
+&lt;/p&gt;</description></item></channel></rss>
