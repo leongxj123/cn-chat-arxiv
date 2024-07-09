@@ -2,86 +2,41 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [From Representational Harms to Quality-of-Service Harms: A Case Study on Llama 2 Safety Safeguards](https://arxiv.org/abs/2403.13213) | 本文探讨了针对表现性伤害和服务质量伤害的羊驼2安全保障措施的有效性，并指出了大型语言模型在实用性和安全性之间的权衡关系。 |
-| [^2] | [A Question-centric Multi-experts Contrastive Learning Framework for Improving the Accuracy and Interpretability of Deep Sequential Knowledge Tracing Models](https://arxiv.org/abs/2403.07322) | 通过一个问题中心的多专家对比学习框架，提高深度序列知识追踪模型的准确性和可解释性，解决了知识追踪中个体问题信息建模和模型预测结果解释的重要挑战 |
-| [^3] | [Improving Low-Resource Knowledge Tracing Tasks by Supervised Pre-training and Importance Mechanism Fine-tuning](https://arxiv.org/abs/2403.06725) | 本文提出了名为LoReKT的低资源知识追踪框架，通过监督预训练和微调重要性机制，旨在从丰富资源的KT数据集中学习可转移的参数和表示来改进低资源知识追踪任务。 |
-| [^4] | [How AI Ideas Affect the Creativity, Diversity, and Evolution of Human Ideas: Evidence From a Large, Dynamic Experiment.](http://arxiv.org/abs/2401.13481) | AI思想对个体创造力没有影响，但增加了整体思想多样性的数量和变化速率。 |
-| [^5] | [Characteristics and prevalence of fake social media profiles with AI-generated faces.](http://arxiv.org/abs/2401.02627) | 本文分析了使用AI生成的人脸作为头像的伪造社交媒体账户，发现它们用于传播诈骗、垃圾信息以及放大协同信息等不真实活动。通过开发一种有效的方法，作者估计使用GAN生成的面孔的账户普遍性下限在0.021%到0.044%之间，约为每日活跃账户10K个。 |
-| [^6] | [FUTURE-AI: International consensus guideline for trustworthy and deployable artificial intelligence in healthcare.](http://arxiv.org/abs/2309.12325) | FUTURE-AI是第一个国际共识框架，为医疗保健领域的可信AI工具开发和部署提供指导原则和最佳实践。 |
+| [^1] | [The Interplay of Learning, Analytics, and Artificial Intelligence in Education](https://arxiv.org/abs/2403.16081) | 本文提出了 AI 在学习和教育中的多维视角，强调了 AI、分析和学习过程之间错综复杂的相互作用，挑战了将 AI 视为随机工具的观念，强调了 AI 作为理解人类学习的重要性，并提出了三种独特的教育中人工智能的概念化。 |
+| [^2] | [Investigating Cultural Alignment of Large Language Models](https://arxiv.org/abs/2402.13231) | 研究发现大型语言模型在文化整合方面表现更佳，特别是通过与特定文化的主导语言提示或精制语言混合预训练。 |
+| [^3] | [FUTURE-AI: International consensus guideline for trustworthy and deployable artificial intelligence in healthcare.](http://arxiv.org/abs/2309.12325) | FUTURE-AI是第一个国际共识框架，为医疗保健领域的可信AI工具开发和部署提供指导原则和最佳实践。 |
 
 # 详细
 
-[^1]: 从表现性伤害到服务质量伤害:羊驼2安全保障的案例研究
+[^1]: 教育中学习、分析和人工智能的相互作用
 
-    From Representational Harms to Quality-of-Service Harms: A Case Study on Llama 2 Safety Safeguards
+    The Interplay of Learning, Analytics, and Artificial Intelligence in Education
 
-    [https://arxiv.org/abs/2403.13213](https://arxiv.org/abs/2403.13213)
+    [https://arxiv.org/abs/2403.16081](https://arxiv.org/abs/2403.16081)
 
-    本文探讨了针对表现性伤害和服务质量伤害的羊驼2安全保障措施的有效性，并指出了大型语言模型在实用性和安全性之间的权衡关系。
-
-    
-
-    近期大型语言模型（LLM）的进展导致它们在各个领域被广泛采用。然而，这些进步也引入了额外的安全风险，并引发了对其对已经边缘化人群的不利影响的担忧。尽管存在越来越多的减轻措施来开发安全保障措施，比如监督式的安全定向微调和利用来自人类反馈的安全强化学习，但关于这些模型的安全性和内在偏见仍存在多重关注。此外，先前的研究已经证明，为了安全而优化的模型通常会展示夸大的安全行为，比如出于预防措施而倾向于不回应某些请求。因此，文献中已经记录了这些模型在实用性和安全性之间的明显权衡。在本文中，我们进一步研究了安全措施的有效性，通过评估...
-
-    arXiv:2403.13213v1 Announce Type: cross  Abstract: Recent progress in large language models (LLMs) has led to their widespread adoption in various domains. However, these advancements have also introduced additional safety risks and raised concerns regarding their detrimental impact on already marginalized populations. Despite growing mitigation efforts to develop safety safeguards, such as supervised safety-oriented fine-tuning and leveraging safe reinforcement learning from human feedback, multiple concerns regarding the safety and ingrained biases in these models remain. Furthermore, previous work has demonstrated that models optimized for safety often display exaggerated safety behaviors, such as a tendency to refrain from responding to certain requests as a precautionary measure. As such, a clear trade-off between the helpfulness and safety of these models has been documented in the literature. In this paper, we further investigate the effectiveness of safety measures by evaluatin
-    
-[^2]: 一个问题中心的多专家对比学习框架，用于提高深度序列知识追踪模型的准确性和可解释性
-
-    A Question-centric Multi-experts Contrastive Learning Framework for Improving the Accuracy and Interpretability of Deep Sequential Knowledge Tracing Models
-
-    [https://arxiv.org/abs/2403.07322](https://arxiv.org/abs/2403.07322)
-
-    通过一个问题中心的多专家对比学习框架，提高深度序列知识追踪模型的准确性和可解释性，解决了知识追踪中个体问题信息建模和模型预测结果解释的重要挑战
+    本文提出了 AI 在学习和教育中的多维视角，强调了 AI、分析和学习过程之间错综复杂的相互作用，挑战了将 AI 视为随机工具的观念，强调了 AI 作为理解人类学习的重要性，并提出了三种独特的教育中人工智能的概念化。
 
     
 
-    知识追踪在通过分析学生历史学习过程来预测其未来表现中发挥着至关重要的作用。深度神经网络在解决知识追踪问题方面展现出巨大潜力。然而，将深度学习技术应用于模拟知识追踪过程仍然存在一些重要挑战。第一个挑战在于将问题的个体信息融入建模中。这很关键，因为尽管问题共享相同的知识组件（KC），但学生对同质问题的知识习得可以有显著差异。第二个挑战在于解释现有基于深度学习的知识追踪模型的预测结果。在真实应用中，虽然可能并不需要完全透明和可解释的模型参数，但关键是以老师能理解的方式呈现模型的预测结果。
+    本文提出了人工智能在学习和教育中的多维视角，强调人工智能、分析和学习过程之间错综复杂的相互作用。笔者挑战了将人工智能仅视为随机工具的普遍观念，例如生成式人工智能，主张重视对人工智能的替代概念。文章突出了人类智能与人工信息处理之间的差异，AI算法中固有的认知多样性，并提出AI也可以作为理解人类学习的工具。从将AI视为人类智能的类比的早期学习科学和教育中的AI研究已经偏离这一观点，促使有必要重新点燃这种联系。本文提出了三种独特的教育中人工智能的概念化：人类认知的外部化、内化AI模型以影响人类思维
 
-    arXiv:2403.07322v1 Announce Type: cross  Abstract: Knowledge tracing (KT) plays a crucial role in predicting students' future performance by analyzing their historical learning processes. Deep neural networks (DNNs) have shown great potential in solving the KT problem. However, there still exist some important challenges when applying deep learning techniques to model the KT process. The first challenge lies in taking the individual information of the question into modeling. This is crucial because, despite questions sharing the same knowledge component (KC), students' knowledge acquisition on homogeneous questions can vary significantly. The second challenge lies in interpreting the prediction results from existing deep learning-based KT models. In real-world applications, while it may not be necessary to have complete transparency and interpretability of the model parameters, it is crucial to present the model's prediction results in a manner that teachers find interpretable. This ma
+    arXiv:2403.16081v1 Announce Type: cross  Abstract: This paper presents a multi dimensional view of AI's role in learning and education, emphasizing the intricate interplay between AI, analytics, and the learning processes. Here, I challenge the prevalent narrow conceptualization of AI as stochastic tools, as exemplified in generative AI, and argue for the importance of alternative conceptualisations of AI. I highlight the differences between human intelligence and artificial information processing, the cognitive diversity inherent in AI algorithms, and posit that AI can also serve as an instrument for understanding human learning. Early learning sciences and AI in Education research, which saw AI as an analogy for human intelligence, have diverged from this perspective, prompting a need to rekindle this connection. The paper presents three unique conceptualizations of AI in education: the externalization of human cognition, the internalization of AI models to influence human thought pr
     
-[^3]: 通过监督预训练和重要性机制微调改进低资源知识追踪任务
+[^2]: 研究大型语言模型的文化整合
 
-    Improving Low-Resource Knowledge Tracing Tasks by Supervised Pre-training and Importance Mechanism Fine-tuning
+    Investigating Cultural Alignment of Large Language Models
 
-    [https://arxiv.org/abs/2403.06725](https://arxiv.org/abs/2403.06725)
+    [https://arxiv.org/abs/2402.13231](https://arxiv.org/abs/2402.13231)
 
-    本文提出了名为LoReKT的低资源知识追踪框架，通过监督预训练和微调重要性机制，旨在从丰富资源的KT数据集中学习可转移的参数和表示来改进低资源知识追踪任务。
-
-    
-
-    知识追踪（KT）旨在基于学生的历史互动来估计他们的知识掌握程度。最近，基于深度学习的KT（DLKT）方法在KT任务中取得了令人印象深刻的表现。然而，由于各种原因，如预算限制和隐私问题，许多实际场景中观察到的互动非常有限，即低资源KT数据集。直接在低资源KT数据集上训练DLKT模型可能会导致过拟合，并且很难选择适当的深度神经架构。因此，在本文中，我们提出了一个名为LoReKT的低资源KT框架来应对上述挑战。受盛行的“预训练和微调”范式的启发，我们旨在在预训练阶段从丰富资源的KT数据集中学习可转移的参数和表示。
-
-    arXiv:2403.06725v1 Announce Type: cross  Abstract: Knowledge tracing (KT) aims to estimate student's knowledge mastery based on their historical interactions. Recently, the deep learning based KT (DLKT) approaches have achieved impressive performance in the KT task. These DLKT models heavily rely on the large number of available student interactions. However, due to various reasons such as budget constraints and privacy concerns, observed interactions are very limited in many real-world scenarios, a.k.a, low-resource KT datasets. Directly training a DLKT model on a low-resource KT dataset may lead to overfitting and it is difficult to choose the appropriate deep neural architecture. Therefore, in this paper, we propose a low-resource KT framework called LoReKT to address above challenges. Inspired by the prevalent "pre-training and fine-tuning" paradigm, we aim to learn transferable parameters and representations from rich-resource KT datasets during the pre-training stage and subseque
-    
-[^4]: AI思想如何影响人类思想的创造力、多样性和进化：来自一个大规模动态实验的证据
-
-    How AI Ideas Affect the Creativity, Diversity, and Evolution of Human Ideas: Evidence From a Large, Dynamic Experiment. (arXiv:2401.13481v1 [cs.CY])
-
-    [http://arxiv.org/abs/2401.13481](http://arxiv.org/abs/2401.13481)
-
-    AI思想对个体创造力没有影响，但增加了整体思想多样性的数量和变化速率。
+    研究发现大型语言模型在文化整合方面表现更佳，特别是通过与特定文化的主导语言提示或精制语言混合预训练。
 
     
 
-    大规模语言模型输出的接触正在迅速增加。观看到AI生成的思想将如何影响人类思想？我们进行了一个实验（800+参与者，40+个国家），参与者观看了来自ChatGPT或之前实验参与者的创意思想，然后进行了自己的创意思考。我们变化了AI生成示例的数量（无、低、高曝光）以及示例是否标记为“AI”（披露）。我们的动态实验设计 - 在同一实验条件下，使用之前参与者的思想作为未来参与者的刺激 - 模拟了文化创造的相互依赖过程：创造性思想建立在之前的思想基础上。因此，我们捕捉到了LLM“在文化循环中”的复合效应。我们发现高AI曝光（但不是低AI曝光）并没有影响个人思想的创造力，但增加了整体思想多样性的平均数量和变化速率。AI使思想多样性的累积效应增强了。
+    长久以来，语言和文化之间错综复杂的关系一直是语言人类学领域探索的一个课题。被推广为集体人类知识库的大型语言模型（LLMs）提出一个关键问题：这些模型是否真正概括了不同文化所采用的多样知识？我们的研究发现，这些模型在两个维度上表现出更大的文化整合性 -- 首先，当提示使用特定文化的主导语言时，其次，当预先使用该文化采用的语言的精制混合进行预训练。我们通过模拟社会学调查来量化文化整合，将模型的响应与实际调查参与者作为参考进行比较。具体来说，我们通过将LLMs用阿拉伯语和英语以不同的预训练数据混合提示来复制在埃及和美国各地进行的调查。
 
-    Exposure to large language model output is rapidly increasing. How will seeing AI-generated ideas affect human ideas? We conducted an experiment (800+ participants, 40+ countries) where participants viewed creative ideas that were from ChatGPT or prior experimental participants and then brainstormed their own idea. We varied the number of AI-generated examples (none, low, or high exposure) and if the examples were labeled as 'AI' (disclosure). Our dynamic experiment design -- ideas from prior participants in an experimental condition are used as stimuli for future participants in the same experimental condition -- mimics the interdependent process of cultural creation: creative ideas are built upon prior ideas. Hence, we capture the compounding effects of having LLMs 'in the culture loop'. We find that high AI exposure (but not low AI exposure) did not affect the creativity of individual ideas but did increase the average amount and rate of change of collective idea diversity. AI made 
+    arXiv:2402.13231v1 Announce Type: new  Abstract: The intricate relationship between language and culture has long been a subject of exploration within the realm of linguistic anthropology. Large Language Models (LLMs), promoted as repositories of collective human knowledge, raise a pivotal question: do these models genuinely encapsulate the diverse knowledge adopted by different cultures? Our study reveals that these models demonstrate greater cultural alignment along two dimensions -- firstly, when prompted with the dominant language of a specific culture, and secondly, when pretrained with a refined mixture of languages employed by that culture. We quantify cultural alignment by simulating sociological surveys, comparing model responses to those of actual survey participants as references. Specifically, we replicate a survey conducted in various regions of Egypt and the United States through prompting LLMs with different pretraining data mixtures in both Arabic and English with the p
     
-[^5]: 伪造社交媒体账户的特点和普遍性，使用的是AI生成的面孔
-
-    Characteristics and prevalence of fake social media profiles with AI-generated faces. (arXiv:2401.02627v1 [cs.CY])
-
-    [http://arxiv.org/abs/2401.02627](http://arxiv.org/abs/2401.02627)
-
-    本文分析了使用AI生成的人脸作为头像的伪造社交媒体账户，发现它们用于传播诈骗、垃圾信息以及放大协同信息等不真实活动。通过开发一种有效的方法，作者估计使用GAN生成的面孔的账户普遍性下限在0.021%到0.044%之间，约为每日活跃账户10K个。
-
-    
-
-    最近人工智能生成模型的进步引发了对其可能创建出逼真伪造社交媒体账户的担忧，但缺乏实证证据。本文对使用生成对抗网络（GANs）生成的人脸作为头像的Twitter(X)账户进行了系统分析。我们提供了一个包含1,353个此类账户的数据集，并展示了它们用于传播诈骗、垃圾信息以及放大协同信息等不真实活动。通过利用GAN生成的面孔的一个特征——眼睛的一致位置，并与人工注释相结合，我们设计了一种有效的方法来识别野外中使用GAN生成的账户。将该方法应用于随机样本的活跃Twitter用户中，我们估计使用GAN生成的面孔的账户普遍性下限在0.021%到0.044%之间，约为每日活跃账户10K个。这些发现突显了多模式账户对于新兴威胁的重要性。
-
-    Recent advancements in generative artificial intelligence (AI) have raised concerns about their potential to create convincing fake social media accounts, but empirical evidence is lacking. In this paper, we present a systematic analysis of Twitter(X) accounts using human faces generated by Generative Adversarial Networks (GANs) for their profile pictures. We present a dataset of 1,353 such accounts and show that they are used to spread scams, spam, and amplify coordinated messages, among other inauthentic activities. Leveraging a feature of GAN-generated faces -- consistent eye placement -- and supplementing it with human annotation, we devise an effective method for identifying GAN-generated profiles in the wild. Applying this method to a random sample of active Twitter users, we estimate a lower bound for the prevalence of profiles using GAN-generated faces between 0.021% and 0.044% -- around 10K daily active accounts. These findings underscore the emerging threats posed by multimod
-    
-[^6]: FUTURE-AI：在医疗保健领域的可信和可部署人工智能的国际共识指南
+[^3]: FUTURE-AI：在医疗保健领域的可信和可部署人工智能的国际共识指南
 
     FUTURE-AI: International consensus guideline for trustworthy and deployable artificial intelligence in healthcare. (arXiv:2309.12325v1 [cs.CY])
 

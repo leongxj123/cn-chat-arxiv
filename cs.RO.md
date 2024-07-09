@@ -2,82 +2,97 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation](https://arxiv.org/abs/2403.07788) | DexCap是一个可移植的手部动作捕捉系统，结合DexIL算法从人类手部运动数据中训练机器人技能，具有精确追踪和复制人类动作的能力。 |
-| [^2] | [Deep Reinforcement Learning with Dynamic Graphs for Adaptive Informative Path Planning](https://arxiv.org/abs/2402.04894) | 提出了一种利用动态图的深度强化学习方法，用于自适应信息路径规划，能够在未知的三维环境中映射出感兴趣的目标。 |
-| [^3] | [DexDiffuser: Generating Dexterous Grasps with Diffusion Models](https://arxiv.org/abs/2402.02989) | DexDiffuser是一种使用扩散模型生成灵巧抓取姿势的新方法，通过对物体点云的生成、评估和优化，实现了较高的抓取成功率。 |
-| [^4] | [PhotoBot: Reference-Guided Interactive Photography via Natural Language.](http://arxiv.org/abs/2401.11061) | PhotoBot是一个通过自然语言引导和机器人摄影师相互作用的自动化照片获取框架。它利用视觉语言模型和物体检测器来提供摄影建议，并通过视觉变换器计算相机的姿态调整，从而实现高质量的照片获取。 |
-| [^5] | [Robust Pivoting Manipulation using Contact Implicit Bilevel Optimization.](http://arxiv.org/abs/2303.08965) | 本文使用接触隐式双层优化来规划支点操纵并增加鲁棒性，通过利用摩擦力来弥补物体和环境物理属性估计中的不准确性，以应对不确定性影响。 |
+| [^1] | [Explore until Confident: Efficient Exploration for Embodied Question Answering](https://arxiv.org/abs/2403.15941) | 通过利用大型视觉-语言模型的语义推理能力，结合深度信息和视觉提示，提出了一种方法来解决具身问答中的有效探索和回答问题的挑战 |
+| [^2] | [Blending Data-Driven Priors in Dynamic Games](https://arxiv.org/abs/2402.14174) | 探索一种在动态游戏中将数据驱动参考政策与基于优化博弈政策相融合的方法，提出了一种非合作动态博弈KLGame，其中包含了针对每个决策者的可调参数。 |
+| [^3] | [Verifiably Following Complex Robot Instructions with Foundation Models](https://arxiv.org/abs/2402.11498) | 提出了一种名为语言指令地面化运动规划（LIMP）系统，利用基础模型和时间逻辑生成指令条件的语义地图，使机器人能够可验证地遵循富有表现力和长期的指令，包括开放词汇参照和复杂的时空约束。 |
+| [^4] | [Conditional Neural Expert Processes for Learning from Demonstration](https://arxiv.org/abs/2402.08424) | 条件神经专家过程（CNEP）是一种学习从演示中获取技能的新框架，通过将不同模式的演示分配给不同的专家网络，并利用潜在空间中的信息将专家与编码表示匹配，解决了相同技能演示的变化和多种方式获取的挑战。 |
+| [^5] | [Lifelike Agility and Play on Quadrupedal Robots using Reinforcement Learning and Generative Pre-trained Models.](http://arxiv.org/abs/2308.15143) | 该论文提出了一种使用生成模型和强化学习的框架，使四足机器人能够在复杂环境中像真实动物一样具有灵活性和策略。通过预训练生成模型，保留了动物行为的知识，并通过学习适应环境，克服挑战性的障碍。 |
+| [^6] | [Neuro-Inspired Efficient Map Building via Fragmentation and Recall.](http://arxiv.org/abs/2307.05793) | 本文提出了一种神经启发的地图构建方法，通过分割和回溯来解决大型环境下的探索问题，并基于意外性的空间聚类设置探索子目标。 |
 
 # 详细
 
-[^1]: DexCap：用于灵巧操作的可扩展和可移植动作捕捉数据收集系统
+[^1]: 探索直到自信: 面向具身问答的高效探索
 
-    DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation
+    Explore until Confident: Efficient Exploration for Embodied Question Answering
 
-    [https://arxiv.org/abs/2403.07788](https://arxiv.org/abs/2403.07788)
+    [https://arxiv.org/abs/2403.15941](https://arxiv.org/abs/2403.15941)
 
-    DexCap是一个可移植的手部动作捕捉系统，结合DexIL算法从人类手部运动数据中训练机器人技能，具有精确追踪和复制人类动作的能力。
-
-    
-
-    从人类手部运动数据中学习是为机器人赋予类人灵巧在现实操纵任务中的潜在途径，然而，现存手部动作捕捉系统的可移植性以及将动作捕捉数据转化为有效控制策略的困难仍然存在挑战。为了应对这些问题，我们引入了DexCap，一个便携式手部动作捕捉系统，以及DexIL，一种新颖的模仿算法，可直接从人类手部动作捕捉数据训练灵巧机器人技能。DexCap基于SLAM和电磁场以及环境的3D观察，提供了对手腕和手指运动的精确、抗遮挡的跟踪。利用这一丰富的数据集，DexIL采用逆运动学和基于点云的模仿学习来复制人类动作与机器人手。除了从人类运动中学习外，DexCap还提供了一种op
-
-    arXiv:2403.07788v1 Announce Type: cross  Abstract: Imitation learning from human hand motion data presents a promising avenue for imbuing robots with human-like dexterity in real-world manipulation tasks. Despite this potential, substantial challenges persist, particularly with the portability of existing hand motion capture (mocap) systems and the difficulty of translating mocap data into effective control policies. To tackle these issues, we introduce DexCap, a portable hand motion capture system, alongside DexIL, a novel imitation algorithm for training dexterous robot skills directly from human hand mocap data. DexCap offers precise, occlusion-resistant tracking of wrist and finger motions based on SLAM and electromagnetic field together with 3D observations of the environment. Utilizing this rich dataset, DexIL employs inverse kinematics and point cloud-based imitation learning to replicate human actions with robot hands. Beyond learning from human motion, DexCap also offers an op
-    
-[^2]: 利用动态图的深度强化学习进行自适应信息路径规划
-
-    Deep Reinforcement Learning with Dynamic Graphs for Adaptive Informative Path Planning
-
-    [https://arxiv.org/abs/2402.04894](https://arxiv.org/abs/2402.04894)
-
-    提出了一种利用动态图的深度强化学习方法，用于自适应信息路径规划，能够在未知的三维环境中映射出感兴趣的目标。
+    通过利用大型视觉-语言模型的语义推理能力，结合深度信息和视觉提示，提出了一种方法来解决具身问答中的有效探索和回答问题的挑战
 
     
 
-    自主机器人常常被用于数据收集，因为它们高效且劳动成本低。机器人数据采集的关键任务是在初始未知环境中规划路径，以满足平台特定的资源约束，例如有限的电池寿命。在三维环境中进行自适应在线路径规划面临着很多挑战，包括大量有效动作的存在以及未知遮挡物的存在。为了解决这些问题，我们提出了一种新颖的深度强化学习方法，用于自适应重新规划机器人路径以在未知的三维环境中映射出感兴趣的目标。我们方法的关键之处在于构建动态图，将规划动作限制在机器人附近，使我们能够快速响应新发现的障碍和感兴趣的目标。对于重新规划，我们提出了一种新的奖励函数，平衡探索未知环境和利用在线收集的有关感兴趣目标的数据。
+    我们考虑了具身问答（EQA）的问题，这指的是在需要主动探索环境以收集信息直到对问题的答案有自信的具身代理，例如机器人。在这项工作中，我们利用大规模视觉-语言模型（VLMs）的强大语义推理能力来高效探索和回答这些问题。然而，在EQA中使用VLMs时存在两个主要挑战：它们没有内部记忆将场景映射以便规划如何随时间探索，并且它们的置信度可能被错误校准并可能导致机器人过早停止探索或过度探索。我们提出了一种方法，首先基于深度信息和通过视觉提示VLM来构建场景的语义地图-利用其对场景相关区域的广泛知识来进行探索。接下来，我们使用符合预测来校准VLM的置信度。
 
-    Autonomous robots are often employed for data collection due to their efficiency and low labour costs. A key task in robotic data acquisition is planning paths through an initially unknown environment to collect observations given platform-specific resource constraints, such as limited battery life. Adaptive online path planning in 3D environments is challenging due to the large set of valid actions and the presence of unknown occlusions. To address these issues, we propose a novel deep reinforcement learning approach for adaptively replanning robot paths to map targets of interest in unknown 3D environments. A key aspect of our approach is a dynamically constructed graph that restricts planning actions local to the robot, allowing us to quickly react to newly discovered obstacles and targets of interest. For replanning, we propose a new reward function that balances between exploring the unknown environment and exploiting online-collected data about the targets of interest. Our experi
+    arXiv:2403.15941v1 Announce Type: cross  Abstract: We consider the problem of Embodied Question Answering (EQA), which refers to settings where an embodied agent such as a robot needs to actively explore an environment to gather information until it is confident about the answer to a question. In this work, we leverage the strong semantic reasoning capabilities of large vision-language models (VLMs) to efficiently explore and answer such questions. However, there are two main challenges when using VLMs in EQA: they do not have an internal memory for mapping the scene to be able to plan how to explore over time, and their confidence can be miscalibrated and can cause the robot to prematurely stop exploration or over-explore. We propose a method that first builds a semantic map of the scene based on depth information and via visual prompting of a VLM - leveraging its vast knowledge of relevant regions of the scene for exploration. Next, we use conformal prediction to calibrate the VLM's 
     
-[^3]: DexDiffuser: 使用扩散模型生成灵巧抓取姿势
+[^2]: 在动态游戏中融合数据驱动的先验知识
 
-    DexDiffuser: Generating Dexterous Grasps with Diffusion Models
+    Blending Data-Driven Priors in Dynamic Games
 
-    [https://arxiv.org/abs/2402.02989](https://arxiv.org/abs/2402.02989)
+    [https://arxiv.org/abs/2402.14174](https://arxiv.org/abs/2402.14174)
 
-    DexDiffuser是一种使用扩散模型生成灵巧抓取姿势的新方法，通过对物体点云的生成、评估和优化，实现了较高的抓取成功率。
-
-    
-
-    我们引入了DexDiffuser，一种新颖的灵巧抓取方法，能够在部分物体点云上生成、评估和优化抓取姿势。DexDiffuser包括条件扩散型抓取采样器DexSampler和灵巧抓取评估器DexEvaluator。DexSampler通过对随机抓取进行迭代去噪，生成与物体点云条件相关的高质量抓取姿势。我们还引入了两种抓取优化策略：基于评估器的扩散(Evaluator-Guided Diffusion，EGD)和基于评估器的采样优化(Evaluator-based Sampling Refinement，ESR)。我们在虚拟环境和真实世界的实验中，使用Allegro Hand进行测试，结果表明DexDiffuser相比最先进的多指抓取生成方法FFHNet，平均抓取成功率提高了21.71-22.20%。
-
-    We introduce DexDiffuser, a novel dexterous grasping method that generates, evaluates, and refines grasps on partial object point clouds. DexDiffuser includes the conditional diffusion-based grasp sampler DexSampler and the dexterous grasp evaluator DexEvaluator. DexSampler generates high-quality grasps conditioned on object point clouds by iterative denoising of randomly sampled grasps. We also introduce two grasp refinement strategies: Evaluator-Guided Diffusion (EGD) and Evaluator-based Sampling Refinement (ESR). Our simulation and real-world experiments on the Allegro Hand consistently demonstrate that DexDiffuser outperforms the state-of-the-art multi-finger grasp generation method FFHNet with an, on average, 21.71--22.20\% higher grasp success rate.
-    
-[^4]: PhotoBot：通过自然语言引导的参考互动摄影
-
-    PhotoBot: Reference-Guided Interactive Photography via Natural Language. (arXiv:2401.11061v1 [cs.CV])
-
-    [http://arxiv.org/abs/2401.11061](http://arxiv.org/abs/2401.11061)
-
-    PhotoBot是一个通过自然语言引导和机器人摄影师相互作用的自动化照片获取框架。它利用视觉语言模型和物体检测器来提供摄影建议，并通过视觉变换器计算相机的姿态调整，从而实现高质量的照片获取。
+    探索一种在动态游戏中将数据驱动参考政策与基于优化博弈政策相融合的方法，提出了一种非合作动态博弈KLGame，其中包含了针对每个决策者的可调参数。
 
     
 
-    我们介绍了一个名为PhotoBot的框架，它基于高级人类语言引导和机器人摄影师之间的相互作用，用于自动化的照片获取。我们建议通过从策展画廊中检索到的参考图片向用户传达摄影建议。我们利用视觉语言模型（VLM）和物体检测器，通过文本描述对参考图片进行特征化，并使用大型语言模型（LLM）通过基于用户语言查询的文本推理检索相关的参考图片。为了对应参考图片和观察到的场景，我们利用一个能够捕捉显著不同的图像的语义相似性的预训练特征的视觉变换器，通过解决一个透视n-点（PnP）问题来计算RGB-D相机的姿态调整。我们在配备有手腕相机的真实机械手臂上演示了我们的方法。我们的用户研究表明，由PhotoBot拍摄的照片具有良好的质量和效果。
+    随着智能机器人如自动驾驶车辆在人群中的部署越来越多，这些系统应该在安全的、与人互动意识相关的运动规划中利用基于模型的博弈论规划器与数据驱动政策的程度仍然是一个悬而未决的问题。本文探讨了一种融合数据驱动参考政策和基于优化的博弈论政策的原则性方法。我们制定了KLGame，这是一种带有Kullback-Leibler（KL）正则化的非合作动态博弈，针对一个一般的、随机的，可能是多模式的参考政策。
 
-    We introduce PhotoBot, a framework for automated photo acquisition based on an interplay between high-level human language guidance and a robot photographer. We propose to communicate photography suggestions to the user via a reference picture that is retrieved from a curated gallery. We exploit a visual language model (VLM) and an object detector to characterize reference pictures via textual descriptions and use a large language model (LLM) to retrieve relevant reference pictures based on a user's language query through text-based reasoning. To correspond the reference picture and the observed scene, we exploit pre-trained features from a vision transformer capable of capturing semantic similarity across significantly varying images. Using these features, we compute pose adjustments for an RGB-D camera by solving a Perspective-n-Point (PnP) problem. We demonstrate our approach on a real-world manipulator equipped with a wrist camera. Our user studies show that photos taken by PhotoBo
+    arXiv:2402.14174v1 Announce Type: cross  Abstract: As intelligent robots like autonomous vehicles become increasingly deployed in the presence of people, the extent to which these systems should leverage model-based game-theoretic planners versus data-driven policies for safe, interaction-aware motion planning remains an open question. Existing dynamic game formulations assume all agents are task-driven and behave optimally. However, in reality, humans tend to deviate from the decisions prescribed by these models, and their behavior is better approximated under a noisy-rational paradigm. In this work, we investigate a principled methodology to blend a data-driven reference policy with an optimization-based game-theoretic policy. We formulate KLGame, a type of non-cooperative dynamic game with Kullback-Leibler (KL) regularization with respect to a general, stochastic, and possibly multi-modal reference policy. Our method incorporates, for each decision maker, a tunable parameter that pe
     
-[^5]: 使用接触隐式双层优化实现鲁棒的支点操作
+[^3]: 使用基础模型可验证地遵循复杂机器人指令
 
-    Robust Pivoting Manipulation using Contact Implicit Bilevel Optimization. (arXiv:2303.08965v1 [cs.RO])
+    Verifiably Following Complex Robot Instructions with Foundation Models
 
-    [http://arxiv.org/abs/2303.08965](http://arxiv.org/abs/2303.08965)
+    [https://arxiv.org/abs/2402.11498](https://arxiv.org/abs/2402.11498)
 
-    本文使用接触隐式双层优化来规划支点操纵并增加鲁棒性，通过利用摩擦力来弥补物体和环境物理属性估计中的不准确性，以应对不确定性影响。
+    提出了一种名为语言指令地面化运动规划（LIMP）系统，利用基础模型和时间逻辑生成指令条件的语义地图，使机器人能够可验证地遵循富有表现力和长期的指令，包括开放词汇参照和复杂的时空约束。
 
     
 
-    通用操纵要求机器人能够与新物体和环境进行交互。这个要求使得操纵变得异常具有挑战性，因为机器人必须考虑到不确定因素下的复杂摩擦相互作用及物体和环境的物理属性估计的不准确性。本文研究了支点操作规划的鲁棒优化问题，提供了如何利用摩擦力来弥补物理特性估计中的不准确性的见解。在某些假设下，导出了摩擦力提供的支点操作稳定裕度的解析表达式。然后，在接触隐式双层优化(CIBO)框架中使用该裕度来优化轨迹 ，以增强对物体多个物理参数不确定性的鲁棒性。我们在实际机器人上的实验中，对于严重干扰的参数，分析了稳定裕度，并显示了优化轨迹的改善鲁棒性。
+    让机器人能够遵循复杂的自然语言指令是一个重要但具有挑战性的问题。人们希望在指导机器人时能够灵活表达约束，指向任意地标并验证行为。相反，机器人必须将人类指令消除歧义，将指令参照物联系到真实世界中。我们提出了一种名为语言指令地面化运动规划（LIMP）的系统，该系统利用基础模型和时间逻辑生成指令条件的语义地图，使机器人能够可验证地遵循富有表现力和长期的指令，涵盖了开放词汇参照和复杂的时空约束。与先前在机器人任务执行中使用基础模型的方法相比，LIMP构建了一个可解释的指令表示，揭示了机器人与指导者预期动机的一致性，并实现了机器人行为的综合。
 
-    Generalizable manipulation requires that robots be able to interact with novel objects and environment. This requirement makes manipulation extremely challenging as a robot has to reason about complex frictional interactions with uncertainty in physical properties of the object and the environment. In this paper, we study robust optimization for planning of pivoting manipulation in the presence of uncertainties. We present insights about how friction can be exploited to compensate for inaccuracies in the estimates of the physical properties during manipulation. Under certain assumptions, we derive analytical expressions for stability margin provided by friction during pivoting manipulation. This margin is then used in a Contact Implicit Bilevel Optimization (CIBO) framework to optimize a trajectory that maximizes this stability margin to provide robustness against uncertainty in several physical parameters of the object. We present analysis of the stability margin with respect to sever
+    arXiv:2402.11498v1 Announce Type: cross  Abstract: Enabling robots to follow complex natural language instructions is an important yet challenging problem. People want to flexibly express constraints, refer to arbitrary landmarks and verify behavior when instructing robots. Conversely, robots must disambiguate human instructions into specifications and ground instruction referents in the real world. We propose Language Instruction grounding for Motion Planning (LIMP), a system that leverages foundation models and temporal logics to generate instruction-conditioned semantic maps that enable robots to verifiably follow expressive and long-horizon instructions with open vocabulary referents and complex spatiotemporal constraints. In contrast to prior methods for using foundation models in robot task execution, LIMP constructs an explainable instruction representation that reveals the robot's alignment with an instructor's intended motives and affords the synthesis of robot behaviors that 
+    
+[^4]: 条件神经专家过程用于从演示中学习
+
+    Conditional Neural Expert Processes for Learning from Demonstration
+
+    [https://arxiv.org/abs/2402.08424](https://arxiv.org/abs/2402.08424)
+
+    条件神经专家过程（CNEP）是一种学习从演示中获取技能的新框架，通过将不同模式的演示分配给不同的专家网络，并利用潜在空间中的信息将专家与编码表示匹配，解决了相同技能演示的变化和多种方式获取的挑战。
+
+    
+
+    从演示中学习（LfD）是机器人学中广泛使用的一种技术，用于技能获取。然而，相同技能的演示可能存在显著的变化，或者学习系统可能同时尝试获取相同技能的不同方式，这使得将这些动作编码为运动原语变得具有挑战性。为了解决这些挑战，我们提出了一个LfD框架，即条件神经专家过程（CNEP），它学习将来自不同模式的演示分配给不同的专家网络，利用潜在空间中的内在信息将专家与编码表示匹配起来。CNEP不需要在哪种模式下轨迹属于的监督。在人工生成的数据集上进行的实验证明了CNEP的有效性。此外，我们将CNEP与另一个LfD框架——条件神经运动原语（CNMP）在一系列任务上的性能进行了比较，包括对真实机器人进行实验。
+
+    Learning from Demonstration (LfD) is a widely used technique for skill acquisition in robotics. However, demonstrations of the same skill may exhibit significant variances, or learning systems may attempt to acquire different means of the same skill simultaneously, making it challenging to encode these motions into movement primitives. To address these challenges, we propose an LfD framework, namely the Conditional Neural Expert Processes (CNEP), that learns to assign demonstrations from different modes to distinct expert networks utilizing the inherent information within the latent space to match experts with the encoded representations. CNEP does not require supervision on which mode the trajectories belong to. Provided experiments on artificially generated datasets demonstrate the efficacy of CNEP. Furthermore, we compare the performance of CNEP with another LfD framework, namely Conditional Neural Movement Primitives (CNMP), on a range of tasks, including experiments on a real robo
+    
+[^5]: 使用强化学习和生成预训练模型在四足机器人上实现生动的灵活性和游戏性
+
+    Lifelike Agility and Play on Quadrupedal Robots using Reinforcement Learning and Generative Pre-trained Models. (arXiv:2308.15143v1 [cs.RO])
+
+    [http://arxiv.org/abs/2308.15143](http://arxiv.org/abs/2308.15143)
+
+    该论文提出了一种使用生成模型和强化学习的框架，使四足机器人能够在复杂环境中像真实动物一样具有灵活性和策略。通过预训练生成模型，保留了动物行为的知识，并通过学习适应环境，克服挑战性的障碍。
+
+    
+
+    总结动物和人类的知识启发了机器人创新。在这项工作中，我们提出了一种框架，使四足机器人能够在复杂环境中像真实动物一样拥有生动的灵活性和策略。受到在语言和图像理解方面表现出色的大型预训练模型的启发，我们引入了先进的深度生成模型的能力，以生成模拟真实动物动作的运动控制信号。与传统控制器和端到端强化学习方法只针对特定任务不同，我们提出在动物运动数据集上预训练生成模型，以保留有表达力的动物行为知识。预训练模型拥有足够的原始级知识，但与环境无关。然后，在学习的后续阶段，通过穿越一些以前的方法很少考虑的具有挑战性的障碍，如穿过狭窄的空间等，使其适应环境。
+
+    Summarizing knowledge from animals and human beings inspires robotic innovations. In this work, we propose a framework for driving legged robots act like real animals with lifelike agility and strategy in complex environments. Inspired by large pre-trained models witnessed with impressive performance in language and image understanding, we introduce the power of advanced deep generative models to produce motor control signals stimulating legged robots to act like real animals. Unlike conventional controllers and end-to-end RL methods that are task-specific, we propose to pre-train generative models over animal motion datasets to preserve expressive knowledge of animal behavior. The pre-trained model holds sufficient primitive-level knowledge yet is environment-agnostic. It is then reused for a successive stage of learning to align with the environments by traversing a number of challenging obstacles that are rarely considered in previous approaches, including creeping through narrow sp
+    
+[^6]: 神经启发的高效地图构建通过分割和回溯
+
+    Neuro-Inspired Efficient Map Building via Fragmentation and Recall. (arXiv:2307.05793v1 [cs.AI])
+
+    [http://arxiv.org/abs/2307.05793](http://arxiv.org/abs/2307.05793)
+
+    本文提出了一种神经启发的地图构建方法，通过分割和回溯来解决大型环境下的探索问题，并基于意外性的空间聚类设置探索子目标。
+
+    
+
+    动物和机器人通过构建和完善空间地图来导航环境。这些地图使得包括回家、规划、搜索和觅食在内的功能成为可能。在大型环境中，探索空间是一个难题：代理可能会陷入局部区域。在这里，我们从神经科学中汲取经验，提出并应用了分割和回溯（FarMap）的概念。代理通过基于意外性的空间聚类来解决地图构建问题，同时将其用于设置空间探索的子目标。代理构建和使用本地地图来预测他们的观测结果；高意外性会导致“分割事件”，从而截断本地地图。在这些事件中，最近的本地地图被放入长期记忆（LTM）中，并初始化另一个本地地图。如果断裂点的观察结果与存储的某个本地地图的观察结果相匹配，那么该地图就会被回溯（并重用）自LTM。分割点诱导.
+
+    Animals and robots navigate through environments by building and refining maps of the space. These maps enable functions including navigating back to home, planning, search, and foraging. In large environments, exploration of the space is a hard problem: agents can become stuck in local regions. Here, we use insights from neuroscience to propose and apply the concept of Fragmentation-and-Recall (FarMap), with agents solving the mapping problem by building local maps via a surprisal-based clustering of space, which they use to set subgoals for spatial exploration. Agents build and use a local map to predict their observations; high surprisal leads to a ``fragmentation event'' that truncates the local map. At these events, the recent local map is placed into long-term memory (LTM), and a different local map is initialized. If observations at a fracture point match observations in one of the stored local maps, that map is recalled (and thus reused) from LTM. The fragmentation points induc
     
 

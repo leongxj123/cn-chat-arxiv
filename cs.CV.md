@@ -2,149 +2,215 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Multimodal Variational Autoencoder for Low-cost Cardiac Hemodynamics Instability Detection](https://arxiv.org/abs/2403.13658) | 提出了一种新颖的多模态变分自编码器（$\text{CardioVAE}_\text{X,G}$），将低成本胸部X射线（CXR）和心电图（ECG）数据形式整合起来，并实现了共享特征和独特特征的学习。 |
-| [^2] | [Hierarchical Gaussian Mixture Normalizing Flow Modeling for Unified Anomaly Detection](https://arxiv.org/abs/2403.13349) | 提出了一种用于统一异常检测的Hierarchical Gaussian mixture normalizing flow (HGAD)建模方法，通过分层高斯混合建模来提升异常检测模型的表示能力 |
-| [^3] | [DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation](https://arxiv.org/abs/2403.07788) | DexCap是一个可移植的手部动作捕捉系统，结合DexIL算法从人类手部运动数据中训练机器人技能，具有精确追踪和复制人类动作的能力。 |
-| [^4] | [Towards Multimodal Sentiment Analysis Debiasing via Bias Purification](https://arxiv.org/abs/2403.05023) | 提出了一种基于因果关系的多模态对事实推理情感分析框架，用于净化和缓解数据集的偏见，从而提高多模态情感分析的性能。 |
-| [^5] | [U$^2$MRPD: Unsupervised undersampled MRI reconstruction by prompting a large latent diffusion model](https://arxiv.org/abs/2402.10609) | U$^2$MRPD是一个新颖的框架，通过大型潜在扩散模型引导，实现了无监督的欠采样MRI重建，能够支持图像特定的MRI重建，且在多个数据集上表现出与监督和MRI扩散方法相媲美甚至更好的性能。 |
-| [^6] | [ScreenAI: A Vision-Language Model for UI and Infographics Understanding](https://arxiv.org/abs/2402.04615) | ScreenAI是一个专注于UI和信息图表理解的视觉-语言模型，通过灵活的修补策略和独特的数据集训练，以及针对UI元素的屏幕注解任务的处理，实现了在多个任务上的新的最优结果。 |
-| [^7] | [MT-HCCAR: Multi-Task Deep Learning with Hierarchical Classification and Attention-based Regression for Cloud Property Retrieval.](http://arxiv.org/abs/2401.16520) | 这篇论文提出了一种名为MT-HCCAR的多任务深度学习模型，用于云属性检索。该模型考虑了云属性检索任务之间的层级关系，并具有对不同传感器数据集具有健壮泛化能力的特点。 |
-| [^8] | [PhotoBot: Reference-Guided Interactive Photography via Natural Language.](http://arxiv.org/abs/2401.11061) | PhotoBot是一个通过自然语言引导和机器人摄影师相互作用的自动化照片获取框架。它利用视觉语言模型和物体检测器来提供摄影建议，并通过视觉变换器计算相机的姿态调整，从而实现高质量的照片获取。 |
-| [^9] | [Artwork Protection Against Neural Style Transfer Using Locally Adaptive Adversarial Color Attack.](http://arxiv.org/abs/2401.09673) | 本文提出了一种名为本地自适应对抗颜色攻击（LAACA）的方法，用于保护艺术品免受神经风格转换（NST）的滥用。该方法通过在不可察觉的情况下对图像进行修改，产生对NST具有干扰作用的扰动。 |
-| [^10] | [FUTURE-AI: International consensus guideline for trustworthy and deployable artificial intelligence in healthcare.](http://arxiv.org/abs/2309.12325) | FUTURE-AI是第一个国际共识框架，为医疗保健领域的可信AI工具开发和部署提供指导原则和最佳实践。 |
-| [^11] | [Entropy-based Guidance of Deep Neural Networks for Accelerated Convergence and Improved Performance.](http://arxiv.org/abs/2308.14938) | 本研究通过引入基于熵的损失项，通过测量神经网络处理数据时的熵变化，指导神经网络以更快速的收敛、更好的性能学习丰富的潜在数据表示。 |
-| [^12] | [LEGO: Learning and Graph-Optimized Modular Tracker for Online Multi-Object Tracking with Point Clouds.](http://arxiv.org/abs/2308.09908) | 本文提出了一个学习和图优化的模块化跟踪器LEGO，通过集成图优化和自注意力机制，提高了在线多目标跟踪中的数据关联性能。使用LiDAR单独进行跟踪的LEGO方法在KITTI目标跟踪评估中表现出了优秀的性能。 |
-| [^13] | [Out-of-distribution forgetting: vulnerability of continual learning to intra-class distribution shift.](http://arxiv.org/abs/2306.00427) | 连续学习中存在一种特殊形式的灾难性遗忘——越界遗忘，当给定类别引入类内分布转移时，它会显着削弱该类别的连续学习方法的识别准确率。 |
+| [^1] | [CAM-Based Methods Can See through Walls](https://arxiv.org/abs/2404.01964) | CAM-based方法解释图像分类模型的决策时，可能会错误地将模型无法看到的部分归因为重要，这可能导致对模型行为的误解释。 |
+| [^2] | [YNetr: Dual-Encoder architecture on Plain Scan Liver Tumors (PSLT)](https://arxiv.org/abs/2404.00327) | YNetr模型在Plain Scan Liver Tumors数据集上实现了62.63%的Dice系数，优于其他模型，填补了肝肿瘤普通扫描分割数据集和算法的空白。 |
+| [^3] | [Explore until Confident: Efficient Exploration for Embodied Question Answering](https://arxiv.org/abs/2403.15941) | 通过利用大型视觉-语言模型的语义推理能力，结合深度信息和视觉提示，提出了一种方法来解决具身问答中的有效探索和回答问题的挑战 |
+| [^4] | [Medical Unlearnable Examples: Securing Medical Data from Unauthorized Traning via Sparsity-Aware Local Masking](https://arxiv.org/abs/2403.10573) | 引入医学数据中的难以察觉噪声来保护数据，防止未经授权的训练，尤其适用于生物医学数据领域。 |
+| [^5] | [GaussianImage: 1000 FPS Image Representation and Compression by 2D Gaussian Splatting](https://arxiv.org/abs/2403.08551) | 通过2D高斯喷涂实现图像表示和压缩，在GPU内存占用降低的情况下，提供了更快的渲染速度，并在表示性能上与INR相匹敌。 |
+| [^6] | [m2mKD: Module-to-Module Knowledge Distillation for Modular Transformers](https://arxiv.org/abs/2402.16918) | 提出了用于在模块之间传递知识的通用模块到模块知识蒸馏（m2mKD）方法，解决了模块化Transformer训练中的优化困难和参数数量庞大等挑战。 |
+| [^7] | [Universal Prompt Optimizer for Safe Text-to-Image Generation](https://arxiv.org/abs/2402.10882) | 提出了第一个通用提示优化器，用于在黑盒场景中安全生成文本到图像，通过构建毒素-清洁提示对数据集，设计奖励函数，并通过 Proximal Policy Optimization 训练优化器，成功降低各种 T2I 模型生成不安全内容的可能性。 |
+| [^8] | [Pix2Code: Learning to Compose Neural Visual Concepts as Programs](https://arxiv.org/abs/2402.08280) | Pix2Code 是一个将神经视觉概念组合成程序的框架，通过利用显式、组合的符号和隐式的神经表示能力，从图像中检索对象表示并将关系概念合成为lambda演算程序，来解决通用性和可解释性的挑战。在推理领域Kandinsky Patterns和CURI上的评估结果表明，Pix2Code 能够识别组合视觉概念并推广到新数据和推理任务。 |
+| [^9] | [Is it safe to cross? Interpretable Risk Assessment with GPT-4V for Safety-Aware Street Crossing](https://arxiv.org/abs/2402.06794) | 本文介绍了使用GPT-4V进行可解释风险评估的方法，该方法通过解释复杂的过马路场景，为盲人和视力低下人士的安全决策提供支持。 |
+| [^10] | [V-IRL: Grounding Virtual Intelligence in Real Life](https://arxiv.org/abs/2402.03310) | V-IRL是一个平台，可以让人工智能代理在虚拟环境中与现实世界进行互动，旨在将数字和物理世界之间的差距缩小，并开发出具有丰富感知、决策和与真实数据互动能力的代理。 |
+| [^11] | [Be Careful What You Smooth For: Label Smoothing Can Be a Privacy Shield but Also a Catalyst for Model Inversion Attacks](https://arxiv.org/abs/2310.06549) | 标签平滑方法在深度学习中发挥重要作用，既能提升模型泛化能力和校准性，又可能成为模型隐私泄露的因素。研究揭示了结合负因子进行平滑可有效阻止模型反推攻击，提升隐私保护效果，超越了当前最先进的防御技术。 |
+| [^12] | [An explainable three dimension framework to uncover learning patterns: A unified look in variable sulci recognition](https://arxiv.org/abs/2309.00903) | 该论文提出了一个针对医学成像中的可解释AI的三维框架，旨在解决神经科学领域中识别大脑沟特征的复杂性问题。 |
+| [^13] | [High-Quality Image Restoration Following Human Instructions.](http://arxiv.org/abs/2401.16468) | 本论文提出了一种使用人类编写的指令来指导图像恢复模型的方法，并在多个恢复任务上取得了最先进的结果，为基于文本指导的图像恢复和增强研究提供了一个新的基准。 |
+| [^14] | [FUTURE-AI: International consensus guideline for trustworthy and deployable artificial intelligence in healthcare.](http://arxiv.org/abs/2309.12325) | FUTURE-AI是第一个国际共识框架，为医疗保健领域的可信AI工具开发和部署提供指导原则和最佳实践。 |
+| [^15] | [SAMUS: Adapting Segment Anything Model for Clinically-Friendly and Generalizable Ultrasound Image Segmentation.](http://arxiv.org/abs/2309.06824) | 本文提出了SAMUS，一个专为超声图像分割量身定制的通用模型，通过引入并行CNN分支和适配器来改善SAM在医学图像分割中的性能和泛化能力。 |
+| [^16] | [Deep Neural Networks and Brain Alignment: Brain Encoding and Decoding (Survey).](http://arxiv.org/abs/2307.10246) | 本文综述了深度神经网络和脑对齐的研究，重点在于脑编码和解码模型的应用。这些模型对于理解大脑的信息处理机制以及设计脑机接口具有重要意义。 |
+| [^17] | [TbExplain: A Text-based Explanation Method for Scene Classification Models with the Statistical Prediction Correction.](http://arxiv.org/abs/2307.10003) | 本文提出了一种名为TbExplain的框架，它利用XAI技术和预训练的对象检测器，通过文本形式解释场景分类模型，并引入了一种新的方法来纠正预测和进行文本解释。 |
+| [^18] | [Beware of diffusion models for synthesizing medical images -- A comparison with GANs in terms of memorizing brain tumor images.](http://arxiv.org/abs/2305.07644) | 扩散模型在医学图像合成中可能会导致记忆训练图像的问题，研究人员在选择合适的模型时需要谨慎。 |
+| [^19] | [Certified Zeroth-order Black-Box Defense with Robust UNet Denoiser.](http://arxiv.org/abs/2304.06430) | 本文提出了一种带有鲁棒UNet去噪器的认证零阶黑盒防御方法，通过在黑盒模型之前预置RDUNet和DS或AE和RDUNet，成功提高了模型鲁棒性。 |
+| [^20] | [BugNIST -- A New Large Scale Volumetric 3D Image Dataset for Classification and Detection.](http://arxiv.org/abs/2304.01838) | 本文介绍了一个名为BugNIST的广泛数据集，该数据集由12种昆虫和幼虫的微-CT扫描组成。通过训练和测试检测模型，BugNIST旨在评估三维体积图像分类和检测方法，解决上下文无关的挑战。 |
+| [^21] | [Towards Multimodal Prediction of Spontaneous Humour: A Novel Dataset and First Results.](http://arxiv.org/abs/2209.14272) | 本研究提出了Passau-SFCH数据集，包含了11小时的录音，用于自发幽默的预测。通过多模态的分析和特征融合，实现了对幽默以及幽默情感的自动识别。 |
+| [^22] | [A Medical Image Fusion Method based on MDLatLRRv2.](http://arxiv.org/abs/2206.15179) | 该论文提出了一种基于MDLatLRRv2的医学图像融合方法，通过改进多级分解方法并充分利用LatLRR提取的各种图像特征，实现了在客观和主观评估中的最先进融合性能。 |
+| [^23] | [Res2NetFuse: A Fusion Method for Infrared and Visible Images.](http://arxiv.org/abs/2112.14540) | 本文提出了一种基于Res2Net的红外和可见光图像融合框架，通过引入新的训练策略和融合策略，实现了最先进的融合性能。 |
 
 # 详细
 
-[^1]: 用于低成本心脏血液动力学不稳定性检测的多模态变分自编码器
+[^1]: 基于CAM的方法可以穿墙而过
 
-    Multimodal Variational Autoencoder for Low-cost Cardiac Hemodynamics Instability Detection
+    CAM-Based Methods Can See through Walls
 
-    [https://arxiv.org/abs/2403.13658](https://arxiv.org/abs/2403.13658)
+    [https://arxiv.org/abs/2404.01964](https://arxiv.org/abs/2404.01964)
 
-    提出了一种新颖的多模态变分自编码器（$\text{CardioVAE}_\text{X,G}$），将低成本胸部X射线（CXR）和心电图（ECG）数据形式整合起来，并实现了共享特征和独特特征的学习。
-
-    
-
-    最近在非侵入性检测心脏血液动力学不稳定性（CHDI）方面取得了进展，主要集中在将机器学习技术应用于单一数据形式，如心脏磁共振成像（MRI）。尽管这些方法具有潜力，但在标记的患者数据量有限时，这些方法通常效果不佳，这是医学领域的常见挑战。此外，只有少数研究探讨了多模态方法来研究CHDI，这些方法主要依赖昂贵的数据形式，如心脏MRI和心脏超声图。为了应对这些限制，我们提出了一种新颖的多模态变分自编码器（$\text{CardioVAE}_\text{X,G}$）来整合低成本胸部X射线（CXR）和心电图（ECG）数据形式，并在大型未标记数据集上进行预训练。具体来说，$\text{CardioVAE}_\text{X,G}$引入了一种新颖的三流预训练策略，以学习共享特征和各数据形式独有的特征，从而实现了fi
-
-    arXiv:2403.13658v1 Announce Type: new  Abstract: Recent advancements in non-invasive detection of cardiac hemodynamic instability (CHDI) primarily focus on applying machine learning techniques to a single data modality, e.g. cardiac magnetic resonance imaging (MRI). Despite their potential, these approaches often fall short especially when the size of labeled patient data is limited, a common challenge in the medical domain. Furthermore, only a few studies have explored multimodal methods to study CHDI, which mostly rely on costly modalities such as cardiac MRI and echocardiogram. In response to these limitations, we propose a novel multimodal variational autoencoder ($\text{CardioVAE}_\text{X,G}$) to integrate low-cost chest X-ray (CXR) and electrocardiogram (ECG) modalities with pre-training on a large unlabeled dataset. Specifically, $\text{CardioVAE}_\text{X,G}$ introduces a novel tri-stream pre-training strategy to learn both shared and modality-specific features, thus enabling fi
-    
-[^2]: 分层高斯混合正规化流建模用于统一异常检测
-
-    Hierarchical Gaussian Mixture Normalizing Flow Modeling for Unified Anomaly Detection
-
-    [https://arxiv.org/abs/2403.13349](https://arxiv.org/abs/2403.13349)
-
-    提出了一种用于统一异常检测的Hierarchical Gaussian mixture normalizing flow (HGAD)建模方法，通过分层高斯混合建模来提升异常检测模型的表示能力
+    CAM-based方法解释图像分类模型的决策时，可能会错误地将模型无法看到的部分归因为重要，这可能导致对模型行为的误解释。
 
     
 
-    统一异常检测是异常检测中最具挑战性的任务之一，其中一个统一模型使用来自多个类别的正常样本进行训练，其目标是检测这些类别中的异常。本文提出了一种新颖的分层高斯混合正规化流建模方法，命名为HGAD，用于完成统一异常检测。我们的HGAD包含两个关键组件：跨类别高斯混合建模和类内混合类中心学习。与先前基于NF的AD方法相比，分层高斯混合建模方法可以为异常检测模型带来更强大的表示能力。
+    CAM-based方法是一种广泛使用的事后解释性方法，生成显著性地图来解释图像分类模型的决策。显著性地图突出显示与预测相关的图像重要区域。本文展示了大多数这些方法可能错误地将图像的某些部分归因为模型无法看到的重要得分。我们表明这种现象在理论和实验中均存在。理论上，我们分析了GradCAM在一个简单的掩膜CNN模型初始化时的行为。实验上，我们训练了一个类似VGG的模型，限制其不使用图像的下半部分，仍然观察到未见部分的正分数。这种行为在两个新数据集上进行了定量评估。我们认为这是有问题的，可能会导致对模型行为的错误解释。
 
-    arXiv:2403.13349v1 Announce Type: new  Abstract: Unified anomaly detection (AD) is one of the most challenges for anomaly detection, where one unified model is trained with normal samples from multiple classes with the objective to detect anomalies in these classes. For such a challenging task, popular normalizing flow (NF) based AD methods may fall into a "homogeneous mapping" issue,where the NF-based AD models are biased to generate similar latent representations for both normal and abnormal features, and thereby lead to a high missing rate of anomalies. In this paper, we propose a novel Hierarchical Gaussian mixture normalizing flow modeling method for accomplishing unified Anomaly Detection, which we call HGAD. Our HGAD consists of two key components: inter-class Gaussian mixture modeling and intra-class mixed class centers learning. Compared to the previous NF-based AD methods, the hierarchical Gaussian mixture modeling approach can bring stronger representation capability to the 
+    arXiv:2404.01964v1 Announce Type: cross  Abstract: CAM-based methods are widely-used post-hoc interpretability method that produce a saliency map to explain the decision of an image classification model. The saliency map highlights the important areas of the image relevant to the prediction. In this paper, we show that most of these methods can incorrectly attribute an important score to parts of the image that the model cannot see. We show that this phenomenon occurs both theoretically and experimentally. On the theory side, we analyze the behavior of GradCAM on a simple masked CNN model at initialization. Experimentally, we train a VGG-like model constrained to not use the lower part of the image and nevertheless observe positive scores in the unseen part of the image. This behavior is evaluated quantitatively on two new datasets. We believe that this is problematic, potentially leading to mis-interpretation of the model's behavior.
     
-[^3]: DexCap：用于灵巧操作的可扩展和可移植动作捕捉数据收集系统
+[^2]: YNetr：在Plain Scan Liver Tumors (PSLT)上的双编码器架构
 
-    DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation
+    YNetr: Dual-Encoder architecture on Plain Scan Liver Tumors (PSLT)
 
-    [https://arxiv.org/abs/2403.07788](https://arxiv.org/abs/2403.07788)
+    [https://arxiv.org/abs/2404.00327](https://arxiv.org/abs/2404.00327)
 
-    DexCap是一个可移植的手部动作捕捉系统，结合DexIL算法从人类手部运动数据中训练机器人技能，具有精确追踪和复制人类动作的能力。
-
-    
-
-    从人类手部运动数据中学习是为机器人赋予类人灵巧在现实操纵任务中的潜在途径，然而，现存手部动作捕捉系统的可移植性以及将动作捕捉数据转化为有效控制策略的困难仍然存在挑战。为了应对这些问题，我们引入了DexCap，一个便携式手部动作捕捉系统，以及DexIL，一种新颖的模仿算法，可直接从人类手部动作捕捉数据训练灵巧机器人技能。DexCap基于SLAM和电磁场以及环境的3D观察，提供了对手腕和手指运动的精确、抗遮挡的跟踪。利用这一丰富的数据集，DexIL采用逆运动学和基于点云的模仿学习来复制人类动作与机器人手。除了从人类运动中学习外，DexCap还提供了一种op
-
-    arXiv:2403.07788v1 Announce Type: cross  Abstract: Imitation learning from human hand motion data presents a promising avenue for imbuing robots with human-like dexterity in real-world manipulation tasks. Despite this potential, substantial challenges persist, particularly with the portability of existing hand motion capture (mocap) systems and the difficulty of translating mocap data into effective control policies. To tackle these issues, we introduce DexCap, a portable hand motion capture system, alongside DexIL, a novel imitation algorithm for training dexterous robot skills directly from human hand mocap data. DexCap offers precise, occlusion-resistant tracking of wrist and finger motions based on SLAM and electromagnetic field together with 3D observations of the environment. Utilizing this rich dataset, DexIL employs inverse kinematics and point cloud-based imitation learning to replicate human actions with robot hands. Beyond learning from human motion, DexCap also offers an op
-    
-[^4]: 通过偏差净化实现多模态情感分析的研究
-
-    Towards Multimodal Sentiment Analysis Debiasing via Bias Purification
-
-    [https://arxiv.org/abs/2403.05023](https://arxiv.org/abs/2403.05023)
-
-    提出了一种基于因果关系的多模态对事实推理情感分析框架，用于净化和缓解数据集的偏见，从而提高多模态情感分析的性能。
+    YNetr模型在Plain Scan Liver Tumors数据集上实现了62.63%的Dice系数，优于其他模型，填补了肝肿瘤普通扫描分割数据集和算法的空白。
 
     
 
-    多模态情感分析（MSA）旨在通过整合来自不同模态（如视觉、语言和音频）的与情感相关线索来理解人类意图。然而，当前MSA任务普遍受到未经计划的数据集偏见的影响，尤其是多模态话语级标签偏见和单词级上下文偏见。这些有害的偏见可能会误导模型专注于统计捷径和错误相关性，导致严重的性能瓶颈。为了缓解这些问题，我们提出了一种基于因果关系而非传统似然性的多模态对事实推理情感（MCIS）分析框架。具体而言，我们首先制定一个因果图来发现已训练的基准模型中的有害偏见。在推理阶段，给定一个事实多模态输入，MCIS想象两种对事实情形，以净化和缓解这些偏见。然后，MCIS可以从偏差中做出不带偏见的决策。
+    肝肿瘤是肝脏中不正常的生长，可能是良性或恶性，肝癌是全球重要的健康问题。然而，目前没有用于肝肿瘤普通扫描分割的数据集，也没有相关算法。为了填补这一空白，我们提出了Plain Scan Liver Tumors(PSLT)和YNetr。使用40个肝肿瘤普通扫描分割数据集进行了组装和注释。同时，我们利用Dice系数作为评估YNetr产生的分割结果的指标，有利于捕获不同频率信息。YNetr模型在PSLT数据集上实现了62.63%的Dice系数，超过其他公开模型的准确度范围1.22%。进行了与包括 UNet 3+、XNet、UNetr、Swin UNetr、Trans-BTS、COTr、nnUNetv2 (2D)、nnUNetv2 (3D fullres)、MedNext 在内的一系列模型的比较评估。
 
-    arXiv:2403.05023v1 Announce Type: new  Abstract: Multimodal Sentiment Analysis (MSA) aims to understand human intentions by integrating emotion-related clues from diverse modalities, such as visual, language, and audio. Unfortunately, the current MSA task invariably suffers from unplanned dataset biases, particularly multimodal utterance-level label bias and word-level context bias. These harmful biases potentially mislead models to focus on statistical shortcuts and spurious correlations, causing severe performance bottlenecks. To alleviate these issues, we present a Multimodal Counterfactual Inference Sentiment (MCIS) analysis framework based on causality rather than conventional likelihood. Concretely, we first formulate a causal graph to discover harmful biases from already-trained vanilla models. In the inference phase, given a factual multimodal input, MCIS imagines two counterfactual scenarios to purify and mitigate these biases. Then, MCIS can make unbiased decisions from biase
+    arXiv:2404.00327v1 Announce Type: cross  Abstract: Background: Liver tumors are abnormal growths in the liver that can be either benign or malignant, with liver cancer being a significant health concern worldwide. However, there is no dataset for plain scan segmentation of liver tumors, nor any related algorithms. To fill this gap, we propose Plain Scan Liver Tumors(PSLT) and YNetr. Methods: A collection of 40 liver tumor plain scan segmentation datasets was assembled and annotated. Concurrently, we utilized Dice coefficient as the metric for assessing the segmentation outcomes produced by YNetr, having advantage of capturing different frequency information. Results: The YNetr model achieved a Dice coefficient of 62.63% on the PSLT dataset, surpassing the other publicly available model by an accuracy margin of 1.22%. Comparative evaluations were conducted against a range of models including UNet 3+, XNet, UNetr, Swin UNetr, Trans-BTS, COTr, nnUNetv2 (2D), nnUNetv2 (3D fullres), MedNext
     
-[^5]: U$^2$MRPD: 通过大型潜在扩散模型引导的无监督MRI重建
+[^3]: 探索直到自信: 面向具身问答的高效探索
 
-    U$^2$MRPD: Unsupervised undersampled MRI reconstruction by prompting a large latent diffusion model
+    Explore until Confident: Efficient Exploration for Embodied Question Answering
 
-    [https://arxiv.org/abs/2402.10609](https://arxiv.org/abs/2402.10609)
+    [https://arxiv.org/abs/2403.15941](https://arxiv.org/abs/2403.15941)
 
-    U$^2$MRPD是一个新颖的框架，通过大型潜在扩散模型引导，实现了无监督的欠采样MRI重建，能够支持图像特定的MRI重建，且在多个数据集上表现出与监督和MRI扩散方法相媲美甚至更好的性能。
-
-    
-
-    arXiv:2402.10609v1 公告类型: 跨领域 摘要: 在自然图像上预训练的大型潜在扩散模型(LLDM)中蕴含着丰富而假设上普遍适用于自然和医学图像的隐含视觉知识。为了测试这一假设，我们引入了一个新颖的框架，通过提示一个预训练的大型潜在扩散模型（U$^2$MRPD）进行无监督的欠采样MRI重建。现有的数据驱动、监督的欠采样MRI重建网络通常具有有限的泛化能力和适应性，不足以应对各种数据采集场景；然而，U$^2$MRPD通过使用量身定制的MRSampler，支持图像特定的MRI重建，该MRSampler适用于复值MRI图像。通过任何单一来源或多源MRI数据集，U$^2$MRPD的性能还可以通过MRAdapter进行进一步提升，同时保持生成图像先验不变。多个数据集上的实验表明，U$^2$MRPD实现了与监督和MRI扩散方法相媲美甚至更好的性能。
-
-    arXiv:2402.10609v1 Announce Type: cross  Abstract: Implicit visual knowledge in a large latent diffusion model (LLDM) pre-trained on natural images is rich and hypothetically universal to natural and medical images. To test this hypothesis, we introduce a novel framework for Unsupervised Undersampled MRI Reconstruction by Prompting a pre-trained large latent Diffusion model ( U$^2$MRPD). Existing data-driven, supervised undersampled MRI reconstruction networks are typically of limited generalizability and adaptability toward diverse data acquisition scenarios; yet U$^2$MRPD supports image-specific MRI reconstruction by prompting an LLDM with an MRSampler tailored for complex-valued MRI images. With any single-source or diverse-source MRI dataset, U$^2$MRPD's performance is further boosted by an MRAdapter while keeping the generative image priors intact. Experiments on multiple datasets show that U$^2$MRPD achieves comparable or better performance than supervised and MRI diffusion metho
-    
-[^6]: ScreenAI: 用于UI和信息图表理解的视觉-语言模型
-
-    ScreenAI: A Vision-Language Model for UI and Infographics Understanding
-
-    [https://arxiv.org/abs/2402.04615](https://arxiv.org/abs/2402.04615)
-
-    ScreenAI是一个专注于UI和信息图表理解的视觉-语言模型，通过灵活的修补策略和独特的数据集训练，以及针对UI元素的屏幕注解任务的处理，实现了在多个任务上的新的最优结果。
+    通过利用大型视觉-语言模型的语义推理能力，结合深度信息和视觉提示，提出了一种方法来解决具身问答中的有效探索和回答问题的挑战
 
     
 
-    屏幕用户界面（UI）和信息图表在人类沟通和人机交互中起着重要作用，并且共享相似的视觉语言和设计原则。我们介绍了ScreenAI，这是一个专门用于UI和信息图表理解的视觉-语言模型。我们的模型改进了PaLI架构，采用了pix2struct的灵活修补策略，并经过独特的数据集训练。在这个数据集的核心是一项新颖的屏幕注解任务，模型必须识别UI元素的类型和位置。我们使用这些文本注解来描述屏幕，并使用大规模的语言模型自动生成问答（QA），UI导航和摘要训练数据集。我们进行了消融研究以展示这些设计选择的影响。在仅有5B参数的情况下，ScreenAI在基于UI和信息图表的任务（多页文档VQA，WebSRC，MoTIF和Widget字幕）上取得了最新的最优结果，并且达到了最好的效果。
+    我们考虑了具身问答（EQA）的问题，这指的是在需要主动探索环境以收集信息直到对问题的答案有自信的具身代理，例如机器人。在这项工作中，我们利用大规模视觉-语言模型（VLMs）的强大语义推理能力来高效探索和回答这些问题。然而，在EQA中使用VLMs时存在两个主要挑战：它们没有内部记忆将场景映射以便规划如何随时间探索，并且它们的置信度可能被错误校准并可能导致机器人过早停止探索或过度探索。我们提出了一种方法，首先基于深度信息和通过视觉提示VLM来构建场景的语义地图-利用其对场景相关区域的广泛知识来进行探索。接下来，我们使用符合预测来校准VLM的置信度。
 
-    Screen user interfaces (UIs) and infographics, sharing similar visual language and design principles, play important roles in human communication and human-machine interaction. We introduce ScreenAI, a vision-language model that specializes in UI and infographics understanding. Our model improves upon the PaLI architecture with the flexible patching strategy of pix2struct and is trained on a unique mixture of datasets. At the heart of this mixture is a novel screen annotation task in which the model has to identify the type and location of UI elements. We use these text annotations to describe screens to Large Language Models and automatically generate question-answering (QA), UI navigation, and summarization training datasets at scale. We run ablation studies to demonstrate the impact of these design choices. At only 5B parameters, ScreenAI achieves new state-of-the-artresults on UI- and infographics-based tasks (Multi-page DocVQA, WebSRC, MoTIF and Widget Captioning), and new best-in
+    arXiv:2403.15941v1 Announce Type: cross  Abstract: We consider the problem of Embodied Question Answering (EQA), which refers to settings where an embodied agent such as a robot needs to actively explore an environment to gather information until it is confident about the answer to a question. In this work, we leverage the strong semantic reasoning capabilities of large vision-language models (VLMs) to efficiently explore and answer such questions. However, there are two main challenges when using VLMs in EQA: they do not have an internal memory for mapping the scene to be able to plan how to explore over time, and their confidence can be miscalibrated and can cause the robot to prematurely stop exploration or over-explore. We propose a method that first builds a semantic map of the scene based on depth information and via visual prompting of a VLM - leveraging its vast knowledge of relevant regions of the scene for exploration. Next, we use conformal prediction to calibrate the VLM's 
     
-[^7]: MT-HCCAR: 多任务深度学习与层级分类的注意力回归用于云属性检索
+[^4]: 医学不可学习的示例：通过稀疏感知本地蒙版保护医学数据免受未经授权训练
 
-    MT-HCCAR: Multi-Task Deep Learning with Hierarchical Classification and Attention-based Regression for Cloud Property Retrieval. (arXiv:2401.16520v1 [cs.LG])
+    Medical Unlearnable Examples: Securing Medical Data from Unauthorized Traning via Sparsity-Aware Local Masking
 
-    [http://arxiv.org/abs/2401.16520](http://arxiv.org/abs/2401.16520)
+    [https://arxiv.org/abs/2403.10573](https://arxiv.org/abs/2403.10573)
 
-    这篇论文提出了一种名为MT-HCCAR的多任务深度学习模型，用于云属性检索。该模型考虑了云属性检索任务之间的层级关系，并具有对不同传感器数据集具有健壮泛化能力的特点。
-
-    
-
-    在地球科学领域中，有效的云属性检索包括云遮蔽、云相分类和云光学厚度（COT）预测仍然至关重要。传统方法需要针对每个传感器仪器使用不同的模型，因为它们具有独特的光谱特征。最近，在地球科学研究中采用了机器学习和深度学习技术从卫星数据集的光谱观测中提取特征。然而，现有方法缺乏考虑检索任务之间层级关系的创新架构。此外，考虑到现有传感器之间的光谱多样性，开发具有对不同传感器数据集具有健壮泛化能力的模型是必要的。令人惊讶的是，目前缺乏解决多样数据集下选择最优模型的方法。为此，本文引入了MT-HCCAR，这是一种端到端的深度学习模型，采用多任务学习和基于注意力的回归方法。
-
-    In the realm of Earth science, effective cloud property retrieval, encompassing cloud masking, cloud phase classification, and cloud optical thickness (COT) prediction, remains pivotal. Traditional methodologies necessitate distinct models for each sensor instrument due to their unique spectral characteristics. Recent strides in Earth Science research have embraced machine learning and deep learning techniques to extract features from satellite datasets' spectral observations. However, prevailing approaches lack novel architectures accounting for hierarchical relationships among retrieval tasks. Moreover, considering the spectral diversity among existing sensors, the development of models with robust generalization capabilities over different sensor datasets is imperative. Surprisingly, there is a dearth of methodologies addressing the selection of an optimal model for diverse datasets. In response, this paper introduces MT-HCCAR, an end-to-end deep learning model employing multi-task 
-    
-[^8]: PhotoBot：通过自然语言引导的参考互动摄影
-
-    PhotoBot: Reference-Guided Interactive Photography via Natural Language. (arXiv:2401.11061v1 [cs.CV])
-
-    [http://arxiv.org/abs/2401.11061](http://arxiv.org/abs/2401.11061)
-
-    PhotoBot是一个通过自然语言引导和机器人摄影师相互作用的自动化照片获取框架。它利用视觉语言模型和物体检测器来提供摄影建议，并通过视觉变换器计算相机的姿态调整，从而实现高质量的照片获取。
+    引入医学数据中的难以察觉噪声来保护数据，防止未经授权的训练，尤其适用于生物医学数据领域。
 
     
 
-    我们介绍了一个名为PhotoBot的框架，它基于高级人类语言引导和机器人摄影师之间的相互作用，用于自动化的照片获取。我们建议通过从策展画廊中检索到的参考图片向用户传达摄影建议。我们利用视觉语言模型（VLM）和物体检测器，通过文本描述对参考图片进行特征化，并使用大型语言模型（LLM）通过基于用户语言查询的文本推理检索相关的参考图片。为了对应参考图片和观察到的场景，我们利用一个能够捕捉显著不同的图像的语义相似性的预训练特征的视觉变换器，通过解决一个透视n-点（PnP）问题来计算RGB-D相机的姿态调整。我们在配备有手腕相机的真实机械手臂上演示了我们的方法。我们的用户研究表明，由PhotoBot拍摄的照片具有良好的质量和效果。
+    随着人工智能在医疗保健领域的快速增长，敏感医学数据的生成和存储显著增加。这种数据的丰富量推动了医学人工智能技术的进步。然而，对于未经授权的数据利用，例如用于训练商业人工智能模型，常常使研究人员望而却步，因为他们不愿公开其宝贵的数据集。为了保护这些难以收集的数据，同时鼓励医疗机构分享数据，一个有前途的解决方案是向数据中引入难以察觉的噪声。这种方法旨在通过在模型泛化中引入退化来保护数据，防止未经授权的训练。尽管现有方法在一般领域显示出令人钦佩的数据保护能力，但当应用于生物医学数据时往往表现不佳，主要是因为它们未能考虑到稀疏性。
 
-    We introduce PhotoBot, a framework for automated photo acquisition based on an interplay between high-level human language guidance and a robot photographer. We propose to communicate photography suggestions to the user via a reference picture that is retrieved from a curated gallery. We exploit a visual language model (VLM) and an object detector to characterize reference pictures via textual descriptions and use a large language model (LLM) to retrieve relevant reference pictures based on a user's language query through text-based reasoning. To correspond the reference picture and the observed scene, we exploit pre-trained features from a vision transformer capable of capturing semantic similarity across significantly varying images. Using these features, we compute pose adjustments for an RGB-D camera by solving a Perspective-n-Point (PnP) problem. We demonstrate our approach on a real-world manipulator equipped with a wrist camera. Our user studies show that photos taken by PhotoBo
+    arXiv:2403.10573v1 Announce Type: cross  Abstract: With the rapid growth of artificial intelligence (AI) in healthcare, there has been a significant increase in the generation and storage of sensitive medical data. This abundance of data, in turn, has propelled the advancement of medical AI technologies. However, concerns about unauthorized data exploitation, such as training commercial AI models, often deter researchers from making their invaluable datasets publicly available. In response to the need to protect this hard-to-collect data while still encouraging medical institutions to share it, one promising solution is to introduce imperceptible noise into the data. This method aims to safeguard the data against unauthorized training by inducing degradation in model generalization. Although existing methods have shown commendable data protection capabilities in general domains, they tend to fall short when applied to biomedical data, mainly due to their failure to account for the spar
     
-[^9]: 使用本地自适应对抗颜色攻击对艺术品进行神经风格转换的保护
+[^5]: 高斯图像：通过2D高斯喷涂进行1000帧每秒的图像表示和压缩
 
-    Artwork Protection Against Neural Style Transfer Using Locally Adaptive Adversarial Color Attack. (arXiv:2401.09673v1 [cs.CV])
+    GaussianImage: 1000 FPS Image Representation and Compression by 2D Gaussian Splatting
 
-    [http://arxiv.org/abs/2401.09673](http://arxiv.org/abs/2401.09673)
+    [https://arxiv.org/abs/2403.08551](https://arxiv.org/abs/2403.08551)
 
-    本文提出了一种名为本地自适应对抗颜色攻击（LAACA）的方法，用于保护艺术品免受神经风格转换（NST）的滥用。该方法通过在不可察觉的情况下对图像进行修改，产生对NST具有干扰作用的扰动。
+    通过2D高斯喷涂实现图像表示和压缩，在GPU内存占用降低的情况下，提供了更快的渲染速度，并在表示性能上与INR相匹敌。
 
     
 
-    神经风格转换（NST）广泛应用于计算机视觉中，用于生成具有任意风格的新图像。这个过程利用神经网络将风格图像的美学元素与内容图像的结构因素融合在一起，形成一个和谐整合的视觉结果。然而，未经授权的NST可能会滥用艺术品。这种滥用引起了关于艺术家权利的社会技术问题，并促使开发技术方法来积极保护原始创作。对抗性攻击主要在机器学习安全中进行探索。我们的工作将这一技术引入到保护艺术家知识产权的领域。本文引入了本地自适应对抗颜色攻击（LAACA）的方法，这种方法可以以对人眼不可察觉但对NST产生干扰的方式修改图像。具体而言，我们设计了针对高频内容丰富区域的扰动，这些扰动由中间特征的破坏产生。我们进行了实验和用户研究。
+    最近，隐式神经表示（INR）在图像表示和压缩方面取得了巨大成功，提供了高视觉质量和快速渲染速度，每秒10-1000帧，假设有足够的GPU资源可用。然而，这种要求常常阻碍了它们在内存有限的低端设备上的使用。为此，我们提出了一种通过2D高斯喷涂进行图像表示和压缩的开创性范式，名为GaussianImage。我们首先引入2D高斯来表示图像，其中每个高斯具有8个参数，包括位置、协方差和颜色。随后，我们揭示了一种基于累积求和的新颖渲染算法。值得注意的是，我们的方法使用GPU内存至少降低3倍，拟合时间快5倍，不仅在表示性能上与INR（例如WIRE，I-NGP）不相上下，而且无论参数大小如何都能提供1500-2000帧每秒的更快渲染速度。
 
-    Neural style transfer (NST) is widely adopted in computer vision to generate new images with arbitrary styles. This process leverages neural networks to merge aesthetic elements of a style image with the structural aspects of a content image into a harmoniously integrated visual result. However, unauthorized NST can exploit artwork. Such misuse raises socio-technical concerns regarding artists' rights and motivates the development of technical approaches for the proactive protection of original creations. Adversarial attack is a concept primarily explored in machine learning security. Our work introduces this technique to protect artists' intellectual property. In this paper Locally Adaptive Adversarial Color Attack (LAACA), a method for altering images in a manner imperceptible to the human eyes but disruptive to NST. Specifically, we design perturbations targeting image areas rich in high-frequency content, generated by disrupting intermediate features. Our experiments and user study
+    arXiv:2403.08551v1 Announce Type: cross  Abstract: Implicit neural representations (INRs) recently achieved great success in image representation and compression, offering high visual quality and fast rendering speeds with 10-1000 FPS, assuming sufficient GPU resources are available. However, this requirement often hinders their use on low-end devices with limited memory. In response, we propose a groundbreaking paradigm of image representation and compression by 2D Gaussian Splatting, named GaussianImage. We first introduce 2D Gaussian to represent the image, where each Gaussian has 8 parameters including position, covariance and color. Subsequently, we unveil a novel rendering algorithm based on accumulated summation. Remarkably, our method with a minimum of 3$\times$ lower GPU memory usage and 5$\times$ faster fitting time not only rivals INRs (e.g., WIRE, I-NGP) in representation performance, but also delivers a faster rendering speed of 1500-2000 FPS regardless of parameter size. 
     
-[^10]: FUTURE-AI：在医疗保健领域的可信和可部署人工智能的国际共识指南
+[^6]: m2mKD：模块间知识蒸馏用于模块化Transformer
+
+    m2mKD: Module-to-Module Knowledge Distillation for Modular Transformers
+
+    [https://arxiv.org/abs/2402.16918](https://arxiv.org/abs/2402.16918)
+
+    提出了用于在模块之间传递知识的通用模块到模块知识蒸馏（m2mKD）方法，解决了模块化Transformer训练中的优化困难和参数数量庞大等挑战。
+
+    
+
+    模块化神经结构因其强大的泛化能力和对新领域的高效适应能力而越来越受到关注。然而，训练模块化模型，特别是在早期阶段，由于固有的稀疏连接导致的优化困难，存在挑战。利用来自整体模型的知识，如知识蒸馏等技术，可能有助于训练模块化模型，并使它们能够整合来自在多个来源上预训练的模型的知识。然而，传统的知识蒸馏方法并不针对模块化模型设计，直接应用时可能失败，这是由于独特的架构和大量涉及的参数。受到这些挑战的启发，我们提出了一种用于在模块之间传递知识的通用模块到模块知识蒸馏（m2mKD）方法。
+
+    arXiv:2402.16918v1 Announce Type: new  Abstract: Modular neural architectures are gaining increasing attention due to their powerful capability for generalization and sample-efficient adaptation to new domains. However, training modular models, particularly in the early stages, poses challenges due to the optimization difficulties arising from their intrinsic sparse connectivity. Leveraging the knowledge from monolithic models, using techniques such as knowledge distillation, is likely to facilitate the training of modular models and enable them to integrate knowledge from multiple models pretrained on diverse sources. Nevertheless, conventional knowledge distillation approaches are not tailored to modular models and can fail when directly applied due to the unique architectures and the enormous number of parameters involved. Motivated by these challenges, we propose a general module-to-module knowledge distillation (m2mKD) method for transferring knowledge between modules. Our approac
+    
+[^7]: 通用提示优化器用于安全文本到图像生成
+
+    Universal Prompt Optimizer for Safe Text-to-Image Generation
+
+    [https://arxiv.org/abs/2402.10882](https://arxiv.org/abs/2402.10882)
+
+    提出了第一个通用提示优化器，用于在黑盒场景中安全生成文本到图像，通过构建毒素-清洁提示对数据集，设计奖励函数，并通过 Proximal Policy Optimization 训练优化器，成功降低各种 T2I 模型生成不安全内容的可能性。
+
+    
+
+    文本到图像（T2I）模型在根据文字提示生成图像方面表现出色。然而，这些模型容易受到不安全输入的影响，从而生成不安全内容，如色情、骚扰和非法活动图像。基于图像检查器、模型微调和嵌入式阻止的现有研究在真实世界应用中不可行。因此，我们提出了第一个用于黑盒场景中安全 T2I 生成的通用提示优化器。
+
+    arXiv:2402.10882v1 Announce Type: cross  Abstract: Text-to-Image (T2I) models have shown great performance in generating images based on textual prompts. However, these models are vulnerable to unsafe input to generate unsafe content like sexual, harassment and illegal-activity images. Existing studies based on image checker, model fine-tuning and embedding blocking are impractical in real-world applications. Hence, \textit{we propose the first universal prompt optimizer for safe T2I generation in black-box scenario}. We first construct a dataset consisting of toxic-clean prompt pairs by GPT-3.5 Turbo. To guide the optimizer to have the ability of converting toxic prompt to clean prompt while preserving semantic information, we design a novel reward function measuring toxicity and text alignment of generated images and train the optimizer through Proximal Policy Optimization. Experiments show that our approach can effectively reduce the likelihood of various T2I models in generating in
+    
+[^8]: Pix2Code：学习将神经视觉概念组合成程序
+
+    Pix2Code: Learning to Compose Neural Visual Concepts as Programs
+
+    [https://arxiv.org/abs/2402.08280](https://arxiv.org/abs/2402.08280)
+
+    Pix2Code 是一个将神经视觉概念组合成程序的框架，通过利用显式、组合的符号和隐式的神经表示能力，从图像中检索对象表示并将关系概念合成为lambda演算程序，来解决通用性和可解释性的挑战。在推理领域Kandinsky Patterns和CURI上的评估结果表明，Pix2Code 能够识别组合视觉概念并推广到新数据和推理任务。
+
+    
+
+    在无监督学习中，学习从图像中抽象概念的挑战在于需要将视觉感知和通用关系推理进行整合。此外，该任务的无监督性质使得人类用户需要能够理解模型学到的概念，并可能修正错误的行为。为了解决视觉概念学习的通用性和可解释性约束，我们提出了Pix2Code，这是一个将程序合成扩展到视觉关系推理的框架，利用了明确的、组合的符号和隐式的神经表示的能力。通过从图像中检索对象表示并将关系概念合成为lambda演算程序来实现这一点。我们在具有挑战性的推理领域Kandinsky Patterns和CURI上评估了Pix2Code的多样特性，从而测试其识别组合视觉概念并推广到新数据和推理任务的能力。
+
+    The challenge in learning abstract concepts from images in an unsupervised fashion lies in the required integration of visual perception and generalizable relational reasoning. Moreover, the unsupervised nature of this task makes it necessary for human users to be able to understand a model's learnt concepts and potentially revise false behaviours. To tackle both the generalizability and interpretability constraints of visual concept learning, we propose Pix2Code, a framework that extends program synthesis to visual relational reasoning by utilizing the abilities of both explicit, compositional symbolic and implicit neural representations. This is achieved by retrieving object representations from images and synthesizing relational concepts as lambda-calculus programs. We evaluate the diverse properties of Pix2Code on the challenging reasoning domains, Kandinsky Patterns and CURI, thereby testing its ability to identify compositional visual concepts that generalize to novel data and co
+    
+[^9]: 是否安全过马路？GPT-4V用于安全意识的可解释风险评估
+
+    Is it safe to cross? Interpretable Risk Assessment with GPT-4V for Safety-Aware Street Crossing
+
+    [https://arxiv.org/abs/2402.06794](https://arxiv.org/abs/2402.06794)
+
+    本文介绍了使用GPT-4V进行可解释风险评估的方法，该方法通过解释复杂的过马路场景，为盲人和视力低下人士的安全决策提供支持。
+
+    
+
+    对于盲人和视力低下的人来说，安全地通过街道交叉口是一个复杂的挑战，因为它需要对周围环境有细致的理解，而这个任务很大程度上依赖于视觉线索。传统的辅助决策方法往往不够完善，无法提供全面的场景分析和安全级别判断。本文介绍了一种创新的方法，利用大型多模型来解释复杂的过马路场景，相比传统的交通信号识别技术，提供了潜在的进步。我们的方法通过生成安全评分和自然语言场景描述，支持盲人和视力低下人士安全决策。我们收集了由四足机器人捕获的多视角自我中心图像构成的过马路交叉口数据，并根据预先定义的安全评分分类进行了图像标注。
+
+    Safely navigating street intersections is a complex challenge for blind and low-vision individuals, as it requires a nuanced understanding of the surrounding context - a task heavily reliant on visual cues. Traditional methods for assisting in this decision-making process often fall short, lacking the ability to provide a comprehensive scene analysis and safety level. This paper introduces an innovative approach that leverages large multimodal models (LMMs) to interpret complex street crossing scenes, offering a potential advancement over conventional traffic signal recognition techniques. By generating a safety score and scene description in natural language, our method supports safe decision-making for the blind and low-vision individuals. We collected crosswalk intersection data that contains multiview egocentric images captured by a quadruped robot and annotated the images with corresponding safety scores based on our predefined safety score categorization. Grounded on the visual k
+    
+[^10]: V-IRL: 将虚拟智能与现实生活联系起来
+
+    V-IRL: Grounding Virtual Intelligence in Real Life
+
+    [https://arxiv.org/abs/2402.03310](https://arxiv.org/abs/2402.03310)
+
+    V-IRL是一个平台，可以让人工智能代理在虚拟环境中与现实世界进行互动，旨在将数字和物理世界之间的差距缩小，并开发出具有丰富感知、决策和与真实数据互动能力的代理。
+
+    
+
+    人类生活在地球上，而现代人工智能代理所创造的数字领域之间存在着感官差距。为了开发出在现实世界中能像人类一样灵活感知、思考和行动的人工智能代理，必须弥合数字和物理世界之间的逼真差距。我们如何在一个像我们所居住的世界中一样丰富多样的环境中体现代理，而不受真实硬件和控制所施加的约束？为了实现这个目标，我们引入了V-IRL: 一种平台，可以使代理在虚拟而逼真的环境中与现实世界进行可扩展的互动。我们的平台既是一个开发代理完成各种实际任务的游乐场，又是一个广阔的测试基地，用于衡量在感知、决策和与全球真实数据的互动能力等方面的进展。
+
+    There is a sensory gulf between the Earth that humans inhabit and the digital realms in which modern AI agents are created. To develop AI agents that can sense, think, and act as flexibly as humans in real-world settings, it is imperative to bridge the realism gap between the digital and physical worlds. How can we embody agents in an environment as rich and diverse as the one we inhabit, without the constraints imposed by real hardware and control? Towards this end, we introduce V-IRL: a platform that enables agents to scalably interact with the real world in a virtual yet realistic environment. Our platform serves as a playground for developing agents that can accomplish various practical tasks and as a vast testbed for measuring progress in capabilities spanning perception, decision-making, and interaction with real-world data across the entire globe.
+    
+[^11]: 谨慎平滑标签：标签平滑既可以作为隐私屏障，又可以成为模型反推攻击的催化剂
+
+    Be Careful What You Smooth For: Label Smoothing Can Be a Privacy Shield but Also a Catalyst for Model Inversion Attacks
+
+    [https://arxiv.org/abs/2310.06549](https://arxiv.org/abs/2310.06549)
+
+    标签平滑方法在深度学习中发挥重要作用，既能提升模型泛化能力和校准性，又可能成为模型隐私泄露的因素。研究揭示了结合负因子进行平滑可有效阻止模型反推攻击，提升隐私保护效果，超越了当前最先进的防御技术。
+
+    
+
+    标签平滑——使用软化的标签而不是硬标签——是深度学习中被广泛采用的正则化方法，表现出增强泛化和校准等多样益处。然而，它对于保护模型隐私的影响仍然没有被探索。为了填补这一空白，我们调查了标签平滑对模型反推攻击（MIAs）的影响，这些攻击旨在通过利用分类器中编码的知识生成具有类代表性的样本，从而推断有关其训练数据的敏感信息。通过广泛的分析，我们发现传统标签平滑促进了MIAs，从而增加了模型的隐私泄露。更甚者，我们揭示了用负因子进行平滑可以抵制这一趋势，阻碍提取与类相关的信息，实现隐私保护，胜过最先进的防御方法。这确立了一种实用且强大的新的增强方式。
+
+    arXiv:2310.06549v2 Announce Type: replace  Abstract: Label smoothing -- using softened labels instead of hard ones -- is a widely adopted regularization method for deep learning, showing diverse benefits such as enhanced generalization and calibration. Its implications for preserving model privacy, however, have remained unexplored. To fill this gap, we investigate the impact of label smoothing on model inversion attacks (MIAs), which aim to generate class-representative samples by exploiting the knowledge encoded in a classifier, thereby inferring sensitive information about its training data. Through extensive analyses, we uncover that traditional label smoothing fosters MIAs, thereby increasing a model's privacy leakage. Even more, we reveal that smoothing with negative factors counters this trend, impeding the extraction of class-related information and leading to privacy preservation, beating state-of-the-art defenses. This establishes a practical and powerful novel way for enhanc
+    
+[^12]: 一种可解释的三维框架揭示学习模式：变量脑沟识别的统一视角
+
+    An explainable three dimension framework to uncover learning patterns: A unified look in variable sulci recognition
+
+    [https://arxiv.org/abs/2309.00903](https://arxiv.org/abs/2309.00903)
+
+    该论文提出了一个针对医学成像中的可解释AI的三维框架，旨在解决神经科学领域中识别大脑沟特征的复杂性问题。
+
+    
+
+    可解释的人工智能在医学成像中至关重要。在挑战性的神经科学领域里，视觉主题在三维空间内表现出高度复杂性。神经科学的应用涉及从MRI中识别大脑沟特征，由于专家之间的标注规程存在差异和大脑复杂的三维功能，我们面临着重大障碍。因此，传统的可解释性方法在有效验证和评估这些网络方面表现不佳。为了解决这个问题，我们首先提出了数学公式，细化了不同计算机视觉任务中解释需求的各种类别，分为自解释、半解释、非解释和基于验证协议可靠性的新模式学习应用。根据这个数学公式，我们提出了一个旨在解释三维的框架。
+
+    arXiv:2309.00903v2 Announce Type: replace-cross  Abstract: Explainable AI is crucial in medical imaging. In the challenging field of neuroscience, visual topics present a high level of complexity, particularly within three-dimensional space. The application of neuroscience, which involves identifying brain sulcal features from MRI, faces significant hurdles due to varying annotation protocols among experts and the intricate three-dimension functionality of the brain. Consequently, traditional explainability approaches fall short in effectively validating and evaluating these networks. To address this, we first present a mathematical formulation delineating various categories of explanation needs across diverse computer vision tasks, categorized into self-explanatory, semi-explanatory, non-explanatory, and new-pattern learning applications based on the reliability of the validation protocol. With respect to this mathematical formulation, we propose a 3D explainability framework aimed at
+    
+[^13]: 遵循人类指令的高质量图像恢复
+
+    High-Quality Image Restoration Following Human Instructions. (arXiv:2401.16468v1 [cs.CV])
+
+    [http://arxiv.org/abs/2401.16468](http://arxiv.org/abs/2401.16468)
+
+    本论文提出了一种使用人类编写的指令来指导图像恢复模型的方法，并在多个恢复任务上取得了最先进的结果，为基于文本指导的图像恢复和增强研究提供了一个新的基准。
+
+    
+
+    图像恢复是一个基本问题，涉及从退化观测中恢复出高质量的干净图像。全能图像恢复模型可以通过使用特定于退化类型的信息作为提示来有效地恢复各种类型和级别的退化图像，并引导恢复模型。我们提出了一种使用人类编写的指令来指导图像恢复模型的方法。在给定自然语言提示的情况下，我们的模型可以从退化图像中恢复出高质量的图像，并考虑多种退化类型。我们的方法InstructIR在图像去噪、雨水去除、去模糊、去雾和(低光)图像增强等多个恢复任务上取得了最先进的结果。InstructIR在之前的全能恢复方法上提高了1dB。此外，我们的数据集和结果为基于文本指导的图像恢复和增强的新研究提供了一个新的基准。我们提供了代码、数据集和模型。
+
+    Image restoration is a fundamental problem that involves recovering a high-quality clean image from its degraded observation. All-In-One image restoration models can effectively restore images from various types and levels of degradation using degradation-specific information as prompts to guide the restoration model. In this work, we present the first approach that uses human-written instructions to guide the image restoration model. Given natural language prompts, our model can recover high-quality images from their degraded counterparts, considering multiple degradation types. Our method, InstructIR, achieves state-of-the-art results on several restoration tasks including image denoising, deraining, deblurring, dehazing, and (low-light) image enhancement. InstructIR improves +1dB over previous all-in-one restoration methods. Moreover, our dataset and results represent a novel benchmark for new research on text-guided image restoration and enhancement. Our code, datasets and models a
+    
+[^14]: FUTURE-AI：在医疗保健领域的可信和可部署人工智能的国际共识指南
 
     FUTURE-AI: International consensus guideline for trustworthy and deployable artificial intelligence in healthcare. (arXiv:2309.12325v1 [cs.CY])
 
@@ -158,46 +224,130 @@
 
     Despite major advances in artificial intelligence (AI) for medicine and healthcare, the deployment and adoption of AI technologies remain limited in real-world clinical practice. In recent years, concerns have been raised about the technical, clinical, ethical and legal risks associated with medical AI. To increase real world adoption, it is essential that medical AI tools are trusted and accepted by patients, clinicians, health organisations and authorities. This work describes the FUTURE-AI guideline as the first international consensus framework for guiding the development and deployment of trustworthy AI tools in healthcare. The FUTURE-AI consortium was founded in 2021 and currently comprises 118 inter-disciplinary experts from 51 countries representing all continents, including AI scientists, clinicians, ethicists, and social scientists. Over a two-year period, the consortium defined guiding principles and best practices for trustworthy AI through an iterative process comprising a
     
-[^11]: 基于熵的指导深度神经网络加速收敛和改善性能
+[^15]: SAMUS：为临床友好和泛化性超声图像分割调整的任意分割模型
 
-    Entropy-based Guidance of Deep Neural Networks for Accelerated Convergence and Improved Performance. (arXiv:2308.14938v1 [cs.CV])
+    SAMUS: Adapting Segment Anything Model for Clinically-Friendly and Generalizable Ultrasound Image Segmentation. (arXiv:2309.06824v1 [cs.CV])
 
-    [http://arxiv.org/abs/2308.14938](http://arxiv.org/abs/2308.14938)
+    [http://arxiv.org/abs/2309.06824](http://arxiv.org/abs/2309.06824)
 
-    本研究通过引入基于熵的损失项，通过测量神经网络处理数据时的熵变化，指导神经网络以更快速的收敛、更好的性能学习丰富的潜在数据表示。
-
-    
-
-    神经网络极大地增加了我们从大规模、高维度数据集中学习的能力，跨越无数学科。然而，它们的决策不易解释，计算成本高，建立和训练它们是不确定的过程。为了给这些努力增加结构，我们推导出了新的数学结果，以高效地测量全连接和卷积神经网络处理数据时的熵变化，并引入了基于熵的损失项。在基准数据集上进行的图像压缩和图像分类实验表明，这些损失项指导神经网络以更少的维度学习丰富的潜在数据表示，收敛于更少的训练轮次，并取得更好的测试指标。
-
-    Neural networks have dramatically increased our capacity to learn from large, high-dimensional datasets across innumerable disciplines. However, their decisions are not easily interpretable, their computational costs are high, and building and training them are uncertain processes. To add structure to these efforts, we derive new mathematical results to efficiently measure the changes in entropy as fully-connected and convolutional neural networks process data, and introduce entropy-based loss terms. Experiments in image compression and image classification on benchmark datasets demonstrate these losses guide neural networks to learn rich latent data representations in fewer dimensions, converge in fewer training epochs, and achieve better test metrics.
-    
-[^12]: LEGO: 对于基于点云的在线多目标跟踪的学习和图优化的模块化跟踪器
-
-    LEGO: Learning and Graph-Optimized Modular Tracker for Online Multi-Object Tracking with Point Clouds. (arXiv:2308.09908v1 [cs.CV])
-
-    [http://arxiv.org/abs/2308.09908](http://arxiv.org/abs/2308.09908)
-
-    本文提出了一个学习和图优化的模块化跟踪器LEGO，通过集成图优化和自注意力机制，提高了在线多目标跟踪中的数据关联性能。使用LiDAR单独进行跟踪的LEGO方法在KITTI目标跟踪评估中表现出了优秀的性能。
+    本文提出了SAMUS，一个专为超声图像分割量身定制的通用模型，通过引入并行CNN分支和适配器来改善SAM在医学图像分割中的性能和泛化能力。
 
     
 
-    在线多目标跟踪（MOT）在自主系统中起着关键作用。现有的最先进方法通常采用跟踪-检测方法，数据关联起到了至关重要的作用。本文提出了一个学习和图优化（LEGO）的模块化跟踪器，以提高数据关联性能。所提出的LEGO跟踪器集成了图优化和自注意力机制，能够有效地制定关联评分图，从而实现准确高效的目标匹配。为了进一步增强状态更新过程，本文还添加了卡尔曼滤波器，通过将对象状态的时间连贯性纳入跟踪中，确保一致的跟踪。与其他在线跟踪方法（包括基于LiDAR和基于LiDAR-相机融合的方法）相比，我们提出的仅利用LiDAR的方法表现出了卓越性能。在提交结果至KITTI目标跟踪评估排行榜时，LEGO排名第一。
+    任意分割模型（SAM）是一种卓越的通用图像分割模型，在医学图像分割领域引起了相当大的关注。尽管SAM在自然图像上表现出色，但在处理医学图像时，特别是涉及低对比度、模糊边界、复杂形状和小尺寸对象的图像时，SAM面临着显著的性能下降和有限的泛化能力。本文提出SAMUS，这是一个专为超声图像分割量身定制的通用模型。与以前基于SAM的通用模型不同，SAMUS追求的不仅是更好的泛化能力，还有更低的部署成本，使其更适合临床应用。具体而言，在SAM的基础上，引入了一个并行CNN分支，通过跨分支注意力将局部特征注入ViT编码器，从而实现更好的医学图像分割。然后，开发了一个位置适配器和一个特征适配器来调整SAM的输
 
-    Online multi-object tracking (MOT) plays a pivotal role in autonomous systems. The state-of-the-art approaches usually employ a tracking-by-detection method, and data association plays a critical role. This paper proposes a learning and graph-optimized (LEGO) modular tracker to improve data association performance in the existing literature. The proposed LEGO tracker integrates graph optimization and self-attention mechanisms, which efficiently formulate the association score map, facilitating the accurate and efficient matching of objects across time frames. To further enhance the state update process, the Kalman filter is added to ensure consistent tracking by incorporating temporal coherence in the object states. Our proposed method utilizing LiDAR alone has shown exceptional performance compared to other online tracking approaches, including LiDAR-based and LiDAR-camera fusion-based methods. LEGO ranked 1st at the time of submitting results to KITTI object tracking evaluation ranki
+    Segment anything model (SAM), an eminent universal image segmentation model, has recently gathered considerable attention within the domain of medical image segmentation. Despite the remarkable performance of SAM on natural images, it grapples with significant performance degradation and limited generalization when confronted with medical images, particularly with those involving objects of low contrast, faint boundaries, intricate shapes, and diminutive sizes. In this paper, we propose SAMUS, a universal model tailored for ultrasound image segmentation. In contrast to previous SAM-based universal models, SAMUS pursues not only better generalization but also lower deployment cost, rendering it more suitable for clinical applications. Specifically, based on SAM, a parallel CNN branch is introduced to inject local features into the ViT encoder through cross-branch attention for better medical image segmentation. Then, a position adapter and a feature adapter are developed to adapt SAM fr
     
-[^13]: 针对类内分布转移的过度遗忘：连续学习的脆弱性
+[^16]: 深度神经网络和脑对齐：脑编码和解码（综述）
 
-    Out-of-distribution forgetting: vulnerability of continual learning to intra-class distribution shift. (arXiv:2306.00427v1 [cs.LG])
+    Deep Neural Networks and Brain Alignment: Brain Encoding and Decoding (Survey). (arXiv:2307.10246v1 [q-bio.NC])
 
-    [http://arxiv.org/abs/2306.00427](http://arxiv.org/abs/2306.00427)
+    [http://arxiv.org/abs/2307.10246](http://arxiv.org/abs/2307.10246)
 
-    连续学习中存在一种特殊形式的灾难性遗忘——越界遗忘，当给定类别引入类内分布转移时，它会显着削弱该类别的连续学习方法的识别准确率。
+    本文综述了深度神经网络和脑对齐的研究，重点在于脑编码和解码模型的应用。这些模型对于理解大脑的信息处理机制以及设计脑机接口具有重要意义。
 
     
 
-    连续学习是让人工神经网络在开放环境中工作的重要技术。在联合学习中，人们已经知道由意图攻击或环境扰动引起的越界问题严重影响网络的泛化能力。在这项工作中，我们报告了连续学习设置中由越界问题引起的一种特殊形式的灾难性遗忘，我们将其称为越界遗忘（OODF）。在连续图像分类任务中，我们发现，针对给定类别，引入类内分布转移显着削弱了后续学习过程中该类别的连续学习方法的识别准确率。有趣的是，这种现象对于连续学习而言是特殊的，因为同样级别的分布转移只有微不足道的影响。
+    大脑如何表示不同的信息模式？我们能否设计出一个可以自动理解用户思考内容的系统？这些问题可以通过研究功能磁共振成像（fMRI）等大脑记录来回答。作为第一步，神经科学界为被动阅读/听觉/观看概念词汇、叙述、图片和电影相关的认知神经科学数据集作出了贡献。过去二十年中，还提出了使用这些数据集的编码和解码模型。这些模型作为基础研究中的额外工具，在认知科学和神经科学领域有着多种实际应用。编码模型旨在自动地生成fMRI大脑表征，给定一个刺激。它们在评估和诊断神经系统疾病以及设计大脑损伤治疗方法方面有着多种实际应用。解码模型解决了根据fMRI重构刺激的逆问题。它们对于理解大脑如何处理信息以及设计脑机接口的发展都有着重要意义。
 
-    Continual learning (CL) is an important technique to allow artificial neural networks to work in open environments. CL enables a system to learn new tasks without severe interference to its performance on old tasks, i.e., overcome the problems of catastrophic forgetting. In joint learning, it is well known that the out-of-distribution (OOD) problem caused by intentional attacks or environmental perturbations will severely impair the ability of networks to generalize. In this work, we reported a special form of catastrophic forgetting raised by the OOD problem in continual learning settings, and we named it out-of-distribution forgetting (OODF). In continual image classification tasks, we found that for a given category, introducing an intra-class distribution shift significantly impaired the recognition accuracy of CL methods for that category during subsequent learning. Interestingly, this phenomenon is special for CL as the same level of distribution shift had only negligible effects
+    How does the brain represent different modes of information? Can we design a system that automatically understands what the user is thinking? Such questions can be answered by studying brain recordings like functional magnetic resonance imaging (fMRI). As a first step, the neuroscience community has contributed several large cognitive neuroscience datasets related to passive reading/listening/viewing of concept words, narratives, pictures and movies. Encoding and decoding models using these datasets have also been proposed in the past two decades. These models serve as additional tools for basic research in cognitive science and neuroscience. Encoding models aim at generating fMRI brain representations given a stimulus automatically. They have several practical applications in evaluating and diagnosing neurological conditions and thus also help design therapies for brain damage. Decoding models solve the inverse problem of reconstructing the stimuli given the fMRI. They are useful for 
+    
+[^17]: TbExplain: 一种场景分类模型的基于文本的解释方法与统计预测校正
+
+    TbExplain: A Text-based Explanation Method for Scene Classification Models with the Statistical Prediction Correction. (arXiv:2307.10003v1 [cs.CV])
+
+    [http://arxiv.org/abs/2307.10003](http://arxiv.org/abs/2307.10003)
+
+    本文提出了一种名为TbExplain的框架，它利用XAI技术和预训练的对象检测器，通过文本形式解释场景分类模型，并引入了一种新的方法来纠正预测和进行文本解释。
+
+    
+
+    可解释性人工智能(XAI)的领域旨在提高黑盒机器学习模型的可解释性。建立基于输入特征重要性值的热图是解释这些模型产生预测的基本方法之一。热图在人类中几乎可以理解，但并非没有缺陷。例如，非专业用户可能不完全理解热图的逻辑（即使用不同强度或颜色突出显示与模型预测相关的像素的逻辑）。此外，与模型预测相关的输入图像的对象和区域通常无法完全通过热图区分。本文提出了一种称为TbExplain的框架，采用XAI技术和预训练的对象检测器，以文本形式解释场景分类模型。此外，TbExplain还采用了一种新的方法来纠正预测和进行文本解释。
+
+    The field of Explainable Artificial Intelligence (XAI) aims to improve the interpretability of black-box machine learning models. Building a heatmap based on the importance value of input features is a popular method for explaining the underlying functions of such models in producing their predictions. Heatmaps are almost understandable to humans, yet they are not without flaws. Non-expert users, for example, may not fully understand the logic of heatmaps (the logic in which relevant pixels to the model's prediction are highlighted with different intensities or colors). Additionally, objects and regions of the input image that are relevant to the model prediction are frequently not entirely differentiated by heatmaps. In this paper, we propose a framework called TbExplain that employs XAI techniques and a pre-trained object detector to present text-based explanations of scene classification models. Moreover, TbExplain incorporates a novel method to correct predictions and textually exp
+    
+[^18]: 警惕扩散模型合成医学图像 -- 与 GAN 在记忆脑肿瘤图像方面的比较。
+
+    Beware of diffusion models for synthesizing medical images -- A comparison with GANs in terms of memorizing brain tumor images. (arXiv:2305.07644v1 [eess.IV])
+
+    [http://arxiv.org/abs/2305.07644](http://arxiv.org/abs/2305.07644)
+
+    扩散模型在医学图像合成中可能会导致记忆训练图像的问题，研究人员在选择合适的模型时需要谨慎。
+
+    
+
+    扩散模型最初是为文本到图像生成而开发的，现在也被用于生成高质量的合成图像。在 GAN 之前，扩散模型已经展示了令人印象深刻的结果，使用了各种评估指标。然而，常用的指标如 FID 和 IS 并不适合确定扩散模型是否只是复制了训练图像。这里我们使用 BRATS20 和 BRATS21 数据集训练 StyleGAN 和扩散模型，生成脑肿瘤图像，并测量合成图像与所有训练图像之间的相关性。我们的结果表明，扩散模型更有可能记忆训练图像，特别是对于小数据集。如果最终目标是共享合成的图像，研究人员在使用扩散模型进行医学成像时应该小心。
+
+    Diffusion models were initially developed for text-to-image generation and are now being utilized to generate high quality synthetic images. Preceded by GANs, diffusion models have shown impressive results using various evaluation metrics. However, commonly used metrics such as FID and IS are not suitable for determining whether diffusion models are simply reproducing the training images. Here we train StyleGAN and diffusion models, using BRATS20 and BRATS21 datasets, to synthesize brain tumor images, and measure the correlation between the synthetic images and all training images. Our results show that diffusion models are much more likely to memorize the training images, especially for small datasets. Researchers should be careful when using diffusion models for medical imaging, if the final goal is to share the synthetic images.
+    
+[^19]: 带有鲁棒UNet去噪器的认证零阶黑盒防御
+
+    Certified Zeroth-order Black-Box Defense with Robust UNet Denoiser. (arXiv:2304.06430v1 [cs.CV])
+
+    [http://arxiv.org/abs/2304.06430](http://arxiv.org/abs/2304.06430)
+
+    本文提出了一种带有鲁棒UNet去噪器的认证零阶黑盒防御方法，通过在黑盒模型之前预置RDUNet和DS或AE和RDUNet，成功提高了模型鲁棒性。
+
+    
+
+    最近黑盒设置中对于对抗性扰动的认证防御方法已经从零阶角度进行了研究，然而由于去噪器的设计不够有效，这些方法在高维数据集上存在高模型方差和低性能，且在使用零阶技术时存在局限性。为此，我们提出了一种认证的零阶预处理技术，仅使用模型查询即可从受攻击图像中去除对抗性扰动。我们提出了一种鲁棒的UNet去噪器（RDUNet），确保了对于高维数据集上训练的黑盒模型的鲁棒性。我们进一步提出了黑盒去噪平滑（DS）防御机制ZO-RUDS，通过将我们的RDUNet预置于黑盒模型之前，确保黑盒防御。我们还提出了ZO-AE-RUDS，在黑盒模型之前使用RDUNet和自编码器(AE)。我们在四个分类数据集上进行了广泛的实验。
+
+    Certified defense methods against adversarial perturbations have been recently investigated in the black-box setting with a zeroth-order (ZO) perspective. However, these methods suffer from high model variance with low performance on high-dimensional datasets due to the ineffective design of the denoiser and are limited in their utilization of ZO techniques. To this end, we propose a certified ZO preprocessing technique for removing adversarial perturbations from the attacked image in the black-box setting using only model queries. We propose a robust UNet denoiser (RDUNet) that ensures the robustness of black-box models trained on high-dimensional datasets. We propose a novel black-box denoised smoothing (DS) defense mechanism, ZO-RUDS, by prepending our RDUNet to the black-box model, ensuring black-box defense. We further propose ZO-AE-RUDS in which RDUNet followed by autoencoder (AE) is prepended to the black-box model. We perform extensive experiments on four classification dataset
+    
+[^20]: BugNIST -- 一种新的大规模体积三维图像数据集，用于分类和检测
+
+    BugNIST -- A New Large Scale Volumetric 3D Image Dataset for Classification and Detection. (arXiv:2304.01838v1 [cs.CV])
+
+    [http://arxiv.org/abs/2304.01838](http://arxiv.org/abs/2304.01838)
+
+    本文介绍了一个名为BugNIST的广泛数据集，该数据集由12种昆虫和幼虫的微-CT扫描组成。通过训练和测试检测模型，BugNIST旨在评估三维体积图像分类和检测方法，解决上下文无关的挑战。
+
+    
+
+    三维体积图像分析研究的进展受到数据集缺乏的限制，大多数针对体积图像的分析方法都基于医学数据。然而，医学数据并不一定具有其他体积图像（例如微-CT）的特征。为了促进三维体积图像分析的研究超越医学数据，我们创建了BugNIST数据集并免费提供。BugNIST是一组由12种昆虫和幼虫的微-CT扫描组成的广泛数据集。BugNIST包含9437个体积，其中9087个是单个昆虫的扫描，350个是昆虫和其他材料的混合物。BugNIST的目标是评估分类和检测方法，我们设计了检测挑战，使得检测模型在单个昆虫的扫描上训练并在昆虫混合物上进行测试。能够解决此任务的模型将独立于上下文（即周围材料），这是一个很大的优势。
+
+    Progress in 3D volumetric image analysis research is limited by the lack of datasets and most advances in analysis methods for volumetric images are based on medical data. However, medical data do not necessarily resemble the characteristics of other volumetric images such as micro-CT. To promote research in 3D volumetric image analysis beyond medical data, we have created the BugNIST dataset and made it freely available. BugNIST is an extensive dataset of micro-CT scans of 12 types of bugs, such as insects and larvae. BugNIST contains 9437 volumes where 9087 are of individual bugs and 350 are mixtures of bugs and other material. The goal of BugNIST is to benchmark classification and detection methods, and we have designed the detection challenge such that detection models are trained on scans of individual bugs and tested on bug mixtures. Models capable of solving this task will be independent of the context, i.e., the surrounding material. This is a great advantage if the context is 
+    
+[^21]: 迈向多模态预测自发幽默：一份新颖的数据集和初步结果
+
+    Towards Multimodal Prediction of Spontaneous Humour: A Novel Dataset and First Results. (arXiv:2209.14272v2 [cs.LG] UPDATED)
+
+    [http://arxiv.org/abs/2209.14272](http://arxiv.org/abs/2209.14272)
+
+    本研究提出了Passau-SFCH数据集，包含了11小时的录音，用于自发幽默的预测。通过多模态的分析和特征融合，实现了对幽默以及幽默情感的自动识别。
+
+    
+
+    幽默是人类情感和认知的重要元素。其自动理解可以促进更自然的人机交互和人工智能的人性化。目前的幽默检测方法仅基于策划数据，不能满足“现实世界”应用的需求。我们通过引入新颖的Passau-Spontaneous Football Coach Humour（Passau-SFCH）数据集，该数据集包含约11小时的录音，解决了这一缺陷。Passau-SFCH数据集的注释根据Martin的幽默风格问卷提出的幽默存在及其维度（情感和方向）。我们进行了一系列实验，采用预训练的Transformer、卷积神经网络和专家设计的特征。分析了自发幽默识别的每种模态（文本、音频、视频）的性能，并研究了它们之间的互补性。我们的研究结果表明，对于幽默及其情感的自动分析，多模态联合使用效果更好。
+
+    Humour is a substantial element of human affect and cognition. Its automatic understanding can facilitate a more naturalistic human-device interaction and the humanisation of artificial intelligence. Current methods of humour detection are solely based on staged data making them inadequate for 'real-world' applications. We address this deficiency by introducing the novel Passau-Spontaneous Football Coach Humour (Passau-SFCH) dataset, comprising of about 11 hours of recordings. The Passau-SFCH dataset is annotated for the presence of humour and its dimensions (sentiment and direction) as proposed in Martin's Humor Style Questionnaire. We conduct a series of experiments, employing pretrained Transformers, convolutional neural networks, and expert-designed features. The performance of each modality (text, audio, video) for spontaneous humour recognition is analysed and their complementarity is investigated. Our findings suggest that for the automatic analysis of humour and its sentiment, 
+    
+[^22]: 基于MDLatLRRv2的医学图像融合方法
+
+    A Medical Image Fusion Method based on MDLatLRRv2. (arXiv:2206.15179v3 [eess.IV] UPDATED)
+
+    [http://arxiv.org/abs/2206.15179](http://arxiv.org/abs/2206.15179)
+
+    该论文提出了一种基于MDLatLRRv2的医学图像融合方法，通过改进多级分解方法并充分利用LatLRR提取的各种图像特征，实现了在客观和主观评估中的最先进融合性能。
+
+    
+
+    由于MDLatLRR仅考虑了通过潜在低秩表示（LatLRR）提取的输入图像的详细部分（显著特征），没有有效地利用LatLRR提取的基础部分（主要特征）。因此，我们提出了一种改进的多级分解方法，称为MDLatLRRv2，该方法能有效分析和利用LatLRR获取的所有图像特征。然后，我们将MDLatLRRv2应用于医学图像融合。基础部分通过平均策略进行融合，详细部分通过核范数操作进行融合。与现有方法的比较表明，所提出的方法在客观和主观评估中可以实现最先进的融合性能。
+
+    Since MDLatLRR only considers detailed parts (salient features) of input images extracted by latent low-rank representation (LatLRR), it doesn't use base parts (principal features) extracted by LatLRR effectively. Therefore, we proposed an improved multi-level decomposition method called MDLatLRRv2 which effectively analyzes and utilizes all the image features obtained by LatLRR. Then we apply MDLatLRRv2 to medical image fusion. The base parts are fused by average strategy and the detail parts are fused by nuclear-norm operation. The comparison with the existing methods demonstrates that the proposed method can achieve state-of-the-art fusion performance in objective and subjective assessment.
+    
+[^23]: Res2NetFuse：一种适用于红外和可见光图像的融合方法
+
+    Res2NetFuse: A Fusion Method for Infrared and Visible Images. (arXiv:2112.14540v3 [cs.CV] UPDATED)
+
+    [http://arxiv.org/abs/2112.14540](http://arxiv.org/abs/2112.14540)
+
+    本文提出了一种基于Res2Net的红外和可见光图像融合框架，通过引入新的训练策略和融合策略，实现了最先进的融合性能。
+
+    
+
+    本文提出了一种基于Res2Net的红外和可见光图像融合框架。提出的融合模型包括编码器、融合层和解码器三个部分。利用基于Res2Net的编码器提取源图像的多尺度特征，引入一种新的训练策略，仅使用单个图像进行训练。然后，基于注意力模型开发了一种新的融合策略。最后，通过解码器重构融合图像。本文还对所提出的方法进行了详细分析。实验证明，该方法在客观和主观评估中都实现了最先进的融合性能，与现有方法进行了比较。
+
+    This paper presents a novel Res2Net-based fusion framework for infrared and visible images. The proposed fusion model has three parts: an encoder, a fusion layer and a decoder, respectively. The Res2Net-based encoder is used to extract multi-scale features of source images, the paper introducing a new training strategy for training a Res2Net-based encoder that uses only a single image. Then, a new fusion strategy is developed based on the attention model. Finally, the fused image is reconstructed by the decoder. The proposed approach is also analyzed in detail. Experiments show that our method achieves state-of-the-art fusion performance in objective and subjective assessment by comparing with the existing methods.
     
 

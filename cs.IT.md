@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Bayesian Optimization with Formal Safety Guarantees via Online Conformal Prediction.](http://arxiv.org/abs/2306.17815) | 本文提出了一种基于贝叶斯优化的方法，无论约束函数的特性如何，都能满足安全要求。 |
+| [^1] | [Multi-Agent Deep Reinforcement Learning for Distributed Satellite Routing](https://arxiv.org/abs/2402.17666) | 本文介绍了一种多智能体深度强化学习方法，用于低地球轨道卫星星座中的路由，通过离线学习最佳路径，并在在线阶段进行高效的分布式路由。 |
 
 # 详细
 
-[^1]: 通过在线信心预测实现具备形式安全保证的贝叶斯优化
+[^1]: 多智能体深度强化学习用于分布式卫星路由
 
-    Bayesian Optimization with Formal Safety Guarantees via Online Conformal Prediction. (arXiv:2306.17815v1 [cs.LG])
+    Multi-Agent Deep Reinforcement Learning for Distributed Satellite Routing
 
-    [http://arxiv.org/abs/2306.17815](http://arxiv.org/abs/2306.17815)
+    [https://arxiv.org/abs/2402.17666](https://arxiv.org/abs/2402.17666)
 
-    本文提出了一种基于贝叶斯优化的方法，无论约束函数的特性如何，都能满足安全要求。
+    本文介绍了一种多智能体深度强化学习方法，用于低地球轨道卫星星座中的路由，通过离线学习最佳路径，并在在线阶段进行高效的分布式路由。
 
     
 
-    黑盒零阶优化是金融、物理和工程等领域应用的核心基本操作。在这个问题的常见形式中，设计者顺序尝试候选解，并从系统中接收到关于每个尝试值的噪声反馈。本文研究了在这些场景中还提供了有关尝试解的安全性的反馈，并且优化器被限制在整个优化过程中尝试的不安全解的数量上。在基于贝叶斯优化（BO）的方法上，先前的研究引入了一种被称为SAFEOPT的优化方案，只要满足对安全约束函数的严格假设，就能够以可控的概率在反馈噪声上避免选择任何不安全的解。本文介绍了一种新的基于BO的方法，无论约束函数的特性如何，都能满足安全要求。
+    本文介绍了一种用于低地球轨道卫星星座（LSatCs）中路由的多智能体深度强化学习（MA-DRL）方法。每个卫星是一个独立的决策制定智能体，具有对环境的部分知识，并受到附近智能体的反馈支持。在我们之前介绍的Q-routing解决方案的基础上，本文的贡献是将其扩展为一个深度学习框架，能够快速适应网络和交通变化，并基于两个阶段：（1）一个依赖全局深度神经网络（DNN）学习在每个可能位置和拥堵级别上的最佳路径的离线探索学习阶段；（2）一个带有本地、机载、预训练DNN的在线开发阶段。结果表明，MA-DRL能够有效地在离线学习最佳路由，然后加载以进行高效的分布式在线路由。
 
-    Black-box zero-th order optimization is a central primitive for applications in fields as diverse as finance, physics, and engineering. In a common formulation of this problem, a designer sequentially attempts candidate solutions, receiving noisy feedback on the value of each attempt from the system. In this paper, we study scenarios in which feedback is also provided on the safety of the attempted solution, and the optimizer is constrained to limit the number of unsafe solutions that are tried throughout the optimization process. Focusing on methods based on Bayesian optimization (BO), prior art has introduced an optimization scheme -- referred to as SAFEOPT -- that is guaranteed not to select any unsafe solution with a controllable probability over feedback noise as long as strict assumptions on the safety constraint function are met. In this paper, a novel BO-based approach is introduced that satisfies safety requirements irrespective of properties of the constraint function. This s
+    arXiv:2402.17666v1 Announce Type: new  Abstract: This paper introduces a Multi-Agent Deep Reinforcement Learning (MA-DRL) approach for routing in Low Earth Orbit Satellite Constellations (LSatCs). Each satellite is an independent decision-making agent with a partial knowledge of the environment, and supported by feedback received from the nearby agents. Building on our previous work that introduced a Q-routing solution, the contribution of this paper is to extend it to a deep learning framework able to quickly adapt to the network and traffic changes, and based on two phases: (1) An offline exploration learning phase that relies on a global Deep Neural Network (DNN) to learn the optimal paths at each possible position and congestion level; (2) An online exploitation phase with local, on-board, pre-trained DNNs. Results show that MA-DRL efficiently learns optimal routes offline that are then loaded for an efficient distributed routing online.
     
 
