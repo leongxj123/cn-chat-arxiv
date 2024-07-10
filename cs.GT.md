@@ -2,52 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Bandit Profit-maximization for Targeted Marketing](https://arxiv.org/abs/2403.01361) | 该论文研究了针对目标营销的强盗利润最大化问题，并提出了在敌对强盗情境下的近乎最优算法。 |
-| [^2] | [Strategically-Robust Learning Algorithms for Bidding in First-Price Auctions](https://arxiv.org/abs/2402.07363) | 本论文提出了一种在一价拍卖中进行竞标的新颖算法，并通过分析证明了其在战略背景下的效果。具体而言，这些算法在面对对策性卖家时表现良好，激励买家进行真实的交易，并获得了最佳的后悔结果。 |
-| [^3] | [On Connected Strongly-Proportional Cake-Cutting](https://arxiv.org/abs/2312.15326) | 该论文研究了一种公平划分可划分异质资源的问题，即蛋糕切分。该论文确定了存在一种连通的强比例切分方式，并提供了相应的算法和简单刻画。 |
+| [^1] | [Equitable Pricing in Auctions](https://arxiv.org/abs/2403.07799) | 我们研究了拍卖中定价对买家剩余分配的影响，并提出了赢家的经验方差作为一个剩余公平的度量标准，表明在一定私有-公共价值比例下，按竞标支付和统一定价混合可以最小化剩余的方差。 |
+| [^2] | [Equilibria in Two-Stage Facility Location with Atomic Clients](https://arxiv.org/abs/2403.03114) | 本文研究了竞争性设施选址的两阶段多代理系统，针对不可分割权重的客户提出了混合策略，展示了在给定设施布置时可能出现截然不同的客户均衡。 |
 
 # 详细
 
-[^1]: 针对目标营销的强盗利润最大化
+[^1]: 拍卖中的公平定价
 
-    Bandit Profit-maximization for Targeted Marketing
+    Equitable Pricing in Auctions
 
-    [https://arxiv.org/abs/2403.01361](https://arxiv.org/abs/2403.01361)
+    [https://arxiv.org/abs/2403.07799](https://arxiv.org/abs/2403.07799)
 
-    该论文研究了针对目标营销的强盗利润最大化问题，并提出了在敌对强盗情境下的近乎最优算法。
-
-    
-
-    我们研究了一个顺序利润最大化问题，优化价格和像营销支出这样的辅助变量。具体来说，我们旨在在一个任意序列的多个需求曲线上最大化利润，每个曲线依赖于一个不同的辅助变量，但共享相同的价格。一个典型的例子是针对营销，其中一家公司（卖方）希望在多个市场上销售产品。公司可以为不同市场投入不同的营销支出以优化客户获取，但必须在所有市场上保持相同的价格。此外，市场可能具有异质的需求曲线，每个需求曲线对价格和营销支出的响应方式不同。公司的目标是最大化毛利润，即总收入减去营销成本。
-
-    arXiv:2403.01361v1 Announce Type: new  Abstract: We study a sequential profit-maximization problem, optimizing for both price and ancillary variables like marketing expenditures. Specifically, we aim to maximize profit over an arbitrary sequence of multiple demand curves, each dependent on a distinct ancillary variable, but sharing the same price. A prototypical example is targeted marketing, where a firm (seller) wishes to sell a product over multiple markets. The firm may invest different marketing expenditures for different markets to optimize customer acquisition, but must maintain the same price across all markets. Moreover, markets may have heterogeneous demand curves, each responding to prices and marketing expenditures differently. The firm's objective is to maximize its gross profit, the total revenue minus marketing costs.   Our results are near-optimal algorithms for this class of problems in an adversarial bandit setting, where demand curves are arbitrary non-adaptive seque
-    
-[^2]: 基于策略稳定性的学习算法在一价拍卖中的竞标
-
-    Strategically-Robust Learning Algorithms for Bidding in First-Price Auctions
-
-    [https://arxiv.org/abs/2402.07363](https://arxiv.org/abs/2402.07363)
-
-    本论文提出了一种在一价拍卖中进行竞标的新颖算法，并通过分析证明了其在战略背景下的效果。具体而言，这些算法在面对对策性卖家时表现良好，激励买家进行真实的交易，并获得了最佳的后悔结果。
+    我们研究了拍卖中定价对买家剩余分配的影响，并提出了赢家的经验方差作为一个剩余公平的度量标准，表明在一定私有-公共价值比例下，按竞标支付和统一定价混合可以最小化剩余的方差。
 
     
 
-    在游戏理论和机器学习的交界处，学习在重复的一价拍卖中进行竞标是一个基本问题，由于显示广告转向一价拍卖，最近受到了广泛关注。在这项工作中，我们提出了一个新颖的凹函数形式，用于一价拍卖中纯策略的竞标，并将其用于分析这个问题的自然梯度上升算法。重要的是，我们的分析超越了过去工作的差距，还考虑了在线广告市场的战略背景，其中部署了竞标算法 - 我们证明了我们的算法不会被策略性卖家利用，并且它们激励买家诚实交易。具体而言，我们证明了当最高竞争出价通过对抗方式生成时，我们的算法达到了$O(\sqrt{T})$的后悔，并表明没有更好的在线算法可以做得更好。进一步证明了当最高竞争出价通过对抗方式生成时，我们的算法达到了$O(\log T)$的后悔。
+    我们研究了定价如何影响在多单位拍卖中买家之间的剩余分配。我们的公平目标可能很重要，例如，对于下游市场中的竞争问题，这是对长期关于收入和效率的辩论的一个补充。我们研究了一个经典的多不可分单元拍卖模型，其中有单位需求的买家和具有私有和公共成分的估值，并考虑了所有定价规则，这些规则是按竞标支付和统一定价的混合（即凸组合）。我们提出了赢家的经验方差（WEV），即赢家之间剩余的预期经验方差，作为剩余公平的度量标准。我们表明，在一系列私有-公共价值比例中，技术内部的按竞标付费和统一定价混合最小化了WEV。从公平的角度来看，具有更高私有值成分的拍卖受益于更多的价格歧视，而仅具有足够大小私有值成分的拍卖才能获益。
 
-    Learning to bid in repeated first-price auctions is a fundamental problem at the interface of game theory and machine learning, which has seen a recent surge in interest due to the transition of display advertising to first-price auctions. In this work, we propose a novel concave formulation for pure-strategy bidding in first-price auctions, and use it to analyze natural Gradient-Ascent-based algorithms for this problem. Importantly, our analysis goes beyond regret, which was the typical focus of past work, and also accounts for the strategic backdrop of online-advertising markets where bidding algorithms are deployed -- we prove that our algorithms cannot be exploited by a strategic seller and that they incentivize truth-telling for the buyer.   Concretely, we show that our algorithms achieve $O(\sqrt{T})$ regret when the highest competing bids are generated adversarially, and show that no online algorithm can do better. We further prove that the regret improves to $O(\log T)$ when th
+    arXiv:2403.07799v1 Announce Type: new  Abstract: We study how pricing affects the division of surplus among buyers in auctions for multiple units. Our equity objective may be important, e.g., for competition concerns in downstream markets, complementing the long-standing debate on revenue and efficiency. We study a canonical model of auctions for multiple indivisible units with unit demand buyers and valuations with a private and a common component and consider all pricing rules that are a mixture (i.e., a convex combination) of pay-as-bid and uniform pricing. We propose the winners' empirical variance (WEV), the expected empirical variance of surplus among the winners, as a metric for surplus equity. We show that, for a range of private-common value proportions, a strictly interior mix of pay-as-bid and uniform pricing minimizes WEV. From an equity perspective, auctions with a higher private value component benefit from more price discrimination, whereas only auctions with a sufficien
     
-[^3]: 关于连通且强比例切蛋糕的研究
+[^2]: 两阶段设施选址中的均衡与原子客户
 
-    On Connected Strongly-Proportional Cake-Cutting
+    Equilibria in Two-Stage Facility Location with Atomic Clients
 
-    [https://arxiv.org/abs/2312.15326](https://arxiv.org/abs/2312.15326)
+    [https://arxiv.org/abs/2403.03114](https://arxiv.org/abs/2403.03114)
 
-    该论文研究了一种公平划分可划分异质资源的问题，即蛋糕切分。该论文确定了存在一种连通的强比例切分方式，并提供了相应的算法和简单刻画。
+    本文研究了竞争性设施选址的两阶段多代理系统，针对不可分割权重的客户提出了混合策略，展示了在给定设施布置时可能出现截然不同的客户均衡。
 
     
 
-    我们研究了在一组代理人中如何公平地分配可划分的异质资源，也称为蛋糕。我们确定了存在着一种分配方式，每个代理人都会收到一个价值严格超过他们比例份额的连续部分，也称为*强比例分配*。我们提出了一个算法，可以使用最多$n \cdot 2^{n-1}$个查询来确定是否存在一个连通的强比例分配。对于具有严格正估值的代理人，我们提供了一个更简单的刻画，并且证明了确定是否存在一个连通的强比例分配所需的查询数量是$\Theta(n^2)$。我们的证明是构造性的，并且当存在时，给出了一个连通的强比例分配，使用了类似数量的查询。
+    我们将竞争性设施选址视为一个带有两种客户类型的两阶段多代理系统。对于具有加权客户的主机图，首先设施代理者战略性地选择开设设施的顶点。然后，客户战略性地选择在其邻域内的哪个开设设施消费。设施希望尽可能吸引更多客户权重，客户希望最小化所选设施上的拥挤。所有最近研究的此模型版本都假定客户可以战略性地分担他们的权重。我们考虑具有不可分割权重的客户，但允许混合策略。因此，客户可以在哪个设施消费上随机选择。除了对自然客户行为进行建模外，这种微妙的变化会产生 drast 剧烈的变化，例如，在给定设施布置时，可能出现截然不同的客户均衡。作为我们的主要结果，我们展示了纯子博弈完美
 
-    arXiv:2312.15326v2 Announce Type: replace-cross Abstract: We investigate the problem of fairly dividing a divisible heterogeneous resource, also known as a cake, among a set of agents. We characterize the existence of an allocation in which every agent receives a contiguous piece worth strictly more than their proportional share, also known as a *strongly-proportional allocation*. The characterization is supplemented with an algorithm that determines the existence of a connected strongly-proportional allocation using at most $n \cdot 2^{n-1}$ queries. We provide a simpler characterization for agents with strictly positive valuations, and show that the number of queries required to determine the existence of a connected strongly-proportional allocation is in $\Theta(n^2)$. Our proofs are constructive and yield a connected strongly-proportional allocation, when it exists, using a similar number of queries.
+    arXiv:2403.03114v1 Announce Type: cross  Abstract: We consider competitive facility location as a two-stage multi-agent system with two types of clients. For a given host graph with weighted clients on the vertices, first facility agents strategically select vertices for opening their facilities. Then, the clients strategically select which of the opened facilities in their neighborhood to patronize. Facilities want to attract as much client weight as possible, clients want to minimize congestion on the chosen facility.   All recently studied versions of this model assume that clients can split their weight strategically. We consider clients with unsplittable weights, but allow mixed strategies. So clients may randomize over which facility to patronize. Besides modeling a natural client behavior, this subtle change yields drastic changes, e.g., for a given facility placement, qualitatively different client equilibria are possible.   As our main result, we show that pure subgame perfect
     
 

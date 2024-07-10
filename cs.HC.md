@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Deep Neural Networks and Brain Alignment: Brain Encoding and Decoding (Survey).](http://arxiv.org/abs/2307.10246) | 本文综述了深度神经网络和脑对齐的研究，重点在于脑编码和解码模型的应用。这些模型对于理解大脑的信息处理机制以及设计脑机接口具有重要意义。 |
-| [^2] | [MenuCraft: Interactive Menu System Design with Large Language Models.](http://arxiv.org/abs/2303.04496) | MenuCraft是一个基于大型语言模型的AI辅助设计师，通过对话系统与设计师协作，提供了一个交互式菜单设计工具，可以简化菜单设计过程，并支持零/少次学习。 |
+| [^1] | [Are Large Language Models Aligned with People's Social Intuitions for Human-Robot Interactions?](https://arxiv.org/abs/2403.05701) | 该研究测试大型语言模型在人机互动中是否能够捕捉到人们的行为判断和沟通偏好，结果表明GPT-4在生成社会可接受行为方面表现出色。 |
 
 # 详细
 
-[^1]: 深度神经网络和脑对齐：脑编码和解码（综述）
+[^1]: 大型语言模型是否与人们的社交直觉相一致，用于人机互动？
 
-    Deep Neural Networks and Brain Alignment: Brain Encoding and Decoding (Survey). (arXiv:2307.10246v1 [q-bio.NC])
+    Are Large Language Models Aligned with People's Social Intuitions for Human-Robot Interactions?
 
-    [http://arxiv.org/abs/2307.10246](http://arxiv.org/abs/2307.10246)
+    [https://arxiv.org/abs/2403.05701](https://arxiv.org/abs/2403.05701)
 
-    本文综述了深度神经网络和脑对齐的研究，重点在于脑编码和解码模型的应用。这些模型对于理解大脑的信息处理机制以及设计脑机接口具有重要意义。
-
-    
-
-    大脑如何表示不同的信息模式？我们能否设计出一个可以自动理解用户思考内容的系统？这些问题可以通过研究功能磁共振成像（fMRI）等大脑记录来回答。作为第一步，神经科学界为被动阅读/听觉/观看概念词汇、叙述、图片和电影相关的认知神经科学数据集作出了贡献。过去二十年中，还提出了使用这些数据集的编码和解码模型。这些模型作为基础研究中的额外工具，在认知科学和神经科学领域有着多种实际应用。编码模型旨在自动地生成fMRI大脑表征，给定一个刺激。它们在评估和诊断神经系统疾病以及设计大脑损伤治疗方法方面有着多种实际应用。解码模型解决了根据fMRI重构刺激的逆问题。它们对于理解大脑如何处理信息以及设计脑机接口的发展都有着重要意义。
-
-    How does the brain represent different modes of information? Can we design a system that automatically understands what the user is thinking? Such questions can be answered by studying brain recordings like functional magnetic resonance imaging (fMRI). As a first step, the neuroscience community has contributed several large cognitive neuroscience datasets related to passive reading/listening/viewing of concept words, narratives, pictures and movies. Encoding and decoding models using these datasets have also been proposed in the past two decades. These models serve as additional tools for basic research in cognitive science and neuroscience. Encoding models aim at generating fMRI brain representations given a stimulus automatically. They have several practical applications in evaluating and diagnosing neurological conditions and thus also help design therapies for brain damage. Decoding models solve the inverse problem of reconstructing the stimuli given the fMRI. They are useful for 
-    
-[^2]: MenuCraft: 基于大型语言模型的交互式菜单系统设计
-
-    MenuCraft: Interactive Menu System Design with Large Language Models. (arXiv:2303.04496v2 [cs.CL] UPDATED)
-
-    [http://arxiv.org/abs/2303.04496](http://arxiv.org/abs/2303.04496)
-
-    MenuCraft是一个基于大型语言模型的AI辅助设计师，通过对话系统与设计师协作，提供了一个交互式菜单设计工具，可以简化菜单设计过程，并支持零/少次学习。
+    该研究测试大型语言模型在人机互动中是否能够捕捉到人们的行为判断和沟通偏好，结果表明GPT-4在生成社会可接受行为方面表现出色。
 
     
 
-    菜单系统设计是一项具有挑战性的任务，涉及许多设计选项和各种人因素。本文提出了一种名为MenuCraft的AI辅助设计师，通过设计和细化菜单系统的对话系统，实现设计师与对话系统之间的协作。MenuCraft提供了一个基于语言的交互式菜单设计工具，简化了菜单设计过程，并实现了设计选项的轻松定制。MenuCraft通过对话支持各种交互方式，可以进行零/少次学习。
+    大型语言模型（LLMs）越来越多地用于机器人技术，特别是高层次的行动规划。与此同时，许多机器人应用涉及人类监督员或合作者。因此，对LLMs生成与人们偏好和价值观相一致的社会可接受行动至关重要。在这项工作中，我们测试LLMs是否捕捉到人们在人机互动（HRI）场景中行为判断和沟通偏好方面的直觉。为了评估，我们重现了三个HRI用户研究，将LLMs的输出与真实参与者的输出进行比较。我们发现GPT-4在非常出色地表现，生成的答案与两项研究的用户答案具有很强相关性——第一项研究涉及在各种情境中选择最合适的沟通举动给机器人（$r_s$ = 0.82），第二项涉及判断行为的可取性、意图性和令人惊讶性。
 
-    Menu system design is a challenging task involving many design options and various human factors. For example, one crucial factor that designers need to consider is the semantic and systematic relation of menu commands. However, capturing these relations can be challenging due to limited available resources. With the advancement of neural language models, large language models can utilize their vast pre-existing knowledge in designing and refining menu systems. In this paper, we propose MenuCraft, an AI-assisted designer for menu design that enables collaboration between the designer and a dialogue system to design menus. MenuCraft offers an interactive language-based menu design tool that simplifies the menu design process and enables easy customization of design options. MenuCraft supports a variety of interactions through dialog that allows performing zero/few-shot learning.
+    arXiv:2403.05701v1 Announce Type: cross  Abstract: Large language models (LLMs) are increasingly used in robotics, especially for high-level action planning. Meanwhile, many robotics applications involve human supervisors or collaborators. Hence, it is crucial for LLMs to generate socially acceptable actions that align with people's preferences and values. In this work, we test whether LLMs capture people's intuitions about behavior judgments and communication preferences in human-robot interaction (HRI) scenarios. For evaluation, we reproduce three HRI user studies, comparing the output of LLMs with that of real participants. We find that GPT-4 strongly outperforms other models, generating answers that correlate strongly with users' answers in two studies $\unicode{x2014}$ the first study dealing with selecting the most appropriate communicative act for a robot in various situations ($r_s$ = 0.82), and the second with judging the desirability, intentionality, and surprisingness of beh
     
 
