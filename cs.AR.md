@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [MicroT: Low-Energy and Adaptive Models for MCUs](https://arxiv.org/abs/2403.08040) | MicroT是一个低能耗、多任务自适应模型框架，通过特征提取器和分类器的分离、模型优化和本地任务训练，在MCUs上实现了模型性能的提升和能耗的降低。 |
+| [^1] | [Data is all you need: Finetuning LLMs for Chip Design via an Automated design-data augmentation framework](https://arxiv.org/abs/2403.11202) | 提出了一种自动设计数据增强框架，以优化大型语言模型在芯片设计中的应用能力，并解决了Verilog数据匮乏和训练数据准备时间长的问题 |
 
 # 详细
 
-[^1]: MicroT：用于MCUs的低能耗和自适应模型
+[^1]: 数据就是你需要的一切：通过自动设计数据增强框架对LLM进行芯片设计微调
 
-    MicroT: Low-Energy and Adaptive Models for MCUs
+    Data is all you need: Finetuning LLMs for Chip Design via an Automated design-data augmentation framework
 
-    [https://arxiv.org/abs/2403.08040](https://arxiv.org/abs/2403.08040)
+    [https://arxiv.org/abs/2403.11202](https://arxiv.org/abs/2403.11202)
 
-    MicroT是一个低能耗、多任务自适应模型框架，通过特征提取器和分类器的分离、模型优化和本地任务训练，在MCUs上实现了模型性能的提升和能耗的降低。
+    提出了一种自动设计数据增强框架，以优化大型语言模型在芯片设计中的应用能力，并解决了Verilog数据匮乏和训练数据准备时间长的问题
 
     
 
-    我们提出了MicroT，这是一个面向资源受限的MCUs的低能耗、多任务自适应模型框架。我们将原始模型划分为特征提取器和分类器。特征提取器通过自监督知识蒸馏获得，并通过模型分割和联合训练进一步优化为部分模型和完整模型。然后将这些模型部署在MCUs上，增加并在本地任务上训练分类器，最终执行关节推理的阶段决策。在这个过程中，部分模型最初处理样本，如果置信度得分低于设定的阈值，完整模型将恢复并继续推理。我们在两个模型、三个数据集和两个MCU板上评估了MicroT。我们的实验评估表明，在处理多个本地任务时，MicroT有效地提高了模型性能并降低了能耗。与未经优化的特征提取器相比，MicroT
+    最近大型语言模型的进展表明，它们在高层提示下自动生成硬件描述语言（HDL）代码的潜力。研究人员利用微调来增强这些大型语言模型（LLMs）在芯片设计领域的能力。然而，缺乏Verilog数据阻碍了LLMs在Verilog生成质量上的进一步提升。此外，缺少Verilog和电子设计自动化（EDA）脚本数据增强框架显着增加了为LLM训练器准备训练数据集所需的时间。本文提出了一种自动设计数据增强框架，它生成与Verilog和EDA脚本对齐的大量高质量自然语言。对于Verilog生成，它将Verilog文件转换为抽象语法树，然后将节点映射到具有预定义模板的自然语言。对于Verilog修复，它
 
-    arXiv:2403.08040v1 Announce Type: new  Abstract: We propose MicroT, a low-energy, multi-task adaptive model framework for resource-constrained MCUs. We divide the original model into a feature extractor and a classifier. The feature extractor is obtained through self-supervised knowledge distillation and further optimized into part and full models through model splitting and joint training. These models are then deployed on MCUs, with classifiers added and trained on local tasks, ultimately performing stage-decision for joint inference. In this process, the part model initially processes the sample, and if the confidence score falls below the set threshold, the full model will resume and continue the inference. We evaluate MicroT on two models, three datasets, and two MCU boards. Our experimental evaluation shows that MicroT effectively improves model performance and reduces energy consumption when dealing with multiple local tasks. Compared to the unoptimized feature extractor, MicroT
+    arXiv:2403.11202v1 Announce Type: cross  Abstract: Recent advances in large language models have demonstrated their potential for automated generation of hardware description language (HDL) code from high-level prompts. Researchers have utilized fine-tuning to enhance the ability of these large language models (LLMs) in the field of Chip Design. However, the lack of Verilog data hinders further improvement in the quality of Verilog generation by LLMs. Additionally, the absence of a Verilog and Electronic Design Automation (EDA) script data augmentation framework significantly increases the time required to prepare the training dataset for LLM trainers. This paper proposes an automated design-data augmentation framework, which generates high-volume and high-quality natural language aligned with Verilog and EDA scripts. For Verilog generation, it translates Verilog files to an abstract syntax tree and then maps nodes to natural language with a predefined template. For Verilog repair, it 
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Bucketized Active Sampling for Learning ACOPF.](http://arxiv.org/abs/2208.07497) | 本文提出了一种新颖的主动学习框架——分桶主动采样（BAS），旨在在时间限制内训练最佳的OPF代理。BAS将输入分布分成桶，并使用收集函数确定下一次采样的位置。实验结果显示了BAS的好处。 |
+| [^1] | [A Decentralized Market Mechanism for Energy Communities under Operating Envelopes](https://arxiv.org/abs/2402.17201) | 提出了一种基于运营包络的分散式能源社区市场机制，通过双部定价实现了纳什均衡，最大化社区的社会福利，同时保证社区的运营遵守约束。 |
 
 # 详细
 
-[^1]: 学习ACOPF的分桶主动采样
+[^1]: 一种基于运营包络的分散式能源社区市场机制
 
-    Bucketized Active Sampling for Learning ACOPF. (arXiv:2208.07497v2 [cs.LG] UPDATED)
+    A Decentralized Market Mechanism for Energy Communities under Operating Envelopes
 
-    [http://arxiv.org/abs/2208.07497](http://arxiv.org/abs/2208.07497)
+    [https://arxiv.org/abs/2402.17201](https://arxiv.org/abs/2402.17201)
 
-    本文提出了一种新颖的主动学习框架——分桶主动采样（BAS），旨在在时间限制内训练最佳的OPF代理。BAS将输入分布分成桶，并使用收集函数确定下一次采样的位置。实验结果显示了BAS的好处。
+    提出了一种基于运营包络的分散式能源社区市场机制，通过双部定价实现了纳什均衡，最大化社区的社会福利，同时保证社区的运营遵守约束。
 
     
 
-    本文考虑最优潮流（OPF）的优化代理，即近似OPF的输入/输出关系的机器学习模型。最近的研究集中在证明这些代理可以具有较高的准确性。然而，它们的训练需要大量的数据，每个实例都需要对输入分布的样本进行OPF的（离线）求解。为了满足市场清算应用的要求，本文提出了一种新颖的主动学习框架——分桶主动采样（BAS），旨在在时间限制内训练最佳的OPF代理。BAS将输入分布分成桶，并使用收集函数确定下一次采样的位置。通过将相同的分桶应用于验证集，BAS利用标记的验证样本来选择未标记的样本。BAS还依赖于随时间增加和减少的自适应学习率。实验结果显示了BAS的好处。
+    我们提出了一种基于运营包络（OEs）的能源社区市场机制，根据双部定价动态收费/奖励其成员。OE由监管的配电系统运营商（DSO）外部强加在能源社区的收入表上，该表受到广义净能量计量（NEM）电价设计的约束。通过将社区管理者与其成员的互动建模为Stackelberg博弈，我们表明所提出的双部定价实现了纳什均衡，并通过分散式方式最大化了社区的社会福利，同时确保社区的运营遵守OE。市场机制符合成本因果关系原则，保证社区成员的剩余水平至少不低于他们自主面对DSO时的最大剩余。动态且统一的社区价格是社区总体可再生能源的单减函数。
 
-    This paper considers optimization proxies for Optimal Power Flow (OPF), i.e., machine-learning models that approximate the input/output relationship of OPF. Recent work has focused on showing that such proxies can be of high fidelity. However, their training requires significant data, each instance necessitating the (offline) solving of an OPF for a sample of the input distribution. To meet the requirements of market-clearing applications, this paper proposes Bucketized Active Sampling (BAS), a novel active learning framework that aims at training the best possible OPF proxy within a time limit. BAS partitions the input distribution into buckets and uses an acquisition function to determine where to sample next. By applying the same partitioning to the validation set, BAS leverages labeled validation samples in the selection of unlabeled samples. BAS also relies on an adaptive learning rate that increases and decreases over time. Experimental results demonstrate the benefits of BAS.
+    arXiv:2402.17201v1 Announce Type: cross  Abstract: We propose an operating envelopes (OEs) aware energy community market mechanism that dynamically charges/rewards its members based on two-part pricing. The OEs are imposed exogenously by a regulated distribution system operator (DSO) on the energy community's revenue meter that is subject to a generalized net energy metering (NEM) tariff design. By formulating the interaction of the community manager and its members as a Stackelberg game, we show that the proposed two-part pricing achieves a Nash equilibrium and maximizes the community's social welfare in a decentralized fashion while ensuring that the community's operation abides by the OEs. The market mechanism conforms with the cost-causation principle and guarantees community members a surplus level no less than their maximum surplus when they autonomously face the DSO. The dynamic and uniform community price is a monotonically decreasing function of the community's aggregate renew
     
 
