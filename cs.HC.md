@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [RASP: A Drone-based Reconfigurable Actuation and Sensing Platform Towards Ambient Intelligent Systems](https://arxiv.org/abs/2403.12853) | 提出了RASP，一个可在25秒内自主更换传感器和执行器的模块化和可重构传感和作动平台，使无人机能快速适应各种任务，同时引入了利用大规模语言和视觉语言模型的个人助理系统架构。 |
-| [^2] | [Relying on the Unreliable: The Impact of Language Models' Reluctance to Express Uncertainty.](http://arxiv.org/abs/2401.06730) | 本研究调查了语言模型在回答问题时不愿表达不确定性的影响，发现语言模型往往过于自信，导致高错误率。实验还表明用户无论是否标记了确定性都会严重依赖语言模型生成的结果。 |
+| [^1] | [A Matter of Annotation: An Empirical Study on In Situ and Self-Recall Activity Annotations from Wearable Sensors](https://arxiv.org/abs/2305.08752) | 不同的标记方法对数据质量和深度学习分类器的性能有直接影响，原位方法产生的标签较少但更精确。 |
+| [^2] | [A Temporal-Spectral Fusion Transformer with Subject-specific Adapter for Enhancing RSVP-BCI Decoding.](http://arxiv.org/abs/2401.06340) | 本文提出了一种基于主题专用适配器的时间-频谱融合Transformer (TSformer-SA) 用于增强RSVP-BCI解码。该方法通过引入多视图信息并减少准备时间，实现了解码性能的提升。 |
 
 # 详细
 
-[^1]: 基于无人机的环境智能系统的可重构作动和传感平台RASP
+[^1]: 注释问题：来自可穿戴传感器的原位和自我回忆活动注释的实证研究
 
-    RASP: A Drone-based Reconfigurable Actuation and Sensing Platform Towards Ambient Intelligent Systems
+    A Matter of Annotation: An Empirical Study on In Situ and Self-Recall Activity Annotations from Wearable Sensors
 
-    [https://arxiv.org/abs/2403.12853](https://arxiv.org/abs/2403.12853)
+    [https://arxiv.org/abs/2305.08752](https://arxiv.org/abs/2305.08752)
 
-    提出了RASP，一个可在25秒内自主更换传感器和执行器的模块化和可重构传感和作动平台，使无人机能快速适应各种任务，同时引入了利用大规模语言和视觉语言模型的个人助理系统架构。
-
-    
-
-    实现消费级无人机与我们家中的吸尘机器人或日常生活中的个人智能手机一样有用，需要无人机能感知、驱动和响应可能出现的一般情况。为了实现这一愿景，我们提出了RASP，一个模块化和可重构的传感和作动平台，允许无人机在仅25秒内自主更换机载传感器和执行器，使单个无人机能够快速适应各种任务。RASP包括一个机械层，用于物理更换传感器模块，一个电气层，用于维护传感器/执行器的电源和通信线路，以及一个软件层，用于在无人机和我们平台上的任何传感器模块之间维护一个公共接口。利用最近在大型语言和视觉语言模型方面的进展，我们进一步介绍了一种利用RASP的个人助理系统的架构、实现和现实世界部署。
-
-    arXiv:2403.12853v1 Announce Type: cross  Abstract: Realizing consumer-grade drones that are as useful as robot vacuums throughout our homes or personal smartphones in our daily lives requires drones to sense, actuate, and respond to general scenarios that may arise. Towards this vision, we propose RASP, a modular and reconfigurable sensing and actuation platform that allows drones to autonomously swap onboard sensors and actuators in only 25 seconds, allowing a single drone to quickly adapt to a diverse range of tasks. RASP consists of a mechanical layer to physically swap sensor modules, an electrical layer to maintain power and communication lines to the sensor/actuator, and a software layer to maintain a common interface between the drone and any sensor module in our platform. Leveraging recent advances in large language and visual language models, we further introduce the architecture, implementation, and real-world deployments of a personal assistant system utilizing RASP. We demo
-    
-[^2]: 不可靠的依赖：语言模型不愿表达不确定性的影响
-
-    Relying on the Unreliable: The Impact of Language Models' Reluctance to Express Uncertainty. (arXiv:2401.06730v1 [cs.CL])
-
-    [http://arxiv.org/abs/2401.06730](http://arxiv.org/abs/2401.06730)
-
-    本研究调查了语言模型在回答问题时不愿表达不确定性的影响，发现语言模型往往过于自信，导致高错误率。实验还表明用户无论是否标记了确定性都会严重依赖语言模型生成的结果。
+    不同的标记方法对数据质量和深度学习分类器的性能有直接影响，原位方法产生的标签较少但更精确。
 
     
 
-    随着自然语言成为人工智能交互的默认接口，语言模型适当地传达下游应用的不确定性变得至关重要。本研究调查了语言模型如何通过自然语言表达对其回答的置信度，以及下游用户对语言模型表达的不确定性的反应。我们调查了公开部署的模型，发现在回答问题时，即使产生了错误答案，语言模型也无法表达不确定性。虽然可以明确要求语言模型表达置信度，但它们往往过于自信，导致在置信的回答中错误率高达平均47%。我们通过人类实验测试了语言模型过度自信的风险，并证明用户无论是否标记了确定性都会严重依赖语言模型生成的结果。最后，我们研究了在RLHF对齐中使用的偏好注释数据集，并发现人类对带有不确定性的文本有偏见。我们的研究突出了这一问题。
+    人们对从可穿戴传感器中检测人类活动的研究是一个高度活跃的领域，使许多应用受益，从通过健康护理患者的步行监测到健身指导再到简化手工作业流程。我们提出了一项实证研究，比较了在野外数据用户研究中使用的4种不同常用的注释方法。这些方法可以分为用户驱动的、原位注释-即在记录活动之前或期间执行的注释-和回忆方法-参与者在当天结束时追溯地对其数据进行标注。我们的研究表明，不同的标记方法直接影响注释的质量，以及相应数据训练的深度学习分类器的能力。我们注意到，原位方法产生的标签较少，但更精确，而回忆方法产生的标签较多，但不够精确。此外，我们还结合了一本活动日记
 
-    As natural language becomes the default interface for human-AI interaction, there is a critical need for LMs to appropriately communicate uncertainties in downstream applications. In this work, we investigate how LMs incorporate confidence about their responses via natural language and how downstream users behave in response to LM-articulated uncertainties. We examine publicly deployed models and find that LMs are unable to express uncertainties when answering questions even when they produce incorrect responses. LMs can be explicitly prompted to express confidences, but tend to be overconfident, resulting in high error rates (on average 47%) among confident responses. We test the risks of LM overconfidence by running human experiments and show that users rely heavily on LM generations, whether or not they are marked by certainty. Lastly, we investigate the preference-annotated datasets used in RLHF alignment and find that humans have a bias against texts with uncertainty. Our work hig
+    arXiv:2305.08752v2 Announce Type: replace-cross  Abstract: Research into the detection of human activities from wearable sensors is a highly active field, benefiting numerous applications, from ambulatory monitoring of healthcare patients via fitness coaching to streamlining manual work processes. We present an empirical study that compares 4 different commonly used annotation methods utilized in user studies that focus on in-the-wild data. These methods can be grouped in user-driven, in situ annotations - which are performed before or during the activity is recorded - and recall methods - where participants annotate their data in hindsight at the end of the day. Our study illustrates that different labeling methodologies directly impact the annotations' quality, as well as the capabilities of a deep learning classifier trained with the data respectively. We noticed that in situ methods produce less but more precise labels than recall methods. Furthermore, we combined an activity diary
+    
+[^2]: 基于主题专用适配器的时间-频谱融合Transformer用于增强RSVP-BCI解码
+
+    A Temporal-Spectral Fusion Transformer with Subject-specific Adapter for Enhancing RSVP-BCI Decoding. (arXiv:2401.06340v1 [cs.HC])
+
+    [http://arxiv.org/abs/2401.06340](http://arxiv.org/abs/2401.06340)
+
+    本文提出了一种基于主题专用适配器的时间-频谱融合Transformer (TSformer-SA) 用于增强RSVP-BCI解码。该方法通过引入多视图信息并减少准备时间，实现了解码性能的提升。
+
+    
+
+    快速串联视觉呈现（RSVP）基于脑机接口（BCI）是一种利用脑电信号进行目标检索的高效技术。传统解码方法的性能改进依赖于大量来自新测试对象的训练数据，这增加了BCI系统的准备时间。一些研究引入了来自现有对象的数据以减少性能改进对新对象数据的依赖性，但它们基于对抗学习的优化策略以及大量数据的训练增加了准备过程中的训练时间。此外，大多数之前的方法只关注脑电信号的单视图信息，而忽略了其他视图的信息，这可能进一步改善性能。为了在减少准备时间的同时提高解码性能，我们提出了一种具有主题专用适配器的时间-频谱融合Transformer（TSformer-SA）。
+
+    The Rapid Serial Visual Presentation (RSVP)-based Brain-Computer Interface (BCI) is an efficient technology for target retrieval using electroencephalography (EEG) signals. The performance improvement of traditional decoding methods relies on a substantial amount of training data from new test subjects, which increases preparation time for BCI systems. Several studies introduce data from existing subjects to reduce the dependence of performance improvement on data from new subjects, but their optimization strategy based on adversarial learning with extensive data increases training time during the preparation procedure. Moreover, most previous methods only focus on the single-view information of EEG signals, but ignore the information from other views which may further improve performance. To enhance decoding performance while reducing preparation time, we propose a Temporal-Spectral fusion transformer with Subject-specific Adapter (TSformer-SA). Specifically, a cross-view interaction 
     
 

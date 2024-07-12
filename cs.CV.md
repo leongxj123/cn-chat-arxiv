@@ -2,82 +2,82 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Improving Medical Multi-modal Contrastive Learning with Expert Annotations](https://arxiv.org/abs/2403.10153) | eCLIP是一种改进的CLIP模型，通过集成专家注释和混合增强来应对医学影像分析中的数据稀缺和模态差距挑战，提高了模型学习效果 |
-| [^2] | [GET: Unlocking the Multi-modal Potential of CLIP for Generalized Category Discovery](https://arxiv.org/abs/2403.09974) | 本文提出了一种文本嵌入合成器（TES），用于为无标签数据生成伪文本嵌入，以解锁CLIP用于广义类别发现任务中的多模态潜力。 |
-| [^3] | [Probabilistic Routing for Graph-Based Approximate Nearest Neighbor Search](https://arxiv.org/abs/2402.11354) | 该论文提出了一种基于概率路由的方法，通过引入PEOs有效识别图中需要考虑进行精确距离计算的邻居，从而显著提高了基于图的近似最近邻搜索的效率。 |
-| [^4] | [Manipulating Feature Visualizations with Gradient Slingshots.](http://arxiv.org/abs/2401.06122) | 本研究探究了激活最大化方法在对抗模型操作中的脆弱性，并提出了一种新的方法来操纵特征可视化，以隐藏特定神经元的功能。 |
-| [^5] | [Complementary Information Mutual Learning for Multimodality Medical Image Segmentation.](http://arxiv.org/abs/2401.02717) | 这篇论文介绍了一种称为互补信息相互学习（CIML）的框架，在多模态医学影像分割中解决了模态间冗余信息的负面影响。通过采用加法和任务分解的方法，CIML成功地消除了冗余信息，提高了分割的准确性。 |
+| [^1] | [SLEDGE: Synthesizing Simulation Environments for Driving Agents with Generative Models](https://arxiv.org/abs/2403.17933) | SLEDGE是第一个使用生成模型训练的车辆运动规划生成模拟器，引入了新颖的栅格到矢量自编码器（RVAE）以及Diffusion Transformer来生成智能体和车道图，从而实现更好的模拟控制。 |
+| [^2] | [Deep Learning Safety Concerns in Automated Driving Perception.](http://arxiv.org/abs/2309.03774) | 本研究旨在通过引入安全考虑作为结构元素，以系统综合的方式确保基于深度神经网络的自动驾驶系统的安全性。这一概念不仅与现有的安全标准相契合，还为AI安全相关的学术出版物和标准提供了新的启示。 |
+| [^3] | [Generalized Continual Category Discovery.](http://arxiv.org/abs/2308.12112) | 本研究提出了一种广义持续类别发现（GCCD）的框架，用于在现实生活场景中同时处理新的和已知的类别，并且利用持续的无监督学习方法来发现它们。通过实验证明现有方法无法处理后续任务中的无标记样本。 |
+| [^4] | [Leveraging Large Language Models for Scalable Vector Graphics-Driven Image Understanding.](http://arxiv.org/abs/2306.06094) | 本文介绍了一种新方法，通过使用可伸缩矢量图(SVG)格式处理图像，使得大型语言模型(LLMs)能够直接理解和操作图像，而无需使用参数化的视觉组件。在图像分类、生成和上下文学习等任务上，该方法表现良好，具有鲁棒性和显著的性能提升。 |
+| [^5] | [Fairness-aware Vision Transformer via Debiased Self-Attention.](http://arxiv.org/abs/2301.13803) | 这篇论文提出了一种基于去偏自注意力的公平感知视觉变换器框架，通过消除与敏感属性相关的虚假特征来减轻偏见，并利用对抗性示例来定位和屏蔽这些特征。 |
 
 # 详细
 
-[^1]: 改进医学多模态对比学习与专家注释
+[^1]: SLEDGE: 使用生成模型合成驾驶智能体的模拟环境
 
-    Improving Medical Multi-modal Contrastive Learning with Expert Annotations
+    SLEDGE: Synthesizing Simulation Environments for Driving Agents with Generative Models
 
-    [https://arxiv.org/abs/2403.10153](https://arxiv.org/abs/2403.10153)
+    [https://arxiv.org/abs/2403.17933](https://arxiv.org/abs/2403.17933)
 
-    eCLIP是一种改进的CLIP模型，通过集成专家注释和混合增强来应对医学影像分析中的数据稀缺和模态差距挑战，提高了模型学习效果
-
-    
-
-    我们介绍了一种增强版CLIP模型——eCLIP，它集成了放射科医生眼球注视热图形式的专家注释。它解决了对比多模态医学影像分析中的关键挑战，尤其是数据稀缺和“模态差距”——图像和文本嵌入之间存在的显著差异，降低了表示的质量并阻碍了跨模态互操作性。eCLIP集成了一个热图处理器，并利用混合增强来有效利用稀缺的专家注释，从而提高模型的学习效果。eCLIP设计为通用的，适用于任何形式的CLIP变体，无需修改核心架构。通过对多个任务的详细评估，包括零样本推断、线性探针、跨模态检索以及使用冻结的大型语言模型进行放射学报告的检索增强生成（RAG），eCLIP展示了其...
-
-    arXiv:2403.10153v1 Announce Type: cross  Abstract: We introduce eCLIP, an enhanced version of the CLIP model that integrates expert annotations in the form of radiologist eye-gaze heatmaps. It tackles key challenges in contrastive multi-modal medical imaging analysis, notably data scarcity and the "modality gap" -- a significant disparity between image and text embeddings that diminishes the quality of representations and hampers cross-modal interoperability. eCLIP integrates a heatmap processor and leverages mixup augmentation to efficiently utilize the scarce expert annotations, thus boosting the model's learning effectiveness. eCLIP is designed to be generally applicable to any variant of CLIP without requiring any modifications of the core architecture. Through detailed evaluations across several tasks, including zero-shot inference, linear probing, cross-modal retrieval, and Retrieval Augmented Generation (RAG) of radiology reports using a frozen Large Language Model, eCLIP showca
-    
-[^2]: GET：解锁CLIP的多模态潜力，用于广义类别发现
-
-    GET: Unlocking the Multi-modal Potential of CLIP for Generalized Category Discovery
-
-    [https://arxiv.org/abs/2403.09974](https://arxiv.org/abs/2403.09974)
-
-    本文提出了一种文本嵌入合成器（TES），用于为无标签数据生成伪文本嵌入，以解锁CLIP用于广义类别发现任务中的多模态潜力。
+    SLEDGE是第一个使用生成模型训练的车辆运动规划生成模拟器，引入了新颖的栅格到矢量自编码器（RVAE）以及Diffusion Transformer来生成智能体和车道图，从而实现更好的模拟控制。
 
     
 
-    给定包含旧类别和新类别的无标签数据集，广义类别发现（GCD）旨在准确发现新类别，并正确分类旧类别，利用从有标签样本中学习的类别概念。当前的GCD方法只使用单一的视觉信息模态，导致在视觉上相似类别的分类效果不佳。虽然某些类别在视觉上容易混淆，但它们的文本信息可能是不同的，这促使我们将文本信息引入到GCD任务中。然而，无标签数据缺乏类别名称，使得利用文本信息变得不切实际。为了解决这一具有挑战性的问题，在本文中，我们提出了一种文本嵌入合成器（TES），用于为无标签样本生成伪文本嵌入。具体而言，我们的TES利用CLIP可以生成对齐的视觉-语言特征这一特性，将视觉嵌入转换为CLIP文本模型的标记。
+    SLEDGE是第一个基于真实世界驾驶记录训练的车辆运动规划生成模拟器。其核心组件是一个学习模型，能够生成智能体边界框和车道图。该模型的输出作为交通模拟的初始状态。针对SLEDGE待生成的实体的独特特性，例如它们的连接性和每个场景的可变数量，使得大多数现代生成模型在这一任务上的朴素应用变得不简单。因此，我们除了对现有车道图表示进行系统研究外，还引入了一种新颖的栅格到矢量自编码器（RVAE）。它将智能体和车道图编码为栅格化潜在映射中的不同通道。这有助于车道条件下的智能体生成以及使用扩散变换器同时生成车道和智能体。在SLEDGE中使用生成的实体可以更好地控制模拟，例如上采样转弯。
 
-    arXiv:2403.09974v1 Announce Type: cross  Abstract: Given unlabelled datasets containing both old and new categories, generalized category discovery (GCD) aims to accurately discover new classes while correctly classifying old classes, leveraging the class concepts learned from labeled samples. Current GCD methods only use a single visual modality of information, resulting in poor classification of visually similar classes. Though certain classes are visually confused, their text information might be distinct, motivating us to introduce text information into the GCD task. However, the lack of class names for unlabelled data makes it impractical to utilize text information. To tackle this challenging problem, in this paper, we propose a Text Embedding Synthesizer (TES) to generate pseudo text embeddings for unlabelled samples. Specifically, our TES leverages the property that CLIP can generate aligned vision-language features, converting visual embeddings into tokens of the CLIP's text e
+    arXiv:2403.17933v1 Announce Type: cross  Abstract: SLEDGE is the first generative simulator for vehicle motion planning trained on real-world driving logs. Its core component is a learned model that is able to generate agent bounding boxes and lane graphs. The model's outputs serve as an initial state for traffic simulation. The unique properties of the entities to be generated for SLEDGE, such as their connectivity and variable count per scene, render the naive application of most modern generative models to this task non-trivial. Therefore, together with a systematic study of existing lane graph representations, we introduce a novel raster-to-vector autoencoder (RVAE). It encodes agents and the lane graph into distinct channels in a rasterized latent map. This facilitates both lane-conditioned agent generation and combined generation of lanes and agents with a Diffusion Transformer. Using generated entities in SLEDGE enables greater control over the simulation, e.g. upsampling turns 
     
-[^3]: 基于概率路由的基于图的近似最近邻搜索
+[^2]: 自动驾驶感知中的深度学习安全考虑
 
-    Probabilistic Routing for Graph-Based Approximate Nearest Neighbor Search
+    Deep Learning Safety Concerns in Automated Driving Perception. (arXiv:2309.03774v1 [cs.LG])
 
-    [https://arxiv.org/abs/2402.11354](https://arxiv.org/abs/2402.11354)
+    [http://arxiv.org/abs/2309.03774](http://arxiv.org/abs/2309.03774)
 
-    该论文提出了一种基于概率路由的方法，通过引入PEOs有效识别图中需要考虑进行精确距离计算的邻居，从而显著提高了基于图的近似最近邻搜索的效率。
-
-    
-
-    arXiv：2402.11354v1 公告类型：交叉 摘要：在机器学习领域，高维空间中的近似最近邻搜索(ANNS)是一个重要挑战。近年来，基于图的方法已经成为ANNS的优越方法，建立了一种新的技术水平。尽管引入了各种基于图的ANNS优化方法，但它们主要依赖于缺乏正式理论支持的启发式方法。本文旨在通过引入一种方法来增强基于图的ANNS中的路由，该方法在探索图中节点的邻居时提供概率保证。我们将问题建模为概率路由，并通过结合局部敏感技术开发了两种基准策略。随后，我们介绍了PEOs，这是一种有效识别图中应考虑进行精确距离计算的邻居的新方法，从而在实践中显著提高了效率。我们的实验证明...
-
-    arXiv:2402.11354v1 Announce Type: cross  Abstract: Approximate nearest neighbor search (ANNS) in high-dimensional spaces is a pivotal challenge in the field of machine learning. In recent years, graph-based methods have emerged as the superior approach to ANNS, establishing a new state of the art. Although various optimizations for graph-based ANNS have been introduced, they predominantly rely on heuristic methods that lack formal theoretical backing. This paper aims to enhance routing within graph-based ANNS by introducing a method that offers a probabilistic guarantee when exploring a node's neighbors in the graph. We formulate the problem as probabilistic routing and develop two baseline strategies by incorporating locality-sensitive techniques. Subsequently, we introduce PEOs, a novel approach that efficiently identifies which neighbors in the graph should be considered for exact distance computation, thus significantly improving efficiency in practice. Our experiments demonstrate 
-    
-[^4]: 用梯度弹射操纵特征可视化
-
-    Manipulating Feature Visualizations with Gradient Slingshots. (arXiv:2401.06122v1 [cs.LG])
-
-    [http://arxiv.org/abs/2401.06122](http://arxiv.org/abs/2401.06122)
-
-    本研究探究了激活最大化方法在对抗模型操作中的脆弱性，并提出了一种新的方法来操纵特征可视化，以隐藏特定神经元的功能。
+    本研究旨在通过引入安全考虑作为结构元素，以系统综合的方式确保基于深度神经网络的自动驾驶系统的安全性。这一概念不仅与现有的安全标准相契合，还为AI安全相关的学术出版物和标准提供了新的启示。
 
     
 
-    深度神经网络(DNNs)能够学习复杂而多样化的表示，然而，学习到的概念的语义性质仍然未知。解释DNNs学习到的概念的常用方法是激活最大化(AM)，它生成一个合成的输入信号，最大化激活网络中的特定神经元。在本文中，我们研究了这种方法对于对抗模型操作的脆弱性，并引入了一种新的方法来操纵特征可视化，而不改变模型结构或对模型的决策过程产生显著影响。我们评估了我们的方法对几个神经网络模型的效果，并展示了它隐藏特定神经元功能的能力，在模型审核过程中使用选择的目标解释屏蔽了原始解释。作为一种补救措施，我们提出了一种防止这种操纵的防护措施，并提供了定量证据，证明了它的有效性。
+    深度学习领域的最新进展以及深度神经网络（DNNs）在感知方面的出色性能导致了对其在自动驾驶系统中应用的增加需求。这类系统的安全性至关重要，因此需要考虑DNNs的独特属性。为了以系统综合的方式确保基于DNNs的自动驾驶系统的安全性，引入了所谓的安全考虑作为适当的结构元素。一方面，安全考虑的概念设计与现有的与自动驾驶系统安全相关的标准如ISO 21448（SOTIF）非常契合。另一方面，它已经激发了几篇学术出版物和即将出台的关于AI安全的标准，如ISO PAS 8800。虽然安全考虑的概念以前已经被介绍过，但本文对其进行了扩展和优化，借鉴了各个领域和安全专家的反馈意见。
 
-    Deep Neural Networks (DNNs) are capable of learning complex and versatile representations, however, the semantic nature of the learned concepts remains unknown. A common method used to explain the concepts learned by DNNs is Activation Maximization (AM), which generates a synthetic input signal that maximally activates a particular neuron in the network. In this paper, we investigate the vulnerability of this approach to adversarial model manipulations and introduce a novel method for manipulating feature visualization without altering the model architecture or significantly impacting the model's decision-making process. We evaluate the effectiveness of our method on several neural network models and demonstrate its capabilities to hide the functionality of specific neurons by masking the original explanations of neurons with chosen target explanations during model auditing. As a remedy, we propose a protective measure against such manipulations and provide quantitative evidence which 
+    Recent advances in the field of deep learning and impressive performance of deep neural networks (DNNs) for perception have resulted in an increased demand for their use in automated driving (AD) systems. The safety of such systems is of utmost importance and thus requires to consider the unique properties of DNNs.  In order to achieve safety of AD systems with DNN-based perception components in a systematic and comprehensive approach, so-called safety concerns have been introduced as a suitable structuring element. On the one hand, the concept of safety concerns is -- by design -- well aligned to existing standards relevant for safety of AD systems such as ISO 21448 (SOTIF). On the other hand, it has already inspired several academic publications and upcoming standards on AI safety such as ISO PAS 8800.  While the concept of safety concerns has been previously introduced, this paper extends and refines it, leveraging feedback from various domain and safety experts in the field. In par
     
-[^5]: 多模态医学影像分割的互补信息相互学习
+[^3]: 广义持续类别发现
 
-    Complementary Information Mutual Learning for Multimodality Medical Image Segmentation. (arXiv:2401.02717v1 [cs.CV])
+    Generalized Continual Category Discovery. (arXiv:2308.12112v1 [cs.LG])
 
-    [http://arxiv.org/abs/2401.02717](http://arxiv.org/abs/2401.02717)
+    [http://arxiv.org/abs/2308.12112](http://arxiv.org/abs/2308.12112)
 
-    这篇论文介绍了一种称为互补信息相互学习（CIML）的框架，在多模态医学影像分割中解决了模态间冗余信息的负面影响。通过采用加法和任务分解的方法，CIML成功地消除了冗余信息，提高了分割的准确性。
+    本研究提出了一种广义持续类别发现（GCCD）的框架，用于在现实生活场景中同时处理新的和已知的类别，并且利用持续的无监督学习方法来发现它们。通过实验证明现有方法无法处理后续任务中的无标记样本。
 
     
 
-    由于医学影像的局限性和肿瘤信号的多样性，放射科医生必须利用多模态图像进行肿瘤分割和诊断。这导致了多模态学习在分割中的发展。然而，模态之间的冗余性给现有的基于减法的联合学习方法带来了挑战，例如错误判断模态的重要性，忽视特定的模态信息，以及增加认知负荷。这些棘手的问题最终降低了分割的准确性并增加了过拟合的风险。本文提出了互补信息相互学习（CIML）框架，可以对模态间冗余信息的负面影响进行数学建模和解决。CIML采用了加法的思想，并通过归纳偏置驱动的任务分解和基于消息传递的冗余性过滤来消除模态间的冗余信息。CIML将多模态分割任务首先分解为多个子任务
+    大多数持续学习（CL）方法推动着监督学习设置的极限，其中一个智能体期望学习新的标记任务而不会忘记先前的知识。然而，这些设置与现实生活场景不太吻合，其中学习智能体可以访问大量的无标记数据，包括全新（完全无标记）类别和已知类别的示例。受到广义类别发现（GCD）的启发，我们引入了一个新的框架来放松这个假设。确切地说，在任何任务中，我们允许存在新的和已知的类别，并且必须使用持续版本的无监督学习方法来发现它们。我们称这种设置为广义持续类别发现（GCCD）。它统一了CL和GCD，弥合了合成基准和现实生活场景之间的差距。通过一系列实验，我们发现现有的方法无法从后续任务中积累知识，其中包含无标记样本。
 
-    Radiologists must utilize multiple modal images for tumor segmentation and diagnosis due to the limitations of medical imaging and the diversity of tumor signals. This leads to the development of multimodal learning in segmentation. However, the redundancy among modalities creates challenges for existing subtraction-based joint learning methods, such as misjudging the importance of modalities, ignoring specific modal information, and increasing cognitive load. These thorny issues ultimately decrease segmentation accuracy and increase the risk of overfitting. This paper presents the complementary information mutual learning (CIML) framework, which can mathematically model and address the negative impact of inter-modal redundant information. CIML adopts the idea of addition and removes inter-modal redundant information through inductive bias-driven task decomposition and message passing-based redundancy filtering. CIML first decomposes the multimodal segmentation task into multiple subta
+    Most of Continual Learning (CL) methods push the limit of supervised learning settings, where an agent is expected to learn new labeled tasks and not forget previous knowledge. However, these settings are not well aligned with real-life scenarios, where a learning agent has access to a vast amount of unlabeled data encompassing both novel (entirely unlabeled) classes and examples from known classes. Drawing inspiration from Generalized Category Discovery (GCD), we introduce a novel framework that relaxes this assumption. Precisely, in any task, we allow for the existence of novel and known classes, and one must use continual version of unsupervised learning methods to discover them. We call this setting Generalized Continual Category Discovery (GCCD). It unifies CL and GCD, bridging the gap between synthetic benchmarks and real-life scenarios. With a series of experiments, we present that existing methods fail to accumulate knowledge from subsequent tasks in which unlabeled samples of 
+    
+[^4]: 利用大型语言模型进行可伸缩矢量图驱动的图像理解
+
+    Leveraging Large Language Models for Scalable Vector Graphics-Driven Image Understanding. (arXiv:2306.06094v1 [cs.CV])
+
+    [http://arxiv.org/abs/2306.06094](http://arxiv.org/abs/2306.06094)
+
+    本文介绍了一种新方法，通过使用可伸缩矢量图(SVG)格式处理图像，使得大型语言模型(LLMs)能够直接理解和操作图像，而无需使用参数化的视觉组件。在图像分类、生成和上下文学习等任务上，该方法表现良好，具有鲁棒性和显著的性能提升。
+
+    
+
+    最近，大型语言模型(LLMs)在自然语言理解和生成方面取得了显著进展。然而，它们在计算机视觉领域的潜力仍然很大程度上没有被开发。本文介绍了一种新的探索性方法，使得LLMs能够使用可伸缩矢量图(SVG)格式处理图像。通过利用基于XML的SVG表述的文本描述而不是光栅图像，我们旨在弥合视觉和文本模态之间的差距，使LLMs能够直接理解和操作图像，而无需使用参数化的视觉组件。我们的方法仅利用LLMs的能力进行简单的图像分类、生成和上下文学习。我们展示了方法在判别和生成任务中的优异表现，重点介绍了它(i)对分布转移的鲁棒性，(ii)通过利用LLMs的上下文学习能力实现的显著改进，以及(iii)图像杂乱程度上的显著性能提高。
+
+    Recently, large language models (LLMs) have made significant advancements in natural language understanding and generation. However, their potential in computer vision remains largely unexplored. In this paper, we introduce a new, exploratory approach that enables LLMs to process images using the Scalable Vector Graphics (SVG) format. By leveraging the XML-based textual descriptions of SVG representations instead of raster images, we aim to bridge the gap between the visual and textual modalities, allowing LLMs to directly understand and manipulate images without the need for parameterized visual components. Our method facilitates simple image classification, generation, and in-context learning using only LLM capabilities. We demonstrate the promise of our approach across discriminative and generative tasks, highlighting its (i) robustness against distribution shift, (ii) substantial improvements achieved by tapping into the in-context learning abilities of LLMs, and (iii) image unders
+    
+[^5]: 基于去偏自注意力的公平感知视觉变换器
+
+    Fairness-aware Vision Transformer via Debiased Self-Attention. (arXiv:2301.13803v2 [cs.CV] UPDATED)
+
+    [http://arxiv.org/abs/2301.13803](http://arxiv.org/abs/2301.13803)
+
+    这篇论文提出了一种基于去偏自注意力的公平感知视觉变换器框架，通过消除与敏感属性相关的虚假特征来减轻偏见，并利用对抗性示例来定位和屏蔽这些特征。
+
+    
+
+    最近，由于其提取信息特征和通过自我关注机制建模长距离依赖关系的能力，视觉变换器（ViT）在解决计算机视觉（CV）问题方面引起了广泛关注。为了充分发挥ViT在现实应用中的优势，最近的研究探索了ViT的可靠性和可解释性，包括其鲁棒性和可解释性。然而，另一个需求，公平性，在文献中尚未得到充分解决。我们证明了现有的公平感知算法（主要设计用于CNN）在ViT上表现不佳。这就需要我们通过去偏自注意（DSA）开发我们的新框架。DSA是一种通过盲目方法来强制ViT消除与敏感属性相关的虚假特征以减轻偏见的方法。值得注意的是，对抗性示例被用来定位和屏蔽输入图像块中的虚假特征。
+
+    Vision Transformer (ViT) has recently gained significant interest in solving computer vision (CV) problems due to its capability of extracting informative features and modeling long-range dependencies through the self-attention mechanism. To fully realize the advantages of ViT in real-world applications, recent works have explored the trustworthiness of ViT, including its robustness and explainability. However, another desiderata, fairness has not yet been adequately addressed in the literature. We establish that the existing fairness-aware algorithms (primarily designed for CNNs) do not perform well on ViT. This necessitates the need for developing our novel framework via Debiased Self-Attention (DSA). DSA is a fairness-through-blindness approach that enforces ViT to eliminate spurious features correlated with the sensitive attributes for bias mitigation. Notably, adversarial examples are leveraged to locate and mask the spurious features in the input image patches. In addition, DSA u
     
 

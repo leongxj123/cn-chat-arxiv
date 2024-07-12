@@ -2,67 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Objective and subjective evaluation of speech enhancement methods in the UDASE task of the 7th CHiME challenge](https://rss.arxiv.org/abs/2402.01413) | 本文介绍了第七届CHiME挑战赛的UDASE任务中系统的客观和主观评估，并分析了结果 |
-| [^2] | [Transforming LLMs into Cross-modal and Cross-lingual RetrievalSystems](https://arxiv.org/abs/2404.01616) | 提出使用LLMs初始化多模态DE检索系统，实现在102种语言中匹配语音和文本的能力，无需在LLM预训练期间使用语音数据，且相比先前系统取得10%的Recall@1绝对改进 |
-| [^3] | [DistriBlock: Identifying adversarial audio samples by leveraging characteristics of the output distribution](https://arxiv.org/abs/2305.17000) | DistriBlock提出了一种能够识别对抗性音频样本的有效检测策略，通过利用输出分布的特征，包括中位数、最大值和最小值、熵以及与后续时间步骤的分布之间的散度，应用二元分类器进行预测。这项研究证明了DistriBlock在识别对抗性音频样本方面的有效性。 |
-| [^4] | [A noise-robust acoustic method for recognition of foraging activities of grazing cattle.](http://arxiv.org/abs/2304.14824) | 本研究提出了一种抗噪声的声学方法，能够分析与吃草和反刍相关的鉴定下颚运动事件的固定长度段，用于识别牛的觅食活动，并在环境和自然噪声方面具有鲁棒性。 |
+| [^1] | [How Paralingual are Paralinguistic Representations? A Case Study in Speech Emotion Recognition](https://rss.arxiv.org/abs/2402.01579) | 本研究通过比较研究五种预训练模型，评估了针对社交语言任务进行预训练的模型在多语言情境下对语音情感识别的效果。结果表明，TRILLsson模型能够有效地捕捉语音数据中的社交语言特征，提升了语音情感识别的性能。 |
+| [^2] | [Multimodal Sentiment Analysis with Missing Modality: A Knowledge-Transfer Approach.](http://arxiv.org/abs/2401.10747) | 本文提出了一种知识迁移方法，用于在缺失模态下进行多模态情感分析。通过翻译不同模态之间的内容以重构缺失的音频模态，并利用跨模态注意机制进行情感预测，实验证明了该方法在多个数据集上表现出显著的改进和与完整多模态监督方法相媲美的效果。 |
+| [^3] | [Sumformer: A Linear-Complexity Alternative to Self-Attention for Speech Recognition.](http://arxiv.org/abs/2307.07421) | Sumformer提出了一种线性时间代替自注意力的方法，用总结混合来处理语音识别任务，可以在保持准确性的同时降低训练和推理时间。 |
 
 # 详细
 
-[^1]: 第七届CHiME挑战赛中UDASE任务中语音增强方法的客观和主观评估
+[^1]: 多重语言环境下语音情感识别的跨语言预训练模型研究
 
-    Objective and subjective evaluation of speech enhancement methods in the UDASE task of the 7th CHiME challenge
+    How Paralingual are Paralinguistic Representations? A Case Study in Speech Emotion Recognition
 
-    [https://rss.arxiv.org/abs/2402.01413](https://rss.arxiv.org/abs/2402.01413)
+    [https://rss.arxiv.org/abs/2402.01579](https://rss.arxiv.org/abs/2402.01579)
 
-    本文介绍了第七届CHiME挑战赛的UDASE任务中系统的客观和主观评估，并分析了结果
-
-    
-
-    基于监督模型的语音增强方法是通过人工合成的干净语音和噪声信号混合来训练的。然而，合成训练条件可能无法准确反映测试过程中遇到的真实世界条件。这种差异可能导致在测试域与合成训练域显著不同时性能不佳。为了解决这个问题，第七届CHiME挑战赛的UDASE任务旨在利用测试域的真实世界噪声语音录音来对语音增强模型进行无监督域适应。具体来说，这个测试域对应于CHiME-5数据集，该数据集由在嘈杂和混响的家庭环境中进行的真实多说话人对话录音组成，无法获得地面实况干净语音信号。在本文中，我们介绍了提交到CHiME-7 UDASE任务的系统的客观和主观评估，并对结果进行了分析
-
-    Supervised models for speech enhancement are trained using artificially generated mixtures of clean speech and noise signals. However, the synthetic training conditions may not accurately reflect real-world conditions encountered during testing. This discrepancy can result in poor performance when the test domain significantly differs from the synthetic training domain. To tackle this issue, the UDASE task of the 7th CHiME challenge aimed to leverage real-world noisy speech recordings from the test domain for unsupervised domain adaptation of speech enhancement models. Specifically, this test domain corresponds to the CHiME-5 dataset, characterized by real multi-speaker and conversational speech recordings made in noisy and reverberant domestic environments, for which ground-truth clean speech signals are not available. In this paper, we present the objective and subjective evaluations of the systems that were submitted to the CHiME-7 UDASE task, and we provide an analysis of the resul
-    
-[^2]: 将LLMs转化为跨模态和跨语言检索系统
-
-    Transforming LLMs into Cross-modal and Cross-lingual RetrievalSystems
-
-    [https://arxiv.org/abs/2404.01616](https://arxiv.org/abs/2404.01616)
-
-    提出使用LLMs初始化多模态DE检索系统，实现在102种语言中匹配语音和文本的能力，无需在LLM预训练期间使用语音数据，且相比先前系统取得10%的Recall@1绝对改进
+    本研究通过比较研究五种预训练模型，评估了针对社交语言任务进行预训练的模型在多语言情境下对语音情感识别的效果。结果表明，TRILLsson模型能够有效地捕捉语音数据中的社交语言特征，提升了语音情感识别的性能。
 
     
 
-    大型语言模型（LLMs）是在仅基于文本数据进行训练的，这超出了具有配对语音和文本数据的语言范围。同时，基于双编码器（DE）的检索系统将查询和文档投影到相同的嵌入空间中，并在检索和双语文本挖掘中展示了成功。为了在许多语言中匹配语音和文本，我们建议使用LLMs初始化多模态DE检索系统。与传统方法不同，我们的系统在LLM预训练期间不需要语音数据，并且可以利用LLM的多语言文本理解能力来匹配检索训练期间看不见的语言中的语音和文本。我们的多模态LLM-based检索系统能够在102种语言中匹配语音和文本，尽管只在21种语言上进行了训练。我们的系统优于先前专门在所有102种语言上训练的系统。在这些语言中，我们在Recall@1上实现了10％的绝对改进。
+    预训练模型（PTM）在语音情感识别（SER）领域取得了巨大进展。最近的研究利用各种PTM表示作为SER下游模型的输入特征。针对社交语言任务进行预训练的PTM在SER领域取得了最先进的性能。然而，这些PTM还没有在多语言环境下进行SER评估，且只涉及英语。因此，我们通过对五种PTM（TRILLsson、wav2vec2、XLS-R、x-vector、Whisper）进行全面比较研究，评估社交语言PTM（TRILLsson）在多种语言情境下对SER的效果。TRILLsson的表示在所有PTM中达到了最佳表现。这表明TRILLsson能够有效捕捉语音数据中的各种社交语言特征，从而提供更好的SER。
 
-    arXiv:2404.01616v1 Announce Type: new  Abstract: Large language models (LLMs) are trained on text-only data that go far beyond the languages with paired speech and text data. At the same time, Dual Encoder (DE) based retrieval systems project queries and documents into the same embedding space and have demonstrated their success in retrieval and bi-text mining. To match speech and text in many languages, we propose using LLMs to initialize multi-modal DE retrieval systems. Unlike traditional methods, our system doesn't require speech data during LLM pre-training and can exploit LLM's multilingual text understanding capabilities to match speech and text in languages unseen during retrieval training. Our multi-modal LLM-based retrieval system is capable of matching speech and text in 102 languages despite only training on 21 languages. Our system outperforms previous systems trained explicitly on all 102 languages. We achieve a 10% absolute improvement in Recall@1 averaged across these l
+    Pre-trained Models (PTMs) have facilitated substantial progress in the field of Speech Emotion Recognition (SER). SER is an area with applications ranging from HumanComputer Interaction to Healthcare. Recent studies have leveraged various PTM representations as input features for downstream models for SER. PTM specifically pre-trained for paralinguistic tasks have obtained state-of-the-art (SOTA) performance for SER. However, such PTM haven't been evaluated for SER in multilingual settings and experimented only with English. So, we fill this gap, by performing a comprehensive comparative study of five PTMs (TRILLsson, wav2vec2, XLS-R, x-vector, Whisper) for assessing the effectiveness of paralingual PTM (TRILLsson) for SER across multiple languages. Representations from TRILLsson achieved the best performance among all the PTMs. This demonstrates that TRILLsson is able to effectively capture the various paralinguistic features from speech data for better SER. We also show that downstre
     
-[^3]: DistriBlock: 通过利用输出分布的特征识别对抗性音频样本
+[^2]: 缺失模态下的多模态情感分析:一种知识迁移方法
 
-    DistriBlock: Identifying adversarial audio samples by leveraging characteristics of the output distribution
+    Multimodal Sentiment Analysis with Missing Modality: A Knowledge-Transfer Approach. (arXiv:2401.10747v1 [cs.SD])
 
-    [https://arxiv.org/abs/2305.17000](https://arxiv.org/abs/2305.17000)
+    [http://arxiv.org/abs/2401.10747](http://arxiv.org/abs/2401.10747)
 
-    DistriBlock提出了一种能够识别对抗性音频样本的有效检测策略，通过利用输出分布的特征，包括中位数、最大值和最小值、熵以及与后续时间步骤的分布之间的散度，应用二元分类器进行预测。这项研究证明了DistriBlock在识别对抗性音频样本方面的有效性。
-
-    
-
-    对抗性攻击可能误导自动语音识别（ASR）系统，使其预测任意目标文本，从而构成明显的安全威胁。为了防止这种攻击，我们提出了DistriBlock，一种适用于任何ASR系统的高效检测策略，该系统在每个时间步骤上预测输出标记的概率分布。我们对该分布的一组特征进行测量：输出概率的中位数、最大值和最小值，分布的熵，以及与后续时间步骤的分布之间的Kullback-Leibler和Jensen-Shannon散度。然后，通过利用对良性和对抗性数据观察到的特征，我们应用二元分类器，包括简单的基于阈值的分类、这种分类器的集合以及神经网络。通过对不同最先进的ASR系统和语言数据集进行广泛分析，我们证明了DistriBlock在识别对抗性音频样本方面的有效性。
-
-    arXiv:2305.17000v2 Announce Type: replace-cross  Abstract: Adversarial attacks can mislead automatic speech recognition (ASR) systems into predicting an arbitrary target text, thus posing a clear security threat. To prevent such attacks, we propose DistriBlock, an efficient detection strategy applicable to any ASR system that predicts a probability distribution over output tokens in each time step. We measure a set of characteristics of this distribution: the median, maximum, and minimum over the output probabilities, the entropy of the distribution, as well as the Kullback-Leibler and the Jensen-Shannon divergence with respect to the distributions of the subsequent time step. Then, by leveraging the characteristics observed for both benign and adversarial data, we apply binary classifiers, including simple threshold-based classification, ensembles of such classifiers, and neural networks. Through extensive analysis across different state-of-the-art ASR systems and language data sets, 
-    
-[^4]: 一种抗噪声的声学方法用于识别牛的觅食活动
-
-    A noise-robust acoustic method for recognition of foraging activities of grazing cattle. (arXiv:2304.14824v1 [cs.LG])
-
-    [http://arxiv.org/abs/2304.14824](http://arxiv.org/abs/2304.14824)
-
-    本研究提出了一种抗噪声的声学方法，能够分析与吃草和反刍相关的鉴定下颚运动事件的固定长度段，用于识别牛的觅食活动，并在环境和自然噪声方面具有鲁棒性。
+    本文提出了一种知识迁移方法，用于在缺失模态下进行多模态情感分析。通过翻译不同模态之间的内容以重构缺失的音频模态，并利用跨模态注意机制进行情感预测，实验证明了该方法在多个数据集上表现出显著的改进和与完整多模态监督方法相媲美的效果。
 
     
 
-    为了在不断增长的乳制品市场中保持竞争力，农民必须不断改进他们的畜牧生产系统。精确畜牧业技术提供了商业农场动物个体化监测，优化畜牧生产。连续的声学监测是一种广泛接受的感应技术，用于估计自由放牧牛的日反刍和吃草时间预算。然而，牧场上的典型环境和自然噪声明显影响当前声学方法的性能和泛化。在本研究中，我们提出了一种声学方法，称为抗噪声觅食活动识别器 (NRFAR)。该方法通过分析与吃草和反刍相关的鉴定下颚运动事件的固定长度段，确定觅食活动的突发。NRFAR 的加性噪声鲁棒性使用静态高斯白噪声和四种不同的非静态自然噪声进行评估。
+    多模态情感分析旨在通过视觉、语言和声音线索来识别个体表达的情绪。然而，现有研究大多假设在训练和测试过程中所有模态都是可用的，这使得它们的算法容易受到缺失模态的影响。在本文中，我们提出了一种新颖的知识迁移网络，用于在不同模态之间进行翻译，以重构缺失的音频模态。此外，我们还开发了一种跨模态注意机制，以保留重构和观察到的模态的最大信息，用于情感预测。在三个公开数据集上进行的大量实验证明了相对于基线算法的显著改进，并实现了与具有完整多模态监督的先前方法相媲美的结果。
 
-    To stay competitive in the growing dairy market, farmers must continuously improve their livestock production systems. Precision livestock farming technologies provide individualised monitoring of animals on commercial farms, optimising livestock production. Continuous acoustic monitoring is a widely accepted sensing technique used to estimate the daily rumination and grazing time budget of free-ranging cattle. However, typical environmental and natural noises on pasture noticeably affect the performance and generalisation of current acoustic methods. In this study, we present an acoustic method called Noise-Robust Foraging Activity Recognizer (NRFAR). The proposed method determines foraging activity bouts by analysing fixed-length segments of identified jaw movement events associated with grazing and rumination. The additive noise robustness of NRFAR was evaluated for several signal-to-noise ratios, using stationary Gaussian white noise and four different non-stationary natural noise 
+    Multimodal sentiment analysis aims to identify the emotions expressed by individuals through visual, language, and acoustic cues. However, most of the existing research efforts assume that all modalities are available during both training and testing, making their algorithms susceptible to the missing modality scenario. In this paper, we propose a novel knowledge-transfer network to translate between different modalities to reconstruct the missing audio modalities. Moreover, we develop a cross-modality attention mechanism to retain the maximal information of the reconstructed and observed modalities for sentiment prediction. Extensive experiments on three publicly available datasets demonstrate significant improvements over baselines and achieve comparable results to the previous methods with complete multi-modality supervision.
+    
+[^3]: Sumformer: 一种用于语音识别的线性复杂度代替自注意力的方法
+
+    Sumformer: A Linear-Complexity Alternative to Self-Attention for Speech Recognition. (arXiv:2307.07421v1 [cs.CL])
+
+    [http://arxiv.org/abs/2307.07421](http://arxiv.org/abs/2307.07421)
+
+    Sumformer提出了一种线性时间代替自注意力的方法，用总结混合来处理语音识别任务，可以在保持准确性的同时降低训练和推理时间。
+
+    
+
+    现代语音识别系统依赖于自注意力。然而，使用自注意力进行令牌混合的计算复杂度与语音语句的长度呈二次关系，导致推理、训练和内存占用速度变慢。虽然已经开发出了比自注意力更便宜的替代方法，但很难保证达到相同的准确性水平。实际上，经过训练的语音识别器的自注意力权重在时间上呈全局平均化的形式。因此，本文提出了一种用于语音识别的线性时间替代自注意力的方法。它用所有时间步长的向量的平均值来总结整个语句。然后将这个单一的总结与特定时间的信息结合起来。我们将这种方法称为“总结混合”。在最先进的ASR模型中引入总结混合，可以在降低训练和推理时间多达27%的同时，保持或超过先前的语音识别性能水平。
+
+    Modern speech recognition systems rely on self-attention. Unfortunately, token mixing with self-attention takes quadratic time in the length of the speech utterance, slowing down inference as well as training and increasing memory consumption. Cheaper alternatives to self-attention for ASR have been developed, but fail to consistently reach the same level of accuracy. In practice, however, the self-attention weights of trained speech recognizers take the form of a global average over time. This paper, therefore, proposes a linear-time alternative to self-attention for speech recognition. It summarises a whole utterance with the mean over vectors for all time steps. This single summary is then combined with time-specific information. We call this method ``Summary Mixing''. Introducing Summary Mixing in state-of-the-art ASR models makes it feasible to preserve or exceed previous speech recognition performance while lowering the training and inference times by up to 27% and reducing the m
     
 

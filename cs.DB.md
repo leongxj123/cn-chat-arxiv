@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Probabilistic Routing for Graph-Based Approximate Nearest Neighbor Search](https://arxiv.org/abs/2402.11354) | 该论文提出了一种基于概率路由的方法，通过引入PEOs有效识别图中需要考虑进行精确距离计算的邻居，从而显著提高了基于图的近似最近邻搜索的效率。 |
+| [^1] | [SQL-CRAFT: Text-to-SQL through Interactive Refinement and Enhanced Reasoning](https://arxiv.org/abs/2402.14851) | 提出了SQL-CRAFT框架，通过交互式改进和增强推理，提升了大语言模型在文本到SQL转换任务中的性能，实验结果显示性能提升高达5.7%，并在Spider榜单上超越了当前最先进技术。 |
 
 # 详细
 
-[^1]: 基于概率路由的基于图的近似最近邻搜索
+[^1]: SQL-CRAFT: 通过交互式改进和增强推理实现文本到SQL转换
 
-    Probabilistic Routing for Graph-Based Approximate Nearest Neighbor Search
+    SQL-CRAFT: Text-to-SQL through Interactive Refinement and Enhanced Reasoning
 
-    [https://arxiv.org/abs/2402.11354](https://arxiv.org/abs/2402.11354)
+    [https://arxiv.org/abs/2402.14851](https://arxiv.org/abs/2402.14851)
 
-    该论文提出了一种基于概率路由的方法，通过引入PEOs有效识别图中需要考虑进行精确距离计算的邻居，从而显著提高了基于图的近似最近邻搜索的效率。
+    提出了SQL-CRAFT框架，通过交互式改进和增强推理，提升了大语言模型在文本到SQL转换任务中的性能，实验结果显示性能提升高达5.7%，并在Spider榜单上超越了当前最先进技术。
 
     
 
-    arXiv：2402.11354v1 公告类型：交叉 摘要：在机器学习领域，高维空间中的近似最近邻搜索(ANNS)是一个重要挑战。近年来，基于图的方法已经成为ANNS的优越方法，建立了一种新的技术水平。尽管引入了各种基于图的ANNS优化方法，但它们主要依赖于缺乏正式理论支持的启发式方法。本文旨在通过引入一种方法来增强基于图的ANNS中的路由，该方法在探索图中节点的邻居时提供概率保证。我们将问题建模为概率路由，并通过结合局部敏感技术开发了两种基准策略。随后，我们介绍了PEOs，这是一种有效识别图中应考虑进行精确距离计算的邻居的新方法，从而在实践中显著提高了效率。我们的实验证明...
+    现代大语言模型已经变得越来越强大，但在专门任务（如文本到SQL）方面仍面临挑战。我们提出了SQL-CRAFT，一个通过交互式改进和增强推理来提升大语言模型SQL生成能力的框架。我们利用交互式纠错循环（IC-Loop）使大语言模型与数据库自动交互，同时采用增强推理的方法。我们在两个文本到SQL数据集Spider和Bird上进行实验，性能比朴素提示方法提高了高达5.7%。此外，我们的方法在Spider榜单上超过了当前最先进技术，展示了我们框架的有效性。
 
-    arXiv:2402.11354v1 Announce Type: cross  Abstract: Approximate nearest neighbor search (ANNS) in high-dimensional spaces is a pivotal challenge in the field of machine learning. In recent years, graph-based methods have emerged as the superior approach to ANNS, establishing a new state of the art. Although various optimizations for graph-based ANNS have been introduced, they predominantly rely on heuristic methods that lack formal theoretical backing. This paper aims to enhance routing within graph-based ANNS by introducing a method that offers a probabilistic guarantee when exploring a node's neighbors in the graph. We formulate the problem as probabilistic routing and develop two baseline strategies by incorporating locality-sensitive techniques. Subsequently, we introduce PEOs, a novel approach that efficiently identifies which neighbors in the graph should be considered for exact distance computation, thus significantly improving efficiency in practice. Our experiments demonstrate 
+    arXiv:2402.14851v1 Announce Type: cross  Abstract: Modern LLMs have become increasingly powerful, but they are still facing challenges in specialized tasks such as Text-to-SQL. We propose SQL-CRAFT, a framework to advance LLMs' SQL generation Capabilities through inteRActive reFinemenT and enhanced reasoning. We leverage an Interactive Correction Loop (IC-Loop) for LLMs to interact with databases automatically, as well as Python-enhanced reasoning. We conduct experiments on two Text-to-SQL datasets, Spider and Bird, with performance improvements of up to 5.7% compared to the naive prompting method. Moreover, our method surpasses the current state-of-the-art on the Spider Leaderboard, demonstrating the effectiveness of our framework.
     
 
