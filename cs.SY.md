@@ -2,37 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [State space representations of the Roesser type for convolutional layers](https://arxiv.org/abs/2403.11938) | 从控制理论的角度，提供了Roesser类型的2-D卷积层状态空间表示，具有最小化的状态数量，在$c_\mathrm{in}=c_\mathrm{out}$的情况下证明了这一点，并进一步实现了扩张、跨越和N-D卷积的状态空间表示。 |
-| [^2] | [Deep Learning Safety Concerns in Automated Driving Perception.](http://arxiv.org/abs/2309.03774) | 本研究旨在通过引入安全考虑作为结构元素，以系统综合的方式确保基于深度神经网络的自动驾驶系统的安全性。这一概念不仅与现有的安全标准相契合，还为AI安全相关的学术出版物和标准提供了新的启示。 |
+| [^1] | [Improving a Proportional Integral Controller with Reinforcement Learning on a Throttle Valve Benchmark](https://arxiv.org/abs/2402.13654) | 通过引入强化学习与引导，结合比例积分（PI）控制器，本文提出了一种学习基础的控制策略，用于非线性节流阀的控制，实现了一个几乎最优的控制器。 |
+| [^2] | [Herd Behavior in Optimal Investment: A Dual-Agent Approach with Investment Opinion and Rational Decision Decomposition.](http://arxiv.org/abs/2401.07183) | 本文研究了涉及双代理的最优投资问题，引入了平均偏差来衡量代理决策的差异程度。通过理性决策分解，分析了群体行为对最优决策的影响，并通过模拟验证了研究的有效性。 |
+| [^3] | [Constrained Reinforcement Learning using Distributional Representation for Trustworthy Quadrotor UAV Tracking Control.](http://arxiv.org/abs/2302.11694) | 提出了一种使用分布式表示进行受限强化学习的方法，用于可信四旋翼无人机的跟踪控制。通过集成分布式强化学习干扰估计器和随机模型预测控制器，能够准确识别气动效应的不确定性，实现最优的全局收敛速率和一定的亚线性收敛速率。 |
 
 # 详细
 
-[^1]: Roesser类型的状态空间表示用于卷积层
+[^1]: 使用强化学习改进比例积分控制器在节流阀基准上的应用
 
-    State space representations of the Roesser type for convolutional layers
+    Improving a Proportional Integral Controller with Reinforcement Learning on a Throttle Valve Benchmark
 
-    [https://arxiv.org/abs/2403.11938](https://arxiv.org/abs/2403.11938)
+    [https://arxiv.org/abs/2402.13654](https://arxiv.org/abs/2402.13654)
 
-    从控制理论的角度，提供了Roesser类型的2-D卷积层状态空间表示，具有最小化的状态数量，在$c_\mathrm{in}=c_\mathrm{out}$的情况下证明了这一点，并进一步实现了扩张、跨越和N-D卷积的状态空间表示。
-
-    
-
-    从控制理论的角度看，卷积层（神经网络的）是2-D（或N-D）线性时不变动态系统。卷积层通常通过卷积核表示，对应于动态系统通过其脉冲响应表示。然而，许多控制理论的分析工具，例如涉及线性矩阵不等式的工具，需要一个状态空间表示。因此，我们明确提供了Roesser类型的2-D卷积层状态空间表示，具有$c_\mathrm{in}r_1+c_\mathrm{out}r_2$个状态，其中$c_\mathrm{in}/c_\mathrm{out}$是层的输入/输出通道数，$r_1/r_2$ 表示卷积核的宽度/长度。对于$c_\mathrm{in}=c_\mathrm{out}$，已经证明这种表示是最小的。我们进一步构建了扩张、跨越和N-D卷积的状态空间表示。
-
-    arXiv:2403.11938v1 Announce Type: cross  Abstract: From the perspective of control theory, convolutional layers (of neural networks) are 2-D (or N-D) linear time-invariant dynamical systems. The usual representation of convolutional layers by the convolution kernel corresponds to the representation of a dynamical system by its impulse response. However, many analysis tools from control theory, e.g., involving linear matrix inequalities, require a state space representation. For this reason, we explicitly provide a state space representation of the Roesser type for 2-D convolutional layers with $c_\mathrm{in}r_1 + c_\mathrm{out}r_2$ states, where $c_\mathrm{in}$/$c_\mathrm{out}$ is the number of input/output channels of the layer and $r_1$/$r_2$ characterizes the width/length of the convolution kernel. This representation is shown to be minimal for $c_\mathrm{in} = c_\mathrm{out}$. We further construct state space representations for dilated, strided, and N-D convolutions.
-    
-[^2]: 自动驾驶感知中的深度学习安全考虑
-
-    Deep Learning Safety Concerns in Automated Driving Perception. (arXiv:2309.03774v1 [cs.LG])
-
-    [http://arxiv.org/abs/2309.03774](http://arxiv.org/abs/2309.03774)
-
-    本研究旨在通过引入安全考虑作为结构元素，以系统综合的方式确保基于深度神经网络的自动驾驶系统的安全性。这一概念不仅与现有的安全标准相契合，还为AI安全相关的学术出版物和标准提供了新的启示。
+    通过引入强化学习与引导，结合比例积分（PI）控制器，本文提出了一种学习基础的控制策略，用于非线性节流阀的控制，实现了一个几乎最优的控制器。
 
     
 
-    深度学习领域的最新进展以及深度神经网络（DNNs）在感知方面的出色性能导致了对其在自动驾驶系统中应用的增加需求。这类系统的安全性至关重要，因此需要考虑DNNs的独特属性。为了以系统综合的方式确保基于DNNs的自动驾驶系统的安全性，引入了所谓的安全考虑作为适当的结构元素。一方面，安全考虑的概念设计与现有的与自动驾驶系统安全相关的标准如ISO 21448（SOTIF）非常契合。另一方面，它已经激发了几篇学术出版物和即将出台的关于AI安全的标准，如ISO PAS 8800。虽然安全考虑的概念以前已经被介绍过，但本文对其进行了扩展和优化，借鉴了各个领域和安全专家的反馈意见。
+    本文提出了一种基于学习的控制策略，用于非线性节流阀，该节流阀具有不对称的磁滞，实现了一个几乎最优的控制器，而不需要任何关于环境的先验知识。我们首先通过精心调整的比例积分（PI）控制器开始，并利用强化学习（RL）与引导的最新进展，通过从与阀门的额外交互中学习来改进闭环行为。我们在三个不同的阀门上的各种场景中测试了所提出的控制方法，所有这些都突显了将PI和RL框架结合以提高非线性随机系统控制性能的好处。在所有实验测试案例中，结果代理的样本效率都优于传统RL代理，并且优于PI控制器。
 
-    Recent advances in the field of deep learning and impressive performance of deep neural networks (DNNs) for perception have resulted in an increased demand for their use in automated driving (AD) systems. The safety of such systems is of utmost importance and thus requires to consider the unique properties of DNNs.  In order to achieve safety of AD systems with DNN-based perception components in a systematic and comprehensive approach, so-called safety concerns have been introduced as a suitable structuring element. On the one hand, the concept of safety concerns is -- by design -- well aligned to existing standards relevant for safety of AD systems such as ISO 21448 (SOTIF). On the other hand, it has already inspired several academic publications and upcoming standards on AI safety such as ISO PAS 8800.  While the concept of safety concerns has been previously introduced, this paper extends and refines it, leveraging feedback from various domain and safety experts in the field. In par
+    arXiv:2402.13654v1 Announce Type: cross  Abstract: This paper presents a learning-based control strategy for non-linear throttle valves with an asymmetric hysteresis, leading to a near-optimal controller without requiring any prior knowledge about the environment. We start with a carefully tuned Proportional Integrator (PI) controller and exploit the recent advances in Reinforcement Learning (RL) with Guides to improve the closed-loop behavior by learning from the additional interactions with the valve. We test the proposed control method in various scenarios on three different valves, all highlighting the benefits of combining both PI and RL frameworks to improve control performance in non-linear stochastic systems. In all the experimental test cases, the resulting agent has a better sample efficiency than traditional RL agents and outperforms the PI controller.
+    
+[^2]: 最优投资中的群体行为: 带有投资意见和理性决策分解的双代理模型
+
+    Herd Behavior in Optimal Investment: A Dual-Agent Approach with Investment Opinion and Rational Decision Decomposition. (arXiv:2401.07183v1 [eess.SY])
+
+    [http://arxiv.org/abs/2401.07183](http://arxiv.org/abs/2401.07183)
+
+    本文研究了涉及双代理的最优投资问题，引入了平均偏差来衡量代理决策的差异程度。通过理性决策分解，分析了群体行为对最优决策的影响，并通过模拟验证了研究的有效性。
+
+    
+
+    本文研究了涉及两个代理的最优投资问题，其中一个代理的决策受到另一个代理的影响。为了衡量两个代理决策之间的差异程度，我们引入了平均偏差。我们通过变分方法推导出了考虑群体行为的随机最优控制问题的解析解。我们从理论上分析了用户群体行为对最优决策的影响，并将其分解成理性决策，这被称为理性决策分解。此外，为了量化代理对自己的理性决策相对于另一个代理的偏好程度，我们引入了代理的投资意见。通过对真实股票数据的模拟验证了我们的研究。
+
+    In this paper, we study the optimal investment problem involving two agents, where the decision of one agent is influenced by the other. To measure the distance between two agents' decisions, we introduce the average deviation. We formulate the stochastic optimal control problem considering herd behavior and derive the analytical solution through the variational method. We theoretically analyze the impact of users' herd behavior on the optimal decision by decomposing it into their rational decisions, which is called the rational decision decomposition. Furthermore, to quantify the preference for their rational decision over that of the other agent, we introduce the agent's investment opinion. Our study is validated through simulations on real stock data.
+    
+[^3]: 受限强化学习在可信四旋翼无人机跟踪控制中的应用
+
+    Constrained Reinforcement Learning using Distributional Representation for Trustworthy Quadrotor UAV Tracking Control. (arXiv:2302.11694v2 [cs.RO] UPDATED)
+
+    [http://arxiv.org/abs/2302.11694](http://arxiv.org/abs/2302.11694)
+
+    提出了一种使用分布式表示进行受限强化学习的方法，用于可信四旋翼无人机的跟踪控制。通过集成分布式强化学习干扰估计器和随机模型预测控制器，能够准确识别气动效应的不确定性，实现最优的全局收敛速率和一定的亚线性收敛速率。
+
+    
+
+    在复杂的动态环境中，同时实现四旋翼无人机的准确和可靠的跟踪控制是具有挑战性的。由于来自气动力的阻力和力矩变化是混沌的，并且难以精确识别，大多数现有的四旋翼跟踪系统将其视为传统控制方法中的简单“干扰”。本文提出了一种新颖的、可解释的轨迹跟踪器，将分布式强化学习干扰估计器与随机模型预测控制器（SMPC）相结合，用于未知的气动效应。所提出的估计器“受限分布式强化干扰估计器”（ConsDRED）准确地识别真实气动效应与估计值之间的不确定性。采用简化仿射干扰反馈进行控制参数化，以保证凸性，然后将其与SMPC相结合。我们在理论上保证ConsDRED至少实现最优的全局收敛速率和一定的亚线性收敛速率。
+
+    Simultaneously accurate and reliable tracking control for quadrotors in complex dynamic environments is challenging. As aerodynamics derived from drag forces and moment variations are chaotic and difficult to precisely identify, most current quadrotor tracking systems treat them as simple `disturbances' in conventional control approaches. We propose a novel, interpretable trajectory tracker integrating a Distributional Reinforcement Learning disturbance estimator for unknown aerodynamic effects with a Stochastic Model Predictive Controller (SMPC). The proposed estimator `Constrained Distributional Reinforced disturbance estimator' (ConsDRED) accurately identifies uncertainties between true and estimated values of aerodynamic effects. Simplified Affine Disturbance Feedback is used for control parameterization to guarantee convexity, which we then integrate with a SMPC. We theoretically guarantee that ConsDRED achieves at least an optimal global convergence rate and a certain sublinear r
     
 

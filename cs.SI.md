@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Comprehensive Review of Community Detection in Graphs.](http://arxiv.org/abs/2309.11798) | 本综述对图中的社区检测进行了全面回顾。社区结构是真实世界图的重要特征，社区检测方法的研究具有社会学、生物学和计算机科学方面的应用。尽管科学家们做出了努力，但尚未找到一个令人满意的解决方案。本综述介绍了社区结构的概念，各种社区检测方法，以及在各种网络中的实际应用。 |
+| [^1] | [Spatial-Temporal Graph Representation Learning for Tactical Networks Future State Prediction](https://arxiv.org/abs/2403.13872) | 本文提出了一种空间-时间图编码器-解码器（STGED）框架，用于战术通信网络，通过有效利用网络状态的空间和时间特征，实现了对未来状态的准确预测。 |
+| [^2] | [Uncovering Latent Themes of Messaging on Social Media by Integrating LLMs: A Case Study on Climate Campaigns](https://arxiv.org/abs/2403.10707) | 本文提出了一种通过利用大型语言模型（LLMs）的先进功能，以机器在循环中方法，处理社交媒体消息主题的新方法。 |
 
 # 详细
 
-[^1]: 图中社区检测的综合评述
+[^1]: 空间-时间图表示学习用于战术网络未来状态预测
 
-    A Comprehensive Review of Community Detection in Graphs. (arXiv:2309.11798v1 [cs.SI])
+    Spatial-Temporal Graph Representation Learning for Tactical Networks Future State Prediction
 
-    [http://arxiv.org/abs/2309.11798](http://arxiv.org/abs/2309.11798)
+    [https://arxiv.org/abs/2403.13872](https://arxiv.org/abs/2403.13872)
 
-    本综述对图中的社区检测进行了全面回顾。社区结构是真实世界图的重要特征，社区检测方法的研究具有社会学、生物学和计算机科学方面的应用。尽管科学家们做出了努力，但尚未找到一个令人满意的解决方案。本综述介绍了社区结构的概念，各种社区检测方法，以及在各种网络中的实际应用。
+    本文提出了一种空间-时间图编码器-解码器（STGED）框架，用于战术通信网络，通过有效利用网络状态的空间和时间特征，实现了对未来状态的准确预测。
 
     
 
-    复杂网络研究显著促进了我们对真实世界图的社区结构的理解，这是一个具有挑战性的问题，在社会学、生物学和计算机科学中具有应用价值。尽管跨学科科学家社区的努力，但尚未找到一个令人满意的解决方案。本综述详细介绍了图中社区检测的主题，这对于理解复杂系统的组织和功能起着关键的作用。首先，我们介绍社区结构的概念，它指的是将顶点划分为具有强内部连接和较弱连接的集群。然后，我们对各种社区检测方法进行了彻底的阐述，包括我们设计的一种新方法。此外，我们还探讨了社区检测在各种网络中的真实应用。
+    tbd:战术自组织网络中的资源分配存在独特挑战，因为其动态和多跳特性。在这种环境中，准确预测未来的网络连接对于有效的资源分配至关重要。本文提出了空间-时间图编码器-解码器（STGED）框架，用于战术通信网络，有效利用网络状态的空间和时间特征来学习潜在的战术行为。STGED层次地利用基于图的注意机制对一系列通信网络状态进行空间编码，利用循环神经网络对状态的演变进行时间编码，并利用全连接前馈网络来解码未来状态下的连接性。通过大量实验证明，STGED在不同时间步输入下一直比基线模型表现更出色，获得了较高的准确性。
 
-    The study of complex networks has significantly advanced our understanding of community structures which serves as a crucial feature of real-world graphs. Detecting communities in graphs is a challenging problem with applications in sociology, biology, and computer science. Despite the efforts of an interdisciplinary community of scientists, a satisfactory solution to this problem has not yet been achieved. This review article delves into the topic of community detection in graphs, which serves as a crucial role in understanding the organization and functioning of complex systems. We begin by introducing the concept of community structure, which refers to the arrangement of vertices into clusters, with strong internal connections and weaker connections between clusters. Then, we provide a thorough exposition of various community detection methods, including a new method designed by us. Additionally, we explore real-world applications of community detection in diverse networks. In concl
+    arXiv:2403.13872v1 Announce Type: new  Abstract: Resource allocation in tactical ad-hoc networks presents unique challenges due to their dynamic and multi-hop nature. Accurate prediction of future network connectivity is essential for effective resource allocation in such environments. In this paper, we introduce the Spatial-Temporal Graph Encoder-Decoder (STGED) framework for Tactical Communication Networks that leverages both spatial and temporal features of network states to learn latent tactical behaviors effectively. STGED hierarchically utilizes graph-based attention mechanism to spatially encode a series of communication network states, leverages a recurrent neural network to temporally encode the evolution of states, and a fully-connected feed-forward network to decode the connectivity in the future state. Through extensive experiments, we demonstrate that STGED consistently outperforms baseline models by large margins across different time-steps input, achieving an accuracy of
+    
+[^2]: 利用LLMs集成揭示社交媒体消息的潜在主题：气候运动案例研究
+
+    Uncovering Latent Themes of Messaging on Social Media by Integrating LLMs: A Case Study on Climate Campaigns
+
+    [https://arxiv.org/abs/2403.10707](https://arxiv.org/abs/2403.10707)
+
+    本文提出了一种通过利用大型语言模型（LLMs）的先进功能，以机器在循环中方法，处理社交媒体消息主题的新方法。
+
+    
+
+    本文介绍了一种揭示和分析社交媒体消息主题的新方法。鉴于传统主题级分析的局限性，往往只捕捉到整体模式，本研究强调了对更精细、主题聚焦的探索的需求。传统的主题发现方法，涉及手动流程和人在循环中的方法，具有价值，但在伸缩性、一致性和资源强度方面面临挑战，涉及时间和成本。为了应对这些挑战，我们提出了一种利用大型语言模型（LLMs）先进功能的机器在循环中方法。这种方法允许更深入地调查社交媒体话语的主题方面，使我们能够揭示多样的主题，每个主题具有独特的特征和相关性，从而提供对更广泛主题内有的微妙细节的全面理解。
+
+    arXiv:2403.10707v1 Announce Type: cross  Abstract: This paper introduces a novel approach to uncovering and analyzing themes in social media messaging. Recognizing the limitations of traditional topic-level analysis, which tends to capture only the overarching patterns, this study emphasizes the need for a finer-grained, theme-focused exploration. Conventional methods of theme discovery, involving manual processes and a human-in-the-loop approach, are valuable but face challenges in scalability, consistency, and resource intensity in terms of time and cost. To address these challenges, we propose a machine-in-the-loop approach that leverages the advanced capabilities of Large Language Models (LLMs). This approach allows for a deeper investigation into the thematic aspects of social media discourse, enabling us to uncover a diverse array of themes, each with unique characteristics and relevance, thereby offering a comprehensive understanding of the nuances present within broader topics.
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Basic syntax from speech: Spontaneous concatenation in unsupervised deep neural networks.](http://arxiv.org/abs/2305.01626) | 该论文提出了一种基于语音的完全无监督的方法，可以直接从原始语音中建立基础语法模型。作者发现，在基于声音的单词记录上训练的卷积神经网络可以自发连接两个或三个单词，并且可以学会将单词嵌入到新的未见过的单词组合中，这是之前未报道的属性，这一发现对我们理解神经网络的学习方式和建立从原始声学输入中的语法及其演化的模型都有重要的意义。 |
+| [^1] | [Diffusion Models for Audio Restoration](https://arxiv.org/abs/2402.09821) | 本文介绍了基于扩散模型的音频恢复算法，重点关注语音增强和音乐恢复任务。 |
 
 # 详细
 
-[^1]: 基于语音的基础语法：自发联接的自监督深度神经网络
+[^1]: 音频恢复的扩散模型
 
-    Basic syntax from speech: Spontaneous concatenation in unsupervised deep neural networks. (arXiv:2305.01626v1 [cs.CL])
+    Diffusion Models for Audio Restoration
 
-    [http://arxiv.org/abs/2305.01626](http://arxiv.org/abs/2305.01626)
+    [https://arxiv.org/abs/2402.09821](https://arxiv.org/abs/2402.09821)
 
-    该论文提出了一种基于语音的完全无监督的方法，可以直接从原始语音中建立基础语法模型。作者发现，在基于声音的单词记录上训练的卷积神经网络可以自发连接两个或三个单词，并且可以学会将单词嵌入到新的未见过的单词组合中，这是之前未报道的属性，这一发现对我们理解神经网络的学习方式和建立从原始声学输入中的语法及其演化的模型都有重要的意义。
+    本文介绍了基于扩散模型的音频恢复算法，重点关注语音增强和音乐恢复任务。
 
     
 
-    语法的计算模型主要基于文本。本文提出了一种完全无监督的方法，可以直接从原始语音中建立基础语法模型。我们重点研究了最普遍和基本的语法特性之一——联接。我们介绍了自发联接现象：卷积神经网络(CNN)在个别单词的声学记录上训练时，开始产生输出，这些输出将两个甚至三个单词连接在一起，而不会接触到具有多个单词的输入数据。此外，训练两个单词的网络可以学习将单词嵌入到新的未见过的单词组合中。据我们所知，这是在生成对抗网络环境下训练的原始语音CNN以前未报道的属性，它不仅对我们理解这些体系结构的学习方式有影响，还对建立从原始声学输入中的语法及其演化的模型有影响。
+    随着音频播放设备和快速数据传输的发展，对高音质的需求在娱乐和通信领域不断增长。然而，由于录制过程中的失真和干扰，或者由于不完善的传输管道，音频质量面临许多挑战。为了解决这个问题，音频恢复方法旨在从损坏的输入数据中恢复出清晰的音频信号。本文介绍了基于扩散模型的音频恢复算法，重点关注语音增强和音乐恢复任务。传统方法通常基于手工规则和统计启发法，从而建立了我们对音频信号的认识。近几十年来，越来越多的人转向利用深度神经网络（DNNs）的建模能力的数据驱动方法。深度生成模型中的扩散模型成为一种新兴方法。
 
-    Computational models of syntax are predominantly text-based. Here we propose that basic syntax can be modeled directly from raw speech in a fully unsupervised way. We focus on one of the most ubiquitous and basic properties of syntax -- concatenation. We introduce spontaneous concatenation: a phenomenon where convolutional neural networks (CNNs) trained on acoustic recordings of individual words start generating outputs with two or even three words concatenated without ever accessing data with multiple words in the input. Additionally, networks trained on two words learn to embed words into novel unobserved word combinations. To our knowledge, this is a previously unreported property of CNNs trained on raw speech in the Generative Adversarial Network setting and has implications both for our understanding of how these architectures learn as well as for modeling syntax and its evolution from raw acoustic inputs.
+    arXiv:2402.09821v1 Announce Type: cross  Abstract: With the development of audio playback devices and fast data transmission, the demand for high sound quality is rising, for both entertainment and communications. In this quest for better sound quality, challenges emerge from distortions and interferences originating at the recording side or caused by an imperfect transmission pipeline. To address this problem, audio restoration methods aim to recover clean sound signals from the corrupted input data. We present here audio restoration algorithms based on diffusion models, with a focus on speech enhancement and music restoration tasks. Traditional approaches, often grounded in handcrafted rules and statistical heuristics, have shaped our understanding of audio signals. In the past decades, there has been a notable shift towards data-driven methods that exploit the modeling capabilities of deep neural networks (DNNs). Deep generative models, and among them diffusion models, have emerged 
     
 

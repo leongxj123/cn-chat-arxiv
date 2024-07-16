@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [NeuSDFusion: A Spatial-Aware Generative Model for 3D Shape Completion, Reconstruction, and Generation](https://arxiv.org/abs/2403.18241) | 提出一种新颖的空间感知3D形状生成框架，利用2D平面表示增强建模，并结合混合形状表示技术直接学习连续有向距离场表示，从而确保空间一致性和降低内存使用。 |
+| [^1] | [Controllable Motion Diffusion Model.](http://arxiv.org/abs/2306.00416) | 该论文提出了可控运动扩散模型（COMODO）框架，通过自回归运动扩散模型（A-MDM）生成高保真度、长时间内的运动序列，以实现在响应于时变控制信号的情况下进行实时运动合成。 |
 
 # 详细
 
-[^1]: NeuSDFusion: 一种空间感知的生成模型，用于3D形状的完成、重建和生成
+[^1]: 可控运动扩散模型
 
-    NeuSDFusion: A Spatial-Aware Generative Model for 3D Shape Completion, Reconstruction, and Generation
+    Controllable Motion Diffusion Model. (arXiv:2306.00416v1 [cs.CV])
 
-    [https://arxiv.org/abs/2403.18241](https://arxiv.org/abs/2403.18241)
+    [http://arxiv.org/abs/2306.00416](http://arxiv.org/abs/2306.00416)
 
-    提出一种新颖的空间感知3D形状生成框架，利用2D平面表示增强建模，并结合混合形状表示技术直接学习连续有向距离场表示，从而确保空间一致性和降低内存使用。
+    该论文提出了可控运动扩散模型（COMODO）框架，通过自回归运动扩散模型（A-MDM）生成高保真度、长时间内的运动序列，以实现在响应于时变控制信号的情况下进行实时运动合成。
 
     
 
-    3D形状生成旨在生成符合特定条件和约束的创新性3D内容。现有方法通常将3D形状分解为一系列局部组件，将每个元素孤立处理而不考虑空间一致性。因此，这些方法在3D数据表示和形状生成方面表现出有限的多样性，阻碍了它们生成高度多样化且符合指定约束的3D形状的能力。为此，我们引入了一种新颖的空间感知3D形状生成框架，利用2D平面表示来增强3D形状建模。为确保空间一致性并减少内存使用，我们结合了一种混合形状表示技术，直接使用正交的2D平面学习3D形状的连续有向距离场表示。此外，我们通过传
+    在计算机动画中，为虚拟角色生成逼真且可控的运动是一项具有挑战性的任务。最近的研究从图像生成的扩散模型的成功中汲取灵感，展示了解决这个问题的潜力。然而，这些研究大多限于离线应用，目标是生成同时生成所有步骤的序列级生成。为了能够在响应于时变控制信号的情况下使用扩散模型实现实时运动合成，我们提出了可控运动扩散模型（COMODO）框架。我们的框架以自回归运动扩散模型（A-MDM）为基础，逐步生成运动序列。通过简单地使用标准DDPM算法而无需任何额外复杂性，我们的框架能够产生在不同类型的运动控制下长时间内的高保真度运动序列。
 
-    arXiv:2403.18241v1 Announce Type: cross  Abstract: 3D shape generation aims to produce innovative 3D content adhering to specific conditions and constraints. Existing methods often decompose 3D shapes into a sequence of localized components, treating each element in isolation without considering spatial consistency. As a result, these approaches exhibit limited versatility in 3D data representation and shape generation, hindering their ability to generate highly diverse 3D shapes that comply with the specified constraints. In this paper, we introduce a novel spatial-aware 3D shape generation framework that leverages 2D plane representations for enhanced 3D shape modeling. To ensure spatial coherence and reduce memory usage, we incorporate a hybrid shape representation technique that directly learns a continuous signed distance field representation of the 3D shape using orthogonal 2D planes. Additionally, we meticulously enforce spatial correspondences across distinct planes using a tra
+    Generating realistic and controllable motions for virtual characters is a challenging task in computer animation, and its implications extend to games, simulations, and virtual reality. Recent studies have drawn inspiration from the success of diffusion models in image generation, demonstrating the potential for addressing this task. However, the majority of these studies have been limited to offline applications that target at sequence-level generation that generates all steps simultaneously. To enable real-time motion synthesis with diffusion models in response to time-varying control signals, we propose the framework of the Controllable Motion Diffusion Model (COMODO). Our framework begins with an auto-regressive motion diffusion model (A-MDM), which generates motion sequences step by step. In this way, simply using the standard DDPM algorithm without any additional complexity, our framework is able to generate high-fidelity motion sequences over extended periods with different type
     
 
