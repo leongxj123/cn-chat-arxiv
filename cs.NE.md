@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Meta-Learning Strategies through Value Maximization in Neural Networks.](http://arxiv.org/abs/2310.19919) | 本文理论上研究了在神经网络中的元学习最优策略，并提出了一个学习努力的框架，可以高效地优化控制信号，从而提升学习性能。 |
+| [^1] | [Backpropagation through space, time, and the brain](https://arxiv.org/abs/2403.16933) | 提出了 Generalized Latent Equilibrium (GLE)，它是一种针对神经元网络的物理动态局部时空信用分配的计算框架。 |
 
 # 详细
 
-[^1]: 神经网络中基于价值最大化的元学习策略
+[^1]: 通过空间、时间和大脑进行反向传播
 
-    Meta-Learning Strategies through Value Maximization in Neural Networks. (arXiv:2310.19919v1 [cs.NE])
+    Backpropagation through space, time, and the brain
 
-    [http://arxiv.org/abs/2310.19919](http://arxiv.org/abs/2310.19919)
+    [https://arxiv.org/abs/2403.16933](https://arxiv.org/abs/2403.16933)
 
-    本文理论上研究了在神经网络中的元学习最优策略，并提出了一个学习努力的框架，可以高效地优化控制信号，从而提升学习性能。
+    提出了 Generalized Latent Equilibrium (GLE)，它是一种针对神经元网络的物理动态局部时空信用分配的计算框架。
 
     
 
-    生物和人工学习代理面临诸多学习选择，包括超参数选择和任务分布的各个方面，如课程。了解如何进行这些元学习选择可以提供对生物学习者的认知控制功能的规范解释，并改进工程系统。然而，由于优化整个学习过程的复杂性，目前仍然挑战着计算现代深度网络中的最优策略。在这里，我们在一个可处理的环境中从理论上研究最优策略。我们提出了一个学习努力的框架，能够在完全规范化的目标上高效地优化控制信号：在学习过程中的折现累积性能。通过使用估计梯度下降的平均动力方程，我们获得了计算的可行性，该方程适用于简单的神经网络架构。我们的框架包容了一系列元学习和自动课程学习方法，形成了统一的框架。
+    有效的神经网络学习需要根据它们对解决任务的相对贡献来调整单个突触。然而，无论是生物还是人工的物理神经系统都受到时空局限。这样的网络如何执行高效的信用分配，在很大程度上仍是一个悬而未决的问题。在机器学习中，错误的反向传播算法几乎普遍被空间（BP）和时间（BPTT）两种方式给出答案。然而，BP(TT)被广泛认为依赖于不具生物学意义的假设，特别是关于时空局限性，而正向传播模型，如实时递归学习（RTRL），则受到内存约束的限制。我们引入了广义潜在平衡（GLE），这是一个针对神经元物理动态网络完全局部时空信用分配的计算框架。我们从
 
-    Biological and artificial learning agents face numerous choices about how to learn, ranging from hyperparameter selection to aspects of task distributions like curricula. Understanding how to make these meta-learning choices could offer normative accounts of cognitive control functions in biological learners and improve engineered systems. Yet optimal strategies remain challenging to compute in modern deep networks due to the complexity of optimizing through the entire learning process. Here we theoretically investigate optimal strategies in a tractable setting. We present a learning effort framework capable of efficiently optimizing control signals on a fully normative objective: discounted cumulative performance throughout learning. We obtain computational tractability by using average dynamical equations for gradient descent, available for simple neural network architectures. Our framework accommodates a range of meta-learning and automatic curriculum learning methods in a unified n
+    arXiv:2403.16933v1 Announce Type: cross  Abstract: Effective learning in neuronal networks requires the adaptation of individual synapses given their relative contribution to solving a task. However, physical neuronal systems -- whether biological or artificial -- are constrained by spatio-temporal locality. How such networks can perform efficient credit assignment, remains, to a large extent, an open question. In Machine Learning, the answer is almost universally given by the error backpropagation algorithm, through both space (BP) and time (BPTT). However, BP(TT) is well-known to rely on biologically implausible assumptions, in particular with respect to spatiotemporal (non-)locality, while forward-propagation models such as real-time recurrent learning (RTRL) suffer from prohibitive memory constraints. We introduce Generalized Latent Equilibrium (GLE), a computational framework for fully local spatio-temporal credit assignment in physical, dynamical networks of neurons. We start by 
     
 

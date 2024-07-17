@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Android in the Zoo: Chain-of-Action-Thought for GUI Agents](https://arxiv.org/abs/2403.02713) | 该研究提出了一个名为CoAT的Chain-of-Action-Thought模型，通过考虑先前动作描述、当前屏幕情况以及未来动作思考，显著提高了智能手机GUI代理的任务执行效果。 |
-| [^2] | [Large Language Models and Games: A Survey and Roadmap](https://arxiv.org/abs/2402.18659) | 这项研究调查了大型语言模型在游戏领域中的多种应用及其角色，指出了未开发领域和未来发展方向，同时探讨了在游戏领域中大型语言模型的潜力和限制。 |
+| [^1] | [Examining the Influence of Varied Levels of Domain Knowledge Base Inclusion in GPT-based Intelligent Tutors.](http://arxiv.org/abs/2309.12367) | 本文研究了在基于GPT的智能辅导系统中将领域知识库与语言模型集成，以提高回答的可靠性。通过设计可扩展的知识库和评估实验，我们展示了该系统的有效性。学生和领域专家对于智能辅导系统的回答进行了验证和排名。 |
+| [^2] | [Designing Decision Support Systems Using Counterfactual Prediction Sets.](http://arxiv.org/abs/2306.03928) | 本文提出了一种基于反事实预测集的决策支持系统设计方法，不同于传统的单一标签预测，它使用符合预测器构建预测集，并引导人类专家从中选择标签值。 |
 
 # 详细
 
-[^1]: Android在动物园中: GUI代理的动作思维链
+[^1]: 在基于GPT的智能辅导系统中研究领域知识库不同程度的影响
 
-    Android in the Zoo: Chain-of-Action-Thought for GUI Agents
+    Examining the Influence of Varied Levels of Domain Knowledge Base Inclusion in GPT-based Intelligent Tutors. (arXiv:2309.12367v1 [cs.HC])
 
-    [https://arxiv.org/abs/2403.02713](https://arxiv.org/abs/2403.02713)
+    [http://arxiv.org/abs/2309.12367](http://arxiv.org/abs/2309.12367)
 
-    该研究提出了一个名为CoAT的Chain-of-Action-Thought模型，通过考虑先前动作描述、当前屏幕情况以及未来动作思考，显著提高了智能手机GUI代理的任务执行效果。
-
-    
-
-    大型语言模型（LLM）导致智能手机上的大量自主GUI代理激增，这些代理通过预测API的一系列动作来完成由自然语言触发的任务。尽管该任务高度依赖于过去的动作和视觉观察，但现有研究通常很少考虑中间截图和屏幕操作传递的语义信息。为了解决这一问题，本文提出了动作思维链（CoAT），它考虑了先前动作的描述、当前屏幕，更重要的是分析应当执行的动作以及选择的动作带来的结果。我们证明，在使用现成LLM进行零次学习的情况下，CoAT相比于标准上下文建模显著提高了目标的完成情况。为了进一步促进这一研究领域的发展，我们构建了一个名为Android-In-The-Zoo（AitZ）的基准测试集，其中包含18,643个屏幕动作对。
-
-    arXiv:2403.02713v1 Announce Type: new  Abstract: Large language model (LLM) leads to a surge of autonomous GUI agents for smartphone, which completes a task triggered by natural language through predicting a sequence of actions of API. Even though the task highly relies on past actions and visual observations, existing studies typical consider little semantic information carried out by intermediate screenshots and screen operations. To address this, this work presents Chain-of-Action-Thought (dubbed CoAT), which takes the description of the previous actions, the current screen, and more importantly the action thinking of what actions should be performed and the outcomes led by the chosen action. We demonstrate that, in a zero-shot setting upon an off-the-shell LLM, CoAT significantly improves the goal progress compared to standard context modeling. To further facilitate the research in this line, we construct a benchmark Android-In-The-Zoo (AitZ), which contains 18,643 screen-action pa
-    
-[^2]: 大型语言模型与游戏：调研与路线图
-
-    Large Language Models and Games: A Survey and Roadmap
-
-    [https://arxiv.org/abs/2402.18659](https://arxiv.org/abs/2402.18659)
-
-    这项研究调查了大型语言模型在游戏领域中的多种应用及其角色，指出了未开发领域和未来发展方向，同时探讨了在游戏领域中大型语言模型的潜力和限制。
+    本文研究了在基于GPT的智能辅导系统中将领域知识库与语言模型集成，以提高回答的可靠性。通过设计可扩展的知识库和评估实验，我们展示了该系统的有效性。学生和领域专家对于智能辅导系统的回答进行了验证和排名。
 
     
 
-    近年来，大型语言模型（LLMs）的研究急剧增加，并伴随着公众对该主题的参与。尽管起初是自然语言处理中的一小部分，LLMs在广泛的应用和领域中展现出显著潜力，包括游戏。本文调查了LLMs在游戏中及为游戏提供支持的各种应用的最新技术水平，并明确了LLMs在游戏中可以扮演的不同角色。重要的是，我们讨论了尚未开发的领域和LLMs在游戏中未来应用的有前途的方向，以及在游戏领域中LLMs的潜力和限制。作为LLMs和游戏交叉领域的第一份综合调查和路线图，我们希望本文能够成为这一激动人心的新领域的开创性研究和创新的基础。
+    最近大型语言模型（LLM）的进展促进了具有复杂对话能力的聊天机器人的发展。然而，LLM对查询的回答经常不准确，这限制了在教育环境中的应用。本文研究了将知识库（KB）与LLM智能辅导系统集成以增加回答可靠性的效果。为了实现这一目标，我们设计了一个可扩展的知识库，教育监督员可以无缝集成课程，该课程会被智能辅导系统自动处理。然后，我们详细介绍了一个评估实验，学生参与者需要回答有关人工智能课程的问题。 GPT-4智能辅导系统具有不同层次的KB访问权限，并由人类领域专家评估这些回答。最后，学生对智能辅导系统的回答进行了与领域专家的交叉验证，并对它们的各种教学能力进行了排名。
 
-    arXiv:2402.18659v1 Announce Type: cross  Abstract: Recent years have seen an explosive increase in research on large language models (LLMs), and accompanying public engagement on the topic. While starting as a niche area within natural language processing, LLMs have shown remarkable potential across a broad range of applications and domains, including games. This paper surveys the current state of the art across the various applications of LLMs in and for games, and identifies the different roles LLMs can take within a game. Importantly, we discuss underexplored areas and promising directions for future uses of LLMs in games and we reconcile the potential and limitations of LLMs within the games domain. As the first comprehensive survey and roadmap at the intersection of LLMs and games, we are hopeful that this paper will serve as the basis for groundbreaking research and innovation in this exciting new field.
+    Recent advancements in large language models (LLMs) have facilitated the development of chatbots with sophisticated conversational capabilities. However, LLMs exhibit frequent inaccurate responses to queries, hindering applications in educational settings. In this paper, we investigate the effectiveness of integrating a knowledge base (KB) with LLM intelligent tutors to increase response reliability. To achieve this, we design a scaleable KB that affords educational supervisors seamless integration of lesson curricula, which is automatically processed by the intelligent tutoring system. We then detail an evaluation, where student participants were presented with questions about the artificial intelligence curriculum to respond to. GPT-4 intelligent tutors with varying hierarchies of KB access and human domain experts then assessed these responses. Lastly, students cross-examined the intelligent tutors' responses to the domain experts' and ranked their various pedagogical abilities. Res
+    
+[^2]: 使用反事实预测集设计决策支持系统
+
+    Designing Decision Support Systems Using Counterfactual Prediction Sets. (arXiv:2306.03928v1 [cs.LG])
+
+    [http://arxiv.org/abs/2306.03928](http://arxiv.org/abs/2306.03928)
+
+    本文提出了一种基于反事实预测集的决策支持系统设计方法，不同于传统的单一标签预测，它使用符合预测器构建预测集，并引导人类专家从中选择标签值。
+
+    
+
+    分类任务的决策支持系统通常被设计用于预测地面实况标签的值。然而，由于它们的预测并不完美，这些系统还需要让人类专家了解何时以及如何使用这些预测来更新自己的预测。不幸的是，这被证明是具有挑战性的。最近有人认为，另一种类型的决策支持系统可能会避开这个挑战。这些系统不是提供单个标签预测，而是使用符合预测器构建一组标签预测值，即预测集，并强制要求专家从预测集中预测一个标签值。然而，这些系统的设计和评估迄今仍依赖于样式化的专家模型，这引发了人们对它们的承诺的质疑。本文从在线学习的角度重新审视了这种系统的设计，并开发了一种不需要。
+
+    Decision support systems for classification tasks are predominantly designed to predict the value of the ground truth labels. However, since their predictions are not perfect, these systems also need to make human experts understand when and how to use these predictions to update their own predictions. Unfortunately, this has been proven challenging. In this context, it has been recently argued that an alternative type of decision support systems may circumvent this challenge. Rather than providing a single label prediction, these systems provide a set of label prediction values constructed using a conformal predictor, namely a prediction set, and forcefully ask experts to predict a label value from the prediction set. However, the design and evaluation of these systems have so far relied on stylized expert models, questioning their promise. In this paper, we revisit the design of this type of systems from the perspective of online learning and develop a methodology that does not requi
     
 

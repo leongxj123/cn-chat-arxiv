@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Improving LLM Code Generation with Grammar Augmentation](https://arxiv.org/abs/2403.01632) | SynCode是一个新框架，结合编程语言的语法和DFA mask store，在LLMs中生成代码过程中获得96.07%的句法错误降低，并展现出提高句法精度的重大影响。 |
+| [^1] | [Towards Responsible AI in the Era of ChatGPT: A Reference Architecture for Designing Foundation Model-based AI Systems.](http://arxiv.org/abs/2304.11090) | 本文提出了一个以模式为导向的负责任AI-by-design参考架构，用于设计基于基础模型的AI系统，重点关注可解释性、公平性、安全性和鲁棒性等关键设计元素。 |
 
 # 详细
 
-[^1]: 通过语法增强改进LLM代码生成
+[^1]: 在ChatGPT时代迈向负责任的人工智能：用于设计基于基础模型的AI系统的参考架构
 
-    Improving LLM Code Generation with Grammar Augmentation
+    Towards Responsible AI in the Era of ChatGPT: A Reference Architecture for Designing Foundation Model-based AI Systems. (arXiv:2304.11090v1 [cs.CL])
 
-    [https://arxiv.org/abs/2403.01632](https://arxiv.org/abs/2403.01632)
+    [http://arxiv.org/abs/2304.11090](http://arxiv.org/abs/2304.11090)
 
-    SynCode是一个新框架，结合编程语言的语法和DFA mask store，在LLMs中生成代码过程中获得96.07%的句法错误降低，并展现出提高句法精度的重大影响。
+    本文提出了一个以模式为导向的负责任AI-by-design参考架构，用于设计基于基础模型的AI系统，重点关注可解释性、公平性、安全性和鲁棒性等关键设计元素。
 
     
 
-    我们提出了 SynCode，一个用于高效和通用地解码大型语言模型（LLMs）代码的新框架。SynCode利用编程语言的语法，利用离线构建的基于语言语法终结符的高效查找表DFA mask store。我们展示了SynCode在给定编程语言的上下文无关文法（CFG）的完备性和正确性，展示其在保留语义上有效令牌的同时拒绝无效令牌的能力。该框架与由CFG定义的任何语言无缝集成，验证了针对Python和Go的CFG实验。结果突出了当SynCode与最先进的LLMs结合时，语法错误减少96.07%，彰显了其对提高代码生成中的句法精度的重大影响。
+    ChatGPT、Bard和其他大型语言模型(LLM)聊天机器人的推出在全球范围内引起了巨大关注。基础模型将成为未来大多数AI系统的基础构建块的趋势正在增长。然而，将基础模型纳入AI系统引发了对负责任AI的重大关注，这是由于其黑匣子性质和快速发展的超级智能引起的。此外，基础模型的增长能力最终可能会吞噬AI系统的其他组件，引入架构设计中的运动边界和接口演变挑战。为了应对这些挑战，本文提出了一种以模式为导向的负责任AI-by-design参考架构，用于设计基于基础模型的AI系统。特别地，本文首先呈现了基于基础模型的AI系统在架构演进方面的发展，从"基础模型作为连接器"到"基础模型作为单片机核"。然后，它提出了一个参考架构，包括五个类别的模式，重点关注关键设计元素，例如可解释性、公平性、安全性和鲁棒性。所提出的参考架构为设计负责任的基础模型的AI系统提供了系统化和透明的方法。
 
-    arXiv:2403.01632v1 Announce Type: new  Abstract: We present SynCode a novel framework for efficient and general syntactical decoding of code with large language models (LLMs). SynCode leverages the grammar of a programming language, utilizing an offline-constructed efficient lookup table called DFA mask store based on language grammar terminals. We demonstrate SynCode's soundness and completeness given the context-free grammar (CFG) of the programming language, presenting its ability to retain syntactically valid tokens while rejecting invalid ones. The framework seamlessly integrates with any language defined by CFG, as evidenced by experiments on CFGs for Python and Go. The results underscore the significant reduction of 96.07% of syntax errors achieved when SynCode is combined with state-of-the-art LLMs, showcasing its substantial impact on enhancing syntactical precision in code generation.   Our code is available at https://github.com/uiuc-focal-lab/syncode.
+    The release of ChatGPT, Bard, and other large language model (LLM)-based chatbots has drawn huge attention on foundations models worldwide. There is a growing trend that foundation models will serve as the fundamental building blocks for most of the future AI systems. However, incorporating foundation models in AI systems raises significant concerns about responsible AI due to their black box nature and rapidly advancing super-intelligence. Additionally, the foundation model's growing capabilities can eventually absorb the other components of AI systems, introducing the moving boundary and interface evolution challenges in architecture design. To address these challenges, this paper proposes a pattern-oriented responsible-AI-by-design reference architecture for designing foundation model-based AI systems. Specially, the paper first presents an architecture evolution of AI systems in the era of foundation models, from "foundation-model-as-a-connector" to "foundation-model-as-a-monolithi
     
 

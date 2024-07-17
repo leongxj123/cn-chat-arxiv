@@ -2,67 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Heteroscedastic sparse high-dimensional linear regression with a partitioned empirical Bayes ECM algorithm.](http://arxiv.org/abs/2309.08783) | 本文提出了一种解决高维度稀疏线性回归中异方差问题的方法，通过基于分区经验贝叶斯ECM算法的异方差高维度线性回归模型来实现。这个模型可以处理残差方差不恒定的情况，并且可以使用插值的经验贝叶斯估计超参数来灵活地调整方差模型。 |
-| [^2] | [UTOPIA: Universally Trainable Optimal Prediction Intervals Aggregation.](http://arxiv.org/abs/2306.16549) | 本论文提出了一种新的技术，称为UTOPIA，用于聚合多个预测区间以减小其宽度并保证覆盖率。该方法基于线性或凸规划，易于实现，适用范围广泛。 |
-| [^3] | [Counterfactual Generative Models for Time-Varying Treatments.](http://arxiv.org/abs/2305.15742) | 本文研究了时间变量处理情况下的反事实生成模型，能够捕捉整个反事实分布，并且能够有效推断反事实分布的某些统计量，适用于医疗保健和公共政策制定领域。 |
-| [^4] | [Factorized Fusion Shrinkage for Dynamic Relational Data.](http://arxiv.org/abs/2210.00091) | 本文提出了一种动态关系数据的分解融合压缩模型，通过对分解矩阵的行向量的逐次差值施加全局-局部压缩先验获得收缩，并具有许多有利的性质。 |
+| [^1] | [Rao-Blackwellising Bayesian Causal Inference](https://arxiv.org/abs/2402.14781) | 本文结合顺序化的MCMC结构学习技术和梯度图学习的最新进展，构建了一个有效的贝叶斯因果推断框架，将因果结构推断问题分解为变量拓扑顺序推断和变量父节点集合推断，同时使用高斯过程进行因果机制建模实现精确边缘化，引入了一个Rao-Blackwell化方案。 |
+| [^2] | [Online Local False Discovery Rate Control: A Resource Allocation Approach](https://arxiv.org/abs/2402.11425) | 该研究提出了一种在线局部虚发现率控制的资源分配方法，实现了$O(\sqrt{T})$的后悔率，并指出这种后悔率在一般情况下是不可改进的。 |
+| [^3] | [Designing Decision Support Systems Using Counterfactual Prediction Sets.](http://arxiv.org/abs/2306.03928) | 本文提出了一种基于反事实预测集的决策支持系统设计方法，不同于传统的单一标签预测，它使用符合预测器构建预测集，并引导人类专家从中选择标签值。 |
 
 # 详细
 
-[^1]: 高维度稀疏线性回归中的异方差问题及基于分区经验贝叶斯ECM算法的解决方法
+[^1]: Rao-Blackwellising Bayesian Causal Inference
 
-    Heteroscedastic sparse high-dimensional linear regression with a partitioned empirical Bayes ECM algorithm. (arXiv:2309.08783v1 [stat.ME])
+    Rao-Blackwellising Bayesian Causal Inference
 
-    [http://arxiv.org/abs/2309.08783](http://arxiv.org/abs/2309.08783)
+    [https://arxiv.org/abs/2402.14781](https://arxiv.org/abs/2402.14781)
 
-    本文提出了一种解决高维度稀疏线性回归中异方差问题的方法，通过基于分区经验贝叶斯ECM算法的异方差高维度线性回归模型来实现。这个模型可以处理残差方差不恒定的情况，并且可以使用插值的经验贝叶斯估计超参数来灵活地调整方差模型。
-
-    
-
-    高维度数据的稀疏线性回归方法通常假设残差具有常数方差。当这一假设被违背时，会导致估计系数的偏差，预测区间长度不合适以及增加I型错误。本文提出一种基于分区经验贝叶斯期望条件最大化(H-PROBE)算法的异方差高维度线性回归模型。H-PROBE是一种计算效率高的最大后验估计方法，基于参数扩展的期望条件最大化(PX-ECM)算法。它通过插值的经验贝叶斯估计超参数，在回归参数上假设最小。方差模型使用了多元对数伽马分布理论的最新进展，并可以包含假设会影响异质性的协变量。我们的方法的动机是通过T2高分辨率神经影像研究与失语指数(AQ)相关性。
-
-    Sparse linear regression methods for high-dimensional data often assume that residuals have constant variance. When this assumption is violated, it can lead to bias in estimated coefficients, prediction intervals with improper length, and increased type I errors. This paper proposes a heteroscedastic (H) high-dimensional linear regression model through a partitioned empirical Bayes Expectation Conditional Maximization (H-PROBE) algorithm. H-PROBE is a computationally efficient maximum a posteriori (MAP) estimation approach based on a Parameter-Expanded Expectation-Conditional-Maximization (PX-ECM) algorithm. It requires minimal prior assumptions on the regression parameters through plug-in empirical Bayes estimates of hyperparameters. The variance model uses recent advances in multivariate log-Gamma distribution theory and can include covariates hypothesized to impact heterogeneity. The motivation of our approach is a study relating Aphasia Quotient (AQ) to high-resolution T2 neuroimag
-    
-[^2]: UTOPIA：通用可训练的最优预测区间聚合
-
-    UTOPIA: Universally Trainable Optimal Prediction Intervals Aggregation. (arXiv:2306.16549v1 [stat.ME])
-
-    [http://arxiv.org/abs/2306.16549](http://arxiv.org/abs/2306.16549)
-
-    本论文提出了一种新的技术，称为UTOPIA，用于聚合多个预测区间以减小其宽度并保证覆盖率。该方法基于线性或凸规划，易于实现，适用范围广泛。
+    本文结合顺序化的MCMC结构学习技术和梯度图学习的最新进展，构建了一个有效的贝叶斯因果推断框架，将因果结构推断问题分解为变量拓扑顺序推断和变量父节点集合推断，同时使用高斯过程进行因果机制建模实现精确边缘化，引入了一个Rao-Blackwell化方案。
 
     
 
-    预测的不确定性量化是一个有趣的问题，在生物医学科学、经济研究和天气预报等各个领域有重要的应用。构建预测区间的方法有很多，如分位数回归和一致性预测等。然而，模型错误规定（尤其是在高维情况下）或次优的构造通常会导致有偏或过宽的预测区间。在本文中，我们提出了一种新颖且广泛适用的技术，用于聚合多个预测区间以最小化预测带的平均宽度和覆盖保证，称为通用可训练的最优预测区间聚合（UTOPIA）。该方法还允许我们根据基本的基函数直接构建预测带。我们的方法基于线性或凸规划，易于实现。我们提出的所有方法都得到了实验证明。
+    贝叶斯因果推断，即推断用于下游因果推理任务中的因果模型的后验概率，构成了一个在文献中鲜有探讨的难解的计算推断问题。本文将基于顺序的MCMC结构学习技术与最近梯度图学习的进展相结合，构建了一个有效的贝叶斯因果推断框架。具体而言，我们将推断因果结构的问题分解为(i)推断变量之间的拓扑顺序以及(ii)推断每个变量的父节点集合。当限制每个变量的父节点数量时，我们可以在多项式时间内完全边缘化父节点集合。我们进一步使用高斯过程来建模未知的因果机制，从而允许其精确边缘化。这引入了一个Rao-Blackwell化方案，其中除了因果顺序之外，模型中的所有组件都被消除。
 
-    Uncertainty quantification for prediction is an intriguing problem with significant applications in various fields, such as biomedical science, economic studies, and weather forecasts. Numerous methods are available for constructing prediction intervals, such as quantile regression and conformal predictions, among others. Nevertheless, model misspecification (especially in high-dimension) or sub-optimal constructions can frequently result in biased or unnecessarily-wide prediction intervals. In this paper, we propose a novel and widely applicable technique for aggregating multiple prediction intervals to minimize the average width of the prediction band along with coverage guarantee, called Universally Trainable Optimal Predictive Intervals Aggregation (UTOPIA). The method also allows us to directly construct predictive bands based on elementary basis functions. Our approach is based on linear or convex programming which is easy to implement. All of our proposed methodologies are suppo
+    arXiv:2402.14781v1 Announce Type: cross  Abstract: Bayesian causal inference, i.e., inferring a posterior over causal models for the use in downstream causal reasoning tasks, poses a hard computational inference problem that is little explored in literature. In this work, we combine techniques from order-based MCMC structure learning with recent advances in gradient-based graph learning into an effective Bayesian causal inference framework. Specifically, we decompose the problem of inferring the causal structure into (i) inferring a topological order over variables and (ii) inferring the parent sets for each variable. When limiting the number of parents per variable, we can exactly marginalise over the parent sets in polynomial time. We further use Gaussian processes to model the unknown causal mechanisms, which also allows their exact marginalisation. This introduces a Rao-Blackwellization scheme, where all components are eliminated from the model, except for the causal order, for whi
     
-[^3]: 时间变化处理的反事实生成模型
+[^2]: 在线局部虚发现率控制：一种资源分配方法
 
-    Counterfactual Generative Models for Time-Varying Treatments. (arXiv:2305.15742v1 [stat.ML])
+    Online Local False Discovery Rate Control: A Resource Allocation Approach
 
-    [http://arxiv.org/abs/2305.15742](http://arxiv.org/abs/2305.15742)
+    [https://arxiv.org/abs/2402.11425](https://arxiv.org/abs/2402.11425)
 
-    本文研究了时间变量处理情况下的反事实生成模型，能够捕捉整个反事实分布，并且能够有效推断反事实分布的某些统计量，适用于医疗保健和公共政策制定领域。
-
-    
-
-    估计平均因果效应是测试新疗法的常用做法。然而，平均效应会掩盖反事实分布中重要的个体特征，可能会引起安全、公平和道德方面的担忧。这个问题在时间设置中更加严重，因为处理是时序的和时变的，对反事实分布产生了错综复杂的影响。本文提出了一种新的条件生成建模方法，以捕获整个反事实分布，允许对反事实分布的某些统计量进行有效推断。这使得所提出的方法尤其适用于医疗保健和公共政策制定领域。我们的生成建模方法通过边际结构模型谨慎地解决了观察数据和目标反事实分布之间的分布不匹配。在合成和真实数据上，我们的方法优于现有的基线方法。
-
-    Estimating average causal effects is a common practice to test new treatments. However, the average effect ''masks'' important individual characteristics in the counterfactual distribution, which may lead to safety, fairness, and ethical concerns. This issue is exacerbated in the temporal setting, where the treatment is sequential and time-varying, leading to an intricate influence on the counterfactual distribution. In this paper, we propose a novel conditional generative modeling approach to capture the whole counterfactual distribution, allowing efficient inference on certain statistics of the counterfactual distribution. This makes the proposed approach particularly suitable for healthcare and public policy making. Our generative modeling approach carefully tackles the distribution mismatch in the observed data and the targeted counterfactual distribution via a marginal structural model. Our method outperforms state-of-the-art baselines on both synthetic and real data.
-    
-[^4]: 动态关系数据的分解融合压缩模型
-
-    Factorized Fusion Shrinkage for Dynamic Relational Data. (arXiv:2210.00091v2 [stat.ME] UPDATED)
-
-    [http://arxiv.org/abs/2210.00091](http://arxiv.org/abs/2210.00091)
-
-    本文提出了一种动态关系数据的分解融合压缩模型，通过对分解矩阵的行向量的逐次差值施加全局-局部压缩先验获得收缩，并具有许多有利的性质。
+    该研究提出了一种在线局部虚发现率控制的资源分配方法，实现了$O(\sqrt{T})$的后悔率，并指出这种后悔率在一般情况下是不可改进的。
 
     
 
-    现代数据科学应用经常涉及具有动态结构的复杂关系数据。此类动态关系数据的突变通常出现在由于干预而经历制度变化的系统中。在这种情况下，我们考虑一种分解融合压缩模型，其中所有分解因子都被动态地收缩到组内融合结构，收缩通过对分解矩阵的行向量的逐次差值施加全局-局部压缩先验来获得。所提出的先验在估计的动态潜在因子的比较和聚类方面具有许多有利的性质。比较估计的潜在因子涉及相邻和长期比较，考虑到比较的时间范围作为变量。在某些条件下，我们证明后验分布达到最小化最大风险，直到对数因子。在计算方面，我们提出了一个结构化的均值场变分方法。
+    我们考虑在线局部虚发现率（FDR）控制问题，其中多个测试被顺序进行，目标是最大化总期望的发现次数。我们将问题形式化为一种在线资源分配问题，涉及接受/拒绝决策，从高层次来看，这可以被视为一个带有额外不确定性的在线背包问题，即随机预算补充。我们从一般的到达分布开始，并提出了一个简单的策略，实现了$O(\sqrt{T})$的后悔。我们通过展示这种后悔率在一般情况下是不可改进的来补充这一结果。然后我们将焦点转向离散到达分布。我们发现许多现有的在线资源分配文献中的重新解决启发式虽然在典型设置中实现了有界的损失，但可能会造成$\Omega(\sqrt{T})$甚至$\Omega(T)$的后悔。通过观察到典型策略往往太过
 
-    Modern data science applications often involve complex relational data with dynamic structures. An abrupt change in such dynamic relational data is typically observed in systems that undergo regime changes due to interventions. In such a case, we consider a factorized fusion shrinkage model in which all decomposed factors are dynamically shrunk towards group-wise fusion structures, where the shrinkage is obtained by applying global-local shrinkage priors to the successive differences of the row vectors of the factorized matrices. The proposed priors enjoy many favorable properties in comparison and clustering of the estimated dynamic latent factors. Comparing estimated latent factors involves both adjacent and long-term comparisons, with the time range of comparison considered as a variable. Under certain conditions, we demonstrate that the posterior distribution attains the minimax optimal rate up to logarithmic factors. In terms of computation, we present a structured mean-field vari
+    arXiv:2402.11425v1 Announce Type: cross  Abstract: We consider the problem of online local false discovery rate (FDR) control where multiple tests are conducted sequentially, with the goal of maximizing the total expected number of discoveries. We formulate the problem as an online resource allocation problem with accept/reject decisions, which from a high level can be viewed as an online knapsack problem, with the additional uncertainty of random budget replenishment. We start with general arrival distributions and propose a simple policy that achieves a $O(\sqrt{T})$ regret. We complement the result by showing that such regret rate is in general not improvable. We then shift our focus to discrete arrival distributions. We find that many existing re-solving heuristics in the online resource allocation literature, albeit achieve bounded loss in canonical settings, may incur a $\Omega(\sqrt{T})$ or even a $\Omega(T)$ regret. With the observation that canonical policies tend to be too op
+    
+[^3]: 使用反事实预测集设计决策支持系统
+
+    Designing Decision Support Systems Using Counterfactual Prediction Sets. (arXiv:2306.03928v1 [cs.LG])
+
+    [http://arxiv.org/abs/2306.03928](http://arxiv.org/abs/2306.03928)
+
+    本文提出了一种基于反事实预测集的决策支持系统设计方法，不同于传统的单一标签预测，它使用符合预测器构建预测集，并引导人类专家从中选择标签值。
+
+    
+
+    分类任务的决策支持系统通常被设计用于预测地面实况标签的值。然而，由于它们的预测并不完美，这些系统还需要让人类专家了解何时以及如何使用这些预测来更新自己的预测。不幸的是，这被证明是具有挑战性的。最近有人认为，另一种类型的决策支持系统可能会避开这个挑战。这些系统不是提供单个标签预测，而是使用符合预测器构建一组标签预测值，即预测集，并强制要求专家从预测集中预测一个标签值。然而，这些系统的设计和评估迄今仍依赖于样式化的专家模型，这引发了人们对它们的承诺的质疑。本文从在线学习的角度重新审视了这种系统的设计，并开发了一种不需要。
+
+    Decision support systems for classification tasks are predominantly designed to predict the value of the ground truth labels. However, since their predictions are not perfect, these systems also need to make human experts understand when and how to use these predictions to update their own predictions. Unfortunately, this has been proven challenging. In this context, it has been recently argued that an alternative type of decision support systems may circumvent this challenge. Rather than providing a single label prediction, these systems provide a set of label prediction values constructed using a conformal predictor, namely a prediction set, and forcefully ask experts to predict a label value from the prediction set. However, the design and evaluation of these systems have so far relied on stylized expert models, questioning their promise. In this paper, we revisit the design of this type of systems from the perspective of online learning and develop a methodology that does not requi
     
 
