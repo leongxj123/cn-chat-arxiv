@@ -2,187 +2,217 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Rotary Position Embedding for Vision Transformer](https://arxiv.org/abs/2403.13298) | RoPE在视觉变压器中展现出令人印象深刻的外推性能，提高了ImageNet-1k、COCO检测和ADE-20k分割的性能。 |
-| [^2] | [Neuro-Symbolic Video Search](https://arxiv.org/abs/2403.11021) | 提出了一种神经网络符号视频搜索系统，该系统利用视觉-语言模型进行语义理解，并通过状态机和时间逻辑公式对事件的长期演变进行推理，从而实现高效的场景识别。 |
-| [^3] | [Unsupervised Concept Discovery Mitigates Spurious Correlations](https://arxiv.org/abs/2402.13368) | 该论文介绍了一种无监督概念发现方法，通过发现共享的离散概念来减轻虚假相关性，而无需人工标记子组，有效提高模型的鲁棒性和消除偏见。 |
-| [^4] | [Cross-Domain Few-Shot Object Detection via Enhanced Open-Set Object Detector](https://arxiv.org/abs/2402.03094) | 本文提出了一种跨领域少样本目标检测器，通过增强的开集目标检测方法来解决跨领域数据差异带来的性能下降问题。 |
-| [^5] | [LHRS-Bot: Empowering Remote Sensing with VGI-Enhanced Large Multimodal Language Model](https://arxiv.org/abs/2402.02544) | LHRS-Bot 是一个利用自愿地理信息(VGI)增强的大型多模态语言模型，旨在解决近期MLLM在遥感领域中未对多样的地理景观和物体进行充分考虑的问题。通过引入多层次视觉-语言对齐策略和课程学习方法，LHRS-Bot展现出对RS图像的深刻理解以及在RS领域内进行细致推理的能力。 |
-| [^6] | [ConTextual: Evaluating Context-Sensitive Text-Rich Visual Reasoning in Large Multimodal Models.](http://arxiv.org/abs/2401.13311) | 本文介绍了一个新颖的基准ConTextual，用于评估能够进行上下文敏感的文本富有视觉推理的大型多模态模型。研究发现，目前最好的模型GPT-4V在抽象类别表现出色，但在整体性能上仍然落后于人类，存在改进的空间。 |
-| [^7] | [A Simple Latent Diffusion Approach for Panoptic Segmentation and Mask Inpainting.](http://arxiv.org/abs/2401.10227) | 该论文提出了一种基于稳定扩散的潜在扩散方法，用于全景分割和遮罩修复，通过简化架构来避免复杂性，实现了生成模型解锁遮罩修复功能，具有应用于交互式分割的潜力。 |
-| [^8] | [VMAF Re-implementation on PyTorch: Some Experimental Results.](http://arxiv.org/abs/2310.15578) | 这项研究重新在PyTorch上实现了VMAF，与标准实现进行比较，结果显示在VMAF单位上的差异小于$10^{-2}$。同时，研究了在使用VMAF作为目标函数时的梯度计算，并证明使用该函数进行训练不会导致梯度不良。 |
-| [^9] | [Three Ways to Improve Verbo-visual Fusion for Dense 3D Visual Grounding.](http://arxiv.org/abs/2309.04561) | 提出了一个稠密三维引用网络ConcreteNet，包含三个新模块，旨在改善具有相同语义类别干扰因素的重复实例的引用性能。 |
-| [^10] | [MOCA: Self-supervised Representation Learning by Predicting Masked Online Codebook Assignments.](http://arxiv.org/abs/2307.09361) | MOCA是一种自监督学习方法，通过预测掩码式在线码本分配来实现表示学习。它同时具备良好的语境推理属性和对图像扰动的不变性，并在低样本设置和各种评估协议中取得了最新的最先进结果，训练速度比之前的方法快3倍以上。 |
-| [^11] | [Robust Semantic Segmentation: Strong Adversarial Attacks and Fast Training of Robust Models.](http://arxiv.org/abs/2306.12941) | 本文提出了针对语义分割模型的解决方案，使得可以对其进行攻击并提供了更好的评估协议。同时，通过微调鲁棒的主干，可以有限的计算代价训练对抗性鲁棒的分割模型。 |
-| [^12] | [CompoDiff: Versatile Composed Image Retrieval With Latent Diffusion.](http://arxiv.org/abs/2303.11916) | CompoDiff 是一种多功能的组合图像检索模型，通过接受各种条件，具有潜在扩散的能力，并在 FashionIQ 上实现了新的零样本最新技术水平。其特征位于完整的 CLIP 嵌入空间中，可以直接用于所有利用 CLIP 空间的模型。 |
+| [^1] | [Towards Learning Contrast Kinetics with Multi-Condition Latent Diffusion Models](https://arxiv.org/abs/2403.13890) | 提出了一个多条件潜在扩散模型来学习对比动力学，以减少对静脉内对比剂的依赖性。 |
+| [^2] | [Few-Shot Class Incremental Learning with Attention-Aware Self-Adaptive Prompt](https://arxiv.org/abs/2403.09857) | 提出了一个名为ASP的框架，通过注意力方面减少特定信息，鼓励任务不变的提示来捕获共享知识，并通过信息瓶颈学习目标从旧类到新类传递知识。 |
+| [^3] | [The First to Know: How Token Distributions Reveal Hidden Knowledge in Large Vision-Language Models?](https://arxiv.org/abs/2403.09037) | 本研究利用线性探测揭示了大型视觉语言模型的隐藏知识，发现首个令牌的logit分布包含足够信息，可以识别无法回答的视觉问题、防范多模态越狱攻击以及识别欺骗性问题，并提出了一个简单的解码策略以有效改善生成内容。 |
+| [^4] | [How we won BraTS 2023 Adult Glioma challenge? Just faking it! Enhanced Synthetic Data Augmentation and Model Ensemble for brain tumour segmentation](https://arxiv.org/abs/2402.17317) | 通过使用生成对抗网络和配准来增强合成数据，我们成功训练了三个不同的深度学习模型，结合卷积算法和transformers技术填补了知识差距，取得了0.9005的dice结果。 |
+| [^5] | [Nearest Neighbour Score Estimators for Diffusion Generative Models](https://arxiv.org/abs/2402.08018) | 本论文提出了一种新颖的最近邻评分函数估计器，通过利用训练集中的多个样本大大降低了估计器的方差，可用于训练一致性模型和扩散模型，提高收敛速度、样本质量，并为进一步的研究提供了新的可能性。 |
+| [^6] | [Scissorhands: Scrub Data Influence via Connection Sensitivity in Networks.](http://arxiv.org/abs/2401.06187) | Scissorhands 是一种新的机器取消学习方法，通过连接敏感性识别与遗忘数据相关的最相关参数，并通过重新训练修剪的模型来擦除数据影响。 |
+| [^7] | [Attribute Based Interpretable Evaluation Metrics for Generative Models.](http://arxiv.org/abs/2310.17261) | 本论文提出了一种基于属性的生成模型可解释性评估指标，通过度量生成图像集与训练集关于属性强度分布的差异，可以更好地衡量模型生成结果与训练数据的相似度。 |
+| [^8] | [EGIC: Enhanced Low-Bit-Rate Generative Image Compression Guided by Semantic Segmentation.](http://arxiv.org/abs/2309.03244) | EGIC是一种增强的低位速率生成图像压缩方法，通过语义分割提供指导。它在失真感知和失真方向基线方法上表现优越，并具有较小的模型参数和优秀的插值特性。 |
+| [^9] | [Rethinking Integration of Prediction and Planning in Deep Learning-Based Automated Driving Systems: A Review.](http://arxiv.org/abs/2308.05731) | 这项综述重新思考了基于深度学习的自动驾驶系统中预测和规划的整合问题，提出了将其作为相互依赖的联合步骤来提高安全性、效率性和舒适性的必要性。 |
+| [^10] | [From Fake to Real (FFR): A two-stage training pipeline for mitigating spurious correlations with synthetic data.](http://arxiv.org/abs/2308.04553) | 本文提出了一个两阶段训练流程，通过在一个平衡的合成数据集上进行预训练，然后在真实数据上进行微调，减少了视觉识别模型学习到与数据集偏差相关的错误的问题。 |
+| [^11] | [Spatio-Temporal Branching for Motion Prediction using Motion Increments.](http://arxiv.org/abs/2308.01097) | 本论文提出了一种利用运动增量进行时空分支的运动预测网络，通过解耦时域和空域特征的学习，提取更多的运动信息。 |
+| [^12] | [DIFFender: Diffusion-Based Adversarial Defense against Patch Attacks.](http://arxiv.org/abs/2306.09124) | DIFFender是一种基于扩散的对抗性防御方法，通过定位和恢复两个阶段的操作，利用文本引导的扩散模型来防御对抗性Patch，从而提高其整体防御性能。 |
+| [^13] | [SSL-Cleanse: Trojan Detection and Mitigation in Self-Supervised Learning.](http://arxiv.org/abs/2303.09079) | 本篇论文讨论了自监督学习中的木马攻击检测和缓解问题。由于这种攻击危险隐匿，且在下游分类器中很难检测出来。目前在超监督学习中的木马检测方法可以潜在地保护SSL下游分类器，但在其广泛传播之前识别和处理SSL编码器中的触发器是一项艰巨的任务。 |
+| [^14] | [Similarity of Neural Architectures Based on Input Gradient Transferability.](http://arxiv.org/abs/2210.11407) | 本研究利用对抗攻击传递度量，设计了一个量化且可扩展的神经架构相似度函数，分析了69个最先进的ImageNet分类器，发现多样化的神经架构可以提高模型集合和知识蒸馏的性能。 |
 
 # 详细
 
-[^1]: 视觉变压器的旋转位置嵌入
+[^1]: 以多条件潜在扩散模型学习对比动力学
 
-    Rotary Position Embedding for Vision Transformer
+    Towards Learning Contrast Kinetics with Multi-Condition Latent Diffusion Models
 
-    [https://arxiv.org/abs/2403.13298](https://arxiv.org/abs/2403.13298)
+    [https://arxiv.org/abs/2403.13890](https://arxiv.org/abs/2403.13890)
 
-    RoPE在视觉变压器中展现出令人印象深刻的外推性能，提高了ImageNet-1k、COCO检测和ADE-20k分割的性能。
-
-    
-
-    旋转位置嵌入（RoPE）在语言模型上表现出色，特别适用于Transformer的长度外推。然而，RoPE对计算机视觉领域的影响尚未被充分探讨，尽管RoPE似乎能够像语言领域一样增强视觉变压器（ViT）的性能。本研究对将RoPE应用于ViT时进行了全面分析，利用RoPE在2D视觉数据上的实际实现。分析显示，RoPE展示出令人印象深刻的外推性能，即在推断时在增加图像分辨率的同时保持精度。最终导致了ImageNet-1k、COCO检测和ADE-20k分割的性能提升。我们相信本研究提供了将RoPE应用于ViT的详尽指导，承诺通过最小的额外计算开销提高骨干性能。我们的代码和预训练模型可在网址https://找到。
-
-    arXiv:2403.13298v1 Announce Type: cross  Abstract: Rotary Position Embedding (RoPE) performs remarkably on language models, especially for length extrapolation of Transformers. However, the impacts of RoPE on computer vision domains have been underexplored, even though RoPE appears capable of enhancing Vision Transformer (ViT) performance in a way similar to the language domain. This study provides a comprehensive analysis of RoPE when applied to ViTs, utilizing practical implementations of RoPE for 2D vision data. The analysis reveals that RoPE demonstrates impressive extrapolation performance, i.e., maintaining precision while increasing image resolution at inference. It eventually leads to performance improvement for ImageNet-1k, COCO detection, and ADE-20k segmentation. We believe this study provides thorough guidelines to apply RoPE into ViT, promising improved backbone performance with minimal extra computational overhead. Our code and pre-trained models are available at https://
-    
-[^2]: 神经符号视频搜索
-
-    Neuro-Symbolic Video Search
-
-    [https://arxiv.org/abs/2403.11021](https://arxiv.org/abs/2403.11021)
-
-    提出了一种神经网络符号视频搜索系统，该系统利用视觉-语言模型进行语义理解，并通过状态机和时间逻辑公式对事件的长期演变进行推理，从而实现高效的场景识别。
+    提出了一个多条件潜在扩散模型来学习对比动力学，以减少对静脉内对比剂的依赖性。
 
     
 
-    近年来视频数据生产的空前激增需求高效的工具，以从视频中提取有意义的帧供下游任务使用。 长期时间推理是帧检索系统的一个关键要求。 虽然 VideoLLaMA 和 ViCLIP 等最先进的基础模型在短期语义理解方面表现优异，但它们在跨帧的长期推理方面却令人惊讶地失败。 这种失败的一个关键原因是它们将逐帧感知和时间推理交织成单个深度网络。 因此，解耦但共同设计语义理解和时间推理对于高效的场景识别是至关重要的。 我们提出了一种系统，利用视觉-语言模型对单个帧进行语义理解，但有效地通过使用状态机和时间逻辑（TL）公式对事件的长期演变进行推理，这些公式在本质上捕捉了记忆。
+    动态对比增强磁共振成像中的对比剂可以定位肿瘤并观察其对比动力学，这对于癌症表征和治疗决策至关重要。然而，对比剂的使用不仅与不良健康风险相关，而且对于怀孕患者、肾功能障碍患者或其他不良反应患者存在限制。由于对比剂摄取是病灶恶性、癌症复发风险和治疗反应的关键生物标志物，因此减少静脉内对比剂的依赖性变得至关重要。为此，我们提出了一个能够进行DCE-MRI时间序列的获取时间条件图像合成的多条件潜在扩散模型。为了评估医学图像合成，我们还提出并验证了基于生物标志物变异性的Fr\'echet放射组学距离作为图像质量度量。
 
-    arXiv:2403.11021v1 Announce Type: cross  Abstract: The unprecedented surge in video data production in recent years necessitates efficient tools to extract meaningful frames from videos for downstream tasks. Long-term temporal reasoning is a key desideratum for frame retrieval systems. While state-of-the-art foundation models, like VideoLLaMA and ViCLIP, are proficient in short-term semantic understanding, they surprisingly fail at long-term reasoning across frames. A key reason for this failure is that they intertwine per-frame perception and temporal reasoning into a single deep network. Hence, decoupling but co-designing semantic understanding and temporal reasoning is essential for efficient scene identification. We propose a system that leverages vision-language models for semantic understanding of individual frames but effectively reasons about the long-term evolution of events using state machines and temporal logic (TL) formulae that inherently capture memory. Our TL-based reas
+    arXiv:2403.13890v1 Announce Type: cross  Abstract: Contrast agents in dynamic contrast enhanced magnetic resonance imaging allow to localize tumors and observe their contrast kinetics, which is essential for cancer characterization and respective treatment decision-making. However, contrast agent administration is not only associated with adverse health risks, but also restricted for patients during pregnancy, and for those with kidney malfunction, or other adverse reactions. With contrast uptake as key biomarker for lesion malignancy, cancer recurrence risk, and treatment response, it becomes pivotal to reduce the dependency on intravenous contrast agent administration. To this end, we propose a multi-conditional latent diffusion model capable of acquisition time-conditioned image synthesis of DCE-MRI temporal sequences. To evaluate medical image synthesis, we additionally propose and validate the Fr\'echet radiomics distance as an image quality measure based on biomarker variability 
     
-[^3]: 无监督概念发现减轻虚假相关性
+[^2]: 带有注意力感知自适应提示的少样本类增量学习
 
-    Unsupervised Concept Discovery Mitigates Spurious Correlations
+    Few-Shot Class Incremental Learning with Attention-Aware Self-Adaptive Prompt
 
-    [https://arxiv.org/abs/2402.13368](https://arxiv.org/abs/2402.13368)
+    [https://arxiv.org/abs/2403.09857](https://arxiv.org/abs/2403.09857)
 
-    该论文介绍了一种无监督概念发现方法，通过发现共享的离散概念来减轻虚假相关性，而无需人工标记子组，有效提高模型的鲁棒性和消除偏见。
-
-    
-
-    在训练数据中容易产生虚假相关性的模型通常会产生脆弱的预测并引入意外的偏见。解决这一挑战通常涉及依赖先验知识和群组注释的方法，以消除虚假相关性，而这些信息在许多应用程序中可能并不容易获得。在本文中，我们建立了无监督物体中心学习与减轻虚假相关性之间的一种新联系。我们的方法不是直接推断与标签具有不同相关性的子组，而是专注于发现概念：在输入样本之间共享的离散思想。借助现有的物体中心表示学习，我们引入了CoBalT：一种概念平衡技术，有效减轻虚假相关性，而无需人类对子组进行标记。在水鸟、CelebA和ImageNet-9基准数据集上针对子群体变化的评估表明了其优越性。
-
-    arXiv:2402.13368v1 Announce Type: new  Abstract: Models prone to spurious correlations in training data often produce brittle predictions and introduce unintended biases. Addressing this challenge typically involves methods relying on prior knowledge and group annotation to remove spurious correlations, which may not be readily available in many applications. In this paper, we establish a novel connection between unsupervised object-centric learning and mitigation of spurious correlations. Instead of directly inferring sub-groups with varying correlations with labels, our approach focuses on discovering concepts: discrete ideas that are shared across input samples. Leveraging existing object-centric representation learning, we introduce CoBalT: a concept balancing technique that effectively mitigates spurious correlations without requiring human labeling of subgroups. Evaluation across the Waterbirds, CelebA and ImageNet-9 benchmark datasets for subpopulation shifts demonstrate superio
-    
-[^4]: 跨领域少样本目标检测通过增强的开集目标检测器
-
-    Cross-Domain Few-Shot Object Detection via Enhanced Open-Set Object Detector
-
-    [https://arxiv.org/abs/2402.03094](https://arxiv.org/abs/2402.03094)
-
-    本文提出了一种跨领域少样本目标检测器，通过增强的开集目标检测方法来解决跨领域数据差异带来的性能下降问题。
+    提出了一个名为ASP的框架，通过注意力方面减少特定信息，鼓励任务不变的提示来捕获共享知识，并通过信息瓶颈学习目标从旧类到新类传递知识。
 
     
 
-    本文解决了跨领域少样本目标检测（CD-FSOD）的挑战，旨在开发一个准确的目标检测器，用最少的标记样本来检测新领域的目标。虽然基于转换器的开集检测器（例如DE-ViT）在开放词汇目标检测和传统的少样本目标检测方面表现出色，能够检测到训练过程中没有见过的类别，我们自然会提出两个关键问题：1）这种开集检测方法能否容易地推广到CD-FSOD？2）如果不能，如何在面对显著的领域差异时增强开集方法的结果？为了回答第一个问题，我们引入了几个衡量领域差异的指标，并建立了一个具有多样领域度量值的新的CD-FSOD基准。在这个基准上评估了一些最先进的开集目标检测方法，在域外数据集中观察到明显的性能下降。这表明采用这些方法在CD-FSOD上失败了。
+    少样本类增量学习（FSCIL）模型旨在在保留旧类知识的同时，逐步学习新类别的稀缺样本。现有的FSCIL方法通常对整个骨干进行微调，导致过拟合并阻碍学习新类别的潜力。另一方面，最近基于提示的CIL方法通过在每个任务中用足够的数据训练提示来减轻遗忘。在这项工作中，我们提出了一个名为注意力感知自适应提示（ASP）的新框架。ASP通过从注意力方面减少特定信息，鼓励任务不变的提示来捕获共享知识。此外，ASP中的自适应任务特定提示提供特定信息，并通过信息瓶颈学习目标从旧类到新类传递知识。总之，ASP防止了在基础任务上的过拟合，并不需要在少样本增量任务中使用大量数据。
 
-    This paper addresses the challenge of cross-domain few-shot object detection (CD-FSOD), aiming to develop an accurate object detector for novel domains with minimal labeled examples. While transformer-based open-set detectors e.g., DE-ViT~\cite{zhang2023detect} have excelled in both open-vocabulary object detection and traditional few-shot object detection, detecting categories beyond those seen during training, we thus naturally raise two key questions: 1) can such open-set detection methods easily generalize to CD-FSOD? 2) If no, how to enhance the results of open-set methods when faced with significant domain gaps? To address the first question, we introduce several metrics to quantify domain variances and establish a new CD-FSOD benchmark with diverse domain metric values. Some State-Of-The-Art (SOTA) open-set object detection methods are evaluated on this benchmark, with evident performance degradation observed across out-of-domain datasets. This indicates the failure of adopting 
+    arXiv:2403.09857v1 Announce Type: cross  Abstract: Few-Shot Class-Incremental Learning (FSCIL) models aim to incrementally learn new classes with scarce samples while preserving knowledge of old ones. Existing FSCIL methods usually fine-tune the entire backbone, leading to overfitting and hindering the potential to learn new classes. On the other hand, recent prompt-based CIL approaches alleviate forgetting by training prompts with sufficient data in each task. In this work, we propose a novel framework named Attention-aware Self-adaptive Prompt (ASP). ASP encourages task-invariant prompts to capture shared knowledge by reducing specific information from the attention aspect. Additionally, self-adaptive task-specific prompts in ASP provide specific information and transfer knowledge from old classes to new classes with an Information Bottleneck learning objective. In summary, ASP prevents overfitting on base task and does not require enormous data in few-shot incremental tasks. Extensi
     
-[^5]: LHRS-Bot：利用VGI增强的大型多模态语言模型赋能遥感领域
+[^3]: 第一个知道：令牌分布如何揭示大型视觉语言模型中的隐藏知识？
 
-    LHRS-Bot: Empowering Remote Sensing with VGI-Enhanced Large Multimodal Language Model
+    The First to Know: How Token Distributions Reveal Hidden Knowledge in Large Vision-Language Models?
 
-    [https://arxiv.org/abs/2402.02544](https://arxiv.org/abs/2402.02544)
+    [https://arxiv.org/abs/2403.09037](https://arxiv.org/abs/2403.09037)
 
-    LHRS-Bot 是一个利用自愿地理信息(VGI)增强的大型多模态语言模型，旨在解决近期MLLM在遥感领域中未对多样的地理景观和物体进行充分考虑的问题。通过引入多层次视觉-语言对齐策略和课程学习方法，LHRS-Bot展现出对RS图像的深刻理解以及在RS领域内进行细致推理的能力。
-
-    
-
-    大型语言模型（LLMs）的革命性能力开创了多模态大型语言模型（MLLMs）并促进了在各个专业领域的多样化应用。然而，在遥感（RS）领域中，近期的MLLM努力未能充分考虑到遥感图像中多样的地理景观和物体。为了弥补这一差距，我们构建了一个大规模的RS图像-文本数据集LHRS-Align，以及一个信息丰富的RS特定指导数据集LHRS-Instruct，利用丰富的自愿地理信息（VGI）和全球可用的RS图像。在此基础上，我们引入了LHRS-Bot，一种针对RS图像理解的MLLM，通过一种新颖的多层次视觉-语言对齐策略和课程学习方法。全面的实验证明，LHRS-Bot展现出对RS图像的深刻理解以及在RS领域内进行细致推理的能力。
-
-    The revolutionary capabilities of large language models (LLMs) have paved the way for multimodal large language models (MLLMs) and fostered diverse applications across various specialized domains. In the remote sensing (RS) field, however, the diverse geographical landscapes and varied objects in RS imagery are not adequately considered in recent MLLM endeavors. To bridge this gap, we construct a large-scale RS image-text dataset, LHRS-Align, and an informative RS-specific instruction dataset, LHRS-Instruct, leveraging the extensive volunteered geographic information (VGI) and globally available RS images. Building on this foundation, we introduce LHRS-Bot, an MLLM tailored for RS image understanding through a novel multi-level vision-language alignment strategy and a curriculum learning method. Comprehensive experiments demonstrate that LHRS-Bot exhibits a profound understanding of RS images and the ability to perform nuanced reasoning within the RS domain.
-    
-[^6]: ConTextual: 在大型多模态模型中评估上下文敏感的文本富有视觉推理
-
-    ConTextual: Evaluating Context-Sensitive Text-Rich Visual Reasoning in Large Multimodal Models. (arXiv:2401.13311v1 [cs.CV])
-
-    [http://arxiv.org/abs/2401.13311](http://arxiv.org/abs/2401.13311)
-
-    本文介绍了一个新颖的基准ConTextual，用于评估能够进行上下文敏感的文本富有视觉推理的大型多模态模型。研究发现，目前最好的模型GPT-4V在抽象类别表现出色，但在整体性能上仍然落后于人类，存在改进的空间。
+    本研究利用线性探测揭示了大型视觉语言模型的隐藏知识，发现首个令牌的logit分布包含足够信息，可以识别无法回答的视觉问题、防范多模态越狱攻击以及识别欺骗性问题，并提出了一个简单的解码策略以有效改善生成内容。
 
     
 
-    最近人工智能的进步导致了大型多模态模型（LMMs）的发展，这些模型能够处理涉及文本和图像内容的复杂任务，例如在公共场所导航地图。本文介绍了ConTextual，这是一个新颖的基准，包括专门设计的指令，用于评估LMMs在执行上下文敏感的文本富有视觉推理方面的能力。ConTextual强调了多样的现实世界场景（例如时间阅读、导航、购物等），要求更深入地理解文本和视觉元素之间的相互作用。我们的研究结果显示，最佳表现的LMM，GPT-4V(ision)，与人类能力之间存在30.8%的性能差距，使用人类评估指出在上下文敏感的文本富有视觉推理方面还有很大的改进空间。值得注意的是，虽然GPT-4V在抽象类别（如模因和引文解释）中表现出色，但其整体性能仍然落后于人类。
+    大型视觉语言模型（LVLMs）旨在解释和响应人类指令，但由于不当指令而偶尔生成幻觉或有害内容。本研究使用线性探测来揭示LVLMs输出层的隐藏知识。我们证明了首个令牌的logit分布包含足够信息，可以确定是否应对指令作出响应，包括识别无法回答的视觉问题、防范多模态越狱攻击以及识别欺骗性问题。这种隐藏知识在响应生成过程中随后令牌的logit逐渐丢失。然后，我们演示了一种简单的解码策略在生成第一个令牌时，有效改善生成的内容。在实验中，我们发现了一些有趣的见解：首先，CLIP模型已经包含解决这些任务的强烈信号，表明潜力
 
-    Recent advancements in AI have led to the development of large multimodal models (LMMs) capable of processing complex tasks involving joint reasoning over text and visual content in the image (e.g., navigating maps in public places). This paper introduces ConTextual, a novel benchmark comprising instructions designed explicitly to evaluate LMMs' ability to perform context-sensitive text-rich visual reasoning. ConTextual emphasizes diverse real-world scenarios (e.g., time-reading, navigation, shopping and more) demanding a deeper understanding of the interactions between textual and visual elements. Our findings reveal a significant performance gap of 30.8% between the best-performing LMM, GPT-4V(ision), and human capabilities using human evaluation indicating substantial room for improvement in context-sensitive text-rich visual reasoning. Notably, while GPT-4V excelled in abstract categories like meme and quote interpretation, its overall performance still lagged behind humans. In add
+    arXiv:2403.09037v1 Announce Type: cross  Abstract: Large vision-language models (LVLMs), designed to interpret and respond to human instructions, occasionally generate hallucinated or harmful content due to inappropriate instructions. This study uses linear probing to shed light on the hidden knowledge at the output layer of LVLMs. We demonstrate that the logit distributions of the first tokens contain sufficient information to determine whether to respond to the instructions, including recognizing unanswerable visual questions, defending against multi-modal jailbreaking attack, and identifying deceptive questions. Such hidden knowledge is gradually lost in logits of subsequent tokens during response generation. Then, we illustrate a simple decoding strategy at the generation of the first token, effectively improving the generated content. In experiments, we find a few interesting insights: First, the CLIP model already contains a strong signal for solving these tasks, indicating poten
     
-[^7]: 一个简单的潜在扩散方法应用于全景分割和遮罩修复
+[^4]: 如何赢得BraTS 2023成年胶质瘤挑战？假装而已！增强的合成数据增强和模型集成用于脑肿瘤分割
 
-    A Simple Latent Diffusion Approach for Panoptic Segmentation and Mask Inpainting. (arXiv:2401.10227v1 [cs.CV])
+    How we won BraTS 2023 Adult Glioma challenge? Just faking it! Enhanced Synthetic Data Augmentation and Model Ensemble for brain tumour segmentation
 
-    [http://arxiv.org/abs/2401.10227](http://arxiv.org/abs/2401.10227)
+    [https://arxiv.org/abs/2402.17317](https://arxiv.org/abs/2402.17317)
 
-    该论文提出了一种基于稳定扩散的潜在扩散方法，用于全景分割和遮罩修复，通过简化架构来避免复杂性，实现了生成模型解锁遮罩修复功能，具有应用于交互式分割的潜力。
-
-    
-
-    全景和实例分割网络通常通过专门的目标检测模块，复杂的损失函数和特殊的后处理步骤来训练，以处理实例遮罩的置换不变性。
-
-    Panoptic and instance segmentation networks are often trained with specialized object detection modules, complex loss functions, and ad-hoc post-processing steps to handle the permutation-invariance of the instance masks. This work builds upon Stable Diffusion and proposes a latent diffusion approach for panoptic segmentation, resulting in a simple architecture which omits these complexities. Our training process consists of two steps: (1) training a shallow autoencoder to project the segmentation masks to latent space; (2) training a diffusion model to allow image-conditioned sampling in latent space. The use of a generative model unlocks the exploration of mask completion or inpainting, which has applications in interactive segmentation. The experimental validation yields promising results for both panoptic segmentation and mask inpainting. While not setting a new state-of-the-art, our model's simplicity, generality, and mask completion capability are desirable properties.
-    
-[^8]: 在PyTorch上重新实现的VMAF：一些实验结果
-
-    VMAF Re-implementation on PyTorch: Some Experimental Results. (arXiv:2310.15578v1 [cs.LG])
-
-    [http://arxiv.org/abs/2310.15578](http://arxiv.org/abs/2310.15578)
-
-    这项研究重新在PyTorch上实现了VMAF，与标准实现进行比较，结果显示在VMAF单位上的差异小于$10^{-2}$。同时，研究了在使用VMAF作为目标函数时的梯度计算，并证明使用该函数进行训练不会导致梯度不良。
+    通过使用生成对抗网络和配准来增强合成数据，我们成功训练了三个不同的深度学习模型，结合卷积算法和transformers技术填补了知识差距，取得了0.9005的dice结果。
 
     
 
-    基于标准的VMAF实现，我们提出了使用PyTorch框架实现VMAF的方法。对于这个实现，与标准的(libvmaf)进行比较，VMAF单位上的差异小于$10^{-2}$。我们研究了在使用VMAF作为目标函数时的梯度计算，并证明使用该函数进行训练不会导致梯度不良。
+    深度学习是颅内肿瘤分割的最先进技术，但这需要大量高质量数据，尤其在医学领域难以获得。因此，我们的解决方案通过使用非传统的数据增强机制来解决这个问题。生成对抗网络和配准被用来大量增加可用样本数，用于训练三个不同的深度学习模型，分别用于颅内肿瘤分割的BraTS2023挑战的第一个任务。第一个模型是标准nnU-Net，第二个是Swin UNETR，第三个是BraTS 2021挑战的获胜方案。整个流程基于nnU-Net实现，除了合成数据的生成。卷积算法和transformers的使用能够填补彼此的知识差距。使用新指标，我们的最佳解决方案达到了0.9005的dice结果。
 
-    Based on the standard VMAF implementation we propose an implementation of VMAF using PyTorch framework. For this implementation comparisons with the standard (libvmaf) show the discrepancy $\lesssim 10^{-2}$ in VMAF units. We investigate gradients computation when using VMAF as an objective function and demonstrate that training using this function does not result in ill-behaving gradients.
+    arXiv:2402.17317v1 Announce Type: cross  Abstract: Deep Learning is the state-of-the-art technology for segmenting brain tumours. However, this requires a lot of high-quality data, which is difficult to obtain, especially in the medical field. Therefore, our solutions address this problem by using unconventional mechanisms for data augmentation. Generative adversarial networks and registration are used to massively increase the amount of available samples for training three different deep learning models for brain tumour segmentation, the first task of the BraTS2023 challenge. The first model is the standard nnU-Net, the second is the Swin UNETR and the third is the winning solution of the BraTS 2021 Challenge. The entire pipeline is built on the nnU-Net implementation, except for the generation of the synthetic data. The use of convolutional algorithms and transformers is able to fill each other's knowledge gaps. Using the new metric, our best solution achieves the dice results 0.9005
     
-[^9]: 改进稠密三维视觉引用的三种方法
+[^5]: 扩散生成模型的最近邻评分估计器
 
-    Three Ways to Improve Verbo-visual Fusion for Dense 3D Visual Grounding. (arXiv:2309.04561v1 [cs.CV])
+    Nearest Neighbour Score Estimators for Diffusion Generative Models
 
-    [http://arxiv.org/abs/2309.04561](http://arxiv.org/abs/2309.04561)
+    [https://arxiv.org/abs/2402.08018](https://arxiv.org/abs/2402.08018)
 
-    提出了一个稠密三维引用网络ConcreteNet，包含三个新模块，旨在改善具有相同语义类别干扰因素的重复实例的引用性能。
-
-    
-
-    三维视觉引用是指通过自然语言描述来定位三维场景中被引用的物体的任务。该任务在自主室内机器人到AR/VR等各种应用中广泛应用。目前一种常见的解决方案是通过检测来完成三维视觉引用，即通过边界框来定位。然而，在需要进行物理交互的实际应用中，边界框不足以描述物体的几何属性。因此，我们解决了稠密三维视觉引用的问题，即基于引用的三维实例分割。我们提出了一个稠密三维引用网络ConcreteNet，其中包含三个独立的新模块，旨在改进具有相同语义类别干扰因素的具有挑战性的重复实例的引用性能。首先，我们引入了一个自下而上的注意力融合模块，旨在消除实例间关系线索的歧义性。接下来，我们构造一个cont
-
-    3D visual grounding is the task of localizing the object in a 3D scene which is referred by a description in natural language. With a wide range of applications ranging from autonomous indoor robotics to AR/VR, the task has recently risen in popularity. A common formulation to tackle 3D visual grounding is grounding-by-detection, where localization is done via bounding boxes. However, for real-life applications that require physical interactions, a bounding box insufficiently describes the geometry of an object. We therefore tackle the problem of dense 3D visual grounding, i.e. referral-based 3D instance segmentation. We propose a dense 3D grounding network ConcreteNet, featuring three novel stand-alone modules which aim to improve grounding performance for challenging repetitive instances, i.e. instances with distractors of the same semantic class. First, we introduce a bottom-up attentive fusion module that aims to disambiguate inter-instance relational cues, next we construct a cont
-    
-[^10]: MOCA: 自监督学习通过预测掩码式在线码本分配实现表示学习
-
-    MOCA: Self-supervised Representation Learning by Predicting Masked Online Codebook Assignments. (arXiv:2307.09361v1 [cs.CV])
-
-    [http://arxiv.org/abs/2307.09361](http://arxiv.org/abs/2307.09361)
-
-    MOCA是一种自监督学习方法，通过预测掩码式在线码本分配来实现表示学习。它同时具备良好的语境推理属性和对图像扰动的不变性，并在低样本设置和各种评估协议中取得了最新的最先进结果，训练速度比之前的方法快3倍以上。
+    本论文提出了一种新颖的最近邻评分函数估计器，通过利用训练集中的多个样本大大降低了估计器的方差，可用于训练一致性模型和扩散模型，提高收敛速度、样本质量，并为进一步的研究提供了新的可能性。
 
     
 
-    自监督学习可以用于缓解Vision Transformer网络对大型全注释数据集的贪婪需求。不同类别的自监督学习提供了具有良好语境推理属性的表示，例如使用掩码图像建模策略，或者对图像扰动具有不变性的表示，例如使用对比方法。在这项工作中，我们提出了一种单阶段、独立的方法MOCA，使用基于高级特征（而不是像素级细节）定义的新型掩码和预测目标来统一这两种期望的属性。此外，我们展示了如何以协同和计算高效的方式有效地应用这两种学习范式。通过这样做，我们在低样本设置上实现了新的最先进结果，并且在各种评估协议中取得了强大的实验结果，其训练速度至少比之前的方法快3倍。
+    评分函数估计是训练和采样扩散生成模型的基础。尽管如此，最常用的估计器要么是有偏的神经网络逼近，要么是基于条件评分的高方差蒙特卡洛估计器。我们引入了一种创新的最近邻评分函数估计器，利用训练集中的多个样本大大降低了估计器的方差。我们在两个引人注目的应用中利用了低方差估计器。在使用我们的估计器进行训练一致性模型时，我们报告了收敛速度和样本质量显著提高。在扩散模型中，我们展示了我们的估计器可以替代学习网络进行概率流ODE积分，为未来研究开辟了有前景的新方向。
 
-    Self-supervised learning can be used for mitigating the greedy needs of Vision Transformer networks for very large fully-annotated datasets. Different classes of self-supervised learning offer representations with either good contextual reasoning properties, e.g., using masked image modeling strategies, or invariance to image perturbations, e.g., with contrastive methods. In this work, we propose a single-stage and standalone method, MOCA, which unifies both desired properties using novel mask-and-predict objectives defined with high-level features (instead of pixel-level details). Moreover, we show how to effectively employ both learning paradigms in a synergistic and computation-efficient way. Doing so, we achieve new state-of-the-art results on low-shot settings and strong experimental results in various evaluation protocols with a training that is at least 3 times faster than prior methods.
+    Score function estimation is the cornerstone of both training and sampling from diffusion generative models. Despite this fact, the most commonly used estimators are either biased neural network approximations or high variance Monte Carlo estimators based on the conditional score. We introduce a novel nearest neighbour score function estimator which utilizes multiple samples from the training set to dramatically decrease estimator variance. We leverage our low variance estimator in two compelling applications. Training consistency models with our estimator, we report a significant increase in both convergence speed and sample quality. In diffusion models, we show that our estimator can replace a learned network for probability-flow ODE integration, opening promising new avenues of future research.
     
-[^11]: 鲁棒语义分割：强鲁棒性攻击和快速训练鲁棒性模型
+[^6]: Scissorhands: 通过网络连接敏感性在数据影响中进行数据擦除
 
-    Robust Semantic Segmentation: Strong Adversarial Attacks and Fast Training of Robust Models. (arXiv:2306.12941v1 [cs.CV])
+    Scissorhands: Scrub Data Influence via Connection Sensitivity in Networks. (arXiv:2401.06187v1 [cs.LG])
 
-    [http://arxiv.org/abs/2306.12941](http://arxiv.org/abs/2306.12941)
+    [http://arxiv.org/abs/2401.06187](http://arxiv.org/abs/2401.06187)
 
-    本文提出了针对语义分割模型的解决方案，使得可以对其进行攻击并提供了更好的评估协议。同时，通过微调鲁棒的主干，可以有限的计算代价训练对抗性鲁棒的分割模型。
-
-    
-
-    虽然大量的工作已经集中在设计针对图像分类器的对抗性攻击上，但只有少数方法存在用于攻击语义分割模型。我们展示了攻击分割模型的任务特定挑战，并提出了新的解决方案。我们的最终评估协议优于现有方法，并表明这些方法可能高估了模型的鲁棒性。此外，至今最成功的获得鲁棒图像分类器的对抗性训练无法成功应用于语义分割。我们认为这是因为要学习的任务更具挑战性，需要比图像分类更高的计算量。作为解决方法，我们展示了通过利用最近在鲁棒ImageNet分类器方面的进展，可以通过微调鲁棒的主干，以有限的计算代价训练对抗性鲁棒的分割模型。
-
-    While a large amount of work has focused on designing adversarial attacks against image classifiers, only a few methods exist to attack semantic segmentation models. We show that attacking segmentation models presents task-specific challenges, for which we propose novel solutions. Our final evaluation protocol outperforms existing methods, and shows that those can overestimate the robustness of the models. Additionally, so far adversarial training, the most successful way for obtaining robust image classifiers, could not be successfully applied to semantic segmentation. We argue that this is because the task to be learned is more challenging, and requires significantly higher computational effort than for image classification. As a remedy, we show that by taking advantage of recent advances in robust ImageNet classifiers, one can train adversarially robust segmentation models at limited computational cost by fine-tuning robust backbones.
-    
-[^12]: CompoDiff: 基于潜在扩散的多功能组合图像检索
-
-    CompoDiff: Versatile Composed Image Retrieval With Latent Diffusion. (arXiv:2303.11916v1 [cs.CV])
-
-    [http://arxiv.org/abs/2303.11916](http://arxiv.org/abs/2303.11916)
-
-    CompoDiff 是一种多功能的组合图像检索模型，通过接受各种条件，具有潜在扩散的能力，并在 FashionIQ 上实现了新的零样本最新技术水平。其特征位于完整的 CLIP 嵌入空间中，可以直接用于所有利用 CLIP 空间的模型。
+    Scissorhands 是一种新的机器取消学习方法，通过连接敏感性识别与遗忘数据相关的最相关参数，并通过重新训练修剪的模型来擦除数据影响。
 
     
 
-    本文提出了一种新颖的基于扩散的模型 CompoDiff，用于解决具有潜在扩散的组合图像检索（CIR）问题，并提供了一个由 1800 万个参考图像、条件和相应的目标图像三元组组成的新数据集，用于训练模型。CompoDiff 不仅在像 FashionIQ 这样的 CIR 基准测试上实现了新的零样本最新技术水平，而且还通过接收各种条件（如负文本和图像遮罩条件），使得 CIR 更加多功能，这是现有 CIR 方法所不具备的。此外，CompoDiff 特征位于完整的 CLIP 嵌入空间中，因此它们可以直接用于利用 CLIP 空间的所有现有模型。训练所使用的代码和数据集，以及预训练权重可在 https://github.com/navervision/CompoDiff 上获得。
+    机器取消学习已成为一项重要任务，旨在擦除训练模型中的数据影响。它符合最新的数据监管标准，增强了机器学习应用的隐私和安全性。大多数现有的机器取消学习方法表现良好，但通常需要访问其余数据的全部内容，在某些情况下可能不可行。在这项工作中，我们提出了一种新的机器取消学习方法“Scissorhands”，它只使用训练数据的子集来有效运行。初始阶段，Scissorhands通过连接敏感性在给定模型中识别与遗忘数据相关的最相关参数。该过程通过重新初始化这些参数中具有最大影响力的前k%的最相关参数，从而产生一个用于擦除遗忘数据影响的修剪模型。随后，Scissorhands通过最小-最大优化过程对修剪的模型进行再训练，寻找保留信息的参数。
 
-    This paper proposes a novel diffusion-based model, CompoDiff, for solving Composed Image Retrieval (CIR) with latent diffusion and presents a newly created dataset of 18 million reference images, conditions, and corresponding target image triplets to train the model. CompoDiff not only achieves a new zero-shot state-of-the-art on a CIR benchmark such as FashionIQ but also enables a more versatile CIR by accepting various conditions, such as negative text and image mask conditions, which are unavailable with existing CIR methods. In addition, the CompoDiff features are on the intact CLIP embedding space so that they can be directly used for all existing models exploiting the CLIP space. The code and dataset used for the training, and the pre-trained weights are available at https://github.com/navervision/CompoDiff
+    Machine unlearning has become a pivotal task to erase the influence of data from a trained model. It adheres to recent data regulation standards and enhances the privacy and security of machine learning applications. Most existing machine unlearning methods perform well, however, they typically necessitate access to the entirety of the remaining data, which might not be feasible in certain scenarios. In this work, we present a new machine unlearning approach Scissorhands, which operates effectively with only a subset of the training data. Initially, Scissorhands identifies the most pertinent parameters in the given model relative to the forgetting data via connection sensitivity. This process involves reinitializing the most influential top-$k$ percent of these parameters, resulting in a trimmed model for erasing the influence of the forgetting data. Subsequently, Scissorhands retrains the trimmed model through a min-max optimization process, seeking parameters that preserve informatio
+    
+[^7]: 基于属性的生成模型可解释性评估指标
+
+    Attribute Based Interpretable Evaluation Metrics for Generative Models. (arXiv:2310.17261v1 [cs.CV])
+
+    [http://arxiv.org/abs/2310.17261](http://arxiv.org/abs/2310.17261)
+
+    本论文提出了一种基于属性的生成模型可解释性评估指标，通过度量生成图像集与训练集关于属性强度分布的差异，可以更好地衡量模型生成结果与训练数据的相似度。
+
+    
+
+    当训练数据集中狗和猫的比例为1:1时，生成模型生成的狗和猫也应更好地符合训练数据集的分布。然而，现有的评估指标只提供了“多样性”这个解释性之外的维度。在这个背景下，我们提出了一种新的评估协议，通过度量生成图像集与训练集关于属性强度分布的差异来捕捉这种现象。单属性差异（SaD）衡量了关于单个属性的概率密度函数的差异。双属性差异（PaD）衡量了关于一对属性的联合概率密度函数的差异。它们提供了模型所面临的困难属性。为了衡量图像的属性强度，我们提出了异构CLIP评分（HCS），它通过测量图像和文本向量之间的余弦相似度来实现。
+
+    When the training dataset comprises a 1:1 proportion of dogs to cats, a generative model that produces 1:1 dogs and cats better resembles the training species distribution than another model with 3:1 dogs and cats. Can we capture this phenomenon using existing metrics? Unfortunately, we cannot, because these metrics do not provide any interpretability beyond "diversity". In this context, we propose a new evaluation protocol that measures the divergence of a set of generated images from the training set regarding the distribution of attribute strengths as follows. Single-attribute Divergence (SaD) measures the divergence regarding PDFs of a single attribute. Paired-attribute Divergence (PaD) measures the divergence regarding joint PDFs of a pair of attributes. They provide which attributes the models struggle. For measuring the attribute strengths of an image, we propose Heterogeneous CLIPScore (HCS) which measures the cosine similarity between image and text vectors with heterogeneous 
+    
+[^8]: EGIC:增强的低位速率生成图像压缩方法在语义分割的指导下
+
+    EGIC: Enhanced Low-Bit-Rate Generative Image Compression Guided by Semantic Segmentation. (arXiv:2309.03244v1 [eess.IV])
+
+    [http://arxiv.org/abs/2309.03244](http://arxiv.org/abs/2309.03244)
+
+    EGIC是一种增强的低位速率生成图像压缩方法，通过语义分割提供指导。它在失真感知和失真方向基线方法上表现优越，并具有较小的模型参数和优秀的插值特性。
+
+    
+
+    我们引入了一种新颖的生成图像压缩方法EGIC，它允许从一个单一模型有效地遍历失真感知曲线。具体而言，我们提出了一种隐式编码的图像插值变体，用于预测在MSE优化和GAN优化解码器输出之间的残差。在接收端，用户可以控制残差对基于GAN的重建的影响。结合改进的基于GAN的构建块，EGIC在感知导向和失真导向的基线方法（包括HiFiC，MRIC和DIRAC）上表现优于大多数方法，在失真端与VTM-20.0几乎相当。EGIC实现简单，非常轻量级（与HiFiC相比，模型参数只有0.18倍），并提供优异的插值特性，这使得它成为针对低位范围的实际应用的有希望的候选方法。
+
+    We introduce EGIC, a novel generative image compression method that allows traversing the distortion-perception curve efficiently from a single model. Specifically, we propose an implicitly encoded variant of image interpolation that predicts the residual between a MSE-optimized and GAN-optimized decoder output. On the receiver side, the user can then control the impact of the residual on the GAN-based reconstruction. Together with improved GAN-based building blocks, EGIC outperforms a wide-variety of perception-oriented and distortion-oriented baselines, including HiFiC, MRIC and DIRAC, while performing almost on par with VTM-20.0 on the distortion end. EGIC is simple to implement, very lightweight (e.g. 0.18x model parameters compared to HiFiC) and provides excellent interpolation characteristics, which makes it a promising candidate for practical applications targeting the low bit range.
+    
+[^9]: 重新思考基于深度学习的自动驾驶系统中的预测和规划的整合：一项综述
+
+    Rethinking Integration of Prediction and Planning in Deep Learning-Based Automated Driving Systems: A Review. (arXiv:2308.05731v1 [cs.RO])
+
+    [http://arxiv.org/abs/2308.05731](http://arxiv.org/abs/2308.05731)
+
+    这项综述重新思考了基于深度学习的自动驾驶系统中预测和规划的整合问题，提出了将其作为相互依赖的联合步骤来提高安全性、效率性和舒适性的必要性。
+
+    
+
+    自动驾驶有可能彻底改变个人、公共和货运交通的方式。除了感知环境的巨大挑战外，即准确地使用可用的传感器数据感知环境，自动驾驶还包括规划一个安全、舒适和高效的运动轨迹。为了促进安全和进步，许多工作依赖于模块化的交通未来运动的预测。模块化的自动驾驶系统通常将预测和规划作为顺序的独立任务处理。虽然这考虑了周围交通对自车的影响，但它未能预测交通参与者对自车行为的反应。最近的研究表明，将预测和规划整合为相互依赖的联合步骤是实现安全、高效和舒适驾驶所必需的。虽然有各种模型实现了这种集成系统，但对不同原理的全面概述和理论理解仍然缺乏。
+
+    Automated driving has the potential to revolutionize personal, public, and freight mobility. Besides the enormous challenge of perception, i.e. accurately perceiving the environment using available sensor data, automated driving comprises planning a safe, comfortable, and efficient motion trajectory. To promote safety and progress, many works rely on modules that predict the future motion of surrounding traffic. Modular automated driving systems commonly handle prediction and planning as sequential separate tasks. While this accounts for the influence of surrounding traffic on the ego-vehicle, it fails to anticipate the reactions of traffic participants to the ego-vehicle's behavior. Recent works suggest that integrating prediction and planning in an interdependent joint step is necessary to achieve safe, efficient, and comfortable driving. While various models implement such integrated systems, a comprehensive overview and theoretical understanding of different principles are lacking.
+    
+[^10]: 从假到真（FFR）：一种用于减少与合成数据相关性错误的两阶段训练流程
+
+    From Fake to Real (FFR): A two-stage training pipeline for mitigating spurious correlations with synthetic data. (arXiv:2308.04553v1 [cs.CV])
+
+    [http://arxiv.org/abs/2308.04553](http://arxiv.org/abs/2308.04553)
+
+    本文提出了一个两阶段训练流程，通过在一个平衡的合成数据集上进行预训练，然后在真实数据上进行微调，减少了视觉识别模型学习到与数据集偏差相关的错误的问题。
+
+    
+
+    视觉识别模型容易学习到由于训练集的不平衡导致的相关性错误，其中某些群体（如女性）在某些类别（如程序员）中代表性不足。生成模型通过为少数样本生成合成数据来减少这种偏差，从而平衡训练集。然而，先前使用这些方法的工作忽视了视觉识别模型往往能够学习区分真实图像和合成图像的能力，因此无法消除原始数据集中的偏差。在我们的工作中，我们提出了一种新颖的两阶段流程来减少这个问题，其中1）我们在平衡的合成数据集上进行预训练，然后2）在真实数据上进行微调。使用这个流程，我们避免了在真实数据和合成数据上的训练，从而避免了真实数据和合成数据之间的偏差。此外，在第一步中我们学习到了抵抗偏差的稳健特征，在第二步中减轻了偏差。
+
+    Visual recognition models are prone to learning spurious correlations induced by an imbalanced training set where certain groups (\eg Females) are under-represented in certain classes (\eg Programmers). Generative models offer a promising direction in mitigating this bias by generating synthetic data for the minority samples and thus balancing the training set. However, prior work that uses these approaches overlooks that visual recognition models could often learn to differentiate between real and synthetic images and thus fail to unlearn the bias in the original dataset. In our work, we propose a novel two-stage pipeline to mitigate this issue where 1) we pre-train a model on a balanced synthetic dataset and then 2) fine-tune on the real data. Using this pipeline, we avoid training on both real and synthetic data, thus avoiding the bias between real and synthetic data. Moreover, we learn robust features against the bias in the first step that mitigate the bias in the second step. Mor
+    
+[^11]: 利用运动增量进行时空分支的运动预测
+
+    Spatio-Temporal Branching for Motion Prediction using Motion Increments. (arXiv:2308.01097v1 [cs.CV])
+
+    [http://arxiv.org/abs/2308.01097](http://arxiv.org/abs/2308.01097)
+
+    本论文提出了一种利用运动增量进行时空分支的运动预测网络，通过解耦时域和空域特征的学习，提取更多的运动信息。
+
+    
+
+    人体运动预测已成为一个热门的研究课题，但由于未来姿势的随机和不规则性质，这仍然是一个具有挑战性的任务。传统方法依赖于手工特征和机器学习技术，往往难以建模人体运动的复杂动力学。最近基于深度学习的方法通过学习运动的时空表示取得了成功，但这些模型常常忽视运动数据的可靠性。此外，骨架节点的时域和空域依赖性是不同的。时域关系捕捉到随时间的运动信息，而空域关系描述了身体结构和不同节点之间的关系。在本文中，我们提出了一种新颖的利用增量信息进行时空分支的运动预测网络，它解耦了时域和空域特征的学习，提取了更多的运动信息。
+
+    Human motion prediction (HMP) has emerged as a popular research topic due to its diverse applications, but it remains a challenging task due to the stochastic and aperiodic nature of future poses. Traditional methods rely on hand-crafted features and machine learning techniques, which often struggle to model the complex dynamics of human motion. Recent deep learning-based methods have achieved success by learning spatio-temporal representations of motion, but these models often overlook the reliability of motion data. Additionally, the temporal and spatial dependencies of skeleton nodes are distinct. The temporal relationship captures motion information over time, while the spatial relationship describes body structure and the relationships between different nodes. In this paper, we propose a novel spatio-temporal branching network using incremental information for HMP, which decouples the learning of temporal-domain and spatial-domain features, extracts more motion information, and ac
+    
+[^12]: DIFFender：基于扩散的对抗性防御方法用于抵御Patch攻击
+
+    DIFFender: Diffusion-Based Adversarial Defense against Patch Attacks. (arXiv:2306.09124v2 [cs.CV] UPDATED)
+
+    [http://arxiv.org/abs/2306.09124](http://arxiv.org/abs/2306.09124)
+
+    DIFFender是一种基于扩散的对抗性防御方法，通过定位和恢复两个阶段的操作，利用文本引导的扩散模型来防御对抗性Patch，从而提高其整体防御性能。
+
+    
+
+    对抗性攻击，尤其是Patch攻击，对深度学习模型的鲁棒性和可靠性构成了重大威胁。开发可靠的防御方法以抵御Patch攻击对于实际应用至关重要，然而当前在这个领域的研究还不令人满意。在本文中，我们提出了DIFFender，一种新颖的防御方法，它利用文本引导的扩散模型来防御对抗性Patch。DIFFender包括两个主要阶段：Patch定位和Patch恢复。在定位阶段，我们发现并利用了扩散模型的一个有趣特性，以有效地识别对抗性Patch的位置。在恢复阶段，我们利用扩散模型重建图像中的对抗性区域同时保持视觉内容的完整性。重要的是，这两个阶段都受到统一的扩散模型的精心引导，因此我们可以利用它们之间的紧密相互作用来提高整个防御性能。
+
+    Adversarial attacks, particularly patch attacks, pose significant threats to the robustness and reliability of deep learning models. Developing reliable defenses against patch attacks is crucial for real-world applications, yet current research in this area is not satisfactory. In this paper, we propose DIFFender, a novel defense method that leverages a text-guided diffusion model to defend against adversarial patches. DIFFender includes two main stages: patch localization and patch restoration. In the localization stage, we find and exploit an intriguing property of the diffusion model to effectively identify the locations of adversarial patches. In the restoration stage, we employ the diffusion model to reconstruct the adversarial regions in the images while preserving the integrity of the visual content. Importantly, these two stages are carefully guided by a unified diffusion model, thus we can utilize the close interaction between them to improve the whole defense performance. Mor
+    
+[^13]: SSL清理：自监督学习中的木马检测和缓解
+
+    SSL-Cleanse: Trojan Detection and Mitigation in Self-Supervised Learning. (arXiv:2303.09079v1 [cs.CR])
+
+    [http://arxiv.org/abs/2303.09079](http://arxiv.org/abs/2303.09079)
+
+    本篇论文讨论了自监督学习中的木马攻击检测和缓解问题。由于这种攻击危险隐匿，且在下游分类器中很难检测出来。目前在超监督学习中的木马检测方法可以潜在地保护SSL下游分类器，但在其广泛传播之前识别和处理SSL编码器中的触发器是一项艰巨的任务。
+
+    
+
+    自监督学习（SSL）是一种常用的学习和编码数据表示的方法。通过使用预先训练的SSL图像编码器并在其顶部训练下游分类器，可以在各种任务上实现令人印象深刻的性能，而只需很少的标记数据。SSL的增加使用导致了与SSL编码器相关的安全研究和各种木马攻击的发展。在SSL编码器中插入木马攻击的危险在于它们能够隐蔽地操作并在各种用户和设备之间广泛传播。Trojaned编码器中的后门行为的存在可能会被下游分类器意外继承，使检测和缓解威胁变得更加困难。虽然超监督学习中当前的木马检测方法可以潜在地保护SSL下游分类器，但在其广泛传播之前识别和处理SSL编码器中的触发器是一项艰巨的任务。
+
+    Self-supervised learning (SSL) is a commonly used approach to learning and encoding data representations. By using a pre-trained SSL image encoder and training a downstream classifier on top of it, impressive performance can be achieved on various tasks with very little labeled data. The increasing usage of SSL has led to an uptick in security research related to SSL encoders and the development of various Trojan attacks. The danger posed by Trojan attacks inserted in SSL encoders lies in their ability to operate covertly and spread widely among various users and devices. The presence of backdoor behavior in Trojaned encoders can inadvertently be inherited by downstream classifiers, making it even more difficult to detect and mitigate the threat. Although current Trojan detection methods in supervised learning can potentially safeguard SSL downstream classifiers, identifying and addressing triggers in the SSL encoder before its widespread dissemination is a challenging task. This is be
+    
+[^14]: 基于输入梯度传递的神经架构相似性研究
+
+    Similarity of Neural Architectures Based on Input Gradient Transferability. (arXiv:2210.11407v2 [cs.LG] UPDATED)
+
+    [http://arxiv.org/abs/2210.11407](http://arxiv.org/abs/2210.11407)
+
+    本研究利用对抗攻击传递度量，设计了一个量化且可扩展的神经架构相似度函数，分析了69个最先进的ImageNet分类器，发现多样化的神经架构可以提高模型集合和知识蒸馏的性能。
+
+    
+
+    近年来，为图像分类而开发了大量的深度神经架构，这些模型是否相似或不同，以及什么因素影响它们的相似性或不同尚未得到充分的研究。本文旨在设计一个量化且可扩展的神经架构相似度函数以回答这个问题。我们利用对抗攻击传递度量，该度量具有与输入梯度和决策边界相关的信息，被广泛用于理解模型行为。我们使用所提出的相似度函数对69个最先进的ImageNet分类器进行了大规模分析，从而回答了这个问题。此外，我们观察到与神经架构相关的现象，即模型多样性可以在特定条件下对模型集合和知识蒸馏的性能有所提升。我们的结果为为什么开发具有不同组件的多样化神经架构是必要的提供了见解。
+
+    In recent years, a huge amount of deep neural architectures have been developed for image classification. It remains curious whether these models are similar or different and what factors contribute to their similarities or differences. To address this question, we aim to design a quantitative and scalable similarity function between neural architectures. We utilize adversarial attack transferability, which has information related to input gradients and decision boundaries that are widely used to understand model behaviors. We conduct a large-scale analysis on 69 state-of-the-art ImageNet classifiers using our proposed similarity function to answer the question. Moreover, we observe neural architecture-related phenomena using model similarity that model diversity can lead to better performance on model ensembles and knowledge distillation under specific conditions. Our results provide insights into why the development of diverse neural architectures with distinct components is necessar
     
 

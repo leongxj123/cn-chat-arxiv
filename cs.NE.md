@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Backpropagation through space, time, and the brain](https://arxiv.org/abs/2403.16933) | 提出了 Generalized Latent Equilibrium (GLE)，它是一种针对神经元网络的物理动态局部时空信用分配的计算框架。 |
+| [^1] | [Mode Connectivity in Auction Design.](http://arxiv.org/abs/2305.11005) | 该论文研究了拍卖设计领域的一个基本问题，即最优拍卖设计。在研究中，作者证明了神经网络在一定条件下可以通过简单的分段线性路径连接不同的局部最优解，并取得了成功。 |
+| [^2] | [Towards Lower Bounds on the Depth of ReLU Neural Networks.](http://arxiv.org/abs/2105.14835) | 该研究运用数学和优化理论方法，就 ReLU 神经网络的深度下界做了探究，有助于更好地理解这种网络所能表示的函数类的性质。此外，该研究还肯定了一项旧的分段线性函数猜想。 |
 
 # 详细
 
-[^1]: 通过空间、时间和大脑进行反向传播
+[^1]: 拍卖设计中的模式连通性
 
-    Backpropagation through space, time, and the brain
+    Mode Connectivity in Auction Design. (arXiv:2305.11005v1 [cs.GT])
 
-    [https://arxiv.org/abs/2403.16933](https://arxiv.org/abs/2403.16933)
+    [http://arxiv.org/abs/2305.11005](http://arxiv.org/abs/2305.11005)
 
-    提出了 Generalized Latent Equilibrium (GLE)，它是一种针对神经元网络的物理动态局部时空信用分配的计算框架。
+    该论文研究了拍卖设计领域的一个基本问题，即最优拍卖设计。在研究中，作者证明了神经网络在一定条件下可以通过简单的分段线性路径连接不同的局部最优解，并取得了成功。
 
     
 
-    有效的神经网络学习需要根据它们对解决任务的相对贡献来调整单个突触。然而，无论是生物还是人工的物理神经系统都受到时空局限。这样的网络如何执行高效的信用分配，在很大程度上仍是一个悬而未决的问题。在机器学习中，错误的反向传播算法几乎普遍被空间（BP）和时间（BPTT）两种方式给出答案。然而，BP(TT)被广泛认为依赖于不具生物学意义的假设，特别是关于时空局限性，而正向传播模型，如实时递归学习（RTRL），则受到内存约束的限制。我们引入了广义潜在平衡（GLE），这是一个针对神经元物理动态网络完全局部时空信用分配的计算框架。我们从
+    最优拍卖设计是算法博弈论中的一个基本问题，即使在非常简单的情况下，这个问题也很难。最近不同的经济学可微分理论表明，神经网络可以有效地学习已知的最优拍卖机制，发现有趣的新机制。为了理论上证明它们的实证成功，我们聚焦于第一个这样的网络，RochetNet，并研究所谓的仿射极大化拍卖的广义版本。我们证明它们满足模式连通性，即局部最优解通过一个简单的分段线性路径连接，路径上的每个解都几乎和两个局部最优解之一一样好。模式连通性最近被证明是神经网络用于预测问题的一个有趣的经验和理论的属性。我们的结果是对可微分经济学领域中神经网络用于解决非线性设计问题的第一个这样的分析。
 
-    arXiv:2403.16933v1 Announce Type: cross  Abstract: Effective learning in neuronal networks requires the adaptation of individual synapses given their relative contribution to solving a task. However, physical neuronal systems -- whether biological or artificial -- are constrained by spatio-temporal locality. How such networks can perform efficient credit assignment, remains, to a large extent, an open question. In Machine Learning, the answer is almost universally given by the error backpropagation algorithm, through both space (BP) and time (BPTT). However, BP(TT) is well-known to rely on biologically implausible assumptions, in particular with respect to spatiotemporal (non-)locality, while forward-propagation models such as real-time recurrent learning (RTRL) suffer from prohibitive memory constraints. We introduce Generalized Latent Equilibrium (GLE), a computational framework for fully local spatio-temporal credit assignment in physical, dynamical networks of neurons. We start by 
+    Optimal auction design is a fundamental problem in algorithmic game theory. This problem is notoriously difficult already in very simple settings. Recent work in differentiable economics showed that neural networks can efficiently learn known optimal auction mechanisms and discover interesting new ones. In an attempt to theoretically justify their empirical success, we focus on one of the first such networks, RochetNet, and a generalized version for affine maximizer auctions. We prove that they satisfy mode connectivity, i.e., locally optimal solutions are connected by a simple, piecewise linear path such that every solution on the path is almost as good as one of the two local optima. Mode connectivity has been recently investigated as an intriguing empirical and theoretically justifiable property of neural networks used for prediction problems. Our results give the first such analysis in the context of differentiable economics, where neural networks are used directly for solving non-
+    
+[^2]: 关于 ReLU 神经网络深度下界的探究
+
+    Towards Lower Bounds on the Depth of ReLU Neural Networks. (arXiv:2105.14835v4 [cs.LG] UPDATED)
+
+    [http://arxiv.org/abs/2105.14835](http://arxiv.org/abs/2105.14835)
+
+    该研究运用数学和优化理论方法，就 ReLU 神经网络的深度下界做了探究，有助于更好地理解这种网络所能表示的函数类的性质。此外，该研究还肯定了一项旧的分段线性函数猜想。
+
+    
+
+    我们运用混合整数优化、多面体理论和热带几何学等技术，为理解具有 ReLU 激活和给定结构的神经网络所能表示的函数类做出了更好的贡献。尽管普适逼近定理认为单层隐藏层就足以学习任何函数，但我们提供了一个数学的对称性，并详细探讨了添加更多层（无大小限制）时是否严格增加了可表示函数的类。作为研究副产品，我们肯定了 Wang 和 Sun（2005）有关分段线性函数的一个旧猜想。我们还给出了表示具有对数深度函数所需的神经网络大小上界。
+
+    We contribute to a better understanding of the class of functions that can be represented by a neural network with ReLU activations and a given architecture. Using techniques from mixed-integer optimization, polyhedral theory, and tropical geometry, we provide a mathematical counterbalance to the universal approximation theorems which suggest that a single hidden layer is sufficient for learning any function. In particular, we investigate whether the class of exactly representable functions strictly increases by adding more layers (with no restrictions on size). As a by-product of our investigations, we settle an old conjecture about piecewise linear functions by Wang and Sun (2005) in the affirmative. We also present upper bounds on the sizes of neural networks required to represent functions with logarithmic depth.
     
 

@@ -2,52 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Strategizing against Q-learners: A Control-theoretical Approach](https://arxiv.org/abs/2403.08906) | 在这篇论文中，作者探讨了Q-learning算法在游戏中受到策略性对手的操纵的敏感性，并提出了一种控制论方法来解决这个问题。 |
-| [^2] | [Learning in Repeated Multi-Unit Pay-As-Bid Auctions.](http://arxiv.org/abs/2307.15193) | 本论文研究了在重复的多单位付费拍卖中学习如何出价的问题。通过在离线设置中优化出价向量，并利用多项式时间动态规划方案，设计了具有多项式时间和空间复杂度的在线学习算法。 |
-| [^3] | [Learning Revenue Maximizing Menus of Lotteries and Two-Part Tariffs.](http://arxiv.org/abs/2302.11700) | 该论文研究了经济学中两种机制的可学习性：菜单抽奖和两部分票价。他们提出了第一个针对这两种机制的在线学习算法。 |
+| [^1] | [Mode Connectivity in Auction Design.](http://arxiv.org/abs/2305.11005) | 该论文研究了拍卖设计领域的一个基本问题，即最优拍卖设计。在研究中，作者证明了神经网络在一定条件下可以通过简单的分段线性路径连接不同的局部最优解，并取得了成功。 |
 
 # 详细
 
-[^1]: 针对Q-学习者的策略化对抗：一种控制论方法
+[^1]: 拍卖设计中的模式连通性
 
-    Strategizing against Q-learners: A Control-theoretical Approach
+    Mode Connectivity in Auction Design. (arXiv:2305.11005v1 [cs.GT])
 
-    [https://arxiv.org/abs/2403.08906](https://arxiv.org/abs/2403.08906)
+    [http://arxiv.org/abs/2305.11005](http://arxiv.org/abs/2305.11005)
 
-    在这篇论文中，作者探讨了Q-learning算法在游戏中受到策略性对手的操纵的敏感性，并提出了一种控制论方法来解决这个问题。
-
-    
-
-    在这篇论文中，我们探讨了Q-learning算法(一种经典且广泛使用的强化学习方法)在游戏中对策略性对手的敏感性。我们量化了如果策略性对手了解对手的Q-learning算法，她可以利用一个天真的Q-学习者多少。为此，我们将策略行为者的问题构建为一个马尔可夫决策过程(具有涵盖所有可能Q值的连续状态空间)，就好像Q-学习算法是底层动态系统一样。我们还提出了一个基于量化的近似方案来处理连续状态空间，并在理论和数值上分析了其性能。
-
-    arXiv:2403.08906v1 Announce Type: cross  Abstract: In this paper, we explore the susceptibility of the Q-learning algorithm (a classical and widely used reinforcement learning method) to strategic manipulation of sophisticated opponents in games. We quantify how much a strategically sophisticated agent can exploit a naive Q-learner if she knows the opponent's Q-learning algorithm. To this end, we formulate the strategic actor's problem as a Markov decision process (with a continuum state space encompassing all possible Q-values) as if the Q-learning algorithm is the underlying dynamical system. We also present a quantization-based approximation scheme to tackle the continuum state space and analyze its performance both analytically and numerically.
-    
-[^2]: 在重复的多单位付费拍卖中学习
-
-    Learning in Repeated Multi-Unit Pay-As-Bid Auctions. (arXiv:2307.15193v1 [cs.GT])
-
-    [http://arxiv.org/abs/2307.15193](http://arxiv.org/abs/2307.15193)
-
-    本论文研究了在重复的多单位付费拍卖中学习如何出价的问题。通过在离线设置中优化出价向量，并利用多项式时间动态规划方案，设计了具有多项式时间和空间复杂度的在线学习算法。
+    该论文研究了拍卖设计领域的一个基本问题，即最优拍卖设计。在研究中，作者证明了神经网络在一定条件下可以通过简单的分段线性路径连接不同的局部最优解，并取得了成功。
 
     
 
-    受碳排放交易方案、国债拍卖和采购拍卖的启发，这些都涉及拍卖同质的多个单位，我们考虑了如何在重复的多单位付费拍卖中学习如何出价的问题。在每个拍卖中，大量（相同的）物品将被分配给最高的出价，每个中标价等于出价本身。由于行动空间的组合性质，学习如何在付费拍卖中出价是具有挑战性的。为了克服这个挑战，我们关注离线设置，其中投标人通过只能访问其他投标人过去提交的出价来优化他们的出价向量。我们证明了离线问题的最优解可以使用多项式时间动态规划（DP）方案来获得。我们利用DP方案的结构，设计了具有多项式时间和空间复杂度的在线学习算法。
+    最优拍卖设计是算法博弈论中的一个基本问题，即使在非常简单的情况下，这个问题也很难。最近不同的经济学可微分理论表明，神经网络可以有效地学习已知的最优拍卖机制，发现有趣的新机制。为了理论上证明它们的实证成功，我们聚焦于第一个这样的网络，RochetNet，并研究所谓的仿射极大化拍卖的广义版本。我们证明它们满足模式连通性，即局部最优解通过一个简单的分段线性路径连接，路径上的每个解都几乎和两个局部最优解之一一样好。模式连通性最近被证明是神经网络用于预测问题的一个有趣的经验和理论的属性。我们的结果是对可微分经济学领域中神经网络用于解决非线性设计问题的第一个这样的分析。
 
-    Motivated by Carbon Emissions Trading Schemes, Treasury Auctions, and Procurement Auctions, which all involve the auctioning of homogeneous multiple units, we consider the problem of learning how to bid in repeated multi-unit pay-as-bid auctions. In each of these auctions, a large number of (identical) items are to be allocated to the largest submitted bids, where the price of each of the winning bids is equal to the bid itself. The problem of learning how to bid in pay-as-bid auctions is challenging due to the combinatorial nature of the action space. We overcome this challenge by focusing on the offline setting, where the bidder optimizes their vector of bids while only having access to the past submitted bids by other bidders. We show that the optimal solution to the offline problem can be obtained using a polynomial time dynamic programming (DP) scheme. We leverage the structure of the DP scheme to design online learning algorithms with polynomial time and space complexity under fu
-    
-[^3]: 学习最大化菜单抽奖和两部分票价的论文
-
-    Learning Revenue Maximizing Menus of Lotteries and Two-Part Tariffs. (arXiv:2302.11700v2 [cs.GT] UPDATED)
-
-    [http://arxiv.org/abs/2302.11700](http://arxiv.org/abs/2302.11700)
-
-    该论文研究了经济学中两种机制的可学习性：菜单抽奖和两部分票价。他们提出了第一个针对这两种机制的在线学习算法。
-
-    
-
-    我们通过研究在学习理论和计算经济学交叉领域中近年来蓬勃发展的一系列工作，推进了经济学中两类机制的可学习性研究，分别是菜单抽奖和两部分票价。前者是一类旨在销售多个物品的随机机制，已知能够实现超出确定性机制的收益，而后者则是针对销售单个物品多个单位（副本）的设计，适用于现实世界中的场景，如汽车或自行车共享服务等。我们关注如何从买家估值数据中学习出高收益的这类机制，涵盖多种分布设置，既有直接获得买家估值样本的情况，也有更具挑战性、研究较少的在线设置，其中买家一个接一个到来，并且对他们的估值没有分布假设。我们的主要贡献是提出了第一个针对菜单抽奖和两部分票价的在线学习算法。
-
-    We advance a recently flourishing line of work at the intersection of learning theory and computational economics by studying the learnability of two classes of mechanisms prominent in economics, namely menus of lotteries and two-part tariffs. The former is a family of randomized mechanisms designed for selling multiple items, known to achieve revenue beyond deterministic mechanisms, while the latter is designed for selling multiple units (copies) of a single item with applications in real-world scenarios such as car or bike-sharing services. We focus on learning high-revenue mechanisms of this form from buyer valuation data in both distributional settings, where we have access to buyers' valuation samples up-front, and the more challenging and less-studied online settings, where buyers arrive one-at-a-time and no distributional assumption is made about their values.  Our main contribution is proposing the first online learning algorithms for menus of lotteries and two-part tariffs wit
+    Optimal auction design is a fundamental problem in algorithmic game theory. This problem is notoriously difficult already in very simple settings. Recent work in differentiable economics showed that neural networks can efficiently learn known optimal auction mechanisms and discover interesting new ones. In an attempt to theoretically justify their empirical success, we focus on one of the first such networks, RochetNet, and a generalized version for affine maximizer auctions. We prove that they satisfy mode connectivity, i.e., locally optimal solutions are connected by a simple, piecewise linear path such that every solution on the path is almost as good as one of the two local optima. Mode connectivity has been recently investigated as an intriguing empirical and theoretically justifiable property of neural networks used for prediction problems. Our results give the first such analysis in the context of differentiable economics, where neural networks are used directly for solving non-
     
 
