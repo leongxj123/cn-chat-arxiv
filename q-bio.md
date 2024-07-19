@@ -2,24 +2,24 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Importance Weighted Expectation-Maximization for Protein Sequence Design.](http://arxiv.org/abs/2305.00386) | 本文提出了一种名为IsEM-Pro的方法，用于根据给定适应性标准生成蛋白质序列。在推理期间，从其潜在空间采样可以增加多样性，指导了探索高适应性区域。实验表明，相比先前最佳方法，IsEM-Pro的平均适应性得分至少高出55％，并生成了更多样化和新颖的蛋白质序列。 |
+| [^1] | [Feedback Efficient Online Fine-Tuning of Diffusion Models](https://arxiv.org/abs/2402.16359) | 提出了一种反馈高效的在线微调扩散模型的强化学习程序 |
 | [^2] | [Revolutionizing Genomics with Reinforcement Learning Techniques.](http://arxiv.org/abs/2302.13268) | 强化学习是一种革新的工具，可以在基因组学领域中解决自动数据分析和处理的问题。使用强化学习算法可以降低收集标记训练数据的成本，适用于基因组数据分析和解释。本调查重点关注在基因组研究领域中使用强化学习的应用，包括基因调控网络、基因组组装和序列比对。 |
 
 # 详细
 
-[^1]: 蛋白质序列设计的重要性加权期望最大化方法
+[^1]: 反馈高效在线微调扩散模型
 
-    Importance Weighted Expectation-Maximization for Protein Sequence Design. (arXiv:2305.00386v1 [q-bio.BM])
+    Feedback Efficient Online Fine-Tuning of Diffusion Models
 
-    [http://arxiv.org/abs/2305.00386](http://arxiv.org/abs/2305.00386)
+    [https://arxiv.org/abs/2402.16359](https://arxiv.org/abs/2402.16359)
 
-    本文提出了一种名为IsEM-Pro的方法，用于根据给定适应性标准生成蛋白质序列。在推理期间，从其潜在空间采样可以增加多样性，指导了探索高适应性区域。实验表明，相比先前最佳方法，IsEM-Pro的平均适应性得分至少高出55％，并生成了更多样化和新颖的蛋白质序列。
+    提出了一种反馈高效的在线微调扩散模型的强化学习程序
 
     
 
-    在生物和化学领域，设计具有所需生物功能的蛋白质序列非常重要。最近的机器学习方法使用代理序列-功能模型替代昂贵的湿实验验证。本文提出了一种名为IsEM-Pro的方法，用于根据给定的适应性标准生成蛋白质序列。它是一个潜在的生成模型，并受到另外一个学习的马尔可夫随机场结构特征的增强。研究者使用蒙特卡罗期望最大化方法（MCEM）来学习这个模型。在推理期间，从其潜在空间采样可以增加多样性，而其MRF特征则指导了探索高适应性区域。在八项蛋白质序列设计任务中的实验表明，我们的IsEM-Pro的平均适应性得分至少比先前最佳方法高55％，并且生成了更多样化和新颖的蛋白质序列。
+    扩散模型在建模复杂数据分布方面表现出色，包括图像，蛋白质和小分子的分布。然而，在许多情况下，我们的目标是模拟最大化某些属性的分布的部分：例如，我们可能希望生成具有高审美质量的图像，或具有高生物活性的分子。自然地，我们可以将这视为一个强化学习（RL）问题，其目标是微调扩散模型以最大化与某些属性对应的奖励函数。即使可以访问地面真实奖励函数的在线查询，有效地发现高奖励样本也可能具有挑战性：它们在初始分布中的概率可能很低，并且可能存在许多不可行的样本，甚至没有定义良好的奖励（例如，不自然的图像或物理上不可能的分子）。在这项工作中，我们提出了一种新颖的强化学习程序，可以高效地发现高奖励样本。
 
-    Designing protein sequences with desired biological function is crucial in biology and chemistry. Recent machine learning methods use a surrogate sequence-function model to replace the expensive wet-lab validation. How can we efficiently generate diverse and novel protein sequences with high fitness? In this paper, we propose IsEM-Pro, an approach to generate protein sequences towards a given fitness criterion. At its core, IsEM-Pro is a latent generative model, augmented by combinatorial structure features from a separately learned Markov random fields (MRFs). We develop an Monte Carlo Expectation-Maximization method (MCEM) to learn the model. During inference, sampling from its latent space enhances diversity while its MRFs features guide the exploration in high fitness regions. Experiments on eight protein sequence design tasks show that our IsEM-Pro outperforms the previous best methods by at least 55% on average fitness score and generates more diverse and novel protein sequences.
+    arXiv:2402.16359v1 Announce Type: cross  Abstract: Diffusion models excel at modeling complex data distributions, including those of images, proteins, and small molecules. However, in many cases, our goal is to model parts of the distribution that maximize certain properties: for example, we may want to generate images with high aesthetic quality, or molecules with high bioactivity. It is natural to frame this as a reinforcement learning (RL) problem, in which the objective is to fine-tune a diffusion model to maximize a reward function that corresponds to some property. Even with access to online queries of the ground-truth reward function, efficiently discovering high-reward samples can be challenging: they might have a low probability in the initial distribution, and there might be many infeasible samples that do not even have a well-defined reward (e.g., unnatural images or physically impossible molecules). In this work, we propose a novel reinforcement learning procedure that effi
     
 [^2]: 使用强化学习技术革新基因组学
 
