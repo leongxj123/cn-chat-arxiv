@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.NA</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.NA</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.NA</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.NA</description><item><title>CoLoRA&#36890;&#36807;&#36830;&#32493;&#20302;&#31209;&#33258;&#36866;&#24212;&#25552;&#20379;&#20102;&#19968;&#31181;&#24555;&#36895;&#39044;&#27979;&#21442;&#25968;&#21270;&#20559;&#24494;&#20998;&#26041;&#31243;&#35299;&#28436;&#21464;&#30340;&#31616;&#21270;&#31070;&#32463;&#32593;&#32476;&#24314;&#27169;&#26041;&#27861;</title><link>https://arxiv.org/abs/2402.14646</link><description>&lt;p&gt;
+CoLoRA:&#29992;&#20110;&#21442;&#25968;&#21270;&#20559;&#24494;&#20998;&#26041;&#31243;&#31616;&#21270;&#38544;&#24335;&#31070;&#32463;&#24314;&#27169;&#30340;&#36830;&#32493;&#20302;&#31209;&#33258;&#36866;&#24212;
+&lt;/p&gt;
+&lt;p&gt;
+CoLoRA: Continuous low-rank adaptation for reduced implicit neural modeling of parameterized partial differential equations
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.14646
+&lt;/p&gt;
+&lt;p&gt;
+CoLoRA&#36890;&#36807;&#36830;&#32493;&#20302;&#31209;&#33258;&#36866;&#24212;&#25552;&#20379;&#20102;&#19968;&#31181;&#24555;&#36895;&#39044;&#27979;&#21442;&#25968;&#21270;&#20559;&#24494;&#20998;&#26041;&#31243;&#35299;&#28436;&#21464;&#30340;&#31616;&#21270;&#31070;&#32463;&#32593;&#32476;&#24314;&#27169;&#26041;&#27861;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#35813;&#24037;&#20316;&#20171;&#32461;&#20102;&#19968;&#31181;&#22522;&#20110;&#36830;&#32493;&#20302;&#31209;&#33258;&#36866;&#24212;&#65288;CoLoRA&#65289;&#30340;&#31616;&#21270;&#27169;&#22411;&#65292;&#23427;&#39044;&#20808;&#35757;&#32451;&#31070;&#32463;&#32593;&#32476;&#36866;&#29992;&#20110;&#32473;&#23450;&#30340;&#20559;&#24494;&#20998;&#26041;&#31243;&#65292;&#28982;&#21518;&#22312;&#26102;&#38388;&#19978;&#36830;&#32493;&#22320;&#35843;&#25972;&#20302;&#31209;&#26435;&#37325;&#65292;&#20197;&#24555;&#36895;&#39044;&#27979;&#26032;&#29289;&#29702;&#21442;&#25968;&#21644;&#26032;&#21021;&#22987;&#26465;&#20214;&#19979;&#35299;&#22330;&#30340;&#28436;&#21464;&#12290;&#33258;&#36866;&#24212;&#21487;&#20197;&#26159;&#32431;&#31929;&#25968;&#25454;&#39537;&#21160;&#30340;&#65292;&#20063;&#21487;&#20197;&#36890;&#36807;&#19968;&#20010;&#26041;&#31243;&#39537;&#21160;&#30340;&#21464;&#20998;&#26041;&#27861;&#65292;&#25552;&#20379;Galerkin&#26368;&#20248;&#30340;&#36924;&#36817;&#12290;&#30001;&#20110;CoLoRA&#22312;&#26102;&#38388;&#19978;&#23616;&#37096;&#36924;&#36817;&#35299;&#22330;&#65292;&#26435;&#37325;&#30340;&#31209;&#21487;&#20197;&#20445;&#25345;&#36739;&#23567;&#65292;&#36825;&#24847;&#21619;&#30528;&#21482;&#38656;&#35201;&#31163;&#32447;&#35757;&#32451;&#20960;&#26465;&#36712;&#36857;&#65292;&#22240;&#27492;CoLoRA&#38750;&#24120;&#36866;&#29992;&#20110;&#25968;&#25454;&#31232;&#32570;&#30340;&#24773;&#20917;&#12290;&#19982;&#20256;&#32479;&#26041;&#27861;&#30456;&#27604;&#65292;CoLoRA&#30340;&#39044;&#27979;&#36895;&#24230;&#24555;&#19978;&#20960;&#20010;&#25968;&#37327;&#32423;&#65292;&#20854;&#20934;&#30830;&#24230;&#21644;&#21442;&#25968;&#25928;&#29575;&#20063;&#27604;&#20854;&#20182;&#31070;&#32463;&#32593;&#32476;&#26041;&#27861;&#26356;&#39640;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2402.14646v1 Announce Type: new  Abstract: This work introduces reduced models based on Continuous Low Rank Adaptation (CoLoRA) that pre-train neural networks for a given partial differential equation and then continuously adapt low-rank weights in time to rapidly predict the evolution of solution fields at new physics parameters and new initial conditions. The adaptation can be either purely data-driven or via an equation-driven variational approach that provides Galerkin-optimal approximations. Because CoLoRA approximates solution fields locally in time, the rank of the weights can be kept small, which means that only few training trajectories are required offline so that CoLoRA is well suited for data-scarce regimes. Predictions with CoLoRA are orders of magnitude faster than with classical methods and their accuracy and parameter efficiency is higher compared to other neural network approaches.
+&lt;/p&gt;</description></item></channel></rss>

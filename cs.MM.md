@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Enhancing Human-Centered Dynamic Scene Understanding via Multiple LLMs Collaborated Reasoning](https://arxiv.org/abs/2403.10107) | 通过多个大型预训练语言模型的合作推理，本研究提出了V-HOI Multi-LLMs Collaborated Reasoning（V-HOI MLCR）框架，用于增强当前V-HOI检测模型的性能。 |
-| [^2] | [WavCaps: A ChatGPT-Assisted Weakly-Labelled Audio Captioning Dataset for Audio-Language Multimodal Research.](http://arxiv.org/abs/2303.17395) | 本文介绍了第一个大规模的弱标注音频字幕数据集WavCaps，含约40万条带有配对字幕的音频剪辑。为克服噪声标注的问题，提出了基于ChatGPT的三阶段字幕生成流程。 |
+| [^1] | [Multimodal Pre-training Framework for Sequential Recommendation via Contrastive Learning.](http://arxiv.org/abs/2303.11879) | 通过对比学习的多模态预训练框架利用用户的序列行为和物品的多模态内容进行序列推荐，并提出了一种新的骨干网络进行特征融合，实验证明其优于现有最先进方法。 |
 
 # 详细
 
-[^1]: 通过多个LLM合作推理提升人类中心动态场景理解
+[^1]: 通过对比学习的多模态预训练框架用于序列推荐
 
-    Enhancing Human-Centered Dynamic Scene Understanding via Multiple LLMs Collaborated Reasoning
+    Multimodal Pre-training Framework for Sequential Recommendation via Contrastive Learning. (arXiv:2303.11879v1 [cs.IR])
 
-    [https://arxiv.org/abs/2403.10107](https://arxiv.org/abs/2403.10107)
+    [http://arxiv.org/abs/2303.11879](http://arxiv.org/abs/2303.11879)
 
-    通过多个大型预训练语言模型的合作推理，本研究提出了V-HOI Multi-LLMs Collaborated Reasoning（V-HOI MLCR）框架，用于增强当前V-HOI检测模型的性能。
-
-    
-
-    人类中心的动态场景理解在增强机器人和自主系统的能力中起着至关重要的作用，其中视频人-物交互（V-HOI）检测是语义场景理解中的关键任务，旨在全面理解视频中的HOI关系，以使移动机器人和自动驾驶系统的行为决策受益。虽然先前的V-HOI检测模型在特定数据集上取得了显著进展，但它们仍然缺乏像人类一样的通用推理能力，无法有效引导HOI关系。在本研究中，我们提出了V-HOI多LLM协同推理（V-HOI MLCR），这是一个新颖的框架，由一系列即插即用的模块组成，可以通过利用不同现成大型预训练语言模型（LLMs）的强大推理能力，促进当前V-HOI检测模型的性能。
-
-    arXiv:2403.10107v1 Announce Type: cross  Abstract: Human-centered dynamic scene understanding plays a pivotal role in enhancing the capability of robotic and autonomous systems, in which Video-based Human-Object Interaction (V-HOI) detection is a crucial task in semantic scene understanding, aimed at comprehensively understanding HOI relationships within a video to benefit the behavioral decisions of mobile robots and autonomous driving systems. Although previous V-HOI detection models have made significant strides in accurate detection on specific datasets, they still lack the general reasoning ability like human beings to effectively induce HOI relationships. In this study, we propose V-HOI Multi-LLMs Collaborated Reasoning (V-HOI MLCR), a novel framework consisting of a series of plug-and-play modules that could facilitate the performance of current V-HOI detection models by leveraging the strong reasoning ability of different off-the-shelf pre-trained large language models (LLMs). 
-    
-[^2]: WavCaps: 一种ChatGPT辅助的弱标注音频字幕数据集，用于音频-语言多模态研究
-
-    WavCaps: A ChatGPT-Assisted Weakly-Labelled Audio Captioning Dataset for Audio-Language Multimodal Research. (arXiv:2303.17395v1 [eess.AS])
-
-    [http://arxiv.org/abs/2303.17395](http://arxiv.org/abs/2303.17395)
-
-    本文介绍了第一个大规模的弱标注音频字幕数据集WavCaps，含约40万条带有配对字幕的音频剪辑。为克服噪声标注的问题，提出了基于ChatGPT的三阶段字幕生成流程。
+    通过对比学习的多模态预训练框架利用用户的序列行为和物品的多模态内容进行序列推荐，并提出了一种新的骨干网络进行特征融合，实验证明其优于现有最先进方法。
 
     
 
-    近年来，音频-语言（AL）多模态学习任务的发展非常显著。然而，现有的AL数据集收集过程昂贵费时，规模有限，给研究者带来了挑战。为解决这个数据稀缺问题，我们介绍了WavCaps，这是第一个包含大约40万条带有配对字幕的大规模弱标注音频字幕数据集。我们从Web资源和声音事件检测数据集中获取音频剪辑及原始描述。但是，在线收集到的原始描述非常嘈杂，不适合用于自动化音频字幕等任务。为了克服这个问题，我们提出了一个三阶段的处理流程，以过滤嘈杂数据并生成高质量字幕，在其中利用了ChatGPT，一种大型语言模型，来自动过滤和转换原始描述。我们对WavCaps的特征进行了全面的分析。
+    序列推荐系统利用用户与物品之间的序列交互作为主要的监督信号来学习用户的喜好。然而，由于用户行为数据的稀疏性，现有方法通常生成不尽如人意的结果。为了解决这个问题，我们提出了一个新颖的预训练框架，名为多模态序列混合（MSM4SR），它利用用户的序列行为和物品的多模态内容（即文本和图像）进行有效推荐。具体来说，MSM4SR将每个物品图像标记成多个文本关键词，并使用预训练的BERT模型获取物品的初始文本和视觉特征，以消除文本和图像模态之间的差异。提出了一种新的骨干网络，即多模态混合序列编码器（M $^2$ SE），它使用互补的序列混合策略来弥合物品多模态内容和用户行为之间的差距。此外，引入对比学习机制来强制学习到的表示变得更有区分度，进一步提高了序列推荐的性能。在两个真实世界数据集上的实验结果验证了我们提出的框架优于现有最先进方法。
 
-    The advancement of audio-language (AL) multimodal learning tasks has been significant in recent years. However, researchers face challenges due to the costly and time-consuming collection process of existing audio-language datasets, which are limited in size. To address this data scarcity issue, we introduce WavCaps, the first large-scale weakly-labelled audio captioning dataset, comprising approximately 400k audio clips with paired captions. We sourced audio clips and their raw descriptions from web sources and a sound event detection dataset. However, the online-harvested raw descriptions are highly noisy and unsuitable for direct use in tasks such as automated audio captioning. To overcome this issue, we propose a three-stage processing pipeline for filtering noisy data and generating high-quality captions, where ChatGPT, a large language model, is leveraged to filter and transform raw descriptions automatically. We conduct a comprehensive analysis of the characteristics of WavCaps 
+    Sequential recommendation systems utilize the sequential interactions of users with items as their main supervision signals in learning users' preferences. However, existing methods usually generate unsatisfactory results due to the sparsity of user behavior data. To address this issue, we propose a novel pre-training framework, named Multimodal Sequence Mixup for Sequential Recommendation (MSM4SR), which leverages both users' sequential behaviors and items' multimodal content (\ie text and images) for effectively recommendation. Specifically, MSM4SR tokenizes each item image into multiple textual keywords and uses the pre-trained BERT model to obtain initial textual and visual features of items, for eliminating the discrepancy between the text and image modalities. A novel backbone network, \ie Multimodal Mixup Sequence Encoder (M$^2$SE), is proposed to bridge the gap between the item multimodal content and the user behavior, using a complementary sequence mixup strategy. In addition,
     
 

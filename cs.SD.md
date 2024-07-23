@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Speech-to-Speech Translation with Discrete-Unit-Based Style Transfer.](http://arxiv.org/abs/2309.07566) | 本研究提出了一种基于离散单元的语音到语音翻译框架，通过自监督学习和神经编解码器实现风格转换，解决了数据稀缺和音色保留的问题。实验结果表明，我们的模型在之前未见的语言上实现了高质量的跨语言风格转换。 |
-| [^2] | [WavCaps: A ChatGPT-Assisted Weakly-Labelled Audio Captioning Dataset for Audio-Language Multimodal Research.](http://arxiv.org/abs/2303.17395) | 本文介绍了第一个大规模的弱标注音频字幕数据集WavCaps，含约40万条带有配对字幕的音频剪辑。为克服噪声标注的问题，提出了基于ChatGPT的三阶段字幕生成流程。 |
+| [^1] | [Cross-Speaker Encoding Network for Multi-Talker Speech Recognition.](http://arxiv.org/abs/2401.04152) | 本文提出了一种叫做Cross-Speaker Encoding（CSE）的网络，用于解决多说话人语音识别中的局限性，通过聚合跨说话人表示。通过与SOT结合，该模型在两个说话人的数据集上实验证明比SIMO基准模型的词错误率（WER）分别降低了8%和10%。 |
+| [^2] | [RepCodec: A Speech Representation Codec for Speech Tokenization.](http://arxiv.org/abs/2309.00169) | RepCodec是一种新型的语音表示编码器，通过重构语音表示并学习矢量量化码书，将语音波形转换为语义标记。实验证明，RepCodec在语音理解和生成方面明显优于传统的k-means聚类方法。 |
 
 # 详细
 
-[^1]: 基于离散单元的风格转换的语音到语音翻译
+[^1]: 跨说话人编码网络用于多说话人语音识别
 
-    Speech-to-Speech Translation with Discrete-Unit-Based Style Transfer. (arXiv:2309.07566v1 [cs.SD])
+    Cross-Speaker Encoding Network for Multi-Talker Speech Recognition. (arXiv:2401.04152v1 [cs.SD])
 
-    [http://arxiv.org/abs/2309.07566](http://arxiv.org/abs/2309.07566)
+    [http://arxiv.org/abs/2401.04152](http://arxiv.org/abs/2401.04152)
 
-    本研究提出了一种基于离散单元的语音到语音翻译框架，通过自监督学习和神经编解码器实现风格转换，解决了数据稀缺和音色保留的问题。实验结果表明，我们的模型在之前未见的语言上实现了高质量的跨语言风格转换。
-
-    
-
-    直接的语音到语音翻译（S2ST）通过离散的自监督表示实现了显著的准确性，但在翻译过程中无法保留源语音的说话人音色。与此同时，高质量说话人平行数据的稀缺性对于学习源语音和目标语音之间的风格转换构成了挑战。我们提出了一个基于自监督模型的离散单元的声学语言模型和风格转换的神经编解码器的S2ST框架。声学语言模型通过自监督上下文学习获得了风格转换的能力，无需依赖于任何说话人平行数据，从而克服了数据稀缺性问题。通过使用大量的训练数据，我们的模型可以在之前未见过的源语言上实现零-shot跨语言风格转换。实验证明，我们的模型生成的翻译语音具有高度的保真度和风格相似性。
-
-    Direct speech-to-speech translation (S2ST) with discrete self-supervised representations has achieved remarkable accuracy, but is unable to preserve the speaker timbre of the source speech during translation. Meanwhile, the scarcity of high-quality speaker-parallel data poses a challenge for learning style transfer between source and target speech. We propose an S2ST framework with an acoustic language model based on discrete units from a self-supervised model and a neural codec for style transfer. The acoustic language model leverages self-supervised in-context learning, acquiring the ability for style transfer without relying on any speaker-parallel data, thereby overcoming the issue of data scarcity. By using extensive training data, our model achieves zero-shot cross-lingual style transfer on previously unseen source languages. Experiments show that our model generates translated speeches with high fidelity and style similarity. Audio samples are available at this http URL .
-    
-[^2]: WavCaps: 一种ChatGPT辅助的弱标注音频字幕数据集，用于音频-语言多模态研究
-
-    WavCaps: A ChatGPT-Assisted Weakly-Labelled Audio Captioning Dataset for Audio-Language Multimodal Research. (arXiv:2303.17395v1 [eess.AS])
-
-    [http://arxiv.org/abs/2303.17395](http://arxiv.org/abs/2303.17395)
-
-    本文介绍了第一个大规模的弱标注音频字幕数据集WavCaps，含约40万条带有配对字幕的音频剪辑。为克服噪声标注的问题，提出了基于ChatGPT的三阶段字幕生成流程。
+    本文提出了一种叫做Cross-Speaker Encoding（CSE）的网络，用于解决多说话人语音识别中的局限性，通过聚合跨说话人表示。通过与SOT结合，该模型在两个说话人的数据集上实验证明比SIMO基准模型的词错误率（WER）分别降低了8%和10%。
 
     
 
-    近年来，音频-语言（AL）多模态学习任务的发展非常显著。然而，现有的AL数据集收集过程昂贵费时，规模有限，给研究者带来了挑战。为解决这个数据稀缺问题，我们介绍了WavCaps，这是第一个包含大约40万条带有配对字幕的大规模弱标注音频字幕数据集。我们从Web资源和声音事件检测数据集中获取音频剪辑及原始描述。但是，在线收集到的原始描述非常嘈杂，不适合用于自动化音频字幕等任务。为了克服这个问题，我们提出了一个三阶段的处理流程，以过滤嘈杂数据并生成高质量字幕，在其中利用了ChatGPT，一种大型语言模型，来自动过滤和转换原始描述。我们对WavCaps的特征进行了全面的分析。
+    端到端的多说话人语音识别已经引起了极大的兴趣，作为一种直接转录多个说话人重叠语音的有效方法。目前的方法通常采用1）带有分支编码器的单输入多输出（SIMO）模型，或者2）基于注意力机制的编码器-解码器架构和序列化输出训练（SOT）的单输入单输出（SISO）模型。在这项工作中，我们提出了一种叫做Cross-Speaker Encoding（CSE）的网络来解决SIMO模型的局限性，通过聚合跨说话人表示。此外，CSE模型与SOT相结合，既发挥了SIMO和SISO的优势，又缓解了它们的缺点。据我们所知，该工作代表了将SIMO和SISO集成到多说话人语音识别中的早期工作。在两个说话人的LibrispeechMix数据集上进行的实验表明，CES模型相比于SIMO基准模型将词错误率（WER）降低了8%。CSE-SOT模型将WER降低了10%
 
-    The advancement of audio-language (AL) multimodal learning tasks has been significant in recent years. However, researchers face challenges due to the costly and time-consuming collection process of existing audio-language datasets, which are limited in size. To address this data scarcity issue, we introduce WavCaps, the first large-scale weakly-labelled audio captioning dataset, comprising approximately 400k audio clips with paired captions. We sourced audio clips and their raw descriptions from web sources and a sound event detection dataset. However, the online-harvested raw descriptions are highly noisy and unsuitable for direct use in tasks such as automated audio captioning. To overcome this issue, we propose a three-stage processing pipeline for filtering noisy data and generating high-quality captions, where ChatGPT, a large language model, is leveraged to filter and transform raw descriptions automatically. We conduct a comprehensive analysis of the characteristics of WavCaps 
+    End-to-end multi-talker speech recognition has garnered great interest as an effective approach to directly transcribe overlapped speech from multiple speakers. Current methods typically adopt either 1) single-input multiple-output (SIMO) models with a branched encoder, or 2) single-input single-output (SISO) models based on attention-based encoder-decoder architecture with serialized output training (SOT). In this work, we propose a Cross-Speaker Encoding (CSE) network to address the limitations of SIMO models by aggregating cross-speaker representations. Furthermore, the CSE model is integrated with SOT to leverage both the advantages of SIMO and SISO while mitigating their drawbacks. To the best of our knowledge, this work represents an early effort to integrate SIMO and SISO for multi-talker speech recognition. Experiments on the two-speaker LibrispeechMix dataset show that the CES model reduces word error rate (WER) by 8% over the SIMO baseline. The CSE-SOT model reduces WER by 10
+    
+[^2]: RepCodec:一种用于语音标记的语音表示编码器
+
+    RepCodec: A Speech Representation Codec for Speech Tokenization. (arXiv:2309.00169v1 [eess.AS])
+
+    [http://arxiv.org/abs/2309.00169](http://arxiv.org/abs/2309.00169)
+
+    RepCodec是一种新型的语音表示编码器，通过重构语音表示并学习矢量量化码书，将语音波形转换为语义标记。实验证明，RepCodec在语音理解和生成方面明显优于传统的k-means聚类方法。
+
+    
+
+    随着大型语言模型（LLMs）的快速增长，离散语音标记在将语音注入LLMs中发挥了重要作用。然而，这种离散化导致了信息的丢失，从而损害了整体性能。为了提高这些离散语音标记的性能，我们提出了RepCodec，一种用于语义语音标记的新型语音表示编码器。与重新构建原始音频的音频编解码器不同，RepCodec通过从语音编码器（如HuBERT或data2vec）重构语音表示来学习矢量量化码书。语音编码器、编解码器和矢量量化码书共同构成一个将语音波形转换为语义标记的流水线。广泛的实验证明，由于其增强的信息保留能力，RepCodec在语音理解和生成方面显著优于广泛使用的k-means聚类方法。
+
+    With recent rapid growth of large language models (LLMs), discrete speech tokenization has played an important role for injecting speech into LLMs. However, this discretization gives rise to a loss of information, consequently impairing overall performance. To improve the performance of these discrete speech tokens, we present RepCodec, a novel speech representation codec for semantic speech tokenization. In contrast to audio codecs which reconstruct the raw audio, RepCodec learns a vector quantization codebook through reconstructing speech representations from speech encoders like HuBERT or data2vec. Together, the speech encoder, the codec encoder and the vector quantization codebook form a pipeline for converting speech waveforms into semantic tokens. The extensive experiments illustrate that RepCodec, by virtue of its enhanced information retention capacity, significantly outperforms the widely used k-means clustering approach in both speech understanding and generation. Furthermore
     
 

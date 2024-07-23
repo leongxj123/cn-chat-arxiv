@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Simple, unified analysis of Johnson-Lindenstrauss with applications](https://arxiv.org/abs/2402.10232) | 这项工作提出了Johnson-Lindenstrauss（JL）引理的简单统一分析，简化和统一了各种构造，包括球形、高斯、二进制硬币和次高斯模型，通过创新性地将Hanson-Wright不等式拓展到高维度，标志着对数据固有几何的保持取得重大进展。 |
+| [^1] | [Smooth Nash Equilibria: Algorithms and Complexity.](http://arxiv.org/abs/2309.12226) | 光滑纳什均衡是纳什均衡的一个松弛变种，可以通过实现与最佳光滑策略的偏离相同的效用来达到。我们定义了强和弱光滑纳什均衡的概念，并证明了它们在计算性质上优于传统的纳什均衡。 |
 
 # 详细
 
-[^1]: Johnson-Lindenstrauss的简单统一分析及其应用
+[^1]: 光滑纳什均衡：算法和复杂性
 
-    Simple, unified analysis of Johnson-Lindenstrauss with applications
+    Smooth Nash Equilibria: Algorithms and Complexity. (arXiv:2309.12226v1 [cs.GT])
 
-    [https://arxiv.org/abs/2402.10232](https://arxiv.org/abs/2402.10232)
+    [http://arxiv.org/abs/2309.12226](http://arxiv.org/abs/2309.12226)
 
-    这项工作提出了Johnson-Lindenstrauss（JL）引理的简单统一分析，简化和统一了各种构造，包括球形、高斯、二进制硬币和次高斯模型，通过创新性地将Hanson-Wright不等式拓展到高维度，标志着对数据固有几何的保持取得重大进展。
+    光滑纳什均衡是纳什均衡的一个松弛变种，可以通过实现与最佳光滑策略的偏离相同的效用来达到。我们定义了强和弱光滑纳什均衡的概念，并证明了它们在计算性质上优于传统的纳什均衡。
 
     
 
-    在这项工作中，我们提出了Johnson-Lindenstrauss（JL）引理的简单统一分析，这是处理高维数据至关重要的降维领域中的基石。我们的方法不仅简化了理解，还将各种构造统一到JL框架下，包括球形、高斯、二进制硬币和次高斯模型。这种简化和统一在保持数据固有几何的重要性方面取得了重大进展，对从流算法到强化学习等各种应用至关重要。值得注意的是，我们在这个简化框架内提出了球形构造有效性的第一个严格证明。我们贡献的核心是将Hanson-Wright不等式拓展到高维度，具有明确的常数，这标志着文献中质的飞跃。通过运用简单而强大的概率工具
+    纳什均衡的一个基本缺点是其计算复杂性：在正则形式的博弈中，近似纳什均衡是PPAD难的。在本文中，受到平滑分析思想的启发，我们引入了一个被称为$\sigma$-光滑纳什均衡的松弛变种，其中$\sigma$是光滑性参数。在$\sigma$-光滑纳什均衡中，玩家们只需要实现至少与他们最佳$\sigma$-光滑策略的偏离相同的效用，而这个$\sigma$-光滑策略是不会对任何固定动作产生过多质量（根据$\sigma$参数化）。我们区分了两种$\sigma$-光滑纳什均衡的变种：强$\sigma$-光滑纳什均衡，在这种情况下，玩家们需要在均衡中采用$\sigma$-光滑策略进行游戏；弱$\sigma$-光滑纳什均衡中，没有这样的要求。我们证明了无论是弱$\sigma$-光滑纳什均衡还是强$\sigma$-光滑纳什均衡，都比纳什均衡具有更好的计算性质。
 
-    arXiv:2402.10232v1 Announce Type: new  Abstract: In this work, we present a simple and unified analysis of the Johnson-Lindenstrauss (JL) lemma, a cornerstone in the field of dimensionality reduction critical for managing high-dimensional data. Our approach not only simplifies the understanding but also unifies various constructions under the JL framework, including spherical, Gaussian, binary coin, and sub-Gaussian models. This simplification and unification make significant strides in preserving the intrinsic geometry of data, essential across diverse applications from streaming algorithms to reinforcement learning. Notably, we deliver the first rigorous proof of the spherical construction's effectiveness within this simplified framework. At the heart of our contribution is an innovative extension of the Hanson-Wright inequality to high dimensions, complete with explicit constants, marking a substantial leap in the literature. By employing simple yet powerful probabilistic tools and 
+    A fundamental shortcoming of the concept of Nash equilibrium is its computational intractability: approximating Nash equilibria in normal-form games is PPAD-hard. In this paper, inspired by the ideas of smoothed analysis, we introduce a relaxed variant of Nash equilibrium called $\sigma$-smooth Nash equilibrium, for a smoothness parameter $\sigma$. In a $\sigma$-smooth Nash equilibrium, players only need to achieve utility at least as high as their best deviation to a $\sigma$-smooth strategy, which is a distribution that does not put too much mass (as parametrized by $\sigma$) on any fixed action. We distinguish two variants of $\sigma$-smooth Nash equilibria: strong $\sigma$-smooth Nash equilibria, in which players are required to play $\sigma$-smooth strategies under equilibrium play, and weak $\sigma$-smooth Nash equilibria, where there is no such requirement.  We show that both weak and strong $\sigma$-smooth Nash equilibria have superior computational properties to Nash equilibri
     
 
