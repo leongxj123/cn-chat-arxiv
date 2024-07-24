@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Multimodal Pre-training Framework for Sequential Recommendation via Contrastive Learning.](http://arxiv.org/abs/2303.11879) | 通过对比学习的多模态预训练框架利用用户的序列行为和物品的多模态内容进行序列推荐，并提出了一种新的骨干网络进行特征融合，实验证明其优于现有最先进方法。 |
+| [^1] | [Learning to Generate Conditional Tri-plane for 3D-aware Expression Controllable Portrait Animation](https://arxiv.org/abs/2404.00636) | 本文提出了一种一次性的3D感知肖像动画方法Export3D，通过引入三平面生成器和对比预训练框架，实现了控制给定肖像图像的面部表情和摄像机视角，提供了一种新的表达方式。 |
+| [^2] | [DDT: A Diffusion-Driven Transformer-based Framework for Human Mesh Recovery from a Video.](http://arxiv.org/abs/2303.13397) | 提出了一种基于扩散驱动变压器的视频 HMR 框架（DDT），它旨在从输入序列中解码特定的运动模式，增强运动平滑性和时间一致性，并输出所有帧的人体网格，使得 DDT 更适用于时间效率至关重要的实际应用。 |
 
 # 详细
 
-[^1]: 通过对比学习的多模态预训练框架用于序列推荐
+[^1]: 学习生成条件化三平面用于3D感知表情可控肖像动画
 
-    Multimodal Pre-training Framework for Sequential Recommendation via Contrastive Learning. (arXiv:2303.11879v1 [cs.IR])
+    Learning to Generate Conditional Tri-plane for 3D-aware Expression Controllable Portrait Animation
 
-    [http://arxiv.org/abs/2303.11879](http://arxiv.org/abs/2303.11879)
+    [https://arxiv.org/abs/2404.00636](https://arxiv.org/abs/2404.00636)
 
-    通过对比学习的多模态预训练框架利用用户的序列行为和物品的多模态内容进行序列推荐，并提出了一种新的骨干网络进行特征融合，实验证明其优于现有最先进方法。
+    本文提出了一种一次性的3D感知肖像动画方法Export3D，通过引入三平面生成器和对比预训练框架，实现了控制给定肖像图像的面部表情和摄像机视角，提供了一种新的表达方式。
 
     
 
-    序列推荐系统利用用户与物品之间的序列交互作为主要的监督信号来学习用户的喜好。然而，由于用户行为数据的稀疏性，现有方法通常生成不尽如人意的结果。为了解决这个问题，我们提出了一个新颖的预训练框架，名为多模态序列混合（MSM4SR），它利用用户的序列行为和物品的多模态内容（即文本和图像）进行有效推荐。具体来说，MSM4SR将每个物品图像标记成多个文本关键词，并使用预训练的BERT模型获取物品的初始文本和视觉特征，以消除文本和图像模态之间的差异。提出了一种新的骨干网络，即多模态混合序列编码器（M $^2$ SE），它使用互补的序列混合策略来弥合物品多模态内容和用户行为之间的差距。此外，引入对比学习机制来强制学习到的表示变得更有区分度，进一步提高了序列推荐的性能。在两个真实世界数据集上的实验结果验证了我们提出的框架优于现有最先进方法。
+    在本文中，我们提出了一种一次性的3D感知肖像动画方法Export3D，能够控制给定肖像图像的面部表情和摄像机视角。为了实现这一目标，我们引入了一个三平面生成器，通过将3DMM的表情参数转移到源图像中直接生成3D先验的三平面。然后，通过可微分体积渲染将三平面解码为不同视角的图像。现有的肖像动画方法严重依赖于图像变形来在运动空间中传输表情，挑战在外观和表情的分离上。相比之下，我们提出了一个用于无外观表情参数的对比预训练框架，消除了在传输跨身份表达时不良外观交换。大量实验证明，我们的预训练框架能够学习隐藏在3DMM中的无外观表达表示。
 
-    Sequential recommendation systems utilize the sequential interactions of users with items as their main supervision signals in learning users' preferences. However, existing methods usually generate unsatisfactory results due to the sparsity of user behavior data. To address this issue, we propose a novel pre-training framework, named Multimodal Sequence Mixup for Sequential Recommendation (MSM4SR), which leverages both users' sequential behaviors and items' multimodal content (\ie text and images) for effectively recommendation. Specifically, MSM4SR tokenizes each item image into multiple textual keywords and uses the pre-trained BERT model to obtain initial textual and visual features of items, for eliminating the discrepancy between the text and image modalities. A novel backbone network, \ie Multimodal Mixup Sequence Encoder (M$^2$SE), is proposed to bridge the gap between the item multimodal content and the user behavior, using a complementary sequence mixup strategy. In addition,
+    arXiv:2404.00636v1 Announce Type: cross  Abstract: In this paper, we present Export3D, a one-shot 3D-aware portrait animation method that is able to control the facial expression and camera view of a given portrait image. To achieve this, we introduce a tri-plane generator that directly generates a tri-plane of 3D prior by transferring the expression parameter of 3DMM into the source image. The tri-plane is then decoded into the image of different view through a differentiable volume rendering. Existing portrait animation methods heavily rely on image warping to transfer the expression in the motion space, challenging on disentanglement of appearance and expression. In contrast, we propose a contrastive pre-training framework for appearance-free expression parameter, eliminating undesirable appearance swap when transferring a cross-identity expression. Extensive experiments show that our pre-training framework can learn the appearance-free expression representation hidden in 3DMM, and 
+    
+[^2]: DDT：一种基于扩散驱动变压器的从视频中恢复人体网格的框架
+
+    DDT: A Diffusion-Driven Transformer-based Framework for Human Mesh Recovery from a Video. (arXiv:2303.13397v1 [cs.CV])
+
+    [http://arxiv.org/abs/2303.13397](http://arxiv.org/abs/2303.13397)
+
+    提出了一种基于扩散驱动变压器的视频 HMR 框架（DDT），它旨在从输入序列中解码特定的运动模式，增强运动平滑性和时间一致性，并输出所有帧的人体网格，使得 DDT 更适用于时间效率至关重要的实际应用。
+
+    
+
+    人体网格恢复（HMR）为各种实际应用提供了丰富的人体信息，例如游戏、人机交互和虚拟现实。与单一图像方法相比，基于视频的方法可以利用时间信息通过融合人体运动先验进一步提高性能。然而，像 VIBE 这样的多对多方法存在运动平滑性和时间一致性的挑战。而像 TCMR 和 MPS-Net 这样的多对一方法则依赖于未来帧，在推理过程中是非因果和时间效率低下的。为了解决这些挑战，提出了一种新的基于扩散驱动变压器的视频 HMR 框架（DDT）。DDT 旨在从输入序列中解码特定的运动模式，增强运动平滑性和时间一致性。作为一种多对多方法，DDT 的解码器输出所有帧的人体网格，使 DDT 更适用于时间效率至关重要的实际应用。
+
+    Human mesh recovery (HMR) provides rich human body information for various real-world applications such as gaming, human-computer interaction, and virtual reality. Compared to single image-based methods, video-based methods can utilize temporal information to further improve performance by incorporating human body motion priors. However, many-to-many approaches such as VIBE suffer from motion smoothness and temporal inconsistency. While many-to-one approaches such as TCMR and MPS-Net rely on the future frames, which is non-causal and time inefficient during inference. To address these challenges, a novel Diffusion-Driven Transformer-based framework (DDT) for video-based HMR is presented. DDT is designed to decode specific motion patterns from the input sequence, enhancing motion smoothness and temporal consistency. As a many-to-many approach, the decoder of our DDT outputs the human mesh of all the frames, making DDT more viable for real-world applications where time efficiency is cruc
     
 

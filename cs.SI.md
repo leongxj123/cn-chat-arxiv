@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [One-Shot Graph Representation Learning Using Hyperdimensional Computing](https://arxiv.org/abs/2402.17073) | 该方法提出了一种使用超高维计算进行单次图表示学习的方法，通过将数据投影到高维空间并利用HD运算符进行信息聚合，实现了与最先进深度学习方法相竞争的预测性能，而无需进行计算昂贵的训练。 |
-| [^2] | [Empowering Fake-News Mitigation: Insights from Sharers' Social Media Post-Histories.](http://arxiv.org/abs/2203.10560) | 本论文提出消费者的社交媒体帖子历史是研究分享虚假新闻动机的一种被低估的数据来源。通过对帖子历史提取的文本线索，我们发现虚假新闻分享者在言辞上更多涉及愤怒、宗教和权力。并且，通过将帖子历史中的文本线索加入模型，可以提高预测分享虚假新闻的准确性。此外，通过激活宗教价值观和减少愤怒，可以减少虚假新闻的分享和更广泛的分享。 |
+| [^1] | [Tweets to Citations: Unveiling the Impact of Social Media Influencers on AI Research Visibility.](http://arxiv.org/abs/2401.13782) | 本文研究了社交媒体影响者在提高机器学习研究的可见性方面的作用，发现被这些影响者认可的论文引用次数显著增加，中位数引用次数比对照组高2-3倍。此外，该研究还探讨了被展示作者的地理、性别和机构多样性。 |
 
 # 详细
 
-[^1]: 使用超高维计算进行单次图表示学习
+[^1]: 从推特到引用：揭示社交媒体影响者对人工智能研究可见性的影响
 
-    One-Shot Graph Representation Learning Using Hyperdimensional Computing
+    Tweets to Citations: Unveiling the Impact of Social Media Influencers on AI Research Visibility. (arXiv:2401.13782v1 [cs.DL])
 
-    [https://arxiv.org/abs/2402.17073](https://arxiv.org/abs/2402.17073)
+    [http://arxiv.org/abs/2401.13782](http://arxiv.org/abs/2401.13782)
 
-    该方法提出了一种使用超高维计算进行单次图表示学习的方法，通过将数据投影到高维空间并利用HD运算符进行信息聚合，实现了与最先进深度学习方法相竞争的预测性能，而无需进行计算昂贵的训练。
-
-    
-
-    我们提出了一种新颖、简单、快速、高效的半监督图学习方法。所提方法利用超高维计算，将数据样本使用随机投影编码到高维空间（简称HD空间）。具体来说，我们提出了一种利用图神经网络节点表示的单射性质的超高维图学习（HDGL）算法。HDGL将节点特征映射到HD空间，然后使用HD运算符（如捆绑和绑定）来聚合每个节点的局部邻域信息。对广泛使用的基准数据集进行的实验结果显示，HDGL实现了与最先进深度学习方法相竞争的预测性能，而无需进行计算昂贵的训练。
-
-    arXiv:2402.17073v1 Announce Type: cross  Abstract: We present a novel, simple, fast, and efficient approach for semi-supervised learning on graphs. The proposed approach takes advantage of hyper-dimensional computing which encodes data samples using random projections into a high dimensional space (HD space for short). Specifically, we propose a Hyper-dimensional Graph Learning (HDGL) algorithm that leverages the injectivity property of the node representations of a family of graph neural networks. HDGL maps node features to the HD space and then uses HD operators such as bundling and binding to aggregate information from the local neighborhood of each node. Results of experiments with widely used benchmark data sets show that HDGL achieves predictive performance that is competitive with the state-of-the-art deep learning methods, without the need for computationally expensive training.
-    
-[^2]: 提升虚假新闻缓解：来自分享者社交媒体帖子历史的洞察力
-
-    Empowering Fake-News Mitigation: Insights from Sharers' Social Media Post-Histories. (arXiv:2203.10560v2 [cs.CY] UPDATED)
-
-    [http://arxiv.org/abs/2203.10560](http://arxiv.org/abs/2203.10560)
-
-    本论文提出消费者的社交媒体帖子历史是研究分享虚假新闻动机的一种被低估的数据来源。通过对帖子历史提取的文本线索，我们发现虚假新闻分享者在言辞上更多涉及愤怒、宗教和权力。并且，通过将帖子历史中的文本线索加入模型，可以提高预测分享虚假新闻的准确性。此外，通过激活宗教价值观和减少愤怒，可以减少虚假新闻的分享和更广泛的分享。
+    本文研究了社交媒体影响者在提高机器学习研究的可见性方面的作用，发现被这些影响者认可的论文引用次数显著增加，中位数引用次数比对照组高2-3倍。此外，该研究还探讨了被展示作者的地理、性别和机构多样性。
 
     
 
-    虚假信息是一个全球性问题，限制其传播对保护民主、公共卫生和消费者至关重要。我们认为消费者自己的社交媒体帖子历史是一个被低估的数据来源，用于研究是什么导致他们分享虚假新闻链接。在第一项研究中，我们探讨了从帖子历史中提取的文本线索如何区分虚假新闻的分享者和随机社交媒体用户以及其他在误导信息生态系统中的人。在两个数据集中，我们发现虚假新闻的分享者使用更多与愤怒、宗教和权力相关的词汇。在第二项研究中，我们展示了从帖子历史中添加文本线索如何提高模型预测谁有可能分享虚假新闻的准确性。在第三项研究中，我们对从第一项研究中推导出的两种缓解策略进行了初步测试，即激活宗教价值观和减少愤怒，发现它们可以减少虚假新闻的分享和更广泛的分享。在第四项研究中，我们将调查结果与用户的验证推特結合在一起。
+    随着人工智能和机器学习会议上被接受的论文数量达到数千篇，研究人员如何获取和阅读研究论文变得不清楚。本文研究了社交媒体影响者在增强机器学习研究可见性中的作用，特别是他们分享的论文引用次数。我们编制了一个包括8000多篇论文的全面数据集，涵盖了2018年12月至2023年10月的推特，以及基于出版年份、会议地点和摘要主题进行1：1匹配的对照组。我们的分析揭示了这些影响者认可的论文引用次数显著增加，中位数引用次数比对照组高2-3倍。此外，该研究还深入研究了被展示作者的地理、性别和机构多样性。这些发现突显了社交媒体在学术交流中的不断扩大的影响力，并强调了当今数字化时代不断发展的生态系统的重要性。
 
-    Misinformation is a global concern and limiting its spread is critical for protecting democracy, public health, and consumers. We propose that consumers' own social media post-histories are an underutilized data source to study what leads them to share links to fake-news. In Study 1, we explore how textual cues extracted from post-histories distinguish fake-news sharers from random social media users and others in the misinformation ecosystem. Among other results, we find across two datasets that fake-news sharers use more words related to anger, religion and power. In Study 2, we show that adding textual cues from post-histories improves the accuracy of models to predict who is likely to share fake-news. In Study 3, we provide a preliminary test of two mitigation strategies deduced from Study 1 - activating religious values and reducing anger - and find that they reduce fake-news sharing and sharing more generally. In Study 4, we combine survey responses with users' verified Twitter p
+    As the number of accepted papers at AI and ML conferences reaches into the thousands, it has become unclear how researchers access and read research publications. In this paper, we investigate the role of social media influencers in enhancing the visibility of machine learning research, particularly the citation counts of papers they share. We have compiled a comprehensive dataset of over 8,000 papers, spanning tweets from December 2018 to October 2023, alongside 1:1 matched controls based on publication year, venue, and abstract topics. Our analysis reveals a significant increase in citations for papers endorsed by these influencers, with median citation counts 2-3 times higher than those of the control group. Additionally, the study delves into the geographic, gender, and institutional diversity of highlighted authors. These findings highlight the expanding influence of social media in scholarly communication and underscore the importance of an evolving ecosystem in today's digital a
     
 
