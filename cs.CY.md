@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [SyllabusQA: A Course Logistics Question Answering Dataset](https://arxiv.org/abs/2403.14666) | SyllabusQA数据集是一个包含63个真实课程大纲的开源数据集，对36个专业涵盖5,078对多样化的开放式课程逻辑相关问题-答案对进行了详细收集，旨在评估答案事实性，多个强基线模型在该任务上表现出色，但仍存在与人类之间的显著差距。 |
+| [^1] | [MM-Soc: Benchmarking Multimodal Large Language Models in Social Media Platforms](https://arxiv.org/abs/2402.14154) | 该研究介绍了MM-Soc，一个旨在评估多模态大型语言模型（MLLMs）对社交媒体内容理解的综合基准，通过对十种大小变体的四个开源MLLMs进行详尽评估，发现了显著的性能差异。 |
 
 # 详细
 
-[^1]: SyllabusQA：一个课程逻辑问题回答数据集
+[^1]: 在社交媒体平台上对多模态大型语言模型进行基准测试
 
-    SyllabusQA: A Course Logistics Question Answering Dataset
+    MM-Soc: Benchmarking Multimodal Large Language Models in Social Media Platforms
 
-    [https://arxiv.org/abs/2403.14666](https://arxiv.org/abs/2403.14666)
+    [https://arxiv.org/abs/2402.14154](https://arxiv.org/abs/2402.14154)
 
-    SyllabusQA数据集是一个包含63个真实课程大纲的开源数据集，对36个专业涵盖5,078对多样化的开放式课程逻辑相关问题-答案对进行了详细收集，旨在评估答案事实性，多个强基线模型在该任务上表现出色，但仍存在与人类之间的显著差距。
+    该研究介绍了MM-Soc，一个旨在评估多模态大型语言模型（MLLMs）对社交媒体内容理解的综合基准，通过对十种大小变体的四个开源MLLMs进行详尽评估，发现了显著的性能差异。
 
     
 
-    自动化教学助理和聊天机器人有显著潜力减轻人类教师的工作量，尤其是对于与课程逻辑相关的问题回答，这对学生很重要，但对教师来说是重复的。然而，由于隐私问题，缺乏公开可用的数据集。我们介绍了SyllabusQA，这是一个开源数据集，包含63个真实课程大纲，涵盖36个专业，包含5,078对多样化的开放式课程逻辑相关问题-答案对，问题类型和答案格式都是多样的。由于许多逻辑相关问题包含关键信息，如考试日期，评估答案的事实性很重要。我们在该任务上对几个强基线进行了基准测试，从大型语言模型提示到检索增强生成。我们发现，尽管在传统的文本相似性指标上接近人类表现，但在准确性方面仍存在显著差距。
+    社交媒体平台是多模态信息交流的中心，包括文本、图片和视频，这使得机器难以理解在线空间中交互所关联的信息或情绪。多模态大型语言模型（MLLMs）已经成为解决这些挑战的一个有前途的解决方案，但是它们在准确解释人类情绪和诸如虚假信息等复杂内容方面存在困难。本文介绍了MM-Soc，一个旨在评估MLLMs对多模态社交媒体内容理解的综合基准。MM-Soc整合了著名的多模态数据集，并融入了一个新颖的大规模YouTube标记数据集，旨在针对从虚假信息检测、仇恨言论检测到社交上下文生成等一系列任务。通过对四个开源MLLMs的十种不同规模变体进行详尽评估，我们发现了显著的性能差异，凸显出了对性能平衡的需求。
 
-    arXiv:2403.14666v1 Announce Type: cross  Abstract: Automated teaching assistants and chatbots have significant potential to reduce the workload of human instructors, especially for logistics-related question answering, which is important to students yet repetitive for instructors. However, due to privacy concerns, there is a lack of publicly available datasets. We introduce SyllabusQA, an open-source dataset with 63 real course syllabi covering 36 majors, containing 5,078 open-ended course logistics-related question-answer pairs that are diverse in both question types and answer formats. Since many logistics-related questions contain critical information like the date of an exam, it is important to evaluate the factuality of answers. We benchmark several strong baselines on this task, from large language model prompting to retrieval-augmented generation. We find that despite performing close to humans on traditional metrics of textual similarity, there remains a significant gap between
+    arXiv:2402.14154v1 Announce Type: new  Abstract: Social media platforms are hubs for multimodal information exchange, encompassing text, images, and videos, making it challenging for machines to comprehend the information or emotions associated with interactions in online spaces. Multimodal Large Language Models (MLLMs) have emerged as a promising solution to address these challenges, yet struggle with accurately interpreting human emotions and complex contents like misinformation. This paper introduces MM-Soc, a comprehensive benchmark designed to evaluate MLLMs' understanding of multimodal social media content. MM-Soc compiles prominent multimodal datasets and incorporates a novel large-scale YouTube tagging dataset, targeting a range of tasks from misinformation detection, hate speech detection, and social context generation. Through our exhaustive evaluation on ten size-variants of four open-source MLLMs, we have identified significant performance disparities, highlighting the need
     
 

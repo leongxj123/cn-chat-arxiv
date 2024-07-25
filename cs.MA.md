@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Rendering Wireless Environments Useful for Gradient Estimators: A Zero-Order Stochastic Federated Learning Method](https://arxiv.org/abs/2401.17460) | 提出了一种新颖的零阶随机联邦学习方法，通过利用无线通信通道的特性，在学习算法中考虑了无线通道，避免了资源的浪费和分析难度。 |
+| [^1] | [Understanding Iterative Combinatorial Auction Designs via Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2402.19420) | 多智能体强化学习算法可能有助于理解迭代组合拍卖，但其有效部署具有挑战性，需要考虑保持游戏可处理性以及避免各种算法的陷阱。 |
 
 # 详细
 
-[^1]: 使无线环境对梯度估计器有用：一种零阶随机联邦学习方法
+[^1]: 通过多智能体强化学习理解迭代组合拍卖设计
 
-    Rendering Wireless Environments Useful for Gradient Estimators: A Zero-Order Stochastic Federated Learning Method
+    Understanding Iterative Combinatorial Auction Designs via Multi-Agent Reinforcement Learning
 
-    [https://arxiv.org/abs/2401.17460](https://arxiv.org/abs/2401.17460)
+    [https://arxiv.org/abs/2402.19420](https://arxiv.org/abs/2402.19420)
 
-    提出了一种新颖的零阶随机联邦学习方法，通过利用无线通信通道的特性，在学习算法中考虑了无线通道，避免了资源的浪费和分析难度。
+    多智能体强化学习算法可能有助于理解迭代组合拍卖，但其有效部署具有挑战性，需要考虑保持游戏可处理性以及避免各种算法的陷阱。
 
     
 
-    联邦学习（FL）是一种新颖的机器学习方法，允许多个边缘设备协同训练模型，而无需公开原始数据。然而，当设备和服务器通过无线信道通信时，该方法面临着通信和计算瓶颈。通过利用一个通信高效的框架，我们提出了一种新颖的零阶（ZO）方法，采用一点梯度估计器，利用无线通信通道的特性，而无需知道通道状态系数。这是第一种将无线通道包含在学习算法本身中的方法，而不是浪费资源来分析和消除其影响。这项工作的两个主要困难是，在FL中，目标函数通常不是凸的，这使得将FL扩展到ZO方法具有挑战性，以及包括影响的难度。
+    迭代组合拍卖在高风险场景如频谱拍卖中被广泛使用。然而，这类拍卖难以在理论上理解，使得竞标者很难决定如何行动以及设计者很难优化拍卖规则以确保理想的结果，如高收入或福利。本文探讨了多智能体强化学习算法是否能够用于理解迭代组合拍卖，鉴于这些算法最近在其他领域已经显示出实证成功。我们发现，多智能体强化学习确实可以受益于拍卖分析，但有效部署并不容易。我们首先描述了保持结果游戏可处理的建模决策，同时不牺牲诸如信息不完全或竞标者间不对称等重要特征。我们还讨论了如何避免各种多智能体强化学习算法的陷阱，如何克服挑战以及如何应对各种问题。
 
-    Federated learning (FL) is a novel approach to machine learning that allows multiple edge devices to collaboratively train a model without disclosing their raw data. However, several challenges hinder the practical implementation of this approach, especially when devices and the server communicate over wireless channels, as it suffers from communication and computation bottlenecks in this case. By utilizing a communication-efficient framework, we propose a novel zero-order (ZO) method with a one-point gradient estimator that harnesses the nature of the wireless communication channel without requiring the knowledge of the channel state coefficient. It is the first method that includes the wireless channel in the learning algorithm itself instead of wasting resources to analyze it and remove its impact. The two main difficulties of this work are that in FL, the objective function is usually not convex, which makes the extension of FL to ZO methods challenging, and that including the impa
+    arXiv:2402.19420v1 Announce Type: cross  Abstract: Iterative combinatorial auctions are widely used in high stakes settings such as spectrum auctions. Such auctions can be hard to understand analytically, making it difficult for bidders to determine how to behave and for designers to optimize auction rules to ensure desirable outcomes such as high revenue or welfare. In this paper, we investigate whether multi-agent reinforcement learning (MARL) algorithms can be used to understand iterative combinatorial auctions, given that these algorithms have recently shown empirical success in several other domains. We find that MARL can indeed benefit auction analysis, but that deploying it effectively is nontrivial. We begin by describing modelling decisions that keep the resulting game tractable without sacrificing important features such as imperfect information or asymmetry between bidders. We also discuss how to navigate pitfalls of various MARL algorithms, how to overcome challenges in ver
     
 

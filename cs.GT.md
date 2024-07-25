@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Automated Security Response through Online Learning with Adaptive Conjectures](https://arxiv.org/abs/2402.12499) | 该论文通过自适应猜想的在线学习，提出了一种适用于IT基础设施的自动化安全响应方法，其中游戏参与者通过Bayesian学习调整猜想，并通过推演更新策略，最终实现了最佳拟合，提高了推演在猜想模型下的性能。 |
+| [^1] | [Understanding Iterative Combinatorial Auction Designs via Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2402.19420) | 多智能体强化学习算法可能有助于理解迭代组合拍卖，但其有效部署具有挑战性，需要考虑保持游戏可处理性以及避免各种算法的陷阱。 |
 
 # 详细
 
-[^1]: 通过自适应猜想的在线学习实现自动化安全响应
+[^1]: 通过多智能体强化学习理解迭代组合拍卖设计
 
-    Automated Security Response through Online Learning with Adaptive Conjectures
+    Understanding Iterative Combinatorial Auction Designs via Multi-Agent Reinforcement Learning
 
-    [https://arxiv.org/abs/2402.12499](https://arxiv.org/abs/2402.12499)
+    [https://arxiv.org/abs/2402.19420](https://arxiv.org/abs/2402.19420)
 
-    该论文通过自适应猜想的在线学习，提出了一种适用于IT基础设施的自动化安全响应方法，其中游戏参与者通过Bayesian学习调整猜想，并通过推演更新策略，最终实现了最佳拟合，提高了推演在猜想模型下的性能。
+    多智能体强化学习算法可能有助于理解迭代组合拍卖，但其有效部署具有挑战性，需要考虑保持游戏可处理性以及避免各种算法的陷阱。
 
     
 
-    我们研究了针对IT基础设施的自动化安全响应，并将攻击者和防御者之间的互动形式表述为一个部分观测、非平稳博弈。我们放宽了游戏模型正确规定的标准假设，并考虑每个参与者对模型有一个概率性猜想，可能在某种意义上错误规定，即真实模型的概率为0。这种形式允许我们捕捉关于基础设施和参与者意图的不确定性。为了在线学习有效的游戏策略，我们设计了一种新颖的方法，其中一个参与者通过贝叶斯学习迭代地调整其猜想，并通过推演更新其策略。我们证明了猜想会收敛到最佳拟合，并提供了在具有猜测模型的情况下推演实现性能改进的上限。为了刻画游戏的稳定状态，我们提出了Berk-Nash平衡的一个变种。
+    迭代组合拍卖在高风险场景如频谱拍卖中被广泛使用。然而，这类拍卖难以在理论上理解，使得竞标者很难决定如何行动以及设计者很难优化拍卖规则以确保理想的结果，如高收入或福利。本文探讨了多智能体强化学习算法是否能够用于理解迭代组合拍卖，鉴于这些算法最近在其他领域已经显示出实证成功。我们发现，多智能体强化学习确实可以受益于拍卖分析，但有效部署并不容易。我们首先描述了保持结果游戏可处理的建模决策，同时不牺牲诸如信息不完全或竞标者间不对称等重要特征。我们还讨论了如何避免各种多智能体强化学习算法的陷阱，如何克服挑战以及如何应对各种问题。
 
-    arXiv:2402.12499v1 Announce Type: cross  Abstract: We study automated security response for an IT infrastructure and formulate the interaction between an attacker and a defender as a partially observed, non-stationary game. We relax the standard assumption that the game model is correctly specified and consider that each player has a probabilistic conjecture about the model, which may be misspecified in the sense that the true model has probability 0. This formulation allows us to capture uncertainty about the infrastructure and the intents of the players. To learn effective game strategies online, we design a novel method where a player iteratively adapts its conjecture using Bayesian learning and updates its strategy through rollout. We prove that the conjectures converge to best fits, and we provide a bound on the performance improvement that rollout enables with a conjectured model. To characterize the steady state of the game, we propose a variant of the Berk-Nash equilibrium. We 
+    arXiv:2402.19420v1 Announce Type: cross  Abstract: Iterative combinatorial auctions are widely used in high stakes settings such as spectrum auctions. Such auctions can be hard to understand analytically, making it difficult for bidders to determine how to behave and for designers to optimize auction rules to ensure desirable outcomes such as high revenue or welfare. In this paper, we investigate whether multi-agent reinforcement learning (MARL) algorithms can be used to understand iterative combinatorial auctions, given that these algorithms have recently shown empirical success in several other domains. We find that MARL can indeed benefit auction analysis, but that deploying it effectively is nontrivial. We begin by describing modelling decisions that keep the resulting game tractable without sacrificing important features such as imperfect information or asymmetry between bidders. We also discuss how to navigate pitfalls of various MARL algorithms, how to overcome challenges in ver
     
 
