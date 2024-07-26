@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [MM-Soc: Benchmarking Multimodal Large Language Models in Social Media Platforms](https://arxiv.org/abs/2402.14154) | 该研究介绍了MM-Soc，一个旨在评估多模态大型语言模型（MLLMs）对社交媒体内容理解的综合基准，通过对十种大小变体的四个开源MLLMs进行详尽评估，发现了显著的性能差异。 |
+| [^1] | [PATCH -- Psychometrics-AssisTed benCHmarking of Large Language Models: A Case Study of Mathematics Proficiency](https://arxiv.org/abs/2404.01799) | 该论文提出了一种新的框架PATCH，用于将心理测量领域的知识整合到大型语言模型的基准测试中，以解决现有基准测试存在的测量质量、项目级别评估和参考人群等问题。 |
 
 # 详细
 
-[^1]: 在社交媒体平台上对多模态大型语言模型进行基准测试
+[^1]: PATCH -- 大型语言模型的心理测量辅助基准测试：数学能力的案例研究
 
-    MM-Soc: Benchmarking Multimodal Large Language Models in Social Media Platforms
+    PATCH -- Psychometrics-AssisTed benCHmarking of Large Language Models: A Case Study of Mathematics Proficiency
 
-    [https://arxiv.org/abs/2402.14154](https://arxiv.org/abs/2402.14154)
+    [https://arxiv.org/abs/2404.01799](https://arxiv.org/abs/2404.01799)
 
-    该研究介绍了MM-Soc，一个旨在评估多模态大型语言模型（MLLMs）对社交媒体内容理解的综合基准，通过对十种大小变体的四个开源MLLMs进行详尽评估，发现了显著的性能差异。
+    该论文提出了一种新的框架PATCH，用于将心理测量领域的知识整合到大型语言模型的基准测试中，以解决现有基准测试存在的测量质量、项目级别评估和参考人群等问题。
 
     
 
-    社交媒体平台是多模态信息交流的中心，包括文本、图片和视频，这使得机器难以理解在线空间中交互所关联的信息或情绪。多模态大型语言模型（MLLMs）已经成为解决这些挑战的一个有前途的解决方案，但是它们在准确解释人类情绪和诸如虚假信息等复杂内容方面存在困难。本文介绍了MM-Soc，一个旨在评估MLLMs对多模态社交媒体内容理解的综合基准。MM-Soc整合了著名的多模态数据集，并融入了一个新颖的大规模YouTube标记数据集，旨在针对从虚假信息检测、仇恨言论检测到社交上下文生成等一系列任务。通过对四个开源MLLMs的十种不同规模变体进行详尽评估，我们发现了显著的性能差异，凸显出了对性能平衡的需求。
+    许多现有的大型（多模态）语言模型（LLMs）基准测试着重于衡量LLMs的学术能力，通常也对比较模型性能与人类考试者感兴趣。尽管这些基准测试对LLMs的发展至关重要，但它们存在一些限制，包括有问题的测量质量（例如，它们是否以可靠的方式衡量所需的内容？）、缺乏项目级别的质量评估（例如，有些项目是否比其他更重要或更困难？）以及人类人口参照模糊（例如，模型可以与谁进行比较？）。为了应对这些挑战，我们提出利用心理测量学领域的知识——一门致力于测量潜在变量如学术能力的领域——来进行LLMs基准测试的心理测量辅助方法。我们的主要贡献有三点。首先，我们介绍了PATCH：一种用于大型语言模型的心理测量辅助基准测试的新框架。
 
-    arXiv:2402.14154v1 Announce Type: new  Abstract: Social media platforms are hubs for multimodal information exchange, encompassing text, images, and videos, making it challenging for machines to comprehend the information or emotions associated with interactions in online spaces. Multimodal Large Language Models (MLLMs) have emerged as a promising solution to address these challenges, yet struggle with accurately interpreting human emotions and complex contents like misinformation. This paper introduces MM-Soc, a comprehensive benchmark designed to evaluate MLLMs' understanding of multimodal social media content. MM-Soc compiles prominent multimodal datasets and incorporates a novel large-scale YouTube tagging dataset, targeting a range of tasks from misinformation detection, hate speech detection, and social context generation. Through our exhaustive evaluation on ten size-variants of four open-source MLLMs, we have identified significant performance disparities, highlighting the need
+    arXiv:2404.01799v1 Announce Type: new  Abstract: Many existing benchmarks of large (multimodal) language models (LLMs) focus on measuring LLMs' academic proficiency, often with also an interest in comparing model performance with human test takers. While these benchmarks have proven key to the development of LLMs, they suffer from several limitations, including questionable measurement quality (e.g., Do they measure what they are supposed to in a reliable way?), lack of quality assessment on the item level (e.g., Are some items more important or difficult than others?) and unclear human population reference (e.g., To whom can the model be compared?). In response to these challenges, we propose leveraging knowledge from psychometrics - a field dedicated to the measurement of latent variables like academic proficiency - into LLM benchmarking. We make three primary contributions. First, we introduce PATCH: a novel framework for Psychometrics-AssisTed benCHmarking of LLMs. PATCH addresses 
     
 
