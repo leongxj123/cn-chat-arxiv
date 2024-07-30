@@ -2,82 +2,97 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Leveraging AI Planning For Detecting Cloud Security Vulnerabilities](https://arxiv.org/abs/2402.10985) | 提出了一个通用框架来建模云系统中的访问控制策略，并开发了基于PDDL模型的新方法来检测可能导致诸如勒索软件和敏感数据外泄等广泛攻击的安全漏洞。 |
-| [^2] | [SafeDecoding: Defending against Jailbreak Attacks via Safety-Aware Decoding](https://arxiv.org/abs/2402.08983) | 本文提出了一种名为SafeDecoding的解决方案，通过安全感知解码策略来防御大型语言模型（LLMs）的越狱攻击。该策略可以生成对用户查询有益且无害的响应，有效缓解了LLMs安全性威胁。 |
-| [^3] | [Coordinated Disclosure for AI: Beyond Security Vulnerabilities](https://arxiv.org/abs/2402.07039) | 这篇论文提出了一种针对机器学习和人工智能问题的协调缺陷披露（CFD）框架，以解决目前领域中缺乏结构化过程的问题。 |
-| [^4] | [The SpongeNet Attack: Sponge Weight Poisoning of Deep Neural Networks](https://arxiv.org/abs/2402.06357) | 本文提出了一种名为 SpongeNet 的新型海绵攻击，通过直接作用于预训练模型参数，成功增加了视觉模型的能耗，而且所需的样本数量更少。 |
-| [^5] | [The Janus Interface: How Fine-Tuning in Large Language Models Amplifies the Privacy Risks.](http://arxiv.org/abs/2310.15469) | 《Janus接口：大型语言模型微调如何放大隐私风险》研究了大型语言模型的微调对个人信息泄露的风险，发现了一种新的LLM利用途径。 |
+| [^1] | [On the Conflict of Robustness and Learning in Collaborative Machine Learning](https://arxiv.org/abs/2402.13700) | 在协作机器学习中，研究人员正式规范了稳健聚合器的领域，并发现现有的稳健聚合器无法实现其目标，要么无法准确识别有针对性的恶意更新，要么方法成功率不够。 |
+| [^2] | [Privacy-preserving data release leveraging optimal transport and particle gradient descent](https://arxiv.org/abs/2401.17823) | 该研究提出了一种基于边际的保护隐私数据合成方法PrivPGD，利用了最优输运和粒子梯度下降的工具。该方法在不同领域的数据集上表现出色，具有高度的可扩展性和灵活性，并可以满足特定的领域约束条件。 |
+| [^3] | [Finetuning Large Language Models for Vulnerability Detection.](http://arxiv.org/abs/2401.17010) | 本文优化了大规模语言模型用于源代码中的漏洞检测任务，通过微调最先进的代码语言模型WizardCoder并改进其训练过程和策略，实现了对漏洞数据集的分类性能的提升。 |
+| [^4] | [FLAIM: AIM-based Synthetic Data Generation in the Federated Setting.](http://arxiv.org/abs/2310.03447) | FLAIM是一个在联邦设置中基于AIM的合成数据生成方法，该方法解决了差分隐私方向的技术在联邦场景下的适用问题，并提出了FLAIM方法来维持较高的效用和处理异构性。 |
+| [^5] | [LLM Platform Security: Applying a Systematic Evaluation Framework to OpenAI's ChatGPT Plugins.](http://arxiv.org/abs/2309.10254) | 本文提出了一个框架，用于分析和改进当前和未来与插件集成的LLM平台的安全性、隐私和安全性。在应用框架于OpenAI的插件生态系统时，我们发现了一些具体证明了潜在问题的插件。 |
+| [^6] | [ChatGPT for Software Security: Exploring the Strengths and Limitations of ChatGPT in the Security Applications.](http://arxiv.org/abs/2307.12488) | 本文通过对ChatGPT在安全导向的程序分析中的表现进行研究，旨在了解其优势和局限性。研究结果可以帮助我们更好地理解ChatGPT在安全领域的应用潜力。 |
 
 # 详细
 
-[^1]: 利用AI规划技术检测云安全漏洞
+[^1]: 在协作机器学习中稳健性和学习的冲突
 
-    Leveraging AI Planning For Detecting Cloud Security Vulnerabilities
+    On the Conflict of Robustness and Learning in Collaborative Machine Learning
 
-    [https://arxiv.org/abs/2402.10985](https://arxiv.org/abs/2402.10985)
+    [https://arxiv.org/abs/2402.13700](https://arxiv.org/abs/2402.13700)
 
-    提出了一个通用框架来建模云系统中的访问控制策略，并开发了基于PDDL模型的新方法来检测可能导致诸如勒索软件和敏感数据外泄等广泛攻击的安全漏洞。
-
-    
-
-    云计算服务提供了可扩展且具有成本效益的数据存储、处理和协作解决方案。随着它们的普及，与其安全漏洞相关的担忧也在增长，这可能导致数据泄露和勒索软件等复杂攻击。为了应对这些问题，我们首先提出了一个通用框架，用于表达云系统中不同对象（如用户、数据存储、安全角色）之间的关系，以建模云系统中的访问控制策略。访问控制误配置通常是云攻击的主要原因。其次，我们开发了一个PDDL模型，用于检测安全漏洞，例如可能导致广泛攻击（如勒索软件）和敏感数据外泄等。规划器可以生成攻击以识别云中的此类漏洞。最后，我们在14个不同商业组织的真实亚马逊AWS云配置上测试了我们的方法。
-
-    arXiv:2402.10985v1 Announce Type: cross  Abstract: Cloud computing services provide scalable and cost-effective solutions for data storage, processing, and collaboration. Alongside their growing popularity, concerns related to their security vulnerabilities leading to data breaches and sophisticated attacks such as ransomware are growing. To address these, first, we propose a generic framework to express relations between different cloud objects such as users, datastores, security roles, to model access control policies in cloud systems. Access control misconfigurations are often the primary driver for cloud attacks. Second, we develop a PDDL model for detecting security vulnerabilities which can for example lead to widespread attacks such as ransomware, sensitive data exfiltration among others. A planner can then generate attacks to identify such vulnerabilities in the cloud. Finally, we test our approach on 14 real Amazon AWS cloud configurations of different commercial organizations
-    
-[^2]: SafeDecoding: 通过安全感知解码防御越狱攻击
-
-    SafeDecoding: Defending against Jailbreak Attacks via Safety-Aware Decoding
-
-    [https://arxiv.org/abs/2402.08983](https://arxiv.org/abs/2402.08983)
-
-    本文提出了一种名为SafeDecoding的解决方案，通过安全感知解码策略来防御大型语言模型（LLMs）的越狱攻击。该策略可以生成对用户查询有益且无害的响应，有效缓解了LLMs安全性威胁。
+    在协作机器学习中，研究人员正式规范了稳健聚合器的领域，并发现现有的稳健聚合器无法实现其目标，要么无法准确识别有针对性的恶意更新，要么方法成功率不够。
 
     
 
-    随着大型语言模型（LLMs）越来越多地应用于代码生成和聊天机器人辅助等现实应用中，人们为了使LLM的行为与人类价值观保持一致，包括安全性在内做出了大量努力。越狱攻击旨在引发LLM的非预期和不安全行为，仍然是LLM安全性的重要威胁。本文旨在通过引入SafeDecoding来防御LLM的越狱攻击，这是一种安全感知的解码策略，用于生成对用户查询有益且无害的响应。我们在开发SafeDecoding时的洞察力基于观察到，即使代表有害内容的标记的概率超过代表无害响应的标记的概率，安全免责声明仍然出现在按概率降序排序的标记中的前几个。这使我们能够通过识别安全免责声明并增强其良性影响力来减轻越狱攻击。
+    协作机器学习（CML）允许参与者共同训练机器学习模型，同时保持他们的训练数据私密。在隐私是一个强烈要求的情况下，比如健康相关应用中，安全也是首要关注的问题。这意味着保护隐私的CML流程必须产生能够输出正确可靠决策的模型，甚至在可能不受信任参与者的情况下也是如此。为了解决这个问题，研究人员提出使用依赖于帮助过滤可能危及训练过程的恶意贡献的度量的“稳健聚合器”。在这项工作中，我们在文献中规范化了稳健聚合器的进展。我们的规范化能够表明现有的稳健聚合器无法实现其目标：无论是它们使用无法准确识别有针对性的恶意更新的基于距离的度量；还是提出的方法成功率不够。
 
-    arXiv:2402.08983v1 Announce Type: cross Abstract: As large language models (LLMs) become increasingly integrated into real-world applications such as code generation and chatbot assistance, extensive efforts have been made to align LLM behavior with human values, including safety. Jailbreak attacks, aiming to provoke unintended and unsafe behaviors from LLMs, remain a significant/leading LLM safety threat. In this paper, we aim to defend LLMs against jailbreak attacks by introducing SafeDecoding, a safety-aware decoding strategy for LLMs to generate helpful and harmless responses to user queries. Our insight in developing SafeDecoding is based on the observation that, even though probabilities of tokens representing harmful contents outweigh those representing harmless responses, safety disclaimers still appear among the top tokens after sorting tokens by probability in descending order. This allows us to mitigate jailbreak attacks by identifying safety disclaimers and amplifying their
+    arXiv:2402.13700v1 Announce Type: new  Abstract: Collaborative Machine Learning (CML) allows participants to jointly train a machine learning model while keeping their training data private. In scenarios where privacy is a strong requirement, such as health-related applications, safety is also a primary concern. This means that privacy-preserving CML processes must produce models that output correct and reliable decisions \emph{even in the presence of potentially untrusted participants}. In response to this issue, researchers propose to use \textit{robust aggregators} that rely on metrics which help filter out malicious contributions that could compromise the training process. In this work, we formalize the landscape of robust aggregators in the literature. Our formalization allows us to show that existing robust aggregators cannot fulfill their goal: either they use distance-based metrics that cannot accurately identify targeted malicious updates; or propose methods whose success is i
     
-[^3]: 人工智能的协调披露：超越安全漏洞
+[^2]: 采用最优输运和粒子梯度下降的保护隐私数据发布方法
 
-    Coordinated Disclosure for AI: Beyond Security Vulnerabilities
+    Privacy-preserving data release leveraging optimal transport and particle gradient descent
 
-    [https://arxiv.org/abs/2402.07039](https://arxiv.org/abs/2402.07039)
+    [https://arxiv.org/abs/2401.17823](https://arxiv.org/abs/2401.17823)
 
-    这篇论文提出了一种针对机器学习和人工智能问题的协调缺陷披露（CFD）框架，以解决目前领域中缺乏结构化过程的问题。
-
-    
-
-    目前，人工智能领域的伤害报告在披露或解决算法缺陷方面仍然是一种临时性的操作，缺乏结构化的过程。相比之下，协调漏洞披露（CVD）的伦理和生态系统在软件安全和透明度方面发挥着关键作用。在美国的背景下，为了鼓励秉持善意行事的安全研究人员，建立一个安全防护条款以对抗计算机欺诈和滥用法案一直存在长期的法律和政策斗争。值得注意的是，机器学习（ML）模型中的算法缺陷与传统软件漏洞存在着不同的挑战，需要一种专门的方法。为了解决这一差距，我们提出了一种针对机器学习和人工智能问题特殊复杂性的专门协调缺陷披露（CFD）框架的实施。本文深入研究了ML中的披露历史背景，包括
-
-    Harm reporting in the field of Artificial Intelligence (AI) currently operates on an ad hoc basis, lacking a structured process for disclosing or addressing algorithmic flaws. In contrast, the Coordinated Vulnerability Disclosure (CVD) ethos and ecosystem play a pivotal role in software security and transparency. Within the U.S. context, there has been a protracted legal and policy struggle to establish a safe harbor from the Computer Fraud and Abuse Act, aiming to foster institutional support for security researchers acting in good faith. Notably, algorithmic flaws in Machine Learning (ML) models present distinct challenges compared to traditional software vulnerabilities, warranting a specialized approach. To address this gap, we propose the implementation of a dedicated Coordinated Flaw Disclosure (CFD) framework tailored to the intricacies of machine learning and artificial intelligence issues. This paper delves into the historical landscape of disclosures in ML, encompassing the a
-    
-[^4]: SpongeNet 攻击：深度神经网络的海绵权重中毒
-
-    The SpongeNet Attack: Sponge Weight Poisoning of Deep Neural Networks
-
-    [https://arxiv.org/abs/2402.06357](https://arxiv.org/abs/2402.06357)
-
-    本文提出了一种名为 SpongeNet 的新型海绵攻击，通过直接作用于预训练模型参数，成功增加了视觉模型的能耗，而且所需的样本数量更少。
+    该研究提出了一种基于边际的保护隐私数据合成方法PrivPGD，利用了最优输运和粒子梯度下降的工具。该方法在不同领域的数据集上表现出色，具有高度的可扩展性和灵活性，并可以满足特定的领域约束条件。
 
     
 
-    海绵攻击旨在增加在硬件加速器上部署的神经网络的能耗和计算时间。现有的海绵攻击可以通过海绵示例进行推理，也可以通过海绵中毒在训练过程中进行。海绵示例利用添加到模型输入的扰动来增加能量和延迟，而海绵中毒则改变模型的目标函数来引发推理时的能量/延迟效应。在这项工作中，我们提出了一种新颖的海绵攻击，称为 SpongeNet。SpongeNet 是第一个直接作用于预训练模型参数的海绵攻击。我们的实验表明，相比于海绵中毒，SpongeNet 可以成功增加视觉模型的能耗，并且所需的样本数量更少。我们的实验结果表明，如果不专门针对海绵中毒进行调整（即减小批归一化偏差值），则毒害防御会失效。我们的工作显示出海绵攻击的影响。
+    我们提出了一种新颖的方法，用于保护关键领域（如医疗保健和政府）中隐私的表格数据差分私有数据合成的任务。目前的最先进方法主要使用基于边际的方法，从私有边际估计生成数据集。在本文中，我们引入了PrivPGD，一种基于边际的私有数据合成的新一代方法，利用了最优输运和粒子梯度下降的工具。我们的算法在大范围数据集上优于现有方法，并具有高度可扩展性和灵活性，可以结合其他领域特定的约束条件。
 
-    Sponge attacks aim to increase the energy consumption and computation time of neural networks deployed on hardware accelerators. Existing sponge attacks can be performed during inference via sponge examples or during training via Sponge Poisoning. Sponge examples leverage perturbations added to the model's input to increase energy and latency, while Sponge Poisoning alters the objective function of a model to induce inference-time energy/latency effects.   In this work, we propose a novel sponge attack called SpongeNet. SpongeNet is the first sponge attack that is performed directly on the parameters of a pre-trained model. Our experiments show that SpongeNet can successfully increase the energy consumption of vision models with fewer samples required than Sponge Poisoning. Our experiments indicate that poisoning defenses are ineffective if not adjusted specifically for the defense against Sponge Poisoning (i.e., they decrease batch normalization bias values). Our work shows that Spong
+    We present a novel approach for differentially private data synthesis of protected tabular datasets, a relevant task in highly sensitive domains such as healthcare and government. Current state-of-the-art methods predominantly use marginal-based approaches, where a dataset is generated from private estimates of the marginals. In this paper, we introduce PrivPGD, a new generation method for marginal-based private data synthesis, leveraging tools from optimal transport and particle gradient descent. Our algorithm outperforms existing methods on a large range of datasets while being highly scalable and offering the flexibility to incorporate additional domain-specific constraints.
     
-[^5]: 《Janus接口：大型语言模型微调如何放大隐私风险》
+[^3]: 优化大规模语言模型用于漏洞检测
 
-    The Janus Interface: How Fine-Tuning in Large Language Models Amplifies the Privacy Risks. (arXiv:2310.15469v1 [cs.CR])
+    Finetuning Large Language Models for Vulnerability Detection. (arXiv:2401.17010v1 [cs.CR])
 
-    [http://arxiv.org/abs/2310.15469](http://arxiv.org/abs/2310.15469)
+    [http://arxiv.org/abs/2401.17010](http://arxiv.org/abs/2401.17010)
 
-    《Janus接口：大型语言模型微调如何放大隐私风险》研究了大型语言模型的微调对个人信息泄露的风险，发现了一种新的LLM利用途径。
+    本文优化了大规模语言模型用于源代码中的漏洞检测任务，通过微调最先进的代码语言模型WizardCoder并改进其训练过程和策略，实现了对漏洞数据集的分类性能的提升。
 
     
 
-    2018年后的时代标志着大型语言模型（LLM）的出现，OpenAI的ChatGPT等创新展示了惊人的语言能力。随着行业在增加模型参数并利用大量的人类语言数据方面的努力，安全和隐私挑战也出现了。其中最重要的是在基于网络的数据获取过程中，可能会意外积累个人可识别信息（PII），从而导致意外的PII泄露风险。虽然像RLHF和灾难性遗忘这样的策略已被用来控制隐私侵权的风险，但LLM的最新进展（以OpenAI的GPT-3.5的微调界面为代表）重新引发了关注。有人可能会问：LLM的微调是否会导致训练数据集中嵌入的个人信息泄漏？本文报道了首次尝试寻求答案的努力，重点是我们发现了一种新的LLM利用途径。
+    本文介绍了对大规模语言模型进行微调，并将其用于源代码中的漏洞检测的结果。我们利用最先进的语言模型StarCoder的改进版本WizardCoder，并通过进一步微调将其适应于漏洞检测任务。为了加速训练，我们修改了WizardCoder的训练过程，并探究了最佳的训练策略。针对负样本远多于正样本的不平衡数据集，我们还尝试了不同的技术来提高分类性能。微调后的WizardCoder模型在平衡和不平衡的漏洞数据集上在ROC AUC和F1度量上实现了改进，证明了将预训练的语言模型用于源代码中的漏洞检测的有效性。主要贡献包括对最先进的代码语言模型WizardCoder进行微调，提高其训练速度而不影响性能，并对训练过程和策略进行了优化。
 
-    The era post-2018 marked the advent of Large Language Models (LLMs), with innovations such as OpenAI's ChatGPT showcasing prodigious linguistic prowess. As the industry galloped toward augmenting model parameters and capitalizing on vast swaths of human language data, security and privacy challenges also emerged. Foremost among these is the potential inadvertent accrual of Personal Identifiable Information (PII) during web-based data acquisition, posing risks of unintended PII disclosure. While strategies like RLHF during training and Catastrophic Forgetting have been marshaled to control the risk of privacy infringements, recent advancements in LLMs, epitomized by OpenAI's fine-tuning interface for GPT-3.5, have reignited concerns. One may ask: can the fine-tuning of LLMs precipitate the leakage of personal information embedded within training datasets? This paper reports the first endeavor to seek the answer to the question, particularly our discovery of a new LLM exploitation avenue
+    This paper presents the results of finetuning large language models (LLMs) for the task of detecting vulnerabilities in source code. We leverage WizardCoder, a recent improvement of the state-of-the-art LLM StarCoder, and adapt it for vulnerability detection through further finetuning. To accelerate training, we modify WizardCoder's training procedure, also we investigate optimal training regimes. For the imbalanced dataset with many more negative examples than positive, we also explore different techniques to improve classification performance. The finetuned WizardCoder model achieves improvement in ROC AUC and F1 measures on balanced and imbalanced vulnerability datasets over CodeBERT-like model, demonstrating the effectiveness of adapting pretrained LLMs for vulnerability detection in source code. The key contributions are finetuning the state-of-the-art code LLM, WizardCoder, increasing its training speed without the performance harm, optimizing the training procedure and regimes, 
+    
+[^4]: FLAIM: 在联邦设置中基于AIM的合成数据生成
+
+    FLAIM: AIM-based Synthetic Data Generation in the Federated Setting. (arXiv:2310.03447v1 [cs.CR])
+
+    [http://arxiv.org/abs/2310.03447](http://arxiv.org/abs/2310.03447)
+
+    FLAIM是一个在联邦设置中基于AIM的合成数据生成方法，该方法解决了差分隐私方向的技术在联邦场景下的适用问题，并提出了FLAIM方法来维持较高的效用和处理异构性。
+
+    
+
+    保护个人隐私同时实现协同数据共享对组织至关重要。合成数据生成是一种解决方案，它产生与私有数据的统计特性相似的人工数据。虽然在差分隐私下已经设计出了许多技术，但它们主要假设数据是集中的。然而，数据往往以联邦方式分布在多个客户端上。在这项工作中，我们开始研究联邦合成表数据生成。在AIM这个先进的中心方法的基础上，我们提出了DistAIM和FLAIM。我们展示了分发AIM是简单的，扩展了基于安全多方计算的最新方法，但需要额外的开销，使其在联邦场景中不太适用。然后，我们证明了简单地联邦AIM可能导致在异构性存在的情况下效用严重下降。为了解决这两个问题，我们提出了一种增强的FLAIM方法，该方法可以维持较高的效用，并且可以处理联邦设置中的异构性。
+
+    Preserving individual privacy while enabling collaborative data sharing is crucial for organizations. Synthetic data generation is one solution, producing artificial data that mirrors the statistical properties of private data. While numerous techniques have been devised under differential privacy, they predominantly assume data is centralized. However, data is often distributed across multiple clients in a federated manner. In this work, we initiate the study of federated synthetic tabular data generation. Building upon a SOTA central method known as AIM, we present DistAIM and FLAIM. We show it is straightforward to distribute AIM, extending a recent approach based on secure multi-party computation which necessitates additional overhead, making it less suited to federated scenarios. We then demonstrate that naively federating AIM can lead to substantial degradation in utility under the presence of heterogeneity. To mitigate both issues, we propose an augmented FLAIM approach that mai
+    
+[^5]: LLM平台安全：将系统评估框架应用于OpenAI的ChatGPT插件
+
+    LLM Platform Security: Applying a Systematic Evaluation Framework to OpenAI's ChatGPT Plugins. (arXiv:2309.10254v1 [cs.CR])
+
+    [http://arxiv.org/abs/2309.10254](http://arxiv.org/abs/2309.10254)
+
+    本文提出了一个框架，用于分析和改进当前和未来与插件集成的LLM平台的安全性、隐私和安全性。在应用框架于OpenAI的插件生态系统时，我们发现了一些具体证明了潜在问题的插件。
+
+    
+
+    近期，如ChatGPT等大型语言模型（LLM）平台开始提供插件生态系统，以与互联网上的第三方服务进行交互。虽然这些插件扩展了LLM平台的功能，但它们是由任意的第三方开发的，因此不能隐式信任。插件还使用自然语言与LLM平台和用户进行交互，这可能导致模糊的解释。本文提出了一个框架，为LLM平台设计者分析和改进当前和未来与插件集成的LLM平台的安全性、隐私和安全性奠定了基础。我们的框架是一个攻击分类法的表述，通过迭代地探索LLM平台相关方如何利用他们的能力和责任对彼此进行攻击来开发的。作为我们迭代过程的一部分，我们将我们的框架应用于OpenAI的插件生态系统。我们揭示了一些具体证明了潜在问题的插件。
+
+    Large language model (LLM) platforms, such as ChatGPT, have recently begun offering a plugin ecosystem to interface with third-party services on the internet. While these plugins extend the capabilities of LLM platforms, they are developed by arbitrary third parties and thus cannot be implicitly trusted. Plugins also interface with LLM platforms and users using natural language, which can have imprecise interpretations. In this paper, we propose a framework that lays a foundation for LLM platform designers to analyze and improve the security, privacy, and safety of current and future plugin-integrated LLM platforms. Our framework is a formulation of an attack taxonomy that is developed by iteratively exploring how LLM platform stakeholders could leverage their capabilities and responsibilities to mount attacks against each other. As part of our iterative process, we apply our framework in the context of OpenAI's plugin ecosystem. We uncover plugins that concretely demonstrate the poten
+    
+[^6]: ChatGPT用于软件安全：探索ChatGPT在安全应用中的优点和局限性
+
+    ChatGPT for Software Security: Exploring the Strengths and Limitations of ChatGPT in the Security Applications. (arXiv:2307.12488v2 [cs.CR] UPDATED)
+
+    [http://arxiv.org/abs/2307.12488](http://arxiv.org/abs/2307.12488)
+
+    本文通过对ChatGPT在安全导向的程序分析中的表现进行研究，旨在了解其优势和局限性。研究结果可以帮助我们更好地理解ChatGPT在安全领域的应用潜力。
+
+    
+
+    作为一个多才多艺的大型语言模型，ChatGPT在各个领域应对问题的潜力得到了显著的展示。它能够分析、理解和综合来自在线资源和用户输入的信息，引起了广泛的关注。先前的研究已经探索了ChatGPT在代码生成和代码审查方面的能力。在本文中，我们深入研究了ChatGPT在面向安全的程序分析中的能力，从攻击者和安全分析师的角度进行了探讨。我们通过一个案例研究来评估ChatGPT在几个安全导向的程序分析任务中的回答质量，并有意地引入挑战来评估其响应能力。通过对ChatGPT提供的答案质量的考察，我们对其在安全导向的程序分析领域的优点和局限性有了更清晰的认识。
+
+    ChatGPT, as a versatile large language model, has demonstrated remarkable potential in addressing inquiries across various domains. Its ability to analyze, comprehend, and synthesize information from both online sources and user inputs has garnered significant attention. Previous research has explored ChatGPT's competence in code generation and code reviews. In this paper, we delve into ChatGPT's capabilities in security-oriented program analysis, focusing on perspectives from both attackers and security analysts. We present a case study involving several security-oriented program analysis tasks while deliberately introducing challenges to assess ChatGPT's responses. Through an examination of the quality of answers provided by ChatGPT, we gain a clearer understanding of its strengths and limitations in the realm of security-oriented program analysis.
     
 

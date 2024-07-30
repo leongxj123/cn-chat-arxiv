@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Efficient OCR for Building a Diverse Digital History.](http://arxiv.org/abs/2304.02737) | 本研究使用对比训练的视觉编码器，将OCR建模为字符级图像检索问题，相比于已有架构更具样本效率和可扩展性，从而使数字历史更具代表性的文献史料得以更好地参与社区。 |
+| [^1] | [Large Language Models in Biomedical and Health Informatics: A Bibliometric Review](https://arxiv.org/abs/2403.16303) | LLMs已成为生物医学与健康信息学中重要的工具，本文献计量学综述全面展示了LLMs在各种BHI领域中的应用，提出了其对自然语言处理应用的改进，揭示了主要发展趋势和研究网络，并讨论了伦理关切和实际挑战。 |
 
 # 详细
 
-[^1]: 建设多样化数字历史的高效OCR
+[^1]: 生物医学与健康信息学中的大型语言模型：一项文献计量学综述
 
-    Efficient OCR for Building a Diverse Digital History. (arXiv:2304.02737v1 [cs.CV])
+    Large Language Models in Biomedical and Health Informatics: A Bibliometric Review
 
-    [http://arxiv.org/abs/2304.02737](http://arxiv.org/abs/2304.02737)
+    [https://arxiv.org/abs/2403.16303](https://arxiv.org/abs/2403.16303)
 
-    本研究使用对比训练的视觉编码器，将OCR建模为字符级图像检索问题，相比于已有架构更具样本效率和可扩展性，从而使数字历史更具代表性的文献史料得以更好地参与社区。
+    LLMs已成为生物医学与健康信息学中重要的工具，本文献计量学综述全面展示了LLMs在各种BHI领域中的应用，提出了其对自然语言处理应用的改进，揭示了主要发展趋势和研究网络，并讨论了伦理关切和实际挑战。
 
     
 
-    每天有成千上万的用户查阅数字档案，但他们可以使用的信息并不能代表各种文献史料的多样性。典型用于光学字符识别（OCR）的序列到序列架构——联合学习视觉和语言模型——在低资源文献集合中很难扩展，因为学习语言-视觉模型需要大量标记的序列和计算。本研究将OCR建模为字符级图像检索问题，使用对比训练的视觉编码器。因为该模型只学习字符的视觉特征，它比现有架构更具样本效率和可扩展性，能够在现有解决方案失败的情况下实现准确的OCR。关键是，该模型为社区参与在使数字历史更具代表性的文献史料方面开辟了新的途径。
+    大型语言模型（LLMs）迅速成为生物医学与健康信息学（BHI）中的重要工具，为分析数据、治疗患者和开展研究提供了新的方式。本文献计量学综述旨在通过检查自2022年至2023年的研究文章和合作网络，全面展示LLMs在BHI中的应用情况。它进一步探讨了LLMs如何可以改进各种BHI领域中的自然语言处理（NLP）应用，如医学诊断、患者参与、电子健康记录管理和个性化医学。为此，我们的文献计量学综述确定了关键趋势，绘制了研究网络，并突出了这个快速发展领域的主要进展。最后，它讨论了在BHI中使用LLMs的伦理关切和实际挑战，如数据隐私和可靠的医疗建议。展望未来，我们考虑LLMs如何进一步改变生物医学研究。
 
-    Thousands of users consult digital archives daily, but the information they can access is unrepresentative of the diversity of documentary history. The sequence-to-sequence architecture typically used for optical character recognition (OCR) - which jointly learns a vision and language model - is poorly extensible to low-resource document collections, as learning a language-vision model requires extensive labeled sequences and compute. This study models OCR as a character level image retrieval problem, using a contrastively trained vision encoder. Because the model only learns characters' visual features, it is more sample efficient and extensible than existing architectures, enabling accurate OCR in settings where existing solutions fail. Crucially, the model opens new avenues for community engagement in making digital history more representative of documentary history.
+    arXiv:2403.16303v1 Announce Type: cross  Abstract: Large Language Models (LLMs) have rapidly become important tools in Biomedical and Health Informatics (BHI), enabling new ways to analyze data, treat patients, and conduct research. This bibliometric review aims to provide a panoramic view of how LLMs have been used in BHI by examining research articles and collaboration networks from 2022 to 2023. It further explores how LLMs can improve Natural Language Processing (NLP) applications in various BHI areas like medical diagnosis, patient engagement, electronic health record management, and personalized medicine. To do this, our bibliometric review identifies key trends, maps out research networks, and highlights major developments in this fast-moving field. Lastly, it discusses the ethical concerns and practical challenges of using LLMs in BHI, such as data privacy and reliable medical recommendations. Looking ahead, we consider how LLMs could further transform biomedical research as we
     
 

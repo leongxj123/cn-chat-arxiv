@@ -2,52 +2,82 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Particip-AI: A Democratic Surveying Framework for Anticipating Future AI Use Cases, Harms and Benefits](https://arxiv.org/abs/2403.14791) | Particip-AI 是一个框架，旨在通过从非专业公众那里收集当前和未来的人工智能使用情况、危害和益处，引领人工智能的民主发展。 |
-| [^2] | [Dynamics of Moral Behavior in Heterogeneous Populations of Learning Agents](https://arxiv.org/abs/2403.04202) | 在多代理环境中，研究人员探讨了不同道德类型的学习代理之间的互动，发现道德异质性可能对代理的共同发展产生影响。 |
-| [^3] | [Coordinated Disclosure for AI: Beyond Security Vulnerabilities](https://arxiv.org/abs/2402.07039) | 这篇论文提出了一种针对机器学习和人工智能问题的协调缺陷披露（CFD）框架，以解决目前领域中缺乏结构化过程的问题。 |
+| [^1] | [LLMs as Writing Assistants: Exploring Perspectives on Sense of Ownership and Reasoning](https://arxiv.org/abs/2404.00027) | 探讨使用大型语言模型作为写作助手引发的写作所有权感和作者身份认知之间的心理困境。 |
+| [^2] | [Causal Understanding of Why Users Share Hate Speech on Social Media.](http://arxiv.org/abs/2310.15772) | 本文研究了用户为何分享社交媒体上的仇恨言论，提出了一个因果分析框架，通过消除数据偏差和模拟用户脆弱性来揭示影响用户分享行为的因素。 |
+| [^3] | [LLM Platform Security: Applying a Systematic Evaluation Framework to OpenAI's ChatGPT Plugins.](http://arxiv.org/abs/2309.10254) | 本文提出了一个框架，用于分析和改进当前和未来与插件集成的LLM平台的安全性、隐私和安全性。在应用框架于OpenAI的插件生态系统时，我们发现了一些具体证明了潜在问题的插件。 |
+| [^4] | [Scaling Laws Do Not Scale.](http://arxiv.org/abs/2307.03201) | 本文讨论了缩放定律与人工智能模型性能之间的关系，并指出数据集规模的增加会引发不同社群的价值观和偏见风险。 |
+| [^5] | [How Does Fine-Tuning Impact Out-of-Distribution Detection for Vision-Language Models?.](http://arxiv.org/abs/2306.06048) | 本研究旨在探究微调对少样本下游任务的外分布检测的影响，发现适当选择外分布分数对于CLIP-based 微调至关重要。最大概念匹配（MCM）分数提供了一个有前途的解决方案。 |
 
 # 详细
 
-[^1]: Particip-AI: 一种民主调查框架，用于预测未来人工智能的使用情况、危害和益处
+[^1]: LLM作为写作助手：探讨所有权感和推理的视角
 
-    Particip-AI: A Democratic Surveying Framework for Anticipating Future AI Use Cases, Harms and Benefits
+    LLMs as Writing Assistants: Exploring Perspectives on Sense of Ownership and Reasoning
 
-    [https://arxiv.org/abs/2403.14791](https://arxiv.org/abs/2403.14791)
+    [https://arxiv.org/abs/2404.00027](https://arxiv.org/abs/2404.00027)
 
-    Particip-AI 是一个框架，旨在通过从非专业公众那里收集当前和未来的人工智能使用情况、危害和益处，引领人工智能的民主发展。
-
-    
-
-    通用人工智能，如ChatGPT，似乎降低了公众使用人工智能及利用其力量的门槛。然而，人工智能的治理和发展仍掌握在少数人手中，发展速度加快且缺乏风险评估。作为迈向人工智能民主治理和风险评估的第一步，我们介绍了Particip-AI，一个框架用于从非专业公众那里收集当前和将来的人工智能使用情况及其危害和益处。我们的框架允许通过收集使用情况更加细致和详细地研究公众对人工智能的意见，通过在备选方案下（即开发和不开发一种使用情况）进行风险评估呈现出多样化的危害，并通过做出对其发展的结论性选择阐明人工智能发展的紧张关系。为展示我们的框架对指导民主人工智能的承诺，我们收集了来自295个人口多样化的回应。
-
-    arXiv:2403.14791v1 Announce Type: cross  Abstract: General purpose AI, such as ChatGPT, seems to have lowered the barriers for the public to use AI and harness its power. However, the governance and development of AI still remain in the hands of a few, and the pace of development is accelerating without proper assessment of risks. As a first step towards democratic governance and risk assessment of AI, we introduce Particip-AI, a framework to gather current and future AI use cases and their harms and benefits from non-expert public. Our framework allows us to study more nuanced and detailed public opinions on AI through collecting use cases, surfacing diverse harms through risk assessment under alternate scenarios (i.e., developing and not developing a use case), and illuminating tensions over AI development through making a concluding choice on its development. To showcase the promise of our framework towards guiding democratic AI, we gather responses from 295 demographically diverse 
-    
-[^2]: 异质学习代理群体中道德行为动态
-
-    Dynamics of Moral Behavior in Heterogeneous Populations of Learning Agents
-
-    [https://arxiv.org/abs/2403.04202](https://arxiv.org/abs/2403.04202)
-
-    在多代理环境中，研究人员探讨了不同道德类型的学习代理之间的互动，发现道德异质性可能对代理的共同发展产生影响。
+    探讨使用大型语言模型作为写作助手引发的写作所有权感和作者身份认知之间的心理困境。
 
     
 
-    arXiv:2403.04202v1 公告类型：交叉领域 摘要：日益关注AI系统安全和对齐性的问题突显了在人工代理中嵌入道德能力的重要性。一种有前途的解决方案是利用经验学习，即强化学习。在多代理（社会）环境中，个体学习代理之间的交互可能产生复杂的群体层面现象。许多现有研究依赖于模拟的社会困境环境来研究独立学习代理的互动。然而，它们往往忽视了实践中代理社会中可能存在的道德异质性。例如，在不同时间点，单个学习代理可能面对后果主义者（即关心随时间最大化某种结果）或基于规范的对手（即专注于立即遵守特定规范） 。代理的共同发展在多大程度上可能受到这种道德异质性的影响。
+    写作中的所有权感限制了我们对思想、时间和贡献的投入，导致对产出物的依恋。然而，使用写作助手引入了一种心理困境，因为一些内容并非直接我们的创作。我们往往更倾向于在创造性任务中更多地归功于大型语言模型（LLMs），尽管它们对所有任务都是平等的。此外，虽然我们可能不会完全声称对由LLM生成的内容拥有所有权，但却自由地声称作者身份。我们进行了一项简短调查来研究这些问题，并了解潜在的认知过程，以更好地了解人机交互在写作中的应用并改进写作辅助系统。
 
-    arXiv:2403.04202v1 Announce Type: cross  Abstract: Growing concerns about safety and alignment of AI systems highlight the importance of embedding moral capabilities in artificial agents. A promising solution is the use of learning from experience, i.e., Reinforcement Learning. In multi-agent (social) environments, complex population-level phenomena may emerge from interactions between individual learning agents. Many of the existing studies rely on simulated social dilemma environments to study the interactions of independent learning agents. However, they tend to ignore the moral heterogeneity that is likely to be present in societies of agents in practice. For example, at different points in time a single learning agent may face opponents who are consequentialist (i.e., caring about maximizing some outcome over time) or norm-based (i.e., focusing on conforming to a specific norm here and now). The extent to which agents' co-development may be impacted by such moral heterogeneity in 
+    arXiv:2404.00027v1 Announce Type: cross  Abstract: Sense of ownership in writing confines our investment of thoughts, time, and contribution, leading to attachment to the output. However, using writing assistants introduces a mental dilemma, as some content isn't directly our creation. For instance, we tend to credit Large Language Models (LLMs) more in creative tasks, even though all tasks are equal for them. Additionally, while we may not claim complete ownership of LLM-generated content, we freely claim authorship. We conduct a short survey to examine these issues and understand underlying cognitive processes in order to gain a better knowledge of human-computer interaction in writing and improve writing aid systems.
     
-[^3]: 人工智能的协调披露：超越安全漏洞
+[^2]: 用户在社交媒体上分享仇恨言论的因果理解
 
-    Coordinated Disclosure for AI: Beyond Security Vulnerabilities
+    Causal Understanding of Why Users Share Hate Speech on Social Media. (arXiv:2310.15772v1 [cs.SI])
 
-    [https://arxiv.org/abs/2402.07039](https://arxiv.org/abs/2402.07039)
+    [http://arxiv.org/abs/2310.15772](http://arxiv.org/abs/2310.15772)
 
-    这篇论文提出了一种针对机器学习和人工智能问题的协调缺陷披露（CFD）框架，以解决目前领域中缺乏结构化过程的问题。
+    本文研究了用户为何分享社交媒体上的仇恨言论，提出了一个因果分析框架，通过消除数据偏差和模拟用户脆弱性来揭示影响用户分享行为的因素。
 
     
 
-    目前，人工智能领域的伤害报告在披露或解决算法缺陷方面仍然是一种临时性的操作，缺乏结构化的过程。相比之下，协调漏洞披露（CVD）的伦理和生态系统在软件安全和透明度方面发挥着关键作用。在美国的背景下，为了鼓励秉持善意行事的安全研究人员，建立一个安全防护条款以对抗计算机欺诈和滥用法案一直存在长期的法律和政策斗争。值得注意的是，机器学习（ML）模型中的算法缺陷与传统软件漏洞存在着不同的挑战，需要一种专门的方法。为了解决这一差距，我们提出了一种针对机器学习和人工智能问题特殊复杂性的专门协调缺陷披露（CFD）框架的实施。本文深入研究了ML中的披露历史背景，包括
+    社交媒体上的仇恨言论威胁到个人的心理和身体健康，并且进一步导致现实中的暴力事件。仇恨言论传播背后的重要驱动因素是转发，但是人们很少了解为什么用户会转发仇恨言论。本文提供了一个全面、因果分析的用户属性框架，研究用户为何分享仇恨言论。然而，在从社交媒体数据中进行因果推断时存在一些挑战，因为这类数据很可能存在选择偏差，并且用户对仇恨言论的脆弱性存在混淆。我们开发了一个新颖的三步因果框架：（1）我们通过逆向倾向评分来消除观察性社交媒体数据的偏差。（2）我们使用消除偏差的倾向评分来模拟用户对仇恨言论的潜在脆弱性作为潜在嵌入。（3）我们建立了用户属性对用户分享仇恨言论概率的因果效应模型。
 
-    Harm reporting in the field of Artificial Intelligence (AI) currently operates on an ad hoc basis, lacking a structured process for disclosing or addressing algorithmic flaws. In contrast, the Coordinated Vulnerability Disclosure (CVD) ethos and ecosystem play a pivotal role in software security and transparency. Within the U.S. context, there has been a protracted legal and policy struggle to establish a safe harbor from the Computer Fraud and Abuse Act, aiming to foster institutional support for security researchers acting in good faith. Notably, algorithmic flaws in Machine Learning (ML) models present distinct challenges compared to traditional software vulnerabilities, warranting a specialized approach. To address this gap, we propose the implementation of a dedicated Coordinated Flaw Disclosure (CFD) framework tailored to the intricacies of machine learning and artificial intelligence issues. This paper delves into the historical landscape of disclosures in ML, encompassing the a
+    Hate speech on social media threatens the mental and physical well-being of individuals and is further responsible for real-world violence. An important driver behind the spread of hate speech and thus why hateful posts can go viral are reshares, yet little is known about why users reshare hate speech. In this paper, we present a comprehensive, causal analysis of the user attributes that make users reshare hate speech. However, causal inference from observational social media data is challenging, because such data likely suffer from selection bias, and there is further confounding due to differences in the vulnerability of users to hate speech. We develop a novel, three-step causal framework: (1) We debias the observational social media data by applying inverse propensity scoring. (2) We use the debiased propensity scores to model the latent vulnerability of users to hate speech as a latent embedding. (3) We model the causal effects of user attributes on users' probability of sharing h
+    
+[^3]: LLM平台安全：将系统评估框架应用于OpenAI的ChatGPT插件
+
+    LLM Platform Security: Applying a Systematic Evaluation Framework to OpenAI's ChatGPT Plugins. (arXiv:2309.10254v1 [cs.CR])
+
+    [http://arxiv.org/abs/2309.10254](http://arxiv.org/abs/2309.10254)
+
+    本文提出了一个框架，用于分析和改进当前和未来与插件集成的LLM平台的安全性、隐私和安全性。在应用框架于OpenAI的插件生态系统时，我们发现了一些具体证明了潜在问题的插件。
+
+    
+
+    近期，如ChatGPT等大型语言模型（LLM）平台开始提供插件生态系统，以与互联网上的第三方服务进行交互。虽然这些插件扩展了LLM平台的功能，但它们是由任意的第三方开发的，因此不能隐式信任。插件还使用自然语言与LLM平台和用户进行交互，这可能导致模糊的解释。本文提出了一个框架，为LLM平台设计者分析和改进当前和未来与插件集成的LLM平台的安全性、隐私和安全性奠定了基础。我们的框架是一个攻击分类法的表述，通过迭代地探索LLM平台相关方如何利用他们的能力和责任对彼此进行攻击来开发的。作为我们迭代过程的一部分，我们将我们的框架应用于OpenAI的插件生态系统。我们揭示了一些具体证明了潜在问题的插件。
+
+    Large language model (LLM) platforms, such as ChatGPT, have recently begun offering a plugin ecosystem to interface with third-party services on the internet. While these plugins extend the capabilities of LLM platforms, they are developed by arbitrary third parties and thus cannot be implicitly trusted. Plugins also interface with LLM platforms and users using natural language, which can have imprecise interpretations. In this paper, we propose a framework that lays a foundation for LLM platform designers to analyze and improve the security, privacy, and safety of current and future plugin-integrated LLM platforms. Our framework is a formulation of an attack taxonomy that is developed by iteratively exploring how LLM platform stakeholders could leverage their capabilities and responsibilities to mount attacks against each other. As part of our iterative process, we apply our framework in the context of OpenAI's plugin ecosystem. We uncover plugins that concretely demonstrate the poten
+    
+[^4]: 缩放定律不具备可扩展性
+
+    Scaling Laws Do Not Scale. (arXiv:2307.03201v1 [cs.LG])
+
+    [http://arxiv.org/abs/2307.03201](http://arxiv.org/abs/2307.03201)
+
+    本文讨论了缩放定律与人工智能模型性能之间的关系，并指出数据集规模的增加会引发不同社群的价值观和偏见风险。
+
+    
+
+    最近的研究提出了一种称为“缩放定律”的幂律关系，它描述了人工智能（AI）模型的性能与模型设计的各个方面（如数据集大小）之间的关系。换句话说，随着数据集（或模型参数等）的增加，基于该数据集训练的模型的性能将相应增加。然而，在总体上具有吸引力的同时，这种缩放定律关系忽视了用于衡量性能的指标可能是不稳定和有争议的，或者可能不符合不同人群对模型输出质量的感知。本文提出，随着用于训练大型AI模型的数据集规模增长，数据集中包含的不同社群（包括人口统计学群体）的数量可能会增加，每个社群可能具有不同的价值观。因此，数据集中所代表的社群可能存在价值观或偏见的风险。
+
+    Recent work has proposed a power law relationship, referred to as ``scaling laws,'' between the performance of artificial intelligence (AI) models and aspects of those models' design (e.g., dataset size). In other words, as the size of a dataset (or model parameters, etc) increases, the performance of a given model trained on that dataset will correspondingly increase. However, while compelling in the aggregate, this scaling law relationship overlooks the ways that metrics used to measure performance may be precarious and contested, or may not correspond with how different groups of people may perceive the quality of models' output. In this paper, we argue that as the size of datasets used to train large AI models grows, the number of distinct communities (including demographic groups) whose data is included in a given dataset is likely to grow, each of whom may have different values. As a result, there is an increased risk that communities represented in a dataset may have values or p
+    
+[^5]: 微调对于视觉语言模型外分布检测的影响是怎样的？
+
+    How Does Fine-Tuning Impact Out-of-Distribution Detection for Vision-Language Models?. (arXiv:2306.06048v1 [cs.CV])
+
+    [http://arxiv.org/abs/2306.06048](http://arxiv.org/abs/2306.06048)
+
+    本研究旨在探究微调对少样本下游任务的外分布检测的影响，发现适当选择外分布分数对于CLIP-based 微调至关重要。最大概念匹配（MCM）分数提供了一个有前途的解决方案。
+
+    
+
+    最近的大型视觉语言模型，如CLIP，在外分布检测和泛化性能方面表现出色。然而，它们的零样本内分布准确性往往在下游数据集中受到限制。最近的基于CLIP的微调方法，如提示学习，已经在存在外分布标签的情况下显著改进了内分布分类和外分布泛化。然而，模型对于没有外分布标签的语义转移是否可靠仍然不清楚。为了填补这一空白，本文旨在对微调对于少样本下游任务的外分布检测的影响进行全面研究。通过将外分布检测框架化为多模式概念匹配，我们建立了微调方法和各种外分布分数之间的联系。我们的结果表明，选择适当的外分布分数对于基于CLIP的微调至关重要。特别是，最大概念匹配（MCM）分数提供了一个有前途的解决方案。
+
+    Recent large vision-language models such as CLIP have shown remarkable out-of-distribution (OOD) detection and generalization performance. However, their zero-shot in-distribution (ID) accuracy is often limited for downstream datasets. Recent CLIP-based fine-tuning methods such as prompt learning have demonstrated significant improvements in ID classification and OOD generalization where OOD labels are available. Nonetheless, it remains unclear whether the model is reliable to semantic shifts without OOD labels. In this paper, we aim to bridge the gap and present a comprehensive study to understand how fine-tuning impact OOD detection for few-shot downstream tasks. By framing OOD detection as multi-modal concept matching, we establish a connection between fine-tuning methods and various OOD scores. Our results suggest that a proper choice of OOD scores is essential for CLIP-based fine-tuning. In particular, the maximum concept matching (MCM) score provides a promising solution consiste
     
 

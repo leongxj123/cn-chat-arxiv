@@ -2,119 +2,94 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [X-Portrait: Expressive Portrait Animation with Hierarchical Motion Attention](https://arxiv.org/abs/2403.15931) | 这里是中文总结出的一句话要点: 该论文提出了X-Portrait，一种用于生成具有表现力和时间连贯性的肖像动画的条件扩散模型，利用控制信号实现了细粒度头部姿势和表情控制，以提高运动精度。 |
-| [^2] | [Grounding Language Models for Visual Entity Recognition](https://arxiv.org/abs/2402.18695) | 通过AutoVER模型，我们提出了一种在视觉实体识别中应用自回归模型的方法，通过检索增强的约束生成，成功区分巨大标签空间中相似的实体，并在Oven-Wiki基准测试上取得显著进展。 |
-| [^3] | [M3-VRD: Multimodal Multi-task Multi-teacher Visually-Rich Form Document Understanding](https://arxiv.org/abs/2402.17983) | 这个模型是一个多模态、多任务、多教师的联合细粒度知识蒸馏模型，通过微妙协作令牌和实体表示，处理复杂的表单文档，引入新的损失函数改进知识蒸馏过程，在处理视觉复杂表单文档的结构和内容上表现出色。 |
-| [^4] | [Outlier detection by ensembling uncertainty with negative objectness](https://arxiv.org/abs/2402.15374) | 提出一种利用不确定性和负对象性集成的异常检测方法，通过直接预测K+1个logits并在密集预测结构中嵌入，可独立检测异常值。 |
-| [^5] | [Model Composition for Multimodal Large Language Models](https://arxiv.org/abs/2402.12750) | 通过模型组合现有的多模态大型语言模型，提出了一种新范式，有效地保留了每个原始模型的模态理解能力，并引入了一种用于解决合并参数干扰和不匹配问题的方法。 |
-| [^6] | [Diffusion MRI with Machine Learning](https://arxiv.org/abs/2402.00019) | 本文评估了机器学习在弥散磁共振成像中的应用，重点关注了微结构映射、纤维束描记、白质纤维束分析以及数据预处理和协调的方法。通过对现有方法的总结，提出了未来研究的主题。 |
-| [^7] | [Learning to Visually Connect Actions and their Effects.](http://arxiv.org/abs/2401.10805) | 该论文提出了视觉连接动作和其效果的概念（CATE），用于视频理解。研究表明，不同的任务形式产生了捕捉直观动作特性的表示，但模型表现不佳，人类的表现明显优于它们。该研究为未来的努力奠定了基础，并希望能激发出高级形式和模型的灵感。 |
-| [^8] | [Adaptive Self-training Framework for Fine-grained Scene Graph Generation.](http://arxiv.org/abs/2401.09786) | 本论文提出了一种自适应自训练框架用于细粒度场景图生成，通过利用未标注的三元组缓解了场景图生成中的长尾问题。同时，引入了一种新颖的伪标签技术CATM和图结构学习器GSL来提高模型性能。 |
-| [^9] | [Viewpoint Textual Inversion: Unleashing Novel View Synthesis with Pretrained 2D Diffusion Models.](http://arxiv.org/abs/2309.07986) | 本研究展示了通过预训练的2D图像扩散模型，可以从仅有2D监督的情况下提取出3D结构信息，并利用该信息进行3D视觉任务。通过观点神经文本倒置（ViewNeTI）方法，我们可以控制生成图像中对象的3D视点，有效解决新颖视图合成问题，并在单视图情况下具有良好的语义细节和逼真度。 |
-| [^10] | [Efficient OCR for Building a Diverse Digital History.](http://arxiv.org/abs/2304.02737) | 本研究使用对比训练的视觉编码器，将OCR建模为字符级图像检索问题，相比于已有架构更具样本效率和可扩展性，从而使数字历史更具代表性的文献史料得以更好地参与社区。 |
-| [^11] | [Point-MA2E: Masked and Affine Transformed AutoEncoder for Self-supervised Point Cloud Learning.](http://arxiv.org/abs/2211.06841) | 本文介绍了一种点云学习的自监督方法Point-MA2E，通过同时采用掩膜和仿射变换策略，实现了从损坏点云到还原点云的重建，扩展了目前掩膜方法的不足。 |
+| [^1] | [FlightScope: A Deep Comprehensive Assessment of Aircraft Detection Algorithms in Satellite Imagery](https://arxiv.org/abs/2404.02877) | 本研究对卫星图像中识别飞机的任务自定义的一套先进对象检测算法进行了全面评估和比较，发现YOLOv5是在不同成像条件下展现高精度和适应性的最优模型。 |
+| [^2] | [SportsNGEN: Sustained Generation of Multi-player Sports Gameplay](https://arxiv.org/abs/2403.12977) | SportsNGEN是一种基于Transformer解码器的模型，经过训练能持续生成逼真的多人体育游戏，包括模拟整个网球比赛和为教练和广播员提供洞察力的能力。 |
+| [^3] | [N2F2: Hierarchical Scene Understanding with Nested Neural Feature Fields](https://arxiv.org/abs/2403.10997) | 利用Nested Neural Feature Fields (N2F2) 实现了层次化监督学习，提供了对物理维度或语义维度等不同粒度的场景属性全面和细致的理解。 |
+| [^4] | [Statistical Test for Generated Hypotheses by Diffusion Models](https://arxiv.org/abs/2402.11789) | 本研究提出了一种统计检验方法，通过选择性推断框架，在考虑生成图像是由训练的扩散模型产生的条件下，量化医学图像诊断结果的可靠性。 |
+| [^5] | [Weighted Ensemble Models Are Strong Continual Learners](https://arxiv.org/abs/2312.08977) | 通过加权集成模型实现了高准确性的持续学习，兼顾可塑性和稳定性。 |
+| [^6] | [Adaptive Self-training Framework for Fine-grained Scene Graph Generation.](http://arxiv.org/abs/2401.09786) | 本论文提出了一种自适应自训练框架用于细粒度场景图生成，通过利用未标注的三元组缓解了场景图生成中的长尾问题。同时，引入了一种新颖的伪标签技术CATM和图结构学习器GSL来提高模型性能。 |
+| [^7] | [CoSSegGaussians: Compact and Swift Scene Segmenting 3D Gaussians.](http://arxiv.org/abs/2401.05925) | CoSSegGaussians是一种紧凑且迅速的3D高斯场景分割方法，通过映射空间和语义特征实现紧凑和可靠的零样本场景分割。 |
+| [^8] | [Robust Multimodal Learning with Missing Modalities via Parameter-Efficient Adaptation.](http://arxiv.org/abs/2310.03986) | 通过低秩适应和中间特征的调制，我们提出了针对预训练多模态网络的参数高效适应程序，以实现对缺失模态的鲁棒性，并在某些情况下胜过独立的专门网络。 |
+| [^9] | [MVMR: Evaluating Natural Language Video Localization Bias over Multiple Reliable Videos Pool.](http://arxiv.org/abs/2309.16701) | 本文提出了一个名为MVMR的任务，旨在给定文本查询从大量视频集中定位视频帧。我们通过已有数据集进行相似性筛选来构建数据集，并引入三个MVMR数据集。我们采用了嵌入式文本相似度匹配和视频-语言对齐技术来计算相关性得分，并为MVMR任务开发了一个强大的模型，Reliable Mutual Matching Network (RMMN)。 |
+| [^10] | [GNFactor: Multi-Task Real Robot Learning with Generalizable Neural Feature Fields.](http://arxiv.org/abs/2308.16891) | GNFactor是一个用于多任务机器人操作的代理方法，它利用可泛化神经特征场和Perceiver Transformer模块，以及深度三维体素表示来实现对真实世界环境中的操作任务的执行。它通过将视觉和语义信息纳入三维表示来提高场景的理解能力，并在多个任务上进行了验证。 |
+| [^11] | [Explainable Multi-View Deep Networks Methodology for Experimental Physics.](http://arxiv.org/abs/2308.08206) | 该论文介绍了一个可解释的多视角深度网络方法论，应用于实验物理中的多种成像表达分析。该方法论解决了多视角模型可解释性不足的问题。 |
+| [^12] | [How Does Fine-Tuning Impact Out-of-Distribution Detection for Vision-Language Models?.](http://arxiv.org/abs/2306.06048) | 本研究旨在探究微调对少样本下游任务的外分布检测的影响，发现适当选择外分布分数对于CLIP-based 微调至关重要。最大概念匹配（MCM）分数提供了一个有前途的解决方案。 |
+| [^13] | [ContactArt: Learning 3D Interaction Priors for Category-level Articulated Object and Hand Poses Estimation.](http://arxiv.org/abs/2305.01618) | 本研究提出了一种基于视觉遥操作的数据收集方法以及学习手物互动先验的新方法，从而能够在联结目标和手部姿态估计中实现更好的关键点定位性能。 |
+| [^14] | [Differentiable Gaussianization Layers for Inverse Problems Regularized by Deep Generative Models.](http://arxiv.org/abs/2112.03860) | 该论文提出了一种使用可微数据相关层进行重新参数化和高斯化潜在张量的方法，以约束逆问题为获得高保真度的分布内解决方案，有效解决深度生成模型逆问题中潜在张量偏离期望高斯分布的问题。 |
 
 # 详细
 
-[^1]: X-Portrait: 具有分层动作注意力的表现性肖像动画
+[^1]: FlightScope: 卫星图像中飞行器检测算法的深度全面评估
 
-    X-Portrait: Expressive Portrait Animation with Hierarchical Motion Attention
+    FlightScope: A Deep Comprehensive Assessment of Aircraft Detection Algorithms in Satellite Imagery
 
-    [https://arxiv.org/abs/2403.15931](https://arxiv.org/abs/2403.15931)
+    [https://arxiv.org/abs/2404.02877](https://arxiv.org/abs/2404.02877)
 
-    这里是中文总结出的一句话要点: 该论文提出了X-Portrait，一种用于生成具有表现力和时间连贯性的肖像动画的条件扩散模型，利用控制信号实现了细粒度头部姿势和表情控制，以提高运动精度。
-
-    
-
-    我们提出了X-Portrait，这是一种创新的条件扩散模型，专门用于生成具有表现力和时间连贯性的肖像动画。具体而言，我们旨在基于单个肖像作为外观参考，并利用来自驱动视频的运动来为其添加动画，捕捉具有高度动态性和微妙面部表情以及广泛范围头部运动。在其核心部分，我们利用了预先训练的扩散模型的生成先验作为渲染骨架，同时在ControlNet框架内通过新颖的控制信号实现了细粒度头部姿势和表情控制。与传统的粗糙显式控制（如面部标志点）不同，我们的运动控制模块学会直接从原始驱动RGB输入中解读动态。通过有效增强对眼神等小尺度细微差异的运动关注的基于补丁的局部控制模块，进一步提高了运动精度。
-
-    arXiv:2403.15931v1 Announce Type: cross  Abstract: We propose X-Portrait, an innovative conditional diffusion model tailored for generating expressive and temporally coherent portrait animation. Specifically, given a single portrait as appearance reference, we aim to animate it with motion derived from a driving video, capturing both highly dynamic and subtle facial expressions along with wide-range head movements. As its core, we leverage the generative prior of a pre-trained diffusion model as the rendering backbone, while achieve fine-grained head pose and expression control with novel controlling signals within the framework of ControlNet. In contrast to conventional coarse explicit controls such as facial landmarks, our motion control module is learned to interpret the dynamics directly from the original driving RGB inputs. The motion accuracy is further enhanced with a patch-based local control module that effectively enhance the motion attention to small-scale nuances like eyeba
-    
-[^2]: 将语言模型应用在视觉实体识别上
-
-    Grounding Language Models for Visual Entity Recognition
-
-    [https://arxiv.org/abs/2402.18695](https://arxiv.org/abs/2402.18695)
-
-    通过AutoVER模型，我们提出了一种在视觉实体识别中应用自回归模型的方法，通过检索增强的约束生成，成功区分巨大标签空间中相似的实体，并在Oven-Wiki基准测试上取得显著进展。
+    本研究对卫星图像中识别飞机的任务自定义的一套先进对象检测算法进行了全面评估和比较，发现YOLOv5是在不同成像条件下展现高精度和适应性的最优模型。
 
     
 
-    我们引入AutoVER，一种用于视觉实体识别的自回归模型。我们的模型通过使用检索增强的约束生成，扩展了自回归多模式大型语言模型。它在处理跨领域实体时减轻了低性能，在需要视觉推理的查询中表现出色。我们的方法通过在硬负对上进行对比训练，并在序列-序列目标中并行进行训练，学习在巨大的标签空间中区分相似的实体。在推断过程中，一系列检索的候选答案明确指导语言生成，通过消除无效的解码路径。所提出的方法在最近提出的Oven-Wiki基准测试的不同数据集拆分中实现了显著的改进。在已知实体拆分上的准确率从32.7%提高到61.5%。该方法还通过大幅度提升在未知和查询拆分上的性能，表现出卓越的表现。
+    arXiv:2404.02877v1 公告类型：跨领域 摘要：在遥感卫星图像中进行对象检测对于许多领域，如生物物理学和环境监测至关重要。尽管深度学习算法不断发展，但它们大多在常见的基于地面拍摄的照片上实施和测试。本文对一套针对在卫星图像中识别飞机这一任务定制的先进对象检测算法进行了批判性评估和比较。利用大型HRPlanesV2数据集，以及与GDIT数据集的严格验证，该研究涵盖了一系列方法，包括YOLO版本5和8、Faster RCNN、CenterNet、RetinaNet、RTMDet和DETR，均是从头开始训练的。这项全面的训练和验证研究揭示了YOLOv5作为识别遥感数据中的飞机这一特定案例的卓越模型，展示了其在不同成像条件下的高精度和适应性。
 
-    arXiv:2402.18695v1 Announce Type: cross  Abstract: We introduce AutoVER, an Autoregressive model for Visual Entity Recognition. Our model extends an autoregressive Multi-modal Large Language Model by employing retrieval augmented constrained generation. It mitigates low performance on out-of-domain entities while excelling in queries that require visually-situated reasoning. Our method learns to distinguish similar entities within a vast label space by contrastively training on hard negative pairs in parallel with a sequence-to-sequence objective without an external retriever. During inference, a list of retrieved candidate answers explicitly guides language generation by removing invalid decoding paths. The proposed method achieves significant improvements across different dataset splits in the recently proposed Oven-Wiki benchmark. Accuracy on the Entity seen split rises from 32.7% to 61.5%. It also demonstrates superior performance on the unseen and query splits by a substantial dou
+    arXiv:2404.02877v1 Announce Type: cross  Abstract: Object detection in remotely sensed satellite pictures is fundamental in many fields such as biophysical, and environmental monitoring. While deep learning algorithms are constantly evolving, they have been mostly implemented and tested on popular ground-based taken photos. This paper critically evaluates and compares a suite of advanced object detection algorithms customized for the task of identifying aircraft within satellite imagery. Using the large HRPlanesV2 dataset, together with a rigorous validation with the GDIT dataset, this research encompasses an array of methodologies including YOLO versions 5 and 8, Faster RCNN, CenterNet, RetinaNet, RTMDet, and DETR, all trained from scratch. This exhaustive training and validation study reveal YOLOv5 as the preeminent model for the specific case of identifying airplanes from remote sensing data, showcasing high precision and adaptability across diverse imaging conditions. This research
     
-[^3]: M3-VRD: 多模态多任务多教师视觉丰富表单文档理解
+[^2]: SportsNGEN: 持续生成多人体育游戏
 
-    M3-VRD: Multimodal Multi-task Multi-teacher Visually-Rich Form Document Understanding
+    SportsNGEN: Sustained Generation of Multi-player Sports Gameplay
 
-    [https://arxiv.org/abs/2402.17983](https://arxiv.org/abs/2402.17983)
+    [https://arxiv.org/abs/2403.12977](https://arxiv.org/abs/2403.12977)
 
-    这个模型是一个多模态、多任务、多教师的联合细粒度知识蒸馏模型，通过微妙协作令牌和实体表示，处理复杂的表单文档，引入新的损失函数改进知识蒸馏过程，在处理视觉复杂表单文档的结构和内容上表现出色。
-
-    
-
-    这篇论文提出了一个突破性的多模态、多任务、多教师联合细粒度知识蒸馏模型，用于视觉丰富的表单文档理解。该模型旨在通过促进令牌和实体表示之间的微妙相关性来利用细粒度和粗粒度级别的见解，解决表单文档固有的复杂性。此外，我们引入了新的跨细粒度和跨粗粒度损失函数，以进一步改进多教师知识蒸馏传递过程，呈现分布差距和对表单文档的统一理解。通过在公开可用的表单文档理解数据集上进行全面评估，我们提出的模型始终表现出色地优于现有基线，展示了其在处理复杂视觉表单文档的复杂结构和内容方面的功效。
-
-    arXiv:2402.17983v1 Announce Type: new  Abstract: This paper presents a groundbreaking multimodal, multi-task, multi-teacher joint-grained knowledge distillation model for visually-rich form document understanding. The model is designed to leverage insights from both fine-grained and coarse-grained levels by facilitating a nuanced correlation between token and entity representations, addressing the complexities inherent in form documents. Additionally, we introduce new inter-grained and cross-grained loss functions to further refine diverse multi-teacher knowledge distillation transfer process, presenting distribution gaps and a harmonised understanding of form documents. Through a comprehensive evaluation across publicly available form document understanding datasets, our proposed model consistently outperforms existing baselines, showcasing its efficacy in handling the intricate structures and content of visually complex form documents.
-    
-[^4]: 利用不确定性和负对象性集成的异常检测
-
-    Outlier detection by ensembling uncertainty with negative objectness
-
-    [https://arxiv.org/abs/2402.15374](https://arxiv.org/abs/2402.15374)
-
-    提出一种利用不确定性和负对象性集成的异常检测方法，通过直接预测K+1个logits并在密集预测结构中嵌入，可独立检测异常值。
+    SportsNGEN是一种基于Transformer解码器的模型，经过训练能持续生成逼真的多人体育游戏，包括模拟整个网球比赛和为教练和广播员提供洞察力的能力。
 
     
 
-    异常检测是监督式视觉识别中关键的功能。现有的大多数方法通过鼓励标准封闭集模型在负训练数据中产生低置信度预测来获得最佳结果。然而，这种方法混淆了预测不确定性和对负类别的识别。因此，我们重新考虑了直接预测K+1个logits，这些logits对应于K个基本真实类别和一个异常类别。这种设置允许我们制定一种新奇的异常得分，作为分布内不确定性和异常类别的后验的集合，我们称之为负对象性。现在，异常值可以通过高预测不确定性或与负数据相似之处独立检测。我们将我们的方法嵌入到一个密集预测结构中，该结构具有K+2个类别的掩码级别识别。训练过程鼓励新颖的K+2-th类别去学习
+    我们提出了一种基于Transformer解码器的模型SportsNGEN，该模型经过训练使用运动员和球追踪序列，能够生成逼真且持续的游戏场景。我们在大量专业网球追踪数据上训练和评估SportsNGEN，并展示通过将生成的模拟与射击分类器和逻辑相结合来开始和结束球赛，系统能够模拟整个网球比赛。此外，SportsNGEN的通用版本可以通过在包含该球员的比赛数据上微调来定制特定球员。我们展示了我们的模型经过良好校准，可以通过评估反事实或假设选项为教练和广播员提供洞察力。最后，我们展示了质量结果表明相同的方法适用于足球。
 
-    arXiv:2402.15374v1 Announce Type: cross  Abstract: Outlier detection is an essential capability in safety-critical applications of supervised visual recognition. Most of the existing methods deliver best results by encouraging standard closed-set models to produce low-confidence predictions in negative training data. However, that approach conflates prediction uncertainty with recognition of the negative class. We therefore reconsider direct prediction of K+1 logits that correspond to K groundtruth classes and one outlier class. This setup allows us to formulate a novel anomaly score as an ensemble of in-distribution uncertainty and the posterior of the outlier class which we term negative objectness. Now outliers can be independently detected due to i) high prediction uncertainty or ii) similarity with negative data. We embed our method into a dense prediction architecture with mask-level recognition over K+2 classes. The training procedure encourages the novel K+2-th class to learn n
+    arXiv:2403.12977v1 Announce Type: cross  Abstract: We present a transformer decoder based model, SportsNGEN, that is trained on sports player and ball tracking sequences that is capable of generating realistic and sustained gameplay. We train and evaluate SportsNGEN on a large database of professional tennis tracking data and demonstrate that by combining the generated simulations with a shot classifier and logic to start and end rallies, the system is capable of simulating an entire tennis match. In addition, a generic version of SportsNGEN can be customized to a specific player by fine-tuning on match data that includes that player. We show that our model is well calibrated and can be used to derive insights for coaches and broadcasters by evaluating counterfactual or what if options. Finally, we show qualitative results indicating the same approach works for football.
     
-[^5]: 多模态大型语言模型的模型组合
+[^3]: 嵌套神经特征场的层次场景理解
 
-    Model Composition for Multimodal Large Language Models
+    N2F2: Hierarchical Scene Understanding with Nested Neural Feature Fields
 
-    [https://arxiv.org/abs/2402.12750](https://arxiv.org/abs/2402.12750)
+    [https://arxiv.org/abs/2403.10997](https://arxiv.org/abs/2403.10997)
 
-    通过模型组合现有的多模态大型语言模型，提出了一种新范式，有效地保留了每个原始模型的模态理解能力，并引入了一种用于解决合并参数干扰和不匹配问题的方法。
-
-    
-
-    近期对多模态大型语言模型（MLLMs）的发展显示出了快速进展，朝着创建能够理解各种模态输入的多功能MLLMs的目标迈进。然而，现有方法通常依赖于与配对的多模态指令数据进行联合训练，这对资源要求高且难以扩展到新的模态。在本文中，我们提出了一种通过现有MLLMs的模型组合来创建一个新模型的新范式，该新模型保留了每个原始模型的模态理解能力。我们的基本实现NaiveMC通过重用模态编码器和合并LLM参数展示了这一范式的有效性。此外，我们引入了DAMC来解决在合并过程中的参数干扰和不匹配问题，从而提升了模型的性能。为促进该领域的研究，我们提出了MCUB，一个用于评估MLLMs理解能力的基准测试。
-
-    arXiv:2402.12750v1 Announce Type: cross  Abstract: Recent developments in Multimodal Large Language Models (MLLMs) have shown rapid progress, moving towards the goal of creating versatile MLLMs that understand inputs from various modalities. However, existing methods typically rely on joint training with paired multimodal instruction data, which is resource-intensive and challenging to extend to new modalities. In this paper, we propose a new paradigm through the model composition of existing MLLMs to create a new model that retains the modal understanding capabilities of each original model. Our basic implementation, NaiveMC, demonstrates the effectiveness of this paradigm by reusing modality encoders and merging LLM parameters. Furthermore, we introduce DAMC to address parameter interference and mismatch issues during the merging process, thereby enhancing the model performance. To facilitate research in this area, we propose MCUB, a benchmark for assessing ability of MLLMs to unders
-    
-[^6]: 机器学习在弥散磁共振成像中的应用
-
-    Diffusion MRI with Machine Learning
-
-    [https://arxiv.org/abs/2402.00019](https://arxiv.org/abs/2402.00019)
-
-    本文评估了机器学习在弥散磁共振成像中的应用，重点关注了微结构映射、纤维束描记、白质纤维束分析以及数据预处理和协调的方法。通过对现有方法的总结，提出了未来研究的主题。
+    利用Nested Neural Feature Fields (N2F2) 实现了层次化监督学习，提供了对物理维度或语义维度等不同粒度的场景属性全面和细致的理解。
 
     
 
-    弥散加权磁共振成像（dMRI）具有非侵入性评估大脑微结构和结构连接的独特能力。然而，分析dMRI数据以提取临床和科学目的的有用信息具有挑战性。 dMRI测量通常受到强噪声和伪影的干扰，数据中通常存在高的会话间和扫描者间异质性，以及大脑结构的相当大的个体间变异，并且测量和感兴趣现象之间的关系可能非常复杂。近年来，机器学习方法在dMRI分析中的应用越来越多。本文旨在评估这些尝试，重点关注已经解决了微结构映射、纤维束描记、白质纤维束分析以及数据预处理和协调的方法。我们总结了现有方法的主要发现、优点和缺点，并提出了未来研究的主题。
+    在计算机视觉中，理解多层抽象的复杂场景仍然是一个巨大挑战。为了解决这个问题，我们引入了嵌套神经特征场 (N2F2)，这是一种新颖的方法，利用分层监督来学习单个特征场，在同一高维特征中的不同维度编码不同粒度的场景属性。我们的方法允许灵活定义层次，可以根据物理维度、语义维度或两者均匹配，从而实现对场景的全面和细致理解。我们利用2D类别无关分割模型在图像空间的任意尺度提供语义有意义的像素分组，并查询CLIP视觉编码器，为这些段落中的每个部分获得与语言对齐的嵌入。我们提出的分层监督方法将不同的嵌套特征场维度分配给提取C
 
-    Diffusion-weighted magnetic resonance imaging (dMRI) offers unique capabilities such as noninvasive assessment of brain's micro-structure and structural connectivity. However, analyzing the dMRI data to extract useful information for clinical and scientific purposes is challenging. The dMRI measurements often suffer from strong noise and artifacts, there is usually high inter-session and inter-scanner heterogeneity in the data and considerable inter-subject variability in brain structure, and the relationship between measurements and the phenomena of interest can be highly complex. Recent years have witnessed increasing use of machine learning methods for dMRI analysis. This manuscript aims to assess these efforts, with a focus on methods that have addressed micro-structure mapping, tractography, white matter tract analysis, as well as data preprocessing and harmonization. We summarize the main findings, strengths, and weaknesses of the existing methods and suggest topics for future re
+    arXiv:2403.10997v1 Announce Type: cross  Abstract: Understanding complex scenes at multiple levels of abstraction remains a formidable challenge in computer vision. To address this, we introduce Nested Neural Feature Fields (N2F2), a novel approach that employs hierarchical supervision to learn a single feature field, wherein different dimensions within the same high-dimensional feature encode scene properties at varying granularities. Our method allows for a flexible definition of hierarchies, tailored to either the physical dimensions or semantics or both, thereby enabling a comprehensive and nuanced understanding of scenes. We leverage a 2D class-agnostic segmentation model to provide semantically meaningful pixel groupings at arbitrary scales in the image space, and query the CLIP vision-encoder to obtain language-aligned embeddings for each of these segments. Our proposed hierarchical supervision method then assigns different nested dimensions of the feature field to distill the C
     
-[^7]: 学习视觉连接动作和其效果
+[^4]: 通过扩散模型生成的假设的统计检验
 
-    Learning to Visually Connect Actions and their Effects. (arXiv:2401.10805v1 [cs.CV])
+    Statistical Test for Generated Hypotheses by Diffusion Models
 
-    [http://arxiv.org/abs/2401.10805](http://arxiv.org/abs/2401.10805)
+    [https://arxiv.org/abs/2402.11789](https://arxiv.org/abs/2402.11789)
 
-    该论文提出了视觉连接动作和其效果的概念（CATE），用于视频理解。研究表明，不同的任务形式产生了捕捉直观动作特性的表示，但模型表现不佳，人类的表现明显优于它们。该研究为未来的努力奠定了基础，并希望能激发出高级形式和模型的灵感。
+    本研究提出了一种统计检验方法，通过选择性推断框架，在考虑生成图像是由训练的扩散模型产生的条件下，量化医学图像诊断结果的可靠性。
 
     
 
-    在这项工作中，我们引入了视觉连接动作和其效果（CATE）的新概念，用于视频理解。CATE可以在任务规划和从示范中学习等领域中应用。我们提出了不同基于CATE的任务形式，如动作选择和动作指定，其中视频理解模型以语义和细粒度的方式连接动作和效果。我们观察到不同的形式产生了捕捉直观动作特性的表示。我们还设计了各种基线模型用于动作选择和动作指定。尽管任务具有直观性，但我们观察到模型困难重重，人类表现明显优于它们。本研究旨在为未来的努力奠定基础，展示了连接视频理解中动作和效果的灵活性和多功能性，希望能激发出高级形式和模型的灵感。
+    AI的增强性能加速了其融入科学研究。特别是，利用生成式AI创建科学假设是很有前途的，并且正在越来越多地应用于各个领域。然而，当使用AI生成的假设进行关键决策（如医学诊断）时，验证它们的可靠性至关重要。在本研究中，我们考虑使用扩散模型生成的图像进行医学诊断任务，并提出了一种统计检验来量化其可靠性。所提出的统计检验的基本思想是使用选择性推断框架，我们考虑在生成的图像是由经过训练的扩散模型产生的这一事实条件下的统计检验。利用所提出的方法，医学图像诊断结果的统计可靠性可以以p值的形式量化，从而实现在控制错误率的情况下进行决策。
 
-    In this work, we introduce the novel concept of visually Connecting Actions and Their Effects (CATE) in video understanding. CATE can have applications in areas like task planning and learning from demonstration. We propose different CATE-based task formulations, such as action selection and action specification, where video understanding models connect actions and effects at semantic and fine-grained levels. We observe that different formulations produce representations capturing intuitive action properties. We also design various baseline models for action selection and action specification. Despite the intuitive nature of the task, we observe that models struggle, and humans outperform them by a large margin. The study aims to establish a foundation for future efforts, showcasing the flexibility and versatility of connecting actions and effects in video understanding, with the hope of inspiring advanced formulations and models.
+    arXiv:2402.11789v1 Announce Type: cross  Abstract: The enhanced performance of AI has accelerated its integration into scientific research. In particular, the use of generative AI to create scientific hypotheses is promising and is increasingly being applied across various fields. However, when employing AI-generated hypotheses for critical decisions, such as medical diagnoses, verifying their reliability is crucial. In this study, we consider a medical diagnostic task using generated images by diffusion models, and propose a statistical test to quantify its reliability. The basic idea behind the proposed statistical test is to employ a selective inference framework, where we consider a statistical test conditional on the fact that the generated images are produced by a trained diffusion model. Using the proposed method, the statistical reliability of medical image diagnostic results can be quantified in the form of a p-value, allowing for decision-making with a controlled error rate. 
     
-[^8]: 自适应自训练框架用于细粒度场景图生成
+[^5]: 加权集成模型是强大的持续学习者
+
+    Weighted Ensemble Models Are Strong Continual Learners
+
+    [https://arxiv.org/abs/2312.08977](https://arxiv.org/abs/2312.08977)
+
+    通过加权集成模型实现了高准确性的持续学习，兼顾可塑性和稳定性。
+
+    
+
+    在本文中，我们研究持续学习（CL）的问题，其中目标是从一系列任务中学习模型，使得以前任务的数据在学习当前任务数据时不可用。CL本质上是在能够学习新任务（即可塑性）和保持先前学习概念的性能（即稳定性）之间取得平衡的过程。为了解决稳定性-可塑性的权衡问题，我们建议对先前和当前任务的模型参数进行加权集成。这种加权集成模型，我们称之为持续模型平均（或CoMA），通过利用可塑性在当前任务上获得高准确性，同时不会偏离太远的先前权重配置，从而确保稳定性。我们还提出了CoMA的改进型变体，名为持续费舍尔加权模型平均（或CoFiMA），该模型对每一个参数进行选择性加权。
+
+    arXiv:2312.08977v2 Announce Type: replace-cross  Abstract: In this work, we study the problem of continual learning (CL) where the goal is to learn a model on a sequence of tasks, such that the data from the previous tasks becomes unavailable while learning on the current task data. CL is essentially a balancing act between being able to learn on the new task (i.e., plasticity) and maintaining the performance on the previously learned concepts (i.e., stability). Intending to address the stability-plasticity trade-off, we propose to perform weight-ensembling of the model parameters of the previous and current tasks. This weighted-ensembled model, which we call Continual Model Averaging (or CoMA), attains high accuracy on the current task by leveraging plasticity, while not deviating too far from the previous weight configuration, ensuring stability. We also propose an improved variant of CoMA, named Continual Fisher-weighted Model Averaging (or CoFiMA), that selectively weighs each para
+    
+[^6]: 自适应自训练框架用于细粒度场景图生成
 
     Adaptive Self-training Framework for Fine-grained Scene Graph Generation. (arXiv:2401.09786v1 [cs.CV])
 
@@ -128,46 +103,116 @@
 
     Scene graph generation (SGG) models have suffered from inherent problems regarding the benchmark datasets such as the long-tailed predicate distribution and missing annotation problems. In this work, we aim to alleviate the long-tailed problem of SGG by utilizing unannotated triplets. To this end, we introduce a Self-Training framework for SGG (ST-SGG) that assigns pseudo-labels for unannotated triplets based on which the SGG models are trained. While there has been significant progress in self-training for image recognition, designing a self-training framework for the SGG task is more challenging due to its inherent nature such as the semantic ambiguity and the long-tailed distribution of predicate classes. Hence, we propose a novel pseudo-labeling technique for SGG, called Class-specific Adaptive Thresholding with Momentum (CATM), which is a model-agnostic framework that can be applied to any existing SGG models. Furthermore, we devise a graph structure learner (GSL) that is benefici
     
-[^9]: 观点文本倒置：通过预训练的2D扩散模型释放新颖的视图合成
+[^7]: CoSSegGaussians：紧凑且迅速的3D高斯场景分割方法
 
-    Viewpoint Textual Inversion: Unleashing Novel View Synthesis with Pretrained 2D Diffusion Models. (arXiv:2309.07986v1 [cs.CV])
+    CoSSegGaussians: Compact and Swift Scene Segmenting 3D Gaussians. (arXiv:2401.05925v1 [cs.CV])
 
-    [http://arxiv.org/abs/2309.07986](http://arxiv.org/abs/2309.07986)
+    [http://arxiv.org/abs/2401.05925](http://arxiv.org/abs/2401.05925)
 
-    本研究展示了通过预训练的2D图像扩散模型，可以从仅有2D监督的情况下提取出3D结构信息，并利用该信息进行3D视觉任务。通过观点神经文本倒置（ViewNeTI）方法，我们可以控制生成图像中对象的3D视点，有效解决新颖视图合成问题，并在单视图情况下具有良好的语义细节和逼真度。
-
-    
-
-    文本到图像扩散模型可以理解对象之间的空间关系，但它们是否能够仅通过2D监督来表示世界的真实3D结构？我们证明，是的，3D知识被编码在2D图像扩散模型（如稳定扩散模型）中，我们展示了这种结构可以用于3D视觉任务。我们的方法，观点神经文本倒置（ViewNeTI），可以控制生成图像中对象的3D视点。我们训练一个小型神经映射器，用于获取相机视点参数并预测文本编码器的潜在向量；然后利用这些潜在向量来调整扩散生成过程，生成具有所需相机视点的图像。ViewNeTI自然解决了新颖视图合成（NVS）问题。通过利用被冻结的扩散模型作为先验知识，我们可以用很少的输入视图来解决NVS问题；我们甚至可以进行单视图新颖视图合成。与之前的方法相比，我们的单视图NVS预测具有良好的语义细节和逼真度。
-
-    Text-to-image diffusion models understand spatial relationship between objects, but do they represent the true 3D structure of the world from only 2D supervision? We demonstrate that yes, 3D knowledge is encoded in 2D image diffusion models like Stable Diffusion, and we show that this structure can be exploited for 3D vision tasks. Our method, Viewpoint Neural Textual Inversion (ViewNeTI), controls the 3D viewpoint of objects in generated images from frozen diffusion models. We train a small neural mapper to take camera viewpoint parameters and predict text encoder latents; the latents then condition the diffusion generation process to produce images with the desired camera viewpoint.  ViewNeTI naturally addresses Novel View Synthesis (NVS). By leveraging the frozen diffusion model as a prior, we can solve NVS with very few input views; we can even do single-view novel view synthesis. Our single-view NVS predictions have good semantic details and photorealism compared to prior methods.
-    
-[^10]: 建设多样化数字历史的高效OCR
-
-    Efficient OCR for Building a Diverse Digital History. (arXiv:2304.02737v1 [cs.CV])
-
-    [http://arxiv.org/abs/2304.02737](http://arxiv.org/abs/2304.02737)
-
-    本研究使用对比训练的视觉编码器，将OCR建模为字符级图像检索问题，相比于已有架构更具样本效率和可扩展性，从而使数字历史更具代表性的文献史料得以更好地参与社区。
+    CoSSegGaussians是一种紧凑且迅速的3D高斯场景分割方法，通过映射空间和语义特征实现紧凑和可靠的零样本场景分割。
 
     
 
-    每天有成千上万的用户查阅数字档案，但他们可以使用的信息并不能代表各种文献史料的多样性。典型用于光学字符识别（OCR）的序列到序列架构——联合学习视觉和语言模型——在低资源文献集合中很难扩展，因为学习语言-视觉模型需要大量标记的序列和计算。本研究将OCR建模为字符级图像检索问题，使用对比训练的视觉编码器。因为该模型只学习字符的视觉特征，它比现有架构更具样本效率和可扩展性，能够在现有解决方案失败的情况下实现准确的OCR。关键是，该模型为社区参与在使数字历史更具代表性的文献史料方面开辟了新的途径。
+    我们提出了一种紧凑且迅速的3D高斯场景分割方法（CoSSegGaussians），该方法仅使用RGB图像输入，以快速的渲染速度实现紧凑的3D一致性场景分割。先前基于NeRF的3D分割方法依赖于隐式或体素神经场表示和光线行进体积渲染，这些方法耗时较长。最近的3D高斯场投影显著提高了渲染速度，然而，现有的基于高斯的分割方法（例如高斯分组）在零样本分割中没有提供紧凑的分割掩模，主要原因是在遇到不一致的2D机器生成标签时，无法直接为每个高斯分配可学习参数，缺乏鲁棒性和紧凑性。我们的方法旨在通过使用浅层解码网络将每个高斯点的融合空间和语义上有意义的特征映射，迅速实现紧凑且可靠的零样本场景分割。
 
-    Thousands of users consult digital archives daily, but the information they can access is unrepresentative of the diversity of documentary history. The sequence-to-sequence architecture typically used for optical character recognition (OCR) - which jointly learns a vision and language model - is poorly extensible to low-resource document collections, as learning a language-vision model requires extensive labeled sequences and compute. This study models OCR as a character level image retrieval problem, using a contrastively trained vision encoder. Because the model only learns characters' visual features, it is more sample efficient and extensible than existing architectures, enabling accurate OCR in settings where existing solutions fail. Crucially, the model opens new avenues for community engagement in making digital history more representative of documentary history.
+    We propose Compact and Swift Segmenting 3D Gaussians(CoSSegGaussians), a method for compact 3D-consistent scene segmentation at fast rendering speed with only RGB images input. Previous NeRF-based 3D segmentation methods have relied on implicit or voxel neural scene representation and ray-marching volume rendering which are time consuming. Recent 3D Gaussian Splatting significantly improves the rendering speed, however, existing Gaussians-based segmentation methods(eg: Gaussian Grouping) fail to provide compact segmentation masks especially in zero-shot segmentation, which is mainly caused by the lack of robustness and compactness for straightforwardly assigning learnable parameters to each Gaussian when encountering inconsistent 2D machine-generated labels. Our method aims to achieve compact and reliable zero-shot scene segmentation swiftly by mapping fused spatial and semantically meaningful features for each Gaussian point with a shallow decoding network. Specifically, our method fi
     
-[^11]: Point-MA2E:自监督点云学习的掩膜和仿射变换自编码器
+[^8]: 通过参数高效适应，实现对缺失模态的鲁棒多模态学习
 
-    Point-MA2E: Masked and Affine Transformed AutoEncoder for Self-supervised Point Cloud Learning. (arXiv:2211.06841v2 [cs.CV] UPDATED)
+    Robust Multimodal Learning with Missing Modalities via Parameter-Efficient Adaptation. (arXiv:2310.03986v1 [cs.CV])
 
-    [http://arxiv.org/abs/2211.06841](http://arxiv.org/abs/2211.06841)
+    [http://arxiv.org/abs/2310.03986](http://arxiv.org/abs/2310.03986)
 
-    本文介绍了一种点云学习的自监督方法Point-MA2E，通过同时采用掩膜和仿射变换策略，实现了从损坏点云到还原点云的重建，扩展了目前掩膜方法的不足。
+    通过低秩适应和中间特征的调制，我们提出了针对预训练多模态网络的参数高效适应程序，以实现对缺失模态的鲁棒性，并在某些情况下胜过独立的专门网络。
 
     
 
-    在自监督点云学习中，掩膜建模已经证明了其有效性，通过从其掩膜对应部分重建完整点云。考虑到掩膜只会损坏输入的一部分点，本文推广仿射变换策略，通过特定规则破坏所有输入点，以补充流行的掩膜策略，从而实现点云学习的掩膜和仿射变换自编码器（Point-MA2E）。在此研究中，我们对点云进行仿射变换和掩膜，使用编码器-解码器模型从其损坏版本中重建原始点云。探索了各种点云编码器。对于非Transformer编码器，按照常见做法直接重建未损坏的点云。对于基于Transformer的编码器，我们将重建完整点云分解为详细的局部补丁和粗略的全局形状的重建。
+    多模态学习旨在利用多个数据源来提高下游任务的整体性能。在一些相关的模态中观察到，如果在测试时间缺少一个或多个模态，现有的多模态网络的性能会显著下降。为了实现对缺失模态的鲁棒性，我们提出了预训练的多模态网络的简单和参数高效的适应程序。特别地，我们利用低秩适应和中间特征的调制来补偿缺失的模态。我们证明，这种适应可以部分弥补由于缺失模态而导致的性能下降，并在某些情况下胜过针对可用模态组合进行训练的独立的、专门的网络。所提出的适应所需的参数非常少（例如，少于）
 
-    Masked modeling has demonstrated its effectiveness in self-supervised point cloud learning by reconstructing the complete point cloud from its masked counterpart. Considering that masking only corrupts partial points of the input, in this paper, we promote the affine transformation, which corrupts all input points with certain rules, to complement the popular masking strategy, leading to the Masked and Affine transformed AutoEncoder for point cloud learning (Point-MA2E). Generally, we corrupt the point cloud with affine transformation and masking as input and learn an encoder-decoder model to reconstruct the original point cloud from its corrupted version. Various point cloud encoders are explored in this study. For non-Transformer encoders, we follow the common practice to reconstruct the uncorrupted point cloud directly. For Transformer-based encoders, we decompose the reconstruction of the complete point cloud into the reconstructions of detailed local patches and rough global shape
+    Multimodal learning seeks to utilize data from multiple sources to improve the overall performance of downstream tasks. It is desirable for redundancies in the data to make multimodal systems robust to missing or corrupted observations in some correlated modalities. However, we observe that the performance of several existing multimodal networks significantly deteriorates if one or multiple modalities are absent at test time. To enable robustness to missing modalities, we propose simple and parameter-efficient adaptation procedures for pretrained multimodal networks. In particular, we exploit low-rank adaptation and modulation of intermediate features to compensate for the missing modalities. We demonstrate that such adaptation can partially bridge performance drop due to missing modalities and outperform independent, dedicated networks trained for the available modality combinations in some cases. The proposed adaptation requires extremely small number of parameters (e.g., fewer than 
+    
+[^9]: MVMR: 在多个可靠视频集中评估自然语言视频定位偏差
+
+    MVMR: Evaluating Natural Language Video Localization Bias over Multiple Reliable Videos Pool. (arXiv:2309.16701v1 [cs.CV])
+
+    [http://arxiv.org/abs/2309.16701](http://arxiv.org/abs/2309.16701)
+
+    本文提出了一个名为MVMR的任务，旨在给定文本查询从大量视频集中定位视频帧。我们通过已有数据集进行相似性筛选来构建数据集，并引入三个MVMR数据集。我们采用了嵌入式文本相似度匹配和视频-语言对齐技术来计算相关性得分，并为MVMR任务开发了一个强大的模型，Reliable Mutual Matching Network (RMMN)。
+
+    
+
+    随着近年来多媒体内容的激增，自然语言视频定位成为一个关键问题，它致力于检测与给定自然语言查询匹配的视频片段。然而，以往的研究都没有探索在存在多个正负视频的大量语料库中定位一个时刻。本文提出了一个名为MVMR（Massive Videos Moment Retrieval）的任务，旨在给定文本查询从大量视频集中定位视频帧。对于这个任务，我们提出了一种通过对现有视频定位数据集进行相似性筛选来构建数据集的方法，并引入了三个MVMR数据集。具体来说，我们采用基于嵌入的文本相似度匹配和视频-语言对齐技术来计算目标查询与视频之间的相关性得分，从而定义正负集。针对提出的MVMR任务，我们进一步开发了一个强大的模型，Reliable Mutual Matching Network (RMMN)。
+
+    With the explosion of multimedia content in recent years, natural language video localization, which focuses on detecting video moment that matches a given natural language query, has become a critical problem. However, none of the previous research explores localizing a moment from a large corpus where multiple positive and negative videos exist. In this paper, we propose an MVMR (Massive Videos Moment Retrieval) task, which aims to localize video frames from a massive set of videos given a text query. For this task, we suggest methods for constructing datasets by employing similarity filtering on the existing video localization datasets and introduce three MVMR datasets. Specifically, we employ embedding-based text similarity matching and video-language grounding techniques to calculate the relevance score between a target query and videos to define positive and negative sets. For the proposed MVMR task, we further develop a strong model, Reliable Mutual Matching Network (RMMN), whic
+    
+[^10]: GNFactor：具有可泛化神经特征场的多任务真实机器人学习
+
+    GNFactor: Multi-Task Real Robot Learning with Generalizable Neural Feature Fields. (arXiv:2308.16891v1 [cs.RO])
+
+    [http://arxiv.org/abs/2308.16891](http://arxiv.org/abs/2308.16891)
+
+    GNFactor是一个用于多任务机器人操作的代理方法，它利用可泛化神经特征场和Perceiver Transformer模块，以及深度三维体素表示来实现对真实世界环境中的操作任务的执行。它通过将视觉和语义信息纳入三维表示来提高场景的理解能力，并在多个任务上进行了验证。
+
+    
+
+    在无结构的现实世界环境中，从视觉观察中开发能够执行多样化操作任务的代理机器人一直是机器人学中的一个长期问题。为了实现这个目标，机器人需要全面理解场景的三维结构和语义。在这项工作中，我们提出了GNFactor，一种用于多任务机器人操作的可视行为克隆代理，它利用可泛化神经特征场（GNF）作为重建模块，Perceiver Transformer作为决策模块，共享深度三维体素表示。为了将语义纳入三维表示，重建模块利用视觉语言基础模型（例如，稳定扩散）将丰富的语义信息提取到深度三维体素中。我们在3个真实机器人任务上评估了GNFactor，并对10个RLBench任务进行了详细的消融实验，只使用了有限数量的数据。
+
+    It is a long-standing problem in robotics to develop agents capable of executing diverse manipulation tasks from visual observations in unstructured real-world environments. To achieve this goal, the robot needs to have a comprehensive understanding of the 3D structure and semantics of the scene. In this work, we present $\textbf{GNFactor}$, a visual behavior cloning agent for multi-task robotic manipulation with $\textbf{G}$eneralizable $\textbf{N}$eural feature $\textbf{F}$ields. GNFactor jointly optimizes a generalizable neural field (GNF) as a reconstruction module and a Perceiver Transformer as a decision-making module, leveraging a shared deep 3D voxel representation. To incorporate semantics in 3D, the reconstruction module utilizes a vision-language foundation model ($\textit{e.g.}$, Stable Diffusion) to distill rich semantic information into the deep 3D voxel. We evaluate GNFactor on 3 real robot tasks and perform detailed ablations on 10 RLBench tasks with a limited number of
+    
+[^11]: 可解释的多视角深度网络方法论在实验物理中的应用
+
+    Explainable Multi-View Deep Networks Methodology for Experimental Physics. (arXiv:2308.08206v1 [cs.CV])
+
+    [http://arxiv.org/abs/2308.08206](http://arxiv.org/abs/2308.08206)
+
+    该论文介绍了一个可解释的多视角深度网络方法论，应用于实验物理中的多种成像表达分析。该方法论解决了多视角模型可解释性不足的问题。
+
+    
+
+    物理实验常涉及多种成像表达，如X射线扫描和显微图像。深度学习模型已广泛应用于这些实验的监督分析中。合并不同的图像表达经常需要正确分析和做出决策。因此，多视角数据应运而生 - 数据集中的每个样本由来自不同角度、来源或模态的视图描述。多视角学习的概念解决了这些问题。理解深度学习模型的决策过程对于可靠和可信的分析至关重要。因此，最近提出了许多可解释性方法。然而，多视角模型缺乏适当的可解释性，由于其架构的复杂性，难以解释。在本文中，我们提出了适用于视觉领域的不同多视角架构，每个架构都适合解决不同的问题，并提出了解释多视角模型的方法论。
+
+    Physical experiments often involve multiple imaging representations, such as X-ray scans and microscopic images. Deep learning models have been widely used for supervised analysis in these experiments. Combining different image representations is frequently required to analyze and make a decision properly. Consequently, multi-view data has emerged - datasets where each sample is described by views from different angles, sources, or modalities. These problems are addressed with the concept of multi-view learning. Understanding the decision-making process of deep learning models is essential for reliable and credible analysis. Hence, many explainability methods have been devised recently. Nonetheless, there is a lack of proper explainability in multi-view models, which are challenging to explain due to their architectures. In this paper, we suggest different multi-view architectures for the vision domain, each suited to another problem, and we also present a methodology for explaining th
+    
+[^12]: 微调对于视觉语言模型外分布检测的影响是怎样的？
+
+    How Does Fine-Tuning Impact Out-of-Distribution Detection for Vision-Language Models?. (arXiv:2306.06048v1 [cs.CV])
+
+    [http://arxiv.org/abs/2306.06048](http://arxiv.org/abs/2306.06048)
+
+    本研究旨在探究微调对少样本下游任务的外分布检测的影响，发现适当选择外分布分数对于CLIP-based 微调至关重要。最大概念匹配（MCM）分数提供了一个有前途的解决方案。
+
+    
+
+    最近的大型视觉语言模型，如CLIP，在外分布检测和泛化性能方面表现出色。然而，它们的零样本内分布准确性往往在下游数据集中受到限制。最近的基于CLIP的微调方法，如提示学习，已经在存在外分布标签的情况下显著改进了内分布分类和外分布泛化。然而，模型对于没有外分布标签的语义转移是否可靠仍然不清楚。为了填补这一空白，本文旨在对微调对于少样本下游任务的外分布检测的影响进行全面研究。通过将外分布检测框架化为多模式概念匹配，我们建立了微调方法和各种外分布分数之间的联系。我们的结果表明，选择适当的外分布分数对于基于CLIP的微调至关重要。特别是，最大概念匹配（MCM）分数提供了一个有前途的解决方案。
+
+    Recent large vision-language models such as CLIP have shown remarkable out-of-distribution (OOD) detection and generalization performance. However, their zero-shot in-distribution (ID) accuracy is often limited for downstream datasets. Recent CLIP-based fine-tuning methods such as prompt learning have demonstrated significant improvements in ID classification and OOD generalization where OOD labels are available. Nonetheless, it remains unclear whether the model is reliable to semantic shifts without OOD labels. In this paper, we aim to bridge the gap and present a comprehensive study to understand how fine-tuning impact OOD detection for few-shot downstream tasks. By framing OOD detection as multi-modal concept matching, we establish a connection between fine-tuning methods and various OOD scores. Our results suggest that a proper choice of OOD scores is essential for CLIP-based fine-tuning. In particular, the maximum concept matching (MCM) score provides a promising solution consiste
+    
+[^13]: ContactArt：学习类别级联结物体和手部姿态估计的三维交互先验
+
+    ContactArt: Learning 3D Interaction Priors for Category-level Articulated Object and Hand Poses Estimation. (arXiv:2305.01618v1 [cs.CV])
+
+    [http://arxiv.org/abs/2305.01618](http://arxiv.org/abs/2305.01618)
+
+    本研究提出了一种基于视觉遥操作的数据收集方法以及学习手物互动先验的新方法，从而能够在联结目标和手部姿态估计中实现更好的关键点定位性能。
+
+    
+
+    我们提出了一个新的数据集和一种新方法，用于学习手部和联结目标姿态估计中的手物互动先验。我们首先使用视觉遥操作收集了一个数据集，其中人类操作员可以直接在物理模拟器中游戏来操纵联结对象。 我们记录数据并从模拟器获得有关目标姿态和接触信息的免费和准确注释。 我们的系统仅需要使用iPhone来记录人手运动，可以轻松扩展并大大降低数据和注释收集的成本。使用这些数据，我们学习了三维交互先验，包括捕获对象部件排列分布的鉴别器（在GAN中），以及生成联结对象上接触区域的扩散模型，以指导手势估计。这些结构和接触先验可以很容易地转移到现实世界数据，几乎没有任何领域差距。通过使用我们的数据和学习的先验，我们的方法显著提高了关键点定位性能。
+
+    We propose a new dataset and a novel approach to learning hand-object interaction priors for hand and articulated object pose estimation. We first collect a dataset using visual teleoperation, where the human operator can directly play within a physical simulator to manipulate the articulated objects. We record the data and obtain free and accurate annotations on object poses and contact information from the simulator. Our system only requires an iPhone to record human hand motion, which can be easily scaled up and largely lower the costs of data and annotation collection. With this data, we learn 3D interaction priors including a discriminator (in a GAN) capturing the distribution of how object parts are arranged, and a diffusion model which generates the contact regions on articulated objects, guiding the hand pose estimation. Such structural and contact priors can easily transfer to real-world data with barely any domain gap. By using our data and learned priors, our method signific
+    
+[^14]: 可微分高斯化层用于深度生成模型正则化的逆问题
+
+    Differentiable Gaussianization Layers for Inverse Problems Regularized by Deep Generative Models. (arXiv:2112.03860v4 [cs.CV] UPDATED)
+
+    [http://arxiv.org/abs/2112.03860](http://arxiv.org/abs/2112.03860)
+
+    该论文提出了一种使用可微数据相关层进行重新参数化和高斯化潜在张量的方法，以约束逆问题为获得高保真度的分布内解决方案，有效解决深度生成模型逆问题中潜在张量偏离期望高斯分布的问题。
+
+    
+
+    深度生成模型如GAN、标准化流和扩散模型是逆问题的强大正则化器，可以帮助减小不适定性并获得高质量的结果。然而，在逆推过程中，这些模型的潜在张量可能会从期望的高维标准高斯分布中脱离，特别是在数据噪声和不准确的正向模型存在的情况下，会导致低保真度的解决方案。为解决这个问题，我们提出使用新颖的可微数据相关层重新参数化和高斯化潜在张量，其中使用自定义操作符解决优化问题。这些拟议的层将逆问题约束为获得高保真度的分布内解决方案。我们在三个反演任务（压缩感知MRI、图像去模糊和准确度受限的非线性偏微分方程反演问题“eikonal tomography”）上使用两种典型的深度生成模型进行了验证。
+
+    Deep generative models such as GANs, normalizing flows, and diffusion models are powerful regularizers for inverse problems. They exhibit great potential for helping reduce ill-posedness and attain high-quality results. However, the latent tensors of such deep generative models can fall out of the desired high-dimensional standard Gaussian distribution during inversion, particularly in the presence of data noise and inaccurate forward models, leading to low-fidelity solutions. To address this issue, we propose to reparameterize and Gaussianize the latent tensors using novel differentiable data-dependent layers wherein custom operators are defined by solving optimization problems. These proposed layers constrain inverse problems to obtain high-fidelity in-distribution solutions. We validate our technique on three inversion tasks: compressive-sensing MRI, image deblurring, and eikonal tomography (a nonlinear PDE-constrained inverse problem) using two representative deep generative models
     
 

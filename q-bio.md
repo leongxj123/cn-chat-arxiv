@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Molecular Identification and Peak Assignment: Leveraging Multi-Level Multimodal Alignment on NMR](https://arxiv.org/abs/2311.13817) | 本文提出了一种新颖的解决方案，即多级多模态对齐（K-M3AID），通过在分子图和NMR光谱之间建立对应关系，采用知识引导的实例级对比学习，以解决分子检索、异构体识别和峰归属等任务中的挑战。 |
+| [^1] | [RAM-EHR: Retrieval Augmentation Meets Clinical Predictions on Electronic Health Records](https://arxiv.org/abs/2403.00815) | RAM-EHR通过增强检索并利用总结知识，提高了针对电子健康记录的临床预测效果。 |
 
 # 详细
 
-[^1]: 分子鉴定与峰归属：在NMR上利用多级多模态对齐
+[^1]: RAM-EHR: 电子健康记录上的检索增强与临床预测相遇
 
-    Molecular Identification and Peak Assignment: Leveraging Multi-Level Multimodal Alignment on NMR
+    RAM-EHR: Retrieval Augmentation Meets Clinical Predictions on Electronic Health Records
 
-    [https://arxiv.org/abs/2311.13817](https://arxiv.org/abs/2311.13817)
+    [https://arxiv.org/abs/2403.00815](https://arxiv.org/abs/2403.00815)
 
-    本文提出了一种新颖的解决方案，即多级多模态对齐（K-M3AID），通过在分子图和NMR光谱之间建立对应关系，采用知识引导的实例级对比学习，以解决分子检索、异构体识别和峰归属等任务中的挑战。
+    RAM-EHR通过增强检索并利用总结知识，提高了针对电子健康记录的临床预测效果。
 
     
 
-    arXiv:2311.13817v2 公告类型：替换 摘要：核磁共振（NMR）光谱在解读分子结构和动态行为方面起着至关重要的作用。虽然基于AI的NMR预测模型具有潜力，但在分子检索、异构体识别和峰归属等任务中仍然存在挑战。为此，本文引入了一种新颖的解决方案，即具有知识引导的实例级对齐的多级多模态对齐（K-M3AID），该解决方案在两种异质模态之间建立对应关系：分子图和NMR光谱。K-M3AID采用了一个双协调对比学习架构，包含三个关键模块：图级对齐模块、节点级对齐模块和通信通道。值得注意的是，在节点级对齐模块中，K-M3AID引入了知识引导的实例级对比学习。此外，K-M3AID表明在节点级对齐过程中获得的技能
+    我们提出了RAM-EHR，这是一个用于改善电子健康记录（EHR）上临床预测的检索增强（Retrieval Augmentation）流程。RAM-EHR首先收集多个知识来源，将它们转换为文本格式，并使用密集检索来获取与医学概念相关的信息。这一策略解决了与复杂概念名称相关的困难。RAM-EHR然后增广了与一致性正则化代码联合训练的本地EHR预测模型，以捕获来自患者就诊和总结知识的互补信息。在两个EHR数据集上的实验表明，RAM-EHR相对于之前的知识增强基线效果显著（AUROC增益3.4％，AUPR增益7.2％），强调了RAM-EHR的总结知识对临床预测任务的有效性。代码将发布在\url{https://github.com/ritaranx/RAM-EHR}。
 
-    arXiv:2311.13817v2 Announce Type: replace  Abstract: Nuclear magnetic resonance (NMR) spectroscopy plays an essential role in deciphering molecular structure and dynamic behaviors. While AI-enhanced NMR prediction models hold promise, challenges still persist in tasks such as molecular retrieval, isomer recognition, and peak assignment. In response, this paper introduces a novel solution, Multi-Level Multimodal Alignment with Knowledge-Guided Instance-Wise Discrimination (K-M3AID), which establishes correspondences between two heterogeneous modalities: molecular graphs and NMR spectra. K-M3AID employs a dual-coordinated contrastive learning architecture with three key modules: a graph-level alignment module, a node-level alignment module, and a communication channel. Notably, K-M3AID introduces knowledge-guided instance-wise discrimination into contrastive learning within the node-level alignment module. In addition, K-M3AID demonstrates that skills acquired during node-level alignment
+    arXiv:2403.00815v1 Announce Type: cross  Abstract: We present RAM-EHR, a Retrieval AugMentation pipeline to improve clinical predictions on Electronic Health Records (EHRs). RAM-EHR first collects multiple knowledge sources, converts them into text format, and uses dense retrieval to obtain information related to medical concepts. This strategy addresses the difficulties associated with complex names for the concepts. RAM-EHR then augments the local EHR predictive model co-trained with consistency regularization to capture complementary information from patient visits and summarized knowledge. Experiments on two EHR datasets show the efficacy of RAM-EHR over previous knowledge-enhanced baselines (3.4% gain in AUROC and 7.2% gain in AUPR), emphasizing the effectiveness of the summarized knowledge from RAM-EHR for clinical prediction tasks. The code will be published at \url{https://github.com/ritaranx/RAM-EHR}.
     
 

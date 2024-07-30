@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.AR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.AR</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.AR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.AR</description><item><title>&#25552;&#20986;&#19968;&#31181;&#36890;&#36807;&#24378;&#21270;&#23398;&#20064;&#31639;&#27861;&#23454;&#29616;&#30340;&#33258;&#21160;&#21270;&#35774;&#35745;&#26041;&#27861;&#65292;&#26174;&#33879;&#25552;&#39640;&#20102;&#20998;&#24067;&#24335;&#28388;&#27874;&#30005;&#36335;&#35774;&#35745;&#30340;&#25928;&#29575;&#21644;&#36136;&#37327;&#12290;</title><link>https://arxiv.org/abs/2402.14236</link><description>&lt;p&gt;
+&#20998;&#24067;&#24335;&#28388;&#27874;&#30005;&#36335;&#30340;&#33258;&#21160;&#35774;&#35745;&#19982;&#20248;&#21270;&#36890;&#36807;&#24378;&#21270;&#23398;&#20064;
+&lt;/p&gt;
+&lt;p&gt;
+Automated Design and Optimization of Distributed Filtering Circuits via Reinforcement Learning
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.14236
+&lt;/p&gt;
+&lt;p&gt;
+&#25552;&#20986;&#19968;&#31181;&#36890;&#36807;&#24378;&#21270;&#23398;&#20064;&#31639;&#27861;&#23454;&#29616;&#30340;&#33258;&#21160;&#21270;&#35774;&#35745;&#26041;&#27861;&#65292;&#26174;&#33879;&#25552;&#39640;&#20102;&#20998;&#24067;&#24335;&#28388;&#27874;&#30005;&#36335;&#35774;&#35745;&#30340;&#25928;&#29575;&#21644;&#36136;&#37327;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#35774;&#35745;&#20998;&#24067;&#24335;&#28388;&#27874;&#30005;&#36335;(DFC)&#22797;&#26434;&#19988;&#32791;&#26102;&#65292;&#30005;&#36335;&#24615;&#33021;&#20005;&#37325;&#20381;&#36182;&#30005;&#23376;&#24037;&#31243;&#24072;&#30340;&#19987;&#19994;&#30693;&#35782;&#21644;&#32463;&#39564;&#12290;&#28982;&#32780;&#65292;&#25163;&#21160;&#35774;&#35745;&#26041;&#27861;&#25928;&#29575;&#20302;&#19979;&#12290;&#26412;&#30740;&#31350;&#25552;&#20986;&#19968;&#31181;&#26032;&#30340;&#31471;&#21040;&#31471;&#33258;&#21160;&#21270;&#26041;&#27861;&#65292;&#21033;&#29992;&#24378;&#21270;&#23398;&#20064;&#31639;&#27861;&#26469;&#25913;&#36827;DFC&#30340;&#35774;&#35745;&#12290;&#25152;&#25552;&#20986;&#30340;&#26041;&#27861;&#28040;&#38500;&#20102;&#23545;&#24037;&#31243;&#24072;&#35774;&#35745;&#32463;&#39564;&#30340;&#20381;&#36182;&#65292;&#26174;&#33879;&#38477;&#20302;&#20102;&#19982;&#30005;&#36335;&#35774;&#35745;&#30456;&#20851;&#30340;&#20027;&#35266;&#24615;&#21644;&#32422;&#26463;&#12290;&#23454;&#39564;&#32467;&#26524;&#34920;&#26126;&#65292;&#22312;&#19982;&#20256;&#32479;&#30340;&#24037;&#31243;&#24072;&#39537;&#21160;&#26041;&#27861;&#36827;&#34892;&#27604;&#36739;&#26102;&#65292;&#25152;&#25552;&#20986;&#30340;&#26041;&#27861;&#22312;&#35774;&#35745;&#25928;&#29575;&#21644;&#36136;&#37327;&#19978;&#37117;&#26377;&#26126;&#26174;&#25913;&#21892;&#12290;&#29305;&#21035;&#26159;&#65292;&#22312;&#35774;&#35745;&#22797;&#26434;&#25110;&#24555;&#36895;&#21457;&#23637;&#30340;DFC&#26102;&#65292;&#25152;&#25552;&#20986;&#30340;&#26041;&#27861;&#34920;&#29616;&#20986;&#21331;&#36234;&#30340;&#24615;&#33021;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2402.14236v1 Announce Type: cross  Abstract: Designing distributed filtering circuits (DFCs) is complex and time-consuming, with the circuit performance relying heavily on the expertise and experience of electronics engineers. However, manual design methods tend to have exceedingly low-efficiency. This study proposes a novel end-to-end automated method for fabricating circuits to improve the design of DFCs. The proposed method harnesses reinforcement learning (RL) algorithms, eliminating the dependence on the design experience of engineers. Thus, it significantly reduces the subjectivity and constraints associated with circuit design. The experimental findings demonstrate clear improvements in both design efficiency and quality when comparing the proposed method with traditional engineer-driven methods. In particular, the proposed method achieves superior performance when designing complex or rapidly evolving DFCs. Furthermore, compared to existing circuit automation design techn
+&lt;/p&gt;</description></item></channel></rss>
