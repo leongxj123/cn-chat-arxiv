@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [RAM-EHR: Retrieval Augmentation Meets Clinical Predictions on Electronic Health Records](https://arxiv.org/abs/2403.00815) | RAM-EHR通过增强检索并利用总结知识，提高了针对电子健康记录的临床预测效果。 |
+| [^1] | [Revolutionizing Genomics with Reinforcement Learning Techniques.](http://arxiv.org/abs/2302.13268) | 强化学习是一种革新的工具，可以在基因组学领域中解决自动数据分析和处理的问题。使用强化学习算法可以降低收集标记训练数据的成本，适用于基因组数据分析和解释。本调查重点关注在基因组研究领域中使用强化学习的应用，包括基因调控网络、基因组组装和序列比对。 |
 
 # 详细
 
-[^1]: RAM-EHR: 电子健康记录上的检索增强与临床预测相遇
+[^1]: 使用强化学习技术革新基因组学
 
-    RAM-EHR: Retrieval Augmentation Meets Clinical Predictions on Electronic Health Records
+    Revolutionizing Genomics with Reinforcement Learning Techniques. (arXiv:2302.13268v2 [q-bio.GN] UPDATED)
 
-    [https://arxiv.org/abs/2403.00815](https://arxiv.org/abs/2403.00815)
+    [http://arxiv.org/abs/2302.13268](http://arxiv.org/abs/2302.13268)
 
-    RAM-EHR通过增强检索并利用总结知识，提高了针对电子健康记录的临床预测效果。
+    强化学习是一种革新的工具，可以在基因组学领域中解决自动数据分析和处理的问题。使用强化学习算法可以降低收集标记训练数据的成本，适用于基因组数据分析和解释。本调查重点关注在基因组研究领域中使用强化学习的应用，包括基因调控网络、基因组组装和序列比对。
 
     
 
-    我们提出了RAM-EHR，这是一个用于改善电子健康记录（EHR）上临床预测的检索增强（Retrieval Augmentation）流程。RAM-EHR首先收集多个知识来源，将它们转换为文本格式，并使用密集检索来获取与医学概念相关的信息。这一策略解决了与复杂概念名称相关的困难。RAM-EHR然后增广了与一致性正则化代码联合训练的本地EHR预测模型，以捕获来自患者就诊和总结知识的互补信息。在两个EHR数据集上的实验表明，RAM-EHR相对于之前的知识增强基线效果显著（AUROC增益3.4％，AUPR增益7.2％），强调了RAM-EHR的总结知识对临床预测任务的有效性。代码将发布在\url{https://github.com/ritaranx/RAM-EHR}。
+    近年来，强化学习（RL）作为一种强大的工具出现在解决各种问题中，包括决策和基因组学。过去二十年的原始基因组数据指数增长已经超出了手动分析的能力，这导致对自动数据分析和处理的兴趣越来越大。RL算法能够在最小的人工监督下从经验中学习，使其非常适合基因组数据分析和解释。使用RL的一个关键好处是降低了收集标记训练数据的成本，这是监督学习所需的。虽然已经有许多研究探讨了机器学习在基因组学中的应用，但本调查仅专注于在各种基因组研究领域（包括基因调控网络，基因组组装和序列比对）中使用RL的情况。我们对现有研究的技术细节进行了全面的概述。
 
-    arXiv:2403.00815v1 Announce Type: cross  Abstract: We present RAM-EHR, a Retrieval AugMentation pipeline to improve clinical predictions on Electronic Health Records (EHRs). RAM-EHR first collects multiple knowledge sources, converts them into text format, and uses dense retrieval to obtain information related to medical concepts. This strategy addresses the difficulties associated with complex names for the concepts. RAM-EHR then augments the local EHR predictive model co-trained with consistency regularization to capture complementary information from patient visits and summarized knowledge. Experiments on two EHR datasets show the efficacy of RAM-EHR over previous knowledge-enhanced baselines (3.4% gain in AUROC and 7.2% gain in AUPR), emphasizing the effectiveness of the summarized knowledge from RAM-EHR for clinical prediction tasks. The code will be published at \url{https://github.com/ritaranx/RAM-EHR}.
+    In recent years, Reinforcement Learning (RL) has emerged as a powerful tool for solving a wide range of problems, including decision-making and genomics. The exponential growth of raw genomic data over the past two decades has exceeded the capacity of manual analysis, leading to a growing interest in automatic data analysis and processing. RL algorithms are capable of learning from experience with minimal human supervision, making them well-suited for genomic data analysis and interpretation. One of the key benefits of using RL is the reduced cost associated with collecting labeled training data, which is required for supervised learning. While there have been numerous studies examining the applications of Machine Learning (ML) in genomics, this survey focuses exclusively on the use of RL in various genomics research fields, including gene regulatory networks (GRNs), genome assembly, and sequence alignment. We present a comprehensive technical overview of existing studies on the applic
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Bayesian Opponent Modeling in Multiplayer Imperfect-Information Games.](http://arxiv.org/abs/2212.06027) | 该论文提出了一种针对多人不完全信息博弈的贝叶斯对手建模方法，在三人 Kuhn poker 中应用这种方法可以明显超过所有的代理商，包括准确的纳什均衡策略。 |
+| [^1] | [Multi-Agent, Human-Agent and Beyond: A Survey on Cooperation in Social Dilemmas](https://arxiv.org/abs/2402.17270) | 调查了多智能体、人智能体和人工智能智能体在社会困境合作中的三个关键领域，讨论了合作的动机、策略、人类偏见，以及未来研究方向。 |
 
 # 详细
 
-[^1]: 多人不完全信息博弈中的贝叶斯对手建模
+[^1]: 多智能体、人智能体及其进展：合作在社会困境中的调查
 
-    Bayesian Opponent Modeling in Multiplayer Imperfect-Information Games. (arXiv:2212.06027v2 [cs.GT] UPDATED)
+    Multi-Agent, Human-Agent and Beyond: A Survey on Cooperation in Social Dilemmas
 
-    [http://arxiv.org/abs/2212.06027](http://arxiv.org/abs/2212.06027)
+    [https://arxiv.org/abs/2402.17270](https://arxiv.org/abs/2402.17270)
 
-    该论文提出了一种针对多人不完全信息博弈的贝叶斯对手建模方法，在三人 Kuhn poker 中应用这种方法可以明显超过所有的代理商，包括准确的纳什均衡策略。
+    调查了多智能体、人智能体和人工智能智能体在社会困境合作中的三个关键领域，讨论了合作的动机、策略、人类偏见，以及未来研究方向。
 
     
 
-    在许多现实世界的情境中，代理商与多个对立代理商进行战略互动，对手可能采用各种策略。对于这样的情境，设计代理的标准方法是计算或逼近相关的博弈理论解，如纳什均衡，然后遵循规定的策略。然而，这样的策略忽略了对手玩游戏的任何观察，这些观察可能表明可以利用的缺点。我们提出了一种多人不完全信息博弈中的对手建模方法，通过重复交互收集对手玩游戏的观察。我们对三人 Kuhn 扑克展开了对许多真实对手和准确的纳什均衡策略的实验，结果表明我们的算法明显优于所有的代理商，包括准确的纳什均衡策略。
+    在社会困境中研究合作长期以来一直是各种学科的基本课题，包括计算机科学和社会科学。人工智能领域的最新进展显著重塑了这一领域，为理解和增强合作提供了新的见解。本调查考察了人工智能和社会困境合作交汇处的三个关键领域。首先，着重于多智能体合作，我们审查了支持理性智能体之间合作的内在和外在动机，以及用于制定有效策略对抗不同对手的方法。其次，探讨了人智能体合作，我们讨论了当前用于与人类合作的人工智能算法，以及人类对人工智能智能体的偏见。第三，我们审查了利用人工智能智能体增强人类合作的新兴领域。最后，我们讨论了未来研究方向，例如 u
 
-    In many real-world settings agents engage in strategic interactions with multiple opposing agents who can employ a wide variety of strategies. The standard approach for designing agents for such settings is to compute or approximate a relevant game-theoretic solution concept such as Nash equilibrium and then follow the prescribed strategy. However, such a strategy ignores any observations of opponents' play, which may indicate shortcomings that can be exploited. We present an approach for opponent modeling in multiplayer imperfect-information games where we collect observations of opponents' play through repeated interactions. We run experiments against a wide variety of real opponents and exact Nash equilibrium strategies in three-player Kuhn poker and show that our algorithm significantly outperforms all of the agents, including the exact Nash equilibrium strategies.
+    arXiv:2402.17270v1 Announce Type: new  Abstract: The study of cooperation within social dilemmas has long been a fundamental topic across various disciplines, including computer science and social science. Recent advancements in Artificial Intelligence (AI) have significantly reshaped this field, offering fresh insights into understanding and enhancing cooperation. This survey examines three key areas at the intersection of AI and cooperation in social dilemmas. First, focusing on multi-agent cooperation, we review the intrinsic and external motivations that support cooperation among rational agents, and the methods employed to develop effective strategies against diverse opponents. Second, looking into human-agent cooperation, we discuss the current AI algorithms for cooperating with humans and the human biases towards AI agents. Third, we review the emergent field of leveraging AI agents to enhance cooperation among humans. We conclude by discussing future research avenues, such as u
     
 
