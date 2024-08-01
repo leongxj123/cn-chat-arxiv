@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Bayesian Hierarchical Probabilistic Forecasting of Intraday Electricity Prices](https://arxiv.org/abs/2403.05441) | 该研究首次提出了为德国连续日内市场交易的电力价格进行贝叶斯预测，考虑了参数不确定性，并在2022年的电力价格验证中取得了统计显著的改进。 |
+| [^1] | [Dynamic Risk Measurement by EVT based on Stochastic Volatility models via MCMC.](http://arxiv.org/abs/2201.09434) | 本文介绍了一种基于随机波动模型和极值理论的动态风险测量模型，结合重尾分布和杠杆效应，能够更有效地避免金融风险。 |
 
 # 详细
 
-[^1]: 基于贝叶斯层次概率的日内电力价格预测
+[^1]: 通过MCMC基于随机波动模型的EVT动态风险测量
 
-    Bayesian Hierarchical Probabilistic Forecasting of Intraday Electricity Prices
+    Dynamic Risk Measurement by EVT based on Stochastic Volatility models via MCMC. (arXiv:2201.09434v4 [stat.AP] UPDATED)
 
-    [https://arxiv.org/abs/2403.05441](https://arxiv.org/abs/2403.05441)
+    [http://arxiv.org/abs/2201.09434](http://arxiv.org/abs/2201.09434)
 
-    该研究首次提出了为德国连续日内市场交易的电力价格进行贝叶斯预测，考虑了参数不确定性，并在2022年的电力价格验证中取得了统计显著的改进。
+    本文介绍了一种基于随机波动模型和极值理论的动态风险测量模型，结合重尾分布和杠杆效应，能够更有效地避免金融风险。
 
     
 
-    我们首次提出了对德国连续日内市场交易的电力价格进行贝叶斯预测的研究，充分考虑参数不确定性。我们的目标变量是IDFull价格指数，预测以后验预测分布的形式给出。我们使用了2022年极度波动的电力价格进行验证，在之前几乎没有成为预测研究对象。作为基准模型，我们使用了预测创建时的所有可用日内交易来计算IDFull的当前值。根据弱式有效假设，从最后价格信息建立的基准无法显著改善。然而，我们观察到在点度量和概率评分方面存在着统计显著的改进。最后，我们挑战了在电力价格预测中使用LASSO进行特征选择的宣布的黄金标准。
+    本文旨在描述金融市场回报和波动性的典型事实特征，并解决资产回报的尾部特征未被充分考虑的问题，以更有效地避免风险和生产性地管理股票市场风险。因此，本文将重尾分布和杠杆效应引入SV模型。然后，通过MCMC估算模型参数。随后，全面描述了金融市场回报的重尾分布，并将其与极值理论相结合，以拟合标准残差的尾部分布。其后，建立了一种新的金融风险测量模型，称为SV-EVT-VaR动态模型。通过使用每日的标普500指数和模拟回报，达成了实证结果，揭示了SV-EVT模型在外样本回测中可以优于其他模型。
 
-    arXiv:2403.05441v1 Announce Type: cross  Abstract: We present a first study of Bayesian forecasting of electricity prices traded on the German continuous intraday market which fully incorporates parameter uncertainty. Our target variable is the IDFull price index, forecasts are given in terms of posterior predictive distributions. For validation we use the exceedingly volatile electricity prices of 2022, which have hardly been the subject of forecasting studies before. As a benchmark model, we use all available intraday transactions at the time of forecast creation to compute a current value for the IDFull. According to the weak-form efficiency hypothesis, it would not be possible to significantly improve this benchmark built from last price information. We do, however, observe statistically significant improvement in terms of both point measures and probability scores. Finally, we challenge the declared gold standard of using LASSO for feature selection in electricity price forecastin
+    This paper aims to characterize the typical factual characteristics of financial market returns and volatility and address the problem that the tail characteristics of asset returns have been not sufficiently considered, as an attempt to more effectively avoid risks and productively manage stock market risks. Thus, in this paper, the fat-tailed distribution and the leverage effect are introduced into the SV model. Next, the model parameters are estimated through MCMC. Subsequently, the fat-tailed distribution of financial market returns is comprehensively characterized and then incorporated with extreme value theory to fit the tail distribution of standard residuals. Afterward, a new financial risk measurement model is built, which is termed the SV-EVT-VaR-based dynamic model. With the use of daily S&P 500 index and simulated returns, the empirical results are achieved, which reveal that the SV-EVT-based models can outperform other models for out-of-sample data in backtesting and depic
     
 

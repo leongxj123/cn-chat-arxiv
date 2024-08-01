@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Learning reduced-order Quadratic-Linear models in Process Engineering using Operator Inference](https://arxiv.org/abs/2402.17698) | 使用算子推断学习的降阶模型在过程工程中建模动态系统，为实现快速可靠的数字孪生架构迈出重要一步。 |
+| [^1] | [Convergence of the deep BSDE method for stochastic control problems formulated through the stochastic maximum principle](https://arxiv.org/abs/2401.17472) | 本文研究了基于深度BSDE方法和随机最大原则的随机控制问题，提供了该方法的收敛结果，并展示了在高维问题中相比其他方法具有卓越性能。 |
 
 # 详细
 
-[^1]: 在过程工程中使用算子推断学习降阶二次-线性模型
+[^1]: 通过随机最大原则，基于深度BSDE方法的随机控制问题的收敛性研究
 
-    Learning reduced-order Quadratic-Linear models in Process Engineering using Operator Inference
+    Convergence of the deep BSDE method for stochastic control problems formulated through the stochastic maximum principle
 
-    [https://arxiv.org/abs/2402.17698](https://arxiv.org/abs/2402.17698)
+    [https://arxiv.org/abs/2401.17472](https://arxiv.org/abs/2401.17472)
 
-    使用算子推断学习的降阶模型在过程工程中建模动态系统，为实现快速可靠的数字孪生架构迈出重要一步。
+    本文研究了基于深度BSDE方法和随机最大原则的随机控制问题，提供了该方法的收敛结果，并展示了在高维问题中相比其他方法具有卓越性能。
 
     
 
-    在这项工作中，我们解决了在过程工程中高效建模动态系统的挑战。我们使用降阶模型学习，具体来说是算子推断。这是一种非侵入式、数据驱动的从时域数据学习动态系统的方法。我们的研究应用是二氧化碳甲烷化反应，这是电力转化技术框架中的重要反应，以展示其潜力。数值结果表明，用算子推断构建的降阶模型能够提供一个简化但准确的替代解决方案。这标志着实现快速可靠数字孪生架构的重要里程碑。
+    众所周知，随机控制的决策问题可以通过前向后向随机微分方程（FBSDE）来表述。最近，Ji等人（2022）提出了一种基于随机最大原则（SMP）的高效深度学习算法。本文提供了该深度SMP-BSDE算法的收敛结果，并将其性能与其他现有方法进行比较。通过采用类似于Han和Long（2020）的策略，我们推导出后验误差估计，并展示了总近似误差可以由损失函数值和离散化误差的值来限制。我们在高维随机控制问题的数值例子中展示了该算法在漂移控制和扩散控制的情况下，相比现有算法表现出的卓越性能。
 
-    arXiv:2402.17698v1 Announce Type: cross  Abstract: In this work, we address the challenge of efficiently modeling dynamical systems in process engineering. We use reduced-order model learning, specifically operator inference. This is a non-intrusive, data-driven method for learning dynamical systems from time-domain data. The application in our study is carbon dioxide methanation, an important reaction within the Power-to-X framework, to demonstrate its potential. The numerical results show the ability of the reduced-order models constructed with operator inference to provide a reduced yet accurate surrogate solution. This represents an important milestone towards the implementation of fast and reliable digital twin architectures.
+    It is well-known that decision-making problems from stochastic control can be formulated by means of forward-backward stochastic differential equation (FBSDE). Recently, the authors of Ji et al. 2022 proposed an efficient deep learning-based algorithm which was based on the stochastic maximum principle (SMP). In this paper, we provide a convergence result for this deep SMP-BSDE algorithm and compare its performance with other existing methods. In particular, by adopting a similar strategy as in Han and Long 2020, we derive a posteriori error estimate, and show that the total approximation error can be bounded by the value of the loss functional and the discretization error. We present numerical examples for high-dimensional stochastic control problems, both in case of drift- and diffusion control, which showcase superior performance compared to existing algorithms.
     
 

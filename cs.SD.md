@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Versatile Audio-Visual Learning for Handling Single and Multi Modalities in Emotion Regression and Classification Tasks.](http://arxiv.org/abs/2305.07216) | 本文提出了一个通用视听学习（VAVL）框架，可用于处理情感回归和情感分类任务中的单模态和多模态系统，即使数据缺失或不匹配也能进行有效训练和切换。 |
+| [^1] | [CompA: Addressing the Gap in Compositional Reasoning in Audio-Language Models.](http://arxiv.org/abs/2310.08753) | CompA提出了由两个专家注释的音频-语言模型组合推理基准数据集，用于评估ALMs在理解音频中声音事件的顺序和属性绑定方面的表现。 |
 
 # 详细
 
-[^1]: 处理情感回归和分类任务中单模态和多模态的通用视听学习
+[^1]: CompA: 解决音频-语言模型中的组合推理差距
 
-    Versatile Audio-Visual Learning for Handling Single and Multi Modalities in Emotion Regression and Classification Tasks. (arXiv:2305.07216v1 [cs.LG])
+    CompA: Addressing the Gap in Compositional Reasoning in Audio-Language Models. (arXiv:2310.08753v1 [cs.SD])
 
-    [http://arxiv.org/abs/2305.07216](http://arxiv.org/abs/2305.07216)
+    [http://arxiv.org/abs/2310.08753](http://arxiv.org/abs/2310.08753)
 
-    本文提出了一个通用视听学习（VAVL）框架，可用于处理情感回归和情感分类任务中的单模态和多模态系统，即使数据缺失或不匹配也能进行有效训练和切换。
+    CompA提出了由两个专家注释的音频-语言模型组合推理基准数据集，用于评估ALMs在理解音频中声音事件的顺序和属性绑定方面的表现。
 
     
 
-    大多数当前的音视频情感识别模型缺乏实际应用所需的灵活性。我们设想了一个多模态系统，即使只有一个模态可用，也可以互换地实现预测情感属性或识别分类情感。在一个多模态情感识别系统中实现这样的灵活性存在困难，因为准确解释和整合各种数据来源是困难的。同时，允许在回归和分类任务之间直接切换，同时处理缺失或部分信息也是一个挑战。本研究提出了一个用于处理情感回归和情感分类任务的通用视听学习（VAVL）框架，实现了处理单模态和多模态系统的音视频框架，即使音频和视觉数据不匹配，也可以进行训练。
+    音频的基本特性是其组合性。使用对比方法（例如CLAP）训练的音频-语言模型（ALMs）能够学习音频和语言模态之间的共享表示，从而在许多下游应用中提高性能，包括零样本音频分类、音频检索等。然而，这些模型在有效执行组合推理方面的能力还很少被探索，需要进一步的研究。本文提出了CompA，这是一个由两个专家注释的基准数据集，其中大多数是真实世界的音频样本，用于评估ALMs的组合推理能力。我们的CompA-order评估ALMs在理解音频中声音事件的顺序或发生时的表现如何，而CompA-attribute评估声音事件的属性绑定。每个基准数据集中的实例包含两个音频-标题对，其中两个音频具有相同的声音事件，但组合方式不同。
 
-    Most current audio-visual emotion recognition models lack the flexibility needed for deployment in practical applications. We envision a multimodal system that works even when only one modality is available and can be implemented interchangeably for either predicting emotional attributes or recognizing categorical emotions. Achieving such flexibility in a multimodal emotion recognition system is difficult due to the inherent challenges in accurately interpreting and integrating varied data sources. It is also a challenge to robustly handle missing or partial information while allowing direct switch between regression and classification tasks. This study proposes a \emph{versatile audio-visual learning} (VAVL) framework for handling unimodal and multimodal systems for emotion regression and emotion classification tasks. We implement an audio-visual framework that can be trained even when audio and visual paired data is not available for part of the training set (i.e., audio only or only
+    A fundamental characteristic of audio is its compositional nature. Audio-language models (ALMs) trained using a contrastive approach (e.g., CLAP) that learns a shared representation between audio and language modalities have improved performance in many downstream applications, including zero-shot audio classification, audio retrieval, etc. However, the ability of these models to effectively perform compositional reasoning remains largely unexplored and necessitates additional research. In this paper, we propose CompA, a collection of two expert-annotated benchmarks with a majority of real-world audio samples, to evaluate compositional reasoning in ALMs. Our proposed CompA-order evaluates how well an ALM understands the order or occurrence of acoustic events in audio, and CompA-attribute evaluates attribute binding of acoustic events. An instance from either benchmark consists of two audio-caption pairs, where both audios have the same acoustic events but with different compositions. A
     
 
