@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [CompA: Addressing the Gap in Compositional Reasoning in Audio-Language Models.](http://arxiv.org/abs/2310.08753) | CompA提出了由两个专家注释的音频-语言模型组合推理基准数据集，用于评估ALMs在理解音频中声音事件的顺序和属性绑定方面的表现。 |
+| [^1] | [Psychoacoustic Challenges Of Speech Enhancement On VoIP Platforms.](http://arxiv.org/abs/2310.07161) | 本研究在VoIP通信领域中探索了声学转换的复杂性，并通过分析心理声学指标，揭示了语音增强对VoIP系统的影响。 |
 
 # 详细
 
-[^1]: CompA: 解决音频-语言模型中的组合推理差距
+[^1]: VoIP平台上语音增强的心理声学挑战
 
-    CompA: Addressing the Gap in Compositional Reasoning in Audio-Language Models. (arXiv:2310.08753v1 [cs.SD])
+    Psychoacoustic Challenges Of Speech Enhancement On VoIP Platforms. (arXiv:2310.07161v1 [cs.SD])
 
-    [http://arxiv.org/abs/2310.08753](http://arxiv.org/abs/2310.08753)
+    [http://arxiv.org/abs/2310.07161](http://arxiv.org/abs/2310.07161)
 
-    CompA提出了由两个专家注释的音频-语言模型组合推理基准数据集，用于评估ALMs在理解音频中声音事件的顺序和属性绑定方面的表现。
+    本研究在VoIP通信领域中探索了声学转换的复杂性，并通过分析心理声学指标，揭示了语音增强对VoIP系统的影响。
 
     
 
-    音频的基本特性是其组合性。使用对比方法（例如CLAP）训练的音频-语言模型（ALMs）能够学习音频和语言模态之间的共享表示，从而在许多下游应用中提高性能，包括零样本音频分类、音频检索等。然而，这些模型在有效执行组合推理方面的能力还很少被探索，需要进一步的研究。本文提出了CompA，这是一个由两个专家注释的基准数据集，其中大多数是真实世界的音频样本，用于评估ALMs的组合推理能力。我们的CompA-order评估ALMs在理解音频中声音事件的顺序或发生时的表现如何，而CompA-attribute评估声音事件的属性绑定。每个基准数据集中的实例包含两个音频-标题对，其中两个音频具有相同的声音事件，但组合方式不同。
+    在VoIP（互联网语音传输协议）通信中，由声学转换引入的复杂性需要进行严格的分析。本研究基于对专有发送端降噪效果的探索，对Google Meets和Zoom等平台进行了细致评估。研究利用Deep Noise Suppression（DNS）2020数据集，确保了针对各种降噪设置和接收器接口的结构化考察。通过将Oaxaca分解引入到声学-语音扰动分析中，本研究引入了一种方法论的创新，该分解通常是经济计量学工具，在此处重新用于分析VoIP系统中的声学-语音扰动。为了进一步确定这些转换的影响，利用心理声学指标，特别是PESQ和STOI，来提供对语音改变的全面理解。总体而言，所获得的观点突出显示了VoIP影响的声学动力学的复杂景观。
 
-    A fundamental characteristic of audio is its compositional nature. Audio-language models (ALMs) trained using a contrastive approach (e.g., CLAP) that learns a shared representation between audio and language modalities have improved performance in many downstream applications, including zero-shot audio classification, audio retrieval, etc. However, the ability of these models to effectively perform compositional reasoning remains largely unexplored and necessitates additional research. In this paper, we propose CompA, a collection of two expert-annotated benchmarks with a majority of real-world audio samples, to evaluate compositional reasoning in ALMs. Our proposed CompA-order evaluates how well an ALM understands the order or occurrence of acoustic events in audio, and CompA-attribute evaluates attribute binding of acoustic events. An instance from either benchmark consists of two audio-caption pairs, where both audios have the same acoustic events but with different compositions. A
+    Within the ambit of VoIP (Voice over Internet Protocol) telecommunications, the complexities introduced by acoustic transformations merit rigorous analysis. This research, rooted in the exploration of proprietary sender-side denoising effects, meticulously evaluates platforms such as Google Meets and Zoom. The study draws upon the Deep Noise Suppression (DNS) 2020 dataset, ensuring a structured examination tailored to various denoising settings and receiver interfaces. A methodological novelty is introduced via the Oaxaca decomposition, traditionally an econometric tool, repurposed herein to analyze acoustic-phonetic perturbations within VoIP systems. To further ground the implications of these transformations, psychoacoustic metrics, specifically PESQ and STOI, were harnessed to furnish a comprehensive understanding of speech alterations. Cumulatively, the insights garnered underscore the intricate landscape of VoIP-influenced acoustic dynamics. In addition to the primary findings, a 
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [FedADMM-InSa: An Inexact and Self-Adaptive ADMM for Federated Learning](https://arxiv.org/abs/2402.13989) | 提出了一种不精确和自适应的FedADMM算法，通过为客户端的本地更新设计一个不精确性标准，消除了调整本地训练准确度的需要，降低了计算成本并减轻了滞后效应。 |
+| [^1] | [Evaluating LLMs for Privilege-Escalation Scenarios.](http://arxiv.org/abs/2310.11409) | 本研究评估了在特权升级场景中利用语言模型（LLMs）进行渗透测试的应用。通过创建一个自动化的Linux特权升级基准和一个LLM-guided特权升级工具，我们分析了LLMs的不同提示设计、上下文学习和高级指导对测试的影响，并讨论了LLMs面临的挑战。 |
 
 # 详细
 
-[^1]: FedADMM-InSa: 一种不精确和自适应的联邦学习ADMM
+[^1]: 评估LLMs在特权升级场景中的应用
 
-    FedADMM-InSa: An Inexact and Self-Adaptive ADMM for Federated Learning
+    Evaluating LLMs for Privilege-Escalation Scenarios. (arXiv:2310.11409v2 [cs.CR] UPDATED)
 
-    [https://arxiv.org/abs/2402.13989](https://arxiv.org/abs/2402.13989)
+    [http://arxiv.org/abs/2310.11409](http://arxiv.org/abs/2310.11409)
 
-    提出了一种不精确和自适应的FedADMM算法，通过为客户端的本地更新设计一个不精确性标准，消除了调整本地训练准确度的需要，降低了计算成本并减轻了滞后效应。
+    本研究评估了在特权升级场景中利用语言模型（LLMs）进行渗透测试的应用。通过创建一个自动化的Linux特权升级基准和一个LLM-guided特权升级工具，我们分析了LLMs的不同提示设计、上下文学习和高级指导对测试的影响，并讨论了LLMs面临的挑战。
 
     
 
-    联邦学习(FL)是一个有希望的框架，可以从分布式数据中学习同时保持隐私。有效的FL算法的发展面临各种挑战，包括异构数据和系统、通信能力有限以及受限的本地计算资源。最近开发的FedADMM方法对数据和系统的异构性表现出很强的韧性。然而，如果超参数没有经过精心调整，它们仍然会遭受性能下降的问题。为了解决这个问题，我们提出了一种不精确和自适应的FedADMM算法，名为FedADMM-InSa。首先，我们为客户端的本地更新设计了一个不精确性标准，以消除必须根据经验设置本地训练准确性的需求。这种不精确性标准可以由每个客户端独立地根据其独特条件进行评估，从而降低本地计算成本并减轻不良的滞后效应。
+    渗透测试是网络安全的一个重要组成部分，它允许组织主动识别和修复系统中的漏洞，从而增强其对潜在网络攻击的防御机制。在渗透测试领域，最近的一个进展是利用语言模型（LLMs）。我们探索LLMs与渗透测试的交叉领域，以了解它们在特权升级场景中的能力和挑战。我们使用本地虚拟机创建了一个自动化的Linux特权升级基准。我们引入了一种基于LLMs的特权升级工具，用于评估不同的LLMs和提示策略在我们的基准测试中的表现。我们分析了不同提示设计的影响，上下文学习的好处，以及向LLMs提供高级指导的优势。我们讨论了LLMs面临的挑战领域，包括在测试过程中保持专注、处理错误以及与传统方法进行比较。
 
-    arXiv:2402.13989v1 Announce Type: new  Abstract: Federated learning (FL) is a promising framework for learning from distributed data while maintaining privacy. The development of efficient FL algorithms encounters various challenges, including heterogeneous data and systems, limited communication capacities, and constrained local computational resources. Recently developed FedADMM methods show great resilience to both data and system heterogeneity. However, they still suffer from performance deterioration if the hyperparameters are not carefully tuned. To address this issue, we propose an inexact and self-adaptive FedADMM algorithm, termed FedADMM-InSa. First, we design an inexactness criterion for the clients' local updates to eliminate the need for empirically setting the local training accuracy. This inexactness criterion can be assessed by each client independently based on its unique condition, thereby reducing the local computational cost and mitigating the undesirable straggle e
+    Penetration testing, an essential component of cybersecurity, allows organizations to proactively identify and remediate vulnerabilities in their systems, thus bolstering their defense mechanisms against potential cyberattacks. One recent advancement in the realm of penetration testing is the utilization of Language Models (LLMs). We explore the intersection of LLMs and penetration testing to gain insight into their capabilities and challenges in the context of privilige escalation. We create an automated Linux privilege-escalation benchmark utilizing local virtual machines. We introduce an LLM-guided privilege-escalation tool designed for evaluating different LLMs and prompt strategies against our benchmark. We analyze the impact of different prompt designs, the benefits of in-context learning, and the advantages of offering high-level guidance to LLMs. We discuss challenging areas for LLMs, including maintaining focus during testing, coping with errors, and finally comparing them wit
     
 

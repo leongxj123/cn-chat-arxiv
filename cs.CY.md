@@ -2,37 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Human vs. Machine: Language Models and Wargames](https://arxiv.org/abs/2403.03407) | 人工智能大型语言模型在战争游戏中与人类响应存在一致性，但也存在显著的差异，这表明在政策制定者交出自主权或听从基于AI的战略建议之前应谨慎对待。 |
-| [^2] | [In-class Data Analysis Replications: Teaching Students while Testing Science.](http://arxiv.org/abs/2308.16491) | 这项研究揭示了课堂数据分析复制的可行性，以及这种方法对学生、教育者和科学家的成本与收益。同时，学生对数据的预期与实际情况存在差异。 |
+| [^1] | [Navigating Fairness: Practitioners' Understanding, Challenges, and Strategies in AI/ML Development](https://arxiv.org/abs/2403.15481) | AI从业者对于公平AI/ML的理解、面临的挑战、不公平AI/ML的后果以及确保AI/ML公平性的策略。 |
+| [^2] | [The opportunities and risks of large language models in mental health](https://arxiv.org/abs/2403.14814) | 大型语言模型在心理健康领域有望提供新颖的解决方案，但应注意其应用可能带来的风险，并积极采取策略减轻这些风险。 |
+| [^3] | [A Study of Fairness Concerns in AI-based Mobile App Reviews](https://arxiv.org/abs/2401.08097) | 本文研究了AI基于移动应用评价中的公平关注，并通过构建数据集和开发分类器的方法，成功检测出公平性评论，并识别出约92000条公平性评论。 |
+| [^4] | [The DSA Transparency Database: Auditing Self-reported Moderation Actions by Social Media.](http://arxiv.org/abs/2312.10269) | DSA透明数据库对欧盟八大社交媒体平台在前100天提交的审核行动数据进行了全面分析，揭示了这些平台在审核行动方面的部分遵循程度。 |
 
 # 详细
 
-[^1]: 人类对抗机器：语言模型与战争游戏
+[^1]: AI/ML 发展中的公平导航: 从业者对AI/ML开发中的理解、挑战和策略
 
-    Human vs. Machine: Language Models and Wargames
+    Navigating Fairness: Practitioners' Understanding, Challenges, and Strategies in AI/ML Development
 
-    [https://arxiv.org/abs/2403.03407](https://arxiv.org/abs/2403.03407)
+    [https://arxiv.org/abs/2403.15481](https://arxiv.org/abs/2403.15481)
 
-    人工智能大型语言模型在战争游戏中与人类响应存在一致性，但也存在显著的差异，这表明在政策制定者交出自主权或听从基于AI的战略建议之前应谨慎对待。
-
-    
-
-    战争游戏在军事战略的发展和国家对威胁或攻击的响应中有着悠久的历史。人工智能（AI）的出现承诺了更好的决策制定和增强的军事效果。然而，关于AI系统，尤其是大型语言模型（LLMs），与人类的行为有何不同仍存在争议。为此，我们进行了一项战争游戏实验，共有107位国家安全专家人类参与者参与，旨在研究在一个虚构的美中情景中的危机升级，并比较人类参与者与LLM模拟响应之间的差异。我们发现LLM和人类响应存在显著一致性，但在战争游戏中模拟和人类参与者之间也存在显著的定量和定性差异，这促使决策者在交出自主权或遵循基于AI的战略建议之前谨慎对待。
-
-    arXiv:2403.03407v1 Announce Type: cross  Abstract: Wargames have a long history in the development of military strategy and the response of nations to threats or attacks. The advent of artificial intelligence (AI) promises better decision-making and increased military effectiveness. However, there is still debate about how AI systems, especially large language models (LLMs), behave as compared to humans. To this end, we use a wargame experiment with 107 national security expert human players designed to look at crisis escalation in a fictional US-China scenario and compare human players to LLM-simulated responses. We find considerable agreement in the LLM and human responses but also significant quantitative and qualitative differences between simulated and human players in the wargame, motivating caution to policymakers before handing over autonomy or following AI-based strategy recommendations.
-    
-[^2]: 课堂数据分析复制：教学生，同时测试科学
-
-    In-class Data Analysis Replications: Teaching Students while Testing Science. (arXiv:2308.16491v1 [cs.CY])
-
-    [http://arxiv.org/abs/2308.16491](http://arxiv.org/abs/2308.16491)
-
-    这项研究揭示了课堂数据分析复制的可行性，以及这种方法对学生、教育者和科学家的成本与收益。同时，学生对数据的预期与实际情况存在差异。
+    AI从业者对于公平AI/ML的理解、面临的挑战、不公平AI/ML的后果以及确保AI/ML公平性的策略。
 
     
 
-    科学正面临可重复性危机。先前的工作提出将数据分析复制纳入课堂作为潜在解决方案。然而，尽管潜在的好处，目前尚不清楚这一方法是否可行，如果可行，涉及的利益相关者-学生、教育者和科学家-应该期望什么。学生能够在课堂上进行数据分析复制吗？教育者的成本与收益如何？这个解决方案如何帮助评估和改进科学的现状？本研究在EPFL教授的应用数据分析课程（CS-401）的项目部分中纳入了数据分析复制（N=354名学生）。在此报告中，我们基于课程期间进行的调查提前进行注册的发现。首先，我们证明学生可以复制先前发表的科学论文，大部分是定性的，有些是完全一样的。我们发现学生对数据的预期与实际情况存在差异
+    近年来，各行业对AI/ML应用的增加引发了对AI/ML公平性的更多讨论。虽然已有关于AI/ML公平性的先前研究，但缺乏针对了解AI从业者在开发公平AI/ML过程中的观点和经验的实证研究。了解AI从业者对AI/ML公平性的看法和经验很重要，因为他们直接参与其中的开发和部署，他们的见解可以提供有价值的现实世界视角，帮助理解确保AI/ML公平性所涉及挑战的重要性。我们进行了22位AI从业者的半结构化访谈，以调查他们对“公平AI/ML”是什么的理解，他们在开发公平AI/ML中面临的挑战，开发不公平AI/ML的后果，以及他们采取的策略来确保AI/ML的公平性。我们制定了一个框架展示了
 
-    Science is facing a reproducibility crisis. Previous work has proposed incorporating data analysis replications into classrooms as a potential solution. However, despite the potential benefits, it is unclear whether this approach is feasible, and if so, what the involved stakeholders-students, educators, and scientists-should expect from it. Can students perform a data analysis replication over the course of a class? What are the costs and benefits for educators? And how can this solution help benchmark and improve the state of science?  In the present study, we incorporated data analysis replications in the project component of the Applied Data Analysis course (CS-401) taught at EPFL (N=354 students). Here we report pre-registered findings based on surveys administered throughout the course. First, we demonstrate that students can replicate previously published scientific papers, most of them qualitatively and some exactly. We find discrepancies between what students expect of data an
+    arXiv:2403.15481v1 Announce Type: cross  Abstract: The rise in the use of AI/ML applications across industries has sparked more discussions about the fairness of AI/ML in recent times. While prior research on the fairness of AI/ML exists, there is a lack of empirical studies focused on understanding the views and experiences of AI practitioners in developing a fair AI/ML. Understanding AI practitioners' views and experiences on the fairness of AI/ML is important because they are directly involved in its development and deployment and their insights can offer valuable real-world perspectives on the challenges associated with ensuring fairness in AI/ML. We conducted semi-structured interviews with 22 AI practitioners to investigate their understanding of what a 'fair AI/ML' is, the challenges they face in developing a fair AI/ML, the consequences of developing an unfair AI/ML, and the strategies they employ to ensure AI/ML fairness. We developed a framework showcasing the relationship be
+    
+[^2]: 大型语言模型在心理健康领域的机会和风险
+
+    The opportunities and risks of large language models in mental health
+
+    [https://arxiv.org/abs/2403.14814](https://arxiv.org/abs/2403.14814)
+
+    大型语言模型在心理健康领域有望提供新颖的解决方案，但应注意其应用可能带来的风险，并积极采取策略减轻这些风险。
+
+    
+
+    全球心理健康问题的发生率正在上升，人们越来越意识到现有的心理保健模式无法充分扩展以满足需求。随着大型语言模型（LLMs）的出现，人们对它们具有创造新颖、大规模解决方案以支持心理健康的承诺感到乐观。尽管它们还处于初期阶段，LLMs已被应用于与心理健康相关的任务。本综述总结了已有文献中关于利用LLMs提供心理健康教育、评估和干预的努力，并突出了每个领域中产生积极影响的关键机会。然后，我们强调了将LLMs应用于心理健康领域所伴随的风险，并鼓励采用策略来减轻这些风险。对于心理健康支持的迫切需求必须与负责任的心理健康LLMs的开发、测试和部署相平衡。特别关键的是确保心理健康...
+
+    arXiv:2403.14814v1 Announce Type: cross  Abstract: Global rates of mental health concerns are rising and there is increasing realization that existing models of mental healthcare will not adequately expand to meet the demand. With the emergence of large language models (LLMs) has come great optimism regarding their promise to create novel, large-scale solutions to support mental health. Despite their nascence, LLMs have already been applied to mental health-related tasks. In this review, we summarize the extant literature on efforts to use LLMs to provide mental health education, assessment, and intervention and highlight key opportunities for positive impact in each area. We then highlight risks associated with LLMs application to mental health and encourage adoption of strategies to mitigate these risks. The urgent need for mental health support must be balanced with responsible development, testing, and deployment of mental health LLMs. Especially critical is ensuring that mental he
+    
+[^3]: AI基于移动应用评价的公平关注研究
+
+    A Study of Fairness Concerns in AI-based Mobile App Reviews
+
+    [https://arxiv.org/abs/2401.08097](https://arxiv.org/abs/2401.08097)
+
+    本文研究了AI基于移动应用评价中的公平关注，并通过构建数据集和开发分类器的方法，成功检测出公平性评论，并识别出约92000条公平性评论。
+
+    
+
+    公平是AI系统中必须解决的社会技术问题之一。不公平的AI系统，特别是不公平的AI基于移动应用，可能给全球很大一部分人口带来困难。本文旨在分析AI基于应用评价中的公平问题。我们首先手动构建了一个基准数据集，包括公平性和非公平性评论的统计样本。利用这个基准数据集，我们开发和评估了一组机器学习和深度学习分类器，用于区分公平性评论和非公平性评论。我们的实验结果显示，我们最佳的分类器可以以94%的精确度检测到公平性评论。然后，我们将最佳分类器应用于从108个AI基于应用收集的约950万条评论，识别出约92000条公平性评论。接下来，我们将K-means聚类技术应用于这92000条公平性评论。
+
+    arXiv:2401.08097v2 Announce Type: replace-cross Abstract: Fairness is one of the socio-technical concerns that must be addressed in AI-based systems. Unfair AI-based systems, particularly unfair AI-based mobile apps, can pose difficulties for a significant proportion of the global population. This paper aims to analyze fairness concerns in AI-based app reviews.We first manually constructed a ground-truth dataset, including a statistical sample of fairness and non-fairness reviews. Leveraging the ground-truth dataset, we developed and evaluated a set of machine learning and deep learning classifiers that distinguish fairness reviews from non-fairness reviews. Our experiments show that our best-performing classifier can detect fairness reviews with a precision of 94%. We then applied the best-performing classifier on approximately 9.5M reviews collected from 108 AI-based apps and identified around 92K fairness reviews. Next, applying the K-means clustering technique to the 92K fairness r
+    
+[^4]: DSA透明数据库：社交媒体自我报告的审核行动
+
+    The DSA Transparency Database: Auditing Self-reported Moderation Actions by Social Media. (arXiv:2312.10269v2 [cs.SI] UPDATED)
+
+    [http://arxiv.org/abs/2312.10269](http://arxiv.org/abs/2312.10269)
+
+    DSA透明数据库对欧盟八大社交媒体平台在前100天提交的审核行动数据进行了全面分析，揭示了这些平台在审核行动方面的部分遵循程度。
+
+    
+
+    从2023年9月开始，数字服务法案(DSA)要求大型在线平台向DSA透明数据库提交关于他们在欧盟内采取的每个审核行动的详细数据。从一开始，这个集中式数据库就引起了学术界的兴趣，因为它是现实世界在线审核数据的一个前所未有的、可能是独特的宝库。在这里，我们深入分析了欧盟八个最大社交媒体平台在数据库的前100天提交的所有3.53亿条记录。具体而言，我们对平台之间进行了比较研究，包括：审核行动的数量、决策依据、应用的限制类型、审核内容类型、审核行动的及时性和提交情况，以及使用的自动化程度。此外，我们系统地与平台自己的透明报告进行了内容交叉检查。我们的分析揭示了以下结果。(i)平台只在一定程度上遵循了审核行动的哲学和方法论。
+
+    Since September 2023, the Digital Services Act (DSA) obliges large online platforms to submit detailed data on each moderation action they take within the European Union (EU) to the DSA Transparency Database. From its inception, this centralized database has sparked scholarly interest as an unprecedented and potentially unique trove of data on real-world online moderation. Here, we thoroughly analyze all 353.12M records submitted by the eight largest social media platforms in the EU during the first 100 days of the database. Specifically, we conduct a platform-wise comparative study of their: volume of moderation actions, grounds for decision, types of applied restrictions, types of moderated content, timeliness in undertaking and submitting moderation actions, and use of automation. Furthermore, we systematically cross-check the contents of the database with the platforms' own transparency reports. Our analyses reveal that (i) the platforms adhered only in part to the philosophy and s
     
 
