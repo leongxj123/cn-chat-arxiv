@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Unsupervised Graph-based Learning Method for Sub-band Allocation in 6G Subnetworks.](http://arxiv.org/abs/2401.00950) | 本文提出了一种无监督的基于图的学习方法，用于在6G子网络中进行子频带分配。该方法通过优化使用图神经网络的子频带分配，实现了与集中式贪婪着色子频带分配方法相近的性能，并且具有更低的计算时间复杂度和较小的信令开销。 |
-| [^2] | [Insights from the Design Space Exploration of Flow-Guided Nanoscale Localization.](http://arxiv.org/abs/2305.18493) | 研究了基于流导向纳米定位的设计空间，考虑了能源和信号衰减等因素，为这一新兴领域提供了有希望的解决方案。 |
+| [^1] | [LAMBO: Large Language Model Empowered Edge Intelligence.](http://arxiv.org/abs/2308.15078) | LAMBO是一种基于大型语言模型的边缘智能框架，用于移动边缘计算。它解决了传统深度卸载架构的问题，并提供了高性能的决策模块和强化学习模块。 |
+| [^2] | [Large AI Model-Based Semantic Communications.](http://arxiv.org/abs/2307.03492) | 本文提出了一种基于大型AI模型的语义通信框架（LAM-SC），利用该框架可以克服知识库构建过程中面临的问题，并在图像数据领域实现了语义分割、语义集成和自适应语义压缩。 |
 
 # 详细
 
-[^1]: 无监督的基于图的学习方法用于6G子网络的子频带分配
+[^1]: LAMBO: 大型语言模型增强的边缘智能
 
-    Unsupervised Graph-based Learning Method for Sub-band Allocation in 6G Subnetworks. (arXiv:2401.00950v1 [cs.NI])
+    LAMBO: Large Language Model Empowered Edge Intelligence. (arXiv:2308.15078v1 [cs.AI])
 
-    [http://arxiv.org/abs/2401.00950](http://arxiv.org/abs/2401.00950)
+    [http://arxiv.org/abs/2308.15078](http://arxiv.org/abs/2308.15078)
 
-    本文提出了一种无监督的基于图的学习方法，用于在6G子网络中进行子频带分配。该方法通过优化使用图神经网络的子频带分配，实现了与集中式贪婪着色子频带分配方法相近的性能，并且具有更低的计算时间复杂度和较小的信令开销。
-
-    
-
-    在本文中，我们提出了一种无监督的基于图的学习方法，用于在无线网络中进行频率子带分配。我们考虑在工厂环境中密集部署的子网络，这些子网络只有有限数量的子频带，必须被优化地分配以协调子网络间的干扰。我们将子网络部署建模为一个冲突图，并提出了一种受到图着色启发和Potts模型的无监督学习方法，利用图神经网络来优化子频带分配。数值评估表明，所提出的方法在较低的计算时间复杂度下，实现了与集中式贪婪着色子频带分配启发式方法接近的性能。此外，与需要所有互相干扰的信道信息的迭代优化启发式相比，它产生更少的信令开销。我们进一步证明该方法对不同的网络设置具有健壮性。
-
-    In this paper, we present an unsupervised approach for frequency sub-band allocation in wireless networks using graph-based learning. We consider a dense deployment of subnetworks in the factory environment with a limited number of sub-bands which must be optimally allocated to coordinate inter-subnetwork interference. We model the subnetwork deployment as a conflict graph and propose an unsupervised learning approach inspired by the graph colouring heuristic and the Potts model to optimize the sub-band allocation using graph neural networks. The numerical evaluation shows that the proposed method achieves close performance to the centralized greedy colouring sub-band allocation heuristic with lower computational time complexity. In addition, it incurs reduced signalling overhead compared to iterative optimization heuristics that require all the mutual interfering channel information. We further demonstrate that the method is robust to different network settings.
-    
-[^2]: 基于流导向纳米定位的设计空间探索的见解
-
-    Insights from the Design Space Exploration of Flow-Guided Nanoscale Localization. (arXiv:2305.18493v1 [cs.NI])
-
-    [http://arxiv.org/abs/2305.18493](http://arxiv.org/abs/2305.18493)
-
-    研究了基于流导向纳米定位的设计空间，考虑了能源和信号衰减等因素，为这一新兴领域提供了有希望的解决方案。
+    LAMBO是一种基于大型语言模型的边缘智能框架，用于移动边缘计算。它解决了传统深度卸载架构的问题，并提供了高性能的决策模块和强化学习模块。
 
     
 
-    具有太赫兹无线通信能力的纳米设备为在人类血液中进行流导向定位提供了基础。此类定位使得将所感受到的事件的位置与事件本身进行匹配成为可能，从而实现了精准医疗方面的早期和精准诊断、降低成本和侵入性。流导向定位仍处于原始阶段，只有少数论文涉及此问题。尽管如此，所提出解决方案的性能评估仍然以非标准化的方式进行，通常只考虑单一的性能指标，并忽略了在这种规模（例如，纳米器件的能量受限）和对于这种具有挑战性的环境（例如，体内太赫兹传播的严重衰减）下相关的各个方面。因此，这些评估具有低水平的真实性，并且无法以客观的方式进行比较。为了解决这个问题，我们考虑了传输能量消耗和信号衰减，对流导向纳米定位的设计空间进行了探索。我们的分析考虑了各种性能指标（例如能量消耗和定位精度）和挑战（例如身体运动和血压），导致我们可以为这个新兴领域提供有希望的解决方案。
+    预计下一代边缘智能将为各种应用带来巨大的好处，例如卸载系统。然而，传统的深度卸载架构面临多个问题，包括异构限制、部分感知、不确定的泛化和缺乏可追溯性。在这种背景下，将卸载与大型语言模型（LLMs）集成在一起具有许多优势。因此，我们提出了一种基于LLM的卸载（LAMBO）框架，用于移动边缘计算（MEC），它由四个组成部分组成：（i）输入嵌入（IE），用于用高质量的可学习向量表示具有约束和提示的卸载系统的信息；（ii）非对称编码解码（AED）模型，是一个决策模块，具有深度编码器和浅层解码器。它可以基于多头自注意力机制实现高性能；（iii）演员-评论家强化学习（ACRL）模块，用于进行预训练。
 
-    Nanodevices with Terahertz (THz)-based wireless communication capabilities are providing a primer for flow-guided localization within the human bloodstreams. Such localization is allowing for assigning the locations of sensed events with the events themselves, providing benefits in precision medicine along the lines of early and precise diagnostics, and reduced costs and invasiveness. Flow-guided localization is still in a rudimentary phase, with only a handful of works targeting the problem. Nonetheless, the performance assessments of the proposed solutions are already carried out in a non-standardized way, usually along a single performance metric, and ignoring various aspects that are relevant at such a scale (e.g., nanodevices' limited energy) and for such a challenging environment (e.g., extreme attenuation of in-body THz propagation). As such, these assessments feature low levels of realism and cannot be compared in an objective way. Toward addressing this issue, we account for t
+    Next-generation edge intelligence is anticipated to bring huge benefits to various applications, e.g., offloading systems. However, traditional deep offloading architectures face several issues, including heterogeneous constraints, partial perception, uncertain generalization, and lack of tractability. In this context, the integration of offloading with large language models (LLMs) presents numerous advantages. Therefore, we propose an LLM-Based Offloading (LAMBO) framework for mobile edge computing (MEC), which comprises four components: (i) Input embedding (IE), which is used to represent the information of the offloading system with constraints and prompts through learnable vectors with high quality; (ii) Asymmetric encoderdecoder (AED) model, which is a decision-making module with a deep encoder and a shallow decoder. It can achieve high performance based on multi-head self-attention schemes; (iii) Actor-critic reinforcement learning (ACRL) module, which is employed to pre-train th
+    
+[^2]: 基于大型AI模型的语义通信
+
+    Large AI Model-Based Semantic Communications. (arXiv:2307.03492v1 [cs.AI])
+
+    [http://arxiv.org/abs/2307.03492](http://arxiv.org/abs/2307.03492)
+
+    本文提出了一种基于大型AI模型的语义通信框架（LAM-SC），利用该框架可以克服知识库构建过程中面临的问题，并在图像数据领域实现了语义分割、语义集成和自适应语义压缩。
+
+    
+
+    语义通信（SC）是一种新兴的智能范式，为元宇宙、混合现实和万物互联等未来应用提供解决方案。然而，在目前的SC系统中，知识库（KB）的构建面临着一些问题，包括知识表示有限、频繁的知识更新和不安全的知识共享。幸运的是，大型AI模型的发展提供了解决上述问题的新方案。在这里，我们提出了一种基于大型AI模型的SC框架（LAM-SC），专门用于图像数据，我们首先设计了基于段落模型（SAM）的知识库（SKB），它可以通过通用语义知识将原始图像划分为不同的语义段落。然后，我们提出了一种基于注意力的语义集成（ASI），通过权衡由SKB生成的语义段落，无需人工参与并将它们集成为具有语义感知的图像。此外，我们还提出了一种自适应语义压缩（ASC）方法。
+
+    Semantic communication (SC) is an emerging intelligent paradigm, offering solutions for various future applications like metaverse, mixed-reality, and the Internet of everything. However, in current SC systems, the construction of the knowledge base (KB) faces several issues, including limited knowledge representation, frequent knowledge updates, and insecure knowledge sharing. Fortunately, the development of the large AI model provides new solutions to overcome above issues. Here, we propose a large AI model-based SC framework (LAM-SC) specifically designed for image data, where we first design the segment anything model (SAM)-based KB (SKB) that can split the original image into different semantic segments by universal semantic knowledge. Then, we present an attention-based semantic integration (ASI) to weigh the semantic segments generated by SKB without human participation and integrate them as the semantic-aware image. Additionally, we propose an adaptive semantic compression (ASC
     
 
