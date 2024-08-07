@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Furnishing Sound Event Detection with Language Model Abilities.](http://arxiv.org/abs/2308.11530) | 本文提出了一种增强声音事件检测的方法，通过对齐音频特征和文本特征来实现声音事件分类和时间定位。该方法利用语言模型的语义能力直接生成序列，相比传统方法更简洁全面，并通过实验证明了其在时间戳捕获和事件分类方面的有效性。 |
+| [^1] | [PBSCSR: The Piano Bootleg Score Composer Style Recognition Dataset.](http://arxiv.org/abs/2401.16803) | 本研究介绍了PBSCSR数据集，用于研究钢琴乐谱作曲家风格识别。数据集包含了盗版乐谱图像和相关元数据，可以进行多个研究任务。 |
 
 # 详细
 
-[^1]: 增强声音事件检测的语言模型能力
+[^1]: PBSCSR：钢琴黑市乐谱作曲家风格识别数据集
 
-    Furnishing Sound Event Detection with Language Model Abilities. (arXiv:2308.11530v1 [cs.SD])
+    PBSCSR: The Piano Bootleg Score Composer Style Recognition Dataset. (arXiv:2401.16803v1 [cs.SD])
 
-    [http://arxiv.org/abs/2308.11530](http://arxiv.org/abs/2308.11530)
+    [http://arxiv.org/abs/2401.16803](http://arxiv.org/abs/2401.16803)
 
-    本文提出了一种增强声音事件检测的方法，通过对齐音频特征和文本特征来实现声音事件分类和时间定位。该方法利用语言模型的语义能力直接生成序列，相比传统方法更简洁全面，并通过实验证明了其在时间戳捕获和事件分类方面的有效性。
+    本研究介绍了PBSCSR数据集，用于研究钢琴乐谱作曲家风格识别。数据集包含了盗版乐谱图像和相关元数据，可以进行多个研究任务。
 
     
 
-    最近，语言模型（LMs）在视觉跨模态中的能力引起了越来越多的关注。在本文中，我们进一步探索了LMs在声音事件检测（SED）中的生成能力，超越了视觉领域。具体而言，我们提出了一种优雅的方法，通过对齐音频特征和文本特征来完成声音事件分类和时间定位。该框架由一个声学编码器、一个对应的文本和音频表示对齐的对比模块，以及一个解耦的语言解码器组成，用于从音频特征中生成时间和事件序列。与需要复杂处理并几乎不使用有限音频特征的传统方法相比，我们的模型更简洁全面，因为语言模型直接利用其语义能力生成序列。我们研究了不同的解耦模块，以展示其对时间戳捕捉和事件分类的有效性。
+    本文介绍了PBSCSR数据集，用于研究钢琴乐谱作曲家风格识别。我们的目标是创建一个研究作曲家风格识别的数据集，它既像MNIST一样易于获取，又像ImageNet一样具有挑战性。为了实现这个目标，我们从IMSLP的钢琴乐谱图像中采样固定长度的盗版乐谱片段。数据集本身包含40,000个62x64的盗版乐谱图像，用于进行9分类任务，以及100,000个62x64的盗版乐谱图像，用于进行100分类任务，还有29,310个无标签的可变长度的盗版乐谱图像，用于预训练。标记数据以与MNIST图像类似的形式呈现，以便极其方便地可视化、操作和训练模型。此外，我们还包括相关的元数据，以允许访问IMSLP上的原始乐谱图像和其他相关数据。我们描述了几个可以使用该数据进行研究的任务。
 
-    Recently, the ability of language models (LMs) has attracted increasing attention in visual cross-modality. In this paper, we further explore the generation capacity of LMs for sound event detection (SED), beyond the visual domain. Specifically, we propose an elegant method that aligns audio features and text features to accomplish sound event classification and temporal location. The framework consists of an acoustic encoder, a contrastive module that align the corresponding representations of the text and audio, and a decoupled language decoder that generates temporal and event sequences from the audio characteristic. Compared with conventional works that require complicated processing and barely utilize limited audio features, our model is more concise and comprehensive since language model directly leverage its semantic capabilities to generate the sequences. We investigate different decoupling modules to demonstrate the effectiveness for timestamps capture and event classification
+    This article motivates, describes, and presents the PBSCSR dataset for studying composer style recognition of piano sheet music. Our overarching goal was to create a dataset for studying composer style recognition that is "as accessible as MNIST and as challenging as ImageNet." To achieve this goal, we sample fixed-length bootleg score fragments from piano sheet music images on IMSLP. The dataset itself contains 40,000 62x64 bootleg score images for a 9-way classification task, 100,000 62x64 bootleg score images for a 100-way classification task, and 29,310 unlabeled variable-length bootleg score images for pretraining. The labeled data is presented in a form that mirrors MNIST images, in order to make it extremely easy to visualize, manipulate, and train models in an efficient manner. Additionally, we include relevant metadata to allow access to the underlying raw sheet music images and other related data on IMSLP. We describe several research tasks that could be studied with the data
     
 

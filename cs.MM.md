@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Where Do We Go from Here? Multi-scale Allocentric Relational Inference from Natural Spatial Descriptions](https://arxiv.org/abs/2402.16364) | 论文探讨了基于自然空间描述进行多尺度空间关系推理的方法，发现通过获知地图知识得到的描述能够提供环境的整体结构。 |
+| [^1] | [A Picture Is Worth a Graph: Blueprint Debate on Graph for Multimodal Reasoning](https://arxiv.org/abs/2403.14972) | 提出了一种演绎式的图谱辩论方法（BDoG），在多模态推理中防止意见陈腐化和减少由图像引入的分心概念，实验证明其在科学问答和MMBench上取得了最先进的结果。 |
 
 # 详细
 
-[^1]: 从哪里出发？来自自然空间描述中的多尺度空间关系推理
+[^1]: 一图胜千言：多模态推理中的图谱辩论
 
-    Where Do We Go from Here? Multi-scale Allocentric Relational Inference from Natural Spatial Descriptions
+    A Picture Is Worth a Graph: Blueprint Debate on Graph for Multimodal Reasoning
 
-    [https://arxiv.org/abs/2402.16364](https://arxiv.org/abs/2402.16364)
+    [https://arxiv.org/abs/2403.14972](https://arxiv.org/abs/2403.14972)
 
-    论文探讨了基于自然空间描述进行多尺度空间关系推理的方法，发现通过获知地图知识得到的描述能够提供环境的整体结构。
+    提出了一种演绎式的图谱辩论方法（BDoG），在多模态推理中防止意见陈腐化和减少由图像引入的分心概念，实验证明其在科学问答和MMBench上取得了最先进的结果。
 
     
 
-    当用自然语言传达路线时，“获得的空间知识”概念对地理信息检索（GIR）和空间认知研究至关重要。然而，自然语言处理导航研究经常忽视这种获得知识对文本描述的影响。当前导航研究集中在以自我为中心的本地描述（例如，“它将在您的右边”），这些描述需要对代理人的本地知觉进行推理。在地图获得的知识基础上的描述提供了环境的整体视图，并捕捉了其总体结构。
+    本文介绍了一项旨在将多智能体辩论引入多模态推理的试点研究。该研究解决了两个关键挑战：由于过度总结而导致意见陈腐化，以及由于图像引入转移性概念而导致注意力分散的问题。这些挑战源自现有辩论方案的归纳（自下而上）性质。为解决这一问题，我们提出了一种演绎（自上而下）的辩论方法，称为图谱辩论（BDoG）。在BDoG中，辩论仅限于蓝图图中，以防止通过世界级摘要而导致意见陈腐化。此外，通过在图中的分支中存储证据，BDoG缓解了频繁但无关的概念带来的分散注意力现象。大量实验验证了BDoG，在科学问答和MMBench中取得了最新成果，并相较于先前的方法具有显著改进。
 
-    arXiv:2402.16364v1 Announce Type: new  Abstract: When communicating routes in natural language, the concept of {\em acquired spatial knowledge} is crucial for geographic information retrieval (GIR) and in spatial cognitive research. However, NLP navigation studies often overlook the impact of such acquired knowledge on textual descriptions. Current navigation studies concentrate on egocentric local descriptions (e.g., `it will be on your right') that require reasoning over the agent's local perception. These instructions are typically given as a sequence of steps, with each action-step explicitly mentioning and being followed by a landmark that the agent can use to verify they are on the right path (e.g., `turn right and then you will see...'). In contrast, descriptions based on knowledge acquired through a map provide a complete view of the environment and capture its overall structure. These instructions (e.g., `it is south of Central Park and a block north of a police station') are 
+    arXiv:2403.14972v1 Announce Type: new  Abstract: This paper presents a pilot study aimed at introducing multi-agent debate into multimodal reasoning. The study addresses two key challenges: the trivialization of opinions resulting from excessive summarization and the diversion of focus caused by distractor concepts introduced from images. These challenges stem from the inductive (bottom-up) nature of existing debating schemes. To address the issue, we propose a deductive (top-down) debating approach called Blueprint Debate on Graphs (BDoG). In BDoG, debates are confined to a blueprint graph to prevent opinion trivialization through world-level summarization. Moreover, by storing evidence in branches within the graph, BDoG mitigates distractions caused by frequent but irrelevant concepts. Extensive experiments validate BDoG, achieving state-of-the-art results in Science QA and MMBench with significant improvements over previous methods.
     
 

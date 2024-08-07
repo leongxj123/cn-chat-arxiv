@@ -2,142 +2,112 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [PrimeComposer: Faster Progressively Combined Diffusion for Image Composition with Attention Steering](https://arxiv.org/abs/2403.05053) | 本文提出了PrimeComposer，一种更快的逐步组合扩散方式，用于图像合成，主要专注于前景生成，从而解决了合成中的凝聚混乱和外观信息丢失问题，并避免了不必要的背景生成导致的前景生成质量下降。 |
-| [^2] | [Enhancing Conceptual Understanding in Multimodal Contrastive Learning through Hard Negative Samples](https://arxiv.org/abs/2403.02875) | 提出了一种通过硬负样本改进多模态对比学习中概念理解的方法，并引入了一个评估视觉-语言模型中颜色、对象和大小细粒度对齐的新数据集。 |
-| [^3] | [NiNformer: A Network in Network Transformer with Token Mixing Generated Gating Function](https://arxiv.org/abs/2403.02411) | 提出了一种新的计算块，称为NiNformer，具有令牌混合生成门控功能，以解决注意机制在深度学习中的计算成本高昂和数据集要求大的缺点。 |
-| [^4] | [Zero shot VLMs for hate meme detection: Are we there yet?](https://arxiv.org/abs/2402.12198) | 本研究探讨了零-shot分类在处理复杂任务如恶意模因检测中的有效性 |
-| [^5] | [AONeuS: A Neural Rendering Framework for Acoustic-Optical Sensor Fusion](https://arxiv.org/abs/2402.03309) | AONeuS是一种基于物理的多模态声光神经表面重建框架，通过融合高分辨率RGB测量和低分辨率深度成像声纳测量，能够在受限基线下实现准确的高分辨率三维表面重建。 |
-| [^6] | [Fun with Flags: Robust Principal Directions via Flag Manifolds.](http://arxiv.org/abs/2401.04071) | 本研究提出了一种统一的PCA和其变种框架，该框架基于线性子空间旗帜，并引入了对异常值和数据流形的考虑。通过在旗帜流形上进行优化问题的求解，结合主测地线近似，提出了一系列新的降维算法。 |
-| [^7] | [Open Sesame! Universal Black Box Jailbreaking of Large Language Models.](http://arxiv.org/abs/2309.01446) | 本文提出了一种使用遗传算法的新颖方法，可以在无法访问模型架构和参数的情况下操纵大规模语言模型 (LLMs)。通过优化通用对抗提示与用户查询结合，可以扰乱被攻击模型的对齐，导致意外和潜在有害的输出。该方法可以揭示模型的局限性和漏洞，为负责任的AI开发提供了一种诊断工具。 |
-| [^8] | [FreeDrag: Point Tracking is Not What You Need for Interactive Point-based Image Editing.](http://arxiv.org/abs/2307.04684) | FreeDrag提出了一种基于特征的方法来解决DragGAN在点追踪方面的困难，通过自适应模板特征、线性搜索和模糊定位技术，实现了稳定和高效的基于点的图像编辑。 |
-| [^9] | [Vision Learners Meet Web Image-Text Pairs.](http://arxiv.org/abs/2301.07088) | 本论文提出了一种基于网络数据的新型视觉学习方法MUlti-modal Generator (MUG)。在视觉数据集的转移学习任务上取得了最先进的表现，是之前最佳结果的3.4%和2.2%的提升。 |
+| [^1] | [CR3DT: Camera-RADAR Fusion for 3D Detection and Tracking](https://arxiv.org/abs/2403.15313) | CR3DT是一个相机与雷达融合模型，结合了雷达在3D检测和跟踪中的潜力，通过在State-of-the-Art相机架构基础上实现了显著的改进。 |
+| [^2] | [Diffusion Posterior Proximal Sampling for Image Restoration](https://arxiv.org/abs/2402.16907) | 本文提出了一种改进的基于扩散的图像恢复范式，通过选择与测量标识一致的样本，以及从与测量信号相结合的初始化开始恢复过程，实现输出稳定性和增强。 |
+| [^3] | [GAOKAO-MM: A Chinese Human-Level Benchmark for Multimodal Models Evaluation](https://arxiv.org/abs/2402.15745) | GAOKAO-MM 是基于中国高考的多模态基准，为模型的能力设定人类水平要求，评估结果显示目前的LVLMs的准确率普遍不足50%。 |
+| [^4] | [Explainable Classification Techniques for Quantum Dot Device Measurements](https://arxiv.org/abs/2402.13699) | 提出了一种基于合成数据的的可解释特征技术，利用可解释性提升机（EBMs）实现了在量子点调谐中较高的可解释性和准确性。 |
+| [^5] | [ColorSwap: A Color and Word Order Dataset for Multimodal Evaluation](https://arxiv.org/abs/2402.04492) | 本文介绍了ColorSwap数据集，用于评估和改进多模态模型在匹配物体和颜色方面的能力。通过将颜色词重新排序以修改不同的对象，该数据集可以测试模型在这项任务上的鲁棒性。尽管目前的模型在这个任务上仍不够稳定，但通过更先进的提示技术可能会有所改善。 |
+| [^6] | [Robustness Assessment of a Runway Object Classifier for Safe Aircraft Taxiing](https://arxiv.org/abs/2402.00035) | 本文介绍了对航班滑行安全的跑道物体分类器的鲁棒性评估，使用形式方法评估了该分类器对三种常见图像扰动类型的鲁棒性，并提出了一种利用单调性的方法。 |
+| [^7] | [Deep-learning assisted detection and quantification of (oo)cysts of Giardia and Cryptosporidium on smartphone microscopy images.](http://arxiv.org/abs/2304.05339) | 本研究采用基于深度学习的RetinaNet模型针对采用智能手机显微系统检测贾第虫和隐孢子进行检测和计数，并在速度和准确度方面表现出最佳效果，为在资源有限的环境下解决这一问题提供了潜在解决方案。 |
 
 # 详细
 
-[^1]: PrimeComposer：用于图像合成的快速逐步组合扩散方法和带有注意力引导的技术
+[^1]: CR3DT：相机与雷达融合用于3D检测和跟踪
 
-    PrimeComposer: Faster Progressively Combined Diffusion for Image Composition with Attention Steering
+    CR3DT: Camera-RADAR Fusion for 3D Detection and Tracking
 
-    [https://arxiv.org/abs/2403.05053](https://arxiv.org/abs/2403.05053)
+    [https://arxiv.org/abs/2403.15313](https://arxiv.org/abs/2403.15313)
 
-    本文提出了PrimeComposer，一种更快的逐步组合扩散方式，用于图像合成，主要专注于前景生成，从而解决了合成中的凝聚混乱和外观信息丢失问题，并避免了不必要的背景生成导致的前景生成质量下降。
-
-    
-
-    图像合成涉及将给定对象无缝地整合到特定的视觉环境中。目前无需训练的方法依赖于从几个采样器中组合注意力权重来引导生成器。然而，由于这些权重来自不同的上下文，它们的组合导致在合成中凝聚混乱和外观信息的丢失。在该任务中，它们过多关注背景生成，即使在这项任务中是不必要的，这些问题恶化。这不仅减慢了推理速度，还损害了前景生成质量。此外，这些方法还在过渡区域引入了不需要的伪影。在本文中，我们将图像合成形式化为一项基于主题的局部编辑任务，仅专注于前景生成。在每一步中，编辑后的前景与噪声背景相结合，以保持场景一致性。为了解决剩下的问题，我们提出了PrimeComposer，一种更快的tr
-
-    arXiv:2403.05053v1 Announce Type: cross  Abstract: Image composition involves seamlessly integrating given objects into a specific visual context. The current training-free methods rely on composing attention weights from several samplers to guide the generator. However, since these weights are derived from disparate contexts, their combination leads to coherence confusion in synthesis and loss of appearance information. These issues worsen with their excessive focus on background generation, even when unnecessary in this task. This not only slows down inference but also compromises foreground generation quality. Moreover, these methods introduce unwanted artifacts in the transition area. In this paper, we formulate image composition as a subject-based local editing task, solely focusing on foreground generation. At each step, the edited foreground is combined with the noisy background to maintain scene consistency. To address the remaining issues, we propose PrimeComposer, a faster tr
-    
-[^2]: 通过硬负样本增强多模态对比学习中的概念理解
-
-    Enhancing Conceptual Understanding in Multimodal Contrastive Learning through Hard Negative Samples
-
-    [https://arxiv.org/abs/2403.02875](https://arxiv.org/abs/2403.02875)
-
-    提出了一种通过硬负样本改进多模态对比学习中概念理解的方法，并引入了一个评估视觉-语言模型中颜色、对象和大小细粒度对齐的新数据集。
+    CR3DT是一个相机与雷达融合模型，结合了雷达在3D检测和跟踪中的潜力，通过在State-of-the-Art相机架构基础上实现了显著的改进。
 
     
 
-    当前利用对比学习的多模态模型在发展精细的概念理解方面通常存在一些限制。在预训练过程中，由于随机负样本，导致几乎只有非常不同的概念进行损失函数比较。因此，模型在处理细粒度语义差异时遇到困难。为了解决这个问题，我们引入了一种新颖的预训练方法，结合了合成的硬负文本示例。这些硬负样本对应于视觉概念的排列，导致更精细的视觉和文本概念对齐。此外，我们引入了InpaintCOCO，一个用于评估视觉-语言模型中颜色、对象和大小细粒度对齐的新挑战性数据集。我们使用从COCO图像生成的信息填充来创建数据集，通过改变视觉概念，使图像不再与其原始标题匹配。我们的结果显示...
+    精确检测和跟踪周围物体对于实现自动驾驶车辆至关重要。虽然光探测与测距（LiDAR）传感器已经成为高性能的基准，但仅使用相机的解决方案的吸引力在于其成本效益。尽管无线电探测与测距（RADAR）传感器在汽车系统中被广泛使用，由于数据稀疏和测量噪声的原因，它们在3D检测和跟踪中的潜力长期被忽视。作为一个最新的发展，相机与雷达的结合正成为一种有前途的解决方案。本文提出了Camera-RADAR 3D Detection and Tracking (CR3DT)，这是一个用于3D物体检测和多物体跟踪的相机-雷达融合模型。在基于最先进的只有相机的BEVDet架构的基础上，CR3DT在检测和跟踪能力方面取得了显著的改进，通过整合雷达数据
 
-    arXiv:2403.02875v1 Announce Type: cross  Abstract: Current multimodal models leveraging contrastive learning often face limitations in developing fine-grained conceptual understanding. This is due to random negative samples during pretraining, causing almost exclusively very dissimilar concepts to be compared in the loss function. Consequently, the models struggle with fine-grained semantic differences. To address this problem, we introduce a novel pretraining method incorporating synthetic hard negative text examples. The hard negatives permute terms corresponding to visual concepts, leading to a more fine-grained visual and textual concept alignment. Further, we introduce InpaintCOCO, a new challenging dataset for assessing the fine-grained alignment of colors, objects, and sizes in vision-language models. We created the dataset using generative inpainting from COCO images by changing the visual concepts so that the images no longer match their original captions. Our results show sig
+    arXiv:2403.15313v1 Announce Type: cross  Abstract: Accurate detection and tracking of surrounding objects is essential to enable self-driving vehicles. While Light Detection and Ranging (LiDAR) sensors have set the benchmark for high performance, the appeal of camera-only solutions lies in their cost-effectiveness. Notably, despite the prevalent use of Radio Detection and Ranging (RADAR) sensors in automotive systems, their potential in 3D detection and tracking has been largely disregarded due to data sparsity and measurement noise. As a recent development, the combination of RADARs and cameras is emerging as a promising solution. This paper presents Camera-RADAR 3D Detection and Tracking (CR3DT), a camera-RADAR fusion model for 3D object detection, and Multi-Object Tracking (MOT). Building upon the foundations of the State-of-the-Art (SotA) camera-only BEVDet architecture, CR3DT demonstrates substantial improvements in both detection and tracking capabilities, by incorporating the sp
     
-[^3]: NiNformer: 一种具有令牌混合生成门控功能的网络中网络变压器
+[^2]: 用于图像恢复的扩散后验近似采样
 
-    NiNformer: A Network in Network Transformer with Token Mixing Generated Gating Function
+    Diffusion Posterior Proximal Sampling for Image Restoration
 
-    [https://arxiv.org/abs/2403.02411](https://arxiv.org/abs/2403.02411)
+    [https://arxiv.org/abs/2402.16907](https://arxiv.org/abs/2402.16907)
 
-    提出了一种新的计算块，称为NiNformer，具有令牌混合生成门控功能，以解决注意机制在深度学习中的计算成本高昂和数据集要求大的缺点。
-
-    
-
-    注意机制是Transformer架构的主要组件，自引入以来，在深度学习领域取得了显著进展，跨越了许多领域和多个任务。该机制在计算机视觉中被应用为Vision Transformer ViT，并且其用途已扩展到视觉领域的许多任务，如分类、分割、目标检测和图像生成。尽管该机制非常具有表现力和能力，但其缺点是计算成本高昂，需要大规模数据集来有效优化。为了解决这些缺点，文献中提出了许多设计来减轻计算负担和缓解数据大小要求。在视觉领域的一些尝试的例子包括MLP-Mixer、Conv-Mixer、Perciver-IO等。本文介绍了一种新的计算块，作为一种
-
-    arXiv:2403.02411v1 Announce Type: cross  Abstract: The Attention mechanism is the main component of the Transformer architecture, and since its introduction, it has led to significant advancements in Deep Learning that span many domains and multiple tasks. The Attention Mechanism was utilized in Computer Vision as the Vision Transformer ViT, and its usage has expanded into many tasks in the vision domain, such as classification, segmentation, object detection, and image generation. While this mechanism is very expressive and capable, it comes with the drawback of being computationally expensive and requiring datasets of considerable size for effective optimization. To address these shortcomings, many designs have been proposed in the literature to reduce the computational burden and alleviate the data size requirements. Examples of such attempts in the vision domain are the MLP-Mixer, the Conv-Mixer, the Perciver-IO, and many more. This paper introduces a new computational block as an 
-    
-[^4]: 零-shot 可见语言模型用于仇恨模因检测：我们已经到达目标了吗？
-
-    Zero shot VLMs for hate meme detection: Are we there yet?
-
-    [https://arxiv.org/abs/2402.12198](https://arxiv.org/abs/2402.12198)
-
-    本研究探讨了零-shot分类在处理复杂任务如恶意模因检测中的有效性
+    本文提出了一种改进的基于扩散的图像恢复范式，通过选择与测量标识一致的样本，以及从与测量信号相结合的初始化开始恢复过程，实现输出稳定性和增强。
 
     
 
-    社交媒体上的多媒体内容正在迅速发展，其中模因作为一种独特形式变得日益重要。不幸的是，一些恶意用户利用模因针对个人或易受攻击的社区，因此有必要识别和解决此类恶意模因。已经进行了大量研究来解决这个问题，通过开发仇恨模因检测模型。然而，传统的机器学习/深度学习模型的一个显著局限性是需要带标签的数据集才能进行准确分类。最近，研究界见证了几种可见语言模型的出现，在各种任务中展现出卓越的性能。在这项研究中，我们旨在调查这些可见语言模型在处理诸如仇恨模因检测等复杂任务中的有效性。我们使用各种提示设置来专注于对恶意/有害模因的零-shot 分类。通过我们的分析，我们o
+    扩散模型在生成高质量样本方面表现出卓越的功效。现有基于扩散的图像恢复算法利用预先训练的扩散模型来利用数据先验，但仍保留了继承自无条件生成范式的元素。本文介绍了一种改进的基于扩散的图像恢复范式。具体来说，我们选择在每个生成步骤中与测量标识一致的样本，利用采样选择作为输出稳定性和增强的途径。此外，我们从一个与测量信号相结合的初始化开始恢复过程，提供了附加信息以更好地对齐生成过程。
 
-    arXiv:2402.12198v1 Announce Type: new  Abstract: Multimedia content on social media is rapidly evolving, with memes gaining prominence as a distinctive form. Unfortunately, some malicious users exploit memes to target individuals or vulnerable communities, making it imperative to identify and address such instances of hateful memes. Extensive research has been conducted to address this issue by developing hate meme detection models. However, a notable limitation of traditional machine/deep learning models is the requirement for labeled datasets for accurate classification. Recently, the research community has witnessed the emergence of several visual language models that have exhibited outstanding performance across various tasks. In this study, we aim to investigate the efficacy of these visual language models in handling intricate tasks such as hate meme detection. We use various prompt settings to focus on zero-shot classification of hateful/harmful memes. Through our analysis, we o
+    arXiv:2402.16907v1 Announce Type: cross  Abstract: Diffusion models have demonstrated remarkable efficacy in generating high-quality samples. Existing diffusion-based image restoration algorithms exploit pre-trained diffusion models to leverage data priors, yet they still preserve elements inherited from the unconditional generation paradigm. These strategies initiate the denoising process with pure white noise and incorporate random noise at each generative step, leading to over-smoothed results. In this paper, we introduce a refined paradigm for diffusion-based image restoration. Specifically, we opt for a sample consistent with the measurement identity at each generative step, exploiting the sampling selection as an avenue for output stability and enhancement. Besides, we start the restoration process with an initialization combined with the measurement signal, providing supplementary information to better align the generative process. Extensive experimental results and analyses val
     
-[^5]: AONeuS: 一种用于声光传感器融合的神经渲染框架
+[^3]: GAOKAO-MM: 一个用于多模态模型评估的中国人类水平基准
 
-    AONeuS: A Neural Rendering Framework for Acoustic-Optical Sensor Fusion
+    GAOKAO-MM: A Chinese Human-Level Benchmark for Multimodal Models Evaluation
 
-    [https://arxiv.org/abs/2402.03309](https://arxiv.org/abs/2402.03309)
+    [https://arxiv.org/abs/2402.15745](https://arxiv.org/abs/2402.15745)
 
-    AONeuS是一种基于物理的多模态声光神经表面重建框架，通过融合高分辨率RGB测量和低分辨率深度成像声纳测量，能够在受限基线下实现准确的高分辨率三维表面重建。
-
-    
-
-    水下感知和三维表面重建是具有广泛应用的挑战性问题，涉及建筑、安全、海洋考古和环境监测等领域。恶劣的操作条件、脆弱的环境和有限的导航控制通常导致水下航行器限制其运动范围和测量基线。在三维场景重建的背景下，我们知道较小的基线会增加重建难度。本文开发了一种基于物理的多模态声光神经表面重建框架（AONeuS），能够有效地将高分辨率RGB测量与低分辨率深度成像声纳测量进行融合。通过融合这些互补的模态，我们的框架可以从在受限基线上捕获的测量中重建出准确的高分辨率三维表面。通过大量的模拟和实验室实验，我们证明了...
-
-    Underwater perception and 3D surface reconstruction are challenging problems with broad applications in construction, security, marine archaeology, and environmental monitoring. Treacherous operating conditions, fragile surroundings, and limited navigation control often dictate that submersibles restrict their range of motion and, thus, the baseline over which they can capture measurements. In the context of 3D scene reconstruction, it is well-known that smaller baselines make reconstruction more challenging. Our work develops a physics-based multimodal acoustic-optical neural surface reconstruction framework (AONeuS) capable of effectively integrating high-resolution RGB measurements with low-resolution depth-resolved imaging sonar measurements. By fusing these complementary modalities, our framework can reconstruct accurate high-resolution 3D surfaces from measurements captured over heavily-restricted baselines. Through extensive simulations and in-lab experiments, we demonstrate tha
-    
-[^6]: 旗帜游戏：通过旗帜流形来获得鲁棒的主方向
-
-    Fun with Flags: Robust Principal Directions via Flag Manifolds. (arXiv:2401.04071v1 [cs.CV])
-
-    [http://arxiv.org/abs/2401.04071](http://arxiv.org/abs/2401.04071)
-
-    本研究提出了一种统一的PCA和其变种框架，该框架基于线性子空间旗帜，并引入了对异常值和数据流形的考虑。通过在旗帜流形上进行优化问题的求解，结合主测地线近似，提出了一系列新的降维算法。
+    GAOKAO-MM 是基于中国高考的多模态基准，为模型的能力设定人类水平要求，评估结果显示目前的LVLMs的准确率普遍不足50%。
 
     
 
-    主成分分析（PCA）及其对流形和异常数据的扩展，在计算机视觉和机器学习中是不可或缺的。本研究提出了PCA及其变种的统一形式，引入了基于线性子空间旗帜的框架，即逐渐增加维度的嵌套线性子空间的层次结构，不仅允许共同实现，还产生了新的未曾探索的变种。我们从广义化传统的PCA方法开始，这些方法要么最大化方差，要么最小化重构误差。我们扩展这些解释，通过考虑异常值和数据流形，开发出了大量新的降维算法。为了设计一种通用的计算方法，我们将鲁棒和对偶形式的PCA重新构建为在旗帜流形上的优化问题。然后，我们将主测地线近似（切线PCA）整合到这个基于旗帜的框架中，创造出一种新的方法。
+    大型视觉语言模型（LVLMs）已经在图像感知和语言理解方面展示出了极大的能力。然而，现有的多模态基准主要关注基本的感知能力和常识知识，这些无法充分反映出LVLMs的全面能力。我们提出了GAOKAO-MM，一个基于中国高考的多模态基准，包括8个科目和12种类型的图片，如图表、函数图、地图和照片。GAOKAO-MM来源于中国本土背景，并为模型的能力设定了人类水平的要求，包括感知、理解、知识和推理。我们评估了10个LVLMs，发现它们的准确率都低于50%，其中GPT-4-Vision（48.1%）、Qwen-VL-Plus（41.2%）和Gemini-Pro-Vision（35.1%）位列前三名。我们的多维分析结果表明，LVLMs具有适度的
 
-    Principal component analysis (PCA), along with its extensions to manifolds and outlier contaminated data, have been indispensable in computer vision and machine learning. In this work, we present a unifying formalism for PCA and its variants, and introduce a framework based on the flags of linear subspaces, \ie a hierarchy of nested linear subspaces of increasing dimension, which not only allows for a common implementation but also yields novel variants, not explored previously. We begin by generalizing traditional PCA methods that either maximize variance or minimize reconstruction error. We expand these interpretations to develop a wide array of new dimensionality reduction algorithms by accounting for outliers and the data manifold. To devise a common computational approach, we recast robust and dual forms of PCA as optimization problems on flag manifolds. We then integrate tangent space approximations of principal geodesic analysis (tangent-PCA) into this flag-based framework, crea
+    arXiv:2402.15745v1 Announce Type: cross  Abstract: The Large Vision-Language Models (LVLMs) have demonstrated great abilities in image perception and language understanding. However, existing multimodal benchmarks focus on primary perception abilities and commonsense knowledge which are insufficient to reflect the comprehensive capabilities of LVLMs. We propose GAOKAO-MM, a multimodal benchmark based on the Chinese College Entrance Examination (GAOKAO), comprising of 8 subjects and 12 types of images, such as diagrams, function graphs, maps and photos. GAOKAO-MM derives from native Chinese context and sets human-level requirements for the model's abilities, including perception, understanding, knowledge and reasoning. We evaluate 10 LVLMs and find that the accuracies of all of them are lower than 50%, with GPT-4-Vison (48.1%), Qwen-VL-Plus (41.2%) and Gemini-Pro-Vision (35.1%) ranking in the top three positions. The results of our multi-dimension analysis indicate that LVLMs have moder
     
-[^7]: 开门吧！大规模语言模型的通用黑盒破解
+[^4]: 可解释的量子点器件测量分类技术
 
-    Open Sesame! Universal Black Box Jailbreaking of Large Language Models. (arXiv:2309.01446v2 [cs.CL] UPDATED)
+    Explainable Classification Techniques for Quantum Dot Device Measurements
 
-    [http://arxiv.org/abs/2309.01446](http://arxiv.org/abs/2309.01446)
+    [https://arxiv.org/abs/2402.13699](https://arxiv.org/abs/2402.13699)
 
-    本文提出了一种使用遗传算法的新颖方法，可以在无法访问模型架构和参数的情况下操纵大规模语言模型 (LLMs)。通过优化通用对抗提示与用户查询结合，可以扰乱被攻击模型的对齐，导致意外和潜在有害的输出。该方法可以揭示模型的局限性和漏洞，为负责任的AI开发提供了一种诊断工具。
-
-    
-
-    大规模语言模型（LLMs）旨在提供有帮助和安全的回复，通常依赖于对齐技术与用户意图和社会指南保持一致。然而，这种对齐可能会被恶意行为者利用，以用于意想不到的目的。在本文中，我们引入了一种新颖的方法，利用遗传算法（GA）在模型架构和参数不可访问时操纵LLMs。GA攻击通过优化通用对抗提示与用户查询结合，扰乱被攻击模型的对齐，导致意外和潜在有害的输出。我们的新颖方法通过揭示模型的局限性和漏洞，系统地揭示了其响应与预期行为不符的情况。通过广泛的实验，我们证明了我们的技术的有效性，从而为关于负责任的AI开发的讨论提供了一种诊断工具。
-
-    Large language models (LLMs), designed to provide helpful and safe responses, often rely on alignment techniques to align with user intent and social guidelines. Unfortunately, this alignment can be exploited by malicious actors seeking to manipulate an LLM's outputs for unintended purposes. In this paper we introduce a novel approach that employs a genetic algorithm (GA) to manipulate LLMs when model architecture and parameters are inaccessible. The GA attack works by optimizing a universal adversarial prompt that -- when combined with a user's query -- disrupts the attacked model's alignment, resulting in unintended and potentially harmful outputs. Our novel approach systematically reveals a model's limitations and vulnerabilities by uncovering instances where its responses deviate from expected behavior. Through extensive experiments we demonstrate the efficacy of our technique, thus contributing to the ongoing discussion on responsible AI development by providing a diagnostic tool 
-    
-[^8]: FreeDrag: 点追踪并不适用于交互式的基于点的图像编辑
-
-    FreeDrag: Point Tracking is Not What You Need for Interactive Point-based Image Editing. (arXiv:2307.04684v2 [cs.CV] UPDATED)
-
-    [http://arxiv.org/abs/2307.04684](http://arxiv.org/abs/2307.04684)
-
-    FreeDrag提出了一种基于特征的方法来解决DragGAN在点追踪方面的困难，通过自适应模板特征、线性搜索和模糊定位技术，实现了稳定和高效的基于点的图像编辑。
+    提出了一种基于合成数据的的可解释特征技术，利用可解释性提升机（EBMs）实现了在量子点调谐中较高的可解释性和准确性。
 
     
 
-    为了满足图像编辑的复杂和多样化需求，对图像内容的精确和灵活的操纵是不可或缺的。最近，DragGAN通过基于点的操纵实现了令人印象深刻的编辑结果。然而，我们观察到DragGAN在点的追踪上存在困难，包括错误追踪和模糊追踪。为了解决这些问题，我们提出了FreeDrag，它采用了基于特征的方法来减轻DragGAN中点追踪的负担。FreeDrag结合了自适应模板特征、线性搜索和模糊定位技术，实现了稳定和高效的基于点的图像编辑。大量实验表明，我们的方法优于DragGAN，并能在具有相似特征的困难情景下实现稳定的基于点的编辑。
+    在物理科学中，对图像数据的稳健特征表示需求增加：图像采集，在广义上指二维数据，现在在许多领域广泛应用，包括我们在此考虑的量子信息科学。虽然在这些情况下广泛使用传统图像特征，但它们的使用正在迅速被神经网络技术所取代，后者往往以牺牲可解释性为代价换取高准确性。为了弥合这种权衡，我们提出了一种基于合成数据的技术，可以产生可解释的特征。我们利用可解释性提升机（EBMs）展示，这种方法提供了卓越的可解释性，并且不会降低准确性。具体而言，我们展示了在量子点调谐的背景下，这种技术带来了实质性的益处，当前发展阶段需要人类干预。
 
-    To serve the intricate and varied demands of image editing, precise and flexible manipulation of image content is indispensable. Recently, DragGAN has achieved impressive editing results through point-based manipulation. However, we have observed that DragGAN struggles with miss tracking, where DragGAN encounters difficulty in effectively tracking the desired handle points, and ambiguous tracking, where the tracked points are situated within other regions that bear resemblance to the handle points. To deal with the above issues, we propose FreeDrag, which adopts a feature-oriented approach to free the burden on point tracking within the point-oriented methodology of DragGAN. The FreeDrag incorporates adaptive template features, line search, and fuzzy localization techniques to perform stable and efficient point-based image editing. Extensive experiments demonstrate that our method is superior to the DragGAN and enables stable point-based editing in challenging scenarios with similar st
+    arXiv:2402.13699v1 Announce Type: cross  Abstract: In the physical sciences, there is an increased need for robust feature representations of image data: image acquisition, in the generalized sense of two-dimensional data, is now widespread across a large number of fields, including quantum information science, which we consider here. While traditional image features are widely utilized in such cases, their use is rapidly being supplanted by Neural Network-based techniques that often sacrifice explainability in exchange for high accuracy. To ameliorate this trade-off, we propose a synthetic data-based technique that results in explainable features. We show, using Explainable Boosting Machines (EBMs), that this method offers superior explainability without sacrificing accuracy. Specifically, we show that there is a meaningful benefit to this technique in the context of quantum dot tuning, where human intervention is necessary at the current stage of development.
     
-[^9]: 视觉学习者遇见Web图像-文本对
+[^5]: ColorSwap: 一个用于多模态评估的颜色和单词排序数据集
 
-    Vision Learners Meet Web Image-Text Pairs. (arXiv:2301.07088v2 [cs.CV] UPDATED)
+    ColorSwap: A Color and Word Order Dataset for Multimodal Evaluation
 
-    [http://arxiv.org/abs/2301.07088](http://arxiv.org/abs/2301.07088)
+    [https://arxiv.org/abs/2402.04492](https://arxiv.org/abs/2402.04492)
 
-    本论文提出了一种基于网络数据的新型视觉学习方法MUlti-modal Generator (MUG)。在视觉数据集的转移学习任务上取得了最先进的表现，是之前最佳结果的3.4%和2.2%的提升。
+    本文介绍了ColorSwap数据集，用于评估和改进多模态模型在匹配物体和颜色方面的能力。通过将颜色词重新排序以修改不同的对象，该数据集可以测试模型在这项任务上的鲁棒性。尽管目前的模型在这个任务上仍不够稳定，但通过更先进的提示技术可能会有所改善。
 
     
 
-    大多数最新的自监督学习方法都是在维护良好的ImageNet-1K数据集上进行预训练的。在本研究中，考虑到网络数据的出色可伸缩性，我们认为自我监督预训练应该基于嘈杂的网络源图文配对数据。首先，我们在如此设置下，对大规模网络数据上的代表性自监督预训练方法进行了基准研究。我们比较了一系列方法，包括使用被屏蔽的训练目标的单模式方法和使用图像-文本对比训练的多模式方法。我们发现，现有的多模态方法在视觉转移学习任务上并不比单模态方法表现更好。我们提出了一个信息论视角来解释这些基准结果，这提供了如何设计新型视觉学习者的见解。受到这些见解的启发，我们提出了一种新的视觉表示预训练方法——多模式生成器（MUG），它从可伸缩的网络源图文数据中学习。MUG在几个视觉数据集的转移学习任务上取得了最先进的性能，在CIFAR-10上优于之前最佳的结果3.4％，在STL-10上优于之前最佳的结果2.2％。
+    本文介绍了ColorSwap数据集，旨在评估和改进多模态模型在匹配物体和其颜色方面的熟练程度。该数据集包含2000个独特的图像-标题对，分为1000个示例。每个示例包括一个标题-图像对，以及一个“颜色交换”对。我们遵循Winoground方案：示例中的两个标题具有相同的单词，但颜色单词被重新排列以修改不同的对象。该数据集通过自动化的标题和图像生成与人类的交互创造而成。我们评估图像-文本匹配（ITM）和视觉语言模型（VLMs）发现即使是最新的模型在这个任务上仍然不够稳健。GPT-4V和LLaVA在我们的主要VLM指标上得分分别为72%和42%，尽管它们可能通过更先进的提示技术来提升。在主要的ITM指标上，像CLIP和SigLIP这样的对比模型接近于随机猜测（分别为12%和30%），尽管非对比模型在这个任务上表现得更好。
 
-    Most recent self-supervised learning methods are pre-trained on the well-curated ImageNet-1K dataset. In this work, given the excellent scalability of web data, we consider self-supervised pre-training on noisy web sourced image-text paired data. First, we conduct a benchmark study of representative self-supervised pre-training methods on large-scale web data in a like-for-like setting. We compare a range of methods, including single-modal ones that use masked training objectives and multi-modal ones that use image-text constrastive training. We observe that existing multi-modal methods do not outperform their single-modal counterparts on vision transfer learning tasks. We derive an information-theoretical view to explain these benchmark results, which provides insight into how to design a novel vision learner. Inspired by this insight, we present a new visual representation pre-training method, MUlti-modal Generator~(MUG), that learns from scalable web sourced image-text data. MUG ach
+    This paper introduces the ColorSwap dataset, designed to assess and improve the proficiency of multimodal models in matching objects with their colors. The dataset is comprised of 2,000 unique image-caption pairs, grouped into 1,000 examples. Each example includes a caption-image pair, along with a ``color-swapped'' pair. We follow the Winoground schema: the two captions in an example have the same words, but the color words have been rearranged to modify different objects. The dataset was created through a novel blend of automated caption and image generation with humans in the loop. We evaluate image-text matching (ITM) and visual language models (VLMs) and find that even the latest ones are still not robust at this task. GPT-4V and LLaVA score 72% and 42% on our main VLM metric, although they may improve with more advanced prompting techniques. On the main ITM metric, contrastive models such as CLIP and SigLIP perform close to chance (at 12% and 30%, respectively), although the non-
+    
+[^6]: 航班滑行安全的跑道物体分类器的鲁棒性评估
+
+    Robustness Assessment of a Runway Object Classifier for Safe Aircraft Taxiing
+
+    [https://arxiv.org/abs/2402.00035](https://arxiv.org/abs/2402.00035)
+
+    本文介绍了对航班滑行安全的跑道物体分类器的鲁棒性评估，使用形式方法评估了该分类器对三种常见图像扰动类型的鲁棒性，并提出了一种利用单调性的方法。
+
+    
+
+    随着深度神经网络(DNNs)在许多计算问题上成为主要解决方案，航空业希望探索它们在减轻飞行员负担和改善运营安全方面的潜力。然而，在这类安全关键应用中使用DNNs需要进行彻底的认证过程。这一需求可以通过形式验证来解决，形式验证提供了严格的保证，例如证明某些误判的不存在。在本文中，我们使用Airbus当前正在开发的图像分类器DNN作为案例研究，旨在在飞机滑行阶段使用。我们使用形式方法来评估这个DNN对三种常见图像扰动类型的鲁棒性：噪声、亮度和对比度，以及它们的部分组合。这个过程涉及多次调用底层验证器，这可能在计算上是昂贵的；因此，我们提出了一种利用单调性的方法。
+
+    As deep neural networks (DNNs) are becoming the prominent solution for many computational problems, the aviation industry seeks to explore their potential in alleviating pilot workload and in improving operational safety. However, the use of DNNs in this type of safety-critical applications requires a thorough certification process. This need can be addressed through formal verification, which provides rigorous assurances -- e.g.,~by proving the absence of certain mispredictions. In this case-study paper, we demonstrate this process using an image-classifier DNN currently under development at Airbus and intended for use during the aircraft taxiing phase. We use formal methods to assess this DNN's robustness to three common image perturbation types: noise, brightness and contrast, and some of their combinations. This process entails multiple invocations of the underlying verifier, which might be computationally expensive; and we therefore propose a method that leverages the monotonicity
+    
+[^7]: 基于深度学习的智能手机显微镜图像中贾第虫和隐孢子的检测与计数
+
+    Deep-learning assisted detection and quantification of (oo)cysts of Giardia and Cryptosporidium on smartphone microscopy images. (arXiv:2304.05339v1 [eess.IV])
+
+    [http://arxiv.org/abs/2304.05339](http://arxiv.org/abs/2304.05339)
+
+    本研究采用基于深度学习的RetinaNet模型针对采用智能手机显微系统检测贾第虫和隐孢子进行检测和计数，并在速度和准确度方面表现出最佳效果，为在资源有限的环境下解决这一问题提供了潜在解决方案。
+
+    
+
+    食用受微生物污染的食物和水每年造成数百万人死亡。基于智能手机的显微系统是一种便携、低成本和比传统的亮场显微镜更易接近的方法用于检测贾第虫和隐孢子。然而，智能手机显微镜的图像有很多噪声，需要培训有素的技术人员进行手动囊泡识别，而这通常在资源有限的环境中是不可用的。采用基于深度学习的对象检测自动检测卵/梭状体可能为此限制提供解决方案。我们评估了三种最先进的物体检测器在自定义数据集上检测贾第虫和隐孢子的效果，数据集包括从蔬菜样品中获取的智能手机和亮场显微镜图像。Faster RCNN、RetinaNet和You Only Look Once（YOLOv8s）深度学习模型被用来探索它们的有效性和限制。我们的结果表明，虽然深度学习模型能够准确地检测卵/梭状体，但RetinaNet在速度和准确度方面优于其他两种模型。本研究提供了一种潜在的解决方案，利用基于智能手机的显微系统在资源有限的环境中自动检测和计数贾第虫和隐孢子。
+
+    The consumption of microbial-contaminated food and water is responsible for the deaths of millions of people annually. Smartphone-based microscopy systems are portable, low-cost, and more accessible alternatives for the detection of Giardia and Cryptosporidium than traditional brightfield microscopes. However, the images from smartphone microscopes are noisier and require manual cyst identification by trained technicians, usually unavailable in resource-limited settings. Automatic detection of (oo)cysts using deep-learning-based object detection could offer a solution for this limitation. We evaluate the performance of three state-of-the-art object detectors to detect (oo)cysts of Giardia and Cryptosporidium on a custom dataset that includes both smartphone and brightfield microscopic images from vegetable samples. Faster RCNN, RetinaNet, and you only look once (YOLOv8s) deep-learning models were employed to explore their efficacy and limitations. Our results show that while the deep-l
     
 
