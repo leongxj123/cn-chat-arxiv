@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Neuron Patching: Neuron-level Model Editing on Code Generation and LLMs](https://rss.arxiv.org/abs/2312.05356) | 这项工作介绍了一种神经元层面的模型编辑方法，能够在编码任务中修补LLM模型，并且在API序列推荐、代码生成和伪代码到代码转换等任务中得到了验证和评估。 |
+| [^1] | [CodeUltraFeedback: An LLM-as-a-Judge Dataset for Aligning Large Language Models to Coding Preferences](https://arxiv.org/abs/2403.09032) | 介绍了 CodeUltraFeedback 数据集，通过 AI 反馈使 14 种不同的 LLMs 对 10,000 个复杂指令生成响应，并使用 LLM-as-a-Judge 方法评估它们与五种编程偏好的对齐情况，同时提出了用于评估 LLM 对编程偏好对齐的基准 CODAL-Bench。 |
 
 # 详细
 
-[^1]: Neuron Patching: 神经元层面的模型编辑与代码生成
+[^1]: CodeUltraFeedback：一种用于将大型语言模型与编程偏好对齐的LLM作为法官数据集
 
-    Neuron Patching: Neuron-level Model Editing on Code Generation and LLMs
+    CodeUltraFeedback: An LLM-as-a-Judge Dataset for Aligning Large Language Models to Coding Preferences
 
-    [https://rss.arxiv.org/abs/2312.05356](https://rss.arxiv.org/abs/2312.05356)
+    [https://arxiv.org/abs/2403.09032](https://arxiv.org/abs/2403.09032)
 
-    这项工作介绍了一种神经元层面的模型编辑方法，能够在编码任务中修补LLM模型，并且在API序列推荐、代码生成和伪代码到代码转换等任务中得到了验证和评估。
+    介绍了 CodeUltraFeedback 数据集，通过 AI 反馈使 14 种不同的 LLMs 对 10,000 个复杂指令生成响应，并使用 LLM-as-a-Judge 方法评估它们与五种编程偏好的对齐情况，同时提出了用于评估 LLM 对编程偏好对齐的基准 CODAL-Bench。
 
     
 
-    大型语言模型在软件工程中得到了成功应用，特别是在代码生成方面。更新这些模型的新知识非常昂贵，通常需要全面实现其价值。在本文中，我们提出了一种新颖有效的模型编辑方法MENT，用于在编码任务中修补LLM模型。基于生成式LLM的机制，MENT可以在预测下一个令牌时进行模型编辑，并进一步支持常见的编码任务。MENT具有高效、有效和可靠的特点。它可以通过修补1或2个神经元来纠正神经模型。作为神经元层面上生成模型编辑的先驱工作，我们规范了编辑过程并介绍了相关概念。此外，我们还引入了新的衡量方法来评估其泛化能力，并建立了一个用于进一步研究的基准。我们的方法在三个编码任务上进行了评估，包括API序列推荐、行级代码生成和伪代码到代码转换。
+    评估大型语言模型（LLMs）与用户定义的编程偏好的对齐性是一项具有挑战性的工作，需要评估复杂文本LLMs的输出。现有基准仰赖自动化指标和静态分析工具，未能评估用户指令和LLM输出中的微妙之处，突显了对LLM偏好对齐的大规模数据集和基准的需求。在本文中，我们介绍了CodeUltraFeedback，一个包含10,000个复杂指令的偏好数据集，通过AI反馈来调整和对齐LLMs与编程偏好。我们使用14种不同的LLMs对这些指令生成响应，然后根据它们与五种编程偏好的对齐情况进行注释，使用GPT-3.5的LLM作为法官方法产生数字和文本反馈。我们还提出了CODAL-Bench，一个用于评估LLM与这些编程偏好对齐的基准。我们的结果显示C
 
-    Large Language Models are successfully adopted in software engineering, especially in code generation. Updating these models with new knowledge is very expensive, and is often required to fully realize their value. In this paper, we propose a novel and effective model editing approach, \textsc{MENT}, to patch LLMs in coding tasks. Based on the mechanism of generative LLMs, \textsc{MENT} enables model editing in next-token predictions, and further supports common coding tasks. \textsc{MENT} is effective, efficient, and reliable. It can correct a neural model by patching 1 or 2 neurons. As the pioneer work on neuron-level model editing of generative models, we formalize the editing process and introduce the involved concepts. Besides, we also introduce new measures to evaluate its generalization ability, and build a benchmark for further study. Our approach is evaluated on three coding tasks, including API-seq recommendation, line-level code generation, and pseudocode-to-code transaction
+    arXiv:2403.09032v1 Announce Type: cross  Abstract: Evaluating the alignment of large language models (LLMs) with user-defined coding preferences is a challenging endeavour that requires assessing intricate textual LLMs' outputs. By relying on automated metrics and static analysis tools, existing benchmarks fail to assess nuances in user instructions and LLM outputs, highlighting the need for large-scale datasets and benchmarks for LLM preference alignment. In this paper, we introduce CodeUltraFeedback, a preference dataset of 10,000 complex instructions to tune and align LLMs to coding preferences through AI feedback. We generate responses to the instructions using a pool of 14 diverse LLMs, which we then annotate according to their alignment with five coding preferences using the LLM-as-a-Judge approach with GPT-3.5, producing both numerical and textual feedback. We also present CODAL-Bench, a benchmark for assessing LLM alignment with these coding preferences. Our results show that C
     
 

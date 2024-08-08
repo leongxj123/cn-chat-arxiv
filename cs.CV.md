@@ -2,112 +2,157 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [CR3DT: Camera-RADAR Fusion for 3D Detection and Tracking](https://arxiv.org/abs/2403.15313) | CR3DT是一个相机与雷达融合模型，结合了雷达在3D检测和跟踪中的潜力，通过在State-of-the-Art相机架构基础上实现了显著的改进。 |
-| [^2] | [Diffusion Posterior Proximal Sampling for Image Restoration](https://arxiv.org/abs/2402.16907) | 本文提出了一种改进的基于扩散的图像恢复范式，通过选择与测量标识一致的样本，以及从与测量信号相结合的初始化开始恢复过程，实现输出稳定性和增强。 |
-| [^3] | [GAOKAO-MM: A Chinese Human-Level Benchmark for Multimodal Models Evaluation](https://arxiv.org/abs/2402.15745) | GAOKAO-MM 是基于中国高考的多模态基准，为模型的能力设定人类水平要求，评估结果显示目前的LVLMs的准确率普遍不足50%。 |
-| [^4] | [Explainable Classification Techniques for Quantum Dot Device Measurements](https://arxiv.org/abs/2402.13699) | 提出了一种基于合成数据的的可解释特征技术，利用可解释性提升机（EBMs）实现了在量子点调谐中较高的可解释性和准确性。 |
-| [^5] | [ColorSwap: A Color and Word Order Dataset for Multimodal Evaluation](https://arxiv.org/abs/2402.04492) | 本文介绍了ColorSwap数据集，用于评估和改进多模态模型在匹配物体和颜色方面的能力。通过将颜色词重新排序以修改不同的对象，该数据集可以测试模型在这项任务上的鲁棒性。尽管目前的模型在这个任务上仍不够稳定，但通过更先进的提示技术可能会有所改善。 |
-| [^6] | [Robustness Assessment of a Runway Object Classifier for Safe Aircraft Taxiing](https://arxiv.org/abs/2402.00035) | 本文介绍了对航班滑行安全的跑道物体分类器的鲁棒性评估，使用形式方法评估了该分类器对三种常见图像扰动类型的鲁棒性，并提出了一种利用单调性的方法。 |
-| [^7] | [Deep-learning assisted detection and quantification of (oo)cysts of Giardia and Cryptosporidium on smartphone microscopy images.](http://arxiv.org/abs/2304.05339) | 本研究采用基于深度学习的RetinaNet模型针对采用智能手机显微系统检测贾第虫和隐孢子进行检测和计数，并在速度和准确度方面表现出最佳效果，为在资源有限的环境下解决这一问题提供了潜在解决方案。 |
+| [^1] | [DenseNets Reloaded: Paradigm Shift Beyond ResNets and ViTs](https://arxiv.org/abs/2403.19588) | 本文重新探讨了密集连接卷积网络（DenseNets），揭示了其相对于ResNet风格架构的被低估有效性，通过改进架构、块设计和训练方法，使得DenseNets可以与现代架构竞争，并在ImageNet-1K上接近最新技术水平。 |
+| [^2] | [Trajectory Regularization Enhances Self-Supervised Geometric Representation](https://arxiv.org/abs/2403.14973) | 引入新的pose-estimation基准用于评估SSL几何表示，提出无监督轨迹正则化损失来增强SSL几何表示，在姿势估计性能上取得10-20%的提升，并提高了4%的性能和泛化能力。 |
+| [^3] | [Meta-Prompting for Automating Zero-shot Visual Recognition with LLMs](https://arxiv.org/abs/2403.11755) | 提出了Meta-Prompting for Visual Recognition (MPVR)方法，通过仅需少量信息即可自动化零样本识别中的提示生成过程。 |
+| [^4] | [Curriculum Learning for ab initio Deep Learned Refractive Optics](https://arxiv.org/abs/2302.01089) | 通过Curriculum Learning，提出了一种DeepLens设计方法，能够从随机初始化表面从头开始学习复合透镜的光学设计，克服了对良好初始设计的需求，并实现了自动设计经典成像透镜和大视场延伸景深计算透镜。 |
+| [^5] | [A Comprehensive Augmentation Framework for Anomaly Detection.](http://arxiv.org/abs/2308.15068) | 本文提出了一种用于异常检测的综合增强框架，该框架通过选择性地利用适当的组合，分析并压缩模拟异常的关键特征，与基于重构的方法相结合，并采用分割训练策略，能够在MVTec异常检测数据集上优于以前的最先进方法。 |
+| [^6] | [Pruning Meets Low-Rank Parameter-Efficient Fine-Tuning.](http://arxiv.org/abs/2305.18403) | 本论文提出了一种名为LoRAPrune的框架，可以高效微调和部署大型预训练模型，通过利用低秩自适应的值和梯度来设计PEFT感知的剪枝准则，并提出了一个迭代剪枝过程来去除冗余参数，实验结果表明与最先进的方法相比，可以显著降低模型大小和推理时间，同时保持竞争性的准确性。 |
+| [^7] | [Distill Gold from Massive Ores: Efficient Dataset Distillation via Critical Samples Selection.](http://arxiv.org/abs/2305.18381) | 研究提出了一种基于选择最有价值的样本的方法，以扩展现有的蒸馏算法，从而更好地利用训练样本，显著降低训练成本，拓展对更大更多元化数据集的数据集蒸馏，并持续提高性能。 |
+| [^8] | [The Face of Populism: Examining Differences in Facial Emotional Expressions of Political Leaders Using Machine Learning.](http://arxiv.org/abs/2304.09914) | 本文使用机器学习的算法分析了来自15个不同国家的220个政治领袖的YouTube视频，总结了政治领袖面部情感表达的差异。 |
+| [^9] | [ASR: Attention-alike Structural Re-parameterization.](http://arxiv.org/abs/2304.06345) | 该论文提出的ASR技术是一种新颖的深度学习技术，通过等效参数转换实现不同网络体系结构之间的互转。和现有的SRP方法相比，ASR可以成功考虑自注意模块，实现推理期间的性能提升，并在工业和实际应用中具有巨大潜力。 |
+| [^10] | [Fingerprinting Generative Adversarial Networks.](http://arxiv.org/abs/2106.11760) | 本文提出了一种保护GAN知识产权的指纹识别方案，通过生成指纹样本并嵌入到分类器中进行版权验证，解决了前一种对分类模型的指纹识别方法在简单转移至GAN时遇到的隐蔽性和鲁棒性瓶颈，具有实际保护现代GAN模型的可行性。 |
 
 # 详细
 
-[^1]: CR3DT：相机与雷达融合用于3D检测和跟踪
+[^1]: DenseNets重生：超越ResNets和ViTs的范式转变
 
-    CR3DT: Camera-RADAR Fusion for 3D Detection and Tracking
+    DenseNets Reloaded: Paradigm Shift Beyond ResNets and ViTs
 
-    [https://arxiv.org/abs/2403.15313](https://arxiv.org/abs/2403.15313)
+    [https://arxiv.org/abs/2403.19588](https://arxiv.org/abs/2403.19588)
 
-    CR3DT是一个相机与雷达融合模型，结合了雷达在3D检测和跟踪中的潜力，通过在State-of-the-Art相机架构基础上实现了显著的改进。
-
-    
-
-    精确检测和跟踪周围物体对于实现自动驾驶车辆至关重要。虽然光探测与测距（LiDAR）传感器已经成为高性能的基准，但仅使用相机的解决方案的吸引力在于其成本效益。尽管无线电探测与测距（RADAR）传感器在汽车系统中被广泛使用，由于数据稀疏和测量噪声的原因，它们在3D检测和跟踪中的潜力长期被忽视。作为一个最新的发展，相机与雷达的结合正成为一种有前途的解决方案。本文提出了Camera-RADAR 3D Detection and Tracking (CR3DT)，这是一个用于3D物体检测和多物体跟踪的相机-雷达融合模型。在基于最先进的只有相机的BEVDet架构的基础上，CR3DT在检测和跟踪能力方面取得了显著的改进，通过整合雷达数据
-
-    arXiv:2403.15313v1 Announce Type: cross  Abstract: Accurate detection and tracking of surrounding objects is essential to enable self-driving vehicles. While Light Detection and Ranging (LiDAR) sensors have set the benchmark for high performance, the appeal of camera-only solutions lies in their cost-effectiveness. Notably, despite the prevalent use of Radio Detection and Ranging (RADAR) sensors in automotive systems, their potential in 3D detection and tracking has been largely disregarded due to data sparsity and measurement noise. As a recent development, the combination of RADARs and cameras is emerging as a promising solution. This paper presents Camera-RADAR 3D Detection and Tracking (CR3DT), a camera-RADAR fusion model for 3D object detection, and Multi-Object Tracking (MOT). Building upon the foundations of the State-of-the-Art (SotA) camera-only BEVDet architecture, CR3DT demonstrates substantial improvements in both detection and tracking capabilities, by incorporating the sp
-    
-[^2]: 用于图像恢复的扩散后验近似采样
-
-    Diffusion Posterior Proximal Sampling for Image Restoration
-
-    [https://arxiv.org/abs/2402.16907](https://arxiv.org/abs/2402.16907)
-
-    本文提出了一种改进的基于扩散的图像恢复范式，通过选择与测量标识一致的样本，以及从与测量信号相结合的初始化开始恢复过程，实现输出稳定性和增强。
+    本文重新探讨了密集连接卷积网络（DenseNets），揭示了其相对于ResNet风格架构的被低估有效性，通过改进架构、块设计和训练方法，使得DenseNets可以与现代架构竞争，并在ImageNet-1K上接近最新技术水平。
 
     
 
-    扩散模型在生成高质量样本方面表现出卓越的功效。现有基于扩散的图像恢复算法利用预先训练的扩散模型来利用数据先验，但仍保留了继承自无条件生成范式的元素。本文介绍了一种改进的基于扩散的图像恢复范式。具体来说，我们选择在每个生成步骤中与测量标识一致的样本，利用采样选择作为输出稳定性和增强的途径。此外，我们从一个与测量信号相结合的初始化开始恢复过程，提供了附加信息以更好地对齐生成过程。
+    本文复苏了密集连接卷积网络（DenseNets），揭示了它们相对于主导的ResNet风格架构被低估的有效性。我们认为DenseNets的潜力被忽视，是因为未曾触及的训练方法和传统设计元素未能完全展现其能力。我们的初步研究表明，通过连接的密集连接是强大的，表明DenseNets可以被重新激活以与现代架构竞争。我们系统地改进了次优组件 - 架构调整、块重新设计和改进的训练配方，以扩展DenseNets并提高内存效率，同时保持连接快捷方式。我们的模型采用简单的架构元素，最终超越了Swin Transformer、ConvNeXt和DeiT-III - 残差学习谱系中的关键架构。此外，我们的模型在ImageNet-1K上展现出接近最新技术水平的性能，竞争wi
 
-    arXiv:2402.16907v1 Announce Type: cross  Abstract: Diffusion models have demonstrated remarkable efficacy in generating high-quality samples. Existing diffusion-based image restoration algorithms exploit pre-trained diffusion models to leverage data priors, yet they still preserve elements inherited from the unconditional generation paradigm. These strategies initiate the denoising process with pure white noise and incorporate random noise at each generative step, leading to over-smoothed results. In this paper, we introduce a refined paradigm for diffusion-based image restoration. Specifically, we opt for a sample consistent with the measurement identity at each generative step, exploiting the sampling selection as an avenue for output stability and enhancement. Besides, we start the restoration process with an initialization combined with the measurement signal, providing supplementary information to better align the generative process. Extensive experimental results and analyses val
+    arXiv:2403.19588v1 Announce Type: cross  Abstract: This paper revives Densely Connected Convolutional Networks (DenseNets) and reveals the underrated effectiveness over predominant ResNet-style architectures. We believe DenseNets' potential was overlooked due to untouched training methods and traditional design elements not fully revealing their capabilities. Our pilot study shows dense connections through concatenation are strong, demonstrating that DenseNets can be revitalized to compete with modern architectures. We methodically refine suboptimal components - architectural adjustments, block redesign, and improved training recipes towards widening DenseNets and boosting memory efficiency while keeping concatenation shortcuts. Our models, employing simple architectural elements, ultimately surpass Swin Transformer, ConvNeXt, and DeiT-III - key architectures in the residual learning lineage. Furthermore, our models exhibit near state-of-the-art performance on ImageNet-1K, competing wi
     
-[^3]: GAOKAO-MM: 一个用于多模态模型评估的中国人类水平基准
+[^2]: 轨迹正则化增强自监督几何表示
 
-    GAOKAO-MM: A Chinese Human-Level Benchmark for Multimodal Models Evaluation
+    Trajectory Regularization Enhances Self-Supervised Geometric Representation
 
-    [https://arxiv.org/abs/2402.15745](https://arxiv.org/abs/2402.15745)
+    [https://arxiv.org/abs/2403.14973](https://arxiv.org/abs/2403.14973)
 
-    GAOKAO-MM 是基于中国高考的多模态基准，为模型的能力设定人类水平要求，评估结果显示目前的LVLMs的准确率普遍不足50%。
-
-    
-
-    大型视觉语言模型（LVLMs）已经在图像感知和语言理解方面展示出了极大的能力。然而，现有的多模态基准主要关注基本的感知能力和常识知识，这些无法充分反映出LVLMs的全面能力。我们提出了GAOKAO-MM，一个基于中国高考的多模态基准，包括8个科目和12种类型的图片，如图表、函数图、地图和照片。GAOKAO-MM来源于中国本土背景，并为模型的能力设定了人类水平的要求，包括感知、理解、知识和推理。我们评估了10个LVLMs，发现它们的准确率都低于50%，其中GPT-4-Vision（48.1%）、Qwen-VL-Plus（41.2%）和Gemini-Pro-Vision（35.1%）位列前三名。我们的多维分析结果表明，LVLMs具有适度的
-
-    arXiv:2402.15745v1 Announce Type: cross  Abstract: The Large Vision-Language Models (LVLMs) have demonstrated great abilities in image perception and language understanding. However, existing multimodal benchmarks focus on primary perception abilities and commonsense knowledge which are insufficient to reflect the comprehensive capabilities of LVLMs. We propose GAOKAO-MM, a multimodal benchmark based on the Chinese College Entrance Examination (GAOKAO), comprising of 8 subjects and 12 types of images, such as diagrams, function graphs, maps and photos. GAOKAO-MM derives from native Chinese context and sets human-level requirements for the model's abilities, including perception, understanding, knowledge and reasoning. We evaluate 10 LVLMs and find that the accuracies of all of them are lower than 50%, with GPT-4-Vison (48.1%), Qwen-VL-Plus (41.2%) and Gemini-Pro-Vision (35.1%) ranking in the top three positions. The results of our multi-dimension analysis indicate that LVLMs have moder
-    
-[^4]: 可解释的量子点器件测量分类技术
-
-    Explainable Classification Techniques for Quantum Dot Device Measurements
-
-    [https://arxiv.org/abs/2402.13699](https://arxiv.org/abs/2402.13699)
-
-    提出了一种基于合成数据的的可解释特征技术，利用可解释性提升机（EBMs）实现了在量子点调谐中较高的可解释性和准确性。
+    引入新的pose-estimation基准用于评估SSL几何表示，提出无监督轨迹正则化损失来增强SSL几何表示，在姿势估计性能上取得10-20%的提升，并提高了4%的性能和泛化能力。
 
     
 
-    在物理科学中，对图像数据的稳健特征表示需求增加：图像采集，在广义上指二维数据，现在在许多领域广泛应用，包括我们在此考虑的量子信息科学。虽然在这些情况下广泛使用传统图像特征，但它们的使用正在迅速被神经网络技术所取代，后者往往以牺牲可解释性为代价换取高准确性。为了弥合这种权衡，我们提出了一种基于合成数据的技术，可以产生可解释的特征。我们利用可解释性提升机（EBMs）展示，这种方法提供了卓越的可解释性，并且不会降低准确性。具体而言，我们展示了在量子点调谐的背景下，这种技术带来了实质性的益处，当前发展阶段需要人类干预。
+    自监督学习（SSL）已被证明能够有效地学习高质量的表示，用于各种下游任务，主要关注语义任务。然而，在几何任务中的应用仍未得到充分探索，部分原因是缺乏用于评估几何表示的标准化评估方法。为了填补这一空白，我们引入了一个新的姿势估计基准，用于评估SSL几何表示，该基准要求在没有语义或姿势标签的情况下进行训练，并在语义和几何下游任务中表现出熟练度。在这个基准上，我们研究了如何增强SSL几何表示而不牺牲语义分类准确性。我们发现利用中间层表示可以将姿势估计性能提高10-20％。此外，我们引入了一种无监督轨迹正则化损失，该损失额外提高了4％的性能，并提高了在越界上的泛化能力。
 
-    arXiv:2402.13699v1 Announce Type: cross  Abstract: In the physical sciences, there is an increased need for robust feature representations of image data: image acquisition, in the generalized sense of two-dimensional data, is now widespread across a large number of fields, including quantum information science, which we consider here. While traditional image features are widely utilized in such cases, their use is rapidly being supplanted by Neural Network-based techniques that often sacrifice explainability in exchange for high accuracy. To ameliorate this trade-off, we propose a synthetic data-based technique that results in explainable features. We show, using Explainable Boosting Machines (EBMs), that this method offers superior explainability without sacrificing accuracy. Specifically, we show that there is a meaningful benefit to this technique in the context of quantum dot tuning, where human intervention is necessary at the current stage of development.
+    arXiv:2403.14973v1 Announce Type: cross  Abstract: Self-supervised learning (SSL) has proven effective in learning high-quality representations for various downstream tasks, with a primary focus on semantic tasks. However, its application in geometric tasks remains underexplored, partially due to the absence of a standardized evaluation method for geometric representations. To address this gap, we introduce a new pose-estimation benchmark for assessing SSL geometric representations, which demands training without semantic or pose labels and achieving proficiency in both semantic and geometric downstream tasks. On this benchmark, we study enhancing SSL geometric representations without sacrificing semantic classification accuracy. We find that leveraging mid-layer representations improves pose-estimation performance by 10-20%. Further, we introduce an unsupervised trajectory-regularization loss, which improves performance by an additional 4% and improves generalization ability on out-of
     
-[^5]: ColorSwap: 一个用于多模态评估的颜色和单词排序数据集
+[^3]: 使用元提示自动化LLMs进行零样本视觉识别
 
-    ColorSwap: A Color and Word Order Dataset for Multimodal Evaluation
+    Meta-Prompting for Automating Zero-shot Visual Recognition with LLMs
 
-    [https://arxiv.org/abs/2402.04492](https://arxiv.org/abs/2402.04492)
+    [https://arxiv.org/abs/2403.11755](https://arxiv.org/abs/2403.11755)
 
-    本文介绍了ColorSwap数据集，用于评估和改进多模态模型在匹配物体和颜色方面的能力。通过将颜色词重新排序以修改不同的对象，该数据集可以测试模型在这项任务上的鲁棒性。尽管目前的模型在这个任务上仍不够稳定，但通过更先进的提示技术可能会有所改善。
-
-    
-
-    本文介绍了ColorSwap数据集，旨在评估和改进多模态模型在匹配物体和其颜色方面的熟练程度。该数据集包含2000个独特的图像-标题对，分为1000个示例。每个示例包括一个标题-图像对，以及一个“颜色交换”对。我们遵循Winoground方案：示例中的两个标题具有相同的单词，但颜色单词被重新排列以修改不同的对象。该数据集通过自动化的标题和图像生成与人类的交互创造而成。我们评估图像-文本匹配（ITM）和视觉语言模型（VLMs）发现即使是最新的模型在这个任务上仍然不够稳健。GPT-4V和LLaVA在我们的主要VLM指标上得分分别为72%和42%，尽管它们可能通过更先进的提示技术来提升。在主要的ITM指标上，像CLIP和SigLIP这样的对比模型接近于随机猜测（分别为12%和30%），尽管非对比模型在这个任务上表现得更好。
-
-    This paper introduces the ColorSwap dataset, designed to assess and improve the proficiency of multimodal models in matching objects with their colors. The dataset is comprised of 2,000 unique image-caption pairs, grouped into 1,000 examples. Each example includes a caption-image pair, along with a ``color-swapped'' pair. We follow the Winoground schema: the two captions in an example have the same words, but the color words have been rearranged to modify different objects. The dataset was created through a novel blend of automated caption and image generation with humans in the loop. We evaluate image-text matching (ITM) and visual language models (VLMs) and find that even the latest ones are still not robust at this task. GPT-4V and LLaVA score 72% and 42% on our main VLM metric, although they may improve with more advanced prompting techniques. On the main ITM metric, contrastive models such as CLIP and SigLIP perform close to chance (at 12% and 30%, respectively), although the non-
-    
-[^6]: 航班滑行安全的跑道物体分类器的鲁棒性评估
-
-    Robustness Assessment of a Runway Object Classifier for Safe Aircraft Taxiing
-
-    [https://arxiv.org/abs/2402.00035](https://arxiv.org/abs/2402.00035)
-
-    本文介绍了对航班滑行安全的跑道物体分类器的鲁棒性评估，使用形式方法评估了该分类器对三种常见图像扰动类型的鲁棒性，并提出了一种利用单调性的方法。
+    提出了Meta-Prompting for Visual Recognition (MPVR)方法，通过仅需少量信息即可自动化零样本识别中的提示生成过程。
 
     
 
-    随着深度神经网络(DNNs)在许多计算问题上成为主要解决方案，航空业希望探索它们在减轻飞行员负担和改善运营安全方面的潜力。然而，在这类安全关键应用中使用DNNs需要进行彻底的认证过程。这一需求可以通过形式验证来解决，形式验证提供了严格的保证，例如证明某些误判的不存在。在本文中，我们使用Airbus当前正在开发的图像分类器DNN作为案例研究，旨在在飞机滑行阶段使用。我们使用形式方法来评估这个DNN对三种常见图像扰动类型的鲁棒性：噪声、亮度和对比度，以及它们的部分组合。这个过程涉及多次调用底层验证器，这可能在计算上是昂贵的；因此，我们提出了一种利用单调性的方法。
+    大型语言模型（LLM）生成的类别特定提示的提示集成已经被证明是增强视觉语言模型（VLMs）零样本识别能力的有效方法。为了获得这些类别特定提示，现有方法依赖于手工为LLMs设计提示，以生成下游任务的VLM提示。然而，这需要手动编写这些任务特定提示，而且它们可能无法涵盖与感兴趣类别相关的各种视觉概念和任务特定风格。为了有效地将人类排除在循环之外，并完全自动化零样本识别的提示生成过程，我们提出了用于视觉识别的元提示（MPVR）。仅以目标任务的少量自然语言描述形式以及一系列相关类别标签作为输入，MPVR自动产生一个多样化的类别提示集。
 
-    As deep neural networks (DNNs) are becoming the prominent solution for many computational problems, the aviation industry seeks to explore their potential in alleviating pilot workload and in improving operational safety. However, the use of DNNs in this type of safety-critical applications requires a thorough certification process. This need can be addressed through formal verification, which provides rigorous assurances -- e.g.,~by proving the absence of certain mispredictions. In this case-study paper, we demonstrate this process using an image-classifier DNN currently under development at Airbus and intended for use during the aircraft taxiing phase. We use formal methods to assess this DNN's robustness to three common image perturbation types: noise, brightness and contrast, and some of their combinations. This process entails multiple invocations of the underlying verifier, which might be computationally expensive; and we therefore propose a method that leverages the monotonicity
+    arXiv:2403.11755v1 Announce Type: cross  Abstract: Prompt ensembling of Large Language Model (LLM) generated category-specific prompts has emerged as an effective method to enhance zero-shot recognition ability of Vision-Language Models (VLMs). To obtain these category-specific prompts, the present methods rely on hand-crafting the prompts to the LLMs for generating VLM prompts for the downstream tasks. However, this requires manually composing these task-specific prompts and still, they might not cover the diverse set of visual concepts and task-specific styles associated with the categories of interest. To effectively take humans out of the loop and completely automate the prompt generation process for zero-shot recognition, we propose Meta-Prompting for Visual Recognition (MPVR). Taking as input only minimal information about the target task, in the form of its short natural language description, and a list of associated class labels, MPVR automatically produces a diverse set of cat
     
-[^7]: 基于深度学习的智能手机显微镜图像中贾第虫和隐孢子的检测与计数
+[^4]: Curriculum Learning用于从头开始的深度学习折射光学
 
-    Deep-learning assisted detection and quantification of (oo)cysts of Giardia and Cryptosporidium on smartphone microscopy images. (arXiv:2304.05339v1 [eess.IV])
+    Curriculum Learning for ab initio Deep Learned Refractive Optics
 
-    [http://arxiv.org/abs/2304.05339](http://arxiv.org/abs/2304.05339)
+    [https://arxiv.org/abs/2302.01089](https://arxiv.org/abs/2302.01089)
 
-    本研究采用基于深度学习的RetinaNet模型针对采用智能手机显微系统检测贾第虫和隐孢子进行检测和计数，并在速度和准确度方面表现出最佳效果，为在资源有限的环境下解决这一问题提供了潜在解决方案。
+    通过Curriculum Learning，提出了一种DeepLens设计方法，能够从随机初始化表面从头开始学习复合透镜的光学设计，克服了对良好初始设计的需求，并实现了自动设计经典成像透镜和大视场延伸景深计算透镜。
 
     
 
-    食用受微生物污染的食物和水每年造成数百万人死亡。基于智能手机的显微系统是一种便携、低成本和比传统的亮场显微镜更易接近的方法用于检测贾第虫和隐孢子。然而，智能手机显微镜的图像有很多噪声，需要培训有素的技术人员进行手动囊泡识别，而这通常在资源有限的环境中是不可用的。采用基于深度学习的对象检测自动检测卵/梭状体可能为此限制提供解决方案。我们评估了三种最先进的物体检测器在自定义数据集上检测贾第虫和隐孢子的效果，数据集包括从蔬菜样品中获取的智能手机和亮场显微镜图像。Faster RCNN、RetinaNet和You Only Look Once（YOLOv8s）深度学习模型被用来探索它们的有效性和限制。我们的结果表明，虽然深度学习模型能够准确地检测卵/梭状体，但RetinaNet在速度和准确度方面优于其他两种模型。本研究提供了一种潜在的解决方案，利用基于智能手机的显微系统在资源有限的环境中自动检测和计数贾第虫和隐孢子。
+    深度光学优化最近被提出作为使用输出图像作为目标的计算成像系统设计的新范式。然而，它目前被限制于单个元素（如衍射光学元件（DOE）或金属透镜）构成的简单光学系统，或者从良好的初始设计微调复合透镜。在这里，我们提出了一种基于Curriculum Learning的DeepLens设计方法，能够从随机初始化表面从头开始学习复合透镜的光学设计，而无需人为干预，因此克服了对良好初始设计的需求。我们通过完全自动设计经典成像透镜和一个类似手机风格的大视场延伸景深计算透镜，验证了我们方法的有效性，具有高度非球面曲面和短后焦距。
 
-    The consumption of microbial-contaminated food and water is responsible for the deaths of millions of people annually. Smartphone-based microscopy systems are portable, low-cost, and more accessible alternatives for the detection of Giardia and Cryptosporidium than traditional brightfield microscopes. However, the images from smartphone microscopes are noisier and require manual cyst identification by trained technicians, usually unavailable in resource-limited settings. Automatic detection of (oo)cysts using deep-learning-based object detection could offer a solution for this limitation. We evaluate the performance of three state-of-the-art object detectors to detect (oo)cysts of Giardia and Cryptosporidium on a custom dataset that includes both smartphone and brightfield microscopic images from vegetable samples. Faster RCNN, RetinaNet, and you only look once (YOLOv8s) deep-learning models were employed to explore their efficacy and limitations. Our results show that while the deep-l
+    arXiv:2302.01089v3 Announce Type: replace-cross  Abstract: Deep optical optimization has recently emerged as a new paradigm for designing computational imaging systems using only the output image as the objective. However, it has been limited to either simple optical systems consisting of a single element such as a diffractive optical element (DOE) or metalens, or the fine-tuning of compound lenses from good initial designs. Here we present a DeepLens design method based on curriculum learning, which is able to learn optical designs of compound lenses ab initio from randomly initialized surfaces without human intervention, therefore overcoming the need for a good initial design. We demonstrate the effectiveness of our approach by fully automatically designing both classical imaging lenses and a large field-of-view extended depth-of-field computational lens in a cellphone-style form factor, with highly aspheric surfaces and a short back focal length.
+    
+[^5]: 一种用于异常检测的综合增强框架
+
+    A Comprehensive Augmentation Framework for Anomaly Detection. (arXiv:2308.15068v1 [cs.AI])
+
+    [http://arxiv.org/abs/2308.15068](http://arxiv.org/abs/2308.15068)
+
+    本文提出了一种用于异常检测的综合增强框架，该框架通过选择性地利用适当的组合，分析并压缩模拟异常的关键特征，与基于重构的方法相结合，并采用分割训练策略，能够在MVTec异常检测数据集上优于以前的最先进方法。
+
+    
+
+    数据增强方法通常被整合到异常检测模型的训练中。以往的方法主要集中在复制真实世界的异常或增加多样性，而没有考虑到异常的标准在不同类别之间存在差异，这可能导致训练分布的偏差。本文分析了对重构网络训练有贡献的模拟异常的关键特征，并将其压缩成几种方法，从而通过选择性地使用适当的组合来创建一个综合框架。此外，将这个框架与基于重构的方法相结合，并同时提出了一种分割训练策略，既减轻过拟合问题，又避免对重构过程引入干扰。在MVTec异常检测数据集上进行的评估表明，我们的方法在性能上优于以前的最先进方法，特别是在目标相关指标方面。
+
+    Data augmentation methods are commonly integrated into the training of anomaly detection models. Previous approaches have primarily focused on replicating real-world anomalies or enhancing diversity, without considering that the standard of anomaly varies across different classes, potentially leading to a biased training distribution.This paper analyzes crucial traits of simulated anomalies that contribute to the training of reconstructive networks and condenses them into several methods, thus creating a comprehensive framework by selectively utilizing appropriate combinations.Furthermore, we integrate this framework with a reconstruction-based approach and concurrently propose a split training strategy that alleviates the issue of overfitting while avoiding introducing interference to the reconstruction process. The evaluations conducted on the MVTec anomaly detection dataset demonstrate that our method outperforms the previous state-of-the-art approach, particularly in terms of objec
+    
+[^6]: 剪枝与低秩参数高效微调相遇
+
+    Pruning Meets Low-Rank Parameter-Efficient Fine-Tuning. (arXiv:2305.18403v1 [cs.LG])
+
+    [http://arxiv.org/abs/2305.18403](http://arxiv.org/abs/2305.18403)
+
+    本论文提出了一种名为LoRAPrune的框架，可以高效微调和部署大型预训练模型，通过利用低秩自适应的值和梯度来设计PEFT感知的剪枝准则，并提出了一个迭代剪枝过程来去除冗余参数，实验结果表明与最先进的方法相比，可以显著降低模型大小和推理时间，同时保持竞争性的准确性。
+
+    
+
+    大型预训练模型（LPM）在各种任务中表现出卓越的性能。虽然出现了参数高效微调（PEFT）来便宜地微调这些大型模型用于下游任务，但它们的部署仍然受到巨大的模型规模和计算成本的制约。神经网络剪枝通过删除冗余参数来提供模型压缩的解决方案，但大多数现有方法依赖于计算参数梯度。然而，对于LPM而言，获得梯度是计算上禁止的，这需要探索替代方法。为此，我们提出了一种用于LPM高效微调和部署的统一框架，称为LoRAPrune。我们首先设计了一个PEFT感知的剪枝准则，该准则利用了低秩自适应（LoRA）的值和梯度，而不是预训练参数的梯度进行重要性评估。然后，我们提出了一个迭代剪枝过程来基于剪枝准则去除冗余参数。各种基准数据集上的实验结果表明，与最先进的方法相比，我们的框架可以显著降低模型大小和推理时间，同时保持竞争性的准确性。
+
+    Large pre-trained models (LPMs), such as LLaMA and ViT-G, have shown exceptional performance across various tasks. Although parameter-efficient fine-tuning (PEFT) has emerged to cheaply fine-tune these large models on downstream tasks, their deployment is still hindered by the vast model scale and computational costs. Neural network pruning offers a solution for model compression by removing redundant parameters, but most existing methods rely on computing parameter gradients. However, obtaining the gradients is computationally prohibitive for LPMs, which necessitates the exploration of alternative approaches. To this end, we propose a unified framework for efficient fine-tuning and deployment of LPMs, termed LoRAPrune. We first design a PEFT-aware pruning criterion, which utilizes the values and gradients of Low-Rank Adaption (LoRA), rather than the gradients of pre-trained parameters for importance estimation. We then propose an iterative pruning procedure to remove redundant paramet
+    
+[^7]: 从大型矿石中提炼黄金: 基于关键样本选择的高效数据集蒸馏
+
+    Distill Gold from Massive Ores: Efficient Dataset Distillation via Critical Samples Selection. (arXiv:2305.18381v1 [cs.LG])
+
+    [http://arxiv.org/abs/2305.18381](http://arxiv.org/abs/2305.18381)
+
+    研究提出了一种基于选择最有价值的样本的方法，以扩展现有的蒸馏算法，从而更好地利用训练样本，显著降低训练成本，拓展对更大更多元化数据集的数据集蒸馏，并持续提高性能。
+
+    
+
+    数据效率学习近年来备受关注，特别是对于拥有大量多模型的现在，数据集蒸馏可以成为有效的解决方案。然而，数据集蒸馏过程本身仍然非常低效。在本文中，我们首先引用信息理论来建模蒸馏问题，观察到数据集蒸馏中存在严重的数据冗余，我们提出了一种方法来扩展现有的蒸馏算法，以便通过选择最有价值的样本来更好地利用这些训练样本。我们进一步对样本选择进行全面分析，并验证了其优化过程。这种新策略能够显著减少训练成本，扩大现有算法范围以对更庞大和多元化的数据集进行数据集蒸馏，例如，在某些情况下，只需要0.04％的训练数据就足以保持可比的蒸馏效果。此外，我们的策略能够持续提高性能，其贡献可能为蒸馏过程的动力学开辟新的分析方法。
+
+    Data-efficient learning has drawn significant attention, especially given the current trend of large multi-modal models, where dataset distillation can be an effective solution. However, the dataset distillation process itself is still very inefficient. In this work, we model the distillation problem with reference to information theory. Observing that severe data redundancy exists in dataset distillation, we argue to put more emphasis on the utility of the training samples. We propose a family of methods to exploit the most valuable samples, which is validated by our comprehensive analysis of the optimal data selection. The new strategy significantly reduces the training cost and extends a variety of existing distillation algorithms to larger and more diversified datasets, e.g. in some cases only 0.04% training data is sufficient for comparable distillation performance. Moreover, our strategy consistently enhances the performance, which may open up new analyses on the dynamics of dist
+    
+[^8]: 柿子政治的面孔：使用机器学习比较政治领袖面部情感表达的差异
+
+    The Face of Populism: Examining Differences in Facial Emotional Expressions of Political Leaders Using Machine Learning. (arXiv:2304.09914v1 [cs.CY])
+
+    [http://arxiv.org/abs/2304.09914](http://arxiv.org/abs/2304.09914)
+
+    本文使用机器学习的算法分析了来自15个不同国家的220个政治领袖的YouTube视频，总结了政治领袖面部情感表达的差异。
+
+    
+
+    网络媒体已经彻底改变了政治信息在全球范围内的传播和消费方式，这种转变促使政治人物采取新的策略来捕捉和保持选民的注意力。这些策略往往依赖于情感说服和吸引。随着虚拟空间中视觉内容越来越普遍，很多政治沟通也被标志着唤起情感的视频内容和图像。本文提供了一种新的分析方法。我们将基于现有训练好的卷积神经网络架构提供的Python库fer，应用一种基于深度学习的计算机视觉算法，对描绘来自15个不同国家的政治领袖的220个YouTube视频样本进行分析。该算法返回情绪分数，每一帧都代表6种情绪状态（愤怒，厌恶，恐惧，快乐，悲伤和惊讶）和一个中性表情。
+
+    Online media has revolutionized the way political information is disseminated and consumed on a global scale, and this shift has compelled political figures to adopt new strategies of capturing and retaining voter attention. These strategies often rely on emotional persuasion and appeal, and as visual content becomes increasingly prevalent in virtual space, much of political communication too has come to be marked by evocative video content and imagery. The present paper offers a novel approach to analyzing material of this kind. We apply a deep-learning-based computer-vision algorithm to a sample of 220 YouTube videos depicting political leaders from 15 different countries, which is based on an existing trained convolutional neural network architecture provided by the Python library fer. The algorithm returns emotion scores representing the relative presence of 6 emotional states (anger, disgust, fear, happiness, sadness, and surprise) and a neutral expression for each frame of the pr
+    
+[^9]: ASR: 像注意力一样的结构再参数化
+
+    ASR: Attention-alike Structural Re-parameterization. (arXiv:2304.06345v1 [cs.CV])
+
+    [http://arxiv.org/abs/2304.06345](http://arxiv.org/abs/2304.06345)
+
+    该论文提出的ASR技术是一种新颖的深度学习技术，通过等效参数转换实现不同网络体系结构之间的互转。和现有的SRP方法相比，ASR可以成功考虑自注意模块，实现推理期间的性能提升，并在工业和实际应用中具有巨大潜力。
+
+    
+
+    结构再参数化（SRP）技术是一种新颖的深度学习技术，通过等效参数转换实现不同网络体系结构之间的互转。该技术使得在推理过程中通过这些转换减少性能提升的新增代价，例如参数大小和推理时间，因此SRP在工业和实际应用中具有巨大潜力。现有的SRP方法已成功考虑了许多常用的架构，例如归一化、池化方法、多分支卷积等。然而，广泛使用的自注意模块由于在推理期间通常以乘法方式作用于骨干网络并且模块的输出在推理时依赖于输入，所以无法直接实现SRP，而这限制了SRP的应用场景。在本文中，我们从统计角度进行了广泛的实验，并发现...
+
+    The structural re-parameterization (SRP) technique is a novel deep learning technique that achieves interconversion between different network architectures through equivalent parameter transformations. This technique enables the mitigation of the extra costs for performance improvement during training, such as parameter size and inference time, through these transformations during inference, and therefore SRP has great potential for industrial and practical applications. The existing SRP methods have successfully considered many commonly used architectures, such as normalizations, pooling methods, multi-branch convolution. However, the widely used self-attention modules cannot be directly implemented by SRP due to these modules usually act on the backbone network in a multiplicative manner and the modules' output is input-dependent during inference, which limits the application scenarios of SRP. In this paper, we conduct extensive experiments from a statistical perspective and discover
+    
+[^10]: 生成对抗网络的指纹识别技术
+
+    Fingerprinting Generative Adversarial Networks. (arXiv:2106.11760v3 [cs.CR] UPDATED)
+
+    [http://arxiv.org/abs/2106.11760](http://arxiv.org/abs/2106.11760)
+
+    本文提出了一种保护GAN知识产权的指纹识别方案，通过生成指纹样本并嵌入到分类器中进行版权验证，解决了前一种对分类模型的指纹识别方法在简单转移至GAN时遇到的隐蔽性和鲁棒性瓶颈，具有实际保护现代GAN模型的可行性。
+
+    
+
+    生成对抗网络（GANs）已经广泛应用于各种应用场景。由于商业GAN的生产需要大量的计算和人力资源，因此迫切需要版权保护。本文提出了一种用于保护GAN知识产权的指纹识别方案。我们突破了前一种对分类模型的指纹识别方法在简单转移至GAN时所遇到的隐蔽性和鲁棒性瓶颈。具体来说，我们创造性地从目标GAN和分类器构建一个复合深度学习模型。然后，我们从这个复合模型中产生指纹样本，并将其嵌入到分类器中，以进行有效的版权验证。这种方案启发了一些具体的方法，以实际保护现代GAN模型。理论分析证明了这些方法可以满足知识产权保护所需要的不同安全要求。我们还进行了实验来证明该方案的功效。
+
+    Generative Adversarial Networks (GANs) have been widely used in various application scenarios. Since the production of a commercial GAN requires substantial computational and human resources, the copyright protection of GANs is urgently needed. In this paper, we present the first fingerprinting scheme for the Intellectual Property (IP) protection of GANs. We break through the stealthiness and robustness bottlenecks suffered by previous fingerprinting methods for classification models being naively transferred to GANs. Specifically, we innovatively construct a composite deep learning model from the target GAN and a classifier. Then we generate fingerprint samples from this composite model, and embed them in the classifier for effective ownership verification. This scheme inspires some concrete methodologies to practically protect the modern GAN models. Theoretical analysis proves that these methods can satisfy different security requirements necessary for IP protection. We also conduct 
     
 

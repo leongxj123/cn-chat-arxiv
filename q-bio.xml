@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv q-bio</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for q-bio</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv q-bio</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for q-bio</description><item><title>&#25552;&#20986;&#20102;CardioGenAI&#65292;&#19968;&#20010;&#22522;&#20110;&#26426;&#22120;&#23398;&#20064;&#30340;&#26694;&#26550;&#65292;&#29992;&#20110;&#20943;&#23569;&#33647;&#29289;&#30340;hERG&#27963;&#24615;&#24182;&#20445;&#30041;&#33647;&#29702;&#27963;&#24615;&#12290;</title><link>https://arxiv.org/abs/2403.07632</link><description>&lt;p&gt;
+CardioGenAI&#65306;&#22522;&#20110;&#26426;&#22120;&#23398;&#20064;&#30340;&#26694;&#26550;&#29992;&#20110;&#20943;&#23569;hERG&#27602;&#24615;&#30340;&#33647;&#29289;&#20877;&#35774;&#35745;
+&lt;/p&gt;
+&lt;p&gt;
+CardioGenAI: A Machine Learning-Based Framework for Re-Engineering Drugs for Reduced hERG Liability
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.07632
+&lt;/p&gt;
+&lt;p&gt;
+&#25552;&#20986;&#20102;CardioGenAI&#65292;&#19968;&#20010;&#22522;&#20110;&#26426;&#22120;&#23398;&#20064;&#30340;&#26694;&#26550;&#65292;&#29992;&#20110;&#20943;&#23569;&#33647;&#29289;&#30340;hERG&#27963;&#24615;&#24182;&#20445;&#30041;&#33647;&#29702;&#27963;&#24615;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#33647;&#29289;&#35825;&#23548;&#30340;&#24515;&#33039;&#27602;&#24615;&#26159;&#19968;&#20010;&#37325;&#35201;&#30340;&#20581;&#24247;&#38382;&#39064;&#65292;&#21487;&#33021;&#23548;&#33268;&#20005;&#37325;&#19981;&#33391;&#21453;&#24212;&#65292;&#21253;&#25324;&#36890;&#36807;&#38459;&#28382;&#30005;&#21387;&#38376;&#25511;&#30340;hERG&#38078;&#31163;&#23376;&#36890;&#36947;&#23548;&#33268;&#29983;&#21629;&#23041;&#32961;&#30340;&#24515;&#24459;&#22833;&#24120;&#12290;&#22240;&#27492;&#65292;&#24320;&#21457;&#26089;&#26399;&#38454;&#27573;&#37492;&#23450;hERG&#27963;&#24615;&#21270;&#21512;&#29289;&#30340;&#20808;&#36827;&#26041;&#27861;&#65292;&#20197;&#21450;&#20248;&#21270;&#21830;&#19994;&#21270;&#33647;&#29289;&#20197;&#20943;&#23569;hERG&#27963;&#24615;&#38750;&#24120;&#37325;&#35201;&#12290;&#22312;&#36825;&#39033;&#24037;&#20316;&#20013;&#65292;&#25105;&#20204;&#25552;&#20986;&#20102;CardioGenAI&#65292;&#36825;&#26159;&#19968;&#20010;&#22522;&#20110;&#26426;&#22120;&#23398;&#20064;&#30340;&#26694;&#26550;&#65292;&#29992;&#20110;&#20877;&#35774;&#35745;&#24320;&#21457;&#20013;&#21644;&#24050;&#19978;&#24066;&#33647;&#29289;&#65292;&#20197;&#20943;&#23569;hERG&#27963;&#24615;&#21516;&#26102;&#20445;&#30041;&#20854;&#33647;&#29702;&#27963;&#24615;&#12290;&#35813;&#26694;&#26550;&#32467;&#21512;&#20102;&#29992;&#20110;&#39044;&#27979;hERG&#36890;&#36947;&#27963;&#24615;&#30340;&#26368;&#26032;&#21028;&#21035;&#27169;&#22411;&#65292;&#20197;&#21450;&#38048;&#31163;&#23376;&#36890;&#36947;NaV1.5&#21644;&#38041;&#31163;&#23376;&#36890;&#36947;CaV1.2&#27963;&#24615;&#65292;&#22240;&#20026;&#23427;&#20204;&#22312;&#35843;&#33410;&#30001;hERG&#36890;&#36947;&#38459;&#28382;&#24341;&#36215;&#30340;&#24515;&#24459;&#22833;&#24120;&#28508;&#22312;&#24433;&#21709;&#20013;&#20855;&#26377;&#28508;&#22312;&#24847;&#20041;&#12290;&#36825;&#20123;&#27169;&#22411;&#36824;&#21487;&#20197;se
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.07632v1 Announce Type: new  Abstract: Drug-induced cardiotoxicity is a major health concern which can lead to serious adverse effects including life-threatening cardiac arrhythmias via the blockade of the voltage-gated hERG potassium ion channel. It is therefore of tremendous interest to develop advanced methods to identify hERG-active compounds in early stages of drug development, as well as to optimize commercially available drugs for reduced hERG activity. In this work, we present CardioGenAI, a machine learning-based framework for re-engineering both developmental and marketed drugs for reduced hERG activity while preserving their pharmacological activity. The framework incorporates novel state-of-the-art discriminative models for predicting hERG channel activity, as well as activity against the voltage-gated NaV1.5 and CaV1.2 channels due to their potential implications in modulating the arrhythmogenic potential induced by hERG channel blockade. These models can also se
+&lt;/p&gt;</description></item></channel></rss>

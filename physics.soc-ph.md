@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Visibility graph analysis of the grains and oilseeds indices.](http://arxiv.org/abs/2304.05760) | 本研究对粮油指数及其五个子指数进行了可见性图分析，六个可见性图都表现出幂律分布的度分布和小世界特征。玉米和大豆指数的可见性图表现出较弱的同配混合模式。 |
+| [^1] | [The Face of Populism: Examining Differences in Facial Emotional Expressions of Political Leaders Using Machine Learning.](http://arxiv.org/abs/2304.09914) | 本文使用机器学习的算法分析了来自15个不同国家的220个政治领袖的YouTube视频，总结了政治领袖面部情感表达的差异。 |
 
 # 详细
 
-[^1]: 粮油指数的可见性图分析
+[^1]: 柿子政治的面孔：使用机器学习比较政治领袖面部情感表达的差异
 
-    Visibility graph analysis of the grains and oilseeds indices. (arXiv:2304.05760v1 [econ.GN])
+    The Face of Populism: Examining Differences in Facial Emotional Expressions of Political Leaders Using Machine Learning. (arXiv:2304.09914v1 [cs.CY])
 
-    [http://arxiv.org/abs/2304.05760](http://arxiv.org/abs/2304.05760)
+    [http://arxiv.org/abs/2304.09914](http://arxiv.org/abs/2304.09914)
 
-    本研究对粮油指数及其五个子指数进行了可见性图分析，六个可见性图都表现出幂律分布的度分布和小世界特征。玉米和大豆指数的可见性图表现出较弱的同配混合模式。
+    本文使用机器学习的算法分析了来自15个不同国家的220个政治领袖的YouTube视频，总结了政治领袖面部情感表达的差异。
 
     
 
-    粮油指数（GOI）及其小麦、玉米、大豆、稻米和大麦等五个子指数是每日价格指数，反映了全球主要农产品现货市场价格的变化。本文对GOI及其五个子指数进行了可见性图（VG）分析。最大似然估计表明，VG的度分布都显示出幂律尾巴，除了稻米。六个VG的平均聚类系数都很大（>0.5），并与VG的平均度数展现了良好的幂律关系。对于每个VG，节点的聚类系数在大度数时与其度数成反比，在小度数时与其度数成幂律相关。所有六个VG都表现出小世界特征，但程度不同。度-度相关系数表明，玉米和大豆指数的VG表现出较弱的同配混合模式，而其他四个VG的同配混合模式较弱。
+    网络媒体已经彻底改变了政治信息在全球范围内的传播和消费方式，这种转变促使政治人物采取新的策略来捕捉和保持选民的注意力。这些策略往往依赖于情感说服和吸引。随着虚拟空间中视觉内容越来越普遍，很多政治沟通也被标志着唤起情感的视频内容和图像。本文提供了一种新的分析方法。我们将基于现有训练好的卷积神经网络架构提供的Python库fer，应用一种基于深度学习的计算机视觉算法，对描绘来自15个不同国家的政治领袖的220个YouTube视频样本进行分析。该算法返回情绪分数，每一帧都代表6种情绪状态（愤怒，厌恶，恐惧，快乐，悲伤和惊讶）和一个中性表情。
 
-    The Grains and Oilseeds Index (GOI) and its sub-indices of wheat, maize, soyabeans, rice, and barley are daily price indexes reflect the price changes of the global spot markets of staple agro-food crops. In this paper, we carry out a visibility graph (VG) analysis of the GOI and its five sub-indices. Maximum likelihood estimation shows that the degree distributions of the VGs display power-law tails, except for rice. The average clustering coefficients of the six VGs are quite large (>0.5) and exhibit a nice power-law relation with respect to the average degrees of the VGs. For each VG, the clustering coefficients of nodes are inversely proportional to their degrees for large degrees and are correlated to their degrees as a power law for small degrees. All the six VGs exhibit small-world characteristics to some extent. The degree-degree correlation coefficients shows that the VGs for maize and soyabeans indices exhibit weak assortative mixing patterns, while the other four VGs are wea
+    Online media has revolutionized the way political information is disseminated and consumed on a global scale, and this shift has compelled political figures to adopt new strategies of capturing and retaining voter attention. These strategies often rely on emotional persuasion and appeal, and as visual content becomes increasingly prevalent in virtual space, much of political communication too has come to be marked by evocative video content and imagery. The present paper offers a novel approach to analyzing material of this kind. We apply a deep-learning-based computer-vision algorithm to a sample of 220 YouTube videos depicting political leaders from 15 different countries, which is based on an existing trained convolutional neural network architecture provided by the Python library fer. The algorithm returns emotion scores representing the relative presence of 6 emotional states (anger, disgust, fear, happiness, sadness, and surprise) and a neutral expression for each frame of the pr
     
 

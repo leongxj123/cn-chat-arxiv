@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Cooperation and Control in Delegation Games](https://arxiv.org/abs/2402.15821) | 本文在委托游戏中探讨了控制问题（代理人未能按照其委托人的偏好行事）和合作问题（代理人未能良好地协作），并分析了对齐和能力对委托人福利的影响。en_tdlr: This paper explores the issues of control (agents failing to act in line with their principals' preferences) and cooperation (agents failing to work well together) in delegation games, analyzing how alignment and capabilities impact principals' welfare. |
-| [^2] | [On Connected Strongly-Proportional Cake-Cutting](https://arxiv.org/abs/2312.15326) | 该论文研究了一种公平划分可划分异质资源的问题，即蛋糕切分。该论文确定了存在一种连通的强比例切分方式，并提供了相应的算法和简单刻画。 |
+| [^1] | [Algorithmic Collective Action in Machine Learning.](http://arxiv.org/abs/2302.04262) | 本文研究了机器学习中的算法集体行动的理论模型，并在大量实验中验证了该算法可以大大提高分类准确性，特别是在数据结构复杂和集体规模大的情况下。 |
 
 # 详细
 
-[^1]: 委托游戏中的合作与控制
+[^1]: 机器学习中算法集体行动的研究
 
-    Cooperation and Control in Delegation Games
+    Algorithmic Collective Action in Machine Learning. (arXiv:2302.04262v2 [cs.LG] UPDATED)
 
-    [https://arxiv.org/abs/2402.15821](https://arxiv.org/abs/2402.15821)
+    [http://arxiv.org/abs/2302.04262](http://arxiv.org/abs/2302.04262)
 
-    本文在委托游戏中探讨了控制问题（代理人未能按照其委托人的偏好行事）和合作问题（代理人未能良好地协作），并分析了对齐和能力对委托人福利的影响。en_tdlr: This paper explores the issues of control (agents failing to act in line with their principals' preferences) and cooperation (agents failing to work well together) in delegation games, analyzing how alignment and capabilities impact principals' welfare.
-
-    
-
-    许多涉及人类和机器的感兴趣的场景 - 从虚拟个人助理到自动驾驶车辆 - 可以自然地建模为委托人（人类）委托给代理人（机器），这些代理人之后代表他们的委托人相互交互。我们将这些多委托人，多代理人的情况称为委托游戏。在这类游戏中，存在两种重要的失败模式：控制问题（代理人未能按照其委托人的偏好行事）和合作问题（代理人未能良好地协作）。在本文中，我们形式化和分析这些问题，进一步将其解释为对齐（参与者是否具有相似的偏好？）和能力（参与者在满足这些偏好方面的能力如何？）的问题。我们理论上和经验上展示了这些措施如何确定委托人的福利，如何可以使用有限的观察来估计这些措施，
-
-    arXiv:2402.15821v1 Announce Type: cross  Abstract: Many settings of interest involving humans and machines -- from virtual personal assistants to autonomous vehicles -- can naturally be modelled as principals (humans) delegating to agents (machines), which then interact with each other on their principals' behalf. We refer to these multi-principal, multi-agent scenarios as delegation games. In such games, there are two important failure modes: problems of control (where an agent fails to act in line their principal's preferences) and problems of cooperation (where the agents fail to work well together). In this paper we formalise and analyse these problems, further breaking them down into issues of alignment (do the players have similar preferences?) and capabilities (how competent are the players at satisfying those preferences?). We show -- theoretically and empirically -- how these measures determine the principals' welfare, how they can be estimated using limited observations, and 
-    
-[^2]: 关于连通且强比例切蛋糕的研究
-
-    On Connected Strongly-Proportional Cake-Cutting
-
-    [https://arxiv.org/abs/2312.15326](https://arxiv.org/abs/2312.15326)
-
-    该论文研究了一种公平划分可划分异质资源的问题，即蛋糕切分。该论文确定了存在一种连通的强比例切分方式，并提供了相应的算法和简单刻画。
+    本文研究了机器学习中的算法集体行动的理论模型，并在大量实验中验证了该算法可以大大提高分类准确性，特别是在数据结构复杂和集体规模大的情况下。
 
     
 
-    我们研究了在一组代理人中如何公平地分配可划分的异质资源，也称为蛋糕。我们确定了存在着一种分配方式，每个代理人都会收到一个价值严格超过他们比例份额的连续部分，也称为*强比例分配*。我们提出了一个算法，可以使用最多$n \cdot 2^{n-1}$个查询来确定是否存在一个连通的强比例分配。对于具有严格正估值的代理人，我们提供了一个更简单的刻画，并且证明了确定是否存在一个连通的强比例分配所需的查询数量是$\Theta(n^2)$。我们的证明是构造性的，并且当存在时，给出了一个连通的强比例分配，使用了类似数量的查询。
+    我们对在采用机器学习算法的数字平台上进行算法集体行动进行了原则性研究。我们提出了一个简单的理论模型，描述了一群人与公司的学习算法进行交互的情况。集体汇聚参与个体的数据并通过一种算法策略指导参与者修改自己的数据以实现集体目标。我们在三种基本的学习理论设置下研究了这种模型的结果：非参数最优学习算法，参数风险最小化和梯度下降优化。在每个设置中，我们提出了协调的算法策略，并根据集体规模的大小来表征自然的成功标准。为了补充我们的理论，我们对涉及数以万计自由职业平台简历的技能分类任务进行了系统实验。通过 BERT 模型的两千多次训练运行，我们证明了我们的算法集体行动可以显著提高分类准确性，比集中式学习算法和独立修改数据的非协调方法要好得多。我们的实验表明，算法集体行动的有效性至关重要的依赖于集体的规模和数据的基本结构。
 
-    arXiv:2312.15326v2 Announce Type: replace-cross Abstract: We investigate the problem of fairly dividing a divisible heterogeneous resource, also known as a cake, among a set of agents. We characterize the existence of an allocation in which every agent receives a contiguous piece worth strictly more than their proportional share, also known as a *strongly-proportional allocation*. The characterization is supplemented with an algorithm that determines the existence of a connected strongly-proportional allocation using at most $n \cdot 2^{n-1}$ queries. We provide a simpler characterization for agents with strictly positive valuations, and show that the number of queries required to determine the existence of a connected strongly-proportional allocation is in $\Theta(n^2)$. Our proofs are constructive and yield a connected strongly-proportional allocation, when it exists, using a similar number of queries.
+    We initiate a principled study of algorithmic collective action on digital platforms that deploy machine learning algorithms. We propose a simple theoretical model of a collective interacting with a firm's learning algorithm. The collective pools the data of participating individuals and executes an algorithmic strategy by instructing participants how to modify their own data to achieve a collective goal. We investigate the consequences of this model in three fundamental learning-theoretic settings: the case of a nonparametric optimal learning algorithm, a parametric risk minimizer, and gradient-based optimization. In each setting, we come up with coordinated algorithmic strategies and characterize natural success criteria as a function of the collective's size. Complementing our theory, we conduct systematic experiments on a skill classification task involving tens of thousands of resumes from a gig platform for freelancers. Through more than two thousand model training runs of a BERT
     
 

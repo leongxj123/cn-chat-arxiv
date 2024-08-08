@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [SIMGA: A Simple and Effective Heterophilous Graph Neural Network with Efficient Global Aggregation.](http://arxiv.org/abs/2305.09958) | 本文章提出了一种简单有效的异质图神经网络模型SIMGA，它通过SimRank全局聚合来解决异质性节点聚合的问题，具有接近于线性的传播效率，同时具有良好的有效性和可扩展性。 |
+| [^1] | [A ripple in time: a discontinuity in American history.](http://arxiv.org/abs/2312.01185) | 该论文通过使用向量嵌入和非线性降维方法，发现GPT-2与UMAP的结合可以提供更好的分离和聚类效果。同时，经过微调的DistilBERT模型可用于识别总统和演讲的年份。 |
+| [^2] | [The Face of Populism: Examining Differences in Facial Emotional Expressions of Political Leaders Using Machine Learning.](http://arxiv.org/abs/2304.09914) | 本文使用机器学习的算法分析了来自15个不同国家的220个政治领袖的YouTube视频，总结了政治领袖面部情感表达的差异。 |
 
 # 详细
 
-[^1]: SIMGA：一种简单有效的异质图神经网络结构与高效的全局聚合
+[^1]: 时间中的涟漪：美国历史中的不连续性
 
-    SIMGA: A Simple and Effective Heterophilous Graph Neural Network with Efficient Global Aggregation. (arXiv:2305.09958v1 [cs.LG])
+    A ripple in time: a discontinuity in American history. (arXiv:2312.01185v2 [cs.CL] UPDATED)
 
-    [http://arxiv.org/abs/2305.09958](http://arxiv.org/abs/2305.09958)
+    [http://arxiv.org/abs/2312.01185](http://arxiv.org/abs/2312.01185)
 
-    本文章提出了一种简单有效的异质图神经网络模型SIMGA，它通过SimRank全局聚合来解决异质性节点聚合的问题，具有接近于线性的传播效率，同时具有良好的有效性和可扩展性。
+    该论文通过使用向量嵌入和非线性降维方法，发现GPT-2与UMAP的结合可以提供更好的分离和聚类效果。同时，经过微调的DistilBERT模型可用于识别总统和演讲的年份。
 
     
 
-    图神经网络在图学习领域取得了巨大成功，但遇到异质性时会出现性能下降，即因为局部和统一聚合而导致的相邻节点不相似。现有的异质性图神经网络中，试图整合全局聚合的尝试通常需要迭代地维护和更新全图信息，对于一个具有 $n$ 个节点的图，这需要 $\mathcal{O}(n^2)$ 的计算效率，从而导致对大型图的扩展性较差。在本文中，我们提出了 SIMGA，一种将 SimRank 结构相似度测量作为全局聚合的 GNN 结构。 SIMGA 的设计简单，且在效率和有效性方面都有着有 promising 的结果。SIMGA 的简单性使其成为第一个可以实现接近于线性的 $n$ 传播效率的异质性 GNN 模型。我们从理论上证明了它的有效性，将 SimRank 视为 GNN 的一种新解释，并证明了汇聚节点表示的有效性。
+    在这篇论文中，我们使用来自Kaggle的国情咨文数据集对美国历史的总体时间线及咨文本身的特点和性质进行了一些令人惊讶（也有些不那么令人惊讶）的观察。我们的主要方法是使用向量嵌入，如BERT（DistilBERT）和GPT-2。虽然广泛认为BERT（及其变体）最适合NLP分类任务，但我们发现GPT-2结合UMAP等非线性降维方法可以提供更好的分离和更强的聚类效果。这使得GPT-2 + UMAP成为一个有趣的替代方案。在我们的情况下，不需要对模型进行微调，预训练的GPT-2模型就足够好用。我们还使用了经过微调的DistilBERT模型来检测哪位总统发表了哪篇演讲，并取得了非常好的结果（准确率为93\% - 95\%，具体取决于运行情况）。为了确定写作年份，我们还执行了一个类似的任务。
 
-    Graph neural networks (GNNs) realize great success in graph learning but suffer from performance loss when meeting heterophily, i.e. neighboring nodes are dissimilar, due to their local and uniform aggregation. Existing attempts in incoorporating global aggregation for heterophilous GNNs usually require iteratively maintaining and updating full-graph information, which entails $\mathcal{O}(n^2)$ computation efficiency for a graph with $n$ nodes, leading to weak scalability to large graphs. In this paper, we propose SIMGA, a GNN structure integrating SimRank structural similarity measurement as global aggregation. The design of SIMGA is simple, yet it leads to promising results in both efficiency and effectiveness. The simplicity of SIMGA makes it the first heterophilous GNN model that can achieve a propagation efficiency near-linear to $n$. We theoretically demonstrate its effectiveness by treating SimRank as a new interpretation of GNN and prove that the aggregated node representation
+    In this note we use the State of the Union Address (SOTU) dataset from Kaggle to make some surprising (and some not so surprising) observations pertaining to the general timeline of American history, and the character and nature of the addresses themselves. Our main approach is using vector embeddings, such as BERT (DistilBERT) and GPT-2.  While it is widely believed that BERT (and its variations) is most suitable for NLP classification tasks, we find out that GPT-2 in conjunction with nonlinear dimension reduction methods such as UMAP provide better separation and stronger clustering. This makes GPT-2 + UMAP an interesting alternative. In our case, no model fine-tuning is required, and the pre-trained out-of-the-box GPT-2 model is enough.  We also used a fine-tuned DistilBERT model for classification detecting which President delivered which address, with very good results (accuracy 93\% - 95\% depending on the run). An analogous task was performed to determine the year of writing, an
+    
+[^2]: 柿子政治的面孔：使用机器学习比较政治领袖面部情感表达的差异
+
+    The Face of Populism: Examining Differences in Facial Emotional Expressions of Political Leaders Using Machine Learning. (arXiv:2304.09914v1 [cs.CY])
+
+    [http://arxiv.org/abs/2304.09914](http://arxiv.org/abs/2304.09914)
+
+    本文使用机器学习的算法分析了来自15个不同国家的220个政治领袖的YouTube视频，总结了政治领袖面部情感表达的差异。
+
+    
+
+    网络媒体已经彻底改变了政治信息在全球范围内的传播和消费方式，这种转变促使政治人物采取新的策略来捕捉和保持选民的注意力。这些策略往往依赖于情感说服和吸引。随着虚拟空间中视觉内容越来越普遍，很多政治沟通也被标志着唤起情感的视频内容和图像。本文提供了一种新的分析方法。我们将基于现有训练好的卷积神经网络架构提供的Python库fer，应用一种基于深度学习的计算机视觉算法，对描绘来自15个不同国家的政治领袖的220个YouTube视频样本进行分析。该算法返回情绪分数，每一帧都代表6种情绪状态（愤怒，厌恶，恐惧，快乐，悲伤和惊讶）和一个中性表情。
+
+    Online media has revolutionized the way political information is disseminated and consumed on a global scale, and this shift has compelled political figures to adopt new strategies of capturing and retaining voter attention. These strategies often rely on emotional persuasion and appeal, and as visual content becomes increasingly prevalent in virtual space, much of political communication too has come to be marked by evocative video content and imagery. The present paper offers a novel approach to analyzing material of this kind. We apply a deep-learning-based computer-vision algorithm to a sample of 220 YouTube videos depicting political leaders from 15 different countries, which is based on an existing trained convolutional neural network architecture provided by the Python library fer. The algorithm returns emotion scores representing the relative presence of 6 emotional states (anger, disgust, fear, happiness, sadness, and surprise) and a neutral expression for each frame of the pr
     
 

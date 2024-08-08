@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Towards Enhanced Local Explainability of Random Forests: a Proximity-Based Approach.](http://arxiv.org/abs/2310.12428) | 这项研究提出了一种利用随机森林模型的特征空间中的邻近性来解释模型预测的方法，为模型预测提供了局部的解释性，与现有方法相辅相成。通过实验证明了这种方法在债券定价模型中的有效性。 |
+| [^1] | [Nonparametric Linear Feature Learning in Regression Through Regularisation.](http://arxiv.org/abs/2307.12754) | 本研究提出了一种新的非参数线性特征学习方法，对于监督学习中存在于低维线性子空间中的相关信息的预测和解释能力的提升是非常有帮助的。 |
 
 # 详细
 
-[^1]: 实现随机森林的局部可解释性增强：基于邻近性的方法
+[^1]: 非参数线性特征学习在回归中的应用通过正则化
 
-    Towards Enhanced Local Explainability of Random Forests: a Proximity-Based Approach. (arXiv:2310.12428v1 [stat.ML])
+    Nonparametric Linear Feature Learning in Regression Through Regularisation. (arXiv:2307.12754v2 [stat.ME] UPDATED)
 
-    [http://arxiv.org/abs/2310.12428](http://arxiv.org/abs/2310.12428)
+    [http://arxiv.org/abs/2307.12754](http://arxiv.org/abs/2307.12754)
 
-    这项研究提出了一种利用随机森林模型的特征空间中的邻近性来解释模型预测的方法，为模型预测提供了局部的解释性，与现有方法相辅相成。通过实验证明了这种方法在债券定价模型中的有效性。
+    本研究提出了一种新的非参数线性特征学习方法，对于监督学习中存在于低维线性子空间中的相关信息的预测和解释能力的提升是非常有帮助的。
 
     
 
-    我们提出一种新的方法来解释随机森林（RF）模型的样本外性能，利用了任何RF都可以被表述为自适应加权K最近邻（KNN）模型的事实。具体而言，我们利用RF在特征空间中学到的点之间的邻近性，将随机森林的预测重写为训练数据点目标标签的加权平均值。这种线性性质有助于在训练集观测中为任何模型预测生成属性，从而为RF预测提供了局部的解释性，补充了SHAP等已有方法，这些方法则为特征空间维度上的模型预测生成属性。我们在训练于美国公司债券交易数据的债券定价模型中演示了这种方法，并将其与各种现有的模型解释方法进行了比较。
+    表征学习在自动化特征选择中发挥着关键作用，特别是在高维数据的背景下，非参数方法常常很难应对。在本研究中，我们专注于监督学习场景，其中相关信息存在于数据的低维线性子空间中，即多指数模型。如果已知该子空间，将大大增强预测、计算和解释能力。为了解决这一挑战，我们提出了一种新颖的非参数预测的线性特征学习方法，同时估计预测函数和线性子空间。我们的方法采用经验风险最小化，并加上函数导数的惩罚项，以保证其多样性。通过利用Hermite多项式的正交性和旋转不变性特性，我们引入了我们的估计器RegFeaL。通过利用替代最小化，我们迭代地旋转数据以改善与线性子空间的对齐。
 
-    We initiate a novel approach to explain the out of sample performance of random forest (RF) models by exploiting the fact that any RF can be formulated as an adaptive weighted K nearest-neighbors model. Specifically, we use the proximity between points in the feature space learned by the RF to re-write random forest predictions exactly as a weighted average of the target labels of training data points. This linearity facilitates a local notion of explainability of RF predictions that generates attributions for any model prediction across observations in the training set, and thereby complements established methods like SHAP, which instead generates attributions for a model prediction across dimensions of the feature space. We demonstrate this approach in the context of a bond pricing model trained on US corporate bond trades, and compare our approach to various existing approaches to model explainability.
+    Representation learning plays a crucial role in automated feature selection, particularly in the context of high-dimensional data, where non-parametric methods often struggle. In this study, we focus on supervised learning scenarios where the pertinent information resides within a lower-dimensional linear subspace of the data, namely the multi-index model. If this subspace were known, it would greatly enhance prediction, computation, and interpretation. To address this challenge, we propose a novel method for linear feature learning with non-parametric prediction, which simultaneously estimates the prediction function and the linear subspace. Our approach employs empirical risk minimisation, augmented with a penalty on function derivatives, ensuring versatility. Leveraging the orthogonality and rotation invariance properties of Hermite polynomials, we introduce our estimator, named RegFeaL. By utilising alternative minimisation, we iteratively rotate the data to improve alignment with 
     
 
