@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Point-based Value Iteration for Neuro-Symbolic POMDPs.](http://arxiv.org/abs/2306.17639) | 本文提出了一种基于点的神经符号POMDP值迭代算法，结合了传统符号技术和神经网络，解决了连续状态置信度函数的问题，实现了优化折扣累积回报的连续状态决策问题。 |
+| [^1] | [Drift Control of High-Dimensional RBM: A Computational Method Based on Neural Networks.](http://arxiv.org/abs/2309.11651) | 该论文提出了一种基于神经网络的计算方法，用于漂移控制高维RBMs。通过深度神经网络技术，该方法在测试问题上达到了较高的准确性。 |
 
 # 详细
 
-[^1]: 基于点的神经符号POMDP值迭代
+[^1]: 高维RBM的漂移控制：基于神经网络的计算方法
 
-    Point-based Value Iteration for Neuro-Symbolic POMDPs. (arXiv:2306.17639v1 [eess.SY])
+    Drift Control of High-Dimensional RBM: A Computational Method Based on Neural Networks. (arXiv:2309.11651v1 [eess.SY])
 
-    [http://arxiv.org/abs/2306.17639](http://arxiv.org/abs/2306.17639)
+    [http://arxiv.org/abs/2309.11651](http://arxiv.org/abs/2309.11651)
 
-    本文提出了一种基于点的神经符号POMDP值迭代算法，结合了传统符号技术和神经网络，解决了连续状态置信度函数的问题，实现了优化折扣累积回报的连续状态决策问题。
+    该论文提出了一种基于神经网络的计算方法，用于漂移控制高维RBMs。通过深度神经网络技术，该方法在测试问题上达到了较高的准确性。
 
     
 
-    神经符号人工智能是结合传统符号技术和神经网络的新兴领域。本文考虑其在不确定性下顺序决策中的应用。我们引入了神经符号部分可观察马尔可夫决策过程（NS-POMDPs），该模型描述了一个使用神经网络感知连续状态环境并进行符号决策的代理，并研究了优化折扣累积回报的问题。针对连续状态置信度函数，我们提出了一种新的分段线性和凸表示（P-PWLC），通过覆盖连续状态空间的多面体和值向量实现，并将Bellman backups扩展到该表示。我们证明了值函数的凸性和连续性，并提出了两种值迭代算法，通过利用连续状态模型和神经感知机制的底层结构来保证有限表示能力。
+    受排队理论应用的启发，我们考虑了一个状态空间为d维正半轴的随机控制问题。控制过程Z按照一个反射布朗运动演化，其协方差矩阵是外生指定的，反射方向是从正半轴边界表面反射。系统管理员根据Z的历史选择每个时间点t上的漂移向量θ(t)，而时间点t上的成本率取决于Z(t)和θ(t)。在我们的初始问题表述中，目标是在无限规划时间范围内最小化期望贴现成本，之后我们处理相应的人均控制问题。借鉴韩海亮等人（国家科学院学报，2018, 8505-8510）的早期工作，我们开发并展示了一种基于深度神经网络技术的基于模拟的计算方法。到目前为止，我们研究的测试问题中，我们的方法的精度在一个小数范围内准确。
 
-    Neuro-symbolic artificial intelligence is an emerging area that combines traditional symbolic techniques with neural networks. In this paper, we consider its application to sequential decision making under uncertainty. We introduce neuro-symbolic partially observable Markov decision processes (NS-POMDPs), which model an agent that perceives a continuous-state environment using a neural network and makes decisions symbolically, and study the problem of optimising discounted cumulative rewards. This requires functions over continuous-state beliefs, for which we propose a novel piecewise linear and convex representation (P-PWLC) in terms of polyhedra covering the continuous-state space and value vectors, and extend Bellman backups to this representation. We prove the convexity and continuity of value functions and present two value iteration algorithms that ensure finite representability by exploiting the underlying structure of the continuous-state model and the neural perception mechani
+    Motivated by applications in queueing theory, we consider a stochastic control problem whose state space is the $d$-dimensional positive orthant. The controlled process $Z$ evolves as a reflected Brownian motion whose covariance matrix is exogenously specified, as are its directions of reflection from the orthant's boundary surfaces. A system manager chooses a drift vector $\theta(t)$ at each time $t$ based on the history of $Z$, and the cost rate at time $t$ depends on both $Z(t)$ and $\theta(t)$. In our initial problem formulation, the objective is to minimize expected discounted cost over an infinite planning horizon, after which we treat the corresponding ergodic control problem. Extending earlier work by Han et al. (Proceedings of the National Academy of Sciences, 2018, 8505-8510), we develop and illustrate a simulation-based computational method that relies heavily on deep neural network technology. For test problems studied thus far, our method is accurate to within a fraction o
     
 

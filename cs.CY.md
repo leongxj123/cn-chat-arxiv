@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Dynamics of Moral Behavior in Heterogeneous Populations of Learning Agents](https://arxiv.org/abs/2403.04202) | 在多代理环境中，研究人员探讨了不同道德类型的学习代理之间的互动，发现道德异质性可能对代理的共同发展产生影响。 |
-| [^2] | [The Face of Populism: Examining Differences in Facial Emotional Expressions of Political Leaders Using Machine Learning.](http://arxiv.org/abs/2304.09914) | 本文使用机器学习的算法分析了来自15个不同国家的220个政治领袖的YouTube视频，总结了政治领袖面部情感表达的差异。 |
+| [^1] | [Causal Equal Protection as Algorithmic Fairness](https://arxiv.org/abs/2402.12062) | 本文提出了一种新的算法公平性原则——平等保护，其关键在于将错误分类的风险均等化，避免了许多对传统分类平等原则的反例。 |
+| [^2] | [Artificial intelligence is ineffective and potentially harmful for fact checking.](http://arxiv.org/abs/2308.10800) | 这项研究发现人工智能语言模型在事实核查中表现出色，但在帮助用户判断标题准确性和分享准确新闻方面影响不大。然而，在某些情况下，它会误导用户对真实标题的信仰，并增加对未确定虚假标题的信仰。 |
 
 # 详细
 
-[^1]: 异质学习代理群体中道德行为动态
+[^1]: 因果平等保护与算法公平性
 
-    Dynamics of Moral Behavior in Heterogeneous Populations of Learning Agents
+    Causal Equal Protection as Algorithmic Fairness
 
-    [https://arxiv.org/abs/2403.04202](https://arxiv.org/abs/2403.04202)
+    [https://arxiv.org/abs/2402.12062](https://arxiv.org/abs/2402.12062)
 
-    在多代理环境中，研究人员探讨了不同道德类型的学习代理之间的互动，发现道德异质性可能对代理的共同发展产生影响。
-
-    
-
-    arXiv:2403.04202v1 公告类型：交叉领域 摘要：日益关注AI系统安全和对齐性的问题突显了在人工代理中嵌入道德能力的重要性。一种有前途的解决方案是利用经验学习，即强化学习。在多代理（社会）环境中，个体学习代理之间的交互可能产生复杂的群体层面现象。许多现有研究依赖于模拟的社会困境环境来研究独立学习代理的互动。然而，它们往往忽视了实践中代理社会中可能存在的道德异质性。例如，在不同时间点，单个学习代理可能面对后果主义者（即关心随时间最大化某种结果）或基于规范的对手（即专注于立即遵守特定规范） 。代理的共同发展在多大程度上可能受到这种道德异质性的影响。
-
-    arXiv:2403.04202v1 Announce Type: cross  Abstract: Growing concerns about safety and alignment of AI systems highlight the importance of embedding moral capabilities in artificial agents. A promising solution is the use of learning from experience, i.e., Reinforcement Learning. In multi-agent (social) environments, complex population-level phenomena may emerge from interactions between individual learning agents. Many of the existing studies rely on simulated social dilemma environments to study the interactions of independent learning agents. However, they tend to ignore the moral heterogeneity that is likely to be present in societies of agents in practice. For example, at different points in time a single learning agent may face opponents who are consequentialist (i.e., caring about maximizing some outcome over time) or norm-based (i.e., focusing on conforming to a specific norm here and now). The extent to which agents' co-development may be impacted by such moral heterogeneity in 
-    
-[^2]: 柿子政治的面孔：使用机器学习比较政治领袖面部情感表达的差异
-
-    The Face of Populism: Examining Differences in Facial Emotional Expressions of Political Leaders Using Machine Learning. (arXiv:2304.09914v1 [cs.CY])
-
-    [http://arxiv.org/abs/2304.09914](http://arxiv.org/abs/2304.09914)
-
-    本文使用机器学习的算法分析了来自15个不同国家的220个政治领袖的YouTube视频，总结了政治领袖面部情感表达的差异。
+    本文提出了一种新的算法公平性原则——平等保护，其关键在于将错误分类的风险均等化，避免了许多对传统分类平等原则的反例。
 
     
 
-    网络媒体已经彻底改变了政治信息在全球范围内的传播和消费方式，这种转变促使政治人物采取新的策略来捕捉和保持选民的注意力。这些策略往往依赖于情感说服和吸引。随着虚拟空间中视觉内容越来越普遍，很多政治沟通也被标志着唤起情感的视频内容和图像。本文提供了一种新的分析方法。我们将基于现有训练好的卷积神经网络架构提供的Python库fer，应用一种基于深度学习的计算机视觉算法，对描绘来自15个不同国家的政治领袖的220个YouTube视频样本进行分析。该算法返回情绪分数，每一帧都代表6种情绪状态（愤怒，厌恶，恐惧，快乐，悲伤和惊讶）和一个中性表情。
+    过去十年，计算机科学和哲学的文献形成了不同的算法公平性标准。其中最受争议的分类平等要求，预测算法的错误分类在被保护特征所指示的群体中以相等频率发生。尽管分类平等具有直观吸引力，但已受到攻击。我们转向一个相关原则，即平等保护，该原则最初是在刑事司法领域发展起来的。平等保护的关键在于将错误分类的风险（将在规定的意义上具体说明）进行均等化，而不是将错误分类的比率均等化。我们展示了平等保护避免了许多对分类平等的反例。
 
-    Online media has revolutionized the way political information is disseminated and consumed on a global scale, and this shift has compelled political figures to adopt new strategies of capturing and retaining voter attention. These strategies often rely on emotional persuasion and appeal, and as visual content becomes increasingly prevalent in virtual space, much of political communication too has come to be marked by evocative video content and imagery. The present paper offers a novel approach to analyzing material of this kind. We apply a deep-learning-based computer-vision algorithm to a sample of 220 YouTube videos depicting political leaders from 15 different countries, which is based on an existing trained convolutional neural network architecture provided by the Python library fer. The algorithm returns emotion scores representing the relative presence of 6 emotional states (anger, disgust, fear, happiness, sadness, and surprise) and a neutral expression for each frame of the pr
+    arXiv:2402.12062v1 Announce Type: cross  Abstract: Over the last ten years the literature in computer science and philosophy has formulated different criteria of algorithmic fairness. One of the most discussed, classification parity, requires that the erroneous classifications of a predictive algorithm occur with equal frequency for groups picked out by protected characteristics. Despite its intuitive appeal, classification parity has come under attack. Multiple scenarios can be imagined in which - intuitively - a predictive algorithm does not treat any individual unfairly, and yet classification parity is violated. To make progress, we turn to a related principle, equal protection, originally developed in the context of criminal justice. Key to equal protection is equalizing the risks of erroneous classifications (in a sense to be specified) as opposed to equalizing the rates of erroneous classifications. We show that equal protection avoids many of the counterexamples to classificati
+    
+[^2]: 人工智能在事实核查中无效且具有潜在危害性
+
+    Artificial intelligence is ineffective and potentially harmful for fact checking. (arXiv:2308.10800v2 [cs.HC] UPDATED)
+
+    [http://arxiv.org/abs/2308.10800](http://arxiv.org/abs/2308.10800)
+
+    这项研究发现人工智能语言模型在事实核查中表现出色，但在帮助用户判断标题准确性和分享准确新闻方面影响不大。然而，在某些情况下，它会误导用户对真实标题的信仰，并增加对未确定虚假标题的信仰。
+
+    
+
+    事实核查是对抗错误信息的有效策略，但是它在规模上的实施受到了网络上信息过于庞大的阻碍。近期的人工智能语言模型在事实核查任务中展现出了令人印象深刻的能力，但人们在使用这些模型提供的事实核查信息时的作用机制并不清楚。在这里，我们通过一项预先登记的随机对照实验，研究了一款热门人工智能模型生成的事实核查对政治新闻信仰和分享意图的影响。尽管该人工智能在揭穿虚假标题方面表现得相当不错，但我们发现它并没有对参与者识别标题准确性或分享准确新闻的能力产生显著影响。然而，在特定情况下，该人工智能事实核查器具有危害性：将一些真实标题误标为虚假会降低对其的信仰，而对其未确定的虚假标题则会增加对其的信仰。在积极方面，该人工智能提高了正确标定标题的分享意愿。
+
+    Fact checking can be an effective strategy against misinformation, but its implementation at scale is impeded by the overwhelming volume of information online. Recent artificial intelligence (AI) language models have shown impressive ability in fact-checking tasks, but how humans interact with fact-checking information provided by these models is unclear. Here we investigate the impact of fact checks generated by a popular AI model on belief in, and sharing intent of, political news in a preregistered randomized control experiment. Although the AI performs reasonably well in debunking false headlines, we find that it does not significantly affect participants' ability to discern headline accuracy or share accurate news. However, the AI fact-checker is harmful in specific cases: it decreases beliefs in true headlines that it mislabels as false and increases beliefs for false headlines that it is unsure about. On the positive side, the AI increases sharing intents for correctly labeled t
     
 

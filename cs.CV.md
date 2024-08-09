@@ -2,157 +2,142 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [DenseNets Reloaded: Paradigm Shift Beyond ResNets and ViTs](https://arxiv.org/abs/2403.19588) | 本文重新探讨了密集连接卷积网络（DenseNets），揭示了其相对于ResNet风格架构的被低估有效性，通过改进架构、块设计和训练方法，使得DenseNets可以与现代架构竞争，并在ImageNet-1K上接近最新技术水平。 |
-| [^2] | [Trajectory Regularization Enhances Self-Supervised Geometric Representation](https://arxiv.org/abs/2403.14973) | 引入新的pose-estimation基准用于评估SSL几何表示，提出无监督轨迹正则化损失来增强SSL几何表示，在姿势估计性能上取得10-20%的提升，并提高了4%的性能和泛化能力。 |
-| [^3] | [Meta-Prompting for Automating Zero-shot Visual Recognition with LLMs](https://arxiv.org/abs/2403.11755) | 提出了Meta-Prompting for Visual Recognition (MPVR)方法，通过仅需少量信息即可自动化零样本识别中的提示生成过程。 |
-| [^4] | [Curriculum Learning for ab initio Deep Learned Refractive Optics](https://arxiv.org/abs/2302.01089) | 通过Curriculum Learning，提出了一种DeepLens设计方法，能够从随机初始化表面从头开始学习复合透镜的光学设计，克服了对良好初始设计的需求，并实现了自动设计经典成像透镜和大视场延伸景深计算透镜。 |
-| [^5] | [A Comprehensive Augmentation Framework for Anomaly Detection.](http://arxiv.org/abs/2308.15068) | 本文提出了一种用于异常检测的综合增强框架，该框架通过选择性地利用适当的组合，分析并压缩模拟异常的关键特征，与基于重构的方法相结合，并采用分割训练策略，能够在MVTec异常检测数据集上优于以前的最先进方法。 |
-| [^6] | [Pruning Meets Low-Rank Parameter-Efficient Fine-Tuning.](http://arxiv.org/abs/2305.18403) | 本论文提出了一种名为LoRAPrune的框架，可以高效微调和部署大型预训练模型，通过利用低秩自适应的值和梯度来设计PEFT感知的剪枝准则，并提出了一个迭代剪枝过程来去除冗余参数，实验结果表明与最先进的方法相比，可以显著降低模型大小和推理时间，同时保持竞争性的准确性。 |
-| [^7] | [Distill Gold from Massive Ores: Efficient Dataset Distillation via Critical Samples Selection.](http://arxiv.org/abs/2305.18381) | 研究提出了一种基于选择最有价值的样本的方法，以扩展现有的蒸馏算法，从而更好地利用训练样本，显著降低训练成本，拓展对更大更多元化数据集的数据集蒸馏，并持续提高性能。 |
-| [^8] | [The Face of Populism: Examining Differences in Facial Emotional Expressions of Political Leaders Using Machine Learning.](http://arxiv.org/abs/2304.09914) | 本文使用机器学习的算法分析了来自15个不同国家的220个政治领袖的YouTube视频，总结了政治领袖面部情感表达的差异。 |
-| [^9] | [ASR: Attention-alike Structural Re-parameterization.](http://arxiv.org/abs/2304.06345) | 该论文提出的ASR技术是一种新颖的深度学习技术，通过等效参数转换实现不同网络体系结构之间的互转。和现有的SRP方法相比，ASR可以成功考虑自注意模块，实现推理期间的性能提升，并在工业和实际应用中具有巨大潜力。 |
-| [^10] | [Fingerprinting Generative Adversarial Networks.](http://arxiv.org/abs/2106.11760) | 本文提出了一种保护GAN知识产权的指纹识别方案，通过生成指纹样本并嵌入到分类器中进行版权验证，解决了前一种对分类模型的指纹识别方法在简单转移至GAN时遇到的隐蔽性和鲁棒性瓶颈，具有实际保护现代GAN模型的可行性。 |
+| [^1] | [HARMamba: Efficient Wearable Sensor Human Activity Recognition Based on Bidirectional Selective SSM](https://arxiv.org/abs/2403.20183) | HARMamba利用更轻量级的选择性SSM作为基础模型架构，以解决计算资源挑战 |
+| [^2] | [FOOL: Addressing the Downlink Bottleneck in Satellite Computing with Neural Feature Compression](https://arxiv.org/abs/2403.16677) | FOOL是一种OEC本地和任务不可知的特征压缩方法，通过最大化吞吐量、嵌入上下文和利用瓷砖间的依赖关系，降低传输成本，同时保持预测性能。 |
+| [^3] | [P2LHAP:Wearable sensor-based human activity recognition, segmentation and forecast through Patch-to-Label Seq2Seq Transformer](https://arxiv.org/abs/2403.08214) | P2LHAP提出了一种新颖的Patch-to-Label Seq2Seq框架，可以在一个高效的单一任务模型中同时实现人类活动的分割、识别和预测 |
+| [^4] | [CFRet-DVQA: Coarse-to-Fine Retrieval and Efficient Tuning for Document Visual Question Answering](https://arxiv.org/abs/2403.00816) | 该研究提出了一种名为CFRet-DVQA的方法，通过检索和高效调优，解决了文档视觉问答中定位信息和限制模型输入的长度等问题，进一步提升了答案的生成性能。 |
+| [^5] | [Towards Privacy-Aware Sign Language Translation at Scale](https://arxiv.org/abs/2402.09611) | 本研究提出了一种两阶段框架，用于实现规模化隐私感知手语翻译。我们利用自监督视频预训练和有监督微调的方法，在数据稀缺和隐私风险的情况下实现了最先进的手语翻译性能。 |
+| [^6] | [Harmonized Spatial and Spectral Learning for Robust and Generalized Medical Image Segmentation.](http://arxiv.org/abs/2401.10373) | 本文提出了一种鲁棒且具普适性的医学图像分割方法，通过协调空间和光谱表示，引入光谱相关系数目标来提高对中阶特征和上下文长程依赖的捕捉能力，从而显著增强了泛化能力。 |
+| [^7] | [Safe DreamerV3: Safe Reinforcement Learning with World Models.](http://arxiv.org/abs/2307.07176) | Safe DreamerV3是一种通过集成基于拉格朗日和计划的方法到世界模型中的新算法，实现了在低维度和仅采用视觉的任务中几乎零成本的安全强化学习。 |
+| [^8] | [Loss Functions and Metrics in Deep Learning. A Review.](http://arxiv.org/abs/2307.02694) | 本文回顾了深度学习中最常见的损失函数和性能测量方法，旨在帮助从业者选择最适合其特定任务的方法。 |
+| [^9] | [Improving Automated Hemorrhage Detection in Sparse-view Computed Tomography via Deep Convolutional Neural Network based Artifact Reduction.](http://arxiv.org/abs/2303.09340) | 本文提出了一种基于深度卷积神经网络的伪影降噪方法，用于改善稀疏视图下自动出血检测的图像质量，并证明其能够与完全采样的图像进行同等精确度的分类和检测。 |
 
 # 详细
 
-[^1]: DenseNets重生：超越ResNets和ViTs的范式转变
+[^1]: HARMamba: 基于双向选择性SSM的高效可穿戴传感器人体活动识别
 
-    DenseNets Reloaded: Paradigm Shift Beyond ResNets and ViTs
+    HARMamba: Efficient Wearable Sensor Human Activity Recognition Based on Bidirectional Selective SSM
 
-    [https://arxiv.org/abs/2403.19588](https://arxiv.org/abs/2403.19588)
+    [https://arxiv.org/abs/2403.20183](https://arxiv.org/abs/2403.20183)
 
-    本文重新探讨了密集连接卷积网络（DenseNets），揭示了其相对于ResNet风格架构的被低估有效性，通过改进架构、块设计和训练方法，使得DenseNets可以与现代架构竞争，并在ImageNet-1K上接近最新技术水平。
-
-    
-
-    本文复苏了密集连接卷积网络（DenseNets），揭示了它们相对于主导的ResNet风格架构被低估的有效性。我们认为DenseNets的潜力被忽视，是因为未曾触及的训练方法和传统设计元素未能完全展现其能力。我们的初步研究表明，通过连接的密集连接是强大的，表明DenseNets可以被重新激活以与现代架构竞争。我们系统地改进了次优组件 - 架构调整、块重新设计和改进的训练配方，以扩展DenseNets并提高内存效率，同时保持连接快捷方式。我们的模型采用简单的架构元素，最终超越了Swin Transformer、ConvNeXt和DeiT-III - 残差学习谱系中的关键架构。此外，我们的模型在ImageNet-1K上展现出接近最新技术水平的性能，竞争wi
-
-    arXiv:2403.19588v1 Announce Type: cross  Abstract: This paper revives Densely Connected Convolutional Networks (DenseNets) and reveals the underrated effectiveness over predominant ResNet-style architectures. We believe DenseNets' potential was overlooked due to untouched training methods and traditional design elements not fully revealing their capabilities. Our pilot study shows dense connections through concatenation are strong, demonstrating that DenseNets can be revitalized to compete with modern architectures. We methodically refine suboptimal components - architectural adjustments, block redesign, and improved training recipes towards widening DenseNets and boosting memory efficiency while keeping concatenation shortcuts. Our models, employing simple architectural elements, ultimately surpass Swin Transformer, ConvNeXt, and DeiT-III - key architectures in the residual learning lineage. Furthermore, our models exhibit near state-of-the-art performance on ImageNet-1K, competing wi
-    
-[^2]: 轨迹正则化增强自监督几何表示
-
-    Trajectory Regularization Enhances Self-Supervised Geometric Representation
-
-    [https://arxiv.org/abs/2403.14973](https://arxiv.org/abs/2403.14973)
-
-    引入新的pose-estimation基准用于评估SSL几何表示，提出无监督轨迹正则化损失来增强SSL几何表示，在姿势估计性能上取得10-20%的提升，并提高了4%的性能和泛化能力。
+    HARMamba利用更轻量级的选择性SSM作为基础模型架构，以解决计算资源挑战
 
     
 
-    自监督学习（SSL）已被证明能够有效地学习高质量的表示，用于各种下游任务，主要关注语义任务。然而，在几何任务中的应用仍未得到充分探索，部分原因是缺乏用于评估几何表示的标准化评估方法。为了填补这一空白，我们引入了一个新的姿势估计基准，用于评估SSL几何表示，该基准要求在没有语义或姿势标签的情况下进行训练，并在语义和几何下游任务中表现出熟练度。在这个基准上，我们研究了如何增强SSL几何表示而不牺牲语义分类准确性。我们发现利用中间层表示可以将姿势估计性能提高10-20％。此外，我们引入了一种无监督轨迹正则化损失，该损失额外提高了4％的性能，并提高了在越界上的泛化能力。
+    可穿戴传感器的人体活动识别（HAR）是活动感知领域的重要研究领域。最近，一种高效的硬件感知状态空间模型（SSM）Mamba作为一种有前途的替代方案出现。HARMamba引入了更轻量级的选择性SSM作为活动识别的基本模型架构，以解决系统计算负载和内存使用的挑战。
 
-    arXiv:2403.14973v1 Announce Type: cross  Abstract: Self-supervised learning (SSL) has proven effective in learning high-quality representations for various downstream tasks, with a primary focus on semantic tasks. However, its application in geometric tasks remains underexplored, partially due to the absence of a standardized evaluation method for geometric representations. To address this gap, we introduce a new pose-estimation benchmark for assessing SSL geometric representations, which demands training without semantic or pose labels and achieving proficiency in both semantic and geometric downstream tasks. On this benchmark, we study enhancing SSL geometric representations without sacrificing semantic classification accuracy. We find that leveraging mid-layer representations improves pose-estimation performance by 10-20%. Further, we introduce an unsupervised trajectory-regularization loss, which improves performance by an additional 4% and improves generalization ability on out-of
+    arXiv:2403.20183v1 Announce Type: cross  Abstract: Wearable sensor human activity recognition (HAR) is a crucial area of research in activity sensing. While transformer-based temporal deep learning models have been extensively studied and implemented, their large number of parameters present significant challenges in terms of system computing load and memory usage, rendering them unsuitable for real-time mobile activity recognition applications. Recently, an efficient hardware-aware state space model (SSM) called Mamba has emerged as a promising alternative. Mamba demonstrates strong potential in long sequence modeling, boasts a simpler network architecture, and offers an efficient hardware-aware design. Leveraging SSM for activity recognition represents an appealing avenue for exploration. In this study, we introduce HARMamba, which employs a more lightweight selective SSM as the foundational model architecture for activity recognition. The goal is to address the computational resourc
     
-[^3]: 使用元提示自动化LLMs进行零样本视觉识别
+[^2]: FOOL: 用神经特征压缩解决卫星计算中的下行瓶颈问题
 
-    Meta-Prompting for Automating Zero-shot Visual Recognition with LLMs
+    FOOL: Addressing the Downlink Bottleneck in Satellite Computing with Neural Feature Compression
 
-    [https://arxiv.org/abs/2403.11755](https://arxiv.org/abs/2403.11755)
+    [https://arxiv.org/abs/2403.16677](https://arxiv.org/abs/2403.16677)
 
-    提出了Meta-Prompting for Visual Recognition (MPVR)方法，通过仅需少量信息即可自动化零样本识别中的提示生成过程。
-
-    
-
-    大型语言模型（LLM）生成的类别特定提示的提示集成已经被证明是增强视觉语言模型（VLMs）零样本识别能力的有效方法。为了获得这些类别特定提示，现有方法依赖于手工为LLMs设计提示，以生成下游任务的VLM提示。然而，这需要手动编写这些任务特定提示，而且它们可能无法涵盖与感兴趣类别相关的各种视觉概念和任务特定风格。为了有效地将人类排除在循环之外，并完全自动化零样本识别的提示生成过程，我们提出了用于视觉识别的元提示（MPVR）。仅以目标任务的少量自然语言描述形式以及一系列相关类别标签作为输入，MPVR自动产生一个多样化的类别提示集。
-
-    arXiv:2403.11755v1 Announce Type: cross  Abstract: Prompt ensembling of Large Language Model (LLM) generated category-specific prompts has emerged as an effective method to enhance zero-shot recognition ability of Vision-Language Models (VLMs). To obtain these category-specific prompts, the present methods rely on hand-crafting the prompts to the LLMs for generating VLM prompts for the downstream tasks. However, this requires manually composing these task-specific prompts and still, they might not cover the diverse set of visual concepts and task-specific styles associated with the categories of interest. To effectively take humans out of the loop and completely automate the prompt generation process for zero-shot recognition, we propose Meta-Prompting for Visual Recognition (MPVR). Taking as input only minimal information about the target task, in the form of its short natural language description, and a list of associated class labels, MPVR automatically produces a diverse set of cat
-    
-[^4]: Curriculum Learning用于从头开始的深度学习折射光学
-
-    Curriculum Learning for ab initio Deep Learned Refractive Optics
-
-    [https://arxiv.org/abs/2302.01089](https://arxiv.org/abs/2302.01089)
-
-    通过Curriculum Learning，提出了一种DeepLens设计方法，能够从随机初始化表面从头开始学习复合透镜的光学设计，克服了对良好初始设计的需求，并实现了自动设计经典成像透镜和大视场延伸景深计算透镜。
+    FOOL是一种OEC本地和任务不可知的特征压缩方法，通过最大化吞吐量、嵌入上下文和利用瓷砖间的依赖关系，降低传输成本，同时保持预测性能。
 
     
 
-    深度光学优化最近被提出作为使用输出图像作为目标的计算成像系统设计的新范式。然而，它目前被限制于单个元素（如衍射光学元件（DOE）或金属透镜）构成的简单光学系统，或者从良好的初始设计微调复合透镜。在这里，我们提出了一种基于Curriculum Learning的DeepLens设计方法，能够从随机初始化表面从头开始学习复合透镜的光学设计，而无需人为干预，因此克服了对良好初始设计的需求。我们通过完全自动设计经典成像透镜和一个类似手机风格的大视场延伸景深计算透镜，验证了我们方法的有效性，具有高度非球面曲面和短后焦距。
+    具有传感器的纳卫星星座捕获大范围地理区域，为地球观测提供了前所未有的机会。随着星座规模的增加，网络争用形成了下行瓶颈。轨道边缘计算（OEC）利用有限的机载计算资源通过在源头处理原始捕获来减少传输成本。然而，由于依赖粗糙的过滤方法或过分优先考虑特定下游任务，目前的解决方案具有有限的实用性。本文提出了FOOL，一种OEC本地和任务不可知的特征压缩方法，可保留预测性能。FOOL将高分辨率卫星图像进行分区，以最大化吞吐量。此外，它嵌入上下文并利用瓷砖间的依赖关系，以较低的开销降低传输成本。虽然FOOL是一种特征压缩器，但它可以在低
 
-    arXiv:2302.01089v3 Announce Type: replace-cross  Abstract: Deep optical optimization has recently emerged as a new paradigm for designing computational imaging systems using only the output image as the objective. However, it has been limited to either simple optical systems consisting of a single element such as a diffractive optical element (DOE) or metalens, or the fine-tuning of compound lenses from good initial designs. Here we present a DeepLens design method based on curriculum learning, which is able to learn optical designs of compound lenses ab initio from randomly initialized surfaces without human intervention, therefore overcoming the need for a good initial design. We demonstrate the effectiveness of our approach by fully automatically designing both classical imaging lenses and a large field-of-view extended depth-of-field computational lens in a cellphone-style form factor, with highly aspheric surfaces and a short back focal length.
+    arXiv:2403.16677v1 Announce Type: new  Abstract: Nanosatellite constellations equipped with sensors capturing large geographic regions provide unprecedented opportunities for Earth observation. As constellation sizes increase, network contention poses a downlink bottleneck. Orbital Edge Computing (OEC) leverages limited onboard compute resources to reduce transfer costs by processing the raw captures at the source. However, current solutions have limited practicability due to reliance on crude filtering methods or over-prioritizing particular downstream tasks.   This work presents FOOL, an OEC-native and task-agnostic feature compression method that preserves prediction performance. FOOL partitions high-resolution satellite imagery to maximize throughput. Further, it embeds context and leverages inter-tile dependencies to lower transfer costs with negligible overhead. While FOOL is a feature compressor, it can recover images with competitive scores on perceptual quality measures at low
     
-[^5]: 一种用于异常检测的综合增强框架
+[^3]: P2LHAP：基于可穿戴传感器的人类活动识别、分割和预测的Patch-to-Label Seq2Seq Transformer
 
-    A Comprehensive Augmentation Framework for Anomaly Detection. (arXiv:2308.15068v1 [cs.AI])
+    P2LHAP:Wearable sensor-based human activity recognition, segmentation and forecast through Patch-to-Label Seq2Seq Transformer
 
-    [http://arxiv.org/abs/2308.15068](http://arxiv.org/abs/2308.15068)
+    [https://arxiv.org/abs/2403.08214](https://arxiv.org/abs/2403.08214)
 
-    本文提出了一种用于异常检测的综合增强框架，该框架通过选择性地利用适当的组合，分析并压缩模拟异常的关键特征，与基于重构的方法相结合，并采用分割训练策略，能够在MVTec异常检测数据集上优于以前的最先进方法。
-
-    
-
-    数据增强方法通常被整合到异常检测模型的训练中。以往的方法主要集中在复制真实世界的异常或增加多样性，而没有考虑到异常的标准在不同类别之间存在差异，这可能导致训练分布的偏差。本文分析了对重构网络训练有贡献的模拟异常的关键特征，并将其压缩成几种方法，从而通过选择性地使用适当的组合来创建一个综合框架。此外，将这个框架与基于重构的方法相结合，并同时提出了一种分割训练策略，既减轻过拟合问题，又避免对重构过程引入干扰。在MVTec异常检测数据集上进行的评估表明，我们的方法在性能上优于以前的最先进方法，特别是在目标相关指标方面。
-
-    Data augmentation methods are commonly integrated into the training of anomaly detection models. Previous approaches have primarily focused on replicating real-world anomalies or enhancing diversity, without considering that the standard of anomaly varies across different classes, potentially leading to a biased training distribution.This paper analyzes crucial traits of simulated anomalies that contribute to the training of reconstructive networks and condenses them into several methods, thus creating a comprehensive framework by selectively utilizing appropriate combinations.Furthermore, we integrate this framework with a reconstruction-based approach and concurrently propose a split training strategy that alleviates the issue of overfitting while avoiding introducing interference to the reconstruction process. The evaluations conducted on the MVTec anomaly detection dataset demonstrate that our method outperforms the previous state-of-the-art approach, particularly in terms of objec
-    
-[^6]: 剪枝与低秩参数高效微调相遇
-
-    Pruning Meets Low-Rank Parameter-Efficient Fine-Tuning. (arXiv:2305.18403v1 [cs.LG])
-
-    [http://arxiv.org/abs/2305.18403](http://arxiv.org/abs/2305.18403)
-
-    本论文提出了一种名为LoRAPrune的框架，可以高效微调和部署大型预训练模型，通过利用低秩自适应的值和梯度来设计PEFT感知的剪枝准则，并提出了一个迭代剪枝过程来去除冗余参数，实验结果表明与最先进的方法相比，可以显著降低模型大小和推理时间，同时保持竞争性的准确性。
+    P2LHAP提出了一种新颖的Patch-to-Label Seq2Seq框架，可以在一个高效的单一任务模型中同时实现人类活动的分割、识别和预测
 
     
 
-    大型预训练模型（LPM）在各种任务中表现出卓越的性能。虽然出现了参数高效微调（PEFT）来便宜地微调这些大型模型用于下游任务，但它们的部署仍然受到巨大的模型规模和计算成本的制约。神经网络剪枝通过删除冗余参数来提供模型压缩的解决方案，但大多数现有方法依赖于计算参数梯度。然而，对于LPM而言，获得梯度是计算上禁止的，这需要探索替代方法。为此，我们提出了一种用于LPM高效微调和部署的统一框架，称为LoRAPrune。我们首先设计了一个PEFT感知的剪枝准则，该准则利用了低秩自适应（LoRA）的值和梯度，而不是预训练参数的梯度进行重要性评估。然后，我们提出了一个迭代剪枝过程来基于剪枝准则去除冗余参数。各种基准数据集上的实验结果表明，与最先进的方法相比，我们的框架可以显著降低模型大小和推理时间，同时保持竞争性的准确性。
+    传统深度学习方法很难同时从传感器数据中分割、识别和预测人类活动，限制了它们在医疗保健和辅助生活等领域的实用性，而这些领域对于实时理解正在进行和即将发生的活动至关重要。本文提出了P2LHAP，一种新颖的Patch-to-Label Seq2Seq框架，可以在一个高效的单一任务模型中解决这三个任务。P2LHAP将传感器数据流划分为一系列“补丁”，作为输入标记，并输出一系列包括预测的未来活动在内的补丁级活动标签。提出了一种基于周围补丁标签的独特平滑技术，可准确识别活动边界。此外，P2LHAP通过传感器信号通道独立的Transformer编码器和解码器学习补丁级表示。所有通道在所有序列上共享嵌入和Transformer权重。
 
-    Large pre-trained models (LPMs), such as LLaMA and ViT-G, have shown exceptional performance across various tasks. Although parameter-efficient fine-tuning (PEFT) has emerged to cheaply fine-tune these large models on downstream tasks, their deployment is still hindered by the vast model scale and computational costs. Neural network pruning offers a solution for model compression by removing redundant parameters, but most existing methods rely on computing parameter gradients. However, obtaining the gradients is computationally prohibitive for LPMs, which necessitates the exploration of alternative approaches. To this end, we propose a unified framework for efficient fine-tuning and deployment of LPMs, termed LoRAPrune. We first design a PEFT-aware pruning criterion, which utilizes the values and gradients of Low-Rank Adaption (LoRA), rather than the gradients of pre-trained parameters for importance estimation. We then propose an iterative pruning procedure to remove redundant paramet
+    arXiv:2403.08214v1 Announce Type: cross  Abstract: Traditional deep learning methods struggle to simultaneously segment, recognize, and forecast human activities from sensor data. This limits their usefulness in many fields such as healthcare and assisted living, where real-time understanding of ongoing and upcoming activities is crucial. This paper introduces P2LHAP, a novel Patch-to-Label Seq2Seq framework that tackles all three tasks in a efficient single-task model. P2LHAP divides sensor data streams into a sequence of "patches", served as input tokens, and outputs a sequence of patch-level activity labels including the predicted future activities. A unique smoothing technique based on surrounding patch labels, is proposed to identify activity boundaries accurately. Additionally, P2LHAP learns patch-level representation by sensor signal channel-independent Transformer encoders and decoders. All channels share embedding and Transformer weights across all sequences. Evaluated on thre
     
-[^7]: 从大型矿石中提炼黄金: 基于关键样本选择的高效数据集蒸馏
+[^4]: CFRet-DVQA：粗到精检索和高效调优用于文档视觉问答
 
-    Distill Gold from Massive Ores: Efficient Dataset Distillation via Critical Samples Selection. (arXiv:2305.18381v1 [cs.LG])
+    CFRet-DVQA: Coarse-to-Fine Retrieval and Efficient Tuning for Document Visual Question Answering
 
-    [http://arxiv.org/abs/2305.18381](http://arxiv.org/abs/2305.18381)
+    [https://arxiv.org/abs/2403.00816](https://arxiv.org/abs/2403.00816)
 
-    研究提出了一种基于选择最有价值的样本的方法，以扩展现有的蒸馏算法，从而更好地利用训练样本，显著降低训练成本，拓展对更大更多元化数据集的数据集蒸馏，并持续提高性能。
-
-    
-
-    数据效率学习近年来备受关注，特别是对于拥有大量多模型的现在，数据集蒸馏可以成为有效的解决方案。然而，数据集蒸馏过程本身仍然非常低效。在本文中，我们首先引用信息理论来建模蒸馏问题，观察到数据集蒸馏中存在严重的数据冗余，我们提出了一种方法来扩展现有的蒸馏算法，以便通过选择最有价值的样本来更好地利用这些训练样本。我们进一步对样本选择进行全面分析，并验证了其优化过程。这种新策略能够显著减少训练成本，扩大现有算法范围以对更庞大和多元化的数据集进行数据集蒸馏，例如，在某些情况下，只需要0.04％的训练数据就足以保持可比的蒸馏效果。此外，我们的策略能够持续提高性能，其贡献可能为蒸馏过程的动力学开辟新的分析方法。
-
-    Data-efficient learning has drawn significant attention, especially given the current trend of large multi-modal models, where dataset distillation can be an effective solution. However, the dataset distillation process itself is still very inefficient. In this work, we model the distillation problem with reference to information theory. Observing that severe data redundancy exists in dataset distillation, we argue to put more emphasis on the utility of the training samples. We propose a family of methods to exploit the most valuable samples, which is validated by our comprehensive analysis of the optimal data selection. The new strategy significantly reduces the training cost and extends a variety of existing distillation algorithms to larger and more diversified datasets, e.g. in some cases only 0.04% training data is sufficient for comparable distillation performance. Moreover, our strategy consistently enhances the performance, which may open up new analyses on the dynamics of dist
-    
-[^8]: 柿子政治的面孔：使用机器学习比较政治领袖面部情感表达的差异
-
-    The Face of Populism: Examining Differences in Facial Emotional Expressions of Political Leaders Using Machine Learning. (arXiv:2304.09914v1 [cs.CY])
-
-    [http://arxiv.org/abs/2304.09914](http://arxiv.org/abs/2304.09914)
-
-    本文使用机器学习的算法分析了来自15个不同国家的220个政治领袖的YouTube视频，总结了政治领袖面部情感表达的差异。
+    该研究提出了一种名为CFRet-DVQA的方法，通过检索和高效调优，解决了文档视觉问答中定位信息和限制模型输入的长度等问题，进一步提升了答案的生成性能。
 
     
 
-    网络媒体已经彻底改变了政治信息在全球范围内的传播和消费方式，这种转变促使政治人物采取新的策略来捕捉和保持选民的注意力。这些策略往往依赖于情感说服和吸引。随着虚拟空间中视觉内容越来越普遍，很多政治沟通也被标志着唤起情感的视频内容和图像。本文提供了一种新的分析方法。我们将基于现有训练好的卷积神经网络架构提供的Python库fer，应用一种基于深度学习的计算机视觉算法，对描绘来自15个不同国家的政治领袖的220个YouTube视频样本进行分析。该算法返回情绪分数，每一帧都代表6种情绪状态（愤怒，厌恶，恐惧，快乐，悲伤和惊讶）和一个中性表情。
+    文档视觉问答（DVQA）是一个涉及根据图像内容回答查询的任务。现有工作仅限于定位单页内的信息，不支持跨页面问答交互。此外，对模型输入的标记长度限制可能导致与答案相关的部分被截断。在本研究中，我们引入了一种简单但有效的方法学，称为CFRet-DVQA，重点放在检索和高效调优上，以有效解决这一关键问题。为此，我们首先从文档中检索与所提问题相关的多个片段。随后，我们利用大型语言模型（LLM）的先进推理能力，通过指导调优进一步增强其性能。该方法使得生成的答案与文档标签的风格相符。实验演示了...
 
-    Online media has revolutionized the way political information is disseminated and consumed on a global scale, and this shift has compelled political figures to adopt new strategies of capturing and retaining voter attention. These strategies often rely on emotional persuasion and appeal, and as visual content becomes increasingly prevalent in virtual space, much of political communication too has come to be marked by evocative video content and imagery. The present paper offers a novel approach to analyzing material of this kind. We apply a deep-learning-based computer-vision algorithm to a sample of 220 YouTube videos depicting political leaders from 15 different countries, which is based on an existing trained convolutional neural network architecture provided by the Python library fer. The algorithm returns emotion scores representing the relative presence of 6 emotional states (anger, disgust, fear, happiness, sadness, and surprise) and a neutral expression for each frame of the pr
+    arXiv:2403.00816v1 Announce Type: cross  Abstract: Document Visual Question Answering (DVQA) is a task that involves responding to queries based on the content of images. Existing work is limited to locating information within a single page and does not facilitate cross-page question-and-answer interaction. Furthermore, the token length limitation imposed on inputs to the model may lead to truncation of segments pertinent to the answer. In this study, we introduce a simple but effective methodology called CFRet-DVQA, which focuses on retrieval and efficient tuning to address this critical issue effectively. For that, we initially retrieve multiple segments from the document that correlate with the question at hand. Subsequently, we leverage the advanced reasoning abilities of the large language model (LLM), further augmenting its performance through instruction tuning. This approach enables the generation of answers that align with the style of the document labels. The experiments demo
     
-[^9]: ASR: 像注意力一样的结构再参数化
+[^5]: 实现规模化隐私感知手语翻译
 
-    ASR: Attention-alike Structural Re-parameterization. (arXiv:2304.06345v1 [cs.CV])
+    Towards Privacy-Aware Sign Language Translation at Scale
 
-    [http://arxiv.org/abs/2304.06345](http://arxiv.org/abs/2304.06345)
+    [https://arxiv.org/abs/2402.09611](https://arxiv.org/abs/2402.09611)
 
-    该论文提出的ASR技术是一种新颖的深度学习技术，通过等效参数转换实现不同网络体系结构之间的互转。和现有的SRP方法相比，ASR可以成功考虑自注意模块，实现推理期间的性能提升，并在工业和实际应用中具有巨大潜力。
-
-    
-
-    结构再参数化（SRP）技术是一种新颖的深度学习技术，通过等效参数转换实现不同网络体系结构之间的互转。该技术使得在推理过程中通过这些转换减少性能提升的新增代价，例如参数大小和推理时间，因此SRP在工业和实际应用中具有巨大潜力。现有的SRP方法已成功考虑了许多常用的架构，例如归一化、池化方法、多分支卷积等。然而，广泛使用的自注意模块由于在推理期间通常以乘法方式作用于骨干网络并且模块的输出在推理时依赖于输入，所以无法直接实现SRP，而这限制了SRP的应用场景。在本文中，我们从统计角度进行了广泛的实验，并发现...
-
-    The structural re-parameterization (SRP) technique is a novel deep learning technique that achieves interconversion between different network architectures through equivalent parameter transformations. This technique enables the mitigation of the extra costs for performance improvement during training, such as parameter size and inference time, through these transformations during inference, and therefore SRP has great potential for industrial and practical applications. The existing SRP methods have successfully considered many commonly used architectures, such as normalizations, pooling methods, multi-branch convolution. However, the widely used self-attention modules cannot be directly implemented by SRP due to these modules usually act on the backbone network in a multiplicative manner and the modules' output is input-dependent during inference, which limits the application scenarios of SRP. In this paper, we conduct extensive experiments from a statistical perspective and discover
-    
-[^10]: 生成对抗网络的指纹识别技术
-
-    Fingerprinting Generative Adversarial Networks. (arXiv:2106.11760v3 [cs.CR] UPDATED)
-
-    [http://arxiv.org/abs/2106.11760](http://arxiv.org/abs/2106.11760)
-
-    本文提出了一种保护GAN知识产权的指纹识别方案，通过生成指纹样本并嵌入到分类器中进行版权验证，解决了前一种对分类模型的指纹识别方法在简单转移至GAN时遇到的隐蔽性和鲁棒性瓶颈，具有实际保护现代GAN模型的可行性。
+    本研究提出了一种两阶段框架，用于实现规模化隐私感知手语翻译。我们利用自监督视频预训练和有监督微调的方法，在数据稀缺和隐私风险的情况下实现了最先进的手语翻译性能。
 
     
 
-    生成对抗网络（GANs）已经广泛应用于各种应用场景。由于商业GAN的生产需要大量的计算和人力资源，因此迫切需要版权保护。本文提出了一种用于保护GAN知识产权的指纹识别方案。我们突破了前一种对分类模型的指纹识别方法在简单转移至GAN时所遇到的隐蔽性和鲁棒性瓶颈。具体来说，我们创造性地从目标GAN和分类器构建一个复合深度学习模型。然后，我们从这个复合模型中产生指纹样本，并将其嵌入到分类器中，以进行有效的版权验证。这种方案启发了一些具体的方法，以实际保护现代GAN模型。理论分析证明了这些方法可以满足知识产权保护所需要的不同安全要求。我们还进行了实验来证明该方案的功效。
+    手语翻译的一个主要障碍是数据稀缺。目前在网络上可用的大部分手语数据由于缺乏对齐的字幕而无法用于训练监督模型。此外，使用大规模网络抓取的数据集来扩展手语翻译存在隐私风险，因为其中包含生物特征信息，负责任地开发手语翻译技术应该考虑这一点。在这项工作中，我们提出了一种针对规模化隐私感知手语翻译的两阶段框架，解决了这两个问题。我们引入了SSVP-SLT，它利用匿名和未注释的视频进行自监督视频预训练，然后利用经过筛选的平行数据集进行有监督的手语翻译微调。 SSVP-SLT在How2Sign数据集上实现了最新的微调和零次gloss-free手语翻译性能，比最强的基线模型提高了3个BLEU-4。通过受控实验，我们证明了我们的方法在多个语言和手语词汇上都具有较好的泛化能力。
 
-    Generative Adversarial Networks (GANs) have been widely used in various application scenarios. Since the production of a commercial GAN requires substantial computational and human resources, the copyright protection of GANs is urgently needed. In this paper, we present the first fingerprinting scheme for the Intellectual Property (IP) protection of GANs. We break through the stealthiness and robustness bottlenecks suffered by previous fingerprinting methods for classification models being naively transferred to GANs. Specifically, we innovatively construct a composite deep learning model from the target GAN and a classifier. Then we generate fingerprint samples from this composite model, and embed them in the classifier for effective ownership verification. This scheme inspires some concrete methodologies to practically protect the modern GAN models. Theoretical analysis proves that these methods can satisfy different security requirements necessary for IP protection. We also conduct 
+    arXiv:2402.09611v1 Announce Type: new  Abstract: A major impediment to the advancement of sign language translation (SLT) is data scarcity. Much of the sign language data currently available on the web cannot be used for training supervised models due to the lack of aligned captions. Furthermore, scaling SLT using large-scale web-scraped datasets bears privacy risks due to the presence of biometric information, which the responsible development of SLT technologies should account for. In this work, we propose a two-stage framework for privacy-aware SLT at scale that addresses both of these issues. We introduce SSVP-SLT, which leverages self-supervised video pretraining on anonymized and unannotated videos, followed by supervised SLT finetuning on a curated parallel dataset. SSVP-SLT achieves state-of-the-art finetuned and zero-shot gloss-free SLT performance on the How2Sign dataset, outperforming the strongest respective baselines by over 3 BLEU-4. Based on controlled experiments, we fu
+    
+[^6]: 鲁棒且具普适性的医学图像分割的空间和光谱学习的协调
+
+    Harmonized Spatial and Spectral Learning for Robust and Generalized Medical Image Segmentation. (arXiv:2401.10373v1 [eess.IV])
+
+    [http://arxiv.org/abs/2401.10373](http://arxiv.org/abs/2401.10373)
+
+    本文提出了一种鲁棒且具普适性的医学图像分割方法，通过协调空间和光谱表示，引入光谱相关系数目标来提高对中阶特征和上下文长程依赖的捕捉能力，从而显著增强了泛化能力。
+
+    
+
+    深度学习在医学图像分割方面取得了显著的成就。然而，由于类内变异性和类间独立性，现有的深度学习模型在泛化能力上存在困难，同一类在不同样本中表现不同，难以捕捉不同对象之间的复杂关系，从而导致更高的错误负例。本文提出了一种新的方法，通过协调空间和光谱表示来增强领域通用的医学图像分割。我们引入了创新的光谱相关系数目标，以提高模型捕捉中阶特征和上下文长程依赖的能力。这个目标通过融入有价值的光谱信息来补充传统的空间目标。大量实验证明，优化这个目标与现有的UNet和TransUNet架构显著提高了泛化能力。
+
+    Deep learning has demonstrated remarkable achievements in medical image segmentation. However, prevailing deep learning models struggle with poor generalization due to (i) intra-class variations, where the same class appears differently in different samples, and (ii) inter-class independence, resulting in difficulties capturing intricate relationships between distinct objects, leading to higher false negative cases. This paper presents a novel approach that synergies spatial and spectral representations to enhance domain-generalized medical image segmentation. We introduce the innovative Spectral Correlation Coefficient objective to improve the model's capacity to capture middle-order features and contextual long-range dependencies. This objective complements traditional spatial objectives by incorporating valuable spectral information. Extensive experiments reveal that optimizing this objective with existing architectures like UNet and TransUNet significantly enhances generalization, 
+    
+[^7]: Safe DreamerV3：带有世界模型的安全强化学习
+
+    Safe DreamerV3: Safe Reinforcement Learning with World Models. (arXiv:2307.07176v1 [cs.LG])
+
+    [http://arxiv.org/abs/2307.07176](http://arxiv.org/abs/2307.07176)
+
+    Safe DreamerV3是一种通过集成基于拉格朗日和计划的方法到世界模型中的新算法，实现了在低维度和仅采用视觉的任务中几乎零成本的安全强化学习。
+
+    
+
+    强化学习在真实世界场景中的广泛应用还没有实现, 这主要是因为其未能满足这些系统的基本安全需求。现有的安全强化学习方法使用成本函数来增强安全性，在复杂场景中，包括仅采用视觉的任务中，即使进行全面的数据采样和训练，也无法实现零成本。为了解决这个问题，我们引入了Safe DreamerV3，这是一种将基于拉格朗日和计划的方法集成到世界模型中的新算法。我们的方法论在SafeRL中代表了一个重要的进步，是第一个在Safety-Gymnasium基准中实现近乎零成本的算法。我们的项目网站可以在以下链接找到：https://sites.google.com/view/safedreamerv3。
+
+    The widespread application of Reinforcement Learning (RL) in real-world situations is yet to come to fruition, largely as a result of its failure to satisfy the essential safety demands of such systems. Existing safe reinforcement learning (SafeRL) methods, employing cost functions to enhance safety, fail to achieve zero-cost in complex scenarios, including vision-only tasks, even with comprehensive data sampling and training. To address this, we introduce Safe DreamerV3, a novel algorithm that integrates both Lagrangian-based and planning-based methods within a world model. Our methodology represents a significant advancement in SafeRL as the first algorithm to achieve nearly zero-cost in both low-dimensional and vision-only tasks within the Safety-Gymnasium benchmark. Our project website can be found in: https://sites.google.com/view/safedreamerv3.
+    
+[^8]: 深度学习中的损失函数和度量方法：一项评论
+
+    Loss Functions and Metrics in Deep Learning. A Review. (arXiv:2307.02694v1 [cs.LG])
+
+    [http://arxiv.org/abs/2307.02694](http://arxiv.org/abs/2307.02694)
+
+    本文回顾了深度学习中最常见的损失函数和性能测量方法，旨在帮助从业者选择最适合其特定任务的方法。
+
+    
+
+    深度学习的一个重要组成部分是选择用于训练和评估模型的损失函数和性能度量。本文回顾了深度学习中最常见的损失函数和性能测量方法。我们探讨了每种技术的优势和局限性，并举例说明它们在各种深度学习问题上的应用。我们的评论旨在全面了解最常见的深度学习任务中使用的不同损失函数和性能指标，并帮助从业者选择最适合其特定任务的方法。
+
+    One of the essential components of deep learning is the choice of the loss function and performance metrics used to train and evaluate models. This paper reviews the most prevalent loss functions and performance measurements in deep learning. We examine the benefits and limits of each technique and illustrate their application to various deep-learning problems. Our review aims to give a comprehensive picture of the different loss functions and performance indicators used in the most common deep learning tasks and help practitioners choose the best method for their specific task.
+    
+[^9]: 基于深度卷积神经网络伪影降噪的稀疏视图CT图像自动出血检测的改进
+
+    Improving Automated Hemorrhage Detection in Sparse-view Computed Tomography via Deep Convolutional Neural Network based Artifact Reduction. (arXiv:2303.09340v1 [eess.IV])
+
+    [http://arxiv.org/abs/2303.09340](http://arxiv.org/abs/2303.09340)
+
+    本文提出了一种基于深度卷积神经网络的伪影降噪方法，用于改善稀疏视图下自动出血检测的图像质量，并证明其能够与完全采样的图像进行同等精确度的分类和检测。
+
+    
+
+    颅内出血是一种严重的健康问题，需要快速且常常非常密集的医疗治疗。为了诊断，通常要进行颅部计算机断层扫描（CCT）扫描。然而，由于辐射引起的增加的健康风险是一个问题。降低这种潜在风险的最重要策略是尽可能保持辐射剂量低，并与诊断任务一致。 稀疏视图CT可以通过减少所采集的视图总数，从而降低剂量，是一种有效的策略，但代价是降低图像质量。在这项工作中，我们使用U-Net架构来减少稀疏视图CCT的伪影，从稀疏视图中预测完全采样的重建图像。我们使用一个卷积神经网络对出血的检测和分类进行评估，并在完全采样的CCT上进行训练。我们的结果表明，伪影降噪后的CCT图像进行自动分类和检测的准确性与完全采样的CCT图像没有明显差异。
+
+    Intracranial hemorrhage poses a serious health problem requiring rapid and often intensive medical treatment. For diagnosis, a Cranial Computed Tomography (CCT) scan is usually performed. However, the increased health risk caused by radiation is a concern. The most important strategy to reduce this potential risk is to keep the radiation dose as low as possible and consistent with the diagnostic task. Sparse-view CT can be an effective strategy to reduce dose by reducing the total number of views acquired, albeit at the expense of image quality. In this work, we use a U-Net architecture to reduce artifacts from sparse-view CCTs, predicting fully sampled reconstructions from sparse-view ones. We evaluate the hemorrhage detectability in the predicted CCTs with a hemorrhage classification convolutional neural network, trained on fully sampled CCTs to detect and classify different sub-types of hemorrhages. Our results suggest that the automated classification and detection accuracy of hemo
     
 

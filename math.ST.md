@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [$L^1$ Estimation: On the Optimality of Linear Estimators.](http://arxiv.org/abs/2309.09129) | 该论文研究了在$L^1$保真度条件下，从噪声观测中估计随机变量$X$的问题。结果表明，唯一能够引入线性条件中位数的先验分布是高斯分布。此外，还研究了其他$L^p$损失，并观察到对于$p \in [1,2]$，高斯分布是唯一引入线性最优贝叶斯估计器的先验分布。扩展还涵盖了特定指数族条件分布的噪声模型。 |
-| [^2] | [Nonparametric Linear Feature Learning in Regression Through Regularisation.](http://arxiv.org/abs/2307.12754) | 本研究提出了一种新的非参数线性特征学习方法，对于监督学习中存在于低维线性子空间中的相关信息的预测和解释能力的提升是非常有帮助的。 |
+| [^1] | [Graph Matching via convex relaxation to the simplex.](http://arxiv.org/abs/2310.20609) | 本文提出了一种新的图匹配方法，通过对单位单纯形进行凸松弛，并开发了高效的镜像下降方案来解决该问题。在相关高斯Wigner模型下，单纯形松弛法具有唯一解，并且能够精确恢复地面真实排列。 |
 
 # 详细
 
-[^1]: $L^1$估计：线性估计器的最优性
+[^1]: 通过对单纯形进行凸松弛解决图匹配问题
 
-    $L^1$ Estimation: On the Optimality of Linear Estimators. (arXiv:2309.09129v1 [math.ST])
+    Graph Matching via convex relaxation to the simplex. (arXiv:2310.20609v1 [stat.ML])
 
-    [http://arxiv.org/abs/2309.09129](http://arxiv.org/abs/2309.09129)
+    [http://arxiv.org/abs/2310.20609](http://arxiv.org/abs/2310.20609)
 
-    该论文研究了在$L^1$保真度条件下，从噪声观测中估计随机变量$X$的问题。结果表明，唯一能够引入线性条件中位数的先验分布是高斯分布。此外，还研究了其他$L^p$损失，并观察到对于$p \in [1,2]$，高斯分布是唯一引入线性最优贝叶斯估计器的先验分布。扩展还涵盖了特定指数族条件分布的噪声模型。
-
-    
-
-    在$L^1$保真度条件下，考虑从噪声观测$Y=X+Z$中估计随机变量$X$的问题，其中$Z$是标准正态分布。众所周知，在这种情况下，最优的贝叶斯估计器是条件中位数。本文表明，在条件中位数中引入线性的唯一先验分布是高斯分布。同时，还提供了其他几个结果。特别地，证明了如果对于所有$y$，条件分布$P_{X|Y=y}$都是对称的，则$X$必须服从高斯分布。此外，我们考虑了其他的$L^p$损失，并观察到以下现象：对于$p \in [1,2]$，高斯分布是唯一引入线性最优贝叶斯估计器的先验分布，对于$p \in (2,\infty)$，有无穷多个先验分布可以引入线性性。最后，还提供了扩展，以涵盖导致特定指数族条件分布的噪声模型。
-
-    Consider the problem of estimating a random variable $X$ from noisy observations $Y = X+ Z$, where $Z$ is standard normal, under the $L^1$ fidelity criterion. It is well known that the optimal Bayesian estimator in this setting is the conditional median. This work shows that the only prior distribution on $X$ that induces linearity in the conditional median is Gaussian.  Along the way, several other results are presented. In particular, it is demonstrated that if the conditional distribution $P_{X|Y=y}$ is symmetric for all $y$, then $X$ must follow a Gaussian distribution. Additionally, we consider other $L^p$ losses and observe the following phenomenon: for $p \in [1,2]$, Gaussian is the only prior distribution that induces a linear optimal Bayesian estimator, and for $p \in (2,\infty)$, infinitely many prior distributions on $X$ can induce linearity. Finally, extensions are provided to encompass noise models leading to conditional distributions from certain exponential families.
-    
-[^2]: 非参数线性特征学习在回归中的应用通过正则化
-
-    Nonparametric Linear Feature Learning in Regression Through Regularisation. (arXiv:2307.12754v2 [stat.ME] UPDATED)
-
-    [http://arxiv.org/abs/2307.12754](http://arxiv.org/abs/2307.12754)
-
-    本研究提出了一种新的非参数线性特征学习方法，对于监督学习中存在于低维线性子空间中的相关信息的预测和解释能力的提升是非常有帮助的。
+    本文提出了一种新的图匹配方法，通过对单位单纯形进行凸松弛，并开发了高效的镜像下降方案来解决该问题。在相关高斯Wigner模型下，单纯形松弛法具有唯一解，并且能够精确恢复地面真实排列。
 
     
 
-    表征学习在自动化特征选择中发挥着关键作用，特别是在高维数据的背景下，非参数方法常常很难应对。在本研究中，我们专注于监督学习场景，其中相关信息存在于数据的低维线性子空间中，即多指数模型。如果已知该子空间，将大大增强预测、计算和解释能力。为了解决这一挑战，我们提出了一种新颖的非参数预测的线性特征学习方法，同时估计预测函数和线性子空间。我们的方法采用经验风险最小化，并加上函数导数的惩罚项，以保证其多样性。通过利用Hermite多项式的正交性和旋转不变性特性，我们引入了我们的估计器RegFeaL。通过利用替代最小化，我们迭代地旋转数据以改善与线性子空间的对齐。
+    本文针对图匹配问题进行研究，该问题包括在两个输入图之间找到最佳对齐，并在计算机视觉、网络去匿名化和蛋白质对齐等领域有许多应用。解决这个问题的常见方法是通过对NP难问题“二次分配问题”（QAP）进行凸松弛。本文引入了一种新的凸松弛方法，即对单位单纯形进行松弛，并开发了一种具有闭合迭代形式的高效镜像下降方案来解决该问题。在相关高斯Wigner模型下，我们证明了单纯形松弛法在高概率下具有唯一解。在无噪声情况下，这被证明可以精确恢复地面真实排列。此外，我们建立了一种新的输入矩阵假设条件，用于标准贪心取整方法，并且这个条件比常用的“对角线优势”条件更宽松。我们使用这个条件证明了地面真实排列的精确一步恢复。
 
-    Representation learning plays a crucial role in automated feature selection, particularly in the context of high-dimensional data, where non-parametric methods often struggle. In this study, we focus on supervised learning scenarios where the pertinent information resides within a lower-dimensional linear subspace of the data, namely the multi-index model. If this subspace were known, it would greatly enhance prediction, computation, and interpretation. To address this challenge, we propose a novel method for linear feature learning with non-parametric prediction, which simultaneously estimates the prediction function and the linear subspace. Our approach employs empirical risk minimisation, augmented with a penalty on function derivatives, ensuring versatility. Leveraging the orthogonality and rotation invariance properties of Hermite polynomials, we introduce our estimator, named RegFeaL. By utilising alternative minimisation, we iteratively rotate the data to improve alignment with 
+    This paper addresses the Graph Matching problem, which consists of finding the best possible alignment between two input graphs, and has many applications in computer vision, network deanonymization and protein alignment. A common approach to tackle this problem is through convex relaxations of the NP-hard \emph{Quadratic Assignment Problem} (QAP).  Here, we introduce a new convex relaxation onto the unit simplex and develop an efficient mirror descent scheme with closed-form iterations for solving this problem. Under the correlated Gaussian Wigner model, we show that the simplex relaxation admits a unique solution with high probability. In the noiseless case, this is shown to imply exact recovery of the ground truth permutation. Additionally, we establish a novel sufficiency condition for the input matrix in standard greedy rounding methods, which is less restrictive than the commonly used `diagonal dominance' condition. We use this condition to show exact one-step recovery of the gro
     
 
