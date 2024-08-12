@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description><item><title>&#36890;&#36807;&#22823;&#22411;&#35821;&#35328;&#27169;&#22411;&#22312;npm&#29983;&#24577;&#31995;&#32479;&#20013;&#36827;&#34892;&#23454;&#35777;&#30740;&#31350;&#65292;&#20197;&#21327;&#21161;&#23433;&#20840;&#20998;&#26512;&#24072;&#35782;&#21035;&#24694;&#24847;&#36719;&#20214;&#21253;</title><link>https://arxiv.org/abs/2403.12196</link><description>&lt;p&gt;
+&#29992;&#22823;&#22411;&#35821;&#35328;&#27169;&#22411;&#22312;npm&#29983;&#24577;&#31995;&#32479;&#20013;&#26816;&#27979;&#24694;&#24847;&#36719;&#20214;
+&lt;/p&gt;
+&lt;p&gt;
+Shifting the Lens: Detecting Malware in npm Ecosystem with Large Language Models
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.12196
+&lt;/p&gt;
+&lt;p&gt;
+&#36890;&#36807;&#22823;&#22411;&#35821;&#35328;&#27169;&#22411;&#22312;npm&#29983;&#24577;&#31995;&#32479;&#20013;&#36827;&#34892;&#23454;&#35777;&#30740;&#31350;&#65292;&#20197;&#21327;&#21161;&#23433;&#20840;&#20998;&#26512;&#24072;&#35782;&#21035;&#24694;&#24847;&#36719;&#20214;&#21253;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+Gartner 2022&#24180;&#30340;&#25253;&#21578;&#39044;&#27979;&#65292;&#21040;2025&#24180;&#65292;&#20840;&#29699;45%&#30340;&#32452;&#32455;&#23558;&#36973;&#36935;&#36719;&#20214;&#20379;&#24212;&#38142;&#25915;&#20987;&#65292;&#20984;&#26174;&#20102;&#25913;&#21892;&#36719;&#20214;&#20379;&#24212;&#38142;&#23433;&#20840;&#23545;&#31038;&#21306;&#21644;&#22269;&#23478;&#21033;&#30410;&#30340;&#36843;&#20999;&#24615;&#12290;&#24403;&#21069;&#30340;&#24694;&#24847;&#36719;&#20214;&#26816;&#27979;&#25216;&#26415;&#36890;&#36807;&#36807;&#28388;&#33391;&#24615;&#21644;&#24694;&#24847;&#36719;&#20214;&#21253;&#26469;&#36741;&#21161;&#25163;&#21160;&#23457;&#26680;&#36807;&#31243;&#65292;&#28982;&#32780;&#36825;&#31181;&#25216;&#26415;&#23384;&#22312;&#36739;&#39640;&#30340;&#35823;&#25253;&#29575;&#21644;&#26377;&#38480;&#30340;&#33258;&#21160;&#21270;&#25903;&#25345;&#12290;&#22240;&#27492;&#65292;&#24694;&#24847;&#36719;&#20214;&#26816;&#27979;&#25216;&#26415;&#21487;&#20197;&#21463;&#30410;&#20110;&#20808;&#36827;&#12289;&#26356;&#33258;&#21160;&#21270;&#30340;&#26041;&#27861;&#65292;&#24471;&#21040;&#20934;&#30830;&#19988;&#35823;&#25253;&#36739;&#23569;&#30340;&#32467;&#26524;&#12290;&#35813;&#30740;&#31350;&#30340;&#30446;&#26631;&#26159;&#36890;&#36807;&#23545;&#22823;&#22411;&#35821;&#35328;&#27169;&#22411;&#65288;LLMs&#65289;&#36827;&#34892;&#23454;&#35777;&#30740;&#31350;&#65292;&#24110;&#21161;&#23433;&#20840;&#20998;&#26512;&#24072;&#35782;&#21035;npm&#29983;&#24577;&#31995;&#32479;&#20013;&#30340;&#24694;&#24847;&#36719;&#20214;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.12196v1 Announce Type: cross  Abstract: The Gartner 2022 report predicts that 45% of organizations worldwide will encounter software supply chain attacks by 2025, highlighting the urgency to improve software supply chain security for community and national interests. Current malware detection techniques aid in the manual review process by filtering benign and malware packages, yet such techniques have high false-positive rates and limited automation support. Therefore, malware detection techniques could benefit from advanced, more automated approaches for accurate and minimally false-positive results. The goal of this study is to assist security analysts in identifying malicious packages through the empirical study of large language models (LLMs) to detect potential malware in the npm ecosystem.   We present SocketAI Scanner, a multi-stage decision-maker malware detection workflow using iterative self-refinement and zero-shot-role-play-Chain of Thought (CoT) prompting techni
+&lt;/p&gt;</description></item></channel></rss>
