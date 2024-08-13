@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [DurFlex-EVC: Duration-Flexible Emotional Voice Conversion with Parallel Generation](https://arxiv.org/abs/2401.08095) | DurFlex-EVC通过引入风格自编码器和交叉注意力，解决了传统情绪语音转换模型中对语言和语音信息的同步问题。 |
+| [^1] | [XLAVS-R: Cross-Lingual Audio-Visual Speech Representation Learning for Noise-Robust Speech Perception](https://arxiv.org/abs/2403.14402) | XLAVS-R是一个跨语言视听语音表示学习模型，通过利用有限的多语言AV预训练数据，简化预训练方案，以提高对噪声的鲁棒性，在下游音频-视觉语音识别和翻译任务中比先前最先进技术提升了高达18.5% WER和4.7 BLEU。 |
 
 # 详细
 
-[^1]: DurFlex-EVC: 具有并行生成的持续灵活情绪语音转换
+[^1]: XLAVS-R: 跨语言视听语音表示学习用于噪声鲁棒语音知觉
 
-    DurFlex-EVC: Duration-Flexible Emotional Voice Conversion with Parallel Generation
+    XLAVS-R: Cross-Lingual Audio-Visual Speech Representation Learning for Noise-Robust Speech Perception
 
-    [https://arxiv.org/abs/2401.08095](https://arxiv.org/abs/2401.08095)
+    [https://arxiv.org/abs/2403.14402](https://arxiv.org/abs/2403.14402)
 
-    DurFlex-EVC通过引入风格自编码器和交叉注意力，解决了传统情绪语音转换模型中对语言和语音信息的同步问题。
+    XLAVS-R是一个跨语言视听语音表示学习模型，通过利用有限的多语言AV预训练数据，简化预训练方案，以提高对噪声的鲁棒性，在下游音频-视觉语音识别和翻译任务中比先前最先进技术提升了高达18.5% WER和4.7 BLEU。
 
     
 
-    情绪语音转换（EVC）旨在修改说话者声音的情绪色彩，同时保留原始的语言内容和说话者独特的声音特征。最近EVC的进展涉及同时建模音高和持续时间，利用序列到序列（seq2seq）模型的潜力。为了增强转换的可靠性和效率，本研究将重点转向并行语音生成。我们介绍了DurFlex-EVC，它集成了风格自编码器和单元对齐器。传统模型虽然融入了包含语言和语音信息的自监督学习（SSL）表示，但却忽视了这种双重性质，导致了可控性的降低。为了解决这个问题，我们实现了交叉注意力以将这些表示与不同情绪进行同步。此外，我们还开发了一个风格自编码器。
+    语音识别和翻译系统对嘈杂的输入表现不佳，在现实环境中经常出现。通过视觉信号增强这些系统有潜力提高对噪声的鲁棒性。然而，视听（AV）数据仅有限可用，并且比仅有音频资源的语言更少。为填补这一空白，我们提出XLAVS-R，一个跨语言视听语音表示模型，用于超过100种语言的噪声鲁棒语音识别和翻译。它旨在最大程度利用有限的多语言AV预训练数据的益处，通过在音频-仅多语言预训练的基础上构建，并简化现有的预训练方案。在MuAViC基准评估上对XLAVS-R进行了广泛评估，显示了其在下游音频-视觉语音识别和翻译任务上的优势，在给出嘈杂的AV输入时，其优于先前最先进技术最高达到18.5% WER和4.7 BLEU。
 
-    arXiv:2401.08095v2 Announce Type: replace-cross  Abstract: Emotional voice conversion (EVC) seeks to modify the emotional tone of a speaker's voice while preserving the original linguistic content and the speaker's unique vocal characteristics. Recent advancements in EVC have involved the simultaneous modeling of pitch and duration, utilizing the potential of sequence-to-sequence (seq2seq) models. To enhance reliability and efficiency in conversion, this study shifts focus towards parallel speech generation. We introduce Duration-Flexible EVC (DurFlex-EVC), which integrates a style autoencoder and unit aligner. Traditional models, while incorporating self-supervised learning (SSL) representations that contain both linguistic and paralinguistic information, have neglected this dual nature, leading to reduced controllability. Addressing this issue, we implement cross-attention to synchronize these representations with various emotions. Additionally, a style autoencoder is developed for t
+    arXiv:2403.14402v1 Announce Type: cross  Abstract: Speech recognition and translation systems perform poorly on noisy inputs, which are frequent in realistic environments. Augmenting these systems with visual signals has the potential to improve robustness to noise. However, audio-visual (AV) data is only available in limited amounts and for fewer languages than audio-only resources. To address this gap, we present XLAVS-R, a cross-lingual audio-visual speech representation model for noise-robust speech recognition and translation in over 100 languages. It is designed to maximize the benefits of limited multilingual AV pre-training data, by building on top of audio-only multilingual pre-training and simplifying existing pre-training schemes. Extensive evaluation on the MuAViC benchmark shows the strength of XLAVS-R on downstream audio-visual speech recognition and translation tasks, where it outperforms the previous state of the art by up to 18.5% WER and 4.7 BLEU given noisy AV inputs
     
 

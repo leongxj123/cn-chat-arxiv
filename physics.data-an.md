@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A model for efficient dynamical ranking in networks.](http://arxiv.org/abs/2307.13544) | 该论文提出了一种受物理启发的方法，用于在定向时态网络中推断节点的动态排序，通过求解线性方程组实现，仅需调整一个参数，具有可扩展性和高效性。在各种应用中的测试结果显示，该方法比现有方法更好地预测了动态排序。 |
+| [^1] | [Exponentially Improved Efficient Machine Learning for Quantum Many-body States with Provable Guarantees.](http://arxiv.org/abs/2304.04353) | 通过机器学习协议预测量子多体系统的基态及其性质，其精度为 $\varepsilon$，并具有可证明的保障；但对于普遍的能隙哈密顿量，样本个数 $N = m^{{\cal{O}} \left(\frac{1}{\varepsilon}\right)}$，只适用于参数空间维度较大，且精度不是紧迫因素，无法进入更精确的学习和预测领域。 |
 
 # 详细
 
-[^1]: 在网络中高效动态排序的模型
+[^1]: 大规模量子多体态的机器学习显著提高效率并具有可证明保障
 
-    A model for efficient dynamical ranking in networks. (arXiv:2307.13544v1 [physics.soc-ph])
+    Exponentially Improved Efficient Machine Learning for Quantum Many-body States with Provable Guarantees. (arXiv:2304.04353v1 [quant-ph])
 
-    [http://arxiv.org/abs/2307.13544](http://arxiv.org/abs/2307.13544)
+    [http://arxiv.org/abs/2304.04353](http://arxiv.org/abs/2304.04353)
 
-    该论文提出了一种受物理启发的方法，用于在定向时态网络中推断节点的动态排序，通过求解线性方程组实现，仅需调整一个参数，具有可扩展性和高效性。在各种应用中的测试结果显示，该方法比现有方法更好地预测了动态排序。
+    通过机器学习协议预测量子多体系统的基态及其性质，其精度为 $\varepsilon$，并具有可证明的保障；但对于普遍的能隙哈密顿量，样本个数 $N = m^{{\cal{O}} \left(\frac{1}{\varepsilon}\right)}$，只适用于参数空间维度较大，且精度不是紧迫因素，无法进入更精确的学习和预测领域。
 
     
 
-    我们提出了一种受物理启发的方法，用于推断定向时态网络中的动态排序 - 每个定向且带时间戳的边反映了一对交互的结果和时间。每个节点的推断排序是实值且随时间变化的，每次新的边缘都会提高或降低节点的估计强度或声望，这在真实情景中经常观察到，包括游戏序列，锦标赛或动物等级的相互作用。我们的方法通过求解一组线性方程来工作，并且只需要调整一个参数。因此，对应的算法是可扩展且高效的。我们通过评估方法在各种应用中预测交互（边缘存在）及其结果（边缘方向）的能力来测试我们的方法，包括合成数据和真实数据。我们的分析显示，在许多情况下，我们的方法比现有的方法更好地预测了动态排序。
+    对于经典算法而言，解决量子多体系统的基态及其性质通常是一项艰巨的任务。对于定义在物理参数 $m$ 维空间上的哈密顿量族，只要可以高效地准备和测量一组 $N$ 个态，就可以通过机器学习协议预测其基态及其在任意参数配置下的性质，精度为 $\varepsilon$。最近的一项研究 [Huang 等人，Science 377，eabk3333（2022）] 对这种一般化提出了严格的保障。不幸的是，对于普遍的能隙哈密顿量，普适的指数缩放为 $N = m^{{\cal{O}} \left(\frac{1}{\varepsilon}\right)}$，这个结果仅适用于参数空间的维度较大，而精度的缩放则不是一个紧迫的因素，不能进入更精确的学习和预测领域。
 
-    We present a physics-inspired method for inferring dynamic rankings in directed temporal networks - networks in which each directed and timestamped edge reflects the outcome and timing of a pairwise interaction. The inferred ranking of each node is real-valued and varies in time as each new edge, encoding an outcome like a win or loss, raises or lowers the node's estimated strength or prestige, as is often observed in real scenarios including sequences of games, tournaments, or interactions in animal hierarchies. Our method works by solving a linear system of equations and requires only one parameter to be tuned. As a result, the corresponding algorithm is scalable and efficient. We test our method by evaluating its ability to predict interactions (edges' existence) and their outcomes (edges' directions) in a variety of applications, including both synthetic and real data. Our analysis shows that in many cases our method's performance is better than existing methods for predicting dyna
+    Solving the ground state and the ground-state properties of quantum many-body systems is generically a hard task for classical algorithms. For a family of Hamiltonians defined on an $m$-dimensional space of physical parameters, the ground state and its properties at an arbitrary parameter configuration can be predicted via a machine learning protocol up to a prescribed prediction error $\varepsilon$, provided that a sample set (of size $N$) of the states can be efficiently prepared and measured. In a recent work [Huang et al., Science 377, eabk3333 (2022)], a rigorous guarantee for such an generalization was proved. Unfortunately, an exponential scaling, $N = m^{ {\cal{O}} \left(\frac{1}{\varepsilon} \right) }$, was found to be universal for generic gapped Hamiltonians. This result applies to the situation where the dimension of the parameter space is large while the scaling with the accuracy is not an urgent factor, not entering the realm of more precise learning and prediction. In th
     
 

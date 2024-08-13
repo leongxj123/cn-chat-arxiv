@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A model for efficient dynamical ranking in networks.](http://arxiv.org/abs/2307.13544) | 该论文提出了一种受物理启发的方法，用于在定向时态网络中推断节点的动态排序，通过求解线性方程组实现，仅需调整一个参数，具有可扩展性和高效性。在各种应用中的测试结果显示，该方法比现有方法更好地预测了动态排序。 |
+| [^1] | [Moderating Illicit Online Image Promotion for Unsafe User-Generated Content Games Using Large Vision-Language Models](https://arxiv.org/abs/2403.18957) | 该研究旨在调查不安全用户生成内容游戏中的违法推广威胁，收集了一组包含性暴力和暴力内容的真实图像数据集。 |
 
 # 详细
 
-[^1]: 在网络中高效动态排序的模型
+[^1]: 利用大规模视觉语言模型调节不安全用户生成内容游戏中的违法在线图片推广
 
-    A model for efficient dynamical ranking in networks. (arXiv:2307.13544v1 [physics.soc-ph])
+    Moderating Illicit Online Image Promotion for Unsafe User-Generated Content Games Using Large Vision-Language Models
 
-    [http://arxiv.org/abs/2307.13544](http://arxiv.org/abs/2307.13544)
+    [https://arxiv.org/abs/2403.18957](https://arxiv.org/abs/2403.18957)
 
-    该论文提出了一种受物理启发的方法，用于在定向时态网络中推断节点的动态排序，通过求解线性方程组实现，仅需调整一个参数，具有可扩展性和高效性。在各种应用中的测试结果显示，该方法比现有方法更好地预测了动态排序。
+    该研究旨在调查不安全用户生成内容游戏中的违法推广威胁，收集了一组包含性暴力和暴力内容的真实图像数据集。
 
     
 
-    我们提出了一种受物理启发的方法，用于推断定向时态网络中的动态排序 - 每个定向且带时间戳的边反映了一对交互的结果和时间。每个节点的推断排序是实值且随时间变化的，每次新的边缘都会提高或降低节点的估计强度或声望，这在真实情景中经常观察到，包括游戏序列，锦标赛或动物等级的相互作用。我们的方法通过求解一组线性方程来工作，并且只需要调整一个参数。因此，对应的算法是可扩展且高效的。我们通过评估方法在各种应用中预测交互（边缘存在）及其结果（边缘方向）的能力来测试我们的方法，包括合成数据和真实数据。我们的分析显示，在许多情况下，我们的方法比现有的方法更好地预测了动态排序。
+    在线用户生成内容游戏（UGCGs）在儿童和青少年中越来越受欢迎，用于社交互动和更有创意的在线娱乐。然而，它们存在着更高的暴露不良内容的风险，引发了人们对儿童和青少年在线安全的日益关注。我们采取了第一步研究对不安全UGCGs的违法推广进行威胁性分析。我们收集了一组现实世界数据集，包括2,924张展示不同性暴力和暴力内容的图像，这些内容被游戏创建者用于推广UGCGs。
 
-    We present a physics-inspired method for inferring dynamic rankings in directed temporal networks - networks in which each directed and timestamped edge reflects the outcome and timing of a pairwise interaction. The inferred ranking of each node is real-valued and varies in time as each new edge, encoding an outcome like a win or loss, raises or lowers the node's estimated strength or prestige, as is often observed in real scenarios including sequences of games, tournaments, or interactions in animal hierarchies. Our method works by solving a linear system of equations and requires only one parameter to be tuned. As a result, the corresponding algorithm is scalable and efficient. We test our method by evaluating its ability to predict interactions (edges' existence) and their outcomes (edges' directions) in a variety of applications, including both synthetic and real data. Our analysis shows that in many cases our method's performance is better than existing methods for predicting dyna
+    arXiv:2403.18957v1 Announce Type: cross  Abstract: Online user-generated content games (UGCGs) are increasingly popular among children and adolescents for social interaction and more creative online entertainment. However, they pose a heightened risk of exposure to explicit content, raising growing concerns for the online safety of children and adolescents. Despite these concerns, few studies have addressed the issue of illicit image-based promotions of unsafe UGCGs on social media, which can inadvertently attract young users. This challenge arises from the difficulty of obtaining comprehensive training data for UGCG images and the unique nature of these images, which differ from traditional unsafe content. In this work, we take the first step towards studying the threat of illicit promotions of unsafe UGCGs. We collect a real-world dataset comprising 2,924 images that display diverse sexually explicit and violent content used to promote UGCGs by their game creators. Our in-depth studi
     
 

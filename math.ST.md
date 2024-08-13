@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Graph Matching via convex relaxation to the simplex.](http://arxiv.org/abs/2310.20609) | 本文提出了一种新的图匹配方法，通过对单位单纯形进行凸松弛，并开发了高效的镜像下降方案来解决该问题。在相关高斯Wigner模型下，单纯形松弛法具有唯一解，并且能够精确恢复地面真实排列。 |
+| [^1] | [E-backtesting.](http://arxiv.org/abs/2209.00991) | 本文提出了一种基于E-值和E-过程技术的ES预测无模型回测程序，可以自然地应用于许多其他风险度量和统计量。 |
 
 # 详细
 
-[^1]: 通过对单纯形进行凸松弛解决图匹配问题
+[^1]: E-backtesting——一种ES预测的无模型回测程序
 
-    Graph Matching via convex relaxation to the simplex. (arXiv:2310.20609v1 [stat.ML])
+    E-backtesting. (arXiv:2209.00991v2 [q-fin.RM] UPDATED)
 
-    [http://arxiv.org/abs/2310.20609](http://arxiv.org/abs/2310.20609)
+    [http://arxiv.org/abs/2209.00991](http://arxiv.org/abs/2209.00991)
 
-    本文提出了一种新的图匹配方法，通过对单位单纯形进行凸松弛，并开发了高效的镜像下降方案来解决该问题。在相关高斯Wigner模型下，单纯形松弛法具有唯一解，并且能够精确恢复地面真实排列。
+    本文提出了一种基于E-值和E-过程技术的ES预测无模型回测程序，可以自然地应用于许多其他风险度量和统计量。
 
     
 
-    本文针对图匹配问题进行研究，该问题包括在两个输入图之间找到最佳对齐，并在计算机视觉、网络去匿名化和蛋白质对齐等领域有许多应用。解决这个问题的常见方法是通过对NP难问题“二次分配问题”（QAP）进行凸松弛。本文引入了一种新的凸松弛方法，即对单位单纯形进行松弛，并开发了一种具有闭合迭代形式的高效镜像下降方案来解决该问题。在相关高斯Wigner模型下，我们证明了单纯形松弛法在高概率下具有唯一解。在无噪声情况下，这被证明可以精确恢复地面真实排列。此外，我们建立了一种新的输入矩阵假设条件，用于标准贪心取整方法，并且这个条件比常用的“对角线优势”条件更宽松。我们使用这个条件证明了地面真实排列的精确一步恢复。
+    在最近的巴塞尔协议中，预期损失（ES）取代了价值损失（VaR）成为银行业市场风险的标准风险度量，使它成为金融监管中最重要的风险度量。风险建模实践中最具挑战性的任务之一是回测金融机构提供的ES预测。为了设计一种ES的无模型回测程序，我们利用了最近发展的E-值和E-过程技术。引入了无模型E-统计量来制定风险度量预测的E-过程，并利用鉴别函数的最新结果为VaR和ES的无模型E-统计量确定了独特的形式。对于给定的无模型E-统计量，研究了构建E-过程的最优方法。该方法可以自然地应用于许多其他风险度量和统计量。我们进行了大量的模拟研究和数据分析，以说明无模型方法的优势。
 
-    This paper addresses the Graph Matching problem, which consists of finding the best possible alignment between two input graphs, and has many applications in computer vision, network deanonymization and protein alignment. A common approach to tackle this problem is through convex relaxations of the NP-hard \emph{Quadratic Assignment Problem} (QAP).  Here, we introduce a new convex relaxation onto the unit simplex and develop an efficient mirror descent scheme with closed-form iterations for solving this problem. Under the correlated Gaussian Wigner model, we show that the simplex relaxation admits a unique solution with high probability. In the noiseless case, this is shown to imply exact recovery of the ground truth permutation. Additionally, we establish a novel sufficiency condition for the input matrix in standard greedy rounding methods, which is less restrictive than the commonly used `diagonal dominance' condition. We use this condition to show exact one-step recovery of the gro
+    In the recent Basel Accords, the Expected Shortfall (ES) replaces the Value-at-Risk (VaR) as the standard risk measure for market risk in the banking sector, making it the most important risk measure in financial regulation. One of the most challenging tasks in risk modeling practice is to backtest ES forecasts provided by financial institutions. To design a model-free backtesting procedure for ES, we make use of the recently developed techniques of e-values and e-processes. Model-free e-statistics are introduced to formulate e-processes for risk measure forecasts, and unique forms of model-free e-statistics for VaR and ES are characterized using recent results on identification functions. For a given model-free e-statistic, optimal ways of constructing the e-processes are studied. The proposed method can be naturally applied to many other risk measures and statistical quantities. We conduct extensive simulation studies and data analysis to illustrate the advantages of the model-free b
     
 
