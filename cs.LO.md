@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Conditional Logical Message Passing Transformer for Complex Query Answering](https://arxiv.org/abs/2402.12954) | 提出了一种考虑查询图中常量和变量之间差异，能动态测量消息重要性并捕捉隐式逻辑依赖关系的条件逻辑消息传递变压器。 |
+| [^1] | [The Distributional Uncertainty of the SHAP score in Explainable Machine Learning.](http://arxiv.org/abs/2401.12731) | 本研究提出了一个原则性框架，用于处理在未知实体群体分布下的SHAP评分问题。通过考虑一个不确定性区域，我们可以确定所有特征的SHAP评分的紧束范围。 |
 
 # 详细
 
-[^1]: 用于复杂查询回答的条件逻辑消息传递变压器
+[^1]: SHAP评分在可解释机器学习中的分布不确定性
 
-    Conditional Logical Message Passing Transformer for Complex Query Answering
+    The Distributional Uncertainty of the SHAP score in Explainable Machine Learning. (arXiv:2401.12731v1 [cs.AI])
 
-    [https://arxiv.org/abs/2402.12954](https://arxiv.org/abs/2402.12954)
+    [http://arxiv.org/abs/2401.12731](http://arxiv.org/abs/2401.12731)
 
-    提出了一种考虑查询图中常量和变量之间差异，能动态测量消息重要性并捕捉隐式逻辑依赖关系的条件逻辑消息传递变压器。
+    本研究提出了一个原则性框架，用于处理在未知实体群体分布下的SHAP评分问题。通过考虑一个不确定性区域，我们可以确定所有特征的SHAP评分的紧束范围。
 
     
 
-    知识图谱（KGs）上的复杂查询回答（CQA）是一项具有挑战性的任务。由于KGs通常是不完整的，提出了神经模型来通过执行多跳逻辑推理来解决CQA。然而，大多数模型不能同时在一跳和多跳查询上表现良好。最近的工作提出了一种基于预训练神经链接预测器的逻辑消息传递机制。虽然在一跳和多跳查询上都有效，但它忽略了查询图中常量和变量节点之间的差异。此外，在节点嵌入更新阶段，该机制不能动态衡量不同消息的重要性，并且它能否捕捉与节点和接收消息相关的隐式逻辑依赖关系仍不清楚。在本文中，我们提出了条件逻辑消息传递变压器（CLMPT），考虑了查询图中常量和变量之间的差异，并且具有动态测量不同消息重要性以及捕捉与节点和接收消息相关的隐式逻辑依赖关系的能力。
+    归属分数反映了输入实体中的特征值对机器学习模型输出的重要性。其中最受欢迎的评分之一是SHAP评分，它是合作博弈理论中Shapley值的具体实例。该评分的定义依赖于实体群体的概率分布。由于通常不知道精确的分布，因此需要主观地进行分配或从数据中进行估计，这可能会导致误导性的特征评分。在本文中，我们提出了一个基于不知道实体群体分布的SHAP评分推理的原则性框架。在我们的框架中，我们考虑一个包含潜在分布的不确定性区域，而特征的SHAP评分成为在该区域上定义的一个函数。我们研究了找到该函数的最大值和最小值的基本问题，这使我们能够确定所有特征的SHAP评分的紧束范围。
 
-    arXiv:2402.12954v1 Announce Type: cross  Abstract: Complex Query Answering (CQA) over Knowledge Graphs (KGs) is a challenging task. Given that KGs are usually incomplete, neural models are proposed to solve CQA by performing multi-hop logical reasoning. However, most of them cannot perform well on both one-hop and multi-hop queries simultaneously. Recent work proposes a logical message passing mechanism based on the pre-trained neural link predictors. While effective on both one-hop and multi-hop queries, it ignores the difference between the constant and variable nodes in a query graph. In addition, during the node embedding update stage, this mechanism cannot dynamically measure the importance of different messages, and whether it can capture the implicit logical dependencies related to a node and received messages remains unclear. In this paper, we propose Conditional Logical Message Passing Transformer (CLMPT), which considers the difference between constants and variables in the c
+    Attribution scores reflect how important the feature values in an input entity are for the output of a machine learning model. One of the most popular attribution scores is the SHAP score, which is an instantiation of the general Shapley value used in coalition game theory. The definition of this score relies on a probability distribution on the entity population. Since the exact distribution is generally unknown, it needs to be assigned subjectively or be estimated from data, which may lead to misleading feature scores. In this paper, we propose a principled framework for reasoning on SHAP scores under unknown entity population distributions. In our framework, we consider an uncertainty region that contains the potential distributions, and the SHAP score of a feature becomes a function defined over this region. We study the basic problems of finding maxima and minima of this function, which allows us to determine tight ranges for the SHAP scores of all features. In particular, we pinp
     
 

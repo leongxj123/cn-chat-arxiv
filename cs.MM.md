@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Control-A-Video: Controllable Text-to-Video Generation with Diffusion Models.](http://arxiv.org/abs/2305.13840) | 这篇论文提出了一种基于控制信号的可控文本生成视频的模型，通过空间-时间自注意机制和残差噪声初始化策略，可以生成更连贯的超高质量视频，成功实现了资源高效的收敛。 |
+| [^1] | [Generative AI for Immersive Communication: The Next Frontier in Internet-of-Senses Through 6G](https://arxiv.org/abs/2404.01713) | 本文探讨了生成式人工智能用于沉浸式通信中减少带宽消耗的实用价值。 |
 
 # 详细
 
-[^1]: Control-A-Video: 控制性文本生成视频的扩散模型
+[^1]: 生成式人工智能用于沉浸式通信：通过6G探索感知互联网的下一个领域
 
-    Control-A-Video: Controllable Text-to-Video Generation with Diffusion Models. (arXiv:2305.13840v1 [cs.CV])
+    Generative AI for Immersive Communication: The Next Frontier in Internet-of-Senses Through 6G
 
-    [http://arxiv.org/abs/2305.13840](http://arxiv.org/abs/2305.13840)
+    [https://arxiv.org/abs/2404.01713](https://arxiv.org/abs/2404.01713)
 
-    这篇论文提出了一种基于控制信号的可控文本生成视频的模型，通过空间-时间自注意机制和残差噪声初始化策略，可以生成更连贯的超高质量视频，成功实现了资源高效的收敛。
+    本文探讨了生成式人工智能用于沉浸式通信中减少带宽消耗的实用价值。
 
     
 
-    本文提出了一种基于控制信号的可控文本生成视频（T2V）扩散模型，称为Video-ControlNet。该模型是在预训练的有条件文本生成图像（T2I）扩散模型基础上构建的，其中包括一种空间-时间自注意机制和可训练的时间层，用于有效的跨帧建模。提出了一种第一帧条件策略，以促进模型在自回归方式下生成转换自图像领域以及任意长度视频。此外，Video-ControlNet采用一种基于残差的噪声初始化策略，从输入视频中引入运动先验，从而产生更连贯的视频。通过提出的架构和策略，Video-ControlNet可以实现资源高效的收敛，生成具有细粒度控制的优质一致视频。广泛的实验证明了它的成功。
+    在过去的二十年中，物联网(IoT)已经是一个具有变革性的概念，当我们逼近2030年时，一个新的范式被称为感知互联网(IoS)正在兴起。与传统的虚拟现实（VR）不同，IoS旨在提供多感官体验，认识到在我们的现实世界中，我们的感知远不止于视觉和听觉；它涵盖了一系列感觉。本文探讨了推动沉浸式多感官媒体的现有技术，深入探讨它们的功能和潜在应用。这项探索包括传统沉浸式媒体流与一个提出的利用生成式人工智能增强语义交流的用例之间的比较分析。这项分析的重点是所提方案中带宽消耗减少了99.93%。通过这种比较，我们旨在强调该实用应用的价值。
 
-    This paper presents a controllable text-to-video (T2V) diffusion model, named Video-ControlNet, that generates videos conditioned on a sequence of control signals, such as edge or depth maps. Video-ControlNet is built on a pre-trained conditional text-to-image (T2I) diffusion model by incorporating a spatial-temporal self-attention mechanism and trainable temporal layers for efficient cross-frame modeling. A first-frame conditioning strategy is proposed to facilitate the model to generate videos transferred from the image domain as well as arbitrary-length videos in an auto-regressive manner. Moreover, Video-ControlNet employs a novel residual-based noise initialization strategy to introduce motion prior from an input video, producing more coherent videos. With the proposed architecture and strategies, Video-ControlNet can achieve resource-efficient convergence and generate superior quality and consistent videos with fine-grained control. Extensive experiments demonstrate its success i
+    arXiv:2404.01713v1 Announce Type: cross  Abstract: Over the past two decades, the Internet-of-Things (IoT) has been a transformative concept, and as we approach 2030, a new paradigm known as the Internet of Senses (IoS) is emerging. Unlike conventional Virtual Reality (VR), IoS seeks to provide multi-sensory experiences, acknowledging that in our physical reality, our perception extends far beyond just sight and sound; it encompasses a range of senses. This article explores existing technologies driving immersive multi-sensory media, delving into their capabilities and potential applications. This exploration includes a comparative analysis between conventional immersive media streaming and a proposed use case that lever- ages semantic communication empowered by generative Artificial Intelligence (AI). The focal point of this analysis is the substantial reduction in bandwidth consumption by 99.93% in the proposed scheme. Through this comparison, we aim to underscore the practical appli
     
 

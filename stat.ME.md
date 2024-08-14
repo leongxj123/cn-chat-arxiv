@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [E-backtesting.](http://arxiv.org/abs/2209.00991) | 本文提出了一种基于E-值和E-过程技术的ES预测无模型回测程序，可以自然地应用于许多其他风险度量和统计量。 |
+| [^1] | [flexBART: Flexible Bayesian regression trees with categorical predictors.](http://arxiv.org/abs/2211.04459) | 本论文提出了一种新的灵活贝叶斯回归树模型flexBART，可以在划分分类水平的离散集时，将多个水平分配给决策树节点的两个分支，从而实现了对分类预测变量的灵活建模，跨级别的数据部分汇总能力也得到了改进。 |
 
 # 详细
 
-[^1]: E-backtesting——一种ES预测的无模型回测程序
+[^1]: flexBART:具有分类预测变量的灵活贝叶斯回归树
 
-    E-backtesting. (arXiv:2209.00991v2 [q-fin.RM] UPDATED)
+    flexBART: Flexible Bayesian regression trees with categorical predictors. (arXiv:2211.04459v2 [stat.ME] UPDATED)
 
-    [http://arxiv.org/abs/2209.00991](http://arxiv.org/abs/2209.00991)
+    [http://arxiv.org/abs/2211.04459](http://arxiv.org/abs/2211.04459)
 
-    本文提出了一种基于E-值和E-过程技术的ES预测无模型回测程序，可以自然地应用于许多其他风险度量和统计量。
+    本论文提出了一种新的灵活贝叶斯回归树模型flexBART，可以在划分分类水平的离散集时，将多个水平分配给决策树节点的两个分支，从而实现了对分类预测变量的灵活建模，跨级别的数据部分汇总能力也得到了改进。
 
     
 
-    在最近的巴塞尔协议中，预期损失（ES）取代了价值损失（VaR）成为银行业市场风险的标准风险度量，使它成为金融监管中最重要的风险度量。风险建模实践中最具挑战性的任务之一是回测金融机构提供的ES预测。为了设计一种ES的无模型回测程序，我们利用了最近发展的E-值和E-过程技术。引入了无模型E-统计量来制定风险度量预测的E-过程，并利用鉴别函数的最新结果为VaR和ES的无模型E-统计量确定了独特的形式。对于给定的无模型E-统计量，研究了构建E-过程的最优方法。该方法可以自然地应用于许多其他风险度量和统计量。我们进行了大量的模拟研究和数据分析，以说明无模型方法的优势。
+    大多数贝叶斯加法回归树（BART）的实现方法采用独热编码将分类预测变量替换为多个二进制指标，每个指标对应于每个级别或类别。用这些指标构建的回归树通过反复删除一个级别来划分分类水平的离散集。然而，绝大多数分割不能使用此策略构建，严重限制了BART在跨级别的数据部分汇总方面的能力。受对棒球数据和邻里犯罪动态分析的启发，我们通过重新实现以能够将多个水平分配给决策树节点的两个分支的回归树来克服了这个限制。为了对聚合为小区域的空间数据建模，我们进一步提出了一个新的决策规则先验，通过从适当定义的网络的随机生成树中删除一个随机边来创建空间连续的区域。我们的重新实现，可在R的flexBART软件包中使用，允许灵活地建模分类预测变量并改进跨不同级别的数据部分汇总。
 
-    In the recent Basel Accords, the Expected Shortfall (ES) replaces the Value-at-Risk (VaR) as the standard risk measure for market risk in the banking sector, making it the most important risk measure in financial regulation. One of the most challenging tasks in risk modeling practice is to backtest ES forecasts provided by financial institutions. To design a model-free backtesting procedure for ES, we make use of the recently developed techniques of e-values and e-processes. Model-free e-statistics are introduced to formulate e-processes for risk measure forecasts, and unique forms of model-free e-statistics for VaR and ES are characterized using recent results on identification functions. For a given model-free e-statistic, optimal ways of constructing the e-processes are studied. The proposed method can be naturally applied to many other risk measures and statistical quantities. We conduct extensive simulation studies and data analysis to illustrate the advantages of the model-free b
+    Most implementations of Bayesian additive regression trees (BART) one-hot encode categorical predictors, replacing each one with several binary indicators, one for every level or category. Regression trees built with these indicators partition the discrete set of categorical levels by repeatedly removing one level at a time. Unfortunately, the vast majority of partitions cannot be built with this strategy, severely limiting BART's ability to partially pool data across groups of levels. Motivated by analyses of baseball data and neighborhood-level crime dynamics, we overcame this limitation by re-implementing BART with regression trees that can assign multiple levels to both branches of a decision tree node. To model spatial data aggregated into small regions, we further proposed a new decision rule prior that creates spatially contiguous regions by deleting a random edge from a random spanning tree of a suitably defined network. Our re-implementation, which is available in the flexBART
     
 

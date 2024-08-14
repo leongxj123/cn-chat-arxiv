@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Moderating Illicit Online Image Promotion for Unsafe User-Generated Content Games Using Large Vision-Language Models](https://arxiv.org/abs/2403.18957) | 该研究旨在调查不安全用户生成内容游戏中的违法推广威胁，收集了一组包含性暴力和暴力内容的真实图像数据集。 |
+| [^1] | [Enhancing Real-World Complex Network Representations with Hyperedge Augmentation](https://arxiv.org/abs/2402.13033) | 提出了一种新颖的图增强方法Hyperedge Augmentation (HyperAug)，通过构建直接从原始数据形成的虚拟超边，以解决现实世界复杂网络表示中高阶节点关系的问题 |
 
 # 详细
 
-[^1]: 利用大规模视觉语言模型调节不安全用户生成内容游戏中的违法在线图片推广
+[^1]: 用超边增强改进现实世界复杂网络表示
 
-    Moderating Illicit Online Image Promotion for Unsafe User-Generated Content Games Using Large Vision-Language Models
+    Enhancing Real-World Complex Network Representations with Hyperedge Augmentation
 
-    [https://arxiv.org/abs/2403.18957](https://arxiv.org/abs/2403.18957)
+    [https://arxiv.org/abs/2402.13033](https://arxiv.org/abs/2402.13033)
 
-    该研究旨在调查不安全用户生成内容游戏中的违法推广威胁，收集了一组包含性暴力和暴力内容的真实图像数据集。
+    提出了一种新颖的图增强方法Hyperedge Augmentation (HyperAug)，通过构建直接从原始数据形成的虚拟超边，以解决现实世界复杂网络表示中高阶节点关系的问题
 
     
 
-    在线用户生成内容游戏（UGCGs）在儿童和青少年中越来越受欢迎，用于社交互动和更有创意的在线娱乐。然而，它们存在着更高的暴露不良内容的风险，引发了人们对儿童和青少年在线安全的日益关注。我们采取了第一步研究对不安全UGCGs的违法推广进行威胁性分析。我们收集了一组现实世界数据集，包括2,924张展示不同性暴力和暴力内容的图像，这些内容被游戏创建者用于推广UGCGs。
+    arXiv:2402.13033v1 公告类型: 新摘要: 图增强方法在改进图神经网络（GNNs）的性能和增强泛化能力中起着至关重要的作用。现有的图增强方法主要扰动图结构，通常限于成对节点关系。这些方法无法完全解决真实世界大规模网络的复杂性，这些网络通常涉及高阶节点关系，而不仅仅是成对关系。同时，由于缺乏可用于形成高阶边的数据，真实世界图数据集主要被建模为简单图。因此，将高阶边重新配置为图增强策略的一部分是一个有前途的研究路径，可解决前述问题。在本文中，我们提出了超边增强（HyperAug），一种新颖的图增强方法，直接从原始数据构建虚拟超边，并产生辅助节点。
 
-    arXiv:2403.18957v1 Announce Type: cross  Abstract: Online user-generated content games (UGCGs) are increasingly popular among children and adolescents for social interaction and more creative online entertainment. However, they pose a heightened risk of exposure to explicit content, raising growing concerns for the online safety of children and adolescents. Despite these concerns, few studies have addressed the issue of illicit image-based promotions of unsafe UGCGs on social media, which can inadvertently attract young users. This challenge arises from the difficulty of obtaining comprehensive training data for UGCG images and the unique nature of these images, which differ from traditional unsafe content. In this work, we take the first step towards studying the threat of illicit promotions of unsafe UGCGs. We collect a real-world dataset comprising 2,924 images that display diverse sexually explicit and violent content used to promote UGCGs by their game creators. Our in-depth studi
+    arXiv:2402.13033v1 Announce Type: new  Abstract: Graph augmentation methods play a crucial role in improving the performance and enhancing generalisation capabilities in Graph Neural Networks (GNNs). Existing graph augmentation methods mainly perturb the graph structures and are usually limited to pairwise node relations. These methods cannot fully address the complexities of real-world large-scale networks that often involve higher-order node relations beyond only being pairwise. Meanwhile, real-world graph datasets are predominantly modelled as simple graphs, due to the scarcity of data that can be used to form higher-order edges. Therefore, reconfiguring the higher-order edges as an integration into graph augmentation strategies lights up a promising research path to address the aforementioned issues. In this paper, we present Hyperedge Augmentation (HyperAug), a novel graph augmentation method that constructs virtual hyperedges directly form the raw data, and produces auxiliary nod
     
 

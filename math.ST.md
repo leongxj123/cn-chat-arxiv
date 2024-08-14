@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [E-backtesting.](http://arxiv.org/abs/2209.00991) | 本文提出了一种基于E-值和E-过程技术的ES预测无模型回测程序，可以自然地应用于许多其他风险度量和统计量。 |
+| [^1] | [Computational Lower Bounds for Graphon Estimation via Low-degree Polynomials.](http://arxiv.org/abs/2308.15728) | 通过低次多项式计算图论估计存在计算障碍，传统的优化估计方法具有指数级的计算复杂度，而最优多项式时间估计器只能达到较慢的估计错误率。 |
 
 # 详细
 
-[^1]: E-backtesting——一种ES预测的无模型回测程序
+[^1]: 通过低次多项式计算图论估计的下界
 
-    E-backtesting. (arXiv:2209.00991v2 [q-fin.RM] UPDATED)
+    Computational Lower Bounds for Graphon Estimation via Low-degree Polynomials. (arXiv:2308.15728v1 [math.ST])
 
-    [http://arxiv.org/abs/2209.00991](http://arxiv.org/abs/2209.00991)
+    [http://arxiv.org/abs/2308.15728](http://arxiv.org/abs/2308.15728)
 
-    本文提出了一种基于E-值和E-过程技术的ES预测无模型回测程序，可以自然地应用于许多其他风险度量和统计量。
+    通过低次多项式计算图论估计存在计算障碍，传统的优化估计方法具有指数级的计算复杂度，而最优多项式时间估计器只能达到较慢的估计错误率。
 
     
 
-    在最近的巴塞尔协议中，预期损失（ES）取代了价值损失（VaR）成为银行业市场风险的标准风险度量，使它成为金融监管中最重要的风险度量。风险建模实践中最具挑战性的任务之一是回测金融机构提供的ES预测。为了设计一种ES的无模型回测程序，我们利用了最近发展的E-值和E-过程技术。引入了无模型E-统计量来制定风险度量预测的E-过程，并利用鉴别函数的最新结果为VaR和ES的无模型E-统计量确定了独特的形式。对于给定的无模型E-统计量，研究了构建E-过程的最优方法。该方法可以自然地应用于许多其他风险度量和统计量。我们进行了大量的模拟研究和数据分析，以说明无模型方法的优势。
+    图论估计是网络分析中最基本的问题之一，在过去十年中受到了相当大的关注。从统计学的角度来看，高等提出了对于随机块模型（SBM）和非参数图论估计的图论估计的极小极差误差率。统计优化估计是基于约束最小二乘法，并且在维度上具有指数级的计算复杂度。从计算的角度来看，已知的最优多项式时间估计器是基于通用奇异值阈值（USVT），但是它只能达到比极小极差错误率慢得多的估计错误率。人们自然会想知道这样的差距是否是必要的。USVT的计算优化性或图论估计中的计算障碍的存在一直是一个长期存在的问题。在这项工作中，我们对此迈出了第一步，并为图论估计的计算障碍提供了严格的证据。
 
-    In the recent Basel Accords, the Expected Shortfall (ES) replaces the Value-at-Risk (VaR) as the standard risk measure for market risk in the banking sector, making it the most important risk measure in financial regulation. One of the most challenging tasks in risk modeling practice is to backtest ES forecasts provided by financial institutions. To design a model-free backtesting procedure for ES, we make use of the recently developed techniques of e-values and e-processes. Model-free e-statistics are introduced to formulate e-processes for risk measure forecasts, and unique forms of model-free e-statistics for VaR and ES are characterized using recent results on identification functions. For a given model-free e-statistic, optimal ways of constructing the e-processes are studied. The proposed method can be naturally applied to many other risk measures and statistical quantities. We conduct extensive simulation studies and data analysis to illustrate the advantages of the model-free b
+    Graphon estimation has been one of the most fundamental problems in network analysis and has received considerable attention in the past decade. From the statistical perspective, the minimax error rate of graphon estimation has been established by Gao et al (2015) for both stochastic block model (SBM) and nonparametric graphon estimation. The statistical optimal estimators are based on constrained least squares and have computational complexity exponential in the dimension. From the computational perspective, the best-known polynomial-time estimator is based on universal singular value thresholding (USVT), but it can only achieve a much slower estimation error rate than the minimax one. It is natural to wonder if such a gap is essential. The computational optimality of the USVT or the existence of a computational barrier in graphon estimation has been a long-standing open problem. In this work, we take the first step towards it and provide rigorous evidence for the computational barrie
     
 
