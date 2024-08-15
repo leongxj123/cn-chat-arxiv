@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Continual Driving Policy Optimization with Closed-Loop Individualized Curricula](https://arxiv.org/abs/2309.14209) | 开发了连续驾驶政策优化框架，提出了闭环个性化课程（CLIC）概念，允许重复利用广泛场景来迭代改进自主驾驶车辆模型。 |
+| [^1] | [VIRUS-NeRF -- Vision, InfraRed and UltraSonic based Neural Radiance Fields](https://arxiv.org/abs/2403.09477) | VIRUS-NeRF是基于视觉、红外和超声波的神经辐射场，通过整合超声波和红外传感器的深度测量数据，实现了在自主移动机器人中达到与LiDAR点云相媲美的映射性能。 |
 
 # 详细
 
-[^1]: 具有闭环个性化课程的连续驾驶政策优化
+[^1]: 基于视觉、红外和超声波的神经辐射场——VIRUS-NeRF
 
-    Continual Driving Policy Optimization with Closed-Loop Individualized Curricula
+    VIRUS-NeRF -- Vision, InfraRed and UltraSonic based Neural Radiance Fields
 
-    [https://arxiv.org/abs/2309.14209](https://arxiv.org/abs/2309.14209)
+    [https://arxiv.org/abs/2403.09477](https://arxiv.org/abs/2403.09477)
 
-    开发了连续驾驶政策优化框架，提出了闭环个性化课程（CLIC）概念，允许重复利用广泛场景来迭代改进自主驾驶车辆模型。
+    VIRUS-NeRF是基于视觉、红外和超声波的神经辐射场，通过整合超声波和红外传感器的深度测量数据，实现了在自主移动机器人中达到与LiDAR点云相媲美的映射性能。
 
     
 
-    自主驾驶车辆（AV）的安全一直是一个长期的头等关注点，根源于长尾自然驾驶分布中罕见的安全关键场景的缺失。为了解决这一挑战，出现了大量基于场景的自动驾驶研究，重点是生成高风险驾驶场景并将它们应用于对AV模型进行安全关键测试。然而，有限的工作探讨了重复利用这些广泛场景来迭代改进AV模型。此外，从具有不同行为的其他AV模型收集的巨大场景库中滤出可传递信息以改进当前AV仍然是难以解决的且具有挑战性。因此，我们开发了一个具有闭环个性化课程（CLIC）特点的连续驾驶政策优化框架，我们将其分解为一组标准化的子模块。
+    自主移动机器人在现代工厂和仓库操作中起着越来越重要的作用。障碍物检测、回避和路径规划是关键的安全相关任务，通常使用昂贵的LiDAR传感器和深度摄像头来解决。我们提出使用成本效益的低分辨率测距传感器，如超声波和红外时间飞行传感器，通过开发基于视觉、红外和超声波的神经辐射场(VIRUS-NeRF)来解决这一问题。VIRUS-NeRF构建在瞬时神经图形基元与多分辨率哈希编码(Instant-NGP)的基础上，融合了超声波和红外传感器的深度测量数据，并利用它们来更新用于光线跟踪的占据网格。在2D实验评估中，VIRUS-NeRF实现了与LiDAR点云相媲美的映射性能，尤其在小型环境中，其准确性与LiDAR测量相符。
 
-    arXiv:2309.14209v3 Announce Type: replace-cross  Abstract: The safety of autonomous vehicles (AV) has been a long-standing top concern, stemming from the absence of rare and safety-critical scenarios in the long-tail naturalistic driving distribution. To tackle this challenge, a surge of research in scenario-based autonomous driving has emerged, with a focus on generating high-risk driving scenarios and applying them to conduct safety-critical testing of AV models. However, limited work has been explored on the reuse of these extensive scenarios to iteratively improve AV models. Moreover, it remains intractable and challenging to filter through gigantic scenario libraries collected from other AV models with distinct behaviors, attempting to extract transferable information for current AV improvement. Therefore, we develop a continual driving policy optimization framework featuring Closed-Loop Individualized Curricula (CLIC), which we factorize into a set of standardized sub-modules for
+    arXiv:2403.09477v1 Announce Type: cross  Abstract: Autonomous mobile robots are an increasingly integral part of modern factory and warehouse operations. Obstacle detection, avoidance and path planning are critical safety-relevant tasks, which are often solved using expensive LiDAR sensors and depth cameras. We propose to use cost-effective low-resolution ranging sensors, such as ultrasonic and infrared time-of-flight sensors by developing VIRUS-NeRF - Vision, InfraRed, and UltraSonic based Neural Radiance Fields. Building upon Instant Neural Graphics Primitives with a Multiresolution Hash Encoding (Instant-NGP), VIRUS-NeRF incorporates depth measurements from ultrasonic and infrared sensors and utilizes them to update the occupancy grid used for ray marching. Experimental evaluation in 2D demonstrates that VIRUS-NeRF achieves comparable mapping performance to LiDAR point clouds regarding coverage. Notably, in small environments, its accuracy aligns with that of LiDAR measurements, whi
     
 

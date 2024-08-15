@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [EdgeOL: Efficient in-situ Online Learning on Edge Devices.](http://arxiv.org/abs/2401.16694) | 本文提出了EdgeOL，一种边缘在线学习框架，通过内部和外部调优来优化推理准确性、微调执行时间和能量效率，在边缘设备上实现了显著的性能提升。 |
+| [^1] | [DFML: Decentralized Federated Mutual Learning](https://arxiv.org/abs/2402.01863) | DFML是一个无服务器的分散式联邦互联学习框架，能够有效地处理模型和数据的异质性，并通过相互学习在客户端之间传授知识，以获得更快的收敛速度和更高的全局准确性。 |
 
 # 详细
 
-[^1]: EdgeOL: 边缘设备上高效的原位在线学习
+[^1]: DFML：分散式联邦互联学习
 
-    EdgeOL: Efficient in-situ Online Learning on Edge Devices. (arXiv:2401.16694v1 [cs.LG])
+    DFML: Decentralized Federated Mutual Learning
 
-    [http://arxiv.org/abs/2401.16694](http://arxiv.org/abs/2401.16694)
+    [https://arxiv.org/abs/2402.01863](https://arxiv.org/abs/2402.01863)
 
-    本文提出了EdgeOL，一种边缘在线学习框架，通过内部和外部调优来优化推理准确性、微调执行时间和能量效率，在边缘设备上实现了显著的性能提升。
+    DFML是一个无服务器的分散式联邦互联学习框架，能够有效地处理模型和数据的异质性，并通过相互学习在客户端之间传授知识，以获得更快的收敛速度和更高的全局准确性。
 
     
 
-    新兴应用，如机器人辅助养老和物体识别，通常采用深度学习神经网络模型，并且自然需要：i) 处理实时推理请求和ii) 适应可能的部署场景变化。在线模型微调被广泛采用以满足这些需求。然而，微调会导致显著的能量消耗，使其难以部署在边缘设备上。在本文中，我们提出了EdgeOL，一种边缘在线学习框架，通过内部和外部调优来优化推理准确性、微调执行时间和能量效率。实验结果显示，EdgeOL平均减少了82%的微调执行时间，74%的能量消耗，并提高了平均推理准确率1.70%，相对于即时在线学习策略。
+    在现实设备领域中，联邦学习（FL）中的集中式服务器存在通信瓶颈和容易受到单点故障的挑战。此外，现有设备固有地表现出模型和数据的异质性。现有工作缺乏一个能够适应此异质性且不施加架构限制或假定公共数据可用的分散式FL（DFL）框架。为了解决这些问题，我们提出了一个分散式联邦互联学习（DFML）框架，该框架是无服务器的，支持非限制性的异构模型，并避免依赖公共数据。DFML通过相互学习在客户端之间传授知识，并循环改变监督和提取信号的数量来有效处理模型和数据的异质性。广泛的实验结果表明，DFML在收敛速度和全局准确性方面具有一致的有效性，优于普遍存在的方法。
 
-    Emerging applications, such as robot-assisted eldercare and object recognition, generally employ deep learning neural networks (DNNs) models and naturally require: i) handling streaming-in inference requests and ii) adapting to possible deployment scenario changes. Online model fine-tuning is widely adopted to satisfy these needs. However, fine-tuning involves significant energy consumption, making it challenging to deploy on edge devices. In this paper, we propose EdgeOL, an edge online learning framework that optimizes inference accuracy, fine-tuning execution time, and energy efficiency through both inter-tuning and intra-tuning optimizations. Experimental results show that, on average, EdgeOL reduces overall fine-tuning execution time by 82%, energy consumption by 74%, and improves average inference accuracy by 1.70% over the immediate online learning strategy.
+    In the realm of real-world devices, centralized servers in Federated Learning (FL) present challenges including communication bottlenecks and susceptibility to a single point of failure. Additionally, contemporary devices inherently exhibit model and data heterogeneity. Existing work lacks a Decentralized FL (DFL) framework capable of accommodating such heterogeneity without imposing architectural restrictions or assuming the availability of public data. To address these issues, we propose a Decentralized Federated Mutual Learning (DFML) framework that is serverless, supports nonrestrictive heterogeneous models, and avoids reliance on public data. DFML effectively handles model and data heterogeneity through mutual learning, which distills knowledge between clients, and cyclically varying the amount of supervision and distillation signals. Extensive experimental results demonstrate consistent effectiveness of DFML in both convergence speed and global accuracy, outperforming prevalent b
     
 

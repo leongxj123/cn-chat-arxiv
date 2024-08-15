@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Computational Lower Bounds for Graphon Estimation via Low-degree Polynomials.](http://arxiv.org/abs/2308.15728) | 通过低次多项式计算图论估计存在计算障碍，传统的优化估计方法具有指数级的计算复杂度，而最优多项式时间估计器只能达到较慢的估计错误率。 |
+| [^1] | [SAT Encoding of Partial Ordering Models for Graph Coloring Problems](https://arxiv.org/abs/2403.15961) | 该研究提出了新的SAT编码的偏序模型用于图着色问题，实验结果显示在一些情况下超越了现有的最先进方法，并对带宽着色问题进行了理论分析。 |
 
 # 详细
 
-[^1]: 通过低次多项式计算图论估计的下界
+[^1]: SAT编码的偏序模型用于图着色问题
 
-    Computational Lower Bounds for Graphon Estimation via Low-degree Polynomials. (arXiv:2308.15728v1 [math.ST])
+    SAT Encoding of Partial Ordering Models for Graph Coloring Problems
 
-    [http://arxiv.org/abs/2308.15728](http://arxiv.org/abs/2308.15728)
+    [https://arxiv.org/abs/2403.15961](https://arxiv.org/abs/2403.15961)
 
-    通过低次多项式计算图论估计存在计算障碍，传统的优化估计方法具有指数级的计算复杂度，而最优多项式时间估计器只能达到较慢的估计错误率。
+    该研究提出了新的SAT编码的偏序模型用于图着色问题，实验结果显示在一些情况下超越了现有的最先进方法，并对带宽着色问题进行了理论分析。
 
     
 
-    图论估计是网络分析中最基本的问题之一，在过去十年中受到了相当大的关注。从统计学的角度来看，高等提出了对于随机块模型（SBM）和非参数图论估计的图论估计的极小极差误差率。统计优化估计是基于约束最小二乘法，并且在维度上具有指数级的计算复杂度。从计算的角度来看，已知的最优多项式时间估计器是基于通用奇异值阈值（USVT），但是它只能达到比极小极差错误率慢得多的估计错误率。人们自然会想知道这样的差距是否是必要的。USVT的计算优化性或图论估计中的计算障碍的存在一直是一个长期存在的问题。在这项工作中，我们对此迈出了第一步，并为图论估计的计算障碍提供了严格的证据。
+    在本文中，我们提出了基于偏序的整数线性规划（ILP）模型的图着色问题（GCP）和带宽着色问题（BCP）的新SAT编码。 GCP要求给定图的顶点分配最少数量的颜色，以便每两个相邻的顶点得到不同的颜色。 BCP是一个泛化问题，其中每条边都有一个权重，要求分配的颜色之间有最小的“距离”，目标是最小化使用的“最大”颜色。 对于被广泛研究的GCP，我们在DIMACS基准集上实验比较了我们新的SAT编码与现有最先进方法。 我们的评估证实，这种SAT编码对于稀疏图是有效的，并且甚至在一些DIMACS示例上胜过了现有最先进方法。 对于BCP，我们的理论分析表明，基于偏序的SAT和ILP公式的大小在渐近意义下小于经典的解法。
 
-    Graphon estimation has been one of the most fundamental problems in network analysis and has received considerable attention in the past decade. From the statistical perspective, the minimax error rate of graphon estimation has been established by Gao et al (2015) for both stochastic block model (SBM) and nonparametric graphon estimation. The statistical optimal estimators are based on constrained least squares and have computational complexity exponential in the dimension. From the computational perspective, the best-known polynomial-time estimator is based on universal singular value thresholding (USVT), but it can only achieve a much slower estimation error rate than the minimax one. It is natural to wonder if such a gap is essential. The computational optimality of the USVT or the existence of a computational barrier in graphon estimation has been a long-standing open problem. In this work, we take the first step towards it and provide rigorous evidence for the computational barrie
+    arXiv:2403.15961v1 Announce Type: new  Abstract: In this paper, we suggest new SAT encodings of the partial-ordering based ILP model for the graph coloring problem (GCP) and the bandwidth coloring problem (BCP). The GCP asks for the minimum number of colors that can be assigned to the vertices of a given graph such that each two adjacent vertices get different colors. The BCP is a generalization, where each edge has a weight that enforces a minimal "distance" between the assigned colors, and the goal is to minimize the "largest" color used. For the widely studied GCP, we experimentally compare our new SAT encoding to the state-of-the-art approaches on the DIMACS benchmark set. Our evaluation confirms that this SAT encoding is effective for sparse graphs and even outperforms the state-of-the-art on some DIMACS instances. For the BCP, our theoretical analysis shows that the partial-ordering based SAT and ILP formulations have an asymptotically smaller size than that of the classical assi
     
 

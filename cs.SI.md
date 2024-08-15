@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Enhancing Real-World Complex Network Representations with Hyperedge Augmentation](https://arxiv.org/abs/2402.13033) | 提出了一种新颖的图增强方法Hyperedge Augmentation (HyperAug)，通过构建直接从原始数据形成的虚拟超边，以解决现实世界复杂网络表示中高阶节点关系的问题 |
+| [^1] | [Community Detection and Classification Guarantees Using Embeddings Learned by Node2Vec.](http://arxiv.org/abs/2310.17712) | 本研究通过分析Node2Vec学习到的嵌入的理论属性，证明了在（经过度修正的）随机块模型中，使用k-means聚类方法对这些嵌入进行社区恢复是弱一致的。实验证明这一结果，并探讨了嵌入在节点和链接预测任务中的应用。 |
 
 # 详细
 
-[^1]: 用超边增强改进现实世界复杂网络表示
+[^1]: 使用Node2Vec学习到的嵌入进行社区检测和分类的保证
 
-    Enhancing Real-World Complex Network Representations with Hyperedge Augmentation
+    Community Detection and Classification Guarantees Using Embeddings Learned by Node2Vec. (arXiv:2310.17712v1 [stat.ML])
 
-    [https://arxiv.org/abs/2402.13033](https://arxiv.org/abs/2402.13033)
+    [http://arxiv.org/abs/2310.17712](http://arxiv.org/abs/2310.17712)
 
-    提出了一种新颖的图增强方法Hyperedge Augmentation (HyperAug)，通过构建直接从原始数据形成的虚拟超边，以解决现实世界复杂网络表示中高阶节点关系的问题
+    本研究通过分析Node2Vec学习到的嵌入的理论属性，证明了在（经过度修正的）随机块模型中，使用k-means聚类方法对这些嵌入进行社区恢复是弱一致的。实验证明这一结果，并探讨了嵌入在节点和链接预测任务中的应用。
 
     
 
-    arXiv:2402.13033v1 公告类型: 新摘要: 图增强方法在改进图神经网络（GNNs）的性能和增强泛化能力中起着至关重要的作用。现有的图增强方法主要扰动图结构，通常限于成对节点关系。这些方法无法完全解决真实世界大规模网络的复杂性，这些网络通常涉及高阶节点关系，而不仅仅是成对关系。同时，由于缺乏可用于形成高阶边的数据，真实世界图数据集主要被建模为简单图。因此，将高阶边重新配置为图增强策略的一部分是一个有前途的研究路径，可解决前述问题。在本文中，我们提出了超边增强（HyperAug），一种新颖的图增强方法，直接从原始数据构建虚拟超边，并产生辅助节点。
+    将大型网络的节点嵌入到欧几里得空间中是现代机器学习中的常见目标，有各种工具可用。这些嵌入可以用作社区检测/节点聚类或链接预测等任务的特征，其性能达到了最先进水平。除了谱聚类方法之外，对于其他常用的学习嵌入方法，缺乏理论上的理解。在这项工作中，我们考察了由node2vec学习到的嵌入的理论属性。我们的主要结果表明，对node2vec生成的嵌入向量应用k-means聚类可以对（经过度修正的）随机块模型中的节点进行弱一致的社区恢复。我们还讨论了这些嵌入在节点和链接预测任务中的应用。我们通过实验证明了这个结果，并研究了它与网络数据的其他嵌入工具之间的关系。
 
-    arXiv:2402.13033v1 Announce Type: new  Abstract: Graph augmentation methods play a crucial role in improving the performance and enhancing generalisation capabilities in Graph Neural Networks (GNNs). Existing graph augmentation methods mainly perturb the graph structures and are usually limited to pairwise node relations. These methods cannot fully address the complexities of real-world large-scale networks that often involve higher-order node relations beyond only being pairwise. Meanwhile, real-world graph datasets are predominantly modelled as simple graphs, due to the scarcity of data that can be used to form higher-order edges. Therefore, reconfiguring the higher-order edges as an integration into graph augmentation strategies lights up a promising research path to address the aforementioned issues. In this paper, we present Hyperedge Augmentation (HyperAug), a novel graph augmentation method that constructs virtual hyperedges directly form the raw data, and produces auxiliary nod
+    Embedding the nodes of a large network into an Euclidean space is a common objective in modern machine learning, with a variety of tools available. These embeddings can then be used as features for tasks such as community detection/node clustering or link prediction, where they achieve state of the art performance. With the exception of spectral clustering methods, there is little theoretical understanding for other commonly used approaches to learning embeddings. In this work we examine the theoretical properties of the embeddings learned by node2vec. Our main result shows that the use of k-means clustering on the embedding vectors produced by node2vec gives weakly consistent community recovery for the nodes in (degree corrected) stochastic block models. We also discuss the use of these embeddings for node and link prediction tasks. We demonstrate this result empirically, and examine how this relates to other embedding tools for network data.
     
 
