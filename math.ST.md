@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Adversarially robust clustering with optimality guarantees.](http://arxiv.org/abs/2306.09977) | 本文提出了一种简单的算法，即使在存在对抗性的异常值的情况下，也能获得最优的错标率。在没有异常值的情况下，该算法能够实现与洛伊德算法类似的理论保证. |
+| [^1] | [Inverting estimating equations for causal inference on quantiles.](http://arxiv.org/abs/2401.00987) | 本文提出了一种基于反转估计方程的通用方法，将从估计潜在结果均值的因果推断解决方案推广到其分位数，同时给出了潜在结果均值和分位数的有效影响函数的一般构造和联系。 |
 
 # 详细
 
-[^1]: 带有最优性保证的对抗鲁棒聚类
+[^1]: 反转估计方程对潜在结果分位数的因果推断
 
-    Adversarially robust clustering with optimality guarantees. (arXiv:2306.09977v1 [math.ST])
+    Inverting estimating equations for causal inference on quantiles. (arXiv:2401.00987v1 [stat.ME])
 
-    [http://arxiv.org/abs/2306.09977](http://arxiv.org/abs/2306.09977)
+    [http://arxiv.org/abs/2401.00987](http://arxiv.org/abs/2401.00987)
 
-    本文提出了一种简单的算法，即使在存在对抗性的异常值的情况下，也能获得最优的错标率。在没有异常值的情况下，该算法能够实现与洛伊德算法类似的理论保证.
+    本文提出了一种基于反转估计方程的通用方法，将从估计潜在结果均值的因果推断解决方案推广到其分位数，同时给出了潜在结果均值和分位数的有效影响函数的一般构造和联系。
 
     
 
-    我们考虑对来自亚高斯混合的数据点进行聚类的问题。现有的可证明达到最优错标率的方法，如洛伊德算法，通常容易受到异常值的影响。相反，似乎对对抗性扰动具有鲁棒性的聚类方法不知道是否满足最优的统计保证。我们提出了一种简单的算法，即使允许出现对抗性的异常值，也能获得最优的错标率。当满足弱初始化条件时，我们的算法在常数次迭代中实现最优误差率。在没有异常值的情况下，在固定维度上，我们的理论保证与洛伊德算法类似。在各种模拟数据集上进行了广泛的实验，以支持我们的方法的理论保证。
+    因果推断文献经常关注潜在结果的均值估计，而潜在结果的分位数可能包含重要的额外信息。我们提出了一种基于反转估计方程的通用方法，将从估计潜在结果均值的广泛类别的因果推断解决方案推广到其分位数。我们假设存在一个可用来确定基于阈值变换的潜在结果均值的确定矩函数，并在此基础上提出了潜在结果分位数的估计方程的便利构造。此外，我们还给出了潜在结果均值和分位数的有效影响函数的一般构造，并确定了它们之间的联系。我们通过有效影响函数推导出分位数目标的估计器，并在使用参数模型或数据自适应机器学习方法时开发其渐近性质。
 
-    We consider the problem of clustering data points coming from sub-Gaussian mixtures. Existing methods that provably achieve the optimal mislabeling error, such as the Lloyd algorithm, are usually vulnerable to outliers. In contrast, clustering methods seemingly robust to adversarial perturbations are not known to satisfy the optimal statistical guarantees. We propose a simple algorithm that obtains the optimal mislabeling rate even when we allow adversarial outliers to be present. Our algorithm achieves the optimal error rate in constant iterations when a weak initialization condition is satisfied. In the absence of outliers, in fixed dimensions, our theoretical guarantees are similar to that of the Lloyd algorithm. Extensive experiments on various simulated data sets are conducted to support the theoretical guarantees of our method.
+    The causal inference literature frequently focuses on estimating the mean of the potential outcome, whereas the quantiles of the potential outcome may carry important additional information. We propose a universal approach, based on the inverse estimating equations, to generalize a wide class of causal inference solutions from estimating the mean of the potential outcome to its quantiles. We assume that an identifying moment function is available to identify the mean of the threshold-transformed potential outcome, based on which a convenient construction of the estimating equation of quantiles of potential outcome is proposed. In addition, we also give a general construction of the efficient influence functions of the mean and quantiles of potential outcomes, and identify their connection. We motivate estimators for the quantile estimands with the efficient influence function, and develop their asymptotic properties when either parametric models or data-adaptive machine learners are us
     
 

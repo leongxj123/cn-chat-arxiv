@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [WavLLM: Towards Robust and Adaptive Speech Large Language Model](https://arxiv.org/abs/2404.00656) | WavLLM是一个稳健和自适应语音大语言模型，引入了双编码器和Prompt-aware LoRA权重适配器，通过两阶段课程学习方法优化，解耦不同类型的语音信息，为处理语义内容和说话者身份的独特特征提供了新思路 |
+| [^1] | [Voice-Driven Mortality Prediction in Hospitalized Heart Failure Patients: A Machine Learning Approach Enhanced with Diagnostic Biomarkers](https://arxiv.org/abs/2402.13812) | 该研究展示了一种强大有效的机器学习模型，利用声音生物标志物来预测住院心力衰竭患者的死亡率。 |
 
 # 详细
 
-[^1]: WavLLM：面向稳健和自适应语音大语言模型
+[^1]: 基于声音的机器学习方法增强的住院心力衰竭患者死亡率预测
 
-    WavLLM: Towards Robust and Adaptive Speech Large Language Model
+    Voice-Driven Mortality Prediction in Hospitalized Heart Failure Patients: A Machine Learning Approach Enhanced with Diagnostic Biomarkers
 
-    [https://arxiv.org/abs/2404.00656](https://arxiv.org/abs/2404.00656)
+    [https://arxiv.org/abs/2402.13812](https://arxiv.org/abs/2402.13812)
 
-    WavLLM是一个稳健和自适应语音大语言模型，引入了双编码器和Prompt-aware LoRA权重适配器，通过两阶段课程学习方法优化，解耦不同类型的语音信息，为处理语义内容和说话者身份的独特特征提供了新思路
+    该研究展示了一种强大有效的机器学习模型，利用声音生物标志物来预测住院心力衰竭患者的死亡率。
 
     
 
-    近年来，大型语言模型(LLMs)的最新进展彻底改变了自然语言处理领域，逐渐拓宽了它们的范围到多模态感知和生成。然而，有效地将听觉能力整合到LLMs中会带来显著挑战，特别是在泛化跨不同语境和执行复杂听觉任务方面。在这项工作中，我们引入了WavLLM，一个具有双编码器和Prompt-aware LoRA权重适配器的稳健和自适应语音大语言模型，通过两阶段课程学习方法进行优化。利用双编码器，我们解耦不同类型的语音信息，利用Whisper编码器处理语音的语义内容，利用WavLM编码器捕捉说话者身份的独特特征。在课程学习框架内，WavLLM首先通过混合要素进行优化来建立其基础能力
+    应对心力衰竭作为一种普遍存在的全球健康问题，实施创新方法以增强患者护理存在困难。特别是在心力衰竭患者中预测死亡率既困难又关键，需要个性化护理、积极管理，并支持知情决策以增强结果。最近，声音生物标志物与机器学习（ML）相结合的重要性日益突出，特别在预测心力衰竭方面表现出显著有效性。声音分析与ML算法的协同作用提供了一种非侵入式且易于获取的评估患者健康状况的方法。然而，针对符合标准化语音协议的心力衰竭患者预测死亡率缺乏声音生物标志物。在这里，我们展示了一个强大有效的ML模型，通过利用声音生物标志物来预测住院心力衰竭患者的死亡率。
 
-    arXiv:2404.00656v1 Announce Type: cross  Abstract: The recent advancements in large language models (LLMs) have revolutionized the field of natural language processing, progressively broadening their scope to multimodal perception and generation. However, effectively integrating listening capabilities into LLMs poses significant challenges, particularly with respect to generalizing across varied contexts and executing complex auditory tasks. In this work, we introduce WavLLM, a robust and adaptive speech large language model with dual encoders, and a prompt-aware LoRA weight adapter, optimized by a two-stage curriculum learning approach. Leveraging dual encoders, we decouple different types of speech information, utilizing a Whisper encoder to process the semantic content of speech, and a WavLM encoder to capture the unique characteristics of the speaker's identity. Within the curriculum learning framework, WavLLM first builds its foundational capabilities by optimizing on mixed elemen
+    arXiv:2402.13812v1 Announce Type: new  Abstract: Addressing heart failure (HF) as a prevalent global health concern poses difficulties in implementing innovative approaches for enhanced patient care. Predicting mortality rates in HF patients, in particular, is difficult yet critical, necessitating individualized care, proactive management, and enabling educated decision-making to enhance outcomes. Recently, the significance of voice biomarkers coupled with Machine Learning (ML) has surged, demonstrating remarkable efficacy, particularly in predicting heart failure. The synergy of voice analysis and ML algorithms provides a non-invasive and easily accessible means to evaluate patients' health. However, there is a lack of voice biomarkers for predicting mortality rates among heart failure patients with standardized speech protocols. Here, we demonstrate a powerful and effective ML model for predicting mortality rates in hospitalized HF patients through the utilization of voice biomarkers
     
 

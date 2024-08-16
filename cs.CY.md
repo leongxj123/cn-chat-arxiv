@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [LLM Voting: Human Choices and AI Collective Decision Making](https://arxiv.org/abs/2402.01766) | 本文研究了大型语言模型（LLMs），特别是OpenAI的GPT4和LLaMA2的投票行为，并揭示了LLMs与人类在决策和偏见方面的差异。研究发现，在投票辅助中使用LLMs可能会导致更同质化的集体结果，强调了谨慎将LLMs整合到民主过程中的必要性。 |
+| [^1] | [The Model Openness Framework: Promoting Completeness and Openness for Reproducibility, Transparency and Usability in AI](https://arxiv.org/abs/2403.13784) | 提出了模型开放框架（MOF），它是一个排名分类系统，根据完整性和开放性评估机器学习模型，旨在促进完整性、开放性以及遵循开放科学原则，可以帮助准确识别模型的透明性和可重现性。 |
 
 # 详细
 
-[^1]: LLM投票：人类选择和AI集体决策
+[^1]: 模型开放框架: 促进人工智能中的可重现性、透明度和可用性的完整性和开放性
 
-    LLM Voting: Human Choices and AI Collective Decision Making
+    The Model Openness Framework: Promoting Completeness and Openness for Reproducibility, Transparency and Usability in AI
 
-    [https://arxiv.org/abs/2402.01766](https://arxiv.org/abs/2402.01766)
+    [https://arxiv.org/abs/2403.13784](https://arxiv.org/abs/2403.13784)
 
-    本文研究了大型语言模型（LLMs），特别是OpenAI的GPT4和LLaMA2的投票行为，并揭示了LLMs与人类在决策和偏见方面的差异。研究发现，在投票辅助中使用LLMs可能会导致更同质化的集体结果，强调了谨慎将LLMs整合到民主过程中的必要性。
+    提出了模型开放框架（MOF），它是一个排名分类系统，根据完整性和开放性评估机器学习模型，旨在促进完整性、开放性以及遵循开放科学原则，可以帮助准确识别模型的透明性和可重现性。
 
     
 
-    本文研究了大型语言模型（LLMs），特别是OpenAI的GPT4和LLaMA2的投票行为，并与人类投票模式进行了对比。我们的方法包括进行人类投票实验以建立人类偏好的基准，并与LLM代理进行平行实验。研究聚焦于集体结果和个体偏好，揭示了人类和LLMs之间在决策和固有偏见方面的差异。我们观察到LLMs在偏好多样性和一致性之间存在权衡，相比人类选民的多样偏好，LLMs有更趋向于一致选择的倾向。这一发现表明，在投票辅助中使用LLMs可能会导致更同质化的集体结果，强调了谨慎将LLMs整合到民主过程中的必要性。
+    生成式人工智能（GAI）提供了前所未有的可能性，但其商业化引发了关于透明度、可重现性、偏见和安全性的担忧。许多"开源"的GAI模型缺乏完整理解和再现所必需的组件，一些采用限制性许可证，这种行为被称为"开源洗白"。我们提出了模型开放框架（MOF），这是一个根据完整性和开放性对机器学习模型进行排名分类的系统，遵循开放科学、开源、开放数据和开放获取的原则。MOF要求模型开发生命周期的特定组件被包含并根据适当的开放许可证发布。该框架旨在防止宣称自己是开放的模型被误解，指导研究人员和开发者以宽松的许可证发布所有模型组件，并帮助公司、学术界和爱好者识别可以安全采用的模型。
 
-    This paper investigates the voting behaviors of Large Language Models (LLMs), particularly OpenAI's GPT4 and LLaMA2, and their alignment with human voting patterns. Our approach included a human voting experiment to establish a baseline for human preferences and a parallel experiment with LLM agents. The study focused on both collective outcomes and individual preferences, revealing differences in decision-making and inherent biases between humans and LLMs. We observed a trade-off between preference diversity and alignment in LLMs, with a tendency towards more uniform choices as compared to the diverse preferences of human voters. This finding indicates that LLMs could lead to more homogenized collective outcomes when used in voting assistance, underscoring the need for cautious integration of LLMs into democratic processes.
+    arXiv:2403.13784v1 Announce Type: new  Abstract: Generative AI (GAI) offers unprecedented possibilities but its commercialization has raised concerns about transparency, reproducibility, bias, and safety. Many "open-source" GAI models lack the necessary components for full understanding and reproduction, and some use restrictive licenses, a practice known as "openwashing." We propose the Model Openness Framework (MOF), a ranked classification system that rates machine learning models based on their completeness and openness, following principles of open science, open source, open data, and open access. The MOF requires specific components of the model development lifecycle to be included and released under appropriate open licenses. This framework aims to prevent misrepresentation of models claiming to be open, guide researchers and developers in providing all model components under permissive licenses, and help companies, academia, and hobbyists identify models that can be safely adop
     
 

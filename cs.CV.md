@@ -2,142 +2,142 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [NIGHT -- Non-Line-of-Sight Imaging from Indirect Time of Flight Data](https://arxiv.org/abs/2403.19376) | 本文首次使用来自即插即用的间接飞行时间传感器的数据，引入了一个深度学习模型，能够将光线反射发生的表面重新构建为虚拟镜子，从而实现了获取隐藏场景深度信息的可行性。 |
-| [^2] | [On the Utility of 3D Hand Poses for Action Recognition](https://arxiv.org/abs/2403.09805) | 提出了一种名为HandFormer的新型多模态Transformer模型，结合了高时间分辨率的3D手部姿势和稀疏采样的RGB帧，用于有效建模手部和物体之间的相互作用，取得了很高的准确性。 |
-| [^3] | [VIRUS-NeRF -- Vision, InfraRed and UltraSonic based Neural Radiance Fields](https://arxiv.org/abs/2403.09477) | VIRUS-NeRF是基于视觉、红外和超声波的神经辐射场，通过整合超声波和红外传感器的深度测量数据，实现了在自主移动机器人中达到与LiDAR点云相媲美的映射性能。 |
-| [^4] | [Distilling the Knowledge in Data Pruning](https://arxiv.org/abs/2403.07854) | 在数据剪枝中引入知识蒸馏方法，通过与预先训练的教师网络软预测相结合，实现了在各种数据集、剪枝方法和所有剪枝分数上的显著提升。 |
-| [^5] | [CFRet-DVQA: Coarse-to-Fine Retrieval and Efficient Tuning for Document Visual Question Answering](https://arxiv.org/abs/2403.00816) | 该研究提出了一种名为CFRet-DVQA的方法，通过检索和高效调优，解决了文档视觉问答中定位信息和限制模型输入的长度等问题，进一步提升了答案的生成性能。 |
-| [^6] | [Disentangled Representation Learning with Transmitted Information Bottleneck.](http://arxiv.org/abs/2311.01686) | 本研究提出了一种通过引入传输信息瓶颈来实现解缠表示学习的方法。该方法可以在压缩表示信息和保留重要信息之间维持平衡，从而提高模型的稳健性和泛化能力。通过使用贝叶斯网络和变分推断，我们得到了可计算估计的DisTIB。 |
-| [^7] | [AutoCLIP: Auto-tuning Zero-Shot Classifiers for Vision-Language Models.](http://arxiv.org/abs/2309.16414) | 本研究提出了一种名为AutoCLIP的方法，用于自动调谐视觉语言模型的零样本分类器。AutoCLIP通过为每个提示模板分配图像特定的权重，从而改进了从编码类别描述符推导零样本分类器的方式。 |
-| [^8] | [Self-Supervised Scalable Deep Compressed Sensing.](http://arxiv.org/abs/2308.13777) | 本文提出了一种自监督的可扩展深度压缩感知方法，不需要标记的测量-地面真实数据，并且可以处理任意的采样比率和矩阵。该方法包括一个双域损失和四个恢复阶段，通过最大化数据/信息利用率来提高准确性。 |
-| [^9] | [Patch-wise Auto-Encoder for Visual Anomaly Detection.](http://arxiv.org/abs/2308.00429) | 本论文提出了一种新颖的补丁化自编码器（Patch AE）框架来增强自编码器对异常的重构能力，并在Mvtec AD基准测试中取得了最先进的表现，具有在实际工业应用场景中的潜力。 |
+| [^1] | [PlainMamba: Improving Non-Hierarchical Mamba in Visual Recognition](https://arxiv.org/abs/2403.17695) | 改进了视觉识别中的非层次Mamba模型，通过改进连续2D扫描过程和方向感知更新，提高了从二维图像中学习特征的能力。 |
+| [^2] | [SM4Depth: Seamless Monocular Metric Depth Estimation across Multiple Cameras and Scenes by One Model](https://arxiv.org/abs/2403.08556) | SM4Depth通过一种新的预处理单元和深度间隔离散化的方法，解决了单目度量深度估计中的相机敏感性、场景精度不一致和数据依赖性等问题。 |
+| [^3] | [Label Dropout: Improved Deep Learning Echocardiography Segmentation Using Multiple Datasets With Domain Shift and Partial Labelling](https://arxiv.org/abs/2403.07818) | 本文研究利用多个数据集进行深度学习超声心动图分割，在处理部分标记数据时采用改进的交叉熵损失函数。 |
+| [^4] | [Active Generation for Image Classification](https://arxiv.org/abs/2403.06517) | 该论文提出了一种名为ActGen的方法，通过采用训练感知的方式来生成图像，以提高图像分类准确性。ActGen利用主动学习的理念，生成类似于挑战性或被误分类样本的图像，并将其整合到训练集中，从而增强模型性能。 |
+| [^5] | [WATonoBus: An All Weather Autonomous Shuttle](https://arxiv.org/abs/2312.00938) | 提出了一种考虑恶劣天气的多模块和模块化系统架构，在WATonoBus平台上进行了实际测试，证明其能够解决全天候自动驾驶车辆面临的挑战 |
+| [^6] | [Challenging Common Paradigms in Multi-Task Learning](https://arxiv.org/abs/2311.04698) | 我们挑战了多任务学习中的常见范式，通过研究在单任务学习中的影响，揭示了优化器选择在MTL中的关键作用，并理论推导出了梯度冲突的角色。 |
+| [^7] | [Long-Tailed Classification Based on Coarse-Grained Leading Forest and Multi-Center Loss.](http://arxiv.org/abs/2310.08206) | 本论文提出了一种基于粗粒度引导森林和多中心损失的长尾分类框架，名为Cognisance。该框架致力于解决长尾分类问题中的类间和类内不平衡，并通过不变特征学习构建多粒度联合解决模型。 |
+| [^8] | [End-to-end Autonomous Driving: Challenges and Frontiers.](http://arxiv.org/abs/2306.16927) | 这项研究调查了端到端自动驾驶领域中的关键挑战和未来趋势，包括多模态、可解释性、因果混淆、鲁棒性和世界模型等。通过联合特征优化感知和规划，端到端系统在感知和规划上获得了更好的效果。 |
+| [^9] | [Controllable Motion Diffusion Model.](http://arxiv.org/abs/2306.00416) | 该论文提出了可控运动扩散模型（COMODO）框架，通过自回归运动扩散模型（A-MDM）生成高保真度、长时间内的运动序列，以实现在响应于时变控制信号的情况下进行实时运动合成。 |
 
 # 详细
 
-[^1]: NIGHT -- 间接飞行时间数据的非视距成像
+[^1]: PlainMamba：改进视觉识别中的非层次Mamba
 
-    NIGHT -- Non-Line-of-Sight Imaging from Indirect Time of Flight Data
+    PlainMamba: Improving Non-Hierarchical Mamba in Visual Recognition
 
-    [https://arxiv.org/abs/2403.19376](https://arxiv.org/abs/2403.19376)
+    [https://arxiv.org/abs/2403.17695](https://arxiv.org/abs/2403.17695)
 
-    本文首次使用来自即插即用的间接飞行时间传感器的数据，引入了一个深度学习模型，能够将光线反射发生的表面重新构建为虚拟镜子，从而实现了获取隐藏场景深度信息的可行性。
-
-    
-
-    从非视角相机外部获取物体是一个非常引人注目但也极具挑战性的研究课题。最近的工作表明，利用定制的直接飞行时间传感器产生的瞬时成像数据，这个想法是可行的。在本文中，我们首次使用来自即插即用的间接飞行时间传感器的数据来解决这个问题，而不需要任何额外的硬件要求。我们引入了一个深度学习模型，能够将光线反射发生的表面重新构建为虚拟镜子。这种建模使得任务更容易处理，也有助于构建带有注释的训练数据。从获得的数据中，可以恢复隐藏场景的深度信息。我们还提供了一个首创的合成数据集用于这个任务，并展示了所提出的想法的可行性。
-
-    arXiv:2403.19376v1 Announce Type: cross  Abstract: The acquisition of objects outside the Line-of-Sight of cameras is a very intriguing but also extremely challenging research topic. Recent works showed the feasibility of this idea exploiting transient imaging data produced by custom direct Time of Flight sensors. In this paper, for the first time, we tackle this problem using only data from an off-the-shelf indirect Time of Flight sensor without any further hardware requirement. We introduced a Deep Learning model able to re-frame the surfaces where light bounces happen as a virtual mirror. This modeling makes the task easier to handle and also facilitates the construction of annotated training data. From the obtained data it is possible to retrieve the depth information of the hidden scene. We also provide a first-in-its-kind synthetic dataset for the task and demonstrate the feasibility of the proposed idea over it.
-    
-[^2]: 关于3D手部姿势在动作识别中的作用
-
-    On the Utility of 3D Hand Poses for Action Recognition
-
-    [https://arxiv.org/abs/2403.09805](https://arxiv.org/abs/2403.09805)
-
-    提出了一种名为HandFormer的新型多模态Transformer模型，结合了高时间分辨率的3D手部姿势和稀疏采样的RGB帧，用于有效建模手部和物体之间的相互作用，取得了很高的准确性。
+    改进了视觉识别中的非层次Mamba模型，通过改进连续2D扫描过程和方向感知更新，提高了从二维图像中学习特征的能力。
 
     
 
-    3D手部姿势是一种未充分探索的动作识别模态。姿势既紧凑又信息丰富，并且可以极大地受益于计算预算有限的应用。然而，单独的姿势不能完全理解人类与之交互的物体和环境。为了有效建模手部物体相互作用，我们提出了HandFormer，一种新颖的多模态Transformer。HandFormer结合了高时间分辨率的3D手部姿势，用于精细运动建模，并使用稀疏采样的RGB帧来编码场景语义。观察手部姿势的独特特征，我们对手部建模进行了时间分解，并通过其短期轨迹表示每个关节点。这种被分解的姿势表示与稀疏的RGB采样相结合，效率非常高，并且达到了很高的准确性。仅有手部姿势的单模HandFormer在5倍更少的FLO下胜过现有基于骨架的方法。
+    我们提出PlainMamba：一种简单的非层次状态空间模型（SSM），旨在用于一般的视觉识别。最近的Mamba模型展示了如何在顺序数据上SSM可以与其他架构竞争激烈，并已初步尝试将其应用于图像。在本文中，我们进一步改进了Mamba的选择性扫描过程以适应视觉领域，通过（i）通过确保在扫描序列中令牌相邻来改善空间连续性的连续2D扫描过程，以及（ii）启用模型区分令牌的空间关系的方向感知更新，通过编码方向信息。我们的架构设计易于使用和易于扩展，由堆叠相同的PlainMamba块形成，结果是始终具有恒定宽度的模型。通过去除
 
-    arXiv:2403.09805v1 Announce Type: cross  Abstract: 3D hand poses are an under-explored modality for action recognition. Poses are compact yet informative and can greatly benefit applications with limited compute budgets. However, poses alone offer an incomplete understanding of actions, as they cannot fully capture objects and environments with which humans interact. To efficiently model hand-object interactions, we propose HandFormer, a novel multimodal transformer. HandFormer combines 3D hand poses at a high temporal resolution for fine-grained motion modeling with sparsely sampled RGB frames for encoding scene semantics. Observing the unique characteristics of hand poses, we temporally factorize hand modeling and represent each joint by its short-term trajectories. This factorized pose representation combined with sparse RGB samples is remarkably efficient and achieves high accuracy. Unimodal HandFormer with only hand poses outperforms existing skeleton-based methods at 5x fewer FLO
+    arXiv:2403.17695v1 Announce Type: cross  Abstract: We present PlainMamba: a simple non-hierarchical state space model (SSM) designed for general visual recognition. The recent Mamba model has shown how SSMs can be highly competitive with other architectures on sequential data and initial attempts have been made to apply it to images. In this paper, we further adapt the selective scanning process of Mamba to the visual domain, enhancing its ability to learn features from two-dimensional images by (i) a continuous 2D scanning process that improves spatial continuity by ensuring adjacency of tokens in the scanning sequence, and (ii) direction-aware updating which enables the model to discern the spatial relations of tokens by encoding directional information. Our architecture is designed to be easy to use and easy to scale, formed by stacking identical PlainMamba blocks, resulting in a model with constant width throughout all layers. The architecture is further simplified by removing the 
     
-[^3]: 基于视觉、红外和超声波的神经辐射场——VIRUS-NeRF
+[^2]: SM4Depth: 一种通过单一模型实现跨多摄像头和场景的无缝单目度量深度估计
 
-    VIRUS-NeRF -- Vision, InfraRed and UltraSonic based Neural Radiance Fields
+    SM4Depth: Seamless Monocular Metric Depth Estimation across Multiple Cameras and Scenes by One Model
 
-    [https://arxiv.org/abs/2403.09477](https://arxiv.org/abs/2403.09477)
+    [https://arxiv.org/abs/2403.08556](https://arxiv.org/abs/2403.08556)
 
-    VIRUS-NeRF是基于视觉、红外和超声波的神经辐射场，通过整合超声波和红外传感器的深度测量数据，实现了在自主移动机器人中达到与LiDAR点云相媲美的映射性能。
-
-    
-
-    自主移动机器人在现代工厂和仓库操作中起着越来越重要的作用。障碍物检测、回避和路径规划是关键的安全相关任务，通常使用昂贵的LiDAR传感器和深度摄像头来解决。我们提出使用成本效益的低分辨率测距传感器，如超声波和红外时间飞行传感器，通过开发基于视觉、红外和超声波的神经辐射场(VIRUS-NeRF)来解决这一问题。VIRUS-NeRF构建在瞬时神经图形基元与多分辨率哈希编码(Instant-NGP)的基础上，融合了超声波和红外传感器的深度测量数据，并利用它们来更新用于光线跟踪的占据网格。在2D实验评估中，VIRUS-NeRF实现了与LiDAR点云相媲美的映射性能，尤其在小型环境中，其准确性与LiDAR测量相符。
-
-    arXiv:2403.09477v1 Announce Type: cross  Abstract: Autonomous mobile robots are an increasingly integral part of modern factory and warehouse operations. Obstacle detection, avoidance and path planning are critical safety-relevant tasks, which are often solved using expensive LiDAR sensors and depth cameras. We propose to use cost-effective low-resolution ranging sensors, such as ultrasonic and infrared time-of-flight sensors by developing VIRUS-NeRF - Vision, InfraRed, and UltraSonic based Neural Radiance Fields. Building upon Instant Neural Graphics Primitives with a Multiresolution Hash Encoding (Instant-NGP), VIRUS-NeRF incorporates depth measurements from ultrasonic and infrared sensors and utilizes them to update the occupancy grid used for ray marching. Experimental evaluation in 2D demonstrates that VIRUS-NeRF achieves comparable mapping performance to LiDAR point clouds regarding coverage. Notably, in small environments, its accuracy aligns with that of LiDAR measurements, whi
-    
-[^4]: 在数据剪枝中蒸馏知识
-
-    Distilling the Knowledge in Data Pruning
-
-    [https://arxiv.org/abs/2403.07854](https://arxiv.org/abs/2403.07854)
-
-    在数据剪枝中引入知识蒸馏方法，通过与预先训练的教师网络软预测相结合，实现了在各种数据集、剪枝方法和所有剪枝分数上的显著提升。
+    SM4Depth通过一种新的预处理单元和深度间隔离散化的方法，解决了单目度量深度估计中的相机敏感性、场景精度不一致和数据依赖性等问题。
 
     
 
-    随着训练神经网络使用的数据集规模不断增加，数据剪枝成为了一个有吸引力的研究领域。然而，大多数当前的数据剪枝算法在保持准确性方面受到限制，特别是在高度剪枝的情况下与使用完整数据训练的模型相比。本文探讨了在训练基于剪枝子集的模型时，结合知识蒸馏（KD）的应用。也就是说，我们不仅依赖于地面真实标签，还使用了已在完整数据上预先训练的老师网络的软预测。通过将知识蒸馏整合到训练中，我们在各种数据集、剪枝方法和所有剪枝分数上都展示了显著的改进。我们首先建立了采用自蒸馏来改善在剪枝数据上的训练的理论动机。然后，我们在实证上进行了引人注目且高度实用的观察：使用知识蒸馏，简单的随机剪枝也会取得显着改进。
+    单目度量深度估计（MMDE）的泛化一直是一个长期存在的挑战。最近的方法通过结合相对深度和度量深度或对齐输入图像焦距取得了进展。然而，它们仍然面临着在相机、场景和数据级别上的挑战：（1）对不同摄像头的敏感性；（2）在不同场景中精度不一致；（3）依赖大规模训练数据。本文提出了一种无缝的MMDE方法SM4Depth，以在单个网络内解决上述所有问题。
 
-    arXiv:2403.07854v1 Announce Type: cross  Abstract: With the increasing size of datasets used for training neural networks, data pruning becomes an attractive field of research. However, most current data pruning algorithms are limited in their ability to preserve accuracy compared to models trained on the full data, especially in high pruning regimes. In this paper we explore the application of data pruning while incorporating knowledge distillation (KD) when training on a pruned subset. That is, rather than relying solely on ground-truth labels, we also use the soft predictions from a teacher network pre-trained on the complete data. By integrating KD into training, we demonstrate significant improvement across datasets, pruning methods, and on all pruning fractions. We first establish a theoretical motivation for employing self-distillation to improve training on pruned data. Then, we empirically make a compelling and highly practical observation: using KD, simple random pruning is c
+    arXiv:2403.08556v1 Announce Type: cross  Abstract: The generalization of monocular metric depth estimation (MMDE) has been a longstanding challenge. Recent methods made progress by combining relative and metric depth or aligning input image focal length. However, they are still beset by challenges in camera, scene, and data levels: (1) Sensitivity to different cameras; (2) Inconsistent accuracy across scenes; (3) Reliance on massive training data. This paper proposes SM4Depth, a seamless MMDE method, to address all the issues above within a single network. First, we reveal that a consistent field of view (FOV) is the key to resolve ``metric ambiguity'' across cameras, which guides us to propose a more straightforward preprocessing unit. Second, to achieve consistently high accuracy across scenes, we explicitly model the metric scale determination as discretizing the depth interval into bins and propose variation-based unnormalized depth bins. This method bridges the depth gap of divers
     
-[^5]: CFRet-DVQA：粗到精检索和高效调优用于文档视觉问答
+[^3]: 标签丢失率：利用具有域转移和部分标记的多个数据集改进深度学习超声心动图分割
 
-    CFRet-DVQA: Coarse-to-Fine Retrieval and Efficient Tuning for Document Visual Question Answering
+    Label Dropout: Improved Deep Learning Echocardiography Segmentation Using Multiple Datasets With Domain Shift and Partial Labelling
 
-    [https://arxiv.org/abs/2403.00816](https://arxiv.org/abs/2403.00816)
+    [https://arxiv.org/abs/2403.07818](https://arxiv.org/abs/2403.07818)
 
-    该研究提出了一种名为CFRet-DVQA的方法，通过检索和高效调优，解决了文档视觉问答中定位信息和限制模型输入的长度等问题，进一步提升了答案的生成性能。
-
-    
-
-    文档视觉问答（DVQA）是一个涉及根据图像内容回答查询的任务。现有工作仅限于定位单页内的信息，不支持跨页面问答交互。此外，对模型输入的标记长度限制可能导致与答案相关的部分被截断。在本研究中，我们引入了一种简单但有效的方法学，称为CFRet-DVQA，重点放在检索和高效调优上，以有效解决这一关键问题。为此，我们首先从文档中检索与所提问题相关的多个片段。随后，我们利用大型语言模型（LLM）的先进推理能力，通过指导调优进一步增强其性能。该方法使得生成的答案与文档标签的风格相符。实验演示了...
-
-    arXiv:2403.00816v1 Announce Type: cross  Abstract: Document Visual Question Answering (DVQA) is a task that involves responding to queries based on the content of images. Existing work is limited to locating information within a single page and does not facilitate cross-page question-and-answer interaction. Furthermore, the token length limitation imposed on inputs to the model may lead to truncation of segments pertinent to the answer. In this study, we introduce a simple but effective methodology called CFRet-DVQA, which focuses on retrieval and efficient tuning to address this critical issue effectively. For that, we initially retrieve multiple segments from the document that correlate with the question at hand. Subsequently, we leverage the advanced reasoning abilities of the large language model (LLM), further augmenting its performance through instruction tuning. This approach enables the generation of answers that align with the style of the document labels. The experiments demo
-    
-[^6]: 使用传输的信息瓶颈实现解缠表示学习
-
-    Disentangled Representation Learning with Transmitted Information Bottleneck. (arXiv:2311.01686v1 [cs.CV])
-
-    [http://arxiv.org/abs/2311.01686](http://arxiv.org/abs/2311.01686)
-
-    本研究提出了一种通过引入传输信息瓶颈来实现解缠表示学习的方法。该方法可以在压缩表示信息和保留重要信息之间维持平衡，从而提高模型的稳健性和泛化能力。通过使用贝叶斯网络和变分推断，我们得到了可计算估计的DisTIB。
+    本文研究利用多个数据集进行深度学习超声心动图分割，在处理部分标记数据时采用改进的交叉熵损失函数。
 
     
 
-    仅编码与任务相关的原始数据信息，即解缠表示学习，可以极大地提高模型的稳健性和泛化能力。虽然在表示中利用信息理论对信息进行规范化取得了重大进展，但仍存在两个主要挑战：1）表示压缩不可避免地导致性能下降；2）对表示的解缠约束存在复杂的优化问题。针对这些问题，我们引入了传输信息的贝叶斯网络来描述解缠过程中输入和表示之间的相互作用。基于这个框架，我们提出了"DisTIB"（用于解缠表示学习的传输信息瓶颈），一种新的目标函数，用于平衡信息压缩和保留之间的关系。我们采用变分推断来导出DisTIB的可计算估计。
+    超声心动图（超声）是评估心脏功能时使用的第一种成像方式。从超声中测量功能生物标志物依赖于对心脏结构进行分割，深度学习模型被提出来自动化这一过程。然而，为了将这些工具转化为广泛的临床应用，重要的是分割模型对各种图像具有鲁棒性（例如，由不同扫描仪获得，由不同级别的专家操作员获得等）。为了实现这种鲁棒性水平，有必要使用多个不同的数据集来训练模型。在使用多个不同的数据集进行训练时面临的一个重要挑战是标签存在的变化，即合并数据通常是部分标记的。已经提出了交叉熵损失函数的改进来处理部分标记数据。在本文中，我们展示了训练的naively
 
-    Encoding only the task-related information from the raw data, \ie, disentangled representation learning, can greatly contribute to the robustness and generalizability of models. Although significant advances have been made by regularizing the information in representations with information theory, two major challenges remain: 1) the representation compression inevitably leads to performance drop; 2) the disentanglement constraints on representations are in complicated optimization. To these issues, we introduce Bayesian networks with transmitted information to formulate the interaction among input and representations during disentanglement. Building upon this framework, we propose \textbf{DisTIB} (\textbf{T}ransmitted \textbf{I}nformation \textbf{B}ottleneck for \textbf{Dis}entangled representation learning), a novel objective that navigates the balance between information compression and preservation. We employ variational inference to derive a tractable estimation for DisTIB. This es
+    arXiv:2403.07818v1 Announce Type: cross  Abstract: Echocardiography (echo) is the first imaging modality used when assessing cardiac function. The measurement of functional biomarkers from echo relies upon the segmentation of cardiac structures and deep learning models have been proposed to automate the segmentation process. However, in order to translate these tools to widespread clinical use it is important that the segmentation models are robust to a wide variety of images (e.g. acquired from different scanners, by operators with different levels of expertise etc.). To achieve this level of robustness it is necessary that the models are trained with multiple diverse datasets. A significant challenge faced when training with multiple diverse datasets is the variation in label presence, i.e. the combined data are often partially-labelled. Adaptations of the cross entropy loss function have been proposed to deal with partially labelled data. In this paper we show that training naively 
     
-[^7]: AutoCLIP: 自动调谐视觉语言模型的零样本分类器
+[^4]: 图像分类的主动生成
 
-    AutoCLIP: Auto-tuning Zero-Shot Classifiers for Vision-Language Models. (arXiv:2309.16414v1 [cs.CV])
+    Active Generation for Image Classification
 
-    [http://arxiv.org/abs/2309.16414](http://arxiv.org/abs/2309.16414)
+    [https://arxiv.org/abs/2403.06517](https://arxiv.org/abs/2403.06517)
 
-    本研究提出了一种名为AutoCLIP的方法，用于自动调谐视觉语言模型的零样本分类器。AutoCLIP通过为每个提示模板分配图像特定的权重，从而改进了从编码类别描述符推导零样本分类器的方式。
-
-    
-
-    基于视觉语言模型（如CLIP）构建的分类器在广泛的图像分类任务中展现了出色的零样本性能。先前的工作研究了根据提示模板自动创建每个类别的描述符集的不同方式，包括手工设计的模板、从大型语言模型获取的模板以及从随机单词和字符构建的模板。然而，从相应的编码类别描述符导出零样本分类器几乎没有改变：将图像的平均编码类别描述符与编码图像之间的余弦相似度最大化以进行分类。然而，当某些描述符比其他描述符更好地匹配给定图像上的视觉线索时，将所有类别描述符等权重可能不是最优的。在这项工作中，我们提出了一种自动调谐零样本分类器的方法AutoCLIP。AutoCLIP为每个提示模板分配了图像特定的权重，这些权重是从s
-
-    Classifiers built upon vision-language models such as CLIP have shown remarkable zero-shot performance across a broad range of image classification tasks. Prior work has studied different ways of automatically creating descriptor sets for every class based on prompt templates, ranging from manually engineered templates over templates obtained from a large language model to templates built from random words and characters. In contrast, deriving zero-shot classifiers from the respective encoded class descriptors has remained nearly unchanged, that is: classify to the class that maximizes the cosine similarity between its averaged encoded class descriptors and the encoded image. However, weighting all class descriptors equally can be suboptimal when certain descriptors match visual clues on a given image better than others. In this work, we propose AutoCLIP, a method for auto-tuning zero-shot classifiers. AutoCLIP assigns to each prompt template per-image weights, which are derived from s
-    
-[^8]: 自监督可扩展深度压缩感知
-
-    Self-Supervised Scalable Deep Compressed Sensing. (arXiv:2308.13777v1 [eess.SP])
-
-    [http://arxiv.org/abs/2308.13777](http://arxiv.org/abs/2308.13777)
-
-    本文提出了一种自监督的可扩展深度压缩感知方法，不需要标记的测量-地面真实数据，并且可以处理任意的采样比率和矩阵。该方法包括一个双域损失和四个恢复阶段，通过最大化数据/信息利用率来提高准确性。
+    该论文提出了一种名为ActGen的方法，通过采用训练感知的方式来生成图像，以提高图像分类准确性。ActGen利用主动学习的理念，生成类似于挑战性或被误分类样本的图像，并将其整合到训练集中，从而增强模型性能。
 
     
 
-    压缩感知（CS）是降低采样成本的一种有前景的工具。当前基于深度神经网络（NN）的CS方法在收集标记的测量-地面真实（GT）数据和推广到实际应用方面面临挑战。本文提出了一种新颖的自监督可扩展深度CS方法，包括一个称为SCL的学习方案和一个名为SCNet的网络系列，它不需要GT并且可以处理一旦在部分测量集上训练完毕就可以处理任意的采样比率和矩阵。我们的SCL包含一个双域损失和一个四阶段恢复策略。前者鼓励两个测量部分的交叉一致性以及采样-重构循环一致性，从而最大化数据/信息利用率。后者可以逐步利用外部测量中的常见信号先验和测试样本以及学习的NN的内部特征来提高准确性。
+    最近，深度生成模型不断增强的能力突显了它们在提高图像分类准确性方面的潜力。然而，现有方法往往要求生成的图像数量远远超过原始数据集，而在准确性方面只有极小的改进。这种计算昂贵且耗时的过程阻碍了这种方法的实用性。在本文中，我们提出通过专注于模型的具体需求和特征来提高图像生成的效率。我们的方法ActGen以主动学习为中心原则，采用了一个针对训练感知的图像生成方法。它旨在创建类似于当前模型遇到的具有挑战性或被误分类样本的图像，并将这些生成的图像纳入训练集以增强模型性能。
 
-    Compressed sensing (CS) is a promising tool for reducing sampling costs. Current deep neural network (NN)-based CS methods face challenges in collecting labeled measurement-ground truth (GT) data and generalizing to real applications. This paper proposes a novel $\mathbf{S}$elf-supervised s$\mathbf{C}$alable deep CS method, comprising a $\mathbf{L}$earning scheme called $\mathbf{SCL}$ and a family of $\mathbf{Net}$works named $\mathbf{SCNet}$, which does not require GT and can handle arbitrary sampling ratios and matrices once trained on a partial measurement set. Our SCL contains a dual-domain loss and a four-stage recovery strategy. The former encourages a cross-consistency on two measurement parts and a sampling-reconstruction cycle-consistency regarding arbitrary ratios and matrices to maximize data/information utilization. The latter can progressively leverage common signal prior in external measurements and internal characteristics of test samples and learned NNs to improve accur
+    arXiv:2403.06517v1 Announce Type: cross  Abstract: Recently, the growing capabilities of deep generative models have underscored their potential in enhancing image classification accuracy. However, existing methods often demand the generation of a disproportionately large number of images compared to the original dataset, while having only marginal improvements in accuracy. This computationally expensive and time-consuming process hampers the practicality of such approaches. In this paper, we propose to address the efficiency of image generation by focusing on the specific needs and characteristics of the model. With a central tenet of active learning, our method, named ActGen, takes a training-aware approach to image generation. It aims to create images akin to the challenging or misclassified samples encountered by the current model and incorporates these generated images into the training set to augment model performance. ActGen introduces an attentive image guidance technique, usin
     
-[^9]: 基于补丁化自编码器的视觉异常检测
+[^5]: WATonoBus：一种全天候自动巡航车
 
-    Patch-wise Auto-Encoder for Visual Anomaly Detection. (arXiv:2308.00429v1 [cs.CV])
+    WATonoBus: An All Weather Autonomous Shuttle
 
-    [http://arxiv.org/abs/2308.00429](http://arxiv.org/abs/2308.00429)
+    [https://arxiv.org/abs/2312.00938](https://arxiv.org/abs/2312.00938)
 
-    本论文提出了一种新颖的补丁化自编码器（Patch AE）框架来增强自编码器对异常的重构能力，并在Mvtec AD基准测试中取得了最先进的表现，具有在实际工业应用场景中的潜力。
+    提出了一种考虑恶劣天气的多模块和模块化系统架构，在WATonoBus平台上进行了实际测试，证明其能够解决全天候自动驾驶车辆面临的挑战
 
     
 
-    在没有异常先验的情况下进行异常检测是具有挑战性的。在无监督异常检测领域，传统的自编码器（AE）在仅通过正常图像进行训练时倾向于失败，因为模型将无法正确重构异常图像。相反，我们提出了一种新颖的补丁化自编码器（Patch AE）框架，旨在增强AE对异常的重构能力而不是削弱它。图像的每个补丁都通过相应的空间分布特征向量的学习特征表示进行重构，即补丁化重构，这确保了AE对异常的敏感性。我们的方法简单高效。它在Mvtec AD基准测试中取得了最先进的表现，证明了我们模型的有效性。它在实际工业应用场景中具有巨大潜力。
+    自动驾驶车辆在全天候运行中面临显著挑战，涵盖了从感知和决策到路径规划和控制的各个模块。复杂性源于需要解决像雨、雪和雾等恶劣天气条件在自主性堆栈中的问题。传统的基于模型和单模块方法通常缺乏与上游或下游任务的整体集成。我们通过提出一个考虑恶劣天气的多模块和模块化系统架构来解决这个问题，涵盖了从感知水平到决策和安全监测的各个方面，例如覆盖雪的路缘检测。通过在WATonoBus平台上每周日常服务近一年，我们展示了我们提出的方法能够解决恶劣天气条件，并从运营中观察到的极端情况中获得宝贵的经验教训。
 
-    Anomaly detection without priors of the anomalies is challenging. In the field of unsupervised anomaly detection, traditional auto-encoder (AE) tends to fail based on the assumption that by training only on normal images, the model will not be able to reconstruct abnormal images correctly. On the contrary, we propose a novel patch-wise auto-encoder (Patch AE) framework, which aims at enhancing the reconstruction ability of AE to anomalies instead of weakening it. Each patch of image is reconstructed by corresponding spatially distributed feature vector of the learned feature representation, i.e., patch-wise reconstruction, which ensures anomaly-sensitivity of AE. Our method is simple and efficient. It advances the state-of-the-art performances on Mvtec AD benchmark, which proves the effectiveness of our model. It shows great potential in practical industrial application scenarios.
+    arXiv:2312.00938v1 Announce Type: cross  Abstract: Autonomous vehicle all-weather operation poses significant challenges, encompassing modules from perception and decision-making to path planning and control. The complexity arises from the need to address adverse weather conditions like rain, snow, and fog across the autonomy stack. Conventional model-based and single-module approaches often lack holistic integration with upstream or downstream tasks. We tackle this problem by proposing a multi-module and modular system architecture with considerations for adverse weather across the perception level, through features such as snow covered curb detection, to decision-making and safety monitoring. Through daily weekday service on the WATonoBus platform for almost a year, we demonstrate that our proposed approach is capable of addressing adverse weather conditions and provide valuable learning from edge cases observed during operation.
+    
+[^6]: 在多任务学习中挑战常见范式
+
+    Challenging Common Paradigms in Multi-Task Learning
+
+    [https://arxiv.org/abs/2311.04698](https://arxiv.org/abs/2311.04698)
+
+    我们挑战了多任务学习中的常见范式，通过研究在单任务学习中的影响，揭示了优化器选择在MTL中的关键作用，并理论推导出了梯度冲突的角色。
+
+    
+
+    尽管近年来多任务学习（MTL）受到了极大关注，但其基本机制仍然知之甚少。最近的方法并未带来一致的性能改进，相比单任务学习（STL）基线，强调了更深入了解MTL特定挑战的重要性。在我们的研究中，我们挑战了MTL中的范式，提出了几点关于STL的重要影响：首先，优化器的选择对MTL的影响只受到了轻微的调查。我们通过各种实验的实证方法展示了常见STL工具（例如Adam优化器）在MTL中的关键作用。为了进一步研究Adam的有效性，我们在一定的假设下从理论上推导出部分损失尺度不变性。其次，梯度冲突的概念经常被描述为MTL中的一个特定问题。我们深入探讨了梯度冲突在MTL中的作用，并将其与STL进行比较。在角度梯度对齐方面，我们没有找到
+
+    arXiv:2311.04698v3 Announce Type: replace-cross  Abstract: While multi-task learning (MTL) has gained significant attention in recent years, its underlying mechanisms remain poorly understood. Recent methods did not yield consistent performance improvements over single task learning (STL) baselines, underscoring the importance of gaining more profound insights about challenges specific to MTL. In our study, we challenge paradigms in MTL in the context of STL: First, the impact of the choice of optimizer has only been mildly investigated in MTL. We show the pivotal role of common STL tools such as the Adam optimizer in MTL empirically in various experiments. To further investigate Adam's effectiveness, we theoretical derive a partial loss-scale invariance under mild assumptions. Second, the notion of gradient conflicts has often been phrased as a specific problem in MTL. We delve into the role of gradient conflicts in MTL and compare it to STL. For angular gradient alignment we find no 
+    
+[^7]: 基于粗粒度引导森林和多中心损失的长尾分类
+
+    Long-Tailed Classification Based on Coarse-Grained Leading Forest and Multi-Center Loss. (arXiv:2310.08206v1 [cs.CV])
+
+    [http://arxiv.org/abs/2310.08206](http://arxiv.org/abs/2310.08206)
+
+    本论文提出了一种基于粗粒度引导森林和多中心损失的长尾分类框架，名为Cognisance。该框架致力于解决长尾分类问题中的类间和类内不平衡，并通过不变特征学习构建多粒度联合解决模型。
+
+    
+
+    长尾分类是现实世界中不可避免且具有挑战性的问题。大部分现有的长尾分类方法仅关注解决类间不平衡，即头部类别的样本比尾部类别的样本多，而忽略了类内不平衡，即同一类别中头部属性样本数量远大于尾部属性样本数量。模型的偏差是由这两个因素引起的，由于大多数数据集中的属性是隐含的且属性组合非常复杂，处理类内不平衡更加困难。为此，我们提出了一种基于粗粒度引导森林（CLF）和多中心损失（MCL）的长尾分类框架，名为Cognisance，旨在通过不变特征学习构建多粒度联合解决模型。在这个方法中，我们设计了一种新颖的样本选择策略和损失函数，以平衡不同类别和属性之间的样本分布。
+
+    Long-tailed(LT) classification is an unavoidable and challenging problem in the real world. Most of the existing long-tailed classification methods focus only on solving the inter-class imbalance in which there are more samples in the head class than in the tail class, while ignoring the intra-lass imbalance in which the number of samples of the head attribute within the same class is much larger than the number of samples of the tail attribute. The deviation in the model is caused by both of these factors, and due to the fact that attributes are implicit in most datasets and the combination of attributes is very complex, the intra-class imbalance is more difficult to handle. For this purpose, we proposed a long-tailed classification framework, known as \textbf{\textsc{Cognisance}}, which is founded on Coarse-Grained Leading Forest (CLF) and Multi-Center Loss (MCL), aiming to build a multi-granularity joint solution model by means of invariant feature learning. In this method, we desig
+    
+[^8]: 线束自动驾驶：挑战与前景
+
+    End-to-end Autonomous Driving: Challenges and Frontiers. (arXiv:2306.16927v1 [cs.RO])
+
+    [http://arxiv.org/abs/2306.16927](http://arxiv.org/abs/2306.16927)
+
+    这项研究调查了端到端自动驾驶领域中的关键挑战和未来趋势，包括多模态、可解释性、因果混淆、鲁棒性和世界模型等。通过联合特征优化感知和规划，端到端系统在感知和规划上获得了更好的效果。
+
+    
+
+    自动驾驶领域正在迅速发展，越来越多的方法采用端到端算法框架，利用原始传感器输入生成车辆运动计划，而不是专注于诸如检测和运动预测等单个任务。与模块化流水线相比，端到端系统通过联合特征优化感知和规划来获益。这一领域因大规模数据集的可用性、闭环评估以及自动驾驶算法在挑战性场景中的有效执行所需的需求而蓬勃发展。在本调查中，我们全面分析了250多篇论文，涵盖了端到端自动驾驶的动机、路线图、方法论、挑战和未来趋势。我们深入探讨了多模态、可解释性、因果混淆、鲁棒性和世界模型等几个关键挑战。此外，我们还讨论了基础技术的最新进展。
+
+    The autonomous driving community has witnessed a rapid growth in approaches that embrace an end-to-end algorithm framework, utilizing raw sensor input to generate vehicle motion plans, instead of concentrating on individual tasks such as detection and motion prediction. End-to-end systems, in comparison to modular pipelines, benefit from joint feature optimization for perception and planning. This field has flourished due to the availability of large-scale datasets, closed-loop evaluation, and the increasing need for autonomous driving algorithms to perform effectively in challenging scenarios. In this survey, we provide a comprehensive analysis of more than 250 papers, covering the motivation, roadmap, methodology, challenges, and future trends in end-to-end autonomous driving. We delve into several critical challenges, including multi-modality, interpretability, causal confusion, robustness, and world models, amongst others. Additionally, we discuss current advancements in foundation
+    
+[^9]: 可控运动扩散模型
+
+    Controllable Motion Diffusion Model. (arXiv:2306.00416v1 [cs.CV])
+
+    [http://arxiv.org/abs/2306.00416](http://arxiv.org/abs/2306.00416)
+
+    该论文提出了可控运动扩散模型（COMODO）框架，通过自回归运动扩散模型（A-MDM）生成高保真度、长时间内的运动序列，以实现在响应于时变控制信号的情况下进行实时运动合成。
+
+    
+
+    在计算机动画中，为虚拟角色生成逼真且可控的运动是一项具有挑战性的任务。最近的研究从图像生成的扩散模型的成功中汲取灵感，展示了解决这个问题的潜力。然而，这些研究大多限于离线应用，目标是生成同时生成所有步骤的序列级生成。为了能够在响应于时变控制信号的情况下使用扩散模型实现实时运动合成，我们提出了可控运动扩散模型（COMODO）框架。我们的框架以自回归运动扩散模型（A-MDM）为基础，逐步生成运动序列。通过简单地使用标准DDPM算法而无需任何额外复杂性，我们的框架能够产生在不同类型的运动控制下长时间内的高保真度运动序列。
+
+    Generating realistic and controllable motions for virtual characters is a challenging task in computer animation, and its implications extend to games, simulations, and virtual reality. Recent studies have drawn inspiration from the success of diffusion models in image generation, demonstrating the potential for addressing this task. However, the majority of these studies have been limited to offline applications that target at sequence-level generation that generates all steps simultaneously. To enable real-time motion synthesis with diffusion models in response to time-varying control signals, we propose the framework of the Controllable Motion Diffusion Model (COMODO). Our framework begins with an auto-regressive motion diffusion model (A-MDM), which generates motion sequences step by step. In this way, simply using the standard DDPM algorithm without any additional complexity, our framework is able to generate high-fidelity motion sequences over extended periods with different type
     
 
