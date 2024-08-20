@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [No Language is an Island: Unifying Chinese and English in Financial Large Language Models, Instruction Data, and Benchmarks](https://arxiv.org/abs/2403.06249) | ICE-PIXIU模型将中文和英文金融分析统一，通过整合多种任务和数据集提升双语金融建模的效果。 |
+| [^1] | [Bayesian Optimization with Hidden Constraints via Latent Decision Models.](http://arxiv.org/abs/2310.18449) | 本文介绍了一种基于潜在决策模型的贝叶斯优化方法，通过利用变分自编码器学习可行决策的分布，在原始空间和潜在空间之间实现了双向映射，从而解决了公共决策制定中的隐藏约束问题。 |
 
 # 详细
 
-[^1]: 没有孤岛语言:统一中英文金融大型语言模型、指导数据和基准
+[^1]: 基于潜在决策模型的具有隐藏约束的贝叶斯优化方法
 
-    No Language is an Island: Unifying Chinese and English in Financial Large Language Models, Instruction Data, and Benchmarks
+    Bayesian Optimization with Hidden Constraints via Latent Decision Models. (arXiv:2310.18449v1 [stat.ML])
 
-    [https://arxiv.org/abs/2403.06249](https://arxiv.org/abs/2403.06249)
+    [http://arxiv.org/abs/2310.18449](http://arxiv.org/abs/2310.18449)
 
-    ICE-PIXIU模型将中文和英文金融分析统一，通过整合多种任务和数据集提升双语金融建模的效果。
+    本文介绍了一种基于潜在决策模型的贝叶斯优化方法，通过利用变分自编码器学习可行决策的分布，在原始空间和潜在空间之间实现了双向映射，从而解决了公共决策制定中的隐藏约束问题。
 
     
 
-    随着大型语言模型（LLM）的发展显著推动了金融分析，但它们的应用主要局限在单一语言领域，未充分开发中英文双语能力的潜力。为弥合这一鸿沟，我们引入 ICE-PIXIU，无缝融合 ICE-INTENT 模型和 ICE-FLARE 双语金融分析基准。ICE-PIXIU 独特地整合了一系列中文任务，以及翻译和原始英文数据集，丰富了双语金融建模的广度和深度。它提供了对多种模型变体的无限访问权限，一个包含多种跨语言和多模态指导数据的大量编译，以及一个具有专家注释的评估基准，包括 10 个 NLP 任务，20 个双语专用任务，共计1,185k 数据集。我们的彻底评估强调了将这些双语数据集纳入的优势，尤其在t
+    贝叶斯优化（BO）已经成为解决复杂决策问题的强大工具，尤其在公共政策领域如警察划区方面。然而，由于定义可行区域的复杂性和决策的高维度，其在公共决策制定中的广泛应用受到了阻碍。本文介绍了一种新的贝叶斯优化方法——隐藏约束潜在空间贝叶斯优化（HC-LSBO），该方法集成了潜在决策模型。该方法利用变分自编码器来学习可行决策的分布，实现了原始决策空间与较低维度的潜在空间之间的双向映射。通过这种方式，HC-LSBO捕捉了公共决策制定中固有的隐藏约束的细微差别，在潜在空间中进行优化的同时，在原始空间中评估目标。我们通过对合成数据集和真实数据集进行数值实验来验证我们的方法，特别关注大规模问题。
 
-    arXiv:2403.06249v1 Announce Type: cross  Abstract: While the progression of Large Language Models (LLMs) has notably propelled financial analysis, their application has largely been confined to singular language realms, leaving untapped the potential of bilingual Chinese-English capacity. To bridge this chasm, we introduce ICE-PIXIU, seamlessly amalgamating the ICE-INTENT model and ICE-FLARE benchmark for bilingual financial analysis. ICE-PIXIU uniquely integrates a spectrum of Chinese tasks, alongside translated and original English datasets, enriching the breadth and depth of bilingual financial modeling. It provides unrestricted access to diverse model variants, a substantial compilation of diverse cross-lingual and multi-modal instruction data, and an evaluation benchmark with expert annotations, comprising 10 NLP tasks, 20 bilingual specific tasks, totaling 1,185k datasets. Our thorough evaluation emphasizes the advantages of incorporating these bilingual datasets, especially in t
+    Bayesian optimization (BO) has emerged as a potent tool for addressing intricate decision-making challenges, especially in public policy domains such as police districting. However, its broader application in public policymaking is hindered by the complexity of defining feasible regions and the high-dimensionality of decisions. This paper introduces the Hidden-Constrained Latent Space Bayesian Optimization (HC-LSBO), a novel BO method integrated with a latent decision model. This approach leverages a variational autoencoder to learn the distribution of feasible decisions, enabling a two-way mapping between the original decision space and a lower-dimensional latent space. By doing so, HC-LSBO captures the nuances of hidden constraints inherent in public policymaking, allowing for optimization in the latent space while evaluating objectives in the original space. We validate our method through numerical experiments on both synthetic and real data sets, with a specific focus on large-scal
     
 
