@@ -2,52 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Reducing the dimensionality and granularity in hierarchical categorical variables](https://arxiv.org/abs/2403.03613) | 提出了一种减少层次分类变量维度和粒度的方法，通过实体嵌入和自上而下聚类算法来降低层内维度和整体粒度。 |
-| [^2] | [Off-policy Evaluation in Doubly Inhomogeneous Environments.](http://arxiv.org/abs/2306.08719) | 本研究在双非均匀环境下研究了离线策略评估(OPE)，提出了一种潜在因子模型用于奖励和观测转移函数，并开发了一个通用的OPE框架。该研究对标准RL假设不满足的环境中的OPE做出了理论贡献，并提供了几种实用的方法。 |
-| [^3] | [Estimating large causal polytrees from small samples.](http://arxiv.org/abs/2209.07028) | 本文介绍了一种算法，可以在变量数量远大于样本大小的情况下，准确地估计大规模因果多树结构，而几乎不需要任何分布或建模的假设。 |
+| [^1] | [Response Style Characterization for Repeated Measures Using the Visual Analogue Scale](https://arxiv.org/abs/2403.10136) | 本研究针对重复测量的视觉模拟量表数据开发了一种新颖的响应风格（RP）表征方法，以解决在VAS中处理RP的困难。 |
+| [^2] | [Causal Reasoning and Large Language Models: Opening a New Frontier for Causality.](http://arxiv.org/abs/2305.00050) | 大型语言模型在因果推理任务中取得了新的最高准确率，但是其鲁棒性仍然存在难以预测的失败模式。 |
+| [^3] | [Matrix Quantile Factor Model.](http://arxiv.org/abs/2208.08693) | 本文提出了一种新的矩阵分位因子模型，针对矩阵型数据具有低秩结构。我们通过优化经验核损失函数估计行和列的因子空间，证明了估计值的快速收敛速率，提供了合理的因子数对确定方法，并进行了广泛的模拟研究和实证研究。 |
+| [^4] | [Valid Inference after Causal Discovery.](http://arxiv.org/abs/2208.05949) | 本研究开发了工具以实现因果发现后的有效推断，解决了使用相同数据运行因果发现算法后估计因果效应导致经典置信区间的覆盖保证无效问题。 |
 
 # 详细
 
-[^1]: 减少层次分类变量的维度和粒度
+[^1]: 利用视觉模拟量表对重复测量的响应风格进行表征
 
-    Reducing the dimensionality and granularity in hierarchical categorical variables
+    Response Style Characterization for Repeated Measures Using the Visual Analogue Scale
 
-    [https://arxiv.org/abs/2403.03613](https://arxiv.org/abs/2403.03613)
+    [https://arxiv.org/abs/2403.10136](https://arxiv.org/abs/2403.10136)
 
-    提出了一种减少层次分类变量维度和粒度的方法，通过实体嵌入和自上而下聚类算法来降低层内维度和整体粒度。
-
-    
-
-    层次分类变量往往具有许多级别（高粒度）和每个级别内许多类别（高维度）。将这些协变量包含在预测模型中可能导致过度拟合和估计问题。在当前文献中，层次协变量通常通过嵌套随机效应来纳入。然而，这并不有助于假设类别对响应变量具有相同的影响。本文提出了一种获得层次分类变量简化表示的方法。我们展示了如何在层次设置中应用实体嵌入。随后，我们提出了一种自上而下的聚类算法，利用嵌入中编码的信息来减少层内维度以及层次分类变量的整体粒度。在模拟实验中，我们展示了我们的方法可以有效地应用。
-
-    arXiv:2403.03613v1 Announce Type: cross  Abstract: Hierarchical categorical variables often exhibit many levels (high granularity) and many classes within each level (high dimensionality). This may cause overfitting and estimation issues when including such covariates in a predictive model. In current literature, a hierarchical covariate is often incorporated via nested random effects. However, this does not facilitate the assumption of classes having the same effect on the response variable. In this paper, we propose a methodology to obtain a reduced representation of a hierarchical categorical variable. We show how entity embedding can be applied in a hierarchical setting. Subsequently, we propose a top-down clustering algorithm which leverages the information encoded in the embeddings to reduce both the within-level dimensionality as well as the overall granularity of the hierarchical categorical variable. In simulation experiments, we show that our methodology can effectively appro
-    
-[^2]: 双非均匀环境下的离线策略评估
-
-    Off-policy Evaluation in Doubly Inhomogeneous Environments. (arXiv:2306.08719v2 [stat.ME] UPDATED)
-
-    [http://arxiv.org/abs/2306.08719](http://arxiv.org/abs/2306.08719)
-
-    本研究在双非均匀环境下研究了离线策略评估(OPE)，提出了一种潜在因子模型用于奖励和观测转移函数，并开发了一个通用的OPE框架。该研究对标准RL假设不满足的环境中的OPE做出了理论贡献，并提供了几种实用的方法。
+    本研究针对重复测量的视觉模拟量表数据开发了一种新颖的响应风格（RP）表征方法，以解决在VAS中处理RP的困难。
 
     
 
-    本研究旨在研究离线策略评估（OPE）在两个关键的强化学习（RL）假设——时间稳定性和个体均匀性均被破坏的情况下的应用。为了处理“双非均匀性”，我们提出了一类潜在因子模型用于奖励和观测转移函数，并在此基础上开发了一个包含模型驱动和模型自由方法的通用OPE框架。据我们所知，这是第一篇在离线RL中开发统计上可靠的OPE方法的论文，并且涉及了标准RL假设不满足的环境。该研究深入理解了标准RL假设不满足的环境中的OPE，并在这些设置中提供了几种实用的方法。我们确定了所提出的价值估计器的理论性质，并通过实证研究表明我们的方法优于忽视时间非稳定性或个体异质性的竞争方法。最后，我们在一个数据集上说明了我们的方法。
+    自我报告测量（例如，利克特量表）被广泛用于评估主观健康感知。最近，由于其能够精确且便于评估人们感受的能力，视觉模拟量表（VAS），一种滑动条量表，变得流行起来。这些数据可能会受到响应风格（RS）的影响，RS是一种用户依赖的系统性倾向，无论问卷说明如何都会发生。尽管在个体间分析中尤为重要，但对VAS中RS（表示为响应剖面（RP））的处理并未受到足够关注，因为它主要用于个体内监测且不太受RP的影响。然而，VAS测量通常需要对同一问卷项目进行重复自我报告，这使得难以在利克特量表上应用传统方法。在这项研究中，我们开发了一种新颖的RP表征方法，适用于各种类型的重复测量的VAS数据。
 
-    This work aims to study off-policy evaluation (OPE) under scenarios where two key reinforcement learning (RL) assumptions -- temporal stationarity and individual homogeneity are both violated. To handle the ``double inhomogeneities", we propose a class of latent factor models for the reward and observation transition functions, under which we develop a general OPE framework that consists of both model-based and model-free approaches. To our knowledge, this is the first paper that develops statistically sound OPE methods in offline RL with double inhomogeneities. It contributes to a deeper understanding of OPE in environments, where standard RL assumptions are not met, and provides several practical approaches in these settings. We establish the theoretical properties of the proposed value estimators and empirically show that our approach outperforms competing methods that ignore either temporal nonstationarity or individual heterogeneity. Finally, we illustrate our method on a data set
+    arXiv:2403.10136v1 Announce Type: cross  Abstract: Self-report measures (e.g., Likert scales) are widely used to evaluate subjective health perceptions. Recently, the visual analog scale (VAS), a slider-based scale, has become popular owing to its ability to precisely and easily assess how people feel. These data can be influenced by the response style (RS), a user-dependent systematic tendency that occurs regardless of questionnaire instructions. Despite its importance, especially in between-individual analysis, little attention has been paid to handling the RS in the VAS (denoted as response profile (RP)), as it is mainly used for within-individual monitoring and is less affected by RP. However, VAS measurements often require repeated self-reports of the same questionnaire items, making it difficult to apply conventional methods on a Likert scale. In this study, we developed a novel RP characterization method for various types of repeatedly measured VAS data. This approach involves t
     
-[^3]: 从小样本中估计大的因果多树
+[^2]: 因果推理与大型语言模型：开启因果研究的新篇章
 
-    Estimating large causal polytrees from small samples. (arXiv:2209.07028v2 [stat.ME] UPDATED)
+    Causal Reasoning and Large Language Models: Opening a New Frontier for Causality. (arXiv:2305.00050v1 [cs.AI])
 
-    [http://arxiv.org/abs/2209.07028](http://arxiv.org/abs/2209.07028)
+    [http://arxiv.org/abs/2305.00050](http://arxiv.org/abs/2305.00050)
 
-    本文介绍了一种算法，可以在变量数量远大于样本大小的情况下，准确地估计大规模因果多树结构，而几乎不需要任何分布或建模的假设。
+    大型语言模型在因果推理任务中取得了新的最高准确率，但是其鲁棒性仍然存在难以预测的失败模式。
 
     
 
-    我们考虑从相对较小的独立同分布样本中估计大的因果多树的问题。这是在变量数量与样本大小相比非常大的情况下确定因果结构的问题，例如基因调控网络。我们提出了一种算法，在这种情况下以高准确度恢复树形结构。该算法除了一些温和的非退化条件外，基本不需要分布或建模的假设。
+    大型语言模型的因果能力备受争议，并且对将其应用于医学、科学、法律和政策等具有社会影响力的领域具有重要意义。我们进一步探讨了LLMs及其因果推理的区别，以及潜在的建构和测量效度威胁。基于GPT-3.5和4的算法在多个因果基准测试上取得了新的最高准确率。与此同时，LLMs展示了难以预测的失败模式，我们提供了一些技术来解释它们的鲁棒性。
 
-    We consider the problem of estimating a large causal polytree from a relatively small i.i.d. sample. This is motivated by the problem of determining causal structure when the number of variables is very large compared to the sample size, such as in gene regulatory networks. We give an algorithm that recovers the tree with high accuracy in such settings. The algorithm works under essentially no distributional or modeling assumptions other than some mild non-degeneracy conditions.
+    The causal capabilities of large language models (LLMs) is a matter of significant debate, with critical implications for the use of LLMs in societally impactful domains such as medicine, science, law, and policy. We further our understanding of LLMs and their causal implications, considering the distinctions between different types of causal reasoning tasks, as well as the entangled threats of construct and measurement validity. LLM-based methods establish new state-of-the-art accuracies on multiple causal benchmarks. Algorithms based on GPT-3.5 and 4 outperform existing algorithms on a pairwise causal discovery task (97%, 13 points gain), counterfactual reasoning task (92%, 20 points gain), and actual causality (86% accuracy in determining necessary and sufficient causes in vignettes). At the same time, LLMs exhibit unpredictable failure modes and we provide some techniques to interpret their robustness.  Crucially, LLMs perform these causal tasks while relying on sources of knowledg
+    
+[^3]: 矩阵分位因子模型
+
+    Matrix Quantile Factor Model. (arXiv:2208.08693v2 [stat.ME] UPDATED)
+
+    [http://arxiv.org/abs/2208.08693](http://arxiv.org/abs/2208.08693)
+
+    本文提出了一种新的矩阵分位因子模型，针对矩阵型数据具有低秩结构。我们通过优化经验核损失函数估计行和列的因子空间，证明了估计值的快速收敛速率，提供了合理的因子数对确定方法，并进行了广泛的模拟研究和实证研究。
+
+    
+
+    本文为具有低秩结构的矩阵型数据引入了矩阵分位因子模型。通过在所有面板上最小化经验核损失函数，我们估计了行和列因子空间。我们证明了这些估计收敛于速率$1/\min\{\sqrt{p_1p_2}, \sqrt{p_2T}, \sqrt{p_1T}\}$在平均Frobenius范数下，其中$p_1$，$p_2$和$T$分别表示矩阵序列的行维数、列维数和长度。该速率比将矩阵模型“展平”为大向量模型的分位估计速率更快。给出了平滑的估计量，并在一些温和的条件下导出了它们的中心极限定理。我们提供了三个一致的标准来确定行和列因子数对。广泛的模拟研究和实证研究验证了我们的理论。
+
+    This paper introduces a matrix quantile factor model for matrix-valued data with a low-rank structure. We estimate the row and column factor spaces via minimizing the empirical check loss function over all panels. We show the estimates converge at rate $1/\min\{\sqrt{p_1p_2}, \sqrt{p_2T},$ $\sqrt{p_1T}\}$ in average Frobenius norm, where $p_1$, $p_2$ and $T$ are the row dimensionality, column dimensionality and length of the matrix sequence. This rate is faster than that of the quantile estimates via ``flattening" the matrix model into a large vector model. Smoothed estimates are given and their central limit theorems are derived under some mild condition. We provide three consistent criteria to determine the pair of row and column factor numbers. Extensive simulation studies and an empirical study justify our theory.
+    
+[^4]: 因果发现后的有效推断
+
+    Valid Inference after Causal Discovery. (arXiv:2208.05949v2 [stat.ME] UPDATED)
+
+    [http://arxiv.org/abs/2208.05949](http://arxiv.org/abs/2208.05949)
+
+    本研究开发了工具以实现因果发现后的有效推断，解决了使用相同数据运行因果发现算法后估计因果效应导致经典置信区间的覆盖保证无效问题。
+
+    
+
+    因果发现和因果效应估计是因果推断中的两个基本任务。虽然已经针对每个任务单独开发了许多方法，但是同时应用这些方法时会出现统计上的挑战：在对相同数据运行因果发现算法后估计因果效应会导致"双重挑选"，从而使经典置信区间的覆盖保证无效。为此，我们开发了针对因果发现后有效的推断工具。通过实证研究，我们发现，天真组合因果发现算法和随后推断算法会导致高度膨胀的误覆盖率，而应用我们的方法则提供可靠的覆盖并实现比数据分割更准确的因果发现。
+
+    Causal discovery and causal effect estimation are two fundamental tasks in causal inference. While many methods have been developed for each task individually, statistical challenges arise when applying these methods jointly: estimating causal effects after running causal discovery algorithms on the same data leads to "double dipping," invalidating the coverage guarantees of classical confidence intervals. To this end, we develop tools for valid post-causal-discovery inference. Across empirical studies, we show that a naive combination of causal discovery and subsequent inference algorithms leads to highly inflated miscoverage rates; on the other hand, applying our method provides reliable coverage while achieving more accurate causal discovery than data splitting.
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Estimating large causal polytrees from small samples.](http://arxiv.org/abs/2209.07028) | 本文介绍了一种算法，可以在变量数量远大于样本大小的情况下，准确地估计大规模因果多树结构，而几乎不需要任何分布或建模的假设。 |
+| [^1] | [Inferring Dynamic Networks from Marginals with Iterative Proportional Fitting](https://arxiv.org/abs/2402.18697) | 通过识别一个生成网络模型，我们建立了一个设置，IPF可以恢复最大似然估计，揭示了关于在这种设置中使用IPF的隐含假设，并可以为IPF的参数估计提供结构相关的误差界。 |
 
 # 详细
 
-[^1]: 从小样本中估计大的因果多树
+[^1]: 从边际推断动态网络的方法：迭代比例拟合
 
-    Estimating large causal polytrees from small samples. (arXiv:2209.07028v2 [stat.ME] UPDATED)
+    Inferring Dynamic Networks from Marginals with Iterative Proportional Fitting
 
-    [http://arxiv.org/abs/2209.07028](http://arxiv.org/abs/2209.07028)
+    [https://arxiv.org/abs/2402.18697](https://arxiv.org/abs/2402.18697)
 
-    本文介绍了一种算法，可以在变量数量远大于样本大小的情况下，准确地估计大规模因果多树结构，而几乎不需要任何分布或建模的假设。
+    通过识别一个生成网络模型，我们建立了一个设置，IPF可以恢复最大似然估计，揭示了关于在这种设置中使用IPF的隐含假设，并可以为IPF的参数估计提供结构相关的误差界。
 
     
 
-    我们考虑从相对较小的独立同分布样本中估计大的因果多树的问题。这是在变量数量与样本大小相比非常大的情况下确定因果结构的问题，例如基因调控网络。我们提出了一种算法，在这种情况下以高准确度恢复树形结构。该算法除了一些温和的非退化条件外，基本不需要分布或建模的假设。
+    来自现实数据约束的常见网络推断问题是如何从时间聚合的邻接矩阵和时间变化边际（即行向量和列向量之和）推断动态网络。先前的方法为了解决这个问题重新利用了经典的迭代比例拟合（IPF）过程，也称为Sinkhorn算法，并取得了令人满意的经验结果。然而，使用IPF的统计基础尚未得到很好的理解：在什么情况下，IPF提供了从边际准确估计动态网络的原则性，以及它在多大程度上估计了网络？在这项工作中，我们确定了这样一个设置，通过识别一个生成网络模型，IPF可以恢复其最大似然估计。我们的模型揭示了关于在这种设置中使用IPF的隐含假设，并使得可以进行新的分析，如有关IPF参数估计的结构相关误差界。当IPF失败时
 
-    We consider the problem of estimating a large causal polytree from a relatively small i.i.d. sample. This is motivated by the problem of determining causal structure when the number of variables is very large compared to the sample size, such as in gene regulatory networks. We give an algorithm that recovers the tree with high accuracy in such settings. The algorithm works under essentially no distributional or modeling assumptions other than some mild non-degeneracy conditions.
+    arXiv:2402.18697v1 Announce Type: cross  Abstract: A common network inference problem, arising from real-world data constraints, is how to infer a dynamic network from its time-aggregated adjacency matrix and time-varying marginals (i.e., row and column sums). Prior approaches to this problem have repurposed the classic iterative proportional fitting (IPF) procedure, also known as Sinkhorn's algorithm, with promising empirical results. However, the statistical foundation for using IPF has not been well understood: under what settings does IPF provide principled estimation of a dynamic network from its marginals, and how well does it estimate the network? In this work, we establish such a setting, by identifying a generative network model whose maximum likelihood estimates are recovered by IPF. Our model both reveals implicit assumptions on the use of IPF in such settings and enables new analyses, such as structure-dependent error bounds on IPF's parameter estimates. When IPF fails to c
     
 
