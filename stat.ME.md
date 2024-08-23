@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A comprehensive study of spike and slab shrinkage priors for structurally sparse Bayesian neural networks.](http://arxiv.org/abs/2308.09104) | 本论文研究了在贝叶斯神经网络中使用Lasso和Horseshoe两种缩减技术进行模型压缩的方法。为了实现结构稀疏，通过提出尖峰与块组稀疏Lasso和尖峰与块组Horseshoe先验，并开发了可计算的变分推断方法。该方法可以在保持推理效率的同时实现深度神经网络的模型压缩。 |
+| [^1] | [Uncertainty estimation in satellite precipitation interpolation with machine learning](https://arxiv.org/abs/2311.07511) | 该研究使用机器学习算法对卫星和测站数据进行插值，通过量化预测不确定性来提高降水数据集的分辨率。 |
+| [^2] | [Estimating Treatment Effects using Multiple Surrogates: The Role of the Surrogate Score and the Surrogate Index](https://arxiv.org/abs/1603.09326) | 利用现代数据集中大量中间结果的事实，即使没有单个替代指标满足统计替代条件，使用多个替代指标也可能是有效的。 |
 
 # 详细
 
-[^1]: 基于尖峰与块缩减先验的结构稀疏贝叶斯神经网络的全面研究
+[^1]: 用机器学习进行卫星降水插值的不确定性估计
 
-    A comprehensive study of spike and slab shrinkage priors for structurally sparse Bayesian neural networks. (arXiv:2308.09104v1 [stat.ML])
+    Uncertainty estimation in satellite precipitation interpolation with machine learning
 
-    [http://arxiv.org/abs/2308.09104](http://arxiv.org/abs/2308.09104)
+    [https://arxiv.org/abs/2311.07511](https://arxiv.org/abs/2311.07511)
 
-    本论文研究了在贝叶斯神经网络中使用Lasso和Horseshoe两种缩减技术进行模型压缩的方法。为了实现结构稀疏，通过提出尖峰与块组稀疏Lasso和尖峰与块组Horseshoe先验，并开发了可计算的变分推断方法。该方法可以在保持推理效率的同时实现深度神经网络的模型压缩。
+    该研究使用机器学习算法对卫星和测站数据进行插值，通过量化预测不确定性来提高降水数据集的分辨率。
 
     
 
-    网络复杂度和计算效率已经成为深度学习中越来越重要的方面。稀疏深度学习通过减少过参数化的深度神经网络来恢复底层目标函数的稀疏表示，解决了这些挑战。具体而言，通过结构稀疏（如节点稀疏）压缩的深度神经架构提供了低延迟推理、更高的数据吞吐量和更低的能量消耗。在本文中，我们研究了两种广泛应用的缩减技术，Lasso和Horseshoe，在贝叶斯神经网络中进行模型压缩。为此，我们提出了基于尖峰与块组稀疏Lasso (SS-GL)和基于尖峰与块组Horseshoe (SS-GHS)先验的结构稀疏贝叶斯神经网络，并开发了可计算的变分推断，包括对伯努利变量的连续松弛。我们确定了变分推断的收缩速率。
+    合并卫星和测站数据并利用机器学习产生高分辨率降水数据集，但预测不确定性估计往往缺失。我们通过对比六种算法，大部分是针对这一任务而设计的新算法，来量化空间插值中的预测不确定性。在连续美国的15年月度数据上，我们比较了分位数回归（QR）、分位数回归森林（QRF）、广义随机森林（GRF）、梯度提升机（GBM）、轻梯度提升机（LightGBM）和分位数回归神经网络（QRNN）。它们能够在九个分位水平（0.025、0.050、0.100、0.250、0.500、0.750、0.900、0.950、0.975）上发布预测降水分位数，以近似完整概率分布，评估时采用分位数评分函数和分位数评分规则。特征重要性分析揭示了卫星降水（PERSIA
 
-    Network complexity and computational efficiency have become increasingly significant aspects of deep learning. Sparse deep learning addresses these challenges by recovering a sparse representation of the underlying target function by reducing heavily over-parameterized deep neural networks. Specifically, deep neural architectures compressed via structured sparsity (e.g. node sparsity) provide low latency inference, higher data throughput, and reduced energy consumption. In this paper, we explore two well-established shrinkage techniques, Lasso and Horseshoe, for model compression in Bayesian neural networks. To this end, we propose structurally sparse Bayesian neural networks which systematically prune excessive nodes with (i) Spike-and-Slab Group Lasso (SS-GL), and (ii) Spike-and-Slab Group Horseshoe (SS-GHS) priors, and develop computationally tractable variational inference including continuous relaxation of Bernoulli variables. We establish the contraction rates of the variational 
+    arXiv:2311.07511v2 Announce Type: replace-cross  Abstract: Merging satellite and gauge data with machine learning produces high-resolution precipitation datasets, but uncertainty estimates are often missing. We address this gap by benchmarking six algorithms, mostly novel for this task, for quantifying predictive uncertainty in spatial interpolation. On 15 years of monthly data over the contiguous United States (CONUS), we compared quantile regression (QR), quantile regression forests (QRF), generalized random forests (GRF), gradient boosting machines (GBM), light gradient boosting machines (LightGBM), and quantile regression neural networks (QRNN). Their ability to issue predictive precipitation quantiles at nine quantile levels (0.025, 0.050, 0.100, 0.250, 0.500, 0.750, 0.900, 0.950, 0.975), approximating the full probability distribution, was evaluated using quantile scoring functions and the quantile scoring rule. Feature importance analysis revealed satellite precipitation (PERSIA
+    
+[^2]: 利用多个替代指标估计治疗效果：替代分数和替代指数的作用
+
+    Estimating Treatment Effects using Multiple Surrogates: The Role of the Surrogate Score and the Surrogate Index
+
+    [https://arxiv.org/abs/1603.09326](https://arxiv.org/abs/1603.09326)
+
+    利用现代数据集中大量中间结果的事实，即使没有单个替代指标满足统计替代条件，使用多个替代指标也可能是有效的。
+
+    
+
+    估计治疗效果长期作用是许多领域感兴趣的问题。 估计此类治疗效果的一个常见挑战在于长期结果在需要做出政策决策的时间范围内是未观察到的。 克服这种缺失数据问题的一种方法是分析治疗效果对中间结果的影响，通常称为统计替代指标，如果满足条件：在统计替代指标的条件下，治疗和结果是独立的。  替代条件的有效性经常是有争议的。 在现代数据集中，研究人员通常观察到大量中间结果，可能是数百个或数千个，被认为位于治疗和长期感兴趣的结果之间的因果链上或附近。 即使没有个别代理满足统计替代条件，使用多个代理也可以。
+
+    arXiv:1603.09326v4 Announce Type: replace-cross  Abstract: Estimating the long-term effects of treatments is of interest in many fields. A common challenge in estimating such treatment effects is that long-term outcomes are unobserved in the time frame needed to make policy decisions. One approach to overcome this missing data problem is to analyze treatments effects on an intermediate outcome, often called a statistical surrogate, if it satisfies the condition that treatment and outcome are independent conditional on the statistical surrogate. The validity of the surrogacy condition is often controversial. Here we exploit that fact that in modern datasets, researchers often observe a large number, possibly hundreds or thousands, of intermediate outcomes, thought to lie on or close to the causal chain between the treatment and the long-term outcome of interest. Even if none of the individual proxies satisfies the statistical surrogacy criterion by itself, using multiple proxies can be 
     
 

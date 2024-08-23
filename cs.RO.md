@@ -2,52 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Survey for Foundation Models in Autonomous Driving](https://rss.arxiv.org/abs/2402.01105) | 本综述论文回顾了40多篇研究论文，总结了基于基础模型的自动驾驶在规划、仿真和关键任务方面的重要贡献，强调了大型语言模型的推理和翻译能力，视觉基础模型在物体检测和驾驶场景创建方面的应用，以及多模态基础模型的视觉理解和空间推理能力。 |
-| [^2] | [LLM^3:Large Language Model-based Task and Motion Planning with Motion Failure Reasoning](https://arxiv.org/abs/2403.11552) | LLM^3是一个基于大型语言模型的任务和运动规划框架，利用预训练的LLM具备强大的推理和规划能力，通过接口提出符号动作序列和选择连续动作参数进行运动规划，并通过运动规划的反馈来迭代优化提议，从而简化了处理领域特定消息的设计过程。 |
-| [^3] | [ComTraQ-MPC: Meta-Trained DQN-MPC Integration for Trajectory Tracking with Limited Active Localization Updates](https://arxiv.org/abs/2403.01564) | ComTraQ-MPC是一个结合了DQN和MPC的新框架，旨在优化在有限主动定位更新下的轨迹跟踪。 |
+| [^1] | [Robust Policy Learning via Offline Skill Diffusion](https://arxiv.org/abs/2403.00225) | 提出了一种新颖的离线技能学习框架DuSkill，通过引导扩散模型生成通用技能，从而增强不同领域任务的策略学习鲁棒性。 |
+| [^2] | [CGGM: A conditional graph generation model with adaptive sparsity for node anomaly detection in IoT networks](https://arxiv.org/abs/2402.17363) | CGGM是一种新颖的图生成模型，通过自适应稀疏性生成邻接矩阵，解决了物联网网络中节点异常检测中节点类别不平衡的问题 |
+| [^3] | [Pointing the Way: Refining Radar-Lidar Localization Using Learned ICP Weights.](http://arxiv.org/abs/2309.08731) | 本文提出了一种深度学习方法，通过学习到的ICP权重优化雷达-激光雷达的定位，从而改善了雷达测量对激光雷达地图的定位效果。这一方法在保持高质量地图定位性能的同时，提高了在降水和大雾等恶劣天气条件下的定位准确性。 |
 
 # 详细
 
-[^1]: 自动驾驶领域基础模型综述
+[^1]: 通过离线技能扩散实现稳健策略学习
 
-    A Survey for Foundation Models in Autonomous Driving
+    Robust Policy Learning via Offline Skill Diffusion
 
-    [https://rss.arxiv.org/abs/2402.01105](https://rss.arxiv.org/abs/2402.01105)
+    [https://arxiv.org/abs/2403.00225](https://arxiv.org/abs/2403.00225)
 
-    本综述论文回顾了40多篇研究论文，总结了基于基础模型的自动驾驶在规划、仿真和关键任务方面的重要贡献，强调了大型语言模型的推理和翻译能力，视觉基础模型在物体检测和驾驶场景创建方面的应用，以及多模态基础模型的视觉理解和空间推理能力。
-
-    
-
-    基于基础模型的出现，自然语言处理和计算机视觉领域发生了革命，为自动驾驶应用铺平了道路。本综述论文对40多篇研究论文进行了全面的回顾，展示了基础模型在提升自动驾驶中的作用。大型语言模型在自动驾驶的规划和仿真中发挥着重要作用，特别是通过其在推理、代码生成和翻译方面的能力。与此同时，视觉基础模型在关键任务中得到越来越广泛的应用，例如三维物体检测和跟踪，以及为仿真和测试创建逼真的驾驶场景。多模态基础模型可以整合多样的输入，展现出卓越的视觉理解和空间推理能力，对于端到端自动驾驶至关重要。本综述不仅提供了一个结构化的分类，根据模态和自动驾驶领域中的功能对基础模型进行分类，还深入研究了方法。
-
-    The advent of foundation models has revolutionized the fields of natural language processing and computer vision, paving the way for their application in autonomous driving (AD). This survey presents a comprehensive review of more than 40 research papers, demonstrating the role of foundation models in enhancing AD. Large language models contribute to planning and simulation in AD, particularly through their proficiency in reasoning, code generation and translation. In parallel, vision foundation models are increasingly adapted for critical tasks such as 3D object detection and tracking, as well as creating realistic driving scenarios for simulation and testing. Multi-modal foundation models, integrating diverse inputs, exhibit exceptional visual understanding and spatial reasoning, crucial for end-to-end AD. This survey not only provides a structured taxonomy, categorizing foundation models based on their modalities and functionalities within the AD domain but also delves into the meth
-    
-[^2]: LLM^3:基于大型语言模型的任务和运动规划以及运动失败推理
-
-    LLM^3:Large Language Model-based Task and Motion Planning with Motion Failure Reasoning
-
-    [https://arxiv.org/abs/2403.11552](https://arxiv.org/abs/2403.11552)
-
-    LLM^3是一个基于大型语言模型的任务和运动规划框架，利用预训练的LLM具备强大的推理和规划能力，通过接口提出符号动作序列和选择连续动作参数进行运动规划，并通过运动规划的反馈来迭代优化提议，从而简化了处理领域特定消息的设计过程。
+    提出了一种新颖的离线技能学习框架DuSkill，通过引导扩散模型生成通用技能，从而增强不同领域任务的策略学习鲁棒性。
 
     
 
-    传统任务和运动规划（TAMP）方法依赖于手工设计的界面，将符号任务规划与连续运动生成连接起来。这些特定领域的、劳动密集型的模块在处理现实世界设置中出现的新任务方面有限。在这里，我们提出了LLM^3，这是一个新颖的基于大型语言模型（LLM）的TAMP框架，具有领域无关的接口。具体来说，我们利用预训练的LLM的强大推理和规划能力来提出符号动作序列，并选择连续动作参数进行运动规划。关键是，LLM^3通过提示将运动规划反馈到其中，使得LLM能够通过对运动失败进行推理来迭代地优化其提议。因此，LLM^3在任务规划和运动规划之间建立接口，减轻了处理它们之间特定领域消息的复杂设计过程。通过一系列仿真
+    基于技能的强化学习方法在解决长时域任务中表现出了相当大的潜力，尤其是通过分层结构。这些技能是从离线数据集中无关任务地学习的，可以加快针对新任务的策略学习过程。然而，由于这些技能在不同领域中的应用仍受限于对数据集的固有依赖，当尝试通过强化学习为不同于数据集领域的目标领域学习基于技能的策略时，这一挑战就变得困难。在本文中，我们提出了一个新颖的离线技能学习框架DuSkill，它采用了引导扩散模型来生成从数据集中有限技能扩展出的通用技能，从而增强了不同领域任务的策略学习鲁棒性。具体来说，我们设计了一个引导扩散技能解码器，结合分层编码，以解开技能嵌入。
 
-    arXiv:2403.11552v1 Announce Type: cross  Abstract: Conventional Task and Motion Planning (TAMP) approaches rely on manually crafted interfaces connecting symbolic task planning with continuous motion generation. These domain-specific and labor-intensive modules are limited in addressing emerging tasks in real-world settings. Here, we present LLM^3, a novel Large Language Model (LLM)-based TAMP framework featuring a domain-independent interface. Specifically, we leverage the powerful reasoning and planning capabilities of pre-trained LLMs to propose symbolic action sequences and select continuous action parameters for motion planning. Crucially, LLM^3 incorporates motion planning feed- back through prompting, allowing the LLM to iteratively refine its proposals by reasoning about motion failure. Consequently, LLM^3 interfaces between task planning and motion planning, alleviating the intricate design process of handling domain- specific messages between them. Through a series of simulat
+    arXiv:2403.00225v1 Announce Type: new  Abstract: Skill-based reinforcement learning (RL) approaches have shown considerable promise, especially in solving long-horizon tasks via hierarchical structures. These skills, learned task-agnostically from offline datasets, can accelerate the policy learning process for new tasks. Yet, the application of these skills in different domains remains restricted due to their inherent dependency on the datasets, which poses a challenge when attempting to learn a skill-based policy via RL for a target domain different from the datasets' domains. In this paper, we present a novel offline skill learning framework DuSkill which employs a guided Diffusion model to generate versatile skills extended from the limited skills in datasets, thereby enhancing the robustness of policy learning for tasks in different domains. Specifically, we devise a guided diffusion-based skill decoder in conjunction with the hierarchical encoding to disentangle the skill embeddi
     
-[^3]: ComTraQ-MPC：元训练的DQN-MPC集成用于具有有限主动定位更新的轨迹跟踪
+[^2]: CGGM：一种具有自适应稀疏性的条件图生成模型，用于物联网网络中节点异常检测
 
-    ComTraQ-MPC: Meta-Trained DQN-MPC Integration for Trajectory Tracking with Limited Active Localization Updates
+    CGGM: A conditional graph generation model with adaptive sparsity for node anomaly detection in IoT networks
 
-    [https://arxiv.org/abs/2403.01564](https://arxiv.org/abs/2403.01564)
+    [https://arxiv.org/abs/2402.17363](https://arxiv.org/abs/2402.17363)
 
-    ComTraQ-MPC是一个结合了DQN和MPC的新框架，旨在优化在有限主动定位更新下的轨迹跟踪。
+    CGGM是一种新颖的图生成模型，通过自适应稀疏性生成邻接矩阵，解决了物联网网络中节点异常检测中节点类别不平衡的问题
 
     
 
-    在局部可观察、随机环境中进行轨迹跟踪的最佳决策往往面临着一个重要挑战，即主动定位更新数量有限，这是指代理从传感器获取真实状态信息的过程。传统方法往往难以平衡资源保存、准确状态估计和精确跟踪之间的关系，导致性能次优。本文介绍了ComTraQ-MPC，这是一个结合了Deep Q-Networks (DQN)和模型预测控制(MPC)的新颖框架，旨在优化有限主动定位更新下的轨迹跟踪。元训练的DQN确保了自适应主动定位调度，同时
+    动态图被广泛用于检测物联网中节点的异常行为。生成模型通常用于解决动态图中节点类别不平衡的问题。然而，它面临的约束包括邻接关系的单调性，为节点构建多维特征的困难，以及缺乏端到端生成多类节点的方法。本文提出了一种名为CGGM的新颖图生成模型，专门设计用于生成少数类别中更多节点。通过自适应稀疏性生成邻接矩阵的机制增强了其结构的灵活性。特征生成模块名为多维特征生成器（MFG），可生成包括拓扑信息在内的节点特征。标签被转换为嵌入向量，用作条件。
 
-    arXiv:2403.01564v1 Announce Type: cross  Abstract: Optimal decision-making for trajectory tracking in partially observable, stochastic environments where the number of active localization updates -- the process by which the agent obtains its true state information from the sensors -- are limited, presents a significant challenge. Traditional methods often struggle to balance resource conservation, accurate state estimation and precise tracking, resulting in suboptimal performance. This problem is particularly pronounced in environments with large action spaces, where the need for frequent, accurate state data is paramount, yet the capacity for active localization updates is restricted by external limitations. This paper introduces ComTraQ-MPC, a novel framework that combines Deep Q-Networks (DQN) and Model Predictive Control (MPC) to optimize trajectory tracking with constrained active localization updates. The meta-trained DQN ensures adaptive active localization scheduling, while the
+    arXiv:2402.17363v1 Announce Type: cross  Abstract: Dynamic graphs are extensively employed for detecting anomalous behavior in nodes within the Internet of Things (IoT). Generative models are often used to address the issue of imbalanced node categories in dynamic graphs. Nevertheless, the constraints it faces include the monotonicity of adjacency relationships, the difficulty in constructing multi-dimensional features for nodes, and the lack of a method for end-to-end generation of multiple categories of nodes. This paper presents a novel graph generation model, called CGGM, designed specifically to generate a larger number of nodes belonging to the minority class. The mechanism for generating an adjacency matrix, through adaptive sparsity, enhances flexibility in its structure. The feature generation module, called multidimensional features generator (MFG) to generate node features along with topological information. Labels are transformed into embedding vectors, serving as condition
+    
+[^3]: 指引的方法：利用学习到的ICP权重改进雷达-激光雷达定位
+
+    Pointing the Way: Refining Radar-Lidar Localization Using Learned ICP Weights. (arXiv:2309.08731v1 [cs.RO])
+
+    [http://arxiv.org/abs/2309.08731](http://arxiv.org/abs/2309.08731)
+
+    本文提出了一种深度学习方法，通过学习到的ICP权重优化雷达-激光雷达的定位，从而改善了雷达测量对激光雷达地图的定位效果。这一方法在保持高质量地图定位性能的同时，提高了在降水和大雾等恶劣天气条件下的定位准确性。
+
+    
+
+    本文提出了一种基于深度学习的新方法，用于改进雷达测量对激光雷达地图的定位。虽然目前定位的技术水平是将激光雷达数据与激光雷达地图进行匹配，但是雷达被认为是一种有前途的替代方法，因为它对降水和大雾等恶劣天气具有更强的韧性。为了利用现有的高质量激光雷达地图，同时在恶劣天气下保持性能，将雷达数据与激光雷达地图进行匹配具有重要意义。然而，由于雷达测量中存在的独特伪影，雷达-激光雷达定位一直难以达到与激光雷达-激光雷达系统相媲美的性能，使其无法用于自动驾驶。本工作在基于ICP的雷达-激光雷达定位系统基础上，包括一个学习的预处理步骤，根据高层次的扫描信息对雷达点进行加权。将经过验证的分析方法与学习到的权重相结合，减小了雷达定位中的误差。
+
+    This paper presents a novel deep-learning-based approach to improve localizing radar measurements against lidar maps. Although the state of the art for localization is matching lidar data to lidar maps, radar has been considered as a promising alternative, as it is potentially more resilient against adverse weather such as precipitation and heavy fog. To make use of existing high-quality lidar maps, while maintaining performance in adverse weather, matching radar data to lidar maps is of interest. However, owing in part to the unique artefacts present in radar measurements, radar-lidar localization has struggled to achieve comparable performance to lidar-lidar systems, preventing it from being viable for autonomous driving. This work builds on an ICP-based radar-lidar localization system by including a learned preprocessing step that weights radar points based on high-level scan information. Combining a proven analytical approach with a learned weight reduces localization errors in rad
     
 

@@ -2,52 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Quality and Trust in LLM-generated Code](https://arxiv.org/abs/2402.02047) | 本论文研究了机器学习生成代码的质量和信任问题，提出了校准的重要性，并探讨了如何确定模型生成代码的正确性。 |
-| [^2] | [Copilot Refinement: Addressing Code Smells in Copilot-Generated Python Code.](http://arxiv.org/abs/2401.14176) | 本研究旨在探索Copilot生成的Python代码中的代码异味，评估Copilot修复这些问题的能力。结果表明，有8种Python代码异味可以在Copilot生成的代码中检测到。 |
-| [^3] | [Pre-Training Representations of Binary Code Using Contrastive Learning.](http://arxiv.org/abs/2210.05102) | 提出了一种使用对比学习预训练二进制代码表示的方法，可以将源代码和注释信息纳入二进制代码的表示学习中，对于反向工程和计算机安全任务有重要意义。 |
+| [^1] | [SymbolicAI: A framework for logic-based approaches combining generative models and solvers](https://arxiv.org/abs/2402.00854) | SymbolicAI是一个基于逻辑的框架，将生成模型与多种求解器无缝集成，通过将大型语言模型作为语义解析器，实现了符号推理与生成式人工智能的融合。 |
+| [^2] | [MoTCoder: Elevating Large Language Models with Modular of Thought for Challenging Programming Tasks.](http://arxiv.org/abs/2312.15960) | MoTCoder是一个使用思维模块提升大型语言模型在挑战性编程任务中能力的框架，通过创新的指令调整促进任务的分解和模块化，显著提高生成解决方案的准确性和模块化程度。 |
 
 # 详细
 
-[^1]: 机器学习生成代码的质量和信任
+[^1]: SymbolicAI: 一个结合生成模型和求解器的基于逻辑的方法的框架
 
-    Quality and Trust in LLM-generated Code
+    SymbolicAI: A framework for logic-based approaches combining generative models and solvers
 
-    [https://arxiv.org/abs/2402.02047](https://arxiv.org/abs/2402.02047)
+    [https://arxiv.org/abs/2402.00854](https://arxiv.org/abs/2402.00854)
 
-    本论文研究了机器学习生成代码的质量和信任问题，提出了校准的重要性，并探讨了如何确定模型生成代码的正确性。
-
-    
-
-    机器学习模型广泛应用，但常常会出错。用户需要可靠的指示，以确定给定模型的输出是否可信，从而可以做出理性决策是否使用该输出。例如，可以将输出与置信度相关联；如果置信度与正确性的可能性强相关，则称该模型为良好校准。在这种情况下，高置信度的输出可以安全接受，低置信度的输出可以拒绝。校准迄今主要在非生成性（例如分类）环境中进行研究，特别是在软件工程领域。然而，生成代码很容易出错：开发人员需要知道何时直接使用、经过仔细审查后使用或丢弃模型生成的代码，因此在生成环境中，校准非常重要。然而，生成代码的正确性概念并不简单，因此校准也是如此。
-
-    Machine learning models are widely used but can also often be wrong. Users would benefit from a reliable indication of whether a given output from a given model should be trusted, so a rational decision can be made whether to use the output or not. For example, outputs can be associated with a confidence measure; if this confidence measure is strongly associated with likelihood of correctness, then the model is said to be well-calibrated. In this case, for example, high-confidence outputs could be safely accepted, and low-confidence outputs rejected.   Calibration has so far been studied in non-generative (e.g., classification) settings, especially in Software Engineering. However, generated code can quite often be wrong: Developers need to know when they should e.g., directly use, use after careful review, or discard model-generated code; thus Calibration is vital in generative settings. However, the notion of correctness of generated code is non-trivial, and thus so is Calibration. I
-    
-[^2]: Copilot细化：解决Copilot生成的Python代码中的代码异味
-
-    Copilot Refinement: Addressing Code Smells in Copilot-Generated Python Code. (arXiv:2401.14176v1 [cs.SE])
-
-    [http://arxiv.org/abs/2401.14176](http://arxiv.org/abs/2401.14176)
-
-    本研究旨在探索Copilot生成的Python代码中的代码异味，评估Copilot修复这些问题的能力。结果表明，有8种Python代码异味可以在Copilot生成的代码中检测到。
+    SymbolicAI是一个基于逻辑的框架，将生成模型与多种求解器无缝集成，通过将大型语言模型作为语义解析器，实现了符号推理与生成式人工智能的融合。
 
     
 
-    作为最流行的动态语言之一，Python在存在代码异味时可读性和可维护性会下降。大型语言模型的最新进展引发了对AI支持的代码生成和重构工具的日益关注。GitHub Copilot是其中一种被广泛使用的工具。Copilot Chat是在2023年9月发布的一种交互式工具，旨在为自然语言驱动的编码提供便利。然而，对于理解Copilot生成的Python代码中的代码异味以及Copilot修复其生成的代码异味的能力，人们并没有给予足够的关注。为此，我们构建了一个包含102个Copilot生成的Python代码中的代码异味的数据集。我们的目标是首先探索Copilot生成的Python代码中代码异味的发生情况，然后评估Copilot在使用不同提示修复这些代码异味时的有效性。结果显示，10种Python代码异味中有8种可以在Copilot生成的代码中检测到。
+    我们介绍了SymbolicAI，这是一个多功能且模块化的框架，采用基于逻辑的方法来处理生成过程中的概念学习和流程管理。SymbolicAI通过将大型语言模型（LLM）作为语义解析器来执行基于自然语言和形式语言指令的任务，从而弥合了符号推理和生成式人工智能之间的差距，使生成模型与各种求解器无缝集成。我们利用概率编程原理来处理复杂任务，并利用可微分和经典编程范 paradigms 的各自优势。该框架引入了一系列多态的、组合的和自指的数据流操作，将LLM的输出与用户的目标对齐。因此，我们可以在具有零次和少次学习能力的各种基础模型之间进行过渡，并与擅长解决特定问题的专业化调优模型或求解器配合使用。
 
-    As one of the most popular dynamic languages, Python experiences a decrease in readability and maintainability when code smells are present. Recent advancements in Large Language Models have sparked growing interest in AI-enabled tools for both code generation and refactoring. GitHub Copilot is one such tool that has gained widespread usage. Copilot Chat, released on September 2023, functions as an interactive tool aims at facilitating natural language-powered coding. However, limited attention has been given to understanding code smells in Copilot-generated Python code and Copilot's ability to fix the code smells it generates. To this end, we built a dataset comprising 102 code smells in Copilot-generated Python code. Our aim is to first explore the occurrence of code smells in Copilot-generated Python code and then evaluate the effectiveness of Copilot in fixing these code smells employing different prompts. The results show that 8 out of 10 types of Python smells can be detected in 
+    We introduce SymbolicAI, a versatile and modular framework employing a logic-based approach to concept learning and flow management in generative processes. SymbolicAI enables the seamless integration of generative models with a diverse range of solvers by treating large language models (LLMs) as semantic parsers that execute tasks based on both natural and formal language instructions, thus bridging the gap between symbolic reasoning and generative AI. We leverage probabilistic programming principles to tackle complex tasks, and utilize differentiable and classical programming paradigms with their respective strengths. The framework introduces a set of polymorphic, compositional, and self-referential operations for data stream manipulation, aligning LLM outputs with user objectives. As a result, we can transition between the capabilities of various foundation models endowed with zero- and few-shot learning capabilities and specialized, fine-tuned models or solvers proficient in addres
     
-[^3]: 使用对比学习预训练二进制代码表示
+[^2]: MoTCoder: 使用思维模块提升大型语言模型在具有挑战性的编程任务中的能力。
 
-    Pre-Training Representations of Binary Code Using Contrastive Learning. (arXiv:2210.05102v2 [cs.SE] UPDATED)
+    MoTCoder: Elevating Large Language Models with Modular of Thought for Challenging Programming Tasks. (arXiv:2312.15960v2 [cs.LG] UPDATED)
 
-    [http://arxiv.org/abs/2210.05102](http://arxiv.org/abs/2210.05102)
+    [http://arxiv.org/abs/2312.15960](http://arxiv.org/abs/2312.15960)
 
-    提出了一种使用对比学习预训练二进制代码表示的方法，可以将源代码和注释信息纳入二进制代码的表示学习中，对于反向工程和计算机安全任务有重要意义。
+    MoTCoder是一个使用思维模块提升大型语言模型在挑战性编程任务中能力的框架，通过创新的指令调整促进任务的分解和模块化，显著提高生成解决方案的准确性和模块化程度。
 
     
 
-    编译后的软件以可执行的二进制代码形式交付。开发人员编写源代码来表达软件的语义，但编译器将其转换为CPU可以直接执行的二进制格式。因此，二进制代码分析对于反向工程和计算机安全任务等没有源代码的应用程序至关重要。然而，与包含丰富语义信息的源代码和自然语言不同，二进制代码通常难以理解和分析。虽然现有的工作使用AI模型辅助源代码分析，但很少有研究考虑二进制代码。在本文中，我们提出了一种将源代码和注释信息纳入二进制代码进行表示学习的对比学习模型，称为COMBO。具体而言，我们在COMBO中提出了三个组件：（1）用于冷启动预训练的主要对比学习方法，（2）用于将源代码和注释信息插入到二进制代码中的单纯插值方法。
+    大型语言模型(LLMs)在处理简单的编程任务方面展示出了令人印象深刻的能力。然而，当面对更具挑战性的编程问题时，它们的性能往往表现不佳。我们观察到传统模型往往生成作为单一代码块的解决方案，限制了它们在解决复杂问题上的有效性。为了克服这个限制，我们提出了Modular-of-Thought Coder (MoTCoder)。我们引入了一种创新的MoT指令调整框架，旨在促进将任务分解为逻辑子任务和子模块。我们的研究发现，通过培养和利用子模块，MoTCoder显著提高了生成解决方案的模块化和正确性，导致在APPS上相对pass@1改进了12.9%，在CodeContests上相对pass@1改进了9.43%。我们的代码可在https://github.com/dvlab-research/MoTCoder获得。
 
-    Compiled software is delivered as executable binary code. Developers write source code to express the software semantics, but the compiler converts it to a binary format that the CPU can directly execute. Therefore, binary code analysis is critical to applications in reverse engineering and computer security tasks where source code is not available. However, unlike source code and natural language that contain rich semantic information, binary code is typically difficult for human engineers to understand and analyze. While existing work uses AI models to assist source code analysis, few studies have considered binary code. In this paper, we propose a COntrastive learning Model for Binary cOde Analysis, or COMBO, that incorporates source code and comment information into binary code during representation learning. Specifically, we present three components in COMBO: (1) a primary contrastive learning method for cold-start pre-training, (2) a simplex interpolation method to incorporate so
+    Large Language Models (LLMs) have showcased impressive capabilities in handling straightforward programming tasks. However, their performance tends to falter when confronted with more challenging programming problems. We observe that conventional models often generate solutions as monolithic code blocks, restricting their effectiveness in tackling intricate questions. To overcome this limitation, we present Modular-of-Thought Coder (MoTCoder). We introduce a pioneering framework for MoT instruction tuning, designed to promote the decomposition of tasks into logical sub-tasks and sub-modules. Our investigations reveal that, through the cultivation and utilization of sub-modules, MoTCoder significantly improves both the modularity and correctness of the generated solutions, leading to substantial relative pass@1 improvements of 12.9% on APPS and 9.43% on CodeContests. Our codes are available at https://github.com/dvlab-research/MoTCoder.
     
 
