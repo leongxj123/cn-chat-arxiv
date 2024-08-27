@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A PPO-based DRL Auto-Tuning Nonlinear PID Drone Controller for Robust Autonomous Flights](https://arxiv.org/abs/2404.00204) | 该项目将非线性深度强化学习（DRL）代理引入无人机控制中，取代传统线性PID控制器，实现了无缝过渡、提高响应速度和稳定性，同时结合PPO策略训练DRL代理，并利用高精度跟踪系统提高自主飞行精度。 |
-| [^2] | [Intelligent Energy Management with IoT Framework in Smart Cities Using Intelligent Analysis: An Application of Machine Learning Methods for Complex Networks and Systems.](http://arxiv.org/abs/2306.05567) | 本研究开发了一个智能城市能源管理的物联网框架，结合智能分析和多组件的架构，研究了基于智能机制的智能能源管理解决方案，以期节能和优化管理。 |
+| [^1] | [Reinforcement Learning for Versatile, Dynamic, and Robust Bipedal Locomotion Control.](http://arxiv.org/abs/2401.16889) | 本论文使用深度强化学习创建了一种通用的双足机器人动态运动控制器，该控制器可以应用于多种动态双足技能，并且在模拟环境和实际环境中展现出了优越性能。 |
 
 # 详细
 
-[^1]: 基于PPO的DRL自调PID非线性无人机控制器用于稳健自主飞行
+[^1]: 强化学习用于多功能、动态和稳健的双足运动控制
 
-    A PPO-based DRL Auto-Tuning Nonlinear PID Drone Controller for Robust Autonomous Flights
+    Reinforcement Learning for Versatile, Dynamic, and Robust Bipedal Locomotion Control. (arXiv:2401.16889v1 [cs.RO])
 
-    [https://arxiv.org/abs/2404.00204](https://arxiv.org/abs/2404.00204)
+    [http://arxiv.org/abs/2401.16889](http://arxiv.org/abs/2401.16889)
 
-    该项目将非线性深度强化学习（DRL）代理引入无人机控制中，取代传统线性PID控制器，实现了无缝过渡、提高响应速度和稳定性，同时结合PPO策略训练DRL代理，并利用高精度跟踪系统提高自主飞行精度。
-
-    
-
-    该项目旨在通过将非线性深度强化学习（DRL）代理作为传统线性比例积分微分（PID）控制器的替代品，从而彻底改变无人机飞行控制。主要目标是在手动和自主模式之间实现无缝过渡，提高响应速度和稳定性。我们在Gazebo模拟器中利用近端策略优化（PPO）强化学习策略来训练DRL代理。添加20000美元的室内Vicon跟踪系统提供<1mm的定位精度，显着提高了自主飞行精度。为了在最短的无碰撞轨迹中导航无人机，我们还建立了一个三维A*路径规划器并成功地将其实施到实际飞行中。
-
-    arXiv:2404.00204v1 Announce Type: cross  Abstract: This project aims to revolutionize drone flight control by implementing a nonlinear Deep Reinforcement Learning (DRL) agent as a replacement for traditional linear Proportional Integral Derivative (PID) controllers. The primary objective is to seamlessly transition drones between manual and autonomous modes, enhancing responsiveness and stability. We utilize the Proximal Policy Optimization (PPO) reinforcement learning strategy within the Gazebo simulator to train the DRL agent. Adding a $20,000 indoor Vicon tracking system offers <1mm positioning accuracy, which significantly improves autonomous flight precision. To navigate the drone in the shortest collision-free trajectory, we also build a 3 dimensional A* path planner and implement it into the real flight successfully.
-    
-[^2]: 智能分析，在物联网框架下的智能城市能源管理：复杂网络和系统机器学习方法应用的案例研究
-
-    Intelligent Energy Management with IoT Framework in Smart Cities Using Intelligent Analysis: An Application of Machine Learning Methods for Complex Networks and Systems. (arXiv:2306.05567v1 [cs.LG])
-
-    [http://arxiv.org/abs/2306.05567](http://arxiv.org/abs/2306.05567)
-
-    本研究开发了一个智能城市能源管理的物联网框架，结合智能分析和多组件的架构，研究了基于智能机制的智能能源管理解决方案，以期节能和优化管理。
+    本论文使用深度强化学习创建了一种通用的双足机器人动态运动控制器，该控制器可以应用于多种动态双足技能，并且在模拟环境和实际环境中展现出了优越性能。
 
     
 
-    智能建筑越来越多地使用基于物联网的无线传感系统来降低能源消耗和环境影响。本研究的主要贡献是开发了一个全面的基于物联网的智能城市能源管理框架，融合了多个物联网架构和框架的组件。该框架通过智能分析，不仅收集和存储信息，而且还是其他企业开发应用的平台。此外，我们还研究了基于智能机制的智能能源管理解决方案。能源资源的消耗和需求增加导致了节能与优化管理的需求和挑战。
+    本论文提出了一项关于使用深度强化学习（RL）创建双足机器人动态运动控制器的综合研究。我们不仅仅专注于单一的运动技能，而是开发了一种通用的控制解决方案，可以用于一系列动态双足技能，从周期性行走和奔跑到非周期性跳跃和站立。我们基于RL的控制器采用了一种新颖的双历史架构，利用机器人的长期和短期输入/输出（I/O）历史。通过提出的端到端RL方法进行训练时，这种控制架构在模拟环境和实际环境中的多样化技能上始终表现优于其他方法。该研究还深入探讨了所提出的RL系统在开发运动控制器方面引入的适应性和稳健性。我们证明了所提出的架构可以适应时间不变的动力学变化和时间变化的变化，如接触事件，通过有效地
 
-    Smart buildings are increasingly using Internet of Things (IoT)-based wireless sensing systems to reduce their energy consumption and environmental impact. As a result of their compact size and ability to sense, measure, and compute all electrical properties, Internet of Things devices have become increasingly important in our society. A major contribution of this study is the development of a comprehensive IoT-based framework for smart city energy management, incorporating multiple components of IoT architecture and framework. An IoT framework for intelligent energy management applications that employ intelligent analysis is an essential system component that collects and stores information. Additionally, it serves as a platform for the development of applications by other companies. Furthermore, we have studied intelligent energy management solutions based on intelligent mechanisms. The depletion of energy resources and the increase in energy demand have led to an increase in energy 
+    This paper presents a comprehensive study on using deep reinforcement learning (RL) to create dynamic locomotion controllers for bipedal robots. Going beyond focusing on a single locomotion skill, we develop a general control solution that can be used for a range of dynamic bipedal skills, from periodic walking and running to aperiodic jumping and standing. Our RL-based controller incorporates a novel dual-history architecture, utilizing both a long-term and short-term input/output (I/O) history of the robot. This control architecture, when trained through the proposed end-to-end RL approach, consistently outperforms other methods across a diverse range of skills in both simulation and the real world.The study also delves into the adaptivity and robustness introduced by the proposed RL system in developing locomotion controllers. We demonstrate that the proposed architecture can adapt to both time-invariant dynamics shifts and time-variant changes, such as contact events, by effectivel
     
 

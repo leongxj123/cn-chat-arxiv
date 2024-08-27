@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Towards Enhancing the Reproducibility of Deep Learning Bugs: An Empirical Study.](http://arxiv.org/abs/2401.03069) | 本研究旨在提高深度学习Bug的可复现性，通过构建数据集和确定编辑动作和有用信息，这能够解决目前研究中忽视的问题。 |
+| [^1] | [QuanTest: Entanglement-Guided Testing of Quantum Neural Network Systems](https://arxiv.org/abs/2402.12950) | QuanTest是一个基于纠缠的对抗测试框架，旨在揭示量子神经网络系统中的潜在错误行为。 |
 
 # 详细
 
-[^1]: 提高深度学习Bug可复现性的探索性研究
+[^1]: QuanTest：基于纠缠的量子神经网络系统测试
 
-    Towards Enhancing the Reproducibility of Deep Learning Bugs: An Empirical Study. (arXiv:2401.03069v1 [cs.SE])
+    QuanTest: Entanglement-Guided Testing of Quantum Neural Network Systems
 
-    [http://arxiv.org/abs/2401.03069](http://arxiv.org/abs/2401.03069)
+    [https://arxiv.org/abs/2402.12950](https://arxiv.org/abs/2402.12950)
 
-    本研究旨在提高深度学习Bug的可复现性，通过构建数据集和确定编辑动作和有用信息，这能够解决目前研究中忽视的问题。
+    QuanTest是一个基于纠缠的对抗测试框架，旨在揭示量子神经网络系统中的潜在错误行为。
 
     
 
-    背景：深度学习在各个领域取得了显著进展。然而，与传统软件系统一样，深度学习系统也存在Bug，这可能对自动驾驶等领域产生严重影响。尽管深度学习技术取得了重大进展，但很少有研究关注深度学习Bug的可复现性，这阻碍了Bug的解决。现有文献指出，仅有3%的深度学习Bug是可复现的，这凸显了进一步研究的必要性。目标：本文考察深度学习Bug的可复现性，识别可提高深度学习Bug可复现性的编辑动作和有用信息。方法：首先，构建了一个包含来自Stack Overflow和Defects4ML的3个框架和22个架构的668个深度学习Bug的数据集。其次，使用分层抽样选择了102个Bug，并尝试确定它们的可复现性。在复现这些Bug的过程中，我们识别了编辑动作和有用信息。
+    Quantum Neural Network（QNN）将深度学习（DL）原理与量子力学基本理论相结合，实现具有量子加速的机器学习任务。 最近发现，QNN系统有类似于经典DL系统的鲁棒性问题。 急需一种方法来测试它们的正确性和安全性。 但是，QNN系统与传统量子软件和经典DL系统有很大不同，对QNN测试提出了重大挑战。 这些挑战包括传统量子软件测试方法的不适用性，量子测试样本生成对扰动算子的依赖，以及量子神经元中缺乏有效信息。 本文提出了QuanTest，这是一个基于量子纠缠的对抗测试框架，用于发现QNN系统中潜在的错误行为。 我们设计了一个量子纠缠充分性准则来量化
 
-    Context: Deep learning has achieved remarkable progress in various domains. However, like traditional software systems, deep learning systems contain bugs, which can have severe impacts, as evidenced by crashes involving autonomous vehicles. Despite substantial advancements in deep learning techniques, little research has focused on reproducing deep learning bugs, which hinders resolving them. Existing literature suggests that only 3% of deep learning bugs are reproducible, underscoring the need for further research.  Objective: This paper examines the reproducibility of deep learning bugs. We identify edit actions and useful information that could improve deep learning bug reproducibility.  Method: First, we construct a dataset of 668 deep learning bugs from Stack Overflow and Defects4ML across 3 frameworks and 22 architectures. Second, we select 102 bugs using stratified sampling and try to determine their reproducibility. While reproducing these bugs, we identify edit actions and us
+    arXiv:2402.12950v1 Announce Type: cross  Abstract: Quantum Neural Network (QNN) combines the Deep Learning (DL) principle with the fundamental theory of quantum mechanics to achieve machine learning tasks with quantum acceleration. Recently, QNN systems have been found to manifest robustness issues similar to classical DL systems. There is an urgent need for ways to test their correctness and security. However, QNN systems differ significantly from traditional quantum software and classical DL systems, posing critical challenges for QNN testing. These challenges include the inapplicability of traditional quantum software testing methods, the dependence of quantum test sample generation on perturbation operators, and the absence of effective information in quantum neurons. In this paper, we propose QuanTest, a quantum entanglement-guided adversarial testing framework to uncover potential erroneous behaviors in QNN systems. We design a quantum entanglement adequacy criterion to quantify 
     
 

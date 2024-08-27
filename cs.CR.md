@@ -2,52 +2,112 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Federated Complex Qeury Answering](https://arxiv.org/abs/2402.14609) | 研究了在多源知识图谱上回答复杂查询的联邦式方法，解决了知识图谱中的隐私保护和答案检索的挑战 |
-| [^2] | [On the Vulnerability of Fairness Constrained Learning to Malicious Noise.](http://arxiv.org/abs/2307.11892) | 这项研究考虑了公正约束学习对恶意噪声的脆弱性，发现使用随机分类器可以在精度上只损失$\Theta(\alpha)$和$O(\sqrt{\alpha})$，对应不同的公正约束要求。 |
-| [^3] | [Fast Adaptive Test-Time Defense with Robust Features.](http://arxiv.org/abs/2307.11672) | 本文提出了一种快速适应的测试防御策略，通过投影训练好的模型到最稳健的特征空间，降低了对抗攻击的脆弱性，无需额外的测试时间计算。 |
+| [^1] | [Optimization-based Prompt Injection Attack to LLM-as-a-Judge](https://arxiv.org/abs/2403.17710) | 介绍了一种基于优化的提示注入攻击方法，JudgeDeceiver，针对LLM-as-a-Judge，通过自动化生成对抗序列实现了有针对性和高效的模型评估操控。 |
+| [^2] | [Improving Robustness to Model Inversion Attacks via Sparse Coding Architectures](https://arxiv.org/abs/2403.14772) | 通过稀疏编码层设计新网络架构以提高对模型逆推攻击的鲁棒性。 |
+| [^3] | [Continual Adversarial Defense](https://arxiv.org/abs/2312.09481) | 提出了第一个能够动态适应任何攻击的持续对抗性防御（CAD）框架。 |
+| [^4] | [Investigating Feature and Model Importance in Android Malware Detection: An Implemented Survey and Experimental Comparison of ML-Based Methods](https://arxiv.org/abs/2301.12778) | 本文重新实现和评估了18个代表性的过去研究，并在包含124,000个应用程序的平衡、相关和最新数据集上进行了新实验，发现仅通过静态分析提取的特征就能实现高达96.8%的恶意软件检测准确性。 |
+| [^5] | [Multi-Trigger Backdoor Attacks: More Triggers, More Threats.](http://arxiv.org/abs/2401.15295) | 本文主要研究了多触发后门攻击对深度神经网络的威胁。通过提出并研究了三种类型的多触发攻击，包括并行、顺序和混合攻击，文章揭示了不同触发器对同一数据集的共存、覆写和交叉激活效果。结果表明单触发攻击容易引起覆写问题。 |
+| [^6] | [Locally Differentially Private Distributed Online Learning with Guaranteed Optimality.](http://arxiv.org/abs/2306.14094) | 本文提出了一种具有保证最优性的方法，可以在分布式在线学习中同时保证差分隐私和学习准确性。 |
+| [^7] | [MetaGAD: Learning to Meta Transfer for Few-shot Graph Anomaly Detection.](http://arxiv.org/abs/2305.10668) | 本文提出了一种名为MetaGAD的框架，用于学习从无标记节点到有标记节点之间的元转移知识，以进行少样本图异常检测。 |
 
 # 详细
 
-[^1]: 联邦式复杂查询答案方法研究
+[^1]: 基于优化的对LLM评判系统的提示注入攻击
 
-    Federated Complex Qeury Answering
+    Optimization-based Prompt Injection Attack to LLM-as-a-Judge
 
-    [https://arxiv.org/abs/2402.14609](https://arxiv.org/abs/2402.14609)
+    [https://arxiv.org/abs/2403.17710](https://arxiv.org/abs/2403.17710)
 
-    研究了在多源知识图谱上回答复杂查询的联邦式方法，解决了知识图谱中的隐私保护和答案检索的挑战
-
-    
-
-    知识图谱中的复杂逻辑查询答案是一个具有挑战性的任务，已经得到广泛研究。执行复杂逻辑推理的能力是必不可少的，并支持各种基于图推理的下游任务，比如搜索引擎。最近提出了一些方法，将知识图谱实体和逻辑查询表示为嵌入向量，并从知识图谱中找到逻辑查询的答案。然而，现有的方法主要集中在查询单个知识图谱上，并不能应用于多个图形。此外，直接共享带有敏感信息的知识图谱可能会带来隐私风险，使得共享和构建一个聚合知识图谱用于推理以检索查询答案是不切实际的。因此，目前仍然不清楚如何在多源知识图谱上回答查询。一个实体可能涉及到多个知识图谱，对多个知识图谱进行推理，并在多源知识图谱上回答复杂查询对于发现知识是重要的。
-
-    arXiv:2402.14609v1 Announce Type: cross  Abstract: Complex logical query answering is a challenging task in knowledge graphs (KGs) that has been widely studied. The ability to perform complex logical reasoning is essential and supports various graph reasoning-based downstream tasks, such as search engines. Recent approaches are proposed to represent KG entities and logical queries into embedding vectors and find answers to logical queries from the KGs. However, existing proposed methods mainly focus on querying a single KG and cannot be applied to multiple graphs. In addition, directly sharing KGs with sensitive information may incur privacy risks, making it impractical to share and construct an aggregated KG for reasoning to retrieve query answers. Thus, it remains unknown how to answer queries on multi-source KGs. An entity can be involved in various knowledge graphs and reasoning on multiple KGs and answering complex queries on multi-source KGs is important in discovering knowledge 
-    
-[^2]: 关于受恶意噪声影响的公正约束学习的脆弱性
-
-    On the Vulnerability of Fairness Constrained Learning to Malicious Noise. (arXiv:2307.11892v1 [cs.LG])
-
-    [http://arxiv.org/abs/2307.11892](http://arxiv.org/abs/2307.11892)
-
-    这项研究考虑了公正约束学习对恶意噪声的脆弱性，发现使用随机分类器可以在精度上只损失$\Theta(\alpha)$和$O(\sqrt{\alpha})$，对应不同的公正约束要求。
+    介绍了一种基于优化的提示注入攻击方法，JudgeDeceiver，针对LLM-as-a-Judge，通过自动化生成对抗序列实现了有针对性和高效的模型评估操控。
 
     
 
-    我们考虑了公正约束学习对训练数据中微小恶意噪声的脆弱性。Konstantinov和Lampert (2021)在这个问题上进行了研究，并展示了负面结果，表明在不平衡的群组大小下存在一些数据分布，任何适当的学习器都会表现出较高的脆弱性。在这里，我们展示了更乐观的观点，如果允许随机分类器，则情况更加细致。例如，对于人口统计学平等性，我们显示只会产生$\Theta(\alpha)$的精度损失，其中$\alpha$是恶意噪声率，甚至可以与没有公正约束的情况完全匹配。对于机会均等性，我们显示只会产生$O(\sqrt{\alpha})$的损失，并给出一个匹配的$\Omega(\sqrt{\alpha})$的下界。相比之下，Konstantinov和Lampert (2021)示范了对于适当的学习器，这两个概念的精度损失都是$\Omega(1)$。关键的技术创新是
+    LLM-as-a-Judge 是一种可以使用大型语言模型（LLMs）评估文本信息的新颖解决方案。根据现有研究，LLMs在提供传统人类评估的引人注目替代方面表现出色。然而，这些系统针对提示注入攻击的鲁棒性仍然是一个未解决的问题。在这项工作中，我们引入了JudgeDeceiver，一种针对LLM-as-a-Judge量身定制的基于优化的提示注入攻击。我们的方法制定了一个精确的优化目标，用于攻击LLM-as-a-Judge的决策过程，并利用优化算法高效地自动化生成对抗序列，实现对模型评估的有针对性和有效的操作。与手工制作的提示注入攻击相比，我们的方法表现出卓越的功效，给基于LLM的判断系统当前的安全范式带来了重大挑战。
 
-    We consider the vulnerability of fairness-constrained learning to small amounts of malicious noise in the training data. Konstantinov and Lampert (2021) initiated the study of this question and presented negative results showing there exist data distributions where for several fairness constraints, any proper learner will exhibit high vulnerability when group sizes are imbalanced. Here, we present a more optimistic view, showing that if we allow randomized classifiers, then the landscape is much more nuanced. For example, for Demographic Parity we show we can incur only a $\Theta(\alpha)$ loss in accuracy, where $\alpha$ is the malicious noise rate, matching the best possible even without fairness constraints. For Equal Opportunity, we show we can incur an $O(\sqrt{\alpha})$ loss, and give a matching $\Omega(\sqrt{\alpha})$lower bound. In contrast, Konstantinov and Lampert (2021) showed for proper learners the loss in accuracy for both notions is $\Omega(1)$. The key technical novelty 
+    arXiv:2403.17710v1 Announce Type: cross  Abstract: LLM-as-a-Judge is a novel solution that can assess textual information with large language models (LLMs). Based on existing research studies, LLMs demonstrate remarkable performance in providing a compelling alternative to traditional human assessment. However, the robustness of these systems against prompt injection attacks remains an open question. In this work, we introduce JudgeDeceiver, a novel optimization-based prompt injection attack tailored to LLM-as-a-Judge. Our method formulates a precise optimization objective for attacking the decision-making process of LLM-as-a-Judge and utilizes an optimization algorithm to efficiently automate the generation of adversarial sequences, achieving targeted and effective manipulation of model evaluations. Compared to handcraft prompt injection attacks, our method demonstrates superior efficacy, posing a significant challenge to the current security paradigms of LLM-based judgment systems. T
     
-[^3]: 快速自适应测试防御与稳健特征
+[^2]: 通过稀疏编码架构提高模型逆推攻击的鲁棒性
 
-    Fast Adaptive Test-Time Defense with Robust Features. (arXiv:2307.11672v1 [cs.LG])
+    Improving Robustness to Model Inversion Attacks via Sparse Coding Architectures
 
-    [http://arxiv.org/abs/2307.11672](http://arxiv.org/abs/2307.11672)
+    [https://arxiv.org/abs/2403.14772](https://arxiv.org/abs/2403.14772)
 
-    本文提出了一种快速适应的测试防御策略，通过投影训练好的模型到最稳健的特征空间，降低了对抗攻击的脆弱性，无需额外的测试时间计算。
+    通过稀疏编码层设计新网络架构以提高对模型逆推攻击的鲁棒性。
 
     
 
-    自适应的测试防御被用来提高深度神经网络对抗性样本的鲁棒性。然而，现有方法由于对模型参数或输入进行额外的优化导致推理时间大幅增加。在本工作中，我们提出了一种新颖的自适应测试防御策略，它可以与任何现有（稳健的）训练过程轻松集成，并且无需额外的测试时间计算。基于我们提出的特征鲁棒性的概念，关键思想是将训练好的模型投影到最稳健的特征空间，从而降低对非稳健方向的对抗攻击的脆弱性。我们在广义可加性模型和使用神经切向核函数（NTK）等价法证明了特征矩阵的顶层特征空间更加稳健。我们在CIFAR-10和CIFAR-100数据集上进行了大量实验，用于几个稳健性基准测试。
+    最近的模型逆推攻击算法允许对手通过反复查询神经网络并检查其输出来重建网络的私有训练数据。 在这项工作中，我们开发了一种新颖的网络架构，利用稀疏编码层来获得对这类攻击的卓越鲁棒性。 三十年来，计算机科学研究已经研究了稀疏编码在图像去噪，目标识别和对抗性误分设置中的作用，但据我们所知，其与最先进的隐私漏洞之间的联系尚未被研究。然而，稀疏编码架构提供了一种有利的手段来抵御模型逆推攻击，因为它们允许我们控制编码在网络的中间表示中的无关私人信息的数量，而这种方式可以在训练过程中高效计算，并且众所周知只有较小的影响。
 
-    Adaptive test-time defenses are used to improve the robustness of deep neural networks to adversarial examples. However, existing methods significantly increase the inference time due to additional optimization on the model parameters or the input at test time. In this work, we propose a novel adaptive test-time defense strategy that is easy to integrate with any existing (robust) training procedure without additional test-time computation. Based on the notion of robustness of features that we present, the key idea is to project the trained models to the most robust feature space, thereby reducing the vulnerability to adversarial attacks in non-robust directions. We theoretically show that the top eigenspace of the feature matrix are more robust for a generalized additive model and support our argument for a large width neural network with the Neural Tangent Kernel (NTK) equivalence. We conduct extensive experiments on CIFAR-10 and CIFAR-100 datasets for several robustness benchmarks, 
+    arXiv:2403.14772v1 Announce Type: cross  Abstract: Recent model inversion attack algorithms permit adversaries to reconstruct a neural network's private training data just by repeatedly querying the network and inspecting its outputs. In this work, we develop a novel network architecture that leverages sparse-coding layers to obtain superior robustness to this class of attacks. Three decades of computer science research has studied sparse coding in the context of image denoising, object recognition, and adversarial misclassification settings, but to the best of our knowledge, its connection to state-of-the-art privacy vulnerabilities remains unstudied. However, sparse coding architectures suggest an advantageous means to defend against model inversion attacks because they allow us to control the amount of irrelevant private information encoded in a network's intermediate representations in a manner that can be computed efficiently during training and that is known to have little effect
+    
+[^3]: 持续不断的对抗性防御
+
+    Continual Adversarial Defense
+
+    [https://arxiv.org/abs/2312.09481](https://arxiv.org/abs/2312.09481)
+
+    提出了第一个能够动态适应任何攻击的持续对抗性防御（CAD）框架。
+
+    
+
+    针对每月针对视觉分类器的对抗性攻击快速演变的特性，人们提出了许多防御方法，旨在尽可能通用化以抵御尽可能多的已知攻击。然而，设计一个能够对抗所有类型攻击的防御方法并不现实，因为防御系统运行的环境是动态的，包含随着时间出现的各种独特攻击。防御系统必须收集在线少样本对抗反馈以迅速增强自身，充分利用内存。因此，我们提出了第一个能够动态适应任何攻击的持续对抗性防御（CAD）框架，其中各种攻击逐个阶段出现。在实践中，CAD基于四项原则进行建模：(1) 持续适应新攻击而无灾难性遗忘，(2) 少样本适应，(3) 内存高效适应，以及(4) 高准确性
+
+    arXiv:2312.09481v2 Announce Type: replace-cross  Abstract: In response to the rapidly evolving nature of adversarial attacks against visual classifiers on a monthly basis, numerous defenses have been proposed to generalize against as many known attacks as possible. However, designing a defense method that generalizes to all types of attacks is not realistic because the environment in which defense systems operate is dynamic and comprises various unique attacks that emerge as time goes on. The defense system must gather online few-shot defense feedback to promptly enhance itself, leveraging efficient memory utilization. Therefore, we propose the first continual adversarial defense (CAD) framework that adapts to any attacks in a dynamic scenario, where various attacks emerge stage by stage. In practice, CAD is modeled under four principles: (1) continual adaptation to new attacks without catastrophic forgetting, (2) few-shot adaptation, (3) memory-efficient adaptation, and (4) high accur
+    
+[^4]: 探究安卓恶意软件检测中的特征和模型重要性：一项实施调查和机器学习方法实验比较
+
+    Investigating Feature and Model Importance in Android Malware Detection: An Implemented Survey and Experimental Comparison of ML-Based Methods
+
+    [https://arxiv.org/abs/2301.12778](https://arxiv.org/abs/2301.12778)
+
+    本文重新实现和评估了18个代表性的过去研究，并在包含124,000个应用程序的平衡、相关和最新数据集上进行了新实验，发现仅通过静态分析提取的特征就能实现高达96.8%的恶意软件检测准确性。
+
+    
+
+    Android的普及意味着它成为恶意软件的常见目标。多年来，各种研究发现机器学习模型能够有效区分恶意软件和良性应用程序。然而，随着操作系统的演进，恶意软件也在不断发展，对先前研究的发现提出了质疑，其中许多报告称使用小型、过时且经常不平衡的数据集能够获得非常高的准确性。在本文中，我们重新实现了18项具代表性的过去研究并使用包括124,000个应用程序的平衡、相关且最新的数据集对它们进行重新评估。我们还进行了新的实验，以填补现有知识中的空白，并利用研究结果确定在当代环境中用于安卓恶意软件检测的最有效特征和模型。我们表明，仅通过静态分析提取的特征即可实现高达96.8%的检测准确性。
+
+    arXiv:2301.12778v2 Announce Type: replace  Abstract: The popularity of Android means it is a common target for malware. Over the years, various studies have found that machine learning models can effectively discriminate malware from benign applications. However, as the operating system evolves, so does malware, bringing into question the findings of these previous studies, many of which report very high accuracies using small, outdated, and often imbalanced datasets. In this paper, we reimplement 18 representative past works and reevaluate them using a balanced, relevant, and up-to-date dataset comprising 124,000 applications. We also carry out new experiments designed to fill holes in existing knowledge, and use our findings to identify the most effective features and models to use for Android malware detection within a contemporary environment. We show that high detection accuracies (up to 96.8%) can be achieved using features extracted through static analysis alone, yielding a mode
+    
+[^5]: 多触发后门攻击：更多触发器，更多威胁
+
+    Multi-Trigger Backdoor Attacks: More Triggers, More Threats. (arXiv:2401.15295v1 [cs.LG])
+
+    [http://arxiv.org/abs/2401.15295](http://arxiv.org/abs/2401.15295)
+
+    本文主要研究了多触发后门攻击对深度神经网络的威胁。通过提出并研究了三种类型的多触发攻击，包括并行、顺序和混合攻击，文章揭示了不同触发器对同一数据集的共存、覆写和交叉激活效果。结果表明单触发攻击容易引起覆写问题。
+
+    
+
+    后门攻击已经成为深度神经网络（DNNs）的（预）训练和部署的主要威胁。尽管后门攻击在一些研究中已经得到了广泛的探讨，但其中大部分都集中在使用单个类型的触发器来污染数据集的单触发攻击上。可以说，在现实世界中，后门攻击可能更加复杂，例如，同一数据集可能存在多个对手，如果该数据集具有较高的价值。在这项工作中，我们研究了在多触发攻击设置下后门攻击的实际威胁，多个对手利用不同类型的触发器来污染同一数据集。通过提出和研究并行、顺序和混合攻击这三种类型的多触发攻击，我们提供了关于不同触发器对同一数据集的共存、覆写和交叉激活效果的重要认识。此外，我们还展示了单触发攻击往往容易引起覆写问题。
+
+    Backdoor attacks have emerged as a primary threat to (pre-)training and deployment of deep neural networks (DNNs). While backdoor attacks have been extensively studied in a body of works, most of them were focused on single-trigger attacks that poison a dataset using a single type of trigger. Arguably, real-world backdoor attacks can be much more complex, e.g., the existence of multiple adversaries for the same dataset if it is of high value. In this work, we investigate the practical threat of backdoor attacks under the setting of \textbf{multi-trigger attacks} where multiple adversaries leverage different types of triggers to poison the same dataset. By proposing and investigating three types of multi-trigger attacks, including parallel, sequential, and hybrid attacks, we provide a set of important understandings of the coexisting, overwriting, and cross-activating effects between different triggers on the same dataset. Moreover, we show that single-trigger attacks tend to cause over
+    
+[^6]: 具有保证最优性的局部差分隐私分布式在线学习
+
+    Locally Differentially Private Distributed Online Learning with Guaranteed Optimality. (arXiv:2306.14094v1 [cs.LG])
+
+    [http://arxiv.org/abs/2306.14094](http://arxiv.org/abs/2306.14094)
+
+    本文提出了一种具有保证最优性的方法，可以在分布式在线学习中同时保证差分隐私和学习准确性。
+
+    
+
+    分布式在线学习由于其处理大规模数据集和流数据的能力而受到越来越多的关注。为了解决隐私保护问题，已经提出了许多个人私密分布式在线学习算法，大多数基于差分隐私，差分隐私已成为隐私保护的“黄金标准”。然而，这些算法常常面临为了隐私保护而牺牲学习准确性的困境。本文利用在线学习的独特特征，提出了一种方法来解决这一困境，并确保分布式在线学习中的差分隐私和学习准确性。具体而言，该方法在确保预期瞬时遗憾程度逐渐减小的同时，还能保证有限的累积隐私预算，即使在无限时间范围内。为了应对完全分布式环境，我们采用本地差分隐私框架，避免了对全局数据的依赖。
+
+    Distributed online learning is gaining increased traction due to its unique ability to process large-scale datasets and streaming data. To address the growing public awareness and concern on privacy protection, plenty of private distributed online learning algorithms have been proposed, mostly based on differential privacy which has emerged as the ``gold standard" for privacy protection. However, these algorithms often face the dilemma of trading learning accuracy for privacy. By exploiting the unique characteristics of online learning, this paper proposes an approach that tackles the dilemma and ensures both differential privacy and learning accuracy in distributed online learning. More specifically, while ensuring a diminishing expected instantaneous regret, the approach can simultaneously ensure a finite cumulative privacy budget, even on the infinite time horizon. To cater for the fully distributed setting, we adopt the local differential-privacy framework which avoids the reliance
+    
+[^7]: MetaGAD：学习元转移进行少样本图异常检测
+
+    MetaGAD: Learning to Meta Transfer for Few-shot Graph Anomaly Detection. (arXiv:2305.10668v1 [cs.LG])
+
+    [http://arxiv.org/abs/2305.10668](http://arxiv.org/abs/2305.10668)
+
+    本文提出了一种名为MetaGAD的框架，用于学习从无标记节点到有标记节点之间的元转移知识，以进行少样本图异常检测。
+
+    
+
+    图异常检测长期以来一直是各个领域信息安全问题中的重要问题，如金融欺诈、社会垃圾邮件、网络入侵等。目前大多数现有方法都是以无监督方式执行的，因为标记的异常在大规模情况下往往太昂贵。然而，由于缺乏有关异常的先前知识，可能会将被识别的异常视为数据噪声或不感兴趣的数据实例。在现实场景中，通常可获取有限的标记异常，这些标记异常具有推进图异常检测的巨大潜力。然而，探索少量标记异常和大量无标记节点来检测异常的工作相当有限。因此，本文研究了少样本图异常检测的新问题。我们提出了一种新的框架MetaGAD，学习元转移知识来进行图异常检测。实
+
+    Graph anomaly detection has long been an important problem in various domains pertaining to information security such as financial fraud, social spam, network intrusion, etc. The majority of existing methods are performed in an unsupervised manner, as labeled anomalies in a large scale are often too expensive to acquire. However, the identified anomalies may turn out to be data noises or uninteresting data instances due to the lack of prior knowledge on the anomalies. In realistic scenarios, it is often feasible to obtain limited labeled anomalies, which have great potential to advance graph anomaly detection. However, the work exploring limited labeled anomalies and a large amount of unlabeled nodes in graphs to detect anomalies is rather limited. Therefore, in this paper, we study a novel problem of few-shot graph anomaly detection. We propose a new framework MetaGAD to learn to meta-transfer the knowledge between unlabeled and labeled nodes for graph anomaly detection. Experimental 
     
 
