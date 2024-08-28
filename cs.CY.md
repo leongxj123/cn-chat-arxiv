@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Who Are We Missing? A Principled Approach to Characterizing the Underrepresented Population.](http://arxiv.org/abs/2401.14512) | 本文提出了一种基于优化的方法，Rashomon Set of Optimal Trees (ROOT)，用于识别和描述随机对照试验中的少数人群。该方法通过最小化目标平均处理效应估计的方差来优化目标子群体分布，从而提供更精确和可解释的处理效应估计。与其他方法相比，该方法具有更高的精度和可解释性，通过合成数据实验进行了验证。 |
+| [^1] | [Trust and ethical considerations in a multi-modal, explainable AI-driven chatbot tutoring system: The case of collaboratively solving Rubik's Cube](https://arxiv.org/abs/2402.01760) | 该论文描述了一个多模态、可解释的AI驱动聊天机器人辅导系统，在解决高中学生协同解决魔方问题时，解决了数据隐私、信息泄露、滥用语言和公平性等伦理和信任问题。 |
 
 # 详细
 
-[^1]: 我们错过了谁？一种基于原则的揭示少数人群特征的方法
+[^1]: 一个多模态、可解释的AI驱动聊天机器人辅导系统中的信任和伦理考虑：以协同解决魔方为例
 
-    Who Are We Missing? A Principled Approach to Characterizing the Underrepresented Population. (arXiv:2401.14512v1 [stat.ME])
+    Trust and ethical considerations in a multi-modal, explainable AI-driven chatbot tutoring system: The case of collaboratively solving Rubik's Cube
 
-    [http://arxiv.org/abs/2401.14512](http://arxiv.org/abs/2401.14512)
+    [https://arxiv.org/abs/2402.01760](https://arxiv.org/abs/2402.01760)
 
-    本文提出了一种基于优化的方法，Rashomon Set of Optimal Trees (ROOT)，用于识别和描述随机对照试验中的少数人群。该方法通过最小化目标平均处理效应估计的方差来优化目标子群体分布，从而提供更精确和可解释的处理效应估计。与其他方法相比，该方法具有更高的精度和可解释性，通过合成数据实验进行了验证。
+    该论文描述了一个多模态、可解释的AI驱动聊天机器人辅导系统，在解决高中学生协同解决魔方问题时，解决了数据隐私、信息泄露、滥用语言和公平性等伦理和信任问题。
 
     
 
-    随机对照试验在理解因果效应方面起到了关键作用，然而将推论扩展到目标人群时面临效应异质性和代表性不足的挑战。我们的论文解决了在随机对照试验中识别和描述少数人群的关键问题，提出了一种改进目标人群以提升普适性的创新框架。我们引入了一种基于优化的方法——Rashomon Set of Optimal Trees (ROOT)，来描述少数人群。ROOT通过最小化目标平均处理效应估计的方差来优化目标子群体分布，从而确保更精确的处理效应估计。值得注意的是，ROOT生成可解释的少数人群特征，有助于研究人员有效沟通。我们的方法在精度和可解释性方面相对于其他方法展现了改进，通过合成数据实验进行了验证。
+    人工智能具有从大量关于学生学习模式的数据中发现洞察力的潜力，有望改变教育。然而，人工智能的伦理和信任问题已经引起了关注，但尚未解决。在高中人工智能教育中，突出的伦理问题包括数据隐私、信息泄露、滥用语言和公平性。本文描述了为解决高中学生与人工智能协作解决魔方的伦理和信任问题而构建的技术组件（称为ALLURE chatbot）。在数据隐私方面，我们希望确保儿童、父母和教师的知情同意处于任何管理的数据的中心位置。由于涉及儿童，系统能够接受用户和人工智能提供的文本、音频或视觉语言，并将互动引导远离危险情况。在信息管理方面，我们还希望确保系统可以利用机制防止信息泄露的危险。
 
-    Randomized controlled trials (RCTs) serve as the cornerstone for understanding causal effects, yet extending inferences to target populations presents challenges due to effect heterogeneity and underrepresentation. Our paper addresses the critical issue of identifying and characterizing underrepresented subgroups in RCTs, proposing a novel framework for refining target populations to improve generalizability. We introduce an optimization-based approach, Rashomon Set of Optimal Trees (ROOT), to characterize underrepresented groups. ROOT optimizes the target subpopulation distribution by minimizing the variance of the target average treatment effect estimate, ensuring more precise treatment effect estimations. Notably, ROOT generates interpretable characteristics of the underrepresented population, aiding researchers in effective communication. Our approach demonstrates improved precision and interpretability compared to alternatives, as illustrated with synthetic data experiments. We ap
+    Artificial intelligence (AI) has the potential to transform education with its power of uncovering insights from massive data about student learning patterns. However, ethical and trustworthy concerns of AI have been raised but are unsolved. Prominent ethical issues in high school AI education include data privacy, information leakage, abusive language, and fairness. This paper describes technological components that were built to address ethical and trustworthy concerns in a multi-modal collaborative platform (called ALLURE chatbot) for high school students to collaborate with AI to solve the Rubik's cube. In data privacy, we want to ensure that the informed consent of children, parents, and teachers, is at the center of any data that is managed. Since children are involved, language, whether textual, audio, or visual, is acceptable both from users and AI and the system can steer interaction away from dangerous situations. In information management, we also want to ensure that the sys
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Graph-SCP: Accelerating Set Cover Problems with Graph Neural Networks.](http://arxiv.org/abs/2310.07979) | 图形-SCP是一种使用图神经网络加速集合覆盖问题的方法，通过学习识别包含解空间的较小子问题来提高优化求解器的性能，实验结果表明，图形-SCP能够将问题大小减少30-70%，和商业求解器相比加速高达25倍，并且能够在给定的最优性阈值下改进或实现100%的最优性。 |
+| [^1] | [Frustrated Random Walks: A Fast Method to Compute Node Distances on Hypergraphs.](http://arxiv.org/abs/2401.13054) | 本文提出了一种基于随机游走的方法，用于快速计算超图节点之间的距离并进行标签传播。该方法解决了超图中节点距离计算的问题，进一步拓展了超图的应用领域。 |
 
 # 详细
 
-[^1]: 图形-SCP: 用图神经网络加速集合覆盖问题
+[^1]: 无计算困难的快速计算超图节点距离的方法
 
-    Graph-SCP: Accelerating Set Cover Problems with Graph Neural Networks. (arXiv:2310.07979v1 [cs.LG])
+    Frustrated Random Walks: A Fast Method to Compute Node Distances on Hypergraphs. (arXiv:2401.13054v1 [cs.SI])
 
-    [http://arxiv.org/abs/2310.07979](http://arxiv.org/abs/2310.07979)
+    [http://arxiv.org/abs/2401.13054](http://arxiv.org/abs/2401.13054)
 
-    图形-SCP是一种使用图神经网络加速集合覆盖问题的方法，通过学习识别包含解空间的较小子问题来提高优化求解器的性能，实验结果表明，图形-SCP能够将问题大小减少30-70%，和商业求解器相比加速高达25倍，并且能够在给定的最优性阈值下改进或实现100%的最优性。
+    本文提出了一种基于随机游走的方法，用于快速计算超图节点之间的距离并进行标签传播。该方法解决了超图中节点距离计算的问题，进一步拓展了超图的应用领域。
 
     
 
-    机器学习方法越来越多地用于加速组合优化问题。我们特别关注集合覆盖问题（SCP），提出了一种名为图形-SCP的图神经网络方法，可以通过学习识别包含解空间的大大较小的子问题来增强现有的优化求解器。我们在具有不同问题特征和复杂度的合成加权和非加权SCP实例上评估了图形-SCP的性能，并在OR Library的实例上进行了评估，这是SCP的一个经典基准。我们展示了图形-SCP将问题大小减少了30-70%，并且相对于商业求解器（Gurobi）实现了高达25倍的运行时间加速。在给定所需的最优性阈值的情况下，图形-SCP将改进或甚至实现100%的最优性。这与快速贪婪解决方案形成了对比，后者在保证多项式运行时间的同时明显损害了解决方案的质量。图形-SCP可以推广到更大的问题规模。
+    超图是图的推广，当考虑实体间的属性共享时会自然产生。尽管可以通过将超边扩展为完全连接的子图来将超图转换为图，但逆向操作在计算上非常复杂且属于NP-complete问题。因此，我们假设超图包含比图更多的信息。此外，直接操作超图比将其扩展为图更为方便。超图中的一个开放问题是如何精确高效地计算节点之间的距离。通过估计节点距离，我们能够找到节点的最近邻居，并使用K最近邻（KNN）方法在超图上执行标签传播。在本文中，我们提出了一种基于随机游走的新方法，实现了在超图上进行标签传播。我们将节点距离估计为随机游走的预期到达时间。我们注意到简单随机游走（SRW）无法准确描述节点之间的距离，因此我们引入了"frustrated"的概念。
 
-    Machine learning (ML) approaches are increasingly being used to accelerate combinatorial optimization (CO) problems. We look specifically at the Set Cover Problem (SCP) and propose Graph-SCP, a graph neural network method that can augment existing optimization solvers by learning to identify a much smaller sub-problem that contains the solution space. We evaluate the performance of Graph-SCP on synthetic weighted and unweighted SCP instances with diverse problem characteristics and complexities, and on instances from the OR Library, a canonical benchmark for SCP. We show that Graph-SCP reduces the problem size by 30-70% and achieves run time speedups up to~25x when compared to commercial solvers (Gurobi). Given a desired optimality threshold, Graph-SCP will improve upon it or even achieve 100% optimality. This is in contrast to fast greedy solutions that significantly compromise solution quality to achieve guaranteed polynomial run time. Graph-SCP can generalize to larger problem sizes
+    A hypergraph is a generalization of a graph that arises naturally when attribute-sharing among entities is considered. Although a hypergraph can be converted into a graph by expanding its hyperedges into fully connected subgraphs, going the reverse way is computationally complex and NP-complete. We therefore hypothesize that a hypergraph contains more information than a graph. In addition, it is more convenient to manipulate a hypergraph directly, rather than expand it into a graph. An open problem in hypergraphs is how to accurately and efficiently calculate their node distances. Estimating node distances enables us to find a node's nearest neighbors, and perform label propagation on hypergraphs using a K-nearest neighbors (KNN) approach. In this paper, we propose a novel approach based on random walks to achieve label propagation on hypergraphs. We estimate node distances as the expected hitting times of random walks. We note that simple random walks (SRW) cannot accurately describe 
     
 

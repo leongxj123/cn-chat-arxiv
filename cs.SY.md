@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Reinforcement Learning for Versatile, Dynamic, and Robust Bipedal Locomotion Control.](http://arxiv.org/abs/2401.16889) | 本论文使用深度强化学习创建了一种通用的双足机器人动态运动控制器，该控制器可以应用于多种动态双足技能，并且在模拟环境和实际环境中展现出了优越性能。 |
+| [^1] | [Structured Deep Neural Networks-Based Backstepping Trajectory Tracking Control for Lagrangian Systems](https://arxiv.org/abs/2403.00381) | 提出了一种基于结构化DNN的控制器，通过设计神经网络结构确保闭环稳定性，并进一步优化参数以实现改进的控制性能，同时提供了关于跟踪误差的明确上限。 |
 
 # 详细
 
-[^1]: 强化学习用于多功能、动态和稳健的双足运动控制
+[^1]: 基于结构化深度神经网络的拉格朗日系统反步轨迹跟踪控制
 
-    Reinforcement Learning for Versatile, Dynamic, and Robust Bipedal Locomotion Control. (arXiv:2401.16889v1 [cs.RO])
+    Structured Deep Neural Networks-Based Backstepping Trajectory Tracking Control for Lagrangian Systems
 
-    [http://arxiv.org/abs/2401.16889](http://arxiv.org/abs/2401.16889)
+    [https://arxiv.org/abs/2403.00381](https://arxiv.org/abs/2403.00381)
 
-    本论文使用深度强化学习创建了一种通用的双足机器人动态运动控制器，该控制器可以应用于多种动态双足技能，并且在模拟环境和实际环境中展现出了优越性能。
+    提出了一种基于结构化DNN的控制器，通过设计神经网络结构确保闭环稳定性，并进一步优化参数以实现改进的控制性能，同时提供了关于跟踪误差的明确上限。
 
     
 
-    本论文提出了一项关于使用深度强化学习（RL）创建双足机器人动态运动控制器的综合研究。我们不仅仅专注于单一的运动技能，而是开发了一种通用的控制解决方案，可以用于一系列动态双足技能，从周期性行走和奔跑到非周期性跳跃和站立。我们基于RL的控制器采用了一种新颖的双历史架构，利用机器人的长期和短期输入/输出（I/O）历史。通过提出的端到端RL方法进行训练时，这种控制架构在模拟环境和实际环境中的多样化技能上始终表现优于其他方法。该研究还深入探讨了所提出的RL系统在开发运动控制器方面引入的适应性和稳健性。我们证明了所提出的架构可以适应时间不变的动力学变化和时间变化的变化，如接触事件，通过有效地
+    深度神经网络（DNN）越来越多地被用于学习控制器，因为其出色的逼近能力。然而，它们的黑盒特性对闭环稳定性保证和性能分析构成了重要挑战。在本文中，我们引入了一种基于结构化DNN的控制器，用于采用反推技术实现拉格朗日系统的轨迹跟踪控制。通过适当设计神经网络结构，所提出的控制器可以确保任何兼容的神经网络参数实现闭环稳定性。此外，通过进一步优化神经网络参数，可以实现更好的控制性能。此外，我们提供了关于跟踪误差的明确上限，这允许我们通过适当选择控制参数来实现所需的跟踪性能。此外，当系统模型未知时，我们提出了一种改进的拉格朗日神经网络。
 
-    This paper presents a comprehensive study on using deep reinforcement learning (RL) to create dynamic locomotion controllers for bipedal robots. Going beyond focusing on a single locomotion skill, we develop a general control solution that can be used for a range of dynamic bipedal skills, from periodic walking and running to aperiodic jumping and standing. Our RL-based controller incorporates a novel dual-history architecture, utilizing both a long-term and short-term input/output (I/O) history of the robot. This control architecture, when trained through the proposed end-to-end RL approach, consistently outperforms other methods across a diverse range of skills in both simulation and the real world.The study also delves into the adaptivity and robustness introduced by the proposed RL system in developing locomotion controllers. We demonstrate that the proposed architecture can adapt to both time-invariant dynamics shifts and time-variant changes, such as contact events, by effectivel
+    arXiv:2403.00381v1 Announce Type: cross  Abstract: Deep neural networks (DNN) are increasingly being used to learn controllers due to their excellent approximation capabilities. However, their black-box nature poses significant challenges to closed-loop stability guarantees and performance analysis. In this paper, we introduce a structured DNN-based controller for the trajectory tracking control of Lagrangian systems using backing techniques. By properly designing neural network structures, the proposed controller can ensure closed-loop stability for any compatible neural network parameters. In addition, improved control performance can be achieved by further optimizing neural network parameters. Besides, we provide explicit upper bounds on tracking errors in terms of controller parameters, which allows us to achieve the desired tracking performance by properly selecting the controller parameters. Furthermore, when system models are unknown, we propose an improved Lagrangian neural net
     
 

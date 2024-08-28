@@ -2,52 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Safe Interval RRT* for Scalable Multi-Robot Path Planning in Continuous Space](https://arxiv.org/abs/2404.01752) | 提出了安全间隔RRT*（SI-RRT*）两级方法，低级采用采样规划器找到单个机器人的无碰撞轨迹，高级通过优先规划或基于冲突的搜索解决机器人间冲突，实验结果表明SI-RRT*能够快速找到高质量解决方案 |
-| [^2] | [Equivariant Ensembles and Regularization for Reinforcement Learning in Map-based Path Planning](https://arxiv.org/abs/2403.12856) | 本文提出了一种无需专门神经网络组件的等变策略和不变值函数构建方法，在基于地图的路径规划中展示了等变集合和正则化如何提高样本效率和性能 |
-| [^3] | [Reinforcement Learning for Versatile, Dynamic, and Robust Bipedal Locomotion Control.](http://arxiv.org/abs/2401.16889) | 本论文使用深度强化学习创建了一种通用的双足机器人动态运动控制器，该控制器可以应用于多种动态双足技能，并且在模拟环境和实际环境中展现出了优越性能。 |
+| [^1] | [Riemannian Flow Matching Policy for Robot Motion Learning](https://arxiv.org/abs/2403.10672) | RFMP是一种新颖的模型，利用流匹配的优势在机器人视觉运动策略中具有高效训练和推断能力，并通过融合黎曼流形上的几何意识，提供更平滑的动作轨迹。 |
+| [^2] | [Structured Deep Neural Networks-Based Backstepping Trajectory Tracking Control for Lagrangian Systems](https://arxiv.org/abs/2403.00381) | 提出了一种基于结构化DNN的控制器，通过设计神经网络结构确保闭环稳定性，并进一步优化参数以实现改进的控制性能，同时提供了关于跟踪误差的明确上限。 |
+| [^3] | [A Comprehensive Survey of Cross-Domain Policy Transfer for Embodied Agents](https://arxiv.org/abs/2402.04580) | 这篇论文综述了机器人跨领域策略转移方法，讨论了从目标领域采集无偏数据的挑战，以及从源领域获取数据的成本效益性。同时，总结了不同问题设置下的设计考虑和方法。 |
 
 # 详细
 
-[^1]: 安全间隔RRT*用于连续空间中可扩展的多机器人路径规划
+[^1]: 用于机器人运动学习的黎曼流匹配策略
 
-    Safe Interval RRT* for Scalable Multi-Robot Path Planning in Continuous Space
+    Riemannian Flow Matching Policy for Robot Motion Learning
 
-    [https://arxiv.org/abs/2404.01752](https://arxiv.org/abs/2404.01752)
+    [https://arxiv.org/abs/2403.10672](https://arxiv.org/abs/2403.10672)
 
-    提出了安全间隔RRT*（SI-RRT*）两级方法，低级采用采样规划器找到单个机器人的无碰撞轨迹，高级通过优先规划或基于冲突的搜索解决机器人间冲突，实验结果表明SI-RRT*能够快速找到高质量解决方案
-
-    
-
-    在本文中，我们考虑了在连续空间中解决多机器人路径规划（MRPP）问题以找到无冲突路径的问题。问题的困难主要来自两个因素。首先，涉及多个机器人会导致组合决策，使搜索空间呈指数级增长。其次，连续空间呈现出潜在无限的状态和动作。针对这个问题，我们提出了一个两级方法，低级是基于采样的规划器安全间隔RRT*（SI-RRT*），用于找到单个机器人的无碰撞轨迹。高级可以使用能够解决机器人间冲突的任何方法，我们采用了两种代表性方法，即优先规划（SI-CPP）和基于冲突的搜索（SI-CCBS）。实验结果表明，SI-RRT*能够快速找到高质量解决方案，并且所需的样本数量较少。SI-CPP表现出更好的可扩展性，而SI-CCBS产生
-
-    arXiv:2404.01752v1 Announce Type: cross  Abstract: In this paper, we consider the problem of Multi-Robot Path Planning (MRPP) in continuous space to find conflict-free paths. The difficulty of the problem arises from two primary factors. First, the involvement of multiple robots leads to combinatorial decision-making, which escalates the search space exponentially. Second, the continuous space presents potentially infinite states and actions. For this problem, we propose a two-level approach where the low level is a sampling-based planner Safe Interval RRT* (SI-RRT*) that finds a collision-free trajectory for individual robots. The high level can use any method that can resolve inter-robot conflicts where we employ two representative methods that are Prioritized Planning (SI-CPP) and Conflict Based Search (SI-CCBS). Experimental results show that SI-RRT* can find a high-quality solution quickly with a small number of samples. SI-CPP exhibits improved scalability while SI-CCBS produces 
-    
-[^2]: 基于地图的路径规划中的等变集合和正则化的强化学习
-
-    Equivariant Ensembles and Regularization for Reinforcement Learning in Map-based Path Planning
-
-    [https://arxiv.org/abs/2403.12856](https://arxiv.org/abs/2403.12856)
-
-    本文提出了一种无需专门神经网络组件的等变策略和不变值函数构建方法，在基于地图的路径规划中展示了等变集合和正则化如何提高样本效率和性能
+    RFMP是一种新颖的模型，利用流匹配的优势在机器人视觉运动策略中具有高效训练和推断能力，并通过融合黎曼流形上的几何意识，提供更平滑的动作轨迹。
 
     
 
-    在强化学习（RL）中，利用环境的对称性可以显著增强效率、鲁棒性和性能。然而，确保深度RL策略和值网络分别是等变和不变的以利用这些对称性是一个重大挑战。相关工作尝试通过构造具有等变性和不变性的网络来设计，这限制了它们只能使用非常受限的组件库，进而阻碍了网络的表现能力。本文提出了一种构建等变策略和不变值函数的方法，而无需专门的神经网络组件，我们将其称为等变集合。我们进一步添加了一个正则化项，用于在训练过程中增加归纳偏差。在基于地图的路径规划案例研究中，我们展示了等变集合和正则化如何有益于样本效率和性能。
+    我们引入了黎曼流匹配策略（RFMP），这是一种新颖的模型，用于学习和合成机器人视觉运动策略。RFMP利用了流匹配方法的高效训练和推断能力。通过设计，RFMP继承了流匹配的优势：能够编码高维度多模态分布，在机器人任务中常见，并且具有非常简单和快速的推断过程。我们展示了RFMP在基于状态和基于视觉的机器人运动策略中的适用性。值得注意的是，由于机器人状态存在于黎曼流形上，RFMP在本质上融合了几何意识，这对于现实机器人任务至关重要。为了评估RFMP，我们进行了两个概念验证实验，将其性能与扩散策略进行了比较。尽管这两种方法都成功地学习了所考虑的任务，但我们的结果表明RFMP提供了更平滑的动作轨迹，显著地提高了性能。
 
-    arXiv:2403.12856v1 Announce Type: new  Abstract: In reinforcement learning (RL), exploiting environmental symmetries can significantly enhance efficiency, robustness, and performance. However, ensuring that the deep RL policy and value networks are respectively equivariant and invariant to exploit these symmetries is a substantial challenge. Related works try to design networks that are equivariant and invariant by construction, limiting them to a very restricted library of components, which in turn hampers the expressiveness of the networks. This paper proposes a method to construct equivariant policies and invariant value functions without specialized neural network components, which we term equivariant ensembles. We further add a regularization term for adding inductive bias during training. In a map-based path planning case study, we show how equivariant ensembles and regularization benefit sample efficiency and performance.
+    arXiv:2403.10672v1 Announce Type: cross  Abstract: We introduce Riemannian Flow Matching Policies (RFMP), a novel model for learning and synthesizing robot visuomotor policies. RFMP leverages the efficient training and inference capabilities of flow matching methods. By design, RFMP inherits the strengths of flow matching: the ability to encode high-dimensional multimodal distributions, commonly encountered in robotic tasks, and a very simple and fast inference process. We demonstrate the applicability of RFMP to both state-based and vision-conditioned robot motion policies. Notably, as the robot state resides on a Riemannian manifold, RFMP inherently incorporates geometric awareness, which is crucial for realistic robotic tasks. To evaluate RFMP, we conduct two proof-of-concept experiments, comparing its performance against Diffusion Policies. Although both approaches successfully learn the considered tasks, our results show that RFMP provides smoother action trajectories with signifi
     
-[^3]: 强化学习用于多功能、动态和稳健的双足运动控制
+[^2]: 基于结构化深度神经网络的拉格朗日系统反步轨迹跟踪控制
 
-    Reinforcement Learning for Versatile, Dynamic, and Robust Bipedal Locomotion Control. (arXiv:2401.16889v1 [cs.RO])
+    Structured Deep Neural Networks-Based Backstepping Trajectory Tracking Control for Lagrangian Systems
 
-    [http://arxiv.org/abs/2401.16889](http://arxiv.org/abs/2401.16889)
+    [https://arxiv.org/abs/2403.00381](https://arxiv.org/abs/2403.00381)
 
-    本论文使用深度强化学习创建了一种通用的双足机器人动态运动控制器，该控制器可以应用于多种动态双足技能，并且在模拟环境和实际环境中展现出了优越性能。
+    提出了一种基于结构化DNN的控制器，通过设计神经网络结构确保闭环稳定性，并进一步优化参数以实现改进的控制性能，同时提供了关于跟踪误差的明确上限。
 
     
 
-    本论文提出了一项关于使用深度强化学习（RL）创建双足机器人动态运动控制器的综合研究。我们不仅仅专注于单一的运动技能，而是开发了一种通用的控制解决方案，可以用于一系列动态双足技能，从周期性行走和奔跑到非周期性跳跃和站立。我们基于RL的控制器采用了一种新颖的双历史架构，利用机器人的长期和短期输入/输出（I/O）历史。通过提出的端到端RL方法进行训练时，这种控制架构在模拟环境和实际环境中的多样化技能上始终表现优于其他方法。该研究还深入探讨了所提出的RL系统在开发运动控制器方面引入的适应性和稳健性。我们证明了所提出的架构可以适应时间不变的动力学变化和时间变化的变化，如接触事件，通过有效地
+    深度神经网络（DNN）越来越多地被用于学习控制器，因为其出色的逼近能力。然而，它们的黑盒特性对闭环稳定性保证和性能分析构成了重要挑战。在本文中，我们引入了一种基于结构化DNN的控制器，用于采用反推技术实现拉格朗日系统的轨迹跟踪控制。通过适当设计神经网络结构，所提出的控制器可以确保任何兼容的神经网络参数实现闭环稳定性。此外，通过进一步优化神经网络参数，可以实现更好的控制性能。此外，我们提供了关于跟踪误差的明确上限，这允许我们通过适当选择控制参数来实现所需的跟踪性能。此外，当系统模型未知时，我们提出了一种改进的拉格朗日神经网络。
 
-    This paper presents a comprehensive study on using deep reinforcement learning (RL) to create dynamic locomotion controllers for bipedal robots. Going beyond focusing on a single locomotion skill, we develop a general control solution that can be used for a range of dynamic bipedal skills, from periodic walking and running to aperiodic jumping and standing. Our RL-based controller incorporates a novel dual-history architecture, utilizing both a long-term and short-term input/output (I/O) history of the robot. This control architecture, when trained through the proposed end-to-end RL approach, consistently outperforms other methods across a diverse range of skills in both simulation and the real world.The study also delves into the adaptivity and robustness introduced by the proposed RL system in developing locomotion controllers. We demonstrate that the proposed architecture can adapt to both time-invariant dynamics shifts and time-variant changes, such as contact events, by effectivel
+    arXiv:2403.00381v1 Announce Type: cross  Abstract: Deep neural networks (DNN) are increasingly being used to learn controllers due to their excellent approximation capabilities. However, their black-box nature poses significant challenges to closed-loop stability guarantees and performance analysis. In this paper, we introduce a structured DNN-based controller for the trajectory tracking control of Lagrangian systems using backing techniques. By properly designing neural network structures, the proposed controller can ensure closed-loop stability for any compatible neural network parameters. In addition, improved control performance can be achieved by further optimizing neural network parameters. Besides, we provide explicit upper bounds on tracking errors in terms of controller parameters, which allows us to achieve the desired tracking performance by properly selecting the controller parameters. Furthermore, when system models are unknown, we propose an improved Lagrangian neural net
+    
+[^3]: 机器人跨领域策略转移综合调查
+
+    A Comprehensive Survey of Cross-Domain Policy Transfer for Embodied Agents
+
+    [https://arxiv.org/abs/2402.04580](https://arxiv.org/abs/2402.04580)
+
+    这篇论文综述了机器人跨领域策略转移方法，讨论了从目标领域采集无偏数据的挑战，以及从源领域获取数据的成本效益性。同时，总结了不同问题设置下的设计考虑和方法。
+
+    
+
+    机器学习和具身人工智能领域的蓬勃发展引发了对大量数据的需求增加。然而，由于昂贵的数据收集过程和严格的安全要求，从目标领域收集足够的无偏数据仍然是一个挑战。因此，研究人员经常采用易于获取的源领域数据（例如模拟和实验室环境），以实现成本效益的数据获取和快速模型迭代。然而，这些源领域的环境和具身方式可能与目标领域的特征相差很大，强调了有效的跨领域策略转移方法的需求。本文对现有的跨领域策略转移方法进行了系统综述。通过对领域差距的精细分类，我们总结了每个问题设置的总体见解和设计考虑。我们还就使用的关键方法进行了高层次讨论
+
+    The burgeoning fields of robot learning and embodied AI have triggered an increasing demand for large quantities of data. However, collecting sufficient unbiased data from the target domain remains a challenge due to costly data collection processes and stringent safety requirements. Consequently, researchers often resort to data from easily accessible source domains, such as simulation and laboratory environments, for cost-effective data acquisition and rapid model iteration. Nevertheless, the environments and embodiments of these source domains can be quite different from their target domain counterparts, underscoring the need for effective cross-domain policy transfer approaches. In this paper, we conduct a systematic review of existing cross-domain policy transfer methods. Through a nuanced categorization of domain gaps, we encapsulate the overarching insights and design considerations of each problem setting. We also provide a high-level discussion about the key methodologies used
     
 

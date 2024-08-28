@@ -2,52 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [From Weak to Strong Sound Event Labels using Adaptive Change-Point Detection and Active Learning](https://arxiv.org/abs/2403.08525) | 提出一种基于自适应变点检测和主动学习的音频录制分割方法，通过预测模型和变点检测逐步生成高质量的强标签。 |
-| [^2] | [SpeechDPR: End-to-End Spoken Passage Retrieval for Open-Domain Spoken Question Answering.](http://arxiv.org/abs/2401.13463) | SpeechDPR是第一个用于开放领域口语问答的端到端框架，能够从口语存档中检索可能包含答案的段落。通过融合无监督ASR和文本密集检索器的知识，SpeechDPR能够获得较好的性能，并且在UASR性能较差时表现更加鲁棒。 |
-| [^3] | [Self-Supervised Disentangled Representation Learning for Robust Target Speech Extraction.](http://arxiv.org/abs/2312.10305) | 该论文提出了一种自监督分解表示学习方法，通过逐步分离说话人身份信息和其他无关因素，解决了目标语音提取任务中存在的说话人混叠问题，并使用分解的说话人身份信息来指导语音提取网络。 |
+| [^1] | [A Computational Analysis of Lyric Similarity Perception](https://arxiv.org/abs/2404.02342) | 该研究通过比较分析计算方法对模拟歌词相似度与人类感知的关联，发现基于BERT模型嵌入、歌词音频和音素组件相似性的计算模型对感知上的歌词相似度具有指示作用。 |
+| [^2] | [OWSM-CTC: An Open Encoder-Only Speech Foundation Model for Speech Recognition, Translation, and Language Identification](https://arxiv.org/abs/2402.12654) | 提出了OWSM-CTC，这是一种基于Connectionist Temporal Classification的新型仅编码器语音基础模型，训练有180k小时的公共音频数据，用于多语言自动语音识别（ASR）、语音翻译（ST）和语言识别。 |
+| [^3] | [Unified Speech-Text Pretraining for Spoken Dialog Modeling](https://arxiv.org/abs/2402.05706) | 本研究提出了一个名为统一口语对话模型（USDM）的广泛语音文本模型框架，用于生成与输入语音相关的连贯口语回复。通过使用多步骤的语音文本推理方式和广义语音文本预训练方案，该方法能够有效捕捉跨模态语义，并生成自然流畅的口语回复。 |
 
 # 详细
 
-[^1]: 从弱到强：使用自适应变点检测和主动学习进行声音事件标签
+[^1]: 歌词相似度感知的计算分析
 
-    From Weak to Strong Sound Event Labels using Adaptive Change-Point Detection and Active Learning
+    A Computational Analysis of Lyric Similarity Perception
 
-    [https://arxiv.org/abs/2403.08525](https://arxiv.org/abs/2403.08525)
+    [https://arxiv.org/abs/2404.02342](https://arxiv.org/abs/2404.02342)
 
-    提出一种基于自适应变点检测和主动学习的音频录制分割方法，通过预测模型和变点检测逐步生成高质量的强标签。
-
-    
-
-    在这项工作中，我们提出了一种基于自适应变点检测（A-CPD）的音频录制分割方法，用于机器引导的音频录制段的弱标签注释。目标是最大化关于目标声音时间激活的信息获取量。对于每个未标记的音频录制，我们使用预测模型来推导概率曲线，用于指导注释。预测模型最初在可用的带标注声音事件数据上进行预训练，这些数据的类与未标记数据集中的类不相交。然后，预测模型逐渐适应注释者在主动学习循环中提供的注释。用于引导弱标签注释者走向强标签的查询是使用这些概率上的变点检测导出的。我们展示，即使在有限的注释预算下，也可以获得高质量的强标签，并展示了优势。
-
-    arXiv:2403.08525v1 Announce Type: cross  Abstract: In this work we propose an audio recording segmentation method based on an adaptive change point detection (A-CPD) for machine guided weak label annotation of audio recording segments. The goal is to maximize the amount of information gained about the temporal activation's of the target sounds. For each unlabeled audio recording, we use a prediction model to derive a probability curve used to guide annotation. The prediction model is initially pre-trained on available annotated sound event data with classes that are disjoint from the classes in the unlabeled dataset. The prediction model then gradually adapts to the annotations provided by the annotator in an active learning loop. The queries used to guide the weak label annotator towards strong labels are derived using change point detection on these probabilities. We show that it is possible to derive strong labels of high quality even with a limited annotation budget, and show favor
-    
-[^2]: SpeechDPR: 开放领域口语问答的端到端口语段落检索
-
-    SpeechDPR: End-to-End Spoken Passage Retrieval for Open-Domain Spoken Question Answering. (arXiv:2401.13463v1 [cs.CL])
-
-    [http://arxiv.org/abs/2401.13463](http://arxiv.org/abs/2401.13463)
-
-    SpeechDPR是第一个用于开放领域口语问答的端到端框架，能够从口语存档中检索可能包含答案的段落。通过融合无监督ASR和文本密集检索器的知识，SpeechDPR能够获得较好的性能，并且在UASR性能较差时表现更加鲁棒。
+    该研究通过比较分析计算方法对模拟歌词相似度与人类感知的关联，发现基于BERT模型嵌入、歌词音频和音素组件相似性的计算模型对感知上的歌词相似度具有指示作用。
 
     
 
-    口语问答(SQA)是机器通过在给定口语段落中找到答案范围来回答用户问题的关键。过去的SQA方法没有使用ASR，以避免识别错误和词汇外问题。然而，实际的开放领域SQA(openSQA)问题中，机器需要首先从口语存档中检索可能包含答案的段落。本文提出了第一个已知的用于openSQA问题检索组件的端到端框架SpeechDPR。SpeechDPR通过从无监督ASR(UASR)和文本密集检索器(TDR)的级联模型中提炼知识，学习句子级语义表示。不需要手动转录的语音数据。初步实验表明，与级联的UASR和TDR模型相比，性能相当，并且在UASR性能较差时显著提高，验证了这种方法更加鲁棒。
+    在包含人声的音乐作品中，歌词对艺术表达起着重要作用。因此，先前的研究引入了推荐系统的概念，该系统建议类似于用户喜爱或个性化偏好的歌词，有助于在数百万音轨中发现歌词。然而，许多系统并未充分考虑人类对歌词相似度的感知，主要是由于该领域的研究有限。为弥补这一差距，我们进行了对计算方法建模歌词相似度与人类感知进行了比较分析。结果表明，基于预训练的BERT模型嵌入之间的相似性、歌词来源的音频以及音素组件的计算模型指示了感知上的歌词相似度。该发现强调了语义、风格和音韵相似性在人类感知中的重要性。
 
-    Spoken Question Answering (SQA) is essential for machines to reply to user's question by finding the answer span within a given spoken passage. SQA has been previously achieved without ASR to avoid recognition errors and Out-of-Vocabulary (OOV) problems. However, the real-world problem of Open-domain SQA (openSQA), in which the machine needs to first retrieve passages that possibly contain the answer from a spoken archive in addition, was never considered. This paper proposes the first known end-to-end framework, Speech Dense Passage Retriever (SpeechDPR), for the retrieval component of the openSQA problem. SpeechDPR learns a sentence-level semantic representation by distilling knowledge from the cascading model of unsupervised ASR (UASR) and text dense retriever (TDR). No manually transcribed speech data is needed. Initial experiments showed performance comparable to the cascading model of UASR and TDR, and significantly better when UASR was poor, verifying this approach is more robus
+    arXiv:2404.02342v1 Announce Type: new  Abstract: In musical compositions that include vocals, lyrics significantly contribute to artistic expression. Consequently, previous studies have introduced the concept of a recommendation system that suggests lyrics similar to a user's favorites or personalized preferences, aiding in the discovery of lyrics among millions of tracks. However, many of these systems do not fully consider human perceptions of lyric similarity, primarily due to limited research in this area. To bridge this gap, we conducted a comparative analysis of computational methods for modeling lyric similarity with human perception. Results indicated that computational models based on similarities between embeddings from pre-trained BERT-based models, the audio from which the lyrics are derived, and phonetic components are indicative of perceptual lyric similarity. This finding underscores the importance of semantic, stylistic, and phonetic similarities in human perception abo
     
-[^3]: 自监督分解表示学习用于鲁棒目标语音提取
+[^2]: OWSM-CTC:一种用于语音识别、翻译和语言识别的开放编码器基础模型
 
-    Self-Supervised Disentangled Representation Learning for Robust Target Speech Extraction. (arXiv:2312.10305v2 [cs.SD] UPDATED)
+    OWSM-CTC: An Open Encoder-Only Speech Foundation Model for Speech Recognition, Translation, and Language Identification
 
-    [http://arxiv.org/abs/2312.10305](http://arxiv.org/abs/2312.10305)
+    [https://arxiv.org/abs/2402.12654](https://arxiv.org/abs/2402.12654)
 
-    该论文提出了一种自监督分解表示学习方法，通过逐步分离说话人身份信息和其他无关因素，解决了目标语音提取任务中存在的说话人混叠问题，并使用分解的说话人身份信息来指导语音提取网络。
+    提出了OWSM-CTC，这是一种基于Connectionist Temporal Classification的新型仅编码器语音基础模型，训练有180k小时的公共音频数据，用于多语言自动语音识别（ASR）、语音翻译（ST）和语言识别。
 
     
 
-    语音信号本质上是复杂的，因为它包含全局声学特征和局部语义信息。然而，在目标语音提取任务中，参考语音中与说话人身份无关的全局和局部语义信息可能导致在语音提取网络中出现说话人混叠问题。为了克服这个挑战，我们提出了一种自监督分解表示学习方法。我们的方法通过一个两阶段过程来解决这个问题，利用参考语音编码网络和全局信息分解网络逐渐分解说话人身份信息和其他不相关因素。我们专门使用分解的说话人身份信息来指导语音提取网络。此外，我们引入自适应调制Transformer来确保混合信号的声学表示不受说话人嵌入的影响。
+    近来对能够在单个模型中执行多个语音处理任务的大型语音模型越来越感兴趣。这些模型通常采用编码器-解码器或仅解码器架构，因为它们在许多领域中非常流行且性能良好。然而，与非自回归模型相比，自回归模型在推断时可能会比较慢，并且还存在幻觉的潜在风险。尽管先前的研究观察到非自回归模型在小规模任务中产生了令人满意的结果，但尚不清楚它们是否可以扩展到不同语言和任务的语音转文本生成中。受Open Whisper-style Speech Model (OWSM)项目的启发，我们提出了OWSM-CTC，这是一种基于Connectionist Temporal Classification (CTC)的新型仅编码器的语音基础模型。它使用18万小时的公共音频数据进行训练，用于多语言自动语音识别（ASR）、语音翻译（ST）和语言识别。
 
-    Speech signals are inherently complex as they encompass both global acoustic characteristics and local semantic information. However, in the task of target speech extraction, certain elements of global and local semantic information in the reference speech, which are irrelevant to speaker identity, can lead to speaker confusion within the speech extraction network. To overcome this challenge, we propose a self-supervised disentangled representation learning method. Our approach tackles this issue through a two-phase process, utilizing a reference speech encoding network and a global information disentanglement network to gradually disentangle the speaker identity information from other irrelevant factors. We exclusively employ the disentangled speaker identity information to guide the speech extraction network. Moreover, we introduce the adaptive modulation Transformer to ensure that the acoustic representation of the mixed signal remains undisturbed by the speaker embeddings. This com
+    arXiv:2402.12654v1 Announce Type: new  Abstract: There has been an increasing interest in large speech models that can perform multiple speech processing tasks in a single model. Such models usually adopt the encoder-decoder or decoder-only architecture due to their popularity and good performance in many domains. However, autoregressive models can be slower during inference compared to non-autoregressive models and also have potential risks of hallucination. Though prior studies observed promising results of non-autoregressive models for certain tasks at small scales, it remains unclear if they can be scaled to speech-to-text generation in diverse languages and tasks. Inspired by the Open Whisper-style Speech Model (OWSM) project, we propose OWSM-CTC, a novel encoder-only speech foundation model based on Connectionist Temporal Classification (CTC). It is trained on 180k hours of public audio data for multilingual automatic speech recognition (ASR), speech translation (ST), and languag
+    
+[^3]: 面向口语对话建模的统一语音文本预训练方法
+
+    Unified Speech-Text Pretraining for Spoken Dialog Modeling
+
+    [https://arxiv.org/abs/2402.05706](https://arxiv.org/abs/2402.05706)
+
+    本研究提出了一个名为统一口语对话模型（USDM）的广泛语音文本模型框架，用于生成与输入语音相关的连贯口语回复。通过使用多步骤的语音文本推理方式和广义语音文本预训练方案，该方法能够有效捕捉跨模态语义，并生成自然流畅的口语回复。
+
+    
+
+    近期的研究表明，扩展大型语言模型（LLM）以直接理解和合成语音具有良好的结果，但用于口语对话建模的基于LLM的策略仍然难以实现，需要进一步研究。本文提出了一个广泛的语音文本LLM框架，命名为统一口语对话模型（USDM），以在不依赖于自动语音识别（ASR）或文本到语音（TTS）解决方案的情况下生成与给定输入语音相关的连贯口语回复和有机的韵律特征。我们的方法采用了一种多步骤的语音文本推理方式，利用了底层LLM所展示的推理链能力。我们还提出了一种广义的语音文本预训练方案，有助于捕捉跨模态语义。自动和人工评估结果表明，所提出的方法能够有效生成自然流畅的口语回复，并且优于之前的和级联的基线模型。详细的比较研究
+
+    While recent work shows promising results in expanding the capabilities of large language models (LLM) to directly understand and synthesize speech, an LLM-based strategy for modeling spoken dialogs remains elusive and calls for further investigation. This work proposes an extensive speech-text LLM framework, named the Unified Spoken Dialog Model (USDM), to generate coherent spoken responses with organic prosodic features relevant to the given input speech without relying on automatic speech recognition (ASR) or text-to-speech (TTS) solutions. Our approach employs a multi-step speech-text inference scheme that leverages chain-of-reasoning capabilities exhibited by the underlying LLM. We also propose a generalized speech-text pretraining scheme that helps with capturing cross-modal semantics. Automatic and human evaluations show that the proposed approach is effective in generating natural-sounding spoken responses, outperforming both prior and cascaded baselines. Detailed comparative s
     
 
