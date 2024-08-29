@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Structured Deep Neural Networks-Based Backstepping Trajectory Tracking Control for Lagrangian Systems](https://arxiv.org/abs/2403.00381) | 提出了一种基于结构化DNN的控制器，通过设计神经网络结构确保闭环稳定性，并进一步优化参数以实现改进的控制性能，同时提供了关于跟踪误差的明确上限。 |
+| [^1] | [Scaling Learning based Policy Optimization for Temporal Tasks via Dropout](https://arxiv.org/abs/2403.15826) | 本文介绍了一种基于模型的方法用于训练在高度非线性环境中运行的自主智能体的反馈控制器，通过对任务进行形式化表述，实现对特定任务目标的定量满足语义，并利用前馈神经网络学习反馈控制器。 |
 
 # 详细
 
-[^1]: 基于结构化深度神经网络的拉格朗日系统反步轨迹跟踪控制
+[^1]: 通过Dropout对时间任务进行比例学习的策略优化扩展
 
-    Structured Deep Neural Networks-Based Backstepping Trajectory Tracking Control for Lagrangian Systems
+    Scaling Learning based Policy Optimization for Temporal Tasks via Dropout
 
-    [https://arxiv.org/abs/2403.00381](https://arxiv.org/abs/2403.00381)
+    [https://arxiv.org/abs/2403.15826](https://arxiv.org/abs/2403.15826)
 
-    提出了一种基于结构化DNN的控制器，通过设计神经网络结构确保闭环稳定性，并进一步优化参数以实现改进的控制性能，同时提供了关于跟踪误差的明确上限。
+    本文介绍了一种基于模型的方法用于训练在高度非线性环境中运行的自主智能体的反馈控制器，通过对任务进行形式化表述，实现对特定任务目标的定量满足语义，并利用前馈神经网络学习反馈控制器。
 
     
 
-    深度神经网络（DNN）越来越多地被用于学习控制器，因为其出色的逼近能力。然而，它们的黑盒特性对闭环稳定性保证和性能分析构成了重要挑战。在本文中，我们引入了一种基于结构化DNN的控制器，用于采用反推技术实现拉格朗日系统的轨迹跟踪控制。通过适当设计神经网络结构，所提出的控制器可以确保任何兼容的神经网络参数实现闭环稳定性。此外，通过进一步优化神经网络参数，可以实现更好的控制性能。此外，我们提供了关于跟踪误差的明确上限，这允许我们通过适当选择控制参数来实现所需的跟踪性能。此外，当系统模型未知时，我们提出了一种改进的拉格朗日神经网络。
+    本文介绍了一种基于模型的方法，用于训练在高度非线性环境中运行的自主智能体的反馈控制器。我们希望经过训练的策略能够确保该智能体满足特定的任务目标，这些目标以离散时间信号时间逻辑（DT-STL）表示。通过将任务重新表述为形式化框架（如DT-STL），一个优势是允许定量满足语义。换句话说，给定一个轨迹和一个DT-STL公式，我们可以计算鲁棒性，这可以解释为轨迹与满足该公式的轨迹集之间的近似有符号距离。我们利用反馈控制器，并假设使用前馈神经网络来学习这些反馈控制器。我们展示了这个学习问题与训练递归神经网络（RNNs）类似的地方，其中递归单元的数量与智能体的时间视野成比例。
 
-    arXiv:2403.00381v1 Announce Type: cross  Abstract: Deep neural networks (DNN) are increasingly being used to learn controllers due to their excellent approximation capabilities. However, their black-box nature poses significant challenges to closed-loop stability guarantees and performance analysis. In this paper, we introduce a structured DNN-based controller for the trajectory tracking control of Lagrangian systems using backing techniques. By properly designing neural network structures, the proposed controller can ensure closed-loop stability for any compatible neural network parameters. In addition, improved control performance can be achieved by further optimizing neural network parameters. Besides, we provide explicit upper bounds on tracking errors in terms of controller parameters, which allows us to achieve the desired tracking performance by properly selecting the controller parameters. Furthermore, when system models are unknown, we propose an improved Lagrangian neural net
+    arXiv:2403.15826v1 Announce Type: cross  Abstract: This paper introduces a model-based approach for training feedback controllers for an autonomous agent operating in a highly nonlinear environment. We desire the trained policy to ensure that the agent satisfies specific task objectives, expressed in discrete-time Signal Temporal Logic (DT-STL). One advantage for reformulation of a task via formal frameworks, like DT-STL, is that it permits quantitative satisfaction semantics. In other words, given a trajectory and a DT-STL formula, we can compute the robustness, which can be interpreted as an approximate signed distance between the trajectory and the set of trajectories satisfying the formula. We utilize feedback controllers, and we assume a feed forward neural network for learning these feedback controllers. We show how this learning problem is similar to training recurrent neural networks (RNNs), where the number of recurrent units is proportional to the temporal horizon of the agen
     
 

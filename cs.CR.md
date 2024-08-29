@@ -2,52 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A StrongREJECT for Empty Jailbreaks](https://arxiv.org/abs/2402.10260) | 提出了一种新的基准 StrongREJECT，通过使用更高质量的问题，更好地区分有效和无效的空破解方法。 |
-| [^2] | [When Fairness Meets Privacy: Exploring Privacy Threats in Fair Binary Classifiers through Membership Inference Attacks.](http://arxiv.org/abs/2311.03865) | 本研究探索了公平二分类器中的隐私威胁，并揭示了针对公平增强模型的基于分数的成员推断攻击的无效性。同时，公平性方法可能导致训练数据中大多数子群体的预测性能下降。 |
-| [^3] | [Split-and-Denoise: Protect large language model inference with local differential privacy.](http://arxiv.org/abs/2310.09130) | 本文提出了一种名为SnD的创新框架，用于保护大型语言模型推断阶段的隐私。该方法通过在客户端上执行令牌嵌入层和引入噪声来优化隐私-效用权衡，无需修改模型参数。 |
+| [^1] | [A Statistical Framework of Watermarks for Large Language Models: Pivot, Detection Efficiency and Optimal Rules](https://arxiv.org/abs/2404.01245) | 该论文提出了一个通用框架，用于设计大型语言模型水印的统计效率和检测规则，通过关键统计量和秘密密钥控制误报率，同时评估水印检测规则的能力。 |
+| [^2] | [Secret Collusion Among Generative AI Agents](https://arxiv.org/abs/2402.07510) | 本文汇集了人工智能和安全领域的相关概念，系统地形式化了生成式AI代理系统中的秘密勾结问题，并提出了缓解措施。通过测试各种形式的秘密勾结所需的能力，我们发现当前模型的隐写能力有限，但 GPT-4 展示了能力的飞跃。 |
 
 # 详细
 
-[^1]: 一种用于空破解的强REJECT方法
+[^1]: 大型语言模型水印的统计框架: 枢轴、检测效率和最优规则
 
-    A StrongREJECT for Empty Jailbreaks
+    A Statistical Framework of Watermarks for Large Language Models: Pivot, Detection Efficiency and Optimal Rules
 
-    [https://arxiv.org/abs/2402.10260](https://arxiv.org/abs/2402.10260)
+    [https://arxiv.org/abs/2404.01245](https://arxiv.org/abs/2404.01245)
 
-    提出了一种新的基准 StrongREJECT，通过使用更高质量的问题，更好地区分有效和无效的空破解方法。
-
-    
-
-    大型语言模型（LLMs）的兴起引起了对“破解”的关注，这种破解允许模型被恶意使用。然而，目前没有标准的基准来衡量破解的严重程度，导致破解论文的作者不得不自行创建标准。我们表明这些基准经常包含模棱两可或无法回答的问题，并使用倾向于高估低质量模型响应的滥用潜力的评分标准。一些破解技术使问题更加严重，因为它们即使对于良性问题也会降低模型响应的质量：我们展示了几种破解技术显着降低了GPT-4在MMLU上的零射击表现。破解还会使从“未经审查”的开源模型中获取有害响应变得更加困难。我们提出了一个新的基准，StrongREJECT，通过使用更高质量的问题更好地区分有效和无效的破解方法。
-
-    arXiv:2402.10260v1 Announce Type: cross  Abstract: The rise of large language models (LLMs) has drawn attention to the existence of "jailbreaks" that allow the models to be used maliciously. However, there is no standard benchmark for measuring the severity of a jailbreak, leaving authors of jailbreak papers to create their own. We show that these benchmarks often include vague or unanswerable questions and use grading criteria that are biased towards overestimating the misuse potential of low-quality model responses. Some jailbreak techniques make the problem worse by decreasing the quality of model responses even on benign questions: we show that several jailbreaking techniques substantially reduce the zero-shot performance of GPT-4 on MMLU. Jailbreaks can also make it harder to elicit harmful responses from an "uncensored" open-source model. We present a new benchmark, StrongREJECT, which better discriminates between effective and ineffective jailbreaks by using a higher-quality que
-    
-[^2]: 当公平性遇见隐私：通过成员推断攻击探索公平二分类器中的隐私威胁
-
-    When Fairness Meets Privacy: Exploring Privacy Threats in Fair Binary Classifiers through Membership Inference Attacks. (arXiv:2311.03865v2 [cs.LG] UPDATED)
-
-    [http://arxiv.org/abs/2311.03865](http://arxiv.org/abs/2311.03865)
-
-    本研究探索了公平二分类器中的隐私威胁，并揭示了针对公平增强模型的基于分数的成员推断攻击的无效性。同时，公平性方法可能导致训练数据中大多数子群体的预测性能下降。
+    该论文提出了一个通用框架，用于设计大型语言模型水印的统计效率和检测规则，通过关键统计量和秘密密钥控制误报率，同时评估水印检测规则的能力。
 
     
 
-    先前的研究开发了针对具有歧视行为的有偏模型的公平方法，以达到公平预测的目标。然而，最近的研究发现这些模型在基于分数的成员推断攻击中存在潜在的漏洞。在这些攻击中，对手可以通过分析模型的预测分数推断出特定数据样本是否在训练过程中使用。然而，我们的调查发现，针对公平增强模型的基于分数的成员推断攻击是无效的。针对这些攻击训练的模型退化为简单的阈值模型，从而导致攻击性能降低。与此同时，我们观察到公平性方法往往导致训练数据中的大多数子群体的预测性能下降。这提高了成功攻击的难度，同时扩大了成员和非成员数据之间的预测差距。
+    自ChatGPT于2022年11月推出以来，将几乎不可察觉的统计信号嵌入到大型语言模型（LLMs）生成的文本中，也被称为水印，已被用作从其人类撰写对应物上可证检测LLM生成文本的原则性方法。 本文介绍了一个通用灵活的框架，用于推理水印的统计效率并设计强大的检测规则。受水印检测的假设检验公式启发，我们的框架首先选择文本的枢轴统计量和由LLM提供给验证器的秘密密钥，以实现控制误报率（将人类撰写的文本错误地检测为LLM生成的错误）。 接下来，该框架允许通过获取渐近错误负率（将LLM生成文本错误地检测为人类撰写的错误）的封闭形式表达式来评估水印检测规则的能力。
 
-    Previous studies have developed fairness methods for biased models that exhibit discriminatory behaviors towards specific subgroups. While these models have shown promise in achieving fair predictions, recent research has identified their potential vulnerability to score-based membership inference attacks (MIAs). In these attacks, adversaries can infer whether a particular data sample was used during training by analyzing the model's prediction scores. However, our investigations reveal that these score-based MIAs are ineffective when targeting fairness-enhanced models in binary classifications. The attack models trained to launch the MIAs degrade into simplistic threshold models, resulting in lower attack performance. Meanwhile, we observe that fairness methods often lead to prediction performance degradation for the majority subgroups of the training data. This raises the barrier to successful attacks and widens the prediction gaps between member and non-member data. Building upon th
+    arXiv:2404.01245v1 Announce Type: cross  Abstract: Since ChatGPT was introduced in November 2022, embedding (nearly) unnoticeable statistical signals into text generated by large language models (LLMs), also known as watermarking, has been used as a principled approach to provable detection of LLM-generated text from its human-written counterpart. In this paper, we introduce a general and flexible framework for reasoning about the statistical efficiency of watermarks and designing powerful detection rules. Inspired by the hypothesis testing formulation of watermark detection, our framework starts by selecting a pivotal statistic of the text and a secret key -- provided by the LLM to the verifier -- to enable controlling the false positive rate (the error of mistakenly detecting human-written text as LLM-generated). Next, this framework allows one to evaluate the power of watermark detection rules by obtaining a closed-form expression of the asymptotic false negative rate (the error of 
     
-[^3]: 使用本地差分隐私保护大型语言模型推断：拆分与去噪
+[^2]: 生成式AI代理之间的秘密勾结
 
-    Split-and-Denoise: Protect large language model inference with local differential privacy. (arXiv:2310.09130v1 [cs.AI])
+    Secret Collusion Among Generative AI Agents
 
-    [http://arxiv.org/abs/2310.09130](http://arxiv.org/abs/2310.09130)
+    [https://arxiv.org/abs/2402.07510](https://arxiv.org/abs/2402.07510)
 
-    本文提出了一种名为SnD的创新框架，用于保护大型语言模型推断阶段的隐私。该方法通过在客户端上执行令牌嵌入层和引入噪声来优化隐私-效用权衡，无需修改模型参数。
+    本文汇集了人工智能和安全领域的相关概念，系统地形式化了生成式AI代理系统中的秘密勾结问题，并提出了缓解措施。通过测试各种形式的秘密勾结所需的能力，我们发现当前模型的隐写能力有限，但 GPT-4 展示了能力的飞跃。
 
     
 
-    大型语言模型（LLMs）通过捕捉向量空间中的隐藏语义，展示了在自然语言理解方面的强大能力。这一过程丰富了文本嵌入的价值，从而促进了作为服务（EaaS）的嵌入模型商业模式。然而，直接将文本传输到服务器面临着较大的隐私泄露风险，这是一个尚未得到有效解决的问题。为了缓解这个问题，我们引入了Split-N-Denoise（SnD），一种创新的框架，通过在客户端上以最小的计算成本执行令牌嵌入层来拆分模型。这使得客户端能够在将嵌入传输到服务器之前引入噪声，并随后接收和去噪后的扰动输出嵌入用于下游任务。我们的方法专为LLMs的推断阶段设计，不需要修改模型参数。广泛的实验证明了SnD在各种LLM中优化隐私-效用权衡方面的有效性。
+    最近大型语言模型在能力上的增强为通信的生成式AI代理团队解决联合任务的应用打开了可能性。这引发了关于未经授权分享信息或其他不必要的代理协调形式的隐私和安全挑战。现代隐写术技术可能使这种动态难以检测。本文通过汲取人工智能和安全领域相关概念，全面系统地形式化了生成式AI代理系统中的秘密勾结问题。我们研究了使用隐写术的动机，并提出了各种缓解措施。我们的研究结果是一个模型评估框架，系统地测试了各种形式的秘密勾结所需的能力。我们在各种当代大型语言模型上提供了广泛的实证结果。虽然当前模型的隐写能力仍然有限，但 GPT-4 显示出能力的飞跃，这表明有必要进行进一步的研究。
 
-    Large Language Models (LLMs) shows powerful capability in natural language understanding by capturing hidden semantics in vector space. This process enriches the value of the text embeddings for various downstream tasks, thereby fostering the Embedding-as-a-Service (EaaS) business model. However, the direct transmission of text to servers poses a largely unaddressed risk of privacy leakage. To mitigate this issue, we introduce Split-N-Denoise (SnD), an innovative framework that split the model to execute the token embedding layer on the client side at minimal computational cost. This allows the client to introduce noise prior to transmitting the embeddings to the server, and subsequently receive and denoise the perturbed output embeddings for downstream tasks. Our approach is designed for the inference stage of LLMs and requires no modifications to the model parameters. Extensive experiments demonstrate SnD's effectiveness in optimizing the privacy-utility tradeoff across various LLM a
+    Recent capability increases in large language models (LLMs) open up applications in which teams of communicating generative AI agents solve joint tasks. This poses privacy and security challenges concerning the unauthorised sharing of information, or other unwanted forms of agent coordination. Modern steganographic techniques could render such dynamics hard to detect. In this paper, we comprehensively formalise the problem of secret collusion in systems of generative AI agents by drawing on relevant concepts from both the AI and security literature. We study incentives for the use of steganography, and propose a variety of mitigation measures. Our investigations result in a model evaluation framework that systematically tests capabilities required for various forms of secret collusion. We provide extensive empirical results across a range of contemporary LLMs. While the steganographic capabilities of current models remain limited, GPT-4 displays a capability jump suggesting the need fo
     
 

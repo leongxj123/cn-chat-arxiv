@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Trust and ethical considerations in a multi-modal, explainable AI-driven chatbot tutoring system: The case of collaboratively solving Rubik's Cube](https://arxiv.org/abs/2402.01760) | 该论文描述了一个多模态、可解释的AI驱动聊天机器人辅导系统，在解决高中学生协同解决魔方问题时，解决了数据隐私、信息泄露、滥用语言和公平性等伦理和信任问题。 |
+| [^1] | [Examining Pathological Bias in a Generative Adversarial Network Discriminator: A Case Study on a StyleGAN3 Model](https://arxiv.org/abs/2402.09786) | 这项研究发现了StyleGAN3模型中判别器的病态偏见，它在图像和面部质量上的得分分层影响了不同性别、种族和其他类别的图像。 |
 
 # 详细
 
-[^1]: 一个多模态、可解释的AI驱动聊天机器人辅导系统中的信任和伦理考虑：以协同解决魔方为例
+[^1]: 检查生成对抗网络判别器中的病态偏见：以StyleGAN3模型为例的案例研究
 
-    Trust and ethical considerations in a multi-modal, explainable AI-driven chatbot tutoring system: The case of collaboratively solving Rubik's Cube
+    Examining Pathological Bias in a Generative Adversarial Network Discriminator: A Case Study on a StyleGAN3 Model
 
-    [https://arxiv.org/abs/2402.01760](https://arxiv.org/abs/2402.01760)
+    [https://arxiv.org/abs/2402.09786](https://arxiv.org/abs/2402.09786)
 
-    该论文描述了一个多模态、可解释的AI驱动聊天机器人辅导系统，在解决高中学生协同解决魔方问题时，解决了数据隐私、信息泄露、滥用语言和公平性等伦理和信任问题。
+    这项研究发现了StyleGAN3模型中判别器的病态偏见，它在图像和面部质量上的得分分层影响了不同性别、种族和其他类别的图像。
 
     
 
-    人工智能具有从大量关于学生学习模式的数据中发现洞察力的潜力，有望改变教育。然而，人工智能的伦理和信任问题已经引起了关注，但尚未解决。在高中人工智能教育中，突出的伦理问题包括数据隐私、信息泄露、滥用语言和公平性。本文描述了为解决高中学生与人工智能协作解决魔方的伦理和信任问题而构建的技术组件（称为ALLURE chatbot）。在数据隐私方面，我们希望确保儿童、父母和教师的知情同意处于任何管理的数据的中心位置。由于涉及儿童，系统能够接受用户和人工智能提供的文本、音频或视觉语言，并将互动引导远离危险情况。在信息管理方面，我们还希望确保系统可以利用机制防止信息泄露的危险。
+    生成对抗网络可以生成逼真的人脸，往往难以被人类区分出来。我们发现预训练的StyleGAN3模型中的判别器在图像和面部质量上系统地对得分进行分层，并且这不成比例地影响了不同性别、种族和其他类别的图像。我们检查了判别器在色彩和亮度方面对感知的种族和性别的偏见，然后检查了社会心理学中关于刻板印象研究中常见的偏见。
 
-    Artificial intelligence (AI) has the potential to transform education with its power of uncovering insights from massive data about student learning patterns. However, ethical and trustworthy concerns of AI have been raised but are unsolved. Prominent ethical issues in high school AI education include data privacy, information leakage, abusive language, and fairness. This paper describes technological components that were built to address ethical and trustworthy concerns in a multi-modal collaborative platform (called ALLURE chatbot) for high school students to collaborate with AI to solve the Rubik's cube. In data privacy, we want to ensure that the informed consent of children, parents, and teachers, is at the center of any data that is managed. Since children are involved, language, whether textual, audio, or visual, is acceptable both from users and AI and the system can steer interaction away from dangerous situations. In information management, we also want to ensure that the sys
+    arXiv:2402.09786v1 Announce Type: cross  Abstract: Generative adversarial networks generate photorealistic faces that are often indistinguishable by humans from real faces. We find that the discriminator in the pre-trained StyleGAN3 model, a popular GAN network, systematically stratifies scores by both image- and face-level qualities and that this disproportionately affects images across gender, race, and other categories. We examine the discriminator's bias for color and luminance across axes perceived race and gender; we then examine axes common in research on stereotyping in social psychology.
     
 
