@@ -2,52 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Affordable Generative Agents](https://arxiv.org/abs/2402.02053) | 本文提出了经济实惠的生成式智能体框架（AGA），通过学习策略替代LLM推理和压缩对话信息，实现了低成本的可信互动，且对于有限环境中生成的可信行为机制进行了深入研究。 |
-| [^2] | [FERGI: Automatic Annotation of User Preferences for Text-to-Image Generation from Spontaneous Facial Expression Reaction](https://arxiv.org/abs/2312.03187) | 开发了一种从用户自发面部表情反应中自动注释用户对生成图像偏好的方法，发现多个面部动作单元与用户对生成图像的评估高度相关，可用于通过这些面部动作单元区分图像对并自动标注用户偏好。 |
-| [^3] | [On the Interdependence of Reliance Behavior and Accuracy in AI-Assisted Decision-Making.](http://arxiv.org/abs/2304.08804) | 该论文分析了AI辅助决策中依赖行为和准确性之间的相互关系，并提出了一个视觉框架来更好地理解这种关系。该框架揭示了当人类在决策中过度依赖AI时，改善信任可能会降低准确性的有趣属性。 |
+| [^1] | [Helmsman of the Masses? Evaluate the Opinion Leadership of Large Language Models in the Werewolf Game](https://arxiv.org/abs/2404.01602) | 本研究通过狼人游戏模拟平台评估了大语言模型的观点领导作用，并开发了两个新的评估指标。 |
+| [^2] | [LLM Agents for Psychology: A Study on Gamified Assessments](https://arxiv.org/abs/2402.12326) | 本研究提出了PsychoGAT（心理游戏代理）以实现心理评估的通用游戏化，通过将强大的LLM代理纳入角色，将标准量表转化为个性化且具有吸引力的互动小说游戏。 |
+| [^3] | [From Data Creator to Data Reuser: Distance Matters](https://arxiv.org/abs/2402.07926) | 这项研究提出了数据创建者和数据重用者之间距离的理论构建，并确定了影响有效传递知识能力的六个距离维度，为数据管理投资和改进数据交换过程提供指导。 |
+| [^4] | [Summaries, Highlights, and Action items: Design, implementation and evaluation of an LLM-powered meeting recap system.](http://arxiv.org/abs/2307.15793) | 这项研究设计、实现和评估了一种基于LLM的会议总结系统，通过减少个人会议负担和增加会议输出的清晰度和一致性，提高了会议体验。 |
 
 # 详细
 
-[^1]: 经济实惠的生成式智能体
+[^1]: 大语言模型在狼人游戏中的舵手？评估其观点引领作用
 
-    Affordable Generative Agents
+    Helmsman of the Masses? Evaluate the Opinion Leadership of Large Language Models in the Werewolf Game
 
-    [https://arxiv.org/abs/2402.02053](https://arxiv.org/abs/2402.02053)
+    [https://arxiv.org/abs/2404.01602](https://arxiv.org/abs/2404.01602)
 
-    本文提出了经济实惠的生成式智能体框架（AGA），通过学习策略替代LLM推理和压缩对话信息，实现了低成本的可信互动，且对于有限环境中生成的可信行为机制进行了深入研究。
-
-    
-
-    大规模语言模型（LLMs）的出现显著推进了真实交互智能体的模拟。然而，维持长时间智能体交互的巨大成本对于部署基于LLM的可信智能体构成了挑战。因此，在本文中，我们开发了经济实惠的生成式智能体（AGA），这是一个框架，可以在智能体-环境和智能体间交互的两个层面上实现低成本的可信互动。具体而言，对于智能体-环境交互，我们用学习的策略替代了重复的LLM推理；而对于智能体间交互，我们对智能体之间的社会关系进行建模，并压缩辅助对话信息。在多个环境上的大量实验表明了我们提出的框架的有效性和效率。此外，我们深入探究了LLM智能体中的可信行为形成机制，证明智能体仅能在固定环境中生成有限行为。
-
-    The emergence of large language models (LLMs) has significantly advanced the simulation of believable interactive agents. However, the substantial cost on maintaining the prolonged agent interactions poses challenge over the deployment of believable LLM-based agents. Therefore, in this paper, we develop Affordable Generative Agents (AGA), a framework for enabling the generation of believable and low-cost interactions on both agent-environment and inter-agents levels. Specifically, for agent-environment interactions, we substitute repetitive LLM inferences with learned policies; while for inter-agent interactions, we model the social relationships between agents and compress auxiliary dialogue information. Extensive experiments on multiple environments show the effectiveness and efficiency of our proposed framework. Also, we delve into the mechanisms of emergent believable behaviors lying in LLM agents, demonstrating that agents can only generate finite behaviors in fixed environments, 
-    
-[^2]: FERGI：来自自发面部表情反应的文本到图像生成用户偏好的自动注释
-
-    FERGI: Automatic Annotation of User Preferences for Text-to-Image Generation from Spontaneous Facial Expression Reaction
-
-    [https://arxiv.org/abs/2312.03187](https://arxiv.org/abs/2312.03187)
-
-    开发了一种从用户自发面部表情反应中自动注释用户对生成图像偏好的方法，发现多个面部动作单元与用户对生成图像的评估高度相关，可用于通过这些面部动作单元区分图像对并自动标注用户偏好。
+    本研究通过狼人游戏模拟平台评估了大语言模型的观点领导作用，并开发了两个新的评估指标。
 
     
 
-    研究人员提出使用人类偏好反馈数据来微调文本到图像生成模型。然而，由于其依赖于手动注释，人类反馈收集的可扩展性受到限制。因此，我们开发并测试了一种方法，从用户的自发面部表情反应中自动注释其对生成图像的偏好。我们收集了一个面部表情反应到生成图像（FERGI）的数据集，并展示了多个面部运动单元（AUs）的激活与用户对生成图像的评估高度相关。具体来说，AU4（眉毛下垂者）反映了对生成图像的负面评价，而AU12（嘴角拉动者）反映了正面评价。这两者在两个方面都很有用。首先，我们可以准确地使用这些AU响应存在实质差异的图像对之间自动注释用户偏好。
+    大语言模型（LLMs）在社交推理游戏中展现出令人难忘的战略行为。然而，LLM代理所展示的观点领导力的重要性被忽视了，而这对于多智能体和人工智能交互设置中的实际应用至关重要。在此研究中，我们利用狼人游戏作为模拟平台，评估LLMs的观点引领作用。该游戏中有警长角色，负责总结论据并推荐决策选项，因此可作为观点领袖的可信代理。我们开发了一个整合了警长角色的框架，并设计了两个基于观点领袖关键特征的新指标进行评估。第一个度量标准衡量观点领袖的可靠性，第二个评估...
 
-    arXiv:2312.03187v2 Announce Type: replace-cross  Abstract: Researchers have proposed to use data of human preference feedback to fine-tune text-to-image generative models. However, the scalability of human feedback collection has been limited by its reliance on manual annotation. Therefore, we develop and test a method to automatically annotate user preferences from their spontaneous facial expression reaction to the generated images. We collect a dataset of Facial Expression Reaction to Generated Images (FERGI) and show that the activations of multiple facial action units (AUs) are highly correlated with user evaluations of the generated images. Specifically, AU4 (brow lowerer) is reflective of negative evaluations of the generated image whereas AU12 (lip corner puller) is reflective of positive evaluations. These can be useful in two ways. Firstly, we can automatically annotate user preferences between image pairs with substantial difference in these AU responses with an accuracy sig
+    arXiv:2404.01602v1 Announce Type: cross  Abstract: Large language models (LLMs) have exhibited memorable strategic behaviors in social deductive games. However, the significance of opinion leadership exhibited by LLM-based agents has been overlooked, which is crucial for practical applications in multi-agent and human-AI interaction settings. Opinion leaders are individuals who have a noticeable impact on the beliefs and behaviors of others within a social group. In this work, we employ the Werewolf game as a simulation platform to assess the opinion leadership of LLMs. The game features the role of the Sheriff, tasked with summarizing arguments and recommending decision options, and therefore serves as a credible proxy for an opinion leader. We develop a framework integrating the Sheriff role and devise two novel metrics for evaluation based on the critical characteristics of opinion leaders. The first metric measures the reliability of the opinion leader, and the second assesses the 
     
-[^3]: 关于AI辅助决策中依赖行为与准确性的相互关系
+[^2]: 基于LLM的心理学智能代理：一项关于游戏化评估的研究
 
-    On the Interdependence of Reliance Behavior and Accuracy in AI-Assisted Decision-Making. (arXiv:2304.08804v1 [cs.HC])
+    LLM Agents for Psychology: A Study on Gamified Assessments
 
-    [http://arxiv.org/abs/2304.08804](http://arxiv.org/abs/2304.08804)
+    [https://arxiv.org/abs/2402.12326](https://arxiv.org/abs/2402.12326)
 
-    该论文分析了AI辅助决策中依赖行为和准确性之间的相互关系，并提出了一个视觉框架来更好地理解这种关系。该框架揭示了当人类在决策中过度依赖AI时，改善信任可能会降低准确性的有趣属性。
+    本研究提出了PsychoGAT（心理游戏代理）以实现心理评估的通用游戏化，通过将强大的LLM代理纳入角色，将标准量表转化为个性化且具有吸引力的互动小说游戏。
 
     
 
-    在AI辅助决策中，将人类置于决策环路中央的主要承诺是，他们应该能够通过符合其正确的和覆盖其错误的建议来补充AI系统。然而实践中，我们经常看到人类倾向于过度或不足地依赖AI建议，这意味着他们要么依从错误的建议，要么覆盖正确的建议。这种依赖行为对决策准确性有害。在这项工作中，我们阐述并分析了在AI辅助决策中依赖行为和准确性之间的相互关系，这在以前的工作中很大程度上被忽视了。我们还提出了一个视觉框架，使这种相互关系更加具体化。该框架帮助我们解释和比较实证研究结果，并获得对AI辅助决策干预（例如解释）影响的细致理解。最后，我们从框架中推出了几个有趣的属性：（i）当人类不足地依赖AI建议时，改善信任将显着提高准确性，但在他们过度依赖时，信任的改善却可能降低准确性。
+    心理测量对于精神健康、自我理解和个人发展至关重要。传统方法，如自我报告量表和心理学家访谈，常常面临参与度和可获得性方面的挑战。虽然已经探讨了基于游戏和LLM的工具来提高用户兴趣并自动化评估，但它们难以平衡参与度和普适性。在这项工作中，我们提出了PsychoGAT（心理游戏代理），以实现心理评估的通用游戏化。主要洞察是强大的LLM既可以充当熟练的心理学家，也可以是创新的游戏设计师。通过将LLM代理纳入指定角色并精心管理它们的互动，PsychoGAT可以将任何标准量表转化为个性化且具有吸引力的互动小说游戏。为验证所提出的方法，我们进行心理度量评估以评估其有效性，并使用人类
 
-    In AI-assisted decision-making, a central promise of putting a human in the loop is that they should be able to complement the AI system by adhering to its correct and overriding its mistaken recommendations. In practice, however, we often see that humans tend to over- or under-rely on AI recommendations, meaning that they either adhere to wrong or override correct recommendations. Such reliance behavior is detrimental to decision-making accuracy. In this work, we articulate and analyze the interdependence between reliance behavior and accuracy in AI-assisted decision-making, which has been largely neglected in prior work. We also propose a visual framework to make this interdependence more tangible. This framework helps us interpret and compare empirical findings, as well as obtain a nuanced understanding of the effects of interventions (e.g., explanations) in AI-assisted decision-making. Finally, we infer several interesting properties from the framework: (i) when humans under-rely o
+    arXiv:2402.12326v1 Announce Type: new  Abstract: Psychological measurement is essential for mental health, self-understanding, and personal development. Traditional methods, such as self-report scales and psychologist interviews, often face challenges with engagement and accessibility. While game-based and LLM-based tools have been explored to improve user interest and automate assessment, they struggle to balance engagement with generalizability. In this work, we propose PsychoGAT (Psychological Game AgenTs) to achieve a generic gamification of psychological assessment. The main insight is that powerful LLMs can function both as adept psychologists and innovative game designers. By incorporating LLM agents into designated roles and carefully managing their interactions, PsychoGAT can transform any standardized scales into personalized and engaging interactive fiction games. To validate the proposed method, we conduct psychometric evaluations to assess its effectiveness and employ huma
+    
+[^3]: 从数据创建者到数据重用者：距离的重要性
+
+    From Data Creator to Data Reuser: Distance Matters
+
+    [https://arxiv.org/abs/2402.07926](https://arxiv.org/abs/2402.07926)
+
+    这项研究提出了数据创建者和数据重用者之间距离的理论构建，并确定了影响有效传递知识能力的六个距离维度，为数据管理投资和改进数据交换过程提供指导。
+
+    
+
+    共享研究数据是复杂、劳动密集、昂贵的，需要多个利益相关者的基础设施投资。开放科学政策侧重于数据发布而不是数据重用，然而重用也是困难、昂贵的，可能永远不会发生。通过考虑谁可能重用数据，如何重用数据，为何重用数据，以及何时重用数据等因素，可以更明智地进行数据管理投资。数据创造者无法预见所有可能的重用或重用者；我们的目标是确定可能有助于利益相关者决定如何投资研究数据，如何确定潜在的重用和重用者，以及如何改进数据交换过程的因素。基于数据共享和重用的实证研究，我们开发了数据创建者和数据重用者之间距离的理论构建，并确定了影响有效传递知识能力的六个距离维度：领域、方法、合作、策划、目的和时间性。这些维度主要是
+
+    Sharing research data is complex, labor-intensive, expensive, and requires infrastructure investments by multiple stakeholders. Open science policies focus on data release rather than on data reuse, yet reuse is also difficult, expensive, and may never occur. Investments in data management could be made more wisely by considering who might reuse data, how, why, for what purposes, and when. Data creators cannot anticipate all possible reuses or reusers; our goal is to identify factors that may aid stakeholders in deciding how to invest in research data, how to identify potential reuses and reusers, and how to improve data exchange processes. Drawing upon empirical studies of data sharing and reuse, we develop the theoretical construct of distance between data creator and data reuser, identifying six distance dimensions that influence the ability to transfer knowledge effectively: domain, methods, collaboration, curation, purposes, and time and temporality. These dimensions are primarily
+    
+[^4]: 概要、亮点和行动项目：设计、实现和评估基于LLM的会议总结系统
+
+    Summaries, Highlights, and Action items: Design, implementation and evaluation of an LLM-powered meeting recap system. (arXiv:2307.15793v1 [cs.HC])
+
+    [http://arxiv.org/abs/2307.15793](http://arxiv.org/abs/2307.15793)
+
+    这项研究设计、实现和评估了一种基于LLM的会议总结系统，通过减少个人会议负担和增加会议输出的清晰度和一致性，提高了会议体验。
+
+    
+
+    会议在工作协调中发挥着关键的基础设施作用。近年来，由于向混合和远程工作的转变，越来越多的会议正在转移到在线计算机媒体空间。这导致了新的问题（例如在更不吸引人的会议上花费更多的时间）和新的机会（例如自动转录/字幕和总结支持）。最近的大型语言模型（LLMs）在对话总结方面取得了进展，通过减少个人的会议负担和增加会议输出的清晰度和一致性，有可能提高会议体验。尽管存在这种潜力，但由于长篇转录和无法根据用户的上下文捕捉到多样的总结需求，它们面临着技术限制。为了填补这些差距，我们设计、实现并在上下文中评估了一种会议总结系统。我们首先构思了两个明显的总结表示方式——重要亮点和结构化的分级会议纪要视图。我们开发了一个系统来实现这些表示方法。
+
+    Meetings play a critical infrastructural role in the coordination of work. In recent years, due to shift to hybrid and remote work, more meetings are moving to online Computer Mediated Spaces. This has led to new problems (e.g. more time spent in less engaging meetings) and new opportunities (e.g. automated transcription/captioning and recap support). Recent advances in large language models (LLMs) for dialog summarization have the potential to improve the experience of meetings by reducing individuals' meeting load and increasing the clarity and alignment of meeting outputs. Despite this potential, they face technological limitation due to long transcripts and inability to capture diverse recap needs based on user's context. To address these gaps, we design, implement and evaluate in-context a meeting recap system. We first conceptualize two salient recap representations -- important highlights, and a structured, hierarchical minutes view. We develop a system to operationalize the rep
     
 
