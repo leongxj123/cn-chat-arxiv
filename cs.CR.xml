@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description><item><title>&#36890;&#36807;&#28145;&#24230;&#23398;&#20064;&#25216;&#26415;&#65292;&#25104;&#21151;&#23454;&#29616;&#20102;&#22312;&#20391;&#20449;&#36947;&#36319;&#36394;&#20013;&#23450;&#20301;&#30446;&#26631;&#21152;&#23494;&#25805;&#20316;&#30340;&#26102;&#38388;&#30636;&#38388;&#65292;&#21363;&#20351;&#23384;&#22312;&#36319;&#36394;&#21464;&#24418;&#12290;</title><link>https://arxiv.org/abs/2402.19037</link><description>&lt;p&gt;
+&#19968;&#31181;&#29992;&#20110;&#23450;&#20301;&#20391;&#20449;&#36947;&#36319;&#36394;&#20013;&#23494;&#30721;&#25805;&#20316;&#30340;&#28145;&#24230;&#23398;&#20064;&#25216;&#26415;
+&lt;/p&gt;
+&lt;p&gt;
+A Deep-Learning Technique to Locate Cryptographic Operations in Side-Channel Traces
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.19037
+&lt;/p&gt;
+&lt;p&gt;
+&#36890;&#36807;&#28145;&#24230;&#23398;&#20064;&#25216;&#26415;&#65292;&#25104;&#21151;&#23454;&#29616;&#20102;&#22312;&#20391;&#20449;&#36947;&#36319;&#36394;&#20013;&#23450;&#20301;&#30446;&#26631;&#21152;&#23494;&#25805;&#20316;&#30340;&#26102;&#38388;&#30636;&#38388;&#65292;&#21363;&#20351;&#23384;&#22312;&#36319;&#36394;&#21464;&#24418;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#20391;&#20449;&#36947;&#25915;&#20987;&#36890;&#36807;&#30456;&#20851;&#37096;&#20998;&#24050;&#30693;&#35745;&#31639;&#25968;&#25454;&#21644;&#24050;&#27979;&#37327;&#30340;&#20391;&#20449;&#36947;&#20449;&#21495;&#65292;&#20801;&#35768;&#20174;&#21152;&#23494;&#21407;&#35821;&#30340;&#25191;&#34892;&#20013;&#25552;&#21462;&#31192;&#23494;&#20449;&#24687;&#12290;&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#26032;&#39062;&#30340;&#28145;&#24230;&#23398;&#20064;&#25216;&#26415;&#65292;&#29992;&#20110;&#23450;&#20301;&#20391;&#20449;&#36947;&#36861;&#36394;&#20013;&#25191;&#34892;&#30340;&#30446;&#26631;&#35745;&#31639;&#23494;&#30721;&#25805;&#20316;&#30340;&#26102;&#38388;&#30636;&#38388;&#12290;&#19982;&#29616;&#26377;&#35299;&#20915;&#26041;&#26696;&#30456;&#27604;&#65292;&#25152;&#25552;&#20986;&#30340;&#26041;&#27861;&#29978;&#33267;&#22312;&#36890;&#36807;&#38543;&#26426;&#24310;&#36831;&#25554;&#20837;&#25216;&#26415;&#33719;&#24471;&#30340;&#36319;&#36394;&#21464;&#24418;&#30340;&#24773;&#20917;&#19979;&#20063;&#33021;&#24037;&#20316;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2402.19037v1 Announce Type: cross  Abstract: Side-channel attacks allow extracting secret information from the execution of cryptographic primitives by correlating the partially known computed data and the measured side-channel signal. However, to set up a successful side-channel attack, the attacker has to perform i) the challenging task of locating the time instant in which the target cryptographic primitive is executed inside a side-channel trace and then ii)the time-alignment of the measured data on that time instant. This paper presents a novel deep-learning technique to locate the time instant in which the target computed cryptographic operations are executed in the side-channel trace. In contrast to state-of-the-art solutions, the proposed methodology works even in the presence of trace deformations obtained through random delay insertion techniques. We validated our proposal through a successful attack against a variety of unprotected and protected cryptographic primitive
+&lt;/p&gt;</description></item></channel></rss>
