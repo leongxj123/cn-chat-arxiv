@@ -2,67 +2,82 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Adaptive Split Balancing for Optimal Random Forest](https://arxiv.org/abs/2402.11228) | 介绍了自适应分割平衡森林（ASBF），可在学习树表示的同时，在复杂情况下实现极小极优性，并提出了一个本地化版本，在H\"older类下达到最小极优性。 |
-| [^2] | [Leveraging Public Representations for Private Transfer Learning.](http://arxiv.org/abs/2312.15551) | 该论文探讨了如何利用公共数据来改进私有学习的问题。研究发现，通过学习公共数据中的共享表示，可以在两种迁移学习场景中实现最优的学习效果。在单任务迁移场景中，算法在给定子空间范围内搜索线性模型，并实现了最优超额风险。在多任务个性化场景中，足够的公共数据可以消除私有协调需求，并通过纯局部学习达到相同的效用。 |
-| [^3] | [DiffLoad: Uncertainty Quantification in Load Forecasting with Diffusion Model.](http://arxiv.org/abs/2306.01001) | 本文提出了一种扩散模型中的负荷预测不确定性量化方法，采用Seq2Seq网络结构来分离两种类型的不确定性并处理异常情况，不仅着眼于预测条件期望值。 |
-| [^4] | [Long-term Causal Inference Under Persistent Confounding via Data Combination.](http://arxiv.org/abs/2202.07234) | 本研究通过数据组合解决了长期治疗效果识别和估计中的持续未测量混淆因素挑战，并提出了三种新的识别策略和估计器。 |
+| [^1] | [Fast and interpretable Support Vector Classification based on the truncated ANOVA decomposition](https://arxiv.org/abs/2402.02438) | 基于截断ANOVA分解的快速可解释支持向量分类法能够通过使用特征映射和少量维度的多变量基函数来快速且准确地进行高维散乱数据的分类。 |
+| [^2] | [Adaptive operator learning for infinite-dimensional Bayesian inverse problems.](http://arxiv.org/abs/2310.17844) | 该论文提出了一种自适应操作员学习框架，通过使用贪婪算法选择自适应点对预训练的近似模型进行微调，逐渐减少建模误差。这种方法可以在准确性和效率之间取得平衡，有助于有效解决贝叶斯逆问题中的计算问题。 |
+| [^3] | [Simultaneous Dimensionality Reduction: A Data Efficient Approach for Multimodal Representations Learning.](http://arxiv.org/abs/2310.04458) | 该论文介绍了一种数据高效的多模态表示学习方法，探索了独立降维和同时降维两种方法，并通过生成线性模型评估了其相对准确性和数据集大小要求。 |
+| [^4] | [Sample Complexity of Variance-reduced Distributionally Robust Q-learning.](http://arxiv.org/abs/2305.18420) | 本文提出了两种新颖的无模型算法，为动态决策面对分布变化问题提供了鲁棒的解决方案，并通过将Q-learning与方差减少技术相结合，实现了样本复杂度的有效控制。 |
+| [^5] | [Small noise analysis for Tikhonov and RKHS regularizations.](http://arxiv.org/abs/2305.11055) | 该研究建立了一个小噪声分析框架，揭示了传统L2正则化范数的潜在不稳定性，并提出了一种自适应分数阶RKHS正则化器类来解决不稳定性，这些正则化器始终产生最佳的收敛速率。 |
 
 # 详细
 
-[^1]: 自适应分割平衡优化随机森林
+[^1]: 基于截断ANOVA分解的快速可解释支持向量分类法
 
-    Adaptive Split Balancing for Optimal Random Forest
+    Fast and interpretable Support Vector Classification based on the truncated ANOVA decomposition
 
-    [https://arxiv.org/abs/2402.11228](https://arxiv.org/abs/2402.11228)
+    [https://arxiv.org/abs/2402.02438](https://arxiv.org/abs/2402.02438)
 
-    介绍了自适应分割平衡森林（ASBF），可在学习树表示的同时，在复杂情况下实现极小极优性，并提出了一个本地化版本，在H\"older类下达到最小极优性。
-
-    
-
-    尽管随机森林通常用于回归问题，但现有方法在复杂情况下缺乏适应性，或在简单、平滑情景下失去最优性。在本研究中，我们介绍了自适应分割平衡森林（ASBF），能够从数据中学习树表示，同时在Lipschitz类下实现极小极优性。为了利用更高阶的平滑性水平，我们进一步提出了一个本地化版本，该版本在任意$q \in \mathbb{N}$和$\beta \in (0,1]$的Hölder类$\mathcal{H}^{q,\beta}$下达到最小极优性。与广泛使用的随机特征选择不同，我们考虑了对现有方法的平衡修改。我们的结果表明，过度依赖辅助随机性可能会损害树模型的逼近能力，导致次优结果。相反，一个更平衡、更少随机的方法表现出最佳性能。
-
-    arXiv:2402.11228v1 Announce Type: cross  Abstract: While random forests are commonly used for regression problems, existing methods often lack adaptability in complex situations or lose optimality under simple, smooth scenarios. In this study, we introduce the adaptive split balancing forest (ASBF), capable of learning tree representations from data while simultaneously achieving minimax optimality under the Lipschitz class. To exploit higher-order smoothness levels, we further propose a localized version that attains the minimax rate under the H\"older class $\mathcal{H}^{q,\beta}$ for any $q\in\mathbb{N}$ and $\beta\in(0,1]$. Rather than relying on the widely-used random feature selection, we consider a balanced modification to existing approaches. Our results indicate that an over-reliance on auxiliary randomness may compromise the approximation power of tree models, leading to suboptimal results. Conversely, a less random, more balanced approach demonstrates optimality. Additionall
-    
-[^2]: 利用公共表示来进行私有迁移学习
-
-    Leveraging Public Representations for Private Transfer Learning. (arXiv:2312.15551v2 [cs.LG] UPDATED)
-
-    [http://arxiv.org/abs/2312.15551](http://arxiv.org/abs/2312.15551)
-
-    该论文探讨了如何利用公共数据来改进私有学习的问题。研究发现，通过学习公共数据中的共享表示，可以在两种迁移学习场景中实现最优的学习效果。在单任务迁移场景中，算法在给定子空间范围内搜索线性模型，并实现了最优超额风险。在多任务个性化场景中，足够的公共数据可以消除私有协调需求，并通过纯局部学习达到相同的效用。
+    基于截断ANOVA分解的快速可解释支持向量分类法能够通过使用特征映射和少量维度的多变量基函数来快速且准确地进行高维散乱数据的分类。
 
     
 
-    受到将公共数据纳入差分隐私学习的最新实证成功的启发，我们在理论上研究了从公共数据中学到的共享表示如何改进私有学习。我们探讨了线性回归的两种常见迁移学习场景，两者都假设公共任务和私有任务（回归向量）在高维空间中共享一个低秩子空间。在第一种单任务迁移场景中，目标是学习一个在所有用户之间共享的单一模型，每个用户对应数据集中的一行。我们提供了匹配的上下界，证明了我们的算法在给定子空间估计范围内搜索线性模型的算法类中实现了最优超额风险。在多任务模型个性化的第二种情景中，我们表明在有足够的公共数据情况下，用户可以避免私有协调，因为在给定子空间内纯粹的局部学习可以达到相同的效用。
+    支持向量机（SVM）是在散乱数据上进行分类的重要工具，在高维空间中通常需要处理许多数据点。我们提出使用基于三角函数或小波的特征映射来解决SVM的原始形式。在小维度设置中，快速傅里叶变换（FFT）和相关方法是处理所考虑基函数的强大工具。随着维度的增长，由于维数灾难，传统的基于FFT的方法变得低效。因此，我们限制自己使用多变量基函数，每个基函数只依赖于少数几个维度。这是由于效应的稀疏性和最近关于函数从散乱数据中的截断方差分解的重建的结果所带来的动机，使得生成的模型在特征的重要性以及它们的耦合方面具有可解释性。
 
-    Motivated by the recent empirical success of incorporating public data into differentially private learning, we theoretically investigate how a shared representation learned from public data can improve private learning. We explore two common scenarios of transfer learning for linear regression, both of which assume the public and private tasks (regression vectors) share a low-rank subspace in a high-dimensional space. In the first single-task transfer scenario, the goal is to learn a single model shared across all users, each corresponding to a row in a dataset. We provide matching upper and lower bounds showing that our algorithm achieves the optimal excess risk within a natural class of algorithms that search for the linear model within the given subspace estimate. In the second scenario of multitask model personalization, we show that with sufficient public data, users can avoid private coordination, as purely local learning within the given subspace achieves the same utility. Take
+    Support Vector Machines (SVMs) are an important tool for performing classification on scattered data, where one usually has to deal with many data points in high-dimensional spaces. We propose solving SVMs in primal form using feature maps based on trigonometric functions or wavelets. In small dimensional settings the Fast Fourier Transform (FFT) and related methods are a powerful tool in order to deal with the considered basis functions. For growing dimensions the classical FFT-based methods become inefficient due to the curse of dimensionality. Therefore, we restrict ourselves to multivariate basis functions, each one of them depends only on a small number of dimensions. This is motivated by the well-known sparsity of effects and recent results regarding the reconstruction of functions from scattered data in terms of truncated analysis of variance (ANOVA) decomposition, which makes the resulting model even interpretable in terms of importance of the features as well as their coupling
     
-[^3]: DiffLoad:扩散模型中的负荷预测不确定性量化
+[^2]: 自适应操作员学习用于无限维贝叶斯逆问题
 
-    DiffLoad: Uncertainty Quantification in Load Forecasting with Diffusion Model. (arXiv:2306.01001v1 [cs.LG])
+    Adaptive operator learning for infinite-dimensional Bayesian inverse problems. (arXiv:2310.17844v1 [math.NA])
 
-    [http://arxiv.org/abs/2306.01001](http://arxiv.org/abs/2306.01001)
+    [http://arxiv.org/abs/2310.17844](http://arxiv.org/abs/2310.17844)
 
-    本文提出了一种扩散模型中的负荷预测不确定性量化方法，采用Seq2Seq网络结构来分离两种类型的不确定性并处理异常情况，不仅着眼于预测条件期望值。
-
-    
-
-    电力负荷预测对电力系统的决策制定，如机组投入和能源管理等具有重要意义。近年来，各种基于自监督神经网络的方法已经被应用于电力负荷预测，以提高预测准确性和捕捉不确定性。然而，大多数现有的方法是基于高斯似然方法的，它旨在在给定的协变量下准确估计分布期望值。这种方法很难适应存在分布偏移和异常值的时间数据。在本文中，我们提出了一种基于扩散的Seq2seq结构来估计本体不确定性，并使用鲁棒的加性柯西分布来估计物象不确定性。我们展示了我们的方法能够分离两种类型的不确定性并处理突变情况，而不是准确预测条件期望。
-
-    Electrical load forecasting is of great significance for the decision makings in power systems, such as unit commitment and energy management. In recent years, various self-supervised neural network-based methods have been applied to electrical load forecasting to improve forecasting accuracy and capture uncertainties. However, most current methods are based on Gaussian likelihood methods, which aim to accurately estimate the distribution expectation under a given covariate. This kind of approach is difficult to adapt to situations where temporal data has a distribution shift and outliers. In this paper, we propose a diffusion-based Seq2seq structure to estimate epistemic uncertainty and use the robust additive Cauchy distribution to estimate aleatoric uncertainty. Rather than accurately forecasting conditional expectations, we demonstrate our method's ability in separating two types of uncertainties and dealing with the mutant scenarios.
-    
-[^4]: 长期持续混淆情况下的因果推断与数据组合研究
-
-    Long-term Causal Inference Under Persistent Confounding via Data Combination. (arXiv:2202.07234v3 [stat.ME] UPDATED)
-
-    [http://arxiv.org/abs/2202.07234](http://arxiv.org/abs/2202.07234)
-
-    本研究通过数据组合解决了长期治疗效果识别和估计中的持续未测量混淆因素挑战，并提出了三种新的识别策略和估计器。
+    该论文提出了一种自适应操作员学习框架，通过使用贪婪算法选择自适应点对预训练的近似模型进行微调，逐渐减少建模误差。这种方法可以在准确性和效率之间取得平衡，有助于有效解决贝叶斯逆问题中的计算问题。
 
     
 
-    我们研究了当实验数据和观察数据同时存在时，长期治疗效果的识别和估计问题。由于长期结果仅在长时间延迟后才观察到，在实验数据中无法测量，但在观察数据中有记录。然而，这两种类型的数据都包含对一些短期结果的观察。在本文中，我们独特地解决了持续未测量混淆因素的挑战，即一些未测量混淆因素可以同时影响治疗、短期结果和长期结果，而这会使得之前文献中的识别策略无效。为了解决这个挑战，我们利用多个短期结果的连续结构，为平均长期治疗效果提出了三种新的识别策略。我们进一步提出了三种对应的估计器，并证明了它们的渐近一致性和渐近正态性。最后，我们将我们的方法应用于估计长期治疗效果。
+    贝叶斯逆问题(BIPs)中的基本计算问题源于需要重复进行正向模型评估的要求。减少这种成本的一种常见策略是通过操作员学习使用计算效率高的近似方法替代昂贵的模型模拟，这受到了深度学习的最新进展的启发。然而，直接使用近似模型可能引入建模误差，加剧了逆问题已经存在的病态性。因此，在有效实施这些方法中，平衡准确性和效率至关重要。为此，我们开发了一个自适应操作员学习框架，可以通过强制在局部区域中准确拟合的代理逐渐减少建模误差。这是通过使用贪婪算法选择的自适应点在反演过程中对预训练的近似模型进行微调来实现的，该算法只需要少量的正向模型评估。
 
-    We study the identification and estimation of long-term treatment effects when both experimental and observational data are available. Since the long-term outcome is observed only after a long delay, it is not measured in the experimental data, but only recorded in the observational data. However, both types of data include observations of some short-term outcomes. In this paper, we uniquely tackle the challenge of persistent unmeasured confounders, i.e., some unmeasured confounders that can simultaneously affect the treatment, short-term outcomes and the long-term outcome, noting that they invalidate identification strategies in previous literature. To address this challenge, we exploit the sequential structure of multiple short-term outcomes, and develop three novel identification strategies for the average long-term treatment effect. We further propose three corresponding estimators and prove their asymptotic consistency and asymptotic normality. We finally apply our methods to esti
+    The fundamental computational issues in Bayesian inverse problems (BIPs) governed by partial differential equations (PDEs) stem from the requirement of repeated forward model evaluations. A popular strategy to reduce such cost is to replace expensive model simulations by computationally efficient approximations using operator learning, motivated by recent progresses in deep learning. However, using the approximated model directly may introduce a modeling error, exacerbating the already ill-posedness of inverse problems. Thus, balancing between accuracy and efficiency is essential for the effective implementation of such approaches. To this end, we develop an adaptive operator learning framework that can reduce modeling error gradually by forcing the surrogate to be accurate in local areas. This is accomplished by fine-tuning the pre-trained approximate model during the inversion process with adaptive points selected by a greedy algorithm, which requires only a few forward model evaluat
+    
+[^3]: 同时降维：一种数据高效的多模态表示学习方法
+
+    Simultaneous Dimensionality Reduction: A Data Efficient Approach for Multimodal Representations Learning. (arXiv:2310.04458v1 [stat.ML])
+
+    [http://arxiv.org/abs/2310.04458](http://arxiv.org/abs/2310.04458)
+
+    该论文介绍了一种数据高效的多模态表示学习方法，探索了独立降维和同时降维两种方法，并通过生成线性模型评估了其相对准确性和数据集大小要求。
+
+    
+
+    本文探索了两种主要的降维方法：独立降维(IDR)和同时降维(SDR)。在IDR方法中，每个模态都被独立压缩，力图保留每个模态内的尽可能多的变化。相反，在SDR中，同时压缩模态以最大化减少描述之间的协变性，同时对保留单个变化的程度不太关注。典型的例子包括偏最小二乘法和典型相关分析。虽然这些降维方法是统计学的主要方法，但它们的相对精度和数据集大小要求尚不清楚。我们引入了一个生成线性模型来合成具有已知方差和协方差结构的多模态数据，以研究这些问题。我们评估了协方差的重构准确性。
+
+    We explore two primary classes of approaches to dimensionality reduction (DR): Independent Dimensionality Reduction (IDR) and Simultaneous Dimensionality Reduction (SDR). In IDR methods, of which Principal Components Analysis is a paradigmatic example, each modality is compressed independently, striving to retain as much variation within each modality as possible. In contrast, in SDR, one simultaneously compresses the modalities to maximize the covariation between the reduced descriptions while paying less attention to how much individual variation is preserved. Paradigmatic examples include Partial Least Squares and Canonical Correlations Analysis. Even though these DR methods are a staple of statistics, their relative accuracy and data set size requirements are poorly understood. We introduce a generative linear model to synthesize multimodal data with known variance and covariance structures to examine these questions. We assess the accuracy of the reconstruction of the covariance s
+    
+[^4]: 方差减少的分布式鲁棒Q-learning的样本复杂度
+
+    Sample Complexity of Variance-reduced Distributionally Robust Q-learning. (arXiv:2305.18420v1 [cs.LG])
+
+    [http://arxiv.org/abs/2305.18420](http://arxiv.org/abs/2305.18420)
+
+    本文提出了两种新颖的无模型算法，为动态决策面对分布变化问题提供了鲁棒的解决方案，并通过将Q-learning与方差减少技术相结合，实现了样本复杂度的有效控制。
+
+    
+
+    在强化学习的理论和应用中，面对分布转移的动态决策是基本问题，因为数据收集所基于的环境分布可能会不同于模型部署所基于的分布。本文提出了两种新颖的无模型算法，即分布式鲁棒Q-learning和它的方差减少对应算法，能够高效地学习鲁棒策略，尽管会面对分布变化。这些算法旨在将带有Kullback-Leibler不确定性集的无限时域$\gamma$-折扣鲁棒马尔科夫决策过程的$q$-函数以元素$\epsilon$-精度有效逼近。进一步地，方差减少的分布式鲁棒Q-learning将同步Q-learning与方差减少技术相结合，以增强其性能，并且我们建立了它达到$ \tilde O(|S||A|(1-\gamma)^{-4}\epsilon^{-4}$的最小最大样本复杂度上界。
+
+    Dynamic decision making under distributional shifts is of fundamental interest in theory and applications of reinforcement learning: The distribution of the environment on which the data is collected can differ from that of the environment on which the model is deployed. This paper presents two novel model-free algorithms, namely the distributionally robust Q-learning and its variance-reduced counterpart, that can effectively learn a robust policy despite distributional shifts. These algorithms are designed to efficiently approximate the $q$-function of an infinite-horizon $\gamma$-discounted robust Markov decision process with Kullback-Leibler uncertainty set to an entry-wise $\epsilon$-degree of precision. Further, the variance-reduced distributionally robust Q-learning combines the synchronous Q-learning with variance-reduction techniques to enhance its performance. Consequently, we establish that it attains a minmax sample complexity upper bound of $\tilde O(|S||A|(1-\gamma)^{-4}\e
+    
+[^5]: Tikhonov和RKHS正则化的小噪声分析
+
+    Small noise analysis for Tikhonov and RKHS regularizations. (arXiv:2305.11055v1 [stat.ML])
+
+    [http://arxiv.org/abs/2305.11055](http://arxiv.org/abs/2305.11055)
+
+    该研究建立了一个小噪声分析框架，揭示了传统L2正则化范数的潜在不稳定性，并提出了一种自适应分数阶RKHS正则化器类来解决不稳定性，这些正则化器始终产生最佳的收敛速率。
+
+    
+
+    正则化在机器学习和反问题中起着至关重要的作用。然而，各种正则化范数的基本比较分析仍然未解决。我们建立了一个小噪声分析框架，以评估Tikhonov和RKHS正则化范数在高斯噪声的不适定线性反问题中的效果。该框架研究了正则化估计器在小噪声极限下的收敛速率，并揭示了传统L2正则化的潜在不稳定性。我们通过提出一种创新的自适应分数阶RKHS正则化器类来解决这种不稳定性，通过调整分数光滑度参数，该类覆盖了L2 Tikhonov和RKHS正则化器。一个令人惊奇的观点是，通过这些分数阶RKHS进行过度平滑始终产生最佳的收敛速率，但最佳的超参数可能衰减得太快而无法在实践中进行选择。
+
+    Regularization plays a pivotal role in ill-posed machine learning and inverse problems. However, the fundamental comparative analysis of various regularization norms remains open. We establish a small noise analysis framework to assess the effects of norms in Tikhonov and RKHS regularizations, in the context of ill-posed linear inverse problems with Gaussian noise. This framework studies the convergence rates of regularized estimators in the small noise limit and reveals the potential instability of the conventional L2-regularizer. We solve such instability by proposing an innovative class of adaptive fractional RKHS regularizers, which covers the L2 Tikhonov and RKHS regularizations by adjusting the fractional smoothness parameter. A surprising insight is that over-smoothing via these fractional RKHSs consistently yields optimal convergence rates, but the optimal hyper-parameter may decay too fast to be selected in practice.
     
 

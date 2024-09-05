@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.RO</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.RO</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.RO</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.RO</description><item><title>MOKA&#26041;&#27861;&#21033;&#29992;&#35270;&#35273;&#35821;&#35328;&#27169;&#22411;&#35299;&#20915;&#26426;&#22120;&#20154;&#25805;&#20316;&#20219;&#21153;&#65292;&#23454;&#29616;&#20102;&#24320;&#25918;&#35789;&#27719;&#30340;&#26426;&#22120;&#20154;&#25805;&#20316;&#12290;</title><link>https://arxiv.org/abs/2403.03174</link><description>&lt;p&gt;
+MOKA&#65306;&#22522;&#20110;&#26631;&#35760;&#30340;&#35270;&#35273;&#25552;&#31034;&#23454;&#29616;&#24320;&#25918;&#35789;&#27719;&#30340;&#26426;&#22120;&#20154;&#25805;&#20316;
+&lt;/p&gt;
+&lt;p&gt;
+MOKA: Open-Vocabulary Robotic Manipulation through Mark-Based Visual Prompting
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.03174
+&lt;/p&gt;
+&lt;p&gt;
+MOKA&#26041;&#27861;&#21033;&#29992;&#35270;&#35273;&#35821;&#35328;&#27169;&#22411;&#35299;&#20915;&#26426;&#22120;&#20154;&#25805;&#20316;&#20219;&#21153;&#65292;&#23454;&#29616;&#20102;&#24320;&#25918;&#35789;&#27719;&#30340;&#26426;&#22120;&#20154;&#25805;&#20316;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#24320;&#25918;&#35789;&#27719;&#30340;&#27867;&#21270;&#35201;&#27714;&#26426;&#22120;&#20154;&#31995;&#32479;&#25191;&#34892;&#28041;&#21450;&#22797;&#26434;&#21644;&#22810;&#26679;&#21270;&#29615;&#22659;&#20197;&#21450;&#20219;&#21153;&#30446;&#26631;&#30340;&#20219;&#21153;&#12290;&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#21517;&#20026;MOKA&#65288;Marking Open-vocabulary Keypoint Affordances&#65289;&#30340;&#26041;&#27861;&#65292;&#21033;&#29992;&#35270;&#35273;&#35821;&#35328;&#27169;&#22411;&#65288;VLMs&#65289;&#26469;&#35299;&#20915;&#30001;&#33258;&#30001;&#24418;&#24335;&#35821;&#35328;&#25551;&#36848;&#25351;&#23450;&#30340;&#26426;&#22120;&#20154;&#25805;&#20316;&#20219;&#21153;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.03174v1 Announce Type: cross  Abstract: Open-vocabulary generalization requires robotic systems to perform tasks involving complex and diverse environments and task goals. While the recent advances in vision language models (VLMs) present unprecedented opportunities to solve unseen problems, how to utilize their emergent capabilities to control robots in the physical world remains an open question. In this paper, we present MOKA (Marking Open-vocabulary Keypoint Affordances), an approach that employs VLMs to solve robotic manipulation tasks specified by free-form language descriptions. At the heart of our approach is a compact point-based representation of affordance and motion that bridges the VLM's predictions on RGB images and the robot's motions in the physical world. By prompting a VLM pre-trained on Internet-scale data, our approach predicts the affordances and generates the corresponding motions by leveraging the concept understanding and commonsense knowledge from br
+&lt;/p&gt;</description></item></channel></rss>

@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Emergence of the SVD as an interpretable factorization in deep learning for inverse problems.](http://arxiv.org/abs/2301.07820) | 深度学习中的奇异值分解（SVD）在逆问题中成为可解释的因子化工具，通过与解密变换结合，可以用来解释神经网络（NN）在噪声参数估计问题中编码信号模型的结构 |
+| [^1] | [Fast and interpretable Support Vector Classification based on the truncated ANOVA decomposition](https://arxiv.org/abs/2402.02438) | 基于截断ANOVA分解的快速可解释支持向量分类法能够通过使用特征映射和少量维度的多变量基函数来快速且准确地进行高维散乱数据的分类。 |
+| [^2] | [Adaptive operator learning for infinite-dimensional Bayesian inverse problems.](http://arxiv.org/abs/2310.17844) | 该论文提出了一种自适应操作员学习框架，通过使用贪婪算法选择自适应点对预训练的近似模型进行微调，逐渐减少建模误差。这种方法可以在准确性和效率之间取得平衡，有助于有效解决贝叶斯逆问题中的计算问题。 |
 
 # 详细
 
-[^1]: 深度学习中奇异值分解（SVD）作为可解释的因子化的出现在逆问题中
+[^1]: 基于截断ANOVA分解的快速可解释支持向量分类法
 
-    Emergence of the SVD as an interpretable factorization in deep learning for inverse problems. (arXiv:2301.07820v2 [cs.LG] UPDATED)
+    Fast and interpretable Support Vector Classification based on the truncated ANOVA decomposition
 
-    [http://arxiv.org/abs/2301.07820](http://arxiv.org/abs/2301.07820)
+    [https://arxiv.org/abs/2402.02438](https://arxiv.org/abs/2402.02438)
 
-    深度学习中的奇异值分解（SVD）在逆问题中成为可解释的因子化工具，通过与解密变换结合，可以用来解释神经网络（NN）在噪声参数估计问题中编码信号模型的结构
+    基于截断ANOVA分解的快速可解释支持向量分类法能够通过使用特征映射和少量维度的多变量基函数来快速且准确地进行高维散乱数据的分类。
 
     
 
-    在深度学习框架下，我们展示了权重矩阵的奇异值分解（SVD）作为神经网络（NN）解释工具的出现，当与解密变换相结合时，这是一种最近针对噪声参数估计神经网络的解释技术。通过考虑传递给解密最小化问题的数据的平均效果，我们证明了在大数据极限下，解密变换可以用NN权重的SVD和输入自相关矩阵来表示。利用这个事实，我们展示了在噪声参数估计问题类中，SVD可以是训练网络编码信号模型的结构。我们用线性和非线性信号模型的实证证据进一步支持了我们的理论发现。我们的结果还揭示了数学理论和语义发展之间的联系
+    支持向量机（SVM）是在散乱数据上进行分类的重要工具，在高维空间中通常需要处理许多数据点。我们提出使用基于三角函数或小波的特征映射来解决SVM的原始形式。在小维度设置中，快速傅里叶变换（FFT）和相关方法是处理所考虑基函数的强大工具。随着维度的增长，由于维数灾难，传统的基于FFT的方法变得低效。因此，我们限制自己使用多变量基函数，每个基函数只依赖于少数几个维度。这是由于效应的稀疏性和最近关于函数从散乱数据中的截断方差分解的重建的结果所带来的动机，使得生成的模型在特征的重要性以及它们的耦合方面具有可解释性。
 
-    Within the framework of deep learning we demonstrate the emergence of the singular value decomposition (SVD) of the weight matrix as a tool for interpretation of neural networks (NN) when combined with the descrambling transformation--a recently-developed technique for addressing interpretability in noisy parameter estimation neural networks \cite{amey2021neural}. By considering the averaging effect of the data passed to the descrambling minimization problem, we show that descrambling transformations--in the large data limit--can be expressed in terms of the SVD of the NN weights and the input autocorrelation matrix. Using this fact, we show that within the class of noisy parameter estimation problems the SVD may be the structure through which trained networks encode a signal model. We substantiate our theoretical findings with empirical evidence from both linear and non-linear signal models. Our results also illuminate the connections between a mathematical theory of semantic developm
+    Support Vector Machines (SVMs) are an important tool for performing classification on scattered data, where one usually has to deal with many data points in high-dimensional spaces. We propose solving SVMs in primal form using feature maps based on trigonometric functions or wavelets. In small dimensional settings the Fast Fourier Transform (FFT) and related methods are a powerful tool in order to deal with the considered basis functions. For growing dimensions the classical FFT-based methods become inefficient due to the curse of dimensionality. Therefore, we restrict ourselves to multivariate basis functions, each one of them depends only on a small number of dimensions. This is motivated by the well-known sparsity of effects and recent results regarding the reconstruction of functions from scattered data in terms of truncated analysis of variance (ANOVA) decomposition, which makes the resulting model even interpretable in terms of importance of the features as well as their coupling
+    
+[^2]: 自适应操作员学习用于无限维贝叶斯逆问题
+
+    Adaptive operator learning for infinite-dimensional Bayesian inverse problems. (arXiv:2310.17844v1 [math.NA])
+
+    [http://arxiv.org/abs/2310.17844](http://arxiv.org/abs/2310.17844)
+
+    该论文提出了一种自适应操作员学习框架，通过使用贪婪算法选择自适应点对预训练的近似模型进行微调，逐渐减少建模误差。这种方法可以在准确性和效率之间取得平衡，有助于有效解决贝叶斯逆问题中的计算问题。
+
+    
+
+    贝叶斯逆问题(BIPs)中的基本计算问题源于需要重复进行正向模型评估的要求。减少这种成本的一种常见策略是通过操作员学习使用计算效率高的近似方法替代昂贵的模型模拟，这受到了深度学习的最新进展的启发。然而，直接使用近似模型可能引入建模误差，加剧了逆问题已经存在的病态性。因此，在有效实施这些方法中，平衡准确性和效率至关重要。为此，我们开发了一个自适应操作员学习框架，可以通过强制在局部区域中准确拟合的代理逐渐减少建模误差。这是通过使用贪婪算法选择的自适应点在反演过程中对预训练的近似模型进行微调来实现的，该算法只需要少量的正向模型评估。
+
+    The fundamental computational issues in Bayesian inverse problems (BIPs) governed by partial differential equations (PDEs) stem from the requirement of repeated forward model evaluations. A popular strategy to reduce such cost is to replace expensive model simulations by computationally efficient approximations using operator learning, motivated by recent progresses in deep learning. However, using the approximated model directly may introduce a modeling error, exacerbating the already ill-posedness of inverse problems. Thus, balancing between accuracy and efficiency is essential for the effective implementation of such approaches. To this end, we develop an adaptive operator learning framework that can reduce modeling error gradually by forcing the surrogate to be accurate in local areas. This is accomplished by fine-tuning the pre-trained approximate model during the inversion process with adaptive points selected by a greedy algorithm, which requires only a few forward model evaluat
     
 
