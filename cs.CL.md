@@ -2,142 +2,127 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Towards Measuring and Modeling "Culture" in LLMs: A Survey](https://arxiv.org/abs/2403.15412) | 这项研究调查了39篇最新论文，旨在研究大型语言模型中的文化表达和包容性，发现当前研究未对“文化”进行定义，而是在特定设计的数据集上对模型进行探究，研究了某些“文化”的方面，留下许多未被探究的有趣和重要方面，如语义领域和关于性。 |
-| [^2] | [Simple and Scalable Strategies to Continually Pre-train Large Language Models](https://arxiv.org/abs/2403.08763) | 通过简单和可扩展的学习率调整、重放数据的方法，可以在不重新训练的情况下，持续预训练大型语言模型以匹配完全重新训练时的性能。 |
-| [^3] | [Persian Slang Text Conversion to Formal and Deep Learning of Persian Short Texts on Social Media for Sentiment Classification](https://arxiv.org/abs/2403.06023) | 通过提供PSC工具将波斯语俚语文本转换为正式文本，结合深度学习方法进行波斯语短文本的情感学习。 |
-| [^4] | [AI-generated text boundary detection with RoFT](https://arxiv.org/abs/2311.08349) | 使用RoFT进行人工智能生成文本边界检测的研究揭示了基于困惑度的方法在跨领域和跨模型设置中更加稳健。 |
-| [^5] | [Transformers as Recognizers of Formal Languages: A Survey on Expressivity.](http://arxiv.org/abs/2311.00208) | 本文对transformers在形式语言识别领域的相关研究进行了全面调查，为理解其表达能力提供了一个统一的框架。 |
-| [^6] | [Correction with Backtracking Reduces Hallucination in Summarization.](http://arxiv.org/abs/2310.16176) | 本文介绍了一种简单而有效的技术，CoBa，用于减少摘要中的幻觉。该方法通过测量条件词概率和上下文词距离的统计信息进行幻觉检测，并通过直观的回溯法进行减轻。实验证明，CoBa在减少摘要幻觉方面是有效且高效的。 |
-| [^7] | [Large Language Models for Information Retrieval: A Survey.](http://arxiv.org/abs/2308.07107) | 本综述将大型语言模型（LLMs）在信息检索中的发展进行了综述，探讨了其在捕捉上下文信号和语义细微之处方面的优势和挑战，以及与传统检索方法的结合的重要性。 |
-| [^8] | [A Sentence is Worth a Thousand Pictures: Can Large Language Models Understand Human Language?.](http://arxiv.org/abs/2308.00109) | 本文分析了大型语言模型作为理论信息丰富表示和非理论强大机械工具的贡献，并指出当前的模型发展和利用中仍然缺乏关键能力。 |
-| [^9] | [CADGE: Context-Aware Dialogue Generation Enhanced with Graph-Structured Knowledge Aggregation.](http://arxiv.org/abs/2305.06294) | 本文提出了一种基于上下文感知的图注意力模型，可以将上下文增强的知识聚合过程与相关知识图的全局特征有效融合，将增强的图结构知识集成到基于上下文感知的对话生成模型中。实验证明，该模型在自动度量和人类评估方面均优于现有方法。 |
+| [^1] | [Improving Speaker Assignment in Speaker-Attributed ASR for Real Meeting Applications](https://arxiv.org/abs/2403.06570) | 该研究提出了一种优化实际会议应用中Speaker-Attributed ASR系统的方法，通过使用语音活动检测输出来微调模型以减少说话者错误率，并探讨了增强说话者嵌入模板提取的策略。 |
+| [^2] | [Aligning Large Language Models to a Domain-specific Graph Database](https://arxiv.org/abs/2402.16567) | 该论文提出了一种将大型语言模型对齐到特定领域的图数据库的方法，通过利用ChatGPT生成NL-GQL数据对并微调LLMs，实现了两者之间的对齐。 |
+| [^3] | [Cost-Efficient Subjective Task Annotation and Modeling through Few-Shot Annotator Adaptation](https://arxiv.org/abs/2402.14101) | 引入了一个新颖的框架，通过少样本标注者调适来实现在主观任务中进行高效标注与建模，最大程度减少标注预算，同时最大化每个标注者的预测性能。 |
+| [^4] | [Exploring Group and Symmetry Principles in Large Language Models](https://arxiv.org/abs/2402.06120) | 本文提出了一个基于群组和对称性原理的框架，以评估大型语言模型的推理能力。通过研究四个群组属性，发现这些模型在保持群组属性方面表现不佳。 |
+| [^5] | [Language-Guided World Models: A Model-Based Approach to AI Control](https://arxiv.org/abs/2402.01695) | 语言引导的世界模型（LWMs）是一种基于模型的人工智能控制方法，它通过阅读语言描述来捕捉环境动态，提高了代理的沟通效率，并允许人类通过简洁的语言反馈同时改变他们在多个任务上的行为。 |
+| [^6] | [Kun: Answer Polishment for Chinese Self-Alignment with Instruction Back-Translation.](http://arxiv.org/abs/2401.06477) | Kun是一种使用指令反向翻译和答案优化的方法，用于创建高质量的指导调整数据集，该方法不依赖于手动注释，通过自我筛选过程来改善和选择最有效的指令-输出对。它的主要创新在于通过算法改进提高数据的保留和清晰度，并通过创新的数据生成方法减少了手动注释的依赖。 |
+| [^7] | [Unleashing the potential of prompt engineering in Large Language Models: a comprehensive review.](http://arxiv.org/abs/2310.14735) | 这篇论文解释了提示工程在释放大型语言模型能力方面的关键作用，探讨了不同的提示方法以及外部插件如何协助减少机器幻想，并指出了未来研究方向的重要性。 |
+| [^8] | [PESTS: Persian_English Cross Lingual Corpus for Semantic Textual Similarity.](http://arxiv.org/abs/2305.07893) | 本研究提出了跨语言的语义相似性模型PESTS，并通过波斯语-英语的跨语言语料库来验证模型的准确性。 |
 
 # 详细
 
-[^1]: 在LLMs中测量和建模“文化”：一项调查
+[^1]: 改进实际会议应用中说话者归因ASR中的说话者分配
 
-    Towards Measuring and Modeling "Culture" in LLMs: A Survey
+    Improving Speaker Assignment in Speaker-Attributed ASR for Real Meeting Applications
 
-    [https://arxiv.org/abs/2403.15412](https://arxiv.org/abs/2403.15412)
+    [https://arxiv.org/abs/2403.06570](https://arxiv.org/abs/2403.06570)
 
-    这项研究调查了39篇最新论文，旨在研究大型语言模型中的文化表达和包容性，发现当前研究未对“文化”进行定义，而是在特定设计的数据集上对模型进行探究，研究了某些“文化”的方面，留下许多未被探究的有趣和重要方面，如语义领域和关于性。
-
-    
-
-    我们呈现了对39篇最新论文的调查，旨在研究大型语言模型中的文化表达和包容性。我们观察到，没有一篇研究定义“文化”，这是一个复杂、多层面的概念；相反，它们在一些特别设计的数据集上对模型进行探究，这些数据集代表了某些“文化”的方面。我们将这些方面称为文化的代理，并将它们组织在人口统计、语义和语言文化交互代理的三个维度上。我们还对采用的探查方法进行了分类。我们的分析表明，只有“文化”的某些方面，如价值观和目标，被研究了，留下了几个其他有趣且重要的方面，特别是大量语义领域和关于性（Hershcovich等人，2022）的未被探究。另外两个关键的空白是目前方法的鲁棒性和情境性的缺乏。基于这些观察结果，
-
-    arXiv:2403.15412v1 Announce Type: cross  Abstract: We present a survey of 39 recent papers that aim to study cultural representation and inclusion in large language models. We observe that none of the studies define "culture," which is a complex, multifaceted concept; instead, they probe the models on some specially designed datasets which represent certain aspects of "culture." We call these aspects the proxies of cultures, and organize them across three dimensions of demographic, semantic and linguistic-cultural interaction proxies. We also categorize the probing methods employed. Our analysis indicates that only certain aspects of "culture," such as values and objectives, have been studied, leaving several other interesting and important facets, especially the multitude of semantic domains (Thompson et al., 2020) and aboutness (Hershcovich et al., 2022), unexplored. Two other crucial gaps are the lack of robustness and situatedness of the current methods. Based on these observations
-    
-[^2]: 持续预训练大型语言模型的简单可扩展策略
-
-    Simple and Scalable Strategies to Continually Pre-train Large Language Models
-
-    [https://arxiv.org/abs/2403.08763](https://arxiv.org/abs/2403.08763)
-
-    通过简单和可扩展的学习率调整、重放数据的方法，可以在不重新训练的情况下，持续预训练大型语言模型以匹配完全重新训练时的性能。
+    该研究提出了一种优化实际会议应用中Speaker-Attributed ASR系统的方法，通过使用语音活动检测输出来微调模型以减少说话者错误率，并探讨了增强说话者嵌入模板提取的策略。
 
     
 
-    大型语言模型（LLMs）通常在数十亿的标记上进行常规预训练，一旦有新数据可用就重新开始该过程。一个更有效率的解决方案是持续预训练这些模型，与重新训练相比能节省大量计算资源。然而，新数据引起的分布转移通常会导致在以前数据上降低性能或无法适应新数据。在本工作中，我们展示了一种简单且可扩展的学习率（LR）重新升温、LR重新衰减和重放上一数据的组合足以与完全从头开始重新训练在所有可用数据上的性能相匹配，从最终损失和语言模型（LM）评估基准的角度衡量。具体而言，我们展示了在两个常用的LLM预训练数据集（英语→英语）之间的弱但现实的分布转移以及更强烈的分布转移（英语→德语）下的情况。
+    过去关于端到端会议转录的研究主要集中在模型架构上，并且大多数是在模拟会议数据上进行评估的。我们提出了一项旨在优化Speaker-Attributed ASR (SA-ASR)系统在现实场景中（如AMI会议语料库）使用的研究，以改进语音段的说话者分配。首先，我们提出了一个针对涉及语音活动检测（VAD）、说话者辨识（SD）和SA-ASR的现实生活应用的流程。其次，我们提倡使用VAD输出段来微调SA-ASR模型，考虑到在测试期间它也被应用于VAD段，并展示了这导致说话者错误率（SER）相对减少高达28％。最后，我们探讨增强从SD输出中提取说话者嵌入模板的策略，这些模板作为SA-ASR系统的输入。我们证明，将它们从SD输出中提取而不是从注释的说话者段中提取，会导致一种...
 
-    arXiv:2403.08763v1 Announce Type: cross  Abstract: Large language models (LLMs) are routinely pre-trained on billions of tokens, only to start the process over again once new data becomes available. A much more efficient solution is to continually pre-train these models, saving significant compute compared to re-training. However, the distribution shift induced by new data typically results in degraded performance on previous data or poor adaptation to the new data. In this work, we show that a simple and scalable combination of learning rate (LR) re-warming, LR re-decaying, and replay of previous data is sufficient to match the performance of fully re-training from scratch on all available data, as measured by final loss and language model (LM) evaluation benchmarks. Specifically, we show this for a weak but realistic distribution shift between two commonly used LLM pre-training datasets (English$\rightarrow$English) and a stronger distribution shift (English$\rightarrow$German) at th
+    arXiv:2403.06570v1 Announce Type: new  Abstract: Past studies on end-to-end meeting transcription have focused on model architecture and have mostly been evaluated on simulated meeting data. We present a novel study aiming to optimize the use of a Speaker-Attributed ASR (SA-ASR) system in real-life scenarios, such as the AMI meeting corpus, for improved speaker assignment of speech segments. First, we propose a pipeline tailored to real-life applications involving Voice Activity Detection (VAD), Speaker Diarization (SD), and SA-ASR. Second, we advocate using VAD output segments to fine-tune the SA-ASR model, considering that it is also applied to VAD segments during test, and show that this results in a relative reduction of Speaker Error Rate (SER) up to 28%. Finally, we explore strategies to enhance the extraction of the speaker embedding templates used as inputs by the SA-ASR system. We show that extracting them from SD output rather than annotated speaker segments results in a rela
     
-[^3]: 波斯语俚语文本转换为正式文本以及社交媒体上波斯语短文本的深度学习用于情感分类
+[^2]: 将大型语言模型对齐到特定领域的图数据库
 
-    Persian Slang Text Conversion to Formal and Deep Learning of Persian Short Texts on Social Media for Sentiment Classification
+    Aligning Large Language Models to a Domain-specific Graph Database
 
-    [https://arxiv.org/abs/2403.06023](https://arxiv.org/abs/2403.06023)
+    [https://arxiv.org/abs/2402.16567](https://arxiv.org/abs/2402.16567)
 
-    通过提供PSC工具将波斯语俚语文本转换为正式文本，结合深度学习方法进行波斯语短文本的情感学习。
-
-    
-
-    缺乏适合分析波斯语会话文本的工具使得对这些文本（包括情感分析）的各种分析变得困难。本研究尝试通过提供PSC（波斯语俚语转换器），将会话文本转换为正式文本，并结合最新和最佳的深度学习方法，使机器更容易理解这些文本，更好地进行波斯语短文本的情感学习。
-
-    arXiv:2403.06023v1 Announce Type: new  Abstract: The lack of a suitable tool for the analysis of conversational texts in the Persian language has made various analyses of these texts, including Sentiment Analysis, difficult. In this research, we tried to make the understanding of these texts easier for the machine by providing PSC, Persian Slang Converter, a tool for converting conversational texts into formal ones, and by using the most up-to-date and best deep learning methods along with the PSC, the sentiment learning of short Persian language texts for the machine in a better way. be made More than 10 million unlabeled texts from various social networks and movie subtitles (as Conversational texts) and about 10 million news texts (as formal texts) have been used for training unsupervised models and formal implementation of the tool. 60,000 texts from the comments of Instagram social network users with positive, negative, and neutral labels are considered supervised data for trainin
-    
-[^4]: 使用RoFT进行人工智能生成文本边界检测
-
-    AI-generated text boundary detection with RoFT
-
-    [https://arxiv.org/abs/2311.08349](https://arxiv.org/abs/2311.08349)
-
-    使用RoFT进行人工智能生成文本边界检测的研究揭示了基于困惑度的方法在跨领域和跨模型设置中更加稳健。
+    该论文提出了一种将大型语言模型对齐到特定领域的图数据库的方法，通过利用ChatGPT生成NL-GQL数据对并微调LLMs，实现了两者之间的对齐。
 
     
 
-    由于大语言模型的快速发展，人们越来越经常遇到可能一开始是由人类编写但之后是由机器生成的文本。检测这些文本中人类编写和机器生成部分之间的边界是一个具有挑战性且在文献中尚未受到足够关注的问题。我们试图填补这一差距，并研究几种方法来将最先进的人工文本检测分类器调整为边界检测设置。我们将所有检测器推向极限，在包含多个主题的短文本的Real or Fake文本基准集上进行测试，并包括各种语言模型的生成。我们利用这种多样性深入研究所有检测器在跨领域和跨模型设置中的鲁棒性，以提供未来研究的基线和见解。特别地，我们发现基于困惑度的边界检测方法倾向于更加稳健。
+    图数据库（Graph DB）被广泛应用于金融、社交网络和医药等各个领域。然而，将自然语言（NL）转换为图查询语言（GQL），通常称为NL2GQL，由于其固有复杂性和专业化特性而变得具有挑战性。一些方法试图利用大型语言模型（LLMs）来解决类似的任务，如文本转SQL。然而，在特定领域的NL2GQL任务中，缺乏特定领域的NL-GQL数据对使得难以建立LLMs和图数据库之间的对齐。为了解决这一挑战，我们提出了一个明确定义的流水线。具体地，我们利用ChatGPT基于给定的图数据库自我生成NL-GQL数据对。然后，我们使用创建的数据来对LLMs进行微调，从而实现LLMs与图数据库之间的对齐。此外，在推断过程中，我们提出了一种提取相关信息的方法。
 
-    arXiv:2311.08349v2 Announce Type: replace  Abstract: Due to the rapid development of large language models, people increasingly often encounter texts that may start as written by a human but continue as machine-generated. Detecting the boundary between human-written and machine-generated parts of such texts is a challenging problem that has not received much attention in literature. We attempt to bridge this gap and examine several ways to adapt state of the art artificial text detection classifiers to the boundary detection setting. We push all detectors to their limits, using the Real or Fake text benchmark that contains short texts on several topics and includes generations of various language models. We use this diversity to deeply examine the robustness of all detectors in cross-domain and cross-model settings to provide baselines and insights for future research. In particular, we find that perplexity-based approaches to boundary detection tend to be more robust to peculiarities 
+    arXiv:2402.16567v1 Announce Type: new  Abstract: Graph Databases (Graph DB) are widely applied in various fields, including finance, social networks, and medicine. However, translating Natural Language (NL) into the Graph Query Language (GQL), commonly known as NL2GQL, proves to be challenging due to its inherent complexity and specialized nature. Some approaches have sought to utilize Large Language Models (LLMs) to address analogous tasks like text2SQL. Nevertheless, when it comes to NL2GQL taskson a particular domain, the absence of domain-specific NL-GQL data pairs makes it difficult to establish alignment between LLMs and the graph DB. To address this challenge, we propose a well-defined pipeline. Specifically, we utilize ChatGPT to create NL-GQL data pairs based on the given graph DB with self-instruct. Then, we use the created data to fine-tune LLMs, thereby achieving alignment between LLMs and the graph DB. Additionally, during inference, we propose a method that extracts relev
     
-[^5]: Transformers作为形式语言识别器：关于表达能力的调查
+[^3]: 通过少样本标注者调适实现高效主观任务标注与建模
 
-    Transformers as Recognizers of Formal Languages: A Survey on Expressivity. (arXiv:2311.00208v1 [cs.LG])
+    Cost-Efficient Subjective Task Annotation and Modeling through Few-Shot Annotator Adaptation
 
-    [http://arxiv.org/abs/2311.00208](http://arxiv.org/abs/2311.00208)
+    [https://arxiv.org/abs/2402.14101](https://arxiv.org/abs/2402.14101)
 
-    本文对transformers在形式语言识别领域的相关研究进行了全面调查，为理解其表达能力提供了一个统一的框架。
-
-    
-
-    随着transformers在自然语言处理中的重要性日益突出，一些研究人员开始从理论上探讨它们能否解决问题，将问题视为形式语言。探索这类问题将有助于比较transformers与其他模型以及不同变种之间的差异，适用于各种任务。近年来，在这个子领域的工作取得了相当大的进展。本文对这方面的工作进行了全面调查，记录了不同结果背后的各种假设，并提供了一个统一的框架，以协调看似相互矛盾的研究结果。
-
-    As transformers have gained prominence in natural language processing, some researchers have investigated theoretically what problems they can and cannot solve, by treating problems as formal languages. Exploring questions such as this will help to compare transformers with other models, and transformer variants with one another, for various tasks. Work in this subarea has made considerable progress in recent years. Here, we undertake a comprehensive survey of this work, documenting the diverse assumptions that underlie different results and providing a unified framework for harmonizing seemingly contradictory findings.
-    
-[^6]: 通过回溯法纠正，减少摘要中的幻觉
-
-    Correction with Backtracking Reduces Hallucination in Summarization. (arXiv:2310.16176v1 [cs.CL])
-
-    [http://arxiv.org/abs/2310.16176](http://arxiv.org/abs/2310.16176)
-
-    本文介绍了一种简单而有效的技术，CoBa，用于减少摘要中的幻觉。该方法通过测量条件词概率和上下文词距离的统计信息进行幻觉检测，并通过直观的回溯法进行减轻。实验证明，CoBa在减少摘要幻觉方面是有效且高效的。
+    引入了一个新颖的框架，通过少样本标注者调适来实现在主观任务中进行高效标注与建模，最大程度减少标注预算，同时最大化每个标注者的预测性能。
 
     
 
-    摘要生成旨在生成源文件的自然语言摘要，既简洁又保留重要元素。尽管最近取得了一些进展，但神经文本摘要模型容易产生幻觉（或更准确地说是混淆），即生成的摘要包含源文件中没有根据的细节。在本文中，我们引入了一种简单而有效的技术，CoBa，用于减少摘要中的幻觉。该方法基于两个步骤：幻觉检测和减轻。我们展示了通过测量有关条件词概率和上下文词距离的简单统计信息可以实现前者。此外，我们还证明了直观的回溯法在减轻幻觉方面的惊人效果。我们在三个文本摘要基准数据集上对所提出的方法进行了全面评估。结果表明，CoBa在减少摘要幻觉方面是有效且高效的。
+    在主观性自然语言处理任务中，由于不存在单一的标准答案，包括不同标注者变得至关重要，因为他们独特的视角显著影响标注。在现实场景中，标注预算通常成为决定数据中包含的视角数量（即标注者）及后续建模的主要因素。我们引入了一个新颖的框架，用于在主观任务中进行标注收集和建模，旨在最大程度地减少标注预算，同时最大化每个标注者的预测性能。我们的框架采用两阶段设计：首先，我们依赖一小组标注者来构建多任务模型，然后，我们通过为每个标注者策略性地标注少量样本，来为新视角增强模型。为了在规模上测试我们的框架，我们介绍并发布了一个独特数据集《道德基础主观语料库》，包含2000个Reddit帖子，由24名标注者进行标注。
 
-    Abstractive summarization aims at generating natural language summaries of a source document that are succinct while preserving the important elements. Despite recent advances, neural text summarization models are known to be susceptible to hallucinating (or more correctly confabulating), that is to produce summaries with details that are not grounded in the source document. In this paper, we introduce a simple yet efficient technique, CoBa, to reduce hallucination in abstractive summarization. The approach is based on two steps: hallucination detection and mitigation. We show that the former can be achieved through measuring simple statistics about conditional word probabilities and distance to context words. Further, we demonstrate that straight-forward backtracking is surprisingly effective at mitigation. We thoroughly evaluate the proposed method with prior art on three benchmark datasets for text summarization. The results show that CoBa is effective and efficient in reducing hall
+    arXiv:2402.14101v1 Announce Type: new  Abstract: In subjective NLP tasks, where a single ground truth does not exist, the inclusion of diverse annotators becomes crucial as their unique perspectives significantly influence the annotations. In realistic scenarios, the annotation budget often becomes the main determinant of the number of perspectives (i.e., annotators) included in the data and subsequent modeling. We introduce a novel framework for annotation collection and modeling in subjective tasks that aims to minimize the annotation budget while maximizing the predictive performance for each annotator. Our framework has a two-stage design: first, we rely on a small set of annotators to build a multitask model, and second, we augment the model for a new perspective by strategically annotating a few samples per annotator. To test our framework at scale, we introduce and release a unique dataset, Moral Foundations Subjective Corpus, of 2000 Reddit posts annotated by 24 annotators for 
     
-[^7]: 信息检索中的大型语言模型：一项综述
+[^4]: 探索大型语言模型中的群组和对称性原理
 
-    Large Language Models for Information Retrieval: A Survey. (arXiv:2308.07107v2 [cs.CL] UPDATED)
+    Exploring Group and Symmetry Principles in Large Language Models
 
-    [http://arxiv.org/abs/2308.07107](http://arxiv.org/abs/2308.07107)
+    [https://arxiv.org/abs/2402.06120](https://arxiv.org/abs/2402.06120)
 
-    本综述将大型语言模型（LLMs）在信息检索中的发展进行了综述，探讨了其在捕捉上下文信号和语义细微之处方面的优势和挑战，以及与传统检索方法的结合的重要性。
-
-    
-
-    作为信息获取的主要手段，信息检索（IR）系统，如搜索引擎，已经融入到我们的日常生活中。这些系统还作为对话、问答和推荐系统的组成部分。IR的发展轨迹从基于词项的方法起步，逐渐发展成与先进的神经模型相融合。尽管神经模型擅长捕捉复杂的上下文信号和语义细微之处，从而改变了IR的格局，但它们仍然面临着数据稀缺、可解释性以及生成上下文合理但潜在不准确响应的挑战。这种演变需要传统方法（如基于词项的稀疏检索方法与快速响应）和现代神经架构（如具有强大语言理解能力的语言模型）的结合。与此同时，大型语言模型（LLMs），如ChatGPT和GPT-4的出现，引起了一场革命
-
-    As a primary means of information acquisition, information retrieval (IR) systems, such as search engines, have integrated themselves into our daily lives. These systems also serve as components of dialogue, question-answering, and recommender systems. The trajectory of IR has evolved dynamically from its origins in term-based methods to its integration with advanced neural models. While the neural models excel at capturing complex contextual signals and semantic nuances, thereby reshaping the IR landscape, they still face challenges such as data scarcity, interpretability, and the generation of contextually plausible yet potentially inaccurate responses. This evolution requires a combination of both traditional methods (such as term-based sparse retrieval methods with rapid response) and modern neural architectures (such as language models with powerful language understanding capacity). Meanwhile, the emergence of large language models (LLMs), typified by ChatGPT and GPT-4, has revolu
-    
-[^8]: 一句话胜千张图片：大型语言模型能理解人类语言吗？
-
-    A Sentence is Worth a Thousand Pictures: Can Large Language Models Understand Human Language?. (arXiv:2308.00109v1 [cs.CL])
-
-    [http://arxiv.org/abs/2308.00109](http://arxiv.org/abs/2308.00109)
-
-    本文分析了大型语言模型作为理论信息丰富表示和非理论强大机械工具的贡献，并指出当前的模型发展和利用中仍然缺乏关键能力。
+    本文提出了一个基于群组和对称性原理的框架，以评估大型语言模型的推理能力。通过研究四个群组属性，发现这些模型在保持群组属性方面表现不佳。
 
     
 
-    人工智能应用在依赖于下一个单词预测的语言相关任务中表现出巨大潜力。当前一代大型语言模型被认为能够达到类人语言表现，并且它们的应用被誉为人工通用智能的关键步骤，同时也是对人类语言认知和神经基础的重大进展的理解。我们分析了大型语言模型作为目标系统的理论信息丰富表示与非理论强大机械工具的贡献，并确定了当前发展和利用这些模型所缺失的关键能力。
+    大型语言模型（LLM）在广泛的应用中展示了令人瞩目的性能，然而评估它们的推理能力仍然是一个重大挑战。在本文中，我们引入了一个以群组和对称性原理为基础的框架，这些原理在物理学和数学等领域发挥着关键作用，并提供了另一种评估它们能力的方式。虽然提出的框架是通用的，为了展示使用这些属性的好处，我们关注算术推理，并研究这些模型在四个群组属性（封闭性、恒等性、逆性和结合性）上的性能。我们的发现表明，在本研究中研究的LLM在不同的测试方案中难以保持群组属性。在封闭性测试中，我们观察到对特定输出的偏见，并在特定的序列长度后从100％的性能迅速下降到0％。它们在恒等性测试中表现不佳，代表了相加得到原数的属性。
 
-    Artificial Intelligence applications show great potential for language-related tasks that rely on next-word prediction. The current generation of large language models have been linked to claims about human-like linguistic performance and their applications are hailed both as a key step towards Artificial General Intelligence and as major advance in understanding the cognitive, and even neural basis of human language. We analyze the contribution of large language models as theoretically informative representations of a target system vs. atheoretical powerful mechanistic tools, and we identify the key abilities that are still missing from the current state of development and exploitation of these models.
+    Large Language Models (LLMs) have demonstrated impressive performance across a wide range of applications; however, assessing their reasoning capabilities remains a significant challenge. In this paper, we introduce a framework grounded in group and symmetry principles, which have played a crucial role in fields such as physics and mathematics, and offer another way to evaluate their capabilities. While the proposed framework is general, to showcase the benefits of employing these properties, we focus on arithmetic reasoning and investigate the performance of these models on four group properties: closure, identity, inverse, and associativity. Our findings reveal that LLMs studied in this work struggle to preserve group properties across different test regimes. In the closure test, we observe biases towards specific outputs and an abrupt degradation in their performance from 100% to 0% after a specific sequence length. They also perform poorly in the identity test, which represents add
     
-[^9]: CADGE：基于图结构知识聚合的上下文感知对话生成
+[^5]: 语言引导的世界模型：一种基于模型的人工智能控制方法
 
-    CADGE: Context-Aware Dialogue Generation Enhanced with Graph-Structured Knowledge Aggregation. (arXiv:2305.06294v1 [cs.CL])
+    Language-Guided World Models: A Model-Based Approach to AI Control
 
-    [http://arxiv.org/abs/2305.06294](http://arxiv.org/abs/2305.06294)
+    [https://arxiv.org/abs/2402.01695](https://arxiv.org/abs/2402.01695)
 
-    本文提出了一种基于上下文感知的图注意力模型，可以将上下文增强的知识聚合过程与相关知识图的全局特征有效融合，将增强的图结构知识集成到基于上下文感知的对话生成模型中。实验证明，该模型在自动度量和人类评估方面均优于现有方法。
+    语言引导的世界模型（LWMs）是一种基于模型的人工智能控制方法，它通过阅读语言描述来捕捉环境动态，提高了代理的沟通效率，并允许人类通过简洁的语言反馈同时改变他们在多个任务上的行为。
 
     
 
-    常识知识（commonsense knowledge）对于自然语言处理任务来说至关重要。现有的方法通常将图知识与传统的图神经网络（GNNs）相结合，导致文本和图知识编码过程在串行流水线中被分离。我们认为，这些分离的表示学习阶段可能对神经网络学习包含在两种输入知识类型中的整体上下文是次优的。在本文中，我们提出了一种新颖的基于上下文感知的图注意力模型（Context-aware GAT），它可以基于上下文增强的知识聚合过程有效地融合相关知识图的全局特征。具体地，我们的框架利用了一种新颖的表示学习方法来处理异构特征——将图知识与文本相结合。据我们所知，这是第一次尝试在连接子图上分层应用图知识聚合以及上下文信息，并将增强的图结构知识集成到基于上下文感知的对话生成模型中。我们在两个基准数据集上的实验证明，所提出的模型在自动度量和人类评估方面均优于现有方法。
+    将概率世界模型安装到人工智能代理中，为人类与这些代理沟通和控制打开了一个高效的渠道。除了更新代理策略，人类还可以修改他们的内部世界模型，以影响代理的决策。然而，当前现有的世界模型难以适应人类，因为它们缺乏自然的通信界面。为了解决这个问题，我们开发了语言引导的世界模型（LWMs），它们可以通过阅读语言描述来捕捉环境动态。这些模型提高了代理的沟通效率，使人类能够通过简洁的语言反馈同时改变他们在多个任务上的行为。它们还使代理能够从最初用于指导人类的文本中进行自我学习。为了促进LWMs的发展，我们设计了一个基于MESSENGER游戏（Hanjie等人，2021）的挑战基准，需要对新场景进行组合泛化。
 
-    Commonsense knowledge is crucial to many natural language processing tasks. Existing works usually incorporate graph knowledge with conventional graph neural networks (GNNs), leading to the text and graph knowledge encoding processes being separated in a serial pipeline. We argue that these separate representation learning stages may be suboptimal for neural networks to learn the overall context contained in both types of input knowledge. In this paper, we propose a novel context-aware graph-attention model (Context-aware GAT), which can effectively incorporate global features of relevant knowledge graphs based on a context-enhanced knowledge aggregation process. Specifically, our framework leverages a novel representation learning approach to process heterogeneous features - combining flattened graph knowledge with text. To the best of our knowledge, this is the first attempt at hierarchically applying graph knowledge aggregation on a connected subgraph in addition to contextual infor
+    Installing probabilistic world models into artificial agents opens an efficient channel for humans to communicate with and control these agents. In addition to updating agent policies, humans can modify their internal world models in order to influence their decisions. The challenge, however, is that currently existing world models are difficult for humans to adapt because they lack a natural communication interface. Aimed at addressing this shortcoming, we develop Language-Guided World Models (LWMs), which can capture environment dynamics by reading language descriptions. These models enhance agent communication efficiency, allowing humans to simultaneously alter their behavior on multiple tasks with concise language feedback. They also enable agents to self-learn from texts originally written to instruct humans. To facilitate the development of LWMs, we design a challenging benchmark based on the game of MESSENGER (Hanjie et al., 2021), requiring compositional generalization to new l
+    
+[^6]: Kun: 使用指令反向翻译的中国自对齐问题的答案优化方法
+
+    Kun: Answer Polishment for Chinese Self-Alignment with Instruction Back-Translation. (arXiv:2401.06477v1 [cs.CL])
+
+    [http://arxiv.org/abs/2401.06477](http://arxiv.org/abs/2401.06477)
+
+    Kun是一种使用指令反向翻译和答案优化的方法，用于创建高质量的指导调整数据集，该方法不依赖于手动注释，通过自我筛选过程来改善和选择最有效的指令-输出对。它的主要创新在于通过算法改进提高数据的保留和清晰度，并通过创新的数据生成方法减少了手动注释的依赖。
+
+    
+
+    在本文中，我们介绍了一种名为Kun的新方法，用于在不依赖手动注释的情况下为大型语言模型（LLMs）创建高质量的指导调整数据集。Kun利用来自吾道、完卷和SkyPile等多个来源的未标记数据，采用基于指令反向翻译和答案优化的自我训练算法，生成了一个超过一百万个中文指导数据点的大规模数据集。该方法通过使用自我筛选过程来完善和选择最有效的指令-输出对，显著偏离传统方法。我们在多个基准测试上对6B参数的Yi模型进行了实验，结果表明Kun具有鲁棒性和可扩展性。我们方法的核心贡献在于算法的改进，增强了数据的保留和清晰度，并且创新的数据生成方法极大地减少了对昂贵和耗时的手动注释的依赖。这种方法ological方法提出了一种解决中文自对齐问题的方法，并提高了数据的准确性和质量。
+
+    In this paper, we introduce Kun, a novel approach for creating high-quality instruction-tuning datasets for large language models (LLMs) without relying on manual annotations. Adapting a self-training algorithm based on instruction back-translation and answer polishment, Kun leverages unlabelled data from diverse sources such as Wudao, Wanjuan, and SkyPile to generate a substantial dataset of over a million Chinese instructional data points. This approach significantly deviates from traditional methods by using a self-curation process to refine and select the most effective instruction-output pairs. Our experiments with the 6B-parameter Yi model across various benchmarks demonstrate Kun's robustness and scalability. Our method's core contributions lie in its algorithmic advancement, which enhances data retention and clarity, and its innovative data generation approach that substantially reduces the reliance on costly and time-consuming manual annotations. This methodology presents a sc
+    
+[^7]: 激发大型语言模型中的提示工程潜力：一项综述
+
+    Unleashing the potential of prompt engineering in Large Language Models: a comprehensive review. (arXiv:2310.14735v2 [cs.CL] UPDATED)
+
+    [http://arxiv.org/abs/2310.14735](http://arxiv.org/abs/2310.14735)
+
+    这篇论文解释了提示工程在释放大型语言模型能力方面的关键作用，探讨了不同的提示方法以及外部插件如何协助减少机器幻想，并指出了未来研究方向的重要性。
+
+    
+
+    本文深入探讨了提示工程在释放大型语言模型（LLM）能力方面的关键作用。提示工程是为LLM构建输入文本的过程，是优化LLM有效性的重要技术。本综述阐明了提示工程的基本原理，如角色提示、一次性提示和少量提示，以及更高级的方法，如思维链和思维树提示。本文还阐述了外部插件如何协助此任务，并通过检索外部知识来减少机器幻想。随后，我们勾勒了提示工程研究的前景方向，强调了对结构和代理在人工智能生成内容（AIGC）工具中的作用的深入理解的必要性。我们讨论了如何从不同角度和使用不同的方法评估提示方法的有效性。最后，我们提出了展望未来的研究方向。
+
+    This paper delves into the pivotal role of prompt engineering in unleashing the capabilities of Large Language Models (LLMs). Prompt engineering is the process of structuring input text for LLMs and is a technique integral to optimizing the efficacy of LLMs. This survey elucidates foundational principles of prompt engineering, such as role-prompting, one-shot, and few-shot prompting, as well as more advanced methodologies such as the chain-of-thought and tree-of-thoughts prompting. The paper sheds light on how external assistance in the form of plugins can assist in this task, and reduce machine hallucination by retrieving external knowledge. We subsequently delineate prospective directions in prompt engineering research, emphasizing the need for a deeper understanding of structures and the role of agents in Artificial Intelligence-Generated Content (AIGC) tools. We discuss how to assess the efficacy of prompt methods from different perspectives and using different methods. Finally, we
+    
+[^8]: PESTS: 波斯语-英语跨语言语料库用于语义文本相似度
+
+    PESTS: Persian_English Cross Lingual Corpus for Semantic Textual Similarity. (arXiv:2305.07893v1 [cs.CL])
+
+    [http://arxiv.org/abs/2305.07893](http://arxiv.org/abs/2305.07893)
+
+    本研究提出了跨语言的语义相似性模型PESTS，并通过波斯语-英语的跨语言语料库来验证模型的准确性。
+
+    
+
+    近来，语义文本相似度成为自然语言处理中备受关注的组件。在计算语言学和自然语言处理中，评估单词、短语、段落和文本之间的语义相似性很重要。同时，语义相似性度量要求在源和目标语言中提供具有一定语义相似性的句子对。许多跨语言的语义相似度模型使用机器翻译来弥补跨语言语料库不可用的不足，但机器翻译的误差会降低模型的准确性。然而，在使用语义相似度特征实现机器翻译时，用相同的机器翻译模型可以提高结果的准确性。
+
+    One of the components of natural language processing that has received a lot of investigation recently is semantic textual similarity. In computational linguistics and natural language processing, assessing the semantic similarity of words, phrases, paragraphs, and texts is crucial. Calculating the degree of semantic resemblance between two textual pieces, paragraphs, or phrases provided in both monolingual and cross-lingual versions is known as semantic similarity. Cross lingual semantic similarity requires corpora in which there are sentence pairs in both the source and target languages with a degree of semantic similarity between them. Many existing cross lingual semantic similarity models use a machine translation due to the unavailability of cross lingual semantic similarity dataset, which the propagation of the machine translation error reduces the accuracy of the model. On the other hand, when we want to use semantic similarity features for machine translation the same machine t
     
 
