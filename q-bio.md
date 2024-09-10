@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Re-evaluating Retrosynthesis Algorithms with Syntheseus](https://arxiv.org/abs/2310.19796) | 使用Syntheseus建立的基准库重新评估了回溯合成算法，揭示了现有技术模型的系统性缺陷并提供了对未来工作的指导建议。 |
-| [^2] | [Contrastive Graph Pooling for Explainable Classification of Brain Networks.](http://arxiv.org/abs/2307.11133) | 本论文提出了一种针对脑网络的对比图池化方法，以实现对脑网络的可解释分类。通过定制化的图神经网络和特殊设计的可解释特征提取方法，在5个静息态fMRI脑网络数据集上取得了优于最先进基准线的结果。 |
+| [^1] | [A Review of Graph Neural Networks in Epidemic Modeling](https://arxiv.org/abs/2403.19852) | 图神经网络在流行病建模中作为一种新工具备受关注，本文全面回顾了GNN在流行病研究中的应用，并提出了未来发展方向。 |
+| [^2] | [Analyzing Resting-State fMRI Data in Marijuana Users via High-Order Attention Brain Network](https://arxiv.org/abs/2403.00033) | 通过结合动态内在功能网络和LSTM技术，使用高阶注意力模块进行信息融合和消息传递，提出了HOGAB模型，对慢性大麻用户的静息态fMRI数据进行分析，提高了多图分类的准确性。 |
 
 # 详细
 
-[^1]: 使用Syntheseus重新评估回溯合成算法
+[^1]: 流行病建模中图神经网络的综述
 
-    Re-evaluating Retrosynthesis Algorithms with Syntheseus
+    A Review of Graph Neural Networks in Epidemic Modeling
 
-    [https://arxiv.org/abs/2310.19796](https://arxiv.org/abs/2310.19796)
+    [https://arxiv.org/abs/2403.19852](https://arxiv.org/abs/2403.19852)
 
-    使用Syntheseus建立的基准库重新评估了回溯合成算法，揭示了现有技术模型的系统性缺陷并提供了对未来工作的指导建议。
-
-    
-
-    过去几年，分子合成规划，也称为回溯合成，已经成为机器学习和化学界关注的焦点。尽管看似取得了稳定的进展，但我们认为存在不完善的基准和不一致的比较掩盖了现有技术的系统性缺陷。为了解决这个问题，我们提出了一个名为syntheseus的基准库，通过默认推广最佳实践，实现了对单步和多步回溯合成算法的一致而有意义的评估。我们使用syntheseus重新评估了若干先前的回溯合成算法，并发现在仔细评估时，现有技术模型的排名会发生变化。最后，我们给出了这一领域未来工作的指导建议。
-
-    arXiv:2310.19796v2 Announce Type: replace-cross  Abstract: The planning of how to synthesize molecules, also known as retrosynthesis, has been a growing focus of the machine learning and chemistry communities in recent years. Despite the appearance of steady progress, we argue that imperfect benchmarks and inconsistent comparisons mask systematic shortcomings of existing techniques. To remedy this, we present a benchmarking library called syntheseus which promotes best practice by default, enabling consistent meaningful evaluation of single-step and multi-step retrosynthesis algorithms. We use syntheseus to re-evaluate a number of previous retrosynthesis algorithms, and find that the ranking of state-of-the-art models changes when evaluated carefully. We end with guidance for future works in this area.
-    
-[^2]: 对脑网络的可解释分类进行对比图池化。
-
-    Contrastive Graph Pooling for Explainable Classification of Brain Networks. (arXiv:2307.11133v1 [q-bio.NC])
-
-    [http://arxiv.org/abs/2307.11133](http://arxiv.org/abs/2307.11133)
-
-    本论文提出了一种针对脑网络的对比图池化方法，以实现对脑网络的可解释分类。通过定制化的图神经网络和特殊设计的可解释特征提取方法，在5个静息态fMRI脑网络数据集上取得了优于最先进基准线的结果。
+    图神经网络在流行病建模中作为一种新工具备受关注，本文全面回顾了GNN在流行病研究中的应用，并提出了未来发展方向。
 
     
 
-    功能性磁共振成像(fMRI)是一种常用的测量神经活动的技术。其应用在识别帕金森病、阿尔茨海默病和自闭症等神经退行性疾病方面尤为重要。最近的fMRI数据分析将大脑建模为图，并通过图神经网络(GNN)提取特征。然而，fMRI数据的独特特征要求对GNN进行特殊设计。定制GNN以生成有效且可解释的特征仍然具有挑战性。在本文中，我们提出了对比双注意块和可微分图池化方法ContrastPool，以更好地利用GNN分析脑网络，满足fMRI的特殊要求。我们将我们的方法应用于5个静息态fMRI脑网络数据集的3种疾病，并证明其优于最先进的基准线。我们的案例研究证实，我们的方法提取的模式与神经科学文献中的领域知识相匹配。
+    自新冠疫情爆发以来，人们对流行病学模型的研究越来越感兴趣。传统的机械模型数学描述了传染病的传播机制，但在面对当今不断增长的挑战时往往力不从心。因此，图神经网络（GNNs）已经成为流行病研究中越来越流行的工具。本文试图全面回顾GNN在流行病任务中的应用，并强调潜在的未来发展方向。为实现这一目标，我们为流行病任务和方法论各引入了分层分类法，为该领域内的发展轨迹提供了一个框架。对于流行病任务，我们建立了一个类似于流行病领域通常应用的分类体系。对于方法论，我们将现有研究分为“神经模型”和“混合模型”。
 
-    Functional magnetic resonance imaging (fMRI) is a commonly used technique to measure neural activation. Its application has been particularly important in identifying underlying neurodegenerative conditions such as Parkinson's, Alzheimer's, and Autism. Recent analysis of fMRI data models the brain as a graph and extracts features by graph neural networks (GNNs). However, the unique characteristics of fMRI data require a special design of GNN. Tailoring GNN to generate effective and domain-explainable features remains challenging. In this paper, we propose a contrastive dual-attention block and a differentiable graph pooling method called ContrastPool to better utilize GNN for brain networks, meeting fMRI-specific requirements. We apply our method to 5 resting-state fMRI brain network datasets of 3 diseases and demonstrate its superiority over state-of-the-art baselines. Our case study confirms that the patterns extracted by our method match the domain knowledge in neuroscience literatu
+    arXiv:2403.19852v1 Announce Type: new  Abstract: Since the onset of the COVID-19 pandemic, there has been a growing interest in studying epidemiological models. Traditional mechanistic models mathematically describe the transmission mechanisms of infectious diseases. However, they often fall short when confronted with the growing challenges of today. Consequently, Graph Neural Networks (GNNs) have emerged as a progressively popular tool in epidemic research. In this paper, we endeavor to furnish a comprehensive review of GNNs in epidemic tasks and highlight potential future directions. To accomplish this objective, we introduce hierarchical taxonomies for both epidemic tasks and methodologies, offering a trajectory of development within this domain. For epidemic tasks, we establish a taxonomy akin to those typically employed within the epidemic domain. For methodology, we categorize existing work into \textit{Neural Models} and \textit{Hybrid Models}. Following this, we perform an exha
+    
+[^2]: 通过高阶注意力大脑网络分析大麻使用者的静息态fMRI数据
+
+    Analyzing Resting-State fMRI Data in Marijuana Users via High-Order Attention Brain Network
+
+    [https://arxiv.org/abs/2403.00033](https://arxiv.org/abs/2403.00033)
+
+    通过结合动态内在功能网络和LSTM技术，使用高阶注意力模块进行信息融合和消息传递，提出了HOGAB模型，对慢性大麻用户的静息态fMRI数据进行分析，提高了多图分类的准确性。
+
+    
+
+    大麻的持续使用明显影响人们的生活和健康。在这项研究中，我们提出了一个可解释的新框架，命名为HOGAB（High-Order Attention Graph Attention神经网络）模型，以分析两个数据集中慢性大麻用户的局部异常脑活动。HOGAB将动态内在功能网络与LSTM技术相结合，捕捉大麻用户fMRI时间序列中的时间模式。此外，我们使用高阶注意力模块来对邻域节点进行信息融合和消息传递，增强长期大麻用户的社区聚类分析。此外，我们通过融入注意力机制提高了模型的整体学习能力，在多图分类中实现了85.1%的AUC和80.7%的准确性。此外，我们比较了线性机器学习方法，并评估了我们提出的HODAB模型的有效性。
+
+    arXiv:2403.00033v1 Announce Type: cross  Abstract: The sustained use of marijuana significantly impacts the lives and health of people. In this study, we propose an interpretable novel framework called the HOGAB (High-Order Attention Graph Attention Neural Networks) model to analyze local abnormal brain activity in chronic marijuana users in two datasets. The HOGAB integrates dynamic intrinsic functional networks with LSTM technology to capture temporal patterns in fMRI time series of marijuana users. Moreover, we use the high-order attention module in neighborhood nodes for information fusion and message passing, enhancing community clustering analysis for long-term marijuana users. Furthermore, we improve the overall learning ability of the model by incorporating attention mechanisms, achieving an AUC of 85.1% and an accuracy of 80.7% in multigraph classification. In addition, we compare linear machine learning methods and evaluate the effectiveness of our proposed HODAB model. Speci
     
 

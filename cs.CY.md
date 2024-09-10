@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Implementing Responsible AI: Tensions and Trade-Offs Between Ethics Aspects.](http://arxiv.org/abs/2304.08275) | 本文讨论了负责任人工智能伦理原则之间的紧张关系和权衡，并提出一个目录以帮助人们提高对相互作用的认识。 |
+| [^1] | [Resolving Ethics Trade-offs in Implementing Responsible AI](https://arxiv.org/abs/2401.08103) | 该论文提出了通过权衡处理人工智能伦理中的紧张关系的五种方法，并提出了一个框架来实施全面的人工智能/机器学习系统。 |
+| [^2] | [Online Advertisements with LLMs: Opportunities and Challenges](https://arxiv.org/abs/2311.07601) | 本文探讨了在线广告系统中利用大型语言模型（LLM）的潜力，提出了一个LLM广告的通用框架，并讨论了基于LLM的动态创意优化的前景。 |
 
 # 详细
 
-[^1]: 负责任人工智能的实施：伦理方面的紧张和权衡
+[^1]: 解决在实施负责任人工智能中的伦理权衡
 
-    Implementing Responsible AI: Tensions and Trade-Offs Between Ethics Aspects. (arXiv:2304.08275v2 [cs.CY] UPDATED)
+    Resolving Ethics Trade-offs in Implementing Responsible AI
 
-    [http://arxiv.org/abs/2304.08275](http://arxiv.org/abs/2304.08275)
+    [https://arxiv.org/abs/2401.08103](https://arxiv.org/abs/2401.08103)
 
-    本文讨论了负责任人工智能伦理原则之间的紧张关系和权衡，并提出一个目录以帮助人们提高对相互作用的认识。
+    该论文提出了通过权衡处理人工智能伦理中的紧张关系的五种方法，并提出了一个框架来实施全面的人工智能/机器学习系统。
 
     
 
-    针对人工智能/机器学习系统的滥用和不当使用引起的担忧，已经提出了许多负责任人工智能的伦理原则。这些准则的基本方面包括隐私、准确性、公平性、稳健性、可解释性和透明度。然而，这些方面之间存在潜在的紧张关系，这给寻求遵循这些原则的AI/ML开发者带来了困难。例如，提高AI/ML系统的准确性可能会降低其可解释性。本文旨在汇编和讨论10个突出的紧张关系、权衡和其他基本方面之间的相互作用，以便在持续努力将这些原则转化为实践的过程中，提高对可能出现的伦理原则方面之间相互作用的认识，并通过在广泛文献中的支持进行双面互动的重点讨论。这个目录对于提高人们对伦理准则方面之间可能相互作用的认识以及促进设计人员和开发人员做出有充分依据的判断可能有所帮助。
+    虽然把高级人工智能伦理原则应用到实际的人工智能/机器学习系统中已经取得了进展，但在处理底层人工智能伦理方面的紧张关系方面仍存在理论与实践之间的差距。我们提出了五种处理这些关系的方法，从简单到复杂不等。这些方法在考虑的上下文类型、范围、衡量上下文的方法和证明程度上有所不同。这些方法中没有一种适用于所有组织、系统或应用。为了解决这个问题，我们提出了一个框架，包括：（i）积极识别紧张关系，（ii）优先处理和权衡伦理方面，（iii）证明和记录权衡决策。该提议的框架旨在促进实施符合潜在监管要求的全面人工智能/机器学习系统。
 
-    Many sets of ethics principles for responsible AI have been proposed to allay concerns about misuse and abuse of AI/ML systems. The underlying aspects of such sets of principles include privacy, accuracy, fairness, robustness, explainability, and transparency. However, there are potential tensions between these aspects that pose difficulties for AI/ML developers seeking to follow these principles. For example, increasing the accuracy of an AI/ML system may reduce its explainability. As part of the ongoing effort to operationalise the principles into practice, in this work we compile and discuss a catalogue of 10 notable tensions, trade-offs and other interactions between the underlying aspects. We primarily focus on two-sided interactions, drawing on support spread across a diverse literature. This catalogue can be helpful in raising awareness of the possible interactions between aspects of ethics principles, as well as facilitating well-supported judgements by the designers and develo
+    While the operationalisation of high-level AI ethics principles into practical AI/ML systems has made progress, there is still a theory-practice gap in managing tensions between the underlying AI ethics aspects. We cover five approaches for addressing the tensions via trade-offs, ranging from rudimentary to complex. The approaches differ in the types of considered context, scope, methods for measuring contexts, and degree of justification. None of the approaches is likely to be appropriate for all organisations, systems, or applications. To address this, we propose a framework which consists of: (i) proactive identification of tensions, (ii) prioritisation and weighting of ethics aspects, (iii) justification and documentation of trade-off decisions. The proposed framework aims to facilitate the implementation of well-rounded AI/ML systems that are appropriate for potential regulatory requirements.
+    
+[^2]: 在线广告与LLMs：机遇与挑战
+
+    Online Advertisements with LLMs: Opportunities and Challenges
+
+    [https://arxiv.org/abs/2311.07601](https://arxiv.org/abs/2311.07601)
+
+    本文探讨了在线广告系统中利用大型语言模型（LLM）的潜力，提出了一个LLM广告的通用框架，并讨论了基于LLM的动态创意优化的前景。
+
+    
+
+    本文探讨了在在线广告系统中利用大型语言模型（LLM）的潜力。我们深入研究了这个系统必须满足的隐私、延迟、可靠性以及用户和广告商的满意度等关键要求。我们进一步介绍了一个LLM广告的通用框架，包括修改、竞标、预测和拍卖模块。我们提出了每个模块的不同设计考虑，并对其实用性和实施中的技术挑战进行了深入研究。最后，我们探讨了基于LLM的动态创意优化的前景，以显著提升广告对用户的吸引力，并讨论了它所面临的额外挑战。
+
+    arXiv:2311.07601v2 Announce Type: replace-cross Abstract: This paper explores the potential for leveraging Large Language Models (LLM) in the realm of online advertising systems. We delve into essential requirements including privacy, latency, reliability as well as the satisfaction of users and advertisers which such a system must fulfill. We further introduce a general framework for LLM advertisement, consisting of modification, bidding, prediction, and auction modules. Different design considerations for each module is presented, with an in-depth examination of their practicality and the technical challenges inherent to their implementation. Finally, we explore the prospect of LLM-based dynamic creative optimization as a means to significantly enhance the appeal of advertisements to users and discuss its additional challenges.
     
 

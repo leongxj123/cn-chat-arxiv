@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [One flow to correct them all: improving simulations in high-energy physics with a single normalising flow and a switch](https://arxiv.org/abs/2403.18582) | 提出了一种使用单一归一化流和布尔条件的简单架构，将高能物理模拟事件的分布有效地转换为观测数据分布的校正方法，并在玩具数据集上证明了该方法的有效性 |
+| [^1] | [OmniJet-$\alpha$: The first cross-task foundation model for particle physics](https://arxiv.org/abs/2403.05618) | 基于物理数据和变压器架构，OmniJet-$\alpha$是首个跨任务基础模型，引入了全面的评估方法并展示了在无监督问题上的迁移学习。 |
 
 # 详细
 
-[^1]: 用单一归一化流和一个开关改进高能物理模拟
+[^1]: OmniJet-$\alpha$: 粒子物理学的首个跨任务基础模型
 
-    One flow to correct them all: improving simulations in high-energy physics with a single normalising flow and a switch
+    OmniJet-$\alpha$: The first cross-task foundation model for particle physics
 
-    [https://arxiv.org/abs/2403.18582](https://arxiv.org/abs/2403.18582)
+    [https://arxiv.org/abs/2403.05618](https://arxiv.org/abs/2403.05618)
 
-    提出了一种使用单一归一化流和布尔条件的简单架构，将高能物理模拟事件的分布有效地转换为观测数据分布的校正方法，并在玩具数据集上证明了该方法的有效性
+    基于物理数据和变压器架构，OmniJet-$\alpha$是首个跨任务基础模型，引入了全面的评估方法并展示了在无监督问题上的迁移学习。
 
     
 
-    模拟事件是几乎所有高能物理分析中的关键要素。然而，模拟中的不完美可能导致观测数据和模拟事件之间存在相当大的差异。这种模拟不完全性对相关可观测量的影响必须通过比例因子、权重或修改可观测量及其相关性的分布来有效地进行校正。我们引入了一种校正方法，使用基于单一正常化流和布尔条件的简单架构将一个多维分布（模拟）转换为另一个多维分布（数据）。我们在一个受物理启发的玩具数据集上展示了该方法的有效性，该数据集存在几个可观测量及其相关性的非平凡模拟问题。
+    基础模型是多数据集和多任务的机器学习方法，一经预训练，便可被微调用于各种不同的应用。成功开发出这种通用物理数据模型将是一项重大突破，因为它们可以提高可实现的物理性能，同时大幅减少所需的训练时间和数据量。我们在这一挑战上取得了显著进展。首先，引入了一套全面的评估方法，来评判从物理数据转换为适合变压器架构（基础模型的通用骨干）进行自回归生成粒子喷流的表示质量。这些措施支持了相较于先前工作的更高保真度的标记化的选择。最后，我们展示了在无监督问题（喷流生成）之间的迁移学习。
 
-    arXiv:2403.18582v1 Announce Type: cross  Abstract: Simulated events are key ingredients in almost all high-energy physics analyses. However, imperfections in the simulation can lead to sizeable differences between the observed data and simulated events. The effects of such mismodelling on relevant observables must be corrected either effectively via scale factors, with weights or by modifying the distributions of the observables and their correlations. We introduce a correction method that transforms one multidimensional distribution (simulation) into another one (data) using a simple architecture based on a single normalising flow with a boolean condition. We demonstrate the effectiveness of the method on a physics-inspired toy dataset with non-trivial mismodelling of several observables and their correlations.
+    arXiv:2403.05618v1 Announce Type: cross  Abstract: Foundation models are multi-dataset and multi-task machine learning methods that once pre-trained can be fine-tuned for a large variety of downstream applications. The successful development of such general-purpose models for physics data would be a major breakthrough as they could improve the achievable physics performance while at the same time drastically reduce the required amount of training time and data.   We report significant progress on this challenge on several fronts. First, a comprehensive set of evaluation methods is introduced to judge the quality of an encoding from physics data into a representation suitable for the autoregressive generation of particle jets with transformer architectures (the common backbone of foundation models). These measures motivate the choice of a higher-fidelity tokenization compared to previous works. Finally, we demonstrate transfer learning between an unsupervised problem (jet generation) an
     
 

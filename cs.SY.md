@@ -2,37 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [PowerFlowMultiNet: Multigraph Neural Networks for Unbalanced Three-Phase Distribution Systems](https://arxiv.org/abs/2403.00892) | PowerFlowMultiNet是一种专门为不平衡三相功率网格设计的新颖多图GNN框架，能够有效捕捉不平衡网格中的不对称性，并引入了图嵌入机制来捕获电力系统网络内部的空间依赖关系。 |
-| [^2] | [A Hypergraph-Based Machine Learning Ensemble Network Intrusion Detection System.](http://arxiv.org/abs/2211.03933) | 该论文提出了一种基于超图的机器学习集成网络入侵检测系统，使用超图捕捉端口扫描攻击的演化模式，并使用派生的度量来训练NIDS，从而允许在高精度、高准确率、高召回率性能下实时监测和检测端口扫描活动、其他类型的攻击和敌对入侵，解决了传统NIDS面临的挑战。 |
+| [^1] | [Incentive-Compatible Vertiport Reservation in Advanced Air Mobility: An Auction-Based Approach](https://arxiv.org/abs/2403.18166) | 本论文提出了一种激励兼容且个体理性的vertiport预订机制，旨在协调多个运营商操作的电动垂直起降（eVTOL）飞行器在vertiports之间移动，最大化所有运营商的总估值同时最小化vertiports的拥堵。 |
+| [^2] | [Multistep Inverse Is Not All You Need](https://arxiv.org/abs/2403.11940) | 本研究考虑了控制问题中的观测空间到简化控制相关变量空间的编码器学习，AC-State方法是一个多步反向方法。 |
+| [^3] | [DEEP-IoT: Downlink-Enhanced Efficient-Power Internet of Things](https://arxiv.org/abs/2403.00321) | DEEP-IoT通过“更多监听，更少传输”的策略，挑战和转变了传统的物联网通信模型，大幅降低能耗并提高设备寿命。 |
+| [^4] | [Actively Learning Reinforcement Learning: A Stochastic Optimal Control Approach.](http://arxiv.org/abs/2309.10831) | 本文提供了一个框架来解决强化学习中的模型不确定性和计算成本高的问题，通过使用强化学习解决随机动态规划方程，生成的控制器能够主动学习模型不确定性，并确保安全性和实时学习。 |
 
 # 详细
 
-[^1]: PowerFlowMultiNet：用于不平衡三相配电系统的多图神经网络
+[^1]: 具有激励兼容性的先进空中移动中的Vertiport预订：基于拍卖的方法
 
-    PowerFlowMultiNet: Multigraph Neural Networks for Unbalanced Three-Phase Distribution Systems
+    Incentive-Compatible Vertiport Reservation in Advanced Air Mobility: An Auction-Based Approach
 
-    [https://arxiv.org/abs/2403.00892](https://arxiv.org/abs/2403.00892)
+    [https://arxiv.org/abs/2403.18166](https://arxiv.org/abs/2403.18166)
 
-    PowerFlowMultiNet是一种专门为不平衡三相功率网格设计的新颖多图GNN框架，能够有效捕捉不平衡网格中的不对称性，并引入了图嵌入机制来捕获电力系统网络内部的空间依赖关系。
-
-    
-
-    高效解决配电网中不平衡的三相功率流问题对于网格分析和仿真至关重要。目前急需可处理大规模不平衡功率网格并能提供准确快速解决方案的可扩展算法。为解决这一问题，深度学习技术尤其是图神经网络（GNNs）应运而生。然而，现有文献主要集中在平衡网络上，缺乏支持不平衡三相功率网络的关键内容。本文介绍了PowerFlowMultiNet，这是一个专门为不平衡三相功率网格设计的新颖多图GNN框架。提出的方法在多图表示中分别对每个相进行建模，有效捕捉不平衡网格中固有的不对称性。引入了利用消息传递捕获电力系统网络内部空间依赖关系的图嵌入机制。
-
-    arXiv:2403.00892v1 Announce Type: cross  Abstract: Efficiently solving unbalanced three-phase power flow in distribution grids is pivotal for grid analysis and simulation. There is a pressing need for scalable algorithms capable of handling large-scale unbalanced power grids that can provide accurate and fast solutions. To address this, deep learning techniques, especially Graph Neural Networks (GNNs), have emerged. However, existing literature primarily focuses on balanced networks, leaving a critical gap in supporting unbalanced three-phase power grids. This letter introduces PowerFlowMultiNet, a novel multigraph GNN framework explicitly designed for unbalanced three-phase power grids. The proposed approach models each phase separately in a multigraph representation, effectively capturing the inherent asymmetry in unbalanced grids. A graph embedding mechanism utilizing message passing is introduced to capture spatial dependencies within the power system network. PowerFlowMultiNet out
-    
-[^2]: 基于超图的机器学习集成网络入侵检测系统
-
-    A Hypergraph-Based Machine Learning Ensemble Network Intrusion Detection System. (arXiv:2211.03933v2 [cs.CR] UPDATED)
-
-    [http://arxiv.org/abs/2211.03933](http://arxiv.org/abs/2211.03933)
-
-    该论文提出了一种基于超图的机器学习集成网络入侵检测系统，使用超图捕捉端口扫描攻击的演化模式，并使用派生的度量来训练NIDS，从而允许在高精度、高准确率、高召回率性能下实时监测和检测端口扫描活动、其他类型的攻击和敌对入侵，解决了传统NIDS面临的挑战。
+    本论文提出了一种激励兼容且个体理性的vertiport预订机制，旨在协调多个运营商操作的电动垂直起降（eVTOL）飞行器在vertiports之间移动，最大化所有运营商的总估值同时最小化vertiports的拥堵。
 
     
 
-    网络入侵检测系统(NIDS)在检测恶意攻击时仍然面临挑战。NIDS通常在离线状态下开发，但面对自动生成的端口扫描渗透尝试时，会导致从对手适应到NIDS响应的显着时间滞后。为了解决这些问题，我们使用以Internet协议地址和目标端口为重点的超图来捕捉端口扫描攻击的演化模式。然后使用派生的基于超图的度量来训练一个集成机器学习(ML)的NIDS，从而允许在高精度、高准确率、高召回率性能下实时调整，监测和检测端口扫描活动、其他类型的攻击和敌对入侵。这个ML自适应的NIDS是通过以下几个部分的组合开发出来的：(1)入侵示例，(2)NIDS更新规则，(3)触发NIDS重新训练请求的攻击阈值选择，以及(4)在没有先前网络性质知识的情况下的生产环境。
+    预计未来先进空中移动（AAM）的崛起将成为一个数十亿美元的产业。市场机制被认为是AAM运营的一个重要组成部分，其中包括具有私人估值的异构运营商。本文研究了设计一种机制来协调由多个具有与其机群关联的异构估值的运营商操作的电动垂直起降（eVTOL）飞行器在vertiports之间移动的问题，同时强制执行vertiports的到达、离开和停车约束。特别是，我们提出了一种激励兼容且个体理性的vertiport预订机制，该机制最大化了一个社会福利度量标准，从而包括最大化所有运营商的总估值同时最小化vertiports的拥堵。此外，我们提高了设计这一机制的计算可处理性
 
-    Network intrusion detection systems (NIDS) to detect malicious attacks continue to meet challenges. NIDS are often developed offline while they face auto-generated port scan infiltration attempts, resulting in a significant time lag from adversarial adaption to NIDS response. To address these challenges, we use hypergraphs focused on internet protocol addresses and destination ports to capture evolving patterns of port scan attacks. The derived set of hypergraph-based metrics are then used to train an ensemble machine learning (ML) based NIDS that allows for real-time adaption in monitoring and detecting port scanning activities, other types of attacks, and adversarial intrusions at high accuracy, precision and recall performances. This ML adapting NIDS was developed through the combination of (1) intrusion examples, (2) NIDS update rules, (3) attack threshold choices to trigger NIDS retraining requests, and (4) a production environment with no prior knowledge of the nature of network 
+    arXiv:2403.18166v1 Announce Type: cross  Abstract: The rise of advanced air mobility (AAM) is expected to become a multibillion-dollar industry in the near future. Market-based mechanisms are touted to be an integral part of AAM operations, which comprise heterogeneous operators with private valuations. In this work, we study the problem of designing a mechanism to coordinate the movement of electric vertical take-off and landing (eVTOL) aircraft, operated by multiple operators each having heterogeneous valuations associated with their fleet, between vertiports, while enforcing the arrival, departure, and parking constraints at vertiports. Particularly, we propose an incentive-compatible and individually rational vertiport reservation mechanism that maximizes a social welfare metric, which encapsulates the objective of maximizing the overall valuations of all operators while minimizing the congestion at vertiports. Additionally, we improve the computational tractability of designing th
+    
+[^2]: 多步反向不是你所需要的
+
+    Multistep Inverse Is Not All You Need
+
+    [https://arxiv.org/abs/2403.11940](https://arxiv.org/abs/2403.11940)
+
+    本研究考虑了控制问题中的观测空间到简化控制相关变量空间的编码器学习，AC-State方法是一个多步反向方法。
+
+    
+
+    在真实世界的控制设置中，观测空间通常是不必要的高维且受到时间相关噪声的影响。然而，系统的可控动态通常远比原始观测数据的动态简单。因此，学习一个编码器将观测空间映射到一个包含控制相关变量的简化空间是可取的。本文考虑了由Efroni等人（2022年）首次提出的Ex-BMDP模型，该模型将观测可以分解为依赖于动作的潜在状态和独立于动作的时间相关噪声，并形式化了能够解决控制问题的场景。Lamb等人（2022年）提出了“AC-State”方法，用于学习一个编码器，从这些问题中的观测中提取包含完整依赖于动作的潜在状态表示。AC-State是一个多步反向方法，它使用路径中第一个和最后一个状态的编码来预测
+
+    arXiv:2403.11940v1 Announce Type: new  Abstract: In real-world control settings, the observation space is often unnecessarily high-dimensional and subject to time-correlated noise. However, the controllable dynamics of the system are often far simpler than the dynamics of the raw observations. It is therefore desirable to learn an encoder to map the observation space to a simpler space of control-relevant variables. In this work, we consider the Ex-BMDP model, first proposed by Efroni et al. (2022), which formalizes control problems where observations can be factorized into an action-dependent latent state which evolves deterministically, and action-independent time-correlated noise. Lamb et al. (2022) proposes the "AC-State" method for learning an encoder to extract a complete action-dependent latent state representation from the observations in such problems. AC-State is a multistep-inverse method, in that it uses the encoding of the the first and last state in a path to predict the 
+    
+[^3]: DEEP-IoT: 下行增强型高效能物联网
+
+    DEEP-IoT: Downlink-Enhanced Efficient-Power Internet of Things
+
+    [https://arxiv.org/abs/2403.00321](https://arxiv.org/abs/2403.00321)
+
+    DEEP-IoT通过“更多监听，更少传输”的策略，挑战和转变了传统的物联网通信模型，大幅降低能耗并提高设备寿命。
+
+    
+
+    本文介绍了DEEP-IoT，这是一种具有革命意义的通信范例，旨在重新定义物联网设备之间的通信方式。通过开创性的“更多监听，更少传输”的策略，DEEP-IoT挑战和转变了传统的发送方（物联网设备）为中心的通信模型，将接收方（接入点）作为关键角色，从而降低能耗并延长设备寿命。我们不仅概念化了DEEP-IoT，还通过在窄带系统中集成深度学习增强的反馈信道编码来实现它。模拟结果显示，IoT单元的运行寿命显著提高，比使用Turbo和Polar编码的传统系统提高了最多52.71%。这一进展标志着一种变革。
+
+    arXiv:2403.00321v1 Announce Type: cross  Abstract: At the heart of the Internet of Things (IoT) -- a domain witnessing explosive growth -- the imperative for energy efficiency and the extension of device lifespans has never been more pressing. This paper presents DEEP-IoT, a revolutionary communication paradigm poised to redefine how IoT devices communicate. Through a pioneering "listen more, transmit less" strategy, DEEP-IoT challenges and transforms the traditional transmitter (IoT devices)-centric communication model to one where the receiver (the access point) play a pivotal role, thereby cutting down energy use and boosting device longevity. We not only conceptualize DEEP-IoT but also actualize it by integrating deep learning-enhanced feedback channel codes within a narrow-band system. Simulation results show a significant enhancement in the operational lifespan of IoT cells -- surpassing traditional systems using Turbo and Polar codes by up to 52.71%. This leap signifies a paradi
+    
+[^4]: 活动学习强化学习：一种随机最优控制方法的应用
+
+    Actively Learning Reinforcement Learning: A Stochastic Optimal Control Approach. (arXiv:2309.10831v1 [cs.LG])
+
+    [http://arxiv.org/abs/2309.10831](http://arxiv.org/abs/2309.10831)
+
+    本文提供了一个框架来解决强化学习中的模型不确定性和计算成本高的问题，通过使用强化学习解决随机动态规划方程，生成的控制器能够主动学习模型不确定性，并确保安全性和实时学习。
+
+    
+
+    本文提供了一个框架来应对两个问题：（i）强化学习在模型不确定性方面的脆弱性，因为受控实验室/仿真和实际条件之间的不匹配，以及（ii）随机最优控制的计算成本过高。我们通过使用强化学习来解决随机动态规划方程来解决这两个问题。由此产生的强化学习控制器对于几种类型的约束条件是安全的，并且它可以主动学习模型不确定性。与探索和利用不同，探测和安全性由控制器自身自动实现，实现了实时学习。一个仿真示例证明了所提方法的有效性。
+
+    In this paper we provide framework to cope with two problems: (i) the fragility of reinforcement learning due to modeling uncertainties because of the mismatch between controlled laboratory/simulation and real-world conditions and (ii) the prohibitive computational cost of stochastic optimal control. We approach both problems by using reinforcement learning to solve the stochastic dynamic programming equation. The resulting reinforcement learning controller is safe with respect to several types of constraints constraints and it can actively learn about the modeling uncertainties. Unlike exploration and exploitation, probing and safety are employed automatically by the controller itself, resulting real-time learning. A simulation example demonstrates the efficacy of the proposed approach.
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Extension of Recurrent Kernels to different Reservoir Computing topologies.](http://arxiv.org/abs/2401.14557) | 该研究通过提供特定RC体系结构与相应循环内核形式等价性的经验分析，填补了Leaky RC、Sparse RC和Deep RC等已建立的RC范例尚未进行分析的空白。此外，研究还揭示了稀疏连接在RC体系结构中的作用，并提出了一种依赖储备大小的最佳稀疏性水平。最后，该研究的系统分析表明，在Deep RC模型中，通过减小尺寸的连续储备可以更好地实现收敛。 |
+| [^1] | [Keypoint Action Tokens Enable In-Context Imitation Learning in Robotics](https://arxiv.org/abs/2403.19578) | 使用关键动作令牌（KAT）框架，研究展示了文本预训练的变形器（GPT-4 Turbo）在机器人领域可实现视觉模仿学习，将视觉观测映射为模拟示范者行为的动作序列，表现优越于现有的模仿学习方法。 |
 
 # 详细
 
-[^1]: 不同的循环内核拓展到不同的储备计算拓扑的研究
+[^1]: 关键动作令牌在机器人学中实现上下文模仿学习
 
-    Extension of Recurrent Kernels to different Reservoir Computing topologies. (arXiv:2401.14557v1 [cs.LG])
+    Keypoint Action Tokens Enable In-Context Imitation Learning in Robotics
 
-    [http://arxiv.org/abs/2401.14557](http://arxiv.org/abs/2401.14557)
+    [https://arxiv.org/abs/2403.19578](https://arxiv.org/abs/2403.19578)
 
-    该研究通过提供特定RC体系结构与相应循环内核形式等价性的经验分析，填补了Leaky RC、Sparse RC和Deep RC等已建立的RC范例尚未进行分析的空白。此外，研究还揭示了稀疏连接在RC体系结构中的作用，并提出了一种依赖储备大小的最佳稀疏性水平。最后，该研究的系统分析表明，在Deep RC模型中，通过减小尺寸的连续储备可以更好地实现收敛。
+    使用关键动作令牌（KAT）框架，研究展示了文本预训练的变形器（GPT-4 Turbo）在机器人领域可实现视觉模仿学习，将视觉观测映射为模拟示范者行为的动作序列，表现优越于现有的模仿学习方法。
 
     
 
-    近年来，由于其快速高效的计算能力，储备计算（RC）变得越来越受欢迎。标准的RC在渐近极限下已被证明与循环内核等效，这有助于分析其表达能力。然而，许多已建立的RC范例，如Leaky RC、Sparse RC和Deep RC，尚未以这种方式进行分析。本研究旨在通过提供特定RC体系结构与相应循环内核形式等价性的经验分析来填补这一空白。我们通过改变每个体系结构中实施的激活函数进行收敛研究。我们的研究还揭示了稀疏连接在RC体系结构中的作用，并提出了一种依赖储备大小的最佳稀疏性水平。此外，我们的系统分析表明，在Deep RC模型中，通过减小尺寸的连续储备可以更好地实现收敛。
+    我们展示了现成的基于文本的变形器，无需额外训练，就可以执行少样本上下文内视觉模仿学习，将视觉观测映射为模拟示范者行为的动作序列。我们通过将视觉观测（输入）和动作轨迹（输出）转换为一系列令牌，这些令牌可以被文本预训练的变形器（GPT-4 Turbo）接收和生成，通过我们称之为关键动作令牌（KAT）的框架来实现这一点。尽管仅在语言上训练，我们展示这些变形器擅长将标记化的视觉关键点观察翻译为行为轨迹，在真实世界的日常任务套件中，在低数据情况下表现与优于最先进的模仿学习（扩散策略）。KAT不同于通常在语言领域操作，它利用基于文本的变形器在视觉和动作领域中学习。
 
-    Reservoir Computing (RC) has become popular in recent years due to its fast and efficient computational capabilities. Standard RC has been shown to be equivalent in the asymptotic limit to Recurrent Kernels, which helps in analyzing its expressive power. However, many well-established RC paradigms, such as Leaky RC, Sparse RC, and Deep RC, are yet to be analyzed in such a way. This study aims to fill this gap by providing an empirical analysis of the equivalence of specific RC architectures with their corresponding Recurrent Kernel formulation. We conduct a convergence study by varying the activation function implemented in each architecture. Our study also sheds light on the role of sparse connections in RC architectures and propose an optimal sparsity level that depends on the reservoir size. Furthermore, our systematic analysis shows that in Deep RC models, convergence is better achieved with successive reservoirs of decreasing sizes.
+    arXiv:2403.19578v1 Announce Type: cross  Abstract: We show that off-the-shelf text-based Transformers, with no additional training, can perform few-shot in-context visual imitation learning, mapping visual observations to action sequences that emulate the demonstrator's behaviour. We achieve this by transforming visual observations (inputs) and trajectories of actions (outputs) into sequences of tokens that a text-pretrained Transformer (GPT-4 Turbo) can ingest and generate, via a framework we call Keypoint Action Tokens (KAT). Despite being trained only on language, we show that these Transformers excel at translating tokenised visual keypoint observations into action trajectories, performing on par or better than state-of-the-art imitation learning (diffusion policies) in the low-data regime on a suite of real-world, everyday tasks. Rather than operating in the language domain as is typical, KAT leverages text-based Transformers to operate in the vision and action domains to learn ge
     
 
