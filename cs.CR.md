@@ -2,52 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Differentially Private Online Federated Learning with Correlated Noise](https://arxiv.org/abs/2403.16542) | 提出一种利用相关噪声提高效用并确保隐私的差分隐私在线联邦学习算法，解决了DP噪声和本地更新带来的挑战，并在动态环境中建立了动态遗憾界。 |
-| [^2] | [Reinforcement Unlearning.](http://arxiv.org/abs/2312.15910) | 强化学习中的消除学习是一种新兴的研究领域，旨在解决环境所有者有权撤销智能体训练数据的隐私问题。该领域面临三个主要挑战。 |
-| [^3] | [Launching a Robust Backdoor Attack under Capability Constrained Scenarios.](http://arxiv.org/abs/2304.10985) | 深度神经网络的后门攻击一直是一个安全性问题，现有的改进方法需要强大的攻击者能力，在能力受限场景下还没有找到令人满意的解决办法，此外，模型鲁棒性仍然值得关注。 |
+| [^1] | [Estimation of conditional average treatment effects on distributed data: A privacy-preserving approach](https://arxiv.org/abs/2402.02672) | 本论文提出了一种数据协作双机器学习（DC-DML）方法，该方法可以在保护分布式数据隐私的情况下估计条件平均治疗效果（CATE）模型。通过数值实验验证了该方法的有效性。该方法的三个主要贡献是：实现了对分布式数据上的非迭代通信的半参数CATE模型的估计和测试，提高了模型的鲁棒性。 |
+| [^2] | [Passive Inference Attacks on Split Learning via Adversarial Regularization.](http://arxiv.org/abs/2310.10483) | 该论文介绍了一种针对拆分学习的被动推理攻击框架SDAR，通过利用辅助数据和对抗性正则化来推断客户端的私有特征和标签，在实验中取得了与主动攻击相当的攻击性能。 |
+| [^3] | [Optimal Differentially Private Learning with Public Data.](http://arxiv.org/abs/2306.15056) | 本论文研究了具有公共数据的最优差分隐私学习，并解决了在训练差分隐私模型时如何利用公共数据提高准确性的问题。 |
+| [^4] | [DNN-Defender: An in-DRAM Deep Neural Network Defense Mechanism for Adversarial Weight Attack.](http://arxiv.org/abs/2305.08034) | DNN-Defender是一种基于DRAM的受害者重点防御机制，适用于量化DNN，利用内存中交换的潜力以抵御有针对性的位翻转攻击，可以提供高水平的保护。 |
 
 # 详细
 
-[^1]: 具有相关噪声的差分隐私在线联邦学习
+[^1]: 对分布式数据的条件平均治疗效果估计：一种保护隐私的方法
 
-    Differentially Private Online Federated Learning with Correlated Noise
+    Estimation of conditional average treatment effects on distributed data: A privacy-preserving approach
 
-    [https://arxiv.org/abs/2403.16542](https://arxiv.org/abs/2403.16542)
+    [https://arxiv.org/abs/2402.02672](https://arxiv.org/abs/2402.02672)
 
-    提出一种利用相关噪声提高效用并确保隐私的差分隐私在线联邦学习算法，解决了DP噪声和本地更新带来的挑战，并在动态环境中建立了动态遗憾界。
-
-    
-
-    我们提出了一种新颖的差分隐私算法，用于在线联邦学习，利用时间相关的噪声来提高效用同时确保连续发布的模型的隐私性。为了解决源自DP噪声和本地更新带来的流式非独立同分布数据的挑战，我们开发了扰动迭代分析来控制DP噪声对效用的影响。此外，我们展示了在准强凸条件下如何有效管理来自本地更新的漂移误差。在$(\epsilon, \delta)$-DP预算范围内，我们建立了整个时间段上的动态遗憾界，量化了关键参数的影响以及动态环境变化的强度。数值实验证实了所提算法的有效性。
-
-    arXiv:2403.16542v1 Announce Type: new  Abstract: We propose a novel differentially private algorithm for online federated learning that employs temporally correlated noise to improve the utility while ensuring the privacy of the continuously released models. To address challenges stemming from DP noise and local updates with streaming noniid data, we develop a perturbed iterate analysis to control the impact of the DP noise on the utility. Moreover, we demonstrate how the drift errors from local updates can be effectively managed under a quasi-strong convexity condition. Subject to an $(\epsilon, \delta)$-DP budget, we establish a dynamic regret bound over the entire time horizon that quantifies the impact of key parameters and the intensity of changes in dynamic environments. Numerical experiments validate the efficacy of the proposed algorithm.
-    
-[^2]: 强化学习中的消除学习
-
-    Reinforcement Unlearning. (arXiv:2312.15910v2 [cs.CR] UPDATED)
-
-    [http://arxiv.org/abs/2312.15910](http://arxiv.org/abs/2312.15910)
-
-    强化学习中的消除学习是一种新兴的研究领域，旨在解决环境所有者有权撤销智能体训练数据的隐私问题。该领域面临三个主要挑战。
+    本论文提出了一种数据协作双机器学习（DC-DML）方法，该方法可以在保护分布式数据隐私的情况下估计条件平均治疗效果（CATE）模型。通过数值实验验证了该方法的有效性。该方法的三个主要贡献是：实现了对分布式数据上的非迭代通信的半参数CATE模型的估计和测试，提高了模型的鲁棒性。
 
     
 
-    机器消除学习指的是根据数据所有者的请求，降低特定训练数据对机器学习模型的影响的过程。然而，在消除学习的研究中，一个重要的领域往往被忽视，那就是强化学习。强化学习旨在训练一个智能体在环境中做出最优决策以最大化累积奖励。在训练过程中，智能体往往会记忆环境的特征，这引发了一个重大的隐私问题。根据数据保护法规，环境的所有者有权撤销智能体的训练数据的访问权限，因此需要开展一个新颖且紧迫的研究领域，即“强化消除学习”。强化消除学习侧重于撤销整个环境而不是单个数据样本。这一独特特征带来了三个不同的挑战：1）如何提出消除学习方案
+    在医学和社会科学等各个领域中，对条件平均治疗效果（CATEs）的估计是一个重要的课题。如果分布在多个参与方之间的数据可以集中，可以对CATEs进行高精度的估计。然而，如果这些数据包含隐私信息，则很难进行数据聚合。为了解决这个问题，我们提出了数据协作双机器学习（DC-DML）方法，该方法可以在保护分布式数据隐私的情况下估计CATE模型，并通过数值实验对该方法进行了评估。我们的贡献总结如下三点。首先，我们的方法能够在分布式数据上进行非迭代通信的半参数CATE模型的估计和测试。半参数或非参数的CATE模型能够比参数模型更稳健地进行估计和测试，对于模型偏差的鲁棒性更强。然而，据我们所知，目前还没有提出有效的通信方法来估计和测试这些模型。
 
-    Machine unlearning refers to the process of mitigating the influence of specific training data on machine learning models based on removal requests from data owners. However, one important area that has been largely overlooked in the research of unlearning is reinforcement learning. Reinforcement learning focuses on training an agent to make optimal decisions within an environment to maximize its cumulative rewards. During the training, the agent tends to memorize the features of the environment, which raises a significant concern about privacy. As per data protection regulations, the owner of the environment holds the right to revoke access to the agent's training data, thus necessitating the development of a novel and pressing research field, known as \emph{reinforcement unlearning}. Reinforcement unlearning focuses on revoking entire environments rather than individual data samples. This unique characteristic presents three distinct challenges: 1) how to propose unlearning schemes f
+    Estimation of conditional average treatment effects (CATEs) is an important topic in various fields such as medical and social sciences. CATEs can be estimated with high accuracy if distributed data across multiple parties can be centralized. However, it is difficult to aggregate such data if they contain privacy information. To address this issue, we proposed data collaboration double machine learning (DC-DML), a method that can estimate CATE models with privacy preservation of distributed data, and evaluated the method through numerical experiments. Our contributions are summarized in the following three points. First, our method enables estimation and testing of semi-parametric CATE models without iterative communication on distributed data. Semi-parametric or non-parametric CATE models enable estimation and testing that is more robust to model mis-specification than parametric models. However, to our knowledge, no communication-efficient method has been proposed for estimating and 
     
-[^3]: 在能力受限场景下启动强韧后门攻击
+[^2]: 通过对抗性正则化对拆分学习进行袭击的被动推理攻击
 
-    Launching a Robust Backdoor Attack under Capability Constrained Scenarios. (arXiv:2304.10985v1 [cs.CR])
+    Passive Inference Attacks on Split Learning via Adversarial Regularization. (arXiv:2310.10483v4 [cs.CR] UPDATED)
 
-    [http://arxiv.org/abs/2304.10985](http://arxiv.org/abs/2304.10985)
+    [http://arxiv.org/abs/2310.10483](http://arxiv.org/abs/2310.10483)
 
-    深度神经网络的后门攻击一直是一个安全性问题，现有的改进方法需要强大的攻击者能力，在能力受限场景下还没有找到令人满意的解决办法，此外，模型鲁棒性仍然值得关注。
+    该论文介绍了一种针对拆分学习的被动推理攻击框架SDAR，通过利用辅助数据和对抗性正则化来推断客户端的私有特征和标签，在实验中取得了与主动攻击相当的攻击性能。
 
     
 
-    随着深度神经网络在关键领域的应用不断增加，人们开始担心它们的安全性。由于缺乏透明度，深度学习模型容易受到后门攻击的威胁。污染的后门模型在普通环境下可能表现正常，但当输入包含触发器时，会显示出恶意行为。目前对后门攻击的研究集中于改善触发器的秘密性，大多数方法需要强大的攻击者能力，例如对模型结构的了解或对训练过程的控制。由于在大多数情况下攻击者的能力受到限制，这些攻击是不切实际的。此外，模型鲁棒性的问题还未得到充分关注。例如，模型蒸馏常用于简化模型大小，但随着参数数量指数级增长，以前的许多后门攻击在模型蒸馏后均失败;图像增强操作可以破坏触发器，从而使后门攻击失效。
+    拆分学习(SL)已成为传统联邦学习的一种实用且高效的替代方案。虽然以前攻击SL的尝试往往依赖于过于强硬的假设或者针对易受攻击的模型，但我们试图开发更加实用的攻击方法。我们引入了SDAR，这是一个针对拥有诚实但好奇的服务器的SL的新攻击框架。SDAR利用辅助数据和对抗性正则化来学习客户端私有模型的可解码模拟器，在基本SL下可以有效地推断出客户端的私有特征，并在U型SL下推断出特征和标签。我们进行了大量实验来验证我们提出的攻击方法的有效性。值得注意的是，在具有挑战性但实际的场景中，现有的被动攻击难以有效地重建客户端的私有数据时，SDAR始终实现了与主动攻击相当的攻击性能。在CIFAR-10上，在深度拆分水平为7的情况下，SDAR达到了攻击性能。
 
-    As deep neural networks continue to be used in critical domains, concerns over their security have emerged. Deep learning models are vulnerable to backdoor attacks due to the lack of transparency. A poisoned backdoor model may perform normally in routine environments, but exhibit malicious behavior when the input contains a trigger. Current research on backdoor attacks focuses on improving the stealthiness of triggers, and most approaches require strong attacker capabilities, such as knowledge of the model structure or control over the training process. These attacks are impractical since in most cases the attacker's capabilities are limited. Additionally, the issue of model robustness has not received adequate attention. For instance, model distillation is commonly used to streamline model size as the number of parameters grows exponentially, and most of previous backdoor attacks failed after model distillation; the image augmentation operations can destroy the trigger and thus disabl
+    Split Learning (SL) has emerged as a practical and efficient alternative to traditional federated learning. While previous attempts to attack SL have often relied on overly strong assumptions or targeted easily exploitable models, we seek to develop more practical attacks. We introduce SDAR, a novel attack framework against SL with an honest-but-curious server. SDAR leverages auxiliary data and adversarial regularization to learn a decodable simulator of the client's private model, which can effectively infer the client's private features under the vanilla SL, and both features and labels under the U-shaped SL. We perform extensive experiments in both configurations to validate the effectiveness of our proposed attacks. Notably, in challenging but practical scenarios where existing passive attacks struggle to reconstruct the client's private data effectively, SDAR consistently achieves attack performance comparable to active attacks. On CIFAR-10, at the deep split level of 7, SDAR achi
+    
+[^3]: 具有公共数据的最优差分隐私学习
+
+    Optimal Differentially Private Learning with Public Data. (arXiv:2306.15056v1 [cs.LG])
+
+    [http://arxiv.org/abs/2306.15056](http://arxiv.org/abs/2306.15056)
+
+    本论文研究了具有公共数据的最优差分隐私学习，并解决了在训练差分隐私模型时如何利用公共数据提高准确性的问题。
+
+    
+
+    差分隐私能够确保训练机器学习模型不泄漏私密数据。然而，差分隐私的代价是模型的准确性降低或样本复杂度增加。在实践中，我们可能可以访问不涉及隐私问题的辅助公共数据。这促使了最近研究公共数据在提高差分隐私模型准确性方面的作用。在本研究中，我们假设有一定数量的公共数据，并解决以下基本开放问题：1.在有公共数据的情况下，训练基于私有数据集的差分隐私模型的最优（最坏情况）误差是多少？哪些算法是最优的？2.如何利用公共数据在实践中改进差分隐私模型训练？我们在本地模型和中心模型的差分隐私问题下考虑这些问题。为了回答第一个问题，我们证明了对三个基本问题的最优误差率的紧密（最高常数因子）下界和上界。这三个问题是：均值估计，经验风险最小化和凸奇化。
+
+    Differential Privacy (DP) ensures that training a machine learning model does not leak private data. However, the cost of DP is lower model accuracy or higher sample complexity. In practice, we may have access to auxiliary public data that is free of privacy concerns. This has motivated the recent study of what role public data might play in improving the accuracy of DP models. In this work, we assume access to a given amount of public data and settle the following fundamental open questions: 1. What is the optimal (worst-case) error of a DP model trained over a private data set while having access to side public data? What algorithms are optimal? 2. How can we harness public data to improve DP model training in practice? We consider these questions in both the local and central models of DP. To answer the first question, we prove tight (up to constant factors) lower and upper bounds that characterize the optimal error rates of three fundamental problems: mean estimation, empirical ris
+    
+[^4]: DNN-Defender: 一种用于对抗 Adversarial Weight Attack 的内存中深度神经网络防御机制
+
+    DNN-Defender: An in-DRAM Deep Neural Network Defense Mechanism for Adversarial Weight Attack. (arXiv:2305.08034v1 [cs.CR])
+
+    [http://arxiv.org/abs/2305.08034](http://arxiv.org/abs/2305.08034)
+
+    DNN-Defender是一种基于DRAM的受害者重点防御机制，适用于量化DNN，利用内存中交换的潜力以抵御有针对性的位翻转攻击，可以提供高水平的保护。
+
+    
+
+    随着深度学习在许多安全敏感领域中的部署，机器学习安全变得越来越重要。最近的研究表明，攻击者可以利用DRAM的RowHammer漏洞，以确定性和精确性地翻转深度神经网络(DNN)模型权重的位，从而影响推断准确性。现有的防御机制是基于软件的，例如重构权重需要昂贵的训练开销或性能下降。另一方面，基于通用硬件的受害者/攻击者重点防御机制会导致昂贵的硬件开销，并保留受害者和攻击者行之间的空间连接。在本文中，我们提出了第一种针对量化DNN量身定制的基于DRAM的受害者重点防御机制，称为DNN-Defender，利用了内存中交换的潜力以抵御有针对性的位翻转攻击。我们的结果表明，DNN-Defender可以提供高水平的保护。
+
+    With deep learning deployed in many security-sensitive areas, machine learning security is becoming progressively important. Recent studies demonstrate attackers can exploit system-level techniques exploiting the RowHammer vulnerability of DRAM to deterministically and precisely flip bits in Deep Neural Networks (DNN) model weights to affect inference accuracy. The existing defense mechanisms are software-based, such as weight reconstruction requiring expensive training overhead or performance degradation. On the other hand, generic hardware-based victim-/aggressor-focused mechanisms impose expensive hardware overheads and preserve the spatial connection between victim and aggressor rows. In this paper, we present the first DRAM-based victim-focused defense mechanism tailored for quantized DNNs, named DNN-Defender that leverages the potential of in-DRAM swapping to withstand the targeted bit-flip attacks. Our results indicate that DNN-Defender can deliver a high level of protection dow
     
 

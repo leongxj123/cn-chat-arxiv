@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Review of Graph Neural Networks in Epidemic Modeling](https://arxiv.org/abs/2403.19852) | 图神经网络在流行病建模中作为一种新工具备受关注，本文全面回顾了GNN在流行病研究中的应用，并提出了未来发展方向。 |
+| [^1] | [INFLECT-DGNN: Influencer Prediction with Dynamic Graph Neural Networks.](http://arxiv.org/abs/2307.08131) | INFLECT-DGNN是一个结合了图神经网络和递归神经网络的框架，使用加权损失函数、针对图数据适应的合成少数过采样技术和滚动窗口策略，用于影响者预测。实验结果显示，使用RNN来编码时间属性和GNN显著提高了预测性能。 |
 
 # 详细
 
-[^1]: 流行病建模中图神经网络的综述
+[^1]: INFLECT-DGNN: 动态图神经网络进行影响者预测
 
-    A Review of Graph Neural Networks in Epidemic Modeling
+    INFLECT-DGNN: Influencer Prediction with Dynamic Graph Neural Networks. (arXiv:2307.08131v2 [cs.SI] UPDATED)
 
-    [https://arxiv.org/abs/2403.19852](https://arxiv.org/abs/2403.19852)
+    [http://arxiv.org/abs/2307.08131](http://arxiv.org/abs/2307.08131)
 
-    图神经网络在流行病建模中作为一种新工具备受关注，本文全面回顾了GNN在流行病研究中的应用，并提出了未来发展方向。
+    INFLECT-DGNN是一个结合了图神经网络和递归神经网络的框架，使用加权损失函数、针对图数据适应的合成少数过采样技术和滚动窗口策略，用于影响者预测。实验结果显示，使用RNN来编码时间属性和GNN显著提高了预测性能。
 
     
 
-    自新冠疫情爆发以来，人们对流行病学模型的研究越来越感兴趣。传统的机械模型数学描述了传染病的传播机制，但在面对当今不断增长的挑战时往往力不从心。因此，图神经网络（GNNs）已经成为流行病研究中越来越流行的工具。本文试图全面回顾GNN在流行病任务中的应用，并强调潜在的未来发展方向。为实现这一目标，我们为流行病任务和方法论各引入了分层分类法，为该领域内的发展轨迹提供了一个框架。对于流行病任务，我们建立了一个类似于流行病领域通常应用的分类体系。对于方法论，我们将现有研究分为“神经模型”和“混合模型”。
+    在许多领域中，利用网络信息进行预测建模已经变得非常普遍。在推荐和定向营销领域中，影响者检测是一个可以通过动态网络表示大大受益的领域，原因是不断发展的客户-品牌关系。为了阐述这一思想，我们引入了INFLECT-DGNN，这是一个使用加权损失函数的图神经网络（GNN）和递归神经网络（RNN），针对图数据适应的合成少数过采样技术（SMOTE）以及精心设计的滚动窗口策略的新框架。为了评估预测性能，我们利用一个包含三个城市网络的独特企业数据集，并制定了一个以利润为驱动的影响者预测评估方法。我们的结果表明，使用RNN来编码时间属性以及GNN显著改善了预测性能。
 
-    arXiv:2403.19852v1 Announce Type: new  Abstract: Since the onset of the COVID-19 pandemic, there has been a growing interest in studying epidemiological models. Traditional mechanistic models mathematically describe the transmission mechanisms of infectious diseases. However, they often fall short when confronted with the growing challenges of today. Consequently, Graph Neural Networks (GNNs) have emerged as a progressively popular tool in epidemic research. In this paper, we endeavor to furnish a comprehensive review of GNNs in epidemic tasks and highlight potential future directions. To accomplish this objective, we introduce hierarchical taxonomies for both epidemic tasks and methodologies, offering a trajectory of development within this domain. For epidemic tasks, we establish a taxonomy akin to those typically employed within the epidemic domain. For methodology, we categorize existing work into \textit{Neural Models} and \textit{Hybrid Models}. Following this, we perform an exha
+    Leveraging network information for predictive modeling has become widespread in many domains. Within the realm of referral and targeted marketing, influencer detection stands out as an area that could greatly benefit from the incorporation of dynamic network representation due to the ongoing development of customer-brand relationships. To elaborate this idea, we introduce INFLECT-DGNN, a new framework for INFLuencer prEdiCTion with Dynamic Graph Neural Networks that combines Graph Neural Networks (GNN) and Recurrent Neural Networks (RNN) with weighted loss functions, the Synthetic Minority Oversampling TEchnique (SMOTE) adapted for graph data, and a carefully crafted rolling-window strategy. To evaluate predictive performance, we utilize a unique corporate data set with networks of three cities and derive a profit-driven evaluation methodology for influencer prediction. Our results show how using RNN to encode temporal attributes alongside GNNs significantly improves predictive perform
     
 

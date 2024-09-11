@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Resolving Ethics Trade-offs in Implementing Responsible AI](https://arxiv.org/abs/2401.08103) | 该论文提出了通过权衡处理人工智能伦理中的紧张关系的五种方法，并提出了一个框架来实施全面的人工智能/机器学习系统。 |
-| [^2] | [Online Advertisements with LLMs: Opportunities and Challenges](https://arxiv.org/abs/2311.07601) | 本文探讨了在线广告系统中利用大型语言模型（LLM）的潜力，提出了一个LLM广告的通用框架，并讨论了基于LLM的动态创意优化的前景。 |
+| [^1] | [Particip-AI: A Democratic Surveying Framework for Anticipating Future AI Use Cases, Harms and Benefits](https://arxiv.org/abs/2403.14791) | Particip-AI 是一个框架，旨在通过从非专业公众那里收集当前和未来的人工智能使用情况、危害和益处，引领人工智能的民主发展。 |
 
 # 详细
 
-[^1]: 解决在实施负责任人工智能中的伦理权衡
+[^1]: Particip-AI: 一种民主调查框架，用于预测未来人工智能的使用情况、危害和益处
 
-    Resolving Ethics Trade-offs in Implementing Responsible AI
+    Particip-AI: A Democratic Surveying Framework for Anticipating Future AI Use Cases, Harms and Benefits
 
-    [https://arxiv.org/abs/2401.08103](https://arxiv.org/abs/2401.08103)
+    [https://arxiv.org/abs/2403.14791](https://arxiv.org/abs/2403.14791)
 
-    该论文提出了通过权衡处理人工智能伦理中的紧张关系的五种方法，并提出了一个框架来实施全面的人工智能/机器学习系统。
-
-    
-
-    虽然把高级人工智能伦理原则应用到实际的人工智能/机器学习系统中已经取得了进展，但在处理底层人工智能伦理方面的紧张关系方面仍存在理论与实践之间的差距。我们提出了五种处理这些关系的方法，从简单到复杂不等。这些方法在考虑的上下文类型、范围、衡量上下文的方法和证明程度上有所不同。这些方法中没有一种适用于所有组织、系统或应用。为了解决这个问题，我们提出了一个框架，包括：（i）积极识别紧张关系，（ii）优先处理和权衡伦理方面，（iii）证明和记录权衡决策。该提议的框架旨在促进实施符合潜在监管要求的全面人工智能/机器学习系统。
-
-    While the operationalisation of high-level AI ethics principles into practical AI/ML systems has made progress, there is still a theory-practice gap in managing tensions between the underlying AI ethics aspects. We cover five approaches for addressing the tensions via trade-offs, ranging from rudimentary to complex. The approaches differ in the types of considered context, scope, methods for measuring contexts, and degree of justification. None of the approaches is likely to be appropriate for all organisations, systems, or applications. To address this, we propose a framework which consists of: (i) proactive identification of tensions, (ii) prioritisation and weighting of ethics aspects, (iii) justification and documentation of trade-off decisions. The proposed framework aims to facilitate the implementation of well-rounded AI/ML systems that are appropriate for potential regulatory requirements.
-    
-[^2]: 在线广告与LLMs：机遇与挑战
-
-    Online Advertisements with LLMs: Opportunities and Challenges
-
-    [https://arxiv.org/abs/2311.07601](https://arxiv.org/abs/2311.07601)
-
-    本文探讨了在线广告系统中利用大型语言模型（LLM）的潜力，提出了一个LLM广告的通用框架，并讨论了基于LLM的动态创意优化的前景。
+    Particip-AI 是一个框架，旨在通过从非专业公众那里收集当前和未来的人工智能使用情况、危害和益处，引领人工智能的民主发展。
 
     
 
-    本文探讨了在在线广告系统中利用大型语言模型（LLM）的潜力。我们深入研究了这个系统必须满足的隐私、延迟、可靠性以及用户和广告商的满意度等关键要求。我们进一步介绍了一个LLM广告的通用框架，包括修改、竞标、预测和拍卖模块。我们提出了每个模块的不同设计考虑，并对其实用性和实施中的技术挑战进行了深入研究。最后，我们探讨了基于LLM的动态创意优化的前景，以显著提升广告对用户的吸引力，并讨论了它所面临的额外挑战。
+    通用人工智能，如ChatGPT，似乎降低了公众使用人工智能及利用其力量的门槛。然而，人工智能的治理和发展仍掌握在少数人手中，发展速度加快且缺乏风险评估。作为迈向人工智能民主治理和风险评估的第一步，我们介绍了Particip-AI，一个框架用于从非专业公众那里收集当前和将来的人工智能使用情况及其危害和益处。我们的框架允许通过收集使用情况更加细致和详细地研究公众对人工智能的意见，通过在备选方案下（即开发和不开发一种使用情况）进行风险评估呈现出多样化的危害，并通过做出对其发展的结论性选择阐明人工智能发展的紧张关系。为展示我们的框架对指导民主人工智能的承诺，我们收集了来自295个人口多样化的回应。
 
-    arXiv:2311.07601v2 Announce Type: replace-cross Abstract: This paper explores the potential for leveraging Large Language Models (LLM) in the realm of online advertising systems. We delve into essential requirements including privacy, latency, reliability as well as the satisfaction of users and advertisers which such a system must fulfill. We further introduce a general framework for LLM advertisement, consisting of modification, bidding, prediction, and auction modules. Different design considerations for each module is presented, with an in-depth examination of their practicality and the technical challenges inherent to their implementation. Finally, we explore the prospect of LLM-based dynamic creative optimization as a means to significantly enhance the appeal of advertisements to users and discuss its additional challenges.
+    arXiv:2403.14791v1 Announce Type: cross  Abstract: General purpose AI, such as ChatGPT, seems to have lowered the barriers for the public to use AI and harness its power. However, the governance and development of AI still remain in the hands of a few, and the pace of development is accelerating without proper assessment of risks. As a first step towards democratic governance and risk assessment of AI, we introduce Particip-AI, a framework to gather current and future AI use cases and their harms and benefits from non-expert public. Our framework allows us to study more nuanced and detailed public opinions on AI through collecting use cases, surfacing diverse harms through risk assessment under alternate scenarios (i.e., developing and not developing a use case), and illuminating tensions over AI development through making a concluding choice on its development. To showcase the promise of our framework towards guiding democratic AI, we gather responses from 295 demographically diverse 
     
 

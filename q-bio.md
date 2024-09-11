@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Review of Graph Neural Networks in Epidemic Modeling](https://arxiv.org/abs/2403.19852) | 图神经网络在流行病建模中作为一种新工具备受关注，本文全面回顾了GNN在流行病研究中的应用，并提出了未来发展方向。 |
-| [^2] | [Analyzing Resting-State fMRI Data in Marijuana Users via High-Order Attention Brain Network](https://arxiv.org/abs/2403.00033) | 通过结合动态内在功能网络和LSTM技术，使用高阶注意力模块进行信息融合和消息传递，提出了HOGAB模型，对慢性大麻用户的静息态fMRI数据进行分析，提高了多图分类的准确性。 |
+| [^1] | [Multi-intention Inverse Q-learning for Interpretable Behavior Representation](https://rss.arxiv.org/abs/2311.13870) | 本研究引入了一种多意图逆Q学习算法，用于解决在推断离散时变奖励时的挑战。通过聚类观察到的专家轨迹并独立解决每个意图的逆强化学习问题，我们的方法在动物行为预测方面超越了当前的基准，产生了可解释的奖励函数。 |
+| [^2] | [Disentangling Hippocampal Shape Variations: A Study of Neurological Disorders Using Graph Variational Autoencoder with Contrastive Learning](https://arxiv.org/abs/2404.00785) | 本研究利用图变分自动编码器和对比学习解开神经系统疾病中海马形状变异的关键潜变量，超越了其他先进方法在解开能力上的表现。 |
 
 # 详细
 
-[^1]: 流行病建模中图神经网络的综述
+[^1]: 可解释行为表示的多意图逆Q学习
 
-    A Review of Graph Neural Networks in Epidemic Modeling
+    Multi-intention Inverse Q-learning for Interpretable Behavior Representation
 
-    [https://arxiv.org/abs/2403.19852](https://arxiv.org/abs/2403.19852)
+    [https://rss.arxiv.org/abs/2311.13870](https://rss.arxiv.org/abs/2311.13870)
 
-    图神经网络在流行病建模中作为一种新工具备受关注，本文全面回顾了GNN在流行病研究中的应用，并提出了未来发展方向。
-
-    
-
-    自新冠疫情爆发以来，人们对流行病学模型的研究越来越感兴趣。传统的机械模型数学描述了传染病的传播机制，但在面对当今不断增长的挑战时往往力不从心。因此，图神经网络（GNNs）已经成为流行病研究中越来越流行的工具。本文试图全面回顾GNN在流行病任务中的应用，并强调潜在的未来发展方向。为实现这一目标，我们为流行病任务和方法论各引入了分层分类法，为该领域内的发展轨迹提供了一个框架。对于流行病任务，我们建立了一个类似于流行病领域通常应用的分类体系。对于方法论，我们将现有研究分为“神经模型”和“混合模型”。
-
-    arXiv:2403.19852v1 Announce Type: new  Abstract: Since the onset of the COVID-19 pandemic, there has been a growing interest in studying epidemiological models. Traditional mechanistic models mathematically describe the transmission mechanisms of infectious diseases. However, they often fall short when confronted with the growing challenges of today. Consequently, Graph Neural Networks (GNNs) have emerged as a progressively popular tool in epidemic research. In this paper, we endeavor to furnish a comprehensive review of GNNs in epidemic tasks and highlight potential future directions. To accomplish this objective, we introduce hierarchical taxonomies for both epidemic tasks and methodologies, offering a trajectory of development within this domain. For epidemic tasks, we establish a taxonomy akin to those typically employed within the epidemic domain. For methodology, we categorize existing work into \textit{Neural Models} and \textit{Hybrid Models}. Following this, we perform an exha
-    
-[^2]: 通过高阶注意力大脑网络分析大麻使用者的静息态fMRI数据
-
-    Analyzing Resting-State fMRI Data in Marijuana Users via High-Order Attention Brain Network
-
-    [https://arxiv.org/abs/2403.00033](https://arxiv.org/abs/2403.00033)
-
-    通过结合动态内在功能网络和LSTM技术，使用高阶注意力模块进行信息融合和消息传递，提出了HOGAB模型，对慢性大麻用户的静息态fMRI数据进行分析，提高了多图分类的准确性。
+    本研究引入了一种多意图逆Q学习算法，用于解决在推断离散时变奖励时的挑战。通过聚类观察到的专家轨迹并独立解决每个意图的逆强化学习问题，我们的方法在动物行为预测方面超越了当前的基准，产生了可解释的奖励函数。
 
     
 
-    大麻的持续使用明显影响人们的生活和健康。在这项研究中，我们提出了一个可解释的新框架，命名为HOGAB（High-Order Attention Graph Attention神经网络）模型，以分析两个数据集中慢性大麻用户的局部异常脑活动。HOGAB将动态内在功能网络与LSTM技术相结合，捕捉大麻用户fMRI时间序列中的时间模式。此外，我们使用高阶注意力模块来对邻域节点进行信息融合和消息传递，增强长期大麻用户的社区聚类分析。此外，我们通过融入注意力机制提高了模型的整体学习能力，在多图分类中实现了85.1%的AUC和80.7%的准确性。此外，我们比较了线性机器学习方法，并评估了我们提出的HODAB模型的有效性。
+    在推动决策过程理解方面，逆强化学习（IRL）在重构动物复杂行为中的多个意图方面证明了其重要性。鉴于最近发展的连续时间多意图IRL框架，人们一直在研究如何使用IRL推断离散的时变奖励。为了解决这个挑战，我们引入了潜（马尔科夫）变量逆Q学习（L(M)V-IQL），这是一种专门用于适应离散内在奖励函数的IRL算法。通过利用期望最大化方法，我们将观察到的专家轨迹聚类成不同的意图，并为每个意图独立解决IRL问题。通过模拟实验和对不同真实鼠类行为数据集的应用，我们的方法在动物行为预测方面超越了当前的基准，产生了可解释的奖励函数。这一进展有望打开推动科学与工程应用的新机遇。
 
-    arXiv:2403.00033v1 Announce Type: cross  Abstract: The sustained use of marijuana significantly impacts the lives and health of people. In this study, we propose an interpretable novel framework called the HOGAB (High-Order Attention Graph Attention Neural Networks) model to analyze local abnormal brain activity in chronic marijuana users in two datasets. The HOGAB integrates dynamic intrinsic functional networks with LSTM technology to capture temporal patterns in fMRI time series of marijuana users. Moreover, we use the high-order attention module in neighborhood nodes for information fusion and message passing, enhancing community clustering analysis for long-term marijuana users. Furthermore, we improve the overall learning ability of the model by incorporating attention mechanisms, achieving an AUC of 85.1% and an accuracy of 80.7% in multigraph classification. In addition, we compare linear machine learning methods and evaluate the effectiveness of our proposed HODAB model. Speci
+    In advancing the understanding of decision-making processes, Inverse Reinforcement Learning (IRL) have proven instrumental in reconstructing animal's multiple intentions amidst complex behaviors. Given the recent development of a continuous-time multi-intention IRL framework, there has been persistent inquiry into inferring discrete time-varying rewards with IRL. To tackle the challenge, we introduce Latent (Markov) Variable Inverse Q-learning (L(M)V-IQL), a novel class of IRL algorthms tailored for accommodating discrete intrinsic reward functions. Leveraging an Expectation-Maximization approach, we cluster observed expert trajectories into distinct intentions and independently solve the IRL problem for each. Demonstrating the efficacy of L(M)V-IQL through simulated experiments and its application to different real mouse behavior datasets, our approach surpasses current benchmarks in animal behavior prediction, producing interpretable reward functions. This advancement holds promise f
+    
+[^2]: 解开海马形状变异之谜：利用对比学习的图变分自动编码器研究神经系统疾病
+
+    Disentangling Hippocampal Shape Variations: A Study of Neurological Disorders Using Graph Variational Autoencoder with Contrastive Learning
+
+    [https://arxiv.org/abs/2404.00785](https://arxiv.org/abs/2404.00785)
+
+    本研究利用图变分自动编码器和对比学习解开神经系统疾病中海马形状变异的关键潜变量，超越了其他先进方法在解开能力上的表现。
+
+    
+
+    本文提出了一项综合研究，专注于在神经系统疾病背景下从扩散张量成像（DTI）数据集中解开海马形状变异。借助增强的监督对比学习图变分自动编码器（VAE），我们的方法旨在通过区分代表年龄和是否患病的两个不同潜变量来提高解释性。在我们的消融研究中，我们调查了一系列VAE架构和对比损失函数，展示了我们方法增强的解开能力。这个评估使用了来自DTI海马数据集的合成3D环形网格数据和真实的3D海马网格数据集。我们的监督解开模型在解开分数方面优于几种最先进的方法，如属性和引导VAE。我们的模型可以区分不同年龄组和疾病状况。
+
+    arXiv:2404.00785v1 Announce Type: cross  Abstract: This paper presents a comprehensive study focused on disentangling hippocampal shape variations from diffusion tensor imaging (DTI) datasets within the context of neurological disorders. Leveraging a Graph Variational Autoencoder (VAE) enhanced with Supervised Contrastive Learning, our approach aims to improve interpretability by disentangling two distinct latent variables corresponding to age and the presence of diseases. In our ablation study, we investigate a range of VAE architectures and contrastive loss functions, showcasing the enhanced disentanglement capabilities of our approach. This evaluation uses synthetic 3D torus mesh data and real 3D hippocampal mesh datasets derived from the DTI hippocampal dataset. Our supervised disentanglement model outperforms several state-of-the-art (SOTA) methods like attribute and guided VAEs in terms of disentanglement scores. Our model distinguishes between age groups and disease status in pa
     
 

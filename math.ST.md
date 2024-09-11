@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Estimation and inference for the Wasserstein distance between mixing measures in topic models.](http://arxiv.org/abs/2206.12768) | 本文提出了对混合模型中混合测度的Wasserstein距离的新的规范解释，并提供了在主题模型中进行此距离推断的工具。 |
+| [^1] | [Optimal Regularization for a Data Source](https://arxiv.org/abs/2212.13597) | 本文研究了基于优化的方法中凸正则化的能力和局限性问题，通过研究给定分布情况下，对数据采用何种正则化方法是最优的。 |
 
 # 详细
 
-[^1]: 主题模型中混合测度的Wasserstein距离的估计和推断
+[^1]: 适用于数据源的最优正则化方法
 
-    Estimation and inference for the Wasserstein distance between mixing measures in topic models. (arXiv:2206.12768v2 [math.ST] UPDATED)
+    Optimal Regularization for a Data Source
 
-    [http://arxiv.org/abs/2206.12768](http://arxiv.org/abs/2206.12768)
+    [https://arxiv.org/abs/2212.13597](https://arxiv.org/abs/2212.13597)
 
-    本文提出了对混合模型中混合测度的Wasserstein距离的新的规范解释，并提供了在主题模型中进行此距离推断的工具。
+    本文研究了基于优化的方法中凸正则化的能力和局限性问题，通过研究给定分布情况下，对数据采用何种正则化方法是最优的。
 
     
 
-    在混合模型的统计分析中，混合测度的Wasserstein距离已经成为了一个核心问题。本研究提出了这种距离的新的规范解释，并提供了在主题模型中进行混合测度的Wasserstein距离推断的工具。我们考虑了一般可识别混合模型的情况，其中包括了多个来自集合$\mathcal{A}$内带有任意度量$d$的分布的混合，我们证明了混合测度的Wasserstein距离是唯一地表征出混合元素集合$\mathcal{A}$上度量$d$的最有区分性的凸扩展。虽然Wasserstein距离在混合模型的研究中已被广泛使用，但缺乏公理证明。我们的结果确立了这个度量作为一个规范选择。特准化这个度量到主题模型，我们考虑了这个距离的估计和推断。虽然$i$
+    在基于优化的逆问题和统计估计中，常常通过加入促使数据保真性的准则和促进解的所需结构性质的正则化项来解决问题。选择适当的正则化约束通常由前领域知识和计算考虑共同驱动。凸正则化项在计算上具有吸引力，但在提升结构类型方面存在局限性。另一方面，非凸正则化项在促进结构类型方面更具灵活性，并且在某些应用中展示出了强大的实证性能，但同时也带来了解决相关优化问题的计算挑战。本文通过研究以下问题，寻求对凸正则化在效能和局限性方面的系统理解：给定一个分布，对于从该分布中抽取的数据，什么是最优的正则化方法？
 
-    The Wasserstein distance between mixing measures has come to occupy a central place in the statistical analysis of mixture models. This work proposes a new canonical interpretation of this distance and provides tools to perform inference on the Wasserstein distance between mixing measures in topic models.  We consider the general setting of an identifiable mixture model consisting of mixtures of distributions from a set $\mathcal{A}$ equipped with an arbitrary metric $d$, and show that the Wasserstein distance between mixing measures is uniquely characterized as the most discriminative convex extension of the metric $d$ to the set of mixtures of elements of $\mathcal{A}$. The Wasserstein distance between mixing measures has been widely used in the study of such models, but without axiomatic justification. Our results establish this metric to be a canonical choice.  Specializing our results to topic models, we consider estimation and inference of this distance. Though upper bounds for i
+    In optimization-based approaches to inverse problems and to statistical estimation, it is common to augment criteria that enforce data fidelity with a regularizer that promotes desired structural properties in the solution. The choice of a suitable regularizer is typically driven by a combination of prior domain information and computational considerations. Convex regularizers are attractive computationally but they are limited in the types of structure they can promote. On the other hand, nonconvex regularizers are more flexible in the forms of structure they can promote and they have showcased strong empirical performance in some applications, but they come with the computational challenge of solving the associated optimization problems. In this paper, we seek a systematic understanding of the power and the limitations of convex regularization by investigating the following questions: Given a distribution, what is the optimal regularizer for data drawn from the distribution? What pro
     
 

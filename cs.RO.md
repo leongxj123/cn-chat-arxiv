@@ -2,52 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Keypoint Action Tokens Enable In-Context Imitation Learning in Robotics](https://arxiv.org/abs/2403.19578) | 使用关键动作令牌（KAT）框架，研究展示了文本预训练的变形器（GPT-4 Turbo）在机器人领域可实现视觉模仿学习，将视觉观测映射为模拟示范者行为的动作序列，表现优越于现有的模仿学习方法。 |
-| [^2] | [LeTac-MPC: Learning Model Predictive Control for Tactile-reactive Grasping](https://arxiv.org/abs/2403.04934) | LeTac-MPC是一种学习模型预测控制，利用视觉触觉传感器GelSight和不同iable MPC层，实现在不同条件下和具有不同物理属性的物体上进行稳健抓取控制。 |
-| [^3] | [Learning Generalizable Tool-use Skills through Trajectory Generation.](http://arxiv.org/abs/2310.00156) | 通过轨迹生成，我们提出了一种学习通用工具使用技能的方法，可以适应不同形状的工具，从而使自主系统能够处理复杂的可变形物体操作任务。 |
+| [^1] | [ViSaRL: Visual Reinforcement Learning Guided by Human Saliency](https://arxiv.org/abs/2403.10940) | ViSaRL提出了Visual Saliency-Guided Reinforcement Learning（受视觉显著性引导的强化学习）方法，通过学习视觉表示来显著提高RL代理在不同任务上的成功率、样本效率和泛化性能。 |
+| [^2] | [Greedy Perspectives: Multi-Drone View Planning for Collaborative Coverage in Cluttered Environments.](http://arxiv.org/abs/2310.10863) | 本研究研究了在杂乱环境中协调无人机团队拍摄复杂人群的多无人机多演员视角规划问题，并开发了一个具有遮挡感知目标的视角规划器进行性能比较。 |
+| [^3] | [Finite element inspired networks: Learning physically-plausible deformable object dynamics from partial observations.](http://arxiv.org/abs/2307.07975) | 该论文提出了一种基于有限元的网络模型，通过动力学网络和物理感知编码器，从部分观察中学习可变形物体的动力学，并通过正运动学解码器进行预测，实现了具有物理解释性的模型。 |
+| [^4] | [System Neural Diversity: Measuring Behavioral Heterogeneity in Multi-Agent Learning.](http://arxiv.org/abs/2305.02128) | 本文介绍了一种名为“系统神经多样性”的方法，用于度量具有随机策略的多智能体系统的行为异质性，探讨了多样性对集体弹性和性能的影响。 |
 
 # 详细
 
-[^1]: 关键动作令牌在机器人学中实现上下文模仿学习
+[^1]: ViSaRL：受人类显著性引导的视觉强化学习
 
-    Keypoint Action Tokens Enable In-Context Imitation Learning in Robotics
+    ViSaRL: Visual Reinforcement Learning Guided by Human Saliency
 
-    [https://arxiv.org/abs/2403.19578](https://arxiv.org/abs/2403.19578)
+    [https://arxiv.org/abs/2403.10940](https://arxiv.org/abs/2403.10940)
 
-    使用关键动作令牌（KAT）框架，研究展示了文本预训练的变形器（GPT-4 Turbo）在机器人领域可实现视觉模仿学习，将视觉观测映射为模拟示范者行为的动作序列，表现优越于现有的模仿学习方法。
-
-    
-
-    我们展示了现成的基于文本的变形器，无需额外训练，就可以执行少样本上下文内视觉模仿学习，将视觉观测映射为模拟示范者行为的动作序列。我们通过将视觉观测（输入）和动作轨迹（输出）转换为一系列令牌，这些令牌可以被文本预训练的变形器（GPT-4 Turbo）接收和生成，通过我们称之为关键动作令牌（KAT）的框架来实现这一点。尽管仅在语言上训练，我们展示这些变形器擅长将标记化的视觉关键点观察翻译为行为轨迹，在真实世界的日常任务套件中，在低数据情况下表现与优于最先进的模仿学习（扩散策略）。KAT不同于通常在语言领域操作，它利用基于文本的变形器在视觉和动作领域中学习。
-
-    arXiv:2403.19578v1 Announce Type: cross  Abstract: We show that off-the-shelf text-based Transformers, with no additional training, can perform few-shot in-context visual imitation learning, mapping visual observations to action sequences that emulate the demonstrator's behaviour. We achieve this by transforming visual observations (inputs) and trajectories of actions (outputs) into sequences of tokens that a text-pretrained Transformer (GPT-4 Turbo) can ingest and generate, via a framework we call Keypoint Action Tokens (KAT). Despite being trained only on language, we show that these Transformers excel at translating tokenised visual keypoint observations into action trajectories, performing on par or better than state-of-the-art imitation learning (diffusion policies) in the low-data regime on a suite of real-world, everyday tasks. Rather than operating in the language domain as is typical, KAT leverages text-based Transformers to operate in the vision and action domains to learn ge
-    
-[^2]: LeTac-MPC：用于触觉反应抓取的学习模型预测控制
-
-    LeTac-MPC: Learning Model Predictive Control for Tactile-reactive Grasping
-
-    [https://arxiv.org/abs/2403.04934](https://arxiv.org/abs/2403.04934)
-
-    LeTac-MPC是一种学习模型预测控制，利用视觉触觉传感器GelSight和不同iable MPC层，实现在不同条件下和具有不同物理属性的物体上进行稳健抓取控制。
+    ViSaRL提出了Visual Saliency-Guided Reinforcement Learning（受视觉显著性引导的强化学习）方法，通过学习视觉表示来显著提高RL代理在不同任务上的成功率、样本效率和泛化性能。
 
     
 
-    抓取是机器人中的关键任务，需要触觉反馈和反应性抓取调整，以实现在各种条件下和具有不同物理属性的对象的稳健抓取。本文介绍了LeTac-MPC，一种基于学习的模型预测控制（MPC）用于触觉反应式抓取。我们的方法使夹爪能够在动态和力交互任务中抓取具有不同物理属性的对象。我们利用基于视觉的触觉传感器GelSight，该传感器能够感知包含抓取对象的物理属性和状态信息的高分辨率触觉反馈。LeTac-MPC包含一个可微分的MPC层，设计用于对通过神经网络（NN）从触觉反馈中提取的嵌入进行建模。这种设计有助于在25 Hz的频率下实现收敛和稳健的抓取控制。我们提出了一个完全自动化的数据收集流程，并收集了一组数据集。
+    使用强化学习（RL）从高维像素输入培训机器人执行复杂控制任务在样本效率上是低效的，因为图像观察主要由与任务无关的信息组成。相比之下，人类能够在视觉上关注与任务相关的对象和区域。基于这一观察，我们引入了受视觉显著性引导的强化学习（ViSaRL）。使用ViSaRL学习视觉表示显着提高了RL代理在不同任务上，包括DeepMind控制基准、仿真中的机器人操作和真实机器人上的成功率、样本效率和泛化性能。我们提出了将显著性整合到基于CNN和Transformer的编码器中的方法。我们展示使用ViSaRL学习的视觉表示对各种视觉扰动，包括感知噪声和场景变化，都具有鲁棒性。ViSaRL在真实环境中成功率几乎翻了一番。
 
-    arXiv:2403.04934v1 Announce Type: cross  Abstract: Grasping is a crucial task in robotics, necessitating tactile feedback and reactive grasping adjustments for robust grasping of objects under various conditions and with differing physical properties. In this paper, we introduce LeTac-MPC, a learning-based model predictive control (MPC) for tactile-reactive grasping. Our approach enables the gripper grasp objects with different physical properties on dynamic and force-interactive tasks. We utilize a vision-based tactile sensor, GelSight, which is capable of perceiving high-resolution tactile feedback that contains the information of physical properties and states of the grasped object. LeTac-MPC incorporates a differentiable MPC layer designed to model the embeddings extracted by a neural network (NN) from tactile feedback. This design facilitates convergent and robust grasping control at a frequency of 25 Hz. We propose a fully automated data collection pipeline and collect a dataset 
+    arXiv:2403.10940v1 Announce Type: cross  Abstract: Training robots to perform complex control tasks from high-dimensional pixel input using reinforcement learning (RL) is sample-inefficient, because image observations are comprised primarily of task-irrelevant information. By contrast, humans are able to visually attend to task-relevant objects and areas. Based on this insight, we introduce Visual Saliency-Guided Reinforcement Learning (ViSaRL). Using ViSaRL to learn visual representations significantly improves the success rate, sample efficiency, and generalization of an RL agent on diverse tasks including DeepMind Control benchmark, robot manipulation in simulation and on a real robot. We present approaches for incorporating saliency into both CNN and Transformer-based encoders. We show that visual representations learned using ViSaRL are robust to various sources of visual perturbations including perceptual noise and scene variations. ViSaRL nearly doubles success rate on the real-
     
-[^3]: 通过轨迹生成学习具有通用性的工具使用技能
+[^2]: 贪心视角：多无人机视野规划在杂乱环境中的协同覆盖
 
-    Learning Generalizable Tool-use Skills through Trajectory Generation. (arXiv:2310.00156v1 [cs.RO])
+    Greedy Perspectives: Multi-Drone View Planning for Collaborative Coverage in Cluttered Environments. (arXiv:2310.10863v1 [cs.RO])
 
-    [http://arxiv.org/abs/2310.00156](http://arxiv.org/abs/2310.00156)
+    [http://arxiv.org/abs/2310.10863](http://arxiv.org/abs/2310.10863)
 
-    通过轨迹生成，我们提出了一种学习通用工具使用技能的方法，可以适应不同形状的工具，从而使自主系统能够处理复杂的可变形物体操作任务。
+    本研究研究了在杂乱环境中协调无人机团队拍摄复杂人群的多无人机多演员视角规划问题，并开发了一个具有遮挡感知目标的视角规划器进行性能比较。
 
     
 
-    高效利用工具的自主系统可以帮助人们完成许多常见任务，如烹饪和清洁。然而，当前的系统在适应新工具方面远远不及人类的智能水平。基于可及性的先前工作通常对环境做出了很强的假设，并且无法扩展到更复杂、接触丰富的任务。 在这项工作中，我们解决了这个挑战，并探索了代理如何学习使用以前未见过的工具来操纵可变形物体。 我们提出了将工具使用轨迹作为一系列点云的生成模型，可以推广到不同的工具形状。对于任何新的工具，我们首先生成一个工具使用轨迹，然后优化工具姿势序列以与生成的轨迹对齐。我们为四种不同的具有挑战性的可变形物体操纵任务训练了一个单一模型。我们的模型仅使用每个任务的单个工具的示范数据进行训练，并且能够...
+    无人机团队的部署可以在复杂环境中拍摄动态人群（演员）的大规模影像，用于团队运动和电影制作等新应用领域。为了实现该目标，可以使用通过顺序贪心规划进行子模最大化的方法，以便在无人机团队之间进行摄像机视野的可扩展优化，但在杂乱环境中协同效果面临挑战。障碍物可能产生遮挡并增加无人机碰撞的几率，这可能违反近似最优性的要求。为了在稠密环境中协调无人机团队拍摄人群，需要一种更通用的视角规划方法。我们通过开发一个具有遮挡感知目标的多无人机多演员视角规划器，并与贪心形成规划器进行比较，探讨遮挡和碰撞对拍摄应用性能的影响。为了评估性能，
 
-    Autonomous systems that efficiently utilize tools can assist humans in completing many common tasks such as cooking and cleaning. However, current systems fall short of matching human-level of intelligence in terms of adapting to novel tools. Prior works based on affordance often make strong assumptions about the environments and cannot scale to more complex, contact-rich tasks. In this work, we tackle this challenge and explore how agents can learn to use previously unseen tools to manipulate deformable objects. We propose to learn a generative model of the tool-use trajectories as a sequence of point clouds, which generalizes to different tool shapes. Given any novel tool, we first generate a tool-use trajectory and then optimize the sequence of tool poses to align with the generated trajectory. We train a single model for four different challenging deformable object manipulation tasks. Our model is trained with demonstration data from just a single tool for each task and is able to 
+    Deployment of teams of aerial robots could enable large-scale filming of dynamic groups of people (actors) in complex environments for novel applications in areas such as team sports and cinematography. Toward this end, methods for submodular maximization via sequential greedy planning can be used for scalable optimization of camera views across teams of robots but face challenges with efficient coordination in cluttered environments. Obstacles can produce occlusions and increase chances of inter-robot collision which can violate requirements for near-optimality guarantees. To coordinate teams of aerial robots in filming groups of people in dense environments, a more general view-planning approach is required. We explore how collision and occlusion impact performance in filming applications through the development of a multi-robot multi-actor view planner with an occlusion-aware objective for filming groups of people and compare with a greedy formation planner. To evaluate performance,
+    
+[^3]: 基于有限元的网络: 从部分观察中学习合理的可变形物体动力学
+
+    Finite element inspired networks: Learning physically-plausible deformable object dynamics from partial observations. (arXiv:2307.07975v1 [cs.RO])
+
+    [http://arxiv.org/abs/2307.07975](http://arxiv.org/abs/2307.07975)
+
+    该论文提出了一种基于有限元的网络模型，通过动力学网络和物理感知编码器，从部分观察中学习可变形物体的动力学，并通过正运动学解码器进行预测，实现了具有物理解释性的模型。
+
+    
+
+    精确模拟可变形线性物体（DLO）的动力学在需要一个可以被人解读和数据高效的模型并能够提供快速预测的任务中是具有挑战性的。为了得到这样的模型，我们借鉴了刚性有限元方法（R-FEM），将DLO建模为一系列刚体链，其内部状态通过动力学网络以时间展开。由于该状态不能直接观察到，动力学网络与一个物理感知的编码器共同训练，将观察到的运动变量映射到刚体链的状态。为了促使状态获得物理上有意义的表示，我们利用底层R-FEM模型的正运动学（FK）作为解码器。我们在一个机器人实验中证明，这种被称为“有限元启发网络”的架构是一个易于处理但功能强大的DLO动力学模型，可以从部分观察中得出具有物理解释性的预测。
+
+    The accurate simulation of deformable linear object (DLO) dynamics is challenging if the task at hand requires a human-interpretable and data-efficient model that also yields fast predictions. To arrive at such model, we draw inspiration from the rigid finite element method (R-FEM) and model a DLO as a serial chain of rigid bodies whose internal state is unrolled through time by a dynamics network. As this state is not observed directly, the dynamics network is trained jointly with a physics-informed encoder mapping observed motion variables to the body chain's state. To encourage that the state acquires a physically meaningful representation, we leverage the forward kinematics (FK) of the underlying R-FEM model as a decoder. We demonstrate in a robot experiment that this architecture - being termed "Finite element inspired network" - forms an easy to handle, yet capable DLO dynamics model yielding physically interpretable predictions from partial observations.  The project code is ava
+    
+[^4]: 系统神经多样性：在多智能体学习中度量行为异质性
+
+    System Neural Diversity: Measuring Behavioral Heterogeneity in Multi-Agent Learning. (arXiv:2305.02128v1 [cs.MA])
+
+    [http://arxiv.org/abs/2305.02128](http://arxiv.org/abs/2305.02128)
+
+    本文介绍了一种名为“系统神经多样性”的方法，用于度量具有随机策略的多智能体系统的行为异质性，探讨了多样性对集体弹性和性能的影响。
+
+    
+
+    进化科学提供了多样性具有韧性的证据。然而，传统的多智能体强化学习技术通常强制要求同质性以增加训练样本的效率。当学习代理系统不受同质策略的限制时，个体代理可能会发展出不同的行为，从而产生有利于系统的新兴互补性。尽管如此，缺乏衡量学习代理系统中行为多样性的工具意味着我们无法深入了解多样性对集体弹性和性能的影响。在本文中，我们介绍了系统神经多样性（SND）：一种用于具有随机策略的多智能体系统的行为异质性度量方法，探讨并证明了其理论性质，并将其与跨学科领域中使用的最新行为多样性指标进行了比较。
+
+    Evolutionary science provides evidence that diversity confers resilience. Yet, traditional multi-agent reinforcement learning techniques commonly enforce homogeneity to increase training sample efficiency. When a system of learning agents is not constrained to homogeneous policies, individual agents may develop diverse behaviors, resulting in emergent complementarity that benefits the system. Despite this feat, there is a surprising lack of tools that measure behavioral diversity in systems of learning agents. Such techniques would pave the way towards understanding the impact of diversity in collective resilience and performance. In this paper, we introduce System Neural Diversity (SND): a measure of behavioral heterogeneity for multi-agent systems where agents have stochastic policies. %over a continuous state space. We discuss and prove its theoretical properties, and compare it with alternate, state-of-the-art behavioral diversity metrics used in cross-disciplinary domains. Through
     
 
