@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Particip-AI: A Democratic Surveying Framework for Anticipating Future AI Use Cases, Harms and Benefits](https://arxiv.org/abs/2403.14791) | Particip-AI 是一个框架，旨在通过从非专业公众那里收集当前和未来的人工智能使用情况、危害和益处，引领人工智能的民主发展。 |
+| [^1] | [Moderating Model Marketplaces: Platform Governance Puzzles for AI Intermediaries](https://arxiv.org/abs/2311.12573) | 本论文研究了模型市场的调节问题，分析了AI中介平台面临的平台治理挑战，并总结了业界的相关实践，包括许可、访问和使用限制、自动内容调节以及公开政策制定。 |
 
 # 详细
 
-[^1]: Particip-AI: 一种民主调查框架，用于预测未来人工智能的使用情况、危害和益处
+[^1]: 模型市场的调节: AI中介平台的平台治理难题
 
-    Particip-AI: A Democratic Surveying Framework for Anticipating Future AI Use Cases, Harms and Benefits
+    Moderating Model Marketplaces: Platform Governance Puzzles for AI Intermediaries
 
-    [https://arxiv.org/abs/2403.14791](https://arxiv.org/abs/2403.14791)
+    [https://arxiv.org/abs/2311.12573](https://arxiv.org/abs/2311.12573)
 
-    Particip-AI 是一个框架，旨在通过从非专业公众那里收集当前和未来的人工智能使用情况、危害和益处，引领人工智能的民主发展。
+    本论文研究了模型市场的调节问题，分析了AI中介平台面临的平台治理挑战，并总结了业界的相关实践，包括许可、访问和使用限制、自动内容调节以及公开政策制定。
 
     
 
-    通用人工智能，如ChatGPT，似乎降低了公众使用人工智能及利用其力量的门槛。然而，人工智能的治理和发展仍掌握在少数人手中，发展速度加快且缺乏风险评估。作为迈向人工智能民主治理和风险评估的第一步，我们介绍了Particip-AI，一个框架用于从非专业公众那里收集当前和将来的人工智能使用情况及其危害和益处。我们的框架允许通过收集使用情况更加细致和详细地研究公众对人工智能的意见，通过在备选方案下（即开发和不开发一种使用情况）进行风险评估呈现出多样化的危害，并通过做出对其发展的结论性选择阐明人工智能发展的紧张关系。为展示我们的框架对指导民主人工智能的承诺，我们收集了来自295个人口多样化的回应。
+    arXiv: 2311.12573v2 公告类型: replace-cross 摘要: AI开发社区越来越多地利用托管中介平台，如Hugging Face，为用户上传的模型和训练数据提供便捷访问。这些模型市场降低了成千上万用户的技术部署门槛，但也可能被用于许多潜在有害和非法的方式。在本文中，我们解释了AI系统如何既能“包含”内容又能是开放式工具，从而成为迄今为止最棘手的平台治理挑战之一。我们提供了几个案例研究来分析模型市场如何管理模型，这些案例跨越了三个具有代表性的平台，即Hugging Face、GitHub和Civitai。基于这些分析，我们总结了业界正在制定的重要（但仍然有限）应对调节需求的做法：许可、访问和使用限制、自动内容调节以及公开政策制定。
 
-    arXiv:2403.14791v1 Announce Type: cross  Abstract: General purpose AI, such as ChatGPT, seems to have lowered the barriers for the public to use AI and harness its power. However, the governance and development of AI still remain in the hands of a few, and the pace of development is accelerating without proper assessment of risks. As a first step towards democratic governance and risk assessment of AI, we introduce Particip-AI, a framework to gather current and future AI use cases and their harms and benefits from non-expert public. Our framework allows us to study more nuanced and detailed public opinions on AI through collecting use cases, surfacing diverse harms through risk assessment under alternate scenarios (i.e., developing and not developing a use case), and illuminating tensions over AI development through making a concluding choice on its development. To showcase the promise of our framework towards guiding democratic AI, we gather responses from 295 demographically diverse 
+    arXiv:2311.12573v2 Announce Type: replace-cross  Abstract: The AI development community is increasingly making use of hosting intermediaries such as Hugging Face provide easy access to user-uploaded models and training data. These model marketplaces lower technical deployment barriers for hundreds of thousands of users, yet can be used in numerous potentially harmful and illegal ways. In this article, we explain ways in which AI systems, which can both `contain' content and be open-ended tools, present one of the trickiest platform governance challenges seen to date. We provide case studies of several incidents across three illustrative platforms -- Hugging Face, GitHub and Civitai -- to examine how model marketplaces moderate models. Building on this analysis, we outline important (and yet nevertheless limited) practices that industry has been developing to respond to moderation demands: licensing, access and use restrictions, automated content moderation, and open policy development.
     
 

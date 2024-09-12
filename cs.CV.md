@@ -2,82 +2,82 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Disentangling Hippocampal Shape Variations: A Study of Neurological Disorders Using Graph Variational Autoencoder with Contrastive Learning](https://arxiv.org/abs/2404.00785) | 本研究利用图变分自动编码器和对比学习解开神经系统疾病中海马形状变异的关键潜变量，超越了其他先进方法在解开能力上的表现。 |
-| [^2] | [Extending 6D Object Pose Estimators for Stereo Vision](https://arxiv.org/abs/2402.05610) | 这篇论文扩展了用于立体视觉的6D物体姿态估计器，通过使用立体视觉提供的额外视角和直接推测物体的距离，该方法在6D姿态估计方面优于最先进的算法，且可适用于其他基于密集特征的算法。 |
-| [^3] | [A Unified Remote Sensing Anomaly Detector Across Modalities and Scenes via Deviation Relationship Learning.](http://arxiv.org/abs/2310.07511) | 通过学习偏差关系，构建了一个统一的遥感异常检测器，可以跨模态和场景进行检测，并且具有灵活性和成本效益。 |
-| [^4] | [SpikeCLIP: A Contrastive Language-Image Pretrained Spiking Neural Network.](http://arxiv.org/abs/2310.06488) | 本论文引入了一种名为SpikeCLIP的新框架，通过对比语言-图像预训练实现了脉冲神经网络的多模态扩展，并在能源效率和性能方面取得了可比较的结果。 |
-| [^5] | [Feedback-guided Data Synthesis for Imbalanced Classification.](http://arxiv.org/abs/2310.00158) | 本论文介绍了一种反馈引导数据合成的方法，通过从分类器到生成模型的反馈来驱动采样，将静态数据集增强为包含有用的合成样本，以提高分类器的性能。 |
+| [^1] | [MoPE: Parameter-Efficient and Scalable Multimodal Fusion via Mixture of Prompt Experts](https://arxiv.org/abs/2403.10568) | 本文提出了MoPE技术，通过解开提示以自适应捕获数据集级和实例级特征，引入了混合Prompt专家来增强表达能力，并且在多模态融合中表现出更大的表达能力和可扩展性。 |
+| [^2] | [WebLINX: Real-World Website Navigation with Multi-Turn Dialogue](https://arxiv.org/abs/2402.05930) | 本论文提出了对话式网站导航的问题，并设计了一个 WEBLINX 基准测试，用于训练和评估代理。为了解决大量信息的处理瓶颈，文中提出了一个受检索启发的模型。实验结果表明，该模型能够在多种场景下复制人类行为的能力。 |
+| [^3] | [Re-parameterized Low-rank Prompt: Generalize a Vision-Language Model within 0.5K Parameters.](http://arxiv.org/abs/2312.10813) | 该论文提出了一种新型的提示方法，重新参数化低秩提示（RLP），用于在大型预训练视觉语言模型的适应过程中实现高效和有效的知识转移。该方法能够显著减少可调参数和存储开销。 |
+| [^4] | [Rethinking Integration of Prediction and Planning in Deep Learning-Based Automated Driving Systems: A Review.](http://arxiv.org/abs/2308.05731) | 这项综述重新思考了基于深度学习的自动驾驶系统中预测和规划的整合问题，提出了将其作为相互依赖的联合步骤来提高安全性、效率性和舒适性的必要性。 |
+| [^5] | [The Principle of Uncertain Maximum Entropy.](http://arxiv.org/abs/2305.09868) | 介绍了不确定最大熵原理，该原理可以处理模型元素不可观测的情况，并优于特定条件下的最大熵方法。同时将黑匣子机器学习模型的输出用作不确定机器熵框架的输入，性能得到了提高。 |
 
 # 详细
 
-[^1]: 解开海马形状变异之谜：利用对比学习的图变分自动编码器研究神经系统疾病
+[^1]: MoPE：通过Prompt专家混合实现参数高效和可扩展的多模态融合
 
-    Disentangling Hippocampal Shape Variations: A Study of Neurological Disorders Using Graph Variational Autoencoder with Contrastive Learning
+    MoPE: Parameter-Efficient and Scalable Multimodal Fusion via Mixture of Prompt Experts
 
-    [https://arxiv.org/abs/2404.00785](https://arxiv.org/abs/2404.00785)
+    [https://arxiv.org/abs/2403.10568](https://arxiv.org/abs/2403.10568)
 
-    本研究利用图变分自动编码器和对比学习解开神经系统疾病中海马形状变异的关键潜变量，超越了其他先进方法在解开能力上的表现。
-
-    
-
-    本文提出了一项综合研究，专注于在神经系统疾病背景下从扩散张量成像（DTI）数据集中解开海马形状变异。借助增强的监督对比学习图变分自动编码器（VAE），我们的方法旨在通过区分代表年龄和是否患病的两个不同潜变量来提高解释性。在我们的消融研究中，我们调查了一系列VAE架构和对比损失函数，展示了我们方法增强的解开能力。这个评估使用了来自DTI海马数据集的合成3D环形网格数据和真实的3D海马网格数据集。我们的监督解开模型在解开分数方面优于几种最先进的方法，如属性和引导VAE。我们的模型可以区分不同年龄组和疾病状况。
-
-    arXiv:2404.00785v1 Announce Type: cross  Abstract: This paper presents a comprehensive study focused on disentangling hippocampal shape variations from diffusion tensor imaging (DTI) datasets within the context of neurological disorders. Leveraging a Graph Variational Autoencoder (VAE) enhanced with Supervised Contrastive Learning, our approach aims to improve interpretability by disentangling two distinct latent variables corresponding to age and the presence of diseases. In our ablation study, we investigate a range of VAE architectures and contrastive loss functions, showcasing the enhanced disentanglement capabilities of our approach. This evaluation uses synthetic 3D torus mesh data and real 3D hippocampal mesh datasets derived from the DTI hippocampal dataset. Our supervised disentanglement model outperforms several state-of-the-art (SOTA) methods like attribute and guided VAEs in terms of disentanglement scores. Our model distinguishes between age groups and disease status in pa
-    
-[^2]: 扩展用于立体视觉的6D物体姿态估计器
-
-    Extending 6D Object Pose Estimators for Stereo Vision
-
-    [https://arxiv.org/abs/2402.05610](https://arxiv.org/abs/2402.05610)
-
-    这篇论文扩展了用于立体视觉的6D物体姿态估计器，通过使用立体视觉提供的额外视角和直接推测物体的距离，该方法在6D姿态估计方面优于最先进的算法，且可适用于其他基于密集特征的算法。
+    本文提出了MoPE技术，通过解开提示以自适应捕获数据集级和实例级特征，引入了混合Prompt专家来增强表达能力，并且在多模态融合中表现出更大的表达能力和可扩展性。
 
     
 
-    准确、快速、稳健地估计物体的6D姿态仍然是一项困难的任务。然而，最近的直接从RGB图像中使用密集特征回归姿态的方法已经取得了最先进的结果。立体视觉提供了对物体的额外视角，可以帮助减少姿态歧义和遮挡。此外，立体图像可以直接推测物体的距离，而单目视觉则需要内置对象尺寸的知识。为了将最先进的6D物体姿态估计方法扩展到立体视觉，我们创建了一个与BOP兼容的YCB-V数据集的立体版本。我们的方法通过利用立体视觉优于最先进的6D姿态估计算法，并且可以轻松应用于其他基于密集特征的算法。
+    Prompt调整已经证明在融合多模态任务的单模基础模型时具有参数效率性。然而，其有限的适应性和表达能力导致性能不佳与其他调整方法相比。本文通过将简单提示解开以自适应地捕获数据集级和实例级特征来解决这个问题。建立在这种解开的基础上，我们引入了Prompt专家的混合（MoPE）技术来增强表达能力。MoPE利用多模态配对先验在每个实例基础上路由最有效的提示。与简单提示相比，我们基于MoPE的条件提示对多模态融合具有更大的表达能力，在训练数据和可训练参数总数上具有更好的扩展性。我们还研究了一个专家路由的正则化项，导致专家的不断发展专长，不同专家专注于不同的特征。
 
-    Estimating the 6D pose of objects accurately, quickly, and robustly remains a difficult task. However, recent methods for directly regressing poses from RGB images using dense features have achieved state-of-the-art results. Stereo vision, which provides an additional perspective on the object, can help reduce pose ambiguity and occlusion. Moreover, stereo can directly infer the distance of an object, while mono-vision requires internalized knowledge of the object's size. To extend the state-of-the-art in 6D object pose estimation to stereo, we created a BOP compatible stereo version of the YCB-V dataset. Our method outperforms state-of-the-art 6D pose estimation algorithms by utilizing stereo vision and can easily be adopted for other dense feature-based algorithms.
+    arXiv:2403.10568v1 Announce Type: cross  Abstract: Prompt-tuning has demonstrated parameter-efficiency in fusing unimodal foundation models for multimodal tasks. However, its limited adaptivity and expressiveness lead to suboptimal performance when compared with other tuning methods. In this paper, we address this issue by disentangling the vanilla prompts to adaptively capture dataset-level and instance-level features. Building upon this disentanglement, we introduce the mixture of prompt experts (MoPE) technique to enhance expressiveness. MoPE leverages multimodal pairing priors to route the most effective prompt on a per-instance basis. Compared to vanilla prompting, our MoPE-based conditional prompting exhibits greater expressiveness for multimodal fusion, scaling better with the training data and the overall number of trainable parameters. We also study a regularization term for expert routing, leading to emergent expert specialization, where different experts focus on different c
     
-[^3]: 通过偏差关系学习实现跨模态和场景的统一遥感异常检测
+[^2]: WebLINX: 多轮对话下的真实世界网站导航
 
-    A Unified Remote Sensing Anomaly Detector Across Modalities and Scenes via Deviation Relationship Learning. (arXiv:2310.07511v1 [cs.CV])
+    WebLINX: Real-World Website Navigation with Multi-Turn Dialogue
 
-    [http://arxiv.org/abs/2310.07511](http://arxiv.org/abs/2310.07511)
+    [https://arxiv.org/abs/2402.05930](https://arxiv.org/abs/2402.05930)
 
-    通过学习偏差关系，构建了一个统一的遥感异常检测器，可以跨模态和场景进行检测，并且具有灵活性和成本效益。
-
-    
-
-    遥感异常检测器可以找到与背景不符的目标作为潜在目标。鉴于地球异常类型的多样性，跨模态和场景的统一异常检测器应该具有成本效益，并且对于新的地球观测源和异常类型具有灵活性。然而，当前的异常检测器仅限于单一模态和单一场景，因为它们旨在学习不断变化的背景分布。在普遍的异常偏差模式的激发下，即异常展现出与其局部环境的偏差特点，我们利用这一特征构建了一个统一的异常检测器。首先，我们将异常检测任务重新定义为基于偏差关系的无向双层图，其中异常评分被建模为在背景和正常对象的模式给定下的条件概率。然后，学习目标被表示为一个条件概率排序问题。此外，我们设计了一种实例化方案。
-
-    Remote sensing anomaly detector can find the objects deviating from the background as potential targets. Given the diversity in earth anomaly types, a unified anomaly detector across modalities and scenes should be cost-effective and flexible to new earth observation sources and anomaly types. However, the current anomaly detectors are limited to a single modality and single scene, since they aim to learn the varying background distribution. Motivated by the universal anomaly deviation pattern, in that anomalies exhibit deviations from their local context, we exploit this characteristic to build a unified anomaly detector. Firstly, we reformulate the anomaly detection task as an undirected bilayer graph based on the deviation relationship, where the anomaly score is modeled as the conditional probability, given the pattern of the background and normal objects. The learning objective is then expressed as a conditional probability ranking problem. Furthermore, we design an instantiation 
-    
-[^4]: SpikeCLIP：一种对比语言-图像预训练脉冲神经网络
-
-    SpikeCLIP: A Contrastive Language-Image Pretrained Spiking Neural Network. (arXiv:2310.06488v2 [cs.NE] UPDATED)
-
-    [http://arxiv.org/abs/2310.06488](http://arxiv.org/abs/2310.06488)
-
-    本论文引入了一种名为SpikeCLIP的新框架，通过对比语言-图像预训练实现了脉冲神经网络的多模态扩展，并在能源效率和性能方面取得了可比较的结果。
+    本论文提出了对话式网站导航的问题，并设计了一个 WEBLINX 基准测试，用于训练和评估代理。为了解决大量信息的处理瓶颈，文中提出了一个受检索启发的模型。实验结果表明，该模型能够在多种场景下复制人类行为的能力。
 
     
 
-    脉冲神经网络（SNNs）已经证明其在视觉和语言领域中能够实现与深度神经网络（DNNs）相当的性能，同时具有能效提高和符合生物合理性的优势。然而，将这种单模态的SNNs扩展到多模态的情景仍然是一个未开发的领域。受到对比语言-图像预训练（CLIP）概念的启发，我们引入了一个名为SpikeCLIP的新框架，通过“对齐预训练+双损失微调”的两步骤配方，来解决脉冲计算背景下两种模态之间的差距。广泛的实验证明，在常用的用于多模态模型评估的各种数据集上，SNNs取得了与其DNNs对应物相当的结果，同时显著降低了能源消耗。此外，SpikeCLIP在图像分类方面保持了稳定的性能。
+    我们提出了对话式网站导航的问题，其中数字代理控制着一个网页浏览器，并按照用户的指令以多轮对话的方式解决真实世界任务。为了支持这个问题，我们引入了 WEBLINX - 一个100K交互的大规模基准测试，在2300个专家演示中进行了对话式网站导航的测试。我们的基准涵盖了150多个真实世界网站上的广泛模式，可以用于在不同场景下训练和评估代理。由于存在大量信息，大型语言模型 (LLMs) 无法实时处理整个网页。为了解决这个瓶颈，我们设计了一个受检索启发的模型，通过排名相关元素来高效地修剪 HTML 页面。我们使用选定的元素，以及屏幕截图和操作历史记录，评估各种模型在导航网页时复制人类行为的能力。我们的实验从小型纯文本模型到专有的多模态 LLMs 进行了测试。
 
-    Spiking neural networks (SNNs) have demonstrated the capability to achieve comparable performance to deep neural networks (DNNs) in both visual and linguistic domains while offering the advantages of improved energy efficiency and adherence to biological plausibility. However, the extension of such single-modality SNNs into the realm of multimodal scenarios remains an unexplored territory. Drawing inspiration from the concept of contrastive language-image pre-training (CLIP), we introduce a novel framework, named SpikeCLIP, to address the gap between two modalities within the context of spike-based computing through a two-step recipe involving ``Alignment Pre-training + Dual-Loss Fine-tuning". Extensive experiments demonstrate that SNNs achieve comparable results to their DNN counterparts while significantly reducing energy consumption across a variety of datasets commonly used for multimodal model evaluation. Furthermore, SpikeCLIP maintains robust performance in image classification 
+    We propose the problem of conversational web navigation, where a digital agent controls a web browser and follows user instructions to solve real-world tasks in a multi-turn dialogue fashion. To support this problem, we introduce WEBLINX - a large-scale benchmark of 100K interactions across 2300 expert demonstrations of conversational web navigation. Our benchmark covers a broad range of patterns on over 150 real-world websites and can be used to train and evaluate agents in diverse scenarios. Due to the magnitude of information present, Large Language Models (LLMs) cannot process entire web pages in real-time. To solve this bottleneck, we design a retrieval-inspired model that efficiently prunes HTML pages by ranking relevant elements. We use the selected elements, along with screenshots and action history, to assess a variety of models for their ability to replicate human behavior when navigating the web. Our experiments span from small text-only to proprietary multimodal LLMs. We fi
     
-[^5]: 不平衡分类中的反馈引导数据合成
+[^3]: 重新参数化低秩提示：在0.5K参数内推广视觉语言模型
 
-    Feedback-guided Data Synthesis for Imbalanced Classification. (arXiv:2310.00158v1 [cs.CV])
+    Re-parameterized Low-rank Prompt: Generalize a Vision-Language Model within 0.5K Parameters. (arXiv:2312.10813v2 [cs.CV] UPDATED)
 
-    [http://arxiv.org/abs/2310.00158](http://arxiv.org/abs/2310.00158)
+    [http://arxiv.org/abs/2312.10813](http://arxiv.org/abs/2312.10813)
 
-    本论文介绍了一种反馈引导数据合成的方法，通过从分类器到生成模型的反馈来驱动采样，将静态数据集增强为包含有用的合成样本，以提高分类器的性能。
+    该论文提出了一种新型的提示方法，重新参数化低秩提示（RLP），用于在大型预训练视觉语言模型的适应过程中实现高效和有效的知识转移。该方法能够显著减少可调参数和存储开销。
 
     
 
-    当前机器学习中的现状是使用来自长尾分布的真实图像的静态数据集进行训练。最近生成模型的进展使研究人员开始用合成数据增强这些静态数据集，并在分类任务上报告了适度的性能改进。我们假设这些性能提升受到从分类器到生成模型的反馈不足的限制，这将促进生成样本的有用性以提高分类器的性能。在这项工作中，我们介绍了一种用有用的合成样本增强静态数据集的框架，该框架利用从分类器到生成模型的一次性反馈来驱动采样。为了使该框架有效，我们发现样本必须接近手头任务的真实数据支持，并且具有足够的多样性。我们在一个长尾数据集（ImageNe...上验证了三个反馈标准。
+    随着大型预训练视觉语言模型的发展，如何有效地将这些基础模型的知识转移到下游任务中成为一个热门话题，尤其是在数据不足的情况下。最近，提示调优已成为一种流行的解决方案。在调整视觉语言模型时，研究人员冻结骨干部分的参数，只设计和调整提示。一方面，提示调优的精心设计展现出强大的性能。另一方面，复杂的结构和更新规则大大增加了计算和存储成本。受到观察到的视觉语言模型中泛化能力的演变模式与适应过程中提示矩阵秩变化趋势的调和一致性的启发，我们设计了一种新型提示，重新参数化低秩提示（RLP），用于高效和有效的适应。我们的方法能大大减少可调参数和存储开销。
 
-    Current status quo in machine learning is to use static datasets of real images for training, which often come from long-tailed distributions. With the recent advances in generative models, researchers have started augmenting these static datasets with synthetic data, reporting moderate performance improvements on classification tasks. We hypothesize that these performance gains are limited by the lack of feedback from the classifier to the generative model, which would promote the usefulness of the generated samples to improve the classifier's performance. In this work, we introduce a framework for augmenting static datasets with useful synthetic samples, which leverages one-shot feedback from the classifier to drive the sampling of the generative model. In order for the framework to be effective, we find that the samples must be close to the support of the real data of the task at hand, and be sufficiently diverse. We validate three feedback criteria on a long-tailed dataset (ImageNe
+    With the development of large pre-trained vision-language models, how to effectively transfer the knowledge of such foundational models to downstream tasks becomes a hot topic, especially in a data-deficient scenario. Recently, prompt tuning has become a popular solution. When adapting the vision-language models, researchers freeze the parameters in the backbone and only design and tune the prompts. On the one hand, the delicate design of prompt tuning exhibits strong performance. On the other hand, complicated structures and update rules largely increase the computation and storage cost. Motivated by the observation that the evolution pattern of the generalization capability in visual-language models aligns harmoniously with the trend of rank variations in the prompt matrix during adaptation, we design a new type of prompt, Re-parameterized Low-rank Prompt (RLP), for both efficient and effective adaptation. Our method could largely reduce the number of tunable parameters and storage s
+    
+[^4]: 重新思考基于深度学习的自动驾驶系统中的预测和规划的整合：一项综述
+
+    Rethinking Integration of Prediction and Planning in Deep Learning-Based Automated Driving Systems: A Review. (arXiv:2308.05731v1 [cs.RO])
+
+    [http://arxiv.org/abs/2308.05731](http://arxiv.org/abs/2308.05731)
+
+    这项综述重新思考了基于深度学习的自动驾驶系统中预测和规划的整合问题，提出了将其作为相互依赖的联合步骤来提高安全性、效率性和舒适性的必要性。
+
+    
+
+    自动驾驶有可能彻底改变个人、公共和货运交通的方式。除了感知环境的巨大挑战外，即准确地使用可用的传感器数据感知环境，自动驾驶还包括规划一个安全、舒适和高效的运动轨迹。为了促进安全和进步，许多工作依赖于模块化的交通未来运动的预测。模块化的自动驾驶系统通常将预测和规划作为顺序的独立任务处理。虽然这考虑了周围交通对自车的影响，但它未能预测交通参与者对自车行为的反应。最近的研究表明，将预测和规划整合为相互依赖的联合步骤是实现安全、高效和舒适驾驶所必需的。虽然有各种模型实现了这种集成系统，但对不同原理的全面概述和理论理解仍然缺乏。
+
+    Automated driving has the potential to revolutionize personal, public, and freight mobility. Besides the enormous challenge of perception, i.e. accurately perceiving the environment using available sensor data, automated driving comprises planning a safe, comfortable, and efficient motion trajectory. To promote safety and progress, many works rely on modules that predict the future motion of surrounding traffic. Modular automated driving systems commonly handle prediction and planning as sequential separate tasks. While this accounts for the influence of surrounding traffic on the ego-vehicle, it fails to anticipate the reactions of traffic participants to the ego-vehicle's behavior. Recent works suggest that integrating prediction and planning in an interdependent joint step is necessary to achieve safe, efficient, and comfortable driving. While various models implement such integrated systems, a comprehensive overview and theoretical understanding of different principles are lacking.
+    
+[^5]: 不确定最大熵原理
+
+    The Principle of Uncertain Maximum Entropy. (arXiv:2305.09868v1 [cs.IT])
+
+    [http://arxiv.org/abs/2305.09868](http://arxiv.org/abs/2305.09868)
+
+    介绍了不确定最大熵原理，该原理可以处理模型元素不可观测的情况，并优于特定条件下的最大熵方法。同时将黑匣子机器学习模型的输出用作不确定机器熵框架的输入，性能得到了提高。
+
+    
+
+    最大熵原理在信息理论中的引入，为统计力学，机器学习和生态学等各个领域的发展做出了贡献。其得到的解决方案作为催化剂，促进研究人员将他们的经验观察映射到获取无偏模型，同时加深了对复杂系统和现象的理解。然而，在模型元素不直接可观测的情况下，例如存在噪声或眼部遮挡的情况下，标准最大熵方法可能会失败，因为它们无法匹配特征约束。在这里，我们展示了不确定最大熵原理作为一种方法，尽管存在任意噪声观察，它同时将所有可用信息编码，而且优于一些特定条件下的最大熵方法的准确度。此外，我们将黑匣子机器学习模型的输出用作不确定机器熵框架的输入，从而在与最大似然算法相比时建立了改进的性能。
+
+    The principle of maximum entropy, as introduced by Jaynes in information theory, has contributed to advancements in various domains such as Statistical Mechanics, Machine Learning, and Ecology. Its resultant solutions have served as a catalyst, facilitating researchers in mapping their empirical observations to the acquisition of unbiased models, whilst deepening the understanding of complex systems and phenomena. However, when we consider situations in which the model elements are not directly observable, such as when noise or ocular occlusion is present, possibilities arise for which standard maximum entropy approaches may fail, as they are unable to match feature constraints. Here we show the Principle of Uncertain Maximum Entropy as a method that both encodes all available information in spite of arbitrarily noisy observations while surpassing the accuracy of some ad-hoc methods. Additionally, we utilize the output of a black-box machine learning model as input into an uncertain ma
     
 

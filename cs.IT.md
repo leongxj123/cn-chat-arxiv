@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Can Large Language Models Learn Independent Causal Mechanisms?](https://arxiv.org/abs/2402.02636) | 本论文研究在大型语言模型中学习独立因果机制的方法，以增强模型在分布变化下的鲁棒性和泛化能力。 |
+| [^1] | [The Principle of Uncertain Maximum Entropy.](http://arxiv.org/abs/2305.09868) | 介绍了不确定最大熵原理，该原理可以处理模型元素不可观测的情况，并优于特定条件下的最大熵方法。同时将黑匣子机器学习模型的输出用作不确定机器熵框架的输入，性能得到了提高。 |
 
 # 详细
 
-[^1]: 大型语言模型能否学习独立的因果机制？
+[^1]: 不确定最大熵原理
 
-    Can Large Language Models Learn Independent Causal Mechanisms?
+    The Principle of Uncertain Maximum Entropy. (arXiv:2305.09868v1 [cs.IT])
 
-    [https://arxiv.org/abs/2402.02636](https://arxiv.org/abs/2402.02636)
+    [http://arxiv.org/abs/2305.09868](http://arxiv.org/abs/2305.09868)
 
-    本论文研究在大型语言模型中学习独立因果机制的方法，以增强模型在分布变化下的鲁棒性和泛化能力。
+    介绍了不确定最大熵原理，该原理可以处理模型元素不可观测的情况，并优于特定条件下的最大熵方法。同时将黑匣子机器学习模型的输出用作不确定机器熵框架的输入，性能得到了提高。
 
     
 
-    尽管大型语言模型（LLMs）在语言建模和复杂推理任务中表现出色，但在不常见的环境设置或分布变化的任务中，LLMs的泛化能力仍然不足。目前通常通过增加训练数据来缓解这个问题。然而，这种方法是脆弱的，因为任务的范围可能无法预测或可能会发生变化，并且使用新数据更新模型通常需要大量的额外训练。相反，那些学习抽象变量和因果关系的系统，如因果模型，可以表现出对分布变化的更强稳健性。其中一个原因是存在并使用独立因果机制（ICMs），表示只稀疏交互的高层概念。在这项工作中，我们应用因果性的两个概念，在LLMs中学习ICMs。我们开发了一个由多个稀疏交互的语言模型组成的新LLM架构。
+    最大熵原理在信息理论中的引入，为统计力学，机器学习和生态学等各个领域的发展做出了贡献。其得到的解决方案作为催化剂，促进研究人员将他们的经验观察映射到获取无偏模型，同时加深了对复杂系统和现象的理解。然而，在模型元素不直接可观测的情况下，例如存在噪声或眼部遮挡的情况下，标准最大熵方法可能会失败，因为它们无法匹配特征约束。在这里，我们展示了不确定最大熵原理作为一种方法，尽管存在任意噪声观察，它同时将所有可用信息编码，而且优于一些特定条件下的最大熵方法的准确度。此外，我们将黑匣子机器学习模型的输出用作不确定机器熵框架的输入，从而在与最大似然算法相比时建立了改进的性能。
 
-    Despite impressive performance on language modelling and complex reasoning tasks, Large Language Models (LLMs) fall short on the same tasks in uncommon settings or with distribution shifts, exhibiting some lack of generalisation ability. This issue has usually been alleviated by feeding more training data into the LLM. However, this method is brittle, as the scope of tasks may not be readily predictable or may evolve, and updating the model with new data generally requires extensive additional training. By contrast, systems, such as causal models, that learn abstract variables and causal relationships can demonstrate increased robustness against changes in the distribution. One reason for this success is the existence and use of Independent Causal Mechanisms (ICMs) representing high-level concepts that only sparsely interact. In this work, we apply two concepts from causality to learn ICMs within LLMs. We develop a new LLM architecture composed of multiple sparsely interacting language
+    The principle of maximum entropy, as introduced by Jaynes in information theory, has contributed to advancements in various domains such as Statistical Mechanics, Machine Learning, and Ecology. Its resultant solutions have served as a catalyst, facilitating researchers in mapping their empirical observations to the acquisition of unbiased models, whilst deepening the understanding of complex systems and phenomena. However, when we consider situations in which the model elements are not directly observable, such as when noise or ocular occlusion is present, possibilities arise for which standard maximum entropy approaches may fail, as they are unable to match feature constraints. Here we show the Principle of Uncertain Maximum Entropy as a method that both encodes all available information in spite of arbitrarily noisy observations while surpassing the accuracy of some ad-hoc methods. Additionally, we utilize the output of a black-box machine learning model as input into an uncertain ma
     
 
