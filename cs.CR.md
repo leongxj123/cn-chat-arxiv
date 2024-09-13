@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [TREC: APT Tactic / Technique Recognition via Few-Shot Provenance Subgraph Learning](https://arxiv.org/abs/2402.15147) | 本文提出了TREC，首次尝试通过少样本追溯子图学习实现对APT攻击活动中战术/技术的识别，弥补了现有基于规则的方法无法识别细粒度APT技术和变种APT攻击的不足。 |
+| [^1] | [A Transfer Attack to Image Watermarks](https://arxiv.org/abs/2403.15365) | 水印领域的研究表明，即使在攻击者无法访问水印模型或检测API的情况下，水印基础的AI生成图像检测器也无法抵抗对抗攻击。 |
 
 # 详细
 
-[^1]: TREC: 通过少样本追溯子图学习实现APT战术/技术识别
+[^1]: 一种针对图像水印的转移攻击
 
-    TREC: APT Tactic / Technique Recognition via Few-Shot Provenance Subgraph Learning
+    A Transfer Attack to Image Watermarks
 
-    [https://arxiv.org/abs/2402.15147](https://arxiv.org/abs/2402.15147)
+    [https://arxiv.org/abs/2403.15365](https://arxiv.org/abs/2403.15365)
 
-    本文提出了TREC，首次尝试通过少样本追溯子图学习实现对APT攻击活动中战术/技术的识别，弥补了现有基于规则的方法无法识别细粒度APT技术和变种APT攻击的不足。
+    水印领域的研究表明，即使在攻击者无法访问水印模型或检测API的情况下，水印基础的AI生成图像检测器也无法抵抗对抗攻击。
 
     
 
-    APT（高级持续性威胁）具有持久性、隐秘性和多样性等特征，是对网络基础设施的最大威胁之一。 为应对此威胁，现有研究利用溯源图来捕捉主机中系统实体之间的复杂关系，实现有效的APT检测。 与大多数现有工作只检测单个攻击事件不同，理解组织和完成APT攻击活动所应用的战术/技术（例如，Kill-Chain、ATT&CK）对安全运营更为重要。 现有研究尝试手动设计一组规则，将低级系统事件映射到高级APT战术/技术。 但基于规则的方法粗粒度且缺乏泛化能力，因此只能识别APT战术，无法辨识细粒度的APT技术和突变的APT攻击。 本文提出了TREC，这是首个尝试认知AP
+    水印已被广泛应用于工业领域，用于检测由人工智能生成的图像。文献中对这种基于水印的检测器在白盒和黑盒环境下对抗攻击的稳健性有很好的理解。然而，在无盒环境下的稳健性却知之甚少。具体来说，多项研究声称图像水印在这种环境下是稳健的。在这项工作中，我们提出了一种新的转移对抗攻击来针对无盒环境下的图像水印。我们的转移攻击向带水印的图像添加微扰，以躲避被攻击者训练的多个替代水印模型，并且经过扰动的带水印图像也能躲避目标水印模型。我们的主要贡献是理论上和经验上展示了，基于水印的人工智能生成图像检测器即使攻击者没有访问水印模型或检测API，也不具有对抗攻击的稳健性。
 
-    arXiv:2402.15147v1 Announce Type: cross  Abstract: APT (Advanced Persistent Threat) with the characteristics of persistence, stealth, and diversity is one of the greatest threats against cyber-infrastructure. As a countermeasure, existing studies leverage provenance graphs to capture the complex relations between system entities in a host for effective APT detection. In addition to detecting single attack events as most existing work does, understanding the tactics / techniques (e.g., Kill-Chain, ATT&CK) applied to organize and accomplish the APT attack campaign is more important for security operations. Existing studies try to manually design a set of rules to map low-level system events to high-level APT tactics / techniques. However, the rule based methods are coarse-grained and lack generalization ability, thus they can only recognize APT tactics and cannot identify fine-grained APT techniques and mutant APT attacks. In this paper, we propose TREC, the first attempt to recognize AP
+    arXiv:2403.15365v1 Announce Type: cross  Abstract: Watermark has been widely deployed by industry to detect AI-generated images. The robustness of such watermark-based detector against evasion attacks in the white-box and black-box settings is well understood in the literature. However, the robustness in the no-box setting is much less understood. In particular, multiple studies claimed that image watermark is robust in such setting. In this work, we propose a new transfer evasion attack to image watermark in the no-box setting. Our transfer attack adds a perturbation to a watermarked image to evade multiple surrogate watermarking models trained by the attacker itself, and the perturbed watermarked image also evades the target watermarking model. Our major contribution is to show that, both theoretically and empirically, watermark-based AI-generated image detector is not robust to evasion attacks even if the attacker does not have access to the watermarking model nor the detection API.
     
 

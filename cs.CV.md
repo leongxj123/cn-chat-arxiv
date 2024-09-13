@@ -2,82 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [MoPE: Parameter-Efficient and Scalable Multimodal Fusion via Mixture of Prompt Experts](https://arxiv.org/abs/2403.10568) | 本文提出了MoPE技术，通过解开提示以自适应捕获数据集级和实例级特征，引入了混合Prompt专家来增强表达能力，并且在多模态融合中表现出更大的表达能力和可扩展性。 |
-| [^2] | [WebLINX: Real-World Website Navigation with Multi-Turn Dialogue](https://arxiv.org/abs/2402.05930) | 本论文提出了对话式网站导航的问题，并设计了一个 WEBLINX 基准测试，用于训练和评估代理。为了解决大量信息的处理瓶颈，文中提出了一个受检索启发的模型。实验结果表明，该模型能够在多种场景下复制人类行为的能力。 |
-| [^3] | [Re-parameterized Low-rank Prompt: Generalize a Vision-Language Model within 0.5K Parameters.](http://arxiv.org/abs/2312.10813) | 该论文提出了一种新型的提示方法，重新参数化低秩提示（RLP），用于在大型预训练视觉语言模型的适应过程中实现高效和有效的知识转移。该方法能够显著减少可调参数和存储开销。 |
-| [^4] | [Rethinking Integration of Prediction and Planning in Deep Learning-Based Automated Driving Systems: A Review.](http://arxiv.org/abs/2308.05731) | 这项综述重新思考了基于深度学习的自动驾驶系统中预测和规划的整合问题，提出了将其作为相互依赖的联合步骤来提高安全性、效率性和舒适性的必要性。 |
-| [^5] | [The Principle of Uncertain Maximum Entropy.](http://arxiv.org/abs/2305.09868) | 介绍了不确定最大熵原理，该原理可以处理模型元素不可观测的情况，并优于特定条件下的最大熵方法。同时将黑匣子机器学习模型的输出用作不确定机器熵框架的输入，性能得到了提高。 |
+| [^1] | [A Systematic Approach to Robustness Modelling for Deep Convolutional Neural Networks.](http://arxiv.org/abs/2401.13751) | 本论文提出一种系统化方法，用于针对深度卷积神经网络进行鲁棒性建模。研究发现隐藏层数量对模型的推广性能有影响，同时还测试了模型大小、浮点精度、训练数据和模型输出的噪声水平等参数。为了改进模型的预测能力和计算成本，提出了一种使用诱发故障来建模故障概率的方法。 |
+| [^2] | [CoFiI2P: Coarse-to-Fine Correspondences for Image-to-Point Cloud Registration.](http://arxiv.org/abs/2309.14660) | CoFiI2P是一种粗到精的图像到点云注册方法，通过利用全局信息和特征建立对应关系，实现全局最优解。 |
+| [^3] | [What Matters to Enhance Traffic Rule Compliance of Imitation Learning for Automated Driving.](http://arxiv.org/abs/2309.07808) | 本文提出了一种基于惩罚的模仿学习方法P-CSG，结合语义生成传感器融合技术，以提高端到端自动驾驶的整体性能，并解决了交通规则遵守和传感器感知问题。 |
+| [^4] | [Contrastive Learning and the Emergence of Attributes Associations.](http://arxiv.org/abs/2302.10763) | 对比学习方案通过对物体输入表示进行身份保持的变换，不仅有助于物体的分类，还可以提供关于属性的有无决策的有价值信息。 |
 
 # 详细
 
-[^1]: MoPE：通过Prompt专家混合实现参数高效和可扩展的多模态融合
+[^1]: 一种针对深度卷积神经网络的鲁棒性建模的系统化方法
 
-    MoPE: Parameter-Efficient and Scalable Multimodal Fusion via Mixture of Prompt Experts
+    A Systematic Approach to Robustness Modelling for Deep Convolutional Neural Networks. (arXiv:2401.13751v1 [cs.LG])
 
-    [https://arxiv.org/abs/2403.10568](https://arxiv.org/abs/2403.10568)
+    [http://arxiv.org/abs/2401.13751](http://arxiv.org/abs/2401.13751)
 
-    本文提出了MoPE技术，通过解开提示以自适应捕获数据集级和实例级特征，引入了混合Prompt专家来增强表达能力，并且在多模态融合中表现出更大的表达能力和可扩展性。
-
-    
-
-    Prompt调整已经证明在融合多模态任务的单模基础模型时具有参数效率性。然而，其有限的适应性和表达能力导致性能不佳与其他调整方法相比。本文通过将简单提示解开以自适应地捕获数据集级和实例级特征来解决这个问题。建立在这种解开的基础上，我们引入了Prompt专家的混合（MoPE）技术来增强表达能力。MoPE利用多模态配对先验在每个实例基础上路由最有效的提示。与简单提示相比，我们基于MoPE的条件提示对多模态融合具有更大的表达能力，在训练数据和可训练参数总数上具有更好的扩展性。我们还研究了一个专家路由的正则化项，导致专家的不断发展专长，不同专家专注于不同的特征。
-
-    arXiv:2403.10568v1 Announce Type: cross  Abstract: Prompt-tuning has demonstrated parameter-efficiency in fusing unimodal foundation models for multimodal tasks. However, its limited adaptivity and expressiveness lead to suboptimal performance when compared with other tuning methods. In this paper, we address this issue by disentangling the vanilla prompts to adaptively capture dataset-level and instance-level features. Building upon this disentanglement, we introduce the mixture of prompt experts (MoPE) technique to enhance expressiveness. MoPE leverages multimodal pairing priors to route the most effective prompt on a per-instance basis. Compared to vanilla prompting, our MoPE-based conditional prompting exhibits greater expressiveness for multimodal fusion, scaling better with the training data and the overall number of trainable parameters. We also study a regularization term for expert routing, leading to emergent expert specialization, where different experts focus on different c
-    
-[^2]: WebLINX: 多轮对话下的真实世界网站导航
-
-    WebLINX: Real-World Website Navigation with Multi-Turn Dialogue
-
-    [https://arxiv.org/abs/2402.05930](https://arxiv.org/abs/2402.05930)
-
-    本论文提出了对话式网站导航的问题，并设计了一个 WEBLINX 基准测试，用于训练和评估代理。为了解决大量信息的处理瓶颈，文中提出了一个受检索启发的模型。实验结果表明，该模型能够在多种场景下复制人类行为的能力。
+    本论文提出一种系统化方法，用于针对深度卷积神经网络进行鲁棒性建模。研究发现隐藏层数量对模型的推广性能有影响，同时还测试了模型大小、浮点精度、训练数据和模型输出的噪声水平等参数。为了改进模型的预测能力和计算成本，提出了一种使用诱发故障来建模故障概率的方法。
 
     
 
-    我们提出了对话式网站导航的问题，其中数字代理控制着一个网页浏览器，并按照用户的指令以多轮对话的方式解决真实世界任务。为了支持这个问题，我们引入了 WEBLINX - 一个100K交互的大规模基准测试，在2300个专家演示中进行了对话式网站导航的测试。我们的基准涵盖了150多个真实世界网站上的广泛模式，可以用于在不同场景下训练和评估代理。由于存在大量信息，大型语言模型 (LLMs) 无法实时处理整个网页。为了解决这个瓶颈，我们设计了一个受检索启发的模型，通过排名相关元素来高效地修剪 HTML 页面。我们使用选定的元素，以及屏幕截图和操作历史记录，评估各种模型在导航网页时复制人类行为的能力。我们的实验从小型纯文本模型到专有的多模态 LLMs 进行了测试。
+    当有大量标记数据可用时，卷积神经网络已经被证明在许多领域都可以广泛应用。最近的趋势是使用具有越来越多可调参数的模型，以提高模型准确性，降低模型损失或创建更具对抗鲁棒性的模型，而这些目标通常相互矛盾。特别是，最近的理论研究提出了对更大模型能否推广到受控的训练和测试集之外的数据的疑问。因此，我们研究了ResNet模型中隐藏层的数量在MNIST、CIFAR10和CIFAR100数据集上的作用。我们测试了各种参数，包括模型的大小、浮点精度，以及训练数据和模型输出的噪声水平。为了改进模型的预测能力和计算成本，我们提供了一种使用诱发故障来建模故障概率的方法。
 
-    We propose the problem of conversational web navigation, where a digital agent controls a web browser and follows user instructions to solve real-world tasks in a multi-turn dialogue fashion. To support this problem, we introduce WEBLINX - a large-scale benchmark of 100K interactions across 2300 expert demonstrations of conversational web navigation. Our benchmark covers a broad range of patterns on over 150 real-world websites and can be used to train and evaluate agents in diverse scenarios. Due to the magnitude of information present, Large Language Models (LLMs) cannot process entire web pages in real-time. To solve this bottleneck, we design a retrieval-inspired model that efficiently prunes HTML pages by ranking relevant elements. We use the selected elements, along with screenshots and action history, to assess a variety of models for their ability to replicate human behavior when navigating the web. Our experiments span from small text-only to proprietary multimodal LLMs. We fi
+    Convolutional neural networks have shown to be widely applicable to a large number of fields when large amounts of labelled data are available. The recent trend has been to use models with increasingly larger sets of tunable parameters to increase model accuracy, reduce model loss, or create more adversarially robust models -- goals that are often at odds with one another. In particular, recent theoretical work raises questions about the ability for even larger models to generalize to data outside of the controlled train and test sets. As such, we examine the role of the number of hidden layers in the ResNet model, demonstrated on the MNIST, CIFAR10, CIFAR100 datasets. We test a variety of parameters including the size of the model, the floating point precision, and the noise level of both the training data and the model output. To encapsulate the model's predictive power and computational cost, we provide a method that uses induced failures to model the probability of failure as a fun
     
-[^3]: 重新参数化低秩提示：在0.5K参数内推广视觉语言模型
+[^2]: CoFiI2P: 粗到精的图像到点云注册的对应关系
 
-    Re-parameterized Low-rank Prompt: Generalize a Vision-Language Model within 0.5K Parameters. (arXiv:2312.10813v2 [cs.CV] UPDATED)
+    CoFiI2P: Coarse-to-Fine Correspondences for Image-to-Point Cloud Registration. (arXiv:2309.14660v1 [cs.CV])
 
-    [http://arxiv.org/abs/2312.10813](http://arxiv.org/abs/2312.10813)
+    [http://arxiv.org/abs/2309.14660](http://arxiv.org/abs/2309.14660)
 
-    该论文提出了一种新型的提示方法，重新参数化低秩提示（RLP），用于在大型预训练视觉语言模型的适应过程中实现高效和有效的知识转移。该方法能够显著减少可调参数和存储开销。
-
-    
-
-    随着大型预训练视觉语言模型的发展，如何有效地将这些基础模型的知识转移到下游任务中成为一个热门话题，尤其是在数据不足的情况下。最近，提示调优已成为一种流行的解决方案。在调整视觉语言模型时，研究人员冻结骨干部分的参数，只设计和调整提示。一方面，提示调优的精心设计展现出强大的性能。另一方面，复杂的结构和更新规则大大增加了计算和存储成本。受到观察到的视觉语言模型中泛化能力的演变模式与适应过程中提示矩阵秩变化趋势的调和一致性的启发，我们设计了一种新型提示，重新参数化低秩提示（RLP），用于高效和有效的适应。我们的方法能大大减少可调参数和存储开销。
-
-    With the development of large pre-trained vision-language models, how to effectively transfer the knowledge of such foundational models to downstream tasks becomes a hot topic, especially in a data-deficient scenario. Recently, prompt tuning has become a popular solution. When adapting the vision-language models, researchers freeze the parameters in the backbone and only design and tune the prompts. On the one hand, the delicate design of prompt tuning exhibits strong performance. On the other hand, complicated structures and update rules largely increase the computation and storage cost. Motivated by the observation that the evolution pattern of the generalization capability in visual-language models aligns harmoniously with the trend of rank variations in the prompt matrix during adaptation, we design a new type of prompt, Re-parameterized Low-rank Prompt (RLP), for both efficient and effective adaptation. Our method could largely reduce the number of tunable parameters and storage s
-    
-[^4]: 重新思考基于深度学习的自动驾驶系统中的预测和规划的整合：一项综述
-
-    Rethinking Integration of Prediction and Planning in Deep Learning-Based Automated Driving Systems: A Review. (arXiv:2308.05731v1 [cs.RO])
-
-    [http://arxiv.org/abs/2308.05731](http://arxiv.org/abs/2308.05731)
-
-    这项综述重新思考了基于深度学习的自动驾驶系统中预测和规划的整合问题，提出了将其作为相互依赖的联合步骤来提高安全性、效率性和舒适性的必要性。
+    CoFiI2P是一种粗到精的图像到点云注册方法，通过利用全局信息和特征建立对应关系，实现全局最优解。
 
     
 
-    自动驾驶有可能彻底改变个人、公共和货运交通的方式。除了感知环境的巨大挑战外，即准确地使用可用的传感器数据感知环境，自动驾驶还包括规划一个安全、舒适和高效的运动轨迹。为了促进安全和进步，许多工作依赖于模块化的交通未来运动的预测。模块化的自动驾驶系统通常将预测和规划作为顺序的独立任务处理。虽然这考虑了周围交通对自车的影响，但它未能预测交通参与者对自车行为的反应。最近的研究表明，将预测和规划整合为相互依赖的联合步骤是实现安全、高效和舒适驾驶所必需的。虽然有各种模型实现了这种集成系统，但对不同原理的全面概述和理论理解仍然缺乏。
+    图像到点云（I2P）注册是机器人导航和移动建图领域中的一项基础任务。现有的I2P注册方法在点到像素级别上估计对应关系，忽略了全局对齐。然而，没有来自全局约束的高级引导的I2P匹配容易收敛到局部最优解。为了解决这个问题，本文提出了一种新的I2P注册网络CoFiI2P，通过粗到精的方式提取对应关系，以得到全局最优解。首先，将图像和点云输入到一个共享编码-解码网络中进行层次化特征提取。然后，设计了一个粗到精的匹配模块，利用特征建立稳健的特征对应关系。具体来说，在粗匹配块中，采用了一种新型的I2P变换模块，从图像和点云中捕捉同质和异质的全局信息。通过判别描述子，完成粗-细特征匹配过程。最后，通过细化匹配模块进一步提升对应关系的准确性。
 
-    Automated driving has the potential to revolutionize personal, public, and freight mobility. Besides the enormous challenge of perception, i.e. accurately perceiving the environment using available sensor data, automated driving comprises planning a safe, comfortable, and efficient motion trajectory. To promote safety and progress, many works rely on modules that predict the future motion of surrounding traffic. Modular automated driving systems commonly handle prediction and planning as sequential separate tasks. While this accounts for the influence of surrounding traffic on the ego-vehicle, it fails to anticipate the reactions of traffic participants to the ego-vehicle's behavior. Recent works suggest that integrating prediction and planning in an interdependent joint step is necessary to achieve safe, efficient, and comfortable driving. While various models implement such integrated systems, a comprehensive overview and theoretical understanding of different principles are lacking.
+    Image-to-point cloud (I2P) registration is a fundamental task in the fields of robot navigation and mobile mapping. Existing I2P registration works estimate correspondences at the point-to-pixel level, neglecting the global alignment. However, I2P matching without high-level guidance from global constraints may converge to the local optimum easily. To solve the problem, this paper proposes CoFiI2P, a novel I2P registration network that extracts correspondences in a coarse-to-fine manner for the global optimal solution. First, the image and point cloud are fed into a Siamese encoder-decoder network for hierarchical feature extraction. Then, a coarse-to-fine matching module is designed to exploit features and establish resilient feature correspondences. Specifically, in the coarse matching block, a novel I2P transformer module is employed to capture the homogeneous and heterogeneous global information from image and point cloud. With the discriminate descriptors, coarse super-point-to-su
     
-[^5]: 不确定最大熵原理
+[^3]: 提升模仿学习用于自动驾驶的交通规则遵守的关键因素
 
-    The Principle of Uncertain Maximum Entropy. (arXiv:2305.09868v1 [cs.IT])
+    What Matters to Enhance Traffic Rule Compliance of Imitation Learning for Automated Driving. (arXiv:2309.07808v1 [cs.CV])
 
-    [http://arxiv.org/abs/2305.09868](http://arxiv.org/abs/2305.09868)
+    [http://arxiv.org/abs/2309.07808](http://arxiv.org/abs/2309.07808)
 
-    介绍了不确定最大熵原理，该原理可以处理模型元素不可观测的情况，并优于特定条件下的最大熵方法。同时将黑匣子机器学习模型的输出用作不确定机器熵框架的输入，性能得到了提高。
+    本文提出了一种基于惩罚的模仿学习方法P-CSG，结合语义生成传感器融合技术，以提高端到端自动驾驶的整体性能，并解决了交通规则遵守和传感器感知问题。
 
     
 
-    最大熵原理在信息理论中的引入，为统计力学，机器学习和生态学等各个领域的发展做出了贡献。其得到的解决方案作为催化剂，促进研究人员将他们的经验观察映射到获取无偏模型，同时加深了对复杂系统和现象的理解。然而，在模型元素不直接可观测的情况下，例如存在噪声或眼部遮挡的情况下，标准最大熵方法可能会失败，因为它们无法匹配特征约束。在这里，我们展示了不确定最大熵原理作为一种方法，尽管存在任意噪声观察，它同时将所有可用信息编码，而且优于一些特定条件下的最大熵方法的准确度。此外，我们将黑匣子机器学习模型的输出用作不确定机器熵框架的输入，从而在与最大似然算法相比时建立了改进的性能。
+    最近越来越多的研究关注于全端到端的自动驾驶技术，在这种技术中，整个驾驶流程被替换为一个简单的神经网络，由于其结构简单和推理时间快，因此变得非常吸引人。尽管这种方法大大减少了驾驶流程中的组件，但其简单性也导致解释性问题和安全问题。训练得到的策略并不总是符合交通规则，同时也很难发现其错误的原因，因为缺乏中间输出。同时，传感器对于自动驾驶的安全性和可行性也至关重要，可以帮助感知复杂驾驶场景下的周围环境。本文提出了一种全新的基于惩罚的模仿学习方法P-CSG，结合语义生成传感器融合技术，以提高端到端自动驾驶的整体性能。我们对模型的性能进行了评估。
 
-    The principle of maximum entropy, as introduced by Jaynes in information theory, has contributed to advancements in various domains such as Statistical Mechanics, Machine Learning, and Ecology. Its resultant solutions have served as a catalyst, facilitating researchers in mapping their empirical observations to the acquisition of unbiased models, whilst deepening the understanding of complex systems and phenomena. However, when we consider situations in which the model elements are not directly observable, such as when noise or ocular occlusion is present, possibilities arise for which standard maximum entropy approaches may fail, as they are unable to match feature constraints. Here we show the Principle of Uncertain Maximum Entropy as a method that both encodes all available information in spite of arbitrarily noisy observations while surpassing the accuracy of some ad-hoc methods. Additionally, we utilize the output of a black-box machine learning model as input into an uncertain ma
+    More research attention has recently been given to end-to-end autonomous driving technologies where the entire driving pipeline is replaced with a single neural network because of its simpler structure and faster inference time. Despite this appealing approach largely reducing the components in driving pipeline, its simplicity also leads to interpretability problems and safety issues arXiv:2003.06404. The trained policy is not always compliant with the traffic rules and it is also hard to discover the reason for the misbehavior because of the lack of intermediate outputs. Meanwhile, Sensors are also critical to autonomous driving's security and feasibility to perceive the surrounding environment under complex driving scenarios. In this paper, we proposed P-CSG, a novel penalty-based imitation learning approach with cross semantics generation sensor fusion technologies to increase the overall performance of End-to-End Autonomous Driving. We conducted an assessment of our model's perform
+    
+[^4]: 对比学习与属性关联的出现
+
+    Contrastive Learning and the Emergence of Attributes Associations. (arXiv:2302.10763v3 [cs.CV] UPDATED)
+
+    [http://arxiv.org/abs/2302.10763](http://arxiv.org/abs/2302.10763)
+
+    对比学习方案通过对物体输入表示进行身份保持的变换，不仅有助于物体的分类，还可以提供关于属性的有无决策的有价值信息。
+
+    
+
+    对于物体呈现，监督学习方案通常会给出一个简洁的标签。而人类在类似的呈现下，除了给出一个标签外，还会被大量的关联信息所淹没，其中包括了呈现物体的属性。对比学习是一种半监督学习方案，基于对物体输入表示进行保持身份的变换。本研究推测，这些变换不仅可以保持呈现物体的身份，还可以保持其语义上有意义的属性的身份。这意味着对比学习方案的输出表示不仅对于呈现物体的分类有价值，还对于任何感兴趣属性的有无决策有价值。通过模拟实验证明了这一观点的可行性。
+
+    In response to an object presentation, supervised learning schemes generally respond with a parsimonious label. Upon a similar presentation we humans respond again with a label, but are flooded, in addition, by a myriad of associations. A significant portion of these consist of the presented object attributes. Contrastive learning is a semi-supervised learning scheme based on the application of identity preserving transformations on the object input representations. It is conjectured in this work that these same applied transformations preserve, in addition to the identity of the presented object, also the identity of its semantically meaningful attributes. The corollary of this is that the output representations of such a contrastive learning scheme contain valuable information not only for the classification of the presented object, but also for the presence or absence decision of any attribute of interest. Simulation results which demonstrate this idea and the feasibility of this co
     
 
