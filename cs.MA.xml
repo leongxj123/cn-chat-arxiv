@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.MA</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.MA</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.MA</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.MA</description><item><title>&#24341;&#20837;&#30456;&#23545;&#29109;&#27491;&#21017;&#21270;&#23545;&#19968;&#33324;&#21644;&#24635; $N$-agent &#28216;&#25103;&#30340;&#32435;&#20160;&#22343;&#34913;&#20135;&#29983;&#24433;&#21709;&#65292;&#35777;&#26126;&#20102;NE&#31526;&#21512;&#32447;&#24615;&#39640;&#26031;&#31574;&#30053;&#65292;&#24182;&#25552;&#20986;&#20102;&#25919;&#31574;&#20248;&#21270;&#31639;&#27861;&#20197;&#21450;&#22686;&#24378;&#25216;&#26415;&#26469;&#25214;&#21040;&#28216;&#25103;&#20869;&#30340;NE&#12290;</title><link>https://arxiv.org/abs/2404.00045</link><description>&lt;p&gt;
+&#25919;&#31574;&#20248;&#21270;&#22312;&#27491;&#21017;&#21270;&#24191;&#20041;&#21644;&#24635; LQ &#28216;&#25103;&#20013;&#25214;&#21040;&#32435;&#20160;&#22343;&#34913;
+&lt;/p&gt;
+&lt;p&gt;
+Policy Optimization finds Nash Equilibrium in Regularized General-Sum LQ Games
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2404.00045
+&lt;/p&gt;
+&lt;p&gt;
+&#24341;&#20837;&#30456;&#23545;&#29109;&#27491;&#21017;&#21270;&#23545;&#19968;&#33324;&#21644;&#24635; $N$-agent &#28216;&#25103;&#30340;&#32435;&#20160;&#22343;&#34913;&#20135;&#29983;&#24433;&#21709;&#65292;&#35777;&#26126;&#20102;NE&#31526;&#21512;&#32447;&#24615;&#39640;&#26031;&#31574;&#30053;&#65292;&#24182;&#25552;&#20986;&#20102;&#25919;&#31574;&#20248;&#21270;&#31639;&#27861;&#20197;&#21450;&#22686;&#24378;&#25216;&#26415;&#26469;&#25214;&#21040;&#28216;&#25103;&#20869;&#30340;NE&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#22312;&#26412;&#25991;&#20013;&#65292;&#25105;&#20204;&#30740;&#31350;&#20102;&#24341;&#20837;&#30456;&#23545;&#29109;&#27491;&#21017;&#21270;&#23545;&#19968;&#33324;&#21644;&#24635; $N$-agent &#28216;&#25103;&#30340;&#32435;&#20160;&#22343;&#34913; (NE) &#30340;&#24433;&#21709;&#65292;&#25581;&#31034;&#20102;&#36825;&#31867;&#28216;&#25103;&#30340;NE&#31526;&#21512;&#32447;&#24615;&#39640;&#26031;&#31574;&#30053;&#30340;&#20107;&#23454;&#12290;&#27492;&#22806;&#65292;&#23427;&#25551;&#32472;&#20102;&#22312;&#29109;&#27491;&#21017;&#21270;&#30340;&#36866;&#24403;&#24615;&#26041;&#38754;&#65292;&#23545;&#28216;&#25103;&#20869;NE&#29420;&#29305;&#24615;&#30340;&#20805;&#20998;&#26465;&#20214;&#12290;&#30001;&#20110;&#25919;&#31574;&#20248;&#21270;&#26159;&#24378;&#21270;&#23398;&#20064; (RL) &#25216;&#26415;&#30340;&#22522;&#30784;&#26041;&#27861;&#65292;&#26088;&#22312;&#25214;&#21040; NE&#65292;&#22312;&#36825;&#39033;&#24037;&#20316;&#20013;&#65292;&#25105;&#20204;&#35777;&#26126;&#20102;&#19968;&#20010;&#25919;&#31574;&#20248;&#21270;&#31639;&#27861;&#30340;&#32447;&#24615;&#25910;&#25947;&#24615;&#65292;&#35813;&#31639;&#27861; (&#22312;&#29109;&#27491;&#21017;&#21270;&#30340;&#36866;&#24403;&#24615;&#19979;) &#33021;&#22815;&#26126;&#26174;&#22320;&#23454;&#29616; NE&#12290;&#27492;&#22806;&#65292;&#22312;&#29109;&#27491;&#21017;&#21270;&#35777;&#26126;&#19981;&#36275;&#30340;&#24773;&#20917;&#19979;&#65292;&#25105;&#20204;&#25552;&#20986;&#20102;&#19968;&#20010; $\delta$-&#22686;&#24378;&#25216;&#26415;&#65292;&#26377;&#21161;&#20110;&#23454;&#29616;&#28216;&#25103;&#20869;&#30340; $\epsilon$-NE&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2404.00045v1 Announce Type: cross  Abstract: In this paper, we investigate the impact of introducing relative entropy regularization on the Nash Equilibria (NE) of General-Sum $N$-agent games, revealing the fact that the NE of such games conform to linear Gaussian policies. Moreover, it delineates sufficient conditions, contingent upon the adequacy of entropy regularization, for the uniqueness of the NE within the game. As Policy Optimization serves as a foundational approach for Reinforcement Learning (RL) techniques aimed at finding the NE, in this work we prove the linear convergence of a policy optimization algorithm which (subject to the adequacy of entropy regularization) is capable of provably attaining the NE. Furthermore, in scenarios where the entropy regularization proves insufficient, we present a $\delta$-augmentation technique, which facilitates the achievement of an $\epsilon$-NE within the game.
+&lt;/p&gt;</description></item></channel></rss>
