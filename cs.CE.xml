@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CE</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CE</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CE</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CE</description><item><title>&#36890;&#36807;&#38544;&#24335;&#26174;&#24335;(IMEX)&#26102;&#38388;&#27493;&#36827;&#26041;&#27861;&#25913;&#36827;&#33258;&#36866;&#24212;&#30697;&#20272;&#35745;&#65288;ADAM&#65289;&#38543;&#26426;&#20248;&#21270;&#22120;&#65292;&#25552;&#20986;&#20102;&#19968;&#31181;&#26032;&#30340;&#31070;&#32463;&#32593;&#32476;&#35757;&#32451;&#20248;&#21270;&#31639;&#27861;&#65292;&#27604;&#32463;&#20856;Adam&#22312;&#20960;&#20010;&#22238;&#24402;&#21644;&#20998;&#31867;&#38382;&#39064;&#19978;&#34920;&#29616;&#26356;&#22909;&#12290;</title><link>https://arxiv.org/abs/2403.13704</link><description>&lt;p&gt;
+&#36890;&#36807;&#38544;&#24335;&#26174;&#24335;(IMEX)&#26102;&#38388;&#27493;&#36827;&#26041;&#27861;&#25913;&#36827;&#33258;&#36866;&#24212;&#30697;&#20272;&#35745;&#65288;ADAM&#65289;&#38543;&#26426;&#20248;&#21270;&#22120;
+&lt;/p&gt;
+&lt;p&gt;
+Improving the Adaptive Moment Estimation (ADAM) stochastic optimizer through an Implicit-Explicit (IMEX) time-stepping approach
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.13704
+&lt;/p&gt;
+&lt;p&gt;
+&#36890;&#36807;&#38544;&#24335;&#26174;&#24335;(IMEX)&#26102;&#38388;&#27493;&#36827;&#26041;&#27861;&#25913;&#36827;&#33258;&#36866;&#24212;&#30697;&#20272;&#35745;&#65288;ADAM&#65289;&#38543;&#26426;&#20248;&#21270;&#22120;&#65292;&#25552;&#20986;&#20102;&#19968;&#31181;&#26032;&#30340;&#31070;&#32463;&#32593;&#32476;&#35757;&#32451;&#20248;&#21270;&#31639;&#27861;&#65292;&#27604;&#32463;&#20856;Adam&#22312;&#20960;&#20010;&#22238;&#24402;&#21644;&#20998;&#31867;&#38382;&#39064;&#19978;&#34920;&#29616;&#26356;&#22909;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+Adam&#20248;&#21270;&#22120;&#36890;&#24120;&#29992;&#20110;&#31070;&#32463;&#32593;&#32476;&#35757;&#32451;&#20013;&#65292;&#23545;&#24212;&#20110;&#22312;&#38750;&#24120;&#23567;&#30340;&#23398;&#20064;&#36895;&#29575;&#38480;&#21046;&#19979;&#30340;&#22522;&#26412;&#24120;&#24494;&#20998;&#26041;&#31243;&#65288;ODE&#65289;&#12290;&#26412;&#25991;&#34920;&#26126;&#65292;&#32463;&#20856;Adam&#31639;&#27861;&#26159;&#24213;&#23618;ODE&#30340;&#19968;&#38454;&#38544;&#24335;&#26174;&#24335;(IMEX) Euler&#31163;&#25955;&#21270;&#12290;&#20174;&#26102;&#38388;&#31163;&#25955;&#21270;&#35282;&#24230;&#20986;&#21457;&#65292;&#25105;&#20204;&#25552;&#20986;&#20102;&#36890;&#36807;&#20351;&#29992;&#26356;&#39640;&#38454;IMEX&#26041;&#27861;&#26469;&#35299;&#20915;ODE&#30340;Adam&#26041;&#26696;&#30340;&#26032;&#25193;&#23637;&#12290;&#22522;&#20110;&#36825;&#31181;&#26041;&#27861;&#65292;&#25105;&#20204;&#25512;&#23548;&#20102;&#19968;&#31181;&#26032;&#30340;&#31070;&#32463;&#32593;&#32476;&#35757;&#32451;&#20248;&#21270;&#31639;&#27861;&#65292;&#22312;&#20960;&#20010;&#22238;&#24402;&#21644;&#20998;&#31867;&#38382;&#39064;&#19978;&#27604;&#32463;&#20856;Adam&#34920;&#29616;&#26356;&#22909;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.13704v1 Announce Type: cross  Abstract: The Adam optimizer, often used in Machine Learning for neural network training, corresponds to an underlying ordinary differential equation (ODE) in the limit of very small learning rates. This work shows that the classical Adam algorithm is a first order implicit-explicit (IMEX) Euler discretization of the underlying ODE. Employing the time discretization point of view, we propose new extensions of the Adam scheme obtained by using higher order IMEX methods to solve the ODE. Based on this approach, we derive a new optimization algorithm for neural network training that performs better than classical Adam on several regression and classification problems.
+&lt;/p&gt;</description></item></channel></rss>
