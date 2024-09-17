@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Diverse Neural Audio Embeddings -- Bringing Features back !.](http://arxiv.org/abs/2309.08751) | 本文通过在音频分类任务中学习多样化的特征表示，包括领域特定的音高、音色和神经表示，以及端到端架构，为学习稳健、多样化的表示铺平了道路，并显著提高了性能。 |
+| [^1] | [Interpretable Multimodal Misinformation Detection with Logic Reasoning.](http://arxiv.org/abs/2305.05964) | 本文提出了一种新的基于逻辑的多模态虚假信息检测神经模型，通过集成可解释性逻辑子句表达目标任务的推理过程，并使用神经表征参数化符号逻辑元素，从而便于自动生成和评估有意义的逻辑子句。此外，引入了五个元预测器来捕获虚假信息的基本模式。实验结果表明，该模型不仅性能显著优于当前方法，而且提供了透明且可解释的逻辑推理过程。 |
 
 # 详细
 
-[^1]: 多样的神经音频嵌入 - 恢复特征！
+[^1]: 多模态虚假信息解释性检测与逻辑推理
 
-    Diverse Neural Audio Embeddings -- Bringing Features back !. (arXiv:2309.08751v1 [cs.SD])
+    Interpretable Multimodal Misinformation Detection with Logic Reasoning. (arXiv:2305.05964v1 [cs.MM])
 
-    [http://arxiv.org/abs/2309.08751](http://arxiv.org/abs/2309.08751)
+    [http://arxiv.org/abs/2305.05964](http://arxiv.org/abs/2305.05964)
 
-    本文通过在音频分类任务中学习多样化的特征表示，包括领域特定的音高、音色和神经表示，以及端到端架构，为学习稳健、多样化的表示铺平了道路，并显著提高了性能。
+    本文提出了一种新的基于逻辑的多模态虚假信息检测神经模型，通过集成可解释性逻辑子句表达目标任务的推理过程，并使用神经表征参数化符号逻辑元素，从而便于自动生成和评估有意义的逻辑子句。此外，引入了五个元预测器来捕获虚假信息的基本模式。实验结果表明，该模型不仅性能显著优于当前方法，而且提供了透明且可解释的逻辑推理过程。
 
     
 
-    随着现代人工智能架构的出现，从端到端的架构开始流行。这种转变导致了神经架构在没有领域特定偏见/知识的情况下进行训练，根据任务进行优化。本文中，我们通过多样的特征表示（在本例中是领域特定的）学习音频嵌入。对于涉及数百种声音分类的情况，我们学习分别针对音高、音色和神经表示等多样的音频属性建立稳健的嵌入，同时也通过端到端架构进行学习。我们观察到手工制作的嵌入，例如基于音高和音色的嵌入，虽然单独使用时无法击败完全端到端的表示，但将这些嵌入与端到端嵌入相结合可以显著提高性能。这项工作将为在端到端模型中引入一些领域专业知识来学习稳健、多样化的表示铺平道路，并超越仅训练端到端模型的性能。
+    在线社交平台上的多模态虚假信息由于多媒体内容的可信度和传播更容易而变得越来越重要。虽然现有的多模态检测方法已经达到了较高的性能，但缺乏解释性阻碍了这些系统的可靠性和实际部署。受到 NeuralSymbolic AI 的启发，该方法结合了神经网络的学习能力和符号学习的可解释性，我们提出了一种新的基于逻辑的多模态虚假信息检测神经模型，它集成了可解释性逻辑子句以表达目标任务的推理过程。为了使学习有效，我们使用神经表征来参数化符号逻辑元素，从而便于自动生成和评估有意义的逻辑子句。另外，为了使我们的框架可适用于各种虚假信息来源，我们在多模态融合网络中引入了五个元预测器来捕获虚假信息的基本模式。我们在实际的多模态虚假信息数据集上进行了大量实验，结果表明，我们的模型不仅显着优于现有方法，还为每个预测提供了透明且可解释的逻辑推理过程。
 
-    With the advent of modern AI architectures, a shift has happened towards end-to-end architectures. This pivot has led to neural architectures being trained without domain-specific biases/knowledge, optimized according to the task. We in this paper, learn audio embeddings via diverse feature representations, in this case, domain-specific. For the case of audio classification over hundreds of categories of sound, we learn robust separate embeddings for diverse audio properties such as pitch, timbre, and neural representation, along with also learning it via an end-to-end architecture. We observe handcrafted embeddings, e.g., pitch and timbre-based, although on their own, are not able to beat a fully end-to-end representation, yet adding these together with end-to-end embedding helps us, significantly improve performance. This work would pave the way to bring some domain expertise with end-to-end models to learn robust, diverse representations, surpassing the performance of just training 
+    Multimodal misinformation on online social platforms is becoming a critical concern due to increasing credibility and easier dissemination brought by multimedia content, compared to traditional text-only information. While existing multimodal detection approaches have achieved high performance, the lack of interpretability hinders these systems' reliability and practical deployment. Inspired by NeuralSymbolic AI which combines the learning ability of neural networks with the explainability of symbolic learning, we propose a novel logic-based neural model for multimodal misinformation detection which integrates interpretable logic clauses to express the reasoning process of the target task. To make learning effective, we parameterize symbolic logical elements using neural representations, which facilitate the automatic generation and evaluation of meaningful logic clauses. Additionally, to make our framework generalizable across diverse misinformation sources, we introduce five meta-pre
     
 

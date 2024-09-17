@@ -2,37 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Large Language Models and Games: A Survey and Roadmap](https://arxiv.org/abs/2402.18659) | 这项研究调查了大型语言模型在游戏领域中的多种应用及其角色，指出了未开发领域和未来发展方向，同时探讨了在游戏领域中大型语言模型的潜力和限制。 |
-| [^2] | [FRAC-Q-Learning: A Reinforcement Learning with Boredom Avoidance Processes for Social Robots](https://arxiv.org/abs/2311.15327) | FRAC-Q-Learning是一种专为社交机器人设计，能避免用户厌烦的强化学习方法，比传统算法在兴趣和厌烦程度上表现更好，有助于开发不会让用户感到无聊的社交机器人。 |
+| [^1] | [Towards Human-Centered Construction Robotics: An RL-Driven Companion Robot For Contextually Assisting Carpentry Workers](https://arxiv.org/abs/2403.19060) | 本文提出了一种人类中心的建筑机器人方法，通过强化学习驱动的助手机器人为木工劳动者提供环境上下文协助，推进了机器人在建筑中的应用。 |
+| [^2] | [CataractBot: An LLM-Powered Expert-in-the-Loop Chatbot for Cataract Patients](https://arxiv.org/abs/2402.04620) | CataractBot是一种基于LLM的白内障患者专家辅助聊天机器人，通过查询知识库提供即时的答案和专家验证的回复。在实地部署研究中证明了其价值所在。 |
+| [^3] | [Decision Theoretic Foundations for Experiments Evaluating Human Decisions.](http://arxiv.org/abs/2401.15106) | 该论文通过综合统计决策理论和信息经济学，提出了决策问题的广泛适用定义。为了将人类决策的下降归咎于偏见形式，实验必须向参与者提供足够的信息来识别规范决策。然而，根据作者对AI辅助决策的研究的评估，只有17%的研究提供了足够的信息来描述参与者的行为偏离了良好的决策。 |
 
 # 详细
 
-[^1]: 大型语言模型与游戏：调研与路线图
+[^1]: 人类中心施工机器人：基于强化学习的助手机器人为木工劳动者提供环境上下文协助
 
-    Large Language Models and Games: A Survey and Roadmap
+    Towards Human-Centered Construction Robotics: An RL-Driven Companion Robot For Contextually Assisting Carpentry Workers
 
-    [https://arxiv.org/abs/2402.18659](https://arxiv.org/abs/2402.18659)
+    [https://arxiv.org/abs/2403.19060](https://arxiv.org/abs/2403.19060)
 
-    这项研究调查了大型语言模型在游戏领域中的多种应用及其角色，指出了未开发领域和未来发展方向，同时探讨了在游戏领域中大型语言模型的潜力和限制。
-
-    
-
-    近年来，大型语言模型（LLMs）的研究急剧增加，并伴随着公众对该主题的参与。尽管起初是自然语言处理中的一小部分，LLMs在广泛的应用和领域中展现出显著潜力，包括游戏。本文调查了LLMs在游戏中及为游戏提供支持的各种应用的最新技术水平，并明确了LLMs在游戏中可以扮演的不同角色。重要的是，我们讨论了尚未开发的领域和LLMs在游戏中未来应用的有前途的方向，以及在游戏领域中LLMs的潜力和限制。作为LLMs和游戏交叉领域的第一份综合调查和路线图，我们希望本文能够成为这一激动人心的新领域的开创性研究和创新的基础。
-
-    arXiv:2402.18659v1 Announce Type: cross  Abstract: Recent years have seen an explosive increase in research on large language models (LLMs), and accompanying public engagement on the topic. While starting as a niche area within natural language processing, LLMs have shown remarkable potential across a broad range of applications and domains, including games. This paper surveys the current state of the art across the various applications of LLMs in and for games, and identifies the different roles LLMs can take within a game. Importantly, we discuss underexplored areas and promising directions for future uses of LLMs in games and we reconcile the potential and limitations of LLMs within the games domain. As the first comprehensive survey and roadmap at the intersection of LLMs and games, we are hopeful that this paper will serve as the basis for groundbreaking research and innovation in this exciting new field.
-    
-[^2]: FRAC-Q-Learning: 一种具有避免厌烦过程的社交机器人强化学习方法
-
-    FRAC-Q-Learning: A Reinforcement Learning with Boredom Avoidance Processes for Social Robots
-
-    [https://arxiv.org/abs/2311.15327](https://arxiv.org/abs/2311.15327)
-
-    FRAC-Q-Learning是一种专为社交机器人设计，能避免用户厌烦的强化学习方法，比传统算法在兴趣和厌烦程度上表现更好，有助于开发不会让用户感到无聊的社交机器人。
+    本文提出了一种人类中心的建筑机器人方法，通过强化学习驱动的助手机器人为木工劳动者提供环境上下文协助，推进了机器人在建筑中的应用。
 
     
 
-    强化学习算法经常被应用于社交机器人。然而，大多数强化学习算法并未针对社交机器人进行优化，因此可能会让用户感到无聊。我们提出了一种专为社交机器人设计的新强化学习方法，FRAC-Q-Learning，可以避免用户感到无聊。该算法除了随机化和分类过程外，还包括一个遗忘过程。本研究通过与传统Q-Learning的比较评估了FRAC-Q-Learning的兴趣和厌烦程度分数。FRAC-Q-Learning显示出明显更高的兴趣分数趋势，并且相较于传统Q-Learning更难让用户感到无聊。因此，FRAC-Q-Learning有助于开发不会让用户感到无聊的社交机器人。该算法还可以在基于Web的通信和教育中找到应用。
+    在这个充满活力的建筑行业中，传统的机器人集成主要集中在自动化特定任务，通常忽略了建筑工作流程中人类因素的复杂性和变化性。本文提出了一种以人为本的方法，设计了一个“工作伴侣漫游器”，旨在协助建筑工人完成其现有实践，旨在增强安全性和工作流程的流畅性，同时尊重建筑劳动的技术性质。我们对在木工模板工程中部署机器人系统进行了深入研究，展示了一个原型，通过环境相关的强化学习（RL）驱动模块化框架，重点强调了在动态环境中的机动性、安全性和舒适的工人-机器人协作。我们的研究推进了机器人在建筑中的应用，倡导协作模型，其中自适应机器人支持而不是取代人类，强调了交互式的潜力。
 
-    arXiv:2311.15327v3 Announce Type: replace-cross  Abstract: The reinforcement learning algorithms have often been applied to social robots. However, most reinforcement learning algorithms were not optimized for the use of social robots, and consequently they may bore users. We proposed a new reinforcement learning method specialized for the social robot, the FRAC-Q-learning, that can avoid user boredom. The proposed algorithm consists of a forgetting process in addition to randomizing and categorizing processes. This study evaluated interest and boredom hardness scores of the FRAC-Q-learning by a comparison with the traditional Q-learning. The FRAC-Q-learning showed significantly higher trend of interest score, and indicated significantly harder to bore users compared to the traditional Q-learning. Therefore, the FRAC-Q-learning can contribute to develop a social robot that will not bore users. The proposed algorithm can also find applications in Web-based communication and educational 
+    arXiv:2403.19060v1 Announce Type: cross  Abstract: In the dynamic construction industry, traditional robotic integration has primarily focused on automating specific tasks, often overlooking the complexity and variability of human aspects in construction workflows. This paper introduces a human-centered approach with a ``work companion rover" designed to assist construction workers within their existing practices, aiming to enhance safety and workflow fluency while respecting construction labor's skilled nature. We conduct an in-depth study on deploying a robotic system in carpentry formwork, showcasing a prototype that emphasizes mobility, safety, and comfortable worker-robot collaboration in dynamic environments through a contextual Reinforcement Learning (RL)-driven modular framework. Our research advances robotic applications in construction, advocating for collaborative models where adaptive robots support rather than replace humans, underscoring the potential for an interactive a
+    
+[^2]: CataractBot：一种基于LLM的白内障患者专家辅助聊天机器人
+
+    CataractBot: An LLM-Powered Expert-in-the-Loop Chatbot for Cataract Patients
+
+    [https://arxiv.org/abs/2402.04620](https://arxiv.org/abs/2402.04620)
+
+    CataractBot是一种基于LLM的白内障患者专家辅助聊天机器人，通过查询知识库提供即时的答案和专家验证的回复。在实地部署研究中证明了其价值所在。
+
+    
+
+    随着医疗行业的发展，患者越来越追求更可靠的健康信息，包括他们的健康状况、治疗选择和潜在风险。虽然有很多信息来源，但数字时代却给人们带来了过多且错误的信息。患者主要信任医生和医院工作人员，突显了专家认可的健康信息的必要性。但是，专家面临的压力导致了沟通时间的减少，影响了信息的共享。为了填补这一空白，我们提出了CataractBot，一种由大型语言模型（LLMs）驱动的专家辅助聊天机器人。与印度一家三级眼科医院合作开发的CataractBot通过查询策划的知识库，即时回答白内障手术相关的问题，并异步提供专家验证的答复。CataractBot具备多模式支持和多语言能力。在与49名参与者的实地部署研究中，CataractBot证明了其价值所在。
+
+    The healthcare landscape is evolving, with patients seeking more reliable information about their health conditions, treatment options, and potential risks. Despite the abundance of information sources, the digital age overwhelms individuals with excess, often inaccurate information. Patients primarily trust doctors and hospital staff, highlighting the need for expert-endorsed health information. However, the pressure on experts has led to reduced communication time, impacting information sharing. To address this gap, we propose CataractBot, an experts-in-the-loop chatbot powered by large language models (LLMs). Developed in collaboration with a tertiary eye hospital in India, CataractBot answers cataract surgery related questions instantly by querying a curated knowledge base, and provides expert-verified responses asynchronously. CataractBot features multimodal support and multilingual capabilities. In an in-the-wild deployment study with 49 participants, CataractBot proved valuable,
+    
+[^3]: 决策理论基础对评估人类决策的实验的影响
+
+    Decision Theoretic Foundations for Experiments Evaluating Human Decisions. (arXiv:2401.15106v1 [cs.HC])
+
+    [http://arxiv.org/abs/2401.15106](http://arxiv.org/abs/2401.15106)
+
+    该论文通过综合统计决策理论和信息经济学，提出了决策问题的广泛适用定义。为了将人类决策的下降归咎于偏见形式，实验必须向参与者提供足够的信息来识别规范决策。然而，根据作者对AI辅助决策的研究的评估，只有17%的研究提供了足够的信息来描述参与者的行为偏离了良好的决策。
+
+    
+
+    信息展示的决策是可解释AI、人工智能与人类的合作以及数据可视化等领域研究的重点。然而，决策问题的定义以及实验必须具备的条件以得出人类决策存在缺陷的结论仍然存在争议。我们提出了一个广泛适用的决策问题定义，该定义是从统计决策理论和信息经济学中综合提炼而来的。我们认为，要将人类绩效下降归咎于某种偏见形式，实验必须向参与者提供足够的信息，以便合理的代理能够识别规范决策。我们评估了最近有关AI辅助决策的文献中对决策制定进行的评估在多大程度上达到了这一标准。我们发现，只有35项声称确定了有偏差行为的研究中的6项（17%）向参与者提供了足够信息来描述其行为偏离良好决策
+
+    Decision-making with information displays is a key focus of research in areas like explainable AI, human-AI teaming, and data visualization. However, what constitutes a decision problem, and what is required for an experiment to be capable of concluding that human decisions are flawed in some way, remain open to speculation. We present a widely applicable definition of a decision problem synthesized from statistical decision theory and information economics. We argue that to attribute loss in human performance to forms of bias, an experiment must provide participants with the information that a rational agent would need to identify the normative decision. We evaluate the extent to which recent evaluations of decision-making from the literature on AI-assisted decisions achieve this criteria. We find that only 6 (17\%) of 35 studies that claim to identify biased behavior present participants with sufficient information to characterize their behavior as deviating from good decision-making
     
 
