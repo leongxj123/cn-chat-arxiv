@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Survey on Statistical Theory of Deep Learning: Approximation, Training Dynamics, and Generative Models.](http://arxiv.org/abs/2401.07187) | 该论文综述了深度学习的统计理论，包括近似方法、训练动态和生成模型。在非参数框架中，结果揭示了神经网络过度风险的快速收敛速率，以及如何通过梯度方法训练网络以找到良好的泛化解决方案。 |
+| [^1] | [High-arity PAC learning via exchangeability](https://arxiv.org/abs/2402.14294) | 提出高参数PAC学习理论，利用结构化相关性和交换分布取代i.i.d.抽样，证明了统计学习基本定理的高维版本。 |
+| [^2] | [A Dynamical System View of Langevin-Based Non-Convex Sampling.](http://arxiv.org/abs/2210.13867) | 本文提出了一种新的框架，通过利用动力系统理论中的几个工具来解决非凸采样中的重要挑战。对于一大类最先进的采样方案，它们在Wasserstein距离下的最后迭代收敛可以归结为对它们的连续时间对应物的研究，这是更好理解的。 |
 
 # 详细
 
-[^1]: 深度学习的统计理论综述：近似，训练动态和生成模型
+[^1]: 通过可互换性实现高参数PAC学习
 
-    A Survey on Statistical Theory of Deep Learning: Approximation, Training Dynamics, and Generative Models. (arXiv:2401.07187v1 [stat.ML])
+    High-arity PAC learning via exchangeability
 
-    [http://arxiv.org/abs/2401.07187](http://arxiv.org/abs/2401.07187)
+    [https://arxiv.org/abs/2402.14294](https://arxiv.org/abs/2402.14294)
 
-    该论文综述了深度学习的统计理论，包括近似方法、训练动态和生成模型。在非参数框架中，结果揭示了神经网络过度风险的快速收敛速率，以及如何通过梯度方法训练网络以找到良好的泛化解决方案。
+    提出高参数PAC学习理论，利用结构化相关性和交换分布取代i.i.d.抽样，证明了统计学习基本定理的高维版本。
 
     
 
-    在这篇文章中，我们从三个角度回顾了关于神经网络统计理论的文献。第一部分回顾了在回归或分类的非参数框架下关于神经网络过度风险的结果。这些结果依赖于神经网络的显式构造，以及采用了近似理论的工具，导致过度风险的快速收敛速率。通过这些构造，可以用样本大小、数据维度和函数平滑性来表达网络的宽度和深度。然而，他们的基本分析仅适用于深度神经网络高度非凸的全局极小值点。这促使我们在第二部分回顾神经网络的训练动态。具体而言，我们回顾了那些试图回答“基于梯度方法训练的神经网络如何找到能够在未见数据上有良好泛化性能的解”的论文。尤其是两个知名的
+    我们开发了一种高维PAC学习理论，即在“结构化相关性”存在的统计学习中。 在这个理论中，假设可以是图形、超图，或者更一般地说，是有限关系语言中的结构，并且i.i.d.抽样被抽样产生可互换分布的诱导子结构取代。我们证明了统计学习基本定理的高维版本，通过表征高维（agnostic）PAC可学性，以纯组合维度的有限性及适当版本的均匀收敛。
 
-    In this article, we review the literature on statistical theories of neural networks from three perspectives. In the first part, results on excess risks for neural networks are reviewed in the nonparametric framework of regression or classification. These results rely on explicit constructions of neural networks, leading to fast convergence rates of excess risks, in that tools from the approximation theory are adopted. Through these constructions, the width and depth of the networks can be expressed in terms of sample size, data dimension, and function smoothness. Nonetheless, their underlying analysis only applies to the global minimizer in the highly non-convex landscape of deep neural networks. This motivates us to review the training dynamics of neural networks in the second part. Specifically, we review papers that attempt to answer ``how the neural network trained via gradient-based methods finds the solution that can generalize well on unseen data.'' In particular, two well-know
+    arXiv:2402.14294v1 Announce Type: new  Abstract: We develop a theory of high-arity PAC learning, which is statistical learning in the presence of "structured correlation". In this theory, hypotheses are either graphs, hypergraphs or, more generally, structures in finite relational languages, and i.i.d. sampling is replaced by sampling an induced substructure, producing an exchangeable distribution. We prove a high-arity version of the fundamental theorem of statistical learning by characterizing high-arity (agnostic) PAC learnability in terms of finiteness of a purely combinatorial dimension and in terms of an appropriate version of uniform convergence.
+    
+[^2]: Langevin-Based Non-Convex Sampling的动力学系统视角
+
+    A Dynamical System View of Langevin-Based Non-Convex Sampling. (arXiv:2210.13867v2 [cs.LG] UPDATED)
+
+    [http://arxiv.org/abs/2210.13867](http://arxiv.org/abs/2210.13867)
+
+    本文提出了一种新的框架，通过利用动力系统理论中的几个工具来解决非凸采样中的重要挑战。对于一大类最先进的采样方案，它们在Wasserstein距离下的最后迭代收敛可以归结为对它们的连续时间对应物的研究，这是更好理解的。
+
+    This paper proposes a new framework that uses tools from the theory of dynamical systems to address important challenges in non-convex sampling. For a large class of state-of-the-art sampling schemes, their last-iterate convergence in Wasserstein distances can be reduced to the study of their continuous-time counterparts, which is much better understood.
+
+    非凸采样是机器学习中的一个关键挑战，对于深度学习中的非凸优化以及近似概率推断都至关重要。尽管其重要性，理论上仍存在许多重要挑战：现有的保证通常仅适用于平均迭代而不是更理想的最后迭代，缺乏捕捉变量尺度（如Wasserstein距离）的收敛度量，主要适用于随机梯度Langevin动力学等基本方案。在本文中，我们开发了一个新的框架，通过利用动力系统理论中的几个工具来解决上述问题。我们的关键结果是，对于一大类最先进的采样方案，它们在Wasserstein距离下的最后迭代收敛可以归结为对它们的连续时间对应物的研究，这是更好理解的。结合MCMC采样的标准假设，我们的理论立即产生了
+
+    Non-convex sampling is a key challenge in machine learning, central to non-convex optimization in deep learning as well as to approximate probabilistic inference. Despite its significance, theoretically there remain many important challenges: Existing guarantees (1) typically only hold for the averaged iterates rather than the more desirable last iterates, (2) lack convergence metrics that capture the scales of the variables such as Wasserstein distances, and (3) mainly apply to elementary schemes such as stochastic gradient Langevin dynamics. In this paper, we develop a new framework that lifts the above issues by harnessing several tools from the theory of dynamical systems. Our key result is that, for a large class of state-of-the-art sampling schemes, their last-iterate convergence in Wasserstein distances can be reduced to the study of their continuous-time counterparts, which is much better understood. Coupled with standard assumptions of MCMC sampling, our theory immediately yie
     
 

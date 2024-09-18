@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [ChatGPT Based Data Augmentation for Improved Parameter-Efficient Debiasing of LLMs](https://arxiv.org/abs/2402.11764) | 本研究提出了一种利用ChatGPT生成合成训练数据来增强LLMs去偏见化的新方法，能够高效地去除已知偏见并跨越不同类别进行去偏见化。 |
-| [^2] | [Federated Epidemic Surveillance.](http://arxiv.org/abs/2307.02616) | 本研究旨在探索联邦方法在流行病监测中的应用。我们提出了一个假设检验框架，通过推送到保管人的防火墙并进行元分析，来解决数据分布和共享限制的问题。通过实验验证了我们的方法的有效性，并提出了适合的$p$-值合并方法。这些发现为联邦流行病监测提供了有价值的见解。 |
+| [^1] | [Building ethical guidelines for generative AI in scientific research.](http://arxiv.org/abs/2401.15284) | 本文提出了一个初步的框架，通过五个关键主题的分析和缓解策略来建立科学研究中生成AI的伦理指南。全球共识、专业培训和合理的执行对于促进AI的益处和维护研究诚信至关重要。 |
+| [^2] | [Large language models can replicate cross-cultural differences in personality.](http://arxiv.org/abs/2310.10679) | 大型语言模型GPT-4成功复制了使用十项人格问卷测量的大五人格的跨文化差异，但其结果表明平均评级有上升偏差和较低的变异性与结构效度。 |
 
 # 详细
 
-[^1]: 基于ChatGPT的数据增强技术用于改善LLMs的参数高效去偏见化
+[^1]: 在科学研究中建立生成AI的伦理指南
 
-    ChatGPT Based Data Augmentation for Improved Parameter-Efficient Debiasing of LLMs
+    Building ethical guidelines for generative AI in scientific research. (arXiv:2401.15284v1 [cs.CY])
 
-    [https://arxiv.org/abs/2402.11764](https://arxiv.org/abs/2402.11764)
+    [http://arxiv.org/abs/2401.15284](http://arxiv.org/abs/2401.15284)
 
-    本研究提出了一种利用ChatGPT生成合成训练数据来增强LLMs去偏见化的新方法，能够高效地去除已知偏见并跨越不同类别进行去偏见化。
-
-    
-
-    大语言模型（LLMs）虽然功能强大，但存在有害的社会偏见。由于计算成本、数据约束和可能降低多任务语言能力，去偏见化通常具有挑战性。本文介绍了一种利用ChatGPT生成合成训练数据的新方法，旨在增强LLMs的去偏见化。我们提出了两种策略：目标提示，对已知偏见提供有效的去偏见化，但需要事先指定问题中的偏见; 一般提示，虽然效果稍逊，但能够跨各种类别进行去偏见化。我们利用适配器调整来实现资源高效的LLM去偏见化，并比较了我们的合成数据与现有去偏见化数据集的效果。我们的结果表明：（1）ChatGPT可以高效地生成用于去偏见化其他LLMs的高质量训练数据；（2）通过我们的方法生成的数据超越了现有数据集在去偏见化上的效果。
-
-    arXiv:2402.11764v1 Announce Type: cross  Abstract: Large Language models (LLMs), while powerful, exhibit harmful social biases. Debiasing is often challenging due to computational costs, data constraints, and potential degradation of multi-task language capabilities. This work introduces a novel approach utilizing ChatGPT to generate synthetic training data, aiming to enhance the debiasing of LLMs. We propose two strategies: Targeted Prompting, which provides effective debiasing for known biases but necessitates prior specification of bias in question; and General Prompting, which, while slightly less effective, offers debiasing across various categories. We leverage resource-efficient LLM debiasing using adapter tuning and compare the effectiveness of our synthetic data to existing debiasing datasets. Our results reveal that: (1) ChatGPT can efficiently produce high-quality training data for debiasing other LLMs; (2) data produced via our approach surpasses existing datasets in debias
-    
-[^2]: 联邦流行病监测
-
-    Federated Epidemic Surveillance. (arXiv:2307.02616v1 [stat.AP])
-
-    [http://arxiv.org/abs/2307.02616](http://arxiv.org/abs/2307.02616)
-
-    本研究旨在探索联邦方法在流行病监测中的应用。我们提出了一个假设检验框架，通过推送到保管人的防火墙并进行元分析，来解决数据分布和共享限制的问题。通过实验验证了我们的方法的有效性，并提出了适合的$p$-值合并方法。这些发现为联邦流行病监测提供了有价值的见解。
+    本文提出了一个初步的框架，通过五个关键主题的分析和缓解策略来建立科学研究中生成AI的伦理指南。全球共识、专业培训和合理的执行对于促进AI的益处和维护研究诚信至关重要。
 
     
 
-    流行病的监测是一项具有挑战性的任务，特别是当关键数据分散且利益相关方无法或不愿共享时。为了克服这一障碍，应开发联邦方法来整合实体愿意提供的较不敏感的证据。本研究旨在探索将假设检验推送到每个保管人的防火墙后，再通过元分析来合并结果的可行性，并确定重建假设检验和优化推理的最佳方法。我们提出了一个假设检验框架来识别指标的激增，并对真实数据和半合成数据进行功效分析和实验，以展示我们所提出的假设检验的性质，并提出合适的$p$-值合并方法。我们的研究结果凸显了使用$p$-值合并作为流行病监测的联邦方法的潜力，并为整合可用信息提供了宝贵的见解。
+    生成人工智能工具（如大型语言模型）正在迅速改变学术研究和实际应用。然而，关于科学中生成AI的伦理指南的讨论仍然零散，强调了协商一致性标准的紧迫性。本文通过对五个关键主题的分析和缓解策略的开发，提供了一个初步的框架：了解模型在真实性和偏见方面的局限性；尊重隐私、机密和版权；在融入模型输出时避免抄袭和违反政策；确保应用带来总体利益；以及透明、可复制地使用人工智能。通过列举常见场景来展示潜在的伦理违规行为。我们认为，全球共识以及专业培训和合理的执行是促进AI的益处并维护研究诚信的关键。
 
-    The surveillance of a pandemic is a challenging task, especially when crucial data is distributed and stakeholders cannot or are unwilling to share. To overcome this obstacle, federated methodologies should be developed to incorporate less sensitive evidence that entities are willing to provide. This study aims to explore the feasibility of pushing hypothesis tests behind each custodian's firewall and then meta-analysis to combine the results, and to determine the optimal approach for reconstructing the hypothesis test and optimizing the inference. We propose a hypothesis testing framework to identify a surge in the indicators and conduct power analyses and experiments on real and semi-synthetic data to showcase the properties of our proposed hypothesis test and suggest suitable methods for combining $p$-values. Our findings highlight the potential of using $p$-value combination as a federated methodology for pandemic surveillance and provide valuable insights into integrating availabl
+    Generative artificial intelligence tools like large language models are rapidly transforming academic research and real world applications. However, discussions on ethical guidelines for generative AI in science remain fragmented, underscoring the urgent need for consensus based standards. This paper offers an initial framework by developing analyses and mitigation strategies across five key themes: understanding model limitations regarding truthfulness and bias; respecting privacy, confidentiality, and copyright; avoiding plagiarism and policy violations when incorporating model output; ensuring applications provide overall benefit; and using AI transparently and reproducibly. Common scenarios are outlined to demonstrate potential ethical violations. We argue that global consensus coupled with professional training and reasonable enforcement are critical to promoting the benefits of AI while safeguarding research integrity.
+    
+[^2]: 大型语言模型可以复制跨文化个性差异
+
+    Large language models can replicate cross-cultural differences in personality. (arXiv:2310.10679v1 [cs.CL])
+
+    [http://arxiv.org/abs/2310.10679](http://arxiv.org/abs/2310.10679)
+
+    大型语言模型GPT-4成功复制了使用十项人格问卷测量的大五人格的跨文化差异，但其结果表明平均评级有上升偏差和较低的变异性与结构效度。
+
+    
+
+    我们使用一项大规模实验(N=8000)来确定GPT-4是否可以复制使用十项人格问卷测量的大五人格的跨文化差异。我们选择美国和韩国作为文化对比，因为先前的研究表明这两个国家的人之间存在显著的人格差异。我们操纵了模拟的目标（美国 vs. 韩国），问卷的语言（英语 vs. 韩语）以及语言模型（GPT-4 vs. GPT-3.5）。我们的结果表明，GPT-4复制了每个因子的跨文化差异。然而，平均评级具有上升偏差，并且比人类样本的变异性更低，以及结构效度较低。总的来说，我们提供了初步的证据说明LLMs可以促进跨文化心理研究。
+
+    We use a large-scale experiment (N=8000) to determine whether GPT-4 can replicate cross-cultural differences in the Big Five, measured using the Ten-Item Personality Inventory. We used the US and South Korea as the cultural pair, given that prior research suggests substantial personality differences between people from these two countries. We manipulated the target of the simulation (US vs. Korean), the language of the inventory (English vs. Korean), and the language model (GPT-4 vs. GPT-3.5). Our results show that GPT-4 replicated the cross-cultural differences for each factor. However, mean ratings had an upward bias and exhibited lower variation than in the human samples, as well as lower structural validity. Overall, we provide preliminary evidence that LLMs can aid cross-cultural psychological research.
     
 
