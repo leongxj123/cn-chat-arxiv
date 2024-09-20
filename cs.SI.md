@@ -2,52 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Neural Graph Generator: Feature-Conditioned Graph Generation using Latent Diffusion Models](https://arxiv.org/abs/2403.01535) | NGG是一个神经图生成器，通过潜在扩散模型实现了特征条件图生成，具有模拟复杂图模式和控制图生成过程的显著能力。 |
-| [^2] | [LLaVA-Docent: Instruction Tuning with Multimodal Large Language Model to Support Art Appreciation Education](https://arxiv.org/abs/2402.06264) | 本研究利用多模态大型语言模型（MLLM）开发了LLaVA-Docent模型，以支持艺术鉴赏教育。通过综述文献和专家咨询，构建了数据框架，并使用该框架生成了虚拟对话数据集用于训练MLLM。该研究对于解决传统艺术鉴赏教育中的资源限制和主流教育中的科学技术工程和数学偏重具有重要意义。 |
-| [^3] | [The Bayan Algorithm: Detecting Communities in Networks Through Exact and Approximate Optimization of Modularity.](http://arxiv.org/abs/2209.04562) | 提出了一种名为Bayan的社区检测算法，通过精确或近似优化模块度的方法，它能够返回最优或接近最优的分区，并且比其他算法快数倍，并能够在合成和真实网络数据集上准确地找到地面真实社区。 |
+| [^1] | [The complementary contributions of academia and industry to AI research.](http://arxiv.org/abs/2401.10268) | 工业界的研究团队在人工智能研究中有更高的关注度和引用率，且更有可能产生最先进的模型。而学术界的团队则更倾向于产生具有更高程度创新的工作，出现非常不寻常和典型的论文。这种影响力-创新度优势在不同领域、团队规模、资历和声望下均存在。 |
+| [^2] | [Self-attention Dual Embedding for Graphs with Heterophily.](http://arxiv.org/abs/2305.18385) | 本研究提出了一种新颖的图神经网络，采用自注意力机制，适用于异质性图和同质性图，并在许多标准数据集上展示出最先进的性能。 |
+| [^3] | [Node Feature Augmentation Vitaminizes Network Alignment.](http://arxiv.org/abs/2304.12751) | 本研究提出了Grad-Align+方法，通过增强节点特征来执行NA任务，并最大限度地利用增强的节点特征来设计NA方法，解决了NA方法缺乏额外信息的问题。 |
 
 # 详细
 
-[^1]: 神经图生成器：使用潜在扩散模型的特征条件图生成
+[^1]: 学术界和工业界对人工智能研究的互补贡献
 
-    Neural Graph Generator: Feature-Conditioned Graph Generation using Latent Diffusion Models
+    The complementary contributions of academia and industry to AI research. (arXiv:2401.10268v1 [cs.CY])
 
-    [https://arxiv.org/abs/2403.01535](https://arxiv.org/abs/2403.01535)
+    [http://arxiv.org/abs/2401.10268](http://arxiv.org/abs/2401.10268)
 
-    NGG是一个神经图生成器，通过潜在扩散模型实现了特征条件图生成，具有模拟复杂图模式和控制图生成过程的显著能力。
-
-    
-
-    图生成已经成为机器学习中的一个关键任务，面临着生成能够准确反映特定属性的图形的重大挑战。本文介绍了神经图生成器（NGG）这一新颖方法，它利用条件潜在扩散模型进行图生成。NGG展示了对复杂图模式进行建模的显著能力，提供了对图生成过程的控制。NGG利用变分图自动编码器进行图压缩，利用在潜在向量空间中的扩散过程，由总结图统计信息的向量指导。我们展示了NGG在各种图生成任务中的通用性，展示了其捕捉期望图属性并推广到未见图形的能力。
-
-    arXiv:2403.01535v1 Announce Type: new  Abstract: Graph generation has emerged as a crucial task in machine learning, with significant challenges in generating graphs that accurately reflect specific properties. Existing methods often fall short in efficiently addressing this need as they struggle with the high-dimensional complexity and varied nature of graph properties. In this paper, we introduce the Neural Graph Generator (NGG), a novel approach which utilizes conditioned latent diffusion models for graph generation. NGG demonstrates a remarkable capacity to model complex graph patterns, offering control over the graph generation process. NGG employs a variational graph autoencoder for graph compression and a diffusion process in the latent vector space, guided by vectors summarizing graph statistics. We demonstrate NGG's versatility across various graph generation tasks, showing its capability to capture desired graph properties and generalize to unseen graphs. This work signifies 
-    
-[^2]: LLaVA-Docent：利用多模态大型语言模型支持艺术鉴赏教育的教学调优
-
-    LLaVA-Docent: Instruction Tuning with Multimodal Large Language Model to Support Art Appreciation Education
-
-    [https://arxiv.org/abs/2402.06264](https://arxiv.org/abs/2402.06264)
-
-    本研究利用多模态大型语言模型（MLLM）开发了LLaVA-Docent模型，以支持艺术鉴赏教育。通过综述文献和专家咨询，构建了数据框架，并使用该框架生成了虚拟对话数据集用于训练MLLM。该研究对于解决传统艺术鉴赏教育中的资源限制和主流教育中的科学技术工程和数学偏重具有重要意义。
+    工业界的研究团队在人工智能研究中有更高的关注度和引用率，且更有可能产生最先进的模型。而学术界的团队则更倾向于产生具有更高程度创新的工作，出现非常不寻常和典型的论文。这种影响力-创新度优势在不同领域、团队规模、资历和声望下均存在。
 
     
 
-    艺术鉴赏对于培养学习者的批判性思维和情感智力至关重要。然而，传统的艺术鉴赏教育常面临艺术资源有限的问题，特别是对于弱势学生，并且在主流教育中过度强调科学技术工程和数学科目。为了应对这些挑战，最近的技术进步为创新解决方案铺平了道路。本研究探索了多模态大型语言模型（MLLM）在艺术鉴赏教育中的应用，重点是开发了LLaVA-Docent模型来利用这些进展。我们的方法包括全面的文献综述和与领域专家的咨询，从而形成了一个强大的数据框架。利用这个框架，我们生成了一个虚拟对话数据集，该数据集被GPT-4利用。这个数据集对于训练MLLM（即LLaVA-Docent）起到了关键作用。六名研究人员进行了定量和定性评估。
+    人工智能在工业界和学术界中都取得了巨大的发展。然而，工业界近期的突破性进展引起了人们对学术研究在该领域中的作用的新视角。在这里，我们对过去25年中两个环境中产生的人工智能的影响和类型进行了描述，并建立了几种模式。我们发现，由工业界研究人员组成的团队发表的文章往往更受关注，具有更高的被引用和引发引用颠覆的可能性，且更有可能产生最先进的模型。相反，我们发现纯学术团队发表了大部分的人工智能研究，并倾向于产生更高程度的创新工作，单篇论文有数倍的可能性是非常不寻常和典型的。工业界和学术界在影响力-创新度方面的优势不受子领域、团队规模、资历和声望的影响。我们发现学术界产生了更多综述和分析型论文，而工业界则更多地注重应用和技术发展。
 
-    Art appreciation is vital in nurturing critical thinking and emotional intelligence among learners. However, traditional art appreciation education has often been hindered by limited access to art resources, especially for disadvantaged students, and an imbalanced emphasis on STEM subjects in mainstream education. In response to these challenges, recent technological advancements have paved the way for innovative solutions. This study explores the application of multi-modal large language models (MLLMs) in art appreciation education, focusing on developing LLaVA-Docent, a model that leverages these advancements. Our approach involved a comprehensive literature review and consultations with experts in the field, leading to developing a robust data framework. Utilizing this framework, we generated a virtual dialogue dataset that was leveraged by GPT-4. This dataset was instrumental in training the MLLM, named LLaVA-Docent. Six researchers conducted quantitative and qualitative evaluation
+    Artificial intelligence (AI) has seen tremendous development in industry and academia. However, striking recent advances by industry have stunned the world, inviting a fresh perspective on the role of academic research in this field. Here, we characterize the impact and type of AI produced by both environments over the last 25 years and establish several patterns. We find that articles published by teams consisting exclusively of industry researchers tend to get greater attention, with a higher chance of being highly cited and citation-disruptive, and several times more likely to produce state-of-the-art models. In contrast, we find that exclusively academic teams publish the bulk of AI research and tend to produce higher novelty work, with single papers having several times higher likelihood of being unconventional and atypical. The respective impact-novelty advantages of industry and academia are robust to controls for subfield, team size, seniority, and prestige. We find that academ
     
-[^3]: Bayan算法：通过对模块度的精确和近似优化来检测网络中的社区
+[^2]: 自注意力双重嵌入：适用于异质性图的图神经网络
 
-    The Bayan Algorithm: Detecting Communities in Networks Through Exact and Approximate Optimization of Modularity. (arXiv:2209.04562v2 [cs.SI] UPDATED)
+    Self-attention Dual Embedding for Graphs with Heterophily. (arXiv:2305.18385v1 [cs.LG])
 
-    [http://arxiv.org/abs/2209.04562](http://arxiv.org/abs/2209.04562)
+    [http://arxiv.org/abs/2305.18385](http://arxiv.org/abs/2305.18385)
 
-    提出了一种名为Bayan的社区检测算法，通过精确或近似优化模块度的方法，它能够返回最优或接近最优的分区，并且比其他算法快数倍，并能够在合成和真实网络数据集上准确地找到地面真实社区。
+    本研究提出了一种新颖的图神经网络，采用自注意力机制，适用于异质性图和同质性图，并在许多标准数据集上展示出最先进的性能。
 
     
 
-    社区检测是网络科学中的经典问题，具有广泛的应用。在众多方法中，最常见的方法是最大化模块度。尽管启发式模块度最大化算法设计理念和广泛采用，但很少返回最佳分区或类似分区。我们提出了一种专门的算法Bayan，它返回具有最优或接近最优分区保证的分区。Bayan算法的核心是一种分支限界方案，它解决了问题的整数规划公式以达到最优或近似最优的目的。我们证明Bayan在合成基准和真实网络节点标签的检索地面真实社区方面具有独特的准确性和稳定性，比其他21种算法快数倍，可以找到最优分区的实例。
+    图神经网络（GNNs）在节点分类任务中取得了重大成功。GNNs通常假设图是同质的，即相邻节点很可能属于相同的类别。然而，许多真实世界的图都是异质的，这导致使用标准的GNNs时分类精度要低得多。在本文中，我们设计了一种新颖的GNN，它对异质性和同质性图都有效。我们的工作基于三个主要观察结果。首先，我们展示了在不同的图中，节点特征和图拓扑提供不同数量的信息，因此应该独立编码并以自适应方式优先级化。其次，我们展示了当传播图拓扑信息时允许负的注意权重可以提高精度。最后，我们展示了节点之间不对称的注意权重是有帮助的。我们设计了一种GNN，利用这些观察结果通过新颖的自注意力机制。我们评估了我们的算法在一些标准的节点分类数据集上，并展示了在同质性和异质性图上的最新性能。
 
-    Community detection is a classic problem in network science with extensive applications in various fields. Among numerous approaches, the most common method is modularity maximization. Despite their design philosophy and wide adoption, heuristic modularity maximization algorithms rarely return an optimal partition or anything similar. We propose a specialized algorithm, Bayan, which returns partitions with a guarantee of either optimality or proximity to an optimal partition. At the core of the Bayan algorithm is a branch-and-cut scheme that solves an integer programming formulation of the problem to optimality or approximate it within a factor. We demonstrate Bayan's distinctive accuracy and stability over 21 other algorithms in retrieving ground-truth communities in synthetic benchmarks and node labels in real networks. Bayan is several times faster than open-source and commercial solvers for modularity maximization making it capable of finding optimal partitions for instances that c
+    Graph Neural Networks (GNNs) have been highly successful for the node classification task. GNNs typically assume graphs are homophilic, i.e. neighboring nodes are likely to belong to the same class. However, a number of real-world graphs are heterophilic, and this leads to much lower classification accuracy using standard GNNs. In this work, we design a novel GNN which is effective for both heterophilic and homophilic graphs. Our work is based on three main observations. First, we show that node features and graph topology provide different amounts of informativeness in different graphs, and therefore they should be encoded independently and prioritized in an adaptive manner. Second, we show that allowing negative attention weights when propagating graph topology information improves accuracy. Finally, we show that asymmetric attention weights between nodes are helpful. We design a GNN which makes use of these observations through a novel self-attention mechanism. We evaluate our algor
+    
+[^3]: 节点特征增强改进网络对齐
+
+    Node Feature Augmentation Vitaminizes Network Alignment. (arXiv:2304.12751v1 [cs.SI])
+
+    [http://arxiv.org/abs/2304.12751](http://arxiv.org/abs/2304.12751)
+
+    本研究提出了Grad-Align+方法，通过增强节点特征来执行NA任务，并最大限度地利用增强的节点特征来设计NA方法，解决了NA方法缺乏额外信息的问题。
+
+    
+
+    网络对齐（NA）是通过给定网络的拓扑和/或特征信息来发现多个网络之间的节点对应关系的任务。虽然NA方法在各种场景下取得了显著的成功，但其有效性并不总是有额外信息，如先前的锚点链接和/或节点特征。为了解决这个实际的挑战，我们提出了Grad-Align+，这是一种新颖的NA方法，建立在最近一种最先进的NA方法Grad-Align之上，Grad-Align+仅逐步发现部分节点对，直到找到所有节点对。在设计Grad-Align+时，我们考虑如何通过增强节点特征来执行NA任务，并最大限度地利用增强的节点特征来设计NA方法。为了实现这个目标，我们开发了由三个关键组成部分组成的Grad-Align+：基于中心性的节点特征增强（CNFA）、图切片生成和优化节点嵌入特征（ONIFE）。
+
+    Network alignment (NA) is the task of discovering node correspondences across multiple networks using topological and/or feature information of given networks. Although NA methods have achieved remarkable success in a myriad of scenarios, their effectiveness is not without additional information such as prior anchor links and/or node features, which may not always be available due to privacy concerns or access restrictions. To tackle this practical challenge, we propose Grad-Align+, a novel NA method built upon a recent state-of-the-art NA method, the so-called Grad-Align, that gradually discovers only a part of node pairs until all node pairs are found. In designing Grad-Align+, we account for how to augment node features in the sense of performing the NA task and how to design our NA method by maximally exploiting the augmented node features. To achieve this goal, we develop Grad-Align+ consisting of three key components: 1) centrality-based node feature augmentation (CNFA), 2) graph
     
 

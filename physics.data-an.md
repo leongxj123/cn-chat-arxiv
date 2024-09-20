@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Designing Observables for Measurements with Deep Learning.](http://arxiv.org/abs/2310.08717) | 该研究提出使用机器学习来设计最优的可观测量，通过神经网络输出的展开的微分截面包含了关于感兴趣参数的最多信息，并且可以通过构造方法进行很好的测量。 |
+| [^1] | [Forecasting the steam mass flow in a powerplant using the parallel hybrid network.](http://arxiv.org/abs/2307.09483) | 这项研究使用并行混合神经网络结构来预测发电厂中的蒸汽质量流量，相比纯经典和纯量子模型，该混合模型在测试集上取得了更好的性能，平均平方误差降低了5.7倍和4.9倍，并且相对误差较小，最多提升了2倍。 |
 
 # 详细
 
-[^1]: 使用深度学习为测量设计可观测量的研究
+[^1]: 使用并行混合网络预测发电厂中的蒸汽质量流量
 
-    Designing Observables for Measurements with Deep Learning. (arXiv:2310.08717v1 [physics.data-an])
+    Forecasting the steam mass flow in a powerplant using the parallel hybrid network. (arXiv:2307.09483v1 [cs.LG])
 
-    [http://arxiv.org/abs/2310.08717](http://arxiv.org/abs/2310.08717)
+    [http://arxiv.org/abs/2307.09483](http://arxiv.org/abs/2307.09483)
 
-    该研究提出使用机器学习来设计最优的可观测量，通过神经网络输出的展开的微分截面包含了关于感兴趣参数的最多信息，并且可以通过构造方法进行很好的测量。
+    这项研究使用并行混合神经网络结构来预测发电厂中的蒸汽质量流量，相比纯经典和纯量子模型，该混合模型在测试集上取得了更好的性能，平均平方误差降低了5.7倍和4.9倍，并且相对误差较小，最多提升了2倍。
 
     
 
-    在粒子物理和核物理的许多分析中，使用模拟来推断底层物理模型的基本、有效或现象学参数。当使用展开的截面进行推断时，可观测量是通过物理直觉和经验法则进行设计的。我们提出使用机器学习来设计最优的可观测量。通过神经网络输出的展开的微分截面包含了关于感兴趣参数的最多信息，并且可以通过构造方法进行很好的测量。我们使用两个物理模型来演示这个想法，这两个模型用于深度无弹性散射中的包含性测量。
+    高效可持续的发电是能源领域的一个关键问题。尤其是热电厂在准确预测蒸汽质量流量方面面临困难，这对于运营效率和成本降低至关重要。在本研究中，我们使用一个并行混合神经网络结构，该结构将参数化量子电路和传统的前馈神经网络相结合，特别设计用于工业环境中的时间序列预测，以提高对未来15分钟内蒸汽质量流量的预测能力。我们的结果表明，并行混合模型优于独立的经典和量子模型，在训练后的测试集上相对于纯经典模型和纯量子网络，平均平方误差（MSE）损失分别降低了5.7倍和4.9倍。此外，该混合模型在测试集上表现出相对误差较小，比纯经典模型更好，最多提升了2倍。
 
-    Many analyses in particle and nuclear physics use simulations to infer fundamental, effective, or phenomenological parameters of the underlying physics models. When the inference is performed with unfolded cross sections, the observables are designed using physics intuition and heuristics. We propose to design optimal observables with machine learning. Unfolded, differential cross sections in a neural network output contain the most information about parameters of interest and can be well-measured by construction. We demonstrate this idea using two physics models for inclusive measurements in deep inelastic scattering.
+    Efficient and sustainable power generation is a crucial concern in the energy sector. In particular, thermal power plants grapple with accurately predicting steam mass flow, which is crucial for operational efficiency and cost reduction. In this study, we use a parallel hybrid neural network architecture that combines a parametrized quantum circuit and a conventional feed-forward neural network specifically designed for time-series prediction in industrial settings to enhance predictions of steam mass flow 15 minutes into the future. Our results show that the parallel hybrid model outperforms standalone classical and quantum models, achieving more than 5.7 and 4.9 times lower mean squared error (MSE) loss on the test set after training compared to pure classical and pure quantum networks, respectively. Furthermore, the hybrid model demonstrates smaller relative errors between the ground truth and the model predictions on the test set, up to 2 times better than the pure classical model.
     
 
