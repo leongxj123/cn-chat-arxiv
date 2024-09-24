@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv q-bio.BM</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for q-bio.BM</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv q-bio.BM</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for q-bio.BM</description><item><title>Symphony&#25552;&#20986;&#20102;&#19968;&#31181;&#26032;&#39062;&#30340;$E(3)$-&#31561;&#21464;&#33258;&#22238;&#24402;&#29983;&#25104;&#27169;&#22411;&#65292;&#36890;&#36807;&#20351;&#29992;&#28857;&#23545;&#31216;&#29699;&#24418;&#35856;&#27874;&#20449;&#21495;&#26469;&#39640;&#25928;&#24314;&#27169;&#20998;&#23376;&#30340;3D&#20960;&#20309;&#32467;&#26500;&#12290;</title><link>https://arxiv.org/abs/2311.16199</link><description>&lt;p&gt;
+Symphony: &#23545;&#20998;&#23376;&#29983;&#25104;&#30340;&#28857;&#23545;&#31216;&#29699;&#24418;&#35856;&#27874;&#30340;&#23545;&#31216;&#31561;&#21464;&#33258;&#22238;&#24402;&#27169;&#22411;
+&lt;/p&gt;
+&lt;p&gt;
+Symphony: Symmetry-Equivariant Point-Centered Spherical Harmonics for Molecule Generation
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2311.16199
+&lt;/p&gt;
+&lt;p&gt;
+Symphony&#25552;&#20986;&#20102;&#19968;&#31181;&#26032;&#39062;&#30340;$E(3)$-&#31561;&#21464;&#33258;&#22238;&#24402;&#29983;&#25104;&#27169;&#22411;&#65292;&#36890;&#36807;&#20351;&#29992;&#28857;&#23545;&#31216;&#29699;&#24418;&#35856;&#27874;&#20449;&#21495;&#26469;&#39640;&#25928;&#24314;&#27169;&#20998;&#23376;&#30340;3D&#20960;&#20309;&#32467;&#26500;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#25105;&#20204;&#25552;&#20986;&#20102;Symphony&#65292;&#36825;&#26159;&#19968;&#20010;$E(3)$-&#31561;&#21464;&#30340;&#33258;&#22238;&#24402;&#29983;&#25104;&#27169;&#22411;&#65292;&#29992;&#20110;3D&#20998;&#23376;&#20960;&#20309;&#32467;&#26500;&#30340;&#26500;&#24314;&#65292;&#36890;&#36807;&#20174;&#20998;&#23376;&#30862;&#29255;&#20013;&#36845;&#20195;&#22320;&#26500;&#24314;&#20998;&#23376;&#12290;&#29616;&#26377;&#30340;&#33258;&#22238;&#24402;&#27169;&#22411;&#22914;G-SchNet&#21644;G-SphereNet&#29992;&#20110;&#20998;&#23376;&#30340;&#26059;&#36716;&#19981;&#21464;&#29305;&#24449;&#26469;&#23562;&#37325;&#20998;&#23376;&#30340;3D&#23545;&#31216;&#24615;&#12290;&#30456;&#21453;&#65292;Symphony&#20351;&#29992;&#24102;&#26377;&#26356;&#39640;&#27425;$E(3)$-&#31561;&#21464;&#29305;&#24449;&#30340;&#28040;&#24687;&#20256;&#36882;&#12290;&#36825;&#20351;&#24471;&#36890;&#36807;&#29699;&#35856;&#20449;&#21495;&#26377;&#25928;&#22320;&#24314;&#27169;&#20998;&#23376;&#30340;3D&#20960;&#20309;&#30340;&#27010;&#29575;&#20998;&#24067;&#25104;&#20026;&#21487;&#33021;&#12290;&#25105;&#20204;&#23637;&#31034;&#20102;Symphony&#33021;&#22815;&#20934;&#30830;&#22320;&#20174;QM9&#25968;&#25454;&#38598;&#20013;&#29983;&#25104;&#23567;&#20998;&#23376;&#65292;&#20248;&#20110;&#29616;&#26377;&#30340;&#33258;&#22238;&#24402;&#27169;&#22411;&#65292;&#24182;&#25509;&#36817;&#25193;&#25955;&#27169;&#22411;&#30340;&#24615;&#33021;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2311.16199v2 Announce Type: replace  Abstract: We present Symphony, an $E(3)$-equivariant autoregressive generative model for 3D molecular geometries that iteratively builds a molecule from molecular fragments. Existing autoregressive models such as G-SchNet and G-SphereNet for molecules utilize rotationally invariant features to respect the 3D symmetries of molecules. In contrast, Symphony uses message-passing with higher-degree $E(3)$-equivariant features. This allows a novel representation of probability distributions via spherical harmonic signals to efficiently model the 3D geometry of molecules. We show that Symphony is able to accurately generate small molecules from the QM9 dataset, outperforming existing autoregressive models and approaching the performance of diffusion models.
+&lt;/p&gt;</description></item></channel></rss>

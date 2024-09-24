@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [FlexFringe: Modeling Software Behavior by Learning Probabilistic Automata.](http://arxiv.org/abs/2203.16331) | FlexFringe提供了高效的概率有限自动机学习方法，可用于建模软件行为。该方法在实践中通过实现改进的状态合并策略实现了显著性能提升，并且能够从软件日志中学习可解释的模型，用于异常检测。与基于神经网络的解决方案相比，学习更小更复杂的模型能够提高FlexFringe在异常检测中的性能。 |
+| [^1] | [Conditional and Modal Reasoning in Large Language Models](https://arxiv.org/abs/2401.17169) | 本文研究了大型语言模型中的条件和情态推理能力，并发现除了GPT-4外，其他模型在条件句方面存在基本错误，并且即使是GPT-4在涉及认识情态的推理模式上也显示出逻辑上不一致的判断。 |
 
 # 详细
 
-[^1]: FlexFringe:通过学习概率有限自动机来建模软件行为
+[^1]: 大型语言模型中的条件和情态推理
 
-    FlexFringe: Modeling Software Behavior by Learning Probabilistic Automata. (arXiv:2203.16331v2 [cs.LG] UPDATED)
+    Conditional and Modal Reasoning in Large Language Models
 
-    [http://arxiv.org/abs/2203.16331](http://arxiv.org/abs/2203.16331)
+    [https://arxiv.org/abs/2401.17169](https://arxiv.org/abs/2401.17169)
 
-    FlexFringe提供了高效的概率有限自动机学习方法，可用于建模软件行为。该方法在实践中通过实现改进的状态合并策略实现了显著性能提升，并且能够从软件日志中学习可解释的模型，用于异常检测。与基于神经网络的解决方案相比，学习更小更复杂的模型能够提高FlexFringe在异常检测中的性能。
+    本文研究了大型语言模型中的条件和情态推理能力，并发现除了GPT-4外，其他模型在条件句方面存在基本错误，并且即使是GPT-4在涉及认识情态的推理模式上也显示出逻辑上不一致的判断。
 
     
 
-    我们介绍了FlexFringe中可用的概率确定性有限自动机学习方法的高效实现。这些实现了众所周知的状态合并策略，包括几种修改以提高它们在实践中的性能。我们通过实验证明这些算法能够获得有竞争力的结果，并在默认实现上实现了显著的改进。我们还展示了如何使用FlexFringe从软件日志中学习可解释的模型，并将其用于异常检测。虽然这些模型较难解释，但我们展示了学习更小、更复杂的模型如何提高FlexFringe在异常检测中的性能，优于基于神经网络的现有解决方案。
+    关于大型语言模型（LLM）的推理能力的研究正在人工智能和认知科学领域不断增加。本文探讨了十几个LLM能否区分逻辑上正确的推论和逻辑上荒谬的推论。我们重点关注涉及条件句（例如，“如果安有一个皇后，那么鲍勃有一个J牌”）和认识情态（例如，“安可能有一个A牌”，“鲍勃必须有一个K牌”）的推理模式。这些推理模式对于逻辑学家、哲学家和语言学家来说具有特殊的兴趣，因为它们可能在人类推理中扮演一个核心角色。因此，评估LLM在这些推理模式上的表现与人类的推理能力是否相匹配是非常相关的。在我们测试的LLM中，除了GPT-4，其他都常常在条件句方面犯基本错误。此外，即使是GPT-4，在涉及认识情态的推理模式上也显示出逻辑上不一致的判断。
 
-    We present the efficient implementations of probabilistic deterministic finite automaton learning methods available in FlexFringe. These implement well-known strategies for state-merging including several modifications to improve their performance in practice. We show experimentally that these algorithms obtain competitive results and significant improvements over a default implementation. We also demonstrate how to use FlexFringe to learn interpretable models from software logs and use these for anomaly detection. Although less interpretable, we show that learning smaller more convoluted models improves the performance of FlexFringe on anomaly detection, outperforming an existing solution based on neural nets.
+    The reasoning abilities of large language models (LLMs) are the topic of a growing body of research in artificial intelligence and cognitive science. In this paper, we probe the extent to which a dozen LLMs are able to distinguish logically correct inferences from logically fallacious ones. We focus on inference patterns involving conditionals (e.g., 'If Ann has a queen, then Bob has a jack') and epistemic modals (e.g., 'Ann might have an ace', 'Bob must have a king'). These inference patterns have been of special interest to logicians, philosophers, and linguists, since they plausibly play a central role in human reasoning. Assessing LLMs on these inference patterns is thus highly relevant to the question of how much the reasoning abilities of LLMs match those of humans. Among the LLMs we tested, all but GPT-4 often make basic mistakes with conditionals. Moreover, even GPT-4 displays logically inconsistent judgments across inference patterns involving epistemic modals.
     
 
