@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [ChatEDA: A Large Language Model Powered Autonomous Agent for EDA](https://arxiv.org/abs/2308.10204) | 该研究介绍了ChatEDA，一个由大型语言模型AutoMage赋能的EDA自主代理，通过有效管理任务计划、脚本生成和任务执行，简化了从RTL到GDSII的设计流程，并证明了其性能优越性。 |
+| [^1] | [MicroT: Low-Energy and Adaptive Models for MCUs](https://arxiv.org/abs/2403.08040) | MicroT是一个低能耗、多任务自适应模型框架，通过特征提取器和分类器的分离、模型优化和本地任务训练，在MCUs上实现了模型性能的提升和能耗的降低。 |
 
 # 详细
 
-[^1]: ChatEDA：基于大型语言模型的自主代理用于EDA
+[^1]: MicroT：用于MCUs的低能耗和自适应模型
 
-    ChatEDA: A Large Language Model Powered Autonomous Agent for EDA
+    MicroT: Low-Energy and Adaptive Models for MCUs
 
-    [https://arxiv.org/abs/2308.10204](https://arxiv.org/abs/2308.10204)
+    [https://arxiv.org/abs/2403.08040](https://arxiv.org/abs/2403.08040)
 
-    该研究介绍了ChatEDA，一个由大型语言模型AutoMage赋能的EDA自主代理，通过有效管理任务计划、脚本生成和任务执行，简化了从RTL到GDSII的设计流程，并证明了其性能优越性。
+    MicroT是一个低能耗、多任务自适应模型框架，通过特征提取器和分类器的分离、模型优化和本地任务训练，在MCUs上实现了模型性能的提升和能耗的降低。
 
     
 
-    arXiv:2308.10204v2 公告类型：替换-交叉摘要：集成一系列复杂的电子设计自动化（EDA）工具以增强互操作性是电路设计者关注的重要问题。大型语言模型（LLMs）的最新进展展示了它们在自然语言处理和理解方面的卓越能力，提供了一种新颖的与EDA工具接口的方法。本研究论文介绍了ChatEDA，一个由大型语言模型AutoMage赋能的EDA自主代理，结合作为执行器的EDA工具。ChatEDA通过有效管理任务计划、脚本生成和任务执行，简化了从寄存器传输级（RTL）到图形数据系统第二版（GDSII）的设计流程。通过全面的实验评估，ChatEDA已经证明了其处理各种需求的能力，我们经过精心调优的AutoMage模型在性能上表现出优越性，相较于GPT-4和其他类似的模型。
+    我们提出了MicroT，这是一个面向资源受限的MCUs的低能耗、多任务自适应模型框架。我们将原始模型划分为特征提取器和分类器。特征提取器通过自监督知识蒸馏获得，并通过模型分割和联合训练进一步优化为部分模型和完整模型。然后将这些模型部署在MCUs上，增加并在本地任务上训练分类器，最终执行关节推理的阶段决策。在这个过程中，部分模型最初处理样本，如果置信度得分低于设定的阈值，完整模型将恢复并继续推理。我们在两个模型、三个数据集和两个MCU板上评估了MicroT。我们的实验评估表明，在处理多个本地任务时，MicroT有效地提高了模型性能并降低了能耗。与未经优化的特征提取器相比，MicroT
 
-    arXiv:2308.10204v2 Announce Type: replace-cross  Abstract: The integration of a complex set of Electronic Design Automation (EDA) tools to enhance interoperability is a critical concern for circuit designers. Recent advancements in large language models (LLMs) have showcased their exceptional capabilities in natural language processing and comprehension, offering a novel approach to interfacing with EDA tools. This research paper introduces ChatEDA, an autonomous agent for EDA empowered by a large language model, AutoMage, complemented by EDA tools serving as executors. ChatEDA streamlines the design flow from the Register-Transfer Level (RTL) to the Graphic Data System Version II (GDSII) by effectively managing task planning, script generation, and task execution. Through comprehensive experimental evaluations, ChatEDA has demonstrated its proficiency in handling diverse requirements, and our fine-tuned AutoMage model has exhibited superior performance compared to GPT-4 and other simi
+    arXiv:2403.08040v1 Announce Type: new  Abstract: We propose MicroT, a low-energy, multi-task adaptive model framework for resource-constrained MCUs. We divide the original model into a feature extractor and a classifier. The feature extractor is obtained through self-supervised knowledge distillation and further optimized into part and full models through model splitting and joint training. These models are then deployed on MCUs, with classifiers added and trained on local tasks, ultimately performing stage-decision for joint inference. In this process, the part model initially processes the sample, and if the confidence score falls below the set threshold, the full model will resume and continue the inference. We evaluate MicroT on two models, three datasets, and two MCU boards. Our experimental evaluation shows that MicroT effectively improves model performance and reduces energy consumption when dealing with multiple local tasks. Compared to the unoptimized feature extractor, MicroT
     
 

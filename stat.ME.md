@@ -2,67 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Rapid Bayesian identification of sparse nonlinear dynamics from scarce and noisy data](https://arxiv.org/abs/2402.15357) | 提出了一种快速的概率框架，称为贝叶斯-SINDy，用于从有限且嘈杂数据中学习正确的模型方程，并且对参数估计中的不确定性进行量化，特别适用于生物数据和实时系统识别。 |
-| [^2] | [Yurinskii's Coupling for Martingales](https://arxiv.org/abs/2210.00362) | Yurinskii的耦合方法在$\ell^p$-范数下提供了更弱条件下的逼近马丁格尔，同时引入了更一般的高斯混合分布，并提供了第三阶耦合方法以在某些情况下获得更紧密的逼近。 |
-| [^3] | [Policy Learning with Distributional Welfare.](http://arxiv.org/abs/2311.15878) | 本文提出了一种针对分配福利的最优治疗分配策略，该策略根据个体治疗效应的条件分位数来决定治疗分配，并引入了鲁棒的最小最大化策略来解决对反事实结果联合分布的恢复问题。 |
-| [^4] | [Spectrum-Aware Adjustment: A New Debiasing Framework with Applications to Principal Components Regression.](http://arxiv.org/abs/2309.07810) | 这项研究介绍了一种新的去偏方法框架，用于解决高维线性回归中现有技术对协变量分布的限制问题。研究者们发现，现有方法在处理非高斯分布、异质性设计矩阵和缺乏可靠特征协方差估计时遇到困难。为了解决这些问题，他们提出了一种新的策略，该策略利用缩放的梯度下降步骤进行去偏校正。 |
+| [^1] | [Does AI help humans make better decisions? A methodological framework for experimental evaluation](https://arxiv.org/abs/2403.12108) | 引入一种新的实验框架用于评估人类是否通过使用AI可以做出更好的决策，在单盲实验设计中比较了三种决策系统的表现 |
+| [^2] | [Bayesian Federated Inference for regression models with heterogeneous multi-center populations](https://arxiv.org/abs/2402.02898) | 这项研究提出了一种利用贝叶斯联合推断方法，在不同中心分别分析本地数据，并将统计推断结果组合起来，以解决样本量不足的问题，并准确估计回归模型的参数。 |
+| [^3] | [Iterative Methods for Vecchia-Laplace Approximations for Latent Gaussian Process Models.](http://arxiv.org/abs/2310.12000) | 这篇文章介绍了用于潜在高斯过程模型中的Vecchia-Laplace近似法的迭代方法，相比于传统的Cholesky分解方法，可以显著加快计算速度。 |
 
 # 详细
 
-[^1]: 从稀疏且嘈杂数据中快速识别稀疏非线性动力学的贝叶斯方法
+[^1]: AI是否有助于人类做出更好的决策？一种用于实验评估的方法论框架
 
-    Rapid Bayesian identification of sparse nonlinear dynamics from scarce and noisy data
+    Does AI help humans make better decisions? A methodological framework for experimental evaluation
 
-    [https://arxiv.org/abs/2402.15357](https://arxiv.org/abs/2402.15357)
+    [https://arxiv.org/abs/2403.12108](https://arxiv.org/abs/2403.12108)
 
-    提出了一种快速的概率框架，称为贝叶斯-SINDy，用于从有限且嘈杂数据中学习正确的模型方程，并且对参数估计中的不确定性进行量化，特别适用于生物数据和实时系统识别。
-
-    
-
-    我们提出了一个快速的概率框架，用于识别控制观测数据动态的微分方程。我们将SINDy方法重新构建到贝叶斯框架中，并使用高斯逼近来加速计算。由此产生的方法，贝叶斯-SINDy，不仅量化了参数估计中的不确定性，而且在从有限且嘈杂数据中学习正确模型时更加稳健。通过使用合成和真实例子，如猞猁-野兔种群动态，我们展示了新框架在学习正确模型方程中的有效性，并比较了其与现有方法的计算和数据效率。由于贝叶斯-SINDy可以快速吸收数据并对噪声具有稳健性，因此特别适用于生物数据和控制中的实时系统识别。其概率框架还使得可以计算信息熵。
-
-    arXiv:2402.15357v1 Announce Type: cross  Abstract: We propose a fast probabilistic framework for identifying differential equations governing the dynamics of observed data. We recast the SINDy method within a Bayesian framework and use Gaussian approximations for the prior and likelihood to speed up computation. The resulting method, Bayesian-SINDy, not only quantifies uncertainty in the parameters estimated but also is more robust when learning the correct model from limited and noisy data. Using both synthetic and real-life examples such as Lynx-Hare population dynamics, we demonstrate the effectiveness of the new framework in learning correct model equations and compare its computational and data efficiency with existing methods. Because Bayesian-SINDy can quickly assimilate data and is robust against noise, it is particularly suitable for biological data and real-time system identification in control. Its probabilistic framework also enables the calculation of information entropy, 
-    
-[^2]: Yurinskii的马丁格尔耦合
-
-    Yurinskii's Coupling for Martingales
-
-    [https://arxiv.org/abs/2210.00362](https://arxiv.org/abs/2210.00362)
-
-    Yurinskii的耦合方法在$\ell^p$-范数下提供了更弱条件下的逼近马丁格尔，同时引入了更一般的高斯混合分布，并提供了第三阶耦合方法以在某些情况下获得更紧密的逼近。
+    引入一种新的实验框架用于评估人类是否通过使用AI可以做出更好的决策，在单盲实验设计中比较了三种决策系统的表现
 
     
 
-    Yurinskii的耦合是数学统计和应用概率中一种常用的非渐近分布分析理论工具，提供了在易于验证条件下具有显式误差界限的高斯强逼近。最初在独立随机向量和为的$\ell^2$-范数中陈述，最近已将其扩展到$1 \leq p \leq \infty$时的$\ell^p$-范数，以及在某些强条件下的$\ell^2$-范数的向量值鞅。我们的主要结果是在远比之前施加的条件更弱的情况下，在$\ell^p$-范数下提供了逼近马丁格尔的Yurinskii耦合。我们的公式进一步允许耦合变量遵循更一般的高斯混合分布，并且我们提供了一种新颖的第三阶耦合方法，在某些情况下提供更紧密的逼近。我们将我们的主要结果专门应用于混合马丁格尔，马丁格尔和其他情况。
+    基于数据驱动算法的人工智能（AI）在当今社会变得无处不在。然而，在许多情况下，尤其是当利益高昂时，人类仍然作出最终决策。因此，关键问题是AI是否有助于人类比单独的人类或单独的AI做出更好的决策。我们引入了一种新的方法论框架，用于实验性地回答这个问题，而不需要额外的假设。我们使用基于基准潜在结果的标准分类指标测量决策者做出正确决策的能力。我们考虑了一个单盲实验设计，在这个设计中，提供AI生成的建议在不同案例中被随机分配给最终决策的人类。在这种实验设计下，我们展示了如何比较三种替代决策系统的性能--仅人类、人类与AI、仅AI。
 
-    arXiv:2210.00362v2 Announce Type: replace-cross  Abstract: Yurinskii's coupling is a popular theoretical tool for non-asymptotic distributional analysis in mathematical statistics and applied probability, offering a Gaussian strong approximation with an explicit error bound under easily verified conditions. Originally stated in $\ell^2$-norm for sums of independent random vectors, it has recently been extended both to the $\ell^p$-norm, for $1 \leq p \leq \infty$, and to vector-valued martingales in $\ell^2$-norm, under some strong conditions. We present as our main result a Yurinskii coupling for approximate martingales in $\ell^p$-norm, under substantially weaker conditions than those previously imposed. Our formulation further allows for the coupling variable to follow a more general Gaussian mixture distribution, and we provide a novel third-order coupling method which gives tighter approximations in certain settings. We specialize our main result to mixingales, martingales, and in
+    arXiv:2403.12108v1 Announce Type: new  Abstract: The use of Artificial Intelligence (AI) based on data-driven algorithms has become ubiquitous in today's society. Yet, in many cases and especially when stakes are high, humans still make final decisions. The critical question, therefore, is whether AI helps humans make better decisions as compared to a human alone or AI an alone. We introduce a new methodological framework that can be used to answer experimentally this question with no additional assumptions. We measure a decision maker's ability to make correct decisions using standard classification metrics based on the baseline potential outcome. We consider a single-blinded experimental design, in which the provision of AI-generated recommendations is randomized across cases with a human making final decisions. Under this experimental design, we show how to compare the performance of three alternative decision-making systems--human-alone, human-with-AI, and AI-alone. We apply the pr
     
-[^3]: 分配福利的政策学习
+[^2]: 具有异质多中心人群的回归模型的贝叶斯联合推断
 
-    Policy Learning with Distributional Welfare. (arXiv:2311.15878v2 [stat.ME] UPDATED)
+    Bayesian Federated Inference for regression models with heterogeneous multi-center populations
 
-    [http://arxiv.org/abs/2311.15878](http://arxiv.org/abs/2311.15878)
+    [https://arxiv.org/abs/2402.02898](https://arxiv.org/abs/2402.02898)
 
-    本文提出了一种针对分配福利的最优治疗分配策略，该策略根据个体治疗效应的条件分位数来决定治疗分配，并引入了鲁棒的最小最大化策略来解决对反事实结果联合分布的恢复问题。
-
-    
-
-    本文探讨了针对分配福利的最优治疗分配策略。大部分关于治疗选择的文献都考虑了基于条件平均治疗效应（ATE）的功利福利。虽然平均福利是直观的，但在个体异质化（例如，存在离群值）情况下可能会产生不理想的分配 - 这正是个性化治疗引入的原因之一。这个观察让我们提出了一种根据个体治疗效应的条件分位数（QoTE）来分配治疗的最优策略。根据分位数概率的选择，这个准则可以适应谨慎或粗心的决策者。确定QoTE的挑战在于其需要对反事实结果的联合分布有所了解，但即使使用实验数据，通常也很难恢复出来。因此，我们介绍了鲁棒的最小最大化策略
-
-    In this paper, we explore optimal treatment allocation policies that target distributional welfare. Most literature on treatment choice has considered utilitarian welfare based on the conditional average treatment effect (ATE). While average welfare is intuitive, it may yield undesirable allocations especially when individuals are heterogeneous (e.g., with outliers) - the very reason individualized treatments were introduced in the first place. This observation motivates us to propose an optimal policy that allocates the treatment based on the conditional quantile of individual treatment effects (QoTE). Depending on the choice of the quantile probability, this criterion can accommodate a policymaker who is either prudent or negligent. The challenge of identifying the QoTE lies in its requirement for knowledge of the joint distribution of the counterfactual outcomes, which is generally hard to recover even with experimental data. Therefore, we introduce minimax policies that are robust 
-    
-[^4]: Spectrum-Aware Adjustment: 一种新的去偏方法框架及其在主成分回归中的应用
-
-    Spectrum-Aware Adjustment: A New Debiasing Framework with Applications to Principal Components Regression. (arXiv:2309.07810v1 [math.ST])
-
-    [http://arxiv.org/abs/2309.07810](http://arxiv.org/abs/2309.07810)
-
-    这项研究介绍了一种新的去偏方法框架，用于解决高维线性回归中现有技术对协变量分布的限制问题。研究者们发现，现有方法在处理非高斯分布、异质性设计矩阵和缺乏可靠特征协方差估计时遇到困难。为了解决这些问题，他们提出了一种新的策略，该策略利用缩放的梯度下降步骤进行去偏校正。
+    这项研究提出了一种利用贝叶斯联合推断方法，在不同中心分别分析本地数据，并将统计推断结果组合起来，以解决样本量不足的问题，并准确估计回归模型的参数。
 
     
 
-    我们引入了一个新的去偏方法框架，用于解决高维线性回归中现代去偏技术对协变量分布的约束问题。我们研究了特征数和样本数都很大且相近的普遍情况。在这种情况下，现代去偏技术使用自由度校正来除去正则化估计量的收缩偏差并进行推断。然而，该方法要求观测样本是独立同分布的，协变量遵循均值为零的高斯分布，并且能够获得可靠的特征协方差矩阵估计。当（i）协变量具有非高斯分布、重尾或非对称分布，（ii）设计矩阵的行呈异质性或存在依赖性，以及（iii）缺乏可靠的特征协方差估计时，这种方法就会遇到困难。为了应对这些问题，我们提出了一种新的策略，其中去偏校正是一步缩放的梯度下降步骤（适当缩放）。
+    为了准确估计回归模型的参数，样本量必须相对于可能的预测变量个数足够大。在实际应用中，通常缺乏足够的数据，这可能导致模型过拟合，并因此无法对新患者的结果进行可靠预测。合并来自不同（医疗）中心收集的数据可以缓解这个问题，但通常由于隐私法规或物流问题而不可行。另一种方法是分析各个中心的本地数据，然后使用贝叶斯联合推断（BFI）方法将统计推断结果进行组合。这种方法的目标是从各个中心的推断结果中计算出如果对组合数据进行了统计分析后会得到什么结果。我们解释了同质和异质中心人群下的方法，并给出了真实的示例。
 
-    We introduce a new debiasing framework for high-dimensional linear regression that bypasses the restrictions on covariate distributions imposed by modern debiasing technology. We study the prevalent setting where the number of features and samples are both large and comparable. In this context, state-of-the-art debiasing technology uses a degrees-of-freedom correction to remove shrinkage bias of regularized estimators and conduct inference. However, this method requires that the observed samples are i.i.d., the covariates follow a mean zero Gaussian distribution, and reliable covariance matrix estimates for observed features are available. This approach struggles when (i) covariates are non-Gaussian with heavy tails or asymmetric distributions, (ii) rows of the design exhibit heterogeneity or dependencies, and (iii) reliable feature covariance estimates are lacking.  To address these, we develop a new strategy where the debiasing correction is a rescaled gradient descent step (suitably
+    To estimate accurately the parameters of a regression model, the sample size must be large enough relative to the number of possible predictors for the model. In practice, sufficient data is often lacking, which can lead to overfitting of the model and, as a consequence, unreliable predictions of the outcome of new patients. Pooling data from different data sets collected in different (medical) centers would alleviate this problem, but is often not feasible due to privacy regulation or logistic problems. An alternative route would be to analyze the local data in the centers separately and combine the statistical inference results with the Bayesian Federated Inference (BFI) methodology. The aim of this approach is to compute from the inference results in separate centers what would have been found if the statistical analysis was performed on the combined data. We explain the methodology under homogeneity and heterogeneity across the populations in the separate centers, and give real lif
+    
+[^3]: Vecchia-Laplace近似法在潜在高斯过程模型中的迭代方法
+
+    Iterative Methods for Vecchia-Laplace Approximations for Latent Gaussian Process Models. (arXiv:2310.12000v1 [stat.ME])
+
+    [http://arxiv.org/abs/2310.12000](http://arxiv.org/abs/2310.12000)
+
+    这篇文章介绍了用于潜在高斯过程模型中的Vecchia-Laplace近似法的迭代方法，相比于传统的Cholesky分解方法，可以显著加快计算速度。
+
+    
+
+    潜在高斯过程（GP）模型是灵活的概率非参数函数模型。Vecchia近似是用于克服大数据计算瓶颈的准确近似方法，Laplace近似是一种快速方法，可以近似非高斯似然函数的边缘似然和后验预测分布，并具有渐近收敛保证。然而，当与直接求解方法（如Cholesky分解）结合使用时，Vecchia-Laplace近似的计算复杂度增长超线性地随样本大小增加。因此，与Vecchia-Laplace近似计算相关的运算在通常情况下是最准确的大型数据集时会变得非常缓慢。在本文中，我们提出了几种用于Vecchia-Laplace近似推断的迭代方法，相比于基于Cholesky的计算，可以大大加快计算速度。我们对我们的方法进行了分析。
+
+    Latent Gaussian process (GP) models are flexible probabilistic non-parametric function models. Vecchia approximations are accurate approximations for GPs to overcome computational bottlenecks for large data, and the Laplace approximation is a fast method with asymptotic convergence guarantees to approximate marginal likelihoods and posterior predictive distributions for non-Gaussian likelihoods. Unfortunately, the computational complexity of combined Vecchia-Laplace approximations grows faster than linearly in the sample size when used in combination with direct solver methods such as the Cholesky decomposition. Computations with Vecchia-Laplace approximations thus become prohibitively slow precisely when the approximations are usually the most accurate, i.e., on large data sets. In this article, we present several iterative methods for inference with Vecchia-Laplace approximations which make computations considerably faster compared to Cholesky-based calculations. We analyze our propo
     
 

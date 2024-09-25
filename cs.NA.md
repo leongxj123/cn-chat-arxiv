@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Gradient-free neural topology optimization](https://arxiv.org/abs/2403.04937) | 通过提出一种预训练的神经重新参数化策略，在无梯度神经拓扑优化中实现了迭代次数的显著降低，这将开辟一个新的解决路径。 |
+| [^1] | [PICL: Physics Informed Contrastive Learning for Partial Differential Equations](https://arxiv.org/abs/2401.16327) | 这项工作开发了一种使用广义对比损失的对比预训练框架，通过利用物理信息改善了神经算子在多个偏微分方程中的泛化能力。 |
+| [^2] | [Adaptive joint distribution learning.](http://arxiv.org/abs/2110.04829) | 该论文提出了一种自适应联合分布学习的框架，可以从大量数据点中估计低维、归一化和正的Radon-Nikodym导数模型，并在不同学习问题上取得了良好的结果。 |
 
 # 详细
 
-[^1]: 无梯度神经拓扑优化
+[^1]: PICL: 物理信息对比学习用于偏微分方程
 
-    Gradient-free neural topology optimization
+    PICL: Physics Informed Contrastive Learning for Partial Differential Equations
 
-    [https://arxiv.org/abs/2403.04937](https://arxiv.org/abs/2403.04937)
+    [https://arxiv.org/abs/2401.16327](https://arxiv.org/abs/2401.16327)
 
-    通过提出一种预训练的神经重新参数化策略，在无梯度神经拓扑优化中实现了迭代次数的显著降低，这将开辟一个新的解决路径。
+    这项工作开发了一种使用广义对比损失的对比预训练框架，通过利用物理信息改善了神经算子在多个偏微分方程中的泛化能力。
 
     
 
-    无梯度优化器可以解决问题，无论其目标函数的平滑性或可微性如何，但与基于梯度的算法相比，它们需要更多的迭代才能收敛。这使得它们在拓扑优化中不可行，因为每次迭代的计算成本高，并且问题的维度也很高。我们提出了一种预训练的神经重新参数化策略，当在潜在空间优化设计时，迭代次数至少减少一个数量级，与传统方法不使用潜在重新参数化相比。我们通过对训练数据进行广泛的计算实验，在内部和外部分布中证明了这一点。尽管基于梯度的拓扑优化对于可微的问题，例如结构的合规性优化，仍然更有效，但我们相信这项工作将为那些需要无梯度方法的问题开辟新的道路。
+    最近，神经算子作为偏微分方程（PDE）替代模型逐渐受到关注。学习解决方案函数而不是函数本身已被证明是一种强大的方法，可快速准确地求解复杂的PDE。尽管在广泛的代理建模任务中对神经算子的性能进行了许多研究，但这些工作通常是逐个方程评估性能。在本研究中，我们开发了一种新颖的对比预训练框架，利用广义对比损失，可以同时改善神经算子在多个控制方程中的泛化能力。控制方程系数用于衡量系统之间的真实相似性。物理信息系统演化和潜在空间模型输出的结合被锚定到输入数据中，并用于我们的距离函数。我们发现，物理信息对比预训练可以提高傅立叶神经算子的准确性和泛化能力。
 
-    arXiv:2403.04937v1 Announce Type: new  Abstract: Gradient-free optimizers allow for tackling problems regardless of the smoothness or differentiability of their objective function, but they require many more iterations to converge when compared to gradient-based algorithms. This has made them unviable for topology optimization due to the high computational cost per iteration and high dimensionality of these problems. We propose a pre-trained neural reparameterization strategy that leads to at least one order of magnitude decrease in iteration count when optimizing the designs in latent space, as opposed to the conventional approach without latent reparameterization. We demonstrate this via extensive computational experiments in- and out-of-distribution with the training data. Although gradient-based topology optimization is still more efficient for differentiable problems, such as compliance optimization of structures, we believe this work will open up a new path for problems where gra
+    Neural operators have recently grown in popularity as Partial Differential Equation (PDEs) surrogate models. Learning solution functionals, rather than functions, has proven to be a powerful approach to calculate fast, accurate solutions to complex PDEs. While much work has been done evaluating neural operator performance on a wide variety of surrogate modeling tasks, these works normally evaluate performance on a single equation at a time. In this work, we develop a novel contrastive pretraining framework utilizing Generalized Contrastive Loss that improves neural operator generalization across multiple governing equations simultaneously. Governing equation coefficients are used to measure ground-truth similarity between systems. A combination of physics-informed system evolution and latent-space model output are anchored to input data and used in our distance function. We find that physics-informed contrastive pretraining improves both accuracy and generalization for the Fourier Neur
+    
+[^2]: 自适应联合分布学习
+
+    Adaptive joint distribution learning. (arXiv:2110.04829v2 [stat.ML] UPDATED)
+
+    [http://arxiv.org/abs/2110.04829](http://arxiv.org/abs/2110.04829)
+
+    该论文提出了一种自适应联合分布学习的框架，可以从大量数据点中估计低维、归一化和正的Radon-Nikodym导数模型，并在不同学习问题上取得了良好的结果。
+
+    
+
+    我们开发了一个新的框架，用于将联合概率分布嵌入张量积再生核希尔伯特空间（RKHS）中。我们的框架可以容纳一个低维、归一化和正的Radon-Nikodym导数模型，该模型可以从多达数百万个数据点的样本大小中进行估计，减轻了RKHS建模的固有限制。我们的方法自然产生了定义良好的归一化和正的条件分布。嵌入计算速度快且适用于从预测到分类的各种学习问题。我们的理论结果得到了有益的数值结果的支持。
+
+    We develop a new framework for embedding joint probability distributions in tensor product reproducing kernel Hilbert spaces (RKHS). Our framework accommodates a low-dimensional, normalized and positive model of a Radon-Nikodym derivative, which we estimate from sample sizes of up to several million data points, alleviating the inherent limitations of RKHS modeling. Well-defined normalized and positive conditional distributions are natural by-products to our approach. The embedding is fast to compute and accommodates learning problems ranging from prediction to classification. Our theoretical findings are supplemented by favorable numerical results.
     
 

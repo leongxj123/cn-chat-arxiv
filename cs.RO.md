@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods](https://arxiv.org/abs/2404.00282) | 大型语言模型在强化学习中具有潜在优势，通过结构化分类和角色分析，为未来研究提供指导。 |
-| [^2] | [D3G: Learning Multi-robot Coordination from Demonstrations.](http://arxiv.org/abs/2207.08892) | 本文提出了一个D3G框架，可以从演示中学习多机器人协调。通过最小化轨迹与演示之间的不匹配，每个机器人可以自动调整其个体动态和目标，提高了学习效率和效果。 |
+| [^1] | [SceneVerse: Scaling 3D Vision-Language Learning for Grounded Scene Understanding](https://arxiv.org/abs/2401.09340) | 本研究通过系统性地扩展室内环境中的3D视觉-语言学习，提出了首个百万规模的3D视觉-语言数据集SceneVerse，以解决3D视觉-语言对齐面临的几个重要挑战。 |
+| [^2] | [GUARD: A Safe Reinforcement Learning Benchmark.](http://arxiv.org/abs/2305.13681) | GUARD是一个广义统一安全强化学习开发基准测试平台，是目前广泛遍布且包含各种RL代理、任务和安全约束规范的一站式基准测试，能够全面涵盖最先进的安全RL算法，并具有高度的可自定义性。 |
 
 # 详细
 
-[^1]: 基于大型语言模型增强强化学习的调查:概念、分类和方法
+[^1]: SceneVerse：为基于场景的场景理解扩展3D视觉-语言学习
 
-    Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods
+    SceneVerse: Scaling 3D Vision-Language Learning for Grounded Scene Understanding
 
-    [https://arxiv.org/abs/2404.00282](https://arxiv.org/abs/2404.00282)
+    [https://arxiv.org/abs/2401.09340](https://arxiv.org/abs/2401.09340)
 
-    大型语言模型在强化学习中具有潜在优势，通过结构化分类和角色分析，为未来研究提供指导。
-
-    
-
-    随着大规模语言模型(LLMs)拥有广泛的预训练知识和高级通用能力，它们在增强学习方面如多任务学习、样本效率和任务规划等方面展现出潜力。本调查综述了现有$\textit{LLM增强RL}$文献，总结了其与传统RL方法的特征，旨在澄清研究范围和未来研究方向。利用经典的Agent-环境交互范例，我们提出了一个结构化的分类法，系统地将LLMs在RL中的功能分类，包括四种角色：信息处理器、奖励设计者、决策者和生成器。此外，针对每个角色，我们总结了方法论，分析了缓解的特定RL挑战，并提供了未来方向的见解。最后，潜在应用、前景
-
-    arXiv:2404.00282v1 Announce Type: cross  Abstract: With extensive pre-trained knowledge and high-level general capabilities, large language models (LLMs) emerge as a promising avenue to augment reinforcement learning (RL) in aspects such as multi-task learning, sample efficiency, and task planning. In this survey, we provide a comprehensive review of the existing literature in $\textit{LLM-enhanced RL}$ and summarize its characteristics compared to conventional RL methods, aiming to clarify the research scope and directions for future studies. Utilizing the classical agent-environment interaction paradigm, we propose a structured taxonomy to systematically categorize LLMs' functionalities in RL, including four roles: information processor, reward designer, decision-maker, and generator. Additionally, for each role, we summarize the methodologies, analyze the specific RL challenges that are mitigated, and provide insights into future directions. Lastly, potential applications, prospecti
-    
-[^2]: D3G: 从演示中学习多机器人协调
-
-    D3G: Learning Multi-robot Coordination from Demonstrations. (arXiv:2207.08892v2 [cs.RO] UPDATED)
-
-    [http://arxiv.org/abs/2207.08892](http://arxiv.org/abs/2207.08892)
-
-    本文提出了一个D3G框架，可以从演示中学习多机器人协调。通过最小化轨迹与演示之间的不匹配，每个机器人可以自动调整其个体动态和目标，提高了学习效率和效果。
+    本研究通过系统性地扩展室内环境中的3D视觉-语言学习，提出了首个百万规模的3D视觉-语言数据集SceneVerse，以解决3D视觉-语言对齐面临的几个重要挑战。
 
     
 
-    本文开发了一个分布式可微动态游戏（D3G）框架，可以实现从演示中学习多机器人协调。我们将多机器人协调表示为一个动态游戏，其中一个机器人的行为受其自身动态和目标的控制，同时也取决于其他机器人的行为。因此，通过调整每个机器人的目标和动态，可以适应协调。所提出的D3G使每个机器人通过最小化其轨迹与演示之间的不匹配，在分布式方式下自动调整其个体动态和目标。该学习框架具有新的设计，包括一个前向传递，所有机器人合作寻找游戏的纳什均衡，以及一个反向传递，在通信图中传播梯度。我们在仿真中测试了D3G，并给出了不同任务配置的两种机器人。结果证明了D3G学习多机器人协调的能力。
+    3D视觉-语言对齐，即将语言与3D物理环境对齐，是发展具身体能力的智能体的基石。与2D领域最近的进展相比，将语言与3D场景对齐面临着几个重要挑战：（i）3D场景固有复杂性，由于多样的物体配置、丰富的属性和错综复杂的关系；（ii）支持基于场景学习的配对3D视觉-语言数据的稀缺性；以及（iii）缺乏从基于场景的3D数据中提炼知识的统一学习框架。在这项工作中，我们旨在通过系统地扩展室内环境中的3D视觉-语言学习，从而解决3D视觉-语言领域中的这三大挑战。我们介绍首个百万规模的3D视觉-语言数据集SceneVerse，包含约68K个3D室内场景，包括250万个视觉语言
 
-    This paper develops a Distributed Differentiable Dynamic Game (D3G) framework, which enables learning multi-robot coordination from demonstrations. We represent multi-robot coordination as a dynamic game, where the behavior of a robot is dictated by its own dynamics and objective that also depends on others' behavior. The coordination thus can be adapted by tuning the objective and dynamics of each robot. The proposed D3G enables each robot to automatically tune its individual dynamics and objectives in a distributed manner by minimizing the mismatch between its trajectory and demonstrations. This learning framework features a new design, including a forward-pass, where all robots collaboratively seek Nash equilibrium of a game, and a backward-pass, where gradients are propagated via the communication graph. We test the D3G in simulation with two types of robots given different task configurations. The results validate the capability of D3G for learning multi-robot coordination from de
+    arXiv:2401.09340v2 Announce Type: replace-cross  Abstract: 3D vision-language grounding, which focuses on aligning language with the 3D physical environment, stands as a cornerstone in the development of embodied agents. In comparison to recent advancements in the 2D domain, grounding language in 3D scenes faces several significant challenges: (i) the inherent complexity of 3D scenes due to the diverse object configurations, their rich attributes, and intricate relationships; (ii) the scarcity of paired 3D vision-language data to support grounded learning; and (iii) the absence of a unified learning framework to distill knowledge from grounded 3D data. In this work, we aim to address these three major challenges in 3D vision-language by examining the potential of systematically upscaling 3D vision-language learning in indoor environments. We introduce the first million-scale 3D vision-language dataset, SceneVerse, encompassing about 68K 3D indoor scenes and comprising 2.5M vision-langu
+    
+[^2]: GUARD: 一个安全强化学习基准测试平台
+
+    GUARD: A Safe Reinforcement Learning Benchmark. (arXiv:2305.13681v1 [cs.LG])
+
+    [http://arxiv.org/abs/2305.13681](http://arxiv.org/abs/2305.13681)
+
+    GUARD是一个广义统一安全强化学习开发基准测试平台，是目前广泛遍布且包含各种RL代理、任务和安全约束规范的一站式基准测试，能够全面涵盖最先进的安全RL算法，并具有高度的可自定义性。
+
+    
+
+    由于试错的性质，将RL算法应用于安全关键的现实应用（例如自动驾驶、人机交互、机器人操作等）通常是具有挑战性的，因为这些错误是不可容忍的。最近，安全RL（即约束RL）已经在文献中迅速出现，其中代理在满足约束条件的同时，探索环境。由于算法和任务的多样性，比较现有的安全RL算法仍然很困难。为了填补这一空白，我们介绍了GUARD，一个广义统一安全强化学习开发基准测试平台。与现有基准相比，GUARD具有几个优点。首先，GUARD是一个广义基准测试平台，具有各种RL代理、任务和安全约束规范。其次，GUARD全面涵盖了最先进的安全RL算法，并具有自包含的实现。第三，GUARD在任务和算法方面具有高度的可自定义性。我们提供了状态下现有方法在GUARD上的基准测试结果。
+
+    Due to the trial-and-error nature, it is typically challenging to apply RL algorithms to safety-critical real-world applications, such as autonomous driving, human-robot interaction, robot manipulation, etc, where such errors are not tolerable. Recently, safe RL (i.e. constrained RL) has emerged rapidly in the literature, in which the agents explore the environment while satisfying constraints. Due to the diversity of algorithms and tasks, it remains difficult to compare existing safe RL algorithms. To fill that gap, we introduce GUARD, a Generalized Unified SAfe Reinforcement Learning Development Benchmark. GUARD has several advantages compared to existing benchmarks. First, GUARD is a generalized benchmark with a wide variety of RL agents, tasks, and safety constraint specifications. Second, GUARD comprehensively covers state-of-the-art safe RL algorithms with self-contained implementations. Third, GUARD is highly customizable in tasks and algorithms. We present a comparison of state
     
 
