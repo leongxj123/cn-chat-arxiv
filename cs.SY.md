@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Fairness-Oriented Reinforcement Learning Approach for the Operation and Control of Shared Micromobility Services](https://arxiv.org/abs/2403.15780) | 本研究介绍了一种在共享微移动服务运营与控制中实现性能优化和算法公平性平衡的前沿调查，利用Q-Learning算法确保方法稳健，能够实现各种站点类别之间的公平结果。 |
+| [^1] | [Towards Autonomous Supply Chains: Definition, Characteristics, Conceptual Framework, and Autonomy Levels.](http://arxiv.org/abs/2401.14183) | 本论文提出了自主供应链（ASC）的正式定义、特征和辅助概念，提出了一个分层概念框架和供应链自治参考模型。通过案例研究展示了基于这些概念的初始ASC实施。 |
 
 # 详细
 
-[^1]: 面向公平性的共享微移动服务运营与控制的强化学习方法
+[^1]: 强调自主供应链：定义、特征、概念框架和自主水平
 
-    A Fairness-Oriented Reinforcement Learning Approach for the Operation and Control of Shared Micromobility Services
+    Towards Autonomous Supply Chains: Definition, Characteristics, Conceptual Framework, and Autonomy Levels. (arXiv:2401.14183v1 [cs.AI])
 
-    [https://arxiv.org/abs/2403.15780](https://arxiv.org/abs/2403.15780)
+    [http://arxiv.org/abs/2401.14183](http://arxiv.org/abs/2401.14183)
 
-    本研究介绍了一种在共享微移动服务运营与控制中实现性能优化和算法公平性平衡的前沿调查，利用Q-Learning算法确保方法稳健，能够实现各种站点类别之间的公平结果。
+    本论文提出了自主供应链（ASC）的正式定义、特征和辅助概念，提出了一个分层概念框架和供应链自治参考模型。通过案例研究展示了基于这些概念的初始ASC实施。
 
     
 
-    随着机器学习系统在各种应用领域变得日益普遍，包括那些直接涉及人类的领域，平等和算法公平性的必要性在人工智能界愈发突出。另一方面，在共享微移动系统的背景下，公平性导向方法的探索仍然有限。为填补这一空白，我们引入了一项探讨性研究，探讨了共享微移动服务运营与控制中性能优化与算法公平性之间的平衡。我们的研究运用强化学习中的Q-Learning算法，利用其收敛保证来确保我们提出的方法的稳健性。值得注意的是，我们的方法在不同站点类别（中心、边缘和远程）之间能够实现公平的结果，这是通过基尼系数来衡量的。
+    最近的全球性干扰，如大流行和地缘政治冲突，深刻暴露了传统供应链的脆弱性，需要探索更有弹性的替代方案。自主供应链（ASC）作为潜在解决方案出现，提供了在动荡的贸易环境中增加可见性、灵活性和弹性的优势。尽管工业界和学术界多年来一直在讨论ASC，但缺乏良好建立的理论基础。本文通过提供ASC的正式定义以及其定义特征和辅助概念来填补这一研究空白。我们提出了一个名为MIISI模型的分层概念框架。通过一个重点关注肉类供应链的案例研究，展示了基于这一概念模型的初始ASC实施。此外，我们还引入了一个七级供应链自治参考模型，描绘了实现完全供应链自治的轨迹。
 
-    arXiv:2403.15780v1 Announce Type: cross  Abstract: As Machine Learning systems become increasingly popular across diverse application domains, including those with direct human implications, the imperative of equity and algorithmic fairness has risen to prominence in the Artificial Intelligence community. On the other hand, in the context of Shared Micromobility Systems, the exploration of fairness-oriented approaches remains limited. Addressing this gap, we introduce a pioneering investigation into the balance between performance optimization and algorithmic fairness in the operation and control of Shared Micromobility Services. Our study leverages the Q-Learning algorithm in Reinforcement Learning, benefiting from its convergence guarantees to ensure the robustness of our proposed approach. Notably, our methodology stands out for its ability to achieve equitable outcomes, as measured by the Gini index, across different station categories--central, peripheral, and remote. Through stra
+    Recent global disruptions, such as the pandemic and geopolitical conflicts, have profoundly exposed vulnerabilities in traditional supply chains, requiring exploration of more resilient alternatives. Autonomous supply chains (ASCs) have emerged as a potential solution, offering increased visibility, flexibility, and resilience in turbulent trade environments. Despite discussions in industry and academia over several years, ASCs lack well-established theoretical foundations. This paper addresses this research gap by presenting a formal definition of ASC along with its defining characteristics and auxiliary concepts. We propose a layered conceptual framework called the MIISI model. An illustrative case study focusing on the meat supply chain demonstrates an initial ASC implementation based on this conceptual model. Additionally, we introduce a seven-level supply chain autonomy reference model, delineating a trajectory towards achieving a full supply chain autonomy. Recognising that this 
     
 
