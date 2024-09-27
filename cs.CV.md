@@ -2,82 +2,97 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [RAP: Retrieval-Augmented Planner for Adaptive Procedure Planning in Instructional Videos](https://arxiv.org/abs/2403.18600) | 提出了一种新的实际设置，称为指导视频中的自适应程序规划，克服了在实际场景中步骤长度变化的模型不具有泛化能力、理解步骤之间的时间关系知识对于生成合理且可执行的计划至关重要以及用步骤级标签或序列级标签标注指导视频耗时且劳动密集的问题 |
-| [^2] | [Continual Adversarial Defense](https://arxiv.org/abs/2312.09481) | 提出了第一个能够动态适应任何攻击的持续对抗性防御（CAD）框架。 |
-| [^3] | [Realism in Action: Anomaly-Aware Diagnosis of Brain Tumors from Medical Images Using YOLOv8 and DeiT.](http://arxiv.org/abs/2401.03302) | 本研究利用深度学习技术在具有挑战性的情况下检测和分类脑肿瘤，并解决了在罕见情况下的肿瘤检测问题。研究使用了来自国家脑映射实验室的数据集，通过修改样本数量和患者分布，使模型能够应对真实世界场景中的异常情况。 |
-| [^4] | [Improving Robustness and Reliability in Medical Image Classification with Latent-Guided Diffusion and Nested-Ensembles.](http://arxiv.org/abs/2310.15952) | 本文引入了一种新颖的三阶段方法，通过变换器和条件扩散模型来改善医学图像分类模型对实际应用中常见成像变异性的鲁棒性。 |
-| [^5] | [An Interpretable Machine Learning System to Identify EEG Patterns on the Ictal-Interictal-Injury Continuum.](http://arxiv.org/abs/2211.05207) | 该论文设计了一种可解释的深度学习模型，以预测ICU脑电监测中常见的6种脑波图案的存在，并提供高质量的解释和三种解释方法，这对于建立AI的信任和临床采用至关重要。 |
+| [^1] | [ICON: Improving Inter-Report Consistency of Radiology Report Generation via Lesion-aware Mix-up Augmentation](https://arxiv.org/abs/2402.12844) | 本文提出的ICON方法旨在通过改善放射学报告生成的报告间一致性，提升系统捕捉语义等效病变相似性的能力。 |
+| [^2] | [High-Quality Image Restoration Following Human Instructions.](http://arxiv.org/abs/2401.16468) | 本论文提出了一种使用人类编写的指令来指导图像恢复模型的方法，并在多个恢复任务上取得了最先进的结果，为基于文本指导的图像恢复和增强研究提供了一个新的基准。 |
+| [^3] | [Enhanced Distribution Alignment for Post-Training Quantization of Diffusion Models.](http://arxiv.org/abs/2401.04585) | 本文提出了一种扩展分布对齐方法以解决后训练量化对于弥散模型的分布不匹配问题，该方法在低延迟应用中具有较高的潜力，并且能有效提升性能。 |
+| [^4] | [Fast Inference Through The Reuse Of Attention Maps In Diffusion Models.](http://arxiv.org/abs/2401.01008) | 本文提出了一种无需训练的方法，通过重用注意力映射来实现Text-to-image diffusion models中的快速推理，以提高效率。 |
+| [^5] | [EPTQ: Enhanced Post-Training Quantization via Label-Free Hessian.](http://arxiv.org/abs/2309.11531) | 本文提出了一种名为EPTQ的增强后训练量化方法，该方法通过自适应加权层和无标签Hessian近似技术实现了最先进的结果。 |
+| [^6] | [Alternative Telescopic Displacement: An Efficient Multimodal Alignment Method.](http://arxiv.org/abs/2306.16950) | 备选的变焦位移是一种高效的多模态对齐方法，通过交替移动和扩展特征信息来融合多模态数据，可以稳健地捕捉不同模态特征之间的高级交互作用，从而显著提高多模态学习的性能，并在多个任务上优于其他流行的多模态方案。 |
 
 # 详细
 
-[^1]: RAP：检索增强型规划器用于指导视频中的自适应程序规划
+[^1]: ICON：通过病变感知混合增强改善放射学报告生成的报告间一致性
 
-    RAP: Retrieval-Augmented Planner for Adaptive Procedure Planning in Instructional Videos
+    ICON: Improving Inter-Report Consistency of Radiology Report Generation via Lesion-aware Mix-up Augmentation
 
-    [https://arxiv.org/abs/2403.18600](https://arxiv.org/abs/2403.18600)
+    [https://arxiv.org/abs/2402.12844](https://arxiv.org/abs/2402.12844)
 
-    提出了一种新的实际设置，称为指导视频中的自适应程序规划，克服了在实际场景中步骤长度变化的模型不具有泛化能力、理解步骤之间的时间关系知识对于生成合理且可执行的计划至关重要以及用步骤级标签或序列级标签标注指导视频耗时且劳动密集的问题
-
-    
-
-    指导视频中的程序规划涉及根据初始和目标状态的视觉观察生成一系列动作步骤。尽管这一任务取得了快速进展，仍然存在一些关键挑战需要解决：（1）自适应程序：先前的工作存在一个不切实际的假设，即动作步骤的数量是已知且固定的，导致在实际场景中，步骤长度变化的模型不具有泛化能力。（2）时间关系：理解步骤之间的时间关系知识对于生成合理且可执行的计划至关重要。（3）注释成本：用步骤级标签（即时间戳）或序列级标签（即动作类别）标注指导视频是耗时且劳动密集的，限制了其泛化能力到大规模数据集。在这项工作中，我们提出了一个新的实际设置，称为指导视频中的自适应程序规划
-
-    arXiv:2403.18600v1 Announce Type: cross  Abstract: Procedure Planning in instructional videos entails generating a sequence of action steps based on visual observations of the initial and target states. Despite the rapid progress in this task, there remain several critical challenges to be solved: (1) Adaptive procedures: Prior works hold an unrealistic assumption that the number of action steps is known and fixed, leading to non-generalizable models in real-world scenarios where the sequence length varies. (2) Temporal relation: Understanding the step temporal relation knowledge is essential in producing reasonable and executable plans. (3) Annotation cost: Annotating instructional videos with step-level labels (i.e., timestamp) or sequence-level labels (i.e., action category) is demanding and labor-intensive, limiting its generalizability to large-scale datasets.In this work, we propose a new and practical setting, called adaptive procedure planning in instructional videos, where the
-    
-[^2]: 持续不断的对抗性防御
-
-    Continual Adversarial Defense
-
-    [https://arxiv.org/abs/2312.09481](https://arxiv.org/abs/2312.09481)
-
-    提出了第一个能够动态适应任何攻击的持续对抗性防御（CAD）框架。
+    本文提出的ICON方法旨在通过改善放射学报告生成的报告间一致性，提升系统捕捉语义等效病变相似性的能力。
 
     
 
-    针对每月针对视觉分类器的对抗性攻击快速演变的特性，人们提出了许多防御方法，旨在尽可能通用化以抵御尽可能多的已知攻击。然而，设计一个能够对抗所有类型攻击的防御方法并不现实，因为防御系统运行的环境是动态的，包含随着时间出现的各种独特攻击。防御系统必须收集在线少样本对抗反馈以迅速增强自身，充分利用内存。因此，我们提出了第一个能够动态适应任何攻击的持续对抗性防御（CAD）框架，其中各种攻击逐个阶段出现。在实践中，CAD基于四项原则进行建模：(1) 持续适应新攻击而无灾难性遗忘，(2) 少样本适应，(3) 内存高效适应，以及(4) 高准确性
+    放射学报告生成的先前研究在增加生成报告的临床准确性方面取得了显著进展。本文强调了其应具备的另一个至关重要的特质，即报告间一致性，指的是对语义上等效的X射线照片生成一致性报告的能力。ICON提出了一种方法，它通过改善放射学报告生成的报告间一致性来解决这一问题。
 
-    arXiv:2312.09481v2 Announce Type: replace-cross  Abstract: In response to the rapidly evolving nature of adversarial attacks against visual classifiers on a monthly basis, numerous defenses have been proposed to generalize against as many known attacks as possible. However, designing a defense method that generalizes to all types of attacks is not realistic because the environment in which defense systems operate is dynamic and comprises various unique attacks that emerge as time goes on. The defense system must gather online few-shot defense feedback to promptly enhance itself, leveraging efficient memory utilization. Therefore, we propose the first continual adversarial defense (CAD) framework that adapts to any attacks in a dynamic scenario, where various attacks emerge stage by stage. In practice, CAD is modeled under four principles: (1) continual adaptation to new attacks without catastrophic forgetting, (2) few-shot adaptation, (3) memory-efficient adaptation, and (4) high accur
+    arXiv:2402.12844v1 Announce Type: cross  Abstract: Previous research on radiology report generation has made significant progress in terms of increasing the clinical accuracy of generated reports. In this paper, we emphasize another crucial quality that it should possess, i.e., inter-report consistency, which refers to the capability of generating consistent reports for semantically equivalent radiographs. This quality is even of greater significance than the overall report accuracy in terms of ensuring the system's credibility, as a system prone to providing conflicting results would severely erode users' trust. Regrettably, existing approaches struggle to maintain inter-report consistency, exhibiting biases towards common patterns and susceptibility to lesion variants. To address this issue, we propose ICON, which improves the inter-report consistency of radiology report generation. Aiming at enhancing the system's ability to capture the similarities in semantically equivalent lesion
     
-[^3]: 行动中的现实主义：使用YOLOv8和DeiT从医学图像中诊断脑肿瘤的异常感知
+[^2]: 遵循人类指令的高质量图像恢复
 
-    Realism in Action: Anomaly-Aware Diagnosis of Brain Tumors from Medical Images Using YOLOv8 and DeiT. (arXiv:2401.03302v1 [eess.IV])
+    High-Quality Image Restoration Following Human Instructions. (arXiv:2401.16468v1 [cs.CV])
 
-    [http://arxiv.org/abs/2401.03302](http://arxiv.org/abs/2401.03302)
+    [http://arxiv.org/abs/2401.16468](http://arxiv.org/abs/2401.16468)
 
-    本研究利用深度学习技术在具有挑战性的情况下检测和分类脑肿瘤，并解决了在罕见情况下的肿瘤检测问题。研究使用了来自国家脑映射实验室的数据集，通过修改样本数量和患者分布，使模型能够应对真实世界场景中的异常情况。
-
-    
-
-    在医学科学领域，由于脑肿瘤在患者中的罕见程度，可靠地检测和分类脑肿瘤仍然是一个艰巨的挑战。因此，在异常情况下检测肿瘤的能力对于确保及时干预和改善患者结果至关重要。本研究利用深度学习技术在具有挑战性的情况下检测和分类脑肿瘤。来自国家脑映射实验室（NBML）的精选数据集包括81名患者，其中包括30例肿瘤病例和51例正常病例。检测和分类流程被分为两个连续的任务。检测阶段包括全面的数据分析和预处理，以修改图像样本和每个类别的患者数量，以符合真实世界场景中的异常分布（9个正常样本对应1个肿瘤样本）。此外，在测试中除了常见的评估指标外，我们还采用了... [摘要长度已达到上限]
-
-    In the field of medical sciences, reliable detection and classification of brain tumors from images remains a formidable challenge due to the rarity of tumors within the population of patients. Therefore, the ability to detect tumors in anomaly scenarios is paramount for ensuring timely interventions and improved patient outcomes. This study addresses the issue by leveraging deep learning (DL) techniques to detect and classify brain tumors in challenging situations. The curated data set from the National Brain Mapping Lab (NBML) comprises 81 patients, including 30 Tumor cases and 51 Normal cases. The detection and classification pipelines are separated into two consecutive tasks. The detection phase involved comprehensive data analysis and pre-processing to modify the number of image samples and the number of patients of each class to anomaly distribution (9 Normal per 1 Tumor) to comply with real world scenarios. Next, in addition to common evaluation metrics for the testing, we emplo
-    
-[^4]: 通过潜在引导扩散和嵌套集成改进医学图像分类的鲁棒性和可靠性
-
-    Improving Robustness and Reliability in Medical Image Classification with Latent-Guided Diffusion and Nested-Ensembles. (arXiv:2310.15952v2 [cs.LG] UPDATED)
-
-    [http://arxiv.org/abs/2310.15952](http://arxiv.org/abs/2310.15952)
-
-    本文引入了一种新颖的三阶段方法，通过变换器和条件扩散模型来改善医学图像分类模型对实际应用中常见成像变异性的鲁棒性。
+    本论文提出了一种使用人类编写的指令来指导图像恢复模型的方法，并在多个恢复任务上取得了最先进的结果，为基于文本指导的图像恢复和增强研究提供了一个新的基准。
 
     
 
-    尽管深度学习模型在各种医学图像分析任务中取得了显著的成功，但在真实临床环境中部署这些模型需要它们对所获取的图像的变异性具有鲁棒性。许多方法会对训练数据应用预定义的转换，以增强测试时的鲁棒性，但这些转换可能无法确保模型对患者图像中的多样性变异性具有鲁棒性。在本文中，我们提出了一种基于变换器和条件扩散模型的新型三阶段方法，旨在提高模型对实践中常见的成像变异性的鲁棒性，而无需预先确定的数据增强策略。为了实现这一目标，多个图像编码器首先学习分层特征表示来构建辨别潜在空间。接下来，一个由潜在代码引导的逆扩散过程作用于有信息先验，并提出预测候选。
+    图像恢复是一个基本问题，涉及从退化观测中恢复出高质量的干净图像。全能图像恢复模型可以通过使用特定于退化类型的信息作为提示来有效地恢复各种类型和级别的退化图像，并引导恢复模型。我们提出了一种使用人类编写的指令来指导图像恢复模型的方法。在给定自然语言提示的情况下，我们的模型可以从退化图像中恢复出高质量的图像，并考虑多种退化类型。我们的方法InstructIR在图像去噪、雨水去除、去模糊、去雾和(低光)图像增强等多个恢复任务上取得了最先进的结果。InstructIR在之前的全能恢复方法上提高了1dB。此外，我们的数据集和结果为基于文本指导的图像恢复和增强的新研究提供了一个新的基准。我们提供了代码、数据集和模型。
 
-    While deep learning models have achieved remarkable success across a range of medical image analysis tasks, deployment of these models in real clinical contexts requires that they be robust to variability in the acquired images. While many methods apply predefined transformations to augment the training data to enhance test-time robustness, these transformations may not ensure the model's robustness to the diverse variability seen in patient images. In this paper, we introduce a novel three-stage approach based on transformers coupled with conditional diffusion models, with the goal of improving model robustness to the kinds of imaging variability commonly encountered in practice without the need for pre-determined data augmentation strategies. To this end, multiple image encoders first learn hierarchical feature representations to build discriminative latent spaces. Next, a reverse diffusion process, guided by the latent code, acts on an informative prior and proposes prediction candi
+    Image restoration is a fundamental problem that involves recovering a high-quality clean image from its degraded observation. All-In-One image restoration models can effectively restore images from various types and levels of degradation using degradation-specific information as prompts to guide the restoration model. In this work, we present the first approach that uses human-written instructions to guide the image restoration model. Given natural language prompts, our model can recover high-quality images from their degraded counterparts, considering multiple degradation types. Our method, InstructIR, achieves state-of-the-art results on several restoration tasks including image denoising, deraining, deblurring, dehazing, and (low-light) image enhancement. InstructIR improves +1dB over previous all-in-one restoration methods. Moreover, our dataset and results represent a novel benchmark for new research on text-guided image restoration and enhancement. Our code, datasets and models a
     
-[^5]: 一种可解释的机器学习系统来识别癫痫-间隙-损伤连续状态下的脑电图图案
+[^3]: 扩展分布对齐来实现弥散模型的后训练量化
 
-    An Interpretable Machine Learning System to Identify EEG Patterns on the Ictal-Interictal-Injury Continuum. (arXiv:2211.05207v3 [cs.CV] UPDATED)
+    Enhanced Distribution Alignment for Post-Training Quantization of Diffusion Models. (arXiv:2401.04585v1 [cs.CV])
 
-    [http://arxiv.org/abs/2211.05207](http://arxiv.org/abs/2211.05207)
+    [http://arxiv.org/abs/2401.04585](http://arxiv.org/abs/2401.04585)
 
-    该论文设计了一种可解释的深度学习模型，以预测ICU脑电监测中常见的6种脑波图案的存在，并提供高质量的解释和三种解释方法，这对于建立AI的信任和临床采用至关重要。
+    本文提出了一种扩展分布对齐方法以解决后训练量化对于弥散模型的分布不匹配问题，该方法在低延迟应用中具有较高的潜力，并且能有效提升性能。
 
     
 
-    在许多医学领域，人们呼吁在用于临床工作的机器学习系统中增加可解释性。在本文中，我们设计了一个可解释的深度学习模型，用于预测ICU脑电监测中常见的6种脑波图案（癫痫、LPD、GPD、LRDA、GRDA、其他）的存在。每个预测都配有一个高质量的解释，借助于专门的用户界面提供支持。此新型模型架构学习了一组原型示例（“原型”），并通过将新的EEG片段与这些原型进行比较来做出决策。这些原型可以是单类（仅与一个类相关）或双类（与两个类相关）。我们提出了三种主要的模型解释方法：1）使用全局结构保持方法，将1275维cEEG潜在特征映射到二维空间中，可视化癫痫-间隙-损伤连续状态，从而深入了解其高维结构。2）我们提出了一种交互式解释方法，使人类专家能够查询模型预测的不同方面，并以自然语言接收经过专家验证的解释。3）我们可视化了导致模型做出某个决策的输入的最重要特征，允许详细检查输入和输出之间的关系。总的来说，我们展示了解释性模型分类EEG图案和提供专家友好的解释的实用性，这两个方面对于建立AI的信任和临床采用至关重要。
+    通过迭代噪声估计，扩散模型在图像生成任务中取得了巨大成功。然而，繁重的去噪过程和复杂的神经网络阻碍了它们在实际场景中的低延迟应用。量化可以有效降低模型复杂度，而后训练量化(PTQ)在加速去噪过程方面具有很高的潜力，并且不需要微调。不幸的是，我们发现由于不同去噪步骤中激活的高度动态分布，现有的扩散模型的PTQ方法在校准样本和重构输出两个层面上都存在分布不匹配的问题，导致性能远低于令人满意的水平，特别是在低位情况下。在本文中，我们提出了增强的分布对齐用于弥散模型的后训练量化(EDA-DM)来解决上述问题。具体来说，在校准样本层面，我们基于...[缺省]
 
-    In many medical subfields, there is a call for greater interpretability in the machine learning systems used for clinical work. In this paper, we design an interpretable deep learning model to predict the presence of 6 types of brainwave patterns (Seizure, LPD, GPD, LRDA, GRDA, other) commonly encountered in ICU EEG monitoring. Each prediction is accompanied by a high-quality explanation delivered with the assistance of a specialized user interface. This novel model architecture learns a set of prototypical examples (``prototypes'') and makes decisions by comparing a new EEG segment to these prototypes. These prototypes are either single-class (affiliated with only one class) or dual-class (affiliated with two classes).  We present three main ways of interpreting the model: 1) Using global-structure preserving methods, we map the 1275-dimensional cEEG latent features to a 2D space to visualize the ictal-interictal-injury continuum and gain insight into its high-dimensional structure. 2
+    Diffusion models have achieved great success in image generation tasks through iterative noise estimation. However, the heavy denoising process and complex neural networks hinder their low-latency applications in real-world scenarios. Quantization can effectively reduce model complexity, and post-training quantization (PTQ), which does not require fine-tuning, is highly promising in accelerating the denoising process. Unfortunately, we find that due to the highly dynamic distribution of activations in different denoising steps, existing PTQ methods for diffusion models suffer from distribution mismatch issues at both calibration sample level and reconstruction output level, which makes the performance far from satisfactory, especially in low-bit cases. In this paper, we propose Enhanced Distribution Alignment for Post-Training Quantization of Diffusion Models (EDA-DM) to address the above issues. Specifically, at the calibration sample level, we select calibration samples based on the 
+    
+[^4]: Text-to-image diffusion models中通过重用注意力映射实现快速推理
+
+    Fast Inference Through The Reuse Of Attention Maps In Diffusion Models. (arXiv:2401.01008v1 [cs.CV])
+
+    [http://arxiv.org/abs/2401.01008](http://arxiv.org/abs/2401.01008)
+
+    本文提出了一种无需训练的方法，通过重用注意力映射来实现Text-to-image diffusion models中的快速推理，以提高效率。
+
+    
+
+    文字到图像扩散模型在灵活和逼真的图像合成方面展示了前所未有的能力。然而，生成单个图像所需的迭代过程既昂贵又具有较高的延迟，促使研究人员进一步研究其效率。我们提出了一种无需调整采样步长的无需训练的方法。具体地说，我们发现重复计算注意力映射既耗时又冗余，因此我们建议在采样过程中结构化地重用注意力映射。我们的初步重用策略受到初级ODE理论的启发，该理论认为在采样过程的后期重用最合适。在注意到这种理论方法的一些局限性后，我们通过实验证明了一种更好的方法。
+
+    Text-to-image diffusion models have demonstrated unprecedented abilities at flexible and realistic image synthesis. However, the iterative process required to produce a single image is costly and incurs a high latency, prompting researchers to further investigate its efficiency. Typically, improvements in latency have been achieved in two ways: (1) training smaller models through knowledge distillation (KD); and (2) adopting techniques from ODE-theory to facilitate larger step sizes. In contrast, we propose a training-free approach that does not alter the step-size of the sampler. Specifically, we find the repeated calculation of attention maps to be both costly and redundant; therefore, we propose a structured reuse of attention maps during sampling. Our initial reuse policy is motivated by rudimentary ODE-theory, which suggests that reuse is most suitable late in the sampling procedure. After noting a number of limitations in this theoretical approach, we empirically search for a bet
+    
+[^5]: EPTQ:通过无标签Hessian增强的后训练量化
+
+    EPTQ: Enhanced Post-Training Quantization via Label-Free Hessian. (arXiv:2309.11531v1 [cs.CV])
+
+    [http://arxiv.org/abs/2309.11531](http://arxiv.org/abs/2309.11531)
+
+    本文提出了一种名为EPTQ的增强后训练量化方法，该方法通过自适应加权层和无标签Hessian近似技术实现了最先进的结果。
+
+    
+
+    深度神经网络的量化已成为将这些网络嵌入到最终用户设备上的关键要素。然而，当前的量化方法通常会导致准确性严重下降。本文提出了一种名为EPTQ的增强后训练量化方法。该方法基于知识蒸馏，并采用自适应加权层的方式。此外，我们提出了一种新的无标签Hessian近似技术，名为Label-Free Hessian。这种技术消除了计算Hessian所需的标记数据集的要求。自适应知识蒸馏利用Label-Free Hessian技术，在进行优化时更加关注模型的敏感部分。通过使用EPTQ，我们在各种模型、任务和数据集上实现了最先进的结果，包括ImageNet分类、COCO目标检测和用于语义分割的Pascal-VOC数据集。
+
+    Quantization of deep neural networks (DNN) has become a key element in the efforts of embedding such networks on end-user devices. However, current quantization methods usually suffer from costly accuracy degradation. In this paper, we propose a new method for Enhanced Post Training Quantization named EPTQ. The method is based on knowledge distillation with an adaptive weighting of layers. In addition, we introduce a new label-free technique for approximating the Hessian trace of the task loss, named Label-Free Hessian. This technique removes the requirement of a labeled dataset for computing the Hessian. The adaptive knowledge distillation uses the Label-Free Hessian technique to give greater attention to the sensitive parts of the model while performing the optimization. Empirically, by employing EPTQ we achieve state-of-the-art results on a wide variety of models, tasks, and datasets, including ImageNet classification, COCO object detection, and Pascal-VOC for semantic segmentation.
+    
+[^6]: 备选的变焦位移：一种高效的多模态对齐方法
+
+    Alternative Telescopic Displacement: An Efficient Multimodal Alignment Method. (arXiv:2306.16950v1 [cs.CV])
+
+    [http://arxiv.org/abs/2306.16950](http://arxiv.org/abs/2306.16950)
+
+    备选的变焦位移是一种高效的多模态对齐方法，通过交替移动和扩展特征信息来融合多模态数据，可以稳健地捕捉不同模态特征之间的高级交互作用，从而显著提高多模态学习的性能，并在多个任务上优于其他流行的多模态方案。
+
+    
+
+    特征对齐是融合多模态数据的主要方式。我们提出了一种特征对齐方法，可以完全融合多模态信息，通过在特征空间中交替移动和扩展来实现不同模态之间的一致表示。所提出的方法能够稳健地捕捉不同模态特征之间的高级交互作用，从而显著提高多模态学习的性能。我们还表明，所提出的方法在多个任务上优于其他流行的多模态方案。对ETT和MIT-BIH-Arrhythmia数据集的实验评估表明，所提出的方法达到了最先进的性能。
+
+    Feature alignment is the primary means of fusing multimodal data. We propose a feature alignment method that fully fuses multimodal information, which alternately shifts and expands feature information from different modalities to have a consistent representation in a feature space. The proposed method can robustly capture high-level interactions between features of different modalities, thus significantly improving the performance of multimodal learning. We also show that the proposed method outperforms other popular multimodal schemes on multiple tasks. Experimental evaluation of ETT and MIT-BIH-Arrhythmia, datasets shows that the proposed method achieves state of the art performance.
     
 

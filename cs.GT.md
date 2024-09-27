@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Couples can be tractable: New algorithms and hardness results for the Hospitals / Residents problem with Couples.](http://arxiv.org/abs/2311.00405) | 本研究提出了一种新的多项式时间算法，用于解决带夫妻的医院/居民问题，并证明了算法的多项式时间可解性以及对稳定B匹配问题的应用。算法能够找到一个接近可行的稳定匹配，并应用于不同类型的实例。 |
+| [^1] | [Optimal Scoring for Dynamic Information Acquisition.](http://arxiv.org/abs/2310.19147) | 这篇论文研究了一个委托人通过雇佣代理人以动态方式获取信息的问题，在条件允许的情况下，委托人无法通过一次性收集所有信息之后再从代理人那里获取单个报告来获得更好的结果，并且在较强的条件违反下，静态合同是次优的。与此同时，该论文还展示了在动态环境中，即使代理人对状态预测错误，最优合同也可能会给予代理人严格正的基本奖励。 |
 
 # 详细
 
-[^1]: 夫妻可以被解决：新的算法和对带夫妻的医院/居民问题的难度结果
+[^1]: 动态信息获取的最佳评分
 
-    Couples can be tractable: New algorithms and hardness results for the Hospitals / Residents problem with Couples. (arXiv:2311.00405v1 [cs.DS])
+    Optimal Scoring for Dynamic Information Acquisition. (arXiv:2310.19147v1 [econ.TH])
 
-    [http://arxiv.org/abs/2311.00405](http://arxiv.org/abs/2311.00405)
+    [http://arxiv.org/abs/2310.19147](http://arxiv.org/abs/2310.19147)
 
-    本研究提出了一种新的多项式时间算法，用于解决带夫妻的医院/居民问题，并证明了算法的多项式时间可解性以及对稳定B匹配问题的应用。算法能够找到一个接近可行的稳定匹配，并应用于不同类型的实例。
+    这篇论文研究了一个委托人通过雇佣代理人以动态方式获取信息的问题，在条件允许的情况下，委托人无法通过一次性收集所有信息之后再从代理人那里获取单个报告来获得更好的结果，并且在较强的条件违反下，静态合同是次优的。与此同时，该论文还展示了在动态环境中，即使代理人对状态预测错误，最优合同也可能会给予代理人严格正的基本奖励。
 
     
 
-    在本文中，我们研究了带夫妻的医院/居民问题（Hospitals / Residents problem with Couples，简称HRC），其中解的一种是稳定匹配，或者报告不存在。我们提出了一种新的多项式时间算法，可以在带夫妻的HRC实例中找到一个接近可行的稳定匹配（通过最多调整医院的容量1个单位），其中夫妻的偏好是子响应性的（即，如果一个成员转移到一个更好的医院，那么夫妻也会变得更好）和子完备性的（即，对于每对个别可接受的医院都是夫妻一起可接受的），通过将其规约到稳定固定问题的实例。我们还提出了一个针对HRC子响应性、子完备实例的多项式时间算法，该实例是一个双重市场，或者所有夫妻属于几种可能类型之一。我们证明了我们的算法也意味着稳定B匹配问题的多项式时间可解性，其中底层图是带有环的多重图。
+    一个委托人试图通过雇佣一个代理人来使用泊松信息到达技术随着时间来获取关于二进制状态的信息。代理人会私下了解这个状态，而委托人无法观察到代理人的努力选择。委托人可以根据代理人的报告序列和实现的状态，以一个固定价值的奖品来奖励代理人。我们确定了一些条件，每个条件都确保委托人无法比在获取了所有信息后从代理人那里提取单个报告更好。我们还证明了在这些条件足够强烈的违反下，这样的静态合同是次优的。我们将我们的解决方案与代理人一次性获取所有信息的情况进行对比；值得注意的是，在动态环境中，即使代理人对状态的预测是错误的，最优合同可能会向代理人提供严格正的基本奖励。
 
-    In this paper we study the {\sc Hospitals / Residents problem with Couples} ({\sc hrc}), where a solution is a stable matching or a report that none exists. We present a novel polynomial-time algorithm that can find a near-feasible stable matching (adjusting the hospitals' capacities by at most 1) in an {\sc hrc} instance where the couples' preferences are sub-responsive (i.e., if one member switches to a better hospital, than the couple also improves) and sub-complete (i.e., each pair of hospitals that are individually acceptable to both members are jointly acceptable for the couple) by reducing it to an instance of the {\sc Stable Fixtures} problem. We also present a polynomial-time algorithm for {\sc hrc} in a sub-responsive, sub-complete instance that is a Dual Market, or where all couples are one of several possible types. We show that our algorithm also implies the polynomial-time solvability of a stable b-matching problem, where the underlying graph is a multigraph with loops.  
+    A principal seeks to learn about a binary state and can do so by enlisting an agent to acquire information over time using a Poisson information arrival technology. The agent learns about this state privately, and his effort choices are unobserved by the principal. The principal can reward the agent with a prize of fixed value as a function of the agent's sequence of reports and the realized state. We identify conditions that each individually ensure that the principal cannot do better than by eliciting a single report from the agent after all information has been acquired. We also show that such a static contract is suboptimal under sufficiently strong violations of these conditions. We contrast our solution to the case where the agent acquires information "all at once;" notably, the optimal contract in the dynamic environment may provide strictly positive base rewards to the agent even if his prediction about the state is incorrect.
     
 
