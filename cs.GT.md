@@ -2,52 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Regulation of Algorithmic Collusion.](http://arxiv.org/abs/2401.15794) | 本文提供了算法定价中的算法合谋监管的定义，允许监管机构通过对数据的统计测试来审计算法，良好算法通过增加数据来通过审计，而达到高于竞争价格的算法则无法通过审计。 |
-| [^2] | [Active Inverse Learning in Stackelberg Trajectory Games.](http://arxiv.org/abs/2308.08017) | 这项研究提出了一种在Stackelberg博弈中的主动逆向学习方法，通过活跃地最大化跟随者在不同假设下的轨迹差异来加速领导者的推断过程。 |
-| [^3] | [Balanced Donor Coordination.](http://arxiv.org/abs/2305.10286) | 这篇论文提出了一种既尊重个人意愿又高效的捐赠机制，通过以高效的方式分配每个捐赠者的贡献，没有任何捐助人有动机重新分配他们的捐款。 |
+| [^1] | [Paths to Equilibrium in Normal-Form Games](https://arxiv.org/abs/2403.18079) | 本文研究在多智体强化学习中的策略序列，探讨满足特定约束的策略路径，即满足路径，对于构建终止于均衡策略的路径具有重要意义。 |
+| [^2] | [On the Redistribution of Maximal Extractable Value: A Dynamic Mechanism](https://arxiv.org/abs/2402.15849) | 该论文提出了一个动态机制，通过更新最大可提取价值（MEV）提取率，以在矿工和用户之间维持健康平衡。 |
+| [^3] | [Incentivizing Data Sharing for Energy Forecasting: Analytics Markets with Correlated Data.](http://arxiv.org/abs/2310.06000) | 该论文开发了一个考虑相关性的分析市场，通过采用Shapley值的归因策略来分配收入，促进了数据共享以提高能源预测的准确性。 |
 
 # 详细
 
-[^1]: 算法定价中的算法合谋监管
+[^1]: 正态形式博弈中的均衡路径
 
-    Regulation of Algorithmic Collusion. (arXiv:2401.15794v1 [cs.GT])
+    Paths to Equilibrium in Normal-Form Games
 
-    [http://arxiv.org/abs/2401.15794](http://arxiv.org/abs/2401.15794)
+    [https://arxiv.org/abs/2403.18079](https://arxiv.org/abs/2403.18079)
 
-    本文提供了算法定价中的算法合谋监管的定义，允许监管机构通过对数据的统计测试来审计算法，良好算法通过增加数据来通过审计，而达到高于竞争价格的算法则无法通过审计。
-
-    
-
-    考虑到在竞争市场中，卖方使用算法根据他们收集到的数据调整价格。在这种情况下，算法可能得出高于竞争价格的价格，从而使卖方受益，而损害消费者（即市场中的买方）。本文为定价算法提供了合理的算法非合谋的定义。该定义允许监管机构通过对所收集数据的统计测试来对算法进行实证审计。良好的算法，即在市场条件下近似优化价格的算法，可以通过增加足够数据来通过审计。相反，达到高于竞争价格的算法无法通过审计。该定义允许卖方拥有与供需相互关联且可能影响良好算法所使用的价格的有用辅助信息。本文还分析了统计互补性。
-
-    Consider sellers in a competitive market that use algorithms to adapt their prices from data that they collect. In such a context it is plausible that algorithms could arrive at prices that are higher than the competitive prices and this may benefit sellers at the expense of consumers (i.e., the buyers in the market). This paper gives a definition of plausible algorithmic non-collusion for pricing algorithms. The definition allows a regulator to empirically audit algorithms by applying a statistical test to the data that they collect. Algorithms that are good, i.e., approximately optimize prices to market conditions, can be augmented to contain the data sufficient to pass the audit. Algorithms that have colluded on, e.g., supra-competitive prices cannot pass the audit. The definition allows sellers to possess useful side information that may be correlated with supply and demand and could affect the prices used by good algorithms. The paper provides an analysis of the statistical comple
-    
-[^2]: Stackelberg轨迹博弈中的主动逆向学习
-
-    Active Inverse Learning in Stackelberg Trajectory Games. (arXiv:2308.08017v1 [cs.GT])
-
-    [http://arxiv.org/abs/2308.08017](http://arxiv.org/abs/2308.08017)
-
-    这项研究提出了一种在Stackelberg博弈中的主动逆向学习方法，通过活跃地最大化跟随者在不同假设下的轨迹差异来加速领导者的推断过程。
+    本文研究在多智体强化学习中的策略序列，探讨满足特定约束的策略路径，即满足路径，对于构建终止于均衡策略的路径具有重要意义。
 
     
 
-    博弈论的逆向学习是从玩家的行为中推断出他们的目标的问题。我们在一个Stackelberg博弈中，通过每个玩家的动态系统轨迹来定义一个逆向学习问题，其中包括一个领导者和一个跟随者。我们提出了一种主动逆向学习方法，让领导者推断出一个有限候选集中描述跟随者目标函数的假设。与现有方法使用被动观察到的轨迹不同，所提出的方法主动地最大化不同假设下跟随者轨迹的差异，加速领导者的推断过程。我们在一个递进的重复轨迹博弈中展示了所提出的方法。与均匀随机输入相比，所提供的方法加速了概率收敛到条件于跟随者轨迹的不同假设上的收敛速度。
+    在多智体强化学习（MARL）中，智体会反复在时间上交互，并随着新数据的到来修订他们的策略，从而产生一系列策略概况。本文研究满足一种由强化学习中政策更新启发的成对约束的策略序列，其中在第 $t$ 期最优应答的智体在下一期 $t+1$ 不会改变其策略。这种约束仅要求优化智体不更改策略，但并不以任何方式限制其他非最优化智体，因此允许探索。具有此属性的序列被称为满足路径，并在许多 MARL 算法中自然出现。关于战略动态的一个基本问题是：对于给定的博弈和初始策略概况，是否总可以构建一个终止于均衡策略的满足路径？这个问题的解决对应着一些重要含义。
 
-    Game-theoretic inverse learning is the problem of inferring the players' objectives from their actions. We formulate an inverse learning problem in a Stackelberg game between a leader and a follower, where each player's action is the trajectory of a dynamical system. We propose an active inverse learning method for the leader to infer which hypothesis among a finite set of candidates describes the follower's objective function. Instead of using passively observed trajectories like existing methods, the proposed method actively maximizes the differences in the follower's trajectories under different hypotheses to accelerate the leader's inference. We demonstrate the proposed method in a receding-horizon repeated trajectory game. Compared with uniformly random inputs, the leader inputs provided by the proposed method accelerate the convergence of the probability of different hypotheses conditioned on the follower's trajectory by orders of magnitude.
+    arXiv:2403.18079v1 Announce Type: cross  Abstract: In multi-agent reinforcement learning (MARL), agents repeatedly interact across time and revise their strategies as new data arrives, producing a sequence of strategy profiles. This paper studies sequences of strategies satisfying a pairwise constraint inspired by policy updating in reinforcement learning, where an agent who is best responding in period $t$ does not switch its strategy in the next period $t+1$. This constraint merely requires that optimizing agents do not switch strategies, but does not constrain the other non-optimizing agents in any way, and thus allows for exploration. Sequences with this property are called satisficing paths, and arise naturally in many MARL algorithms. A fundamental question about strategic dynamics is such: for a given game and initial strategy profile, is it always possible to construct a satisficing path that terminates at an equilibrium strategy? The resolution of this question has implication
     
-[^3]: 平衡捐赠者协调
+[^2]: 关于最大可提取价值再分配的动态机制
 
-    Balanced Donor Coordination. (arXiv:2305.10286v1 [econ.TH])
+    On the Redistribution of Maximal Extractable Value: A Dynamic Mechanism
 
-    [http://arxiv.org/abs/2305.10286](http://arxiv.org/abs/2305.10286)
+    [https://arxiv.org/abs/2402.15849](https://arxiv.org/abs/2402.15849)
 
-    这篇论文提出了一种既尊重个人意愿又高效的捐赠机制，通过以高效的方式分配每个捐赠者的贡献，没有任何捐助人有动机重新分配他们的捐款。
+    该论文提出了一个动态机制，通过更新最大可提取价值（MEV）提取率，以在矿工和用户之间维持健康平衡。
 
     
 
-    慈善通常由个人捐赠者或中央组织（如政府或市政机构）进行，他们收集个人捐款并将它们分配给一组慈善机构。一方面，个人慈善尊重捐赠者的意愿，但由于缺乏协调而可能效率低下。另一方面，集中慈善可能更有效，但可能忽略个人捐赠者的意愿。我们提出了一种机制，它结合了两种方法的优点，通过以高效的方式分配每个捐赠者的贡献，没有任何捐助人有动机重新分配他们的捐款。在假设Leontief效用函数（即每个捐赠者均希望最大化所有慈善机构的最小贡献的个人加权之和）的情况下，我们的机制是组策略正确、偏好单调、贡献单调、最大化纳什福利并可以计算。
+    最大可提取价值（MEV）已经成为区块链系统设计领域的一个新前沿。去中心化和金融的结合赋予了区块生产者（即矿工）不仅选择和添加交易到区块链的权力，更重要的是，还可以对其进行排序，以尽可能多地从中获利。虽然这种价格对于区块生产者提供的服务来说可能是不可避免的，但链上用户从长远来看可能更愿意使用不那么掠夺性的系统。本文提出将MEV提取率纳入协议设计空间中。我们的目标是利用此参数来维持矿工（需要得到补偿）和用户（需要感到被鼓励进行交易）之间的健康平衡。受EIP-1559引入的交易费原则的启发，我们设计了一个动态机制，旨在通过更新MEV提取率来达到稳定目标。
 
-    Charity is typically done either by individual donors, who donate money to the charities that they support, or by centralized organizations such as governments or municipalities, which collect the individual contributions and distribute them among a set of charities. On the one hand, individual charity respects the will of the donors but may be inefficient due to a lack of coordination. On the other hand, centralized charity is potentially more efficient but may ignore the will of individual donors. We present a mechanism that combines the advantages of both methods by distributing the contribution of each donor in an efficient way such that no subset of donors has an incentive to redistribute their donations. Assuming Leontief utilities (i.e., each donor is interested in maximizing an individually weighted minimum of all contributions across the charities), our mechanism is group-strategyproof, preference-monotonic, contribution-monotonic, maximizes Nash welfare, and can be computed u
+    arXiv:2402.15849v1 Announce Type: cross  Abstract: Maximal Extractable Value (MEV) has emerged as a new frontier in the design of blockchain systems. The marriage between decentralization and finance gives the power to block producers (a.k.a., miners) not only to select and add transactions to the blockchain but, crucially, also to order them so as to extract as much financial gain as possible for themselves. Whilst this price may be unavoidable for the service provided by block producers, users of the chain may in the long run prefer to use less predatory systems. In this paper, we propose to make the MEV extraction rate part of the protocol design space. Our aim is to leverage this parameter to maintain a healthy balance between miners (who need to be compensated) and users (who need to feel encouraged to transact). Inspired by the principles introduced by EIP-1559 for transaction fees, we design a dynamic mechanism which updates the MEV extraction rate with the goal of stabilizing i
+    
+[^3]: 鼓励数据共享以进行能源预测：具有相关数据的分析市场
+
+    Incentivizing Data Sharing for Energy Forecasting: Analytics Markets with Correlated Data. (arXiv:2310.06000v1 [econ.GN])
+
+    [http://arxiv.org/abs/2310.06000](http://arxiv.org/abs/2310.06000)
+
+    该论文开发了一个考虑相关性的分析市场，通过采用Shapley值的归因策略来分配收入，促进了数据共享以提高能源预测的准确性。
+
+    
+
+    准确地预测不确定的电力产量对于电力市场的社会福利具有益处，可以减少平衡资源的需求。将这种预测描述为一项分析任务，当前文献提出了以分析市场作为激励手段来改善精度的数据共享方法，例如利用时空相关性。挑战在于，当相关数据用作预测的输入特征时，重叠信息的价值在于收入分配方面使市场设计复杂化，因为这种价值在本质上是组合的。我们为风力预测应用开发了一个考虑相关性的分析市场。为了分配收入，我们采用了基于Shapley值的归因策略，将代理人的特征视为玩家，将他们的相互作用视为一个特征函数博弈。我们说明了描述这种博弈的多种选项，每个选项都有因果细微差别，影响着特征相关时的市场行为。
+
+    Reliably forecasting uncertain power production is beneficial for the social welfare of electricity markets by reducing the need for balancing resources. Describing such forecasting as an analytics task, the current literature proposes analytics markets as an incentive for data sharing to improve accuracy, for instance by leveraging spatio-temporal correlations. The challenge is that, when used as input features for forecasting, correlated data complicates the market design with respect to the revenue allocation, as the value of overlapping information is inherently combinatorial. We develop a correlation-aware analytics market for a wind power forecasting application. To allocate revenue, we adopt a Shapley value-based attribution policy, framing the features of agents as players and their interactions as a characteristic function game. We illustrate that there are multiple options to describe such a game, each having causal nuances that influence market behavior when features are cor
     
 
