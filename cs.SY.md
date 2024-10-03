@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Incentive-Compatible Vertiport Reservation in Advanced Air Mobility: An Auction-Based Approach](https://arxiv.org/abs/2403.18166) | 本论文提出了一种激励兼容且个体理性的vertiport预订机制，旨在协调多个运营商操作的电动垂直起降（eVTOL）飞行器在vertiports之间移动，最大化所有运营商的总估值同时最小化vertiports的拥堵。 |
+| [^1] | [Controllable Preference Optimization: Toward Controllable Multi-Objective Alignment](https://arxiv.org/abs/2402.19085) | 引入了可控偏好优化（CPO）方法，明确为不同目标指定偏好分数，从而引导模型生成符合需求的响应。 |
 
 # 详细
 
-[^1]: 具有激励兼容性的先进空中移动中的Vertiport预订：基于拍卖的方法
+[^1]: 可控偏好优化：朝着可控多目标对齐方向发展
 
-    Incentive-Compatible Vertiport Reservation in Advanced Air Mobility: An Auction-Based Approach
+    Controllable Preference Optimization: Toward Controllable Multi-Objective Alignment
 
-    [https://arxiv.org/abs/2403.18166](https://arxiv.org/abs/2403.18166)
+    [https://arxiv.org/abs/2402.19085](https://arxiv.org/abs/2402.19085)
 
-    本论文提出了一种激励兼容且个体理性的vertiport预订机制，旨在协调多个运营商操作的电动垂直起降（eVTOL）飞行器在vertiports之间移动，最大化所有运营商的总估值同时最小化vertiports的拥堵。
+    引入了可控偏好优化（CPO）方法，明确为不同目标指定偏好分数，从而引导模型生成符合需求的响应。
 
     
 
-    预计未来先进空中移动（AAM）的崛起将成为一个数十亿美元的产业。市场机制被认为是AAM运营的一个重要组成部分，其中包括具有私人估值的异构运营商。本文研究了设计一种机制来协调由多个具有与其机群关联的异构估值的运营商操作的电动垂直起降（eVTOL）飞行器在vertiports之间移动的问题，同时强制执行vertiports的到达、离开和停车约束。特别是，我们提出了一种激励兼容且个体理性的vertiport预订机制，该机制最大化了一个社会福利度量标准，从而包括最大化所有运营商的总估值同时最小化vertiports的拥堵。此外，我们提高了设计这一机制的计算可处理性
+    人工智能中的对齐工作旨在追求模型响应与人类偏好和价值的一致性。本文引入了可控偏好优化（CPO）方法，明确为不同目标指定偏好分数，从而引导模型生成符合需求的响应。实验分析表明，经过对齐的模型可以提供符合各种偏好的响应。
 
-    arXiv:2403.18166v1 Announce Type: cross  Abstract: The rise of advanced air mobility (AAM) is expected to become a multibillion-dollar industry in the near future. Market-based mechanisms are touted to be an integral part of AAM operations, which comprise heterogeneous operators with private valuations. In this work, we study the problem of designing a mechanism to coordinate the movement of electric vertical take-off and landing (eVTOL) aircraft, operated by multiple operators each having heterogeneous valuations associated with their fleet, between vertiports, while enforcing the arrival, departure, and parking constraints at vertiports. Particularly, we propose an incentive-compatible and individually rational vertiport reservation mechanism that maximizes a social welfare metric, which encapsulates the objective of maximizing the overall valuations of all operators while minimizing the congestion at vertiports. Additionally, we improve the computational tractability of designing th
+    arXiv:2402.19085v1 Announce Type: new  Abstract: Alignment in artificial intelligence pursues the consistency between model responses and human preferences as well as values. In practice, the multifaceted nature of human preferences inadvertently introduces what is known as the "alignment tax" -a compromise where enhancements in alignment within one objective (e.g.,harmlessness) can diminish performance in others (e.g.,helpfulness). However, existing alignment techniques are mostly unidirectional, leading to suboptimal trade-offs and poor flexibility over various objectives. To navigate this challenge, we argue the prominence of grounding LLMs with evident preferences. We introduce controllable preference optimization (CPO), which explicitly specifies preference scores for different objectives, thereby guiding the model to generate responses that meet the requirements. Our experimental analysis reveals that the aligned models can provide responses that match various preferences among t
     
 

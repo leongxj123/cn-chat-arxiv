@@ -2,52 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Paths to Equilibrium in Normal-Form Games](https://arxiv.org/abs/2403.18079) | 本文研究在多智体强化学习中的策略序列，探讨满足特定约束的策略路径，即满足路径，对于构建终止于均衡策略的路径具有重要意义。 |
-| [^2] | [On the Redistribution of Maximal Extractable Value: A Dynamic Mechanism](https://arxiv.org/abs/2402.15849) | 该论文提出了一个动态机制，通过更新最大可提取价值（MEV）提取率，以在矿工和用户之间维持健康平衡。 |
-| [^3] | [Incentivizing Data Sharing for Energy Forecasting: Analytics Markets with Correlated Data.](http://arxiv.org/abs/2310.06000) | 该论文开发了一个考虑相关性的分析市场，通过采用Shapley值的归因策略来分配收入，促进了数据共享以提高能源预测的准确性。 |
+| [^1] | [Optimal Budget Aggregation with Single-Peaked Preferences](https://arxiv.org/abs/2402.15904) | 论文研究了具有单峰偏好的最优预算聚合问题，并在多维泛化的星形效用函数类别中探讨不同模型。对于两种备选方案，证明了统一幻影机制是唯一满足比例性的策略证明机制。然后，对于超过两种备选方案的情况，论文表明不存在同时满足效率、策略性和比例性的机制。 |
+| [^2] | [Logit-Q Dynamics for Efficient Learning in Stochastic Teams.](http://arxiv.org/abs/2302.09806) | 本文提出了两种Logit-Q学习动力学，通过将经典和独立的对数线性学习更新与在政策上的值迭代更新相结合，实现了在随机博弈中的高效学习。通过对比和量化分析，证明了该动力学在随机团队中可以达到（接近）高效均衡。 |
 
 # 详细
 
-[^1]: 正态形式博弈中的均衡路径
+[^1]: 具有单峰偏好的最优预算聚合
 
-    Paths to Equilibrium in Normal-Form Games
+    Optimal Budget Aggregation with Single-Peaked Preferences
 
-    [https://arxiv.org/abs/2403.18079](https://arxiv.org/abs/2403.18079)
+    [https://arxiv.org/abs/2402.15904](https://arxiv.org/abs/2402.15904)
 
-    本文研究在多智体强化学习中的策略序列，探讨满足特定约束的策略路径，即满足路径，对于构建终止于均衡策略的路径具有重要意义。
-
-    
-
-    在多智体强化学习（MARL）中，智体会反复在时间上交互，并随着新数据的到来修订他们的策略，从而产生一系列策略概况。本文研究满足一种由强化学习中政策更新启发的成对约束的策略序列，其中在第 $t$ 期最优应答的智体在下一期 $t+1$ 不会改变其策略。这种约束仅要求优化智体不更改策略，但并不以任何方式限制其他非最优化智体，因此允许探索。具有此属性的序列被称为满足路径，并在许多 MARL 算法中自然出现。关于战略动态的一个基本问题是：对于给定的博弈和初始策略概况，是否总可以构建一个终止于均衡策略的满足路径？这个问题的解决对应着一些重要含义。
-
-    arXiv:2403.18079v1 Announce Type: cross  Abstract: In multi-agent reinforcement learning (MARL), agents repeatedly interact across time and revise their strategies as new data arrives, producing a sequence of strategy profiles. This paper studies sequences of strategies satisfying a pairwise constraint inspired by policy updating in reinforcement learning, where an agent who is best responding in period $t$ does not switch its strategy in the next period $t+1$. This constraint merely requires that optimizing agents do not switch strategies, but does not constrain the other non-optimizing agents in any way, and thus allows for exploration. Sequences with this property are called satisficing paths, and arise naturally in many MARL algorithms. A fundamental question about strategic dynamics is such: for a given game and initial strategy profile, is it always possible to construct a satisficing path that terminates at an equilibrium strategy? The resolution of this question has implication
-    
-[^2]: 关于最大可提取价值再分配的动态机制
-
-    On the Redistribution of Maximal Extractable Value: A Dynamic Mechanism
-
-    [https://arxiv.org/abs/2402.15849](https://arxiv.org/abs/2402.15849)
-
-    该论文提出了一个动态机制，通过更新最大可提取价值（MEV）提取率，以在矿工和用户之间维持健康平衡。
+    论文研究了具有单峰偏好的最优预算聚合问题，并在多维泛化的星形效用函数类别中探讨不同模型。对于两种备选方案，证明了统一幻影机制是唯一满足比例性的策略证明机制。然后，对于超过两种备选方案的情况，论文表明不存在同时满足效率、策略性和比例性的机制。
 
     
 
-    最大可提取价值（MEV）已经成为区块链系统设计领域的一个新前沿。去中心化和金融的结合赋予了区块生产者（即矿工）不仅选择和添加交易到区块链的权力，更重要的是，还可以对其进行排序，以尽可能多地从中获利。虽然这种价格对于区块生产者提供的服务来说可能是不可避免的，但链上用户从长远来看可能更愿意使用不那么掠夺性的系统。本文提出将MEV提取率纳入协议设计空间中。我们的目标是利用此参数来维持矿工（需要得到补偿）和用户（需要感到被鼓励进行交易）之间的健康平衡。受EIP-1559引入的交易费原则的启发，我们设计了一个动态机制，旨在通过更新MEV提取率来达到稳定目标。
+    我们研究了将分布（如预算提案）聚合成集体分布的问题。理想的聚合机制应该是帕累托有效、策略证明和公平的。大多数先前的工作假设代理根据其理想预算与$\ell_1$距离来评估预算。我们研究并比较了来自星形效用函数更大类别的不同模型，这是单峰偏好的多维泛化。对于两种备选方案的情况，我们通过证明在非常一般的假设下，统一幻影机制是唯一满足比例性的策略证明机制，从而扩展了现有结果。对于超过两种备选方案的情况，我们对$\ell_1$和$\ell_\infty$的不满意性建立了全面的不可能性：没有机制能够同时满足效率、策略性和比例性。
 
-    arXiv:2402.15849v1 Announce Type: cross  Abstract: Maximal Extractable Value (MEV) has emerged as a new frontier in the design of blockchain systems. The marriage between decentralization and finance gives the power to block producers (a.k.a., miners) not only to select and add transactions to the blockchain but, crucially, also to order them so as to extract as much financial gain as possible for themselves. Whilst this price may be unavoidable for the service provided by block producers, users of the chain may in the long run prefer to use less predatory systems. In this paper, we propose to make the MEV extraction rate part of the protocol design space. Our aim is to leverage this parameter to maintain a healthy balance between miners (who need to be compensated) and users (who need to feel encouraged to transact). Inspired by the principles introduced by EIP-1559 for transaction fees, we design a dynamic mechanism which updates the MEV extraction rate with the goal of stabilizing i
+    arXiv:2402.15904v1 Announce Type: new  Abstract: We study the problem of aggregating distributions, such as budget proposals, into a collective distribution. An ideal aggregation mechanism would be Pareto efficient, strategyproof, and fair. Most previous work assumes that agents evaluate budgets according to the $\ell_1$ distance to their ideal budget. We investigate and compare different models from the larger class of star-shaped utility functions - a multi-dimensional generalization of single-peaked preferences. For the case of two alternatives, we extend existing results by proving that under very general assumptions, the uniform phantom mechanism is the only strategyproof mechanism that satisfies proportionality - a minimal notion of fairness introduced by Freeman et al. (2021). Moving to the case of more than two alternatives, we establish sweeping impossibilities for $\ell_1$ and $\ell_\infty$ disutilities: no mechanism satisfies efficiency, strategyproofness, and proportionalit
     
-[^3]: 鼓励数据共享以进行能源预测：具有相关数据的分析市场
+[^2]: Logit-Q动力学对于随机团队中的高效学习
 
-    Incentivizing Data Sharing for Energy Forecasting: Analytics Markets with Correlated Data. (arXiv:2310.06000v1 [econ.GN])
+    Logit-Q Dynamics for Efficient Learning in Stochastic Teams. (arXiv:2302.09806v2 [cs.GT] UPDATED)
 
-    [http://arxiv.org/abs/2310.06000](http://arxiv.org/abs/2310.06000)
+    [http://arxiv.org/abs/2302.09806](http://arxiv.org/abs/2302.09806)
 
-    该论文开发了一个考虑相关性的分析市场，通过采用Shapley值的归因策略来分配收入，促进了数据共享以提高能源预测的准确性。
+    本文提出了两种Logit-Q学习动力学，通过将经典和独立的对数线性学习更新与在政策上的值迭代更新相结合，实现了在随机博弈中的高效学习。通过对比和量化分析，证明了该动力学在随机团队中可以达到（接近）高效均衡。
 
     
 
-    准确地预测不确定的电力产量对于电力市场的社会福利具有益处，可以减少平衡资源的需求。将这种预测描述为一项分析任务，当前文献提出了以分析市场作为激励手段来改善精度的数据共享方法，例如利用时空相关性。挑战在于，当相关数据用作预测的输入特征时，重叠信息的价值在于收入分配方面使市场设计复杂化，因为这种价值在本质上是组合的。我们为风力预测应用开发了一个考虑相关性的分析市场。为了分配收入，我们采用了基于Shapley值的归因策略，将代理人的特征视为玩家，将他们的相互作用视为一个特征函数博弈。我们说明了描述这种博弈的多种选项，每个选项都有因果细微差别，影响着特征相关时的市场行为。
+    我们提出了两种Logit-Q学习动力学，将经典和独立的对数线性学习更新与一个在政策上的值迭代更新相结合，以实现在随机博弈中的高效学习。我们证明所提出的Logit-Q动力学在随机团队中达到（接近）高效均衡。我们量化了近似误差的上界。我们还展示了Logit-Q动力学对纯定态策略的合理性，并证明了动力学在奖励函数导致潜在博弈的随机博弈中的收敛性，然而只有一个智能体控制状态转换超出随机团队。关键思路是将动力学与一个虚构的场景近似，其中Q函数估计仅在有限长度的纪元中是定态的，仅用于分析。然后，我们将主要场景和虚构场景中的动力学耦合起来，以展示这两个场景由于逐步减小的步长而越来越相似。
 
-    Reliably forecasting uncertain power production is beneficial for the social welfare of electricity markets by reducing the need for balancing resources. Describing such forecasting as an analytics task, the current literature proposes analytics markets as an incentive for data sharing to improve accuracy, for instance by leveraging spatio-temporal correlations. The challenge is that, when used as input features for forecasting, correlated data complicates the market design with respect to the revenue allocation, as the value of overlapping information is inherently combinatorial. We develop a correlation-aware analytics market for a wind power forecasting application. To allocate revenue, we adopt a Shapley value-based attribution policy, framing the features of agents as players and their interactions as a characteristic function game. We illustrate that there are multiple options to describe such a game, each having causal nuances that influence market behavior when features are cor
+    We present two logit-Q learning dynamics combining the classical and independent log-linear learning updates with an on-policy value iteration update for efficient learning in stochastic games. We show that the logit-Q dynamics presented reach (near) efficient equilibrium in stochastic teams. We quantify a bound on the approximation error. We also show the rationality of the logit-Q dynamics against agents following pure stationary strategies and the convergence of the dynamics in stochastic games where the reward functions induce potential games, yet only a single agent controls the state transitions beyond stochastic teams. The key idea is to approximate the dynamics with a fictional scenario where the Q-function estimates are stationary over finite-length epochs only for analysis. We then couple the dynamics in the main and fictional scenarios to show that these two scenarios become more and more similar across epochs due to the vanishing step size.
     
 
