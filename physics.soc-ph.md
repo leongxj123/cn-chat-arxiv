@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Socioeconomic disparities in mobility behavior during the COVID-19 pandemic in developing countries.](http://arxiv.org/abs/2305.06888) | 本研究通过手机数据发现，在COVID-19大流行期间，生活在低财富社区的城市用户更不可能采取自我隔离的行动，贫穷用户中那些曾经通勤上班到高财富社区的人则特别容易受到影响。 |
+| [^1] | [Exploring language relations through syntactic distances and geographic proximity](https://arxiv.org/abs/2403.18430) | 通过句法距离和地理邻近性探索语言关系，使用POS trigrams最大化捕捉句法变化，建立语言连接并揭示语言家族和群体的簇。 |
 
 # 详细
 
-[^1]: 发展中国家COVID-19疫情期间的社会经济差异与出行行为
+[^1]: 通过句法距离和地理邻近性探索语言关系
 
-    Socioeconomic disparities in mobility behavior during the COVID-19 pandemic in developing countries. (arXiv:2305.06888v1 [physics.soc-ph])
+    Exploring language relations through syntactic distances and geographic proximity
 
-    [http://arxiv.org/abs/2305.06888](http://arxiv.org/abs/2305.06888)
+    [https://arxiv.org/abs/2403.18430](https://arxiv.org/abs/2403.18430)
 
-    本研究通过手机数据发现，在COVID-19大流行期间，生活在低财富社区的城市用户更不可能采取自我隔离的行动，贫穷用户中那些曾经通勤上班到高财富社区的人则特别容易受到影响。
+    通过句法距离和地理邻近性探索语言关系，使用POS trigrams最大化捕捉句法变化，建立语言连接并揭示语言家族和群体的簇。
 
     
 
-    手机数据在量化COVID-19疫情期间的人类流动中发挥了关键作用。现有研究主要关注高收入国家的地区总体情况，掩盖了疫情对最脆弱群体的强烈影响。我们结合来自移动电话和人口普查的地理位置数据，研究了2020年3月至12月期间3个大洲的6个中等收入国家，揭示了不同社会经济群体应对疫情的行为差异。当疫情爆发时，生活在低财富社区中的城市用户更不可能通过自我隔离在家中、搬迁到农村地区或者停止通勤工作来应对。贫穷用户中，那些在疫情之前曾通勤上班到高财富社区的人则面临着重大风险。
+    语言被分为共享相同语言特征的语系。虽然这种方法在理解不同语言之间的基因关系方面取得了成功，但需要更多的分析来准确量化它们的关联性，特别是在较少研究的语言层面，比如句法。本文使用从Universal Dependencies数据集中提取的一系列词性（POS）来探索语言距离。在信息论框架内，我们展示了采用POS三元组最大化捕捉句法变化的可能性，同时与可用数据量兼容。通过基于POS分布的成对距离评估建立语言连接。有趣的是，我们的分析揭示了明确对应于众所周知的语言家族和群体的簇，异常情况被解释为独特的形态类型学。此外，我们获得
 
-    Mobile phone data have played a key role in quantifying human mobility during the COVID-19 pandemic. Existing studies on mobility patterns have primarily focused on regional aggregates in high-income countries, obfuscating the accentuated impact of the pandemic on the most vulnerable populations. By combining geolocation data from mobile phones and population census for 6 middle-income countries across 3 continents between March and December 2020, we uncovered common disparities in the behavioral response to the pandemic across socioeconomic groups. When the pandemic hit, urban users living in low-wealth neighborhoods were less likely to respond by self-isolating at home, relocating to rural areas, or refraining from commuting to work. The gap in the behavioral responses between socioeconomic groups persisted during the entire observation period. Among low-wealth users, those who used to commute to work in high-wealth neighborhoods pre-pandemic were particularly at risk, facing both th
+    arXiv:2403.18430v1 Announce Type: new  Abstract: Languages are grouped into families that share common linguistic traits. While this approach has been successful in understanding genetic relations between diverse languages, more analyses are needed to accurately quantify their relatedness, especially in less studied linguistic levels such as syntax. Here, we explore linguistic distances using series of parts of speech (POS) extracted from the Universal Dependencies dataset. Within an information-theoretic framework, we show that employing POS trigrams maximizes the possibility of capturing syntactic variations while being at the same time compatible with the amount of available data. Linguistic connections are then established by assessing pairwise distances based on the POS distributions. Intriguingly, our analysis reveals definite clusters that correspond to well known language families and groups, with exceptions explained by distinct morphological typologies. Furthermore, we obtain
     
 

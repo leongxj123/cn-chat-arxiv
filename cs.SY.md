@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Controllable Preference Optimization: Toward Controllable Multi-Objective Alignment](https://arxiv.org/abs/2402.19085) | 引入了可控偏好优化（CPO）方法，明确为不同目标指定偏好分数，从而引导模型生成符合需求的响应。 |
+| [^1] | [Solution of the Probabilistic Lambert Problem: Connections with Optimal Mass Transport, Schr\"odinger Bridge and Reaction-Diffusion PDEs.](http://arxiv.org/abs/2401.07961) | 这项研究将概率Lambert问题与最优质量传输、Schr\"odinger桥和反应-扩散偏微分方程等领域连接起来，从而解决了概率Lambert问题的解的存在和唯一性，并提供了数值求解的方法。 |
 
 # 详细
 
-[^1]: 可控偏好优化：朝着可控多目标对齐方向发展
+[^1]: 概率Lambert问题的解决方案：与最优质量传输、Schr\"odinger桥和反应-扩散偏微分方程的连接
 
-    Controllable Preference Optimization: Toward Controllable Multi-Objective Alignment
+    Solution of the Probabilistic Lambert Problem: Connections with Optimal Mass Transport, Schr\"odinger Bridge and Reaction-Diffusion PDEs. (arXiv:2401.07961v1 [math.OC])
 
-    [https://arxiv.org/abs/2402.19085](https://arxiv.org/abs/2402.19085)
+    [http://arxiv.org/abs/2401.07961](http://arxiv.org/abs/2401.07961)
 
-    引入了可控偏好优化（CPO）方法，明确为不同目标指定偏好分数，从而引导模型生成符合需求的响应。
+    这项研究将概率Lambert问题与最优质量传输、Schr\"odinger桥和反应-扩散偏微分方程等领域连接起来，从而解决了概率Lambert问题的解的存在和唯一性，并提供了数值求解的方法。
 
     
 
-    人工智能中的对齐工作旨在追求模型响应与人类偏好和价值的一致性。本文引入了可控偏好优化（CPO）方法，明确为不同目标指定偏好分数，从而引导模型生成符合需求的响应。实验分析表明，经过对齐的模型可以提供符合各种偏好的响应。
+    Lambert问题涉及通过速度控制在规定的飞行时间内将航天器从给定的初始位置转移到给定的终端位置，受到重力力场的限制。我们考虑了Lambert问题的概率变种，其中位置向量的端点约束的知识被它们各自的联合概率密度函数所替代。我们证明了具有端点联合概率密度约束的Lambert问题是一个广义的最优质量传输（OMT）问题，从而将这个经典的天体动力学问题与现代随机控制和随机机器学习的新兴研究领域联系起来。这个新发现的连接使我们能够严格建立概率Lambert问题的解的存在性和唯一性。同样的连接还帮助通过扩散正规化数值求解概率Lambert问题，即通过进一步的连接来利用。
 
-    arXiv:2402.19085v1 Announce Type: new  Abstract: Alignment in artificial intelligence pursues the consistency between model responses and human preferences as well as values. In practice, the multifaceted nature of human preferences inadvertently introduces what is known as the "alignment tax" -a compromise where enhancements in alignment within one objective (e.g.,harmlessness) can diminish performance in others (e.g.,helpfulness). However, existing alignment techniques are mostly unidirectional, leading to suboptimal trade-offs and poor flexibility over various objectives. To navigate this challenge, we argue the prominence of grounding LLMs with evident preferences. We introduce controllable preference optimization (CPO), which explicitly specifies preference scores for different objectives, thereby guiding the model to generate responses that meet the requirements. Our experimental analysis reveals that the aligned models can provide responses that match various preferences among t
+    Lambert's problem concerns with transferring a spacecraft from a given initial to a given terminal position within prescribed flight time via velocity control subject to a gravitational force field. We consider a probabilistic variant of the Lambert problem where the knowledge of the endpoint constraints in position vectors are replaced by the knowledge of their respective joint probability density functions. We show that the Lambert problem with endpoint joint probability density constraints is a generalized optimal mass transport (OMT) problem, thereby connecting this classical astrodynamics problem with a burgeoning area of research in modern stochastic control and stochastic machine learning. This newfound connection allows us to rigorously establish the existence and uniqueness of solution for the probabilistic Lambert problem. The same connection also helps to numerically solve the probabilistic Lambert problem via diffusion regularization, i.e., by leveraging further connection 
     
 
