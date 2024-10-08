@@ -2,52 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [LARA: Linguistic-Adaptive Retrieval-Augmented LLMs for Multi-Turn Intent Classification](https://arxiv.org/abs/2403.16504) | LARA是一个Linguistic-Adaptive Retrieval-Augmented Language Models（语言自适应检索增强LLMs），旨在通过结合微调过的较小模型与检索增强机制来提高多语言多轮意图分类任务的准确性，从而改善对话背景的理解。 |
-| [^2] | [MultiContrievers: Analysis of Dense Retrieval Representations](https://arxiv.org/abs/2402.15925) | 该论文对稠密检索器的信息捕获进行了分析，探讨了其与语言模型的比较、信息提取的可行性以及提取性与性能、性别偏见的关系。 |
-| [^3] | [Retrieval-Augmented Generation: Is Dense Passage Retrieval Retrieving?](https://arxiv.org/abs/2402.11035) | DPR微调预训练网络以增强查询和相关文本数据之间的嵌入对齐，发现训练中知识去中心化，但也揭示了模型内部知识的局限性 |
+| [^1] | [An Empirical Study of Training ID-Agnostic Multi-modal Sequential Recommenders](https://arxiv.org/abs/2403.17372) | 通过研究现有的多模态相关的顺序推荐方法，提炼出视觉编码器、文本编码器、多模态融合模块和顺序架构这四个核心组件。 |
+| [^2] | [Editing Conceptual Knowledge for Large Language Models](https://arxiv.org/abs/2403.06259) | 该论文首次研究了为大型语言模型编辑概念知识，通过构建基准数据集和建立新评估指标，发现现有方法虽然能一定程度上修改概念定义，但也可能造成LLMs中相关实例知识的扭曲，导致性能下降。 |
+| [^3] | [A Pre-trained Sequential Recommendation Framework: Popularity Dynamics for Zero-shot Transfer.](http://arxiv.org/abs/2401.01497) | 本文提出了一个预训练的顺序推荐框架PrepRec，通过建模物品流行度动态学习通用物品表示。在大量实验证明，PrepRec可以零-shot迁移到新领域，并且在模型大小上只有很小一部分，并且实现了竞争性的性能。 |
+| [^4] | [Continually Updating Generative Retrieval on Dynamic Corpora.](http://arxiv.org/abs/2305.18952) | 本文研究了动态语料库上的生成检索。实验结果表明，在静态设置下，生成检索效果优于双编码器，但在动态设置下情况相反。通过使用参数高效的预训练方法，我们的模型DynamicGR在新的语料库上展现出了意外的性能。 |
 
 # 详细
 
-[^1]: LARA：语言自适应检索增强LLMs用于多轮意图分类
+[^1]: 训练独立于ID的多模态顺序推荐器的实证研究
 
-    LARA: Linguistic-Adaptive Retrieval-Augmented LLMs for Multi-Turn Intent Classification
+    An Empirical Study of Training ID-Agnostic Multi-modal Sequential Recommenders
 
-    [https://arxiv.org/abs/2403.16504](https://arxiv.org/abs/2403.16504)
+    [https://arxiv.org/abs/2403.17372](https://arxiv.org/abs/2403.17372)
 
-    LARA是一个Linguistic-Adaptive Retrieval-Augmented Language Models（语言自适应检索增强LLMs），旨在通过结合微调过的较小模型与检索增强机制来提高多语言多轮意图分类任务的准确性，从而改善对话背景的理解。
-
-    
-
-    鉴于大型语言模型(LLMs)取得的显著成就，研究人员已经在文本分类任务中采用了上下文学习。然而，这些研究侧重于单语言、单轮分类任务。本文介绍了LARA（Linguistic-Adaptive Retrieval-Augmented Language Models），旨在增强多语言多轮分类任务的准确性，以适应聊天机器人交互中的众多意图。由于会话背景的复杂性和不断发展的性质，多轮意图分类尤为具有挑战性。LARA通过将微调过的较小模型与检索增强机制结合，嵌入LLMs的架构中来解决这些问题。这种整合使LARA能够动态利用过去的对话和相关意图，从而提高对上下文的理解。此外，我们的自适应检索技术增强了跨语言的能力。
-
-    arXiv:2403.16504v1 Announce Type: new  Abstract: Following the significant achievements of large language models (LLMs), researchers have employed in-context learning for text classification tasks. However, these studies focused on monolingual, single-turn classification tasks. In this paper, we introduce LARA (Linguistic-Adaptive Retrieval-Augmented Language Models), designed to enhance accuracy in multi-turn classification tasks across six languages, accommodating numerous intents in chatbot interactions. Multi-turn intent classification is notably challenging due to the complexity and evolving nature of conversational contexts. LARA tackles these issues by combining a fine-tuned smaller model with a retrieval-augmented mechanism, integrated within the architecture of LLMs. This integration allows LARA to dynamically utilize past dialogues and relevant intents, thereby improving the understanding of the context. Furthermore, our adaptive retrieval techniques bolster the cross-lingual
-    
-[^2]: MultiContrievers: 稠密检索表示的分析
-
-    MultiContrievers: Analysis of Dense Retrieval Representations
-
-    [https://arxiv.org/abs/2402.15925](https://arxiv.org/abs/2402.15925)
-
-    该论文对稠密检索器的信息捕获进行了分析，探讨了其与语言模型的比较、信息提取的可行性以及提取性与性能、性别偏见的关系。
+    通过研究现有的多模态相关的顺序推荐方法，提炼出视觉编码器、文本编码器、多模态融合模块和顺序架构这四个核心组件。
 
     
 
-    稠密检索器将源文档压缩为（可能是有损的）向量表示，然而目前对于失去和保留的信息以及它们如何影响下游任务的分析较少。我们进行了首次对比稠密检索器捕获的信息与它们基于的语言模型（如BERT与Contriever）之间的分析。我们使用25个MultiBert检查点作为随机初始化来训练MultiContrievers，这是一组25个contriever模型。我们测试特定信息（如性别和职业）是否可以从类似维基百科的文档的contriever向量中提取。我们通过信息论探测来衡量这种可提取性。然后我们研究了可提取性与性能、性别偏见之间的关系，以及这些结果对许多随机初始化和数据洗牌的敏感性。我们发现（1）contriever模型有显著增加的可提取性
+    顺序推荐旨在基于历史交互来预测未来用户-物品交互。许多顺序推荐方法集中在用户ID和物品ID上，人类通过多模态信号（如文本和图像）感知世界的方式启发了研究人员探索如何构建不使用ID的多模态信息的顺序推荐。然而，多模态学习的复杂性体现在不同的特征提取器、融合方法和预训练模型中。因此，设计一个简单且通用的多模态顺序推荐（MMSR）框架仍然是一个巨大挑战。我们系统总结了现有的多模态相关的顺序推荐方法，并将精华提炼成四个核心组件：视觉编码器、文本编码器、多模态融合模块和顺序架构。沿着这些维度，我们剖析了模型设计，并回答了以下问题
 
-    arXiv:2402.15925v1 Announce Type: cross  Abstract: Dense retrievers compress source documents into (possibly lossy) vector representations, yet there is little analysis of what information is lost versus preserved, and how it affects downstream tasks. We conduct the first analysis of the information captured by dense retrievers compared to the language models they are based on (e.g., BERT versus Contriever). We use 25 MultiBert checkpoints as randomized initialisations to train MultiContrievers, a set of 25 contriever models. We test whether specific pieces of information -- such as gender and occupation -- can be extracted from contriever vectors of wikipedia-like documents. We measure this extractability via information theoretic probing. We then examine the relationship of extractability to performance and gender bias, as well as the sensitivity of these results to many random initialisations and data shuffles. We find that (1) contriever models have significantly increased extracta
+    arXiv:2403.17372v1 Announce Type: new  Abstract: Sequential Recommendation (SR) aims to predict future user-item interactions based on historical interactions. While many SR approaches concentrate on user IDs and item IDs, the human perception of the world through multi-modal signals, like text and images, has inspired researchers to delve into constructing SR from multi-modal information without using IDs. However, the complexity of multi-modal learning manifests in diverse feature extractors, fusion methods, and pre-trained models. Consequently, designing a simple and universal \textbf{M}ulti-\textbf{M}odal \textbf{S}equential \textbf{R}ecommendation (\textbf{MMSR}) framework remains a formidable challenge. We systematically summarize the existing multi-modal related SR methods and distill the essence into four core components: visual encoder, text encoder, multimodal fusion module, and sequential architecture. Along these dimensions, we dissect the model designs, and answer the foll
     
-[^3]: 密集通道检索：密集通道检索是否在检索中？
+[^2]: 大型语言模型的概念知识编辑
 
-    Retrieval-Augmented Generation: Is Dense Passage Retrieval Retrieving?
+    Editing Conceptual Knowledge for Large Language Models
 
-    [https://arxiv.org/abs/2402.11035](https://arxiv.org/abs/2402.11035)
+    [https://arxiv.org/abs/2403.06259](https://arxiv.org/abs/2403.06259)
 
-    DPR微调预训练网络以增强查询和相关文本数据之间的嵌入对齐，发现训练中知识去中心化，但也揭示了模型内部知识的局限性
+    该论文首次研究了为大型语言模型编辑概念知识，通过构建基准数据集和建立新评估指标，发现现有方法虽然能一定程度上修改概念定义，但也可能造成LLMs中相关实例知识的扭曲，导致性能下降。
 
     
 
-    密集通道检索（DPR）是改进大型语言模型（LLM）性能的检索增强生成（RAG）范式中的第一步。 DPR微调预训练网络，以增强查询和相关文本数据之间的嵌入对齐。对DPR微调的深入理解将需要从根本上释放该方法的全部潜力。在这项工作中，我们通过使用探针、层激活分析和模型编辑的组合，机械地探索了DPR训练模型。我们的实验证明，DPR训练使网络中存储知识的方式去中心化，创建了访问相同信息的多个路径。我们还发现了这种训练风格的局限性：预训练模型的内部知识限制了检索模型可以检索的内容。这些发现为密集检索提出了一些可能的方向：（1）暴露DPR训练过程
+    最近，对于大型语言模型（LLMs）的知识编辑引起了越来越多的关注。当前的方法和评估仅探讨了实例级别的编辑，然而LLMs是否具有修改概念的能力仍不清楚。本文首次研究了为LLMs编辑概念知识，通过构建一个新颖的基准数据集ConceptEdit并建立了一套新的评估指标。实验结果表明，尽管现有的编辑方法可以有效地在一定程度上修改概念级别的定义，但它们也有潜力扭曲LLMs中相关的实例知识，导致性能不佳。我们期望这可以激发对更好理解LLMs的进一步进展。我们的项目主页位于https://zjunlp.github.io/project/ConceptEdit。
 
-    arXiv:2402.11035v1 Announce Type: new  Abstract: Dense passage retrieval (DPR) is the first step in the retrieval augmented generation (RAG) paradigm for improving the performance of large language models (LLM). DPR fine-tunes pre-trained networks to enhance the alignment of the embeddings between queries and relevant textual data. A deeper understanding of DPR fine-tuning will be required to fundamentally unlock the full potential of this approach. In this work, we explore DPR-trained models mechanistically by using a combination of probing, layer activation analysis, and model editing. Our experiments show that DPR training decentralizes how knowledge is stored in the network, creating multiple access pathways to the same information. We also uncover a limitation in this training style: the internal knowledge of the pre-trained model bounds what the retrieval model can retrieve. These findings suggest a few possible directions for dense retrieval: (1) expose the DPR training process 
+    arXiv:2403.06259v1 Announce Type: cross  Abstract: Recently, there has been a growing interest in knowledge editing for Large Language Models (LLMs). Current approaches and evaluations merely explore the instance-level editing, while whether LLMs possess the capability to modify concepts remains unclear. This paper pioneers the investigation of editing conceptual knowledge for LLMs, by constructing a novel benchmark dataset ConceptEdit and establishing a suite of new metrics for evaluation. The experimental results reveal that, although existing editing methods can efficiently modify concept-level definition to some extent, they also have the potential to distort the related instantial knowledge in LLMs, leading to poor performance. We anticipate this can inspire further progress in better understanding LLMs. Our project homepage is available at https://zjunlp.github.io/project/ConceptEdit.
+    
+[^3]: 一个预训练的顺序推荐框架：基于流行度动态的零-shot迁移
+
+    A Pre-trained Sequential Recommendation Framework: Popularity Dynamics for Zero-shot Transfer. (arXiv:2401.01497v1 [cs.IR])
+
+    [http://arxiv.org/abs/2401.01497](http://arxiv.org/abs/2401.01497)
+
+    本文提出了一个预训练的顺序推荐框架PrepRec，通过建模物品流行度动态学习通用物品表示。在大量实验证明，PrepRec可以零-shot迁移到新领域，并且在模型大小上只有很小一部分，并且实现了竞争性的性能。
+
+    
+
+    顺序推荐对于在线应用如电子商务、视频流媒体和社交媒体的成功至关重要。尽管模型架构不断改进，但对于每个新的应用领域，我们仍然需要从头训练一个新模型以获得高质量的推荐。另一方面，预训练的语言和视觉模型已经在零-shot或少-shot适应新应用领域方面取得了巨大成功。受到同行AI领域预训练模型成功的启发，我们提出了一种新颖的预训练顺序推荐框架：PrepRec。我们通过建模物品流行度动态来学习通用物品表示。通过在五个真实世界数据集上的大量实验证明，PrepRec在没有任何辅助信息的情况下不仅能够零-shot迁移到新领域，并且与同类最先进的顺序推荐模型相比，模型大小仅相当一小部分的情况下，可以实现竞争性的性能。
+
+    Sequential recommenders are crucial to the success of online applications, \eg e-commerce, video streaming, and social media. While model architectures continue to improve, for every new application domain, we still have to train a new model from scratch for high quality recommendations. On the other hand, pre-trained language and vision models have shown great success in zero-shot or few-shot adaptation to new application domains. Inspired by the success of pre-trained models in peer AI fields, we propose a novel pre-trained sequential recommendation framework: PrepRec. We learn universal item representations by modeling item popularity dynamics. Through extensive experiments on five real-world datasets, we show that PrepRec, without any auxiliary information, can not only zero-shot transfer to a new domain, but achieve competitive performance compared to state-of-the-art sequential recommender models with only a fraction of the model size. In addition, with a simple post-hoc interpol
+    
+[^4]: 在动态语料库上持续更新生成检索
+
+    Continually Updating Generative Retrieval on Dynamic Corpora. (arXiv:2305.18952v2 [cs.IR] UPDATED)
+
+    [http://arxiv.org/abs/2305.18952](http://arxiv.org/abs/2305.18952)
+
+    本文研究了动态语料库上的生成检索。实验结果表明，在静态设置下，生成检索效果优于双编码器，但在动态设置下情况相反。通过使用参数高效的预训练方法，我们的模型DynamicGR在新的语料库上展现出了意外的性能。
+
+    
+
+    先前关于信息检索(IR)的大多数研究假设语料库是静态的，而实际世界中的文档是不断更新的。本文将知识的动态性引入检索系统中，将检索视为动态的知识库，更符合真实环境。我们对双编码器和生成检索进行全面评估，利用StreamingQA基准测试用于时态知识更新。我们的初步结果显示，在静态设置下，生成检索优于双编码器，但在动态设置下情况相反。然而，令人惊讶的是，当我们利用参数高效的预训练方法增强生成检索对新语料库的适应性时，我们的模型Dynamic Generative Retrieval (DynamicGR)展现出意外的发现。它能够在其内部索引中高效压缩新的知识，
+
+    The majority of prior work on information retrieval (IR) assumes that the corpus is static, whereas in the real world, the documents are continually updated. In this paper, we incorporate often overlooked dynamic nature of knowledge into the retrieval systems. Our work treats retrieval not as static archives but as dynamic knowledge bases better aligned with real-world environments. We conduct a comprehensive evaluation of dual encoders and generative retrieval, utilizing the StreamingQA benchmark designed for the temporal knowledge updates. Our initial results show that while generative retrieval outperforms dual encoders in static settings, the opposite is true in dynamic settings. Surprisingly, however, when we utilize a parameter-efficient pre-training method to enhance adaptability of generative retrieval to new corpora, our resulting model, Dynamic Generative Retrieval (DynamicGR), exhibits unexpected findings. It (1) efficiently compresses new knowledge in their internal index, 
     
 

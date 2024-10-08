@@ -2,142 +2,172 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [AID: Attention Interpolation of Text-to-Image Diffusion](https://arxiv.org/abs/2403.17924) | 提出了一种新颖的无训练技术，即Attention Interpolation via Diffusion (AID)，通过内/外插值注意力层、插值注意力与自注意力融合以提高保真度，以及应用贝塔分布进行选择以增加平滑度来改进文本到图像插值的问题。 |
-| [^2] | [Exploiting Semantic Reconstruction to Mitigate Hallucinations in Vision-Language Models](https://arxiv.org/abs/2403.16167) | 通过准确定位和惩罚幻觉标记，ESREAL引入了一种新颖的无监督学习框架，通过语义重建来抑制生成幻觉，解决了视觉-语言模型中幻觉问题。 |
-| [^3] | [Data-centric Prediction Explanation via Kernelized Stein Discrepancy](https://arxiv.org/abs/2403.15576) | 该论文提出了一种基于内核化斯坦不相容性的数据中心预测解释方法，通过利用内核函数识别提供最佳预测支持给测试点的训练样本，取得了优异性能。 |
-| [^4] | [Finer: Investigating and Enhancing Fine-Grained Visual Concept Recognition in Large Vision Language Models](https://arxiv.org/abs/2402.16315) | Finer工作揭示了大型视觉语言模型在细粒度视觉分类上的短板，尤其是难以生成准确的细致属性解释，尽管具有生成高水平图像解释的能力。 |
-| [^5] | [CommVQA: Situating Visual Question Answering in Communicative Contexts](https://arxiv.org/abs/2402.15002) | CommVQA数据集将图像置于自然环境中，挑战了当前的VQA模型，结果表明为模型提供上下文信息能够提高性能。 |
-| [^6] | [Statistical Test for Generated Hypotheses by Diffusion Models](https://arxiv.org/abs/2402.11789) | 本研究提出了一种统计检验方法，通过选择性推断框架，在考虑生成图像是由训练的扩散模型产生的条件下，量化医学图像诊断结果的可靠性。 |
-| [^7] | [MITS-GAN: Safeguarding Medical Imaging from Tampering with Generative Adversarial Networks.](http://arxiv.org/abs/2401.09624) | MITS-GAN是一种用于保护医学影像免受篡改的新方法，通过引入适当的高斯噪声作为防护措施，打乱攻击者的生成对抗网络架构的输出。实验结果表明MITS-GAN能够生成耐篡改图像，具有优越的性能。 |
-| [^8] | [MosaicFusion: Diffusion Models as Data Augmenters for Large Vocabulary Instance Segmentation.](http://arxiv.org/abs/2309.13042) | MosaicFusion是一种用于大词汇实例分割的数据增强方法，通过将扩散模型作为数据集生成器，能够生成大量合成标记数据。在实验中，我们的方法在准确率和泛化能力方面取得了显著的提升。 |
-| [^9] | [Scattering Spectra Models for Physics.](http://arxiv.org/abs/2306.17210) | 本文介绍了物理学中的散射谱模型，用于描述各种场的统计特性。这些模型基于散射系数的协方差，结合了场的小波分解和点位模，能够准确且稳健地重现标准统计量，捕捉了关键特性。 |
+| [^1] | [Generalized Consistency Trajectory Models for Image Manipulation](https://arxiv.org/abs/2403.12510) | 本研究提出了广义一致性轨迹模型（GCTMs），能够在任何噪声分布和数据分布之间实现转换。 |
+| [^2] | [SELFI: Autonomous Self-Improvement with Reinforcement Learning for Social Navigation](https://arxiv.org/abs/2403.00991) | SELFI提出了一种在线学习方法，通过将在线无模型强化学习与离线基于模型的学习相结合，实现了机器人行为的快速改进，并在避撞和社交遵从行为方面取得了显著进展。 |
+| [^3] | [Spectrum Extraction and Clipping for Implicitly Linear Layers](https://arxiv.org/abs/2402.16017) | 展示自动微分在计算和控制隐式线性算子频谱中的有效性；提供第一个适用于一般卷积层的裁剪方法；研究了批归一化层与卷积层组合的效果；通过比较算法与最先进方法的精度和性能表明更精确和高效。 |
+| [^4] | [Large-Scale Actionless Video Pre-Training via Discrete Diffusion for Efficient Policy Learning](https://arxiv.org/abs/2402.14407) | 利用离散扩散结合生成式预训练和少量机器人视频微调，实现从人类视频到机器人策略学习的知识迁移。 |
+| [^5] | [Switch EMA: A Free Lunch for Better Flatness and Sharpness](https://arxiv.org/abs/2402.09240) | 本研究提出了一种称为Switch EMA（SEMA）的方法，通过简单的修改指数移动平均（EMA）参数，可以帮助深度神经网络（DNN）达到更好的平坦性和锐度的概括最优解。通过在多个任务和数据集上进行实验证明了SEMA的有效性。 |
+| [^6] | [Learning Contrastive Feature Representations for Facial Action Unit Detection](https://arxiv.org/abs/2402.06165) | 这项研究提出了一种对比学习框架，通过监督和自监督信号来增强面部动作单元检测模型的性能。采用正样本抽样和权衡重要性的损失函数来应对噪声AU标签和AU类型分布不平衡的挑战。 |
+| [^7] | [NoSENSE: Learned unrolled cardiac MRI reconstruction without explicit sensitivity maps.](http://arxiv.org/abs/2309.15608) | 本文提出了一种无需显式灵敏度图的展开心脏MRI重建方法，使用深度卷积神经网络和算法展开，通过学习图像之间的接收线圈关系来实现加速心脏MRI重建，在实验中取得了较好的性能。 |
+| [^8] | [Attention-Driven Multi-Modal Fusion: Enhancing Sign Language Recognition and Translation.](http://arxiv.org/abs/2309.01860) | 本文提出了一种注意力驱动的多模态融合机制，通过将光流信息与RGB图像相结合，丰富了连续手语识别和翻译流程中的特征。该方法在手语识别任务中降低了WER 0.9，在翻译任务中提高了测试集上大多数BLEU分数约0.6。 |
+| [^9] | [Classification of Blood Cells Using Deep Learning Models.](http://arxiv.org/abs/2308.06300) | 这项研究使用深度学习模型通过图像分类对人类血细胞进行了分类和识别，为诊断疾病提供了重要的帮助。 |
+| [^10] | [Encode-Store-Retrieve: Enhancing Memory Augmentation through Language-Encoded Egocentric Perception.](http://arxiv.org/abs/2308.05822) | 本研究提出了一种记忆增强系统，它利用自然语言编码视频数据并将其存储在向量数据库中，通过利用大型视觉语言模型的强大功能来进行语言编码的过程。 |
+| [^11] | [CST-YOLO: A Novel Method for Blood Cell Detection Based on Improved YOLOv7 and CNN-Swin Transformer.](http://arxiv.org/abs/2306.14590) | 本论文提出了一种CST-YOLO算法，基于改进的YOLOv7和CNN-Swin Transformer，引入了几个有用的模型，有效提高了血细胞检测精度，实验结果显示其在三个血细胞数据集上均优于现有最先进算法。 |
 
 # 详细
 
-[^1]: AID: 文本到图像扩散的注重插值
+[^1]: 图像操作的广义一致性轨迹模型
 
-    AID: Attention Interpolation of Text-to-Image Diffusion
+    Generalized Consistency Trajectory Models for Image Manipulation
 
-    [https://arxiv.org/abs/2403.17924](https://arxiv.org/abs/2403.17924)
+    [https://arxiv.org/abs/2403.12510](https://arxiv.org/abs/2403.12510)
 
-    提出了一种新颖的无训练技术，即Attention Interpolation via Diffusion (AID)，通过内/外插值注意力层、插值注意力与自注意力融合以提高保真度，以及应用贝塔分布进行选择以增加平滑度来改进文本到图像插值的问题。
-
-    
-
-    arXiv:2403.17924v1 公告类型: 跨领域 摘要: 有条件的扩散模型可以在各种设置中创建看不见的图像，有助于图像插值。潜在空间中的插值已经得到了深入研究，但是具有特定条件（如文本或姿势）的插值却了解不多。简单的方法，如在条件空间中的线性插值，通常会导致图像缺乏一致性、平滑度和保真度。为此，我们引入一个名为Attention Interpolation via Diffusion (AID)的新颖无训练技术。我们的主要贡献包括1）提出了一个内/外插值注意力层；2）将插值注意力与自注意力融合以提高保真度；3）应用贝塔分布进行选择以增加平滑度。我们还提出了一种变体，Prompt-guided Attention Interpolation via Diffusion (PAID)，它将插值视为依赖于条件的生成过程。这种方法可以创建出更具创造性的新图像。
-
-    arXiv:2403.17924v1 Announce Type: cross  Abstract: Conditional diffusion models can create unseen images in various settings, aiding image interpolation. Interpolation in latent spaces is well-studied, but interpolation with specific conditions like text or poses is less understood. Simple approaches, such as linear interpolation in the space of conditions, often result in images that lack consistency, smoothness, and fidelity. To that end, we introduce a novel training-free technique named Attention Interpolation via Diffusion (AID). Our key contributions include 1) proposing an inner/outer interpolated attention layer; 2) fusing the interpolated attention with self-attention to boost fidelity; and 3) applying beta distribution to selection to increase smoothness. We also present a variant, Prompt-guided Attention Interpolation via Diffusion (PAID), that considers interpolation as a condition-dependent generative process. This method enables the creation of new images with greater con
-    
-[^2]: 利用语义重建减少视觉-语言模型中的幻觉
-
-    Exploiting Semantic Reconstruction to Mitigate Hallucinations in Vision-Language Models
-
-    [https://arxiv.org/abs/2403.16167](https://arxiv.org/abs/2403.16167)
-
-    通过准确定位和惩罚幻觉标记，ESREAL引入了一种新颖的无监督学习框架，通过语义重建来抑制生成幻觉，解决了视觉-语言模型中幻觉问题。
+    本研究提出了广义一致性轨迹模型（GCTMs），能够在任何噪声分布和数据分布之间实现转换。
 
     
 
-    视觉-语言模型中的幻觉对其可靠性构成重大挑战，特别是在生成长标题时。当前方法无法准确识别和减轻这些幻觉。为了解决这个问题，我们引入了ESREAL，这是一个新颖的无监督学习框架，旨在通过准确定位和惩罚幻觉标记来抑制幻觉生成。最初，ESREAL根据生成的标题创建一个重建图像，并将其对应区域与原始图像的区域对齐。这种语义重建有助于识别生成标题中的标记级幻觉的存在和类型。随后，ESREAL通过评估对齐区域的语义相似性来计算标记级幻觉分数，基于幻觉的类型。最后，ESREAL采用一种近端策略优化算法，进行...
+    基于扩散的生成模型在无条件生成以及图像编辑和恢复等应用任务中表现出色。扩散模型的成功在于扩散的迭代性质：扩散将将噪声到数据的复杂映射过程分解为一系列简单的去噪任务。此外，通过在每个去噪步骤中注入引导项，我们能够对生成过程进行精细控制。然而，迭代过程也常常计算密集，通常需要进行数十次甚至数千次函数评估。虽然一致性轨迹模型（CTMs）可以在概率流ODE（PFODE）上任意时间点之间进行遍历，并且通过单次函数评估进行得分推导，但CTMs仅允许从高斯噪声转换为数据。因此，本文旨在通过提出广义CTMs（GCTMs）来发挥CTMs的全部潜力，实现在任何噪声分布和数据分布之间进行转换。
 
-    arXiv:2403.16167v1 Announce Type: cross  Abstract: Hallucinations in vision-language models pose a significant challenge to their reliability, particularly in the generation of long captions. Current methods fall short of accurately identifying and mitigating these hallucinations. To address this issue, we introduce ESREAL, a novel unsupervised learning framework designed to suppress the generation of hallucinations through accurate localization and penalization of hallucinated tokens. Initially, ESREAL creates a reconstructed image based on the generated caption and aligns its corresponding regions with those of the original image. This semantic reconstruction aids in identifying both the presence and type of token-level hallucinations within the generated caption. Subsequently, ESREAL computes token-level hallucination scores by assessing the semantic similarity of aligned regions based on the type of hallucination. Finally, ESREAL employs a proximal policy optimization algorithm, wh
+    arXiv:2403.12510v1 Announce Type: cross  Abstract: Diffusion-based generative models excel in unconditional generation, as well as on applied tasks such as image editing and restoration. The success of diffusion models lies in the iterative nature of diffusion: diffusion breaks down the complex process of mapping noise to data into a sequence of simple denoising tasks. Moreover, we are able to exert fine-grained control over the generation process by injecting guidance terms into each denoising step. However, the iterative process is also computationally intensive, often taking from tens up to thousands of function evaluations. Although consistency trajectory models (CTMs) enable traversal between any time points along the probability flow ODE (PFODE) and score inference with a single function evaluation, CTMs only allow translation from Gaussian noise to data. Thus, this work aims to unlock the full potential of CTMs by proposing generalized CTMs (GCTMs), which translate between arbit
     
-[^3]: 基于内核化斯坦不相容性的数据中心预测解释
+[^2]: SELFI: 利用强化学习实现自主自我改进以进行社交导航
 
-    Data-centric Prediction Explanation via Kernelized Stein Discrepancy
+    SELFI: Autonomous Self-Improvement with Reinforcement Learning for Social Navigation
 
-    [https://arxiv.org/abs/2403.15576](https://arxiv.org/abs/2403.15576)
+    [https://arxiv.org/abs/2403.00991](https://arxiv.org/abs/2403.00991)
 
-    该论文提出了一种基于内核化斯坦不相容性的数据中心预测解释方法，通过利用内核函数识别提供最佳预测支持给测试点的训练样本，取得了优异性能。
-
-    
-
-    现有的基于示例的预测解释方法通常通过模型的参数或潜在表示来连接测试和训练数据点。尽管这些方法提供了有关模型预测原因的线索，但它们经常表现出固有的缺陷，比如产生显着的计算开销或生成粗粒度的解释。本文提出了一种高精度和数据中心的解释（HD-Explain），这是一种利用内核化斯坦不相容性（KSD）属性的简单预测解释方法。具体来说，KSD唯一地为经过训练的模型定义了一个参数化的内核函数，用于编码与模型相关的数据相关性。通过利用内核函数，可以有效地识别提供最佳预测支持给测试点的训练样本。我们在多个分类领域进行了彻底的分析和实验，结果表明HD-Explain取得了优异的性能。
-
-    arXiv:2403.15576v1 Announce Type: new  Abstract: Existing example-based prediction explanation methods often bridge test and training data points through the model's parameters or latent representations. While these methods offer clues to the causes of model predictions, they often exhibit innate shortcomings, such as incurring significant computational overhead or producing coarse-grained explanations. This paper presents a Highly-precise and Data-centric Explanation (HD-Explain), a straightforward prediction explanation method exploiting properties of Kernelized Stein Discrepancy (KSD). Specifically, the KSD uniquely defines a parameterized kernel function for a trained model that encodes model-dependent data correlation. By leveraging the kernel function, one can identify training samples that provide the best predictive support to a test point efficiently. We conducted thorough analyses and experiments across multiple classification domains, where we show that HD-Explain outperform
-    
-[^4]: Finer: 在大型视觉语言模型中研究和增强细粒度视觉概念识别
-
-    Finer: Investigating and Enhancing Fine-Grained Visual Concept Recognition in Large Vision Language Models
-
-    [https://arxiv.org/abs/2402.16315](https://arxiv.org/abs/2402.16315)
-
-    Finer工作揭示了大型视觉语言模型在细粒度视觉分类上的短板，尤其是难以生成准确的细致属性解释，尽管具有生成高水平图像解释的能力。
+    SELFI提出了一种在线学习方法，通过将在线无模型强化学习与离线基于模型的学习相结合，实现了机器人行为的快速改进，并在避撞和社交遵从行为方面取得了显著进展。
 
     
 
-    最近指导调整的大型视觉语言模型（LVLMs）的进展使模型能够轻松生成高水平的基于图像的解释。尽管这种能力主要归因于大型语言模型（LLMs）中包含的丰富世界知识，但我们的工作揭示了它们在六个不同基准设置下的细粒度视觉分类（FGVC）上的缺陷。最近的LVLMs最先进的模型，如LLaVa-1.5，InstructBLIP和GPT-4V，在分类性能方面严重下降，例如，LLaVA-1.5在斯坦福狗的EM平均下降了65.58，而且还难以根据出现在输入图像中的概念生成具有详细属性的准确解释，尽管它们有生成整体图像级描述的能力。深入分析表明，经过指导调整的LVLMs在给定文本时呈现出模态差距，显示出存在不一致性
+    自主自我改进的机器人通过与环境互动和经验积累来实现将是机器人系统在现实世界中投入使用的关键。本文提出了一种在线学习方法SELFI，利用在线机器人经验来快速高效地微调预训练的控制策略。SELFI将在线无模型强化学习应用于离线基于模型的学习之上，以发挥这两种学习范式的优点。具体来说，SELFI通过将离线预训练的模型学习目标与在线无模型强化学习中学习到的Q值相结合，稳定了在线学习过程。我们在多个现实环境中评估了SELFI，并报告了在避撞方面的改善，以及通过人类用户研究测量的更具社交遵从行为。SELFI使我们能够快速学习有用的机器人行为，减少了预先干预的人员干预。
 
-    arXiv:2402.16315v1 Announce Type: cross  Abstract: Recent advances in instruction-tuned Large Vision-Language Models (LVLMs) have imbued the models with the ability to generate high-level, image-grounded explanations with ease. While such capability is largely attributed to the rich world knowledge contained within the Large Language Models (LLMs), our work reveals their shortcomings in fine-grained visual categorization (FGVC) across six different benchmark settings. Most recent state-of-the-art LVLMs like LLaVa-1.5, InstructBLIP and GPT-4V not only severely deteriorate in terms of classification performance, e.g., average drop of 65.58 in EM for Stanford Dogs for LLaVA-1.5, but also struggle to generate an accurate explanation with detailed attributes based on the concept that appears within an input image despite their capability to generate holistic image-level descriptions. In-depth analyses show that instruction-tuned LVLMs exhibit modality gap, showing discrepancy when given tex
+    arXiv:2403.00991v1 Announce Type: cross  Abstract: Autonomous self-improving robots that interact and improve with experience are key to the real-world deployment of robotic systems. In this paper, we propose an online learning method, SELFI, that leverages online robot experience to rapidly fine-tune pre-trained control policies efficiently. SELFI applies online model-free reinforcement learning on top of offline model-based learning to bring out the best parts of both learning paradigms. Specifically, SELFI stabilizes the online learning process by incorporating the same model-based learning objective from offline pre-training into the Q-values learned with online model-free reinforcement learning. We evaluate SELFI in multiple real-world environments and report improvements in terms of collision avoidance, as well as more socially compliant behavior, measured by a human user study. SELFI enables us to quickly learn useful robotic behaviors with less human interventions such as pre-e
     
-[^5]: 将视觉问答置于交际背景中的CommVQA
+[^3]: 隐式线性层的频谱提取和裁剪
 
-    CommVQA: Situating Visual Question Answering in Communicative Contexts
+    Spectrum Extraction and Clipping for Implicitly Linear Layers
 
-    [https://arxiv.org/abs/2402.15002](https://arxiv.org/abs/2402.15002)
+    [https://arxiv.org/abs/2402.16017](https://arxiv.org/abs/2402.16017)
 
-    CommVQA数据集将图像置于自然环境中，挑战了当前的VQA模型，结果表明为模型提供上下文信息能够提高性能。
-
-    
-
-    当前的视觉问答（VQA）模型往往在孤立的图像-问题对上进行训练和评估。然而，人们提出的问题取决于他们的信息需求和对图像内容的先前了解。为了评估将图像置于自然环境中如何塑造视觉问题，我们引入了CommVQA，这是一个包含图像、图像描述、图像可能出现的真实交际场景（例如旅行网站）以及依赖于场景的后续问题和答案的VQA数据集。我们展示了CommVQA对当前模型提出了挑战。为VQA模型提供上下文信息可广泛提高性能，突显将系统置于交际场景中的相关性。
-
-    arXiv:2402.15002v1 Announce Type: new  Abstract: Current visual question answering (VQA) models tend to be trained and evaluated on image-question pairs in isolation. However, the questions people ask are dependent on their informational needs and prior knowledge about the image content. To evaluate how situating images within naturalistic contexts shapes visual questions, we introduce CommVQA, a VQA dataset consisting of images, image descriptions, real-world communicative scenarios where the image might appear (e.g., a travel website), and follow-up questions and answers conditioned on the scenario. We show that CommVQA poses a challenge for current models. Providing contextual information to VQA models improves performance broadly, highlighting the relevance of situating systems within a communicative scenario.
-    
-[^6]: 通过扩散模型生成的假设的统计检验
-
-    Statistical Test for Generated Hypotheses by Diffusion Models
-
-    [https://arxiv.org/abs/2402.11789](https://arxiv.org/abs/2402.11789)
-
-    本研究提出了一种统计检验方法，通过选择性推断框架，在考虑生成图像是由训练的扩散模型产生的条件下，量化医学图像诊断结果的可靠性。
+    展示自动微分在计算和控制隐式线性算子频谱中的有效性；提供第一个适用于一般卷积层的裁剪方法；研究了批归一化层与卷积层组合的效果；通过比较算法与最先进方法的精度和性能表明更精确和高效。
 
     
 
-    AI的增强性能加速了其融入科学研究。特别是，利用生成式AI创建科学假设是很有前途的，并且正在越来越多地应用于各个领域。然而，当使用AI生成的假设进行关键决策（如医学诊断）时，验证它们的可靠性至关重要。在本研究中，我们考虑使用扩散模型生成的图像进行医学诊断任务，并提出了一种统计检验来量化其可靠性。所提出的统计检验的基本思想是使用选择性推断框架，我们考虑在生成的图像是由经过训练的扩散模型产生的这一事实条件下的统计检验。利用所提出的方法，医学图像诊断结果的统计可靠性可以以p值的形式量化，从而实现在控制错误率的情况下进行决策。
+    我们展示了自动微分在高效准确计算和控制隐式线性算子的频谱上的有效性，这是一类包括所有标准卷积和全连接层的丰富层类型。我们提供了第一个适用于一般卷积层的裁剪方法，并阐明了导致之前工作中正确性问题的表示限制。我们研究了批归一化层与卷积层串联时的效果，并展示了我们的裁剪方法如何应用于它们的组合。通过对我们的算法与最先进方法的精度和性能进行比较，我们使用各种实验表明它们更精确和高效，能够实现更好的泛化和对抗鲁棒性。我们提供了使用我们方法的代码链接https://github.com/Ali-E/FastClip。
 
-    arXiv:2402.11789v1 Announce Type: cross  Abstract: The enhanced performance of AI has accelerated its integration into scientific research. In particular, the use of generative AI to create scientific hypotheses is promising and is increasingly being applied across various fields. However, when employing AI-generated hypotheses for critical decisions, such as medical diagnoses, verifying their reliability is crucial. In this study, we consider a medical diagnostic task using generated images by diffusion models, and propose a statistical test to quantify its reliability. The basic idea behind the proposed statistical test is to employ a selective inference framework, where we consider a statistical test conditional on the fact that the generated images are produced by a trained diffusion model. Using the proposed method, the statistical reliability of medical image diagnostic results can be quantified in the form of a p-value, allowing for decision-making with a controlled error rate. 
+    arXiv:2402.16017v1 Announce Type: new  Abstract: We show the effectiveness of automatic differentiation in efficiently and correctly computing and controlling the spectrum of implicitly linear operators, a rich family of layer types including all standard convolutional and dense layers. We provide the first clipping method which is correct for general convolution layers, and illuminate the representational limitation that caused correctness issues in prior work. We study the effect of the batch normalization layers when concatenated with convolutional layers and show how our clipping method can be applied to their composition. By comparing the accuracy and performance of our algorithms to the state-of-the-art methods, using various experiments, we show they are more precise and efficient and lead to better generalization and adversarial robustness. We provide the code for using our methods at https://github.com/Ali-E/FastClip.
     
-[^7]: MITS-GAN: 用生成对抗网络保护医学影像免受篡改
+[^4]: 通过离散扩散进行大规模无动作视频预训练，以实现高效策略学习
 
-    MITS-GAN: Safeguarding Medical Imaging from Tampering with Generative Adversarial Networks. (arXiv:2401.09624v1 [eess.IV])
+    Large-Scale Actionless Video Pre-Training via Discrete Diffusion for Efficient Policy Learning
 
-    [http://arxiv.org/abs/2401.09624](http://arxiv.org/abs/2401.09624)
+    [https://arxiv.org/abs/2402.14407](https://arxiv.org/abs/2402.14407)
 
-    MITS-GAN是一种用于保护医学影像免受篡改的新方法，通过引入适当的高斯噪声作为防护措施，打乱攻击者的生成对抗网络架构的输出。实验结果表明MITS-GAN能够生成耐篡改图像，具有优越的性能。
-
-    
-
-    生成模型，特别是生成对抗网络（GANs），在图像生成方面取得了进展，但也引发了潜在的恶意使用的担忧，尤其是在医学影像等敏感领域。本研究提出了一种新颖的方法MITS-GAN，用于防止医学影像中的篡改，特别关注CT扫描。该方法通过引入不可察觉但精确的扰动来打乱攻击者的CT-GAN架构的输出。具体而言，所提出的方法涉及将适当的高斯噪声引入到输入中作为对各种攻击的保护措施。我们的方法旨在提高防篡改能力，与现有技术相比具有优势。对CT扫描数据集的实验结果表明MITS-GAN具有卓越的性能，强调了其能够生成具有可忽略伪影的耐篡改图像的能力。由于医学领域中的图像篡改带来了危及生命的风险，我们的主动防护方法具有重要意义。
-
-    The progress in generative models, particularly Generative Adversarial Networks (GANs), opened new possibilities for image generation but raised concerns about potential malicious uses, especially in sensitive areas like medical imaging. This study introduces MITS-GAN, a novel approach to prevent tampering in medical images, with a specific focus on CT scans. The approach disrupts the output of the attacker's CT-GAN architecture by introducing imperceptible but yet precise perturbations. Specifically, the proposed approach involves the introduction of appropriate Gaussian noise to the input as a protective measure against various attacks. Our method aims to enhance tamper resistance, comparing favorably to existing techniques. Experimental results on a CT scan dataset demonstrate MITS-GAN's superior performance, emphasizing its ability to generate tamper-resistant images with negligible artifacts. As image tampering in medical domains poses life-threatening risks, our proactive approac
-    
-[^8]: MosaicFusion: 将扩散模型作为大词汇实例分割的数据增强器
-
-    MosaicFusion: Diffusion Models as Data Augmenters for Large Vocabulary Instance Segmentation. (arXiv:2309.13042v1 [cs.CV])
-
-    [http://arxiv.org/abs/2309.13042](http://arxiv.org/abs/2309.13042)
-
-    MosaicFusion是一种用于大词汇实例分割的数据增强方法，通过将扩散模型作为数据集生成器，能够生成大量合成标记数据。在实验中，我们的方法在准确率和泛化能力方面取得了显著的提升。
+    利用离散扩散结合生成式预训练和少量机器人视频微调，实现从人类视频到机器人策略学习的知识迁移。
 
     
 
-    我们提出了MosaicFusion，一种简单而有效的基于扩散的数据增强方法，用于大词汇实例分割。我们的方法无需训练，也不依赖于任何标签监督。两个关键设计使我们能够将现成的文本到图像扩散模型作为有用的数据集生成器，用于对象实例和蒙版注释。首先，我们将图像画布分为几个区域，并执行一轮扩散过程，同时基于不同的文本提示生成多个实例。其次，我们通过聚合与对象提示相关联的跨注意力图在层和扩散时间步上，然后进行简单的阈值处理和边缘感知的细化处理，得到相应的实例蒙版。我们的MosaicFusion可以为稀缺和新颖类别产生大量的合成标记数据，而无需复杂的处理。在具有挑战性的LVIS长尾和开放词汇基准上进行的实验结果表明，我们的方法在准确率和泛化能力方面均取得了显著的提升。
+    学习一个能够完成多个任务的通用实体代理面临挑战，主要源自缺乏有标记动作的机器人数据集。相比之下，存在大量捕捉复杂任务和与物理世界互动的人类视频。本文介绍了一种新颖框架，利用统一的离散扩散将人类视频上的生成式预训练与少量有标记机器人视频上的策略微调结合起来。我们首先将人类和机器人视频压缩成统一的视频标记。在预训练阶段，我们使用一个带有蒙版替换扩散策略的离散扩散模型来预测潜空间中的未来视频标记。在微调阶段，我们 h
 
-    We present MosaicFusion, a simple yet effective diffusion-based data augmentation approach for large vocabulary instance segmentation. Our method is training-free and does not rely on any label supervision. Two key designs enable us to employ an off-the-shelf text-to-image diffusion model as a useful dataset generator for object instances and mask annotations. First, we divide an image canvas into several regions and perform a single round of diffusion process to generate multiple instances simultaneously, conditioning on different text prompts. Second, we obtain corresponding instance masks by aggregating cross-attention maps associated with object prompts across layers and diffusion time steps, followed by simple thresholding and edge-aware refinement processing. Without bells and whistles, our MosaicFusion can produce a significant amount of synthetic labeled data for both rare and novel categories. Experimental results on the challenging LVIS long-tailed and open-vocabulary benchma
+    arXiv:2402.14407v1 Announce Type: new  Abstract: Learning a generalist embodied agent capable of completing multiple tasks poses challenges, primarily stemming from the scarcity of action-labeled robotic datasets. In contrast, a vast amount of human videos exist, capturing intricate tasks and interactions with the physical world. Promising prospects arise for utilizing actionless human videos for pre-training and transferring the knowledge to facilitate robot policy learning through limited robot demonstrations. In this paper, we introduce a novel framework that leverages a unified discrete diffusion to combine generative pre-training on human videos and policy fine-tuning on a small number of action-labeled robot videos. We start by compressing both human and robot videos into unified video tokens. In the pre-training stage, we employ a discrete diffusion model with a mask-and-replace diffusion strategy to predict future video tokens in the latent space. In the fine-tuning stage, we h
     
-[^9]: 物理学的散射谱模型
+[^5]: Switch EMA: 更好的平坦性和锐度的免费午餐
 
-    Scattering Spectra Models for Physics. (arXiv:2306.17210v1 [physics.data-an])
+    Switch EMA: A Free Lunch for Better Flatness and Sharpness
 
-    [http://arxiv.org/abs/2306.17210](http://arxiv.org/abs/2306.17210)
+    [https://arxiv.org/abs/2402.09240](https://arxiv.org/abs/2402.09240)
 
-    本文介绍了物理学中的散射谱模型，用于描述各种场的统计特性。这些模型基于散射系数的协方差，结合了场的小波分解和点位模，能够准确且稳健地重现标准统计量，捕捉了关键特性。
+    本研究提出了一种称为Switch EMA（SEMA）的方法，通过简单的修改指数移动平均（EMA）参数，可以帮助深度神经网络（DNN）达到更好的平坦性和锐度的概括最优解。通过在多个任务和数据集上进行实验证明了SEMA的有效性。
 
     
 
-    物理学家常常需要概率模型来进行参数推断或生成一个场的新实现。针对高度非高斯场的建立这样的模型是一项挑战，特别是当样本数量有限时。在本文中，我们介绍了散射谱模型用于平稳场，并展示了它们在物理学中遇到的各种场的准确且稳健的统计描述。这些模型基于散射系数的协方差，即场的小波分解和点位模。在介绍利用旋转和缩放下场的规律性进行有用的维度约简后，我们验证了这些模型在不同多尺度物理场上的效果，并证明它们能够重现标准统计量，包括四阶空间矩。这些散射谱为我们提供了一种低维结构化表示，捕捉了关键特性。
+    指数移动平均（EMA）是一种广泛使用的权重平均正则化方法，在深度神经网络（DNN）优化中学习平坦的最优解，以获得更好的概括能力而不增加额外的成本。尽管可以获得更好的平坦性，但现有的平均方法可能陷入更差的最终性能或需要额外的测试时间计算。本文通过一个简单的修改，即在每个周期后将EMA参数切换回原始模型，揭示了EMA的充分潜力，被称为Switch EMA（SEMA）。从理论和实证方面都证明了SEMA可以帮助DNNs达到更好的平坦性和锐度之间平衡的概括最优解。为了验证SEMA的效果，我们在视觉和语言数据集上进行了辨别性、生成性和回归任务的比较实验，包括图像分类、自监督学习、目标检测和分割、图像生成等。
 
-    Physicists routinely need probabilistic models for a number of tasks such as parameter inference or the generation of new realizations of a field. Establishing such models for highly non-Gaussian fields is a challenge, especially when the number of samples is limited. In this paper, we introduce scattering spectra models for stationary fields and we show that they provide accurate and robust statistical descriptions of a wide range of fields encountered in physics. These models are based on covariances of scattering coefficients, i.e. wavelet decomposition of a field coupled with a point-wise modulus. After introducing useful dimension reductions taking advantage of the regularity of a field under rotation and scaling, we validate these models on various multi-scale physical fields and demonstrate that they reproduce standard statistics, including spatial moments up to 4th order. These scattering spectra provide us with a low-dimensional structured representation that captures key prop
+    arXiv:2402.09240v1 Announce Type: new Abstract: Exponential Moving Average (EMA) is a widely used weight averaging (WA) regularization to learn flat optima for better generalizations without extra cost in deep neural network (DNN) optimization. Despite achieving better flatness, existing WA methods might fall into worse final performances or require extra test-time computations. This work unveils the full potential of EMA with a single line of modification, i.e., switching the EMA parameters to the original model after each epoch, dubbed as Switch EMA (SEMA). From both theoretical and empirical aspects, we demonstrate that SEMA can help DNNs to reach generalization optima that better trade-off between flatness and sharpness. To verify the effectiveness of SEMA, we conduct comparison experiments with discriminative, generative, and regression tasks on vision and language datasets, including image classification, self-supervised learning, object detection and segmentation, image generati
+    
+[^6]: 学习对比特征表示来进行面部动作单元检测
+
+    Learning Contrastive Feature Representations for Facial Action Unit Detection
+
+    [https://arxiv.org/abs/2402.06165](https://arxiv.org/abs/2402.06165)
+
+    这项研究提出了一种对比学习框架，通过监督和自监督信号来增强面部动作单元检测模型的性能。采用正样本抽样和权衡重要性的损失函数来应对噪声AU标签和AU类型分布不平衡的挑战。
+
+    
+
+    面部动作单元（AU）检测的主要方法涉及监督的多标签二进制分类问题。现有的方法常常对AU的像素级信息进行编码，从而对模型的复杂性和表达能力提出了很大的要求。此外，由于存在噪声AU标签，这种做法增加了过拟合的风险。在本研究中，我们引入了一个对比学习框架，通过监督和自监督信号增强。目标是在AU检测领域中摆脱传统的像素级学习范式，获得判别特征。为了应对噪声AU标签带来的挑战，我们通过引入自监督信号来增强监督信号。这种增强是通过正样本抽样实现的，包括三种不同类型的正样本对。另外，为了减轻每个AU类型的分布不平衡问题，我们采用了一种权衡重要性的损失函数。
+
+    The predominant approach to facial action unit (AU) detection revolves around a supervised multi-label binary classification problem. Existing methodologies often encode pixel-level information of AUs, thereby imposing substantial demands on model complexity and expressiveness. Moreover, this practice elevates the susceptibility to overfitting due to the presence of noisy AU labels. In the present study, we introduce a contrastive learning framework enhanced by both supervised and self-supervised signals. The objective is to acquire discriminative features, deviating from the conventional pixel-level learning paradigm within the domain of AU detection. To address the challenge posed by noisy AU labels, we augment the supervised signal through the introduction of a self-supervised signal. This augmentation is achieved through positive sample sampling, encompassing three distinct types of positive sample pairs. Furthermore, to mitigate the imbalanced distribution of each AU type, we empl
+    
+[^7]: NoSENSE：学习无需显式灵敏度图的展开心脏MRI重建方法
+
+    NoSENSE: Learned unrolled cardiac MRI reconstruction without explicit sensitivity maps. (arXiv:2309.15608v1 [eess.IV])
+
+    [http://arxiv.org/abs/2309.15608](http://arxiv.org/abs/2309.15608)
+
+    本文提出了一种无需显式灵敏度图的展开心脏MRI重建方法，使用深度卷积神经网络和算法展开，通过学习图像之间的接收线圈关系来实现加速心脏MRI重建，在实验中取得了较好的性能。
+
+    
+
+    本文提出了一种新颖的学习图像重建方法，适用于基于多个接收线圈的加速心脏MRI。该方法基于深度卷积神经网络（CNN）和算法展开。与许多现有的学习MR图像重建技术不同，需要将灵敏度映射（CSM）估计作为一个独立的网络组件，我们提出的方法避免了显式的CSM估计。相反，它隐含地捕捉并学习利用图像之间的接收线圈关系。我们的方法由一系列新颖的学习图像块和k空间块组成，共享潜在信息，并通过特征调节和接收线圈数据一致性实现对采集参数的适应性。在MICCAI STACOM CMRxRecon挑战赛的影片追踪和映射追踪验证排行榜中，我们的方法分别在PSNR值上达到了34.89和35.56，SSIM值分别为0.920和0.942，在撰写本文时位列不同小组第4位。
+
+    We present a novel learned image reconstruction method for accelerated cardiac MRI with multiple receiver coils based on deep convolutional neural networks (CNNs) and algorithm unrolling. In contrast to many existing learned MR image reconstruction techniques that necessitate coil-sensitivity map (CSM) estimation as a distinct network component, our proposed approach avoids explicit CSM estimation. Instead, it implicitly captures and learns to exploit the inter-coil relationships of the images. Our method consists of a series of novel learned image and k-space blocks with shared latent information and adaptation to the acquisition parameters by feature-wise modulation (FiLM), as well as coil-wise data-consistency (DC) blocks.  Our method achieved PSNR values of 34.89 and 35.56 and SSIM values of 0.920 and 0.942 in the cine track and mapping track validation leaderboard of the MICCAI STACOM CMRxRecon Challenge, respectively, ranking 4th among different teams at the time of writing.  Cod
+    
+[^8]: 基于注意力驱动的多模态融合：增强手语识别和翻译
+
+    Attention-Driven Multi-Modal Fusion: Enhancing Sign Language Recognition and Translation. (arXiv:2309.01860v2 [cs.CV] UPDATED)
+
+    [http://arxiv.org/abs/2309.01860](http://arxiv.org/abs/2309.01860)
+
+    本文提出了一种注意力驱动的多模态融合机制，通过将光流信息与RGB图像相结合，丰富了连续手语识别和翻译流程中的特征。该方法在手语识别任务中降低了WER 0.9，在翻译任务中提高了测试集上大多数BLEU分数约0.6。
+
+    
+
+    本文中，我们设计了一种机制，用于将多模态信息与现有的连续手语识别和翻译流程相结合。在我们的过程中，我们将光流信息与RGB图像结合，以丰富具有与运动相关信息的特征。该工作通过使用跨模态编码器研究了这种模态包含的可行性。我们使用的插件非常轻量级，并且不需要以端到端的方式为新模态包括一个单独的特征提取器。我们在手语识别和翻译中应用了这些改变，改善了每个任务的结果。我们在RWTH-PHOENIX-2014数据集上评估了性能，用于手语识别，并在RWTH-PHOENIX-2014T数据集上评估了翻译任务。在识别任务上，我们的方法将WER降低了0.9，在翻译任务上，我们的方法将大部分BLEU分数在测试集上提高了约0.6。
+
+    In this paper, we devise a mechanism for the addition of multi-modal information with an existing pipeline for continuous sign language recognition and translation. In our procedure, we have incorporated optical flow information with RGB images to enrich the features with movement-related information. This work studies the feasibility of such modality inclusion using a cross-modal encoder. The plugin we have used is very lightweight and doesn't need to include a separate feature extractor for the new modality in an end-to-end manner. We have applied the changes in both sign language recognition and translation, improving the result in each case. We have evaluated the performance on the RWTH-PHOENIX-2014 dataset for sign language recognition and the RWTH-PHOENIX-2014T dataset for translation. On the recognition task, our approach reduced the WER by 0.9, and on the translation task, our approach increased most of the BLEU scores by ~0.6 on the test set.
+    
+[^9]: 使用深度学习模型进行血细胞分类
+
+    Classification of Blood Cells Using Deep Learning Models. (arXiv:2308.06300v1 [eess.IV])
+
+    [http://arxiv.org/abs/2308.06300](http://arxiv.org/abs/2308.06300)
+
+    这项研究使用深度学习模型通过图像分类对人类血细胞进行了分类和识别，为诊断疾病提供了重要的帮助。
+
+    
+
+    人类血液主要包括血浆、红细胞、白细胞和血小板。血细胞为身体细胞提供氧气，滋养它们，保护它们免受感染，增强免疫力并促进凝血。人的健康状况可以从血细胞中反映出来。一个人被诊断出某种疾病的机会很大程度上受其血细胞类型和计数的影响。因此，血细胞分类非常重要，它可以帮助识别疾病，包括癌症、骨髓损伤、良性肿瘤和它们的生长。这种分类可以帮助血液学家区分不同的血细胞片段，以便确定疾病的原因。卷积神经网络是一种深度学习技术，它将人类血细胞（红细胞、白细胞和血小板）的图像分类为它们的亚型。在这项研究中，使用迁移学习将不同的CNN预训练模型应用于血细胞分类。
+
+    Human blood mainly comprises plasma, red blood cells, white blood cells, and platelets. The blood cells provide the body's cells oxygen to nourish them, shield them from infections, boost immunity, and aid in clotting. Human health is reflected in blood cells. The chances that a human being can be diagnosed with a disease are significantly influenced by their blood cell type and count. Therefore, blood cell classification is crucial because it helps identify diseases, including cancer, damaged bone marrow, benign tumors, and their growth. This classification allows hematologists to distinguish between different blood cell fragments so that the cause of diseases can be identified. Convolution neural networks are a deep learning technique that classifies images of human blood cells (RBCs, WBCs, and platelets) into their subtypes. For this study, transfer learning is used to apply different CNN pre-trained models, including VGG16, VGG19, ResNet-50, ResNet-101, ResNet-152, InceptionV3 Mobi
+    
+[^10]: 编码-存储-检索：通过语言编码的自我中心感知增强记忆
+
+    Encode-Store-Retrieve: Enhancing Memory Augmentation through Language-Encoded Egocentric Perception. (arXiv:2308.05822v1 [cs.CV])
+
+    [http://arxiv.org/abs/2308.05822](http://arxiv.org/abs/2308.05822)
+
+    本研究提出了一种记忆增强系统，它利用自然语言编码视频数据并将其存储在向量数据库中，通过利用大型视觉语言模型的强大功能来进行语言编码的过程。
+
+    
+
+    我们依赖于自己的记忆来编码、存储和检索我们的经历。然而，记忆间隔有时会发生。实现记忆增强的一种有希望的方法是通过使用增强现实头戴式显示设备来捕捉和保留自我中心的视频，这种做法通常被称为生活记录。然而，由于当前技术缺乏高效编码和存储如此大量的视频数据的能力，从庞大的视频存档中检索特定信息需要大量的计算能力，进一步复杂了快速访问所需内容的任务。
+
+    We depend on our own memory to encode, store, and retrieve our experiences. However, memory lapses can occur. One promising avenue for achieving memory augmentation is through the use of augmented reality head-mounted displays to capture and preserve egocentric videos, a practice commonly referred to as life logging. However, a significant challenge arises from the sheer volume of video data generated through life logging, as the current technology lacks the capability to encode and store such large amounts of data efficiently. Further, retrieving specific information from extensive video archives requires substantial computational power, further complicating the task of quickly accessing desired content. To address these challenges, we propose a memory augmentation system that involves leveraging natural language encoding for video data and storing them in a vector database. This approach harnesses the power of large vision language models to perform the language encoding process. Add
+    
+[^11]: CST-YOLO: 一种基于改进的YOLOv7和CNN-Swin Transformer的血细胞检测新方法
+
+    CST-YOLO: A Novel Method for Blood Cell Detection Based on Improved YOLOv7 and CNN-Swin Transformer. (arXiv:2306.14590v1 [cs.CV])
+
+    [http://arxiv.org/abs/2306.14590](http://arxiv.org/abs/2306.14590)
+
+    本论文提出了一种CST-YOLO算法，基于改进的YOLOv7和CNN-Swin Transformer，引入了几个有用的模型，有效提高了血细胞检测精度，实验结果显示其在三个血细胞数据集上均优于现有最先进算法。
+
+    
+
+    血细胞检测是计算机视觉中典型的小物体检测问题。本文提出了一种CST-YOLO模型，基于YOLOv7结构并使用CNN-Swin Transformer（CST）进行增强，这是一种CNN-Transformer融合的新尝试。同时，我们还引入了三个有用的模型：加权高效层聚合网络（W-ELAN）、多尺度通道分割（MCS）和级联卷积层（CatConv），以提高小物体检测精度。实验结果表明，我们提出的CST-YOLO在三个血细胞数据集上分别达到了92.7、95.6和91.1 mAP@0.5，优于最先进的物体检测器，如YOLOv5和YOLOv7。我们的代码可在https://github.com/mkang315/CST-YOLO上找到。
+
+    Blood cell detection is a typical small-scale object detection problem in computer vision. In this paper, we propose a CST-YOLO model for blood cell detection based on YOLOv7 architecture and enhance it with the CNN-Swin Transformer (CST), which is a new attempt at CNN-Transformer fusion. We also introduce three other useful modules: Weighted Efficient Layer Aggregation Networks (W-ELAN), Multiscale Channel Split (MCS), and Concatenate Convolutional Layers (CatConv) in our CST-YOLO to improve small-scale object detection precision. Experimental results show that the proposed CST-YOLO achieves 92.7, 95.6, and 91.1 mAP@0.5 respectively on three blood cell datasets, outperforming state-of-the-art object detectors, e.g., YOLOv5 and YOLOv7. Our code is available at https://github.com/mkang315/CST-YOLO.
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Artificial consciousness. Some logical and conceptual preliminaries](https://arxiv.org/abs/2403.20177) | 需要在人工系统中平衡讨论意识的可能实现，提出了使用意识的维度和特征来进行讨论的必要性。 |
+| [^1] | [Brain-Like Replay Naturally Emerges in Reinforcement Learning Agents](https://rss.arxiv.org/abs/2402.01467) | 本研究中，我们在使用递归神经网络的强化学习模型中发现了类似大脑回放的现象，并证明其对任务的贡献。这一发现提供了理解回放机制的新视角。 |
 
 # 详细
 
-[^1]: 人工意识。一些逻辑和概念初步
+[^1]: 强化学习智能体内出现类似大脑回放的现象
 
-    Artificial consciousness. Some logical and conceptual preliminaries
+    Brain-Like Replay Naturally Emerges in Reinforcement Learning Agents
 
-    [https://arxiv.org/abs/2403.20177](https://arxiv.org/abs/2403.20177)
+    [https://rss.arxiv.org/abs/2402.01467](https://rss.arxiv.org/abs/2402.01467)
 
-    需要在人工系统中平衡讨论意识的可能实现，提出了使用意识的维度和特征来进行讨论的必要性。
+    本研究中，我们在使用递归神经网络的强化学习模型中发现了类似大脑回放的现象，并证明其对任务的贡献。这一发现提供了理解回放机制的新视角。
 
     
 
-    arXiv:2403.20177v1 公告类型: 新的 摘要: 人工意识在理论上是否可能？是否合乎情理？如果是，那么技术上可行吗？要解决这些问题，有必要奠定一些基础，阐明人工意识产生的逻辑和经验条件以及涉及的相关术语的含义。意识是一个多义词：来自不同领域的研究人员，包括神经科学、人工智能、机器人技术和哲学等，有时会使用不同术语来指称相同现象，或者使用相同术语来指称不同现象。事实上，如果我们想探讨人工意识，就需要恰当界定关键概念。在此，经过一些逻辑和概念初步工作后，我们认为有必要使用意识的维度和特征进行平衡讨论，探讨它们在人工系统中的可能实例化或实现。我们在这项工作的主要目标是...
+    大脑区域中普遍观察到的回放现象是否能够在人工智能智能体中自然产生？如果是的话，它是否对任务有所贡献？在本研究中，我们使用基于递归神经网络的强化学习模型，在任务优化的范式下发现了回放的自然出现，模型模拟了海马体和前额叶皮层以及它们之间的相互沟通和感觉皮层的输入。海马体中的回放是由于情景记忆、认知地图以及环境观察而产生的，与动物实验数据相似，并且是高任务性能的有效指标。该模型还成功地重现了局部和非局部的回放，与人类实验数据相符。我们的工作为理解回放机制提供了新的途径。
 
-    arXiv:2403.20177v1 Announce Type: new  Abstract: Is artificial consciousness theoretically possible? Is it plausible? If so, is it technically feasible? To make progress on these questions, it is necessary to lay some groundwork clarifying the logical and empirical conditions for artificial consciousness to arise and the meaning of relevant terms involved. Consciousness is a polysemic word: researchers from different fields, including neuroscience, Artificial Intelligence, robotics, and philosophy, among others, sometimes use different terms in order to refer to the same phenomena or the same terms to refer to different phenomena. In fact, if we want to pursue artificial consciousness, a proper definition of the key concepts is required. Here, after some logical and conceptual preliminaries, we argue for the necessity of using dimensions and profiles of consciousness for a balanced discussion about their possible instantiation or realisation in artificial systems. Our primary goal in t
+    Can replay, as a widely observed neural activity pattern in brain regions, particularly in the hippocampus and neocortex, emerge in an artificial agent? If yes, does it contribute to the tasks? In this work, without heavy dependence on complex assumptions, we discover naturally emergent replay under task-optimized paradigm using a recurrent neural network-based reinforcement learning model, which mimics the hippocampus and prefrontal cortex, as well as their intercommunication and the sensory cortex input. The emergent replay in the hippocampus, which results from the episodic memory and cognitive map as well as environment observations, well resembles animal experimental data and serves as an effective indicator of high task performance. The model also successfully reproduces local and nonlocal replay, which matches the human experimental data. Our work provides a new avenue for understanding the mechanisms behind replay.
     
 
