@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Data-Driven Room Acoustic Modeling Via Differentiable Feedback Delay Networks With Learnable Delay Lines](https://arxiv.org/abs/2404.00082) | 通过可学习延迟线实现可微分反馈延迟网络的参数优化，实现了对室内声学特性的数据驱动建模。 |
-| [^2] | [Speech Separation based on Contrastive Learning and Deep Modularization.](http://arxiv.org/abs/2305.10652) | 本文提出了一种基于对比学习和深度模块化的完全无监督语音分离方法，解决了有监督学习中存在的排列问题、说话人数量不匹配的问题和高质量标记数据的依赖问题。 |
+| [^1] | [BirdSet: A Multi-Task Benchmark for Classification in Avian Bioacoustics](https://arxiv.org/abs/2403.10380) | 提出了BirdSet基准，用于鸟类生物声学中的分类任务，整合开源鸟类录音数据集合，全面评估模型性能和识别潜在不足。 |
 
 # 详细
 
-[^1]: 基于可微分反馈延迟网络和可学习延迟线的数据驱动室内声学建模
+[^1]: BirdSet：鸟类生物声学分类的多任务基准
 
-    Data-Driven Room Acoustic Modeling Via Differentiable Feedback Delay Networks With Learnable Delay Lines
+    BirdSet: A Multi-Task Benchmark for Classification in Avian Bioacoustics
 
-    [https://arxiv.org/abs/2404.00082](https://arxiv.org/abs/2404.00082)
+    [https://arxiv.org/abs/2403.10380](https://arxiv.org/abs/2403.10380)
 
-    通过可学习延迟线实现可微分反馈延迟网络的参数优化，实现了对室内声学特性的数据驱动建模。
-
-    
-
-    在过去的几十年中，人们致力于设计人工混响算法，旨在模拟物理环境的室内声学。尽管取得了显著进展，但延迟网络模型的自动参数调整仍然是一个开放性挑战。我们提出了一种新方法，通过学习可微分反馈延迟网络（FDN）的参数，使其输出呈现出所测得的室内脉冲响应的感知特性。
-
-    arXiv:2404.00082v1 Announce Type: cross  Abstract: Over the past few decades, extensive research has been devoted to the design of artificial reverberation algorithms aimed at emulating the room acoustics of physical environments. Despite significant advancements, automatic parameter tuning of delay-network models remains an open challenge. We introduce a novel method for finding the parameters of a Feedback Delay Network (FDN) such that its output renders the perceptual qualities of a measured room impulse response. The proposed approach involves the implementation of a differentiable FDN with trainable delay lines, which, for the first time, allows us to simultaneously learn each and every delay-network parameter via backpropagation. The iterative optimization process seeks to minimize a time-domain loss function incorporating differentiable terms accounting for energy decay and echo density. Through experimental validation, we show that the proposed method yields time-invariant freq
-    
-[^2]: 基于对比学习和深度模块化的语音分离
-
-    Speech Separation based on Contrastive Learning and Deep Modularization. (arXiv:2305.10652v1 [cs.SD])
-
-    [http://arxiv.org/abs/2305.10652](http://arxiv.org/abs/2305.10652)
-
-    本文提出了一种基于对比学习和深度模块化的完全无监督语音分离方法，解决了有监督学习中存在的排列问题、说话人数量不匹配的问题和高质量标记数据的依赖问题。
+    提出了BirdSet基准，用于鸟类生物声学中的分类任务，整合开源鸟类录音数据集合，全面评估模型性能和识别潜在不足。
 
     
 
-    目前，语音分离的最先进工具依赖于有监督学习。这意味着它们必须处理排列问题，它们受到训练和推断中使用的说话者数量不匹配的影响。此外，它们的性能严重依赖于高质量标记数据的存在。这些问题可以通过采用完全无监督的语音分离技术有效地解决。在本文中，我们使用对比学习建立帧的表示，然后在下游的深度模块化任务中使用学习到的表示。具体而言，在语音分离中，说话人的不同帧可以被看作是给定那个说话人的隐含标准帧的增强版。说话人的帧包含足够的韵律信息重叠，这是语音分离的关键。基于此，我们实现了自监督学习，学习缩小帧之间的距离。
+    深度学习模型已经成为鸟类生物声学领域诊断环境健康和生物多样性的强大工具，但研究中存在的不一致性给这一领域的进展带来了显著挑战。我们提出了BirdSet基准，一个统一的框架，综合研究努力，以全面分类鸟类鸣叫声。BirdSet将开源鸟类录音整合到一个精心策划的数据集合中，提供对模型性能的深入理解，并识别跨不同研究的潜在不足之处。
 
-    The current monaural state of the art tools for speech separation relies on supervised learning. This means that they must deal with permutation problem, they are impacted by the mismatch on the number of speakers used in training and inference. Moreover, their performance heavily relies on the presence of high-quality labelled data. These problems can be effectively addressed by employing a fully unsupervised technique for speech separation. In this paper, we use contrastive learning to establish the representations of frames then use the learned representations in the downstream deep modularization task. Concretely, we demonstrate experimentally that in speech separation, different frames of a speaker can be viewed as augmentations of a given hidden standard frame of that speaker. The frames of a speaker contain enough prosodic information overlap which is key in speech separation. Based on this, we implement a self-supervised learning to learn to minimize the distance between frames
+    arXiv:2403.10380v1 Announce Type: cross  Abstract: Deep learning (DL) models have emerged as a powerful tool in avian bioacoustics to diagnose environmental health and biodiversity. However, inconsistencies in research pose notable challenges hindering progress in this domain. Reliable DL models need to analyze bird calls flexibly across various species and environments to fully harness the potential of bioacoustics in a cost-effective passive acoustic monitoring scenario. Data fragmentation and opacity across studies complicate a comprehensive evaluation of general model performance. To overcome these challenges, we present the BirdSet benchmark, a unified framework consolidating research efforts with a holistic approach for classifying bird vocalizations in avian bioacoustics. BirdSet harmonizes open-source bird recordings into a curated dataset collection. This unified approach provides an in-depth understanding of model performance and identifies potential shortcomings across diffe
     
 
