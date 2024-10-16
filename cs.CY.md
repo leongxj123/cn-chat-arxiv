@@ -2,52 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Inadequacies of Large Language Model Benchmarks in the Era of Generative Artificial Intelligence](https://arxiv.org/abs/2402.09880) | 该论文通过批判性评估研究了23个最先进的大型语言模型基准的不足之处，包括偏见、真实推理衡量困难、实现不一致性等问题，强调了在人工智能时代需要标准化方法、监管确定性和伦理指南。 |
-| [^2] | [Decoding Susceptibility: Modeling Misbelief to Misinformation Through a Computational Approach](https://arxiv.org/abs/2311.09630) | 通过计算方法对用户的潜在易感性水平进行建模，可以帮助理解易受错误信息影响的程度，为后续研究和应用提供重要参考。 |
-| [^3] | [Facial recognition technology can expose political orientation from facial images even when controlling for demographics and self-presentation.](http://arxiv.org/abs/2303.16343) | 本研究使用面部识别技术，通过特定的面部特征发现了人们的政治取向，甚至可以从自然图像中推广。这种预测的精度比人类评分者高，相当于一些工作面试的预测效果。 |
+| [^1] | [Human-centered NLP Fact-checking: Co-Designing with Fact-checkers using Matchmaking for AI.](http://arxiv.org/abs/2308.07213) | 本研究使用AI的匹配设计方法，通过与专业事实核查员的合作设计，发现并解决事实核查员与技术之间的差距。合作设计会议产生了11个新的设计思路，包括提高效率和个性化的事实核查工具，帮助事实核查员准备未来的虚假信息，监测偏见，以及支持内部组织。 |
 
 # 详细
 
-[^1]: 在生成人工智能时代，大型语言模型基准的不足之处
+[^1]: 人本自然语言处理事实核查：使用AI的匹配设计与事实核查员合作
 
-    Inadequacies of Large Language Model Benchmarks in the Era of Generative Artificial Intelligence
+    Human-centered NLP Fact-checking: Co-Designing with Fact-checkers using Matchmaking for AI. (arXiv:2308.07213v1 [cs.HC] CROSS LISTED)
 
-    [https://arxiv.org/abs/2402.09880](https://arxiv.org/abs/2402.09880)
+    [http://arxiv.org/abs/2308.07213](http://arxiv.org/abs/2308.07213)
 
-    该论文通过批判性评估研究了23个最先进的大型语言模型基准的不足之处，包括偏见、真实推理衡量困难、实现不一致性等问题，强调了在人工智能时代需要标准化方法、监管确定性和伦理指南。
-
-    
-
-    大型语言模型（LLMs）随着其新兴能力的快速崛起，引发了公众的好奇心，以评估和比较不同的LLMs，许多研究人员提出了他们的LLM基准。我们注意到这些基准的初步不足，开始了一项研究，通过人们、过程和技术的视角，以功能和安全两大支柱为基础，使用我们的新颖统一评估框架对23个最先进的LLM基准进行了批判性评估。我们的研究揭示了一些重大限制，包括偏见、测量真实推理的困难、适应性、实现不一致性、提示工程复杂性、评估者多样性以及在一次综合评估中忽视了文化和意识形态规范。我们的讨论强调了在人工智能时代，迫切需要标准化方法、监管确定性和伦理指南。
-
-    arXiv:2402.09880v1 Announce Type: new  Abstract: The rapid rise in popularity of Large Language Models (LLMs) with emerging capabilities has spurred public curiosity to evaluate and compare different LLMs, leading many researchers to propose their LLM benchmarks. Noticing preliminary inadequacies in those benchmarks, we embarked on a study to critically assess 23 state-of-the-art LLM benchmarks, using our novel unified evaluation framework through the lenses of people, process, and technology, under the pillars of functionality and security. Our research uncovered significant limitations, including biases, difficulties in measuring genuine reasoning, adaptability, implementation inconsistencies, prompt engineering complexity, evaluator diversity, and the overlooking of cultural and ideological norms in one comprehensive assessment. Our discussions emphasized the urgent need for standardized methodologies, regulatory certainties, and ethical guidelines in light of Artificial Intelligenc
-    
-[^2]: 解码易感性：通过计算方法对错误信息进行建模
-
-    Decoding Susceptibility: Modeling Misbelief to Misinformation Through a Computational Approach
-
-    [https://arxiv.org/abs/2311.09630](https://arxiv.org/abs/2311.09630)
-
-    通过计算方法对用户的潜在易感性水平进行建模，可以帮助理解易受错误信息影响的程度，为后续研究和应用提供重要参考。
+    本研究使用AI的匹配设计方法，通过与专业事实核查员的合作设计，发现并解决事实核查员与技术之间的差距。合作设计会议产生了11个新的设计思路，包括提高效率和个性化的事实核查工具，帮助事实核查员准备未来的虚假信息，监测偏见，以及支持内部组织。
 
     
 
-    易受错误信息影响的程度描述了对不可验证主张的信仰程度，这是个体思维过程中的潜在因素，不可观察。现有易感性研究严重依赖于自我报告的信念，这可能存在偏见，收集成本高，并且难以在后续应用中扩展。为了解决这些限制，我们在这项研究中提出了一种计算方法来建模用户的潜在易感性水平。正如先前的研究所示，易感性受到各种因素的影响（例如人口统计因素、政治意识形态），并直接影响人们在社交媒体上的转发行为。为了表示基础心理过程，我们的易感性建模将这些因素作为输入，受到人们分享行为监督的引导。使用COVID-19作为实验领域，我们的实验证明了易感性评分之间存在显著的一致性。
+    专业事实核查在应对大量虚假信息方面存在可扩展性有限的挑战。虽然提出了许多自然语言处理工具来增强事实核查的效率和可扩展性，但学术研究和事实核查组织均报告了对此类工具的有限采用，因为这些工具不足以与事实核查员的实践、价值观和需求保持一致。为了弥补这一差距，我们研究了一种合作设计方法，即AI的匹配设计，该方法促进事实核查员、设计师和自然语言处理研究人员共同发现应以何种方式解决事实核查员的需求。我们与22名专业事实核查员进行的合作设计会议产生了11个新的设计思路。这些思路有助于提高信息搜索、处理和撰写效率以及个性化的事实核查；帮助事实核查员主动准备未来的虚假信息；监测潜在的偏见；并支持内部组织。
 
-    arXiv:2311.09630v2 Announce Type: replace  Abstract: Susceptibility to misinformation describes the degree of belief in unverifiable claims, a latent aspect of individuals' mental processes that is not observable. Existing susceptibility studies heavily rely on self-reported beliefs, which can be subject to bias, expensive to collect, and challenging to scale for downstream applications. To address these limitations, in this work, we propose a computational approach to model users' latent susceptibility levels. As shown in previous research, susceptibility is influenced by various factors (e.g., demographic factors, political ideology), and directly influences people's reposting behavior on social media. To represent the underlying mental process, our susceptibility modeling incorporates these factors as inputs, guided by the supervision of people's sharing behavior. Using COVID-19 as a testbed domain, our experiments demonstrate a significant alignment between the susceptibility score
-    
-[^3]: 面部识别技术可以从面部图像中显示政治取向，即使控制社会人口统计和自我表现。(arXiv: 2303.16343v1 [cs.CV])
-
-    Facial recognition technology can expose political orientation from facial images even when controlling for demographics and self-presentation. (arXiv:2303.16343v1 [cs.CV])
-
-    [http://arxiv.org/abs/2303.16343](http://arxiv.org/abs/2303.16343)
-
-    本研究使用面部识别技术，通过特定的面部特征发现了人们的政治取向，甚至可以从自然图像中推广。这种预测的精度比人类评分者高，相当于一些工作面试的预测效果。
-
-    
-
-    本论文运用面部识别算法，从实验室设置下拍摄的591张中性面部图像中提取面部描述符。在控制年龄、性别和种族的情况下，通过交叉验证的线性回归模型来预测参与者在政治取向量表上的得分(Cronbach的α=0.94)。模型的性能超过了r = 0.20，远优于人类评分者，与工作面试预测工作成功、酒精驱动攻击性或心理治疗改善心理健康的效果相当。此外，从标准化图像衍生出的模型在3,401名来自美国、英国和加拿大的政治人物的自然图像样本中表现良好(r = 0.12)，表明面部外貌和政治取向之间的关联可推广到我们之外的人群。面部特征与政治取向相关的分析发现，保守派的下半脸部分更大，虽然政治取向不能准确地预测个体面部特征的所有变化，但是这种发现还是富有启发性的。
-
-    A facial recognition algorithm was used to extract face descriptors from carefully standardized images of 591 neutral faces taken in the laboratory setting. Face descriptors were entered into a cross-validated linear regression to predict participants' scores on a political orientation scale (Cronbach's alpha=.94) while controlling for age, gender, and ethnicity. The model's performance exceeded r=.20: much better than that of human raters and on par with how well job interviews predict job success, alcohol drives aggressiveness, or psychological therapy improves mental health. Moreover, the model derived from standardized images performed well (r=.12) in a sample of naturalistic images of 3,401 politicians from the U.S., UK, and Canada, suggesting that the associations between facial appearance and political orientation generalize beyond our sample. The analysis of facial features associated with political orientation revealed that conservatives had larger lower faces, although politi
+    A key challenge in professional fact-checking is its limited scalability in relation to the magnitude of false information. While many Natural Language Processing (NLP) tools have been proposed to enhance fact-checking efficiency and scalability, both academic research and fact-checking organizations report limited adoption of such tooling due to insufficient alignment with fact-checker practices, values, and needs. To address this gap, we investigate a co-design method, Matchmaking for AI, which facilitates fact-checkers, designers, and NLP researchers to collaboratively discover what fact-checker needs should be addressed by technology and how. Our co-design sessions with 22 professional fact-checkers yielded a set of 11 novel design ideas. They assist in information searching, processing, and writing tasks for efficient and personalized fact-checking; help fact-checkers proactively prepare for future misinformation; monitor their potential biases; and support internal organization c
     
 
