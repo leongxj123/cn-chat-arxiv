@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Human-centered NLP Fact-checking: Co-Designing with Fact-checkers using Matchmaking for AI.](http://arxiv.org/abs/2308.07213) | 本研究使用AI的匹配设计方法，通过与专业事实核查员的合作设计，发现并解决事实核查员与技术之间的差距。合作设计会议产生了11个新的设计思路，包括提高效率和个性化的事实核查工具，帮助事实核查员准备未来的虚假信息，监测偏见，以及支持内部组织。 |
+| [^1] | [Language-based Valence and Arousal Expressions between the United States and China: a Cross-Cultural Examination.](http://arxiv.org/abs/2401.05254) | 本文从跨文化的角度研究了美国和中国社交媒体上的情感表达之间的差异。研究发现，与美国Twitter用户相比，中国新浪微博用户在情感强度的变化和激动程度上有更明显的差异。 |
 
 # 详细
 
-[^1]: 人本自然语言处理事实核查：使用AI的匹配设计与事实核查员合作
+[^1]: 中美两国之间基于语言的情绪表达的价值和激动对比：一个跨文化的研究
 
-    Human-centered NLP Fact-checking: Co-Designing with Fact-checkers using Matchmaking for AI. (arXiv:2308.07213v1 [cs.HC] CROSS LISTED)
+    Language-based Valence and Arousal Expressions between the United States and China: a Cross-Cultural Examination. (arXiv:2401.05254v1 [cs.CY])
 
-    [http://arxiv.org/abs/2308.07213](http://arxiv.org/abs/2308.07213)
+    [http://arxiv.org/abs/2401.05254](http://arxiv.org/abs/2401.05254)
 
-    本研究使用AI的匹配设计方法，通过与专业事实核查员的合作设计，发现并解决事实核查员与技术之间的差距。合作设计会议产生了11个新的设计思路，包括提高效率和个性化的事实核查工具，帮助事实核查员准备未来的虚假信息，监测偏见，以及支持内部组织。
+    本文从跨文化的角度研究了美国和中国社交媒体上的情感表达之间的差异。研究发现，与美国Twitter用户相比，中国新浪微博用户在情感强度的变化和激动程度上有更明显的差异。
 
     
 
-    专业事实核查在应对大量虚假信息方面存在可扩展性有限的挑战。虽然提出了许多自然语言处理工具来增强事实核查的效率和可扩展性，但学术研究和事实核查组织均报告了对此类工具的有限采用，因为这些工具不足以与事实核查员的实践、价值观和需求保持一致。为了弥补这一差距，我们研究了一种合作设计方法，即AI的匹配设计，该方法促进事实核查员、设计师和自然语言处理研究人员共同发现应以何种方式解决事实核查员的需求。我们与22名专业事实核查员进行的合作设计会议产生了11个新的设计思路。这些思路有助于提高信息搜索、处理和撰写效率以及个性化的事实核查；帮助事实核查员主动准备未来的虚假信息；监测潜在的偏见；并支持内部组织。
+    尽管社交媒体上个体的情感表达已经得到了广泛研究，但研究主要集中在西方环境中。不同文化之间存在着引发情感表达的重要差异。本文研究了美国Twitter和中国新浪微博上的两个主要情感维度（价值和激动）之间的差异。我们研究了美国和中国个体之间的激动和价值之间的功能关系差异，并探讨了相关内容上的差异。此外，我们还对两个平台上的词语使用和话题进行了相关性分析，以解读它们之间的差异。我们观察到，对于Twitter用户来说，负面情绪和正面情绪之间的情感强度变化不太明显，而对于新浪微博用户来说，伴随着情感的上升，激动程度有更明显的升级。从语言特征中，我们发现情感表达方面的差异。
 
-    A key challenge in professional fact-checking is its limited scalability in relation to the magnitude of false information. While many Natural Language Processing (NLP) tools have been proposed to enhance fact-checking efficiency and scalability, both academic research and fact-checking organizations report limited adoption of such tooling due to insufficient alignment with fact-checker practices, values, and needs. To address this gap, we investigate a co-design method, Matchmaking for AI, which facilitates fact-checkers, designers, and NLP researchers to collaboratively discover what fact-checker needs should be addressed by technology and how. Our co-design sessions with 22 professional fact-checkers yielded a set of 11 novel design ideas. They assist in information searching, processing, and writing tasks for efficient and personalized fact-checking; help fact-checkers proactively prepare for future misinformation; monitor their potential biases; and support internal organization c
+    Although affective expressions of individuals have been extensively studied using social media, research has primarily focused on the Western context. There are substantial differences among cultures that contribute to their affective expressions. This paper examines the differences between Twitter (X) in the United States and Sina Weibo posts in China on two primary dimensions of affect - valence and arousal. We study the difference in the functional relationship between arousal and valence (so-called V-shaped) among individuals in the US and China and explore the associated content differences. Furthermore, we correlate word usage and topics in both platforms to interpret their differences. We observe that for Twitter users, the variation in emotional intensity is less distinct between negative and positive emotions compared to Weibo users, and there is a sharper escalation in arousal corresponding with heightened emotions. From language features, we discover that affective expressio
     
 

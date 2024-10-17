@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Spectral-based Graph Neutral Networks for Complementary Item Recommendation.](http://arxiv.org/abs/2401.02130) | 本文提出了一种基于频谱的图神经网络方法（SComGNN）用于模拟和理解商品间的互补关系，以在推荐系统中准确和及时地推荐后续商品。 |
+| [^1] | [Do LLM Agents Exhibit Social Behavior?](https://arxiv.org/abs/2312.15198) | 研究探讨了LLM代理在与人类和其他代理互动时展示的社会行为，包括社会学习、社会偏好和合作行为，并开发了一个框架来评估它们与人类实验对象的互动。 |
 
 # 详细
 
-[^1]: 基于频谱的图神经网络用于互补商品推荐
+[^1]: LLM代理表现出社会行为吗？
 
-    Spectral-based Graph Neutral Networks for Complementary Item Recommendation. (arXiv:2401.02130v1 [cs.IR])
+    Do LLM Agents Exhibit Social Behavior?
 
-    [http://arxiv.org/abs/2401.02130](http://arxiv.org/abs/2401.02130)
+    [https://arxiv.org/abs/2312.15198](https://arxiv.org/abs/2312.15198)
 
-    本文提出了一种基于频谱的图神经网络方法（SComGNN）用于模拟和理解商品间的互补关系，以在推荐系统中准确和及时地推荐后续商品。
+    研究探讨了LLM代理在与人类和其他代理互动时展示的社会行为，包括社会学习、社会偏好和合作行为，并开发了一个框架来评估它们与人类实验对象的互动。
 
     
 
-    模拟互补关系极大地帮助推荐系统在购买一个商品后准确和及时地推荐后续的商品。与传统的相似关系不同，具有互补关系的商品可能会连续购买（例如iPhone和AirPods Pro），它们不仅共享相关性，还展现出不相似性。由于这两个属性是相反的，建模互补关系具有挑战性。先前尝试利用这些关系的方法要么忽视了或过度简化了不相似性属性，导致建模无效并且无法平衡这两个属性。由于图神经网络（GNNs）可以在频谱域中捕捉节点之间的相关性和不相似性，我们可以利用基于频谱的GNNs有效地理解和建模互补关系。在本研究中，我们提出了一种新方法，称为基于频谱的互补图神经网络（SComGNN），利用这一方法可以比较好地利用互补关系。
+    大型语言模型（LLMs）的进展正在扩大它们在学术研究和实际应用中的效用。最近的社会科学研究探讨了使用这些“黑匣子”LLM代理来模拟复杂社会系统并潜在地替代人类实验对象的可能性。我们的研究深入探讨了这一新兴领域，调查了LLMs在与人类和其他代理进行互动时展示社会学习、社会偏好和合作行为（间接互惠）等关键社会交互原则的程度。我们为我们的研究制定了一个框架，其中涉及将涉及人类实验对象的经典实验调整为使用LLM代理。这种方法涉及一步一步的推理，模拟人类认知过程和零样本学习，以评估LLMs的天生偏好。我们对LLM代理行为的分析包括主要效应和次要效应。
 
-    Modeling complementary relationships greatly helps recommender systems to accurately and promptly recommend the subsequent items when one item is purchased. Unlike traditional similar relationships, items with complementary relationships may be purchased successively (such as iPhone and Airpods Pro), and they not only share relevance but also exhibit dissimilarity. Since the two attributes are opposites, modeling complementary relationships is challenging. Previous attempts to exploit these relationships have either ignored or oversimplified the dissimilarity attribute, resulting in ineffective modeling and an inability to balance the two attributes. Since Graph Neural Networks (GNNs) can capture the relevance and dissimilarity between nodes in the spectral domain, we can leverage spectral-based GNNs to effectively understand and model complementary relationships. In this study, we present a novel approach called Spectral-based Complementary Graph Neural Networks (SComGNN) that utilize
+    arXiv:2312.15198v2 Announce Type: replace  Abstract: The advances of Large Language Models (LLMs) are expanding their utility in both academic research and practical applications. Recent social science research has explored the use of these ``black-box'' LLM agents for simulating complex social systems and potentially substituting human subjects in experiments. Our study delves into this emerging domain, investigating the extent to which LLMs exhibit key social interaction principles, such as social learning, social preference, and cooperative behavior (indirect reciprocity), in their interactions with humans and other agents. We develop a framework for our study, wherein classical laboratory experiments involving human subjects are adapted to use LLM agents. This approach involves step-by-step reasoning that mirrors human cognitive processes and zero-shot learning to assess the innate preferences of LLMs. Our analysis of LLM agents' behavior includes both the primary effects and an in
     
 

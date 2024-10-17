@@ -2,25 +2,26 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Nellie: Automated organelle segmentation, tracking, and hierarchical feature extraction in 2D/3D live-cell microscopy](https://arxiv.org/abs/2403.13214) | Nellie是一个自动化、无偏见的管道，用于在2D/3D活细胞显微镜下分割、跟踪和提取多样细胞内结构特征，具有强大的分层分割和高度可定制的分析能力。 |
+| [^1] | [MixedNUTS: Training-Free Accuracy-Robustness Balance via Nonlinearly Mixed Classifiers](https://arxiv.org/abs/2402.02263) | MixedNUTS是一种无需训练的方法，通过非线性混合分类器的转换和概率混合来实现准确性和鲁棒性的平衡。 |
 | [^2] | [AnimateLCM: Accelerating the Animation of Personalized Diffusion Models and Adapters with Decoupled Consistency Learning](https://arxiv.org/abs/2402.00769) | AnimateLCM提出了一种分离的一致性学习策略，通过将图像生成优先级和动作生成优先级的蒸馏分离开来，提高了训练效率并增强了生成的视觉质量。 |
-| [^3] | [Augmentation-aware Self-supervised Learning with Guided Projector.](http://arxiv.org/abs/2306.06082) | 本文提出了一种名为CASSLE的方法，它通过修改自监督学习中的有向投影网络，利用增强信息来提高模型处理图像特征的鲁棒性。 |
+| [^3] | [Reverse Stable Diffusion: What prompt was used to generate this image?.](http://arxiv.org/abs/2308.01472) | 本论文介绍了一种新的任务，即在给定由生成扩散模型生成的图像的情况下预测文本提示。为了解决这个问题，作者结合了多种白盒和黑盒模型，提出了一个新颖的学习框架，该框架能够生成改进的提示，并采用课程学习和无监督领域自适应核学习方法来进一步提高方法的性能。 |
+| [^4] | [DeepMSS: Deep Multi-Modality Segmentation-to-Survival Learning for Survival Outcome Prediction from PET/CT Images.](http://arxiv.org/abs/2305.09946) | 提出了一种DeepMSS模型，采用新颖的Segmentated-to-Survival（STS）框架，使用多模态渐进聚合网络（MMPAN）来探索肿瘤内外的预后信息，并通过自我注意力机制增强的深度生存模型进行生存预测，取得了在两个公共PET/CT图像数据集上优于几种最先进的方法的结果。 |
 
 # 详细
 
-[^1]: Nellie：自动的2D/3D活细胞显微镜下器官分割、跟踪和分层特征提取
+[^1]: MixedNUTS: 通过非线性混合分类器实现无需训练的准确性和鲁棒性平衡
 
-    Nellie: Automated organelle segmentation, tracking, and hierarchical feature extraction in 2D/3D live-cell microscopy
+    MixedNUTS: Training-Free Accuracy-Robustness Balance via Nonlinearly Mixed Classifiers
 
-    [https://arxiv.org/abs/2403.13214](https://arxiv.org/abs/2403.13214)
+    [https://arxiv.org/abs/2402.02263](https://arxiv.org/abs/2402.02263)
 
-    Nellie是一个自动化、无偏见的管道，用于在2D/3D活细胞显微镜下分割、跟踪和提取多样细胞内结构特征，具有强大的分层分割和高度可定制的分析能力。
+    MixedNUTS是一种无需训练的方法，通过非线性混合分类器的转换和概率混合来实现准确性和鲁棒性的平衡。
 
     
 
-    动态细胞器的分析仍然是一个严峻的挑战，但对于理解生物学过程至关重要。我们介绍了Nellie，这是一个自动且无偏见的管道，用于分割、跟踪和提取多样的细胞内结构特征。Nellie能够适应图像的元数据，消除了用户的输入。Nellie的预处理管道在多个细胞内尺度上增强了结构对比度，从而实现对亚器官区域的强大分层分割。通过半径自适应的模式匹配方案生成和跟踪内部运动捕捉标记，并用作亚体积流插值的指南。Nellie在多个分层水平提取大量特征，用于深度和可定制的分析。Nellie具有基于Napari的GUI，实现无代码操作和可视化，同时其模块化的开源代码库提供了经验丰富用户的自定义能力。
+    鲁棒性往往牺牲了准确性，阻碍了鲁棒分类模型在实际应用中的使用。基于训练的解决方案在与已训练的大型高性能模型兼容性方面存在限制，因此需要探索无需训练的集成方法。我们观察到鲁棒模型在干净数据和对抗数据上的正确预测比错误预测更自信，我们推测通过增强这种“良性置信度特性”可以在集成环境中实现准确性和鲁棒性的平衡。为了实现这一点，我们提出了“MixedNUTS”，一种无需训练的方法，利用仅有三个参数的非线性转换来处理鲁棒分类器和标准非鲁棒分类器的输出Logits，并通过高效算法进行优化。然后，MixedNUTS将转换后的Logits转换为概率，并将它们混合作为最终的输出。在CIFAR-10、CIFAR-100和ImageNet数据集上进行了实验。
 
-    arXiv:2403.13214v1 Announce Type: cross  Abstract: The analysis of dynamic organelles remains a formidable challenge, though key to understanding biological processes. We introduce Nellie, an automated and unbiased pipeline for segmentation, tracking, and feature extraction of diverse intracellular structures. Nellie adapts to image metadata, eliminating user input. Nellie's preprocessing pipeline enhances structural contrast on multiple intracellular scales allowing for robust hierarchical segmentation of sub-organellar regions. Internal motion capture markers are generated and tracked via a radius-adaptive pattern matching scheme, and used as guides for sub-voxel flow interpolation. Nellie extracts a plethora of features at multiple hierarchical levels for deep and customizable analysis. Nellie features a Napari-based GUI that allows for code-free operation and visualization, while its modular open-source codebase invites customization by experienced users. We demonstrate Nellie's wi
+    Adversarial robustness often comes at the cost of degraded accuracy, impeding the real-life application of robust classification models. Training-based solutions for better trade-offs are limited by incompatibilities with already-trained high-performance large models, necessitating the exploration of training-free ensemble approaches. Observing that robust models are more confident in correct predictions than in incorrect ones on clean and adversarial data alike, we speculate amplifying this "benign confidence property" can reconcile accuracy and robustness in an ensemble setting. To achieve so, we propose "MixedNUTS", a training-free method where the output logits of a robust classifier and a standard non-robust classifier are processed by nonlinear transformations with only three parameters, which are optimized through an efficient algorithm. MixedNUTS then converts the transformed logits into probabilities and mixes them as the overall output. On CIFAR-10, CIFAR-100, and ImageNet da
     
 [^2]: AnimateLCM: 使用分离的一致性学习加速个性化的扩散模型和适配器的动画生成
 
@@ -36,18 +37,32 @@
 
     Video diffusion models has been gaining increasing attention for its ability to produce videos that are both coherent and of high fidelity. However, the iterative denoising process makes it computationally intensive and time-consuming, thus limiting its applications. Inspired by the Consistency Model (CM) that distills pretrained image diffusion models to accelerate the sampling with minimal steps and its successful extension Latent Consistency Model (LCM) on conditional image generation, we propose AnimateLCM, allowing for high-fidelity video generation within minimal steps. Instead of directly conducting consistency learning on the raw video dataset, we propose a decoupled consistency learning strategy that decouples the distillation of image generation priors and motion generation priors, which improves the training efficiency and enhance the generation visual quality. Additionally, to enable the combination of plug-and-play adapters in stable diffusion community to achieve various 
     
-[^3]: 增强感知的有向投影自监督学习
+[^3]: 反向稳定扩散：生成该图像所使用的提示是什么？
 
-    Augmentation-aware Self-supervised Learning with Guided Projector. (arXiv:2306.06082v1 [cs.CV])
+    Reverse Stable Diffusion: What prompt was used to generate this image?. (arXiv:2308.01472v1 [cs.CV])
 
-    [http://arxiv.org/abs/2306.06082](http://arxiv.org/abs/2306.06082)
+    [http://arxiv.org/abs/2308.01472](http://arxiv.org/abs/2308.01472)
 
-    本文提出了一种名为CASSLE的方法，它通过修改自监督学习中的有向投影网络，利用增强信息来提高模型处理图像特征的鲁棒性。
+    本论文介绍了一种新的任务，即在给定由生成扩散模型生成的图像的情况下预测文本提示。为了解决这个问题，作者结合了多种白盒和黑盒模型，提出了一个新颖的学习框架，该框架能够生成改进的提示，并采用课程学习和无监督领域自适应核学习方法来进一步提高方法的性能。
 
     
 
-    自监督学习是从无标签数据中学习健壮表示的强大技术。SimCLR和MoCo等方法通过学习对应用的数据增强保持不变，能够达到与监督方法相当的质量。然而，这种不变性可能对解决某些下游任务有害，这些任务依赖于受到预训练期间使用的增强影响的特征，例如颜色。在本文中，我们提出通过修改自监督架构的常见组件之一的有向投影网络，来促进表示空间对这些特征的敏感性。具体而言，我们为投影器补充有关应用于图像的增强的信息。为了让投影器在解决自监督学习任务时利用这种辅助指导，特征提取器学习在其表示中保留增强信息。我们的方法被称为有向投影自监督学习（CASSLE），通过这种方法提高了模型处理图像特征的鲁棒性。
+    文本到图像扩散模型，如稳定扩散，最近吸引了许多研究人员的兴趣，反向扩散过程在更好地理解生成过程和如何设计提示以获得所需图像方面起着重要作用。为此，我们引入了一种新的任务，即在给定由生成扩散模型生成的图像的情况下预测文本提示。我们结合了一系列白盒和黑盒模型（有和无对扩散网络权重进行访问）来处理所提出的任务。我们提出了一个新颖的学习框架，包括联合提示回归和多标签词汇分类目标，生成改进的提示。为了进一步改进我们的方法，我们采用了一个课程学习过程，促进了具有更低标注噪声（即更好对齐）的图像提示对的学习，并且使用相似性进行无监督领域自适应核学习方法。
 
-    Self-supervised learning (SSL) is a powerful technique for learning robust representations from unlabeled data. By learning to remain invariant to applied data augmentations, methods such as SimCLR and MoCo are able to reach quality on par with supervised approaches. However, this invariance may be harmful to solving some downstream tasks which depend on traits affected by augmentations used during pretraining, such as color. In this paper, we propose to foster sensitivity to such characteristics in the representation space by modifying the projector network, a common component of self-supervised architectures. Specifically, we supplement the projector with information about augmentations applied to images. In order for the projector to take advantage of this auxiliary guidance when solving the SSL task, the feature extractor learns to preserve the augmentation information in its representations. Our approach, coined Conditional Augmentation-aware Selfsupervised Learning (CASSLE), is d
+    Text-to-image diffusion models such as Stable Diffusion have recently attracted the interest of many researchers, and inverting the diffusion process can play an important role in better understanding the generative process and how to engineer prompts in order to obtain the desired images. To this end, we introduce the new task of predicting the text prompt given an image generated by a generative diffusion model. We combine a series of white-box and black-box models (with and without access to the weights of the diffusion network) to deal with the proposed task. We propose a novel learning framework comprising of a joint prompt regression and multi-label vocabulary classification objective that generates improved prompts. To further improve our method, we employ a curriculum learning procedure that promotes the learning of image-prompt pairs with lower labeling noise (i.e. that are better aligned), and an unsupervised domain-adaptive kernel learning method that uses the similarities b
+    
+[^4]: DeepMSS：基于PET/CT图像的深度多模态切片到生存预测学习
+
+    DeepMSS: Deep Multi-Modality Segmentation-to-Survival Learning for Survival Outcome Prediction from PET/CT Images. (arXiv:2305.09946v1 [eess.IV])
+
+    [http://arxiv.org/abs/2305.09946](http://arxiv.org/abs/2305.09946)
+
+    提出了一种DeepMSS模型，采用新颖的Segmentated-to-Survival（STS）框架，使用多模态渐进聚合网络（MMPAN）来探索肿瘤内外的预后信息，并通过自我注意力机制增强的深度生存模型进行生存预测，取得了在两个公共PET/CT图像数据集上优于几种最先进的方法的结果。
+
+    
+
+    生存预测是癌症管理的主要关注点。基于深度学习的深度生存模型已被广泛采用，用于在医学图像上执行端到端的生存预测。最近的深度生存模型通过联合执行肿瘤分割和生存预测，采用多任务学习指导模型提取与肿瘤相关的信息，取得了有希望的性能。然而，现有的深度生存模型在探索肿瘤外预后信息（例如，局部淋巴结转移和邻近组织侵袭）方面存在困难。此外，现有的深度生存模型在利用多模态图像方面欠发展。为了解决这些问题，我们提出了一种名为DeepMSS的深度多模态切片到生存模型。该模型采用一种新颖的Segmentated-to-Survival（STS）框架，通过分离分割和生存预测任务来进行。对于分割，我们使用一种新颖的多模态渐进聚合网络（MMPAN）来探索肿瘤内外的预后信息。对于生存预测，我们提出了一种自我注意力机制增强的深度生存模型，该模型学习MMPAN的特征表示并执行生存预测。在两个公共PET/CT图像数据集上的实验结果表明，我们提出的DeepMSS模型在生存预测方面优于几种最先进的方法。
+
+    Survival prediction is a major concern for cancer management. Deep survival models based on deep learning have been widely adopted to perform end-to-end survival prediction from medical images. Recent deep survival models achieved promising performance by jointly performing tumor segmentation with survival prediction, where the models were guided to extract tumor-related information through Multi-Task Learning (MTL). However, existing deep survival models have difficulties in exploring out-of-tumor prognostic information (e.g., local lymph node metastasis and adjacent tissue invasions). In addition, existing deep survival models are underdeveloped in utilizing multi-modality images. Empirically-designed strategies were commonly adopted to fuse multi-modality information via fixed pre-designed networks. In this study, we propose a Deep Multi-modality Segmentation-to-Survival model (DeepMSS) for survival prediction from PET/CT images. Instead of adopting MTL, we propose a novel Segmentat
     
 
