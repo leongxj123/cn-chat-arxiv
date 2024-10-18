@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [MDB: Interactively Querying Datasets and Models.](http://arxiv.org/abs/2308.06686) | MDB是一个调试框架，用于互动查询数据集和模型。它通过集成函数式编程与关系代数，能够快速迭代和优化查询，发现和描述错误和模型行为。实验证明，MDB比其他工具能够实现更快的查询速度加快和查询长度缩短。 |
+| [^1] | [Unveiling the Blind Spots: A Critical Examination of Fairness in Autonomous Driving Systems](https://arxiv.org/abs/2308.02935) | 该研究对当前深度学习行人检测器的公平性进行了全面评估，发现了与年龄相关的重要公平性问题。 |
 
 # 详细
 
-[^1]: MDB：互动查询数据集和模型
+[^1]: 揭示盲点：对自动驾驶系统中公平性的关键审查
 
-    MDB: Interactively Querying Datasets and Models. (arXiv:2308.06686v1 [cs.DB])
+    Unveiling the Blind Spots: A Critical Examination of Fairness in Autonomous Driving Systems
 
-    [http://arxiv.org/abs/2308.06686](http://arxiv.org/abs/2308.06686)
+    [https://arxiv.org/abs/2308.02935](https://arxiv.org/abs/2308.02935)
 
-    MDB是一个调试框架，用于互动查询数据集和模型。它通过集成函数式编程与关系代数，能够快速迭代和优化查询，发现和描述错误和模型行为。实验证明，MDB比其他工具能够实现更快的查询速度加快和查询长度缩短。
+    该研究对当前深度学习行人检测器的公平性进行了全面评估，发现了与年龄相关的重要公平性问题。
 
     
 
-    随着模型的训练和部署，开发者需要能够系统地调试在机器学习流程中出现的错误。我们提出了MDB，一个用于互动查询数据集和模型的调试框架。MDB通过将函数式编程与关系代数结合起来，构建了一个对数据集和模型预测的数据库进行表达性查询的工具。查询可重用且易于修改，使得调试人员能够快速迭代和优化查询，以发现和描述错误和模型行为。我们在目标检测、偏差发现、图像分类和数据填充任务中评估了MDB在自动驾驶视频、大型语言模型和医疗记录上的性能。我们的实验证明，MDB比其他基准测试工具能够实现最高10倍的查询速度加快和40%的查询长度缩短。在用户研究中，我们发现开发者能够成功构建复杂查询来描述机器学习模型的错误。
+    自主驾驶系统已经扩展了智能车辆物联网的范围，并成为Web生态系统的重要组成部分。类似于传统的基于Web的应用程序，公平性对于确保自动驾驶系统的高质量是一个重要方面，特别是在其中的行人检测器的背景下。然而，目前关于当前基于深度学习（DL）的行人检测器公平性的综合评估在文献中尚未出现。为了填补这一空白，我们在大规模真实世界数据集上评估了八种被广泛探索的DL行人检测器在人口统计学群体之间的表现。为了实现彻底的公平性评估，我们为数据集提供了广泛的注释，共涉及8,311张图像，16,070个性别标签，20,115个年龄标签和3,513个肤色标签。我们的研究发现了与年龄相关的重要公平性问题。
 
-    As models are trained and deployed, developers need to be able to systematically debug errors that emerge in the machine learning pipeline. We present MDB, a debugging framework for interactively querying datasets and models. MDB integrates functional programming with relational algebra to build expressive queries over a database of datasets and model predictions. Queries are reusable and easily modified, enabling debuggers to rapidly iterate and refine queries to discover and characterize errors and model behaviors. We evaluate MDB on object detection, bias discovery, image classification, and data imputation tasks across self-driving videos, large language models, and medical records. Our experiments show that MDB enables up to 10x faster and 40\% shorter queries than other baselines. In a user study, we find developers can successfully construct complex queries that describe errors of machine learning models.
+    arXiv:2308.02935v2 Announce Type: replace-cross  Abstract: Autonomous driving systems have extended the spectrum of Web of Things for intelligent vehicles and have become an important component of the Web ecosystem. Similar to traditional Web-based applications, fairness is an essential aspect for ensuring the high quality of autonomous driving systems, particularly in the context of pedestrian detectors within them. However, there is an absence in the literature of a comprehensive assessment of the fairness of current Deep Learning (DL)-based pedestrian detectors. To fill the gap, we evaluate eight widely-explored DL-based pedestrian detectors across demographic groups on large-scale real-world datasets. To enable a thorough fairness evaluation, we provide extensive annotations for the datasets, resulting in 8,311 images with 16,070 gender labels, 20,115 age labels, and 3,513 skin tone labels. Our findings reveal significant fairness issues related to age. The undetected proportions f
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Discrete Nonparametric Causal Discovery Under Latent Class Confounding](https://arxiv.org/abs/2311.07454) | 本论文研究了离散非参数隐性类别混淆下的因果发现问题，证明了在有限的潜在类别下，因果发现仍然是可识别的。 |
+| [^1] | [Concentration for high-dimensional linear processes with dependent innovations.](http://arxiv.org/abs/2307.12395) | 本论文提出了一种针对高维线性过程的具有相关创新的集中度不等式，并利用该不等式获得了线性过程滞后自协方差矩阵最大分量范数的集中度界限。这些结果在估计高维向量自回归过程、时间序列引导和长期协方差矩阵估计中具有重要应用价值。 |
 
 # 详细
 
-[^1]: 离散非参数隐性类别混淆下的因果发现
+[^1]: 高维线性过程中具有相关创新的集中度
 
-    Discrete Nonparametric Causal Discovery Under Latent Class Confounding
+    Concentration for high-dimensional linear processes with dependent innovations. (arXiv:2307.12395v1 [math.ST])
 
-    [https://arxiv.org/abs/2311.07454](https://arxiv.org/abs/2311.07454)
+    [http://arxiv.org/abs/2307.12395](http://arxiv.org/abs/2307.12395)
 
-    本论文研究了离散非参数隐性类别混淆下的因果发现问题，证明了在有限的潜在类别下，因果发现仍然是可识别的。
+    本论文提出了一种针对高维线性过程的具有相关创新的集中度不等式，并利用该不等式获得了线性过程滞后自协方差矩阵最大分量范数的集中度界限。这些结果在估计高维向量自回归过程、时间序列引导和长期协方差矩阵估计中具有重要应用价值。
 
     
 
-    有向无环图用于建模系统的因果结构。"因果发现"描述了从数据中学习这种结构的问题。当数据是来自多个源（群体或环境）的聚合物时，全局混淆使驱动许多因果发现算法的条件独立性特性变得模糊。这种情况有时被称为混合模型或潜在类别。虽然一些现代因果发现方法能够在特定情况下处理未观察到的混淆，但是目前所知的处理全局混淆的方法都涉及不适用于离散分布的参数假设。以离散和非参数观察变量为重点，我们证明了在有限的潜在类别下，因果发现仍然是可识别的。这个问题的可行性由全局混淆的基数、观察变量的基数等决定。
+    我们针对具有子韦布尔尾的混合序列上的线性过程的$l_\infty$范数开发了集中不等式。这些不等式利用了Beveridge-Nelson分解，将问题简化为向量混合序列或其加权和的上确界范数的集中度。这个不等式用于得到线性过程的滞后$h$自协方差矩阵的最大分量范数的集中度界限。这些结果对于使用$l_1$正则化估计的高维向量自回归过程的估计界限、时间序列的高维高斯引导、以及长期协方差矩阵估计非常有用。
 
-    arXiv:2311.07454v2 Announce Type: replace Abstract: Directed acyclic graphs are used to model the causal structure of a system. ``Causal discovery'' describes the problem of learning this structure from data. When data is an aggregate from multiple sources (populations or environments), global confounding obscures conditional independence properties that drive many causal discovery algorithms. This setting is sometimes known as a mixture model or a latent class. While some modern methods for causal discovery are able to work around unobserved confounding in specific cases, the only known ways to deal with a global confounder involve parametric assumptions. that are unsuitable for discrete distributions.Focusing on discrete and non-parametric observed variables, we demonstrate that causal discovery can still be identifiable under bounded latent classes. The feasibility of this problem is governed by a trade-off between the cardinality of the global confounder, the cardinalities of the o
+    We develop concentration inequalities for the $l_\infty$ norm of a vector linear processes on mixingale sequences with sub-Weibull tails. These inequalities make use of the Beveridge-Nelson decomposition, which reduces the problem to concentration for sup-norm of a vector-mixingale or its weighted sum. This inequality is used to obtain a concentration bound for the maximum entrywise norm of the lag-$h$ autocovariance matrices of linear processes. These results are useful for estimation bounds for high-dimensional vector-autoregressive processes estimated using $l_1$ regularisation, high-dimensional Gaussian bootstrap for time series, and long-run covariance matrix estimation.
     
 
