@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Keypoint Action Tokens Enable In-Context Imitation Learning in Robotics](https://arxiv.org/abs/2403.19578) | 使用关键动作令牌（KAT）框架，研究展示了文本预训练的变形器（GPT-4 Turbo）在机器人领域可实现视觉模仿学习，将视觉观测映射为模拟示范者行为的动作序列，表现优越于现有的模仿学习方法。 |
+| [^1] | [Reset It and Forget It: Relearning Last-Layer Weights Improves Continual and Transfer Learning.](http://arxiv.org/abs/2310.07996) | 本研究发展了一种重置最后一层权重的方法，称为"zapping"，通过这种方法可以提供更好的持续和迁移学习效果，同时具备简单实施和高效计算的特点。 |
 
 # 详细
 
-[^1]: 关键动作令牌在机器人学中实现上下文模仿学习
+[^1]: 重置并忘却：重新学习最后一层权重改善持续和迁移学习
 
-    Keypoint Action Tokens Enable In-Context Imitation Learning in Robotics
+    Reset It and Forget It: Relearning Last-Layer Weights Improves Continual and Transfer Learning. (arXiv:2310.07996v1 [cs.LG])
 
-    [https://arxiv.org/abs/2403.19578](https://arxiv.org/abs/2403.19578)
+    [http://arxiv.org/abs/2310.07996](http://arxiv.org/abs/2310.07996)
 
-    使用关键动作令牌（KAT）框架，研究展示了文本预训练的变形器（GPT-4 Turbo）在机器人领域可实现视觉模仿学习，将视觉观测映射为模拟示范者行为的动作序列，表现优越于现有的模仿学习方法。
+    本研究发展了一种重置最后一层权重的方法，称为"zapping"，通过这种方法可以提供更好的持续和迁移学习效果，同时具备简单实施和高效计算的特点。
 
     
 
-    我们展示了现成的基于文本的变形器，无需额外训练，就可以执行少样本上下文内视觉模仿学习，将视觉观测映射为模拟示范者行为的动作序列。我们通过将视觉观测（输入）和动作轨迹（输出）转换为一系列令牌，这些令牌可以被文本预训练的变形器（GPT-4 Turbo）接收和生成，通过我们称之为关键动作令牌（KAT）的框架来实现这一点。尽管仅在语言上训练，我们展示这些变形器擅长将标记化的视觉关键点观察翻译为行为轨迹，在真实世界的日常任务套件中，在低数据情况下表现与优于最先进的模仿学习（扩散策略）。KAT不同于通常在语言领域操作，它利用基于文本的变形器在视觉和动作领域中学习。
+    本研究发现了一种简单的预训练机制，能够导致具有更好的持续和迁移学习表征。这种机制——在最后一层权重中反复重置，我们称之为“zapping”——最初设计用于元持续学习过程，但我们发现它在许多不同于元学习和持续学习的情况下也非常适用。在我们的实验中，我们希望将预训练的图像分类器迁移到一组新的类别，仅使用少量样本。我们展示了我们的zapping过程在标准微调和持续学习设置中能够获得更好的迁移准确性和/或更快的适应性，同时实现简单的实施和高效的计算。在许多情况下，通过使用zapping和顺序学习的组合，我们可以达到与最先进的元学习相当的性能而无需昂贵的高阶梯度。
 
-    arXiv:2403.19578v1 Announce Type: cross  Abstract: We show that off-the-shelf text-based Transformers, with no additional training, can perform few-shot in-context visual imitation learning, mapping visual observations to action sequences that emulate the demonstrator's behaviour. We achieve this by transforming visual observations (inputs) and trajectories of actions (outputs) into sequences of tokens that a text-pretrained Transformer (GPT-4 Turbo) can ingest and generate, via a framework we call Keypoint Action Tokens (KAT). Despite being trained only on language, we show that these Transformers excel at translating tokenised visual keypoint observations into action trajectories, performing on par or better than state-of-the-art imitation learning (diffusion policies) in the low-data regime on a suite of real-world, everyday tasks. Rather than operating in the language domain as is typical, KAT leverages text-based Transformers to operate in the vision and action domains to learn ge
+    This work identifies a simple pre-training mechanism that leads to representations exhibiting better continual and transfer learning. This mechanism -- the repeated resetting of weights in the last layer, which we nickname "zapping" -- was originally designed for a meta-continual-learning procedure, yet we show it is surprisingly applicable in many settings beyond both meta-learning and continual learning. In our experiments, we wish to transfer a pre-trained image classifier to a new set of classes, in a few shots. We show that our zapping procedure results in improved transfer accuracy and/or more rapid adaptation in both standard fine-tuning and continual learning settings, while being simple to implement and computationally efficient. In many cases, we achieve performance on par with state of the art meta-learning without needing the expensive higher-order gradients, by using a combination of zapping and sequential learning. An intuitive explanation for the effectiveness of this za
     
 

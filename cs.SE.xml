@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.SE</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.SE</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.SE</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.SE</description><item><title>Ansible Lightspeed&#26159;&#19968;&#31181;&#22522;&#20110;&#22823;&#22411;&#35821;&#35328;&#27169;&#22411;&#30340;&#26381;&#21153;&#65292;&#19987;&#27880;&#20110;&#23558;&#33258;&#28982;&#35821;&#35328;&#36716;&#25442;&#20026;Ansible&#20195;&#30721;&#65292;&#20026;IT&#33258;&#21160;&#21270;&#39046;&#22495;&#24102;&#26469;&#20102;&#21019;&#26032;&#12290;</title><link>https://arxiv.org/abs/2402.17442</link><description>&lt;p&gt;
+Ansible Lightspeed: &#19968;&#31181;&#29992;&#20110;IT&#33258;&#21160;&#21270;&#30340;&#20195;&#30721;&#29983;&#25104;&#26381;&#21153;
+&lt;/p&gt;
+&lt;p&gt;
+Ansible Lightspeed: A Code Generation Service for IT Automation
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.17442
+&lt;/p&gt;
+&lt;p&gt;
+Ansible Lightspeed&#26159;&#19968;&#31181;&#22522;&#20110;&#22823;&#22411;&#35821;&#35328;&#27169;&#22411;&#30340;&#26381;&#21153;&#65292;&#19987;&#27880;&#20110;&#23558;&#33258;&#28982;&#35821;&#35328;&#36716;&#25442;&#20026;Ansible&#20195;&#30721;&#65292;&#20026;IT&#33258;&#21160;&#21270;&#39046;&#22495;&#24102;&#26469;&#20102;&#21019;&#26032;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#22823;&#22411;&#35821;&#35328;&#27169;&#22411;&#65288;LLMs&#65289;&#30340;&#38382;&#19990;&#20351;&#24471;&#21019;&#24314;&#21487;&#25552;&#39640;&#24320;&#21457;&#32773;&#29983;&#20135;&#21147;&#30340;&#24037;&#20855;&#25104;&#20026;&#21487;&#33021;&#65292;&#38598;&#25104;&#24320;&#21457;&#29615;&#22659;&#65288;IDEs&#65289;&#24120;&#34987;&#29992;&#20316;&#19982;LLMs&#20132;&#20114;&#30340;&#25509;&#21475;&#12290;&#24050;&#21457;&#24067;&#35768;&#22810;&#36825;&#31867;&#24037;&#20855;&#65292;&#20294;&#20960;&#20046;&#20840;&#37096;&#37117;&#19987;&#27880;&#20110;&#36890;&#29992;&#32534;&#31243;&#35821;&#35328;&#65292;&#24456;&#23569;&#20851;&#27880;&#23545;IT&#33258;&#21160;&#21270;&#33267;&#20851;&#37325;&#35201;&#30340;&#29305;&#23450;&#39046;&#22495;&#35821;&#35328;&#12290;Ansible&#26159;&#19968;&#31181;&#22522;&#20110;YAML&#30340;IT&#33258;&#21160;&#21270;&#29305;&#23450;&#35821;&#35328;&#12290;Red Hat Ansible Lightspeed&#19982;IBM Watson Code Assistant&#21512;&#20316;&#30340;Ansible Lightspeed&#26159;&#19968;&#31181;&#22522;&#20110;LLM&#30340;&#26381;&#21153;&#65292;&#19987;&#38376;&#29992;&#20110;&#23558;&#33258;&#28982;&#35821;&#35328;&#36716;&#25442;&#20026;Ansible&#20195;&#30721;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2402.17442v1 Announce Type: cross  Abstract: The availability of Large Language Models (LLMs) which can generate code, has made it possible to create tools that improve developer productivity. Integrated development environments or IDEs which developers use to write software are often used as an interface to interact with LLMs. Although many such tools have been released, almost all of them focus on general-purpose programming languages. Domain-specific languages, such as those crucial for IT automation, have not received much attention. Ansible is one such YAML-based IT automation-specific language. Red Hat Ansible Lightspeed with IBM Watson Code Assistant, further referred to as Ansible Lightspeed, is an LLM-based service designed explicitly for natural language to Ansible code generation.   In this paper, we describe the design and implementation of the Ansible Lightspeed service and analyze feedback from thousands of real users. We examine diverse performance indicators, clas
+&lt;/p&gt;</description></item></channel></rss>

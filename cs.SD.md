@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [SIA-FTP: A Spoken Instruction Aware Flight Trajectory Prediction Framework.](http://arxiv.org/abs/2305.01661) | 提出一种语音指令感知的飞行轨迹预测框架，通过融合即时的语音指令和飞行轨迹表示，解决了语音指令和飞行轨迹的模态差距问题，在多个真实世界数据集上表现优异。 |
+| [^1] | [SpiRit-LM: Interleaved Spoken and Written Language Model](https://arxiv.org/abs/2402.05755) | SPIRIT-LM是一个基于预训练文本语言模型的多模态语言模型，通过将文本和语音连续训练，实现了口语和书面语言的混合模型。它展示了文本模型的语义能力和语音模型的表现能力。此外，SPIRIT-LM还能以少量样本的方式学习新任务。 |
 
 # 详细
 
-[^1]: SIA-FTP: 一种语音指令感知的飞行轨迹预测框架
+[^1]: SpiRit-LM: 交织的口语和书面语言模型
 
-    SIA-FTP: A Spoken Instruction Aware Flight Trajectory Prediction Framework. (arXiv:2305.01661v1 [cs.SD])
+    SpiRit-LM: Interleaved Spoken and Written Language Model
 
-    [http://arxiv.org/abs/2305.01661](http://arxiv.org/abs/2305.01661)
+    [https://arxiv.org/abs/2402.05755](https://arxiv.org/abs/2402.05755)
 
-    提出一种语音指令感知的飞行轨迹预测框架，通过融合即时的语音指令和飞行轨迹表示，解决了语音指令和飞行轨迹的模态差距问题，在多个真实世界数据集上表现优异。
+    SPIRIT-LM是一个基于预训练文本语言模型的多模态语言模型，通过将文本和语音连续训练，实现了口语和书面语言的混合模型。它展示了文本模型的语义能力和语音模型的表现能力。此外，SPIRIT-LM还能以少量样本的方式学习新任务。
 
     
 
-    通过语音通讯进行地空协商是确保空中交通管制（ATC）操作安全和效率的重要前提。但是，随着交通流量的增加，由于人为因素导致的错误指令给ATC安全带来了巨大威胁。现有的飞行轨迹预测（FTP）方法主要依赖于历史轨迹的飞行状态，在实时机动指令的预测上会出现显著的延迟，这不利于冲突检测。本文提出了一种名为SIA-FTP的语音指令感知FTP框架，通过包含即时的语音指令来支持高机动FTP任务。为了解决模态差距并最小化数据需求，我们提出了一种联合注意机制来融合语音指令嵌入和飞行轨迹表示。在多个真实世界数据集上评估了所提出的SIA-FTP，与现有的FTP方法相比取得了显著的改进。
+    我们引入了SPIRIT-LM，这是一个基于文本和语音自由混合的多模态语言模型。我们的模型基于预训练的文本语言模型，并通过连续在文本和语音单元上进行训练将其扩展到语音模态。语音和文本序列被连接为一组单词，并使用一个小型自动筛选的语音-文本平行语料库来进行词级交织的训练方法。SPIRIT-LM有两个版本：一个是使用语音语义单元的BASE版本，另一个是在语义单元之外还使用了音高和风格单元来模拟表现力的EXPRESSIVE版本。对于这两个版本，文本是用子词BPE标记编码的。结果模型展示了文本模型的语义能力和语音模型的表现能力。此外，我们还证明了SPIRIT-LM能够在跨模态（即ASR、TTS、语音分类）中以少量样本的方式学习新任务。
 
-    Ground-air negotiation via speech communication is a vital prerequisite for ensuring safety and efficiency in air traffic control (ATC) operations. However, with the increase in traffic flow, incorrect instructions caused by human factors bring a great threat to ATC safety. Existing flight trajectory prediction (FTP) approaches primarily rely on the flight status of historical trajectory, leading to significant delays in the prediction of real-time maneuvering instruction, which is not conducive to conflict detection. A major reason is that spoken instructions and flight trajectories are presented in different modalities in the current air traffic control (ATC) system, bringing great challenges to considering the maneuvering instruction in the FTP tasks. In this paper, a spoken instruction-aware FTP framework, called SIA-FTP, is innovatively proposed to support high-maneuvering FTP tasks by incorporating instant spoken instruction. To address the modality gap and minimize the data requ
+    We introduce SPIRIT-LM, a foundation multimodal language model that freely mixes text and speech. Our model is based on a pretrained text language model that we extend to the speech modality by continuously training it on text and speech units. Speech and text sequences are concatenated as a single set of tokens, and trained with a word-level interleaving method using a small automatically-curated speech-text parallel corpus. SPIRIT-LM comes in two versions: a BASE version that uses speech semantic units and an EXPRESSIVE version that models expressivity using pitch and style units in addition to the semantic units. For both versions, the text is encoded with subword BPE tokens. The resulting model displays both the semantic abilities of text models and the expressive abilities of speech models. Additionally, we demonstrate that SPIRIT-LM is able to learn new tasks in a few-shot fashion across modalities (i.e. ASR, TTS, Speech Classification).
     
 
