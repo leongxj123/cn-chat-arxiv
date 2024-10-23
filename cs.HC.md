@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [MindArm: Mechanized Intelligent Non-Invasive Neuro-Driven Prosthetic Arm System](https://arxiv.org/abs/2403.19992) | 提出了一种低成本技术解决方案MindArm，利用深度神经网络将大脑信号翻译成假肢运动，帮助患者执行各种活动 |
+| [^1] | [Interactive Concept Learning for Uncovering Latent Themes in Large Text Collections.](http://arxiv.org/abs/2305.05094) | 本研究提出了一种交互式框架，用于在大型文本集合中揭示潜在的、被领域专家视为相关的概念，既实现了自动化又减少了手动编码的工作量。 |
 
 # 详细
 
-[^1]: MindArm: 机械智能非侵入式神经驱动假肢系统
+[^1]: 大型文本集合中的交互式概念学习用于揭示潜在主题
 
-    MindArm: Mechanized Intelligent Non-Invasive Neuro-Driven Prosthetic Arm System
+    Interactive Concept Learning for Uncovering Latent Themes in Large Text Collections. (arXiv:2305.05094v1 [cs.CL])
 
-    [https://arxiv.org/abs/2403.19992](https://arxiv.org/abs/2403.19992)
+    [http://arxiv.org/abs/2305.05094](http://arxiv.org/abs/2305.05094)
 
-    提出了一种低成本技术解决方案MindArm，利用深度神经网络将大脑信号翻译成假肢运动，帮助患者执行各种活动
+    本研究提出了一种交互式框架，用于在大型文本集合中揭示潜在的、被领域专家视为相关的概念，既实现了自动化又减少了手动编码的工作量。
 
     
 
-    目前，残疾或难以移动手臂的人（简称“患者”）在有效解决生理限制方面有非常有限的技术解决方案。这主要是由于两个原因：一是像以思维控制为主的假肢设备通常非常昂贵并需要昂贵的维护；二是其他解决方案需要昂贵的侵入性脑部手术，这种手术风险高，昂贵且维护困难。因此，当前的技术解决方案并不适用于具有不同财务背景的所有患者。为此，我们提出了一种低成本技术解决方案，名为MindArm，即一种机械智能非侵入式神经驱动假肢系统。我们的MindArm系统采用深度神经网络（DNN）引擎将大脑信号翻译成预期的假肢运动，从而帮助患者实施许多活动，尽管他们
+    跨越不同学科领域的专家们通常有兴趣理解大型文本集合。传统上，这个挑战可以通过嘈杂的无监督技术（如主题模型）或手动主题发现流程来处理。在本文中，我们扩展了主题的定义，不仅考虑词分布，还包括被领域专家视为相关的概念。然后，我们提出了一个交互式框架，可以在不同的抽象级别上接收和编码专家反馈。我们的框架在自动化和手动编码之间取得平衡，允许专家控制他们的研究，同时减少所需的手动工作量。
 
-    arXiv:2403.19992v1 Announce Type: new  Abstract: Currently, people with disability or difficulty to move their arms (referred to as "patients") have very limited technological solutions to efficiently address their physiological limitations. It is mainly due to two reasons: (1) the non-invasive solutions like mind-controlled prosthetic devices are typically very costly and require expensive maintenance; and (2) other solutions require costly invasive brain surgery, which is high risk to perform, expensive, and difficult to maintain. Therefore, current technological solutions are not accessible for all patients with different financial backgrounds. Toward this, we propose a low-cost technological solution called MindArm, a mechanized intelligent non-invasive neuro-driven prosthetic arm system. Our MindArm system employs a deep neural network (DNN) engine to translate brain signals into the intended prosthetic arm motion, thereby helping patients to perform many activities despite their 
+    Experts across diverse disciplines are often interested in making sense of large text collections. Traditionally, this challenge is approached either by noisy unsupervised techniques such as topic models, or by following a manual theme discovery process. In this paper, we expand the definition of a theme to account for more than just a word distribution, and include generalized concepts deemed relevant by domain experts. Then, we propose an interactive framework that receives and encodes expert feedback at different levels of abstraction. Our framework strikes a balance between automation and manual coding, allowing experts to maintain control of their study while reducing the manual effort required.
     
 

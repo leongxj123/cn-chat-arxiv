@@ -2,52 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Understanding Practical Membership Privacy of Deep Learning](https://arxiv.org/abs/2402.06674) | 该论文利用最先进的成员推理攻击方法系统地测试了细调大型图像分类模型的实际隐私漏洞，并发现数据集中每个类别的示例数量以及训练结束时的大梯度与成员推理攻击的漏洞之间存在关联。 |
-| [^2] | [Unveiling Signle-Bit-Flip Attacks on DNN Executables.](http://arxiv.org/abs/2309.06223) | 针对由深度学习编译器编译的DNN可执行文件的单位翻转攻击进行了系统研究，设计了自动搜索工具以识别易受攻击的位，并确定了实际攻击向量，揭示了DNN可执行文件的攻击面。 |
-| [^3] | [Enhancing Robustness of AI Offensive Code Generators via Data Augmentation.](http://arxiv.org/abs/2306.05079) | 本论文提出了一种方法，通过在代码描述中引入扰动来增强AI攻击性代码生成器的鲁棒性，并证明数据增强可有效提高代码生成器对扰动和非扰动的代码描述的性能。 |
+| [^1] | [FDINet: Protecting against DNN Model Extraction via Feature Distortion Index.](http://arxiv.org/abs/2306.11338) | FDINet是一种新颖的防御机制，该机制利用特征失真指数来保护DNN模型免受模型提取攻击，并利用FDI相似性来识别分布式提取攻击中的勾结敌人。 |
+| [^2] | [Interpreting GNN-based IDS Detections Using Provenance Graph Structural Features.](http://arxiv.org/abs/2306.00934) | 基于PROVEXPLAINER框架，通过复制GNN-based security models的决策过程，利用决策树和图结构特征将抽象GNN决策边界投影到可解释的特征空间，以增强GNN安全模型的透明度和询问能力。 |
 
 # 详细
 
-[^1]: 理解深度学习的实际成员隐私
+[^1]: FDINet：利用特征失真指数保护 DNN 模型免受模型提取攻击
 
-    Understanding Practical Membership Privacy of Deep Learning
+    FDINet: Protecting against DNN Model Extraction via Feature Distortion Index. (arXiv:2306.11338v2 [cs.CR] UPDATED)
 
-    [https://arxiv.org/abs/2402.06674](https://arxiv.org/abs/2402.06674)
+    [http://arxiv.org/abs/2306.11338](http://arxiv.org/abs/2306.11338)
 
-    该论文利用最先进的成员推理攻击方法系统地测试了细调大型图像分类模型的实际隐私漏洞，并发现数据集中每个类别的示例数量以及训练结束时的大梯度与成员推理攻击的漏洞之间存在关联。
-
-    
-
-    我们应用最先进的成员推理攻击（MIA）来系统地测试细调大型图像分类模型的实际隐私漏洞。我们的重点是理解使数据集和样本容易受到成员推理攻击的特性。在数据集特性方面，我们发现数据中每个类别的示例数量与成员推理攻击的漏洞之间存在强烈的幂律依赖关系，这是以攻击的真阳性率（在低假阳性率下测量）来衡量的。对于个别样本而言，在训练结束时产生的大梯度与成员推理攻击的漏洞之间存在很强的相关性。
-
-    We apply a state-of-the-art membership inference attack (MIA) to systematically test the practical privacy vulnerability of fine-tuning large image classification models.We focus on understanding the properties of data sets and samples that make them vulnerable to membership inference. In terms of data set properties, we find a strong power law dependence between the number of examples per class in the data and the MIA vulnerability, as measured by true positive rate of the attack at a low false positive rate. For an individual sample, large gradients at the end of training are strongly correlated with MIA vulnerability.
-    
-[^2]: 揭示对DNN可执行文件的单位翻转攻击
-
-    Unveiling Signle-Bit-Flip Attacks on DNN Executables. (arXiv:2309.06223v1 [cs.CR])
-
-    [http://arxiv.org/abs/2309.06223](http://arxiv.org/abs/2309.06223)
-
-    针对由深度学习编译器编译的DNN可执行文件的单位翻转攻击进行了系统研究，设计了自动搜索工具以识别易受攻击的位，并确定了实际攻击向量，揭示了DNN可执行文件的攻击面。
+    FDINet是一种新颖的防御机制，该机制利用特征失真指数来保护DNN模型免受模型提取攻击，并利用FDI相似性来识别分布式提取攻击中的勾结敌人。
 
     
 
-    最近的研究表明，位翻转攻击(BFA)可以通过DRAM Rowhammer利用来操纵深度神经网络(DNN)。现有的攻击主要针对高级DNN框架（如PyTorch）中的模型权重文件进行位翻转。然而，DNN经常通过深度学习编译器编译成低级可执行文件，以充分利用低级硬件原语。编译后的代码通常速度很快，并且与高级DNN框架具有明显不同的执行范式。本文针对由DL编译器编译的DNN可执行文件的BFA攻击面进行了首次系统研究。我们设计了一种自动搜索工具，用于识别DNN可执行文件中的易受攻击位，并确定利用BFAs攻击DNN可执行文件中的模型结构的实际攻击向量（而以前的工作通常对攻击模型权重做出了强假设）。DNN可执行文件似乎比高级DNN中的模型更加“不透明”。
+    机器学习即服务（MLaaS）平台由于其易用性、成本效益、可扩展性和快速开发能力而变得越来越受欢迎。然而，最近的研究强调了 MLaaS 中基于云的模型对模型提取攻击的脆弱性。本文介绍了 FDINET，一种利用深度神经网络（DNN）模型特征分布的新颖防御机制。具体地，通过分析对手的查询的特征分布，我们揭示了这些查询的特征分布与模型的训练集不同。基于这个关键观察，我们提出了特征失真指数（FDI），这是一种度量设计，用于定量测量接收到的查询的特征分布偏差。所提出的 FDINET 利用 FDI 训练一个二进制检测器，并利用 FDI 相似性识别分布式提取攻击中的勾结敌人。我们进行了广泛的实验来评估 FDINET 对抗模型提取攻击的效果。
 
-    Recent research has shown that bit-flip attacks (BFAs) can manipulate deep neural networks (DNNs) via DRAM Rowhammer exploitations. Existing attacks are primarily launched over high-level DNN frameworks like PyTorch and flip bits in model weight files. Nevertheless, DNNs are frequently compiled into low-level executables by deep learning (DL) compilers to fully leverage low-level hardware primitives. The compiled code is usually high-speed and manifests dramatically distinct execution paradigms from high-level DNN frameworks.  In this paper, we launch the first systematic study on the attack surface of BFA specifically for DNN executables compiled by DL compilers. We design an automated search tool to identify vulnerable bits in DNN executables and identify practical attack vectors that exploit the model structure in DNN executables with BFAs (whereas prior works make likely strong assumptions to attack model weights). DNN executables appear more "opaque" than models in high-level DNN 
+    Machine Learning as a Service (MLaaS) platforms have gained popularity due to their accessibility, cost-efficiency, scalability, and rapid development capabilities. However, recent research has highlighted the vulnerability of cloud-based models in MLaaS to model extraction attacks. In this paper, we introduce FDINET, a novel defense mechanism that leverages the feature distribution of deep neural network (DNN) models. Concretely, by analyzing the feature distribution from the adversary's queries, we reveal that the feature distribution of these queries deviates from that of the model's training set. Based on this key observation, we propose Feature Distortion Index (FDI), a metric designed to quantitatively measure the feature distribution deviation of received queries. The proposed FDINET utilizes FDI to train a binary detector and exploits FDI similarity to identify colluding adversaries from distributed extraction attacks. We conduct extensive experiments to evaluate FDINET against
     
-[^3]: 通过数据增强提升AI攻击性代码生成器的鲁棒性
+[^2]: 基于权威图结构特征对基于GNN的IDS检测进行解释
 
-    Enhancing Robustness of AI Offensive Code Generators via Data Augmentation. (arXiv:2306.05079v1 [cs.LG])
+    Interpreting GNN-based IDS Detections Using Provenance Graph Structural Features. (arXiv:2306.00934v2 [cs.CR] UPDATED)
 
-    [http://arxiv.org/abs/2306.05079](http://arxiv.org/abs/2306.05079)
+    [http://arxiv.org/abs/2306.00934](http://arxiv.org/abs/2306.00934)
 
-    本论文提出了一种方法，通过在代码描述中引入扰动来增强AI攻击性代码生成器的鲁棒性，并证明数据增强可有效提高代码生成器对扰动和非扰动的代码描述的性能。
+    基于PROVEXPLAINER框架，通过复制GNN-based security models的决策过程，利用决策树和图结构特征将抽象GNN决策边界投影到可解释的特征空间，以增强GNN安全模型的透明度和询问能力。
 
     
 
-    本研究提出了一种将扰动添加到安全性代码上下文中的代码描述中的方法，即来自善意开发者的自然语言输入（NL），并分析了扰动如何以及在什么程度上影响AI攻击性代码生成器的性能。我们的实验表明，NL描述中的扰动高度影响代码生成器的性能。为了增强代码生成器的鲁棒性，我们使用该方法执行数据增强，即增加训练数据的变异性和多样性，并证明其对扰动和非扰动的代码描述的有效性。
+    复杂神经网络模型的黑匣子本质妨碍了它们在安全领域的普及，因为它们缺乏逻辑解释和可执行后续行动的预测。为了增强在系统来源分析中使用的图神经网络（GNN）安全模型的透明度和问责制，我们提出了PROVEXPLAINER，一种将抽象GNN决策边界投影到可解释特征空间的框架。我们首先使用简单且可解释的模型，如决策树（DT），复制基于GNN的安全模型的决策过程。为了最大化替代模型的准确性和保真度，我们提出了一种基于经典图论的图结构特征，并通过安全领域知识的广泛数据研究对其进行了增强。我们的图结构特征与系统来源领域中的问题空间行动密切相关，这使检测结果可用人类语言描述和解释。
 
-    In this work, we present a method to add perturbations to the code descriptions, i.e., new inputs in natural language (NL) from well-intentioned developers, in the context of security-oriented code, and analyze how and to what extent perturbations affect the performance of AI offensive code generators. Our experiments show that the performance of the code generators is highly affected by perturbations in the NL descriptions. To enhance the robustness of the code generators, we use the method to perform data augmentation, i.e., to increase the variability and diversity of the training data, proving its effectiveness against both perturbed and non-perturbed code descriptions.
+    The black-box nature of complex Neural Network (NN)-based models has hindered their widespread adoption in security domains due to the lack of logical explanations and actionable follow-ups for their predictions. To enhance the transparency and accountability of Graph Neural Network (GNN) security models used in system provenance analysis, we propose PROVEXPLAINER, a framework for projecting abstract GNN decision boundaries onto interpretable feature spaces.  We first replicate the decision-making process of GNNbased security models using simpler and explainable models such as Decision Trees (DTs). To maximize the accuracy and fidelity of the surrogate models, we propose novel graph structural features founded on classical graph theory and enhanced by extensive data study with security domain knowledge. Our graph structural features are closely tied to problem-space actions in the system provenance domain, which allows the detection results to be explained in descriptive, human languag
     
 

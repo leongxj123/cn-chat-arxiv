@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Reset It and Forget It: Relearning Last-Layer Weights Improves Continual and Transfer Learning.](http://arxiv.org/abs/2310.07996) | 本研究发展了一种重置最后一层权重的方法，称为"zapping"，通过这种方法可以提供更好的持续和迁移学习效果，同时具备简单实施和高效计算的特点。 |
+| [^1] | [StochGradAdam: Accelerating Neural Networks Training with Stochastic Gradient Sampling.](http://arxiv.org/abs/2310.17042) | StochGradAdam是一种利用随机梯度抽样加速神经网络训练的优化器，通过选择性梯度考虑，能够稳定收敛，提升鲁棒训练。在图像分类和分割任务中表现优异。 |
 
 # 详细
 
-[^1]: 重置并忘却：重新学习最后一层权重改善持续和迁移学习
+[^1]: StochGradAdam: 利用随机梯度抽样加速神经网络训练
 
-    Reset It and Forget It: Relearning Last-Layer Weights Improves Continual and Transfer Learning. (arXiv:2310.07996v1 [cs.LG])
+    StochGradAdam: Accelerating Neural Networks Training with Stochastic Gradient Sampling. (arXiv:2310.17042v1 [cs.LG])
 
-    [http://arxiv.org/abs/2310.07996](http://arxiv.org/abs/2310.07996)
+    [http://arxiv.org/abs/2310.17042](http://arxiv.org/abs/2310.17042)
 
-    本研究发展了一种重置最后一层权重的方法，称为"zapping"，通过这种方法可以提供更好的持续和迁移学习效果，同时具备简单实施和高效计算的特点。
+    StochGradAdam是一种利用随机梯度抽样加速神经网络训练的优化器，通过选择性梯度考虑，能够稳定收敛，提升鲁棒训练。在图像分类和分割任务中表现优异。
 
     
 
-    本研究发现了一种简单的预训练机制，能够导致具有更好的持续和迁移学习表征。这种机制——在最后一层权重中反复重置，我们称之为“zapping”——最初设计用于元持续学习过程，但我们发现它在许多不同于元学习和持续学习的情况下也非常适用。在我们的实验中，我们希望将预训练的图像分类器迁移到一组新的类别，仅使用少量样本。我们展示了我们的zapping过程在标准微调和持续学习设置中能够获得更好的迁移准确性和/或更快的适应性，同时实现简单的实施和高效的计算。在许多情况下，通过使用zapping和顺序学习的组合，我们可以达到与最先进的元学习相当的性能而无需昂贵的高阶梯度。
+    在深度学习优化领域中，本文介绍了StochGradAdam优化器，这是对广受赞誉的Adam算法的新颖改进。StochGradAdam的核心是其梯度抽样技术。该方法不仅确保稳定收敛，而且利用选择性梯度考虑的优势，通过减轻噪声或异常数据的影响和增强损失函数空间的探索，提升了鲁棒训练。在图像分类和分割任务中，StochGradAdam表现出优于传统Adam优化器的性能。通过在每次迭代中精心选择一部分梯度进行抽样，该优化器能够有效应对复杂模型的管理。本文从数学基础到偏差校正策略全面探讨了StochGradAdam的方法，展示了深度学习训练技术的可期进展。
 
-    This work identifies a simple pre-training mechanism that leads to representations exhibiting better continual and transfer learning. This mechanism -- the repeated resetting of weights in the last layer, which we nickname "zapping" -- was originally designed for a meta-continual-learning procedure, yet we show it is surprisingly applicable in many settings beyond both meta-learning and continual learning. In our experiments, we wish to transfer a pre-trained image classifier to a new set of classes, in a few shots. We show that our zapping procedure results in improved transfer accuracy and/or more rapid adaptation in both standard fine-tuning and continual learning settings, while being simple to implement and computationally efficient. In many cases, we achieve performance on par with state of the art meta-learning without needing the expensive higher-order gradients, by using a combination of zapping and sequential learning. An intuitive explanation for the effectiveness of this za
+    In the rapidly advancing domain of deep learning optimization, this paper unveils the StochGradAdam optimizer, a novel adaptation of the well-regarded Adam algorithm. Central to StochGradAdam is its gradient sampling technique. This method not only ensures stable convergence but also leverages the advantages of selective gradient consideration, fostering robust training by potentially mitigating the effects of noisy or outlier data and enhancing the exploration of the loss landscape for more dependable convergence. In both image classification and segmentation tasks, StochGradAdam has demonstrated superior performance compared to the traditional Adam optimizer. By judiciously sampling a subset of gradients at each iteration, the optimizer is optimized for managing intricate models. The paper provides a comprehensive exploration of StochGradAdam's methodology, from its mathematical foundations to bias correction strategies, heralding a promising advancement in deep learning training tec
     
 

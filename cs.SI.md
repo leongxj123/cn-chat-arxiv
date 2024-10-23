@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Privacy-Preserving Community Detection for Locally Distributed Multiple Networks.](http://arxiv.org/abs/2306.15709) | 本文提出了一种保护隐私的本地分布多网络社区检测方法，利用隐私保护来进行共识社区检测和估计。采用随机响应机制对网络边进行扰动，通过隐私保护分布式谱聚类算法在扰动邻接矩阵上执行，以防止社区之间的抵消。同时，开发了两步偏差调整过程来消除扰动和网络矩阵带来的偏差。 |
+| [^1] | [Community Detection and Classification Guarantees Using Embeddings Learned by Node2Vec.](http://arxiv.org/abs/2310.17712) | 本研究通过分析Node2Vec学习到的嵌入的理论属性，证明了在（经过度修正的）随机块模型中，使用k-means聚类方法对这些嵌入进行社区恢复是弱一致的。实验证明这一结果，并探讨了嵌入在节点和链接预测任务中的应用。 |
 
 # 详细
 
-[^1]: 保护隐私的本地分布多网络社区检测
+[^1]: 使用Node2Vec学习到的嵌入进行社区检测和分类的保证
 
-    Privacy-Preserving Community Detection for Locally Distributed Multiple Networks. (arXiv:2306.15709v1 [cs.SI])
+    Community Detection and Classification Guarantees Using Embeddings Learned by Node2Vec. (arXiv:2310.17712v1 [stat.ML])
 
-    [http://arxiv.org/abs/2306.15709](http://arxiv.org/abs/2306.15709)
+    [http://arxiv.org/abs/2310.17712](http://arxiv.org/abs/2310.17712)
 
-    本文提出了一种保护隐私的本地分布多网络社区检测方法，利用隐私保护来进行共识社区检测和估计。采用随机响应机制对网络边进行扰动，通过隐私保护分布式谱聚类算法在扰动邻接矩阵上执行，以防止社区之间的抵消。同时，开发了两步偏差调整过程来消除扰动和网络矩阵带来的偏差。
+    本研究通过分析Node2Vec学习到的嵌入的理论属性，证明了在（经过度修正的）随机块模型中，使用k-means聚类方法对这些嵌入进行社区恢复是弱一致的。实验证明这一结果，并探讨了嵌入在节点和链接预测任务中的应用。
 
     
 
-    现代多层网络由于隐私、所有权和通信成本的原因，常常以本地和分布式的方式存储和分析。关于基于这些数据的模型化统计方法用于社区检测的文献仍然有限。本文提出了一种新的方法，用于基于本地存储和计算的网络数据的多层随机块模型中的共识社区检测和估计，并采用隐私保护。开发了一种名为隐私保护分布式谱聚类（ppDSC）的新算法。为了保护边的隐私，我们采用了随机响应（RR）机制来扰动网络边，该机制满足差分隐私的强概念。ppDSC算法在平方的RR扰动邻接矩阵上执行，以防止不同层之间的社区相互抵消。为了消除RR和平方网络矩阵所带来的偏差，我们开发了一个两步偏差调整过程。
+    将大型网络的节点嵌入到欧几里得空间中是现代机器学习中的常见目标，有各种工具可用。这些嵌入可以用作社区检测/节点聚类或链接预测等任务的特征，其性能达到了最先进水平。除了谱聚类方法之外，对于其他常用的学习嵌入方法，缺乏理论上的理解。在这项工作中，我们考察了由node2vec学习到的嵌入的理论属性。我们的主要结果表明，对node2vec生成的嵌入向量应用k-means聚类可以对（经过度修正的）随机块模型中的节点进行弱一致的社区恢复。我们还讨论了这些嵌入在节点和链接预测任务中的应用。我们通过实验证明了这个结果，并研究了它与网络数据的其他嵌入工具之间的关系。
 
-    Modern multi-layer networks are commonly stored and analyzed in a local and distributed fashion because of the privacy, ownership, and communication costs. The literature on the model-based statistical methods for community detection based on these data is still limited. This paper proposes a new method for consensus community detection and estimation in a multi-layer stochastic block model using locally stored and computed network data with privacy protection. A novel algorithm named privacy-preserving Distributed Spectral Clustering (ppDSC) is developed. To preserve the edges' privacy, we adopt the randomized response (RR) mechanism to perturb the network edges, which satisfies the strong notion of differential privacy. The ppDSC algorithm is performed on the squared RR-perturbed adjacency matrices to prevent possible cancellation of communities among different layers. To remove the bias incurred by RR and the squared network matrices, we develop a two-step bias-adjustment procedure.
+    Embedding the nodes of a large network into an Euclidean space is a common objective in modern machine learning, with a variety of tools available. These embeddings can then be used as features for tasks such as community detection/node clustering or link prediction, where they achieve state of the art performance. With the exception of spectral clustering methods, there is little theoretical understanding for other commonly used approaches to learning embeddings. In this work we examine the theoretical properties of the embeddings learned by node2vec. Our main result shows that the use of k-means clustering on the embedding vectors produced by node2vec gives weakly consistent community recovery for the nodes in (degree corrected) stochastic block models. We also discuss the use of these embeddings for node and link prediction tasks. We demonstrate this result empirically, and examine how this relates to other embedding tools for network data.
     
 
