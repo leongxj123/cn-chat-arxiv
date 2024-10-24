@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Transfer Learning Bayesian Optimization to Design Competitor DNA Molecules for Use in Diagnostic Assays](https://arxiv.org/abs/2402.17704) | 通过将转移学习的代理模型与贝叶斯优化相结合，本文展示了如何通过在优化任务之间共享信息来减少实验的总数，并且演示了在设计用于扩增基因诊断测定的DNA竞争对手时实验数量的减少。 |
-| [^2] | [DNABERT-S: Learning Species-Aware DNA Embedding with Genome Foundation Models](https://arxiv.org/abs/2402.08777) | DNABERT-S是一种专门用于创建物种感知的DNA嵌入的基因组基础模型。为了提高对长读DNA序列的嵌入效果，引入了Manifold Instance Mixup (MI-Mix)对比目标方法来训练模型。 |
+| [^1] | [TargetCall: Eliminating the Wasted Computation in Basecalling via Pre-Basecalling Filtering.](http://arxiv.org/abs/2212.04953) | TargetCall通过预基调过滤，消除了basecalling中的浪费计算，提高了基因组分析流程的效率。 |
 
 # 详细
 
-[^1]: 将贝叶斯优化应用于转移学习以设计用于诊断测定的竞争对手DNA分子
+[^1]: 通过预基调过滤消除basecalling中的浪费计算的TargetCall
 
-    Transfer Learning Bayesian Optimization to Design Competitor DNA Molecules for Use in Diagnostic Assays
+    TargetCall: Eliminating the Wasted Computation in Basecalling via Pre-Basecalling Filtering. (arXiv:2212.04953v2 [q-bio.GN] UPDATED)
 
-    [https://arxiv.org/abs/2402.17704](https://arxiv.org/abs/2402.17704)
+    [http://arxiv.org/abs/2212.04953](http://arxiv.org/abs/2212.04953)
 
-    通过将转移学习的代理模型与贝叶斯优化相结合，本文展示了如何通过在优化任务之间共享信息来减少实验的总数，并且演示了在设计用于扩增基因诊断测定的DNA竞争对手时实验数量的减少。
-
-    
-
-    随着工程生物分子设备的兴起，定制生物序列的需求不断增加。通常，为了特定应用需要制作许多类似的生物序列，这意味着需要进行大量甚至昂贵的实验来优化这些序列。本文提出了一个转移学习设计实验工作流程，使这种开发变得可行。通过将转移学习代理模型与贝叶斯优化相结合，我们展示了如何通过在优化任务之间共享信息来减少实验的总数。我们演示了使用用于扩增基因诊断测定中使用的DNA竞争对手开发数据来减少实验数量。我们使用交叉验证来比较不同转移学习模型的预测准确性，然后比较这些模型在单一目标和惩罚优化下的性能。
-
-    arXiv:2402.17704v1 Announce Type: cross  Abstract: With the rise in engineered biomolecular devices, there is an increased need for tailor-made biological sequences. Often, many similar biological sequences need to be made for a specific application meaning numerous, sometimes prohibitively expensive, lab experiments are necessary for their optimization. This paper presents a transfer learning design of experiments workflow to make this development feasible. By combining a transfer learning surrogate model with Bayesian optimization, we show how the total number of experiments can be reduced by sharing information between optimization tasks. We demonstrate the reduction in the number of experiments using data from the development of DNA competitors for use in an amplification-based diagnostic assay. We use cross-validation to compare the predictive accuracy of different transfer learning models, and then compare the performance of the models for both single objective and penalized opti
-    
-[^2]: DNABERT-S: 学习具有基因组基础模型的物种感知DNA嵌入
-
-    DNABERT-S: Learning Species-Aware DNA Embedding with Genome Foundation Models
-
-    [https://arxiv.org/abs/2402.08777](https://arxiv.org/abs/2402.08777)
-
-    DNABERT-S是一种专门用于创建物种感知的DNA嵌入的基因组基础模型。为了提高对长读DNA序列的嵌入效果，引入了Manifold Instance Mixup (MI-Mix)对比目标方法来训练模型。
+    TargetCall通过预基调过滤，消除了basecalling中的浪费计算，提高了基因组分析流程的效率。
 
     
 
-    有效的DNA嵌入在基因组分析中仍然至关重要，特别是在缺乏用于模型微调的标记数据的情况下，尽管基因组基础模型已经取得了显著进展。一个典型的例子是宏基因组分箱，这是微生物组研究中的一个关键过程，旨在通过来自可能包含成千上万个不同的、通常没有经过表征的物种的复杂混合DNA序列的物种来对DNA序列进行分组。为了填补有效的DNA嵌入模型的缺陷，我们引入了DNABERT-S，这是一个专门用于创建物种感知的DNA嵌入的基因组基础模型。为了鼓励对易出错的长读DNA序列进行有效嵌入，我们引入了Manifold Instance Mixup(MI-Mix)，一种对比目标，它在随机选择的层次中混合DNA序列的隐藏表示，并训练模型以在输出层识别和区分这些混合比例。
+    Basecalling是纳米孔测序分析中的重要步骤，它将纳米孔测序仪的原始信号转换为核酸序列，即reads。最先进的basecallers使用复杂的深度学习模型实现高度的basecalling准确性。这使得basecalling在计算上效率低下且内存消耗大，成为整个基因组分析流程的瓶颈。然而，对于许多应用来说，大多数reads与感兴趣的参考基因组不匹配（即目标参考基因组），因此会在后续的基因组流程步骤中被丢弃，浪费了basecalling的计算。为了解决这个问题，我们提出了TargetCall，这是第一个用于消除basecalling中浪费计算的预基调过滤器。TargetCall的关键思想是在basecalling之前丢弃不会与目标参考基因组匹配的reads（即非目标reads）。TargetCall由两个主要组件组成：（1）LightCall，一个轻量级的神经网络basecaller，产生噪声reads；
 
-    arXiv:2402.08777v1 Announce Type: cross Abstract: Effective DNA embedding remains crucial in genomic analysis, particularly in scenarios lacking labeled data for model fine-tuning, despite the significant advancements in genome foundation models. A prime example is metagenomics binning, a critical process in microbiome research that aims to group DNA sequences by their species from a complex mixture of DNA sequences derived from potentially thousands of distinct, often uncharacterized species. To fill the lack of effective DNA embedding models, we introduce DNABERT-S, a genome foundation model that specializes in creating species-aware DNA embeddings. To encourage effective embeddings to error-prone long-read DNA sequences, we introduce Manifold Instance Mixup (MI-Mix), a contrastive objective that mixes the hidden representations of DNA sequences at randomly selected layers and trains the model to recognize and differentiate these mixed proportions at the output layer. We further enha
+    Basecalling is an essential step in nanopore sequencing analysis where the raw signals of nanopore sequencers are converted into nucleotide sequences, i.e., reads. State-of-the-art basecallers employ complex deep learning models to achieve high basecalling accuracy. This makes basecalling computationally-inefficient and memory-hungry; bottlenecking the entire genome analysis pipeline. However, for many applications, the majority of reads do no match the reference genome of interest (i.e., target reference) and thus are discarded in later steps in the genomics pipeline, wasting the basecalling computation. To overcome this issue, we propose TargetCall, the first pre-basecalling filter to eliminate the wasted computation in basecalling. TargetCall's key idea is to discard reads that will not match the target reference (i.e., off-target reads) prior to basecalling. TargetCall consists of two main components: (1) LightCall, a lightweight neural network basecaller that produces noisy reads;
     
 

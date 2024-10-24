@@ -2,37 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Data-Driven Fixed-Point Tuning for Truncated Realized Variations.](http://arxiv.org/abs/2311.00905) | 本文提出了一种基于数据驱动的截断实现变异的固定点调整方法，有效估计积分波动性。 |
-| [^2] | [Targeted Separation and Convergence with Kernel Discrepancies.](http://arxiv.org/abs/2209.12835) | 通过核差异度量，我们推导出了新的充分必要条件，实现了将目标分离出来，以及控制对目标的弱收敛性。此外，我们在$\mathbb{R}^d$上使用了这些结果来扩展了核Stein差异分离和收敛控制的已知条件，并开发了能够精确度量目标的弱收敛性的核差异度量。 |
+| [^1] | [Online Differentially Private Synthetic Data Generation](https://arxiv.org/abs/2402.08012) | 本文提出了一种在线差分隐私合成数据生成的多项式时间算法，在超立方体数据流上实现了近乎最优的精度界限，也推广了之前关于计数查询的连续发布模型的工作，仅需要额外的多项式对数因子。 |
+| [^2] | [A general theory for robust clustering via trimmed mean.](http://arxiv.org/abs/2401.05574) | 本文提出了一种通过使用修剪均值类型的中心点估计的混合聚类技术，用于在存在次高斯误差的中心点周围分布的弱初始化条件下产生最优错误标记保证，并且在存在敌对异常值的情况下仍然有效。 |
+| [^3] | [Bayes optimal learning in high-dimensional linear regression with network side information.](http://arxiv.org/abs/2306.05679) | 本文首次研究了具有网络辅助信息的高维线性回归中的贝叶斯最优学习问题，引入了Reg-Graph模型并提出了基于AMP的迭代算法，在实验中优于现有的几种网络辅助回归方法。 |
 
 # 详细
 
-[^1]: 数据驱动的截断实现变异的固定点调整方法
+[^1]: 在线差分隐私合成数据生成
 
-    Data-Driven Fixed-Point Tuning for Truncated Realized Variations. (arXiv:2311.00905v1 [math.ST])
+    Online Differentially Private Synthetic Data Generation
 
-    [http://arxiv.org/abs/2311.00905](http://arxiv.org/abs/2311.00905)
+    [https://arxiv.org/abs/2402.08012](https://arxiv.org/abs/2402.08012)
 
-    本文提出了一种基于数据驱动的截断实现变异的固定点调整方法，有效估计积分波动性。
-
-    
-
-    在估计存在跳跃的半鞅的积分波动性和相关泛函时，许多方法需要指定调整参数的使用。在现有的理论中，调整参数被假设为确定性的，并且其值仅在渐近约束条件下指定。然而，在实证研究和模拟研究中，它们通常被选择为随机和数据相关的，实际上仅依赖于启发式方法。在本文中，我们考虑了一种基于一种随机固定点迭代的半鞅带跳跃的截断实现变异的新颖数据驱动调整程序。我们的方法是高度自动化的，可以减轻关于调整参数的微妙决策的需求，并且可以仅使用关于采样频率的信息进行实施。我们展示了我们的方法可以导致渐进有效的积分波动性估计，并展示了其在
-
-    Many methods for estimating integrated volatility and related functionals of semimartingales in the presence of jumps require specification of tuning parameters for their use. In much of the available theory, tuning parameters are assumed to be deterministic, and their values are specified only up to asymptotic constraints. However, in empirical work and in simulation studies, they are typically chosen to be random and data-dependent, with explicit choices in practice relying on heuristics alone. In this paper, we consider novel data-driven tuning procedures for the truncated realized variations of a semimartingale with jumps, which are based on a type of stochastic fixed-point iteration. Being effectively automated, our approach alleviates the need for delicate decision-making regarding tuning parameters, and can be implemented using information regarding sampling frequency alone. We show our methods can lead to asymptotically efficient estimation of integrated volatility and exhibit 
-    
-[^2]: 通过核差异实现有针对性的分离与收敛
-
-    Targeted Separation and Convergence with Kernel Discrepancies. (arXiv:2209.12835v2 [stat.ML] UPDATED)
-
-    [http://arxiv.org/abs/2209.12835](http://arxiv.org/abs/2209.12835)
-
-    通过核差异度量，我们推导出了新的充分必要条件，实现了将目标分离出来，以及控制对目标的弱收敛性。此外，我们在$\mathbb{R}^d$上使用了这些结果来扩展了核Stein差异分离和收敛控制的已知条件，并开发了能够精确度量目标的弱收敛性的核差异度量。
+    本文提出了一种在线差分隐私合成数据生成的多项式时间算法，在超立方体数据流上实现了近乎最优的精度界限，也推广了之前关于计数查询的连续发布模型的工作，仅需要额外的多项式对数因子。
 
     
 
-    最大均值差异（MMDs）如核Stein差异（KSD）已经成为广泛应用的中心，包括假设检验、采样器选择、分布近似和变分推断。在每个设置中，这些基于核的差异度量需要实现（i）将目标P与其他概率测度分离，甚至（ii）控制对P的弱收敛。在本文中，我们推导了确保（i）和（ii）的新的充分必要条件。对于可分的度量空间上的MMDs，我们描述了分离Bochner可嵌入测度的核，并引入简单的条件来分离所有具有无界核的测度和用有界核来控制收敛。我们利用这些结果在$\mathbb{R}^d$上大大扩展了KSD分离和收敛控制的已知条件，并开发了首个能够精确度量对P的弱收敛的KSDs。在这个过程中，我们强调了我们的结果的影响。
+    本文提出了一种用于在线差分隐私合成数据生成的多项式时间算法。对于在超立方体$[0,1]^d$内的数据流和无限时间范围，我们开发了一种在线算法，每个时间$t$都生成一个差分隐私合成数据集。该算法在1-Wasserstein距离上实现了近乎最优的精度界限：当$d\geq 2$时为$O(t^{-1/d}\log(t)$，当$d=1$时为$O(t^{-1}\log^{4.5}(t)$。这个结果将之前关于计数查询的连续发布模型的工作推广到包括Lipschitz查询。与离线情况不同，离线情况下整个数据集一次性可用，我们的方法仅需要在精度界限中额外的多项式对数因子。
 
-    Maximum mean discrepancies (MMDs) like the kernel Stein discrepancy (KSD) have grown central to a wide range of applications, including hypothesis testing, sampler selection, distribution approximation, and variational inference. In each setting, these kernel-based discrepancy measures are required to (i) separate a target P from other probability measures or even (ii) control weak convergence to P. In this article we derive new sufficient and necessary conditions to ensure (i) and (ii). For MMDs on separable metric spaces, we characterize those kernels that separate Bochner embeddable measures and introduce simple conditions for separating all measures with unbounded kernels and for controlling convergence with bounded kernels. We use these results on $\mathbb{R}^d$ to substantially broaden the known conditions for KSD separation and convergence control and to develop the first KSDs known to exactly metrize weak convergence to P. Along the way, we highlight the implications of our res
+    We present a polynomial-time algorithm for online differentially private synthetic data generation. For a data stream within the hypercube $[0,1]^d$ and an infinite time horizon, we develop an online algorithm that generates a differentially private synthetic dataset at each time $t$. This algorithm achieves a near-optimal accuracy bound of $O(t^{-1/d}\log(t))$ for $d\geq 2$ and $O(t^{-1}\log^{4.5}(t))$ for $d=1$ in the 1-Wasserstein distance. This result generalizes the previous work on the continual release model for counting queries to include Lipschitz queries. Compared to the offline case, where the entire dataset is available at once, our approach requires only an extra polylog factor in the accuracy bound.
+    
+[^2]: 通过修剪均值的鲁棒聚类的一般理论
+
+    A general theory for robust clustering via trimmed mean. (arXiv:2401.05574v1 [math.ST])
+
+    [http://arxiv.org/abs/2401.05574](http://arxiv.org/abs/2401.05574)
+
+    本文提出了一种通过使用修剪均值类型的中心点估计的混合聚类技术，用于在存在次高斯误差的中心点周围分布的弱初始化条件下产生最优错误标记保证，并且在存在敌对异常值的情况下仍然有效。
+
+    
+
+    在存在异质数据的统计机器学习中，聚类是一种基本工具。许多最近的结果主要关注在数据围绕带有次高斯误差的中心点分布时的最优错误标记保证。然而，限制性的次高斯模型在实践中常常无效，因为各种实际应用展示了围绕中心点的重尾分布或受到可能的敌对攻击，需要具有鲁棒数据驱动初始化的鲁棒聚类。在本文中，我们引入一种混合聚类技术，利用一种新颖的多变量修剪均值类型的中心点估计，在中心点周围的误差分布的弱初始化条件下产生错误标记保证。我们还给出了一个相匹配的下界，上界依赖于聚类的数量。此外，我们的方法即使在存在敌对异常值的情况下也能产生最优错误标记。我们的结果简化为亚高斯模型的情况。
+
+    Clustering is a fundamental tool in statistical machine learning in the presence of heterogeneous data. Many recent results focus primarily on optimal mislabeling guarantees, when data are distributed around centroids with sub-Gaussian errors. Yet, the restrictive sub-Gaussian model is often invalid in practice, since various real-world applications exhibit heavy tail distributions around the centroids or suffer from possible adversarial attacks that call for robust clustering with a robust data-driven initialization. In this paper, we introduce a hybrid clustering technique with a novel multivariate trimmed mean type centroid estimate to produce mislabeling guarantees under a weak initialization condition for general error distributions around the centroids. A matching lower bound is derived, up to factors depending on the number of clusters. In addition, our approach also produces the optimal mislabeling even in the presence of adversarial outliers. Our results reduce to the sub-Gaus
+    
+[^3]: 具有网络辅助信息的高维线性回归中的贝叶斯最优学习
+
+    Bayes optimal learning in high-dimensional linear regression with network side information. (arXiv:2306.05679v1 [math.ST])
+
+    [http://arxiv.org/abs/2306.05679](http://arxiv.org/abs/2306.05679)
+
+    本文首次研究了具有网络辅助信息的高维线性回归中的贝叶斯最优学习问题，引入了Reg-Graph模型并提出了基于AMP的迭代算法，在实验中优于现有的几种网络辅助回归方法。
+
+    
+
+    在基因组学、蛋白质组学和神经科学等应用中，具有网络辅助信息的监督学习问题经常出现。本文中，我们首次研究了具有网络辅助信息的高维线性回归中的贝叶斯最优学习问题。为此，我们首先引入了一个简单的生成模型（称为Reg-Graph模型），通过一组共同的潜在参数为监督数据和观测到的网络设定了一个联合分布。接下来，我们介绍了一种基于近似消息传递（AMP）的迭代算法，在非常一般的条件下可证明是贝叶斯最优的。此外，我们对潜在信号和观测到的数据之间的极限互信息进行了表征，从而精确量化了网络辅助信息在回归问题中的统计影响。我们对模拟数据和实际数据的实验表明，我们的方法优于现有的几种网络辅助回归方法。
+
+    Supervised learning problems with side information in the form of a network arise frequently in applications in genomics, proteomics and neuroscience. For example, in genetic applications, the network side information can accurately capture background biological information on the intricate relations among the relevant genes. In this paper, we initiate a study of Bayes optimal learning in high-dimensional linear regression with network side information. To this end, we first introduce a simple generative model (called the Reg-Graph model) which posits a joint distribution for the supervised data and the observed network through a common set of latent parameters. Next, we introduce an iterative algorithm based on Approximate Message Passing (AMP) which is provably Bayes optimal under very general conditions. In addition, we characterize the limiting mutual information between the latent signal and the data observed, and thus precisely quantify the statistical impact of the network side 
     
 

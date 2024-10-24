@@ -2,37 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [FDINet: Protecting against DNN Model Extraction via Feature Distortion Index.](http://arxiv.org/abs/2306.11338) | FDINet是一种新颖的防御机制，该机制利用特征失真指数来保护DNN模型免受模型提取攻击，并利用FDI相似性来识别分布式提取攻击中的勾结敌人。 |
-| [^2] | [Interpreting GNN-based IDS Detections Using Provenance Graph Structural Features.](http://arxiv.org/abs/2306.00934) | 基于PROVEXPLAINER框架，通过复制GNN-based security models的决策过程，利用决策树和图结构特征将抽象GNN决策边界投影到可解释的特征空间，以增强GNN安全模型的透明度和询问能力。 |
+| [^1] | [Few-Shot Adversarial Prompt Learning on Vision-Language Models](https://arxiv.org/abs/2403.14774) | 本文提出了一个少样本对抗提示框架，在视觉-语言模型中通过有限数据调整输入序列，显著提升对抗鲁棒性，并通过端到端学习对抗性相关的文本监督。 |
+| [^2] | [Learning to Poison Large Language Models During Instruction Tuning](https://arxiv.org/abs/2402.13459) | 通过设计新的数据注入攻击攻击LLMs，并提出一种梯度引导后门触发器学习方法，通过实验验证表明成功地破坏模型输出，仅改变1%的指导调优样本即可导致性能下降率达到约80％。 |
+| [^3] | [Generative AI Security: Challenges and Countermeasures](https://arxiv.org/abs/2402.12617) | 生成式人工智能的安全挑战及对策研究。 |
 
 # 详细
 
-[^1]: FDINet：利用特征失真指数保护 DNN 模型免受模型提取攻击
+[^1]: 视觉-语言模型上的少样本对抗提示学习
 
-    FDINet: Protecting against DNN Model Extraction via Feature Distortion Index. (arXiv:2306.11338v2 [cs.CR] UPDATED)
+    Few-Shot Adversarial Prompt Learning on Vision-Language Models
 
-    [http://arxiv.org/abs/2306.11338](http://arxiv.org/abs/2306.11338)
+    [https://arxiv.org/abs/2403.14774](https://arxiv.org/abs/2403.14774)
 
-    FDINet是一种新颖的防御机制，该机制利用特征失真指数来保护DNN模型免受模型提取攻击，并利用FDI相似性来识别分布式提取攻击中的勾结敌人。
-
-    
-
-    机器学习即服务（MLaaS）平台由于其易用性、成本效益、可扩展性和快速开发能力而变得越来越受欢迎。然而，最近的研究强调了 MLaaS 中基于云的模型对模型提取攻击的脆弱性。本文介绍了 FDINET，一种利用深度神经网络（DNN）模型特征分布的新颖防御机制。具体地，通过分析对手的查询的特征分布，我们揭示了这些查询的特征分布与模型的训练集不同。基于这个关键观察，我们提出了特征失真指数（FDI），这是一种度量设计，用于定量测量接收到的查询的特征分布偏差。所提出的 FDINET 利用 FDI 训练一个二进制检测器，并利用 FDI 相似性识别分布式提取攻击中的勾结敌人。我们进行了广泛的实验来评估 FDINET 对抗模型提取攻击的效果。
-
-    Machine Learning as a Service (MLaaS) platforms have gained popularity due to their accessibility, cost-efficiency, scalability, and rapid development capabilities. However, recent research has highlighted the vulnerability of cloud-based models in MLaaS to model extraction attacks. In this paper, we introduce FDINET, a novel defense mechanism that leverages the feature distribution of deep neural network (DNN) models. Concretely, by analyzing the feature distribution from the adversary's queries, we reveal that the feature distribution of these queries deviates from that of the model's training set. Based on this key observation, we propose Feature Distortion Index (FDI), a metric designed to quantitatively measure the feature distribution deviation of received queries. The proposed FDINET utilizes FDI to train a binary detector and exploits FDI similarity to identify colluding adversaries from distributed extraction attacks. We conduct extensive experiments to evaluate FDINET against
-    
-[^2]: 基于权威图结构特征对基于GNN的IDS检测进行解释
-
-    Interpreting GNN-based IDS Detections Using Provenance Graph Structural Features. (arXiv:2306.00934v2 [cs.CR] UPDATED)
-
-    [http://arxiv.org/abs/2306.00934](http://arxiv.org/abs/2306.00934)
-
-    基于PROVEXPLAINER框架，通过复制GNN-based security models的决策过程，利用决策树和图结构特征将抽象GNN决策边界投影到可解释的特征空间，以增强GNN安全模型的透明度和询问能力。
+    本文提出了一个少样本对抗提示框架，在视觉-语言模型中通过有限数据调整输入序列，显著提升对抗鲁棒性，并通过端到端学习对抗性相关的文本监督。
 
     
 
-    复杂神经网络模型的黑匣子本质妨碍了它们在安全领域的普及，因为它们缺乏逻辑解释和可执行后续行动的预测。为了增强在系统来源分析中使用的图神经网络（GNN）安全模型的透明度和问责制，我们提出了PROVEXPLAINER，一种将抽象GNN决策边界投影到可解释特征空间的框架。我们首先使用简单且可解释的模型，如决策树（DT），复制基于GNN的安全模型的决策过程。为了最大化替代模型的准确性和保真度，我们提出了一种基于经典图论的图结构特征，并通过安全领域知识的广泛数据研究对其进行了增强。我们的图结构特征与系统来源领域中的问题空间行动密切相关，这使检测结果可用人类语言描述和解释。
+    深度神经网络对于微不可见的对抗性扰动的脆弱性已经引起了广泛关注。受到视觉-语言基础模型成功的启发，先前的努力通过将对抗性视觉特征与文本监督对齐来实现零样本对抗鲁棒性。但在实践中，由于包括重大适应成本、次优文本监督和未受控制的自然泛化能力在内的多个问题，它们仍然不尽人意。为了解决这些问题，本文提出了一个少样本对抗提示框架，通过有限的数据调整输入序列使得对抗鲁棒性得到显著提升。具体而言，我们通过提供对抗相关的文本监督，该监督是从对抗性示例中端到端学习的，来实现这一点。我们还提出了一个增强多模态特征一致性并鼓励不同
 
-    The black-box nature of complex Neural Network (NN)-based models has hindered their widespread adoption in security domains due to the lack of logical explanations and actionable follow-ups for their predictions. To enhance the transparency and accountability of Graph Neural Network (GNN) security models used in system provenance analysis, we propose PROVEXPLAINER, a framework for projecting abstract GNN decision boundaries onto interpretable feature spaces.  We first replicate the decision-making process of GNNbased security models using simpler and explainable models such as Decision Trees (DTs). To maximize the accuracy and fidelity of the surrogate models, we propose novel graph structural features founded on classical graph theory and enhanced by extensive data study with security domain knowledge. Our graph structural features are closely tied to problem-space actions in the system provenance domain, which allows the detection results to be explained in descriptive, human languag
+    arXiv:2403.14774v1 Announce Type: cross  Abstract: The vulnerability of deep neural networks to imperceptible adversarial perturbations has attracted widespread attention. Inspired by the success of vision-language foundation models, previous efforts achieved zero-shot adversarial robustness by aligning adversarial visual features with text supervision. However, in practice, they are still unsatisfactory due to several issues, including heavy adaptation cost, suboptimal text supervision, and uncontrolled natural generalization capacity. In this paper, to address these issues, we propose a few-shot adversarial prompt framework where adapting input sequences with limited data makes significant adversarial robustness improvement. Specifically, we achieve this by providing adversarially correlated text supervision that is end-to-end learned from adversarial examples. We also propose a novel training objective that enhances the consistency of multi-modal features while encourages differenti
+    
+[^2]: 学习在指导调优期间操纵大型语言模型
+
+    Learning to Poison Large Language Models During Instruction Tuning
+
+    [https://arxiv.org/abs/2402.13459](https://arxiv.org/abs/2402.13459)
+
+    通过设计新的数据注入攻击攻击LLMs，并提出一种梯度引导后门触发器学习方法，通过实验验证表明成功地破坏模型输出，仅改变1%的指导调优样本即可导致性能下降率达到约80％。
+
+    
+
+    大型语言模型（LLMs）的出现标志着语言处理和推理能力方面的重大突破。虽然它们取得了显著进展，但LLMs面临着数据注入攻击的漏洞，其中对手将后门触发器插入训练数据，以操纵输出以进行恶意行为。本研究通过设计一种新的数据注入攻击，旨在利用指导调优过程，进一步识别LLMs中的额外安全风险。我们提出了一种新颖的梯度引导后门触发器学习方法，以有效识别敌对触发器，确保对传统防御手段的规避，同时保持内容的完整性。通过对各种LLMs和任务的实验验证，我们的策略表明在破坏模型输出方面取得了很高的成功率；仅对4,000个指导调优样本中的1％进行注入就导致性能降低率（PDR）约为80％。我们的工作高
+
+    arXiv:2402.13459v1 Announce Type: cross  Abstract: The advent of Large Language Models (LLMs) has marked significant achievements in language processing and reasoning capabilities. Despite their advancements, LLMs face vulnerabilities to data poisoning attacks, where adversaries insert backdoor triggers into training data to manipulate outputs for malicious purposes. This work further identifies additional security risks in LLMs by designing a new data poisoning attack tailored to exploit the instruction tuning process. We propose a novel gradient-guided backdoor trigger learning approach to identify adversarial triggers efficiently, ensuring an evasion of detection by conventional defenses while maintaining content integrity. Through experimental validation across various LLMs and tasks, our strategy demonstrates a high success rate in compromising model outputs; poisoning only 1\% of 4,000 instruction tuning samples leads to a Performance Drop Rate (PDR) of around 80\%. Our work high
+    
+[^3]: 生成式人工智能安全：挑战与对策
+
+    Generative AI Security: Challenges and Countermeasures
+
+    [https://arxiv.org/abs/2402.12617](https://arxiv.org/abs/2402.12617)
+
+    生成式人工智能的安全挑战及对策研究。
+
+    
+
+    arXiv:2402.12617v1 公告类型：跨领域 摘要：生成式人工智能在许多行业的不断扩展引发了人们的兴奋和增加的关注。本文深入探讨了生成式人工智能所带来的独特安全挑战，并概述了管理这些风险的潜在研究方向。
+
+    arXiv:2402.12617v1 Announce Type: cross  Abstract: Generative AI's expanding footprint across numerous industries has led to both excitement and increased scrutiny. This paper delves into the unique security challenges posed by Generative AI, and outlines potential research directions for managing these risks.
     
 

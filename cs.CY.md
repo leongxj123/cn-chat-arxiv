@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Causal Fairness under Unobserved Confounding: A Neural Sensitivity Framework](https://arxiv.org/abs/2311.18460) | 分析了因果公平性对未观察到混杂的敏感性，推导出因果公平性指标的界限，提出神经框架用于学习公平预测，展示了框架的有效性 |
+| [^1] | [Generative AI Security: Challenges and Countermeasures](https://arxiv.org/abs/2402.12617) | 生成式人工智能的安全挑战及对策研究。 |
+| [^2] | [On Catastrophic Inheritance of Large Foundation Models](https://arxiv.org/abs/2402.01909) | 这篇论文讨论了大型基础模型（LFMs）中的灾难性继承问题，指出了从有偏见的大规模预训练数据到LFMs在下游任务中的行为的弱点和限制。我们提出了UIM框架，旨在理解LFMs的灾难性继承问题，并解释其中的含义。 |
 
 # 详细
 
-[^1]: 未观察到的混杂下的因果公平性：一种神经敏感性框架
+[^1]: 生成式人工智能安全：挑战与对策
 
-    Causal Fairness under Unobserved Confounding: A Neural Sensitivity Framework
+    Generative AI Security: Challenges and Countermeasures
 
-    [https://arxiv.org/abs/2311.18460](https://arxiv.org/abs/2311.18460)
+    [https://arxiv.org/abs/2402.12617](https://arxiv.org/abs/2402.12617)
 
-    分析了因果公平性对未观察到混杂的敏感性，推导出因果公平性指标的界限，提出神经框架用于学习公平预测，展示了框架的有效性
+    生成式人工智能的安全挑战及对策研究。
 
     
 
-    机器学习预测中的公平性由于法律、道德和社会原因在实践中被广泛要求。现有工作通常集中在没有未观察到的混杂的设置上，尽管未观察到的混杂可能导致严重违反因果公平性，从而产生不公平的预测。在这项工作中，我们分析了因果公平性对未观察到的混杂的敏感性。我们的贡献有三个方面。首先，我们推导出不同来源的未观察到混杂下因果公平性指标的界限。这使从业者能够检查其机器学习模型对在公平关键应用中的未观察到的混杂的敏感性。其次，我们提出了一种用于学习公平预测的新型神经框架，这使我们能够提供对因果公平性可能由于未观察到的混杂而受到违反的程度的最坏情况保证。第三，我们展示了我们框架的有效性。
+    arXiv:2402.12617v1 公告类型：跨领域 摘要：生成式人工智能在许多行业的不断扩展引发了人们的兴奋和增加的关注。本文深入探讨了生成式人工智能所带来的独特安全挑战，并概述了管理这些风险的潜在研究方向。
 
-    arXiv:2311.18460v2 Announce Type: replace-cross  Abstract: Fairness for machine learning predictions is widely required in practice for legal, ethical, and societal reasons. Existing work typically focuses on settings without unobserved confounding, even though unobserved confounding can lead to severe violations of causal fairness and, thus, unfair predictions. In this work, we analyze the sensitivity of causal fairness to unobserved confounding. Our contributions are three-fold. First, we derive bounds for causal fairness metrics under different sources of unobserved confounding. This enables practitioners to examine the sensitivity of their machine learning models to unobserved confounding in fairness-critical applications. Second, we propose a novel neural framework for learning fair predictions, which allows us to offer worst-case guarantees of the extent to which causal fairness can be violated due to unobserved confounding. Third, we demonstrate the effectiveness of our framewor
+    arXiv:2402.12617v1 Announce Type: cross  Abstract: Generative AI's expanding footprint across numerous industries has led to both excitement and increased scrutiny. This paper delves into the unique security challenges posed by Generative AI, and outlines potential research directions for managing these risks.
+    
+[^2]: 关于大型基础模型的灾难性继承问题
+
+    On Catastrophic Inheritance of Large Foundation Models
+
+    [https://arxiv.org/abs/2402.01909](https://arxiv.org/abs/2402.01909)
+
+    这篇论文讨论了大型基础模型（LFMs）中的灾难性继承问题，指出了从有偏见的大规模预训练数据到LFMs在下游任务中的行为的弱点和限制。我们提出了UIM框架，旨在理解LFMs的灾难性继承问题，并解释其中的含义。
+
+    
+
+    大型基础模型（LFMs）声称具有惊人的性能，然而人们对它们在机器学习以及其他各个学科中的神秘和难以解释的潜力提出了极大关切。在这篇立场论文中，我们提出了一个被忽视的问题，即LFMs中根深蒂固的灾难性继承问题，描述了从有偏见的大规模预训练数据到LFMs在下游任务中的行为的弱点和限制，包括受损、长尾、有噪音、超出分布等样本。这种继承可能对下游应用产生灾难性影响，如偏见、缺乏泛化能力、性能下降、安全漏洞、隐私泄露和价值误差。我们讨论了这个问题背后的挑战，并提出了UIM框架，来理解LFMs的灾难性继承问题，包括来自预训练和下游适应的继承内容的解释。
+
+    Large foundation models (LFMs) are claiming incredible performances. Yet great concerns have been raised about their mythic and uninterpreted potentials not only in machine learning, but also in various other disciplines. In this position paper, we propose to identify a neglected issue deeply rooted in LFMs: Catastrophic Inheritance, describing the weaknesses and limitations inherited from biased large-scale pre-training data to behaviors of LFMs on the downstream tasks, including samples that are corrupted, long-tailed, noisy, out-of-distributed, to name a few. Such inheritance can potentially cause catastrophes to downstream applications, such as bias, lack of generalization, deteriorated performance, security vulnerability, privacy leakage, and value misalignment. We discuss the challenges behind this issue and propose UIM, a framework to Understand the catastrophic inheritance of LFMs from both pre-training and downstream adaptation, Interpret the implications of catastrophic inher
     
 

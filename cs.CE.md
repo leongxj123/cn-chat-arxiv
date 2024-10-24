@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [DNABERT-S: Learning Species-Aware DNA Embedding with Genome Foundation Models](https://arxiv.org/abs/2402.08777) | DNABERT-S是一种专门用于创建物种感知的DNA嵌入的基因组基础模型。为了提高对长读DNA序列的嵌入效果，引入了Manifold Instance Mixup (MI-Mix)对比目标方法来训练模型。 |
+| [^1] | [From attention to profit: quantitative trading strategy based on transformer](https://arxiv.org/abs/2404.00424) | 该研究介绍了一种基于Transformer的量化交易策略，利用改进的模型架构和情感分析的迁移学习，不仅在捕捉长期依赖关系和建模数据关系方面具有优势，而且能够准确预测未来一段时间内的回报。 |
 
 # 详细
 
-[^1]: DNABERT-S: 学习具有基因组基础模型的物种感知DNA嵌入
+[^1]: 从注意力到利润：基于Transformer的量化交易策略
 
-    DNABERT-S: Learning Species-Aware DNA Embedding with Genome Foundation Models
+    From attention to profit: quantitative trading strategy based on transformer
 
-    [https://arxiv.org/abs/2402.08777](https://arxiv.org/abs/2402.08777)
+    [https://arxiv.org/abs/2404.00424](https://arxiv.org/abs/2404.00424)
 
-    DNABERT-S是一种专门用于创建物种感知的DNA嵌入的基因组基础模型。为了提高对长读DNA序列的嵌入效果，引入了Manifold Instance Mixup (MI-Mix)对比目标方法来训练模型。
+    该研究介绍了一种基于Transformer的量化交易策略，利用改进的模型架构和情感分析的迁移学习，不仅在捕捉长期依赖关系和建模数据关系方面具有优势，而且能够准确预测未来一段时间内的回报。
 
     
 
-    有效的DNA嵌入在基因组分析中仍然至关重要，特别是在缺乏用于模型微调的标记数据的情况下，尽管基因组基础模型已经取得了显著进展。一个典型的例子是宏基因组分箱，这是微生物组研究中的一个关键过程，旨在通过来自可能包含成千上万个不同的、通常没有经过表征的物种的复杂混合DNA序列的物种来对DNA序列进行分组。为了填补有效的DNA嵌入模型的缺陷，我们引入了DNABERT-S，这是一个专门用于创建物种感知的DNA嵌入的基因组基础模型。为了鼓励对易出错的长读DNA序列进行有效嵌入，我们引入了Manifold Instance Mixup(MI-Mix)，一种对比目标，它在随机选择的层次中混合DNA序列的隐藏表示，并训练模型以在输出层识别和区分这些混合比例。
+    传统量化交易实践中，应对复杂动态的金融市场一直是个持久挑战。先前的机器学习方法往往难以充分捕捉各种市场变量，经常忽视长期信息并且无法捕捉可能带来利润的基本信号。本文引入了改进的Transformer架构，并设计了一个基于该模型的新型因子。通过从情感分析进行迁移学习，所提出的模型不仅发挥了其原有的长距离依赖捕捉和建模复杂数据关系的优势，而且能够处理具有数值输入的任务，并准确预测未来一段时间内的回报。该研究收集了2010年至2019年中国资本市场4,601只股票的5,000,000多条滚动数据。研究结果证明了该模型在预测股票表现方面的卓越性能。
 
-    arXiv:2402.08777v1 Announce Type: cross Abstract: Effective DNA embedding remains crucial in genomic analysis, particularly in scenarios lacking labeled data for model fine-tuning, despite the significant advancements in genome foundation models. A prime example is metagenomics binning, a critical process in microbiome research that aims to group DNA sequences by their species from a complex mixture of DNA sequences derived from potentially thousands of distinct, often uncharacterized species. To fill the lack of effective DNA embedding models, we introduce DNABERT-S, a genome foundation model that specializes in creating species-aware DNA embeddings. To encourage effective embeddings to error-prone long-read DNA sequences, we introduce Manifold Instance Mixup (MI-Mix), a contrastive objective that mixes the hidden representations of DNA sequences at randomly selected layers and trains the model to recognize and differentiate these mixed proportions at the output layer. We further enha
+    arXiv:2404.00424v1 Announce Type: cross  Abstract: In traditional quantitative trading practice, navigating the complicated and dynamic financial market presents a persistent challenge. Former machine learning approaches have struggled to fully capture various market variables, often ignore long-term information and fail to catch up with essential signals that may lead the profit. This paper introduces an enhanced transformer architecture and designs a novel factor based on the model. By transfer learning from sentiment analysis, the proposed model not only exploits its original inherent advantages in capturing long-range dependencies and modelling complex data relationships but is also able to solve tasks with numerical inputs and accurately forecast future returns over a period. This work collects more than 5,000,000 rolling data of 4,601 stocks in the Chinese capital market from 2010 to 2019. The results of this study demonstrated the model's superior performance in predicting stock
     
 
