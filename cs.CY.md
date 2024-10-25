@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Generative AI Security: Challenges and Countermeasures](https://arxiv.org/abs/2402.12617) | 生成式人工智能的安全挑战及对策研究。 |
-| [^2] | [On Catastrophic Inheritance of Large Foundation Models](https://arxiv.org/abs/2402.01909) | 这篇论文讨论了大型基础模型（LFMs）中的灾难性继承问题，指出了从有偏见的大规模预训练数据到LFMs在下游任务中的行为的弱点和限制。我们提出了UIM框架，旨在理解LFMs的灾难性继承问题，并解释其中的含义。 |
+| [^1] | [The Male CEO and the Female Assistant: Probing Gender Biases in Text-To-Image Models Through Paired Stereotype Test](https://arxiv.org/abs/2402.11089) | 通过成对刻板印象测试（PST）框架，在文本-图像模型中探究性别偏见，并评估了DALLE-3在性别职业和组织权力方面的偏见。 |
 
 # 详细
 
-[^1]: 生成式人工智能安全：挑战与对策
+[^1]: 男性CEO和女性助理：通过成对刻板印象测试探究文本-图像模型中的性别偏见
 
-    Generative AI Security: Challenges and Countermeasures
+    The Male CEO and the Female Assistant: Probing Gender Biases in Text-To-Image Models Through Paired Stereotype Test
 
-    [https://arxiv.org/abs/2402.12617](https://arxiv.org/abs/2402.12617)
+    [https://arxiv.org/abs/2402.11089](https://arxiv.org/abs/2402.11089)
 
-    生成式人工智能的安全挑战及对策研究。
-
-    
-
-    arXiv:2402.12617v1 公告类型：跨领域 摘要：生成式人工智能在许多行业的不断扩展引发了人们的兴奋和增加的关注。本文深入探讨了生成式人工智能所带来的独特安全挑战，并概述了管理这些风险的潜在研究方向。
-
-    arXiv:2402.12617v1 Announce Type: cross  Abstract: Generative AI's expanding footprint across numerous industries has led to both excitement and increased scrutiny. This paper delves into the unique security challenges posed by Generative AI, and outlines potential research directions for managing these risks.
-    
-[^2]: 关于大型基础模型的灾难性继承问题
-
-    On Catastrophic Inheritance of Large Foundation Models
-
-    [https://arxiv.org/abs/2402.01909](https://arxiv.org/abs/2402.01909)
-
-    这篇论文讨论了大型基础模型（LFMs）中的灾难性继承问题，指出了从有偏见的大规模预训练数据到LFMs在下游任务中的行为的弱点和限制。我们提出了UIM框架，旨在理解LFMs的灾难性继承问题，并解释其中的含义。
+    通过成对刻板印象测试（PST）框架，在文本-图像模型中探究性别偏见，并评估了DALLE-3在性别职业和组织权力方面的偏见。
 
     
 
-    大型基础模型（LFMs）声称具有惊人的性能，然而人们对它们在机器学习以及其他各个学科中的神秘和难以解释的潜力提出了极大关切。在这篇立场论文中，我们提出了一个被忽视的问题，即LFMs中根深蒂固的灾难性继承问题，描述了从有偏见的大规模预训练数据到LFMs在下游任务中的行为的弱点和限制，包括受损、长尾、有噪音、超出分布等样本。这种继承可能对下游应用产生灾难性影响，如偏见、缺乏泛化能力、性能下降、安全漏洞、隐私泄露和价值误差。我们讨论了这个问题背后的挑战，并提出了UIM框架，来理解LFMs的灾难性继承问题，包括来自预训练和下游适应的继承内容的解释。
+    最近大规模的文本到图像（T2I）模型（如DALLE-3）展示了在新应用中的巨大潜力，但也面临前所未有的公平挑战。先前的研究揭示了单人图像生成中的性别偏见，但T2I模型应用可能需要同时描绘两个或更多人。该设定中的潜在偏见仍未被探究，导致使用中的公平相关风险。为了研究T2I模型中性别偏见的基本方面，我们提出了一种新颖的成对刻板印象测试（PST）偏见评估框架。PST促使模型生成同一图像中的两个个体，用与相反性别刻板印象相关联的两个社会身份来描述他们。通过生成的图像遵从性别刻板印象的程度来衡量偏见。利用PST，我们从两个角度评估DALLE-3：性别职业中的偏见和组织权力中的偏见。
 
-    Large foundation models (LFMs) are claiming incredible performances. Yet great concerns have been raised about their mythic and uninterpreted potentials not only in machine learning, but also in various other disciplines. In this position paper, we propose to identify a neglected issue deeply rooted in LFMs: Catastrophic Inheritance, describing the weaknesses and limitations inherited from biased large-scale pre-training data to behaviors of LFMs on the downstream tasks, including samples that are corrupted, long-tailed, noisy, out-of-distributed, to name a few. Such inheritance can potentially cause catastrophes to downstream applications, such as bias, lack of generalization, deteriorated performance, security vulnerability, privacy leakage, and value misalignment. We discuss the challenges behind this issue and propose UIM, a framework to Understand the catastrophic inheritance of LFMs from both pre-training and downstream adaptation, Interpret the implications of catastrophic inher
+    arXiv:2402.11089v1 Announce Type: cross  Abstract: Recent large-scale Text-To-Image (T2I) models such as DALLE-3 demonstrate great potential in new applications, but also face unprecedented fairness challenges. Prior studies revealed gender biases in single-person image generation, but T2I model applications might require portraying two or more people simultaneously. Potential biases in this setting remain unexplored, leading to fairness-related risks in usage. To study these underlying facets of gender biases in T2I models, we propose a novel Paired Stereotype Test (PST) bias evaluation framework. PST prompts the model to generate two individuals in the same image. They are described with two social identities that are stereotypically associated with the opposite gender. Biases can then be measured by the level of conformation to gender stereotypes in generated images. Using PST, we evaluate DALLE-3 from 2 perspectives: biases in gendered occupation and biases in organizational power.
     
 

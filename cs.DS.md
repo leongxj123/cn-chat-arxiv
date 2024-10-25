@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Online Differentially Private Synthetic Data Generation](https://arxiv.org/abs/2402.08012) | 本文提出了一种在线差分隐私合成数据生成的多项式时间算法，在超立方体数据流上实现了近乎最优的精度界限，也推广了之前关于计数查询的连续发布模型的工作，仅需要额外的多项式对数因子。 |
+| [^1] | [Output-sensitive ERM-based techniques for data-driven algorithm design.](http://arxiv.org/abs/2204.03569) | 本研究通过列举问题实例总损失函数的部分来提出了基于输出感知ERM的数据驱动算法设计技术，解决了多参数组合算法族的计算效率问题。 |
 
 # 详细
 
-[^1]: 在线差分隐私合成数据生成
+[^1]: 基于输出感知ERM的数据驱动算法设计技术
 
-    Online Differentially Private Synthetic Data Generation
+    Output-sensitive ERM-based techniques for data-driven algorithm design. (arXiv:2204.03569v2 [cs.DS] UPDATED)
 
-    [https://arxiv.org/abs/2402.08012](https://arxiv.org/abs/2402.08012)
+    [http://arxiv.org/abs/2204.03569](http://arxiv.org/abs/2204.03569)
 
-    本文提出了一种在线差分隐私合成数据生成的多项式时间算法，在超立方体数据流上实现了近乎最优的精度界限，也推广了之前关于计数查询的连续发布模型的工作，仅需要额外的多项式对数因子。
+    本研究通过列举问题实例总损失函数的部分来提出了基于输出感知ERM的数据驱动算法设计技术，解决了多参数组合算法族的计算效率问题。
 
     
 
-    本文提出了一种用于在线差分隐私合成数据生成的多项式时间算法。对于在超立方体$[0,1]^d$内的数据流和无限时间范围，我们开发了一种在线算法，每个时间$t$都生成一个差分隐私合成数据集。该算法在1-Wasserstein距离上实现了近乎最优的精度界限：当$d\geq 2$时为$O(t^{-1/d}\log(t)$，当$d=1$时为$O(t^{-1}\log^{4.5}(t)$。这个结果将之前关于计数查询的连续发布模型的工作推广到包括Lipschitz查询。与离线情况不同，离线情况下整个数据集一次性可用，我们的方法仅需要在精度界限中额外的多项式对数因子。
+    数据驱动算法设计是一种有潜力的基于学习的方法，用于超出最坏情况分析具有可调参数的算法。一个重要的开放问题是为具有多个参数的组合算法族设计计算效率高的数据驱动算法。当固定问题实例并变化参数时，"对偶"损失函数通常具有分段可分解的结构，即除了某些尖锐的转换边界外都表现良好。在本工作中，我们通过列举一组问题实例的总损失函数的部分来开展技术研究，以开发用于数据驱动算法设计的高效ERM学习算法。我们的方法的运行时间与实际出现的部分数目成比例，而不是基于部分数目的最坏情况上界。我们的方法涉及两个新颖的要素 - 一种用于枚举由一组超平面诱导的多面体的输出感知算法。
 
-    We present a polynomial-time algorithm for online differentially private synthetic data generation. For a data stream within the hypercube $[0,1]^d$ and an infinite time horizon, we develop an online algorithm that generates a differentially private synthetic dataset at each time $t$. This algorithm achieves a near-optimal accuracy bound of $O(t^{-1/d}\log(t))$ for $d\geq 2$ and $O(t^{-1}\log^{4.5}(t))$ for $d=1$ in the 1-Wasserstein distance. This result generalizes the previous work on the continual release model for counting queries to include Lipschitz queries. Compared to the offline case, where the entire dataset is available at once, our approach requires only an extra polylog factor in the accuracy bound.
+    Data-driven algorithm design is a promising, learning-based approach for beyond worst-case analysis of algorithms with tunable parameters. An important open problem is the design of computationally efficient data-driven algorithms for combinatorial algorithm families with multiple parameters. As one fixes the problem instance and varies the parameters, the "dual" loss function typically has a piecewise-decomposable structure, i.e. is well-behaved except at certain sharp transition boundaries. In this work we initiate the study of techniques to develop efficient ERM learning algorithms for data-driven algorithm design by enumerating the pieces of the sum dual loss functions for a collection of problem instances. The running time of our approach scales with the actual number of pieces that appear as opposed to worst case upper bounds on the number of pieces. Our approach involves two novel ingredients -- an output-sensitive algorithm for enumerating polytopes induced by a set of hyperpla
     
 

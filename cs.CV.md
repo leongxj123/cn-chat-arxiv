@@ -2,102 +2,57 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Few-Shot Adversarial Prompt Learning on Vision-Language Models](https://arxiv.org/abs/2403.14774) | 本文提出了一个少样本对抗提示框架，在视觉-语言模型中通过有限数据调整输入序列，显著提升对抗鲁棒性，并通过端到端学习对抗性相关的文本监督。 |
-| [^2] | [Fine-tuning with Very Large Dropout](https://arxiv.org/abs/2403.00946) | 通过使用非常高的dropout率进行微调，可以实现超出分布性能，这超出了集成和权重平均方法。 |
-| [^3] | [Real-World Robot Applications of Foundation Models: A Review](https://arxiv.org/abs/2402.05741) | 本文综述了基础模型在真实世界机器人中的应用，重点是替换现有机器人系统中的特定组件。这些基础模型在输入输出关系、感知、运动规划和控制等方面扮演了重要角色。未来的挑战和对实际机器人应用的影响也被讨论到。 |
-| [^4] | [Your Diffusion Model is Secretly a Certifiably Robust Classifier](https://arxiv.org/abs/2402.02316) | 这项研究提出了一种新的扩散分类器家族，称为噪声扩散分类器（NDCs），其具有最新的可证明的鲁棒性。通过将扩散分类器推广到分类高斯受损数据，并将其与随机平滑技术相结合，构建了具有非常量Lipschitzness的平滑分类器。这些NDCs显示出卓越的认证鲁棒性。 |
-| [^5] | [Retrieving Conditions from Reference Images for Diffusion Models](https://arxiv.org/abs/2312.02521) | 本文将主题驱动生成视为扩散模型中的一个统一检索问题，引入了一种名为RetriNet的新颖扩散模型架构，通过精确检索主题属性并过滤无关信息来解决问题，在人脸生成方面表现出卓越性能。 |
-| [^6] | [Conquering the Communication Constraints to Enable Large Pre-Trained Models in Federated Learning](https://arxiv.org/abs/2210.01708) | 研究克服联邦学习中通信约束的方法，以实现强大的预训练模型在FL中的应用，并同时减少通信负担。 |
-| [^7] | [Boosting Text-to-Image Diffusion Models with Fine-Grained Semantic Rewards.](http://arxiv.org/abs/2305.19599) | 本文提出了FineRewards，通过引入细粒度的语义奖励，即标题奖励和SAM奖励，来改进文本到图像扩散模型中文本和图像之间的对齐。 |
-| [^8] | [ARBEx: Attentive Feature Extraction with Reliability Balancing for Robust Facial Expression Learning.](http://arxiv.org/abs/2305.01486) | 本论文提出了一个名为ARBEx的框架，它采用了可靠性平衡方法来应对面部表情学习任务中的数据偏差和不确定性。该框架还引入了可学习的锚点和多头自注意机制，并在多个公共数据集上取得了有效性验证。 |
+| [^1] | [The Male CEO and the Female Assistant: Probing Gender Biases in Text-To-Image Models Through Paired Stereotype Test](https://arxiv.org/abs/2402.11089) | 通过成对刻板印象测试（PST）框架，在文本-图像模型中探究性别偏见，并评估了DALLE-3在性别职业和组织权力方面的偏见。 |
+| [^2] | [Unified Concept Editing in Diffusion Models.](http://arxiv.org/abs/2308.14761) | 本文提出了一种称为统一概念编辑（UCE）的方法，通过使用一个闭合解决方案对模型进行编辑，同时解决文本到图像模型中的偏见、版权和冒犯性内容等问题。实验证明了该方法的改进和可扩展性。 |
+| [^3] | [Convolutions Through the Lens of Tensor Networks.](http://arxiv.org/abs/2307.02275) | 该论文提供了一种通过张量网络理解和演化卷积的新视角，可以通过绘制和操作张量网络来进行函数转换、子张量访问和融合。研究人员还演示了卷积图表的导出以及各种自动微分操作和二阶信息逼近图表的生成，同时还提供了特定于卷积的图表转换，以优化计算性能。 |
+| [^4] | [Boosting Text-to-Image Diffusion Models with Fine-Grained Semantic Rewards.](http://arxiv.org/abs/2305.19599) | 本文提出了FineRewards，通过引入细粒度的语义奖励，即标题奖励和SAM奖励，来改进文本到图像扩散模型中文本和图像之间的对齐。 |
+| [^5] | [ARBEx: Attentive Feature Extraction with Reliability Balancing for Robust Facial Expression Learning.](http://arxiv.org/abs/2305.01486) | 本论文提出了一个名为ARBEx的框架，它采用了可靠性平衡方法来应对面部表情学习任务中的数据偏差和不确定性。该框架还引入了可学习的锚点和多头自注意机制，并在多个公共数据集上取得了有效性验证。 |
 
 # 详细
 
-[^1]: 视觉-语言模型上的少样本对抗提示学习
+[^1]: 男性CEO和女性助理：通过成对刻板印象测试探究文本-图像模型中的性别偏见
 
-    Few-Shot Adversarial Prompt Learning on Vision-Language Models
+    The Male CEO and the Female Assistant: Probing Gender Biases in Text-To-Image Models Through Paired Stereotype Test
 
-    [https://arxiv.org/abs/2403.14774](https://arxiv.org/abs/2403.14774)
+    [https://arxiv.org/abs/2402.11089](https://arxiv.org/abs/2402.11089)
 
-    本文提出了一个少样本对抗提示框架，在视觉-语言模型中通过有限数据调整输入序列，显著提升对抗鲁棒性，并通过端到端学习对抗性相关的文本监督。
-
-    
-
-    深度神经网络对于微不可见的对抗性扰动的脆弱性已经引起了广泛关注。受到视觉-语言基础模型成功的启发，先前的努力通过将对抗性视觉特征与文本监督对齐来实现零样本对抗鲁棒性。但在实践中，由于包括重大适应成本、次优文本监督和未受控制的自然泛化能力在内的多个问题，它们仍然不尽人意。为了解决这些问题，本文提出了一个少样本对抗提示框架，通过有限的数据调整输入序列使得对抗鲁棒性得到显著提升。具体而言，我们通过提供对抗相关的文本监督，该监督是从对抗性示例中端到端学习的，来实现这一点。我们还提出了一个增强多模态特征一致性并鼓励不同
-
-    arXiv:2403.14774v1 Announce Type: cross  Abstract: The vulnerability of deep neural networks to imperceptible adversarial perturbations has attracted widespread attention. Inspired by the success of vision-language foundation models, previous efforts achieved zero-shot adversarial robustness by aligning adversarial visual features with text supervision. However, in practice, they are still unsatisfactory due to several issues, including heavy adaptation cost, suboptimal text supervision, and uncontrolled natural generalization capacity. In this paper, to address these issues, we propose a few-shot adversarial prompt framework where adapting input sequences with limited data makes significant adversarial robustness improvement. Specifically, we achieve this by providing adversarially correlated text supervision that is end-to-end learned from adversarial examples. We also propose a novel training objective that enhances the consistency of multi-modal features while encourages differenti
-    
-[^2]: 使用非常大的Dropout进行微调
-
-    Fine-tuning with Very Large Dropout
-
-    [https://arxiv.org/abs/2403.00946](https://arxiv.org/abs/2403.00946)
-
-    通过使用非常高的dropout率进行微调，可以实现超出分布性能，这超出了集成和权重平均方法。
+    通过成对刻板印象测试（PST）框架，在文本-图像模型中探究性别偏见，并评估了DALLE-3在性别职业和组织权力方面的偏见。
 
     
 
-    今天不可能假装机器学习实践与训练和测试数据遵循相同分布的观念是兼容的。该论文调查了使用非常高的丢弃率来获得这种丰富表示，尽管使用这样的丢弃率从头开始训练深度网络几乎是不可能的，但在这些条件下对大型预训练模型进行微调不仅是可能的，而且实现了超越集成和权重平均方法的超出分布性能。
+    最近大规模的文本到图像（T2I）模型（如DALLE-3）展示了在新应用中的巨大潜力，但也面临前所未有的公平挑战。先前的研究揭示了单人图像生成中的性别偏见，但T2I模型应用可能需要同时描绘两个或更多人。该设定中的潜在偏见仍未被探究，导致使用中的公平相关风险。为了研究T2I模型中性别偏见的基本方面，我们提出了一种新颖的成对刻板印象测试（PST）偏见评估框架。PST促使模型生成同一图像中的两个个体，用与相反性别刻板印象相关联的两个社会身份来描述他们。通过生成的图像遵从性别刻板印象的程度来衡量偏见。利用PST，我们从两个角度评估DALLE-3：性别职业中的偏见和组织权力中的偏见。
 
-    arXiv:2403.00946v1 Announce Type: new  Abstract: It is impossible today to pretend that the practice of machine learning is compatible with the idea that training and testing data follow the same distribution. Several authors have recently used ensemble techniques to show how scenarios involving multiple data distributions are best served by representations that are both richer than those obtained by regularizing for the best in-distribution performance, and richer than those obtained under the influence of the implicit sparsity bias of common stochastic gradient procedures.   This contribution investigates the use of very high dropout rates instead of ensembles to obtain such rich representations. Although training a deep network from scratch using such dropout rates is virtually impossible, fine-tuning a large pre-trained model under such conditions is not only possible but also achieves out-of-distribution performances that exceed those of both ensembles and weight averaging methods
+    arXiv:2402.11089v1 Announce Type: cross  Abstract: Recent large-scale Text-To-Image (T2I) models such as DALLE-3 demonstrate great potential in new applications, but also face unprecedented fairness challenges. Prior studies revealed gender biases in single-person image generation, but T2I model applications might require portraying two or more people simultaneously. Potential biases in this setting remain unexplored, leading to fairness-related risks in usage. To study these underlying facets of gender biases in T2I models, we propose a novel Paired Stereotype Test (PST) bias evaluation framework. PST prompts the model to generate two individuals in the same image. They are described with two social identities that are stereotypically associated with the opposite gender. Biases can then be measured by the level of conformation to gender stereotypes in generated images. Using PST, we evaluate DALLE-3 from 2 perspectives: biases in gendered occupation and biases in organizational power.
     
-[^3]: 基于基础模型的真实世界机器人应用：一项综述
+[^2]: 扩散模型中的统一概念编辑
 
-    Real-World Robot Applications of Foundation Models: A Review
+    Unified Concept Editing in Diffusion Models. (arXiv:2308.14761v1 [cs.CV])
 
-    [https://arxiv.org/abs/2402.05741](https://arxiv.org/abs/2402.05741)
+    [http://arxiv.org/abs/2308.14761](http://arxiv.org/abs/2308.14761)
 
-    本文综述了基础模型在真实世界机器人中的应用，重点是替换现有机器人系统中的特定组件。这些基础模型在输入输出关系、感知、运动规划和控制等方面扮演了重要角色。未来的挑战和对实际机器人应用的影响也被讨论到。
-
-    
-
-    最近，基于大规模语言模型（LLMs）和视觉语言模型（VLMs）等基础模型的发展，通过对大量数据的训练，为不同任务和模态的灵活应用提供了便利。它们的影响涵盖了包括医疗、教育和机器人等各个领域。本文概述了基础模型在真实世界机器人中的实际应用情况，重点是替换现有机器人系统中的特定组件。总结涵盖了基础模型中的输入输出关系以及它们在机器人领域中的感知、运动规划和控制等方面的作用。本文还讨论了未来挑战和对实际机器人应用的影响。
-
-    Recent developments in foundation models, like Large Language Models (LLMs) and Vision-Language Models (VLMs), trained on extensive data, facilitate flexible application across different tasks and modalities. Their impact spans various fields, including healthcare, education, and robotics. This paper provides an overview of the practical application of foundation models in real-world robotics, with a primary emphasis on the replacement of specific components within existing robot systems. The summary encompasses the perspective of input-output relationships in foundation models, as well as their role in perception, motion planning, and control within the field of robotics. This paper concludes with a discussion of future challenges and implications for practical robot applications.
-    
-[^4]: 你的扩散模型实际上是一个可证明鲁棒的分类器
-
-    Your Diffusion Model is Secretly a Certifiably Robust Classifier
-
-    [https://arxiv.org/abs/2402.02316](https://arxiv.org/abs/2402.02316)
-
-    这项研究提出了一种新的扩散分类器家族，称为噪声扩散分类器（NDCs），其具有最新的可证明的鲁棒性。通过将扩散分类器推广到分类高斯受损数据，并将其与随机平滑技术相结合，构建了具有非常量Lipschitzness的平滑分类器。这些NDCs显示出卓越的认证鲁棒性。
+    本文提出了一种称为统一概念编辑（UCE）的方法，通过使用一个闭合解决方案对模型进行编辑，同时解决文本到图像模型中的偏见、版权和冒犯性内容等问题。实验证明了该方法的改进和可扩展性。
 
     
 
-    近期，扩散模型被作为鲁棒分类的生成器分类器所采用。然而，对于扩散分类器鲁棒性的综合理论理解仍然缺乏，这让我们怀疑它们是否会容易受到未来更强攻击的影响。在本研究中，我们提出了一种新的扩散分类器家族，命名为噪声扩散分类器（NDCs），其具有最新的可证明的鲁棒性。具体来说，我们通过推导这些分布的证据下界（ELBOs），利用ELBO近似似然度量，并使用贝叶斯定理计算分类概率，将扩散分类器推广到分类高斯受损数据。我们将这些推广的扩散分类器与随机平滑技术相结合，构建具有非常量Lipschitzness的平滑分类器。实验结果表明我们提出的NDCs在鲁棒性方面具有卓越的认证能力。值得注意的是，我们是第一个达到80%的...
+    文本到图像模型存在各种安全问题，可能限制其适用性。先前的方法分别解决了文本到图像模型中的偏见、版权和冒犯性内容等各个问题。然而，在真实世界中，所有这些问题都同时出现在同一个模型中。我们提出了一种使用单一方法解决所有问题的方法，名为统一概念编辑（UCE）。我们的方法在不经过训练的情况下通过闭合解决方案对模型进行编辑，并可无缝地扩展到文本条件下的扩散模型上进行并行编辑。我们通过编辑文本到图像的投影来展示可扩展的同时去偏见、消除风格和内容调节，我们进行了大量实验证明了相对于先前方法的改进效果和可扩展性。我们的代码可以在https://unified.baulab.info上找到。
 
-    Diffusion models are recently employed as generative classifiers for robust classification. However, a comprehensive theoretical understanding of the robustness of diffusion classifiers is still lacking, leading us to question whether they will be vulnerable to future stronger attacks. In this study, we propose a new family of diffusion classifiers, named Noised Diffusion Classifiers~(NDCs), that possess state-of-the-art certified robustness. Specifically, we generalize the diffusion classifiers to classify Gaussian-corrupted data by deriving the evidence lower bounds (ELBOs) for these distributions, approximating the likelihood using the ELBO, and calculating classification probabilities via Bayes' theorem. We integrate these generalized diffusion classifiers with randomized smoothing to construct smoothed classifiers possessing non-constant Lipschitzness. Experimental results demonstrate the superior certified robustness of our proposed NDCs. Notably, we are the first to achieve 80\%
+    Text-to-image models suffer from various safety issues that may limit their suitability for deployment. Previous methods have separately addressed individual issues of bias, copyright, and offensive content in text-to-image models. However, in the real world, all of these issues appear simultaneously in the same model. We present a method that tackles all issues with a single approach. Our method, Unified Concept Editing (UCE), edits the model without training using a closed-form solution, and scales seamlessly to concurrent edits on text-conditional diffusion models. We demonstrate scalable simultaneous debiasing, style erasure, and content moderation by editing text-to-image projections, and we present extensive experiments demonstrating improved efficacy and scalability over prior work. Our code is available at https://unified.baulab.info
     
-[^5]: 从参考图像中检索条件用于扩散模型
+[^3]: 透过张量网络的视角解析卷积
 
-    Retrieving Conditions from Reference Images for Diffusion Models
+    Convolutions Through the Lens of Tensor Networks. (arXiv:2307.02275v1 [cs.LG])
 
-    [https://arxiv.org/abs/2312.02521](https://arxiv.org/abs/2312.02521)
+    [http://arxiv.org/abs/2307.02275](http://arxiv.org/abs/2307.02275)
 
-    本文将主题驱动生成视为扩散模型中的一个统一检索问题，引入了一种名为RetriNet的新颖扩散模型架构，通过精确检索主题属性并过滤无关信息来解决问题，在人脸生成方面表现出卓越性能。
-
-    
-
-    新开发的基于扩散的技术展示了在生成各种高质量图像方面的卓越能力，引起了各种应用的相当大兴趣。一个普遍的场景是基于参考图像中的一个主题生成新的图像。这个主题可以是风格化头像的面部身份，虚拟试穿的身体和服装等。满足这一要求正在演变成一门称为主题驱动生成的领域。在本文中，我们将主题驱动生成视为扩散模型中的一个统一检索问题。我们引入了一种名为RetriNet的新颖扩散模型架构，旨在通过精确地从参考图像中检索主题属性并过滤掉无关信息来解决这些问题。与现有的最先进方法相比，RetriNet在人脸生成方面表现出令人印象深刻的性能。我们进一步提出了一个研究和...
-
-    arXiv:2312.02521v2 Announce Type: replace-cross  Abstract: Newly developed diffusion-based techniques have showcased phenomenal abilities in producing a wide range of high-quality images, sparking considerable interest in various applications. A prevalent scenario is to generate new images based on a subject from reference images. This subject could be face identity for styled avatars, body and clothing for virtual try-on and so on. Satisfying this requirement is evolving into a field called Subject-Driven Generation. In this paper, we consider Subject-Driven Generation as a unified retrieval problem with diffusion models. We introduce a novel diffusion model architecture, named RetriNet, designed to address and solve these problems by retrieving subject attributes from reference images precisely, and filter out irrelevant information. RetriNet demonstrates impressive performance when compared to existing state-of-the-art approaches in face generation. We further propose a research and
-    
-[^6]: 克服通信约束，实现联邦学习中大型预训练模型的应用
-
-    Conquering the Communication Constraints to Enable Large Pre-Trained Models in Federated Learning
-
-    [https://arxiv.org/abs/2210.01708](https://arxiv.org/abs/2210.01708)
-
-    研究克服联邦学习中通信约束的方法，以实现强大的预训练模型在FL中的应用，并同时减少通信负担。
+    该论文提供了一种通过张量网络理解和演化卷积的新视角，可以通过绘制和操作张量网络来进行函数转换、子张量访问和融合。研究人员还演示了卷积图表的导出以及各种自动微分操作和二阶信息逼近图表的生成，同时还提供了特定于卷积的图表转换，以优化计算性能。
 
     
 
-    联邦学习（FL）已经成为一种旨在在本地设备上协力训练模型而不需要对原始数据进行中心化访问的有前景的范式。在典型的FL范式（例如FedAvg）中，每一轮模型权重都会被发送到参与客户端并回传到服务器。最近，在联邦学习优化和收敛改进方面展示了使用小型预训练模型是有效的。然而，最近的最先进预训练模型变得更加强大，但也拥有更多参数。在传统的FL中，共享巨大的模型权重可以迅速给系统带来巨大的通信负担，尤其是如果采用更加强大的模型。我们能否找到一个解决方案，在FL中启用这些强大且现成的预训练模型以实现出色性能的同时减少通信负担？为此，我们研究了使用参数高效的方法
+    尽管卷积的直观概念简单，但其分析比稠密层更加复杂，这使得理论和算法的推广变得困难。我们通过张量网络（TN）提供了对卷积的新视角，通过绘制图表、操作图表进行函数转换、子张量访问和融合来推理底层张量乘法。我们通过推导各种自动微分操作的图表以及具有完整超参数支持、批处理、通道组和任意卷积维度泛化的流行的二阶信息逼近的图表来展示这种表达能力。此外，我们基于连接模式提供了特定于卷积的转换，允许在评估之前重新连接和简化图表。最后，我们通过依赖于高效TN缩并的已建立机制来探究计算性能。我们的TN实现加速了最近提出的
 
-    arXiv:2210.01708v3 Announce Type: replace  Abstract: Federated learning (FL) has emerged as a promising paradigm for enabling the collaborative training of models without centralized access to the raw data on local devices. In the typical FL paradigm (e.g., FedAvg), model weights are sent to and from the server each round to participating clients. Recently, the use of small pre-trained models has been shown effective in federated learning optimization and improving convergence. However, recent state-of-the-art pre-trained models are getting more capable but also have more parameters. In conventional FL, sharing the enormous model weights can quickly put a massive communication burden on the system, especially if more capable models are employed. Can we find a solution to enable those strong and readily-available pre-trained models in FL to achieve excellent performance while simultaneously reducing the communication burden? To this end, we investigate the use of parameter-efficient fin
+    Despite their simple intuition, convolutions are more tedious to analyze than dense layers, which complicates the generalization of theoretical and algorithmic ideas. We provide a new perspective onto convolutions through tensor networks (TNs) which allow reasoning about the underlying tensor multiplications by drawing diagrams, and manipulating them to perform function transformations, sub-tensor access, and fusion. We demonstrate this expressive power by deriving the diagrams of various autodiff operations and popular approximations of second-order information with full hyper-parameter support, batching, channel groups, and generalization to arbitrary convolution dimensions. Further, we provide convolution-specific transformations based on the connectivity pattern which allow to re-wire and simplify diagrams before evaluation. Finally, we probe computational performance, relying on established machinery for efficient TN contraction. Our TN implementation speeds up a recently-proposed
     
-[^7]: 细粒度语义奖励增强文本到图像扩散模型
+[^4]: 细粒度语义奖励增强文本到图像扩散模型
 
     Boosting Text-to-Image Diffusion Models with Fine-Grained Semantic Rewards. (arXiv:2305.19599v1 [cs.CV])
 
@@ -111,7 +66,7 @@
 
     Recent advances in text-to-image diffusion models have achieved remarkable success in generating high-quality, realistic images from given text prompts. However, previous methods fail to perform accurate modality alignment between text concepts and generated images due to the lack of fine-level semantic guidance that successfully diagnoses the modality discrepancy. In this paper, we propose FineRewards to improve the alignment between text and images in text-to-image diffusion models by introducing two new fine-grained semantic rewards: the caption reward and the Semantic Segment Anything (SAM) reward. From the global semantic view, the caption reward generates a corresponding detailed caption that depicts all important contents in the synthetic image via a BLIP-2 model and then calculates the reward score by measuring the similarity between the generated caption and the given prompt. From the local semantic view, the SAM reward segments the generated images into local parts with categ
     
-[^8]: ARBEx：用于鲁棒性面部表情学习的关注特征提取与可靠性平衡框架
+[^5]: ARBEx：用于鲁棒性面部表情学习的关注特征提取与可靠性平衡框架
 
     ARBEx: Attentive Feature Extraction with Reliability Balancing for Robust Facial Expression Learning. (arXiv:2305.01486v1 [cs.CV])
 
