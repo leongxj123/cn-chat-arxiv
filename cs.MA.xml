@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.MA</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.MA</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.MA</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.MA</description><item><title>&#25552;&#20986;&#20102;&#19968;&#31181;&#20915;&#31574;&#35821;&#35328;&#27169;&#22411;DLM&#65292;&#26088;&#22312;&#36890;&#36807;&#20351;&#29992;LLMs&#20316;&#20026;&#33258;&#21160;&#35268;&#21010;&#22120;&#65292;&#21160;&#24577;&#24494;&#35843;RMAB&#31574;&#30053;&#65292;&#20197;&#24212;&#23545;&#20844;&#20849;&#21355;&#29983;&#20013;&#20855;&#26377;&#25361;&#25112;&#24615;&#30340;&#24773;&#22659;&#12290;</title><link>https://arxiv.org/abs/2402.14807</link><description>&lt;p&gt;
+&#29992;&#20110;&#20844;&#20849;&#21355;&#29983;&#20013;&#21160;&#24577;&#19981;&#23433;&#38745;&#22810;&#33218;&#32769;&#34382;&#26426;&#20219;&#21153;&#30340;&#20915;&#31574;&#35821;&#35328;&#27169;&#22411;&#65288;DLM&#65289;
+&lt;/p&gt;
+&lt;p&gt;
+A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.14807
+&lt;/p&gt;
+&lt;p&gt;
+&#25552;&#20986;&#20102;&#19968;&#31181;&#20915;&#31574;&#35821;&#35328;&#27169;&#22411;DLM&#65292;&#26088;&#22312;&#36890;&#36807;&#20351;&#29992;LLMs&#20316;&#20026;&#33258;&#21160;&#35268;&#21010;&#22120;&#65292;&#21160;&#24577;&#24494;&#35843;RMAB&#31574;&#30053;&#65292;&#20197;&#24212;&#23545;&#20844;&#20849;&#21355;&#29983;&#20013;&#20855;&#26377;&#25361;&#25112;&#24615;&#30340;&#24773;&#22659;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#26088;&#22312;&#38477;&#20302;&#23381;&#20135;&#22919;&#27515;&#20129;&#29575;&#30340;&#21162;&#21147;&#22312;&#24456;&#22823;&#31243;&#24230;&#19978;&#20381;&#36182;&#20110;&#39044;&#38450;&#20445;&#20581;&#35745;&#21010;&#65292;&#21521;&#39640;&#39118;&#38505;&#20154;&#32676;&#20256;&#25773;&#37325;&#35201;&#30340;&#20581;&#24247;&#20449;&#24687;&#12290;&#26412;&#25991;&#25552;&#20986;&#20102;DLM&#65306;&#19968;&#31181;&#29992;&#20110;RMAB&#30340;&#20915;&#31574;&#35821;&#35328;&#27169;&#22411;&#65292;&#26088;&#22312;&#36890;&#36807;&#20351;&#29992;LLMs&#20316;&#20026;&#33258;&#21160;&#35268;&#21010;&#22120;&#65292;&#21160;&#24577;&#24494;&#35843;RMAB&#31574;&#30053;&#65292;&#20197;&#24212;&#23545;&#20844;&#20849;&#21355;&#29983;&#20013;&#20855;&#26377;&#25361;&#25112;&#24615;&#30340;&#24773;&#22659;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2402.14807v1 Announce Type: cross  Abstract: Efforts to reduce maternal mortality rate, a key UN Sustainable Development target (SDG Target 3.1), rely largely on preventative care programs to spread critical health information to high-risk populations. These programs face two important challenges: efficiently allocating limited health resources to large beneficiary populations, and adapting to evolving policy priorities. While prior works in restless multi-armed bandit (RMAB) demonstrated success in public health allocation tasks, they lack flexibility to adapt to evolving policy priorities. Concurrently, Large Language Models (LLMs) have emerged as adept, automated planners in various domains, including robotic control and navigation. In this paper, we propose DLM: a Decision Language Model for RMABs. To enable dynamic fine-tuning of RMAB policies for challenging public health settings using human-language commands, we propose using LLMs as automated planners to (1) interpret hu
+&lt;/p&gt;</description></item></channel></rss>
