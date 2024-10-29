@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Under-Parameterized Double Descent for Ridge Regularized Least Squares Denoising of Data on a Line.](http://arxiv.org/abs/2305.14689) | 本文研究了线性数据最小二乘岭正则化的去噪问题，证明了在欠参数化情况下会出现双峰谷现象。 |
+| [^1] | [Theoretical guarantees for neural control variates in MCMC.](http://arxiv.org/abs/2304.01111) | 本文提出了一种利用神经控制变量的方差缩减方法，推导并得出了在各种遍历性假设下渐近方差的最优收敛速率。 |
 
 # 详细
 
-[^1]: 基于岭正则化的线性数据最小二乘去噪问题的欠参数化双谷效应
+[^1]: 神经控制变量在MCMC中的理论保证
 
-    Under-Parameterized Double Descent for Ridge Regularized Least Squares Denoising of Data on a Line. (arXiv:2305.14689v1 [stat.ML])
+    Theoretical guarantees for neural control variates in MCMC. (arXiv:2304.01111v1 [math.ST])
 
-    [http://arxiv.org/abs/2305.14689](http://arxiv.org/abs/2305.14689)
+    [http://arxiv.org/abs/2304.01111](http://arxiv.org/abs/2304.01111)
 
-    本文研究了线性数据最小二乘岭正则化的去噪问题，证明了在欠参数化情况下会出现双峰谷现象。
+    本文提出了一种利用神经控制变量的方差缩减方法，推导并得出了在各种遍历性假设下渐近方差的最优收敛速率。
 
     
 
-    研究了训练数据点数、统计模型参数数和模型的泛化能力之间的关系。已有的工作表明，过度参数化情况下可能出现双峰谷现象，而在欠参数化情况下则普遍存在标准偏差-方差权衡。本文提出了一个简单的例子，可以证明欠参数化情况下可以发生双峰谷现象。考虑嵌入高维空间中的线性数据最小二乘去噪问题中的岭正则化，通过推导出一种渐近准确的广义误差公式，我们发现了样本和参数的双谷效应，双峰谷位于插值点和过度参数化区域之间。此外，样本双谷曲线的高峰对应于估计量的范数曲线的高峰。
+    本文提出了一种基于加性控制变量和最小化渐近方差的马尔可夫链方差缩减方法。我们专注于控制变量表示为深度神经网络的特定情况。在基础马尔可夫链的各种遍历性假设下，推导了渐近方差的最优收敛速率。该方法依赖于方差缩减算法和函数逼近理论的随机误差的最新成果。
 
-    The relationship between the number of training data points, the number of parameters in a statistical model, and the generalization capabilities of the model has been widely studied. Previous work has shown that double descent can occur in the over-parameterized regime, and believe that the standard bias-variance trade-off holds in the under-parameterized regime. In this paper, we present a simple example that provably exhibits double descent in the under-parameterized regime. For simplicity, we look at the ridge regularized least squares denoising problem with data on a line embedded in high-dimension space. By deriving an asymptotically accurate formula for the generalization error, we observe sample-wise and parameter-wise double descent with the peak in the under-parameterized regime rather than at the interpolation point or in the over-parameterized regime.  Further, the peak of the sample-wise double descent curve corresponds to a peak in the curve for the norm of the estimator,
+    In this paper, we propose a variance reduction approach for Markov chains based on additive control variates and the minimization of an appropriate estimate for the asymptotic variance. We focus on the particular case when control variates are represented as deep neural networks. We derive the optimal convergence rate of the asymptotic variance under various ergodicity assumptions on the underlying Markov chain. The proposed approach relies upon recent results on the stochastic errors of variance reduction algorithms and function approximation theory.
     
 

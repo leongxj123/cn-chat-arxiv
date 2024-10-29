@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [The Bayan Algorithm: Detecting Communities in Networks Through Exact and Approximate Optimization of Modularity.](http://arxiv.org/abs/2209.04562) | 提出了一种名为Bayan的社区检测算法，通过精确或近似优化模块度的方法，它能够返回最优或接近最优的分区，并且比其他算法快数倍，并能够在合成和真实网络数据集上准确地找到地面真实社区。 |
+| [^1] | [On Differentially Private Subspace Estimation Without Distributional Assumptions](https://arxiv.org/abs/2402.06465) | 本论文研究了在没有分布假设的情况下，差分隐私子空间估计的问题。通过使用少量的数据点，可以私密地识别出低维结构，避免了高维度的代价。 |
 
 # 详细
 
-[^1]: Bayan算法：通过对模块度的精确和近似优化来检测网络中的社区
+[^1]: 关于无分布假设的差分隐私子空间估计
 
-    The Bayan Algorithm: Detecting Communities in Networks Through Exact and Approximate Optimization of Modularity. (arXiv:2209.04562v2 [cs.SI] UPDATED)
+    On Differentially Private Subspace Estimation Without Distributional Assumptions
 
-    [http://arxiv.org/abs/2209.04562](http://arxiv.org/abs/2209.04562)
+    [https://arxiv.org/abs/2402.06465](https://arxiv.org/abs/2402.06465)
 
-    提出了一种名为Bayan的社区检测算法，通过精确或近似优化模块度的方法，它能够返回最优或接近最优的分区，并且比其他算法快数倍，并能够在合成和真实网络数据集上准确地找到地面真实社区。
+    本论文研究了在没有分布假设的情况下，差分隐私子空间估计的问题。通过使用少量的数据点，可以私密地识别出低维结构，避免了高维度的代价。
 
     
 
-    社区检测是网络科学中的经典问题，具有广泛的应用。在众多方法中，最常见的方法是最大化模块度。尽管启发式模块度最大化算法设计理念和广泛采用，但很少返回最佳分区或类似分区。我们提出了一种专门的算法Bayan，它返回具有最优或接近最优分区保证的分区。Bayan算法的核心是一种分支限界方案，它解决了问题的整数规划公式以达到最优或近似最优的目的。我们证明Bayan在合成基准和真实网络节点标签的检索地面真实社区方面具有独特的准确性和稳定性，比其他21种算法快数倍，可以找到最优分区的实例。
+    隐私数据分析面临着一个被称为维数诅咒的重大挑战，导致了成本的增加。然而，许多数据集具有固有的低维结构。例如，在梯度下降优化过程中，梯度经常位于一个低维子空间附近。如果可以使用少量点私密地识别出这种低维结构，就可以避免因高维度而支付隐私和准确性的代价。
 
-    Community detection is a classic problem in network science with extensive applications in various fields. Among numerous approaches, the most common method is modularity maximization. Despite their design philosophy and wide adoption, heuristic modularity maximization algorithms rarely return an optimal partition or anything similar. We propose a specialized algorithm, Bayan, which returns partitions with a guarantee of either optimality or proximity to an optimal partition. At the core of the Bayan algorithm is a branch-and-cut scheme that solves an integer programming formulation of the problem to optimality or approximate it within a factor. We demonstrate Bayan's distinctive accuracy and stability over 21 other algorithms in retrieving ground-truth communities in synthetic benchmarks and node labels in real networks. Bayan is several times faster than open-source and commercial solvers for modularity maximization making it capable of finding optimal partitions for instances that c
+    Private data analysis faces a significant challenge known as the curse of dimensionality, leading to increased costs. However, many datasets possess an inherent low-dimensional structure. For instance, during optimization via gradient descent, the gradients frequently reside near a low-dimensional subspace. If the low-dimensional structure could be privately identified using a small amount of points, we could avoid paying (in terms of privacy and accuracy) for the high ambient dimension.   On the negative side, Dwork, Talwar, Thakurta, and Zhang (STOC 2014) proved that privately estimating subspaces, in general, requires an amount of points that depends on the dimension. But Singhal and Steinke (NeurIPS 2021) bypassed this limitation by considering points that are i.i.d. samples from a Gaussian distribution whose covariance matrix has a certain eigenvalue gap. Yet, it was still left unclear whether we could provide similar upper bounds without distributional assumptions and whether we 
     
 

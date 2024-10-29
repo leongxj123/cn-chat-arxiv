@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.HC</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.HC</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.HC</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.HC</description><item><title>&#35813;&#35770;&#25991;&#20171;&#32461;&#20102;&#12298;Media of Langue&#12299;&#36825;&#19968;&#20840;&#26032;&#35789;&#20856;&#21644;&#20844;&#20849;&#38613;&#22609;&#65292;&#36890;&#36807;&#25551;&#36848;&#19981;&#21516;&#35821;&#35328;&#20043;&#38388;&#30340;&#24847;&#20041;&#22320;&#22270;&#21644;&#20004;&#20010;&#21147;&#37327;&#20043;&#38388;&#30340;&#36793;&#30028;&#65292;&#37325;&#28857;&#20171;&#32461;&#20102;&#19977;&#20010;&#26032;&#30340;&#27010;&#24565;&#65306;&#12298;Inter-Langue Map/Dictionary&#12299;&#12289;&#12298;Inter-Langue Space&#12299;&#21644;&#12298;Inter-Langue Network&#12299;&#12290;</title><link>http://arxiv.org/abs/2309.08609</link><description>&lt;p&gt;
+&#12298;Media of Langue&#12299;&#30340;&#23186;&#20307;
+&lt;/p&gt;
+&lt;p&gt;
+Media of Langue. (arXiv:2309.08609v1 [cs.CL])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2309.08609
+&lt;/p&gt;
+&lt;p&gt;
+&#35813;&#35770;&#25991;&#20171;&#32461;&#20102;&#12298;Media of Langue&#12299;&#36825;&#19968;&#20840;&#26032;&#35789;&#20856;&#21644;&#20844;&#20849;&#38613;&#22609;&#65292;&#36890;&#36807;&#25551;&#36848;&#19981;&#21516;&#35821;&#35328;&#20043;&#38388;&#30340;&#24847;&#20041;&#22320;&#22270;&#21644;&#20004;&#20010;&#21147;&#37327;&#20043;&#38388;&#30340;&#36793;&#30028;&#65292;&#37325;&#28857;&#20171;&#32461;&#20102;&#19977;&#20010;&#26032;&#30340;&#27010;&#24565;&#65306;&#12298;Inter-Langue Map/Dictionary&#12299;&#12289;&#12298;Inter-Langue Space&#12299;&#21644;&#12298;Inter-Langue Network&#12299;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#26088;&#22312;&#23384;&#26723;Goki Muramoto&#31561;&#20154;&#30340;&#12298;Media of Langue&#12299;&#21518;&#38754;&#30340;&#26448;&#26009;&#12290;&#12298;Media of Langue&#12299;&#26159;&#19968;&#20010;&#20840;&#26032;&#30340;&#23383;&#20856;&#21644;&#20844;&#20849;&#38613;&#22609;&#65292;&#23427;&#20165;&#20174;&#8220;&#36825;&#20010;&#35789;&#34987;&#32763;&#35793;&#25104;&#37027;&#20010;&#35789;&#8221;&#30340;&#24191;&#27867;&#20107;&#20214;&#21644;&#20004;&#20010;&#21147;&#37327;&#20043;&#38388;&#30340;&#36793;&#30028;&#19978;&#25551;&#36848;&#20986;&#19981;&#21516;&#35821;&#35328;&#20043;&#38388;&#30340;&#24847;&#20041;&#22320;&#22270;&#12290;&#39318;&#20808;&#65292;&#20171;&#32461;&#20102;&#19977;&#20010;&#26032;&#27010;&#24565;&#65306;&#12298;Inter-Langue Map/Dictionary&#12299;&#12289;&#12298;Inter-Langue Space&#12299;&#21644;&#12298;Inter-Langue Network&#12299;&#24182;&#23558;&#20854;&#19982;&#23383;&#20856;&#12289;&#35821;&#20041;&#31354;&#38388;&#21644;&#35821;&#20041;&#32593;&#32476;&#30340;&#19977;&#20010;&#39046;&#22495;&#36827;&#34892;&#20102;&#27604;&#36739;&#12290;&#25509;&#19979;&#26469;&#65292;&#25551;&#36848;&#20102;&#35813;&#20316;&#21697;&#20013;&#23454;&#26045;&#30340;&#20855;&#20307;&#31639;&#27861;&#21644;&#35774;&#35745;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+This paper aims to archive the materials behind "Media of Langue" by Goki Muramoto et al. Media of Langue is a new dictionary and public sculpture that depicts the map of meaning on the boundary between languages solely from the vast events of "this word was translated into that word" and two forces: repulsion between all words in the same language and attraction between translated words in different languages. First, the three new concepts proposed, Inter-Langue Map/Dictionary, Inter-Langue Space, and then Inter-Langue Network, are introduced, comparing them to the three domains of dictionary, semantic space, and semantic network. Next, the specific algorithms and designs implemented in the work were described.
+&lt;/p&gt;</description></item></channel></rss>
