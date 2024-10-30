@@ -2,172 +2,157 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Taming Cross-Domain Representation Variance in Federated Prototype Learning with Heterogeneous Data Domains](https://arxiv.org/abs/2403.09048) | 引入FedPLVM通过建立方差感知的双层原型聚类和使用新型$\alpha$-稀疏原型损失，以减少跨领域特征表示差异。 |
-| [^2] | [Veagle: Advancements in Multimodal Representation Learning](https://arxiv.org/abs/2403.08773) | 本文介绍了一种新颖的方法，通过在当前视觉语言模型（VLMs）和多模态大语言模型（MLLMs）的基础上融合独特的机制，以增强现有模型的多模态能力。 |
-| [^3] | [Evaluating Text-to-Image Generative Models: An Empirical Study on Human Image Synthesis](https://arxiv.org/abs/2403.05125) | 本文提出了一个细致的评估框架，用于评估文本到图像生成模型，针对人类图像合成。我们引入了一个创新的美学分数预测模型，评估生成图像的视觉吸引力，并展示了第一个标记有生成的人类图像中低质量区域的数据集，以促进自动缺陷检测，同时也研究了模型对概念覆盖度和公平性的影响。 |
-| [^4] | [Effectiveness Assessment of Recent Large Vision-Language Models](https://arxiv.org/abs/2403.04306) | 本文评估了最近出现的大型视觉-语言模型在专业和通用任务中的表现，旨在全面了解这些创新方法的能力。 |
-| [^5] | [Leveraging Self-Supervised Learning for Scene Recognition in Child Sexual Abuse Imagery](https://arxiv.org/abs/2403.01183) | 利用自监督学习技术，本文提出了一种能够安全高效处理儿童性虐待图像数据的场景识别方法。 |
-| [^6] | [Adversarial Robustness Through Artifact Design](https://arxiv.org/abs/2402.04660) | 该研究提出了一种通过艺术设计实现对抗性鲁棒性的方法，通过微小更改现有规范来抵御对抗性示例的影响。 |
-| [^7] | [On f-Divergence Principled Domain Adaptation: An Improved Framework](https://arxiv.org/abs/2402.01887) | 本文改进了基于f-散度的无监督领域自适应（UDA）框架，引入了f-领域差异度量指标，并通过去除绝对值函数和引入缩放参数，提出了新的目标误差和样本复杂度界限，从而使得我们能够恢复以前的KL结果，将算法和理论之间的差距缩小，并通过定位技术开发了快速率的泛化界限。实验结果证明了基于f-DD的领域学习算法在流行的UDA基准测试中表现出了卓越的性能。 |
-| [^8] | [Immunohistochemistry guided segmentation of benign epithelial cells, in situ lesions, and invasive epithelial cells in breast cancer slides](https://arxiv.org/abs/2311.13261) | 该研究旨在开发一个用于乳腺癌切片中上皮细胞分割的AI模型，通过免疫组织化学引导分割出良性上皮细胞、原位病变和浸润性上皮细胞。 |
-| [^9] | [Robust Image Watermarking using Stable Diffusion.](http://arxiv.org/abs/2401.04247) | 本研究提出了一种名为ZoDiac的方法，利用稳定扩散模型在可训练的潜在空间中注入水印，从而使水印能够在受攻击时可靠检测到，对最先进的水印攻击具有很强的鲁棒性，优于现有的水印方法。 |
-| [^10] | [Decoupled Kullback-Leibler Divergence Loss.](http://arxiv.org/abs/2305.13948) | 本文提出了改进的KL散度损失函数，通过解决解耦式KL散度损失函数的对称性限制和引入全局信息来提升性能，在CIFAR-10/100和ImageNet数据集上展示了其在对抗训练和知识蒸馏任务中的优越表现。 |
-| [^11] | [Adversarial robustness of VAEs through the lens of local geometry.](http://arxiv.org/abs/2208.03923) | 本文证明了对手攻击VAEs的最佳方法是利用由编码器和解码器网络引起的随机回溯度规张量的方向偏差。 |
+| [^1] | [Benchmarking Counterfactual Image Generation](https://arxiv.org/abs/2403.20287) | 提出了一个针对对照图像生成方法的基准测试框架，包含评估对照多个方面的度量标准以及评估三种不同类型的条件图像生成模型性能。 |
+| [^2] | [Refining Text-to-Image Generation: Towards Accurate Training-Free Glyph-Enhanced Image Generation](https://arxiv.org/abs/2403.16422) | 通过引入LenCom-Eval基准测试，研究者发现基于扩散模型的文本到图像生成方法仍面临三个主要挑战，并为未来研究提供了一个测试平台。 |
+| [^3] | [Simplified Diffusion Schr\"odinger Bridge](https://arxiv.org/abs/2403.14623) | 介绍了简化后的扩散薛定谔桥（DSB），通过与基于得分的生成模型（SGM）的统一解决了复杂数据生成中的限制，提高了性能并加快了收敛速度。 |
+| [^4] | [KEBench: A Benchmark on Knowledge Editing for Large Vision-Language Models](https://arxiv.org/abs/2403.07350) | KEBench提出了一个新的基准测试，采用不同的数据收集方法和新增加的度量标准（可移植性），以全面评估大型视觉-语言模型知识编辑的质量。 |
+| [^5] | [A Probabilistic Hadamard U-Net for MRI Bias Field Correction](https://arxiv.org/abs/2403.05024) | 提出了一种用于前列腺MRI偏置场校正的概率哈达玛U-Net，引入了哈达玛U-Net（HU-Net）通过哈达玛变换将输入图像从时域转换为频域，并使用可训练的滤波器和硬阈值层消除高频部分。 |
+| [^6] | [D\'ej\`a Vu Memorization in Vision-Language Models](https://arxiv.org/abs/2402.02103) | 这项研究提出了一种新方法来衡量视觉语言模型中的记忆现象，并发现对于使用图像-标题对进行训练的VLMs，模型确实会保留关于训练图像中的个别对象的信息，文本随机化可以在很大程度上减轻记忆现象而对模型的下游任务性能影响较小。 |
+| [^7] | [A Critical Look at Classic Test-Time Adaptation Methods in Semantic Segmentation.](http://arxiv.org/abs/2310.05341) | 这项研究对语义分割中的经典测试时适应方法进行了批判性探究，揭示了分割TTA所面临的独特挑战，并发现经典TTA策略在这一任务中并不有效。 |
+| [^8] | [What Makes ImageNet Look Unlike LAION.](http://arxiv.org/abs/2306.15769) | 本研究通过重新搜索大规模的LAION数据集，尝试重新创建图像网，并发现与原始图像网相比，新建的LAIONet具有明显不同之处。这种差异的原因是，在基于图像描述进行搜索时，存在信息瓶颈，从而减轻了选择偏差。 |
+| [^9] | [RHINO: Rotated DETR with Dynamic Denoising via Hungarian Matching for Oriented Object Detection.](http://arxiv.org/abs/2305.07598) | 本文提出了一种面向定向目标检测的DINO基线模型RHINO。并通过匈牙利匹配和查询对齐的方式实现动态降噪，解决了重复预测的问题，从而在公共基准测试中达到最先进的性能水平。 |
+| [^10] | [GPT-NAS: Neural Architecture Search with the Generative Pre-Trained Model.](http://arxiv.org/abs/2305.05351) | GPT-NAS使用生成式预训练模型优化神经架构搜索，通过提出近似的架构组件减小搜索空间，并明显优于其他NAS方法。 |
 
 # 详细
 
-[^1]: 驯服异构数据域中联邦原型学习中的跨领域表示差异
+[^1]: 基准对照图像生成
 
-    Taming Cross-Domain Representation Variance in Federated Prototype Learning with Heterogeneous Data Domains
+    Benchmarking Counterfactual Image Generation
 
-    [https://arxiv.org/abs/2403.09048](https://arxiv.org/abs/2403.09048)
+    [https://arxiv.org/abs/2403.20287](https://arxiv.org/abs/2403.20287)
 
-    引入FedPLVM通过建立方差感知的双层原型聚类和使用新型$\alpha$-稀疏原型损失，以减少跨领域特征表示差异。
-
-    
-
-    联邦学习（FL）允许在不共享私人数据的情况下进行协作机器学习训练。虽然大多数FL方法假设客户端之间具有相同的数据领域，但现实场景中通常涉及异构数据领域。联邦原型学习（FedPL）解决了这个问题，使用平均特征向量作为原型来增强模型泛化能力。然而，现有的FedPL方法为每个客户端创建相同数量的原型，导致跨领域性能差距，并使数据分布不同的客户端存在差异。为了减轻跨领域特征表示差异，我们引入了FedPLVM，它建立了方差感知的双层原型聚类，并采用了一种新颖的$\alpha$-稀疏原型损失。
-
-    arXiv:2403.09048v1 Announce Type: new  Abstract: Federated learning (FL) allows collaborative machine learning training without sharing private data. While most FL methods assume identical data domains across clients, real-world scenarios often involve heterogeneous data domains. Federated Prototype Learning (FedPL) addresses this issue, using mean feature vectors as prototypes to enhance model generalization. However, existing FedPL methods create the same number of prototypes for each client, leading to cross-domain performance gaps and disparities for clients with varied data distributions. To mitigate cross-domain feature representation variance, we introduce FedPLVM, which establishes variance-aware dual-level prototypes clustering and employs a novel $\alpha$-sparsity prototype loss. The dual-level prototypes clustering strategy creates local clustered prototypes based on private data features, then performs global prototypes clustering to reduce communication complexity and pres
-    
-[^2]: Veagle: 多模态表示学习的进展
-
-    Veagle: Advancements in Multimodal Representation Learning
-
-    [https://arxiv.org/abs/2403.08773](https://arxiv.org/abs/2403.08773)
-
-    本文介绍了一种新颖的方法，通过在当前视觉语言模型（VLMs）和多模态大语言模型（MLLMs）的基础上融合独特的机制，以增强现有模型的多模态能力。
+    提出了一个针对对照图像生成方法的基准测试框架，包含评估对照多个方面的度量标准以及评估三种不同类型的条件图像生成模型性能。
 
     
 
-    最近，人工智能领域的研究人员对语言和视觉如何结合产生了浓厚兴趣，从而催生了旨在无缝整合文本和视觉信息的多模态模型的发展。多模态模型是大型语言模型（LLMs）的延伸，在解决各种任务方面展现出了显著的能力，范围从图像字幕和视觉问答（VQA）到视觉定位。虽然这些模型展示了显著的进展，但在准确解释图像并回答问题方面仍存在挑战，在现实场景中经常发生。本文介绍了一种增强现有模型多模态能力的新方法。针对当前视觉语言模型（VLMs）和多模态大语言模型（MLLMs）中观察到的局限性，我们提出的模型Veagle，融合了受...
+    对照图像生成在理解变量因果关系方面具有关键作用，在解释性和生成无偏合成数据方面有应用。然而，评估图像生成本身就是一个长期存在的挑战。对于评估对照生成的需求进一步加剧了这一挑战，因为根据定义，对照情景是没有可观测基准事实的假设情况。本文提出了一个旨在对照图像生成方法进行基准测试的新颖综合框架。我们结合了侧重于评估对照的不同方面的度量标准，例如组成、有效性、干预的最小性和图像逼真度。我们评估了基于结构因果模型范式的三种不同条件图像生成模型类型的性能。我们的工作还配备了一个用户友好的Python软件包，可以进一步评估。
 
-    arXiv:2403.08773v1 Announce Type: cross  Abstract: Lately, researchers in artificial intelligence have been really interested in how language and vision come together, giving rise to the development of multimodal models that aim to seamlessly integrate textual and visual information. Multimodal models, an extension of Large Language Models (LLMs), have exhibited remarkable capabilities in addressing a diverse array of tasks, ranging from image captioning and visual question answering (VQA) to visual grounding. While these models have showcased significant advancements, challenges persist in accurately interpreting images and answering the question, a common occurrence in real-world scenarios. This paper introduces a novel approach to enhance the multimodal capabilities of existing models. In response to the limitations observed in current Vision Language Models (VLMs) and Multimodal Large Language Models (MLLMs), our proposed model Veagle, incorporates a unique mechanism inspired by th
+    arXiv:2403.20287v1 Announce Type: cross  Abstract: Counterfactual image generation is pivotal for understanding the causal relations of variables, with applications in interpretability and generation of unbiased synthetic data. However, evaluating image generation is a long-standing challenge in itself. The need to evaluate counterfactual generation compounds on this challenge, precisely because counterfactuals, by definition, are hypothetical scenarios without observable ground truths. In this paper, we present a novel comprehensive framework aimed at benchmarking counterfactual image generation methods. We incorporate metrics that focus on evaluating diverse aspects of counterfactuals, such as composition, effectiveness, minimality of interventions, and image realism. We assess the performance of three distinct conditional image generation model types, based on the Structural Causal Model paradigm. Our work is accompanied by a user-friendly Python package which allows to further eval
     
-[^3]: 评估文本到图像生成模型：关于人类图像合成的经验性研究
+[^2]: 优化文本到图像生成：向准确的无需训练的字形增强图像生成迈进
 
-    Evaluating Text-to-Image Generative Models: An Empirical Study on Human Image Synthesis
+    Refining Text-to-Image Generation: Towards Accurate Training-Free Glyph-Enhanced Image Generation
 
-    [https://arxiv.org/abs/2403.05125](https://arxiv.org/abs/2403.05125)
+    [https://arxiv.org/abs/2403.16422](https://arxiv.org/abs/2403.16422)
 
-    本文提出了一个细致的评估框架，用于评估文本到图像生成模型，针对人类图像合成。我们引入了一个创新的美学分数预测模型，评估生成图像的视觉吸引力，并展示了第一个标记有生成的人类图像中低质量区域的数据集，以促进自动缺陷检测，同时也研究了模型对概念覆盖度和公平性的影响。
-
-    
-
-    在本文中，我们提出了一个细致的评估框架，用于评估文本到图像（T2I）生成模型，应用于人类图像合成。我们的框架将评估分为两个不同的方面：第一，专注于图像质量，如美学和逼真度；第二，通过概念覆盖度和公平性来检查文本条件。我们引入了一种创新的美学分数预测模型，评估生成图像的视觉吸引力，并展示了第一个标记有生成的人类图像中低质量区域的数据集，以促进自动缺陷检测。我们对概念覆盖范围的探索调查了模型在准确解释和呈现基于文本的概念方面的有效性，而我们对公平性的分析揭示了模型输出中的偏见，重点关注性别、种族和年龄。虽然我们的研究基于人类图像，但这种双重方面的方法是为了
-
-    arXiv:2403.05125v1 Announce Type: cross  Abstract: In this paper, we present an empirical study introducing a nuanced evaluation framework for text-to-image (T2I) generative models, applied to human image synthesis. Our framework categorizes evaluations into two distinct groups: first, focusing on image qualities such as aesthetics and realism, and second, examining text conditions through concept coverage and fairness. We introduce an innovative aesthetic score prediction model that assesses the visual appeal of generated images and unveils the first dataset marked with low-quality regions in generated human images to facilitate automatic defect detection. Our exploration into concept coverage probes the model's effectiveness in interpreting and rendering text-based concepts accurately, while our analysis of fairness reveals biases in model outputs, with an emphasis on gender, race, and age. While our study is grounded in human imagery, this dual-faceted approach is designed with the 
-    
-[^4]: 最近大型视觉-语言模型的有效性评估
-
-    Effectiveness Assessment of Recent Large Vision-Language Models
-
-    [https://arxiv.org/abs/2403.04306](https://arxiv.org/abs/2403.04306)
-
-    本文评估了最近出现的大型视觉-语言模型在专业和通用任务中的表现，旨在全面了解这些创新方法的能力。
+    通过引入LenCom-Eval基准测试，研究者发现基于扩散模型的文本到图像生成方法仍面临三个主要挑战，并为未来研究提供了一个测试平台。
 
     
 
-    大型视觉-语言模型(LVLMs)的出现代表着迈向人工通用智能的重要进步。然而，它们在专业和通用任务中的有效性程度需要进一步调查。本文旨在评估流行的LVLMs在专业和通用任务中的能力，旨在提供对这些创新方法的全面理解。为了评估它们在专业任务中的有效性，我们量身定制了一个包含自然、医疗和工业三种不同场景的全面测试平台，涵盖六项具有挑战性的任务。这些任务包括显著、伪装和透明物体检测，以及息肉和皮肤病变检测，以及工业异常检测。我们检验了最近三种开源LVLMs--MiniGPT-v2、LLaVA-1.5和Shikra--在视觉识别和定位领域的表现。
+    过去几年，基于扩散模型的文本到图像（T2I）生成方法引起了广泛关注。然而，普通扩散模型通常在生成图像中显示的文本中存在拼写不准确的问题。生成视觉文本的能力至关重要，不仅具有学术价值，还有广泛的实际应用。为了生成准确的视觉文本图像，最先进的技术采用了一种字形控制的图像生成方法，包括文本布局生成器，然后是一个在生成的文本布局的条件下生成图像的图像生成器。然而，我们的研究发现这些模型仍然面临三个主要挑战，促使我们开发了一个测试平台来促进未来的研究。我们引入了一个名为LenCom-Eval的基准测试，专门用于测试模型在生成具有复杂视觉文本的图像方面的能力。
 
-    arXiv:2403.04306v1 Announce Type: cross  Abstract: The advent of large vision-language models (LVLMs) represents a noteworthy advancement towards the pursuit of artificial general intelligence. However, the extent of their efficacy across both specialized and general tasks warrants further investigation. This article endeavors to evaluate the competency of popular LVLMs in specialized and general tasks, respectively, aiming to offer a comprehensive comprehension of these innovative methodologies. To gauge their efficacy in specialized tasks, we tailor a comprehensive testbed comprising three distinct scenarios: natural, healthcare, and industrial, encompassing six challenging tasks. These tasks include salient, camouflaged, and transparent object detection, as well as polyp and skin lesion detection, alongside industrial anomaly detection. We examine the performance of three recent open-source LVLMs -- MiniGPT-v2, LLaVA-1.5, and Shikra -- in the realm of visual recognition and localiza
+    arXiv:2403.16422v1 Announce Type: cross  Abstract: Over the past few years, Text-to-Image (T2I) generation approaches based on diffusion models have gained significant attention. However, vanilla diffusion models often suffer from spelling inaccuracies in the text displayed within the generated images. The capability to generate visual text is crucial, offering both academic interest and a wide range of practical applications. To produce accurate visual text images, state-of-the-art techniques adopt a glyph-controlled image generation approach, consisting of a text layout generator followed by an image generator that is conditioned on the generated text layout. Nevertheless, our study reveals that these models still face three primary challenges, prompting us to develop a testbed to facilitate future research. We introduce a benchmark, LenCom-Eval, specifically designed for testing models' capability in generating images with Lengthy and Complex visual text. Subsequently, we introduce 
     
-[^5]: 利用自监督学习进行儿童性虐待图像场景识别
+[^3]: 简化扩散薛定谔桥
 
-    Leveraging Self-Supervised Learning for Scene Recognition in Child Sexual Abuse Imagery
+    Simplified Diffusion Schr\"odinger Bridge
 
-    [https://arxiv.org/abs/2403.01183](https://arxiv.org/abs/2403.01183)
+    [https://arxiv.org/abs/2403.14623](https://arxiv.org/abs/2403.14623)
 
-    利用自监督学习技术，本文提出了一种能够安全高效处理儿童性虐待图像数据的场景识别方法。
-
-    
-
-    21世纪的犯罪分为虚拟和真实世界。然而，前者已经成为对后者人们福祉和安全构成全球威胁。它提出的挑战必须通过统一的全球合作来面对，我们必须比以往更加依赖自动化但值得信赖的工具来应对网络犯罪日益增长的本质。每年有超过1000万起儿童性虐待报告提交给美国国家失踪和被剥削儿童中心，超过80%来自网络来源。因此，调查中心和清除中心无法手动处理和正确调查所有图像。基于此，能够安全高效处理这些数据的可靠自动化工具至关重要。在这方面，场景识别任务寻找环境中的上下文线索，能够组织和分类儿童性虐待数据，而无需在敏感数据上进行训练。
-
-    arXiv:2403.01183v1 Announce Type: cross  Abstract: Crime in the 21st century is split into a virtual and real world. However, the former has become a global menace to people's well-being and security in the latter. The challenges it presents must be faced with unified global cooperation, and we must rely more than ever on automated yet trustworthy tools to combat the ever-growing nature of online offenses. Over 10 million child sexual abuse reports are submitted to the US National Center for Missing & Exploited Children every year, and over 80% originated from online sources. Therefore, investigation centers and clearinghouses cannot manually process and correctly investigate all imagery. In light of that, reliable automated tools that can securely and efficiently deal with this data are paramount. In this sense, the scene recognition task looks for contextual cues in the environment, being able to group and classify child sexual abuse data without requiring to be trained on sensitive 
-    
-[^6]: 通过艺术设计提高对抗性鲁棒性
-
-    Adversarial Robustness Through Artifact Design
-
-    [https://arxiv.org/abs/2402.04660](https://arxiv.org/abs/2402.04660)
-
-    该研究提出了一种通过艺术设计实现对抗性鲁棒性的方法，通过微小更改现有规范来抵御对抗性示例的影响。
+    介绍了简化后的扩散薛定谔桥（DSB），通过与基于得分的生成模型（SGM）的统一解决了复杂数据生成中的限制，提高了性能并加快了收敛速度。
 
     
 
-    对抗性示例的出现给机器学习带来了挑战。为了阻碍对抗性示例，大多数防御方法都改变了模型的训练方式（如对抗性训练）或推理过程（如随机平滑）。尽管这些方法显著提高了模型的对抗性鲁棒性，但模型仍然极易受到对抗性示例的影响。在某些领域如交通标志识别中，我们发现对象是按照规范来设计（如标志规范）。为了改善对抗性鲁棒性，我们提出了一种新颖的方法。具体来说，我们提供了一种重新定义规范的方法，对现有规范进行微小的更改，以防御对抗性示例。我们将艺术设计问题建模为一个鲁棒优化问题，并提出了基于梯度和贪婪搜索的方法来解决它。我们在交通标志识别领域对我们的方法进行了评估，使其能够改变交通标志中的象形图标（即标志内的符号）。
+    这篇论文介绍了一种新的理论简化扩散薛定谔桥（DSB），便于将其与基于得分的生成模型（SGM）统一起来，解决了DSB在复杂数据生成方面的局限性，实现更快的收敛速度和增强的性能。通过将SGM作为DSB的初始解决方案，我们的方法利用了这两个框架的优势，确保了更高效的训练过程，并改进了SGM的性能。我们还提出了一种重新参数化技术，尽管存在理论近似，但实际上提高了网络的拟合能力。我们进行了大量的实验证实，证实了简化的DSB的有效性，展示了其显著的改进。我们相信这项工作的贡献为先进的生成建模铺平了道路。
 
-    Adversarial examples arose as a challenge for machine learning. To hinder them, most defenses alter how models are trained (e.g., adversarial training) or inference is made (e.g., randomized smoothing). Still, while these approaches markedly improve models' adversarial robustness, models remain highly susceptible to adversarial examples. Identifying that, in certain domains such as traffic-sign recognition, objects are implemented per standards specifying how artifacts (e.g., signs) should be designed, we propose a novel approach for improving adversarial robustness. Specifically, we offer a method to redefine standards, making minor changes to existing ones, to defend against adversarial examples. We formulate the problem of artifact design as a robust optimization problem, and propose gradient-based and greedy search methods to solve it. We evaluated our approach in the domain of traffic-sign recognition, allowing it to alter traffic-sign pictograms (i.e., symbols within the signs) a
+    arXiv:2403.14623v1 Announce Type: new  Abstract: This paper introduces a novel theoretical simplification of the Diffusion Schr\"odinger Bridge (DSB) that facilitates its unification with Score-based Generative Models (SGMs), addressing the limitations of DSB in complex data generation and enabling faster convergence and enhanced performance. By employing SGMs as an initial solution for DSB, our approach capitalizes on the strengths of both frameworks, ensuring a more efficient training process and improving the performance of SGM. We also propose a reparameterization technique that, despite theoretical approximations, practically improves the network's fitting capabilities. Our extensive experimental evaluations confirm the effectiveness of the simplified DSB, demonstrating its significant improvements. We believe the contributions of this work pave the way for advanced generative modeling. The code is available at https://github.com/tzco/Simplified-Diffusion-Schrodinger-Bridge.
     
-[^7]: 基于f-散度原理的领域自适应：一个改进的框架
+[^4]: KEBench: 用于大型视觉-语言模型知识编辑的基准测试
 
-    On f-Divergence Principled Domain Adaptation: An Improved Framework
+    KEBench: A Benchmark on Knowledge Editing for Large Vision-Language Models
 
-    [https://arxiv.org/abs/2402.01887](https://arxiv.org/abs/2402.01887)
+    [https://arxiv.org/abs/2403.07350](https://arxiv.org/abs/2403.07350)
 
-    本文改进了基于f-散度的无监督领域自适应（UDA）框架，引入了f-领域差异度量指标，并通过去除绝对值函数和引入缩放参数，提出了新的目标误差和样本复杂度界限，从而使得我们能够恢复以前的KL结果，将算法和理论之间的差距缩小，并通过定位技术开发了快速率的泛化界限。实验结果证明了基于f-DD的领域学习算法在流行的UDA基准测试中表现出了卓越的性能。
-
-    
-
-    无监督领域自适应（UDA）在解决机器学习中的分布偏移问题中起着至关重要的作用。在本文中，我们通过改进Acuna等人（2021年）提出的UDA的理论基础，对其基于f-散度的差异度进行了改进，并引入了一个新的度量指标，即f-领域差异（f-DD）。通过去除绝对值函数并引入一个缩放参数，f-DD产生了新的目标误差和样本复杂度界限，使我们能够恢复以前基于KL的结果，并弥合了Acuna等人（2021年）中提出的算法和理论之间的差距。利用定位技术，我们还开发了一种快速率的泛化界限。实证结果表明，在流行的UDA基准测试中，基于f-DD的领域学习算法表现出优越性能。
-
-    Unsupervised domain adaptation (UDA) plays a crucial role in addressing distribution shifts in machine learning. In this work, we improve the theoretical foundations of UDA proposed by Acuna et al. (2021) by refining their f-divergence-based discrepancy and additionally introducing a new measure, f-domain discrepancy (f-DD). By removing the absolute value function and incorporating a scaling parameter, f-DD yields novel target error and sample complexity bounds, allowing us to recover previous KL-based results and bridging the gap between algorithms and theory presented in Acuna et al. (2021). Leveraging a localization technique, we also develop a fast-rate generalization bound. Empirical results demonstrate the superior performance of f-DD-based domain learning algorithms over previous works in popular UDA benchmarks.
-    
-[^8]: 乳腺癌切片中良性上皮细胞、原位病变和浸润性上皮细胞的免疫组织化学引导分割
-
-    Immunohistochemistry guided segmentation of benign epithelial cells, in situ lesions, and invasive epithelial cells in breast cancer slides
-
-    [https://arxiv.org/abs/2311.13261](https://arxiv.org/abs/2311.13261)
-
-    该研究旨在开发一个用于乳腺癌切片中上皮细胞分割的AI模型，通过免疫组织化学引导分割出良性上皮细胞、原位病变和浸润性上皮细胞。
+    KEBench提出了一个新的基准测试，采用不同的数据收集方法和新增加的度量标准（可移植性），以全面评估大型视觉-语言模型知识编辑的质量。
 
     
 
-    数字病理学使得可以利用人工智能自动分析组织病理切片。自动评估可以提高诊断效率，并帮助找到形态特征与临床结果之间的关联。为了开发这样的预测模型，辨认浸润性上皮细胞，并将其与良性上皮细胞和原位病变分开将是第一步。在本研究中，我们旨在开发一个用于乳腺癌切片中上皮细胞分割的AI模型。我们通过重新染色血红蛋白和嗜酸性染色细胞角蛋白(CK) AE1/AE3 HE切片，以及病理学家的注释生成了上皮基本真值掩模。HE/CK图像对被用于训练卷积神经网络，数据增强被用来使模型更稳健。839名患者的组织微阵列（TMAs）和两名患者的整张切片图像用于训练
+    arXiv:2403.07350v1 公告类型: 跨领域 摘要: 目前，针对大型视觉-语言模型(LVLMs)的知识编辑研究很少。编辑LVLMs面临着有效整合多种模态（图像和文本）的挑战，同时确保修改连贯且与上下文相关。现有基准测试具有三个度量标准（可靠性、局部性和一般性）用于衡量LVLMs的知识编辑。然而，该基准测试在评估中使用的生成图像质量不足，并且无法评估模型是否有效地利用与相关内容相关的编辑知识。我们采用不同的数据收集方法构建了一个新的基准测试$\textbf{KEBench}$，并扩展了新度量标准(可移植性)以进行全面评估。借助多模态知识图，我们的图像数据呈现出明确的给实体方向性。这种方向性可以进一步用于提取与实体相关的知识和进行编辑。
 
-    arXiv:2311.13261v2 Announce Type: replace-cross  Abstract: Digital pathology enables automatic analysis of histopathological sections using artificial intelligence (AI). Automatic evaluation could improve diagnostic efficiency and help find associations between morphological features and clinical outcome. For development of such prediction models, identifying invasive epithelial cells, and separating these from benign epithelial cells and in situ lesions would be the first step. In this study, we aimed to develop an AI model for segmentation of epithelial cells in sections from breast cancer. We generated epithelial ground truth masks by restaining hematoxylin and eosin (HE) sections with cytokeratin (CK) AE1/AE3, and by pathologists' annotations. HE/CK image pairs were used to train a convolutional neural network, and data augmentation was used to make the model more robust. Tissue microarrays (TMAs) from 839 patients, and whole slide images from two patients were used for training an
+    arXiv:2403.07350v1 Announce Type: cross  Abstract: Currently, little research has been done on knowledge editing for Large Vision-Language Models (LVLMs). Editing LVLMs faces the challenge of effectively integrating diverse modalities (image and text) while ensuring coherent and contextually relevant modifications. An existing benchmark has three metrics (Reliability, Locality and Generality) to measure knowledge editing for LVLMs. However, the benchmark falls short in the quality of generated images used in evaluation and cannot assess whether models effectively utilize edited knowledge in relation to the associated content. We adopt different data collection methods to construct a new benchmark, $\textbf{KEBench}$, and extend new metric (Portability) for a comprehensive evaluation. Leveraging a multimodal knowledge graph, our image data exhibits clear directionality towards entities. This directional aspect can be further utilized to extract entity-related knowledge and form editing 
     
-[^9]: 稳定扩散技术的鲁棒图像水印
+[^5]: 一种用于MRI偏置场校正的概率哈达玛U-Net
 
-    Robust Image Watermarking using Stable Diffusion. (arXiv:2401.04247v1 [cs.CV])
+    A Probabilistic Hadamard U-Net for MRI Bias Field Correction
 
-    [http://arxiv.org/abs/2401.04247](http://arxiv.org/abs/2401.04247)
+    [https://arxiv.org/abs/2403.05024](https://arxiv.org/abs/2403.05024)
 
-    本研究提出了一种名为ZoDiac的方法，利用稳定扩散模型在可训练的潜在空间中注入水印，从而使水印能够在受攻击时可靠检测到，对最先进的水印攻击具有很强的鲁棒性，优于现有的水印方法。
-
-    
-
-    图像水印对于追踪图像来源和声明所有权非常重要。随着生成模型（如稳定扩散）的出现，能够创建虚假但逼真的图像，水印成为了尤为重要的任务，例如使生成的图像可靠地辨认出来。然而，正是这种稳定扩散技术可以移除使用现有方法注入的水印。为了解决这个问题，我们提出了一种名为ZoDiac的方法，它使用预训练的稳定扩散模型将水印注入到可训练的潜在空间中，从而在受攻击时仍然可以可靠地在潜在向量中检测到水印。我们在三个基准数据集 MS-COCO、DiffusionDB 和 WikiArt 上评估了 ZoDiac，并发现 ZoDiac 对于最先进的水印攻击具有很强的鲁棒性，水印检测率超过98%，误报率低于6.4%，优于现有的水印方法。我们的研究表明，稳定扩散是一种有前途的方法。
-
-    Watermarking images is critical for tracking image provenance and claiming ownership. With the advent of generative models, such as stable diffusion, able to create fake but realistic images, watermarking has become particularly important, e.g., to make generated images reliably identifiable. Unfortunately, the very same stable diffusion technology can remove watermarks injected using existing methods. To address this problem, we present a ZoDiac, which uses a pre-trained stable diffusion model to inject a watermark into the trainable latent space, resulting in watermarks that can be reliably detected in the latent vector, even when attacked. We evaluate ZoDiac on three benchmarks, MS-COCO, DiffusionDB, and WikiArt, and find that ZoDiac is robust against state-of-the-art watermark attacks, with a watermark detection rate over 98% and a false positive rate below 6.4%, outperforming state-of-the-art watermarking methods. Our research demonstrates that stable diffusion is a promising appr
-    
-[^10]: 解耦式KL散度损失函数
-
-    Decoupled Kullback-Leibler Divergence Loss. (arXiv:2305.13948v1 [cs.CV])
-
-    [http://arxiv.org/abs/2305.13948](http://arxiv.org/abs/2305.13948)
-
-    本文提出了改进的KL散度损失函数，通过解决解耦式KL散度损失函数的对称性限制和引入全局信息来提升性能，在CIFAR-10/100和ImageNet数据集上展示了其在对抗训练和知识蒸馏任务中的优越表现。
+    提出了一种用于前列腺MRI偏置场校正的概率哈达玛U-Net，引入了哈达玛U-Net（HU-Net）通过哈达玛变换将输入图像从时域转换为频域，并使用可训练的滤波器和硬阈值层消除高频部分。
 
     
 
-    本文更深入地探究了KL散度损失函数，并发现它与解耦式KL散度损失函数等价，后者由加权均方差损失和包含软标签的交叉熵损失组成。通过对解耦式KL散度损失函数的分析，本文确定了两个改进方向。首先，我们解决了在知识蒸馏等场景下解耦式KL散度损失函数的对称性限制问题。这个改进保证了在训练期间wMSE组件始终有效，提供额外的构造性暗示。其次，我们将全局信息引入解耦式KL散度损失函数中，用于类内一致性正则化。通过这两个改进，我们得到了改进的KL散度损失函数，通过在CIFAR-10/100和ImageNet数据集上进行实验来评估其有效性，重点是对抗训练和知识蒸馏任务。所提出的方法表现出了比其他最先进模型更优越的性能，展示了其在各种实际应用中的潜力。
+    磁场不均匀性校正在MRI分析中仍然是一个具有挑战性的任务。大多数已建立的技术是为脑MRI设计的，假设相同组织中的图像强度遵循均匀分布。这种假设不易适用于其他器官，特别是那些体积小，质地不均匀（强度变化大）的器官，比如前列腺。为了解决这个问题，本文提出了一种用于前列腺MRI偏置场校正的概率哈达玛U-Net（PHU-Net）。首先，引入了一种新颖的哈达玛U-Net（HU-Net）以提取低频标量场，将其乘以原始输入以获得原型校正图像。HU-Net通过哈达玛变换将输入图像从时域转换为频域。在频域中，使用可训练的滤波器（缩放层）、硬阈值层消除高频部分。
 
-    In this paper, we delve deeper into the Kullback-Leibler (KL) Divergence loss and observe that it is equivalent to the Doupled Kullback-Leibler (DKL) Divergence loss that consists of 1) a weighted Mean Square Error (wMSE) loss and 2) a Cross-Entropy loss incorporating soft labels. From our analysis of the DKL loss, we have identified two areas for improvement. Firstly, we address the limitation of DKL in scenarios like knowledge distillation by breaking its asymmetry property in training optimization. This modification ensures that the wMSE component is always effective during training, providing extra constructive cues. Secondly, we introduce global information into DKL for intra-class consistency regularization. With these two enhancements, we derive the Improved Kullback-Leibler (IKL) Divergence loss and evaluate its effectiveness by conducting experiments on CIFAR-10/100 and ImageNet datasets, focusing on adversarial training and knowledge distillation tasks. The proposed approach 
+    arXiv:2403.05024v1 Announce Type: cross  Abstract: Magnetic field inhomogeneity correction remains a challenging task in MRI analysis. Most established techniques are designed for brain MRI by supposing that image intensities in the identical tissue follow a uniform distribution. Such an assumption cannot be easily applied to other organs, especially those that are small in size and heterogeneous in texture (large variations in intensity), such as the prostate. To address this problem, this paper proposes a probabilistic Hadamard U-Net (PHU-Net) for prostate MRI bias field correction. First, a novel Hadamard U-Net (HU-Net) is introduced to extract the low-frequency scalar field, multiplied by the original input to obtain the prototypical corrected image. HU-Net converts the input image from the time domain into the frequency domain via Hadamard transform. In the frequency domain, high-frequency components are eliminated using the trainable filter (scaling layer), hard-thresholding laye
     
-[^11]: 通过本地几何角度理解VAEs的对抗鲁棒性
+[^6]: 视觉语言模型中的心理现象记忆
 
-    Adversarial robustness of VAEs through the lens of local geometry. (arXiv:2208.03923v2 [cs.LG] UPDATED)
+    D\'ej\`a Vu Memorization in Vision-Language Models
 
-    [http://arxiv.org/abs/2208.03923](http://arxiv.org/abs/2208.03923)
+    [https://arxiv.org/abs/2402.02103](https://arxiv.org/abs/2402.02103)
 
-    本文证明了对手攻击VAEs的最佳方法是利用由编码器和解码器网络引起的随机回溯度规张量的方向偏差。
+    这项研究提出了一种新方法来衡量视觉语言模型中的记忆现象，并发现对于使用图像-标题对进行训练的VLMs，模型确实会保留关于训练图像中的个别对象的信息，文本随机化可以在很大程度上减轻记忆现象而对模型的下游任务性能影响较小。
 
     
 
-    在对变分自编码器（VAEs）进行无监督攻击时，对手会找到一个输入样本中的小扰动，从而显着改变其潜在空间编码，从而损害了一个固定编码器的重构。这种脆弱性已知的原因是潜在后验分布的近似与先验分布之间的不匹配导致的潜在空间扭曲。因此，输入样本中的微小变化可能会将其编码移动到潜在空间中的低/零密度区域，从而产生无限制的生成。本文证明了对手攻击VAEs的最佳方法是利用由编码器和解码器网络引起的随机回溯度规张量的方向偏差。编码器的回溯度规张量测量它从输入到潜在空间的微小潜在体积的变化。因此，它可以被视为分析输入扰动导致潜在空间扭曲效果的镜头。
+    视觉语言模型（VLM）作为最先进的表示学习解决方案出现，具有诸多下游应用，如图像分类、检索和生成。一个自然的问题是这些模型是否会记忆训练数据，这也对泛化有着影响。我们提出了一种衡量VLMs中记忆的新方法，称之为心理现象记忆。对于在图像-标题对上训练的VLMs，我们展示了该模型确实保留了关于训练图像中个别对象的信息，超出了从相关性或图像标题中可以推断出的范畴。我们在样本和总体水平上评估了心理现象记忆，并展示了OpenCLIP在多达5000万个图像-标题对上训练时的显著性。最后，我们展示了文本随机化在很大程度上减轻了记忆，同时对模型的下游任务性能产生了适度影响。
 
-    In an unsupervised attack on variational autoencoders (VAEs), an adversary finds a small perturbation in an input sample that significantly changes its latent space encoding, thereby compromising the reconstruction for a fixed decoder. A known reason for such vulnerability is the distortions in the latent space resulting from a mismatch between approximated latent posterior and a prior distribution. Consequently, a slight change in an input sample can move its encoding to a low/zero density region in the latent space resulting in an unconstrained generation. This paper demonstrates that an optimal way for an adversary to attack VAEs is to exploit a directional bias of a stochastic pullback metric tensor induced by the encoder and decoder networks. The pullback metric tensor of an encoder measures the change in infinitesimal latent volume from an input to a latent space. Thus, it can be viewed as a lens to analyse the effect of input perturbations leading to latent space distortions. We
+    Vision-Language Models (VLMs) have emerged as the state-of-the-art representation learning solution, with myriads of downstream applications such as image classification, retrieval and generation. A natural question is whether these models memorize their training data, which also has implications for generalization. We propose a new method for measuring memorization in VLMs, which we call d\'ej\`a vu memorization. For VLMs trained on image-caption pairs, we show that the model indeed retains information about individual objects in the training images beyond what can be inferred from correlations or the image caption. We evaluate d\'ej\`a vu memorization at both sample and population level, and show that it is significant for OpenCLIP trained on as many as 50M image-caption pairs. Finally, we show that text randomization considerably mitigates memorization while only moderately impacting the model's downstream task performance.
+    
+[^7]: 对语义分割中经典的测试时适应方法的批判性探究
+
+    A Critical Look at Classic Test-Time Adaptation Methods in Semantic Segmentation. (arXiv:2310.05341v2 [cs.CV] UPDATED)
+
+    [http://arxiv.org/abs/2310.05341](http://arxiv.org/abs/2310.05341)
+
+    这项研究对语义分割中的经典测试时适应方法进行了批判性探究，揭示了分割TTA所面临的独特挑战，并发现经典TTA策略在这一任务中并不有效。
+
+    
+
+    测试时适应（TTA）旨在将最初在训练数据上训练的模型适应于测试数据中的可能分布变化。然而，大多数现有的TTA研究都集中在分类任务上，对于语义分割的TTA探索非常有限。这种对分类的突出重视可能导致许多新手和工程师错误地认为为分类设计的经典TTA方法可以直接应用于分割任务。然而，这一假设仍未经验证，是一个待解决的问题。为了解决这个问题，我们进行了一项系统的实证研究，揭示了分割TTA的独特挑战，并确定经典TTA策略是否可以有效应对这一任务。我们全面的结果得出了三个关键观察结果。首先，常用于分类TTA的经典批归一化更新策略只能带来轻微的性能改善，在某些情况下甚至会对结果产生逆向影响。
+
+    Test-time adaptation (TTA) aims to adapt a model, initially trained on training data, to potential distribution shifts in the test data. Most existing TTA studies, however, focus on classification tasks, leaving a notable gap in the exploration of TTA for semantic segmentation. This pronounced emphasis on classification might lead numerous newcomers and engineers to mistakenly assume that classic TTA methods designed for classification can be directly applied to segmentation. Nonetheless, this assumption remains unverified, posing an open question. To address this, we conduct a systematic, empirical study to disclose the unique challenges of segmentation TTA, and to determine whether classic TTA strategies can effectively address this task. Our comprehensive results have led to three key observations. First, the classic batch norm updating strategy, commonly used in classification TTA, only brings slight performance improvement, and in some cases it might even adversely affect the resu
+    
+[^8]: 图像网为何与LAION网络截然不同
+
+    What Makes ImageNet Look Unlike LAION. (arXiv:2306.15769v1 [cs.LG])
+
+    [http://arxiv.org/abs/2306.15769](http://arxiv.org/abs/2306.15769)
+
+    本研究通过重新搜索大规模的LAION数据集，尝试重新创建图像网，并发现与原始图像网相比，新建的LAIONet具有明显不同之处。这种差异的原因是，在基于图像描述进行搜索时，存在信息瓶颈，从而减轻了选择偏差。
+
+    
+
+    图像网是通过Flickr图像搜索结果创建的。如果我们仅根据图像描述重新创建图像网，搜索大规模的LAION数据集会发生什么呢？本研究进行了这个反事实的调查。我们发现重新创建的图像网，我们称之为LAIONet，与原始图像网有明显不同之处。具体而言，原始图像网中图像的类内相似性远高于LAIONet。因此，在图像网上训练的模型在LAIONet上表现明显较差。我们提出了一个严格解释这种差异的观点，并通过系统性的实验予以支持。简而言之，仅基于图像描述进行搜索会产生信息瓶颈，从而减轻了基于图像过滤时存在的选择偏差。我们的解释形式化了一个长期的直觉。
+
+    ImageNet was famously created from Flickr image search results. What if we recreated ImageNet instead by searching the massive LAION dataset based on image captions alone? In this work, we carry out this counterfactual investigation. We find that the resulting ImageNet recreation, which we call LAIONet, looks distinctly unlike the original. Specifically, the intra-class similarity of images in the original ImageNet is dramatically higher than it is for LAIONet. Consequently, models trained on ImageNet perform significantly worse on LAIONet. We propose a rigorous explanation for the discrepancy in terms of a subtle, yet important, difference in two plausible causal data-generating processes for the respective datasets, that we support with systematic experimentation. In a nutshell, searching based on an image caption alone creates an information bottleneck that mitigates the selection bias otherwise present in image-based filtering. Our explanation formalizes a long-held intuition in th
+    
+[^9]: RHINO：通过匈牙利匹配实现动态降噪的旋转目标检测的旋转DETR
+
+    RHINO: Rotated DETR with Dynamic Denoising via Hungarian Matching for Oriented Object Detection. (arXiv:2305.07598v1 [cs.CV])
+
+    [http://arxiv.org/abs/2305.07598](http://arxiv.org/abs/2305.07598)
+
+    本文提出了一种面向定向目标检测的DINO基线模型RHINO。并通过匈牙利匹配和查询对齐的方式实现动态降噪，解决了重复预测的问题，从而在公共基准测试中达到最先进的性能水平。
+
+    
+
+    随着DINO的发布，一种DETR的变体，检测变压器正在通过其端到端设计和可扩展性在目标检测基准中刷新记录。然而，虽然预计从其端到端架构中获得更多的好处，如消除NMS和与锚相关的成本，但尚未彻底研究DETR在定向目标检测方面的扩展。本文提出了首个面向定向目标检测的DINO基线。我们发现，直接使用DETR进行定向目标检测并不能保证不重复预测，并提出了一种简单的成本来减轻这种情况。此外，我们介绍了一种新的去噪策略，该策略使用匈牙利匹配来过滤冗余的带噪声的查询，并使用查询对齐来保持Transformer解码器层之间的匹配一致性。我们提出的模型在公共基准测试中优于以前的旋转DETR和其他对手，实现了最先进的性能。
+
+    With the publication of DINO, a variant of the Detection Transformer (DETR), Detection Transformers are breaking the record in the object detection benchmark with the merits of their end-to-end design and scalability. However, the extension of DETR to oriented object detection has not been thoroughly studied although more benefits from its end-to-end architecture are expected such as removing NMS and anchor-related costs. In this paper, we propose a first strong DINO-based baseline for oriented object detection. We found that straightforward employment of DETRs for oriented object detection does not guarantee non-duplicate prediction, and propose a simple cost to mitigate this. Furthermore, we introduce a novel denoising strategy that uses Hungarian matching to filter redundant noised queries and query alignment to preserve matching consistency between Transformer decoder layers. Our proposed model outperforms previous rotated DETRs and other counterparts, achieving state-of-the-art pe
+    
+[^10]: GPT-NAS: 以生成式预训练模型为基础的神经架构搜索
+
+    GPT-NAS: Neural Architecture Search with the Generative Pre-Trained Model. (arXiv:2305.05351v1 [cs.CV] CROSS LISTED)
+
+    [http://arxiv.org/abs/2305.05351](http://arxiv.org/abs/2305.05351)
+
+    GPT-NAS使用生成式预训练模型优化神经架构搜索，通过提出近似的架构组件减小搜索空间，并明显优于其他NAS方法。
+
+    
+
+    神经架构搜索(NAS)已经成为了一种自动设计最优神经网络架构的有效方法之一。虽然一些人工设计的神经网络已经在多项任务中取得了人类水平的表现，但在NAS方法中很少出现这类成果，主要原因在于神经架构的搜索空间太大了，导致NAS算法效率低下。这项工作提出了一种新的架构搜索算法，称为GPT-NAS，通过生成式预训练模型来优化神经架构。在GPT-NAS中，我们假设一个在大规模语料库上预训练的生成模型能够学习构建神经架构的基本规律。因此，GPT-NAS利用生成式预训练模型来提出合理的架构组件，从而大大减少了搜索空间，引入了搜索过程中的先验知识。广泛的实验结果表明，我们的GPT-NAS方法明显优于其他NAS方法。
+
+    Neural Architecture Search (NAS) has emerged as one of the effective methods to design the optimal neural network architecture automatically. Although neural architectures have achieved human-level performances in several tasks, few of them are obtained from the NAS method. The main reason is the huge search space of neural architectures, making NAS algorithms inefficient. This work presents a novel architecture search algorithm, called GPT-NAS, that optimizes neural architectures by Generative Pre-Trained (GPT) model. In GPT-NAS, we assume that a generative model pre-trained on a large-scale corpus could learn the fundamental law of building neural architectures. Therefore, GPT-NAS leverages the generative pre-trained (GPT) model to propose reasonable architecture components given the basic one. Such an approach can largely reduce the search space by introducing prior knowledge in the search process. Extensive experimental results show that our GPT-NAS method significantly outperforms
     
 

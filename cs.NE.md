@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Adaptive Reorganization of Neural Pathways for Continual Learning with Spiking Neural Networks.](http://arxiv.org/abs/2309.09550) | 本文提出了一种脑启发式的可持续学习算法，通过自组织调节网络将单一有限的脉冲神经网络重新组织为丰富的稀疏神经路径，以高效应对递增任务，并在各种可持续学习任务以及泛化的CIFAR100和ImageNet数据集上展现出一致的性能优势、能耗和内存容量优势。 |
+| [^1] | [S-TLLR: STDP-inspired Temporal Local Learning Rule for Spiking Neural Networks.](http://arxiv.org/abs/2306.15220) | S-TLLR是一个受到STDP机制启发的时间局部学习规则，可以用于训练脉冲神经网络，同时考虑到了因果和非因果关系。 |
 
 # 详细
 
-[^1]: 具有脉冲神经网络的可持续学习的神经路径的自适应重组
+[^1]: S-TLLR: 受到时间局部学习规则的STDP启发的脉冲神经网络
 
-    Adaptive Reorganization of Neural Pathways for Continual Learning with Spiking Neural Networks. (arXiv:2309.09550v2 [cs.NE] UPDATED)
+    S-TLLR: STDP-inspired Temporal Local Learning Rule for Spiking Neural Networks. (arXiv:2306.15220v1 [cs.NE])
 
-    [http://arxiv.org/abs/2309.09550](http://arxiv.org/abs/2309.09550)
+    [http://arxiv.org/abs/2306.15220](http://arxiv.org/abs/2306.15220)
 
-    本文提出了一种脑启发式的可持续学习算法，通过自组织调节网络将单一有限的脉冲神经网络重新组织为丰富的稀疏神经路径，以高效应对递增任务，并在各种可持续学习任务以及泛化的CIFAR100和ImageNet数据集上展现出一致的性能优势、能耗和内存容量优势。
+    S-TLLR是一个受到STDP机制启发的时间局部学习规则，可以用于训练脉冲神经网络，同时考虑到了因果和非因果关系。
 
     
 
-    人脑可以自组织出丰富多样的稀疏神经路径，逐步掌握数百个认知任务。然而，目前大多数深度人工和脉冲神经网络的可持续学习算法无法充分自动调节网络中有限的资源，这导致随着任务增加，性能下降，能耗上升。在本文中，我们提出了一种脑启发式的可持续学习算法，通过自组织调节网络将单一有限的脉冲神经网络（SOR-SNN）重新组织为丰富的稀疏神经路径，以高效应对递增任务。所提出的模型在各种可持续学习任务上表现出了一致的性能优势、能耗和内存容量优势，包括从儿童简单任务到复杂任务、以及泛化的CIFAR100和ImageNet数据集。尤其是，SOR-SNN模型表现出了令人满意的性能、能耗和内存容量。
+    脉冲神经网络（SNN）是可用于边缘智能的生物学合理模型，特别适用于顺序学习任务。然而，SNN的训练面临着精确的时间和空间信用分配的挑战。尽管BPTT算法是解决这些问题最常用的方法，但由于其时间依赖性，它产生了较高的计算成本。此外，BPTT及其近似仅利用从脉冲活动中导出的因果信息来计算突触更新，从而忽略了非因果关系。在这项工作中，我们提出了S-TLLR，这是一种受到Spike-Timing Dependent Plasticity（STDP）机制启发的新型三因素时间局部学习规则，旨在用于事件驱动学习任务的SNN训练。S-TLLR同时考虑了前后突触之间的因果和非因果关系。
 
-    The human brain can self-organize rich and diverse sparse neural pathways to incrementally master hundreds of cognitive tasks. However, most existing continual learning algorithms for deep artificial and spiking neural networks are unable to adequately auto-regulate the limited resources in the network, which leads to performance drop along with energy consumption rise as the increase of tasks. In this paper, we propose a brain-inspired continual learning algorithm with adaptive reorganization of neural pathways, which employs Self-Organizing Regulation networks to reorganize the single and limited Spiking Neural Network (SOR-SNN) into rich sparse neural pathways to efficiently cope with incremental tasks. The proposed model demonstrates consistent superiority in performance, energy consumption, and memory capacity on diverse continual learning tasks ranging from child-like simple to complex tasks, as well as on generalized CIFAR100 and ImageNet datasets. In particular, the SOR-SNN mod
+    Spiking Neural Networks (SNNs) are biologically plausible models that have been identified as potentially apt for the deployment for energy-efficient intelligence at the edge, particularly for sequential learning tasks. However, training of SNNs poses a significant challenge due to the necessity for precise temporal and spatial credit assignment. Back-propagation through time (BPTT) algorithm, whilst being the most widely used method for addressing these issues, incurs a high computational cost due to its temporal dependency. Moreover, BPTT and its approximations solely utilize causal information derived from the spiking activity to compute the synaptic updates, thus neglecting non-causal relationships. In this work, we propose S-TLLR, a novel three-factor temporal local learning rule inspired by the Spike-Timing Dependent Plasticity (STDP) mechanism, aimed at training SNNs on event-based learning tasks. S-TLLR considers both causal and non-causal relationships between pre and post-syn
     
 

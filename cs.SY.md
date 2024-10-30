@@ -2,52 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Resource-Aware Hierarchical Federated Learning in Wireless Video Caching Networks](https://arxiv.org/abs/2402.04216) | 通过资源感知的分层联邦学习，我们提出了一种解决方案，可以预测用户未来的内容请求，并减轻无线视频缓存网络中回程流量拥塞的问题。 |
-| [^2] | [Linear Convergence of Pre-Conditioned PI Consensus Algorithm under Restricted Strong Convexity.](http://arxiv.org/abs/2310.00419) | 本文在点对点多智能体网络中提出了一种使用比例积分（PI）控制策略的预条件PI共识算法，保证了其在受限强凸函数下的线性收敛性，无需个体局部代价函数的凸性，并且通过引入局部预条件进一步加速算法。 |
-| [^3] | [A General Verification Framework for Dynamical and Control Models via Certificate Synthesis.](http://arxiv.org/abs/2309.06090) | 这个论文提出了一个通用的框架来通过证书合成验证动态和控制模型。研究者们提供了一种自动化方法来设计控制器并分析复杂规范。这个方法利用神经网络和SMT求解器来提供候选控制和证书函数，并为控制的安全学习领域做出了贡献。 |
+| [^1] | [Blue and Green-Mode Energy-Efficient Chemiresistive Sensor Array Realized by Rapid Ensemble Learning](https://arxiv.org/abs/2403.01642) | 该研究提出了一种通过快速集成学习优化化学传感器阵列的策略，引入了蓝色和绿色两种工作模式，通过选择性激活关键传感器显著降低能耗而不影响检测准确性。 |
+| [^2] | [C-GAIL: Stabilizing Generative Adversarial Imitation Learning with Control Theory](https://arxiv.org/abs/2402.16349) | 该论文利用控制理论改进了生成对抗模仿学习（GAIL），提出了一种名为“Controlled-GAIL”（C-GAIL）的算法，能够解决GAIL训练不稳定性的问题，并在MuJoCo任务中取得了较快的收敛速度。 |
 
 # 详细
 
-[^1]: 无线视频缓存网络中的资源感知分层联邦学习
+[^1]: 通过快速集成学习实现的蓝绿模式高能效化化学传感器阵列
 
-    Resource-Aware Hierarchical Federated Learning in Wireless Video Caching Networks
+    Blue and Green-Mode Energy-Efficient Chemiresistive Sensor Array Realized by Rapid Ensemble Learning
 
-    [https://arxiv.org/abs/2402.04216](https://arxiv.org/abs/2402.04216)
+    [https://arxiv.org/abs/2403.01642](https://arxiv.org/abs/2403.01642)
 
-    通过资源感知的分层联邦学习，我们提出了一种解决方案，可以预测用户未来的内容请求，并减轻无线视频缓存网络中回程流量拥塞的问题。
-
-    
-
-    在无线视频缓存网络中，通过将待请求内容存储在不同级别上，可以减轻由少数热门文件的视频流量造成的回程拥塞。通常，内容服务提供商（CSP）拥有内容，用户使用其（无线）互联网服务提供商（ISP）从CSP请求其首选内容。由于这些参与方不会透露其私密信息和商业机密，传统技术可能无法用于预测用户未来需求的动态变化。出于这个原因，我们提出了一种新颖的资源感知分层联邦学习（RawHFL）解决方案，用于预测用户未来的内容请求。采用了一种实用的数据获取技术，允许用户根据其请求的内容更新其本地训练数据集。此外，由于网络和其他计算资源有限，考虑到只有一部分用户参与模型训练，我们推导出
-
-    Backhaul traffic congestion caused by the video traffic of a few popular files can be alleviated by storing the to-be-requested content at various levels in wireless video caching networks. Typically, content service providers (CSPs) own the content, and the users request their preferred content from the CSPs using their (wireless) internet service providers (ISPs). As these parties do not reveal their private information and business secrets, traditional techniques may not be readily used to predict the dynamic changes in users' future demands. Motivated by this, we propose a novel resource-aware hierarchical federated learning (RawHFL) solution for predicting user's future content requests. A practical data acquisition technique is used that allows the user to update its local training dataset based on its requested content. Besides, since networking and other computational resources are limited, considering that only a subset of the users participate in the model training, we derive
-    
-[^2]: 受限强凸性下的预条件PI共识算法的线性收敛性
-
-    Linear Convergence of Pre-Conditioned PI Consensus Algorithm under Restricted Strong Convexity. (arXiv:2310.00419v1 [math.OC])
-
-    [http://arxiv.org/abs/2310.00419](http://arxiv.org/abs/2310.00419)
-
-    本文在点对点多智能体网络中提出了一种使用比例积分（PI）控制策略的预条件PI共识算法，保证了其在受限强凸函数下的线性收敛性，无需个体局部代价函数的凸性，并且通过引入局部预条件进一步加速算法。
+    该研究提出了一种通过快速集成学习优化化学传感器阵列的策略，引入了蓝色和绿色两种工作模式，通过选择性激活关键传感器显著降低能耗而不影响检测准确性。
 
     
 
-    本文考虑在点对点多智能体网络中解决分布式凸优化问题。网络被假定为同步和连通的。采用比例积分（PI）控制策略，开发了多种具有固定步长的算法，其中最早的是PI共识算法。利用李雅普诺夫理论，我们首次保证了具有速率匹配离散化的受限强凸函数的PI共识算法的指数收敛性，而不需要个体局部代价函数的凸性。为了加速PI共识算法，我们采用了局部预条件的形式，即常数正定矩阵，并通过数值验证其相比于突出的分布式凸优化算法的效率。
+    arXiv:2403.01642v1 公告类型: 新的 摘要: 物联网的快速发展需要开发既高效又能胜任的优化化学传感器阵列。本研究引入一种新颖的优化策略，采用快速集成学习模型委员会方法来实现这些目标。利用弹性网回归、随机森林、XGBoost等机器学习模型，该策略识别出在化学传感器阵列中对准确分类最具影响力的传感器：引入加权投票机制来聚合传感器选择中的模型意见，从而建立了两种不同的工作模式，称为“蓝色”和“绿色”。蓝色模式利用所有传感器进行最大检测能力，而绿色模式仅选择性激活关键传感器，从而显著降低能耗而不影响检测准确性。该策略通过理论验证。
 
-    This paper considers solving distributed convex optimization problems in peer-to-peer multi-agent networks. The network is assumed to be synchronous and connected. By using the proportional-integral (PI) control strategy, various algorithms with fixed stepsize have been developed. The earliest among them is the PI consensus algorithm. Using Lyapunov theory, we guarantee exponential convergence of the PI consensus algorithm for restricted strongly convex functions with rate-matching discretization, without requiring convexity of individual local cost functions, for the first time. In order to accelerate the PI consensus algorithm, we incorporate local pre-conditioning in the form of constant positive definite matrices and numerically validate its efficiency compared to the prominent distributed convex optimization algorithms. Unlike classical pre-conditioning, where only the gradients are multiplied by a pre-conditioner, the proposed pre-conditioning modifies both the gradients and the 
+    arXiv:2403.01642v1 Announce Type: new  Abstract: The rapid advancement of Internet of Things (IoT) necessitates the development of optimized Chemiresistive Sensor (CRS) arrays that are both energy-efficient and capable. This study introduces a novel optimization strategy that employs a rapid ensemble learning-based model committee approach to achieve these goals. Utilizing machine learning models such as Elastic Net Regression, Random Forests, and XGBoost, among others, the strategy identifies the most impactful sensors in a CRS array for accurate classification: A weighted voting mechanism is introduced to aggregate the models' opinions in sensor selection, thereby setting up wo distinct working modes, termed "Blue" and "Green". The Blue mode operates with all sensors for maximum detection capability, while the Green mode selectively activates only key sensors, significantly reducing energy consumption without compromising detection accuracy. The strategy is validated through theoreti
     
-[^3]: 通过证书合成的动态与控制模型的通用验证框架
+[^2]: C-GAIL: 利用控制理论稳定生成对抗模仿学习
 
-    A General Verification Framework for Dynamical and Control Models via Certificate Synthesis. (arXiv:2309.06090v1 [eess.SY])
+    C-GAIL: Stabilizing Generative Adversarial Imitation Learning with Control Theory
 
-    [http://arxiv.org/abs/2309.06090](http://arxiv.org/abs/2309.06090)
+    [https://arxiv.org/abs/2402.16349](https://arxiv.org/abs/2402.16349)
 
-    这个论文提出了一个通用的框架来通过证书合成验证动态和控制模型。研究者们提供了一种自动化方法来设计控制器并分析复杂规范。这个方法利用神经网络和SMT求解器来提供候选控制和证书函数，并为控制的安全学习领域做出了贡献。
+    该论文利用控制理论改进了生成对抗模仿学习（GAIL），提出了一种名为“Controlled-GAIL”（C-GAIL）的算法，能够解决GAIL训练不稳定性的问题，并在MuJoCo任务中取得了较快的收敛速度。
 
     
 
-    控制论的一个新兴分支专门研究证书学习，涉及对自主或控制模型的所需（可能是复杂的）系统行为的规范，并通过基于函数的证明进行分析验证。然而，满足这些复杂要求的控制器的合成通常是一个非常困难的任务，可能超出了大多数专家控制工程师的能力。因此，需要自动技术能够设计控制器并分析各种复杂规范。在本文中，我们提供了一个通用框架来编码系统规范并定义相应的证书，并提出了一种自动化方法来正式合成控制器和证书。我们的方法为控制的安全学习领域做出了贡献，利用神经网络的灵活性提供候选的控制和证书函数，同时使用SMT求解器来提供形式化的保证。
+    生成对抗模仿学习（GAIL）训练一个生成策略来模仿一个演示者。它使用基于策略的强化学习（RL）来优化从类似GAN的鉴别器中导出的奖励信号。GAIL的一个主要缺点是其训练不稳定性 - 它继承了GAN的复杂训练动态，以及RL引入的分布转移。这可能导致训练过程中的振荡，从而影响其样本效率和最终策略性能。最近的工作表明，控制理论可以帮助GAN的训练收敛。本文延伸了这一线路的工作，对GAIL进行了控制理论分析，并导出了一种新颖的控制器，该控制器不仅将GAIL推向期望的均衡点，还在“单步”设置中实现了渐近稳定性。基于此，我们提出了一个实用算法“Controlled-GAIL”（C-GAIL）。在MuJoCo任务中，我们的受控变体能够加速收敛速度。
 
-    An emerging branch of control theory specialises in certificate learning, concerning the specification of a desired (possibly complex) system behaviour for an autonomous or control model, which is then analytically verified by means of a function-based proof. However, the synthesis of controllers abiding by these complex requirements is in general a non-trivial task and may elude the most expert control engineers. This results in a need for automatic techniques that are able to design controllers and to analyse a wide range of elaborate specifications. In this paper, we provide a general framework to encode system specifications and define corresponding certificates, and we present an automated approach to formally synthesise controllers and certificates. Our approach contributes to the broad field of safe learning for control, exploiting the flexibility of neural networks to provide candidate control and certificate functions, whilst using SMT-solvers to offer a formal guarantee of co
+    arXiv:2402.16349v1 Announce Type: new  Abstract: Generative Adversarial Imitation Learning (GAIL) trains a generative policy to mimic a demonstrator. It uses on-policy Reinforcement Learning (RL) to optimize a reward signal derived from a GAN-like discriminator. A major drawback of GAIL is its training instability - it inherits the complex training dynamics of GANs, and the distribution shift introduced by RL. This can cause oscillations during training, harming its sample efficiency and final policy performance. Recent work has shown that control theory can help with the convergence of a GAN's training. This paper extends this line of work, conducting a control-theoretic analysis of GAIL and deriving a novel controller that not only pushes GAIL to the desired equilibrium but also achieves asymptotic stability in a 'one-step' setting. Based on this, we propose a practical algorithm 'Controlled-GAIL' (C-GAIL). On MuJoCo tasks, our controlled variant is able to speed up the rate of conve
     
 
