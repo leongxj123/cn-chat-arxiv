@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Reconciling Reality through Simulation: A Real-to-Sim-to-Real Approach for Robust Manipulation](https://arxiv.org/abs/2403.03949) | 该论文提出了一种名为RialTo的系统，通过在“数字孪生”模拟环境中进行强化学习来稳健化真实世界的模仿学习策略，以实现在不需要大量不安全真实世界数据采集或广泛人类监督的情况下学习性能优越、稳健的策略。 |
+| [^1] | [Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods](https://arxiv.org/abs/2404.00282) | 大型语言模型在强化学习中具有潜在优势，通过结构化分类和角色分析，为未来研究提供指导。 |
 
 # 详细
 
-[^1]: 通过模拟调和现实：一种用于稳健操作的实-模-实方法
+[^1]: 基于大型语言模型增强强化学习的调查:概念、分类和方法
 
-    Reconciling Reality through Simulation: A Real-to-Sim-to-Real Approach for Robust Manipulation
+    Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods
 
-    [https://arxiv.org/abs/2403.03949](https://arxiv.org/abs/2403.03949)
+    [https://arxiv.org/abs/2404.00282](https://arxiv.org/abs/2404.00282)
 
-    该论文提出了一种名为RialTo的系统，通过在“数字孪生”模拟环境中进行强化学习来稳健化真实世界的模仿学习策略，以实现在不需要大量不安全真实世界数据采集或广泛人类监督的情况下学习性能优越、稳健的策略。
+    大型语言模型在强化学习中具有潜在优势，通过结构化分类和角色分析，为未来研究提供指导。
 
     
 
-    仿真学习方法需要大量人类监督来学习对物体姿势变化、物理干扰和视觉扰动鲁棒的策略。另一方面，强化学习可以自主探索环境以学习稳健行为，但可能需要大量不安全的真实世界数据采集。为了在没有不安全真实世界数据采集或广泛人类监督的负担下学习性能优越、稳健的策略，我们提出了RialTo，一个通过在即将从少量真实世界数据构建的“数字孪生”模拟环境中进行强化学习来稳健化真实世界的模仿学习策略的系统。为了实现这种实-模-实流水线，RialTo提出了一个易于使用的接口，用于快速扫描和构建真实世界环境的数字孪生。我们还引入了一种新颖的“反向提炼”过程，用于给真实世界演示带来
+    随着大规模语言模型(LLMs)拥有广泛的预训练知识和高级通用能力，它们在增强学习方面如多任务学习、样本效率和任务规划等方面展现出潜力。本调查综述了现有$\textit{LLM增强RL}$文献，总结了其与传统RL方法的特征，旨在澄清研究范围和未来研究方向。利用经典的Agent-环境交互范例，我们提出了一个结构化的分类法，系统地将LLMs在RL中的功能分类，包括四种角色：信息处理器、奖励设计者、决策者和生成器。此外，针对每个角色，我们总结了方法论，分析了缓解的特定RL挑战，并提供了未来方向的见解。最后，潜在应用、前景
 
-    arXiv:2403.03949v1 Announce Type: cross  Abstract: Imitation learning methods need significant human supervision to learn policies robust to changes in object poses, physical disturbances, and visual distractors. Reinforcement learning, on the other hand, can explore the environment autonomously to learn robust behaviors but may require impractical amounts of unsafe real-world data collection. To learn performant, robust policies without the burden of unsafe real-world data collection or extensive human supervision, we propose RialTo, a system for robustifying real-world imitation learning policies via reinforcement learning in "digital twin" simulation environments constructed on the fly from small amounts of real-world data. To enable this real-to-sim-to-real pipeline, RialTo proposes an easy-to-use interface for quickly scanning and constructing digital twins of real-world environments. We also introduce a novel "inverse distillation" procedure for bringing real-world demonstrations
+    arXiv:2404.00282v1 Announce Type: cross  Abstract: With extensive pre-trained knowledge and high-level general capabilities, large language models (LLMs) emerge as a promising avenue to augment reinforcement learning (RL) in aspects such as multi-task learning, sample efficiency, and task planning. In this survey, we provide a comprehensive review of the existing literature in $\textit{LLM-enhanced RL}$ and summarize its characteristics compared to conventional RL methods, aiming to clarify the research scope and directions for future studies. Utilizing the classical agent-environment interaction paradigm, we propose a structured taxonomy to systematically categorize LLMs' functionalities in RL, including four roles: information processor, reward designer, decision-maker, and generator. Additionally, for each role, we summarize the methodologies, analyze the specific RL challenges that are mitigated, and provide insights into future directions. Lastly, potential applications, prospecti
     
 
