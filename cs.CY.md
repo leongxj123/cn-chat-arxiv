@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Fair Coresets via Optimal Transport](https://arxiv.org/abs/2311.05436) | 本研究提出了公平的Wasserstein核心集(FWC)，该方法通过最小化原始数据集与加权合成样本之间的Wasserstein距离，并强制实现人口平等，生成公平的合成代表性样本，可用于下游学习任务。 |
-| [^2] | [Fair Ranking under Disparate Uncertainty](https://arxiv.org/abs/2309.01610) | 提出了一种新的公平排名标准Equal-Opportunity Ranking（EOR），将底层相关性模型的不确定性差异考虑在内，通过组内公平抽奖实现公平排名。 |
+| [^1] | [Why Should This Article Be Deleted? Transparent Stance Detection in Multilingual Wikipedia Editor Discussions.](http://arxiv.org/abs/2310.05779) | 该研究构建了一个多语言数据集，包含维基百科编辑讨论和决策的推理过程，在解释内容管理决策方面增加了透明度。 |
 
 # 详细
 
-[^1]: 通过最优传输实现公平的核心集
+[^1]: 为什么应该删除这篇文章？多语言维基百科编辑讨论中的透明立场识别。
 
-    Fair Coresets via Optimal Transport
+    Why Should This Article Be Deleted? Transparent Stance Detection in Multilingual Wikipedia Editor Discussions. (arXiv:2310.05779v2 [cs.LG] UPDATED)
 
-    [https://arxiv.org/abs/2311.05436](https://arxiv.org/abs/2311.05436)
+    [http://arxiv.org/abs/2310.05779](http://arxiv.org/abs/2310.05779)
 
-    本研究提出了公平的Wasserstein核心集(FWC)，该方法通过最小化原始数据集与加权合成样本之间的Wasserstein距离，并强制实现人口平等，生成公平的合成代表性样本，可用于下游学习任务。
-
-    
-
-    数据精炼和核心集已成为生成用于处理大规模数据集的下游学习任务的较小代表性样本集的流行方法。与此同时，机器学习越来越多地应用于社会层面的决策过程，使得模型构建者必须解决存在于数据中的子群体的固有偏见问题。当前方法通过优化相对于原始样本的局部属性来创建公平的合成代表性样本，但其对下游学习过程的影响尚未被探索。在这项工作中，我们提出了公平的Wasserstein核心集（FWC），一种新颖的核心集方法，它生成既具有公平性的合成代表性样本，又具有用于下游学习任务的样本级权重。FWC最小化原始数据集与加权合成样本之间的Wasserstein距离，同时强制实现人口平等。我们展示了FWC的无约束版本等价于通常的最优传输问题，并且通过实验证明了FWC的有效性和公平性。
-
-    Data distillation and coresets have emerged as popular approaches to generate a smaller representative set of samples for downstream learning tasks to handle large-scale datasets. At the same time, machine learning is being increasingly applied to decision-making processes at a societal level, making it imperative for modelers to address inherent biases towards subgroups present in the data. Current approaches create fair synthetic representative samples by optimizing local properties relative to the original samples, but their effect on downstream learning processes has yet to be explored. In this work, we present fair Wasserstein coresets (FWC), a novel coreset approach which generates fair synthetic representative samples along with sample-level weights to be used in downstream learning tasks. FWC minimizes the Wasserstein distance between the original dataset and the weighted synthetic samples while enforcing demographic parity. We show that an unconstrained version of FWC is equiv
-    
-[^2]: 不同不确定性下的公平排名
-
-    Fair Ranking under Disparate Uncertainty
-
-    [https://arxiv.org/abs/2309.01610](https://arxiv.org/abs/2309.01610)
-
-    提出了一种新的公平排名标准Equal-Opportunity Ranking（EOR），将底层相关性模型的不确定性差异考虑在内，通过组内公平抽奖实现公平排名。
+    该研究构建了一个多语言数据集，包含维基百科编辑讨论和决策的推理过程，在解释内容管理决策方面增加了透明度。
 
     
 
-    排名是一种广泛使用的方法，用于将人类评估者的注意力集中在可管理的选项子集上。它作为人类决策过程的一部分的使用范围从在电子商务网站上展示潜在相关产品到为人工审查优先处理大学申请。虽然排名可以通过将关注集中在最有前途的选项上使人类评估更加高效，但我们认为，如果底层相关性模型的不确定性在不同组别的选项之间存在差异，排名可能会引入不公平。不幸的是，这种不确定性差异似乎普遍存在，常常对少数群体造成损害，因为这些群体的相关性估计可能由于缺乏数据或合适的特征而具有更高的不确定性。为了解决这个公平问题，我们提出了Equal-Opportunity Ranking（EOR）作为排名的新公平标准，并展示它对应于在相关选项之间进行组内公平抽奖
+    在线平台上的内容管理通常是非透明的。然而，在维基百科上，这种讨论是公开进行的，编辑被鼓励使用内容管理政策来解释他们的决策。目前，只有少数评论明确提到这些政策-英文评论20%，但德文和土耳其评论只有2%。为了帮助理解内容管理过程，我们构建了一个新颖的多语言数据集，其中包含维基百科编辑讨论以及他们的推理过程。数据集包含编辑的立场（保留、删除、合并、评论），以及每个编辑决策所陈述的原因和内容管理政策。我们证明了立场和相应的原因（政策）可以被高度准确地联合预测，从而增加了决策过程的透明度。我们发布了联合预测模型和多语言内容。
 
-    arXiv:2309.01610v2 Announce Type: replace  Abstract: Ranking is a ubiquitous method for focusing the attention of human evaluators on a manageable subset of options. Its use as part of human decision-making processes ranges from surfacing potentially relevant products on an e-commerce site to prioritizing college applications for human review. While ranking can make human evaluation more effective by focusing attention on the most promising options, we argue that it can introduce unfairness if the uncertainty of the underlying relevance model differs between groups of options. Unfortunately, such disparity in uncertainty appears widespread, often to the detriment of minority groups for which relevance estimates can have higher uncertainty due to a lack of data or appropriate features. To address this fairness issue, we propose Equal-Opportunity Ranking (EOR) as a new fairness criterion for ranking and show that it corresponds to a group-wise fair lottery among the relevant options even
+    The moderation of content on online platforms is usually non-transparent. On Wikipedia, however, this discussion is carried out publicly and the editors are encouraged to use the content moderation policies as explanations for making moderation decisions. Currently, only a few comments explicitly mention those policies -- 20% of the English ones, but as few as 2% of the German and Turkish comments. To aid in this process of understanding how content is moderated, we construct a novel multilingual dataset of Wikipedia editor discussions along with their reasoning in three languages. The dataset contains the stances of the editors (keep, delete, merge, comment), along with the stated reason, and a content moderation policy, for each edit decision. We demonstrate that stance and corresponding reason (policy) can be predicted jointly with a high degree of accuracy, adding transparency to the decision-making process. We release both our joint prediction models and the multilingual content m
     
 

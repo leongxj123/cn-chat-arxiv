@@ -2,52 +2,82 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Differentially Private Representation Learning via Image Captioning](https://arxiv.org/abs/2403.02506) | 通过图像字幕生成实现了有效的差分隐私表示学习，获得了高质量图像特征，可用于各种视觉和视觉语言任务。 |
-| [^2] | [IMITATE: Clinical Prior Guided Hierarchical Vision-Language Pre-training.](http://arxiv.org/abs/2310.07355) | IMITATE是一种临床先验指导的分层视觉语言预训练模型。它利用医学报告的层级结构，从胸部X射线图像中提取多级视觉特征，并与分层医学报告中的描述性和结论性文本进行对齐。 |
-| [^3] | [Imprecise Label Learning: A Unified Framework for Learning with Various Imprecise Label Configurations.](http://arxiv.org/abs/2305.12715) | 本文提出了不精确标签学习（ILL）框架，利用期望最大化算法对不精确标签信息进行最大似然估计，为各种不精确标签配置问题提供了统一的解决方案。 |
+| [^1] | [Natural Counterfactuals With Necessary Backtracking](https://rss.arxiv.org/abs/2402.01607) | 本研究提出了一种自然反事实框架和方法，通过优化控制回溯的范围，生成与实际世界的数据分布相匹配的自然反事实，从而改进了反事实推理。 |
+| [^2] | [Faster Neighborhood Attention: Reducing the O(n^2) Cost of Self Attention at the Threadblock Level](https://arxiv.org/abs/2403.04690) | 该研究提出了一种更快的邻域注意力机制，通过将注意力限制在最近的邻居之间来降低自注意力的计算复杂度，实现了显著的性能提升。 |
+| [^3] | [NM-FlowGAN: Modeling sRGB Noise with a Hybrid Approach based on Normalizing Flows and Generative Adversarial Networks](https://arxiv.org/abs/2312.10112) | NM-FlowGAN是一种利用生成对抗网络和正规化流的混合方法，旨在更准确地建模sRGB噪声，弥补了单一生成模型固有特性所带来的性能限制。 |
+| [^4] | [Invisible Image Watermarks Are Provably Removable Using Generative AI.](http://arxiv.org/abs/2306.01953) | 该论文证明了使用生成式AI可以清除隐形图像水印，提出了一种家族化再生攻击方法。通过形式化证明和实证结果，论文展示了所有隐形水印容易受到攻击，并针对一种具有弹性的水印RivaGAN，再生攻击可以去除93-99%的水印。 |
+| [^5] | [Pre-trained transformer for adversarial purification.](http://arxiv.org/abs/2306.01762) | 本文提出了一个快速防御对抗性攻击的方案RaPiD（Rapid Plug-in Defender），通过预训练的Transformer微调来提纯对抗样本，使其逼近清洁数据分布，实验结果表明，在有限数据情况下，该方法优于最先进的方法。 |
 
 # 详细
 
-[^1]: 通过图像字幕实现差分隐私表示学习
+[^1]: 具有必要回溯的自然反事实
 
-    Differentially Private Representation Learning via Image Captioning
+    Natural Counterfactuals With Necessary Backtracking
 
-    [https://arxiv.org/abs/2403.02506](https://arxiv.org/abs/2403.02506)
+    [https://rss.arxiv.org/abs/2402.01607](https://rss.arxiv.org/abs/2402.01607)
 
-    通过图像字幕生成实现了有效的差分隐私表示学习，获得了高质量图像特征，可用于各种视觉和视觉语言任务。
-
-    
-
-    差分隐私（DP）机器学习被认为是从敏感数据中训练模型同时保护隐私的黄金标准解决方案。然而，实现这一理想的一个主要障碍是其次优的隐私-准确性权衡，在DP表示学习中特别明显。具体来说，已经证明在适度的隐私预算下，大多数模型学习的表示并不比手工特征显著更好。在这项工作中，我们展示了通过图像字幕和扩展到互联网规模的多模态数据集可以实现有效的DP表示学习。通过一系列工程技巧，我们成功地使用可观的计算量从头开始训练了DP图像字幕生成器（DP-Cap）在来自LAION-2B的233M子集上，并获得了前所未有的高质量图像特征，可用于各种下游视觉和视觉语言任务。
-
-    arXiv:2403.02506v1 Announce Type: cross  Abstract: Differentially private (DP) machine learning is considered the gold-standard solution for training a model from sensitive data while still preserving privacy. However, a major barrier to achieving this ideal is its sub-optimal privacy-accuracy trade-off, which is particularly visible in DP representation learning. Specifically, it has been shown that under modest privacy budgets, most models learn representations that are not significantly better than hand-crafted features. In this work, we show that effective DP representation learning can be done via image captioning and scaling up to internet-scale multimodal datasets. Through a series of engineering tricks, we successfully train a DP image captioner (DP-Cap) on a 233M subset of LAION-2B from scratch using a reasonable amount of computation, and obtaining unprecedented high-quality image features that can be used in a variety of downstream vision and vision-language tasks. For examp
-    
-[^2]: IMITATE: 临床先验指导的分层视觉语言预训练模型
-
-    IMITATE: Clinical Prior Guided Hierarchical Vision-Language Pre-training. (arXiv:2310.07355v1 [cs.CV])
-
-    [http://arxiv.org/abs/2310.07355](http://arxiv.org/abs/2310.07355)
-
-    IMITATE是一种临床先验指导的分层视觉语言预训练模型。它利用医学报告的层级结构，从胸部X射线图像中提取多级视觉特征，并与分层医学报告中的描述性和结论性文本进行对齐。
+    本研究提出了一种自然反事实框架和方法，通过优化控制回溯的范围，生成与实际世界的数据分布相匹配的自然反事实，从而改进了反事实推理。
 
     
 
-    在医学视觉语言预训练（VLP）领域，人们致力于从临床报告和相关医学图像中提取文本和图像特征。然而，大多数现有的方法可能忽视了利用临床报告固有的层级结构的机会，这些报告通常被分为描述性内容的“发现”和结论性观察的“印象”。当前的医学VLP方法往往将报告简化为一个统一的实体或分散的标记，而没有利用这种丰富的、结构化的格式。在这项工作中，我们提出了一种新的临床先验指导的VLP框架，名为IMITATE，用于从医学报告中学习结构信息，并使用分层视觉语言对齐。该框架从胸部X射线（CXR）图像中提取多级视觉特征，并将这些特征与分层医学报告中的描述性和结论性文本分别对齐。
+    反事实推理对于人类认知非常重要，尤其对于提供解释和做出决策至关重要。尽管Judea Pearl的研究方法在理论上很优雅，但其生成反事实情景往往需要过于脱离实际情景的干预，因此难以实施。为了解决这个问题，我们提出了一种自然反事实的框架和一种根据实际世界数据分布生成自然反事实的方法。我们的方法提供了对反事实推理的改进，允许对因果前置变量进行改变以最小化与实际情景的偏差。为了生成自然反事实，我们引入了一种创新的优化框架，通过自然性准则允许但控制回溯的范围。实证实验表明了我们方法的有效性。
 
-    In the field of medical Vision-Language Pre-training (VLP), significant efforts have been devoted to deriving text and image features from both clinical reports and associated medical images. However, most existing methods may have overlooked the opportunity in leveraging the inherent hierarchical structure of clinical reports, which are generally split into `findings' for descriptive content and `impressions' for conclusive observation. Instead of utilizing this rich, structured format, current medical VLP approaches often simplify the report into either a unified entity or fragmented tokens. In this work, we propose a novel clinical prior guided VLP framework named IMITATE to learn the structure information from medical reports with hierarchical vision-language alignment. The framework derives multi-level visual features from the chest X-ray (CXR) images and separately aligns these features with the descriptive and the conclusive text encoded in the hierarchical medical report. Furth
+    Counterfactual reasoning is pivotal in human cognition and especially important for providing explanations and making decisions. While Judea Pearl's influential approach is theoretically elegant, its generation of a counterfactual scenario often requires interventions that are too detached from the real scenarios to be feasible. In response, we propose a framework of natural counterfactuals and a method for generating counterfactuals that are natural with respect to the actual world's data distribution. Our methodology refines counterfactual reasoning, allowing changes in causally preceding variables to minimize deviations from realistic scenarios. To generate natural counterfactuals, we introduce an innovative optimization framework that permits but controls the extent of backtracking with a naturalness criterion. Empirical experiments indicate the effectiveness of our method.
     
-[^3]: 不精确标签学习：学习各种不精确标签配置的统一框架
+[^2]: 更快的邻域注意力: 在线程块级别减少自注意力的O(n^2)成本
 
-    Imprecise Label Learning: A Unified Framework for Learning with Various Imprecise Label Configurations. (arXiv:2305.12715v2 [cs.LG] UPDATED)
+    Faster Neighborhood Attention: Reducing the O(n^2) Cost of Self Attention at the Threadblock Level
 
-    [http://arxiv.org/abs/2305.12715](http://arxiv.org/abs/2305.12715)
+    [https://arxiv.org/abs/2403.04690](https://arxiv.org/abs/2403.04690)
 
-    本文提出了不精确标签学习（ILL）框架，利用期望最大化算法对不精确标签信息进行最大似然估计，为各种不精确标签配置问题提供了统一的解决方案。
+    该研究提出了一种更快的邻域注意力机制，通过将注意力限制在最近的邻居之间来降低自注意力的计算复杂度，实现了显著的性能提升。
 
     
 
-    本文介绍了不精确标签学习（ILL）框架，这是一种处理机器学习任务中普遍存在的各种不精确标签配置的统一方法。ILL利用期望最大化（EM）算法对不精确标签信息进行最大似然估计（MLE），将精确标签视为潜在变量。与以前试图从不精确标签信息中推断正确标签的多功能方法相比，我们的ILL框架考虑了不精确标签信息强加的所有可能标签，允许对任何不精确标签的统一解决方案。通过全面的实验结果，我们展示了ILL可以无缝地适应各种情况，包括部分标签学习、半监督学习、噪声标签学习以及这些配置的混合。值得注意的是，我们的简单方法超过了现有的处理不精确标签的技术，标志着第一个统一解决这个问题的方法。
+    邻域注意力通过限制每个标记的注意力范围为其最近的邻居来降低自注意力的成本。该限制由窗口大小和扩张因子参数化，介于线性投影和自注意力之间绘制了可能的注意力模式谱。邻域注意力，以及更一般地滑动窗口注意力模式，在基础设施方面长期受到限制，特别是在更高秩的空间（2-D和3-D），促使开发定制内核的发展，这些内核在功能或性能方面受限，如果不是两者都有。在这项工作中，我们首先展示邻域注意力可以表示为批量化的GEMM问题，类似于标准注意力，并为1-D和2-D邻域注意力实现它。与现有的简单内核相比，这些内核平均提供了分别是1-D和2-D邻域注意力的全精度延迟改进分别为895%和272%。
 
-    In this paper, we introduce the imprecise label learning (ILL) framework, a unified approach to handle various imprecise label configurations, which are commonplace challenges in machine learning tasks. ILL leverages an expectation-maximization (EM) algorithm for the maximum likelihood estimation (MLE) of the imprecise label information, treating the precise labels as latent variables. Compared to previous versatile methods attempting to infer correct labels from the imprecise label information, our ILL framework considers all possible labeling imposed by the imprecise label information, allowing a unified solution to deal with any imprecise labels. With comprehensive experimental results, we demonstrate that ILL can seamlessly adapt to various situations, including partial label learning, semi-supervised learning, noisy label learning, and a mixture of these settings. Notably, our simple method surpasses the existing techniques for handling imprecise labels, marking the first unified 
+    arXiv:2403.04690v1 Announce Type: cross  Abstract: Neighborhood attention reduces the cost of self attention by restricting each token's attention span to its nearest neighbors. This restriction, parameterized by a window size and dilation factor, draws a spectrum of possible attention patterns between linear projection and self attention. Neighborhood attention, and more generally sliding window attention patterns, have long been bounded by infrastructure, particularly in higher-rank spaces (2-D and 3-D), calling for the development of custom kernels, which have been limited in either functionality, or performance, if not both. In this work, we first show that neighborhood attention can be represented as a batched GEMM problem, similar to standard attention, and implement it for 1-D and 2-D neighborhood attention. These kernels on average provide 895% and 272% improvement in full precision latency compared to existing naive kernels for 1-D and 2-D neighborhood attention respectively. 
+    
+[^3]: NM-FlowGAN: 基于正规化流和生成对抗网络的混合方法对sRGB噪声进行建模
+
+    NM-FlowGAN: Modeling sRGB Noise with a Hybrid Approach based on Normalizing Flows and Generative Adversarial Networks
+
+    [https://arxiv.org/abs/2312.10112](https://arxiv.org/abs/2312.10112)
+
+    NM-FlowGAN是一种利用生成对抗网络和正规化流的混合方法，旨在更准确地建模sRGB噪声，弥补了单一生成模型固有特性所带来的性能限制。
+
+    
+
+    建模和合成真实的sRGB噪声对于各种低级别视觉任务至关重要，例如构建用于训练图像去噪系统的数据集。真实sRGB噪声的分布极为复杂，并受多种因素影响，使得其准确建模极具挑战性。因此，最近的研究提出了采用数据驱动生成模型，如生成对抗网络（GAN）和正规化流的方法。这些研究相比传统的噪声建模方法实现了对sRGB噪声的更准确建模。然而，由于每种生成模型的固有特性，存在性能限制。为了解决这个问题，我们提出了NM-FlowGAN，这是一种利用GAN和正规化流的优势的混合方法。我们同时采用基于正规化流的像素级噪声建模网络，以及基于GAN的空间相关性建模网络。
+
+    arXiv:2312.10112v2 Announce Type: replace-cross  Abstract: Modeling and synthesizing real sRGB noise is crucial for various low-level vision tasks, such as building datasets for training image denoising systems. The distribution of real sRGB noise is highly complex and affected by a multitude of factors, making its accurate modeling extremely challenging. Therefore, recent studies have proposed methods that employ data-driven generative models, such as generative adversarial networks (GAN) and Normalizing Flows. These studies achieve more accurate modeling of sRGB noise compared to traditional noise modeling methods. However, there are performance limitations due to the inherent characteristics of each generative model. To address this issue, we propose NM-FlowGAN, a hybrid approach that exploits the strengths of both GAN and Normalizing Flows. We simultaneously employ a pixel-wise noise modeling network based on Normalizing Flows, and spatial correlation modeling networks based on GAN
+    
+[^4]: 通过生成式AI，证明了隐形图像水印是可清除的
+
+    Invisible Image Watermarks Are Provably Removable Using Generative AI. (arXiv:2306.01953v2 [cs.CR] UPDATED)
+
+    [http://arxiv.org/abs/2306.01953](http://arxiv.org/abs/2306.01953)
+
+    该论文证明了使用生成式AI可以清除隐形图像水印，提出了一种家族化再生攻击方法。通过形式化证明和实证结果，论文展示了所有隐形水印容易受到攻击，并针对一种具有弹性的水印RivaGAN，再生攻击可以去除93-99%的水印。
+
+    
+
+    隐形水印通过嵌入只有权利拥有者可以检测到的隐藏信息来保护图像的版权。它们还防止人们滥用由AI模型生成的图像。我们提出了一种家族化再生攻击来清除这些隐形水印。所提出的攻击方法首先向图像添加随机噪声来破坏水印，然后重建图像。这种方法灵活，可以与许多现有的图像降噪算法和预训练的生成模型（如扩散模型）实例化。通过形式化证明和实证结果，我们证明了所有隐形水印都容易受到所提出的攻击。对于一个特别有弹性的水印RivaGAN，再生攻击可以去除93-99%的隐形水印，而基线攻击只能去除不超过3%。然而，如果我们不要求带水印的图像与原始图像相同，保持图像语义相似的水印可能是一种替代方案。
+
+    Invisible watermarks safeguard images' copyright by embedding hidden messages only detectable by owners. They also prevent people from misusing images, especially those generated by AI models. We propose a family of regeneration attacks to remove these invisible watermarks. The proposed attack method first adds random noise to an image to destroy the watermark and then reconstructs the image. This approach is flexible and can be instantiated with many existing image-denoising algorithms and pre-trained generative models such as diffusion models. Through formal proofs and empirical results, we show that all invisible watermarks are vulnerable to the proposed attack. For a particularly resilient watermark, RivaGAN, regeneration attacks remove 93-99% of the invisible watermarks while the baseline attacks remove no more than 3%. However, if we do not require the watermarked image to look the same as the original one, watermarks that keep the image semantically similar can be an alternative
+    
+[^5]: 预训练Transformer用于对抗性样本提纯
+
+    Pre-trained transformer for adversarial purification. (arXiv:2306.01762v1 [cs.CR])
+
+    [http://arxiv.org/abs/2306.01762](http://arxiv.org/abs/2306.01762)
+
+    本文提出了一个快速防御对抗性攻击的方案RaPiD（Rapid Plug-in Defender），通过预训练的Transformer微调来提纯对抗样本，使其逼近清洁数据分布，实验结果表明，在有限数据情况下，该方法优于最先进的方法。
+
+    
+
+    随着越来越多的深度神经网络被部署为各种日常服务，它们的可靠性至关重要。深度神经网络容易受到对抗性攻击的影响，其中逃避攻击是最普遍的一种。最近的研究通常通过对抗训练或利用大量清洁数据的知识来增强其健壮性。然而，在实际应用中，重新训练和部署模型需要大量的计算资源，对在线服务造成重大损失。此外，当检测到某种攻击的对抗性例子时，服务提供者只能获得有限的对抗性样本，而大量的清洁数据可能无法获取。针对这些问题，我们提出了一种新的方案，名为RaPiD（Rapid Plug-in Defender），旨在快速防御具有少量干净和对抗性示例限制的原始服务模型的某种攻击。受到预训练模型提供转移学习良好初始化的通用趋势的启发，我们建议通过微调预先训练的Transformer来提纯对抗性样本。预训练的Transformer作为正则化器，鼓励提纯后的对抗性样本接近清晰数据的分布。实验结果表明，RaPiD在防御各种具有限数据的攻击方面优于最先进的方法。
+
+    With more and more deep neural networks being deployed as various daily services, their reliability is essential. It's frightening that deep neural networks are vulnerable and sensitive to adversarial attacks, the most common one of which for the services is evasion-based. Recent works usually strengthen the robustness by adversarial training or leveraging the knowledge of an amount of clean data. However, in practical terms, retraining and redeploying the model need a large computational budget, leading to heavy losses to the online service. In addition, when adversarial examples of a certain attack are detected, only limited adversarial examples are available for the service provider, while much clean data may not be accessible. Given the mentioned problems, we propose a new scenario, RaPiD (Rapid Plug-in Defender), which is to rapidly defend against a certain attack for the frozen original service model with limitations of few clean and adversarial examples. Motivated by the general
     
 

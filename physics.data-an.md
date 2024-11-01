@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Misspecification uncertainties in near-deterministic regression](https://arxiv.org/abs/2402.01810) | 该论文研究了近确定性回归中错误规范化的不确定性问题，并提出了一种组合模型，以准确预测和控制参数不确定性。 |
+| [^1] | [A Priori Uncertainty Quantification of Reacting Turbulence Closure Models using Bayesian Neural Networks](https://arxiv.org/abs/2402.18729) | 使用贝叶斯神经网络对反应流动模型中的不确定性进行量化，特别是在湍涡预混火焰动态中关键变量的建模方面取得重要进展 |
 
 # 详细
 
-[^1]: 近确定性回归中的错误规范化不确定性
+[^1]: 利用贝叶斯神经网络对反应湍流封闭模型进行先验不确定性量化
 
-    Misspecification uncertainties in near-deterministic regression
+    A Priori Uncertainty Quantification of Reacting Turbulence Closure Models using Bayesian Neural Networks
 
-    [https://arxiv.org/abs/2402.01810](https://arxiv.org/abs/2402.01810)
+    [https://arxiv.org/abs/2402.18729](https://arxiv.org/abs/2402.18729)
 
-    该论文研究了近确定性回归中错误规范化的不确定性问题，并提出了一种组合模型，以准确预测和控制参数不确定性。
+    使用贝叶斯神经网络对反应流动模型中的不确定性进行量化，特别是在湍涡预混火焰动态中关键变量的建模方面取得重要进展
 
     
 
-    期望损失是模型泛化误差的上界，可用于学习的鲁棒PAC-Bayes边界。然而，损失最小化被认为忽略了错误规范化，即模型不能完全复制观测结果。这导致大数据或欠参数化极限下对参数不确定性的显著低估。我们分析近确定性、错误规范化和欠参数化替代模型的泛化误差，这是科学和工程中广泛相关的一个领域。我们证明后验分布必须覆盖每个训练点，以避免发散的泛化误差，并导出一个符合这个约束的组合模型。对于线性模型，这种高效的方法产生的额外开销最小。这种高效方法在模型问题上进行了演示，然后应用于原子尺度机器学习中的高维数据集。
+    虽然为大涡模拟（LES）中的子滤波尺度（SFS）提出了许多基于物理的封闭模型形式，但直接数值模拟（DNS）提供的大量数据为利用数据驱动建模技术创造了机会。尽管灵活，数据驱动模型仍取决于选择的数据集和模型的函数形式。采用这种模型的增加需要可靠地估计数据驱动模型中数据知识和超出分布范围的不确定性。在本工作中，我们利用贝叶斯神经网络（BNNs）来捕捉反应流动模型中的逻辑不确定性和偶然不确定性。特别是，我们模拟了在湍涡预混火焰动态中起关键作用的滤波进展变量标量耗散率。我们展示了BNN模型可以提供关于数据驱动封闭模型的不确定性结构的独特见解。我们还提出了一种方法来进行...
 
-    The expected loss is an upper bound to the model generalization error which admits robust PAC-Bayes bounds for learning. However, loss minimization is known to ignore misspecification, where models cannot exactly reproduce observations. This leads to significant underestimates of parameter uncertainties in the large data, or underparameterized, limit. We analyze the generalization error of near-deterministic, misspecified and underparametrized surrogate models, a regime of broad relevance in science and engineering. We show posterior distributions must cover every training point to avoid a divergent generalization error and derive an ensemble {ansatz} that respects this constraint, which for linear models incurs minimal overhead. The efficient approach is demonstrated on model problems before application to high dimensional datasets in atomistic machine learning. Parameter uncertainties from misspecification survive in the underparametrized limit, giving accurate prediction and boundin
+    arXiv:2402.18729v1 Announce Type: cross  Abstract: While many physics-based closure model forms have been posited for the sub-filter scale (SFS) in large eddy simulation (LES), vast amounts of data available from direct numerical simulation (DNS) create opportunities to leverage data-driven modeling techniques. Albeit flexible, data-driven models still depend on the dataset and the functional form of the model chosen. Increased adoption of such models requires reliable uncertainty estimates both in the data-informed and out-of-distribution regimes. In this work, we employ Bayesian neural networks (BNNs) to capture both epistemic and aleatoric uncertainties in a reacting flow model. In particular, we model the filtered progress variable scalar dissipation rate which plays a key role in the dynamics of turbulent premixed flames. We demonstrate that BNN models can provide unique insights about the structure of uncertainty of the data-driven closure models. We also propose a method for the
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Solving Quadratic Systems with Full-Rank Matrices Using Sparse or Generative Priors.](http://arxiv.org/abs/2309.09032) | 本论文提出了一个方法，通过使用稀疏或生成的先验知识，解决了从全秩矩阵的二次系统中恢复信号的问题。其中，通过引入阈值Wirtinger流算法（TWF）来处理稀疏信号，并使用谱初始化和阈值梯度下降方法，在高维情况下实现了较小的测量数量。 |
+| [^1] | [On the tightness of information-theoretic bounds on generalization error of learning algorithms.](http://arxiv.org/abs/2303.14658) | 本文研究了学习算法泛化误差信息理论界限的紧密性。研究表明，通过适当的假设，可以在快速收敛速度下使用信息理论量$O(\lambda/n)$来上界估计泛化误差。 |
 
 # 详细
 
-[^1]: 使用稀疏或生成的先验解决全秩矩阵的二次系统
+[^1]: 关于学习算法泛化误差信息理论界限的紧密性研究
 
-    Solving Quadratic Systems with Full-Rank Matrices Using Sparse or Generative Priors. (arXiv:2309.09032v1 [cs.IT])
+    On the tightness of information-theoretic bounds on generalization error of learning algorithms. (arXiv:2303.14658v1 [cs.IT])
 
-    [http://arxiv.org/abs/2309.09032](http://arxiv.org/abs/2309.09032)
+    [http://arxiv.org/abs/2303.14658](http://arxiv.org/abs/2303.14658)
 
-    本论文提出了一个方法，通过使用稀疏或生成的先验知识，解决了从全秩矩阵的二次系统中恢复信号的问题。其中，通过引入阈值Wirtinger流算法（TWF）来处理稀疏信号，并使用谱初始化和阈值梯度下降方法，在高维情况下实现了较小的测量数量。
+    本文研究了学习算法泛化误差信息理论界限的紧密性。研究表明，通过适当的假设，可以在快速收敛速度下使用信息理论量$O(\lambda/n)$来上界估计泛化误差。
 
     
 
-    从具有全秩矩阵的二次系统中恢复信号x在应用中经常出现，比如未分配的距离几何和亚波长成像。本文通过引入对x的先验知识，针对高维情况（m << n），使用独立同分布的标准高斯矩阵解决了该问题。首先，考虑k-稀疏的x，引入了TWF算法，该算法不需要稀疏水平k。TWF包括两个步骤：谱初始化，当m = O(k^2log n)时，确定了一个距离x足够近的点（可能会有符号翻转），以及具有很好初始化的阈值梯度下降，该下降产生了一个线性收敛到x的序列，用m = O(klog n)个测量。
+    Russo和Xu提出了一种方法来证明学习算法的泛化误差可以通过信息度量进行上界估计。然而，这种收敛速度通常被认为是“慢”的，因为它的期望收敛速度的形式为$O(\sqrt{\lambda/n})$，其中$\lambda$是一些信息理论量。在本文中我们证明了根号并不一定意味着收敛速度慢，可以在适当的假设下使用这个界限来得到$O(\lambda/n)$的快速收敛速度。此外，我们确定了达到快速收敛速度的关键条件，即所谓的$(\eta,c)$-中心条件。在这个条件下，我们给出了学习算法泛化误差的信息理论界限。
 
-    The problem of recovering a signal $\boldsymbol{x} \in \mathbb{R}^n$ from a quadratic system $\{y_i=\boldsymbol{x}^\top\boldsymbol{A}_i\boldsymbol{x},\ i=1,\ldots,m\}$ with full-rank matrices $\boldsymbol{A}_i$ frequently arises in applications such as unassigned distance geometry and sub-wavelength imaging. With i.i.d. standard Gaussian matrices $\boldsymbol{A}_i$, this paper addresses the high-dimensional case where $m\ll n$ by incorporating prior knowledge of $\boldsymbol{x}$. First, we consider a $k$-sparse $\boldsymbol{x}$ and introduce the thresholded Wirtinger flow (TWF) algorithm that does not require the sparsity level $k$. TWF comprises two steps: the spectral initialization that identifies a point sufficiently close to $\boldsymbol{x}$ (up to a sign flip) when $m=O(k^2\log n)$, and the thresholded gradient descent (with a good initialization) that produces a sequence linearly converging to $\boldsymbol{x}$ with $m=O(k\log n)$ measurements. Second, we explore the generative p
+    A recent line of works, initiated by Russo and Xu, has shown that the generalization error of a learning algorithm can be upper bounded by information measures. In most of the relevant works, the convergence rate of the expected generalization error is in the form of $O(\sqrt{\lambda/n})$ where $\lambda$ is some information-theoretic quantities such as the mutual information or conditional mutual information between the data and the learned hypothesis. However, such a learning rate is typically considered to be ``slow", compared to a ``fast rate" of $O(\lambda/n)$ in many learning scenarios. In this work, we first show that the square root does not necessarily imply a slow rate, and a fast rate result can still be obtained using this bound under appropriate assumptions. Furthermore, we identify the critical conditions needed for the fast rate generalization error, which we call the $(\eta,c)$-central condition. Under this condition, we give information-theoretic bounds on the generaliz
     
 

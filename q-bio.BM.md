@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Genetic-guided GFlowNets: Advancing in Practical Molecular Optimization Benchmark](https://arxiv.org/abs/2402.05961) | 本文提出了一种名为基因引导GFlowNet (Genetic GFN) 的新方法，通过集成迭代遗传搜索和训练策略，该方法在实际分子优化基准测试中取得了16.213的最新得分，明显优于现有最佳得分15.185，同时在14个任务中超越了所有对比方法。 |
+| [^1] | [Dual-Space Optimization: Improved Molecule Sequence Design by Latent Prompt Transformer](https://arxiv.org/abs/2402.17179) | 提出了双空间优化（DSO）方法，通过整合潜在空间采样和数据空间选择，使用Latent Prompt Transformer (LPT)生成模型，解决了分子设计中的关键问题，取得了在不同任务中的性能优势。 |
 
 # 详细
 
-[^1]: 基因引导GFlowNets：在实际分子优化基准方面的进展
+[^1]: 双空间优化：通过潜在提示变换器改进分子序列设计
 
-    Genetic-guided GFlowNets: Advancing in Practical Molecular Optimization Benchmark
+    Dual-Space Optimization: Improved Molecule Sequence Design by Latent Prompt Transformer
 
-    [https://arxiv.org/abs/2402.05961](https://arxiv.org/abs/2402.05961)
+    [https://arxiv.org/abs/2402.17179](https://arxiv.org/abs/2402.17179)
 
-    本文提出了一种名为基因引导GFlowNet (Genetic GFN) 的新方法，通过集成迭代遗传搜索和训练策略，该方法在实际分子优化基准测试中取得了16.213的最新得分，明显优于现有最佳得分15.185，同时在14个任务中超越了所有对比方法。
+    提出了双空间优化（DSO）方法，通过整合潜在空间采样和数据空间选择，使用Latent Prompt Transformer (LPT)生成模型，解决了分子设计中的关键问题，取得了在不同任务中的性能优势。
 
     
 
-    本文提出了一种新的GFlowNet变体，即基因引导GFlowNet (Genetic GFN)，它将迭代遗传搜索集成到GFlowNet中。遗传搜索有效地引导GFlowNet进入高回报区域，解决了全局过度探索导致的训练效率低下和探索有限区域的问题。此外，还引入了训练策略，如基于排名的重放训练和无监督最大似然预训练，以提高基因引导GFlowNet的样本效率。该方法在实际分子优化 (PMO) 领域的官方基准测试中显示了16.213的最新得分，明显优于基准测试中报告的最佳得分15.185。值得注意的是，我们的方法在23个任务中的14个任务中超过了所有对比方法，包括强化学习，贝叶斯优化，生成模型，GFlowNets和遗传算法。
+    设计具有理想性质（如药物样性和对蛋白靶点的高结合亲和力）的分子是一个具有挑战性的问题。在本文中，我们提出了双空间优化（DSO）方法，该方法整合了潜在空间采样和数据空间选择来解决这一问题。DSO通过迭代更新潜在空间生成模型和合成数据集，逐步将生成模型和合成数据移向所需性质数值的区域。我们的生成模型采用潜在提示变换器（LPT）的形式，其中潜在向量充当因果变换器的提示。我们广泛的实验表明了提出方法的有效性，该方法在单目标、多目标和约束分子设计任务中树立了新的性能基准。
 
-    This paper proposes a novel variant of GFlowNet, genetic-guided GFlowNet (Genetic GFN), which integrates an iterative genetic search into GFlowNet. Genetic search effectively guides the GFlowNet to high-rewarded regions, addressing global over-exploration that results in training inefficiency and exploring limited regions. In addition, training strategies, such as rank-based replay training and unsupervised maximum likelihood pre-training, are further introduced to improve the sample efficiency of Genetic GFN. The proposed method shows a state-of-the-art score of 16.213, significantly outperforming the reported best score in the benchmark of 15.185, in practical molecular optimization (PMO), which is an official benchmark for sample-efficient molecular optimization. Remarkably, ours exceeds all baselines, including reinforcement learning, Bayesian optimization, generative models, GFlowNets, and genetic algorithms, in 14 out of 23 tasks.
+    arXiv:2402.17179v1 Announce Type: new  Abstract: Designing molecules with desirable properties, such as drug-likeliness and high binding affinities towards protein targets, is a challenging problem. In this paper, we propose the Dual-Space Optimization (DSO) method that integrates latent space sampling and data space selection to solve this problem. DSO iteratively updates a latent space generative model and a synthetic dataset in an optimization process that gradually shifts the generative model and the synthetic data towards regions of desired property values. Our generative model takes the form of a Latent Prompt Transformer (LPT) where the latent vector serves as the prompt of a causal transformer. Our extensive experiments demonstrate effectiveness of the proposed method, which sets new performance benchmarks across single-objective, multi-objective and constrained molecule design tasks.
     
 

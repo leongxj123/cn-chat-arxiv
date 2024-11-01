@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Distinguishing the Indistinguishable: Human Expertise in Algorithmic Prediction](https://arxiv.org/abs/2402.00793) | 本论文介绍了一种新的框架，将人类专业知识纳入算法预测中，重点在于利用人的判断力区分对于任何可行的预测算法来说“看起来相同”的输入。 |
-| [^2] | [Large language models can enhance persuasion through linguistic feature alignment](https://arxiv.org/abs/2311.16466) | 本研究调查了大型语言模型对人类沟通的影响，使用了消费者金融投诉数据，并发现大型语言模型的使用可能增强了一整套语言特征，提高了信息说服力。 |
+| [^1] | [Can Large Language Model Agents Simulate Human Trust Behaviors?](https://arxiv.org/abs/2402.04559) | 大语言模型代理能够模拟人类的信任行为，表现出在信任游戏中的信任行为，并且与人类行为具有高度一致性，但存在一些偏见和对代理与人类的差异。 |
 
 # 详细
 
-[^1]: 无法区分的区分：算法预测中的人类专业知识
+[^1]: 大语言模型代理能够模拟人类的信任行为吗？
 
-    Distinguishing the Indistinguishable: Human Expertise in Algorithmic Prediction
+    Can Large Language Model Agents Simulate Human Trust Behaviors?
 
-    [https://arxiv.org/abs/2402.00793](https://arxiv.org/abs/2402.00793)
+    [https://arxiv.org/abs/2402.04559](https://arxiv.org/abs/2402.04559)
 
-    本论文介绍了一种新的框架，将人类专业知识纳入算法预测中，重点在于利用人的判断力区分对于任何可行的预测算法来说“看起来相同”的输入。
-
-    
-
-    我们引入了一种将人类专业知识纳入算法预测的新框架。我们的方法主要关注利用人的判断力来区分那些对于任何可行的预测算法来说“看起来相同”的输入。我们认为，这种框架能够澄清人工智能与人类协作预测任务中的问题，因为专家通常具有信息的访问权限——特别是主观信息——而这些信息是算法训练数据中没有编码的。基于这一认识，我们开发了一组有原则的算法，仅在任何可行的预测器的性能有所改善时才选择性地纳入人类反馈。经验结果表明，尽管算法在平均水平上往往优于人类对应任务的能力，但人类判断在特定情况下（可以预先确定）能够显著提高算法预测的性能。在一个X射线分类任务中，我们发现这个子集在患者群体中占据了近30%。我们的方法提供了一种自然的方式，
-
-    We introduce a novel framework for incorporating human expertise into algorithmic predictions. Our approach focuses on the use of human judgment to distinguish inputs which `look the same' to any feasible predictive algorithm. We argue that this framing clarifies the problem of human/AI collaboration in prediction tasks, as experts often have access to information -- particularly subjective information -- which is not encoded in the algorithm's training data. We use this insight to develop a set of principled algorithms for selectively incorporating human feedback only when it improves the performance of any feasible predictor. We find empirically that although algorithms often outperform their human counterparts on average, human judgment can significantly improve algorithmic predictions on specific instances (which can be identified ex-ante). In an X-ray classification task, we find that this subset constitutes nearly 30% of the patient population. Our approach provides a natural way
-    
-[^2]: 大型语言模型通过语言特征对齐可以增强说服力
-
-    Large language models can enhance persuasion through linguistic feature alignment
-
-    [https://arxiv.org/abs/2311.16466](https://arxiv.org/abs/2311.16466)
-
-    本研究调查了大型语言模型对人类沟通的影响，使用了消费者金融投诉数据，并发现大型语言模型的使用可能增强了一整套语言特征，提高了信息说服力。
+    大语言模型代理能够模拟人类的信任行为，表现出在信任游戏中的信任行为，并且与人类行为具有高度一致性，但存在一些偏见和对代理与人类的差异。
 
     
 
-    尽管大型语言模型 (LLMs)正在重新塑造人类生活的各个方面，但我们对它们的影响的理解仍然有些受限。本文研究了LLMs对人类沟通的影响，使用了消费者金融投诉的数据。通过对消费者金融保护局 (CFPB) 收集的超过820,000个投诉进行AI检测，我们发现在ChatGPT发布后不久，LLMs的使用可能性急剧增加。此外，LLMs的使用可能性与信息说服力（即从金融公司获得救济的可能性增加）呈正相关。计算语言分析表明，这种正相关可能是由LLMs增强了各种语言特征所解释的。根据这些观察研究的结果，我们假设LLMs的使用可能增强了一整套语言特征，提高了对具有不同语言背景的接收者的信息说服力。
+    大语言模型（LLM）代理已经越来越多地被采用作为模拟工具，用于模拟人类在社会科学等领域中的行为。然而，一个基本的问题仍然存在：LLM代理是否真的能够模拟人类行为？在本文中，我们专注于人类互动中最关键的行为之一，信任，旨在调查LLM代理是否能够模拟人类的信任行为。我们首先发现，在被行为经济学广泛接受的信任游戏框架下，LLM代理通常表现出信任行为，称为代理信任。然后，我们发现LLM代理在信任行为方面与人类具有较高的行为一致性，表明使用LLM代理模拟人类的信任行为是可行的。此外，我们还探索了代理信任中的偏见以及代理信任在对代理和人类之间的差异方面的内在特性。我们还探讨了包括高级推理策略在内的条件下代理信任的内在特性。
 
-    Although large language models (LLMs) are reshaping various aspects of human life, our current understanding of their impacts remains somewhat constrained. Here we investigate the impact of LLMs on human communication, using data on consumer complaints in the financial industry. By employing an AI detection tool on more than 820K complaints gathered by the Consumer Financial Protection Bureau (CFPB), we find a sharp increase in the likely use of LLMs shortly after the release of ChatGPT. Moreover, the likely LLM usage was positively correlated with message persuasiveness (i.e., increased likelihood of obtaining relief from financial firms). Computational linguistic analyses suggest that the positive correlation may be explained by LLMs' enhancement of various linguistic features. Based on the results of these observational studies, we hypothesize that LLM usage may enhance a comprehensive set of linguistic features, increasing message persuasiveness to receivers with heterogeneous ling
+    Large Language Model (LLM) agents have been increasingly adopted as simulation tools to model humans in applications such as social science. However, one fundamental question remains: can LLM agents really simulate human behaviors? In this paper, we focus on one of the most critical behaviors in human interactions, trust, and aim to investigate whether or not LLM agents can simulate human trust behaviors. We first find that LLM agents generally exhibit trust behaviors, referred to as agent trust, under the framework of Trust Games, which are widely recognized in behavioral economics. Then, we discover that LLM agents can have high behavioral alignment with humans regarding trust behaviors, indicating the feasibility to simulate human trust behaviors with LLM agents. In addition, we probe into the biases in agent trust and the differences in agent trust towards agents and humans. We also explore the intrinsic properties of agent trust under conditions including advanced reasoning strate
     
 
