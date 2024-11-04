@@ -1,1 +1,41 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description><item><title>JailbreakBench&#26159;&#19968;&#20010;&#29992;&#20110;&#23545;&#25239;&#22823;&#22411;&#35821;&#35328;&#27169;&#22411;&#36234;&#29425;&#30340;&#24320;&#25918;&#22522;&#20934;&#65292;&#25552;&#20379;&#26032;&#30340;&#25968;&#25454;&#38598;&#12289;&#23545;&#25239;&#25552;&#31034;&#21644;&#35780;&#20272;&#26694;&#26550;&#12290;</title><link>https://arxiv.org/abs/2404.01318</link><description>&lt;p&gt;
+JailbreakBench: &#19968;&#20010;&#29992;&#20110;&#23545;&#25239;&#22823;&#22411;&#35821;&#35328;&#27169;&#22411;&#36234;&#29425;&#30340;&#24320;&#25918;&#40065;&#26834;&#24615;&#22522;&#20934;
+&lt;/p&gt;
+&lt;p&gt;
+JailbreakBench: An Open Robustness Benchmark for Jailbreaking Large Language Models
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2404.01318
+&lt;/p&gt;
+&lt;p&gt;
+JailbreakBench&#26159;&#19968;&#20010;&#29992;&#20110;&#23545;&#25239;&#22823;&#22411;&#35821;&#35328;&#27169;&#22411;&#36234;&#29425;&#30340;&#24320;&#25918;&#22522;&#20934;&#65292;&#25552;&#20379;&#26032;&#30340;&#25968;&#25454;&#38598;&#12289;&#23545;&#25239;&#25552;&#31034;&#21644;&#35780;&#20272;&#26694;&#26550;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#36234;&#29425;&#25915;&#20987;&#20250;&#23548;&#33268;&#22823;&#22411;&#35821;&#35328;&#27169;&#22411;&#29983;&#25104;&#26377;&#23475;&#12289;&#19981;&#36947;&#24503;&#25110;&#20196;&#20154;&#21453;&#24863;&#30340;&#20869;&#23481;&#12290;&#35780;&#20272;&#36825;&#20123;&#25915;&#20987;&#23384;&#22312;&#35768;&#22810;&#25361;&#25112;&#65292;&#24403;&#21069;&#30340;&#22522;&#20934;&#21644;&#35780;&#20272;&#25216;&#26415;&#24182;&#26410;&#20805;&#20998;&#35299;&#20915;&#12290;&#20026;&#20102;&#35299;&#20915;&#36825;&#20123;&#25361;&#25112;&#65292;&#25105;&#20204;&#24341;&#20837;&#20102;JailbreakBench&#65292;&#19968;&#20010;&#24320;&#28304;&#22522;&#20934;&#65292;&#21253;&#25324;&#20855;&#26377;100&#20010;&#29420;&#29305;&#34892;&#20026;&#30340;&#26032;&#36234;&#29425;&#25968;&#25454;&#38598;&#65288;&#31216;&#20026;JBB-Behaviors&#65289;&#12289;&#19968;&#32452;&#26368;&#20808;&#36827;&#30340;&#23545;&#25239;&#25552;&#31034;&#65288;&#31216;&#20026;&#36234;&#29425;&#24037;&#20214;&#65289;&#21644;&#19968;&#20010;&#26631;&#20934;&#21270;&#35780;&#20272;&#26694;&#26550;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2404.01318v1 Announce Type: cross  Abstract: Jailbreak attacks cause large language models (LLMs) to generate harmful, unethical, or otherwise objectionable content. Evaluating these attacks presents a number of challenges, which the current collection of benchmarks and evaluation techniques do not adequately address. First, there is no clear standard of practice regarding jailbreaking evaluation. Second, existing works compute costs and success rates in incomparable ways. And third, numerous works are not reproducible, as they withhold adversarial prompts, involve closed-source code, or rely on evolving proprietary APIs. To address these challenges, we introduce JailbreakBench, an open-sourced benchmark with the following components: (1) a new jailbreaking dataset containing 100 unique behaviors, which we call JBB-Behaviors; (2) an evolving repository of state-of-the-art adversarial prompts, which we refer to as jailbreak artifacts; (3) a standardized evaluation framework that i
+&lt;/p&gt;</description></item><item><title>&#35813;&#35770;&#25991;&#25552;&#20986;&#20102;&#19968;&#20010;&#32479;&#19968;&#30340;&#26694;&#26550;&#65292;&#29992;&#20110;&#20026;R&#233;nyi-DP&#25512;&#23548;&#36890;&#36807;&#23376;&#25277;&#26679;&#30340;&#25918;&#22823;&#20445;&#35777;&#65292;&#36825;&#26159;&#39318;&#20010;&#38024;&#23545;&#38544;&#31169;&#26680;&#31639;&#26041;&#27861;&#30340;&#26694;&#26550;&#65292;&#20063;&#20855;&#26377;&#29420;&#31435;&#30340;&#37325;&#35201;&#24615;&#12290;</title><link>https://arxiv.org/abs/2403.04867</link><description>&lt;p&gt;
+&#32452;&#38544;&#31169;&#25918;&#22823;&#21644;&#23376;&#25277;&#26679;&#30340;R&#233;nyi&#24046;&#20998;&#38544;&#31169;&#32479;&#19968;&#25918;&#22823;
+&lt;/p&gt;
+&lt;p&gt;
+Group Privacy Amplification and Unified Amplification by Subsampling for R\'enyi Differential Privacy
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.04867
+&lt;/p&gt;
+&lt;p&gt;
+&#35813;&#35770;&#25991;&#25552;&#20986;&#20102;&#19968;&#20010;&#32479;&#19968;&#30340;&#26694;&#26550;&#65292;&#29992;&#20110;&#20026;R&#233;nyi-DP&#25512;&#23548;&#36890;&#36807;&#23376;&#25277;&#26679;&#30340;&#25918;&#22823;&#20445;&#35777;&#65292;&#36825;&#26159;&#39318;&#20010;&#38024;&#23545;&#38544;&#31169;&#26680;&#31639;&#26041;&#27861;&#30340;&#26694;&#26550;&#65292;&#20063;&#20855;&#26377;&#29420;&#31435;&#30340;&#37325;&#35201;&#24615;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#24046;&#20998;&#38544;&#31169;(DP)&#20855;&#26377;&#22810;&#31181;&#29702;&#24819;&#23646;&#24615;&#65292;&#22914;&#23545;&#21518;&#22788;&#29702;&#30340;&#40065;&#26834;&#24615;&#12289;&#32452;&#38544;&#31169;&#21644;&#36890;&#36807;&#23376;&#25277;&#26679;&#25918;&#22823;&#65292;&#36825;&#20123;&#23646;&#24615;&#21487;&#20197;&#30456;&#20114;&#29420;&#31435;&#25512;&#23548;&#12290;&#25105;&#20204;&#30340;&#30446;&#26631;&#26159;&#30830;&#23450;&#26159;&#21542;&#36890;&#36807;&#32852;&#21512;&#32771;&#34385;&#36825;&#20123;&#23646;&#24615;&#20013;&#30340;&#22810;&#20010;&#21487;&#20197;&#33719;&#24471;&#26356;&#24378;&#30340;&#38544;&#31169;&#20445;&#35777;&#12290;&#20026;&#27492;&#65292;&#25105;&#20204;&#19987;&#27880;&#20110;&#32452;&#38544;&#31169;&#21644;&#36890;&#36807;&#23376;&#25277;&#26679;&#25918;&#22823;&#30340;&#32452;&#21512;&#12290;&#20026;&#20102;&#25552;&#20379;&#36866;&#21512;&#26426;&#22120;&#23398;&#20064;&#31639;&#27861;&#30340;&#20445;&#35777;&#65292;&#25105;&#20204;&#22312;R&#233;nyi-DP&#26694;&#26550;&#20013;&#36827;&#34892;&#20102;&#20998;&#26512;&#65292;&#36825;&#27604;$(\epsilon,\delta)$-DP&#20855;&#26377;&#26356;&#26377;&#21033;&#30340;&#32452;&#21512;&#23646;&#24615;&#12290;&#20316;&#20026;&#36825;&#20010;&#20998;&#26512;&#30340;&#19968;&#37096;&#20998;&#65292;&#25105;&#20204;&#24320;&#21457;&#20102;&#19968;&#20010;&#32479;&#19968;&#30340;&#26694;&#26550;&#65292;&#29992;&#20110;&#20026;R&#233;nyi-DP&#25512;&#23548;&#36890;&#36807;&#23376;&#25277;&#26679;&#30340;&#25918;&#22823;&#20445;&#35777;&#65292;&#36825;&#26159;&#39318;&#20010;&#38024;&#23545;&#38544;&#31169;&#26680;&#31639;&#26041;&#27861;&#30340;&#26694;&#26550;&#65292;&#20063;&#20855;&#26377;&#29420;&#31435;&#30340;&#37325;&#35201;&#24615;&#12290;&#25105;&#20204;&#21457;&#29616;&#65292;&#23427;&#19981;&#20165;&#35753;&#25105;&#20204;&#25913;&#36827;&#21644;&#27867;&#21270;&#29616;&#26377;&#30340;&#25918;&#22823;&#32467;&#26524;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.04867v1 Announce Type: cross  Abstract: Differential privacy (DP) has various desirable properties, such as robustness to post-processing, group privacy, and amplification by subsampling, which can be derived independently of each other. Our goal is to determine whether stronger privacy guarantees can be obtained by considering multiple of these properties jointly. To this end, we focus on the combination of group privacy and amplification by subsampling. To provide guarantees that are amenable to machine learning algorithms, we conduct our analysis in the framework of R\'enyi-DP, which has more favorable composition properties than $(\epsilon,\delta)$-DP. As part of this analysis, we develop a unified framework for deriving amplification by subsampling guarantees for R\'enyi-DP, which represents the first such framework for a privacy accounting method and is of independent interest. We find that it not only lets us improve upon and generalize existing amplification results 
+&lt;/p&gt;</description></item></channel></rss>
