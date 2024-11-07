@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Fairness Risks for Group-conditionally Missing Demographics](https://arxiv.org/abs/2402.13393) | 通过概率填充敏感特征，联合学习群体条件性缺失概率，增强一般公平风险，实现准确性和公平性之间的改进平衡 |
-| [^2] | [Analysis of Internet of Things implementation barriers in the cold supply chain: an integrated ISM-MICMAC and DEMATEL approach](https://arxiv.org/abs/2402.01804) | 本研究通过综述和调查研究物联网在冷链中的实施障碍，发现了13个关键障碍。其中，合规性和冷链网络是物联网采用策略的关键驱动因素。MICMAC和DEMATEL方法的应用有助于评估障碍之间的互动关系和因果关系。 |
+| [^1] | [Deep Learning Based Amharic Chatbot for FAQs in Universities](https://arxiv.org/abs/2402.01720) | 本文提出了一个基于深度学习的阿姆哈拉语常见问题解答聊天机器人模型，可以帮助大学生解答常见问题，通过使用自然语言处理和深度学习技术，采用多种机器学习模型算法进行分析和分类，取得了最好的成绩。 |
 
 # 详细
 
-[^1]: 针对群体条件性缺失人口统计数据的公平风险
+[^1]: 基于深度学习的阿姆哈拉语常见问题解答聊天机器人
 
-    Fairness Risks for Group-conditionally Missing Demographics
+    Deep Learning Based Amharic Chatbot for FAQs in Universities
 
-    [https://arxiv.org/abs/2402.13393](https://arxiv.org/abs/2402.13393)
+    [https://arxiv.org/abs/2402.01720](https://arxiv.org/abs/2402.01720)
 
-    通过概率填充敏感特征，联合学习群体条件性缺失概率，增强一般公平风险，实现准确性和公平性之间的改进平衡
-
-    
-
-    具有公平意识的分类模型近年来越来越受到关注，因为对某些人口统计群体的歧视问题日益引起担忧。大多数现有模型要求完全了解敏感特征，这可能由于隐私、法律问题和个人对歧视的恐惧而不切实际。我们将解决的关键挑战是不可用性的群体依赖性，例如，某些年龄范围的人可能更不愿透露他们的年龄。我们的解决方案通过对敏感特征进行概率填充，同时在变分自动编码器中联合学习群体条件性缺失的概率，将一般公平风险与之增强。我们的模型在图像和表格数据集上表现出了有效性，实现了准确性和公平性之间的改进平衡。
-
-    arXiv:2402.13393v1 Announce Type: new  Abstract: Fairness-aware classification models have gained increasing attention in recent years as concerns grow on discrimination against some demographic groups. Most existing models require full knowledge of the sensitive features, which can be impractical due to privacy, legal issues, and an individual's fear of discrimination. The key challenge we will address is the group dependency of the unavailability, e.g., people of some age range may be more reluctant to reveal their age. Our solution augments general fairness risks with probabilistic imputations of the sensitive features, while jointly learning the group-conditionally missing probabilities in a variational auto-encoder. Our model is demonstrated effective on both image and tabular datasets, achieving an improved balance between accuracy and fairness.
-    
-[^2]: 冷链中物联网实施障碍的分析：一种集成的ISM-MICMAC和DEMATEL方法
-
-    Analysis of Internet of Things implementation barriers in the cold supply chain: an integrated ISM-MICMAC and DEMATEL approach
-
-    [https://arxiv.org/abs/2402.01804](https://arxiv.org/abs/2402.01804)
-
-    本研究通过综述和调查研究物联网在冷链中的实施障碍，发现了13个关键障碍。其中，合规性和冷链网络是物联网采用策略的关键驱动因素。MICMAC和DEMATEL方法的应用有助于评估障碍之间的互动关系和因果关系。
+    本文提出了一个基于深度学习的阿姆哈拉语常见问题解答聊天机器人模型，可以帮助大学生解答常见问题，通过使用自然语言处理和深度学习技术，采用多种机器学习模型算法进行分析和分类，取得了最好的成绩。
 
     
 
-    将物联网技术整合到冷链中可以提高透明度、效率和质量，优化运营流程并提高生产力。在复杂的环境下，物联网在冷链中的集成受到特定的障碍的阻碍，需要进行全面的研究。通过对物联网实施的相关文献进行综述，共发现了13个障碍。调查数据经过交叉验证以确保质量，并采用Cronbach's alpha测试来确保有效性。本研究在第一阶段应用解释性结构建模技术以识别主要障碍。在这些障碍中，“合规性”和“冷链网络”是物联网采用策略的关键驱动因素。MICMAC的驱动和依赖力量元素分类有助于评估障碍之间的互动。在本研究的第二阶段中，通过DEMATEL方法确定了所识别障碍之间的因果关系。
+    大学生常常花费大量时间向管理员或教师寻求常见问题的答案。这对双方来说都很繁琐，需要找到一个解决方案。为此，本文提出了一个聊天机器人模型，利用自然语言处理和深度学习技术，在阿姆哈拉语中回答常见问题。聊天机器人是通过人工智能模拟人类对话的计算机程序，作为虚拟助手处理问题和其他任务。所提出的聊天机器人程序使用标记化、规范化、去除停用词和词干提取对阿姆哈拉语输入句子进行分析和分类。采用了三种机器学习模型算法来分类标记和检索合适的回答：支持向量机（SVM）、多项式朴素贝叶斯和通过TensorFlow、Keras和NLTK实现的深度神经网络。深度学习模型取得了最好的成绩。
 
-    Integrating Internet of Things (IoT) technology inside the cold supply chain can enhance transparency, efficiency, and quality, optimizing operating procedures and increasing productivity. The integration of IoT in this complicated setting is hindered by specific barriers that need a thorough examination. Prominent barriers to IoT implementation in the cold supply chain are identified using a two-stage model. After reviewing the available literature on the topic of IoT implementation, a total of 13 barriers were found. The survey data was cross-validated for quality, and Cronbach's alpha test was employed to ensure validity. This research applies the interpretative structural modeling technique in the first phase to identify the main barriers. Among those barriers, "regularity compliance" and "cold chain networks" are key drivers for IoT adoption strategies. MICMAC's driving and dependence power element categorization helps evaluate the barrier interactions. In the second phase of this
+    University students often spend a considerable amount of time seeking answers to common questions from administrators or teachers. This can become tedious for both parties, leading to a need for a solution. In response, this paper proposes a chatbot model that utilizes natural language processing and deep learning techniques to answer frequently asked questions (FAQs) in the Amharic language. Chatbots are computer programs that simulate human conversation through the use of artificial intelligence (AI), acting as a virtual assistant to handle questions and other tasks. The proposed chatbot program employs tokenization, normalization, stop word removal, and stemming to analyze and categorize Amharic input sentences. Three machine learning model algorithms were used to classify tokens and retrieve appropriate responses: Support Vector Machine (SVM), Multinomial Na\"ive Bayes, and deep neural networks implemented through TensorFlow, Keras, and NLTK. The deep learning model achieved the be
     
 

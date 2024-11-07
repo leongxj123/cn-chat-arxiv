@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Fast Empirical Scenarios.](http://arxiv.org/abs/2307.03927) | 该论文提出了两种快速的经验场景提取算法，一种识别之前未观察到的场景并提供场景的协方差矩阵表示，另一种从已实现的世界状态中选择重要的数据点，并与高阶样本矩一致，这些算法计算效率高且适用于一致的基于场景的建模和高维数值积分。 |
+| [^1] | [Ensemble-Based Annealed Importance Sampling.](http://arxiv.org/abs/2401.15645) | 本文提出了一种基于集合的退火重要性抽样算法，通过结合人口蒙特卡洛方法来提高抽样效率，并利用集合的相互作用促进未发现模态的探索。 |
 
 # 详细
 
-[^1]: 快速经验场景
+[^1]: 基于集合的退火重要性抽样
 
-    Fast Empirical Scenarios. (arXiv:2307.03927v1 [stat.ML])
+    Ensemble-Based Annealed Importance Sampling. (arXiv:2401.15645v1 [stat.CO])
 
-    [http://arxiv.org/abs/2307.03927](http://arxiv.org/abs/2307.03927)
+    [http://arxiv.org/abs/2401.15645](http://arxiv.org/abs/2401.15645)
 
-    该论文提出了两种快速的经验场景提取算法，一种识别之前未观察到的场景并提供场景的协方差矩阵表示，另一种从已实现的世界状态中选择重要的数据点，并与高阶样本矩一致，这些算法计算效率高且适用于一致的基于场景的建模和高维数值积分。
+    本文提出了一种基于集合的退火重要性抽样算法，通过结合人口蒙特卡洛方法来提高抽样效率，并利用集合的相互作用促进未发现模态的探索。
 
     
 
-    我们希望从大型和高维面板数据中提取一小部分与样本矩一致的代表性场景。在两种新算法中，第一种算法识别之前未观察到的场景，并提供了一种基于场景的协方差矩阵表示。第二种算法从已实现的世界状态中选择重要的数据点，并与高阶样本矩信息一致。这两种算法计算效率高，并可用于一致的基于场景的建模和高维数值积分。广泛的数值基准测试研究和在投资组合优化中的应用支持所提出的算法。
+    从多模态分布中进行抽样是计算科学和统计学中的一个基本且具有挑战性的问题。在各种方法中，一种流行的方法是退火重要性抽样（AIS）。在本文中，我们提出了一个基于集合的AIS版本，通过将其与基于人口的蒙特卡洛方法相结合，以提高其效率。通过跟踪集合而不是单个粒子沿起始分布和目标分布之间的某个延续路径，我们利用集合内的相互作用来促进未发现模态的探索。具体来说，我们的主要思想是利用Snooker算法或进化蒙特卡洛中使用的遗传算法。我们讨论了如何实现所提出的算法，并推导了在连续时间和均场极限下控制集合演化的偏微分方程。我们还测试了所提算法的效率。
 
-    We seek to extract a small number of representative scenarios from large and high-dimensional panel data that are consistent with sample moments. Among two novel algorithms, the first identifies scenarios that have not been observed before, and comes with a scenario-based representation of covariance matrices. The second proposal picks important data points from states of the world that have already realized, and are consistent with higher-order sample moment information. Both algorithms are efficient to compute, and lend themselves to consistent scenario-based modeling and high-dimensional numerical integration. Extensive numerical benchmarking studies and an application in portfolio optimization favor the proposed algorithms.
+    Sampling from a multimodal distribution is a fundamental and challenging problem in computational science and statistics. Among various approaches proposed for this task, one popular method is Annealed Importance Sampling (AIS). In this paper, we propose an ensemble-based version of AIS by combining it with population-based Monte Carlo methods to improve its efficiency. By keeping track of an ensemble instead of a single particle along some continuation path between the starting distribution and the target distribution, we take advantage of the interaction within the ensemble to encourage the exploration of undiscovered modes. Specifically, our main idea is to utilize either the snooker algorithm or the genetic algorithm used in Evolutionary Monte Carlo. We discuss how the proposed algorithm can be implemented and derive a partial differential equation governing the evolution of the ensemble under the continuous time and mean-field limit. We also test the efficiency of the proposed alg
     
 
