@@ -2,27 +2,27 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [DeNetDM: Debiasing by Network Depth Modulation](https://arxiv.org/abs/2403.19863) | DeNetDM 是一种基于网络深度调制的新型去偏见方法，通过使用来自专家乘积的训练范式，在创建深浅架构的偏见和去偏见分支后，将知识提炼产生目标去偏见模型，相比当前去偏见技术取得更优异的效果。 |
+| [^1] | [Hyper-Diffusion: Estimating Epistemic and Aleatoric Uncertainty with a Single Model](https://arxiv.org/abs/2402.03478) | 本研究引入了一种新的集合方法，超扩散，可以使用单一模型准确估计认识和偶然不确定性。 |
 | [^2] | [GD doesn't make the cut: Three ways that non-differentiability affects neural network training](https://arxiv.org/abs/2401.08426) | 本文研究了非可微性对神经网络训练的影响，包括收敛性差异、$L_1$正则化问题的矛盾性质以及稳定边界现象的不适用性。 |
-| [^3] | [LifelongMemory: Leveraging LLMs for Answering Queries in Long-form Egocentric Videos](https://arxiv.org/abs/2312.05269) | 终身记忆是一个新的框架，通过自然语言问答和检索方式访问长篇自我中心视频，利用零-shot能力进行推理，使用置信度和解释模块产生自信、高质量和可解释的答案，在EgoSchema问题回答基准上达到最先进性能，在Ego4D的自然语言查询挑战中具有很强的竞争力 |
-| [^4] | [EMA-Net: Efficient Multitask Affinity Learning for Dense Scene Predictions.](http://arxiv.org/abs/2401.11124) | EMA-Net 是一个高效的多任务关联学习网络，通过引入跨任务关联学习模块(CTAL)，能够同时捕捉局部、全局和跨任务的相互作用。 |
-| [^5] | [D3: Data Diversity Design for Systematic Generalization in Visual Question Answering.](http://arxiv.org/abs/2309.08798) | 本论文研究了视觉问答中系统一般化的关键因素，发现简单任务的多样性在实现系统一般化中起到了重要的作用，这意味着不必收集大量和多样的复杂任务。 |
+| [^3] | [Ventricular Segmentation: A Brief Comparison of U-Net Derivatives.](http://arxiv.org/abs/2401.09980) | 本文探讨了深度学习技术在心脏图像分割中的应用，实施了多个U-Net衍生模型以实现对心脏特定部位的全面解剖和功能分析。通过图像、图表和定量指标验证了模型的效果，并讨论了面临的挑战和未来改进策略。 |
+| [^4] | [Robust multimodal models have outlier features and encode more concepts.](http://arxiv.org/abs/2310.13040) | 健壮的多模态模型展示了异常特征和更多概念的编码方式。 |
+| [^5] | [Language Aligned Visual Representations Predict Human Behavior in Naturalistic Learning Tasks.](http://arxiv.org/abs/2306.09377) | 语言对齐的视觉表示方式比纯视觉表示方式更有效地预测人类在自然学习任务中的行为。 |
 
 # 详细
 
-[^1]: DeNetDM: 通过网络深度调制来消除偏见
+[^1]: 超扩散：使用单一模型估计认识和偶然不确定性
 
-    DeNetDM: Debiasing by Network Depth Modulation
+    Hyper-Diffusion: Estimating Epistemic and Aleatoric Uncertainty with a Single Model
 
-    [https://arxiv.org/abs/2403.19863](https://arxiv.org/abs/2403.19863)
+    [https://arxiv.org/abs/2402.03478](https://arxiv.org/abs/2402.03478)
 
-    DeNetDM 是一种基于网络深度调制的新型去偏见方法，通过使用来自专家乘积的训练范式，在创建深浅架构的偏见和去偏见分支后，将知识提炼产生目标去偏见模型，相比当前去偏见技术取得更优异的效果。
+    本研究引入了一种新的集合方法，超扩散，可以使用单一模型准确估计认识和偶然不确定性。
 
     
 
-    当神经网络在偏见数据集上训练时，它们往往会无意间学习到虚假的相关性，从而导致在实现强大的泛化性和鲁棒性方面面临挑战。目前解决这种偏见的方法通常包括利用偏见注释、根据伪偏见标签进行加权重、或通过增强技术增加偏见冲突数据点的多样性。我们引入了DeNetDM，这是一种基于观察结果的新型去偏见方法，浅层神经网络优先学习核心属性，而更深层次的神经网络在获取不同信息时强调偏见。我们利用从专家乘积中推导出的训练范式，创建了深浅架构的偏见和去偏见分支，然后用知识提炼产生目标的去偏见模型。大量实验证明，我们的方法优于当前的去偏见技术，实现了一个...
+    在将机器学习应用于高风险应用领域（如医学影像和天气预报）时，准确估计和区分认识不确定性（可以通过更多的训练数据降低的不确定性）和偶然不确定性（与当前任务固有的不确定性）至关重要。条件扩散模型具有准确有效地从数据集的后验分布中采样的突破性能力，现在使得不确定性估计从概念上变得简单明了：只需要训练和从一个大型扩散模型集合中采样即可。然而，随着模型架构的复杂性增加，训练这样一个集合变得难以计算。在本文中，我们介绍了一种新的集合方法，超扩散，它可以使用单一模型准确估计认识和偶然不确定性。
 
-    arXiv:2403.19863v1 Announce Type: new  Abstract: When neural networks are trained on biased datasets, they tend to inadvertently learn spurious correlations, leading to challenges in achieving strong generalization and robustness. Current approaches to address such biases typically involve utilizing bias annotations, reweighting based on pseudo-bias labels, or enhancing diversity within bias-conflicting data points through augmentation techniques. We introduce DeNetDM, a novel debiasing method based on the observation that shallow neural networks prioritize learning core attributes, while deeper ones emphasize biases when tasked with acquiring distinct information. Using a training paradigm derived from Product of Experts, we create both biased and debiased branches with deep and shallow architectures and then distill knowledge to produce the target debiased model. Extensive experiments and analyses demonstrate that our approach outperforms current debiasing techniques, achieving a not
+    Estimating and disentangling epistemic uncertainty (uncertainty that can be reduced with more training data) and aleatoric uncertainty (uncertainty that is inherent to the task at hand) is critically important when applying machine learning (ML) to high-stakes applications such as medical imaging and weather forecasting. Conditional diffusion models' breakthrough ability to accurately and efficiently sample from the posterior distribution of a dataset now makes uncertainty estimation conceptually straightforward: One need only train and sample from a large ensemble of diffusion models. Unfortunately, training such an ensemble becomes computationally intractable as the complexity of the model architecture grows.   In this work we introduce a new approach to ensembling, hyper-diffusion, which allows one to accurately estimate epistemic and aleatoric uncertainty with a single model. Unlike existing Monte Carlo dropout based single-model ensembling methods, hyper-diffusion offers the same 
     
 [^2]: GD无法胜任：非可微性对神经网络训练的三种影响方式
 
@@ -38,46 +38,46 @@
 
     This paper investigates the distinctions between gradient methods applied to non-differentiable functions (NGDMs) and classical gradient descents (GDs) designed for differentiable functions. First, we demonstrate significant differences in the convergence properties of NGDMs compared to GDs, challenging the applicability of the extensive neural network convergence literature based on $L-smoothness$ to non-smooth neural networks. Next, we demonstrate the paradoxical nature of NGDM solutions for $L_{1}$-regularized problems, showing that increasing the regularization penalty leads to an increase in the $L_{1}$ norm of optimal solutions in NGDMs. Consequently, we show that widely adopted $L_{1}$ penalization-based techniques for network pruning do not yield expected results. Finally, we explore the Edge of Stability phenomenon, indicating its inapplicability even to Lipschitz continuous convex differentiable functions, leaving its relevance to non-convex non-differentiable neural networks
     
-[^3]: 终身记忆：利用LLMs回答长篇自我中心视频中的查询
+[^3]: 心室分割：U-Net衍生模型的简要比较
 
-    LifelongMemory: Leveraging LLMs for Answering Queries in Long-form Egocentric Videos
+    Ventricular Segmentation: A Brief Comparison of U-Net Derivatives. (arXiv:2401.09980v1 [eess.IV])
 
-    [https://arxiv.org/abs/2312.05269](https://arxiv.org/abs/2312.05269)
+    [http://arxiv.org/abs/2401.09980](http://arxiv.org/abs/2401.09980)
 
-    终身记忆是一个新的框架，通过自然语言问答和检索方式访问长篇自我中心视频，利用零-shot能力进行推理，使用置信度和解释模块产生自信、高质量和可解释的答案，在EgoSchema问题回答基准上达到最先进性能，在Ego4D的自然语言查询挑战中具有很强的竞争力
-
-    
-
-    在本文中，我们介绍了终身记忆(LifelongMemory)，这是一个新的框架，通过自然语言问答和检索来访问长篇自我中心视频存储。终身记忆生成摄像机佩戴者的简洁视频活动描述，并利用预训练的大型语言模型的零-shot能力来推理长篇视频内容。此外，终身记忆使用置信度和解释模块来产生自信、高质量和可解释的答案。我们的方法在EgoSchema问题回答基准上实现了最先进的性能，并在Ego4D的自然语言查询(NLQ)挑战中具有很强的竞争力。代码可在https://github.com/Agentic-Learning-AI-Lab/lifelong-memory 中找到。
-
-    arXiv:2312.05269v2 Announce Type: replace-cross  Abstract: In this paper we introduce LifelongMemory, a new framework for accessing long-form egocentric videographic memory through natural language question answering and retrieval. LifelongMemory generates concise video activity descriptions of the camera wearer and leverages the zero-shot capabilities of pretrained large language models to perform reasoning over long-form video context. Furthermore, Lifelong Memory uses a confidence and explanation module to produce confident, high-quality, and interpretable answers. Our approach achieves state-of-the-art performance on the EgoSchema benchmark for question answering and is highly competitive on the natural language query (NLQ) challenge of Ego4D. Code is available at https://github.com/Agentic-Learning-AI-Lab/lifelong-memory.
-    
-[^4]: EMA-Net: 高效的多任务关联学习用于稠密场景预测
-
-    EMA-Net: Efficient Multitask Affinity Learning for Dense Scene Predictions. (arXiv:2401.11124v1 [cs.CV])
-
-    [http://arxiv.org/abs/2401.11124](http://arxiv.org/abs/2401.11124)
-
-    EMA-Net 是一个高效的多任务关联学习网络，通过引入跨任务关联学习模块(CTAL)，能够同时捕捉局部、全局和跨任务的相互作用。
+    本文探讨了深度学习技术在心脏图像分割中的应用，实施了多个U-Net衍生模型以实现对心脏特定部位的全面解剖和功能分析。通过图像、图表和定量指标验证了模型的效果，并讨论了面临的挑战和未来改进策略。
 
     
 
-    多任务学习（MTL）因其能够联合预测多个任务，在使用比单任务学习更少的模型参数的情况下实现更好的每个任务性能而备受关注。最近，以解码器为重点的架构通过使用其他相关任务的特征来改进多任务性能。然而，大多数这些改进方法在以参数高效的方式同时捕捉局部和全局任务特定表示以及跨任务模式方面存在问题。在本文中，我们引入了高效多任务关联学习网络（EMA-Net），它是一个轻量级框架，增强了多任务网络的任务改进能力。EMA-Net通过我们的新颖的跨任务关联学习（CTAL）模块巧妙地捕捉局部、全局和跨任务的相互作用。CTAL的关键创新在于其能够以最适合任务亲和矩阵的方式操纵任务亲和矩阵。
+    医学影像是指用于观察人体及其内部的技术和方法，以诊断、监测甚至治疗医学疾病。本文旨在探讨深度学习技术在心脏短轴磁共振成像图像的语义分割中的应用，旨在提高与心脏相关的医学疾病的诊断、监测和治疗。重点是实施各种U-Net的衍生体系结构，以有效地分离心脏的特定部分，进行全面的解剖和功能分析。通过图像、图表和定量指标的组合展示了模型及其预测的效果。此外，本文还讨论了遇到的挑战，并概述了未来改进的策略。本摘要简要概述了利用深度学习进行心脏图像分割的工作，强调了模型的有效性。
 
-    Multitask learning (MTL) has gained prominence for its ability to jointly predict multiple tasks, achieving better per-task performance while using fewer per-task model parameters than single-task learning. More recently, decoder-focused architectures have considerably improved multitask performance by refining task predictions using the features of other related tasks. However, most of these refinement methods fail to simultaneously capture local and global task-specific representations, as well as cross-task patterns in a parameter-efficient manner. In this paper, we introduce the Efficient Multitask Affinity Learning Network (EMA-Net), which is a lightweight framework that enhances the task refinement capabilities of multitask networks. EMA-Net adeptly captures local, global, and cross-task interactions using our novel Cross-Task Affinity Learning (CTAL) module. The key innovation of CTAL lies in its ability to manipulate task affinity matrices in a manner that is optimally suited t
+    Medical imaging refers to the technologies and methods utilized to view the human body and its inside, in order to diagnose, monitor, or even treat medical disorders. This paper aims to explore the application of deep learning techniques in the semantic segmentation of Cardiac short-axis MRI (Magnetic Resonance Imaging) images, aiming to enhance the diagnosis, monitoring, and treatment of medical disorders related to the heart. The focus centers on implementing various architectures that are derivatives of U-Net, to effectively isolate specific parts of the heart for comprehensive anatomical and functional analysis. Through a combination of images, graphs, and quantitative metrics, the efficacy of the models and their predictions are showcased. Additionally, this paper addresses encountered challenges and outline strategies for future improvements. This abstract provides a concise overview of the efforts in utilizing deep learning for cardiac image segmentation, emphasizing both the ac
     
-[^5]: D3: 数据多样性设计为系统一般化在视觉问答中。
+[^4]: 健壮的多模态模型具有异常特征并编码更多概念
 
-    D3: Data Diversity Design for Systematic Generalization in Visual Question Answering. (arXiv:2309.08798v1 [cs.AI])
+    Robust multimodal models have outlier features and encode more concepts. (arXiv:2310.13040v1 [cs.LG])
 
-    [http://arxiv.org/abs/2309.08798](http://arxiv.org/abs/2309.08798)
+    [http://arxiv.org/abs/2310.13040](http://arxiv.org/abs/2310.13040)
 
-    本论文研究了视觉问答中系统一般化的关键因素，发现简单任务的多样性在实现系统一般化中起到了重要的作用，这意味着不必收集大量和多样的复杂任务。
+    健壮的多模态模型展示了异常特征和更多概念的编码方式。
 
     
 
-    系统一般化是智能的关键方面，它指的是通过结合已知的子任务和概念来推广到新任务的能力。已经显示影响系统一般化的一个关键因素是训练数据的多样性。然而，多样性可以以多种方式定义，因为数据具有许多变化因素。对于不同方面的数据多样性如何影响系统一般化的更细致的理解尚缺乏。我们在视觉问答（VQA）问题中提供了新的证据，揭示了简单任务的多样性（即由几个子任务和概念组成的任务）在实现系统一般化中的关键作用。这意味着收集大量和多样化的复杂任务可能并非必要，这可能成本高昂。我们证明了这个结果与训练和测试数据之间的相似性无关，并适用于众所周知的神经网络家族。
+    什么区分健壮模型与非健壮模型？随着大规模多模态模型（如CLIP）的出现，这个问题引起了人们的关注。这些模型在自然分布转变方面表现出了前所未有的健壮性。尽管已经证明了健壮性的差异可以追溯到训练数据上的差异，但迄今为止还不清楚这对于模型学习到了什么意味着。在这项工作中，我们通过探测12个具有不同骨干（ResNets和ViTs）和预训练集（OpenAI，LAION-400M，LAION-2B，YFCC15M，CC12M和DataComp）的健壮多模态模型的表示空间来填补这一空白。我们发现这些模型的表示空间中存在两个健壮性的特征：（1）健壮模型具有由其激活特征表征的异常特征，其中一些特征值比平均值高几个数量级。这些异常特征在模型的表示空间中引入了特权方向。我们证明了...
 
-    Systematic generalization is a crucial aspect of intelligence, which refers to the ability to generalize to novel tasks by combining known subtasks and concepts. One critical factor that has been shown to influence systematic generalization is the diversity of training data. However, diversity can be defined in various ways, as data have many factors of variation. A more granular understanding of how different aspects of data diversity affect systematic generalization is lacking. We present new evidence in the problem of Visual Question Answering (VQA) that reveals that the diversity of simple tasks (i.e. tasks formed by a few subtasks and concepts) plays a key role in achieving systematic generalization. This implies that it may not be essential to gather a large and varied number of complex tasks, which could be costly to obtain. We demonstrate that this result is independent of the similarity between the training and testing data and applies to well-known families of neural network 
+    What distinguishes robust models from non-robust ones? This question has gained traction with the appearance of large-scale multimodal models, such as CLIP. These models have demonstrated unprecedented robustness with respect to natural distribution shifts. While it has been shown that such differences in robustness can be traced back to differences in training data, so far it is not known what that translates to in terms of what the model has learned. In this work, we bridge this gap by probing the representation spaces of 12 robust multimodal models with various backbones (ResNets and ViTs) and pretraining sets (OpenAI, LAION-400M, LAION-2B, YFCC15M, CC12M and DataComp). We find two signatures of robustness in the representation spaces of these models: (1) Robust models exhibit outlier features characterized by their activations, with some being several orders of magnitude above average. These outlier features induce privileged directions in the model's representation space. We demon
+    
+[^5]: 对齐语言的视觉表示预测人类在自然学习任务中的行为
+
+    Language Aligned Visual Representations Predict Human Behavior in Naturalistic Learning Tasks. (arXiv:2306.09377v1 [cs.LG])
+
+    [http://arxiv.org/abs/2306.09377](http://arxiv.org/abs/2306.09377)
+
+    语言对齐的视觉表示方式比纯视觉表示方式更有效地预测人类在自然学习任务中的行为。
+
+    
+
+    人类具备识别和概括自然物体相关特征的能力，在各种情境中有所帮助。为了研究这种现象并确定最有效的表示方式以预测人类行为，我们进行了两个涉及类别学习和奖励学习的实验。我们的实验使用逼真的图像作为刺激物，并要求参与者基于所有试验的新型刺激物作出准确的决策，因此需要泛化。在两个任务中，底层规则是使用人类相似性判断提取的刺激维度生成的简单线性函数。值得注意的是，参与者在几次试验内就成功地确定了相关的刺激特征，证明了有效的泛化。我们进行了广泛的模型比较，评估了各种深度学习模型的表示对人类选择的逐次预测准确性。有趣的是，自然语言处理任务（如语言建模和机器翻译）训练的模型表示优于视觉任务训练的模型表示，表明对齐语言的视觉表示可能更有效地预测人类在自然学习任务中的行为。
+
+    Humans possess the ability to identify and generalize relevant features of natural objects, which aids them in various situations. To investigate this phenomenon and determine the most effective representations for predicting human behavior, we conducted two experiments involving category learning and reward learning. Our experiments used realistic images as stimuli, and participants were tasked with making accurate decisions based on novel stimuli for all trials, thereby necessitating generalization. In both tasks, the underlying rules were generated as simple linear functions using stimulus dimensions extracted from human similarity judgments. Notably, participants successfully identified the relevant stimulus features within a few trials, demonstrating effective generalization. We performed an extensive model comparison, evaluating the trial-by-trial predictive accuracy of diverse deep learning models' representations of human choices. Intriguingly, representations from models train
     
 

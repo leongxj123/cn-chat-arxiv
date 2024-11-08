@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Initialisation and Topology Effects in Decentralised Federated Learning](https://arxiv.org/abs/2403.15855) | 分散式联邦学习的有效性受到连接设备网络拓扑结构的显著影响，我们提出了基于底层网络节点特征向量中心性分布的改进神经网络初始化策略，大大提高了训练效率。 |
+| [^1] | [Combinatorial Client-Master Multiagent Deep Reinforcement Learning for Task Offloading in Mobile Edge Computing](https://arxiv.org/abs/2402.11653) | 深度强化学习在移动边缘计算中的任务卸载问题中的应用面临着连续和离散资源约束的挑战，但有望实现高效的任务分配。 |
 
 # 详细
 
-[^1]: 初始值和拓扑结构在分散式联邦学习中的影响
+[^1]: 移动边缘计算中组合式客户端-主控多智能体深度强化学习用于任务卸载
 
-    Initialisation and Topology Effects in Decentralised Federated Learning
+    Combinatorial Client-Master Multiagent Deep Reinforcement Learning for Task Offloading in Mobile Edge Computing
 
-    [https://arxiv.org/abs/2403.15855](https://arxiv.org/abs/2403.15855)
+    [https://arxiv.org/abs/2402.11653](https://arxiv.org/abs/2402.11653)
 
-    分散式联邦学习的有效性受到连接设备网络拓扑结构的显著影响，我们提出了基于底层网络节点特征向量中心性分布的改进神经网络初始化策略，大大提高了训练效率。
+    深度强化学习在移动边缘计算中的任务卸载问题中的应用面临着连续和离散资源约束的挑战，但有望实现高效的任务分配。
 
     
 
-    具有完全分散式特征的联邦学习使得在网络上分布式设备上对个体机器学习模型进行协作训练，同时保持训练数据本地化。这种方法增强了数据隐私性，消除了单点故障和中央协调的必要性。我们的研究强调了分散式联邦学习的有效性受到连接设备的网络拓扑结构的显著影响。一个简化的数值模型用于研究这些系统的早期行为，使我们得出了一个利用底层网络节点的特征向量中心性分布的改进人工神经网络初始值策略，从而大大提高了训练效率。此外，我们的研究探讨了在我们提出的初始化策略下的比例行为和环境参数的选择。这项工作为更多研究打开了道路。
+    最近，出现了大量执行计算密集型任务的移动应用程序，如视频流媒体、数据挖掘、虚拟现实、增强现实、图像处理、视频处理、人脸识别和在线游戏。移动边缘计算（MEC）已经成为一种满足用户设备（UDs）日益增长的计算需求的有前途的技术。MEC中的任务卸载是一种策略，通过在UDs和MEC服务器之间分配任务来满足UDs的需求。深度强化学习（DRL）在任务卸载问题中受到关注，因为它可以适应动态变化并最小化在线计算复杂性。然而，UDs和MEC服务器上的各种类型的连续和离散资源约束对有效的基于DRL的任务卸载设计构成挑战。
 
-    arXiv:2403.15855v1 Announce Type: cross  Abstract: Fully decentralised federated learning enables collaborative training of individual machine learning models on distributed devices on a network while keeping the training data localised. This approach enhances data privacy and eliminates both the single point of failure and the necessity for central coordination. Our research highlights that the effectiveness of decentralised federated learning is significantly influenced by the network topology of connected devices. A simplified numerical model for studying the early behaviour of these systems leads us to an improved artificial neural network initialisation strategy, which leverages the distribution of eigenvector centralities of the nodes of the underlying network, leading to a radically improved training efficiency. Additionally, our study explores the scaling behaviour and choice of environmental parameters under our proposed initialisation strategy. This work paves the way for mor
+    arXiv:2402.11653v1 Announce Type: new  Abstract: Recently, there has been an explosion of mobile applications that perform computationally intensive tasks such as video streaming, data mining, virtual reality, augmented reality, image processing, video processing, face recognition, and online gaming. However, user devices (UDs), such as tablets and smartphones, have a limited ability to perform the computation needs of the tasks. Mobile edge computing (MEC) has emerged as a promising technology to meet the increasing computing demands of UDs. Task offloading in MEC is a strategy that meets the demands of UDs by distributing tasks between UDs and MEC servers. Deep reinforcement learning (DRL) is gaining attention in task-offloading problems because it can adapt to dynamic changes and minimize online computational complexity. However, the various types of continuous and discrete resource constraints on UDs and MEC servers pose challenges to the design of an efficient DRL-based task-offlo
     
 

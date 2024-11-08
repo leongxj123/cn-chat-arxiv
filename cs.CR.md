@@ -2,37 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Whispers in the Machine: Confidentiality in LLM-integrated Systems](https://arxiv.org/abs/2402.06922) | 本研究提供了一种评估LLM集成系统保密性的系统化方法，通过形式化一个"秘密密钥"游戏来捕捉模型隐藏私人信息的能力。评估了八种攻击和四种防御方法，发现当前的防御方法缺乏泛化性能。 |
-| [^2] | [Teach Large Language Models to Forget Privacy.](http://arxiv.org/abs/2401.00870) | 这项研究提出了Prompt2Forget（P2F）框架，通过教导大型语言模型（LLM）忘记隐私信息，解决了LLM本地隐私挑战。P2F方法将问题分解为片段并生成虚构答案，模糊化模型对原始输入的记忆。实验证明，P2F具有很强的模糊化能力，并且可以在各种应用场景下自适应使用，无需手动设置。 |
+| [^1] | [Provable Mutual Benefits from Federated Learning in Privacy-Sensitive Domains](https://arxiv.org/abs/2403.06672) | 本文研究了在隐私敏感领域中如何设计一种FL协议，既能保证隐私，又能提高模型准确性，并提供了设计出对所有参与者都有益处的协议。 |
+| [^2] | [Gradient Cuff: Detecting Jailbreak Attacks on Large Language Models by Exploring Refusal Loss Landscapes](https://arxiv.org/abs/2403.00867) | 本文提出了一种名为Gradient Cuff的方法，通过探索拒绝损失地形图来检测对大语言模型的越狱攻击，成功设计了一种有效的两步检测策略。 |
+| [^3] | [Differentially Private Range Queries with Correlated Input Perturbation](https://arxiv.org/abs/2402.07066) | 本研究提出了一种具有相关输入扰动的差分隐私范围查询的局部机制，通过级联采样算法实现，实验表明在保障近乎最优的效用的同时，与输出扰动方法在实践中具有竞争力。 |
 
 # 详细
 
-[^1]: 机器中的私语：LLM集成系统中的保密性
+[^1]: 在隐私敏感领域中从联邦学习中有可证明的互惠益处
 
-    Whispers in the Machine: Confidentiality in LLM-integrated Systems
+    Provable Mutual Benefits from Federated Learning in Privacy-Sensitive Domains
 
-    [https://arxiv.org/abs/2402.06922](https://arxiv.org/abs/2402.06922)
+    [https://arxiv.org/abs/2403.06672](https://arxiv.org/abs/2403.06672)
 
-    本研究提供了一种评估LLM集成系统保密性的系统化方法，通过形式化一个"秘密密钥"游戏来捕捉模型隐藏私人信息的能力。评估了八种攻击和四种防御方法，发现当前的防御方法缺乏泛化性能。
-
-    
-
-    大规模语言模型（LLM）越来越多地与外部工具集成。尽管这些集成可以显著提高LLM的功能，但它们也在不同组件之间创建了一个新的攻击面，可能泄露机密数据。具体而言，恶意工具可以利用LLM本身的漏洞来操纵模型并损害其他服务的数据，这引发了在LLM集成环境中如何保护私密数据的问题。在这项工作中，我们提供了一种系统评估LLM集成系统保密性的方法。为此，我们形式化了一个"秘密密钥"游戏，可以捕捉模型隐藏私人信息的能力。这使我们能够比较模型对保密性攻击的脆弱性以及不同防御策略的有效性。在这个框架中，我们评估了八种先前发表的攻击和四种防御方法。我们发现当前的防御方法缺乏泛化性能。
-
-    Large Language Models (LLMs) are increasingly integrated with external tools. While these integrations can significantly improve the functionality of LLMs, they also create a new attack surface where confidential data may be disclosed between different components. Specifically, malicious tools can exploit vulnerabilities in the LLM itself to manipulate the model and compromise the data of other services, raising the question of how private data can be protected in the context of LLM integrations.   In this work, we provide a systematic way of evaluating confidentiality in LLM-integrated systems. For this, we formalize a "secret key" game that can capture the ability of a model to conceal private information. This enables us to compare the vulnerability of a model against confidentiality attacks and also the effectiveness of different defense strategies. In this framework, we evaluate eight previously published attacks and four defenses. We find that current defenses lack generalization
-    
-[^2]: 教导大型语言模型忘记隐私
-
-    Teach Large Language Models to Forget Privacy. (arXiv:2401.00870v1 [cs.CR])
-
-    [http://arxiv.org/abs/2401.00870](http://arxiv.org/abs/2401.00870)
-
-    这项研究提出了Prompt2Forget（P2F）框架，通过教导大型语言模型（LLM）忘记隐私信息，解决了LLM本地隐私挑战。P2F方法将问题分解为片段并生成虚构答案，模糊化模型对原始输入的记忆。实验证明，P2F具有很强的模糊化能力，并且可以在各种应用场景下自适应使用，无需手动设置。
+    本文研究了在隐私敏感领域中如何设计一种FL协议，既能保证隐私，又能提高模型准确性，并提供了设计出对所有参与者都有益处的协议。
 
     
 
-    大型语言模型（LLM）已被证明具有强大的能力，但隐私泄露的风险仍然是一个重要问题。传统的保护隐私方法，如差分隐私和同态加密，在只有黑盒API的环境下是不足够的，要求模型透明性或大量计算资源。我们提出了Prompt2Forget（P2F），这是第一个设计用于解决LLM本地隐私挑战的框架，通过教导LLM忘记来实现。该方法涉及将完整问题分解为较小的片段，生成虚构的答案，并使模型对原始输入的记忆模糊化。我们根据不同领域的包含隐私敏感信息的问题创建了基准数据集。P2F实现了零-shot泛化，可以在多种应用场景下自适应，无需手动调整。实验结果表明，P2F具有很强的模糊化LLM记忆的能力，而不会损失任何实用性。
+    跨领域联邦学习（FL）允许数据所有者通过从彼此的私有数据集中获益来训练准确的机器学习模型。本文研究了在何时以及如何服务器可以设计一种对所有参与者都有利的FL协议的问题。我们提供了在均值估计和凸随机优化背景下存在相互有利协议的必要和充分条件。我们推导出了在对称隐私偏好下，最大化总客户效用的协议。最后，我们设计了最大化最终模型准确性的协议，并在合成实验中展示了它们的好处。
 
-    Large Language Models (LLMs) have proven powerful, but the risk of privacy leakage remains a significant concern. Traditional privacy-preserving methods, such as Differential Privacy and Homomorphic Encryption, are inadequate for black-box API-only settings, demanding either model transparency or heavy computational resources. We propose Prompt2Forget (P2F), the first framework designed to tackle the LLM local privacy challenge by teaching LLM to forget. The method involves decomposing full questions into smaller segments, generating fabricated answers, and obfuscating the model's memory of the original input. A benchmark dataset was crafted with questions containing privacy-sensitive information from diverse fields. P2F achieves zero-shot generalization, allowing adaptability across a wide range of use cases without manual adjustments. Experimental results indicate P2F's robust capability to obfuscate LLM's memory, attaining a forgetfulness score of around 90\% without any utility los
+    arXiv:2403.06672v1 Announce Type: cross  Abstract: Cross-silo federated learning (FL) allows data owners to train accurate machine learning models by benefiting from each others private datasets. Unfortunately, the model accuracy benefits of collaboration are often undermined by privacy defenses. Therefore, to incentivize client participation in privacy-sensitive domains, a FL protocol should strike a delicate balance between privacy guarantees and end-model accuracy. In this paper, we study the question of when and how a server could design a FL protocol provably beneficial for all participants. First, we provide necessary and sufficient conditions for the existence of mutually beneficial protocols in the context of mean estimation and convex stochastic optimization. We also derive protocols that maximize the total clients' utility, given symmetric privacy preferences. Finally, we design protocols maximizing end-model accuracy and demonstrate their benefits in synthetic experiments.
+    
+[^2]: 梯度被罚：通过探索拒绝损失地形图来检测针对大语言模型的越狱攻击
+
+    Gradient Cuff: Detecting Jailbreak Attacks on Large Language Models by Exploring Refusal Loss Landscapes
+
+    [https://arxiv.org/abs/2403.00867](https://arxiv.org/abs/2403.00867)
+
+    本文提出了一种名为Gradient Cuff的方法，通过探索拒绝损失地形图来检测对大语言模型的越狱攻击，成功设计了一种有效的两步检测策略。
+
+    
+
+    大型语言模型（LLMs）正成为一种突出的生成式AI工具，用户输入查询，LLM生成答案。为了减少伤害和滥用，人们通过使用先进的训练技术如来自人类反馈的强化学习（RLHF）来将这些LLMs与人类价值观保持一致。然而，最近的研究突显了LLMs对于试图颠覆嵌入的安全防护措施的对抗性越狱尝试的脆弱性。为了解决这一挑战，本文定义并调查了LLMs的拒绝损失，然后提出了一种名为Gradient Cuff的方法来检测越狱尝试。Gradient Cuff利用拒绝损失地形图中观察到的独特特性，包括功能值及其光滑性，设计了一种有效的两步检测策略。
+
+    arXiv:2403.00867v1 Announce Type: cross  Abstract: Large Language Models (LLMs) are becoming a prominent generative AI tool, where the user enters a query and the LLM generates an answer. To reduce harm and misuse, efforts have been made to align these LLMs to human values using advanced training techniques such as Reinforcement Learning from Human Feedback (RLHF). However, recent studies have highlighted the vulnerability of LLMs to adversarial jailbreak attempts aiming at subverting the embedded safety guardrails. To address this challenge, this paper defines and investigates the Refusal Loss of LLMs and then proposes a method called Gradient Cuff to detect jailbreak attempts. Gradient Cuff exploits the unique properties observed in the refusal loss landscape, including functional values and its smoothness, to design an effective two-step detection strategy. Experimental results on two aligned LLMs (LLaMA-2-7B-Chat and Vicuna-7B-V1.5) and six types of jailbreak attacks (GCG, AutoDAN,
+    
+[^3]: 具有相关输入扰动的差分隐私范围查询
+
+    Differentially Private Range Queries with Correlated Input Perturbation
+
+    [https://arxiv.org/abs/2402.07066](https://arxiv.org/abs/2402.07066)
+
+    本研究提出了一种具有相关输入扰动的差分隐私范围查询的局部机制，通过级联采样算法实现，实验表明在保障近乎最优的效用的同时，与输出扰动方法在实践中具有竞争力。
+
+    
+
+    本工作提出了一种用于线性查询的局部差分隐私机制，特别是范围查询，利用相关输入扰动同时实现无偏性、一致性、统计透明性和对精度目标的控制，无论是在某些查询边缘上还是在层次数据库结构所暗示的精度要求上。所提出的级联采样算法准确高效地实现了该机制。我们的界限表明，我们在保障近乎最优的效用的同时，与输出扰动方法在实践中具有竞争力。
+
+    This work proposes a class of locally differentially private mechanisms for linear queries, in particular range queries, that leverages correlated input perturbation to simultaneously achieve unbiasedness, consistency, statistical transparency, and control over utility requirements in terms of accuracy targets expressed either in certain query margins or as implied by the hierarchical database structure. The proposed Cascade Sampling algorithm instantiates the mechanism exactly and efficiently. Our bounds show that we obtain near-optimal utility while being empirically competitive against output perturbation methods.
     
 

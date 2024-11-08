@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Improving LLM Code Generation with Grammar Augmentation](https://arxiv.org/abs/2403.01632) | SynCode是一个新框架，结合编程语言的语法和DFA mask store，在LLMs中生成代码过程中获得96.07%的句法错误降低，并展现出提高句法精度的重大影响。 |
+| [^1] | [Performance Issue Identification in Cloud Systems with Relational-Temporal Anomaly Detection.](http://arxiv.org/abs/2307.10869) | 云系统中的性能问题识别存在挑战，现有方法中的独立分析每个指标的异常无法解决问题，需要考虑指标之间的关联性。 |
 
 # 详细
 
-[^1]: 通过语法增强改进LLM代码生成
+[^1]: 云系统中的性能问题识别与关系-时间异常检测
 
-    Improving LLM Code Generation with Grammar Augmentation
+    Performance Issue Identification in Cloud Systems with Relational-Temporal Anomaly Detection. (arXiv:2307.10869v1 [cs.LG])
 
-    [https://arxiv.org/abs/2403.01632](https://arxiv.org/abs/2403.01632)
+    [http://arxiv.org/abs/2307.10869](http://arxiv.org/abs/2307.10869)
 
-    SynCode是一个新框架，结合编程语言的语法和DFA mask store，在LLMs中生成代码过程中获得96.07%的句法错误降低，并展现出提高句法精度的重大影响。
+    云系统中的性能问题识别存在挑战，现有方法中的独立分析每个指标的异常无法解决问题，需要考虑指标之间的关联性。
 
     
 
-    我们提出了 SynCode，一个用于高效和通用地解码大型语言模型（LLMs）代码的新框架。SynCode利用编程语言的语法，利用离线构建的基于语言语法终结符的高效查找表DFA mask store。我们展示了SynCode在给定编程语言的上下文无关文法（CFG）的完备性和正确性，展示其在保留语义上有效令牌的同时拒绝无效令牌的能力。该框架与由CFG定义的任何语言无缝集成，验证了针对Python和Go的CFG实验。结果突出了当SynCode与最先进的LLMs结合时，语法错误减少96.07%，彰显了其对提高代码生成中的句法精度的重大影响。
+    性能问题在大规模云服务系统中普遍存在，可能导致巨额收入损失。为了确保可靠的性能，使用服务监控指标准确地识别和定位这些问题是至关重要的。鉴于现代云系统的复杂性和规模，这项任务可能会具有挑战性，并且可能需要超出个人能力的广泛专业知识和资源。一些现有的方法通过分析每个指标独立地检测异常来解决这个问题。然而，这可能会导致难以由工程师手动诊断的压倒性警报风暴。为了追求更好的性能，不仅应考虑指标的时间模式，还应考虑指标之间的关联性模式，这可以被形式化为多变量指标异常检测问题。然而，大多数研究在明确提取这两种类型的特征方面存在不足。此外，存在一些未标记的异常。
 
-    arXiv:2403.01632v1 Announce Type: new  Abstract: We present SynCode a novel framework for efficient and general syntactical decoding of code with large language models (LLMs). SynCode leverages the grammar of a programming language, utilizing an offline-constructed efficient lookup table called DFA mask store based on language grammar terminals. We demonstrate SynCode's soundness and completeness given the context-free grammar (CFG) of the programming language, presenting its ability to retain syntactically valid tokens while rejecting invalid ones. The framework seamlessly integrates with any language defined by CFG, as evidenced by experiments on CFGs for Python and Go. The results underscore the significant reduction of 96.07% of syntax errors achieved when SynCode is combined with state-of-the-art LLMs, showcasing its substantial impact on enhancing syntactical precision in code generation.   Our code is available at https://github.com/uiuc-focal-lab/syncode.
+    Performance issues permeate large-scale cloud service systems, which can lead to huge revenue losses. To ensure reliable performance, it's essential to accurately identify and localize these issues using service monitoring metrics. Given the complexity and scale of modern cloud systems, this task can be challenging and may require extensive expertise and resources beyond the capacity of individual humans. Some existing methods tackle this problem by analyzing each metric independently to detect anomalies. However, this could incur overwhelming alert storms that are difficult for engineers to diagnose manually. To pursue better performance, not only the temporal patterns of metrics but also the correlation between metrics (i.e., relational patterns) should be considered, which can be formulated as a multivariate metrics anomaly detection problem. However, most of the studies fall short of extracting these two types of features explicitly. Moreover, there exist some unlabeled anomalies m
     
 
