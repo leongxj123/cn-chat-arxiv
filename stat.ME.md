@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Semi-Supervised Health Index Monitoring with Feature Generation and Fusion](https://arxiv.org/abs/2312.02867) | 通过深度半监督异常检测（DeepSAD）方法进行健康指数构建，并提出了多样性损失来丰富条件指标。 |
-| [^2] | [Pseudo-Labeling for Kernel Ridge Regression under Covariate Shift.](http://arxiv.org/abs/2302.10160) | 该论文提出了一种关于核岭回归的协变量转移策略，通过使用伪标签进行模型选择，能够适应不同特征分布下的学习，实现均方误差最小化。 |
+| [^1] | [Solving Kernel Ridge Regression with Gradient Descent for a Non-Constant Kernel.](http://arxiv.org/abs/2311.01762) | 本文研究了使用梯度下降法解决非常数核的核岭回归。通过在训练过程中逐渐减小带宽，避免了超参数选择的需求，并提出了一种带宽更新方案，证明了其优于使用常数带宽的方法。 |
 
 # 详细
 
-[^1]: 使用特征生成和融合的半监督健康指数监测
+[^1]: 使用梯度下降法解决非常数核的核岭回归
 
-    Semi-Supervised Health Index Monitoring with Feature Generation and Fusion
+    Solving Kernel Ridge Regression with Gradient Descent for a Non-Constant Kernel. (arXiv:2311.01762v1 [stat.ML])
 
-    [https://arxiv.org/abs/2312.02867](https://arxiv.org/abs/2312.02867)
+    [http://arxiv.org/abs/2311.01762](http://arxiv.org/abs/2311.01762)
 
-    通过深度半监督异常检测（DeepSAD）方法进行健康指数构建，并提出了多样性损失来丰富条件指标。
-
-    
-
-    健康指数（HI）对于评估系统健康状态至关重要，有助于识别异常，并预测对高安全性和可靠性要求高的系统的剩余使用寿命。在实现高精度的同时降低成本，紧密监测至关重要。在现实应用中获取HI标签往往成本高昂，需要连续、精确的健康测量。因此，利用可能提供潜在机器磨损状态指示的“运行至故障”数据集，更方便采用半监督工具构建HI。
-
-    arXiv:2312.02867v2 Announce Type: replace  Abstract: The Health Index (HI) is crucial for evaluating system health, aiding tasks like anomaly detection and predicting remaining useful life for systems demanding high safety and reliability. Tight monitoring is crucial for achieving high precision at a lower cost. Obtaining HI labels in real-world applications is often cost-prohibitive, requiring continuous, precise health measurements. Therefore, it is more convenient to leverage run-to failure datasets that may provide potential indications of machine wear condition, making it necessary to apply semi-supervised tools for HI construction. In this study, we adapt the Deep Semi-supervised Anomaly Detection (DeepSAD) method for HI construction. We use the DeepSAD embedding as a condition indicators to address interpretability challenges and sensitivity to system-specific factors. Then, we introduce a diversity loss to enrich condition indicators. We employ an alternating projection algorit
-    
-[^2]: 核岭回归下伪标签的协变量转移策略
-
-    Pseudo-Labeling for Kernel Ridge Regression under Covariate Shift. (arXiv:2302.10160v2 [stat.ME] UPDATED)
-
-    [http://arxiv.org/abs/2302.10160](http://arxiv.org/abs/2302.10160)
-
-    该论文提出了一种关于核岭回归的协变量转移策略，通过使用伪标签进行模型选择，能够适应不同特征分布下的学习，实现均方误差最小化。
+    本文研究了使用梯度下降法解决非常数核的核岭回归。通过在训练过程中逐渐减小带宽，避免了超参数选择的需求，并提出了一种带宽更新方案，证明了其优于使用常数带宽的方法。
 
     
 
-    我们提出并分析了一种基于协变量转移的核岭回归方法。我们的目标是在目标分布上学习一个均方误差最小的回归函数，基于从目标分布采样的未标记数据和可能具有不同特征分布的已标记数据。我们将已标记数据分成两个子集，并分别进行核岭回归，以获得候选模型集合和一个填充模型。我们使用后者填充缺失的标签，然后相应地选择最佳的候选模型。我们的非渐近性过量风险界表明，在相当一般的情况下，我们的估计器能够适应目标分布以及协变量转移的结构。它能够实现渐近正态误差率直到对数因子的最小极限优化。在模型选择中使用伪标签不会产生主要负面影响。
+    核岭回归（KRR）是线性岭回归的推广，它在数据中是非线性的，但在参数中是线性的。解决方案可以通过闭式解获得，其中包括矩阵求逆，也可以通过梯度下降迭代获得。本文研究了在训练过程中改变核函数的方法。我们从理论上探讨了这对模型复杂性和泛化性能的影响。基于我们的发现，我们提出了一种用于平移不变核的带宽更新方案，其中带宽在训练过程中逐渐减小至零，从而避免了超参数选择的需要。我们在真实和合成数据上展示了在训练过程中逐渐减小带宽的优于使用常数带宽，通过交叉验证和边缘似然最大化选择的带宽。我们还从理论和实证上证明了使用逐渐减小的带宽时，我们能够...
 
-    We develop and analyze a principled approach to kernel ridge regression under covariate shift. The goal is to learn a regression function with small mean squared error over a target distribution, based on unlabeled data from there and labeled data that may have a different feature distribution. We propose to split the labeled data into two subsets and conduct kernel ridge regression on them separately to obtain a collection of candidate models and an imputation model. We use the latter to fill the missing labels and then select the best candidate model accordingly. Our non-asymptotic excess risk bounds show that in quite general scenarios, our estimator adapts to the structure of the target distribution as well as the covariate shift. It achieves the minimax optimal error rate up to a logarithmic factor. The use of pseudo-labels in model selection does not have major negative impacts.
+    Kernel ridge regression, KRR, is a generalization of linear ridge regression that is non-linear in the data, but linear in the parameters. The solution can be obtained either as a closed-form solution, which includes a matrix inversion, or iteratively through gradient descent. Using the iterative approach opens up for changing the kernel during training, something that is investigated in this paper. We theoretically address the effects this has on model complexity and generalization. Based on our findings, we propose an update scheme for the bandwidth of translational-invariant kernels, where we let the bandwidth decrease to zero during training, thus circumventing the need for hyper-parameter selection. We demonstrate on real and synthetic data how decreasing the bandwidth during training outperforms using a constant bandwidth, selected by cross-validation and marginal likelihood maximization. We also show theoretically and empirically that using a decreasing bandwidth, we are able to
     
 

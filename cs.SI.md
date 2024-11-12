@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Revisiting Link Prediction: A Data Perspective](https://arxiv.org/abs/2310.00793) | 本文通过从数据的视角出发，重新审视了链接预测的原则，并发现了局部结构接近性、全局结构接近性和特征接近性三个因素之间的关系。同时，发现了全局结构接近性只在局部结构接近性不足时显示出有效性，以及特征和结构接近性之间的不兼容性。这些发现为链接预测提供了新的思路，启发了GNN4LP的设计。 |
-| [^2] | [Using Causality-Aware Graph Neural Networks to Predict Temporal Centralities in Dynamic Graphs.](http://arxiv.org/abs/2310.15865) | 本研究提出了一种使用因果感知图神经网络预测动态图中的时间中心性的方法，并在不同领域的13个时间图上进行了实验验证，结果显示该方法显著改善了介数和接近度中心性的预测能力。 |
+| [^1] | [Evolving to the Future: Unseen Event Adaptive Fake News Detection on Social Media](https://arxiv.org/abs/2403.00037) | 提出了面向未知事件的适应性假新闻检测框架FADE，通过自适应增强和图对比学习训练目标预测器，同时独立训练事件预测器，最终减轻事件偏见。 |
 
 # 详细
 
-[^1]: 重新审视链接预测: 一个数据的视角
+[^1]: 未来发展：社交媒体上看不见事件的适应性假新闻检测
 
-    Revisiting Link Prediction: A Data Perspective
+    Evolving to the Future: Unseen Event Adaptive Fake News Detection on Social Media
 
-    [https://arxiv.org/abs/2310.00793](https://arxiv.org/abs/2310.00793)
+    [https://arxiv.org/abs/2403.00037](https://arxiv.org/abs/2403.00037)
 
-    本文通过从数据的视角出发，重新审视了链接预测的原则，并发现了局部结构接近性、全局结构接近性和特征接近性三个因素之间的关系。同时，发现了全局结构接近性只在局部结构接近性不足时显示出有效性，以及特征和结构接近性之间的不兼容性。这些发现为链接预测提供了新的思路，启发了GNN4LP的设计。
-
-    
-
-    链接预测是一项基于图的基本任务，在各种应用中已被证明是不可或缺的，例如朋友推荐、蛋白质分析和药物互作预测。然而，由于数据集涵盖了多个领域，它们可能具有不同的链接形成机制。现有文献中的证据强调了一个普遍适用于所有数据集的最佳算法的缺失。在本文中，我们尝试从数据中心的视角探索链接预测的原则，跨越不同数据集。我们确定了三个对链接预测至关重要的基本因素:局部结构接近性、全局结构接近性和特征接近性。然后，我们揭示了这些因素之间的关系，其中 (i)只有在局部结构接近性不足的情况下，全局结构接近性才显示出有效性。 (ii)特征和结构接近性之间存在不兼容性。这种不兼容性导致了链接预测的图神经网络 (GNN4LP) 持续地
-
-    Link prediction, a fundamental task on graphs, has proven indispensable in various applications, e.g., friend recommendation, protein analysis, and drug interaction prediction. However, since datasets span a multitude of domains, they could have distinct underlying mechanisms of link formation. Evidence in existing literature underscores the absence of a universally best algorithm suitable for all datasets. In this paper, we endeavor to explore principles of link prediction across diverse datasets from a data-centric perspective. We recognize three fundamental factors critical to link prediction: local structural proximity, global structural proximity, and feature proximity. We then unearth relationships among those factors where (i) global structural proximity only shows effectiveness when local structural proximity is deficient. (ii) The incompatibility can be found between feature and structural proximity. Such incompatibility leads to GNNs for Link Prediction (GNN4LP) consistently 
-    
-[^2]: 使用因果感知图神经网络在动态图中预测时间中心性
-
-    Using Causality-Aware Graph Neural Networks to Predict Temporal Centralities in Dynamic Graphs. (arXiv:2310.15865v1 [cs.LG])
-
-    [http://arxiv.org/abs/2310.15865](http://arxiv.org/abs/2310.15865)
-
-    本研究提出了一种使用因果感知图神经网络预测动态图中的时间中心性的方法，并在不同领域的13个时间图上进行了实验验证，结果显示该方法显著改善了介数和接近度中心性的预测能力。
+    提出了面向未知事件的适应性假新闻检测框架FADE，通过自适应增强和图对比学习训练目标预测器，同时独立训练事件预测器，最终减轻事件偏见。
 
     
 
-    节点中心性在网络科学、社交网络分析和推荐系统中起着重要作用。在时间数据中，静态基于路径的中心性如接近度或介数可能会对节点在时间图中的真实重要性产生误导。为了解决这个问题，已经定义了基于节点对之间最短时间路径的时间一般化介数和接近度。然而，这些一般化的一个主要问题是计算这样的路径的计算成本较高。为了解决这个问题，我们研究了De Bruijn图神经网络(DBGNN)，一种因果感知的图神经网络架构，在时间序列数据中预测基于路径的时间中心性。我们在13个生物和社交系统的时间图中实验评估了我们的方法，并显示它相比静态图卷积方法显著改善了介数和接近度中心性的预测能力。
+    随着社交媒体的快速发展，假新闻在社交媒体上的广泛传播日益威胁个人和社会。在社交媒体动态环境中，假新闻检测旨在开发一个模型，该模型在新闻报道过去事件的基础上进行训练。目标是预测和识别有关未来事件的假新闻，这些事件通常与过去完全不同。然而，现有的假新闻检测方法存在鲁棒性不足，无法泛化到看不见的事件。为了解决这个问题，我们引入了基于未来自适应事件的假新闻检测（FADE）框架。具体来说，我们通过自适应增强策略和图对比学习训练目标预测器，以进行更稳健的整体预测。同时，我们独立训练一个仅事件的预测器以获得有偏见的预测。然后，我们通过获得最终预测来进一步减轻事件偏见。
 
-    Node centralities play a pivotal role in network science, social network analysis, and recommender systems. In temporal data, static path-based centralities like closeness or betweenness can give misleading results about the true importance of nodes in a temporal graph. To address this issue, temporal generalizations of betweenness and closeness have been defined that are based on the shortest time-respecting paths between pairs of nodes. However, a major issue of those generalizations is that the calculation of such paths is computationally expensive. Addressing this issue, we study the application of De Bruijn Graph Neural Networks (DBGNN), a causality-aware graph neural network architecture, to predict temporal path-based centralities in time series data. We experimentally evaluate our approach in 13 temporal graphs from biological and social systems and show that it considerably improves the prediction of both betweenness and closeness centrality compared to a static Graph Convolut
+    arXiv:2403.00037v1 Announce Type: cross  Abstract: With the rapid development of social media, the wide dissemination of fake news on social media is increasingly threatening both individuals and society. In the dynamic landscape of social media, fake news detection aims to develop a model trained on news reporting past events. The objective is to predict and identify fake news about future events, which often relate to subjects entirely different from those in the past. However, existing fake detection methods exhibit a lack of robustness and cannot generalize to unseen events. To address this, we introduce Future ADaptive Event-based Fake news Detection (FADE) framework. Specifically, we train a target predictor through an adaptive augmentation strategy and graph contrastive learning to make more robust overall predictions. Simultaneously, we independently train an event-only predictor to obtain biased predictions. Then we further mitigate event bias by obtaining the final prediction
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Consciousness is learning: predictive processing systems that learn by binding may perceive themselves as conscious.](http://arxiv.org/abs/2301.07016) | 通过层级绑定和联想检索变为短期和长期声明性记忆的在线预测处理系统可能会感知到自己具有意识。 |
+| [^1] | [Positional Encoding Helps Recurrent Neural Networks Handle a Large Vocabulary](https://arxiv.org/abs/2402.00236) | 本研究探讨了位置编码在循环神经网络中的作用，发现即使与RNN结合使用，位置编码仍然有效，尤其是在处理大词汇量和多样观察结果时。这为使用输入驱动和自主时间表示的组合研究提供了新的方向，同时研究结果也对神经元振荡的生物学意义提供了讨论。 |
 
 # 详细
 
-[^1]: 意识是学习的过程：通过绑定学习的预测处理系统可能会将自己感知为有意识的
+[^1]: 位置编码有助于循环神经网络处理大词汇量
 
-    Consciousness is learning: predictive processing systems that learn by binding may perceive themselves as conscious. (arXiv:2301.07016v2 [q-bio.NC] UPDATED)
+    Positional Encoding Helps Recurrent Neural Networks Handle a Large Vocabulary
 
-    [http://arxiv.org/abs/2301.07016](http://arxiv.org/abs/2301.07016)
+    [https://arxiv.org/abs/2402.00236](https://arxiv.org/abs/2402.00236)
 
-    通过层级绑定和联想检索变为短期和长期声明性记忆的在线预测处理系统可能会感知到自己具有意识。
+    本研究探讨了位置编码在循环神经网络中的作用，发现即使与RNN结合使用，位置编码仍然有效，尤其是在处理大词汇量和多样观察结果时。这为使用输入驱动和自主时间表示的组合研究提供了新的方向，同时研究结果也对神经元振荡的生物学意义提供了讨论。
 
     
 
-    机器学习算法在特定复杂领域实现了超越人类的表现。然而，从少量示例中进行在线学习，并在不同领域之间高效地泛化仍然是难以实现的。在人类身上，这种学习通过声明性存储过程进行，并且与意识密切相关。预测处理被推广为一种基于贝叶斯推理框架的原则性方法，用于理解皮质如何实现深度生成感知模型，用于感官数据和行为控制。然而，预测处理对于快速组成式学习或意识之谜提供了很少的直接见解。在这里，我们提出，通过通过绑定预测中的层次模型来实现在线学习，预测处理系统可以通过从单个示例中为感知和行动形成工作记忆，在新情况下灵活泛化，这可通过联想检索变为短期和长期的声明性记忆。我们认为，这个过程，我们称之为“在线层级预测绑定”，也可能是系统感知自己具有意识的必要条件。由此产生的模型提供了一种关于感知的、运动的、认知的和情感的意识的统一解释，并具有进化和发育生物学的深刻根源。
+    本研究讨论了位置编码在利用合成基准测试的循环神经网络（RNN）中的影响。位置编码将时间序列中的数据点“时间戳化”，并补充了Transformer神经网络的能力，后者缺乏表示数据顺序的内在机制。相反，RNN可以自己对数据点进行时间编码，使得它们对位置编码的使用似乎是“冗余”的。然而，经验研究表明，即使与RNN结合使用，位置编码的有效性仍然很高，特别是用于处理产生多样观察结果的大词汇量。这些发现为循环神经网络上的新的研究方向铺平了道路，涉及输入驱动和自主时间表示的组合。此外，本研究还讨论了计算/模拟结果的生物学意义，考虑到位置编码的正弦实现与神经元振荡之间的关联。
 
-    Machine learning algorithms have achieved superhuman performance in specific complex domains. Yet learning online from few examples and efficiently generalizing across domains remains elusive. In humans such learning proceeds via declarative memory formation and is closely associated with consciousness. Predictive processing has been advanced as a principled Bayesian inference framework for understanding the cortex as implementing deep generative perceptual models for both sensory data and action control. However, predictive processing offers little direct insight into fast compositional learning or the mystery of consciousness. Here we propose that through implementing online learning by hierarchical binding of unpredicted inferences, a predictive processing system may flexibly generalize in novel situations by forming working memories for perceptions and actions from single examples, which can become short- and long-term declarative memories retrievable by associative recall. We argu
+    This study discusses the effects of positional encoding on recurrent neural networks (RNNs) utilizing synthetic benchmarks. Positional encoding "time-stamps" data points in time series and complements the capabilities of Transformer neural networks, which lack an inherent mechanism for representing the data order. By contrast, RNNs can encode the temporal information of data points on their own, rendering their use of positional encoding seemingly "redundant". Nonetheless, empirical investigations reveal the effectiveness of positional encoding even when coupled with RNNs, specifically for handling a large vocabulary that yields diverse observations. These findings pave the way for a new line of research on RNNs, concerning the combination of input-driven and autonomous time representation. Additionally, biological implications of the computational/simulational results are discussed, in the light of the affinity between the sinusoidal implementation of positional encoding and neural os
     
 

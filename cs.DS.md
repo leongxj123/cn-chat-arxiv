@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Online Conversion with Switching Costs: Robust and Learning-Augmented Algorithms.](http://arxiv.org/abs/2310.20598) | 本论文介绍并研究了在线转换及其带有切换成本的问题，并提出了具有竞争力的阈值算法以及学习增强算法，这些算法在最小化和最大化变体中都表现出优越性能。 |
+| [^1] | [Learning in Repeated Multi-Unit Pay-As-Bid Auctions.](http://arxiv.org/abs/2307.15193) | 本论文研究了在重复的多单位付费拍卖中学习如何出价的问题。通过在离线设置中优化出价向量，并利用多项式时间动态规划方案，设计了具有多项式时间和空间复杂度的在线学习算法。 |
 
 # 详细
 
-[^1]: 在线转换及其带有切换成本：稳健和学习增强算法
+[^1]: 在重复的多单位付费拍卖中学习
 
-    Online Conversion with Switching Costs: Robust and Learning-Augmented Algorithms. (arXiv:2310.20598v2 [cs.DS] UPDATED)
+    Learning in Repeated Multi-Unit Pay-As-Bid Auctions. (arXiv:2307.15193v1 [cs.GT])
 
-    [http://arxiv.org/abs/2310.20598](http://arxiv.org/abs/2310.20598)
+    [http://arxiv.org/abs/2307.15193](http://arxiv.org/abs/2307.15193)
 
-    本论文介绍并研究了在线转换及其带有切换成本的问题，并提出了具有竞争力的阈值算法以及学习增强算法，这些算法在最小化和最大化变体中都表现出优越性能。
+    本论文研究了在重复的多单位付费拍卖中学习如何出价的问题。通过在离线设置中优化出价向量，并利用多项式时间动态规划方案，设计了具有多项式时间和空间复杂度的在线学习算法。
 
     
 
-    我们介绍并研究在线转换及其带有切换成本的问题。这个问题涵盖了能源和可持续性交叉领域中出现的一系列新问题。在这个问题中，在线玩家试图在固定的时间段内购买（或销售）资产的分数份额，每个时间步骤都会公布成本（或价格）函数，并且玩家必须做出不可撤消的决策，决定转换的资产数量。当玩家连续时间步骤中改变决策时，也会产生切换成本，即在购买量增加或减少时。我们介绍了在这个问题的最小化和最大化变体中具有竞争力（稳健）的基于阈值的算法，并且证明它们是确定性在线算法中的最优算法。然后，我们提出了学习增强算法，利用不可信的黑盒建议（例如机器学习模型的预测）来显著改善算法性能。
+    受碳排放交易方案、国债拍卖和采购拍卖的启发，这些都涉及拍卖同质的多个单位，我们考虑了如何在重复的多单位付费拍卖中学习如何出价的问题。在每个拍卖中，大量（相同的）物品将被分配给最高的出价，每个中标价等于出价本身。由于行动空间的组合性质，学习如何在付费拍卖中出价是具有挑战性的。为了克服这个挑战，我们关注离线设置，其中投标人通过只能访问其他投标人过去提交的出价来优化他们的出价向量。我们证明了离线问题的最优解可以使用多项式时间动态规划（DP）方案来获得。我们利用DP方案的结构，设计了具有多项式时间和空间复杂度的在线学习算法。
 
-    We introduce and study online conversion with switching costs, a family of online problems that capture emerging problems at the intersection of energy and sustainability. In this problem, an online player attempts to purchase (alternatively, sell) fractional shares of an asset during a fixed time horizon with length $T$. At each time step, a cost function (alternatively, price function) is revealed, and the player must irrevocably decide an amount of asset to convert. The player also incurs a switching cost whenever their decision changes in consecutive time steps, i.e., when they increase or decrease their purchasing amount. We introduce competitive (robust) threshold-based algorithms for both the minimization and maximization variants of this problem, and show they are optimal among deterministic online algorithms. We then propose learning-augmented algorithms that take advantage of untrusted black-box advice (such as predictions from a machine learning model) to achieve significant
+    Motivated by Carbon Emissions Trading Schemes, Treasury Auctions, and Procurement Auctions, which all involve the auctioning of homogeneous multiple units, we consider the problem of learning how to bid in repeated multi-unit pay-as-bid auctions. In each of these auctions, a large number of (identical) items are to be allocated to the largest submitted bids, where the price of each of the winning bids is equal to the bid itself. The problem of learning how to bid in pay-as-bid auctions is challenging due to the combinatorial nature of the action space. We overcome this challenge by focusing on the offline setting, where the bidder optimizes their vector of bids while only having access to the past submitted bids by other bidders. We show that the optimal solution to the offline problem can be obtained using a polynomial time dynamic programming (DP) scheme. We leverage the structure of the DP scheme to design online learning algorithms with polynomial time and space complexity under fu
     
 

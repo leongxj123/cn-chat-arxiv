@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Probabilistic Deep Supervision Network: A Noise-Resilient Approach for QoS Prediction.](http://arxiv.org/abs/2308.02580) | PDS-Net is a novel framework for QoS prediction that effectively reduces errors resulting from noise data by utilizing a probabilistic space and a condition-based multitasking loss function. |
+| [^1] | [Programming Distributed Collective Processes in the eXchange Calculus.](http://arxiv.org/abs/2401.11212) | 本研究在交换演算中考虑了集合设备的动态合作行为，提出了分布式集体过程的抽象表示，用于编程计算集体的行为。 |
 
 # 详细
 
-[^1]: Probabilistic Deep Supervision Network: 一种抗噪声的QoS预测方法
+[^1]: 在交换演算中编程分布式集体过程
 
-    Probabilistic Deep Supervision Network: A Noise-Resilient Approach for QoS Prediction. (arXiv:2308.02580v1 [cs.SE])
+    Programming Distributed Collective Processes in the eXchange Calculus. (arXiv:2401.11212v1 [cs.DC])
 
-    [http://arxiv.org/abs/2308.02580](http://arxiv.org/abs/2308.02580)
+    [http://arxiv.org/abs/2401.11212](http://arxiv.org/abs/2401.11212)
 
-    PDS-Net is a novel framework for QoS prediction that effectively reduces errors resulting from noise data by utilizing a probabilistic space and a condition-based multitasking loss function.
+    本研究在交换演算中考虑了集合设备的动态合作行为，提出了分布式集体过程的抽象表示，用于编程计算集体的行为。
 
     
 
-    在推荐系统中，QoS（服务质量）的预测是一项重要任务，准确预测未知的QoS值可以提高用户满意度。然而，现有的QoS预测技术在存在噪声数据（如虚假位置信息或虚拟网关）时可能表现不佳。在本文中，我们提出了一种新颖的QoS预测框架——概率深度监督网络（PDS-Net），以解决这个问题。PDS-Net利用基于高斯的概率空间监督中间层，并学习已知特征和真实标签的概率空间。此外，PDS-Net采用基于条件的多任务损失函数来识别具有噪声数据的对象，并通过优化这些对象的概率空间与真实标签概率空间之间的Kullback-Leibler距离，直接对从概率空间中采样的深度特征进行监督。因此，PDS-Net有效减少了因传播引起的错误。
+    最近的趋势如物联网（IoT）提出了在几乎所有环境中密集和多尺度部署计算设备的愿景。一个突出的工程挑战围绕着编程这种计算生态系统的集体自适应行为。这需要能够捕捉概念（动态合作设备群组）和集体任务（由合奏组执行的联合活动）的抽象。在这项工作中，我们考虑与邻居交互并以几乎同步的感知-计算-交互循环执行的设备集合，其中计算由一个将感知值和传入消息映射到输出和传出消息的单个程序给出。为了支持整个计算集体的编程，我们提出了分布式集体过程的抽象，它可以同时定义合奏组的形成逻辑和它的集体任务。我们在交换演算中形式化了这种抽象。
 
-    Quality of Service (QoS) prediction is an essential task in recommendation systems, where accurately predicting unknown QoS values can improve user satisfaction. However, existing QoS prediction techniques may perform poorly in the presence of noise data, such as fake location information or virtual gateways. In this paper, we propose the Probabilistic Deep Supervision Network (PDS-Net), a novel framework for QoS prediction that addresses this issue. PDS-Net utilizes a Gaussian-based probabilistic space to supervise intermediate layers and learns probability spaces for both known features and true labels. Moreover, PDS-Net employs a condition-based multitasking loss function to identify objects with noise data and applies supervision directly to deep features sampled from the probability space by optimizing the Kullback-Leibler distance between the probability space of these objects and the real-label probability space. Thus, PDS-Net effectively reduces errors resulting from the propag
+    Recent trends like the Internet of Things (IoT) suggest a vision of dense and multi-scale deployments of computing devices in nearly all kinds of environments. A prominent engineering challenge revolves around programming the collective adaptive behaviour of such computational ecosystems. This requires abstractions able to capture concepts like ensembles (dynamic groups of cooperating devices) and collective tasks (joint activities carried out by ensembles). In this work, we consider collections of devices interacting with neighbours and that execute in nearly-synchronised sense-compute-interact rounds, where the computation is given by a single program mapping sensing values and incoming messages to output and outcoming messages. To support programming whole computational collectives, we propose the abstraction of a distributed collective process, which can be used to define at once the ensemble formation logic and its collective task. We formalise the abstraction in the eXchange Calc
     
 
