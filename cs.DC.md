@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Programming Distributed Collective Processes in the eXchange Calculus.](http://arxiv.org/abs/2401.11212) | 本研究在交换演算中考虑了集合设备的动态合作行为，提出了分布式集体过程的抽象表示，用于编程计算集体的行为。 |
+| [^1] | [A Deep Recurrent-Reinforcement Learning Method for Intelligent AutoScaling of Serverless Functions.](http://arxiv.org/abs/2308.05937) | 该论文介绍了一种用于智能自动缩放无服务器函数的深度循环强化学习方法，针对波动的工作负载和严格的性能约束，通过建立一个适应性策略来实现最大化期望目标。 |
 
 # 详细
 
-[^1]: 在交换演算中编程分布式集体过程
+[^1]: 一种用于智能自动缩放无服务器函数的深度循环强化学习方法
 
-    Programming Distributed Collective Processes in the eXchange Calculus. (arXiv:2401.11212v1 [cs.DC])
+    A Deep Recurrent-Reinforcement Learning Method for Intelligent AutoScaling of Serverless Functions. (arXiv:2308.05937v1 [cs.DC])
 
-    [http://arxiv.org/abs/2401.11212](http://arxiv.org/abs/2401.11212)
+    [http://arxiv.org/abs/2308.05937](http://arxiv.org/abs/2308.05937)
 
-    本研究在交换演算中考虑了集合设备的动态合作行为，提出了分布式集体过程的抽象表示，用于编程计算集体的行为。
+    该论文介绍了一种用于智能自动缩放无服务器函数的深度循环强化学习方法，针对波动的工作负载和严格的性能约束，通过建立一个适应性策略来实现最大化期望目标。
 
     
 
-    最近的趋势如物联网（IoT）提出了在几乎所有环境中密集和多尺度部署计算设备的愿景。一个突出的工程挑战围绕着编程这种计算生态系统的集体自适应行为。这需要能够捕捉概念（动态合作设备群组）和集体任务（由合奏组执行的联合活动）的抽象。在这项工作中，我们考虑与邻居交互并以几乎同步的感知-计算-交互循环执行的设备集合，其中计算由一个将感知值和传入消息映射到输出和传出消息的单个程序给出。为了支持整个计算集体的编程，我们提出了分布式集体过程的抽象，它可以同时定义合奏组的形成逻辑和它的集体任务。我们在交换演算中形式化了这种抽象。
+    函数即服务（FaaS）引入了一种轻量级的基于函数的云执行模型，在物联网边缘数据处理和异常检测等应用中具有相关性。虽然云服务提供商提供了几乎无限的函数弹性，但这些应用经常遇到波动的工作负载和更严格的性能约束。典型的云服务提供商策略是根据基于监控的阈值（如CPU或内存）来经验性地确定和调整所需的函数实例以适应需求和性能，即"自动缩放"。然而，阈值配置要么需要专家知识，要么需要历史数据或对环境的完整视图，使得自动缩放成为缺乏适应性解决方案的性能瓶颈。强化学习算法已被证明在分析复杂的云环境中是有益的，并产生适应性策略以最大化期望目标。
 
-    Recent trends like the Internet of Things (IoT) suggest a vision of dense and multi-scale deployments of computing devices in nearly all kinds of environments. A prominent engineering challenge revolves around programming the collective adaptive behaviour of such computational ecosystems. This requires abstractions able to capture concepts like ensembles (dynamic groups of cooperating devices) and collective tasks (joint activities carried out by ensembles). In this work, we consider collections of devices interacting with neighbours and that execute in nearly-synchronised sense-compute-interact rounds, where the computation is given by a single program mapping sensing values and incoming messages to output and outcoming messages. To support programming whole computational collectives, we propose the abstraction of a distributed collective process, which can be used to define at once the ensemble formation logic and its collective task. We formalise the abstraction in the eXchange Calc
+    Function-as-a-Service (FaaS) introduces a lightweight, function-based cloud execution model that finds its relevance in applications like IoT-edge data processing and anomaly detection. While CSP offer a near-infinite function elasticity, these applications often experience fluctuating workloads and stricter performance constraints. A typical CSP strategy is to empirically determine and adjust desired function instances, "autoscaling", based on monitoring-based thresholds such as CPU or memory, to cope with demand and performance. However, threshold configuration either requires expert knowledge, historical data or a complete view of environment, making autoscaling a performance bottleneck lacking an adaptable solution.RL algorithms are proven to be beneficial in analysing complex cloud environments and result in an adaptable policy that maximizes the expected objectives. Most realistic cloud environments usually involve operational interference and have limited visibility, making them
     
 

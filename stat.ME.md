@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Solving Kernel Ridge Regression with Gradient Descent for a Non-Constant Kernel.](http://arxiv.org/abs/2311.01762) | 本文研究了使用梯度下降法解决非常数核的核岭回归。通过在训练过程中逐渐减小带宽，避免了超参数选择的需求，并提出了一种带宽更新方案，证明了其优于使用常数带宽的方法。 |
+| [^1] | [A Bayesian Framework for Causal Analysis of Recurrent Events in Presence of Immortal Risk.](http://arxiv.org/abs/2304.03247) | 论文提出了一种贝叶斯框架，针对错位处理问题，将其视为治疗切换问题，并通过概率模型解决了复增和末事件偏差的问题。 |
 
 # 详细
 
-[^1]: 使用梯度下降法解决非常数核的核岭回归
+[^1]: 一种在不可避免风险存在下进行复发事件因果分析的贝叶斯框架
 
-    Solving Kernel Ridge Regression with Gradient Descent for a Non-Constant Kernel. (arXiv:2311.01762v1 [stat.ML])
+    A Bayesian Framework for Causal Analysis of Recurrent Events in Presence of Immortal Risk. (arXiv:2304.03247v1 [stat.ME])
 
-    [http://arxiv.org/abs/2311.01762](http://arxiv.org/abs/2311.01762)
+    [http://arxiv.org/abs/2304.03247](http://arxiv.org/abs/2304.03247)
 
-    本文研究了使用梯度下降法解决非常数核的核岭回归。通过在训练过程中逐渐减小带宽，避免了超参数选择的需求，并提出了一种带宽更新方案，证明了其优于使用常数带宽的方法。
+    论文提出了一种贝叶斯框架，针对错位处理问题，将其视为治疗切换问题，并通过概率模型解决了复增和末事件偏差的问题。
 
     
 
-    核岭回归（KRR）是线性岭回归的推广，它在数据中是非线性的，但在参数中是线性的。解决方案可以通过闭式解获得，其中包括矩阵求逆，也可以通过梯度下降迭代获得。本文研究了在训练过程中改变核函数的方法。我们从理论上探讨了这对模型复杂性和泛化性能的影响。基于我们的发现，我们提出了一种用于平移不变核的带宽更新方案，其中带宽在训练过程中逐渐减小至零，从而避免了超参数选择的需要。我们在真实和合成数据上展示了在训练过程中逐渐减小带宽的优于使用常数带宽，通过交叉验证和边缘似然最大化选择的带宽。我们还从理论和实证上证明了使用逐渐减小的带宽时，我们能够...
+    生物医学统计学中对复发事件率的观测研究很常见。通常的目标是在规定的随访时间窗口内，估计在一个明确定义的目标人群中两种治疗方法的事件率差异。使用观测性索赔数据进行估计是具有挑战性的，因为在目标人群的成员资格方面定义时，很少在资格确认时准确分配治疗方式。目前的解决方案通常是错位处理，比如基于后续分配，在资格确认时分配治疗方式，这会将先前的事件率错误地归因于治疗-从而产生不可避免的风险偏差。即使资格和治疗已经对齐，终止事件过程（例如死亡）也经常停止感兴趣的复发事件过程。同样，这两个过程也受到审查的影响，因此在整个随访时间窗口内不能观察到事件。我们的方法将错位处理转化为治疗切换问题：一些患者在整个随访时间窗口内坚持一个特定的治疗策略，另一些患者在这个时间窗口内经历治疗策略的切换。我们提出了一个概率模型，其中包括两个基本元素：通过一个合理的时刻切换模型，正确地建模治疗之间的切换和不可避免风险，通过将非观察事件模型化为复发事件模型，解决了复增和末事件偏差的问题。
 
-    Kernel ridge regression, KRR, is a generalization of linear ridge regression that is non-linear in the data, but linear in the parameters. The solution can be obtained either as a closed-form solution, which includes a matrix inversion, or iteratively through gradient descent. Using the iterative approach opens up for changing the kernel during training, something that is investigated in this paper. We theoretically address the effects this has on model complexity and generalization. Based on our findings, we propose an update scheme for the bandwidth of translational-invariant kernels, where we let the bandwidth decrease to zero during training, thus circumventing the need for hyper-parameter selection. We demonstrate on real and synthetic data how decreasing the bandwidth during training outperforms using a constant bandwidth, selected by cross-validation and marginal likelihood maximization. We also show theoretically and empirically that using a decreasing bandwidth, we are able to
+    Observational studies of recurrent event rates are common in biomedical statistics. Broadly, the goal is to estimate differences in event rates under two treatments within a defined target population over a specified followup window. Estimation with observational claims data is challenging because while membership in the target population is defined in terms of eligibility criteria, treatment is rarely assigned exactly at the time of eligibility. Ad-hoc solutions to this timing misalignment, such as assigning treatment at eligibility based on subsequent assignment, incorrectly attribute prior event rates to treatment - resulting in immortal risk bias. Even if eligibility and treatment are aligned, a terminal event process (e.g. death) often stops the recurrent event process of interest. Both processes are also censored so that events are not observed over the entire followup window. Our approach addresses misalignment by casting it as a treatment switching problem: some patients are on
     
 

@@ -1,1 +1,41 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description><item><title>&#36890;&#36807;&#24314;&#31435;Gini&#19981;&#32431;&#24230;&#30340;&#24179;&#28369;&#25935;&#24863;&#24230;&#24182;&#23558;&#20854;&#24212;&#29992;&#20110;&#25552;&#20986;DP&#36138;&#23146;&#35268;&#21017;&#21015;&#34920;&#31639;&#27861;&#65292;&#26412;&#25991;&#25913;&#21892;&#20102;&#24046;&#24322;&#20445;&#25252;&#27169;&#22411;&#30340;&#20934;&#30830;&#24615;&#38382;&#39064;&#12290;</title><link>https://arxiv.org/abs/2403.13848</link><description>&lt;p&gt;
+&#29992;&#20110;&#23398;&#20064;&#24046;&#24322;&#20445;&#25252;&#20294;&#20934;&#30830;&#35268;&#21017;&#21015;&#34920;&#30340;&#24179;&#28369;&#25935;&#24863;&#24230;
+&lt;/p&gt;
+&lt;p&gt;
+Smooth Sensitivity for Learning Differentially-Private yet Accurate Rule Lists
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.13848
+&lt;/p&gt;
+&lt;p&gt;
+&#36890;&#36807;&#24314;&#31435;Gini&#19981;&#32431;&#24230;&#30340;&#24179;&#28369;&#25935;&#24863;&#24230;&#24182;&#23558;&#20854;&#24212;&#29992;&#20110;&#25552;&#20986;DP&#36138;&#23146;&#35268;&#21017;&#21015;&#34920;&#31639;&#27861;&#65292;&#26412;&#25991;&#25913;&#21892;&#20102;&#24046;&#24322;&#20445;&#25252;&#27169;&#22411;&#30340;&#20934;&#30830;&#24615;&#38382;&#39064;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#24046;&#24322;&#20445;&#25252;&#65288;DP&#65289;&#26426;&#21046;&#21487;&#20197;&#23884;&#20837;&#21040;&#26426;&#22120;&#23398;&#20064;&#31639;&#27861;&#30340;&#35774;&#35745;&#20013;&#65292;&#20197;&#20445;&#25252;&#25152;&#24471;&#27169;&#22411;&#20813;&#21463;&#38544;&#31169;&#27844;&#38706;&#30340;&#24433;&#21709;&#65292;&#23613;&#31649;&#36825;&#36890;&#24120;&#20276;&#38543;&#30528;&#26126;&#26174;&#30340;&#20934;&#30830;&#24615;&#25439;&#22833;&#12290;&#26412;&#25991;&#26088;&#22312;&#36890;&#36807;&#24314;&#31435;Gini&#19981;&#32431;&#24230;&#30340;&#24179;&#28369;&#25935;&#24863;&#24230;&#24182;&#21033;&#29992;&#36825;&#19968;&#29305;&#24615;&#26469;&#25552;&#20986;&#19968;&#20010;DP&#36138;&#23146;&#35268;&#21017;&#21015;&#34920;&#31639;&#27861;&#65292;&#20197;&#25913;&#21892;&#36825;&#31181;&#26435;&#34913;&#12290;&#25105;&#20204;&#30340;&#29702;&#35770;&#20998;&#26512;&#21644;&#23454;&#39564;&#32467;&#26524;&#34920;&#26126;&#65292;&#38598;&#25104;&#24179;&#28369;&#25935;&#24863;&#24230;&#30340;DP&#35268;&#21017;&#21015;&#34920;&#27169;&#22411;&#20855;&#26377;&#27604;&#20351;&#29992;&#20840;&#23616;&#25935;&#24863;&#24230;&#30340;&#20854;&#20182;DP&#26694;&#26550;&#26356;&#39640;&#30340;&#20934;&#30830;&#24615;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.13848v1 Announce Type: cross  Abstract: Differentially-private (DP) mechanisms can be embedded into the design of a machine learningalgorithm to protect the resulting model against privacy leakage, although this often comes with asignificant loss of accuracy. In this paper, we aim at improving this trade-off for rule lists modelsby establishing the smooth sensitivity of the Gini impurity and leveraging it to propose a DP greedyrule list algorithm. In particular, our theoretical analysis and experimental results demonstrate thatthe DP rule lists models integrating smooth sensitivity have higher accuracy that those using otherDP frameworks based on global sensitivity.
+&lt;/p&gt;</description></item><item><title>&#23558;&#24694;&#24847;&#25552;&#31034;&#20998;&#35299;&#20026;&#29420;&#31435;&#30340;&#23376;&#25552;&#31034;&#20351;&#24471;LLM&#36234;&#29425;&#25915;&#20987;&#26356;&#38590;&#34987;&#26816;&#27979;</title><link>https://arxiv.org/abs/2402.16914</link><description>&lt;p&gt;
+DrAttack: &#25552;&#31034;&#20998;&#35299;&#21644;&#37325;&#26500;&#20351;&#24378;&#22823;&#30340;LLM&#36234;&#29425;&#32773;
+&lt;/p&gt;
+&lt;p&gt;
+DrAttack: Prompt Decomposition and Reconstruction Makes Powerful LLM Jailbreakers
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.16914
+&lt;/p&gt;
+&lt;p&gt;
+&#23558;&#24694;&#24847;&#25552;&#31034;&#20998;&#35299;&#20026;&#29420;&#31435;&#30340;&#23376;&#25552;&#31034;&#20351;&#24471;LLM&#36234;&#29425;&#25915;&#20987;&#26356;&#38590;&#34987;&#26816;&#27979;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#21457;&#29616;&#23558;&#24694;&#24847;&#25552;&#31034;&#20998;&#35299;&#20026;&#29420;&#31435;&#30340;&#23376;&#25552;&#31034;&#33021;&#22815;&#26377;&#25928;&#27169;&#31946;&#20854;&#28508;&#22312;&#30340;&#24694;&#24847;&#24847;&#22270;&#65292;&#20351;&#20043;&#20197;&#29255;&#27573;&#21270;&#12289;&#19981;&#26131;&#26816;&#27979;&#30340;&#24418;&#24335;&#21576;&#29616;&#65292;&#20174;&#32780;&#35299;&#20915;&#20102;&#36825;&#20123;&#23616;&#38480;&#24615;&#12290;&#25105;&#20204;&#24341;&#20837;&#20102;&#19968;&#20010;&#29992;&#20110;&#36234;&#29425;&#25915;&#20987;&#30340;&#33258;&#21160;&#25552;&#31034;&#20998;&#35299;&#21644;&#37325;&#26500;&#26694;&#26550;&#65288;DrAttack&#65289;&#12290;DrAttack&#21253;&#25324;&#19977;&#20010;&#20851;&#38190;&#32452;&#20214;&#65306;(a) &#23558;&#21407;&#22987;&#25552;&#31034;&#36827;&#34892;&#8220;&#20998;&#35299;&#8221;&#20026;&#23376;&#25552;&#31034;&#65292;(b) &#36890;&#36807;&#19978;&#19979;&#25991;&#23398;&#20064;&#20013;&#30340;&#35821;&#20041;&#19978;&#30456;&#20284;&#20294;&#38544;&#21547;&#30340;&#8220;&#37325;&#26500;&#8221;&#36825;&#20123;&#23376;&#25552;&#31034;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2402.16914v1 Announce Type: cross  Abstract: The safety alignment of Large Language Models (LLMs) is vulnerable to both manual and automated jailbreak attacks, which adversarially trigger LLMs to output harmful content. However, current methods for jailbreaking LLMs, which nest entire harmful prompts, are not effective at concealing malicious intent and can be easily identified and rejected by well-aligned LLMs. This paper discovers that decomposing a malicious prompt into separated sub-prompts can effectively obscure its underlying malicious intent by presenting it in a fragmented, less detectable form, thereby addressing these limitations. We introduce an automatic prompt \textbf{D}ecomposition and \textbf{R}econstruction framework for jailbreak \textbf{Attack} (DrAttack). DrAttack includes three key components: (a) `Decomposition' of the original prompt into sub-prompts, (b) `Reconstruction' of these sub-prompts implicitly by in-context learning with semantically similar but h
+&lt;/p&gt;</description></item></channel></rss>

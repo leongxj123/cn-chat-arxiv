@@ -2,37 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Beyond Text: Improving LLM's Decision Making for Robot Navigation via Vocal Cues](https://arxiv.org/abs/2402.03494) | 本论文通过将语音转录和语音非言语特征整合到LLM决策中来改善机器人导航中的决策能力，超越了仅使用文字的限制。 |
-| [^2] | [Cross-domain Transfer Learning and State Inference for Soft Robots via a Semi-supervised Sequential Variational Bayes Framework.](http://arxiv.org/abs/2303.01693) | 本文提出了一个半监督顺序变分贝叶斯框架，用于解决软机器人领域的跨域迁移学习和状态推断问题。该框架可以处理某些机器人配置下存在缺失状态标签的情况，同时引入了特征空间迁移策略，提高了在多个配置下的潜在特征的适应性。 |
+| [^1] | [Bootstrapping Reinforcement Learning with Imitation for Vision-Based Agile Flight](https://arxiv.org/abs/2403.12203) | 在基于视觉的自主无人机竞速中，本研究提出了将强化学习和模仿学习相结合的新型训练框架，以克服样本效率和计算需求方面的挑战，并通过三个阶段的方法进行性能受限的自适应RL微调 |
+| [^2] | [Dynamic planning in hierarchical active inference](https://arxiv.org/abs/2402.11658) | 通过研究在动态规划领域中模拟工具使用的目标，我们深入探讨了主动推断中的动态规划，该领域考虑到生物目标导向行为的两个关键方面 |
+| [^3] | [Multi-Agent Dynamic Relational Reasoning for Social Robot Navigation.](http://arxiv.org/abs/2401.12275) | 本文提出了一种多Agent动态关系推理方法，通过明确推断关系结构的演化，来实现在社交机器人导航中的有效性。方法包括推断超边缘以实现群体推理和轨迹预测器生成未来状态。 |
 
 # 详细
 
-[^1]: 超越文字：通过语音线索改善LLM在机器人导航中的决策能力
+[^1]: 基于模仿的增强学习为基于视觉的敏捷飞行引导引导
 
-    Beyond Text: Improving LLM's Decision Making for Robot Navigation via Vocal Cues
+    Bootstrapping Reinforcement Learning with Imitation for Vision-Based Agile Flight
 
-    [https://arxiv.org/abs/2402.03494](https://arxiv.org/abs/2402.03494)
+    [https://arxiv.org/abs/2403.12203](https://arxiv.org/abs/2403.12203)
 
-    本论文通过将语音转录和语音非言语特征整合到LLM决策中来改善机器人导航中的决策能力，超越了仅使用文字的限制。
-
-    
-
-    这项工作强调了基于文本的大规模语言模型（LLM）在人机交互中的关键缺点，表明仅使用文本作为对话的模态在此类应用中存在不足之处。虽然LLM在处理文本方面在这些人机对话中非常出色，但在社交导航等情境下，他们在处理口头指令的细微之处时遇到了困难，其中的歧义和不确定性可能会削弱对机器人和其他人工智能系统的信任。我们可以通过超越文字，并重点关注这些音频回应的语音非言语特征来解决这个问题。这些特征是口头交流中不涉及文字措辞的方面，通过表达方式传达意义和细微差别。我们提出了“超越文字”；一种通过集成音频转录以及这些特征的部分来改善LLM决策能力的方法，这些特征侧重情感和更与人机对话相关。
-
-    This work highlights a critical shortcoming in text-based Large Language Models (LLMs) used for human-robot interaction, demonstrating that text alone as a conversation modality falls short in such applications. While LLMs excel in processing text in these human conversations, they struggle with the nuances of verbal instructions in scenarios like social navigation, where ambiguity and uncertainty can erode trust in robotic and other AI systems. We can address this shortcoming by moving beyond text and additionally focusing on the paralinguistic features of these audio responses. These features are the aspects of spoken communication that do not involve the literal wording (lexical content) but convey meaning and nuance through how something is said. We present "Beyond Text"; an approach that improves LLM decision-making by integrating audio transcription along with a subsection of these features, which focus on the affect and more relevant in human-robot conversations. This approach n
-    
-[^2]: 通过半监督顺序变分贝叶斯框架实现软机器人的跨域迁移学习和状态推断
-
-    Cross-domain Transfer Learning and State Inference for Soft Robots via a Semi-supervised Sequential Variational Bayes Framework. (arXiv:2303.01693v3 [cs.RO] UPDATED)
-
-    [http://arxiv.org/abs/2303.01693](http://arxiv.org/abs/2303.01693)
-
-    本文提出了一个半监督顺序变分贝叶斯框架，用于解决软机器人领域的跨域迁移学习和状态推断问题。该框架可以处理某些机器人配置下存在缺失状态标签的情况，同时引入了特征空间迁移策略，提高了在多个配置下的潜在特征的适应性。
+    在基于视觉的自主无人机竞速中，本研究提出了将强化学习和模仿学习相结合的新型训练框架，以克服样本效率和计算需求方面的挑战，并通过三个阶段的方法进行性能受限的自适应RL微调
 
     
 
-    最近，基于数据驱动模型（如深度神经网络）的软机器人建模和状态推断显示出了很大的潜力。然而，深度模型需要大量的数据才能有效地运行，这需要进行详尽和质量良好的数据采集，尤其是状态标签的采集。因此，由于软机器人的传感器化困难和在非结构化环境中收集数据的不便等原因，获取标注的软机器人系统状态数据存在挑战。为了解决这个挑战，本文提出了一个半监督顺序变分贝叶斯（DSVB）框架，用于处理某些机器人配置中存在缺失状态标签的软机器人的迁移学习和状态推断。考虑到软机器人在不同的机器人配置下可能展现出不同的动力学特性，我们还引入了特征空间迁移策略，以促进在多个配置下的潜在特征的适应。
+    我们在基于视觉的自主无人机竞速的背景下，将强化学习（RL）的有效性和模仿学习（IL）的效率结合在一起。我们专注于直接处理视觉输入，而无需明确的状态估计。虽然强化学习通过试错提供了一个学习复杂控制器的通用框架，但面临着样本效率和计算需求的挑战，因为视觉输入的维度较高。相反，IL在从视觉演示中学习方面表现出效率，但受到演示质量的限制，并面临诸如协变量漂移的问题。为了克服这些限制，我们提出了一个结合RL和IL优势的新型训练框架。我们的框架包括三个阶段：使用特权状态信息的师傅策略的初始训练，使用IL将此策略蒸馏为学生策略，以及性能受限的自适应RL微调
 
-    Recently, data-driven models such as deep neural networks have shown to be promising tools for modelling and state inference in soft robots. However, voluminous amounts of data are necessary for deep models to perform effectively, which requires exhaustive and quality data collection, particularly of state labels. Consequently, obtaining labelled state data for soft robotic systems is challenged for various reasons, including difficulty in the sensorization of soft robots and the inconvenience of collecting data in unstructured environments. To address this challenge, in this paper, we propose a semi-supervised sequential variational Bayes (DSVB) framework for transfer learning and state inference in soft robots with missing state labels on certain robot configurations. Considering that soft robots may exhibit distinct dynamics under different robot configurations, a feature space transfer strategy is also incorporated to promote the adaptation of latent features across multiple config
+    arXiv:2403.12203v1 Announce Type: cross  Abstract: We combine the effectiveness of Reinforcement Learning (RL) and the efficiency of Imitation Learning (IL) in the context of vision-based, autonomous drone racing. We focus on directly processing visual input without explicit state estimation. While RL offers a general framework for learning complex controllers through trial and error, it faces challenges regarding sample efficiency and computational demands due to the high dimensionality of visual inputs. Conversely, IL demonstrates efficiency in learning from visual demonstrations but is limited by the quality of those demonstrations and faces issues like covariate shift. To overcome these limitations, we propose a novel training framework combining RL and IL's advantages. Our framework involves three stages: initial training of a teacher policy using privileged state information, distilling this policy into a student policy using IL, and performance-constrained adaptive RL fine-tunin
+    
+[^2]: 分层主动推断中的动态规划
+
+    Dynamic planning in hierarchical active inference
+
+    [https://arxiv.org/abs/2402.11658](https://arxiv.org/abs/2402.11658)
+
+    通过研究在动态规划领域中模拟工具使用的目标，我们深入探讨了主动推断中的动态规划，该领域考虑到生物目标导向行为的两个关键方面
+
+    
+
+    通过动态规划，我们指的是人类大脑推断和施加与认知决策相关的运动轨迹的能力。最近的一个范式，主动推断，为生物有机体适应带来了基本见解，不断努力最小化预测误差以将自己限制在与生命兼容的状态。在过去的几年里，许多研究表明人类和动物行为可以解释为主动推断过程，无论是作为离散决策还是连续运动控制，都激发了机器人技术和人工智能中的创新解决方案。然而，文献缺乏对如何有效地在变化环境中规划行动的全面展望。我们设定了对工具使用进行建模的目标，深入研究了主动推断中的动态规划主题，牢记两个生物目标导向行为的关键方面：理解……
+
+    arXiv:2402.11658v1 Announce Type: new  Abstract: By dynamic planning, we refer to the ability of the human brain to infer and impose motor trajectories related to cognitive decisions. A recent paradigm, active inference, brings fundamental insights into the adaptation of biological organisms, constantly striving to minimize prediction errors to restrict themselves to life-compatible states. Over the past years, many studies have shown how human and animal behavior could be explained in terms of an active inferential process -- either as discrete decision-making or continuous motor control -- inspiring innovative solutions in robotics and artificial intelligence. Still, the literature lacks a comprehensive outlook on how to effectively plan actions in changing environments. Setting ourselves the goal of modeling tool use, we delve into the topic of dynamic planning in active inference, keeping in mind two crucial aspects of biological goal-directed behavior: the capacity to understand a
+    
+[^3]: 多Agent动态关系推理用于社交机器人导航
+
+    Multi-Agent Dynamic Relational Reasoning for Social Robot Navigation. (arXiv:2401.12275v1 [cs.RO])
+
+    [http://arxiv.org/abs/2401.12275](http://arxiv.org/abs/2401.12275)
+
+    本文提出了一种多Agent动态关系推理方法，通过明确推断关系结构的演化，来实现在社交机器人导航中的有效性。方法包括推断超边缘以实现群体推理和轨迹预测器生成未来状态。
+
+    
+
+    社交机器人导航在日常生活的各种情景下可以提供帮助，但需要安全的人机交互和高效的轨迹规划。在多Agent交互系统中，建模成对的关系已经被广泛研究，但是捕捉更大规模的群体活动的能力有限。在本文中，我们提出了一种系统的关系推理方法，通过明确推断正在演变的关系结构，展示了其在多Agent轨迹预测和社交机器人导航中的有效性。除了节点对之间的边缘（即Agent），我们还提出了推断超边缘的方法，以自适应地连接多个节点，以便进行群体推理。我们的方法推断动态演化的关系图和超图，以捕捉关系的演化，轨迹预测器利用这些图来生成未来状态。同时，我们提出了对锐度和逻辑稀疏性进行正则化的方法。
+
+    Social robot navigation can be helpful in various contexts of daily life but requires safe human-robot interactions and efficient trajectory planning. While modeling pairwise relations has been widely studied in multi-agent interacting systems, the ability to capture larger-scale group-wise activities is limited. In this paper, we propose a systematic relational reasoning approach with explicit inference of the underlying dynamically evolving relational structures, and we demonstrate its effectiveness for multi-agent trajectory prediction and social robot navigation. In addition to the edges between pairs of nodes (i.e., agents), we propose to infer hyperedges that adaptively connect multiple nodes to enable group-wise reasoning in an unsupervised manner. Our approach infers dynamically evolving relation graphs and hypergraphs to capture the evolution of relations, which the trajectory predictor employs to generate future states. Meanwhile, we propose to regularize the sharpness and sp
     
 

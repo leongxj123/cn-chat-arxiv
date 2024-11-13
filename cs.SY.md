@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Reinforcement Learning-based Receding Horizon Control using Adaptive Control Barrier Functions for Safety-Critical Systems](https://arxiv.org/abs/2403.17338) | 提出了一种基于强化学习的滚动视野控制方法，利用自适应控制屏障函数，以解决安全关键系统中性能和可行性受影响的问题 |
-| [^2] | [Sigma-point Kalman Filter with Nonlinear Unknown Input Estimation via Optimization and Data-driven Approach for Dynamic Systems.](http://arxiv.org/abs/2306.12361) | 本文提出了一种不需要假设未知输入为线性的方法，结合非线性优化和数据驱动方法可以实现对未知输入的估计，并通过联合 sigma-point 变换方案将状态和未知输入的不确定性纳入估计中，确保其稳定性。这个方法适用于许多智能自主系统。 |
+| [^1] | [A Deep Recurrent-Reinforcement Learning Method for Intelligent AutoScaling of Serverless Functions.](http://arxiv.org/abs/2308.05937) | 该论文介绍了一种用于智能自动缩放无服务器函数的深度循环强化学习方法，针对波动的工作负载和严格的性能约束，通过建立一个适应性策略来实现最大化期望目标。 |
 
 # 详细
 
-[^1]: 使用自适应控制屏障函数的基于强化学习的滚动视野控制用于安全关键系统
+[^1]: 一种用于智能自动缩放无服务器函数的深度循环强化学习方法
 
-    Reinforcement Learning-based Receding Horizon Control using Adaptive Control Barrier Functions for Safety-Critical Systems
+    A Deep Recurrent-Reinforcement Learning Method for Intelligent AutoScaling of Serverless Functions. (arXiv:2308.05937v1 [cs.DC])
 
-    [https://arxiv.org/abs/2403.17338](https://arxiv.org/abs/2403.17338)
+    [http://arxiv.org/abs/2308.05937](http://arxiv.org/abs/2308.05937)
 
-    提出了一种基于强化学习的滚动视野控制方法，利用自适应控制屏障函数，以解决安全关键系统中性能和可行性受影响的问题
-
-    
-
-    最优控制方法为安全关键问题提供解决方案，但很容易变得棘手。控制屏障函数(CBFs)作为一种流行技术出现，通过其前向不变性属性，有利于通过在损失一些性能的情况下，显式地保证安全。该方法涉及定义性能目标以及必须始终执行的基于CBF的安全约束。遗憾的是，两个关键因素可能会对性能和解决方案的可行性产生显著影响：(i)成本函数及其相关参数的选择，以及(ii)在CBF约束内进行参数校准，捕捉性能和保守性之间的折衷，以及不可行性。为了解决这些挑战，我们提出了一种利用模型预测控制(MPC)的强化学习(RL)滚动视野控制(RHC)方法。
-
-    arXiv:2403.17338v1 Announce Type: cross  Abstract: Optimal control methods provide solutions to safety-critical problems but easily become intractable. Control Barrier Functions (CBFs) have emerged as a popular technique that facilitates their solution by provably guaranteeing safety, through their forward invariance property, at the expense of some performance loss. This approach involves defining a performance objective alongside CBF-based safety constraints that must always be enforced. Unfortunately, both performance and solution feasibility can be significantly impacted by two key factors: (i) the selection of the cost function and associated parameters, and (ii) the calibration of parameters within the CBF-based constraints, which capture the trade-off between performance and conservativeness. %as well as infeasibility. To address these challenges, we propose a Reinforcement Learning (RL)-based Receding Horizon Control (RHC) approach leveraging Model Predictive Control (MPC) with
-    
-[^2]: 基于优化和数据驱动的 sigma-point 卡尔曼滤波器与非线性未知输入估计器
-
-    Sigma-point Kalman Filter with Nonlinear Unknown Input Estimation via Optimization and Data-driven Approach for Dynamic Systems. (arXiv:2306.12361v1 [eess.SY])
-
-    [http://arxiv.org/abs/2306.12361](http://arxiv.org/abs/2306.12361)
-
-    本文提出了一种不需要假设未知输入为线性的方法，结合非线性优化和数据驱动方法可以实现对未知输入的估计，并通过联合 sigma-point 变换方案将状态和未知输入的不确定性纳入估计中，确保其稳定性。这个方法适用于许多智能自主系统。
+    该论文介绍了一种用于智能自动缩放无服务器函数的深度循环强化学习方法，针对波动的工作负载和严格的性能约束，通过建立一个适应性策略来实现最大化期望目标。
 
     
 
-    多数关于状态和未知输入(UI)估计的文献都要求UI是线性的，这个限制可能太严格了，因为它并不适用于许多智能自主系统。为了克服这一限制，我们提出了一种无导数未知输入 Sigma-point 卡尔曼滤波器(SPKE-nUI)，其中 SPKF 与普通非线性 UI 估计器相互连接，可以通过非线性优化和数据驱动方法实现。非线性 UI 估计器使用后验状态估计，这对状态预测误差不太敏感。此外，我们引入了联合 sigma-point 变换方案，将状态和 UI 的不确定性纳入 SPKF-nUI 的估计中。深入的随机稳定性分析证明了在合理的假设下，所提出的 SPKF-nUI 可以产生指数级收敛的估计误差界限。最后，我们在基于模拟的路面车辆控制问题上进行了两个案例研究。
+    函数即服务（FaaS）引入了一种轻量级的基于函数的云执行模型，在物联网边缘数据处理和异常检测等应用中具有相关性。虽然云服务提供商提供了几乎无限的函数弹性，但这些应用经常遇到波动的工作负载和更严格的性能约束。典型的云服务提供商策略是根据基于监控的阈值（如CPU或内存）来经验性地确定和调整所需的函数实例以适应需求和性能，即"自动缩放"。然而，阈值配置要么需要专家知识，要么需要历史数据或对环境的完整视图，使得自动缩放成为缺乏适应性解决方案的性能瓶颈。强化学习算法已被证明在分析复杂的云环境中是有益的，并产生适应性策略以最大化期望目标。
 
-    Most works on joint state and unknown input (UI) estimation require the assumption that the UIs are linear; this is potentially restrictive as it does not hold in many intelligent autonomous systems. To overcome this restriction and circumvent the need to linearize the system, we propose a derivative-free Unknown Input Sigma-point Kalman Filter (SPKF-nUI) where the SPKF is interconnected with a general nonlinear UI estimator that can be implemented via nonlinear optimization and data-driven approaches. The nonlinear UI estimator uses the posterior state estimate which is less susceptible to state prediction error. In addition, we introduce a joint sigma-point transformation scheme to incorporate both the state and UI uncertainties in the estimation of SPKF-nUI. An in-depth stochastic stability analysis proves that the proposed SPKF-nUI yields exponentially converging estimation error bounds under reasonable assumptions. Finally, two case studies are carried out on a simulation-based ri
+    Function-as-a-Service (FaaS) introduces a lightweight, function-based cloud execution model that finds its relevance in applications like IoT-edge data processing and anomaly detection. While CSP offer a near-infinite function elasticity, these applications often experience fluctuating workloads and stricter performance constraints. A typical CSP strategy is to empirically determine and adjust desired function instances, "autoscaling", based on monitoring-based thresholds such as CPU or memory, to cope with demand and performance. However, threshold configuration either requires expert knowledge, historical data or a complete view of environment, making autoscaling a performance bottleneck lacking an adaptable solution.RL algorithms are proven to be beneficial in analysing complex cloud environments and result in an adaptable policy that maximizes the expected objectives. Most realistic cloud environments usually involve operational interference and have limited visibility, making them
     
 
