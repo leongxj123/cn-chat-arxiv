@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Bayesian Framework for Causal Analysis of Recurrent Events in Presence of Immortal Risk.](http://arxiv.org/abs/2304.03247) | 论文提出了一种贝叶斯框架，针对错位处理问题，将其视为治疗切换问题，并通过概率模型解决了复增和末事件偏差的问题。 |
+| [^1] | [Neural Networks for Extreme Quantile Regression with an Application to Forecasting of Flood Risk.](http://arxiv.org/abs/2208.07590) | 本文提出了一种结合神经网络和极值理论的EQRN模型，它能够在存在复杂预测变量相关性的情况下进行外推，并且能够应用于洪水风险预测中，提供一天前回归水平和超出概率的预测。 |
+| [^2] | [Forecasting macroeconomic data with Bayesian VARs: Sparse or dense? It depends!.](http://arxiv.org/abs/2206.04902) | 本文介绍了一种半全球框架，用于改进贝叶斯VAR模型的预测性能。该框架替代了传统的全局缩减参数，使用组别特定的缩减参数。通过广泛的模拟研究和实证应用，展示了该框架的优点。在稀疏/密集先验下，预测性能因评估的经济变量和时间框架而异，但动态模型平均法可以缓解这个问题。 |
 
 # 详细
 
-[^1]: 一种在不可避免风险存在下进行复发事件因果分析的贝叶斯框架
+[^1]: 极端分位数回归的神经网络与洪水风险预测应用
 
-    A Bayesian Framework for Causal Analysis of Recurrent Events in Presence of Immortal Risk. (arXiv:2304.03247v1 [stat.ME])
+    Neural Networks for Extreme Quantile Regression with an Application to Forecasting of Flood Risk. (arXiv:2208.07590v2 [stat.ME] UPDATED)
 
-    [http://arxiv.org/abs/2304.03247](http://arxiv.org/abs/2304.03247)
+    [http://arxiv.org/abs/2208.07590](http://arxiv.org/abs/2208.07590)
 
-    论文提出了一种贝叶斯框架，针对错位处理问题，将其视为治疗切换问题，并通过概率模型解决了复增和末事件偏差的问题。
+    本文提出了一种结合神经网络和极值理论的EQRN模型，它能够在存在复杂预测变量相关性的情况下进行外推，并且能够应用于洪水风险预测中，提供一天前回归水平和超出概率的预测。
 
     
 
-    生物医学统计学中对复发事件率的观测研究很常见。通常的目标是在规定的随访时间窗口内，估计在一个明确定义的目标人群中两种治疗方法的事件率差异。使用观测性索赔数据进行估计是具有挑战性的，因为在目标人群的成员资格方面定义时，很少在资格确认时准确分配治疗方式。目前的解决方案通常是错位处理，比如基于后续分配，在资格确认时分配治疗方式，这会将先前的事件率错误地归因于治疗-从而产生不可避免的风险偏差。即使资格和治疗已经对齐，终止事件过程（例如死亡）也经常停止感兴趣的复发事件过程。同样，这两个过程也受到审查的影响，因此在整个随访时间窗口内不能观察到事件。我们的方法将错位处理转化为治疗切换问题：一些患者在整个随访时间窗口内坚持一个特定的治疗策略，另一些患者在这个时间窗口内经历治疗策略的切换。我们提出了一个概率模型，其中包括两个基本元素：通过一个合理的时刻切换模型，正确地建模治疗之间的切换和不可避免风险，通过将非观察事件模型化为复发事件模型，解决了复增和末事件偏差的问题。
+    针对极端事件的风险评估需要准确估计超出历史观测范围的高分位数。当风险依赖于观测预测变量的值时，回归技术用于在预测空间中进行插值。我们提出了EQRN模型，它将神经网络和极值理论的工具结合起来，形成一种能够在复杂预测变量相关性存在的情况下进行外推的方法。神经网络可以自然地将数据中的附加结构纳入其中。我们开发了EQRN的循环版本，能够捕捉时间序列中复杂的顺序相关性。我们将这种方法应用于瑞士Aare流域的洪水风险预测。它利用空间和时间上的多个协变量信息，提供一天前回归水平和超出概率的预测。这个输出补充了传统极值分析的静态回归水平，并且预测能够适应分布变化。
 
-    Observational studies of recurrent event rates are common in biomedical statistics. Broadly, the goal is to estimate differences in event rates under two treatments within a defined target population over a specified followup window. Estimation with observational claims data is challenging because while membership in the target population is defined in terms of eligibility criteria, treatment is rarely assigned exactly at the time of eligibility. Ad-hoc solutions to this timing misalignment, such as assigning treatment at eligibility based on subsequent assignment, incorrectly attribute prior event rates to treatment - resulting in immortal risk bias. Even if eligibility and treatment are aligned, a terminal event process (e.g. death) often stops the recurrent event process of interest. Both processes are also censored so that events are not observed over the entire followup window. Our approach addresses misalignment by casting it as a treatment switching problem: some patients are on
+    Risk assessment for extreme events requires accurate estimation of high quantiles that go beyond the range of historical observations. When the risk depends on the values of observed predictors, regression techniques are used to interpolate in the predictor space. We propose the EQRN model that combines tools from neural networks and extreme value theory into a method capable of extrapolation in the presence of complex predictor dependence. Neural networks can naturally incorporate additional structure in the data. We develop a recurrent version of EQRN that is able to capture complex sequential dependence in time series. We apply this method to forecasting of flood risk in the Swiss Aare catchment. It exploits information from multiple covariates in space and time to provide one-day-ahead predictions of return levels and exceedances probabilities. This output complements the static return level from a traditional extreme value analysis and the predictions are able to adapt to distribu
+    
+[^2]: 用贝叶斯VAR模型预测宏观经济数据：稀疏还是密集？要看情况！
+
+    Forecasting macroeconomic data with Bayesian VARs: Sparse or dense? It depends!. (arXiv:2206.04902v3 [econ.EM] UPDATED)
+
+    [http://arxiv.org/abs/2206.04902](http://arxiv.org/abs/2206.04902)
+
+    本文介绍了一种半全球框架，用于改进贝叶斯VAR模型的预测性能。该框架替代了传统的全局缩减参数，使用组别特定的缩减参数。通过广泛的模拟研究和实证应用，展示了该框架的优点。在稀疏/密集先验下，预测性能因评估的经济变量和时间框架而异，但动态模型平均法可以缓解这个问题。
+
+    
+
+    在建模和预测宏观经济变量时，向量自回归模型（VARs）被广泛应用。然而，在高维情况下，它们容易出现过拟合问题。贝叶斯方法，具体而言是缩减先验方法，已经显示出在提高预测性能方面取得了成功。在本文中，我们引入了半全球框架，其中我们用特定组别的缩减参数替代了传统的全局缩减参数。我们展示了如何将此框架应用于各种缩减先验，如全局-局部先验和随机搜索变量选择先验。我们通过广泛的模拟研究和对美国经济数据进行的实证应用，展示了所提出的框架的优点。此外，我们对正在进行的"稀疏假象"辩论进行了更深入的探讨，发现在稀疏/密集先验下的预测性能在评估的经济变量和时间框架中变化很大。然而，动态模型平均法可以缓解这个问题。
+
+    Vectorautogressions (VARs) are widely applied when it comes to modeling and forecasting macroeconomic variables. In high dimensions, however, they are prone to overfitting. Bayesian methods, more concretely shrinking priors, have shown to be successful in improving prediction performance. In the present paper, we introduce the semi-global framework, in which we replace the traditional global shrinkage parameter with group-specific shrinkage parameters. We show how this framework can be applied to various shrinking priors, such as global-local priors and stochastic search variable selection priors. We demonstrate the virtues of the proposed framework in an extensive simulation study and in an empirical application forecasting data of the US economy. Further, we shed more light on the ongoing ``Illusion of Sparsity'' debate, finding that forecasting performances under sparse/dense priors vary across evaluated economic variables and across time frames. Dynamic model averaging, however, ca
     
 

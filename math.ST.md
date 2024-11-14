@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Solution-Set Geometry and Regularization Path of a Nonconvexly Regularized Convex Sparse Model](https://arxiv.org/abs/2311.18438) | sGMC模型作为LASSO的非凸正则化替代品，在保留LASSO模型优势的同时，其解集几何、解唯一性和稀疏性与LASSO模型具有相似且优雅的特性。 |
+| [^1] | [Predictive Inference in Multi-environment Scenarios](https://arxiv.org/abs/2403.16336) | 本研究提出了在多环境预测问题中构建有效置信区间和置信集的方法，并展示了一种新的调整方法以适应问题难度，从而减少预测集大小，这在神经感应和物种分类数据集中的实际表现中得到验证。 |
+| [^2] | [Selecting Penalty Parameters of High-Dimensional M-Estimators using Bootstrapping after Cross-Validation.](http://arxiv.org/abs/2104.04716) | 本论文提出了一种称为交叉验证后的自助法的新方法，用于选择高维M-估计器的惩罚参数。通过模拟实验证明，该方法在估计误差方面优于交叉验证，并在推断方面表现出色。在案例研究中，我们对Fryer Jr (2019)的研究进行了再验证，并确认了他的发现。 |
 
 # 详细
 
-[^1]: 一个非凸正则化凸稀疏模型的解集几何与正则化路径
+[^1]: 多环境场景中的预测推断
 
-    Solution-Set Geometry and Regularization Path of a Nonconvexly Regularized Convex Sparse Model
+    Predictive Inference in Multi-environment Scenarios
 
-    [https://arxiv.org/abs/2311.18438](https://arxiv.org/abs/2311.18438)
+    [https://arxiv.org/abs/2403.16336](https://arxiv.org/abs/2403.16336)
 
-    sGMC模型作为LASSO的非凸正则化替代品，在保留LASSO模型优势的同时，其解集几何、解唯一性和稀疏性与LASSO模型具有相似且优雅的特性。
+    本研究提出了在多环境预测问题中构建有效置信区间和置信集的方法，并展示了一种新的调整方法以适应问题难度，从而减少预测集大小，这在神经感应和物种分类数据集中的实际表现中得到验证。
 
     
 
-    广义极小极大凹（GMC）惩罚是一种非凸稀疏正则化器，可以保持正则化最小二乘问题的整体凸性。本文关注GMC模型的一个重要实例，称为缩放GMC（sGMC），并就其解集几何和正则化路径提出各种显著发现。我们的研究表明，虽然sGMC惩罚是LASSO惩罚的非凸扩展（即$\ell_1$范数），但sGMC模型保留了LASSO模型的许多著名特性，因此可以作为LASSO的一个偏差较小的替代品而不会失去其优势。具体而言，对于固定的正则化参数$\lambda$，我们展示了sGMC模型的解集几何、解唯一性和稀疏性可以以一种类似优雅的方式刻画为LASSO模型（参见，例如，Osborne等人2000年，R. J. Tibshirani 2013年）。对于变化的$\lambda$，我们证明了...
+    我们解决了在跨多个环境的预测问题中构建有效置信区间和置信集的挑战。我们研究了适用于这些问题的两种覆盖类型，扩展了Jackknife和分裂一致方法，展示了如何在这种非传统的层次数据生成场景中获得无分布覆盖。我们的贡献还包括对非实值响应设置的扩展，以及这些一般问题中预测推断的一致性理论。我们展示了一种新的调整方法，以适应问题难度，这适用于具有层次数据的预测推断的现有方法以及我们开发的方法；这通过神经化学感应和物种分类数据集评估了这些方法的实际性能。
 
-    arXiv:2311.18438v2 Announce Type: cross  Abstract: The generalized minimax concave (GMC) penalty is a nonconvex sparse regularizer which can preserve the overall-convexity of the regularized least-squares problem. In this paper, we focus on a significant instance of the GMC model termed scaled GMC (sGMC), and present various notable findings on its solution-set geometry and regularization path. Our investigation indicates that while the sGMC penalty is a nonconvex extension of the LASSO penalty (i.e., the $\ell_1$-norm), the sGMC model preserves many celebrated properties of the LASSO model, hence can serve as a less biased surrogate of LASSO without losing its advantages. Specifically, for a fixed regularization parameter $\lambda$, we show that the solution-set geometry, solution uniqueness and sparseness of the sGMC model can be characterized in a similar elegant way to the LASSO model (see, e.g., Osborne et al. 2000, R. J. Tibshirani 2013). For a varying $\lambda$, we prove that th
+    arXiv:2403.16336v1 Announce Type: cross  Abstract: We address the challenge of constructing valid confidence intervals and sets in problems of prediction across multiple environments. We investigate two types of coverage suitable for these problems, extending the jackknife and split-conformal methods to show how to obtain distribution-free coverage in such non-traditional, hierarchical data-generating scenarios. Our contributions also include extensions for settings with non-real-valued responses and a theory of consistency for predictive inference in these general problems. We demonstrate a novel resizing method to adapt to problem difficulty, which applies both to existing approaches for predictive inference with hierarchical data and the methods we develop; this reduces prediction set sizes using limited information from the test environment, a key to the methods' practical performance, which we evaluate through neurochemical sensing and species classification datasets.
+    
+[^2]: 使用交叉验证后的自助法选择高维M-估计器的惩罚参数
+
+    Selecting Penalty Parameters of High-Dimensional M-Estimators using Bootstrapping after Cross-Validation. (arXiv:2104.04716v4 [math.ST] UPDATED)
+
+    [http://arxiv.org/abs/2104.04716](http://arxiv.org/abs/2104.04716)
+
+    本论文提出了一种称为交叉验证后的自助法的新方法，用于选择高维M-估计器的惩罚参数。通过模拟实验证明，该方法在估计误差方面优于交叉验证，并在推断方面表现出色。在案例研究中，我们对Fryer Jr (2019)的研究进行了再验证，并确认了他的发现。
+
+    
+
+    我们开发了一种新的方法，用于在高维情况下选择$\ell_1$-惩罚M-估计器的惩罚参数，我们称之为交叉验证后的自助法。我们推导了相应的$\ell_1$-惩罚M-估计器的收敛速度，以及在准则函数中不使用惩罚重新拟合前一估计器的非零参数的后-$\ell_1$-惩罚M-估计器的收敛速度。通过模拟实验证明，我们的方法在估计误差方面不被交叉验证所主导，并且在推断方面胜过交叉验证。作为示例，我们重新审视了Fryer Jr (2019)关于警察使用武力的种族差异的研究，并确认了他的发现。
+
+    We develop a new method for selecting the penalty parameter for $\ell_1$-penalized M-estimators in high dimensions, which we refer to as bootstrapping after cross-validation. We derive rates of convergence for the corresponding $\ell_1$-penalized M-estimator and also for the post-$\ell_1$-penalized M-estimator, which refits the non-zero parameters of the former estimator without penalty in the criterion function. We demonstrate via simulations that our method is not dominated by cross-validation in terms of estimation errors and outperforms cross-validation in terms of inference. As an illustration, we revisit Fryer Jr (2019), who investigated racial differences in police use of force, and confirm his findings.
     
 
