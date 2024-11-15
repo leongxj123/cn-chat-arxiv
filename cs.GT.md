@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Equitable Pricing in Auctions](https://arxiv.org/abs/2403.07799) | 我们研究了拍卖中定价对买家剩余分配的影响，并提出了赢家的经验方差作为一个剩余公平的度量标准，表明在一定私有-公共价值比例下，按竞标支付和统一定价混合可以最小化剩余的方差。 |
+| [^1] | [Autobidders with Budget and ROI Constraints: Efficiency, Regret, and Pacing Dynamics.](http://arxiv.org/abs/2301.13306) | 本文提出了一个基于梯度的学习算法，可以在多种拍卖方式下满足预算和ROI约束，并达到个体后悔逐渐减小；结果表明，当各自竞争时，期望资金流动至少达到最优分配的期望流动的一半。 |
 
 # 详细
 
-[^1]: 拍卖中的公平定价
+[^1]: 带有预算和ROI约束的自动出价算法：效率、后悔和节奏动态
 
-    Equitable Pricing in Auctions
+    Autobidders with Budget and ROI Constraints: Efficiency, Regret, and Pacing Dynamics. (arXiv:2301.13306v2 [cs.GT] UPDATED)
 
-    [https://arxiv.org/abs/2403.07799](https://arxiv.org/abs/2403.07799)
+    [http://arxiv.org/abs/2301.13306](http://arxiv.org/abs/2301.13306)
 
-    我们研究了拍卖中定价对买家剩余分配的影响，并提出了赢家的经验方差作为一个剩余公平的度量标准，表明在一定私有-公共价值比例下，按竞标支付和统一定价混合可以最小化剩余的方差。
+    本文提出了一个基于梯度的学习算法，可以在多种拍卖方式下满足预算和ROI约束，并达到个体后悔逐渐减小；结果表明，当各自竞争时，期望资金流动至少达到最优分配的期望流动的一半。
 
     
 
-    我们研究了定价如何影响在多单位拍卖中买家之间的剩余分配。我们的公平目标可能很重要，例如，对于下游市场中的竞争问题，这是对长期关于收入和效率的辩论的一个补充。我们研究了一个经典的多不可分单元拍卖模型，其中有单位需求的买家和具有私有和公共成分的估值，并考虑了所有定价规则，这些规则是按竞标支付和统一定价的混合（即凸组合）。我们提出了赢家的经验方差（WEV），即赢家之间剩余的预期经验方差，作为剩余公平的度量标准。我们表明，在一系列私有-公共价值比例中，技术内部的按竞标付费和统一定价混合最小化了WEV。从公平的角度来看，具有更高私有值成分的拍卖受益于更多的价格歧视，而仅具有足够大小私有值成分的拍卖才能获益。
+    我们研究了自动出价算法在在线广告平台上进行博弈的情况。每个自动出价算法被赋予任务，在多轮重复拍卖中，最大化其广告主的总价值，同时受到预算和/或投资回报率约束。我们提出了一种基于梯度的学习算法，它可以保证满足所有约束条件，并达到逐渐减小的个体后悔。我们的算法仅使用自助反馈，并可与第一或第二价格拍卖以及任何“中间”拍卖格式一起使用。我们的主要结果是，当这些自动出价算法相互竞争时，所有轮次的期望资金流动 welfare 都至少达到了任何分配所实现的期望最优流动 welfare 的一半。这在出价动态是否收敛到均衡以及广告主估值之间的相关结构如何不同的情况下均成立。
 
-    arXiv:2403.07799v1 Announce Type: new  Abstract: We study how pricing affects the division of surplus among buyers in auctions for multiple units. Our equity objective may be important, e.g., for competition concerns in downstream markets, complementing the long-standing debate on revenue and efficiency. We study a canonical model of auctions for multiple indivisible units with unit demand buyers and valuations with a private and a common component and consider all pricing rules that are a mixture (i.e., a convex combination) of pay-as-bid and uniform pricing. We propose the winners' empirical variance (WEV), the expected empirical variance of surplus among the winners, as a metric for surplus equity. We show that, for a range of private-common value proportions, a strictly interior mix of pay-as-bid and uniform pricing minimizes WEV. From an equity perspective, auctions with a higher private value component benefit from more price discrimination, whereas only auctions with a sufficien
+    We study a game between autobidding algorithms that compete in an online advertising platform. Each autobidder is tasked with maximizing its advertiser's total value over multiple rounds of a repeated auction, subject to budget and/or return-on-investment constraints. We propose a gradient-based learning algorithm that is guaranteed to satisfy all constraints and achieves vanishing individual regret. Our algorithm uses only bandit feedback and can be used with the first- or second-price auction, as well as with any "intermediate" auction format. Our main result is that when these autobidders play against each other, the resulting expected liquid welfare over all rounds is at least half of the expected optimal liquid welfare achieved by any allocation. This holds whether or not the bidding dynamics converges to an equilibrium and regardless of the correlation structure between advertiser valuations.
     
 
