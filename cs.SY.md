@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [DEEP-IoT: Downlink-Enhanced Efficient-Power Internet of Things](https://arxiv.org/abs/2403.00321) | DEEP-IoT通过“更多监听，更少传输”的策略，挑战和转变了传统的物联网通信模型，大幅降低能耗并提高设备寿命。 |
+| [^1] | [SupplyGraph: A Benchmark Dataset for Supply Chain Planning using Graph Neural Networks.](http://arxiv.org/abs/2401.15299) | SupplyGraph是一个基准数据集，用于使用图神经网络进行供应链规划。该数据集包含了来自孟加拉国一家领先快速消费品公司的实际数据，用于优化、预测和解决供应链问题。数据集中的时间数据作为节点特征，可用于销售预测、生产计划和故障识别。 |
 
 # 详细
 
-[^1]: DEEP-IoT: 下行增强型高效能物联网
+[^1]: SupplyGraph: 使用图神经网络进行供应链规划的基准数据集
 
-    DEEP-IoT: Downlink-Enhanced Efficient-Power Internet of Things
+    SupplyGraph: A Benchmark Dataset for Supply Chain Planning using Graph Neural Networks. (arXiv:2401.15299v1 [cs.LG])
 
-    [https://arxiv.org/abs/2403.00321](https://arxiv.org/abs/2403.00321)
+    [http://arxiv.org/abs/2401.15299](http://arxiv.org/abs/2401.15299)
 
-    DEEP-IoT通过“更多监听，更少传输”的策略，挑战和转变了传统的物联网通信模型，大幅降低能耗并提高设备寿命。
+    SupplyGraph是一个基准数据集，用于使用图神经网络进行供应链规划。该数据集包含了来自孟加拉国一家领先快速消费品公司的实际数据，用于优化、预测和解决供应链问题。数据集中的时间数据作为节点特征，可用于销售预测、生产计划和故障识别。
 
     
 
-    本文介绍了DEEP-IoT，这是一种具有革命意义的通信范例，旨在重新定义物联网设备之间的通信方式。通过开创性的“更多监听，更少传输”的策略，DEEP-IoT挑战和转变了传统的发送方（物联网设备）为中心的通信模型，将接收方（接入点）作为关键角色，从而降低能耗并延长设备寿命。我们不仅概念化了DEEP-IoT，还通过在窄带系统中集成深度学习增强的反馈信道编码来实现它。模拟结果显示，IoT单元的运行寿命显著提高，比使用Turbo和Polar编码的传统系统提高了最多52.71%。这一进展标志着一种变革。
+    图神经网络（GNNs）在不同领域如运输、生物信息学、语言处理和计算机视觉中取得了重要进展。然而，在将GNNs应用于供应链网络方面，目前尚缺乏研究。供应链网络在结构上类似于图形，使其成为应用GNN方法的理想选择。这为优化、预测和解决供应链问题开辟了无限可能。然而，此方法的一个主要障碍在于缺乏真实世界的基准数据集以促进使用GNN来研究和解决供应链问题。为了解决这个问题，我们提供了一个来自孟加拉国一家领先的快速消费品公司的实际基准数据集，该数据集侧重于用于生产目的的供应链规划的时间任务。该数据集包括时间数据作为节点特征，以实现销售预测、生产计划和故障识别。
 
-    arXiv:2403.00321v1 Announce Type: cross  Abstract: At the heart of the Internet of Things (IoT) -- a domain witnessing explosive growth -- the imperative for energy efficiency and the extension of device lifespans has never been more pressing. This paper presents DEEP-IoT, a revolutionary communication paradigm poised to redefine how IoT devices communicate. Through a pioneering "listen more, transmit less" strategy, DEEP-IoT challenges and transforms the traditional transmitter (IoT devices)-centric communication model to one where the receiver (the access point) play a pivotal role, thereby cutting down energy use and boosting device longevity. We not only conceptualize DEEP-IoT but also actualize it by integrating deep learning-enhanced feedback channel codes within a narrow-band system. Simulation results show a significant enhancement in the operational lifespan of IoT cells -- surpassing traditional systems using Turbo and Polar codes by up to 52.71%. This leap signifies a paradi
+    Graph Neural Networks (GNNs) have gained traction across different domains such as transportation, bio-informatics, language processing, and computer vision. However, there is a noticeable absence of research on applying GNNs to supply chain networks. Supply chain networks are inherently graph-like in structure, making them prime candidates for applying GNN methodologies. This opens up a world of possibilities for optimizing, predicting, and solving even the most complex supply chain problems. A major setback in this approach lies in the absence of real-world benchmark datasets to facilitate the research and resolution of supply chain problems using GNNs. To address the issue, we present a real-world benchmark dataset for temporal tasks, obtained from one of the leading FMCG companies in Bangladesh, focusing on supply chain planning for production purposes. The dataset includes temporal data as node features to enable sales predictions, production planning, and the identification of fa
     
 

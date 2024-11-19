@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [REBORN: Reinforcement-Learned Boundary Segmentation with Iterative Training for Unsupervised ASR](https://arxiv.org/abs/2402.03988) | 本文提出了REBORN，在无监督语音识别中使用基于强化学习的迭代训练来实现边界分割。通过交替训练分割模型和音素预测模型，实现了学习语音和文本之间的映射，解决了无监督情况下语音信号分段结构边界的挑战。 |
+| [^1] | [System Fingerprint Recognition for Deepfake Audio: An Initial Dataset and Investigation.](http://arxiv.org/abs/2208.10489) | 本文提出了深度伪造音频的系统指纹识别方法，并通过收集来自中国七个供应商的语音合成系统的数据集进行了初步研究。这项研究为进一步发展系统指纹识别方法提供了基础，并在模型版权保护和数字证据取证等实际场景中具有重要应用价值。 |
 
 # 详细
 
-[^1]: REBORN: 基于强化学习的迭代训练的无监督语音识别中的边界分割
+[^1]: 深度伪造音频的系统指纹识别：初始数据集与研究
 
-    REBORN: Reinforcement-Learned Boundary Segmentation with Iterative Training for Unsupervised ASR
+    System Fingerprint Recognition for Deepfake Audio: An Initial Dataset and Investigation. (arXiv:2208.10489v3 [cs.SD] UPDATED)
 
-    [https://arxiv.org/abs/2402.03988](https://arxiv.org/abs/2402.03988)
+    [http://arxiv.org/abs/2208.10489](http://arxiv.org/abs/2208.10489)
 
-    本文提出了REBORN，在无监督语音识别中使用基于强化学习的迭代训练来实现边界分割。通过交替训练分割模型和音素预测模型，实现了学习语音和文本之间的映射，解决了无监督情况下语音信号分段结构边界的挑战。
+    本文提出了深度伪造音频的系统指纹识别方法，并通过收集来自中国七个供应商的语音合成系统的数据集进行了初步研究。这项研究为进一步发展系统指纹识别方法提供了基础，并在模型版权保护和数字证据取证等实际场景中具有重要应用价值。
 
     
 
-    无监督自动语音识别（ASR）旨在学习语音信号与其对应的文本转录之间的映射，而无需配对的语音-文本数据监督。语音信号中的单词/音素由一段长度可变且边界未知的语音信号表示，而这种分段结构使得在没有配对数据的情况下学习语音和文本之间的映射变得具有挑战性。本文提出了REBORN，基于强化学习的迭代训练的无监督语音识别中的边界分割。REBORN交替进行以下两个步骤：（1）训练一个能够预测语音信号中分段结构边界的分割模型，和（2）训练一个音素预测模型，其输入是由分割模型分割的分段结构，用于预测音素转录。由于没有用于训练分割模型的监督数据，我们使用强化学习来训练分割模型。
+    深度语音合成模型的快速发展给社会带来了重大威胁，例如恶意内容操纵。因此，许多研究出现了，旨在检测所谓的深度伪造音频。然而，现有的工作都集中在对真实音频和伪造音频进行二元检测。在模型版权保护和数字证据取证等实际场景中，需要知道生成深度伪造音频的工具或模型来解释决策。这促使我们提出一个问题：我们能识别深度伪造音频的系统指纹吗？在本文中，我们提出了第一个系统指纹识别（SFR）的深度伪造音频数据集，并进行了初步研究。我们从使用最新的深度学习技术的七个中国供应商的语音合成系统中收集了该数据集，包括清晰和压缩集。此外，为了促进系统指纹识别方法的进一步发展，我们提供了外部参考音频，以便进行评估和对比实验。
 
-    Unsupervised automatic speech recognition (ASR) aims to learn the mapping between the speech signal and its corresponding textual transcription without the supervision of paired speech-text data. A word/phoneme in the speech signal is represented by a segment of speech signal with variable length and unknown boundary, and this segmental structure makes learning the mapping between speech and text challenging, especially without paired data. In this paper, we propose REBORN, Reinforcement-Learned Boundary Segmentation with Iterative Training for Unsupervised ASR. REBORN alternates between (1) training a segmentation model that predicts the boundaries of the segmental structures in speech signals and (2) training the phoneme prediction model, whose input is a segmental structure segmented by the segmentation model, to predict a phoneme transcription. Since supervised data for training the segmentation model is not available, we use reinforcement learning to train the segmentation model t
+    The rapid progress of deep speech synthesis models has posed significant threats to society such as malicious content manipulation. Therefore, many studies have emerged to detect the so-called deepfake audio. However, existing works focus on the binary detection of real audio and fake audio. In real-world scenarios such as model copyright protection and digital evidence forensics, it is needed to know what tool or model generated the deepfake audio to explain the decision. This motivates us to ask: Can we recognize the system fingerprints of deepfake audio? In this paper, we present the first deepfake audio dataset for system fingerprint recognition (SFR) and conduct an initial investigation. We collected the dataset from the speech synthesis systems of seven Chinese vendors that use the latest state-of-the-art deep learning technologies, including both clean and compressed sets. In addition, to facilitate the further development of system fingerprint recognition methods, we provide ex
     
 

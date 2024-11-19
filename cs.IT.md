@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [DEEP-IoT: Downlink-Enhanced Efficient-Power Internet of Things](https://arxiv.org/abs/2403.00321) | DEEP-IoT通过“更多监听，更少传输”的策略，挑战和转变了传统的物联网通信模型，大幅降低能耗并提高设备寿命。 |
+| [^1] | [LIGHTCODE: Light Analytical and Neural Codes for Channels with Feedback](https://arxiv.org/abs/2403.10751) | 本文提出了一种LIGHTCODE轻量级神经编码方案，在具备解释性的基础上，在低信噪比区域实现了最先进的可靠性。 |
 
 # 详细
 
-[^1]: DEEP-IoT: 下行增强型高效能物联网
+[^1]: LIGHTCODE：具有反馈通道的光解析和神经编码
 
-    DEEP-IoT: Downlink-Enhanced Efficient-Power Internet of Things
+    LIGHTCODE: Light Analytical and Neural Codes for Channels with Feedback
 
-    [https://arxiv.org/abs/2403.00321](https://arxiv.org/abs/2403.00321)
+    [https://arxiv.org/abs/2403.10751](https://arxiv.org/abs/2403.10751)
 
-    DEEP-IoT通过“更多监听，更少传输”的策略，挑战和转变了传统的物联网通信模型，大幅降低能耗并提高设备寿命。
+    本文提出了一种LIGHTCODE轻量级神经编码方案，在具备解释性的基础上，在低信噪比区域实现了最先进的可靠性。
 
     
 
-    本文介绍了DEEP-IoT，这是一种具有革命意义的通信范例，旨在重新定义物联网设备之间的通信方式。通过开创性的“更多监听，更少传输”的策略，DEEP-IoT挑战和转变了传统的发送方（物联网设备）为中心的通信模型，将接收方（接入点）作为关键角色，从而降低能耗并延长设备寿命。我们不仅概念化了DEEP-IoT，还通过在窄带系统中集成深度学习增强的反馈信道编码来实现它。模拟结果显示，IoT单元的运行寿命显著提高，比使用Turbo和Polar编码的传统系统提高了最多52.71%。这一进展标志着一种变革。
+    通道反馈中可靠且高效的编码方案设计一直是通信理论中一项长期挑战。虽然深度学习技术取得了显著进展，神经编码往往面临计算成本高、缺乏可解释性以及在资源受限环境中的实用性有限等问题。本文旨在设计解释性强且更适用于通信系统的低复杂度编码方案。我们先进了解析编码和神经编码。首先，我们展示了POWERBLAST，一种受Schalkwijk-Kailath（SK）和Gallager-Nakiboglu（GN）方案启发的解析编码方案，在高信噪比（SNR）区域实现了明显的可靠性改进，胜过神经编码。接下来，为了增强低SNR区域的可靠性，我们提出了LIGHTCODE，一种轻量级神经编码，实现了最先进的可靠性。
 
-    arXiv:2403.00321v1 Announce Type: cross  Abstract: At the heart of the Internet of Things (IoT) -- a domain witnessing explosive growth -- the imperative for energy efficiency and the extension of device lifespans has never been more pressing. This paper presents DEEP-IoT, a revolutionary communication paradigm poised to redefine how IoT devices communicate. Through a pioneering "listen more, transmit less" strategy, DEEP-IoT challenges and transforms the traditional transmitter (IoT devices)-centric communication model to one where the receiver (the access point) play a pivotal role, thereby cutting down energy use and boosting device longevity. We not only conceptualize DEEP-IoT but also actualize it by integrating deep learning-enhanced feedback channel codes within a narrow-band system. Simulation results show a significant enhancement in the operational lifespan of IoT cells -- surpassing traditional systems using Turbo and Polar codes by up to 52.71%. This leap signifies a paradi
+    arXiv:2403.10751v1 Announce Type: cross  Abstract: The design of reliable and efficient codes for channels with feedback remains a longstanding challenge in communication theory. While significant improvements have been achieved by leveraging deep learning techniques, neural codes often suffer from high computational costs, a lack of interpretability, and limited practicality in resource-constrained settings. We focus on designing low-complexity coding schemes that are interpretable and more suitable for communication systems. We advance both analytical and neural codes. First, we demonstrate that POWERBLAST, an analytical coding scheme inspired by Schalkwijk-Kailath (SK) and Gallager-Nakiboglu (GN) schemes, achieves notable reliability improvements over both SK and GN schemes, outperforming neural codes in high signal-to-noise ratio (SNR) regions. Next, to enhance reliability in low-SNR regions, we propose LIGHTCODE, a lightweight neural code that achieves state-of-the-art reliability
     
 

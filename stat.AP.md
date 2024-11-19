@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Multi-View Symbolic Regression](https://arxiv.org/abs/2402.04298) | 多视角符号回归(MvSR)是一种同时考虑多个数据集的符号回归方法，能够找到一个参数化解来准确拟合所有数据集，解决了传统方法无法处理不同实验设置的问题。 |
-| [^2] | [Time-Varying Parameters as Ridge Regressions.](http://arxiv.org/abs/2009.00401) | 该论文提出了一种实际上是基于岭回归的时变参数模型，这比传统的状态空间方法计算更快，调整更容易，有助于研究经济结构性变化。 |
+| [^1] | [SupplyGraph: A Benchmark Dataset for Supply Chain Planning using Graph Neural Networks.](http://arxiv.org/abs/2401.15299) | SupplyGraph是一个基准数据集，用于使用图神经网络进行供应链规划。该数据集包含了来自孟加拉国一家领先快速消费品公司的实际数据，用于优化、预测和解决供应链问题。数据集中的时间数据作为节点特征，可用于销售预测、生产计划和故障识别。 |
+| [^2] | [Bayesian Quantile Regression with Subset Selection: A Posterior Summarization Perspective.](http://arxiv.org/abs/2311.02043) | 本研究提出了一种基于贝叶斯决策分析的方法，对于任何贝叶斯回归模型，可以得到每个条件分位数的最佳和可解释的线性估计值和不确定性量化。该方法是一种适用于特定分位数子集选择的有效工具。 |
 
 # 详细
 
-[^1]: 多视角符号回归
+[^1]: SupplyGraph: 使用图神经网络进行供应链规划的基准数据集
 
-    Multi-View Symbolic Regression
+    SupplyGraph: A Benchmark Dataset for Supply Chain Planning using Graph Neural Networks. (arXiv:2401.15299v1 [cs.LG])
 
-    [https://arxiv.org/abs/2402.04298](https://arxiv.org/abs/2402.04298)
+    [http://arxiv.org/abs/2401.15299](http://arxiv.org/abs/2401.15299)
 
-    多视角符号回归(MvSR)是一种同时考虑多个数据集的符号回归方法，能够找到一个参数化解来准确拟合所有数据集，解决了传统方法无法处理不同实验设置的问题。
-
-    
-
-    符号回归(SR)搜索表示解释变量和响应变量之间关系的分析表达式。目前的SR方法假设从单个实验中提取的单个数据集。然而，研究人员经常面临来自不同设置的多个实验结果集。传统的SR方法可能无法找到潜在的表达式，因为每个实验的参数可能不同。在这项工作中，我们提出了多视角符号回归(MvSR)，它同时考虑多个数据集，模拟实验环境，并输出一个通用的参数化解。这种方法将评估的表达式适应每个独立数据集，并同时返回能够准确拟合所有数据集的参数函数族f(x; \theta)。我们使用从已知表达式生成的数据以及来自实际世界的数据来展示MvSR的有效性。
-
-    Symbolic regression (SR) searches for analytical expressions representing the relationship between a set of explanatory and response variables. Current SR methods assume a single dataset extracted from a single experiment. Nevertheless, frequently, the researcher is confronted with multiple sets of results obtained from experiments conducted with different setups. Traditional SR methods may fail to find the underlying expression since the parameters of each experiment can be different. In this work we present Multi-View Symbolic Regression (MvSR), which takes into account multiple datasets simultaneously, mimicking experimental environments, and outputs a general parametric solution. This approach fits the evaluated expression to each independent dataset and returns a parametric family of functions f(x; \theta) simultaneously capable of accurately fitting all datasets. We demonstrate the effectiveness of MvSR using data generated from known expressions, as well as real-world data from 
-    
-[^2]: 使用岭回归法的时变参数模型
-
-    Time-Varying Parameters as Ridge Regressions. (arXiv:2009.00401v3 [econ.EM] UPDATED)
-
-    [http://arxiv.org/abs/2009.00401](http://arxiv.org/abs/2009.00401)
-
-    该论文提出了一种实际上是基于岭回归的时变参数模型，这比传统的状态空间方法计算更快，调整更容易，有助于研究经济结构性变化。
+    SupplyGraph是一个基准数据集，用于使用图神经网络进行供应链规划。该数据集包含了来自孟加拉国一家领先快速消费品公司的实际数据，用于优化、预测和解决供应链问题。数据集中的时间数据作为节点特征，可用于销售预测、生产计划和故障识别。
 
     
 
-    时变参数模型(TVPs)经常被用于经济学中来捕捉结构性变化。我强调了一个被忽视的事实——这些实际上是岭回归。这使得计算、调整和实现比状态空间范式更容易。在高维情况下，解决等价的双重岭问题的计算非常快,关键的“时间变化量”通常是由交叉验证来调整的。使用两步回归岭回归来处理不断变化的波动性。我考虑了基于稀疏性(算法选择哪些参数变化, 哪些不变)和降低秩约束的扩展(变化与因子模型相关联)。为了展示这种方法的有用性, 我使用它来研究加拿大货币政策的演变, 并使用大规模时变局部投影估计约4600个TVPs, 这一任务完全可以利用这种新方法完成。
+    图神经网络（GNNs）在不同领域如运输、生物信息学、语言处理和计算机视觉中取得了重要进展。然而，在将GNNs应用于供应链网络方面，目前尚缺乏研究。供应链网络在结构上类似于图形，使其成为应用GNN方法的理想选择。这为优化、预测和解决供应链问题开辟了无限可能。然而，此方法的一个主要障碍在于缺乏真实世界的基准数据集以促进使用GNN来研究和解决供应链问题。为了解决这个问题，我们提供了一个来自孟加拉国一家领先的快速消费品公司的实际基准数据集，该数据集侧重于用于生产目的的供应链规划的时间任务。该数据集包括时间数据作为节点特征，以实现销售预测、生产计划和故障识别。
 
-    Time-varying parameters (TVPs) models are frequently used in economics to capture structural change. I highlight a rather underutilized fact -- that these are actually ridge regressions. Instantly, this makes computations, tuning, and implementation much easier than in the state-space paradigm. Among other things, solving the equivalent dual ridge problem is computationally very fast even in high dimensions, and the crucial "amount of time variation" is tuned by cross-validation. Evolving volatility is dealt with using a two-step ridge regression. I consider extensions that incorporate sparsity (the algorithm selects which parameters vary and which do not) and reduced-rank restrictions (variation is tied to a factor model). To demonstrate the usefulness of the approach, I use it to study the evolution of monetary policy in Canada using large time-varying local projections. The application requires the estimation of about 4600 TVPs, a task well within the reach of the new method.
+    Graph Neural Networks (GNNs) have gained traction across different domains such as transportation, bio-informatics, language processing, and computer vision. However, there is a noticeable absence of research on applying GNNs to supply chain networks. Supply chain networks are inherently graph-like in structure, making them prime candidates for applying GNN methodologies. This opens up a world of possibilities for optimizing, predicting, and solving even the most complex supply chain problems. A major setback in this approach lies in the absence of real-world benchmark datasets to facilitate the research and resolution of supply chain problems using GNNs. To address the issue, we present a real-world benchmark dataset for temporal tasks, obtained from one of the leading FMCG companies in Bangladesh, focusing on supply chain planning for production purposes. The dataset includes temporal data as node features to enable sales predictions, production planning, and the identification of fa
+    
+[^2]: 基于子集选择的贝叶斯分位回归：后验总结视角
+
+    Bayesian Quantile Regression with Subset Selection: A Posterior Summarization Perspective. (arXiv:2311.02043v1 [stat.ME])
+
+    [http://arxiv.org/abs/2311.02043](http://arxiv.org/abs/2311.02043)
+
+    本研究提出了一种基于贝叶斯决策分析的方法，对于任何贝叶斯回归模型，可以得到每个条件分位数的最佳和可解释的线性估计值和不确定性量化。该方法是一种适用于特定分位数子集选择的有效工具。
+
+    
+
+    分位回归是一种强大的工具，用于推断协变量如何影响响应分布的特定分位数。现有方法要么分别估计每个感兴趣分位数的条件分位数，要么使用半参数或非参数模型估计整个条件分布。前者经常产生不适合实际数据的模型，并且不在分位数之间共享信息，而后者则以复杂且受限制的模型为特点，难以解释和计算效率低下。此外，这两种方法都不适合于特定分位数的子集选择。相反，我们从贝叶斯决策分析的角度出发，提出了线性分位估计、不确定性量化和子集选择的基本问题。对于任何贝叶斯回归模型，我们为每个基于模型的条件分位数推导出最佳和可解释的线性估计值和不确定性量化。我们的方法引入了一种分位数聚焦的方法。
+
+    Quantile regression is a powerful tool for inferring how covariates affect specific percentiles of the response distribution. Existing methods either estimate conditional quantiles separately for each quantile of interest or estimate the entire conditional distribution using semi- or non-parametric models. The former often produce inadequate models for real data and do not share information across quantiles, while the latter are characterized by complex and constrained models that can be difficult to interpret and computationally inefficient. Further, neither approach is well-suited for quantile-specific subset selection. Instead, we pose the fundamental problems of linear quantile estimation, uncertainty quantification, and subset selection from a Bayesian decision analysis perspective. For any Bayesian regression model, we derive optimal and interpretable linear estimates and uncertainty quantification for each model-based conditional quantile. Our approach introduces a quantile-focu
     
 
