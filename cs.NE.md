@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Memetic Differential Evolution Methods for Semi-Supervised Clustering](https://arxiv.org/abs/2403.04322) | 本文提出了一种基于差分进化范式的新颖遗传模拟策略，用于解决半监督聚类问题，是第一次在这个领域尝试定义这样的方法。 |
+| [^1] | [Spiking NeRF: Making Bio-inspired Neural Networks See through the Real World.](http://arxiv.org/abs/2309.10987) | 本文介绍了SpikingNeRF，它通过将辐射光线与脉冲神经网络的时间维度对齐，以节省能量并减少计算量。 |
 
 # 详细
 
-[^1]: 基于遗传模拟的差分进化方法用于半监督聚类
+[^1]: Spiking NeRF：使生物启发的神经网络穿透现实世界
 
-    Memetic Differential Evolution Methods for Semi-Supervised Clustering
+    Spiking NeRF: Making Bio-inspired Neural Networks See through the Real World. (arXiv:2309.10987v1 [cs.NE])
 
-    [https://arxiv.org/abs/2403.04322](https://arxiv.org/abs/2403.04322)
+    [http://arxiv.org/abs/2309.10987](http://arxiv.org/abs/2309.10987)
 
-    本文提出了一种基于差分进化范式的新颖遗传模拟策略，用于解决半监督聚类问题，是第一次在这个领域尝试定义这样的方法。
+    本文介绍了SpikingNeRF，它通过将辐射光线与脉冲神经网络的时间维度对齐，以节省能量并减少计算量。
 
     
 
-    在本文中，我们处理半监督最小平方和聚类(MSSC)问题，其中背景知识以实例级约束的形式给定。我们特别考虑“必连接”和“非连接”约束，每个约束指示两个数据集点是否应该关联到同一个或不同的簇中。这些约束的存在使得问题至少与其无监督版本一样困难：不再每个点都关联到其最近的簇中心，因此需要在关键操作（如分配步骤）中进行一些修改。在这种情况下，我们提出了一种基于差分进化范式的新颖遗传模拟策略，直接扩展了最近在无监督聚类文献中提出的最新框架。据我们所知，我们的贡献代表了第一次尝试定义一个旨在生成一个
+    脉冲神经网络（SNN）在许多任务中取得了成功，利用其具有潜在生物学可行性的能量效率和潜力。与此同时，神经辐射场（NeRF）以大量能量消耗渲染高质量的3D场景，但很少有研究深入探索以生物启发的方法进行节能解决方案。本文提出了脉冲NeRF（SpikingNeRF），将辐射光线与SNN的时间维度对齐，以自然地适应SNN对辐射场的重建。因此，计算以基于脉冲、无乘法的方式进行，从而减少能量消耗。在SpikingNeRF中，光线上的每个采样点匹配到特定的时间步，并以混合方式表示，其中体素网格也得到维护。基于体素网格，确定采样点是否在训练和推断过程中被屏蔽以进行更好的处理。然而，这个操作也会产生不可逆性。
 
-    arXiv:2403.04322v1 Announce Type: cross  Abstract: In this paper, we deal with semi-supervised Minimum Sum-of-Squares Clustering (MSSC) problems where background knowledge is given in the form of instance-level constraints. In particular, we take into account "must-link" and "cannot-link" constraints, each of which indicates if two dataset points should be associated to the same or to a different cluster. The presence of such constraints makes the problem at least as hard as its unsupervised version: it is no more true that each point is associated to its nearest cluster center, thus requiring some modifications in crucial operations, such as the assignment step. In this scenario, we propose a novel memetic strategy based on the Differential Evolution paradigm, directly extending a state-of-the-art framework recently proposed in the unsupervised clustering literature. As far as we know, our contribution represents the first attempt to define a memetic methodology designed to generate a
+    Spiking neuron networks (SNNs) have been thriving on numerous tasks to leverage their promising energy efficiency and exploit their potentialities as biologically plausible intelligence. Meanwhile, the Neural Radiance Fields (NeRF) render high-quality 3D scenes with massive energy consumption, and few works delve into the energy-saving solution with a bio-inspired approach. In this paper, we propose spiking NeRF (SpikingNeRF), which aligns the radiance ray with the temporal dimension of SNN, to naturally accommodate the SNN to the reconstruction of Radiance Fields. Thus, the computation turns into a spike-based, multiplication-free manner, reducing the energy consumption. In SpikingNeRF, each sampled point on the ray is matched onto a particular time step, and represented in a hybrid manner where the voxel grids are maintained as well. Based on the voxel grids, sampled points are determined whether to be masked for better training and inference. However, this operation also incurs irre
     
 

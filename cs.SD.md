@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [System Fingerprint Recognition for Deepfake Audio: An Initial Dataset and Investigation.](http://arxiv.org/abs/2208.10489) | 本文提出了深度伪造音频的系统指纹识别方法，并通过收集来自中国七个供应商的语音合成系统的数据集进行了初步研究。这项研究为进一步发展系统指纹识别方法提供了基础，并在模型版权保护和数字证据取证等实际场景中具有重要应用价值。 |
+| [^1] | [AccoMontage-3: Full-Band Accompaniment Arrangement via Sequential Style Transfer and Multi-Track Function Prior.](http://arxiv.org/abs/2310.16334) | AccoMontage-3是一种通过顺序风格转换和多轨道功能先验实现全音乐伴奏编排的系统，可以根据主旋律与和弦的输入生成多音轨的伴奏。 |
 
 # 详细
 
-[^1]: 深度伪造音频的系统指纹识别：初始数据集与研究
+[^1]: AccoMontage-3: 通过顺序风格转换和多轨道功能先验实现全音乐伴奏编排
 
-    System Fingerprint Recognition for Deepfake Audio: An Initial Dataset and Investigation. (arXiv:2208.10489v3 [cs.SD] UPDATED)
+    AccoMontage-3: Full-Band Accompaniment Arrangement via Sequential Style Transfer and Multi-Track Function Prior. (arXiv:2310.16334v1 [cs.SD])
 
-    [http://arxiv.org/abs/2208.10489](http://arxiv.org/abs/2208.10489)
+    [http://arxiv.org/abs/2310.16334](http://arxiv.org/abs/2310.16334)
 
-    本文提出了深度伪造音频的系统指纹识别方法，并通过收集来自中国七个供应商的语音合成系统的数据集进行了初步研究。这项研究为进一步发展系统指纹识别方法提供了基础，并在模型版权保护和数字证据取证等实际场景中具有重要应用价值。
+    AccoMontage-3是一种通过顺序风格转换和多轨道功能先验实现全音乐伴奏编排的系统，可以根据主旋律与和弦的输入生成多音轨的伴奏。
 
     
 
-    深度语音合成模型的快速发展给社会带来了重大威胁，例如恶意内容操纵。因此，许多研究出现了，旨在检测所谓的深度伪造音频。然而，现有的工作都集中在对真实音频和伪造音频进行二元检测。在模型版权保护和数字证据取证等实际场景中，需要知道生成深度伪造音频的工具或模型来解释决策。这促使我们提出一个问题：我们能识别深度伪造音频的系统指纹吗？在本文中，我们提出了第一个系统指纹识别（SFR）的深度伪造音频数据集，并进行了初步研究。我们从使用最新的深度学习技术的七个中国供应商的语音合成系统中收集了该数据集，包括清晰和压缩集。此外，为了促进系统指纹识别方法的进一步发展，我们提供了外部参考音频，以便进行评估和对比实验。
+    我们提出了AccoMontage-3，这是一个符号音乐自动化系统，可以根据主旋律与和弦的输入（即引导乐谱），生成多音轨的全音乐伴奏。该系统包含三个模块化组件，每个组件模拟全音乐作曲的重要方面。第一个组件是钢琴编曲师，通过将纹理风格转换为和弦，使用潜在的和弦-纹理分离和启发式纹理供应者检索，生成钢琴伴奏。第二个组件根据个别音轨功能编码的管弦乐风格，将钢琴伴奏乐谱编排成全音乐伴奏。将前两个组件连接起来的第三个组件是一个先验模型，用于描述整首音乐作品上的编曲风格的全局结构。整个系统以端到端的方式自我监督地学习生成全音乐伴奏，将风格转换应用于两个层面的多声部协调。
 
-    The rapid progress of deep speech synthesis models has posed significant threats to society such as malicious content manipulation. Therefore, many studies have emerged to detect the so-called deepfake audio. However, existing works focus on the binary detection of real audio and fake audio. In real-world scenarios such as model copyright protection and digital evidence forensics, it is needed to know what tool or model generated the deepfake audio to explain the decision. This motivates us to ask: Can we recognize the system fingerprints of deepfake audio? In this paper, we present the first deepfake audio dataset for system fingerprint recognition (SFR) and conduct an initial investigation. We collected the dataset from the speech synthesis systems of seven Chinese vendors that use the latest state-of-the-art deep learning technologies, including both clean and compressed sets. In addition, to facilitate the further development of system fingerprint recognition methods, we provide ex
+    We propose AccoMontage-3, a symbolic music automation system capable of generating multi-track, full-band accompaniment based on the input of a lead melody with chords (i.e., a lead sheet). The system contains three modular components, each modelling a vital aspect of full-band composition. The first component is a piano arranger that generates piano accompaniment for the lead sheet by transferring texture styles to the chords using latent chord-texture disentanglement and heuristic retrieval of texture donors. The second component orchestrates the piano accompaniment score into full-band arrangement according to the orchestration style encoded by individual track functions. The third component, which connects the previous two, is a prior model characterizing the global structure of orchestration style over the whole piece of music. From end to end, the system learns to generate full-band accompaniment in a self-supervised fashion, applying style transfer at two levels of polyphonic co
     
 
