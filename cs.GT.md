@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [The Assignment Game: New Mechanisms for Equitable Core Imputations](https://arxiv.org/abs/2402.11437) | 本论文提出了一种计算分配博弈的更加公平核分配的组合多项式时间机制。 |
+| [^1] | [Bandits with Deterministically Evolving States.](http://arxiv.org/abs/2307.11655) | 该论文提出了一种名为具有确定性演化状态的强盗模型，用于学习带有强盗反馈的推荐系统和在线广告。该模型考虑了状态演化的不同速率，能准确评估奖励与系统健康程度之间的关系。 |
 
 # 详细
 
-[^1]: 《分配博弈：公平核分配的新机制》
+[^1]: 具有确定性演化状态的强盗模型
 
-    The Assignment Game: New Mechanisms for Equitable Core Imputations
+    Bandits with Deterministically Evolving States. (arXiv:2307.11655v1 [cs.LG])
 
-    [https://arxiv.org/abs/2402.11437](https://arxiv.org/abs/2402.11437)
+    [http://arxiv.org/abs/2307.11655](http://arxiv.org/abs/2307.11655)
 
-    本论文提出了一种计算分配博弈的更加公平核分配的组合多项式时间机制。
+    该论文提出了一种名为具有确定性演化状态的强盗模型，用于学习带有强盗反馈的推荐系统和在线广告。该模型考虑了状态演化的不同速率，能准确评估奖励与系统健康程度之间的关系。
 
     
 
-    《分配博弈》的核分配集形成一个（非有限）分配格。迄今为止，仅已知有效算法用于计算其两个极端分配；但是，其中每一个都最大程度地偏袒一个方，不利于双方的分配，导致盈利不均衡。另一个问题是，由一个玩家组成的子联盟（或者来自分配两侧的一系玩家）可以获得零利润，因此核分配不必给予他们任何利润。因此，核分配在个体代理人层面上不提供任何公平性保证。这引出一个问题，即如何计算更公平的核分配。在本文中，我们提出了一个计算分配博弈的Leximin和Leximax核分配的组合（即，该机制不涉及LP求解器）多项式时间机制。这些分配以不同方式实现了“公平性”：
+    我们提出了一种学习与强盗反馈结合的模型，同时考虑到确定性演化和不可观测的状态，我们称之为具有确定性演化状态的强盗模型。我们的模型主要应用于推荐系统和在线广告的学习。在这两种情况下，算法在每一轮获得的奖励是选择行动的短期奖励和系统的“健康”程度（即通过其状态测量）的函数。例如，在推荐系统中，平台从用户对特定类型内容的参与中获得的奖励不仅取决于具体内容的固有特征，还取决于用户与平台上其他类型内容互动后其偏好的演化。我们的通用模型考虑了状态演化的不同速率λ∈[0,1]（例如，用户的偏好因先前内容消费而快速变化）。
 
-    arXiv:2402.11437v1 Announce Type: cross  Abstract: The set of core imputations of the assignment game forms a (non-finite) distributive lattice. So far, efficient algorithms were known for computing only its two extreme imputations; however, each of them maximally favors one side and disfavors the other side of the bipartition, leading to inequitable profit sharing. Another issue is that a sub-coalition consisting of one player (or a set of players from the same side of the bipartition) can make zero profit, therefore a core imputation is not obliged to give them any profit. Hence core imputations make no fairness guarantee at the level of individual agents. This raises the question of computing {\em more equitable core imputations}.   In this paper, we give combinatorial (i.e., the mechanism does not invoke an LP-solver) polynomial time mechanisms for computing the leximin and leximax core imputations for the assignment game. These imputations achieve ``fairness'' in different ways: w
+    We propose a model for learning with bandit feedback while accounting for deterministically evolving and unobservable states that we call Bandits with Deterministically Evolving States. The workhorse applications of our model are learning for recommendation systems and learning for online ads. In both cases, the reward that the algorithm obtains at each round is a function of the short-term reward of the action chosen and how ``healthy'' the system is (i.e., as measured by its state). For example, in recommendation systems, the reward that the platform obtains from a user's engagement with a particular type of content depends not only on the inherent features of the specific content, but also on how the user's preferences have evolved as a result of interacting with other types of content on the platform. Our general model accounts for the different rate $\lambda \in [0,1]$ at which the state evolves (e.g., how fast a user's preferences shift as a result of previous content consumption
     
 

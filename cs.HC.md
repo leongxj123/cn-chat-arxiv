@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Optimizing Computer Lab Ergonomics in Universities: A Study on Anthropometric Measurements, Furniture Design, and ANOVA Test](https://arxiv.org/abs/2403.05589) | 提出基于人体测量的家具尺寸适合大学生，以改善计算机实验室人体工程学，研究发现其与现有家具尺寸存在显著差异并更加兼容 |
+| [^1] | [Smart Pressure e-Mat for Human Sleeping Posture and Dynamic Activity Recognition.](http://arxiv.org/abs/2305.11367) | 本文介绍了一种基于Velostat的智能压力电子垫系统，可用于识别人体姿势和运动，具有高精度。 |
 
 # 详细
 
-[^1]: 优化大学计算机实验室人体工程学：一个关于人体测量、家具设计和ANOVA测试的研究
+[^1]: 智能压力电子垫用于人类睡眠姿势和动态活动识别
 
-    Optimizing Computer Lab Ergonomics in Universities: A Study on Anthropometric Measurements, Furniture Design, and ANOVA Test
+    Smart Pressure e-Mat for Human Sleeping Posture and Dynamic Activity Recognition. (arXiv:2305.11367v1 [cs.CV])
 
-    [https://arxiv.org/abs/2403.05589](https://arxiv.org/abs/2403.05589)
+    [http://arxiv.org/abs/2305.11367](http://arxiv.org/abs/2305.11367)
 
-    提出基于人体测量的家具尺寸适合大学生，以改善计算机实验室人体工程学，研究发现其与现有家具尺寸存在显著差异并更加兼容
+    本文介绍了一种基于Velostat的智能压力电子垫系统，可用于识别人体姿势和运动，具有高精度。
 
     
 
-    许多研究表明，人体工程学设计的家具能提高工作效率和身心健康。随着计算机成为学生学术生活的一部分，它们在未来将进一步普及。我们提出基于人体测量的家具尺寸，适合大学生以改善计算机实验室的人体工程学。我们收集了380名参与者的数据，分析了11项人体测量，并将它们与11项家具尺寸进行了相关性分析。研究了两种类型的家具：非可调椅子与非可调桌子，以及可调椅子与非可调桌子。不匹配计算显示家具尺寸与人体测量之间存在显著差异。显著水平为5%的单因素方差分析测试还显示了所提出的和现有的家具尺寸之间存在显著差异。发现所提出的尺寸更加兼容，减少了不匹配百分比。
+    在强调医疗保健、早期教育和健身方面，越来越多的非侵入式测量和识别方法受到关注。压力感应由于其简单的结构、易于访问、可视化应用和无害性而得到广泛研究。本文介绍了一种基于压敏材料Velostat的智能压力电子垫(SP e-Mat)系统，用于人体监测应用，包括睡眠姿势、运动和瑜伽识别。在子系统扫描电子垫读数并处理信号后，它生成一个压力图像流。采用深度神经网络(DNNs)来拟合和训练压力图像流，并识别相应的人类行为。四种睡眠姿势和受Nintendo Switch Ring Fit Adventure(RFA)启发的五种动态活动被用作拟议的SPeM系统的初步验证。SPeM系统在两种应用中均达到了较高的准确性，这证明了其高精度和。
 
-    arXiv:2403.05589v1 Announce Type: cross  Abstract: Many studies have shown how ergonomically designed furniture improves productivity and well-being. As computers have become a part of students' academic lives, they will grow further in the future. We propose anthropometric-based furniture dimensions suitable for university students to improve computer laboratory ergonomics. We collected data from 380 participants and analyzed 11 anthropometric measurements, correlating them to 11 furniture dimensions. Two types of furniture were studied: a non-adjustable chair with a non-adjustable table and an adjustable chair with a non-adjustable table. The mismatch calculation showed a significant difference between furniture dimensions and anthropometric measurements. The one-way ANOVA test with a significance level of 5% also showed a significant difference between proposed and existing furniture dimensions. The proposed dimensions were found to be more compatible and reduced mismatch percentage
+    With the emphasis on healthcare, early childhood education, and fitness, non-invasive measurement and recognition methods have received more attention. Pressure sensing has been extensively studied due to its advantages of simple structure, easy access, visualization application, and harmlessness. This paper introduces a smart pressure e-mat (SPeM) system based on a piezoresistive material Velostat for human monitoring applications, including sleeping postures, sports, and yoga recognition. After a subsystem scans e-mat readings and processes the signal, it generates a pressure image stream. Deep neural networks (DNNs) are used to fit and train the pressure image stream and recognize the corresponding human behavior. Four sleeping postures and five dynamic activities inspired by Nintendo Switch Ring Fit Adventure (RFA) are used as a preliminary validation of the proposed SPeM system. The SPeM system achieves high accuracies on both applications, which demonstrates the high accuracy and
     
 
