@@ -2,82 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [SportsNGEN: Sustained Generation of Multi-player Sports Gameplay](https://arxiv.org/abs/2403.12977) | SportsNGEN是一种基于Transformer解码器的模型，经过训练能持续生成逼真的多人体育游戏，包括模拟整个网球比赛和为教练和广播员提供洞察力的能力。 |
-| [^2] | [Multistep Consistency Models](https://arxiv.org/abs/2403.06807) | 本文提出了多步一致性模型，通过在一致性模型和扩散模型之间插值，实现了采样速度和采样质量的平衡。 |
-| [^3] | [Rethinking cluster-conditioned diffusion models](https://arxiv.org/abs/2403.00570) | 通过结合最新的图片聚类和扩散模型技术，本文提出了一种在考虑最佳聚类粒度的情况下实现最先进FID并具有较强训练样本效率的聚类条件扩散模型，并提出了一种新颖方法来减少视觉组搜索空间。 |
-| [^4] | [Spiking NeRF: Making Bio-inspired Neural Networks See through the Real World.](http://arxiv.org/abs/2309.10987) | 本文介绍了SpikingNeRF，它通过将辐射光线与脉冲神经网络的时间维度对齐，以节省能量并减少计算量。 |
-| [^5] | [S-HR-VQVAE: Sequential Hierarchical Residual Learning Vector Quantized Variational Autoencoder for Video Prediction.](http://arxiv.org/abs/2307.06701) | S-HR-VQVAE是一种序列分层残差学习向量量化变分自编码器，通过结合分层残差向量量化变分自编码器（HR-VQVAE）和时空PixelCNN（ST-PixelCNN）的能力，解决了视频预测中的主要挑战，并在KTH人体动作和Moving-MNIST任务上取得了较好的实验结果。 |
+| [^1] | [PDE-CNNs: Axiomatic Derivations and Applications](https://arxiv.org/abs/2403.15182) | PDE-CNNs通过利用几何意义的演化PDE的求解器替代传统的组件，提供了更少的参数、固有的等变性、更好的性能、数据效率和几何可解释性。 |
+| [^2] | [RanDumb: A Simple Approach that Questions the Efficacy of Continual Representation Learning](https://arxiv.org/abs/2402.08823) | RanDumb是一种简单的方法，通过固定的随机变换嵌入原始像素并学习简单的线性分类器，质疑了持续表示学习的效果。 实验结果显示，RanDumb在众多持续学习基准测试中明显优于使用深度网络进行持续学习的表示学习。 |
+| [^3] | [Smart Pressure e-Mat for Human Sleeping Posture and Dynamic Activity Recognition.](http://arxiv.org/abs/2305.11367) | 本文介绍了一种基于Velostat的智能压力电子垫系统，可用于识别人体姿势和运动，具有高精度。 |
 
 # 详细
 
-[^1]: SportsNGEN: 持续生成多人体育游戏
+[^1]: PDE-CNNs：公理推导与应用
 
-    SportsNGEN: Sustained Generation of Multi-player Sports Gameplay
+    PDE-CNNs: Axiomatic Derivations and Applications
 
-    [https://arxiv.org/abs/2403.12977](https://arxiv.org/abs/2403.12977)
+    [https://arxiv.org/abs/2403.15182](https://arxiv.org/abs/2403.15182)
 
-    SportsNGEN是一种基于Transformer解码器的模型，经过训练能持续生成逼真的多人体育游戏，包括模拟整个网球比赛和为教练和广播员提供洞察力的能力。
-
-    
-
-    我们提出了一种基于Transformer解码器的模型SportsNGEN，该模型经过训练使用运动员和球追踪序列，能够生成逼真且持续的游戏场景。我们在大量专业网球追踪数据上训练和评估SportsNGEN，并展示通过将生成的模拟与射击分类器和逻辑相结合来开始和结束球赛，系统能够模拟整个网球比赛。此外，SportsNGEN的通用版本可以通过在包含该球员的比赛数据上微调来定制特定球员。我们展示了我们的模型经过良好校准，可以通过评估反事实或假设选项为教练和广播员提供洞察力。最后，我们展示了质量结果表明相同的方法适用于足球。
-
-    arXiv:2403.12977v1 Announce Type: cross  Abstract: We present a transformer decoder based model, SportsNGEN, that is trained on sports player and ball tracking sequences that is capable of generating realistic and sustained gameplay. We train and evaluate SportsNGEN on a large database of professional tennis tracking data and demonstrate that by combining the generated simulations with a shot classifier and logic to start and end rallies, the system is capable of simulating an entire tennis match. In addition, a generic version of SportsNGEN can be customized to a specific player by fine-tuning on match data that includes that player. We show that our model is well calibrated and can be used to derive insights for coaches and broadcasters by evaluating counterfactual or what if options. Finally, we show qualitative results indicating the same approach works for football.
-    
-[^2]: 多步一致性模型
-
-    Multistep Consistency Models
-
-    [https://arxiv.org/abs/2403.06807](https://arxiv.org/abs/2403.06807)
-
-    本文提出了多步一致性模型，通过在一致性模型和扩散模型之间插值，实现了采样速度和采样质量的平衡。
+    PDE-CNNs通过利用几何意义的演化PDE的求解器替代传统的组件，提供了更少的参数、固有的等变性、更好的性能、数据效率和几何可解释性。
 
     
 
-    扩散模型相对容易训练，但生成样本需要许多步骤。一致性模型更难训练，但可以在一个步骤中生成样本。本文提出了多步一致性模型：通过一致性模型和TRACT的统一，可以在一致性模型和扩散模型之间进行插值：在采样速度和采样质量之间取得平衡。具体来说，1步一致性模型是传统的一致性模型，而我们展示了$\infty$步一致性模型是扩散模型。多步一致性模型在实践中表现良好。将样本预算从单步增加到2-8步，我们可以更轻松地训练模型，生成更高质量的样本，同时保留大部分采样速度优势。在Imagenet 64上8步达到1.4的FID，在Imagenet128上8步达到2.1的FID。
+    基于偏微分方程组卷积神经网络（PDE-G-CNNs）利用具有几何意义的演化偏微分方程的求解器替代G-CNNs中常规组件。PDE-G-CNNs同时提供了几个关键优势：更少的参数、固有等变性、更好的性能、数据效率和几何可解释性。本文重点研究特征图在整个网络中为二维的欧几里德等变PDE-G-CNNs。我们将这个框架的变体称为PDE-CNN。我们列出了几个在实践中令人满意的公理，并从中推导出应在PDE-CNN中使用哪些PDE。在这里，我们通过经典线性和形态尺度空间理论的公理受启发，通过引入半域值信号对其进行推广。此外，我们通过实验证实，相对于小型网络，PDE-CNN提供了更少的参数、更好的性能和数据效率。
 
-    arXiv:2403.06807v1 Announce Type: new  Abstract: Diffusion models are relatively easy to train but require many steps to generate samples. Consistency models are far more difficult to train, but generate samples in a single step.   In this paper we propose Multistep Consistency Models: A unification between Consistency Models (Song et al., 2023) and TRACT (Berthelot et al., 2023) that can interpolate between a consistency model and a diffusion model: a trade-off between sampling speed and sampling quality. Specifically, a 1-step consistency model is a conventional consistency model whereas we show that a $\infty$-step consistency model is a diffusion model.   Multistep Consistency Models work really well in practice. By increasing the sample budget from a single step to 2-8 steps, we can train models more easily that generate higher quality samples, while retaining much of the sampling speed benefits. Notable results are 1.4 FID on Imagenet 64 in 8 step and 2.1 FID on Imagenet128 in 8 
+    arXiv:2403.15182v1 Announce Type: new  Abstract: PDE-based Group Convolutional Neural Networks (PDE-G-CNNs) utilize solvers of geometrically meaningful evolution PDEs as substitutes for the conventional components in G-CNNs. PDE-G-CNNs offer several key benefits all at once: fewer parameters, inherent equivariance, better performance, data efficiency, and geometric interpretability. In this article we focus on Euclidean equivariant PDE-G-CNNs where the feature maps are two dimensional throughout. We call this variant of the framework a PDE-CNN. We list several practically desirable axioms and derive from these which PDEs should be used in a PDE-CNN. Here our approach to geometric learning via PDEs is inspired by the axioms of classical linear and morphological scale-space theory, which we generalize by introducing semifield-valued signals. Furthermore, we experimentally confirm for small networks that PDE-CNNs offer fewer parameters, better performance, and data efficiency in compariso
     
-[^3]: 重新思考基于聚类条件的扩散模型
+[^2]: RanDumb: 一种质疑持续表示学习效果的简单方法
 
-    Rethinking cluster-conditioned diffusion models
+    RanDumb: A Simple Approach that Questions the Efficacy of Continual Representation Learning
 
-    [https://arxiv.org/abs/2403.00570](https://arxiv.org/abs/2403.00570)
+    [https://arxiv.org/abs/2402.08823](https://arxiv.org/abs/2402.08823)
 
-    通过结合最新的图片聚类和扩散模型技术，本文提出了一种在考虑最佳聚类粒度的情况下实现最先进FID并具有较强训练样本效率的聚类条件扩散模型，并提出了一种新颖方法来减少视觉组搜索空间。
-
-    
-
-    我们针对使用聚类分配的图片级条件扩散模型进行了全面的实验研究。我们阐明了关于图片聚类的个别组件如何影响三个数据集上的图片合成。通过结合图片聚类和扩散模型的最新进展，我们展示了，在考虑到图片合成（视觉组）的最佳簇粒度的情况下，通过聚类条件可以实现最先进的FID（即在CIFAR10和CIFAR100上分别为1.67和2.17），同时实现了较强的训练样本效率。最后，我们提出了一种新颖的方法，通过仅使用基于特征的聚类来推导减少视觉组搜索空间的上限簇边界。与现有方法不同，我们发现聚类与基于聚类的图片生成之间没有显著联系。代码和聚类分配将会发布。
-
-    arXiv:2403.00570v1 Announce Type: cross  Abstract: We present a comprehensive experimental study on image-level conditioning for diffusion models using cluster assignments. We elucidate how individual components regarding image clustering impact image synthesis across three datasets. By combining recent advancements from image clustering and diffusion models, we show that, given the optimal cluster granularity with respect to image synthesis (visual groups), cluster-conditioning can achieve state-of-the-art FID (i.e. 1.67, 2.17 on CIFAR10 and CIFAR100 respectively), while attaining a strong training sample efficiency. Finally, we propose a novel method to derive an upper cluster bound that reduces the search space of the visual groups using solely feature-based clustering. Unlike existing approaches, we find no significant connection between clustering and cluster-conditional image generation. The code and cluster assignments will be released.
-    
-[^4]: Spiking NeRF：使生物启发的神经网络穿透现实世界
-
-    Spiking NeRF: Making Bio-inspired Neural Networks See through the Real World. (arXiv:2309.10987v1 [cs.NE])
-
-    [http://arxiv.org/abs/2309.10987](http://arxiv.org/abs/2309.10987)
-
-    本文介绍了SpikingNeRF，它通过将辐射光线与脉冲神经网络的时间维度对齐，以节省能量并减少计算量。
+    RanDumb是一种简单的方法，通过固定的随机变换嵌入原始像素并学习简单的线性分类器，质疑了持续表示学习的效果。 实验结果显示，RanDumb在众多持续学习基准测试中明显优于使用深度网络进行持续学习的表示学习。
 
     
 
-    脉冲神经网络（SNN）在许多任务中取得了成功，利用其具有潜在生物学可行性的能量效率和潜力。与此同时，神经辐射场（NeRF）以大量能量消耗渲染高质量的3D场景，但很少有研究深入探索以生物启发的方法进行节能解决方案。本文提出了脉冲NeRF（SpikingNeRF），将辐射光线与SNN的时间维度对齐，以自然地适应SNN对辐射场的重建。因此，计算以基于脉冲、无乘法的方式进行，从而减少能量消耗。在SpikingNeRF中，光线上的每个采样点匹配到特定的时间步，并以混合方式表示，其中体素网格也得到维护。基于体素网格，确定采样点是否在训练和推断过程中被屏蔽以进行更好的处理。然而，这个操作也会产生不可逆性。
+    我们提出了RanDumb来检验持续表示学习的效果。RanDumb将原始像素使用一个固定的随机变换嵌入，这个变换近似了RBF-Kernel，在看到任何数据之前初始化，并学习一个简单的线性分类器。我们提出了一个令人惊讶且一致的发现：在众多持续学习基准测试中，RanDumb在性能上明显优于使用深度网络进行持续学习的表示学习，这表明在这些情景下表示学习的性能较差。RanDumb不存储样本，并在数据上进行单次遍历，一次处理一个样本。它与GDumb相辅相成，在GDumb性能特别差的低样本情况下运行。当将RanDumb扩展到使用预训练模型替换随机变换的情景时，我们得出相同一致的结论。我们的调查结果既令人惊讶又令人担忧，因为表示学习在这些情况下表现糟糕。
 
-    Spiking neuron networks (SNNs) have been thriving on numerous tasks to leverage their promising energy efficiency and exploit their potentialities as biologically plausible intelligence. Meanwhile, the Neural Radiance Fields (NeRF) render high-quality 3D scenes with massive energy consumption, and few works delve into the energy-saving solution with a bio-inspired approach. In this paper, we propose spiking NeRF (SpikingNeRF), which aligns the radiance ray with the temporal dimension of SNN, to naturally accommodate the SNN to the reconstruction of Radiance Fields. Thus, the computation turns into a spike-based, multiplication-free manner, reducing the energy consumption. In SpikingNeRF, each sampled point on the ray is matched onto a particular time step, and represented in a hybrid manner where the voxel grids are maintained as well. Based on the voxel grids, sampled points are determined whether to be masked for better training and inference. However, this operation also incurs irre
+    arXiv:2402.08823v1 Announce Type: cross Abstract: We propose RanDumb to examine the efficacy of continual representation learning. RanDumb embeds raw pixels using a fixed random transform which approximates an RBF-Kernel, initialized before seeing any data, and learns a simple linear classifier on top. We present a surprising and consistent finding: RanDumb significantly outperforms the continually learned representations using deep networks across numerous continual learning benchmarks, demonstrating the poor performance of representation learning in these scenarios. RanDumb stores no exemplars and performs a single pass over the data, processing one sample at a time. It complements GDumb, operating in a low-exemplar regime where GDumb has especially poor performance. We reach the same consistent conclusions when RanDumb is extended to scenarios with pretrained models replacing the random transform with pretrained feature extractor. Our investigation is both surprising and alarming as
     
-[^5]: S-HR-VQVAE: 序列分层残差学习向量量化变分自编码器用于视频预测
+[^3]: 智能压力电子垫用于人类睡眠姿势和动态活动识别
 
-    S-HR-VQVAE: Sequential Hierarchical Residual Learning Vector Quantized Variational Autoencoder for Video Prediction. (arXiv:2307.06701v1 [cs.CV])
+    Smart Pressure e-Mat for Human Sleeping Posture and Dynamic Activity Recognition. (arXiv:2305.11367v1 [cs.CV])
 
-    [http://arxiv.org/abs/2307.06701](http://arxiv.org/abs/2307.06701)
+    [http://arxiv.org/abs/2305.11367](http://arxiv.org/abs/2305.11367)
 
-    S-HR-VQVAE是一种序列分层残差学习向量量化变分自编码器，通过结合分层残差向量量化变分自编码器（HR-VQVAE）和时空PixelCNN（ST-PixelCNN）的能力，解决了视频预测中的主要挑战，并在KTH人体动作和Moving-MNIST任务上取得了较好的实验结果。
+    本文介绍了一种基于Velostat的智能压力电子垫系统，可用于识别人体姿势和运动，具有高精度。
 
     
 
-    我们提出了一种新的模型，将我们最近提出的分层残差向量量化变分自编码器（HR-VQVAE）与一种新颖的时空PixelCNN（ST-PixelCNN）相结合，用来解决视频预测任务。我们将这种方法称为序列分层残差学习向量量化变分自编码器（S-HR-VQVAE）。通过利用HR-VQVAE在对静止图像进行建模时的内在能力和紧凑表示，以及ST-PixelCNN处理时空信息的能力， S-HR-VQVAE能够更好地应对视频预测中的主要挑战，包括学习时空信息、处理高维数据、消除模糊预测和隐式建模物理特性。对KTH人体动作和Moving-MNIST任务的大量实验证明，我们的模型在定量和定性评估方面与顶级视频预测技术相比具有优势。
+    在强调医疗保健、早期教育和健身方面，越来越多的非侵入式测量和识别方法受到关注。压力感应由于其简单的结构、易于访问、可视化应用和无害性而得到广泛研究。本文介绍了一种基于压敏材料Velostat的智能压力电子垫(SP e-Mat)系统，用于人体监测应用，包括睡眠姿势、运动和瑜伽识别。在子系统扫描电子垫读数并处理信号后，它生成一个压力图像流。采用深度神经网络(DNNs)来拟合和训练压力图像流，并识别相应的人类行为。四种睡眠姿势和受Nintendo Switch Ring Fit Adventure(RFA)启发的五种动态活动被用作拟议的SPeM系统的初步验证。SPeM系统在两种应用中均达到了较高的准确性，这证明了其高精度和。
 
-    We address the video prediction task by putting forth a novel model that combines (i) our recently proposed hierarchical residual vector quantized variational autoencoder (HR-VQVAE), and (ii) a novel spatiotemporal PixelCNN (ST-PixelCNN). We refer to this approach as a sequential hierarchical residual learning vector quantized variational autoencoder (S-HR-VQVAE). By leveraging the intrinsic capabilities of HR-VQVAE at modeling still images with a parsimonious representation, combined with the ST-PixelCNN's ability at handling spatiotemporal information, S-HR-VQVAE can better deal with chief challenges in video prediction. These include learning spatiotemporal information, handling high dimensional data, combating blurry prediction, and implicit modeling of physical characteristics. Extensive experimental results on the KTH Human Action and Moving-MNIST tasks demonstrate that our model compares favorably against top video prediction techniques both in quantitative and qualitative evalu
+    With the emphasis on healthcare, early childhood education, and fitness, non-invasive measurement and recognition methods have received more attention. Pressure sensing has been extensively studied due to its advantages of simple structure, easy access, visualization application, and harmlessness. This paper introduces a smart pressure e-mat (SPeM) system based on a piezoresistive material Velostat for human monitoring applications, including sleeping postures, sports, and yoga recognition. After a subsystem scans e-mat readings and processes the signal, it generates a pressure image stream. Deep neural networks (DNNs) are used to fit and train the pressure image stream and recognize the corresponding human behavior. Four sleeping postures and five dynamic activities inspired by Nintendo Switch Ring Fit Adventure (RFA) are used as a preliminary validation of the proposed SPeM system. The SPeM system achieves high accuracies on both applications, which demonstrates the high accuracy and
     
 
