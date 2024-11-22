@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Robust Learning for Optimal Dynamic Treatment Regimes with Observational Data](https://arxiv.org/abs/2404.00221) | 学习利用观测数据提出了一种逐步双重强健方法，通过向后归纳解决了最佳动态治疗方案的问题 |
-| [^2] | [Adjustment with Many Regressors Under Covariate-Adaptive Randomizations.](http://arxiv.org/abs/2304.08184) | 本文关注协变量自适应随机化中的因果推断，在使用回归调整时需要权衡效率与估计误差成本。作者提供了关于经过回归调整的平均处理效应（ATE）估计器的统一推断理论。 |
+| [^1] | [Understanding and avoiding the "weights of regression": Heterogeneous effects, misspecification, and longstanding solutions](https://arxiv.org/abs/2403.03299) | 处理的回归系数通常不等于平均处理效应（ATE），且可能不是直接科学或政策感兴趣的数量。研究人员提出各种解释、边界和诊断辅助工具来解释这种差异。 |
 
 # 详细
 
-[^1]: 利用观测数据进行强健学习以获得最佳动态治疗方案
+[^1]: 理解和避免“回归权重”：异质效应、误设和长久解决方案
 
-    Robust Learning for Optimal Dynamic Treatment Regimes with Observational Data
+    Understanding and avoiding the "weights of regression": Heterogeneous effects, misspecification, and longstanding solutions
 
-    [https://arxiv.org/abs/2404.00221](https://arxiv.org/abs/2404.00221)
+    [https://arxiv.org/abs/2403.03299](https://arxiv.org/abs/2403.03299)
 
-    学习利用观测数据提出了一种逐步双重强健方法，通过向后归纳解决了最佳动态治疗方案的问题
-
-    
-
-    许多公共政策和医疗干预涉及其治疗分配中的动态性，治疗通常依据先前治疗的历史和相关特征对每个阶段的效果具有异质性。本文研究了统计学习最佳动态治疗方案(DTR)，根据个体的历史指导每个阶段的最佳治疗分配。我们提出了一种基于观测数据的逐步双重强健方法，在顺序可忽略性假设下学习最佳DTR。该方法通过向后归纳解决了顺序治疗分配问题，在每一步中，我们结合倾向评分和行动值函数(Q函数)的估计量，构建了政策价值的增强反向概率加权估计量。
-
-    arXiv:2404.00221v1 Announce Type: cross  Abstract: Many public policies and medical interventions involve dynamics in their treatment assignments, where treatments are sequentially assigned to the same individuals across multiple stages, and the effect of treatment at each stage is usually heterogeneous with respect to the history of prior treatments and associated characteristics. We study statistical learning of optimal dynamic treatment regimes (DTRs) that guide the optimal treatment assignment for each individual at each stage based on the individual's history. We propose a step-wise doubly-robust approach to learn the optimal DTR using observational data under the assumption of sequential ignorability. The approach solves the sequential treatment assignment problem through backward induction, where, at each step, we combine estimators of propensity scores and action-value functions (Q-functions) to construct augmented inverse probability weighting estimators of values of policies 
-    
-[^2]: 协变量自适应随机化下的多个回归器的调整
-
-    Adjustment with Many Regressors Under Covariate-Adaptive Randomizations. (arXiv:2304.08184v1 [econ.EM])
-
-    [http://arxiv.org/abs/2304.08184](http://arxiv.org/abs/2304.08184)
-
-    本文关注协变量自适应随机化中的因果推断，在使用回归调整时需要权衡效率与估计误差成本。作者提供了关于经过回归调整的平均处理效应（ATE）估计器的统一推断理论。
+    处理的回归系数通常不等于平均处理效应（ATE），且可能不是直接科学或政策感兴趣的数量。研究人员提出各种解释、边界和诊断辅助工具来解释这种差异。
 
     
 
-    本文针对协变量自适应随机化（CAR）中的因果推断使用回归调整（RA）时存在的权衡进行了研究。RA可以通过整合未用于随机分配的协变量信息来提高因果估计器的效率。但是，当回归器数量与样本量同阶时，RA的估计误差不能渐近忽略，会降低估计效率。没有考虑RA成本的结果可能导致在零假设下过度拒绝因果推断。为了解决这个问题，我们在CAR下为经过回归调整的平均处理效应（ATE）估计器开发了一种统一的推断理论。我们的理论具有两个关键特征：（1）确保在零假设下的精确渐近大小，无论协变量数量是固定还是最多以样本大小的速度发散，（2）确保在协变量维度方面都比未调整的估计器弱效提高.
+    许多领域的研究人员努力通过在处理（D）和观察到的混杂因素（X）上对结果数据（Y）进行回归来估计治疗效应。即使不存在未观察到的混杂因素，处理的回归系数也会报告分层特定处理效应的加权平均值。当无法排除异质处理效应时，得到的系数通常不等于平均处理效应（ATE），也不太可能是直接科学或政策感兴趣的数量。系数与ATE之间的差异导致研究人员提出各种解释、边界和诊断辅助工具。我们注意到，在处理效应在X中是异质的时，对Y关于D和X的线性回归可能存在误设。回归的“权重”，对此我们提供了一种新的...
 
-    Our paper identifies a trade-off when using regression adjustments (RAs) in causal inference under covariate-adaptive randomizations (CARs). On one hand, RAs can improve the efficiency of causal estimators by incorporating information from covariates that are not used in the randomization. On the other hand, RAs can degrade estimation efficiency due to their estimation errors, which are not asymptotically negligible when the number of regressors is of the same order as the sample size. Failure to account for the cost of RAs can result in over-rejection of causal inference under the null hypothesis. To address this issue, we develop a unified inference theory for the regression-adjusted average treatment effect (ATE) estimator under CARs. Our theory has two key features: (1) it ensures the exact asymptotic size under the null hypothesis, regardless of whether the number of covariates is fixed or diverges at most at the rate of the sample size, and (2) it guarantees weak efficiency impro
+    arXiv:2403.03299v1 Announce Type: cross  Abstract: Researchers in many fields endeavor to estimate treatment effects by regressing outcome data (Y) on a treatment (D) and observed confounders (X). Even absent unobserved confounding, the regression coefficient on the treatment reports a weighted average of strata-specific treatment effects (Angrist, 1998). Where heterogeneous treatment effects cannot be ruled out, the resulting coefficient is thus not generally equal to the average treatment effect (ATE), and is unlikely to be the quantity of direct scientific or policy interest. The difference between the coefficient and the ATE has led researchers to propose various interpretational, bounding, and diagnostic aids (Humphreys, 2009; Aronow and Samii, 2016; Sloczynski, 2022; Chattopadhyay and Zubizarreta, 2023). We note that the linear regression of Y on D and X can be misspecified when the treatment effect is heterogeneous in X. The "weights of regression", for which we provide a new (m
     
 

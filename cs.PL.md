@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Soda: An Object-Oriented Functional Language for Specifying Human-Centered Problems.](http://arxiv.org/abs/2310.01961) | Soda是一种面向对象的功能性编程语言，用于描述以人为中心的问题，可以自然地处理质量和数量，并通过简单的定义模型化复杂要求。 |
+| [^1] | [Linguacodus: A Synergistic Framework for Transformative Code Generation in Machine Learning Pipelines](https://arxiv.org/abs/2403.11585) | Linguacodus是一种创新框架，通过部署动态流水线和精细调整的大型语言模型，实现了将自然语言任务描述转换为代码的自动化过程，极大地推进了机器学习应用的发展。 |
 
 # 详细
 
-[^1]: Soda:一种用于描述以人为中心问题的面向对象的功能性编程语言
+[^1]: Linguacodus：一种在机器学习流水线中进行变革性代码生成的协同框架
 
-    Soda: An Object-Oriented Functional Language for Specifying Human-Centered Problems. (arXiv:2310.01961v1 [cs.PL])
+    Linguacodus: A Synergistic Framework for Transformative Code Generation in Machine Learning Pipelines
 
-    [http://arxiv.org/abs/2310.01961](http://arxiv.org/abs/2310.01961)
+    [https://arxiv.org/abs/2403.11585](https://arxiv.org/abs/2403.11585)
 
-    Soda是一种面向对象的功能性编程语言，用于描述以人为中心的问题，可以自然地处理质量和数量，并通过简单的定义模型化复杂要求。
+    Linguacodus是一种创新框架，通过部署动态流水线和精细调整的大型语言模型，实现了将自然语言任务描述转换为代码的自动化过程，极大地推进了机器学习应用的发展。
 
     
 
-    我们介绍了Soda（Symbolic Objective Descriptive Analysis），一种语言，有助于以自然的方式处理质量和数量，并极大地简化了检查它们正确性的任务。我们介绍了语言的关键属性，这些属性是由对计算机系统复杂要求进行描述的设计所激发的，并解释了如何通过简单的定义来建模这些要求时必须解决这些关键属性。我们概述了一个工具，它有助于以更透明和更少出错的方式描述问题。
+    在不断发展的机器学习领域中，将自然语言描述无缝转化为可执行代码仍然是一个巨大的挑战。本文介绍了Linguacodus，这是一个创新性框架，旨在通过部署一个动态流水线，通过高级数据塑形指令，将自然语言任务描述迭代地转换为代码来应对这一挑战。Linguacodus的核心是一个经过精细调整的大型语言模型（LLM），能够评估各种问题的多样解决方案，并为特定任务选择最合适的解决方案。本文详细介绍了精细调整过程，并阐明了如何将自然语言描述转化为功能性代码。Linguacodus代表了自动化代码生成的重大飞跃，有效地弥合了任务描述和可执行代码之间的差距。它对推进跨不同领域的机器学习应用具有巨大潜力。
 
-    We present Soda (Symbolic Objective Descriptive Analysis), a language that helps to treat qualities and quantities in a natural way and greatly simplifies the task of checking their correctness. We present key properties for the language motivated by the design of a descriptive language to encode complex requirements on computer systems, and we explain how these key properties must be addressed to model these requirements with simple definitions. We give an overview of a tool that helps to describe problems in an easy way that we consider more transparent and less error-prone.
+    arXiv:2403.11585v1 Announce Type: cross  Abstract: In the ever-evolving landscape of machine learning, seamless translation of natural language descriptions into executable code remains a formidable challenge. This paper introduces Linguacodus, an innovative framework designed to tackle this challenge by deploying a dynamic pipeline that iteratively transforms natural language task descriptions into code through high-level data-shaping instructions. The core of Linguacodus is a fine-tuned large language model (LLM), empowered to evaluate diverse solutions for various problems and select the most fitting one for a given task. This paper details the fine-tuning process, and sheds light on how natural language descriptions can be translated into functional code. Linguacodus represents a substantial leap towards automated code generation, effectively bridging the gap between task descriptions and executable code. It holds great promise for advancing machine learning applications across div
     
 

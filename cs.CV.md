@@ -2,52 +2,97 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [PDE-CNNs: Axiomatic Derivations and Applications](https://arxiv.org/abs/2403.15182) | PDE-CNNs通过利用几何意义的演化PDE的求解器替代传统的组件，提供了更少的参数、固有的等变性、更好的性能、数据效率和几何可解释性。 |
-| [^2] | [RanDumb: A Simple Approach that Questions the Efficacy of Continual Representation Learning](https://arxiv.org/abs/2402.08823) | RanDumb是一种简单的方法，通过固定的随机变换嵌入原始像素并学习简单的线性分类器，质疑了持续表示学习的效果。 实验结果显示，RanDumb在众多持续学习基准测试中明显优于使用深度网络进行持续学习的表示学习。 |
-| [^3] | [Smart Pressure e-Mat for Human Sleeping Posture and Dynamic Activity Recognition.](http://arxiv.org/abs/2305.11367) | 本文介绍了一种基于Velostat的智能压力电子垫系统，可用于识别人体姿势和运动，具有高精度。 |
+| [^1] | [AI-generated faces free from racial and gender stereotypes](https://rss.arxiv.org/abs/2402.01002) | 这项研究发现并解决了AI生成的面孔中存在的种族和性别刻板印象问题，提出了分类器用于预测面部属性的方法，并提出了有效的去偏见解决方案。 |
+| [^2] | [Design2Code: How Far Are We From Automating Front-End Engineering?](https://arxiv.org/abs/2403.03163) | 生成式人工智能在多模态理解和代码生成方面取得了突破，提出了Design2Code任务并进行了全面基准测试，展示了多模态LLMs直接将视觉设计转换为代码实现的能力。 |
+| [^3] | [Uncertainty-Guided Alignment for Unsupervised Domain Adaptation in Regression.](http://arxiv.org/abs/2401.13721) | 该论文提出了一种利用不确定性引导的无监督领域自适应回归方法，通过将不确定性作为置信度估计和嵌入空间的正则项来实现对齐。 |
+| [^4] | [Criticality-Guided Efficient Pruning in Spiking Neural Networks Inspired by Critical Brain Hypothesis.](http://arxiv.org/abs/2311.16141) | 本研究受到神经科学中的关键大脑假设的启发，提出了一种基于神经元关键性的高效SNN修剪方法，以加强特征提取和加速修剪过程，并取得了比当前最先进方法更好的性能。 |
+| [^5] | [Multi-task Deep Convolutional Network to Predict Sea Ice Concentration and Drift in the Arctic Ocean.](http://arxiv.org/abs/2311.00167) | 提出了一种名为HIS-Unet的多任务深度卷积网络架构，通过加权注意力模块实现海冰浓度和漂移的预测。与其他方法相比，HIS-Unet在海冰预测中取得了显著的改进。 |
+| [^6] | [A Fusion of Variational Distribution Priors and Saliency Map Replay for Continual 3D Reconstruction.](http://arxiv.org/abs/2308.08812) | 本研究提出了一种基于连续学习的三维重建方法，通过使用变分先验和显著性图重新播放，实现对之前已见类别的合理重建。实验结果表明，与已建立的方法相比具有竞争力。 |
 
 # 详细
 
-[^1]: PDE-CNNs：公理推导与应用
+[^1]: AI生成的面孔摆脱了种族和性别刻板印象
 
-    PDE-CNNs: Axiomatic Derivations and Applications
+    AI-generated faces free from racial and gender stereotypes
 
-    [https://arxiv.org/abs/2403.15182](https://arxiv.org/abs/2403.15182)
+    [https://rss.arxiv.org/abs/2402.01002](https://rss.arxiv.org/abs/2402.01002)
 
-    PDE-CNNs通过利用几何意义的演化PDE的求解器替代传统的组件，提供了更少的参数、固有的等变性、更好的性能、数据效率和几何可解释性。
-
-    
-
-    基于偏微分方程组卷积神经网络（PDE-G-CNNs）利用具有几何意义的演化偏微分方程的求解器替代G-CNNs中常规组件。PDE-G-CNNs同时提供了几个关键优势：更少的参数、固有等变性、更好的性能、数据效率和几何可解释性。本文重点研究特征图在整个网络中为二维的欧几里德等变PDE-G-CNNs。我们将这个框架的变体称为PDE-CNN。我们列出了几个在实践中令人满意的公理，并从中推导出应在PDE-CNN中使用哪些PDE。在这里，我们通过经典线性和形态尺度空间理论的公理受启发，通过引入半域值信号对其进行推广。此外，我们通过实验证实，相对于小型网络，PDE-CNN提供了更少的参数、更好的性能和数据效率。
-
-    arXiv:2403.15182v1 Announce Type: new  Abstract: PDE-based Group Convolutional Neural Networks (PDE-G-CNNs) utilize solvers of geometrically meaningful evolution PDEs as substitutes for the conventional components in G-CNNs. PDE-G-CNNs offer several key benefits all at once: fewer parameters, inherent equivariance, better performance, data efficiency, and geometric interpretability. In this article we focus on Euclidean equivariant PDE-G-CNNs where the feature maps are two dimensional throughout. We call this variant of the framework a PDE-CNN. We list several practically desirable axioms and derive from these which PDEs should be used in a PDE-CNN. Here our approach to geometric learning via PDEs is inspired by the axioms of classical linear and morphological scale-space theory, which we generalize by introducing semifield-valued signals. Furthermore, we experimentally confirm for small networks that PDE-CNNs offer fewer parameters, better performance, and data efficiency in compariso
-    
-[^2]: RanDumb: 一种质疑持续表示学习效果的简单方法
-
-    RanDumb: A Simple Approach that Questions the Efficacy of Continual Representation Learning
-
-    [https://arxiv.org/abs/2402.08823](https://arxiv.org/abs/2402.08823)
-
-    RanDumb是一种简单的方法，通过固定的随机变换嵌入原始像素并学习简单的线性分类器，质疑了持续表示学习的效果。 实验结果显示，RanDumb在众多持续学习基准测试中明显优于使用深度网络进行持续学习的表示学习。
+    这项研究发现并解决了AI生成的面孔中存在的种族和性别刻板印象问题，提出了分类器用于预测面部属性的方法，并提出了有效的去偏见解决方案。
 
     
 
-    我们提出了RanDumb来检验持续表示学习的效果。RanDumb将原始像素使用一个固定的随机变换嵌入，这个变换近似了RBF-Kernel，在看到任何数据之前初始化，并学习一个简单的线性分类器。我们提出了一个令人惊讶且一致的发现：在众多持续学习基准测试中，RanDumb在性能上明显优于使用深度网络进行持续学习的表示学习，这表明在这些情景下表示学习的性能较差。RanDumb不存储样本，并在数据上进行单次遍历，一次处理一个样本。它与GDumb相辅相成，在GDumb性能特别差的低样本情况下运行。当将RanDumb扩展到使用预训练模型替换随机变换的情景时，我们得出相同一致的结论。我们的调查结果既令人惊讶又令人担忧，因为表示学习在这些情况下表现糟糕。
+    诸如Stable Diffusion之类的文本到图像生成AI模型每天都被全球数百万人使用。然而，许多人对这些模型如何放大种族和性别刻板印象提出了关切。为了研究这一现象，我们开发了一个分类器来预测任意给定面部图像的种族、性别和年龄组，并展示其达到了最先进的性能。利用这个分类器，我们对Stable Diffusion在六种种族、两种性别、五个年龄组、32个职业和八个属性上的偏见进行了量化。然后，我们提出了超越最先进替代方案的新型去偏见解决方案。此外，我们还检查了Stable Diffusion在描绘同一种族的个体时相似程度。分析结果显示出高度的刻板印象，例如，将大多数中东男性描绘为皮肤黝黑、留着胡子、戴着传统头饰。我们提出了另一种增加面部多样性的新型解决方案来解决这些限制。
 
-    arXiv:2402.08823v1 Announce Type: cross Abstract: We propose RanDumb to examine the efficacy of continual representation learning. RanDumb embeds raw pixels using a fixed random transform which approximates an RBF-Kernel, initialized before seeing any data, and learns a simple linear classifier on top. We present a surprising and consistent finding: RanDumb significantly outperforms the continually learned representations using deep networks across numerous continual learning benchmarks, demonstrating the poor performance of representation learning in these scenarios. RanDumb stores no exemplars and performs a single pass over the data, processing one sample at a time. It complements GDumb, operating in a low-exemplar regime where GDumb has especially poor performance. We reach the same consistent conclusions when RanDumb is extended to scenarios with pretrained models replacing the random transform with pretrained feature extractor. Our investigation is both surprising and alarming as
+    Text-to-image generative AI models such as Stable Diffusion are used daily by millions worldwide. However, many have raised concerns regarding how these models amplify racial and gender stereotypes. To study this phenomenon, we develop a classifier to predict the race, gender, and age group of any given face image, and show that it achieves state-of-the-art performance. Using this classifier, we quantify biases in Stable Diffusion across six races, two genders, five age groups, 32 professions, and eight attributes. We then propose novel debiasing solutions that outperform state-of-the-art alternatives. Additionally, we examine the degree to which Stable Diffusion depicts individuals of the same race as being similar to one another. This analysis reveals a high degree of stereotyping, e.g., depicting most middle eastern males as being dark-skinned, bearded, and wearing a traditional headdress. We address these limitations by proposing yet another novel solution that increases facial div
     
-[^3]: 智能压力电子垫用于人类睡眠姿势和动态活动识别
+[^2]: Design2Code：我们离自动化前端工程有多远？
 
-    Smart Pressure e-Mat for Human Sleeping Posture and Dynamic Activity Recognition. (arXiv:2305.11367v1 [cs.CV])
+    Design2Code: How Far Are We From Automating Front-End Engineering?
 
-    [http://arxiv.org/abs/2305.11367](http://arxiv.org/abs/2305.11367)
+    [https://arxiv.org/abs/2403.03163](https://arxiv.org/abs/2403.03163)
 
-    本文介绍了一种基于Velostat的智能压力电子垫系统，可用于识别人体姿势和运动，具有高精度。
+    生成式人工智能在多模态理解和代码生成方面取得了突破，提出了Design2Code任务并进行了全面基准测试，展示了多模态LLMs直接将视觉设计转换为代码实现的能力。
 
     
 
-    在强调医疗保健、早期教育和健身方面，越来越多的非侵入式测量和识别方法受到关注。压力感应由于其简单的结构、易于访问、可视化应用和无害性而得到广泛研究。本文介绍了一种基于压敏材料Velostat的智能压力电子垫(SP e-Mat)系统，用于人体监测应用，包括睡眠姿势、运动和瑜伽识别。在子系统扫描电子垫读数并处理信号后，它生成一个压力图像流。采用深度神经网络(DNNs)来拟合和训练压力图像流，并识别相应的人类行为。四种睡眠姿势和受Nintendo Switch Ring Fit Adventure(RFA)启发的五种动态活动被用作拟议的SPeM系统的初步验证。SPeM系统在两种应用中均达到了较高的准确性，这证明了其高精度和。
+    近年来，生成式人工智能在多模态理解和代码生成方面取得了突飞猛进的进展，实现了前所未有的能力。这可以实现一种新的前端开发范式，其中多模态LLMs可能直接将视觉设计转换为代码实现。本文将这一过程形式化为Design2Code任务，并进行全面基准测试。我们手动策划了一个包含484个多样化真实网页的基准测试用例，并开发了一套自动评估指标，以评估当前多模态LLMs能否生成直接渲染为给定参考网页的代码实现，以输入为屏幕截图。我们还结合了全面的人工评估。我们开发了一套多模态提示方法，并展示了它们在GPT-4V和Gemini Pro Vision上的有效性。我们进一步对一个开源的Design2Code-18B模型进行了微调。
 
-    With the emphasis on healthcare, early childhood education, and fitness, non-invasive measurement and recognition methods have received more attention. Pressure sensing has been extensively studied due to its advantages of simple structure, easy access, visualization application, and harmlessness. This paper introduces a smart pressure e-mat (SPeM) system based on a piezoresistive material Velostat for human monitoring applications, including sleeping postures, sports, and yoga recognition. After a subsystem scans e-mat readings and processes the signal, it generates a pressure image stream. Deep neural networks (DNNs) are used to fit and train the pressure image stream and recognize the corresponding human behavior. Four sleeping postures and five dynamic activities inspired by Nintendo Switch Ring Fit Adventure (RFA) are used as a preliminary validation of the proposed SPeM system. The SPeM system achieves high accuracies on both applications, which demonstrates the high accuracy and
+    arXiv:2403.03163v1 Announce Type: new  Abstract: Generative AI has made rapid advancements in recent years, achieving unprecedented capabilities in multimodal understanding and code generation. This can enable a new paradigm of front-end development, in which multimodal LLMs might directly convert visual designs into code implementations. In this work, we formalize this as a Design2Code task and conduct comprehensive benchmarking. Specifically, we manually curate a benchmark of 484 diverse real-world webpages as test cases and develop a set of automatic evaluation metrics to assess how well current multimodal LLMs can generate the code implementations that directly render into the given reference webpages, given the screenshots as input. We also complement automatic metrics with comprehensive human evaluations. We develop a suite of multimodal prompting methods and show their effectiveness on GPT-4V and Gemini Pro Vision. We further finetune an open-source Design2Code-18B model that su
+    
+[^3]: 无监督领域自适应回归中的不确定性引导对齐
+
+    Uncertainty-Guided Alignment for Unsupervised Domain Adaptation in Regression. (arXiv:2401.13721v1 [cs.CV])
+
+    [http://arxiv.org/abs/2401.13721](http://arxiv.org/abs/2401.13721)
+
+    该论文提出了一种利用不确定性引导的无监督领域自适应回归方法，通过将不确定性作为置信度估计和嵌入空间的正则项来实现对齐。
+
+    
+
+    无监督领域自适应回归（UDAR）旨在将来自有标签源领域的模型调整到无标签目标领域，以完成回归任务。最近在UDAR领域取得的成功主要集中在子空间对齐上，涉及整个特征空间中所选择子空间的对齐。这与用于分类的特征对齐方法形成对比，后者旨在对齐整个特征空间，在分类任务中已被证明是有效的，但在回归任务中效果较差。具体而言，分类任务旨在在整个嵌入空间的维度上识别独立的簇，而回归任务对数据表示的结构性要求较低，需要额外的指导以实现有效的对齐。在本文中，我们提出了一种通过不确定性引导的有效UDAR方法。我们的方法具有双重作用：提供了对预测结果的置信度衡量，并作为嵌入空间的正则化。具体而言，我们利用深度证据模型来提供对预测的置信度估计，并将其作为嵌入空间的正则项进行优化。
+
+    Unsupervised Domain Adaptation for Regression (UDAR) aims to adapt a model from a labeled source domain to an unlabeled target domain for regression tasks. Recent successful works in UDAR mostly focus on subspace alignment, involving the alignment of a selected subspace within the entire feature space. This contrasts with the feature alignment methods used for classification, which aim at aligning the entire feature space and have proven effective but are less so in regression settings. Specifically, while classification aims to identify separate clusters across the entire embedding dimension, regression induces less structure in the data representation, necessitating additional guidance for efficient alignment. In this paper, we propose an effective method for UDAR by incorporating guidance from uncertainty. Our approach serves a dual purpose: providing a measure of confidence in predictions and acting as a regularization of the embedding space. Specifically, we leverage the Deep Evid
+    
+[^4]: SNNs中基于关键性的高效修剪方法，受到关键性大脑假设的启发
+
+    Criticality-Guided Efficient Pruning in Spiking Neural Networks Inspired by Critical Brain Hypothesis. (arXiv:2311.16141v2 [cs.NE] UPDATED)
+
+    [http://arxiv.org/abs/2311.16141](http://arxiv.org/abs/2311.16141)
+
+    本研究受到神经科学中的关键大脑假设的启发，提出了一种基于神经元关键性的高效SNN修剪方法，以加强特征提取和加速修剪过程，并取得了比当前最先进方法更好的性能。
+
+    
+
+    由于其节能和无乘法特性，SNNs已经引起了相当大的关注。深度SNNs规模的不断增长给模型部署带来了挑战。网络修剪通过压缩网络规模来减少模型部署的硬件资源需求。然而，现有的SNN修剪方法由于修剪迭代增加了SNNs的训练难度，导致修剪成本高昂且性能损失严重。本文受到神经科学中的关键大脑假设的启发，提出了一种基于神经元关键性的用于SNN修剪的再生机制，以增强特征提取并加速修剪过程。首先，我们提出了一种SNN中用于关键性的低成本度量方式。然后，在修剪后对所修剪结构进行重新排序，并再生那些具有较高关键性的结构，以获取关键网络。我们的方法表现优于当前的最先进方法。
+
+    Spiking Neural Networks (SNNs) have gained considerable attention due to the energy-efficient and multiplication-free characteristics. The continuous growth in scale of deep SNNs poses challenges for model deployment. Network pruning reduces hardware resource requirements of model deployment by compressing the network scale. However, existing SNN pruning methods cause high pruning costs and performance loss because the pruning iterations amplify the training difficulty of SNNs. In this paper, inspired by the critical brain hypothesis in neuroscience, we propose a regeneration mechanism based on the neuron criticality for SNN pruning to enhance feature extraction and accelerate the pruning process. Firstly, we propose a low-cost metric for the criticality in SNNs. Then, we re-rank the pruned structures after pruning and regenerate those with higher criticality to obtain the critical network. Our method achieves higher performance than the current state-of-the-art (SOTA) method with up t
+    
+[^5]: 多任务深度卷积网络预测北冰洋海冰浓度和漂移
+
+    Multi-task Deep Convolutional Network to Predict Sea Ice Concentration and Drift in the Arctic Ocean. (arXiv:2311.00167v1 [cs.LG])
+
+    [http://arxiv.org/abs/2311.00167](http://arxiv.org/abs/2311.00167)
+
+    提出了一种名为HIS-Unet的多任务深度卷积网络架构，通过加权注意力模块实现海冰浓度和漂移的预测。与其他方法相比，HIS-Unet在海冰预测中取得了显著的改进。
+
+    
+
+    在北冰洋地区，预测海冰浓度(SIC)和海冰漂移(SID)具有重要意义，因为最近的气候变暖已经改变了这个环境。由于物理海冰模型需要高计算成本和复杂的参数化，深度学习技术可以有效替代物理模型，并提高海冰预测的性能。本研究提出了一种新颖的多任务全卷积网络架构，名为Hierarchical Information-Sharing U-Net (HIS-Unet)，用于预测每日的SIC和SID。我们通过加权注意力模块(WAMs)允许SIC和SID层共享信息，并互相辅助预测。结果表明，相比于其他统计方法、海冰物理模型和没有信息共享单元的神经网络，我们的HIS-Unet在SIC和SID预测方面表现更优。在预测北冰洋海冰浓度和漂移方面，HIS-Unet的改进都是显著的。
+
+    Forecasting sea ice concentration (SIC) and sea ice drift (SID) in the Arctic Ocean is of great significance as the Arctic environment has been changed by the recent warming climate. Given that physical sea ice models require high computational costs with complex parameterization, deep learning techniques can effectively replace the physical model and improve the performance of sea ice prediction. This study proposes a novel multi-task fully conventional network architecture named hierarchical information-sharing U-net (HIS-Unet) to predict daily SIC and SID. Instead of learning SIC and SID separately at each branch, we allow the SIC and SID layers to share their information and assist each other's prediction through the weighting attention modules (WAMs). Consequently, our HIS-Unet outperforms other statistical approaches, sea ice physical models, and neural networks without such information-sharing units. The improvement of HIS-Unet is obvious both for SIC and SID prediction when and
+    
+[^6]: 变分分布先验与显著性图重新播放的融合，用于连续三维重建
+
+    A Fusion of Variational Distribution Priors and Saliency Map Replay for Continual 3D Reconstruction. (arXiv:2308.08812v1 [cs.CV])
+
+    [http://arxiv.org/abs/2308.08812](http://arxiv.org/abs/2308.08812)
+
+    本研究提出了一种基于连续学习的三维重建方法，通过使用变分先验和显著性图重新播放，实现对之前已见类别的合理重建。实验结果表明，与已建立的方法相比具有竞争力。
+
+    
+
+    单图像三维重建是研究如何根据单视角图像预测三维物体形状的一个挑战。这个任务需要大量数据获取来预测形状的可见和遮挡部分。此外，基于学习的方法面临创建针对所有可能类别的全面训练数据集的困难。为此，我们提出了一种基于连续学习的三维重建方法，我们的目标是设计一个使用变分先验的模型，即使在训练新类别后仍可以合理重建以前见过的类别。变分先验代表抽象形状并避免遗忘，而显著性图以较少的内存使用保留对象属性。这对于存储大量训练数据的资源限制至关重要。此外，我们引入了基于显著性图的经验重放，以捕捉全局和独特的对象特征。详细的实验显示与已建立方法相比具有竞争力的结果。
+
+    Single-image 3D reconstruction is a research challenge focused on predicting 3D object shapes from single-view images. This task requires significant data acquisition to predict both visible and occluded portions of the shape. Furthermore, learning-based methods face the difficulty of creating a comprehensive training dataset for all possible classes. To this end, we propose a continual learning-based 3D reconstruction method where our goal is to design a model using Variational Priors that can still reconstruct the previously seen classes reasonably even after training on new classes. Variational Priors represent abstract shapes and combat forgetting, whereas saliency maps preserve object attributes with less memory usage. This is vital due to resource constraints in storing extensive training data. Additionally, we introduce saliency map-based experience replay to capture global and distinct object features. Thorough experiments show competitive results compared to established method
     
 

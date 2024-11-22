@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Basic syntax from speech: Spontaneous concatenation in unsupervised deep neural networks.](http://arxiv.org/abs/2305.01626) | 该论文提出了一种基于语音的完全无监督的方法，可以直接从原始语音中建立基础语法模型。作者发现，在基于声音的单词记录上训练的卷积神经网络可以自发连接两个或三个单词，并且可以学会将单词嵌入到新的未见过的单词组合中，这是之前未报道的属性，这一发现对我们理解神经网络的学习方式和建立从原始声学输入中的语法及其演化的模型都有重要的意义。 |
+| [^1] | [PromptCodec: High-Fidelity Neural Speech Codec using Disentangled Representation Learning based Adaptive Feature-aware Prompt Encoders](https://arxiv.org/abs/2404.02702) | 本文提出了PromptCodec，一种使用离散表示学习的特征感知提示编码器的高保真神经语音编解码器，通过引入额外特征表示、自适应特征加权融合和效率优化来解决高压缩率下的高保真音频重建问题。 |
 
 # 详细
 
-[^1]: 基于语音的基础语法：自发联接的自监督深度神经网络
+[^1]: PromptCodec: 使用基于自适应特征感知的离散表示学习的高保真神经语音编解码器
 
-    Basic syntax from speech: Spontaneous concatenation in unsupervised deep neural networks. (arXiv:2305.01626v1 [cs.CL])
+    PromptCodec: High-Fidelity Neural Speech Codec using Disentangled Representation Learning based Adaptive Feature-aware Prompt Encoders
 
-    [http://arxiv.org/abs/2305.01626](http://arxiv.org/abs/2305.01626)
+    [https://arxiv.org/abs/2404.02702](https://arxiv.org/abs/2404.02702)
 
-    该论文提出了一种基于语音的完全无监督的方法，可以直接从原始语音中建立基础语法模型。作者发现，在基于声音的单词记录上训练的卷积神经网络可以自发连接两个或三个单词，并且可以学会将单词嵌入到新的未见过的单词组合中，这是之前未报道的属性，这一发现对我们理解神经网络的学习方式和建立从原始声学输入中的语法及其演化的模型都有重要的意义。
+    本文提出了PromptCodec，一种使用离散表示学习的特征感知提示编码器的高保真神经语音编解码器，通过引入额外特征表示、自适应特征加权融合和效率优化来解决高压缩率下的高保真音频重建问题。
 
     
 
-    语法的计算模型主要基于文本。本文提出了一种完全无监督的方法，可以直接从原始语音中建立基础语法模型。我们重点研究了最普遍和基本的语法特性之一——联接。我们介绍了自发联接现象：卷积神经网络(CNN)在个别单词的声学记录上训练时，开始产生输出，这些输出将两个甚至三个单词连接在一起，而不会接触到具有多个单词的输入数据。此外，训练两个单词的网络可以学习将单词嵌入到新的未见过的单词组合中。据我们所知，这是在生成对抗网络环境下训练的原始语音CNN以前未报道的属性，它不仅对我们理解这些体系结构的学习方式有影响，还对建立从原始声学输入中的语法及其演化的模型有影响。
+    神经语音编解码器近来在生成语音建模领域引起广泛关注，例如语音转换、文本转语音合成等。然而，在高压缩率下确保语音编解码器的高保真音频重建仍然是一个未解决且具有挑战性的问题。本文提出了PromptCodec，一种使用基于离散表示学习的特征感知提示编码器的新型端到端神经语音编解码器模型。通过引入来自提示编码器的额外特征表示，PromptCodec可以分配需要处理的语音信息并增强其能力。此外，引入了一种简单而有效的自适应特征加权融合方法，以整合不同编码器的特征。同时，我们提出了一种基于余弦距离的新颖离散表示学习策略，以优化PromptCodec的编码器以确保其效率，进一步改进。
 
-    Computational models of syntax are predominantly text-based. Here we propose that basic syntax can be modeled directly from raw speech in a fully unsupervised way. We focus on one of the most ubiquitous and basic properties of syntax -- concatenation. We introduce spontaneous concatenation: a phenomenon where convolutional neural networks (CNNs) trained on acoustic recordings of individual words start generating outputs with two or even three words concatenated without ever accessing data with multiple words in the input. Additionally, networks trained on two words learn to embed words into novel unobserved word combinations. To our knowledge, this is a previously unreported property of CNNs trained on raw speech in the Generative Adversarial Network setting and has implications both for our understanding of how these architectures learn as well as for modeling syntax and its evolution from raw acoustic inputs.
+    arXiv:2404.02702v1 Announce Type: cross  Abstract: Neural speech codec has recently gained widespread attention in generative speech modeling domains, like voice conversion, text-to-speech synthesis, etc. However, ensuring high-fidelity audio reconstruction of speech codecs under high compression rates remains an open and challenging issue. In this paper, we propose PromptCodec, a novel end-to-end neural speech codec model using disentangled representation learning based feature-aware prompt encoders. By incorporating additional feature representations from prompt encoders, PromptCodec can distribute the speech information requiring processing and enhance its capabilities. Moreover, a simple yet effective adaptive feature weighted fusion approach is introduced to integrate features of different encoders. Meanwhile, we propose a novel disentangled representation learning strategy based on cosine distance to optimize PromptCodec's encoders to ensure their efficiency, thereby further impr
     
 
