@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv q-bio</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for q-bio</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv q-bio</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for q-bio</description><item><title>&#26412;&#25991;&#20171;&#32461;&#20102;&#31070;&#32463;&#25104;&#20687;&#39046;&#22495;&#30340;&#22270;&#26426;&#22120;&#23398;&#20064;&#22522;&#20934;&#27979;&#35797;NeuroGraph&#65292;&#24182;&#25506;&#35752;&#20102;&#25968;&#25454;&#38598;&#29983;&#25104;&#30340;&#25628;&#32034;&#31354;&#38388;&#12290;</title><link>http://arxiv.org/abs/2306.06202</link><description>&lt;p&gt;
+NeuroGraph:&#38754;&#21521;&#33041;&#36830;&#25509;&#32452;&#23398;&#30340;&#22270;&#26426;&#22120;&#23398;&#20064;&#22522;&#20934;&#27979;&#35797;
+&lt;/p&gt;
+&lt;p&gt;
+NeuroGraph: Benchmarks for Graph Machine Learning in Brain Connectomics. (arXiv:2306.06202v1 [cs.LG])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2306.06202
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#20171;&#32461;&#20102;&#31070;&#32463;&#25104;&#20687;&#39046;&#22495;&#30340;&#22270;&#26426;&#22120;&#23398;&#20064;&#22522;&#20934;&#27979;&#35797;NeuroGraph&#65292;&#24182;&#25506;&#35752;&#20102;&#25968;&#25454;&#38598;&#29983;&#25104;&#30340;&#25628;&#32034;&#31354;&#38388;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#26426;&#22120;&#23398;&#20064;&#20026;&#20998;&#26512;&#39640;&#32500;&#21151;&#33021;&#24615;&#31070;&#32463;&#25104;&#20687;&#25968;&#25454;&#25552;&#20379;&#20102;&#26377;&#20215;&#20540;&#30340;&#24037;&#20855;&#65292;&#24050;&#34987;&#35777;&#26126;&#23545;&#39044;&#27979;&#21508;&#31181;&#31070;&#32463;&#30142;&#30149;&#12289;&#31934;&#31070;&#38556;&#30861;&#21644;&#35748;&#30693;&#27169;&#24335;&#26377;&#25928;&#12290;&#22312;&#21151;&#33021;&#30913;&#20849;&#25391;&#25104;&#20687;&#30740;&#31350;&#20013;&#65292;&#22823;&#33041;&#21306;&#22495;&#20043;&#38388;&#30340;&#30456;&#20114;&#20316;&#29992;&#36890;&#24120;&#20351;&#29992;&#22522;&#20110;&#22270;&#30340;&#34920;&#31034;&#36827;&#34892;&#24314;&#27169;&#12290;&#22270;&#26426;&#22120;&#23398;&#20064;&#26041;&#27861;&#30340;&#26377;&#25928;&#24615;&#24050;&#22312;&#22810;&#20010;&#39046;&#22495;&#24471;&#21040;&#35777;&#23454;&#65292;&#26631;&#24535;&#30528;&#25968;&#25454;&#35299;&#37322;&#21644;&#39044;&#27979;&#24314;&#27169;&#20013;&#30340;&#19968;&#20010;&#36716;&#21464;&#27493;&#39588;&#12290;&#28982;&#32780;&#65292;&#23613;&#31649;&#26377;&#21069;&#26223;&#65292;&#20294;&#30001;&#20110;&#22270;&#24418;&#25968;&#25454;&#38598;&#26500;&#24314;&#30340;&#24191;&#27867;&#39044;&#22788;&#29702;&#27969;&#27700;&#32447;&#21644;&#22823;&#21442;&#25968;&#25628;&#32034;&#31354;&#38388;&#65292;&#22312;&#31070;&#32463;&#25104;&#20687;&#39046;&#22495;&#20013;&#24212;&#29992;&#36825;&#20123;&#25216;&#26415;&#30340;&#36716;&#25442;&#20173;&#28982;&#21463;&#21040;&#24847;&#22806;&#30340;&#38480;&#21046;&#12290;&#26412;&#25991;&#20171;&#32461;&#20102;NeuroGraph(&#19968;&#20010;&#22522;&#20110;&#22270;&#30340;&#31070;&#32463;&#25104;&#20687;&#25968;&#25454;&#38598;)&#65292;&#23427;&#28085;&#30422;&#20102;&#22810;&#20010;&#34892;&#20026;&#21644;&#35748;&#30693;&#29305;&#24449;&#31867;&#21035;&#12290;&#25105;&#20204;&#28145;&#20837;&#25506;&#35752;&#20102;&#25968;&#25454;&#38598;&#29983;&#25104;&#25628;&#32034;&#31354;&#38388;
+&lt;/p&gt;
+&lt;p&gt;
+Machine learning provides a valuable tool for analyzing high-dimensional functional neuroimaging data, and is proving effective in predicting various neurological conditions, psychiatric disorders, and cognitive patterns. In functional Magnetic Resonance Imaging (MRI) research, interactions between brain regions are commonly modeled using graph-based representations. The potency of graph machine learning methods has been established across myriad domains, marking a transformative step in data interpretation and predictive modeling. Yet, despite their promise, the transposition of these techniques to the neuroimaging domain remains surprisingly under-explored due to the expansive preprocessing pipeline and large parameter search space for graph-based datasets construction. In this paper, we introduce NeuroGraph, a collection of graph-based neuroimaging datasets that span multiple categories of behavioral and cognitive traits. We delve deeply into the dataset generation search space by c
+&lt;/p&gt;</description></item></channel></rss>
