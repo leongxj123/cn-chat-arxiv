@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [NeuroGraph: Benchmarks for Graph Machine Learning in Brain Connectomics.](http://arxiv.org/abs/2306.06202) | 本文介绍了神经成像领域的图机器学习基准测试NeuroGraph，并探讨了数据集生成的搜索空间。 |
+| [^1] | [Practical and Asymptotically Exact Conditional Sampling in Diffusion Models.](http://arxiv.org/abs/2306.17775) | 本论文提出了一种名为TDS的扭转式扩散采样器，它是一种针对扩散模型的顺序蒙特卡洛算法。该方法通过使用扭转技术结合启发式近似，能够在不需要特定训练的情况下在广泛的条件分布上提供精确的样本。 |
 
 # 详细
 
-[^1]: NeuroGraph:面向脑连接组学的图机器学习基准测试
+[^1]: 扩散模型中的实用和渐进精确条件采样
 
-    NeuroGraph: Benchmarks for Graph Machine Learning in Brain Connectomics. (arXiv:2306.06202v1 [cs.LG])
+    Practical and Asymptotically Exact Conditional Sampling in Diffusion Models. (arXiv:2306.17775v1 [stat.ML])
 
-    [http://arxiv.org/abs/2306.06202](http://arxiv.org/abs/2306.06202)
+    [http://arxiv.org/abs/2306.17775](http://arxiv.org/abs/2306.17775)
 
-    本文介绍了神经成像领域的图机器学习基准测试NeuroGraph，并探讨了数据集生成的搜索空间。
+    本论文提出了一种名为TDS的扭转式扩散采样器，它是一种针对扩散模型的顺序蒙特卡洛算法。该方法通过使用扭转技术结合启发式近似，能够在不需要特定训练的情况下在广泛的条件分布上提供精确的样本。
 
     
 
-    机器学习为分析高维功能性神经成像数据提供了有价值的工具，已被证明对预测各种神经疾病、精神障碍和认知模式有效。在功能磁共振成像研究中，大脑区域之间的相互作用通常使用基于图的表示进行建模。图机器学习方法的有效性已在多个领域得到证实，标志着数据解释和预测建模中的一个转变步骤。然而，尽管有前景，但由于图形数据集构建的广泛预处理流水线和大参数搜索空间，在神经成像领域中应用这些技术的转换仍然受到意外的限制。本文介绍了NeuroGraph(一个基于图的神经成像数据集)，它涵盖了多个行为和认知特征类别。我们深入探讨了数据集生成搜索空间
+    扩散模型在分子设计和文本到图像生成等条件生成任务中取得了成功。然而，这些成就主要依赖于任务特定的条件训练或容易出错的启发式近似。理想情况下，条件生成方法应该能够在不需要特定训练的情况下为广泛的条件分布提供精确的样本。为此，我们引入了扭转式扩散采样器(TDS)。TDS是一种针对扩散模型的顺序蒙特卡洛(SMC)算法。其主要思想是使用扭转，一种具有良好计算效率的SMC技术，来结合启发式近似而不影响渐进精确性。我们首先在模拟实验和MNIST图像修复以及类条件生成任务中发现，TDS提供了计算统计权衡，使用更多粒子得到更准确的近似结果，但同时需要更多计算资源。
 
-    Machine learning provides a valuable tool for analyzing high-dimensional functional neuroimaging data, and is proving effective in predicting various neurological conditions, psychiatric disorders, and cognitive patterns. In functional Magnetic Resonance Imaging (MRI) research, interactions between brain regions are commonly modeled using graph-based representations. The potency of graph machine learning methods has been established across myriad domains, marking a transformative step in data interpretation and predictive modeling. Yet, despite their promise, the transposition of these techniques to the neuroimaging domain remains surprisingly under-explored due to the expansive preprocessing pipeline and large parameter search space for graph-based datasets construction. In this paper, we introduce NeuroGraph, a collection of graph-based neuroimaging datasets that span multiple categories of behavioral and cognitive traits. We delve deeply into the dataset generation search space by c
+    Diffusion models have been successful on a range of conditional generation tasks including molecular design and text-to-image generation. However, these achievements have primarily depended on task-specific conditional training or error-prone heuristic approximations. Ideally, a conditional generation method should provide exact samples for a broad range of conditional distributions without requiring task-specific training. To this end, we introduce the Twisted Diffusion Sampler, or TDS. TDS is a sequential Monte Carlo (SMC) algorithm that targets the conditional distributions of diffusion models. The main idea is to use twisting, an SMC technique that enjoys good computational efficiency, to incorporate heuristic approximations without compromising asymptotic exactness. We first find in simulation and on MNIST image inpainting and class-conditional generation tasks that TDS provides a computational statistical trade-off, yielding more accurate approximations with many particles but wi
     
 

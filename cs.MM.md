@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Deep ReLU Networks Have Surprisingly Simple Polytopes.](http://arxiv.org/abs/2305.09145) | 本文通过计算和分析ReLU网络多面体的单纯形直方图，发现在初始化和梯度下降时它们结构相对简单，这说明了一种新的隐式偏见。 |
+| [^1] | [AccoMontage-3: Full-Band Accompaniment Arrangement via Sequential Style Transfer and Multi-Track Function Prior.](http://arxiv.org/abs/2310.16334) | AccoMontage-3是一种通过顺序风格转换和多轨道功能先验实现全音乐伴奏编排的系统，可以根据主旋律与和弦的输入生成多音轨的伴奏。 |
 
 # 详细
 
-[^1]: 深层ReLU网络的多面体异常简单
+[^1]: AccoMontage-3: 通过顺序风格转换和多轨道功能先验实现全音乐伴奏编排
 
-    Deep ReLU Networks Have Surprisingly Simple Polytopes. (arXiv:2305.09145v1 [cs.LG])
+    AccoMontage-3: Full-Band Accompaniment Arrangement via Sequential Style Transfer and Multi-Track Function Prior. (arXiv:2310.16334v1 [cs.SD])
 
-    [http://arxiv.org/abs/2305.09145](http://arxiv.org/abs/2305.09145)
+    [http://arxiv.org/abs/2310.16334](http://arxiv.org/abs/2310.16334)
 
-    本文通过计算和分析ReLU网络多面体的单纯形直方图，发现在初始化和梯度下降时它们结构相对简单，这说明了一种新的隐式偏见。
+    AccoMontage-3是一种通过顺序风格转换和多轨道功能先验实现全音乐伴奏编排的系统，可以根据主旋律与和弦的输入生成多音轨的伴奏。
 
     
 
-    ReLU网络是一种多面体上的分段线性函数。研究这种多面体的性质对于神经网络的研究和发展至关重要。目前，对于多面体的理论和实证研究仅停留在计算数量的水平，这远远不能完整地描述多面体。为了将特征提升到一个新的水平，我们提出通过三角剖分多面体得出多面体的形状。通过计算和分析不同多面体的单纯形直方图，我们发现ReLU网络在初始化和梯度下降时具有相对简单的多面体结构，尽管这些多面体从理论上来说可以非常丰富和复杂。这一发现可以被认为是一种新的隐式偏见。随后，我们使用非平凡的组合推导来理论上解释为什么增加深度不会创建更复杂的多面体，通过限制每个维度的平均单纯形数量。
+    我们提出了AccoMontage-3，这是一个符号音乐自动化系统，可以根据主旋律与和弦的输入（即引导乐谱），生成多音轨的全音乐伴奏。该系统包含三个模块化组件，每个组件模拟全音乐作曲的重要方面。第一个组件是钢琴编曲师，通过将纹理风格转换为和弦，使用潜在的和弦-纹理分离和启发式纹理供应者检索，生成钢琴伴奏。第二个组件根据个别音轨功能编码的管弦乐风格，将钢琴伴奏乐谱编排成全音乐伴奏。将前两个组件连接起来的第三个组件是一个先验模型，用于描述整首音乐作品上的编曲风格的全局结构。整个系统以端到端的方式自我监督地学习生成全音乐伴奏，将风格转换应用于两个层面的多声部协调。
 
-    A ReLU network is a piecewise linear function over polytopes. Figuring out the properties of such polytopes is of fundamental importance for the research and development of neural networks. So far, either theoretical or empirical studies on polytopes only stay at the level of counting their number, which is far from a complete characterization of polytopes. To upgrade the characterization to a new level, here we propose to study the shapes of polytopes via the number of simplices obtained by triangulating the polytope. Then, by computing and analyzing the histogram of simplices across polytopes, we find that a ReLU network has relatively simple polytopes under both initialization and gradient descent, although these polytopes theoretically can be rather diverse and complicated. This finding can be appreciated as a novel implicit bias. Next, we use nontrivial combinatorial derivation to theoretically explain why adding depth does not create a more complicated polytope by bounding the av
+    We propose AccoMontage-3, a symbolic music automation system capable of generating multi-track, full-band accompaniment based on the input of a lead melody with chords (i.e., a lead sheet). The system contains three modular components, each modelling a vital aspect of full-band composition. The first component is a piano arranger that generates piano accompaniment for the lead sheet by transferring texture styles to the chords using latent chord-texture disentanglement and heuristic retrieval of texture donors. The second component orchestrates the piano accompaniment score into full-band arrangement according to the orchestration style encoded by individual track functions. The third component, which connects the previous two, is a prior model characterizing the global structure of orchestration style over the whole piece of music. From end to end, the system learns to generate full-band accompaniment in a self-supervised fashion, applying style transfer at two levels of polyphonic co
     
 

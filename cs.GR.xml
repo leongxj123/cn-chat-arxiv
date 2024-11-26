@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.GR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.GR</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.GR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.GR</description><item><title>&#25552;&#20986;&#20102;&#39640;&#25928;&#21160;&#24577;&#25193;&#25955;&#27169;&#22411;&#65288;EMDM&#65289;&#65292;&#33021;&#22815;&#22312;&#26356;&#23569;&#30340;&#37319;&#26679;&#27493;&#39588;&#20013;&#23454;&#29616;&#24555;&#36895;&#19988;&#39640;&#36136;&#37327;&#30340;&#21160;&#20316;&#29983;&#25104;</title><link>https://arxiv.org/abs/2312.02256</link><description>&lt;p&gt;
+&#39640;&#25928;&#21160;&#24577;&#25193;&#25955;&#27169;&#22411;&#65288;EMDM&#65289;&#29992;&#20110;&#24555;&#36895;&#19988;&#39640;&#36136;&#37327;&#30340;&#21160;&#20316;&#29983;&#25104;
+&lt;/p&gt;
+&lt;p&gt;
+EMDM: Efficient Motion Diffusion Model for Fast and High-Quality Motion Generation
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2312.02256
+&lt;/p&gt;
+&lt;p&gt;
+&#25552;&#20986;&#20102;&#39640;&#25928;&#21160;&#24577;&#25193;&#25955;&#27169;&#22411;&#65288;EMDM&#65289;&#65292;&#33021;&#22815;&#22312;&#26356;&#23569;&#30340;&#37319;&#26679;&#27493;&#39588;&#20013;&#23454;&#29616;&#24555;&#36895;&#19988;&#39640;&#36136;&#37327;&#30340;&#21160;&#20316;&#29983;&#25104;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#25105;&#20204;&#24341;&#20837;&#20102;&#39640;&#25928;&#30340;&#21160;&#24577;&#25193;&#25955;&#27169;&#22411;&#65288;EMDM&#65289;&#65292;&#29992;&#20110;&#24555;&#36895;&#19988;&#39640;&#36136;&#37327;&#30340;&#20154;&#31867;&#21160;&#20316;&#29983;&#25104;&#12290;&#24403;&#21069;&#26368;&#20808;&#36827;&#30340;&#29983;&#25104;&#24335;&#25193;&#25955;&#27169;&#22411;&#21462;&#24471;&#20102;&#20196;&#20154;&#21360;&#35937;&#28145;&#21051;&#30340;&#32467;&#26524;&#65292;&#20294;&#24448;&#24448;&#22312;&#36861;&#27714;&#24555;&#36895;&#29983;&#25104;&#30340;&#21516;&#26102;&#29306;&#29298;&#20102;&#36136;&#37327;&#12290;&#20026;&#20102;&#35299;&#20915;&#36825;&#20123;&#38382;&#39064;&#65292;&#25105;&#20204;&#25552;&#20986;&#20102;EMDM&#65292;&#23427;&#36890;&#36807;&#22312;&#25193;&#25955;&#27169;&#22411;&#20013;&#30340;&#22810;&#27425;&#37319;&#26679;&#27493;&#39588;&#20013;&#25429;&#25417;&#22797;&#26434;&#20998;&#24067;&#65292;&#23454;&#29616;&#20102;&#26356;&#23569;&#30340;&#37319;&#26679;&#27493;&#39588;&#21644;&#29983;&#25104;&#36807;&#31243;&#30340;&#26174;&#30528;&#21152;&#36895;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2312.02256v2 Announce Type: replace-cross  Abstract: We introduce Efficient Motion Diffusion Model (EMDM) for fast and high-quality human motion generation. Current state-of-the-art generative diffusion models have produced impressive results but struggle to achieve fast generation without sacrificing quality. On the one hand, previous works, like motion latent diffusion, conduct diffusion within a latent space for efficiency, but learning such a latent space can be a non-trivial effort. On the other hand, accelerating generation by naively increasing the sampling step size, e.g., DDIM, often leads to quality degradation as it fails to approximate the complex denoising distribution. To address these issues, we propose EMDM, which captures the complex distribution during multiple sampling steps in the diffusion model, allowing for much fewer sampling steps and significant acceleration in generation. This is achieved by a conditional denoising diffusion GAN to capture multimodal da
+&lt;/p&gt;</description></item></channel></rss>

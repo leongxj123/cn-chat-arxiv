@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Algorithms for Social Justice: Affirmative Action in Social Networks.](http://arxiv.org/abs/2305.03223) | 本文介绍了一个新的基于谱图理论的链接推荐算法ERA-Link，旨在缓解现有推荐算法带来的信息孤岛和社会成见，实现社交网络平台的社会正义目标。 |
+| [^1] | [Personality Profiling: How informative are social media profiles in predicting personal information?.](http://arxiv.org/abs/2309.13065) | 这项研究探索了利用社交媒体资料预测个人信息的个性化分析模型的准确性和多用途性，并发现支持向量机模型在预测个性类型方面具有最佳准确率，而逻辑回归模型在速度和准确性上表现较好。 |
 
 # 详细
 
-[^1]: 社会正义算法：社交网络中的平权行动
+[^1]: 个性化分析：社交媒体资料在预测个人信息方面有多有用？
 
-    Algorithms for Social Justice: Affirmative Action in Social Networks. (arXiv:2305.03223v1 [cs.SI])
+    Personality Profiling: How informative are social media profiles in predicting personal information?. (arXiv:2309.13065v1 [cs.CL])
 
-    [http://arxiv.org/abs/2305.03223](http://arxiv.org/abs/2305.03223)
+    [http://arxiv.org/abs/2309.13065](http://arxiv.org/abs/2309.13065)
 
-    本文介绍了一个新的基于谱图理论的链接推荐算法ERA-Link，旨在缓解现有推荐算法带来的信息孤岛和社会成见，实现社交网络平台的社会正义目标。
+    这项研究探索了利用社交媒体资料预测个人信息的个性化分析模型的准确性和多用途性，并发现支持向量机模型在预测个性类型方面具有最佳准确率，而逻辑回归模型在速度和准确性上表现较好。
 
     
 
-    链接推荐算法对于世界各地数十亿用户的人际关系产生了影响。为了最大化相关性，它们通常建议连接相互相似的用户。然而，这被发现会产生信息孤岛，加剧弱势突出群体所遭受的孤立，并延续社会成见。为了缓解这些限制，大量研究致力于实现公平的链接推荐方法。然而，大多数方法并不质疑链接推荐算法的最终目标，即数据交易的复杂商业模型中用户参与的货币化。本文主张实现社交网络平台玩家和目的的多样化，以实现社会正义。为了说明这一概念目标，我们提出了ERA-Link，这是一种基于谱图理论的新型链接推荐算法，可以抵消系统性的社会歧视。
+    公司利用个性化分析进行定向广告、政治宣传和疫苗宣传。然而，这些模型的准确性和多用途性仍然相对未知。因此，我们旨在探索人们的在线数字足迹能够被用来分析其迈尔斯-布里格斯人格类型的程度。我们分析和比较了四个模型的结果：逻辑回归、朴素贝叶斯、支持向量机（SVM）和随机森林。我们发现SVM模型在预测某人的完整个性类型方面达到了最佳准确率20.95%。然而，逻辑回归模型的表现只稍微差一些，并且在训练和进行预测时速度更快。我们发现许多标记数据集在社交媒体上呈现出个人特征的严重类别不平衡，包括我们自己的数据集。因此，我们强调需要在报告这些数据集上模型性能时进行仔细考虑。
 
-    Link recommendation algorithms contribute to shaping human relations of billions of users worldwide in social networks. To maximize relevance, they typically propose connecting users that are similar to each other. This has been found to create information silos, exacerbating the isolation suffered by vulnerable salient groups and perpetuating societal stereotypes. To mitigate these limitations, a significant body of work has been devoted to the implementation of fair link recommendation methods. However, most approaches do not question the ultimate goal of link recommendation algorithms, namely the monetization of users' engagement in intricate business models of data trade. This paper advocates for a diversification of players and purposes of social network platforms, aligned with the pursue of social justice. To illustrate this conceptual goal, we present ERA-Link, a novel link recommendation algorithm based on spectral graph theory that counteracts the systemic societal discriminat
+    Personality profiling has been utilised by companies for targeted advertising, political campaigns and vaccine campaigns. However, the accuracy and versatility of such models still remains relatively unknown. Consequently, we aim to explore the extent to which peoples' online digital footprints can be used to profile their Myers-Briggs personality type. We analyse and compare the results of four models: logistic regression, naive Bayes, support vector machines (SVMs) and random forests. We discover that a SVM model achieves the best accuracy of 20.95% for predicting someones complete personality type. However, logistic regression models perform only marginally worse and are significantly faster to train and perform predictions. We discover that many labelled datasets present substantial class imbalances of personal characteristics on social media, including our own. As a result, we highlight the need for attentive consideration when reporting model performance on these datasets and com
     
 
