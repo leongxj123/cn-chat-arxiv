@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Practical and Asymptotically Exact Conditional Sampling in Diffusion Models.](http://arxiv.org/abs/2306.17775) | 本论文提出了一种名为TDS的扭转式扩散采样器，它是一种针对扩散模型的顺序蒙特卡洛算法。该方法通过使用扭转技术结合启发式近似，能够在不需要特定训练的情况下在广泛的条件分布上提供精确的样本。 |
+| [^1] | [A Multi-Grained Symmetric Differential Equation Model for Learning Protein-Ligand Binding Dynamics.](http://arxiv.org/abs/2401.15122) | 提出了一种能够促进数值MD模拟并有效模拟蛋白质-配体结合动力学的NeuralMD方法，采用物理信息多级对称框架，实现了准确建模多级蛋白质-配体相互作用。 |
 
 # 详细
 
-[^1]: 扩散模型中的实用和渐进精确条件采样
+[^1]: 一种多级对称微分方程模型用于学习蛋白质-配体结合动力学
 
-    Practical and Asymptotically Exact Conditional Sampling in Diffusion Models. (arXiv:2306.17775v1 [stat.ML])
+    A Multi-Grained Symmetric Differential Equation Model for Learning Protein-Ligand Binding Dynamics. (arXiv:2401.15122v1 [cs.LG])
 
-    [http://arxiv.org/abs/2306.17775](http://arxiv.org/abs/2306.17775)
+    [http://arxiv.org/abs/2401.15122](http://arxiv.org/abs/2401.15122)
 
-    本论文提出了一种名为TDS的扭转式扩散采样器，它是一种针对扩散模型的顺序蒙特卡洛算法。该方法通过使用扭转技术结合启发式近似，能够在不需要特定训练的情况下在广泛的条件分布上提供精确的样本。
+    提出了一种能够促进数值MD模拟并有效模拟蛋白质-配体结合动力学的NeuralMD方法，采用物理信息多级对称框架，实现了准确建模多级蛋白质-配体相互作用。
 
     
 
-    扩散模型在分子设计和文本到图像生成等条件生成任务中取得了成功。然而，这些成就主要依赖于任务特定的条件训练或容易出错的启发式近似。理想情况下，条件生成方法应该能够在不需要特定训练的情况下为广泛的条件分布提供精确的样本。为此，我们引入了扭转式扩散采样器(TDS)。TDS是一种针对扩散模型的顺序蒙特卡洛(SMC)算法。其主要思想是使用扭转，一种具有良好计算效率的SMC技术，来结合启发式近似而不影响渐进精确性。我们首先在模拟实验和MNIST图像修复以及类条件生成任务中发现，TDS提供了计算统计权衡，使用更多粒子得到更准确的近似结果，但同时需要更多计算资源。
+    在药物发现中，蛋白质-配体结合的分子动力学（MD）模拟提供了一种强大的工具，用于预测结合亲和力，估计运输性能和探索口袋位点。通过改进数值方法以及最近通过机器学习（ML）方法增强MD模拟的效率已经有了很长的历史。然而，仍然存在一些挑战，例如准确建模扩展时间尺度的模拟。为了解决这个问题，我们提出了NeuralMD，这是第一个能够促进数值MD并提供准确的蛋白质-配体结合动力学模拟的ML辅助工具。我们提出了一个合理的方法，将一种新的物理信息多级对称框架纳入模型中。具体而言，我们提出了（1）一个使用向量框架满足群对称性并捕获多级蛋白质-配体相互作用的BindingNet模型，以及（2）一个增强的神经微分方程求解器，学习轨迹的演化。
 
-    Diffusion models have been successful on a range of conditional generation tasks including molecular design and text-to-image generation. However, these achievements have primarily depended on task-specific conditional training or error-prone heuristic approximations. Ideally, a conditional generation method should provide exact samples for a broad range of conditional distributions without requiring task-specific training. To this end, we introduce the Twisted Diffusion Sampler, or TDS. TDS is a sequential Monte Carlo (SMC) algorithm that targets the conditional distributions of diffusion models. The main idea is to use twisting, an SMC technique that enjoys good computational efficiency, to incorporate heuristic approximations without compromising asymptotic exactness. We first find in simulation and on MNIST image inpainting and class-conditional generation tasks that TDS provides a computational statistical trade-off, yielding more accurate approximations with many particles but wi
+    In drug discovery, molecular dynamics (MD) simulation for protein-ligand binding provides a powerful tool for predicting binding affinities, estimating transport properties, and exploring pocket sites. There has been a long history of improving the efficiency of MD simulations through better numerical methods and, more recently, by augmenting them with machine learning (ML) methods. Yet, challenges remain, such as accurate modeling of extended-timescale simulations. To address this issue, we propose NeuralMD, the first ML surrogate that can facilitate numerical MD and provide accurate simulations of protein-ligand binding dynamics. We propose a principled approach that incorporates a novel physics-informed multi-grained group symmetric framework. Specifically, we propose (1) a BindingNet model that satisfies group symmetry using vector frames and captures the multi-level protein-ligand interactions, and (2) an augmented neural differential equation solver that learns the trajectory und
     
 

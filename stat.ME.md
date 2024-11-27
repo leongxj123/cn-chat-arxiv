@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [AdaTrans: Feature-wise and Sample-wise Adaptive Transfer Learning for High-dimensional Regression](https://arxiv.org/abs/2403.13565) | 提出了一种针对高维回归的自适应迁移学习方法，可以根据可迁移结构自适应检测和聚合特征和样本的可迁移结构。 |
+| [^1] | [Conformal Prediction is Robust to Dispersive Label Noise.](http://arxiv.org/abs/2209.14295) | 本研究研究了Conformal Prediction方法对于标签噪声具有鲁棒性。我们找出了构建可以正确覆盖无噪声真实标签的不确定性集合的条件，并提出了对具有噪声标签的一般损失函数进行正确控制的要求。实验证明，在对抗性案例之外，使用Conformal Prediction和风险控制技术可以实现对干净真实标签的保守风险。我们还提出了一种有界尺寸噪声修正的方法，以确保实现正确的真实标签风险。 |
 
 # 详细
 
-[^1]: AdaTrans：针对高维回归的特征自适应与样本自适应迁移学习
+[^1]: Conformal Prediction对分散标签噪声具有稳健性
 
-    AdaTrans: Feature-wise and Sample-wise Adaptive Transfer Learning for High-dimensional Regression
+    Conformal Prediction is Robust to Dispersive Label Noise. (arXiv:2209.14295v2 [cs.LG] UPDATED)
 
-    [https://arxiv.org/abs/2403.13565](https://arxiv.org/abs/2403.13565)
+    [http://arxiv.org/abs/2209.14295](http://arxiv.org/abs/2209.14295)
 
-    提出了一种针对高维回归的自适应迁移学习方法，可以根据可迁移结构自适应检测和聚合特征和样本的可迁移结构。
+    本研究研究了Conformal Prediction方法对于标签噪声具有鲁棒性。我们找出了构建可以正确覆盖无噪声真实标签的不确定性集合的条件，并提出了对具有噪声标签的一般损失函数进行正确控制的要求。实验证明，在对抗性案例之外，使用Conformal Prediction和风险控制技术可以实现对干净真实标签的保守风险。我们还提出了一种有界尺寸噪声修正的方法，以确保实现正确的真实标签风险。
 
     
 
-    我们考虑高维背景下的迁移学习问题，在该问题中，特征维度大于样本大小。为了学习可迁移的信息，该信息可能在特征或源样本之间变化，我们提出一种自适应迁移学习方法，可以检测和聚合特征-wise (F-AdaTrans)或样本-wise (S-AdaTrans)可迁移结构。我们通过采用一种新颖的融合惩罚方法，结合权重，可以根据可迁移结构进行调整。为了选择权重，我们提出了一个在理论上建立，数据驱动的过程，使得 F-AdaTrans 能够选择性地将可迁移的信号与目标融合在一起，同时滤除非可迁移的信号，S-AdaTrans则可以获得每个源样本传递的信息的最佳组合。我们建立了非渐近速率，可以在特殊情况下恢复现有的近最小似乎最优速率。效果证明...
+    我们研究了对标签噪声具有鲁棒性的Conformal Prediction方法，该方法是一种用于不确定性量化的强大工具。我们的分析涵盖了回归和分类问题，对于如何构建能够正确覆盖未观察到的无噪声真实标签的不确定性集合进行了界定。我们进一步扩展了我们的理论，并提出了对于带有噪声标签正确控制一般损失函数（如假阴性比例）的要求。我们的理论和实验表明，在带有噪声标签的情况下，Conformal Prediction和风险控制技术能够实现对干净真实标签的保守风险，除了在对抗性案例中。在这种情况下，我们还可以通过对Conformal Prediction算法进行有界尺寸的噪声修正，以确保实现正确的真实标签风险，而无需考虑分数或数据的规则性。
 
-    arXiv:2403.13565v1 Announce Type: cross  Abstract: We consider the transfer learning problem in the high dimensional setting, where the feature dimension is larger than the sample size. To learn transferable information, which may vary across features or the source samples, we propose an adaptive transfer learning method that can detect and aggregate the feature-wise (F-AdaTrans) or sample-wise (S-AdaTrans) transferable structures. We achieve this by employing a novel fused-penalty, coupled with weights that can adapt according to the transferable structure. To choose the weight, we propose a theoretically informed, data-driven procedure, enabling F-AdaTrans to selectively fuse the transferable signals with the target while filtering out non-transferable signals, and S-AdaTrans to obtain the optimal combination of information transferred from each source sample. The non-asymptotic rates are established, which recover existing near-minimax optimal rates in special cases. The effectivene
+    We study the robustness of conformal prediction, a powerful tool for uncertainty quantification, to label noise. Our analysis tackles both regression and classification problems, characterizing when and how it is possible to construct uncertainty sets that correctly cover the unobserved noiseless ground truth labels. We further extend our theory and formulate the requirements for correctly controlling a general loss function, such as the false negative proportion, with noisy labels. Our theory and experiments suggest that conformal prediction and risk-controlling techniques with noisy labels attain conservative risk over the clean ground truth labels except in adversarial cases. In such cases, we can also correct for noise of bounded size in the conformal prediction algorithm in order to ensure achieving the correct risk of the ground truth labels without score or data regularity.
     
 
