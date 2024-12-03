@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [How to Collaborate: Towards Maximizing the Generalization Performance in Cross-Silo Federated Learning.](http://arxiv.org/abs/2401.13236) | 本文研究了异构数据联邦学习中的合作问题。通过推导出每个客户端的泛化界限，发现只有与拥有更多训练数据和相似数据分布的客户端合作，才能改善模型的泛化性能。根据这一分析，提出了基于层次聚类的合作训练方案。 |
+| [^1] | [Decoupled Vertical Federated Learning for Practical Training on Vertically Partitioned Data](https://arxiv.org/abs/2403.03871) | 提出了Decoupled VFL（DVFL），一种面向VFL的分段学习方法，实现了分散聚合和隔离，从而提高了容错性。 |
+| [^2] | [Topology-Based Reconstruction Prevention for Decentralised Learning](https://arxiv.org/abs/2312.05248) | 通过研究发现，在去中心化学习中，被动的好奇敌手可以在几次保护隐私的求和操作后推断出其他用户的私人数据。 |
 
 # 详细
 
-[^1]: 如何合作：朝着最大化异构数据联邦学习的泛化性能迈进
+[^1]: 面向垂直分区数据的解耦式垂直联邦学习，用于实际训练
 
-    How to Collaborate: Towards Maximizing the Generalization Performance in Cross-Silo Federated Learning. (arXiv:2401.13236v1 [cs.LG])
+    Decoupled Vertical Federated Learning for Practical Training on Vertically Partitioned Data
 
-    [http://arxiv.org/abs/2401.13236](http://arxiv.org/abs/2401.13236)
+    [https://arxiv.org/abs/2403.03871](https://arxiv.org/abs/2403.03871)
 
-    本文研究了异构数据联邦学习中的合作问题。通过推导出每个客户端的泛化界限，发现只有与拥有更多训练数据和相似数据分布的客户端合作，才能改善模型的泛化性能。根据这一分析，提出了基于层次聚类的合作训练方案。
+    提出了Decoupled VFL（DVFL），一种面向VFL的分段学习方法，实现了分散聚合和隔离，从而提高了容错性。
 
     
 
-    联邦学习（FL）作为一种保护隐私的分布式学习框架，吸引了广泛的关注。本文关注交叉数据源的FL，其中客户端在训练后成为模型所有者，并且只关心模型在本地数据上的泛化性能。由于数据异质性问题，要求所有客户端参加单一的FL训练过程可能会导致模型性能下降。为了调查合作的有效性，我们首先推导了每个客户端在与其他客户端合作或独立训练时的泛化界限。我们展示了仅通过与具有更多训练数据和相似数据分布的其他客户端合作，可以改善客户端的泛化性能。我们的分析使我们能够通过将客户端分成多个合作组来制定客户端效用最大化问题。然后提出了一种基于层次聚类的合作训练（HCCT）方案。
+    垂直联邦学习（VFL）是一种新兴的分布式机器学习范式，其中共同实体的不同特征所有者合作学习全局模型而无需共享数据。在VFL中，主机客户端拥有每个实体的数据标签，并基于所有客户端的中间本地表示学习最终表示。因此，主机是一个单点故障，标签反馈可以被恶意客户端用来推断私有特征。要求所有参与者在整个训练过程中保持活跃和值得信赖通常是不切实际的，在受控环境之外完全不可行。我们提出了一种面向VFL的分段学习方法Decoupled VFL（DVFL）。通过在各自的目标上训练每个模型，DVFL允许特征学习和标签监督之间的分散聚合和隔离。具有这些属性，DVFL具有容错性。
 
-    Federated learning (FL) has attracted vivid attention as a privacy-preserving distributed learning framework. In this work, we focus on cross-silo FL, where clients become the model owners after training and are only concerned about the model's generalization performance on their local data. Due to the data heterogeneity issue, asking all the clients to join a single FL training process may result in model performance degradation. To investigate the effectiveness of collaboration, we first derive a generalization bound for each client when collaborating with others or when training independently. We show that the generalization performance of a client can be improved only by collaborating with other clients that have more training data and similar data distribution. Our analysis allows us to formulate a client utility maximization problem by partitioning clients into multiple collaborating groups. A hierarchical clustering-based collaborative training (HCCT) scheme is then proposed, wh
+    arXiv:2403.03871v1 Announce Type: new  Abstract: Vertical Federated Learning (VFL) is an emergent distributed machine learning paradigm wherein owners of disjoint features of a common set of entities collaborate to learn a global model without sharing data. In VFL, a host client owns data labels for each entity and learns a final representation based on intermediate local representations from all guest clients. Therefore, the host is a single point of failure and label feedback can be used by malicious guest clients to infer private features. Requiring all participants to remain active and trustworthy throughout the entire training process is generally impractical and altogether infeasible outside of controlled environments. We propose Decoupled VFL (DVFL), a blockwise learning approach to VFL. By training each model on its own objective, DVFL allows for decentralized aggregation and isolation between feature learning and label supervision. With these properties, DVFL is fault tolerant
+    
+[^2]: 基于拓扑的去重建防护在去中心化学习中的应用
+
+    Topology-Based Reconstruction Prevention for Decentralised Learning
+
+    [https://arxiv.org/abs/2312.05248](https://arxiv.org/abs/2312.05248)
+
+    通过研究发现，在去中心化学习中，被动的好奇敌手可以在几次保护隐私的求和操作后推断出其他用户的私人数据。
+
+    
+
+    最近，去中心化学习作为一种替代联邦学习的方式，获得了人们的关注，其中数据和协调都分布在用户之间。为了保护数据的机密性，去中心化学习依赖于差分隐私、多方计算，或者二者的结合。然而，连续运行多个保护隐私的求和操作可能会使对手进行重建攻击。不幸的是，当前的重建对策要么无法简单地适应分布式环境，要么会添加过多的噪音。在这项工作中，我们首先表明，被动的好奇敌手可以在几次保护隐私的求和之后推断出其他用户的私人数据。例如，在拓扑中有18个用户的子图中，我们发现只有三个被动的好奇敌手成功重建私人数据的概率为11.0%，平均每个对手需要8.8次求和。
+
+    arXiv:2312.05248v2 Announce Type: replace-cross  Abstract: Decentralised learning has recently gained traction as an alternative to federated learning in which both data and coordination are distributed over its users. To preserve data confidentiality, decentralised learning relies on differential privacy, multi-party computation, or a combination thereof. However, running multiple privacy-preserving summations in sequence may allow adversaries to perform reconstruction attacks. Unfortunately, current reconstruction countermeasures either cannot trivially be adapted to the distributed setting, or add excessive amounts of noise.   In this work, we first show that passive honest-but-curious adversaries can infer other users' private data after several privacy-preserving summations. For example, in subgraphs with 18 users, we show that only three passive honest-but-curious adversaries succeed at reconstructing private data 11.0% of the time, requiring an average of 8.8 summations per adve
     
 

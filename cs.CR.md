@@ -2,67 +2,112 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Zero-shot sampling of adversarial entities in biomedical question answering](https://arxiv.org/abs/2402.10527) | 在生物医学问题回答中，我们提出了一种在嵌入空间中进行零样本采样的方案，用于发现各种对抗实体作为干扰因素，相比随机采样，在对抗问答中表现出明显优势，揭示了不同特征的两种对抗性实体制度。 |
-| [^2] | [DeepInception: Hypnotize Large Language Model to Be Jailbreaker](https://arxiv.org/abs/2311.03191) | 本研究提出了一种名为DeepInception的轻量级方法，利用语言模型的角色扮演能力构建新颖的嵌套场景，成功催眠大型语言模型成为破解者。通过实验证明，DeepInception在破解成功率方面具有竞争力，并揭示了开源和闭源语言模型的关键弱点。 |
-| [^3] | [Multi-Trigger Backdoor Attacks: More Triggers, More Threats.](http://arxiv.org/abs/2401.15295) | 本文主要研究了多触发后门攻击对深度神经网络的威胁。通过提出并研究了三种类型的多触发攻击，包括并行、顺序和混合攻击，文章揭示了不同触发器对同一数据集的共存、覆写和交叉激活效果。结果表明单触发攻击容易引起覆写问题。 |
-| [^4] | [Adversarial ModSecurity: Countering Adversarial SQL Injections with Robust Machine Learning.](http://arxiv.org/abs/2308.04964) | 这篇论文介绍了Adversarial ModSecurity，它是一个使用强大的机器学习来对抗SQL注入攻击的防火墙。通过将核心规则集作为输入特征，该模型可以识别并防御对抗性SQL注入攻击。实验结果表明，AdvModSec在训练后能够有效地应对这类攻击。 |
+| [^1] | [A Statistical Framework of Watermarks for Large Language Models: Pivot, Detection Efficiency and Optimal Rules](https://arxiv.org/abs/2404.01245) | 该论文提出了一个通用框架，用于设计大型语言模型水印的统计效率和检测规则，通过关键统计量和秘密密钥控制误报率，同时评估水印检测规则的能力。 |
+| [^2] | [Preserving Data Privacy for ML-driven Applications in Open Radio Access Networks](https://arxiv.org/abs/2402.09710) | 本文研究了在5G开放无线接入网络（O-RAN）中共享数据库场景下的数据隐私问题，并提出了一种基于洗牌的可学习加密技术来保护机器学习模型的数据隐私。 |
+| [^3] | [Topology-Based Reconstruction Prevention for Decentralised Learning](https://arxiv.org/abs/2312.05248) | 通过研究发现，在去中心化学习中，被动的好奇敌手可以在几次保护隐私的求和操作后推断出其他用户的私人数据。 |
+| [^4] | [A Proactive and Dual Prevention Mechanism against Illegal Song Covers empowered by Singing Voice Conversion.](http://arxiv.org/abs/2401.17133) | 这项工作提出了一种主动性的双重防护机制，通过引入人类无法察觉的扰动，干扰歌唱声音转换的生成过程，防止未经授权的基于歌唱声音转换的非法歌曲翻唱。该机制既扰乱了歌手身份，又扰乱了歌词，使得歌唱声音既不模仿目标歌手，也不保留原始歌词。 |
+| [^5] | [Calibration Attack: A Framework For Adversarial Attacks Targeting Calibration.](http://arxiv.org/abs/2401.02718) | 校准攻击是一种新的对抗攻击框架，通过生成和组织攻击来使受害模型失去准确校准，而不影响其原始准确性。这对模型的可信度和基于置信分数的决策构成严重威胁。我们提出了四种校准攻击形式，并对常用的对抗防御和校准方法的有效性进行了研究。 |
+| [^6] | [Methods for generating and evaluating synthetic longitudinal patient data: a systematic review.](http://arxiv.org/abs/2309.12380) | 本文对生成和评估合成纵向患者数据的方法进行了系统综述，以解决医学领域中数据使用和隐私保护的问题。 |
+| [^7] | [A Byzantine-Resilient Aggregation Scheme for Federated Learning via Matrix Autoregression on Client Updates.](http://arxiv.org/abs/2303.16668) | 本文提出了FLANDERS，一种基于矩阵自回归的联邦学习聚合方案，可以识别恶意客户端，并提供了强大的拜占庭攻击防御。 |
 
 # 详细
 
-[^1]: 生物医学问题回答中的零样本采样对抗实体
+[^1]: 大型语言模型水印的统计框架: 枢轴、检测效率和最优规则
 
-    Zero-shot sampling of adversarial entities in biomedical question answering
+    A Statistical Framework of Watermarks for Large Language Models: Pivot, Detection Efficiency and Optimal Rules
 
-    [https://arxiv.org/abs/2402.10527](https://arxiv.org/abs/2402.10527)
+    [https://arxiv.org/abs/2404.01245](https://arxiv.org/abs/2404.01245)
 
-    在生物医学问题回答中，我们提出了一种在嵌入空间中进行零样本采样的方案，用于发现各种对抗实体作为干扰因素，相比随机采样，在对抗问答中表现出明显优势，揭示了不同特征的两种对抗性实体制度。
-
-    
-
-    大型语言模型（LLM）中参数域知识的增加深度推动它们在现实世界应用中的快速部署。在高风险和知识密集型任务中，理解模型的漏洞对于量化模型预测的可信度和规范其使用至关重要。最近发现在自然语言处理任务中作为对抗示例的命名实体引发了关于它们在其他环境中可能的伪装的疑问。在这里，我们提出了一种在嵌入空间中的幂缩放距离加权采样方案，以发现多样化的对抗实体作为干扰因素。我们展示了它在生物医学主题的对抗性问题回答中优于随机采样的优势。我们的方法使得可以探索攻击表面上的不同区域，这揭示了两种在特征上明显不同的对抗性实体的制度。此外，我们展示了攻击方式如何...
-
-    arXiv:2402.10527v1 Announce Type: new  Abstract: The increasing depth of parametric domain knowledge in large language models (LLMs) is fueling their rapid deployment in real-world applications. In high-stakes and knowledge-intensive tasks, understanding model vulnerabilities is essential for quantifying the trustworthiness of model predictions and regulating their use. The recent discovery of named entities as adversarial examples in natural language processing tasks raises questions about their potential guises in other settings. Here, we propose a powerscaled distance-weighted sampling scheme in embedding space to discover diverse adversarial entities as distractors. We demonstrate its advantage over random sampling in adversarial question answering on biomedical topics. Our approach enables the exploration of different regions on the attack surface, which reveals two regimes of adversarial entities that markedly differ in their characteristics. Moreover, we show that the attacks su
-    
-[^2]: DeepInception: 催眠大型语言模型成为破解者
-
-    DeepInception: Hypnotize Large Language Model to Be Jailbreaker
-
-    [https://arxiv.org/abs/2311.03191](https://arxiv.org/abs/2311.03191)
-
-    本研究提出了一种名为DeepInception的轻量级方法，利用语言模型的角色扮演能力构建新颖的嵌套场景，成功催眠大型语言模型成为破解者。通过实验证明，DeepInception在破解成功率方面具有竞争力，并揭示了开源和闭源语言模型的关键弱点。
+    该论文提出了一个通用框架，用于设计大型语言模型水印的统计效率和检测规则，通过关键统计量和秘密密钥控制误报率，同时评估水印检测规则的能力。
 
     
 
-    尽管大型语言模型（LLMs）在各种应用中取得了显著的成功，但它们容易受到破解攻击，使得安全措施无效。然而，以往的破解研究通常采用暴力优化或高计算成本的外推方法，这可能并不实际或有效。本文受到以米尔格拉姆实验为灵感，关于权威力量对于引发有害行为的影响，我们提出了一种轻量级的方法，称为DeepInception，可以轻松地催眠LLM成为破解者。具体而言，DeepInception利用LLM的角色扮演能力构建了一个新颖的嵌套场景来行为，实现了在正常场景下逃避使用控制的自适应方式。实验结果表明，我们的DeepInception在破解成功率方面与以往的方法竞争力相当，并可以在后续交互中实现持续的破解，揭示了开源和闭源LLM的自失关键弱点。
+    自ChatGPT于2022年11月推出以来，将几乎不可察觉的统计信号嵌入到大型语言模型（LLMs）生成的文本中，也被称为水印，已被用作从其人类撰写对应物上可证检测LLM生成文本的原则性方法。 本文介绍了一个通用灵活的框架，用于推理水印的统计效率并设计强大的检测规则。受水印检测的假设检验公式启发，我们的框架首先选择文本的枢轴统计量和由LLM提供给验证器的秘密密钥，以实现控制误报率（将人类撰写的文本错误地检测为LLM生成的错误）。 接下来，该框架允许通过获取渐近错误负率（将LLM生成文本错误地检测为人类撰写的错误）的封闭形式表达式来评估水印检测规则的能力。
 
-    Despite remarkable success in various applications, large language models (LLMs) are vulnerable to adversarial jailbreaks that make the safety guardrails void. However, previous studies for jailbreaks usually resort to brute-force optimization or extrapolations of a high computation cost, which might not be practical or effective. In this paper, inspired by the Milgram experiment w.r.t. the authority power for inciting harmfulness, we disclose a lightweight method, termed DeepInception, which can easily hypnotize LLM to be a jailbreaker. Specifically, DeepInception leverages the personification ability of LLM to construct a novel nested scene to behave, which realizes an adaptive way to escape the usage control in a normal scenario. Empirically, our DeepInception can achieve competitive jailbreak success rates with previous counterparts and realize a continuous jailbreak in subsequent interactions, which reveals the critical weakness of self-losing on both open and closed-source LLMs l
+    arXiv:2404.01245v1 Announce Type: cross  Abstract: Since ChatGPT was introduced in November 2022, embedding (nearly) unnoticeable statistical signals into text generated by large language models (LLMs), also known as watermarking, has been used as a principled approach to provable detection of LLM-generated text from its human-written counterpart. In this paper, we introduce a general and flexible framework for reasoning about the statistical efficiency of watermarks and designing powerful detection rules. Inspired by the hypothesis testing formulation of watermark detection, our framework starts by selecting a pivotal statistic of the text and a secret key -- provided by the LLM to the verifier -- to enable controlling the false positive rate (the error of mistakenly detecting human-written text as LLM-generated). Next, this framework allows one to evaluate the power of watermark detection rules by obtaining a closed-form expression of the asymptotic false negative rate (the error of 
     
-[^3]: 多触发后门攻击：更多触发器，更多威胁
+[^2]: 在开放无线接入网络中保护机器学习驱动的应用的数据隐私
 
-    Multi-Trigger Backdoor Attacks: More Triggers, More Threats. (arXiv:2401.15295v1 [cs.LG])
+    Preserving Data Privacy for ML-driven Applications in Open Radio Access Networks
 
-    [http://arxiv.org/abs/2401.15295](http://arxiv.org/abs/2401.15295)
+    [https://arxiv.org/abs/2402.09710](https://arxiv.org/abs/2402.09710)
 
-    本文主要研究了多触发后门攻击对深度神经网络的威胁。通过提出并研究了三种类型的多触发攻击，包括并行、顺序和混合攻击，文章揭示了不同触发器对同一数据集的共存、覆写和交叉激活效果。结果表明单触发攻击容易引起覆写问题。
-
-    
-
-    后门攻击已经成为深度神经网络（DNNs）的（预）训练和部署的主要威胁。尽管后门攻击在一些研究中已经得到了广泛的探讨，但其中大部分都集中在使用单个类型的触发器来污染数据集的单触发攻击上。可以说，在现实世界中，后门攻击可能更加复杂，例如，同一数据集可能存在多个对手，如果该数据集具有较高的价值。在这项工作中，我们研究了在多触发攻击设置下后门攻击的实际威胁，多个对手利用不同类型的触发器来污染同一数据集。通过提出和研究并行、顺序和混合攻击这三种类型的多触发攻击，我们提供了关于不同触发器对同一数据集的共存、覆写和交叉激活效果的重要认识。此外，我们还展示了单触发攻击往往容易引起覆写问题。
-
-    Backdoor attacks have emerged as a primary threat to (pre-)training and deployment of deep neural networks (DNNs). While backdoor attacks have been extensively studied in a body of works, most of them were focused on single-trigger attacks that poison a dataset using a single type of trigger. Arguably, real-world backdoor attacks can be much more complex, e.g., the existence of multiple adversaries for the same dataset if it is of high value. In this work, we investigate the practical threat of backdoor attacks under the setting of \textbf{multi-trigger attacks} where multiple adversaries leverage different types of triggers to poison the same dataset. By proposing and investigating three types of multi-trigger attacks, including parallel, sequential, and hybrid attacks, we provide a set of important understandings of the coexisting, overwriting, and cross-activating effects between different triggers on the same dataset. Moreover, we show that single-trigger attacks tend to cause over
-    
-[^4]: Adversarial ModSecurity: 使用强大的机器学习对抗SQL注入攻击
-
-    Adversarial ModSecurity: Countering Adversarial SQL Injections with Robust Machine Learning. (arXiv:2308.04964v1 [cs.LG])
-
-    [http://arxiv.org/abs/2308.04964](http://arxiv.org/abs/2308.04964)
-
-    这篇论文介绍了Adversarial ModSecurity，它是一个使用强大的机器学习来对抗SQL注入攻击的防火墙。通过将核心规则集作为输入特征，该模型可以识别并防御对抗性SQL注入攻击。实验结果表明，AdvModSec在训练后能够有效地应对这类攻击。
+    本文研究了在5G开放无线接入网络（O-RAN）中共享数据库场景下的数据隐私问题，并提出了一种基于洗牌的可学习加密技术来保护机器学习模型的数据隐私。
 
     
 
-    ModSecurity被广泛认可为标准的开源Web应用防火墙(WAF)，由OWASP基金会维护。它通过与核心规则集进行匹配来检测恶意请求，识别出常见的攻击模式。每个规则在CRS中都被手动分配一个权重，基于相应攻击的严重程度，如果触发规则的权重之和超过给定的阈值，就会被检测为恶意请求。然而，我们的研究表明，这种简单的策略在检测SQL注入攻击方面很不有效，因为它往往会阻止许多合法请求，同时还容易受到对抗性SQL注入攻击的影响，即故意操纵以逃避检测的攻击。为了克服这些问题，我们设计了一个名为AdvModSec的强大机器学习模型，它将CRS规则作为输入特征，并经过训练以检测对抗性SQL注入攻击。我们的实验表明，AdvModSec在针对该攻击的流量上进行训练后表现出色。
+    深度学习提供了一种改进频谱访问技术的有希望的解决方案，通过利用数据驱动的方法来管理和共享有限的频谱资源，用于新兴应用。对于其中几种应用，敏感的无线数据（如频谱图）存储在共享数据库或多方利益相关者云环境中，因此容易造成隐私泄漏。本文旨在通过研究5G开放无线接入网络（O-RAN）中共享数据库场景的典型案例来解决此类隐私问题，在这些场景中，我们在近实时（near-RT）无线接入网络智能控制器中有一个共享数据库。我们着重讨论了如何保护用于频谱共享和干扰缓解应用的机器学习（ML）模型所使用的数据，同时不影响模型和网络的性能。其中的基本想法是利用基于洗牌的可学习加密技术来加密数据。
 
-    ModSecurity is widely recognized as the standard open-source Web Application Firewall (WAF), maintained by the OWASP Foundation. It detects malicious requests by matching them against the Core Rule Set, identifying well-known attack patterns. Each rule in the CRS is manually assigned a weight, based on the severity of the corresponding attack, and a request is detected as malicious if the sum of the weights of the firing rules exceeds a given threshold. In this work, we show that this simple strategy is largely ineffective for detecting SQL injection (SQLi) attacks, as it tends to block many legitimate requests, while also being vulnerable to adversarial SQLi attacks, i.e., attacks intentionally manipulated to evade detection. To overcome these issues, we design a robust machine learning model, named AdvModSec, which uses the CRS rules as input features, and it is trained to detect adversarial SQLi attacks. Our experiments show that AdvModSec, being trained on the traffic directed towa
+    arXiv:2402.09710v1 Announce Type: cross  Abstract: Deep learning offers a promising solution to improve spectrum access techniques by utilizing data-driven approaches to manage and share limited spectrum resources for emerging applications. For several of these applications, the sensitive wireless data (such as spectrograms) are stored in a shared database or multistakeholder cloud environment and are therefore prone to privacy leaks. This paper aims to address such privacy concerns by examining the representative case study of shared database scenarios in 5G Open Radio Access Network (O-RAN) networks where we have a shared database within the near-real-time (near-RT) RAN intelligent controller. We focus on securing the data that can be used by machine learning (ML) models for spectrum sharing and interference mitigation applications without compromising the model and network performances. The underlying idea is to leverage a (i) Shuffling-based learnable encryption technique to encryp
+    
+[^3]: 基于拓扑的去重建防护在去中心化学习中的应用
+
+    Topology-Based Reconstruction Prevention for Decentralised Learning
+
+    [https://arxiv.org/abs/2312.05248](https://arxiv.org/abs/2312.05248)
+
+    通过研究发现，在去中心化学习中，被动的好奇敌手可以在几次保护隐私的求和操作后推断出其他用户的私人数据。
+
+    
+
+    最近，去中心化学习作为一种替代联邦学习的方式，获得了人们的关注，其中数据和协调都分布在用户之间。为了保护数据的机密性，去中心化学习依赖于差分隐私、多方计算，或者二者的结合。然而，连续运行多个保护隐私的求和操作可能会使对手进行重建攻击。不幸的是，当前的重建对策要么无法简单地适应分布式环境，要么会添加过多的噪音。在这项工作中，我们首先表明，被动的好奇敌手可以在几次保护隐私的求和之后推断出其他用户的私人数据。例如，在拓扑中有18个用户的子图中，我们发现只有三个被动的好奇敌手成功重建私人数据的概率为11.0%，平均每个对手需要8.8次求和。
+
+    arXiv:2312.05248v2 Announce Type: replace-cross  Abstract: Decentralised learning has recently gained traction as an alternative to federated learning in which both data and coordination are distributed over its users. To preserve data confidentiality, decentralised learning relies on differential privacy, multi-party computation, or a combination thereof. However, running multiple privacy-preserving summations in sequence may allow adversaries to perform reconstruction attacks. Unfortunately, current reconstruction countermeasures either cannot trivially be adapted to the distributed setting, or add excessive amounts of noise.   In this work, we first show that passive honest-but-curious adversaries can infer other users' private data after several privacy-preserving summations. For example, in subgraphs with 18 users, we show that only three passive honest-but-curious adversaries succeed at reconstructing private data 11.0% of the time, requiring an average of 8.8 summations per adve
+    
+[^4]: 一种针对非法歌曲翻唱的主动性双重防护机制：基于歌唱声音转换的能力
+
+    A Proactive and Dual Prevention Mechanism against Illegal Song Covers empowered by Singing Voice Conversion. (arXiv:2401.17133v1 [cs.SD])
+
+    [http://arxiv.org/abs/2401.17133](http://arxiv.org/abs/2401.17133)
+
+    这项工作提出了一种主动性的双重防护机制，通过引入人类无法察觉的扰动，干扰歌唱声音转换的生成过程，防止未经授权的基于歌唱声音转换的非法歌曲翻唱。该机制既扰乱了歌手身份，又扰乱了歌词，使得歌唱声音既不模仿目标歌手，也不保留原始歌词。
+
+    
+
+    歌唱声音转换(SVC)通过将一个歌手的歌唱声音转换成另一个目标歌手的歌唱声音，并使用原始歌词和旋律，自动化了歌曲翻唱。然而，这引发了对版权和公民权利的严重担忧。本研究提出了 SongBsAb，这是第一个主动性方法，用于减轻未经授权的基于 SVC 的非法歌曲翻唱。SongBsAb 在发布歌唱声音之前引入了人类无法察觉的扰动，这样当它们被使用时，SVC 的生成过程将被干扰，导致意外的歌唱声音。 SongBsAb 具有双重预防效果，引起歌手身份和歌词的混乱，即 SVC 覆盖的歌唱声音既不模仿目标歌手，也不保留原始歌词。为了提高扰动的不可察觉性，我们使用了一个以伴奏曲作为额外掩蔽者的基于心理声学模型的损失模型。
+
+    Singing voice conversion (SVC) automates song covers by converting one singer's singing voice into another target singer's singing voice with the original lyrics and melody. However, it raises serious concerns about copyright and civil right infringements to multiple entities. This work proposes SongBsAb, the first proactive approach to mitigate unauthorized SVC-based illegal song covers. SongBsAb introduces human-imperceptible perturbations to singing voices before releasing them, so that when they are used, the generation process of SVC will be interfered, resulting in unexpected singing voices. SongBsAb features a dual prevention effect by causing both (singer) identity disruption and lyric disruption, namely, the SVC-covered singing voice neither imitates the target singer nor preserves the original lyrics. To improve the imperceptibility of perturbations, we refine a psychoacoustic model-based loss with the backing track as an additional masker, a unique accompanying element for s
+    
+[^5]: 论文标题：校准攻击：针对校准性的对抗攻击框架
+
+    Calibration Attack: A Framework For Adversarial Attacks Targeting Calibration. (arXiv:2401.02718v1 [cs.LG])
+
+    [http://arxiv.org/abs/2401.02718](http://arxiv.org/abs/2401.02718)
+
+    校准攻击是一种新的对抗攻击框架，通过生成和组织攻击来使受害模型失去准确校准，而不影响其原始准确性。这对模型的可信度和基于置信分数的决策构成严重威胁。我们提出了四种校准攻击形式，并对常用的对抗防御和校准方法的有效性进行了研究。
+
+    
+
+    我们引入了一种名为校准攻击的新对抗攻击框架，其中攻击被生成和组织以使受害模型失去准确校准，同时不改变其原始准确性，从而严重危及模型的可信度和基于其置信分数的任何决策。具体而言，我们确定了四种新型校准攻击形式：低置信攻击、高置信攻击、最大失真攻击和随机置信攻击，适用于白盒和黑盒设置。然后，我们使用全面的数据集对典型的受害模型进行了这些新型攻击的测试，证明即使只进行相对较少的查询，攻击也能造成重大的校准错误。我们还提供了详细的分析以了解校准攻击的不同方面。在此基础上，我们研究了广泛使用的对抗防御和校准方法对这些攻击类型的有效性。
+
+    We introduce a new framework of adversarial attacks, named calibration attacks, in which the attacks are generated and organized to trap victim models to be miscalibrated without altering their original accuracy, hence seriously endangering the trustworthiness of the models and any decision-making based on their confidence scores. Specifically, we identify four novel forms of calibration attacks: underconfidence attacks, overconfidence attacks, maximum miscalibration attacks, and random confidence attacks, in both the black-box and white-box setups. We then test these new attacks on typical victim models with comprehensive datasets, demonstrating that even with a relatively low number of queries, the attacks can create significant calibration mistakes. We further provide detailed analyses to understand different aspects of calibration attacks. Building on that, we investigate the effectiveness of widely used adversarial defences and calibration methods against these types of attacks, w
+    
+[^6]: 生成和评估合成纵向患者数据的方法：一项系统综述
+
+    Methods for generating and evaluating synthetic longitudinal patient data: a systematic review. (arXiv:2309.12380v1 [stat.ME])
+
+    [http://arxiv.org/abs/2309.12380](http://arxiv.org/abs/2309.12380)
+
+    本文对生成和评估合成纵向患者数据的方法进行了系统综述，以解决医学领域中数据使用和隐私保护的问题。
+
+    
+
+    近年来数据的迅猛增长促进了各种统计和深度学习技术的发展和应用，加快了研究和开发活动。然而，并非所有行业都能从数据的增加中同等受益，部分原因是由于数据使用和隐私规定的法律限制，例如医学领域。为了解决这个问题，提出了各种统计披露和隐私保护方法，包括使用合成数据生成。合成数据是基于一些现有数据生成的，目的是尽可能地复制它们，并充当真实敏感数据的代理。本文对生成和评估合成纵向患者数据的方法进行了系统综述，这是医学领域中一种常见的数据类型。该综述遵循PRISMA指南，并涵盖了自2022年底以来的五个数据库的文献。本文描述了17种方法，从传统方法到深度学习方法。
+
+    The proliferation of data in recent years has led to the advancement and utilization of various statistical and deep learning techniques, thus expediting research and development activities. However, not all industries have benefited equally from the surge in data availability, partly due to legal restrictions on data usage and privacy regulations, such as in medicine. To address this issue, various statistical disclosure and privacy-preserving methods have been proposed, including the use of synthetic data generation. Synthetic data are generated based on some existing data, with the aim of replicating them as closely as possible and acting as a proxy for real sensitive data. This paper presents a systematic review of methods for generating and evaluating synthetic longitudinal patient data, a prevalent data type in medicine. The review adheres to the PRISMA guidelines and covers literature from five databases until the end of 2022. The paper describes 17 methods, ranging from traditi
+    
+[^7]: 基于矩阵自回归的联邦学习拜占庭容错聚合方案
+
+    A Byzantine-Resilient Aggregation Scheme for Federated Learning via Matrix Autoregression on Client Updates. (arXiv:2303.16668v1 [cs.LG])
+
+    [http://arxiv.org/abs/2303.16668](http://arxiv.org/abs/2303.16668)
+
+    本文提出了FLANDERS，一种基于矩阵自回归的联邦学习聚合方案，可以识别恶意客户端，并提供了强大的拜占庭攻击防御。
+
+    
+
+    本文提出了FLANDERS，一种新颖的联邦学习（FL）聚合方案，可以抵御拜占庭攻击。FLANDERS将每个FL轮次中由客户端发送的本地模型更新视为矩阵值时间序列。然后，通过将实际观测与由矩阵自回归预测模型估计的观测进行比较，识别恶意客户端作为这个时间序列的异常值。在不同FL设置下对多个数据集进行的实验证明，FLANDERS在抵御拜占庭攻击方面与最强大的基线相匹配。此外，与现有的防御策略相比， FLANDERS即使在极其严重的攻击场景下仍然非常有效。
+
+    In this work, we propose FLANDERS, a novel federated learning (FL) aggregation scheme robust to Byzantine attacks. FLANDERS considers the local model updates sent by clients at each FL round as a matrix-valued time series. Then, it identifies malicious clients as outliers of this time series by comparing actual observations with those estimated by a matrix autoregressive forecasting model. Experiments conducted on several datasets under different FL settings demonstrate that FLANDERS matches the robustness of the most powerful baselines against Byzantine clients. Furthermore, FLANDERS remains highly effective even under extremely severe attack scenarios, as opposed to existing defense strategies.
     
 

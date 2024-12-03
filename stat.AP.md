@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Zero-shot sampling of adversarial entities in biomedical question answering](https://arxiv.org/abs/2402.10527) | 在生物医学问题回答中，我们提出了一种在嵌入空间中进行零样本采样的方案，用于发现各种对抗实体作为干扰因素，相比随机采样，在对抗问答中表现出明显优势，揭示了不同特征的两种对抗性实体制度。 |
-| [^2] | [On Consistency of Signatures Using Lasso.](http://arxiv.org/abs/2305.10413) | 本文重新审视了Lasso回归对于签名变换的一致性问题，并发现对于不同的过程和时间序列，选择适当的签名定义和随机模型可以提高Lasso回归的一致性。 |
+| [^1] | [What To Do (and Not to Do) with Causal Panel Analysis under Parallel Trends: Lessons from A Large Reanalysis Study.](http://arxiv.org/abs/2309.15983) | 通过对37篇使用观察面板数据的文章进行复制和重新分析，我们发现双向固定效应模型的核心结论在新的异质治疗效应鲁棒估计器下基本保持不变，但平行趋势假设违反和统计力量不足仍然是可信推论的重要障碍。 |
+| [^2] | [Methods for generating and evaluating synthetic longitudinal patient data: a systematic review.](http://arxiv.org/abs/2309.12380) | 本文对生成和评估合成纵向患者数据的方法进行了系统综述，以解决医学领域中数据使用和隐私保护的问题。 |
 
 # 详细
 
-[^1]: 生物医学问题回答中的零样本采样对抗实体
+[^1]: 如何在平行趋势下进行因果面板分析：一项大规模再分析研究的教训
 
-    Zero-shot sampling of adversarial entities in biomedical question answering
+    What To Do (and Not to Do) with Causal Panel Analysis under Parallel Trends: Lessons from A Large Reanalysis Study. (arXiv:2309.15983v1 [stat.ME])
 
-    [https://arxiv.org/abs/2402.10527](https://arxiv.org/abs/2402.10527)
+    [http://arxiv.org/abs/2309.15983](http://arxiv.org/abs/2309.15983)
 
-    在生物医学问题回答中，我们提出了一种在嵌入空间中进行零样本采样的方案，用于发现各种对抗实体作为干扰因素，相比随机采样，在对抗问答中表现出明显优势，揭示了不同特征的两种对抗性实体制度。
-
-    
-
-    大型语言模型（LLM）中参数域知识的增加深度推动它们在现实世界应用中的快速部署。在高风险和知识密集型任务中，理解模型的漏洞对于量化模型预测的可信度和规范其使用至关重要。最近发现在自然语言处理任务中作为对抗示例的命名实体引发了关于它们在其他环境中可能的伪装的疑问。在这里，我们提出了一种在嵌入空间中的幂缩放距离加权采样方案，以发现多样化的对抗实体作为干扰因素。我们展示了它在生物医学主题的对抗性问题回答中优于随机采样的优势。我们的方法使得可以探索攻击表面上的不同区域，这揭示了两种在特征上明显不同的对抗性实体的制度。此外，我们展示了攻击方式如何...
-
-    arXiv:2402.10527v1 Announce Type: new  Abstract: The increasing depth of parametric domain knowledge in large language models (LLMs) is fueling their rapid deployment in real-world applications. In high-stakes and knowledge-intensive tasks, understanding model vulnerabilities is essential for quantifying the trustworthiness of model predictions and regulating their use. The recent discovery of named entities as adversarial examples in natural language processing tasks raises questions about their potential guises in other settings. Here, we propose a powerscaled distance-weighted sampling scheme in embedding space to discover diverse adversarial entities as distractors. We demonstrate its advantage over random sampling in adversarial question answering on biomedical topics. Our approach enables the exploration of different regions on the attack surface, which reveals two regimes of adversarial entities that markedly differ in their characteristics. Moreover, we show that the attacks su
-    
-[^2]: 使用Lasso的签名一致性研究
-
-    On Consistency of Signatures Using Lasso. (arXiv:2305.10413v1 [stat.ML])
-
-    [http://arxiv.org/abs/2305.10413](http://arxiv.org/abs/2305.10413)
-
-    本文重新审视了Lasso回归对于签名变换的一致性问题，并发现对于不同的过程和时间序列，选择适当的签名定义和随机模型可以提高Lasso回归的一致性。
+    通过对37篇使用观察面板数据的文章进行复制和重新分析，我们发现双向固定效应模型的核心结论在新的异质治疗效应鲁棒估计器下基本保持不变，但平行趋势假设违反和统计力量不足仍然是可信推论的重要障碍。
 
     
 
-    签名变换是连续和离散时间序列数据的迭代路径积分，它们的普遍非线性通过线性化特征选择问题。本文在理论和数值上重新审视了Lasso回归对于签名变换的一致性问题。我们的研究表明，对于更接近布朗运动或具有较弱跨维度相关性的过程和时间序列，签名定义为It\^o积分的Lasso回归更具一致性；对于均值回归过程和时间序列，其签名定义为Stratonovich积分在Lasso回归中具有更高的一致性。我们的发现强调了在统计推断和机器学习中选择适当的签名和随机模型的重要性。
+    双向固定效应模型在政治科学中的因果面板分析中普遍应用。然而，最近的方法论讨论挑战了其在存在异质治疗效应和平行趋势假设违反情况下的有效性。这一新兴的文献引入了多个估计器和诊断方法，导致实证研究人员在两个方面产生了困惑：基于双向固定效应模型的现有结果的可靠性和目前的最佳实践。为了解决这些问题，我们考察、复制和重新分析了三个领先政治科学期刊上共37篇运用观察面板数据和二元治疗的文章。使用六种新引入的异质治疗效应鲁棒估计器，我们发现尽管精确性可能受到影响，但基于双向固定效应估计的核心结论在很大程度上保持不变。然而，平行趋势假设的违反和统计力量不足仍然是可信推论的重要障碍。
 
-    Signature transforms are iterated path integrals of continuous and discrete-time time series data, and their universal nonlinearity linearizes the problem of feature selection. This paper revisits the consistency issue of Lasso regression for the signature transform, both theoretically and numerically. Our study shows that, for processes and time series that are closer to Brownian motion or random walk with weaker inter-dimensional correlations, the Lasso regression is more consistent for their signatures defined by It\^o integrals; for mean reverting processes and time series, their signatures defined by Stratonovich integrals have more consistency in the Lasso regression. Our findings highlight the importance of choosing appropriate definitions of signatures and stochastic models in statistical inference and machine learning.
+    Two-way fixed effects (TWFE) models are ubiquitous in causal panel analysis in political science. However, recent methodological discussions challenge their validity in the presence of heterogeneous treatment effects (HTE) and violations of the parallel trends assumption (PTA). This burgeoning literature has introduced multiple estimators and diagnostics, leading to confusion among empirical researchers on two fronts: the reliability of existing results based on TWFE models and the current best practices. To address these concerns, we examined, replicated, and reanalyzed 37 articles from three leading political science journals that employed observational panel data with binary treatments. Using six newly introduced HTE-robust estimators, we find that although precision may be affected, the core conclusions derived from TWFE estimates largely remain unchanged. PTA violations and insufficient statistical power, however, continue to be significant obstacles to credible inferences. Based 
+    
+[^2]: 生成和评估合成纵向患者数据的方法：一项系统综述
+
+    Methods for generating and evaluating synthetic longitudinal patient data: a systematic review. (arXiv:2309.12380v1 [stat.ME])
+
+    [http://arxiv.org/abs/2309.12380](http://arxiv.org/abs/2309.12380)
+
+    本文对生成和评估合成纵向患者数据的方法进行了系统综述，以解决医学领域中数据使用和隐私保护的问题。
+
+    
+
+    近年来数据的迅猛增长促进了各种统计和深度学习技术的发展和应用，加快了研究和开发活动。然而，并非所有行业都能从数据的增加中同等受益，部分原因是由于数据使用和隐私规定的法律限制，例如医学领域。为了解决这个问题，提出了各种统计披露和隐私保护方法，包括使用合成数据生成。合成数据是基于一些现有数据生成的，目的是尽可能地复制它们，并充当真实敏感数据的代理。本文对生成和评估合成纵向患者数据的方法进行了系统综述，这是医学领域中一种常见的数据类型。该综述遵循PRISMA指南，并涵盖了自2022年底以来的五个数据库的文献。本文描述了17种方法，从传统方法到深度学习方法。
+
+    The proliferation of data in recent years has led to the advancement and utilization of various statistical and deep learning techniques, thus expediting research and development activities. However, not all industries have benefited equally from the surge in data availability, partly due to legal restrictions on data usage and privacy regulations, such as in medicine. To address this issue, various statistical disclosure and privacy-preserving methods have been proposed, including the use of synthetic data generation. Synthetic data are generated based on some existing data, with the aim of replicating them as closely as possible and acting as a proxy for real sensitive data. This paper presents a systematic review of methods for generating and evaluating synthetic longitudinal patient data, a prevalent data type in medicine. The review adheres to the PRISMA guidelines and covers literature from five databases until the end of 2022. The paper describes 17 methods, ranging from traditi
     
 

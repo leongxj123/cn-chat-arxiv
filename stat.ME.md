@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Frequency and cardinality recovery from sketched data: a novel approach bridging Bayesian and frequentist views.](http://arxiv.org/abs/2309.15408) | 该论文研究了如何仅使用压缩表示来恢复大规模数据集中符号的频率，并引入了新的估计方法，将贝叶斯和频率论观点结合起来，提供了更好的解决方案。此外，还扩展了该方法以解决基数恢复问题。 |
+| [^1] | [What To Do (and Not to Do) with Causal Panel Analysis under Parallel Trends: Lessons from A Large Reanalysis Study.](http://arxiv.org/abs/2309.15983) | 通过对37篇使用观察面板数据的文章进行复制和重新分析，我们发现双向固定效应模型的核心结论在新的异质治疗效应鲁棒估计器下基本保持不变，但平行趋势假设违反和统计力量不足仍然是可信推论的重要障碍。 |
+| [^2] | [Methods for generating and evaluating synthetic longitudinal patient data: a systematic review.](http://arxiv.org/abs/2309.12380) | 本文对生成和评估合成纵向患者数据的方法进行了系统综述，以解决医学领域中数据使用和隐私保护的问题。 |
 
 # 详细
 
-[^1]: 从压缩数据中恢复频率和基数：一种将贝叶斯和频率论观点连接起来的新方法
+[^1]: 如何在平行趋势下进行因果面板分析：一项大规模再分析研究的教训
 
-    Frequency and cardinality recovery from sketched data: a novel approach bridging Bayesian and frequentist views. (arXiv:2309.15408v1 [stat.ME])
+    What To Do (and Not to Do) with Causal Panel Analysis under Parallel Trends: Lessons from A Large Reanalysis Study. (arXiv:2309.15983v1 [stat.ME])
 
-    [http://arxiv.org/abs/2309.15408](http://arxiv.org/abs/2309.15408)
+    [http://arxiv.org/abs/2309.15983](http://arxiv.org/abs/2309.15983)
 
-    该论文研究了如何仅使用压缩表示来恢复大规模数据集中符号的频率，并引入了新的估计方法，将贝叶斯和频率论观点结合起来，提供了更好的解决方案。此外，还扩展了该方法以解决基数恢复问题。
+    通过对37篇使用观察面板数据的文章进行复制和重新分析，我们发现双向固定效应模型的核心结论在新的异质治疗效应鲁棒估计器下基本保持不变，但平行趋势假设违反和统计力量不足仍然是可信推论的重要障碍。
 
     
 
-    我们研究如何仅使用通过随机哈希获得的对数据进行压缩表示或草图来恢复大规模离散数据集中符号的频率。这是一个在计算机科学中的经典问题，有各种算法可用，如计数最小草图。然而，这些算法通常假设数据是固定的，处理随机采样数据时估计过于保守且可能不准确。在本文中，我们将草图数据视为未知分布的随机样本，然后引入改进现有方法的新估计器。我们的方法结合了贝叶斯非参数和经典（频率论）观点，解决了它们独特的限制，提供了一个有原则且实用的解决方案。此外，我们扩展了我们的方法以解决相关但不同的基数恢复问题，该问题涉及估计数据集中不同对象的总数。
+    双向固定效应模型在政治科学中的因果面板分析中普遍应用。然而，最近的方法论讨论挑战了其在存在异质治疗效应和平行趋势假设违反情况下的有效性。这一新兴的文献引入了多个估计器和诊断方法，导致实证研究人员在两个方面产生了困惑：基于双向固定效应模型的现有结果的可靠性和目前的最佳实践。为了解决这些问题，我们考察、复制和重新分析了三个领先政治科学期刊上共37篇运用观察面板数据和二元治疗的文章。使用六种新引入的异质治疗效应鲁棒估计器，我们发现尽管精确性可能受到影响，但基于双向固定效应估计的核心结论在很大程度上保持不变。然而，平行趋势假设的违反和统计力量不足仍然是可信推论的重要障碍。
 
-    We study how to recover the frequency of a symbol in a large discrete data set, using only a compressed representation, or sketch, of those data obtained via random hashing. This is a classical problem in computer science, with various algorithms available, such as the count-min sketch. However, these algorithms often assume that the data are fixed, leading to overly conservative and potentially inaccurate estimates when dealing with randomly sampled data. In this paper, we consider the sketched data as a random sample from an unknown distribution, and then we introduce novel estimators that improve upon existing approaches. Our method combines Bayesian nonparametric and classical (frequentist) perspectives, addressing their unique limitations to provide a principled and practical solution. Additionally, we extend our method to address the related but distinct problem of cardinality recovery, which consists of estimating the total number of distinct objects in the data set. We validate
+    Two-way fixed effects (TWFE) models are ubiquitous in causal panel analysis in political science. However, recent methodological discussions challenge their validity in the presence of heterogeneous treatment effects (HTE) and violations of the parallel trends assumption (PTA). This burgeoning literature has introduced multiple estimators and diagnostics, leading to confusion among empirical researchers on two fronts: the reliability of existing results based on TWFE models and the current best practices. To address these concerns, we examined, replicated, and reanalyzed 37 articles from three leading political science journals that employed observational panel data with binary treatments. Using six newly introduced HTE-robust estimators, we find that although precision may be affected, the core conclusions derived from TWFE estimates largely remain unchanged. PTA violations and insufficient statistical power, however, continue to be significant obstacles to credible inferences. Based 
+    
+[^2]: 生成和评估合成纵向患者数据的方法：一项系统综述
+
+    Methods for generating and evaluating synthetic longitudinal patient data: a systematic review. (arXiv:2309.12380v1 [stat.ME])
+
+    [http://arxiv.org/abs/2309.12380](http://arxiv.org/abs/2309.12380)
+
+    本文对生成和评估合成纵向患者数据的方法进行了系统综述，以解决医学领域中数据使用和隐私保护的问题。
+
+    
+
+    近年来数据的迅猛增长促进了各种统计和深度学习技术的发展和应用，加快了研究和开发活动。然而，并非所有行业都能从数据的增加中同等受益，部分原因是由于数据使用和隐私规定的法律限制，例如医学领域。为了解决这个问题，提出了各种统计披露和隐私保护方法，包括使用合成数据生成。合成数据是基于一些现有数据生成的，目的是尽可能地复制它们，并充当真实敏感数据的代理。本文对生成和评估合成纵向患者数据的方法进行了系统综述，这是医学领域中一种常见的数据类型。该综述遵循PRISMA指南，并涵盖了自2022年底以来的五个数据库的文献。本文描述了17种方法，从传统方法到深度学习方法。
+
+    The proliferation of data in recent years has led to the advancement and utilization of various statistical and deep learning techniques, thus expediting research and development activities. However, not all industries have benefited equally from the surge in data availability, partly due to legal restrictions on data usage and privacy regulations, such as in medicine. To address this issue, various statistical disclosure and privacy-preserving methods have been proposed, including the use of synthetic data generation. Synthetic data are generated based on some existing data, with the aim of replicating them as closely as possible and acting as a proxy for real sensitive data. This paper presents a systematic review of methods for generating and evaluating synthetic longitudinal patient data, a prevalent data type in medicine. The review adheres to the PRISMA guidelines and covers literature from five databases until the end of 2022. The paper describes 17 methods, ranging from traditi
     
 

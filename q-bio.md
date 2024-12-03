@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Large language models surpass human experts in predicting neuroscience results](https://arxiv.org/abs/2403.03230) | 大型语言模型通过整合广泛科学文献中的相关发现，能够优于人类专家预测神经科学实验结果，预示着人类与大型语言模型共同进行发现的未来。 |
+| [^1] | [Disentangling the Link Between Image Statistics and Human Perception.](http://arxiv.org/abs/2303.09874) | 本研究直接评估自然图像的概率，并分析它如何影响人类感知。通过展示具有更丰富统计特征的自然图像被感知为具有更大的显着性，论文提供了直接支持Barlow和Attneave理论的证据，并建立了一个新的框架，用于理解图像统计与知觉之间的关系。 |
 
 # 详细
 
-[^1]: 大型语言模型在预测神经科学结果方面超越人类专家
+[^1]: 图像统计与人类感知之间的关联关系分离
 
-    Large language models surpass human experts in predicting neuroscience results
+    Disentangling the Link Between Image Statistics and Human Perception. (arXiv:2303.09874v1 [cs.CV])
 
-    [https://arxiv.org/abs/2403.03230](https://arxiv.org/abs/2403.03230)
+    [http://arxiv.org/abs/2303.09874](http://arxiv.org/abs/2303.09874)
 
-    大型语言模型通过整合广泛科学文献中的相关发现，能够优于人类专家预测神经科学实验结果，预示着人类与大型语言模型共同进行发现的未来。
+    本研究直接评估自然图像的概率，并分析它如何影响人类感知。通过展示具有更丰富统计特征的自然图像被感知为具有更大的显着性，论文提供了直接支持Barlow和Attneave理论的证据，并建立了一个新的框架，用于理解图像统计与知觉之间的关系。
 
     
 
-    科学发现常常取决于综合几十年的研究，这一任务可能超出人类信息处理能力。大型语言模型（LLMs）提供了一个解决方案。在广泛的科学文献上训练的LLMs可能能够整合嘈杂但相关的发现，以优于人类专家来预测新颖结果。为了评估这种可能性，我们创建了BrainBench，一个前瞻性的基准，用于预测神经科学结果。我们发现LLMs在预测实验结果方面超越了专家。在神经科学文献上调整的一个LLM，BrainGPT表现得更好。与人类专家一样，当LLMs对他们的预测有信心时，他们更有可能是正确的，这预示着未来人类和LLMs将合作进行发现。我们的方法并非特定于神经科学，并且可转移到其他知识密集型事业中。
+    在20世纪50年代，霍勒斯巴洛和弗雷德阿特纳夫提出了感官系统和它们如何适应环境之间的关系：早期视觉的进化是为了最大限度地传递关于输入信号的信息。按照香农的定义，这些信息是通过自然场景中拍摄的图像的概率来描述的。由于计算能力的限制，以前无法直接准确地预测图像的概率。尽管这种想法的探索是间接的，主要基于图像密度的过度简化模型或系统设计方法，但这些方法在重现各种生理和心理物理现象方面取得了成功。在本文中，我们直接评估自然图像的概率，并分析它如何确定知觉灵敏度。我们使用与人类意见相关性很高的图像质量指标作为人类视觉的代理，以及一个先进的生成模型来直接估计自然图像的概率密度函数。我们的结果表明，根据Barlow和Attneave理论预测的图像统计与人类知觉之间存在系统性的关联。我们通过展示具有更丰富统计特征的自然图像被感知为具有更大的显着性来说明这一发现，这是通过视觉搜索实验测量的。我们的工作提供了直接支持Barlow和Attneave理论的证据，并建立了一个新的框架，用于理解图像统计与知觉之间的关系。
 
-    arXiv:2403.03230v1 Announce Type: cross  Abstract: Scientific discoveries often hinge on synthesizing decades of research, a task that potentially outstrips human information processing capacities. Large language models (LLMs) offer a solution. LLMs trained on the vast scientific literature could potentially integrate noisy yet interrelated findings to forecast novel results better than human experts. To evaluate this possibility, we created BrainBench, a forward-looking benchmark for predicting neuroscience results. We find that LLMs surpass experts in predicting experimental outcomes. BrainGPT, an LLM we tuned on the neuroscience literature, performed better yet. Like human experts, when LLMs were confident in their predictions, they were more likely to be correct, which presages a future where humans and LLMs team together to make discoveries. Our approach is not neuroscience-specific and is transferable to other knowledge-intensive endeavors.
+    In the 1950s Horace Barlow and Fred Attneave suggested a connection between sensory systems and how they are adapted to the environment: early vision evolved to maximise the information it conveys about incoming signals. Following Shannon's definition, this information was described using the probability of the images taken from natural scenes. Previously, direct accurate predictions of image probabilities were not possible due to computational limitations. Despite the exploration of this idea being indirect, mainly based on oversimplified models of the image density or on system design methods, these methods had success in reproducing a wide range of physiological and psychophysical phenomena. In this paper, we directly evaluate the probability of natural images and analyse how it may determine perceptual sensitivity. We employ image quality metrics that correlate well with human opinion as a surrogate of human vision, and an advanced generative model to directly estimate the probabil
     
 
