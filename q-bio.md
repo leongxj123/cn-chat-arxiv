@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Disentangling the Link Between Image Statistics and Human Perception.](http://arxiv.org/abs/2303.09874) | 本研究直接评估自然图像的概率，并分析它如何影响人类感知。通过展示具有更丰富统计特征的自然图像被感知为具有更大的显着性，论文提供了直接支持Barlow和Attneave理论的证据，并建立了一个新的框架，用于理解图像统计与知觉之间的关系。 |
+| [^1] | [Importance Weighted Expectation-Maximization for Protein Sequence Design.](http://arxiv.org/abs/2305.00386) | 本文提出了一种名为IsEM-Pro的方法，用于根据给定适应性标准生成蛋白质序列。在推理期间，从其潜在空间采样可以增加多样性，指导了探索高适应性区域。实验表明，相比先前最佳方法，IsEM-Pro的平均适应性得分至少高出55％，并生成了更多样化和新颖的蛋白质序列。 |
 
 # 详细
 
-[^1]: 图像统计与人类感知之间的关联关系分离
+[^1]: 蛋白质序列设计的重要性加权期望最大化方法
 
-    Disentangling the Link Between Image Statistics and Human Perception. (arXiv:2303.09874v1 [cs.CV])
+    Importance Weighted Expectation-Maximization for Protein Sequence Design. (arXiv:2305.00386v1 [q-bio.BM])
 
-    [http://arxiv.org/abs/2303.09874](http://arxiv.org/abs/2303.09874)
+    [http://arxiv.org/abs/2305.00386](http://arxiv.org/abs/2305.00386)
 
-    本研究直接评估自然图像的概率，并分析它如何影响人类感知。通过展示具有更丰富统计特征的自然图像被感知为具有更大的显着性，论文提供了直接支持Barlow和Attneave理论的证据，并建立了一个新的框架，用于理解图像统计与知觉之间的关系。
+    本文提出了一种名为IsEM-Pro的方法，用于根据给定适应性标准生成蛋白质序列。在推理期间，从其潜在空间采样可以增加多样性，指导了探索高适应性区域。实验表明，相比先前最佳方法，IsEM-Pro的平均适应性得分至少高出55％，并生成了更多样化和新颖的蛋白质序列。
 
     
 
-    在20世纪50年代，霍勒斯巴洛和弗雷德阿特纳夫提出了感官系统和它们如何适应环境之间的关系：早期视觉的进化是为了最大限度地传递关于输入信号的信息。按照香农的定义，这些信息是通过自然场景中拍摄的图像的概率来描述的。由于计算能力的限制，以前无法直接准确地预测图像的概率。尽管这种想法的探索是间接的，主要基于图像密度的过度简化模型或系统设计方法，但这些方法在重现各种生理和心理物理现象方面取得了成功。在本文中，我们直接评估自然图像的概率，并分析它如何确定知觉灵敏度。我们使用与人类意见相关性很高的图像质量指标作为人类视觉的代理，以及一个先进的生成模型来直接估计自然图像的概率密度函数。我们的结果表明，根据Barlow和Attneave理论预测的图像统计与人类知觉之间存在系统性的关联。我们通过展示具有更丰富统计特征的自然图像被感知为具有更大的显着性来说明这一发现，这是通过视觉搜索实验测量的。我们的工作提供了直接支持Barlow和Attneave理论的证据，并建立了一个新的框架，用于理解图像统计与知觉之间的关系。
+    在生物和化学领域，设计具有所需生物功能的蛋白质序列非常重要。最近的机器学习方法使用代理序列-功能模型替代昂贵的湿实验验证。本文提出了一种名为IsEM-Pro的方法，用于根据给定的适应性标准生成蛋白质序列。它是一个潜在的生成模型，并受到另外一个学习的马尔可夫随机场结构特征的增强。研究者使用蒙特卡罗期望最大化方法（MCEM）来学习这个模型。在推理期间，从其潜在空间采样可以增加多样性，而其MRF特征则指导了探索高适应性区域。在八项蛋白质序列设计任务中的实验表明，我们的IsEM-Pro的平均适应性得分至少比先前最佳方法高55％，并且生成了更多样化和新颖的蛋白质序列。
 
-    In the 1950s Horace Barlow and Fred Attneave suggested a connection between sensory systems and how they are adapted to the environment: early vision evolved to maximise the information it conveys about incoming signals. Following Shannon's definition, this information was described using the probability of the images taken from natural scenes. Previously, direct accurate predictions of image probabilities were not possible due to computational limitations. Despite the exploration of this idea being indirect, mainly based on oversimplified models of the image density or on system design methods, these methods had success in reproducing a wide range of physiological and psychophysical phenomena. In this paper, we directly evaluate the probability of natural images and analyse how it may determine perceptual sensitivity. We employ image quality metrics that correlate well with human opinion as a surrogate of human vision, and an advanced generative model to directly estimate the probabil
+    Designing protein sequences with desired biological function is crucial in biology and chemistry. Recent machine learning methods use a surrogate sequence-function model to replace the expensive wet-lab validation. How can we efficiently generate diverse and novel protein sequences with high fitness? In this paper, we propose IsEM-Pro, an approach to generate protein sequences towards a given fitness criterion. At its core, IsEM-Pro is a latent generative model, augmented by combinatorial structure features from a separately learned Markov random fields (MRFs). We develop an Monte Carlo Expectation-Maximization method (MCEM) to learn the model. During inference, sampling from its latent space enhances diversity while its MRFs features guide the exploration in high fitness regions. Experiments on eight protein sequence design tasks show that our IsEM-Pro outperforms the previous best methods by at least 55% on average fitness score and generates more diverse and novel protein sequences.
     
 

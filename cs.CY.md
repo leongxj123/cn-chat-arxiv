@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [From Prejudice to Parity: A New Approach to Debiasing Large Language Model Word Embeddings](https://arxiv.org/abs/2402.11512) | 提出了DeepSoftDebias算法，在不同领域数据集、准确度指标和NLP任务中全面评估，发现其在减少性别、种族和宗教偏见方面优于现有最先进方法 |
+| [^1] | [Governance of Generative Artificial Intelligence for Companies](https://arxiv.org/abs/2403.08802) | 本综述填补了有关企业中生成式人工智能（GenAI）治理的研究空白，提出了一个框架，旨在利用业务机会并减轻与GenAI整合相关风险。 |
 
 # 详细
 
-[^1]: 从偏见到平等：去偏巨型语言模型词嵌入的新方法
+[^1]: 企业中生成式人工智能的治理
 
-    From Prejudice to Parity: A New Approach to Debiasing Large Language Model Word Embeddings
+    Governance of Generative Artificial Intelligence for Companies
 
-    [https://arxiv.org/abs/2402.11512](https://arxiv.org/abs/2402.11512)
+    [https://arxiv.org/abs/2403.08802](https://arxiv.org/abs/2403.08802)
 
-    提出了DeepSoftDebias算法，在不同领域数据集、准确度指标和NLP任务中全面评估，发现其在减少性别、种族和宗教偏见方面优于现有最先进方法
+    本综述填补了有关企业中生成式人工智能（GenAI）治理的研究空白，提出了一个框架，旨在利用业务机会并减轻与GenAI整合相关风险。
 
     
 
-    嵌入在巨型语言模型的有效性中扮演着重要角色。它们是这些模型把握上下文关系、促进更细致语言理解以及在许多需要对人类语言有基本理解的复杂任务上表现出色的基石。鉴于这些嵌入往往自身反映或展示偏见，因此这些模型可能也会无意中学习这种偏见。在这项研究中，我们在开创性前人研究基础上提出了DeepSoftDebias，这是一种使用神经网络进行“软去偏”的算法。我们在各类最先进数据集、准确度指标和具有挑战的自然语言处理任务中全面评估了这个算法。我们发现DeepSoftDebias在减少性别、种族和宗教偏见方面优于目前的最先进方法。
+    生成式人工智能（GenAI），特别是像ChatGPT这样的大型语言模型，已迅速进入企业，但缺乏充分的治理，带来机遇和挑战。尽管对GenAI具有变革性质和监管措施的广泛讨论，但有限的研究涉及组织治理，包括技术和业务视角。本综述填补了这一空白，调查了最近的研究。它不仅仅是总结，还通过制定适用于企业内的GenAI治理框架来进行。我们的框架详细描述了范围、目标和治理机制，旨在利用业务机会并减轻与GenAI整合相关风险。该研究提供了一种专注于GenAI治理的方法，为企业在负责任的AI采用挑战中提供了实用见解。对于技术人员来说，也有助于拓宽他们的视角。
 
-    arXiv:2402.11512v1 Announce Type: new  Abstract: Embeddings play a pivotal role in the efficacy of Large Language Models. They are the bedrock on which these models grasp contextual relationships and foster a more nuanced understanding of language and consequently perform remarkably on a plethora of complex tasks that require a fundamental understanding of human language. Given that these embeddings themselves often reflect or exhibit bias, it stands to reason that these models may also inadvertently learn this bias. In this work, we build on the seminal previous work and propose DeepSoftDebias, an algorithm that uses a neural network to perform `soft debiasing'. We exhaustively evaluate this algorithm across a variety of SOTA datasets, accuracy metrics, and challenging NLP tasks. We find that DeepSoftDebias outperforms the current state-of-the-art methods at reducing bias across gender, race, and religion.
+    arXiv:2403.08802v1 Announce Type: new  Abstract: Generative Artificial Intelligence (GenAI), specifically large language models like ChatGPT, has swiftly entered organizations without adequate governance, posing both opportunities and risks. Despite extensive debates on GenAI's transformative nature and regulatory measures, limited research addresses organizational governance, encompassing technical and business perspectives. This review paper fills this gap by surveying recent works. It goes beyond mere summarization by developing a framework for GenAI governance within companies. Our framework outlines the scope, objectives, and governance mechanisms tailored to harness business opportunities and mitigate risks associated with GenAI integration. This research contributes a focused approach to GenAI governance, offering practical insights for companies navigating the challenges of responsible AI adoption. It is also valuable for a technical audience to broaden their perspective as inc
     
 
