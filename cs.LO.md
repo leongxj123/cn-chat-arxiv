@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [The Descriptive Complexity of Graph Neural Networks.](http://arxiv.org/abs/2303.04613) | 研究分析了图神经网络（GNN）在布尔电路复杂性和描述性复杂性方面的能力，证明了多项式规模有界深度的GNN族族可以计算的图查询正是带计数和内置关系的一阶逻辑受保护的片断GFO+C所定义的，这将GNN放在电路复杂性类TC^0中。 |
+| [^1] | [Data quality dimensions for fair AI.](http://arxiv.org/abs/2305.06967) | 本文着眼于解决AI系统中的偏见问题，从信息质量维度的角度出发提出了解决偏见的潜在改进，提出了完整性、一致性、及时性和可靠性等数据质量维度。 |
 
 # 详细
 
-[^1]: 图神经网络的描述性复杂性
+[^1]: 面向公正AI的数据质量维度
 
-    The Descriptive Complexity of Graph Neural Networks. (arXiv:2303.04613v2 [cs.LO] UPDATED)
+    Data quality dimensions for fair AI. (arXiv:2305.06967v1 [cs.AI])
 
-    [http://arxiv.org/abs/2303.04613](http://arxiv.org/abs/2303.04613)
+    [http://arxiv.org/abs/2305.06967](http://arxiv.org/abs/2305.06967)
 
-    研究分析了图神经网络（GNN）在布尔电路复杂性和描述性复杂性方面的能力，证明了多项式规模有界深度的GNN族族可以计算的图查询正是带计数和内置关系的一阶逻辑受保护的片断GFO+C所定义的，这将GNN放在电路复杂性类TC^0中。
+    本文着眼于解决AI系统中的偏见问题，从信息质量维度的角度出发提出了解决偏见的潜在改进，提出了完整性、一致性、及时性和可靠性等数据质量维度。
 
     
 
-    我们分析了图神经网络（GNN）的布尔电路复杂性和描述性复杂性的能力。我们证明了多项式规模有界深度的GNN族族可以计算的图查询正是那些用带计数和内置关系的一阶逻辑受保护的片断GFO+C定义的。这将GNN放在电路复杂性类TC^0中。值得注意的是，GNN家族可以使用任意实数权值和包括标准ReLU、Logistic“sigmod”和双曲正切函数在内的广泛激活函数类。如果GNN被允许使用随机初始化和全局读取（这些都是GNN在实践中广泛使用的标准功能），它们可以计算与阈门的有界深度布尔电路完全相同的查询，即在TC^0中的查询。此外，我们展示了一个带分段线性激活和有理权重的单个GNN可以在不建造内部关系的情况下由GFO+C定义。
+    人工智能系统并非本质上具有中立性，因此偏见会渗透到任何类型的技术工具中。特别是在处理人类时，AI算法会反映出源于错标记数据的技术错误。由于它们提供了错误和歧视性的分类，延续了结构性种族主义和边缘化现象，这些系统并未系统地防范偏见。本文从信息质量维度的角度考虑了AI系统偏见问题，以两个通常较为困难的情境，即非二元个体的分类和跨性别个体的分类为例，说明了偏见缓解工具的潜在改进。确定要实施的数据质量维度以实现更公平的目的可能有助于解决这个问题，因此我们提出建议在完整性、一致性、及时性和可靠性等方面考虑这个问题，并提供了一些理论结果。
 
-    We analyse the power of graph neural networks (GNNs) in terms of Boolean circuit complexity and descriptive complexity.  We prove that the graph queries that can be computed by a polynomial-size bounded-depth family of GNNs are exactly those definable in the guarded fragment GFO+C of first-order logic with counting and with built-in relations. This puts GNNs in the circuit complexity class TC^0. Remarkably, the GNN families may use arbitrary real weights and a wide class of activation functions that includes the standard ReLU, logistic "sigmod", and hyperbolic tangent functions. If the GNNs are allowed to use random initialisation and global readout (both standard features of GNNs widely used in practice), they can compute exactly the same queries as bounded depth Boolean circuits with threshold gates, that is, exactly the queries in TC^0.  Moreover, we show that queries computable by a single GNN with piecewise linear activations and rational weights are definable in GFO+C without bui
+    AI systems are not intrinsically neutral and biases trickle in any type of technological tool. In particular when dealing with people, AI algorithms reflect technical errors originating with mislabeled data. As they feed wrong and discriminatory classifications, perpetuating structural racism and marginalization, these systems are not systematically guarded against bias. In this article we consider the problem of bias in AI systems from the point of view of Information Quality dimensions. We illustrate potential improvements of a bias mitigation tool in gender classification errors, referring to two typically difficult contexts: the classification of non-binary individuals and the classification of transgender individuals. The identification of data quality dimensions to implement in bias mitigation tool may help achieve more fairness. Hence, we propose to consider this issue in terms of completeness, consistency, timeliness and reliability, and offer some theoretical results.
     
 
