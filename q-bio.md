@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Breast Cancer Classification Using Gradient Boosting Algorithms Focusing on Reducing the False Negative and SHAP for Explainability](https://arxiv.org/abs/2403.09548) | 本研究使用梯度提升算法对乳腺癌进行分类，关注提高召回率，以实现更好的检测和预测效果。 |
+| [^1] | [Tuning the perplexity for and computing sampling-based t-SNE embeddings.](http://arxiv.org/abs/2308.15513) | 本文通过采样的方法改进了大数据集下t-SNE嵌入的质量和计算速度。 |
 
 # 详细
 
-[^1]: 使用梯度提升算法对乳腺癌进行分类，重点减少假阴性和使用 SHAP 进行解释性研究
+[^1]: 调整困惑度并计算基于采样的t-SNE嵌入
 
-    Breast Cancer Classification Using Gradient Boosting Algorithms Focusing on Reducing the False Negative and SHAP for Explainability
+    Tuning the perplexity for and computing sampling-based t-SNE embeddings. (arXiv:2308.15513v1 [cs.LG])
 
-    [https://arxiv.org/abs/2403.09548](https://arxiv.org/abs/2403.09548)
+    [http://arxiv.org/abs/2308.15513](http://arxiv.org/abs/2308.15513)
 
-    本研究使用梯度提升算法对乳腺癌进行分类，关注提高召回率，以实现更好的检测和预测效果。
+    本文通过采样的方法改进了大数据集下t-SNE嵌入的质量和计算速度。
 
     
 
-    癌症是世界上夺走最多女性生命的疾病之一，其中乳腺癌占据了癌症病例和死亡人数最高的位置。然而，通过早期检测可以预防乳腺癌，从而进行早期治疗。许多研究关注的是在癌症预测中具有高准确性的模型，但有时仅依靠准确性可能并非始终可靠。本研究对使用提升技术基于不同机器学习算法预测乳腺癌的性能进行了调查性研究，重点关注召回率指标。提升机器学习算法已被证明是检测医学疾病的有效工具。利用加州大学尔湾分校 (UCI) 数据集对训练和测试模型分类器进行训练，其中包含各自属性。
+    高维数据分析常用的管道利用二维可视化，例如通过t分布邻近随机嵌入（t-SNE）。但在处理大数据集时，应用这些可视化技术会生成次优的嵌入，因为超参数不适用于大数据。将这些参数增加通常不起作用，因为计算对于实际工作流程来说太昂贵。本文中，我们认为基于采样的嵌入方法可以解决这些问题。我们展示了必须谨慎选择超参数，取决于采样率和预期的最终嵌入。此外，我们展示了该方法如何加速计算并提高嵌入的质量。
 
-    arXiv:2403.09548v1 Announce Type: new  Abstract: Cancer is one of the diseases that kill the most women in the world, with breast cancer being responsible for the highest number of cancer cases and consequently deaths. However, it can be prevented by early detection and, consequently, early treatment. Any development for detection or perdition this kind of cancer is important for a better healthy life. Many studies focus on a model with high accuracy in cancer prediction, but sometimes accuracy alone may not always be a reliable metric. This study implies an investigative approach to studying the performance of different machine learning algorithms based on boosting to predict breast cancer focusing on the recall metric. Boosting machine learning algorithms has been proven to be an effective tool for detecting medical diseases. The dataset of the University of California, Irvine (UCI) repository has been utilized to train and test the model classifier that contains their attributes. Th
+    Widely used pipelines for the analysis of high-dimensional data utilize two-dimensional visualizations. These are created, e.g., via t-distributed stochastic neighbor embedding (t-SNE). When it comes to large data sets, applying these visualization techniques creates suboptimal embeddings, as the hyperparameters are not suitable for large data. Cranking up these parameters usually does not work as the computations become too expensive for practical workflows. In this paper, we argue that a sampling-based embedding approach can circumvent these problems. We show that hyperparameters must be chosen carefully, depending on the sampling rate and the intended final embedding. Further, we show how this approach speeds up the computation and increases the quality of the embeddings.
     
 
