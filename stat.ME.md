@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Causal thinking for decision making on Electronic Health Records: why and how.](http://arxiv.org/abs/2308.01605) | 本文介绍了在电子健康记录中使用因果思维进行决策的必要性和方法。通过模拟随机试验来个性化决策，以减少数据中的偏见。这对于分析电子健康记录或索赔数据以得出因果结论的最重要陷阱和考虑因素进行了重点强调。 |
-| [^2] | [Robust Estimation and Inference in Panels with Interactive Fixed Effects.](http://arxiv.org/abs/2210.06639) | 本文研究了具有交互固定效应的面板数据中回归系数的估计和推断问题。通过采用改进的估计器和偏倚感知置信区间，我们能够解决因素弱引起的偏倚和大小失真的问题，无论因素是否强壮，都能得到统一有效的结果。 |
+| [^1] | [Robust Estimation and Inference in Categorical Data](https://arxiv.org/abs/2403.11954) | 提出了一种通用估计器，能够鲁棒地处理分类数据模型的误设，不做任何假设，并且可以应用于任何分类响应模型。 |
+| [^2] | [TNDDR: Efficient and doubly robust estimation of COVID-19 vaccine effectiveness under the test-negative design.](http://arxiv.org/abs/2310.04578) | 我们提出了一种高效且双重鲁棒的估计器TNDDR，用于在阴性测试设计下估计COVID-19疫苗的有效性，可有效解决选择偏差问题，并结合机器学习技术进行辅助函数估计。 |
 
 # 详细
 
-[^1]: 用于决策的因果思维在电子健康记录中的应用：为什么以及如何
+[^1]: 在分类数据中的鲁棒估计和推断
 
-    Causal thinking for decision making on Electronic Health Records: why and how. (arXiv:2308.01605v1 [stat.ME])
+    Robust Estimation and Inference in Categorical Data
 
-    [http://arxiv.org/abs/2308.01605](http://arxiv.org/abs/2308.01605)
+    [https://arxiv.org/abs/2403.11954](https://arxiv.org/abs/2403.11954)
 
-    本文介绍了在电子健康记录中使用因果思维进行决策的必要性和方法。通过模拟随机试验来个性化决策，以减少数据中的偏见。这对于分析电子健康记录或索赔数据以得出因果结论的最重要陷阱和考虑因素进行了重点强调。
-
-    
-
-    准确的预测，如同机器学习一样，可能无法为每个患者提供最佳医疗保健。确实，预测可能受到数据中的捷径（如种族偏见）的驱动。为数据驱动的决策需要因果思维。在这里，我们介绍关键要素，重点关注常规收集的数据，即电子健康记录（EHRs）和索赔数据。使用这些数据评估干预的价值需要谨慎：时间依赖性和现有实践很容易混淆因果效应。我们提供了一个逐步框架，帮助从真实患者记录中构建有效的决策，通过模拟随机试验来个性化决策，例如使用机器学习。我们的框架强调了分析EHRs或索赔数据以得出因果结论时最重要的陷阱和考虑因素。我们在用于重症医学信息市场中的肌酐对败血症死亡率的影响的研究中说明了各种选择。
-
-    Accurate predictions, as with machine learning, may not suffice to provide optimal healthcare for every patient. Indeed, prediction can be driven by shortcuts in the data, such as racial biases. Causal thinking is needed for data-driven decisions. Here, we give an introduction to the key elements, focusing on routinely-collected data, electronic health records (EHRs) and claims data. Using such data to assess the value of an intervention requires care: temporal dependencies and existing practices easily confound the causal effect. We present a step-by-step framework to help build valid decision making from real-life patient records by emulating a randomized trial before individualizing decisions, eg with machine learning. Our framework highlights the most important pitfalls and considerations in analysing EHRs or claims data to draw causal conclusions. We illustrate the various choices in studying the effect of albumin on sepsis mortality in the Medical Information Mart for Intensive C
-    
-[^2]: 具有交互固定效应的面板数据中的鲁棒估计和推断
-
-    Robust Estimation and Inference in Panels with Interactive Fixed Effects. (arXiv:2210.06639v2 [econ.EM] UPDATED)
-
-    [http://arxiv.org/abs/2210.06639](http://arxiv.org/abs/2210.06639)
-
-    本文研究了具有交互固定效应的面板数据中回归系数的估计和推断问题。通过采用改进的估计器和偏倚感知置信区间，我们能够解决因素弱引起的偏倚和大小失真的问题，无论因素是否强壮，都能得到统一有效的结果。
+    提出了一种通用估计器，能够鲁棒地处理分类数据模型的误设，不做任何假设，并且可以应用于任何分类响应模型。
 
     
 
-    本文考虑具有交互固定效应（即具有因子结构）的面板数据中回归系数的估计和推断问题。我们发现之前开发的估计器和置信区间可能在一些因素较弱的情况下存在严重的偏倚和大小失真。我们提出了具有改进收敛速度和偏倚感知置信区间的估计器，无论因素是否强壮都能保持统一有效。我们的方法采用最小化线性估计理论，在初始交互固定效应的误差上使用核范数约束来形成一个无偏估计。我们利用所得估计构建一个考虑到因素弱引起的剩余偏差的偏倚感知置信区间。在蒙特卡洛实验中，我们发现在因素较弱的情况下相较于传统方法有显著改进，并且在因素较强的情况下几乎没有估计误差的损失。
+    在实证科学中，许多感兴趣的变量是分类的。与任何模型一样，对于分类响应的模型可以被误设，导致估计可能存在较大偏差。一个特别麻烦的误设来源是在问卷调查中的疏忽响应，众所周知这会危及结构方程模型（SEM）和其他基于调查的分析的有效性。我提出了一个旨在对分类响应模型的误设鲁棒的通用估计器。与迄今为止的方法不同，该估计器对分类响应模型的误设程度、大小或类型不做任何假设。所提出的估计器推广了极大似然估计，是强一致的，渐近高斯的，具有与极大似然相同的时间复杂度，并且可以应用于任何分类响应模型。此外，我开发了一个新颖的检验，用于测试一个给定响应是否 ...
 
-    We consider estimation and inference for a regression coefficient in panels with interactive fixed effects (i.e., with a factor structure). We show that previously developed estimators and confidence intervals (CIs) might be heavily biased and size-distorted when some of the factors are weak. We propose estimators with improved rates of convergence and bias-aware CIs that are uniformly valid regardless of whether the factors are strong or not. Our approach applies the theory of minimax linear estimation to form a debiased estimate using a nuclear norm bound on the error of an initial estimate of the interactive fixed effects. We use the obtained estimate to construct a bias-aware CI taking into account the remaining bias due to weak factors. In Monte Carlo experiments, we find a substantial improvement over conventional approaches when factors are weak, with little cost to estimation error when factors are strong.
+    arXiv:2403.11954v1 Announce Type: cross  Abstract: In empirical science, many variables of interest are categorical. Like any model, models for categorical responses can be misspecified, leading to possibly large biases in estimation. One particularly troublesome source of misspecification is inattentive responding in questionnaires, which is well-known to jeopardize the validity of structural equation models (SEMs) and other survey-based analyses. I propose a general estimator that is designed to be robust to misspecification of models for categorical responses. Unlike hitherto approaches, the estimator makes no assumption whatsoever on the degree, magnitude, or type of misspecification. The proposed estimator generalizes maximum likelihood estimation, is strongly consistent, asymptotically Gaussian, has the same time complexity as maximum likelihood, and can be applied to any model for categorical responses. In addition, I develop a novel test that tests whether a given response can 
+    
+[^2]: TNDDR: 高效且双重鲁棒的COVID-19疫苗有效性估计在阴性测试设计下
+
+    TNDDR: Efficient and doubly robust estimation of COVID-19 vaccine effectiveness under the test-negative design. (arXiv:2310.04578v1 [stat.ME])
+
+    [http://arxiv.org/abs/2310.04578](http://arxiv.org/abs/2310.04578)
+
+    我们提出了一种高效且双重鲁棒的估计器TNDDR，用于在阴性测试设计下估计COVID-19疫苗的有效性，可有效解决选择偏差问题，并结合机器学习技术进行辅助函数估计。
+
+    
+
+    尽管阴性测试设计（TND）常用于监测季节性流感疫苗有效性（VE），但最近已成为COVID-19疫苗监测的重要组成部分，但由于结果相关抽样，它容易受到选择偏差的影响。一些研究已经解决了TND下因果参数的可鉴别性和估计问题，但尚未研究非参数估计器在无混杂性假设下的效率边界。我们提出了一种称为TNDDR（TND双重鲁棒）的一步双重鲁棒和局部高效估计器,它利用样本分割，并可以结合机器学习技术来估计辅助函数。我们推导了结果边际期望的高效影响函数（EIF），探索了von Mises展开，并建立了TNDDR的n的平方根一致性、渐近正态性和双重鲁棒性的条件。
+
+    While the test-negative design (TND), which is routinely used for monitoring seasonal flu vaccine effectiveness (VE), has recently become integral to COVID-19 vaccine surveillance, it is susceptible to selection bias due to outcome-dependent sampling. Some studies have addressed the identifiability and estimation of causal parameters under the TND, but efficiency bounds for nonparametric estimators of the target parameter under the unconfoundedness assumption have not yet been investigated. We propose a one-step doubly robust and locally efficient estimator called TNDDR (TND doubly robust), which utilizes sample splitting and can incorporate machine learning techniques to estimate the nuisance functions. We derive the efficient influence function (EIF) for the marginal expectation of the outcome under a vaccination intervention, explore the von Mises expansion, and establish the conditions for $\sqrt{n}-$consistency, asymptotic normality and double robustness of TNDDR. The proposed TND
     
 
