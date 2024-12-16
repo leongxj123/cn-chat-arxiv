@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.IT</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.IT</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.IT</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.IT</description><item><title>&#25552;&#20986;&#20102;&#19968;&#20010;&#20449;&#24687;&#35770;&#26694;&#26550;&#29992;&#20110;&#26426;&#22120;&#23398;&#20064;&#20013;&#30340;&#36229;&#20986;&#20998;&#24067;&#27867;&#21270;&#65292;&#21487;&#20197;&#33258;&#30001;&#25554;&#20540;&#24182;&#20135;&#29983;&#26032;&#30340;&#27867;&#21270;&#30028;&#38480;&#65292;&#21516;&#26102;&#20855;&#26377;&#26368;&#20248;&#36755;&#36816;&#35299;&#37322;&#12290;</title><link>https://arxiv.org/abs/2403.19895</link><description>&lt;p&gt;
+&#19968;&#31181;&#20449;&#24687;&#35770;&#26694;&#26550;&#29992;&#20110;&#36229;&#20986;&#20998;&#24067;&#27867;&#21270;
+&lt;/p&gt;
+&lt;p&gt;
+An Information-Theoretic Framework for Out-of-Distribution Generalization
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.19895
+&lt;/p&gt;
+&lt;p&gt;
+&#25552;&#20986;&#20102;&#19968;&#20010;&#20449;&#24687;&#35770;&#26694;&#26550;&#29992;&#20110;&#26426;&#22120;&#23398;&#20064;&#20013;&#30340;&#36229;&#20986;&#20998;&#24067;&#27867;&#21270;&#65292;&#21487;&#20197;&#33258;&#30001;&#25554;&#20540;&#24182;&#20135;&#29983;&#26032;&#30340;&#27867;&#21270;&#30028;&#38480;&#65292;&#21516;&#26102;&#20855;&#26377;&#26368;&#20248;&#36755;&#36816;&#35299;&#37322;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#25105;&#20204;&#30740;&#31350;&#20102;&#26426;&#22120;&#23398;&#20064;&#20013;&#30340;&#36229;&#20986;&#20998;&#24067;&#65288;OOD&#65289;&#27867;&#21270;&#65292;&#24182;&#25552;&#20986;&#20102;&#19968;&#20010;&#36890;&#29992;&#26694;&#26550;&#65292;&#25552;&#20379;&#20102;&#20449;&#24687;&#35770;&#27867;&#21270;&#30028;&#38480;&#12290;&#25105;&#20204;&#30340;&#26694;&#26550;&#22312;Integral Probability Metric&#65288;IPM&#65289;&#21644;$f$-divergence&#20043;&#38388;&#33258;&#30001;&#25554;&#20540;&#65292;&#33258;&#28982;&#22320;&#24674;&#22797;&#20102;&#19968;&#20123;&#24050;&#30693;&#32467;&#26524;&#65288;&#21253;&#25324;Wasserstein&#21644;KL-bound&#65289;&#65292;&#24182;&#20135;&#29983;&#20102;&#26032;&#30340;&#27867;&#21270;&#30028;&#38480;&#12290;&#27492;&#22806;&#65292;&#25105;&#20204;&#23637;&#31034;&#20102;&#25105;&#20204;&#30340;&#26694;&#26550;&#20855;&#26377;&#26368;&#20248;&#36755;&#36816;&#35299;&#37322;&#12290;&#22312;&#20004;&#20010;&#20855;&#20307;&#31034;&#20363;&#20013;&#35780;&#20272;&#26102;&#65292;&#25152;&#25552;&#20986;&#30340;&#30028;&#38480;&#22312;&#26576;&#20123;&#24773;&#20917;&#19979;&#20005;&#26684;&#25913;&#36827;&#20102;&#29616;&#26377;&#30028;&#38480;&#65292;&#25110;&#32773;&#24674;&#22797;&#20102;&#29616;&#26377;OOD&#27867;&#21270;&#30028;&#38480;&#20013;&#30340;&#26368;&#20339;&#32773;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.19895v1 Announce Type: cross  Abstract: We study the Out-of-Distribution (OOD) generalization in machine learning and propose a general framework that provides information-theoretic generalization bounds. Our framework interpolates freely between Integral Probability Metric (IPM) and $f$-divergence, which naturally recovers some known results (including Wasserstein- and KL-bounds), as well as yields new generalization bounds. Moreover, we show that our framework admits an optimal transport interpretation. When evaluated in two concrete examples, the proposed bounds either strictly improve upon existing bounds in some cases or recover the best among existing OOD generalization bounds.
+&lt;/p&gt;</description></item></channel></rss>
