@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Using Quantum Computing to Infer Dynamic Behaviors of Biological and Artificial Neural Networks](https://arxiv.org/abs/2403.18963) | 本研究展示了如何利用Grover和Deutsch-Josza等基础量子算法，通过一组精心构建的条件，推断生物和人工神经网络在一段时间内是否具有继续维持动态活动的潜力。 |
+| [^1] | [A Comprehensive Evaluation of Augmentations for Robust OOD Self-Supervised Contrastive Phonocardiogram Representation Learning](https://arxiv.org/abs/2312.00502) | 本研究通过对比自监督学习应用于1D心音图样本中异常检测，进行了广泛的音频增强方法比较评估和在多个数据集上训练分类器的研究。 |
 
 # 详细
 
-[^1]: 使用量子计算推断生物和人工神经网络的动态行为
+[^1]: 对稳健的OOD自监督对比心音图表示学习增强方法的全面评估
 
-    Using Quantum Computing to Infer Dynamic Behaviors of Biological and Artificial Neural Networks
+    A Comprehensive Evaluation of Augmentations for Robust OOD Self-Supervised Contrastive Phonocardiogram Representation Learning
 
-    [https://arxiv.org/abs/2403.18963](https://arxiv.org/abs/2403.18963)
+    [https://arxiv.org/abs/2312.00502](https://arxiv.org/abs/2312.00502)
 
-    本研究展示了如何利用Grover和Deutsch-Josza等基础量子算法，通过一组精心构建的条件，推断生物和人工神经网络在一段时间内是否具有继续维持动态活动的潜力。
+    本研究通过对比自监督学习应用于1D心音图样本中异常检测，进行了广泛的音频增强方法比较评估和在多个数据集上训练分类器的研究。
 
     
 
-    新问题类别的探索是量子计算研究的一个活跃领域。一个基本上完全未被探讨的主题是使用量子算法和计算来探索和询问神经网络的功能动态。这是将量子计算应用于生物和人工神经网络建模和仿真的尚未成熟的主题的一个组成部分。在本研究中，我们展示了如何通过精心构建的一组条件来使用两个基础量子算法，Grover和Deutsch-Josza，以使输出测量具有一种解释，保证我们能够推断一个简单的神经网络表示（适用于生物和人工网络）在一段时间后是否有可能继续维持动态活动。或者这些动态保证会停止，要么是通过'癫痫'动态，要么是静止状态。
+    尽管近年来深度学习模型的研究活动有所增加，但在医学等多个现实世界环境中，这些模型尚未被广泛接受。高质量标记数据的短缺经常阻碍了开发稳健且具有一般性的模型，当面临新收集的超出分布（OOD）数据集时，这些模型不会因效果下降而受损。对比自监督学习（SSL）为标记数据稀缺性提供了潜在解决方案，因为它利用未标记数据增加模型的效能和稳健性。本研究中，我们提出将对比SSL应用于检测1D心音图（PCG）样本中的异常，通过学习信号的广义表示。具体来说，我们进行了一项广泛的比较评估，涉及多种基于音频的增强方法，评估了在不同下游任务的多个数据集上训练的分类器，最终
 
-    arXiv:2403.18963v1 Announce Type: cross  Abstract: The exploration of new problem classes for quantum computation is an active area of research. An essentially completely unexplored topic is the use of quantum algorithms and computing to explore and ask questions \textit{about} the functional dynamics of neural networks. This is a component of the still-nascent topic of applying quantum computing to the modeling and simulations of biological and artificial neural networks. In this work, we show how a carefully constructed set of conditions can use two foundational quantum algorithms, Grover and Deutsch-Josza, in such a way that the output measurements admit an interpretation that guarantees we can infer if a simple representation of a neural network (which applies to both biological and artificial networks) after some period of time has the potential to continue sustaining dynamic activity. Or whether the dynamics are guaranteed to stop either through 'epileptic' dynamics or quiescence
+    arXiv:2312.00502v2 Announce Type: replace  Abstract: Despite the recent increase in research activity, deep-learning models have not yet been widely accepted in several real-world settings, such as medicine. The shortage of high-quality annotated data often hinders the development of robust and generalizable models, which do not suffer from degraded effectiveness when presented with newly-collected, out-of-distribution (OOD) datasets. Contrastive Self-Supervised Learning (SSL) offers a potential solution to labeled data scarcity, as it takes advantage of unlabeled data to increase model effectiveness and robustness. In this research, we propose applying contrastive SSL for detecting abnormalities in 1D phonocardiogram (PCG) samples by learning a generalized representation of the signal. Specifically, we perform an extensive comparative evaluation of a wide range of audio-based augmentations, evaluate trained classifiers on multiple datasets across different downstream tasks, and finall
     
 

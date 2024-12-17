@@ -2,97 +2,142 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Low-Dose CT Image Reconstruction by Fine-Tuning a UNet Pretrained for Gaussian Denoising for the Downstream Task of Image Enhancement](https://arxiv.org/abs/2403.03551) | 提出了一种通过精调UNet进行低剂量CT图像重建的方法，其中第二阶段的训练策略为CT图像增强阶段。 |
-| [^2] | [Feudal Networks for Visual Navigation](https://arxiv.org/abs/2402.12498) | 使用封建学习的视觉导航，通过高级管理者、中级管理者和工作代理的分层结构，在不同空间和时间尺度上操作，具有独特模块来实现自监督学习记忆代理地图。 |
-| [^3] | [Solid Waste Detection in Remote Sensing Images: A Survey](https://arxiv.org/abs/2402.09066) | 本文调查了固体废物在遥感图像中的检测方法。研究者利用地球观测卫星提供的高分辨率数据，通过遥感图像实现了固体废物处置场地的识别、监测和评估。 |
-| [^4] | [Pretraining Vision-Language Model for Difference Visual Question Answering in Longitudinal Chest X-rays](https://arxiv.org/abs/2402.08966) | 提出了一种名为PLURAL的预训练视觉-语言模型，用于纵向胸部X射线图中差异视觉问答任务。该模型通过在自然图像和文本上进行预训练，然后使用纵向胸部X射线数据进行训练，从而提高了模型的性能。 |
-| [^5] | [Catch-Up Distillation: You Only Need to Train Once for Accelerating Sampling.](http://arxiv.org/abs/2305.10769) | 本文提出了一种名为“追赶蒸馏”的方法，通过调整传统采样算法，让速度估计模型的当前时刻输出与其先前时刻输出和地面真实标签对齐，从而实现只需一次训练便能加速采样的效果。 |
-| [^6] | [Towards the Characterization of Representations Learned via Capsule-based Network Architectures.](http://arxiv.org/abs/2305.05349) | 本研究旨在评估胶囊网络架构学习的表示方法及其可解释性，发现其编码的表示可能与部分-整体关系并不严格相关。 |
+| [^1] | [Learning from Models and Data for Visual Grounding](https://arxiv.org/abs/2403.13804) | 结合数据驱动学习和模型知识传递的新框架，通过优化一致性目标来增强预训练视觉和语言模型的视觉定位能力。 |
+| [^2] | [Content-aware Masked Image Modeling Transformer for Stereo Image Compression](https://arxiv.org/abs/2403.08505) | 提出了一种名为CAMSIC的立体图像压缩框架，通过引入面向内容感知的掩码图像建模（MIM）技术，使得无需额外Transformer解码器就能捕捉空间和视差依赖关系，实验结果表明实现了最先进的率失真结果。 |
+| [^3] | [DyRoNet: A Low-Rank Adapter Enhanced Dynamic Routing Network for Streaming Perception](https://arxiv.org/abs/2403.05050) | DyRoNet采用低秩动态路由并结合分支网络优化流媒体感知性能，为多种分支选择策略设定了新的性能标杆 |
+| [^4] | [A Literature Review of Literature Reviews in Pattern Analysis and Machine Intelligence](https://arxiv.org/abs/2402.12928) | 本文旨在提供对模式分析与机器智能领域文献综述的全面评估，引入大语言模型驱动的文献计量指标，并构建了RiPAMI元数据数据库和主题数据集以获取PAMI综述的统计特征。 |
+| [^5] | [Evaluating Image Review Ability of Vision Language Models](https://arxiv.org/abs/2402.12121) | 本论文通过引入基于排名相关分析的评估方法，探讨了大规模视觉语言模型（LVLM）在生成图像评价文本方面的能力，并创建了一个评估数据集来验证这种方法。 |
+| [^6] | [Privacy-Preserving Low-Rank Adaptation for Latent Diffusion Models](https://arxiv.org/abs/2402.11989) | 提出了隐私保护的低秩适应解决方案PrivateLoRA，通过最小化适应损失和代理攻击模型的MI增益来抵御成员推断攻击。 |
+| [^7] | [Not all Minorities are Equal: Empty-Class-Aware Distillation for Heterogeneous Federated Learning.](http://arxiv.org/abs/2401.02329) | 本研究提出了一种异质联邦学习方法FedED，通过同时进行空类别蒸馏和逻辑抑制，解决了在联邦学习中尚未充分识别空类别的问题。 |
+| [^8] | [JEN-1 Composer: A Unified Framework for High-Fidelity Multi-Track Music Generation.](http://arxiv.org/abs/2310.19180) | JEN-1 Composer是一个统一的框架，能够以高保真、灵活的方式生成多音轨音乐。 |
+| [^9] | [Application of Quantum Pre-Processing Filter for Binary Image Classification with Small Samples.](http://arxiv.org/abs/2308.14930) | 本研究探讨了量子预处理滤波器（QPF）在二值图像分类中的应用，并通过在MNIST、EMNIST和CIFAR-10上提高了分类准确率，并在GTSRB上降低了分类准确率。 |
 
 # 详细
 
-[^1]: 通过微调预先为高斯降噪而训练的UNet进行低剂量CT图像重建，用于图像增强的下游任务
+[^1]: 从模型和数据中学习进行视觉定位
 
-    Low-Dose CT Image Reconstruction by Fine-Tuning a UNet Pretrained for Gaussian Denoising for the Downstream Task of Image Enhancement
+    Learning from Models and Data for Visual Grounding
 
-    [https://arxiv.org/abs/2403.03551](https://arxiv.org/abs/2403.03551)
+    [https://arxiv.org/abs/2403.13804](https://arxiv.org/abs/2403.13804)
 
-    提出了一种通过精调UNet进行低剂量CT图像重建的方法，其中第二阶段的训练策略为CT图像增强阶段。
-
-    
-
-    计算机断层扫描（CT）是一种广泛使用的医学成像模态，由于其基于电离辐射，因此希望尽量减少辐射剂量。然而，降低辐射剂量会导致图像质量下降，从低剂量CT（LDCT）数据重建仍然是一个具有挑战性的任务，值得进行研究。根据LoDoPaB-CT基准，许多最先进的方法使用涉及UNet型架构的流程。具体来说，排名第一的方法ItNet使用包括滤波反投影（FBP）、在CT数据上训练的UNet和迭代细化步骤的三阶段流程。在本文中，我们提出了一种更简单的两阶段方法。第一阶段也使用了FBP，而新颖之处在于第二阶段的训练策略，特点是CT图像增强阶段。我们方法的关键点在于神经网络是预训练的。
-
-    arXiv:2403.03551v1 Announce Type: cross  Abstract: Computed Tomography (CT) is a widely used medical imaging modality, and as it is based on ionizing radiation, it is desirable to minimize the radiation dose. However, a reduced radiation dose comes with reduced image quality, and reconstruction from low-dose CT (LDCT) data is still a challenging task which is subject to research. According to the LoDoPaB-CT benchmark, a benchmark for LDCT reconstruction, many state-of-the-art methods use pipelines involving UNet-type architectures. Specifically the top ranking method, ItNet, employs a three-stage process involving filtered backprojection (FBP), a UNet trained on CT data, and an iterative refinement step. In this paper, we propose a less complex two-stage method. The first stage also employs FBP, while the novelty lies in the training strategy for the second stage, characterized as the CT image enhancement stage. The crucial point of our approach is that the neural network is pretrained
-    
-[^2]: 封建网络用于视觉导航
-
-    Feudal Networks for Visual Navigation
-
-    [https://arxiv.org/abs/2402.12498](https://arxiv.org/abs/2402.12498)
-
-    使用封建学习的视觉导航，通过高级管理者、中级管理者和工作代理的分层结构，在不同空间和时间尺度上操作，具有独特模块来实现自监督学习记忆代理地图。
+    结合数据驱动学习和模型知识传递的新框架，通过优化一致性目标来增强预训练视觉和语言模型的视觉定位能力。
 
     
 
-    视觉导航遵循人类可以在没有详细地图的情况下导航的直觉。一种常见方法是在建立包含可用于规划的图像节点的拓扑图的同时进行交互式探索。最近的变体从被动视频中学习，并可以利用复杂的社交和语义线索进行导航。然而，需要大量的训练视频，利用大型图并且由于使用了里程计，场景不是未知的。我们引入了一种使用封建学习的视觉导航的新方法，该方法采用了由工作代理、中级管理者和高级管理者组成的分层结构。封建学习范式的关键在于，每个级别的代理看到任务的不同方面，并且在不同的空间和时间尺度上运作。在此框架中开发了两个独特的模块。对于高级管理者，我们自监督地学习一个记忆代理地图以记录
+    我们介绍了SynGround，这是一个结合了数据驱动学习和从各种大规模预训练模型中进行知识传递的新型框架，以增强预训练视觉和语言模型的视觉定位能力。从模型中进行的知识传递引发了通过图像描述生成器生成图像描述。这些描述具有双重作用：它们作为文本到图像生成器合成图像的提示，以及作为查询来合成文本，从其中使用大型语言模型提取短语。最后，我们利用一个开放词汇的对象检测器为合成图像和文本生成合成边界框。通过优化一个遮罩-注意力一致性目标，在这个数据集上微调预训练的视觉和语言模型，该目标将区域注释与基于梯度的模型解释进行对齐。最终的模型提升了定位能力。
 
-    arXiv:2402.12498v1 Announce Type: cross  Abstract: Visual navigation follows the intuition that humans can navigate without detailed maps. A common approach is interactive exploration while building a topological graph with images at nodes that can be used for planning. Recent variations learn from passive videos and can navigate using complex social and semantic cues. However, a significant number of training videos are needed, large graphs are utilized, and scenes are not unseen since odometry is utilized. We introduce a new approach to visual navigation using feudal learning, which employs a hierarchical structure consisting of a worker agent, a mid-level manager, and a high-level manager. Key to the feudal learning paradigm, agents at each level see a different aspect of the task and operate at different spatial and temporal scales. Two unique modules are developed in this framework. For the high- level manager, we learn a memory proxy map in a self supervised manner to record prio
+    arXiv:2403.13804v1 Announce Type: cross  Abstract: We introduce SynGround, a novel framework that combines data-driven learning and knowledge transfer from various large-scale pretrained models to enhance the visual grounding capabilities of a pretrained vision-and-language model. The knowledge transfer from the models initiates the generation of image descriptions through an image description generator. These descriptions serve dual purposes: they act as prompts for synthesizing images through a text-to-image generator, and as queries for synthesizing text, from which phrases are extracted using a large language model. Finally, we leverage an open-vocabulary object detector to generate synthetic bounding boxes for the synthetic images and texts. We finetune a pretrained vision-and-language model on this dataset by optimizing a mask-attention consistency objective that aligns region annotations with gradient-based model explanations. The resulting model improves the grounding capabilit
     
-[^3]: 遥感图像中的固体废物检测：一项调查
+[^2]: 面向内容感知的掩码图像建模变压器用于立体图像压缩
 
-    Solid Waste Detection in Remote Sensing Images: A Survey
+    Content-aware Masked Image Modeling Transformer for Stereo Image Compression
 
-    [https://arxiv.org/abs/2402.09066](https://arxiv.org/abs/2402.09066)
+    [https://arxiv.org/abs/2403.08505](https://arxiv.org/abs/2403.08505)
 
-    本文调查了固体废物在遥感图像中的检测方法。研究者利用地球观测卫星提供的高分辨率数据，通过遥感图像实现了固体废物处置场地的识别、监测和评估。
-
-    
-
-    识别和表征非法固体废物处置场地对环境保护至关重要，特别是应对污染和健康危害。不当管理的垃圾填埋场通过雨水渗透污染土壤和地下水，对动物和人类构成威胁。传统的填埋场辨识方法，如现场检查，耗时且昂贵。遥感技术是用于识别和监测固体废物处置场地的一种经济有效的解决方案，可以实现广泛覆盖和多次获取。地球观测（EO）卫星配备了一系列传感器和成像能力，几十年来一直提供高分辨率的数据。研究人员提出了专门的技术，利用遥感图像执行一系列任务，如废物场地检测、倾倒场监测和适宜位置评估。
-
-    arXiv:2402.09066v1 Announce Type: cross Abstract: The detection and characterization of illegal solid waste disposal sites are essential for environmental protection, particularly for mitigating pollution and health hazards. Improperly managed landfills contaminate soil and groundwater via rainwater infiltration, posing threats to both animals and humans. Traditional landfill identification approaches, such as on-site inspections, are time-consuming and expensive. Remote sensing is a cost-effective solution for the identification and monitoring of solid waste disposal sites that enables broad coverage and repeated acquisitions over time. Earth Observation (EO) satellites, equipped with an array of sensors and imaging capabilities, have been providing high-resolution data for several decades. Researchers proposed specialized techniques that leverage remote sensing imagery to perform a range of tasks such as waste site detection, dumping site monitoring, and assessment of suitable locati
-    
-[^4]: 用于纵向胸部X射线图中差异视觉问答的预训练视觉-语言模型
-
-    Pretraining Vision-Language Model for Difference Visual Question Answering in Longitudinal Chest X-rays
-
-    [https://arxiv.org/abs/2402.08966](https://arxiv.org/abs/2402.08966)
-
-    提出了一种名为PLURAL的预训练视觉-语言模型，用于纵向胸部X射线图中差异视觉问答任务。该模型通过在自然图像和文本上进行预训练，然后使用纵向胸部X射线数据进行训练，从而提高了模型的性能。
+    提出了一种名为CAMSIC的立体图像压缩框架，通过引入面向内容感知的掩码图像建模（MIM）技术，使得无需额外Transformer解码器就能捕捉空间和视差依赖关系，实验结果表明实现了最先进的率失真结果。
 
     
 
-    差异视觉问答(diff-VQA)是一个挑战性的任务，要求根据一对图像的差异回答复杂的问题。在读取胸部X射线图像中尤为重要，因为放射科医生通常会对同一患者在不同时间拍摄的多幅图像进行比较，以追踪疾病的进展和其临床实践中严重程度的变化。然而，之前的研究集中在为差异视觉问答任务设计特定的网络架构，错过了利用预训练的视觉-语言模型(VLM)提高模型性能的机会。在这里，我们介绍了一种名为PLURAL的新型VLM，它在自然图像和纵向胸部X射线数据上进行了差异视觉问答任务的预训练。该模型采用逐步的方法开发，从在自然图像和文本上进行预训练开始，然后使用纵向胸部X射线数据进行训练。纵向数据包括...
+    现有基于学习的立体图像编解码器采用了复杂的转换方法，但在编码潜在表示时却采用了从单个图像编解码器导出的简单熵模型。然而，这些熵模型难以有效捕捉立体图像固有的空间-视差特征，导致亚最优的率失真结果。本文提出了一种名为CAMSIC的立体图像压缩框架。 CAMSIC 独立地将每个图像转换为潜在表示，并采用强大的无解码器变压器熵模型来捕捉空间和视差依赖关系，引入了一种新颖的面向内容感知的掩码图像建模（MIM）技术。我们的面向内容感知的MIM促进了先验信息与估计令牌之间的高效双向交互，自然地消除了额外的Transformer解码器的需求。实验证明，我们的立体图像编解码器实现了最先进的率失真结果。
 
-    arXiv:2402.08966v1 Announce Type: cross Abstract: Difference visual question answering (diff-VQA) is a challenging task that requires answering complex questions based on differences between a pair of images. This task is particularly important in reading chest X-ray images because radiologists often compare multiple images of the same patient taken at different times to track disease progression and changes in its severity in their clinical practice. However, previous works focused on designing specific network architectures for the diff-VQA task, missing opportunities to enhance the model's performance using a pretrained vision-language model (VLM). Here, we introduce a novel VLM called PLURAL, which is pretrained on natural and longitudinal chest X-ray data for the diff-VQA task. The model is developed using a step-by-step approach, starting with being pretrained on natural images and texts, followed by being trained using longitudinal chest X-ray data. The longitudinal data consist
+    arXiv:2403.08505v1 Announce Type: cross  Abstract: Existing learning-based stereo image codec adopt sophisticated transformation with simple entropy models derived from single image codecs to encode latent representations. However, those entropy models struggle to effectively capture the spatial-disparity characteristics inherent in stereo images, which leads to suboptimal rate-distortion results. In this paper, we propose a stereo image compression framework, named CAMSIC. CAMSIC independently transforms each image to latent representation and employs a powerful decoder-free Transformer entropy model to capture both spatial and disparity dependencies, by introducing a novel content-aware masked image modeling (MIM) technique. Our content-aware MIM facilitates efficient bidirectional interaction between prior information and estimated tokens, which naturally obviates the need for an extra Transformer decoder. Experiments show that our stereo image codec achieves state-of-the-art rate-d
     
-[^5]: 追赶蒸馏：加速采样只需一次训练
+[^3]: DyRoNet：一种低秩适配器增强的动态路由网络，用于流媒体感知
 
-    Catch-Up Distillation: You Only Need to Train Once for Accelerating Sampling. (arXiv:2305.10769v1 [cs.LG])
+    DyRoNet: A Low-Rank Adapter Enhanced Dynamic Routing Network for Streaming Perception
 
-    [http://arxiv.org/abs/2305.10769](http://arxiv.org/abs/2305.10769)
+    [https://arxiv.org/abs/2403.05050](https://arxiv.org/abs/2403.05050)
 
-    本文提出了一种名为“追赶蒸馏”的方法，通过调整传统采样算法，让速度估计模型的当前时刻输出与其先前时刻输出和地面真实标签对齐，从而实现只需一次训练便能加速采样的效果。
-
-    
-
-    扩散概率模型在各种机器学习领域取得了令人瞩目的进展。然而，为了实现高质量的合成样本，通常需要执行大量的采样步骤，这阻碍了实时样本合成的可能性。传统的通过知识蒸馏加速采样的算法依赖于预训练的模型权重和离散时间步骤场景，需要额外的培训课程才能实现他们的目标。为了解决这些问题，我们提出了追赶蒸馏（CUD），它鼓励速度估计模型的当前时刻输出“追赶”其先前时刻输出。具体而言，CUD调整了原始的常微分方程（ODE）训练目标，以使当前时刻输出与地面真实标签和先前时刻输出对齐，利用基于龙格-库塔的多步对齐蒸馏进行精确的ODE估计，同时防止异步更新。
-
-    Diffusion Probability Models (DPMs) have made impressive advancements in various machine learning domains. However, achieving high-quality synthetic samples typically involves performing a large number of sampling steps, which impedes the possibility of real-time sample synthesis. Traditional accelerated sampling algorithms via knowledge distillation rely on pre-trained model weights and discrete time step scenarios, necessitating additional training sessions to achieve their goals. To address these issues, we propose the Catch-Up Distillation (CUD), which encourages the current moment output of the velocity estimation model ``catch up'' with its previous moment output. Specifically, CUD adjusts the original Ordinary Differential Equation (ODE) training objective to align the current moment output with both the ground truth label and the previous moment output, utilizing Runge-Kutta-based multi-step alignment distillation for precise ODE estimation while preventing asynchronous updates
-    
-[^6]: 旨在表征基于胶囊网络架构学习的表示方法
-
-    Towards the Characterization of Representations Learned via Capsule-based Network Architectures. (arXiv:2305.05349v1 [cs.LG])
-
-    [http://arxiv.org/abs/2305.05349](http://arxiv.org/abs/2305.05349)
-
-    本研究旨在评估胶囊网络架构学习的表示方法及其可解释性，发现其编码的表示可能与部分-整体关系并不严格相关。
+    DyRoNet采用低秩动态路由并结合分支网络优化流媒体感知性能，为多种分支选择策略设定了新的性能标杆
 
     
 
-    胶囊网络作为标准深度神经网络的一种更为紧凑和可解释的替代方法而重新引入。尽管最近的研究证明了其压缩能力，但至今尚未完全评估其可解释性质。在这里，我们进行了一项系统而原则性的研究，以评估这种类型网络的可解释性。此外，我们特别注意分析所学到的表示中是否确实编码了部分-整体关系的水平。在MNIST、SVHN、PASCAL-part和CelebA数据集中的分析表明，在CapsNets中编码的表示可能既不像文献中通常所述的那样分离，也不是严格与部分-整体关系相关的。
+    自主驾驶系统需要实时、准确的感知来应对复杂环境。为解决这一问题，我们引入了动态路由网络（DyRoNet），这是一个创新性的框架，采用低秩动态路由以增强流媒体感知。通过集成专门预训练的分支网络，针对各种环境条件进行微调，DyRoNet在延迟和精度之间取得了平衡。其核心特征是速度路由模块，智能地将输入数据引导到最适合的分支网络，优化性能。广泛的评估结果显示，DyRoNet有效地适应多种分支选择策略，为各种场景性能设定了新的标杆。DyRoNet不仅为流媒体感知建立了新的标杆，还为未来的工作提供了宝贵的工程洞见。有关更多项目信息，请访问 https://tastevision.github.io/DyRoNet/
 
-    Capsule Networks (CapsNets) have been re-introduced as a more compact and interpretable alternative to standard deep neural networks. While recent efforts have proved their compression capabilities, to date, their interpretability properties have not been fully assessed. Here, we conduct a systematic and principled study towards assessing the interpretability of these types of networks. Moreover, we pay special attention towards analyzing the level to which part-whole relationships are indeed encoded within the learned representation. Our analysis in the MNIST, SVHN, PASCAL-part and CelebA datasets suggest that the representations encoded in CapsNets might not be as disentangled nor strictly related to parts-whole relationships as is commonly stated in the literature.
+    arXiv:2403.05050v1 Announce Type: cross  Abstract: Autonomous driving systems demand real-time, accurate perception to navigate complex environments. Addressing this, we introduce the Dynamic Router Network (DyRoNet), a framework that innovates with low-rank dynamic routing for enhanced streaming perception. By integrating specialized pre-trained branch networks, fine-tuned for various environmental conditions, DyRoNet achieves a balance between latency and precision. Its core feature, the speed router module, intelligently directs input data to the best-suited branch network, optimizing performance. The extensive evaluations reveal that DyRoNet adapts effectively to multiple branch selection strategies, setting a new benchmark in performance across a range of scenarios. DyRoNet not only establishes a new benchmark for streaming perception but also provides valuable engineering insights for future work. More project information is available at https://tastevision.github.io/DyRoNet/
+    
+[^4]: 模式分析与机器智能领域文献综述的文献综述
+
+    A Literature Review of Literature Reviews in Pattern Analysis and Machine Intelligence
+
+    [https://arxiv.org/abs/2402.12928](https://arxiv.org/abs/2402.12928)
+
+    本文旨在提供对模式分析与机器智能领域文献综述的全面评估，引入大语言模型驱动的文献计量指标，并构建了RiPAMI元数据数据库和主题数据集以获取PAMI综述的统计特征。
+
+    
+
+    通过整合分散的知识，文献综述提供了对所研究主题的全面了解。然而，在模式分析与机器智能（PAMI）这一蓬勃发展的领域中，过多的综述引起了研究人员和评论者的关注。作为对这些关注的回应，本文旨在从多个角度全面审视PAMI领域的综述文献。
+
+    arXiv:2402.12928v1 Announce Type: cross  Abstract: By consolidating scattered knowledge, the literature review provides a comprehensive understanding of the investigated topic. However, excessive reviews, especially in the booming field of pattern analysis and machine intelligence (PAMI), raise concerns for both researchers and reviewers. In response to these concerns, this Analysis aims to provide a thorough review of reviews in the PAMI field from diverse perspectives. First, large language model-empowered bibliometric indicators are proposed to evaluate literature reviews automatically. To facilitate this, a meta-data database dubbed RiPAMI, and a topic dataset are constructed, which are utilized to obtain statistical characteristics of PAMI reviews. Unlike traditional bibliometric measurements, the proposed article-level indicators provide real-time and field-normalized quantified assessments of reviews without relying on user-defined keywords. Second, based on these indicators, th
+    
+[^5]: 评估视觉语言模型的图像评价能力
+
+    Evaluating Image Review Ability of Vision Language Models
+
+    [https://arxiv.org/abs/2402.12121](https://arxiv.org/abs/2402.12121)
+
+    本论文通过引入基于排名相关分析的评估方法，探讨了大规模视觉语言模型（LVLM）在生成图像评价文本方面的能力，并创建了一个评估数据集来验证这种方法。
+
+    
+
+    大规模视觉语言模型（LVLM）是能够通过单个模型处理图像和文本输入的语言模型。本文探讨了使用LVLM生成图像评价文本的方法。LVLM对图像的评价能力尚未完全被理解，突显了对其评价能力进行系统评估的必要性。与图像标题不同，评价文本可以从图像构图和曝光等不同视角撰写。这种评价角度的多样性使得难以唯一确定图像的正确评价。为了解决这一挑战，我们提出了一种基于排名相关分析的评估方法，通过人类和LVLM对评价文本进行排名，然后测量这些排名之间的相关性。我们进一步通过创建一个旨在评估最新LVLM图像评价能力的基准数据集来验证这种方法。
+
+    arXiv:2402.12121v1 Announce Type: cross  Abstract: Large-scale vision language models (LVLMs) are language models that are capable of processing images and text inputs by a single model. This paper explores the use of LVLMs to generate review texts for images. The ability of LVLMs to review images is not fully understood, highlighting the need for a methodical evaluation of their review abilities. Unlike image captions, review texts can be written from various perspectives such as image composition and exposure. This diversity of review perspectives makes it difficult to uniquely determine a single correct review for an image. To address this challenge, we introduce an evaluation method based on rank correlation analysis, in which review texts are ranked by humans and LVLMs, then, measures the correlation between these rankings. We further validate this approach by creating a benchmark dataset aimed at assessing the image review ability of recent LVLMs. Our experiments with the dataset
+    
+[^6]: 隐私保护的低秩适应Latent扩散模型
+
+    Privacy-Preserving Low-Rank Adaptation for Latent Diffusion Models
+
+    [https://arxiv.org/abs/2402.11989](https://arxiv.org/abs/2402.11989)
+
+    提出了隐私保护的低秩适应解决方案PrivateLoRA，通过最小化适应损失和代理攻击模型的MI增益来抵御成员推断攻击。
+
+    
+
+    低秩适应（LoRA）是一种有效的策略，用于通过最小化适应损失，自训练数据集中适应Latent扩散模型（LDM）以生成特定对象。然而，通过LoRA适应的LDM容易受到成员推断（MI）攻击的影响，这种攻击可以判断特定数据点是否属于私人训练数据集，因此面临严重的隐私泄露风险。为了抵御MI攻击，我们首次提出了一个直接的解决方案：隐私保护的LoRA（PrivateLoRA）。PrivateLoRA被构建为一个最小最大优化问题，其中通过最大化MI增益来训练代理攻击模型，而LDM则通过最小化适应损失和代理攻击模型的MI增益之和来进行调整。然而，我们在实践中发现PrivateLoRA存在稳定性优化问题，即由于梯度规模的大幅波动而妨碍适应。
+
+    arXiv:2402.11989v1 Announce Type: new  Abstract: Low-rank adaptation (LoRA) is an efficient strategy for adapting latent diffusion models (LDMs) on a training dataset to generate specific objects by minimizing the adaptation loss. However, adapted LDMs via LoRA are vulnerable to membership inference (MI) attacks that can judge whether a particular data point belongs to private training datasets, thus facing severe risks of privacy leakage. To defend against MI attacks, we make the first effort to propose a straightforward solution: privacy-preserving LoRA (PrivateLoRA). PrivateLoRA is formulated as a min-max optimization problem where a proxy attack model is trained by maximizing its MI gain while the LDM is adapted by minimizing the sum of the adaptation loss and the proxy attack model's MI gain. However, we empirically disclose that PrivateLoRA has the issue of unstable optimization due to the large fluctuation of the gradient scale which impedes adaptation. To mitigate this issue, w
+    
+[^7]: 不是所有的少数群体都是平等的: 空类别感知的异质联邦学习方法
+
+    Not all Minorities are Equal: Empty-Class-Aware Distillation for Heterogeneous Federated Learning. (arXiv:2401.02329v1 [cs.LG])
+
+    [http://arxiv.org/abs/2401.02329](http://arxiv.org/abs/2401.02329)
+
+    本研究提出了一种异质联邦学习方法FedED，通过同时进行空类别蒸馏和逻辑抑制，解决了在联邦学习中尚未充分识别空类别的问题。
+
+    
+
+    数据异质性是联邦学习中的一个重大挑战，表现为客户端之间本地数据分布的差异。现有方法常常在本地训练过程中采用类别平衡的技术来解决本地类别分布的异质性问题。然而，在少数类别中由于过拟合本地不平衡数据而导致准确性较差的问题仍然存在。本文提出了FedED，这是一种新颖的异质联邦学习方法，同时整合了空类别蒸馏和逻辑抑制。具体而言，空类别蒸馏利用知识蒸馏的方法在每个客户端的本地训练中保留了与空类别相关的重要信息。此外，逻辑抑制直接阻断了预测结果中对空类别的输出。
+
+    Data heterogeneity, characterized by disparities in local data distribution across clients, poses a significant challenge in federated learning. Substantial efforts have been devoted to addressing the heterogeneity in local label distribution. As minority classes suffer from worse accuracy due to overfitting on local imbalanced data, prior methods often incorporate class-balanced learning techniques during local training. Despite the improved mean accuracy across all classes, we observe that empty classes-referring to categories absent from a client's data distribution-are still not well recognized. This paper introduces FedED, a novel approach in heterogeneous federated learning that integrates both empty-class distillation and logit suppression simultaneously. Specifically, empty-class distillation leverages knowledge distillation during local training on each client to retain essential information related to empty classes from the global model. Moreover, logit suppression directly p
+    
+[^8]: JEN-1 Composer: 一个用于高保真多音轨音乐生成的统一框架
+
+    JEN-1 Composer: A Unified Framework for High-Fidelity Multi-Track Music Generation. (arXiv:2310.19180v2 [cs.SD] UPDATED)
+
+    [http://arxiv.org/abs/2310.19180](http://arxiv.org/abs/2310.19180)
+
+    JEN-1 Composer是一个统一的框架，能够以高保真、灵活的方式生成多音轨音乐。
+
+    
+
+    随着生成式人工智能的快速发展，从零开始生成音乐的文本到音乐合成任务已成为一个有前景的方向。然而，对于多音轨生成的更细粒度控制仍然是一个挑战。现有模型具有较强的原始生成能力，但缺乏以可控的方式单独组成和组合多音轨的灵活性，这与人类作曲家的典型工作流程不同。为了解决这个问题，我们提出了JEN-1 Composer，一个统一的框架，通过一个模型高效地建模多音轨音乐的边缘、条件和联合分布。JEN-1 Composer框架能够无缝地整合任何基于扩散的音乐生成系统，例如Jen-1，增强其多功能多音轨音乐生成能力。我们引入了一种课程训练策略，以逐步指导模型从单音轨生成到灵活的生成过程。
+
+    With rapid advances in generative artificial intelligence, the text-to-music synthesis task has emerged as a promising direction for music generation from scratch. However, finer-grained control over multi-track generation remains an open challenge. Existing models exhibit strong raw generation capability but lack the flexibility to compose separate tracks and combine them in a controllable manner, differing from typical workflows of human composers. To address this issue, we propose JEN-1 Composer, a unified framework to efficiently model marginal, conditional, and joint distributions over multi-track music via a single model. JEN-1 Composer framework exhibits the capacity to seamlessly incorporate any diffusion-based music generation system, \textit{e.g.} Jen-1, enhancing its capacity for versatile multi-track music generation. We introduce a curriculum training strategy aimed at incrementally instructing the model in the transition from single-track generation to the flexible genera
+    
+[^9]: 量子预处理滤波器在小样本二值图像分类中的应用
+
+    Application of Quantum Pre-Processing Filter for Binary Image Classification with Small Samples. (arXiv:2308.14930v1 [cs.CV])
+
+    [http://arxiv.org/abs/2308.14930](http://arxiv.org/abs/2308.14930)
+
+    本研究探讨了量子预处理滤波器（QPF）在二值图像分类中的应用，并通过在MNIST、EMNIST和CIFAR-10上提高了分类准确率，并在GTSRB上降低了分类准确率。
+
+    
+
+    过去几年来，量子机器学习（QML）在研究人员中引起了极大的兴趣，因为它有潜力改变机器学习领域。已开发出利用量子力学特性的几种模型用于实际应用。本研究探讨了我们之前提出的量子预处理滤波器（QPF）在二值图像分类中的应用。我们对四个数据集进行了QPF的评估：MNIST（手写数字）、EMNIST（手写数字和字母）、CIFAR-10（照片图像）和GTSRB（真实交通标志图像）。与我们之前的多类别分类结果类似，应用QPF使得使用神经网络对MNIST、EMNIST和CIFAR-10的二值图像分类准确率分别从98.9%提高到99.2%、从97.8%提高到98.3%和从71.2%提高到76.1%，但在GTSRB上的准确率下降了从93.5%到92.0%。然后我们将QPF应用于训练样本数量较少的情况下。
+
+    Over the past few years, there has been significant interest in Quantum Machine Learning (QML) among researchers, as it has the potential to transform the field of machine learning. Several models that exploit the properties of quantum mechanics have been developed for practical applications. In this study, we investigated the application of our previously proposed quantum pre-processing filter (QPF) to binary image classification. We evaluated the QPF on four datasets: MNIST (handwritten digits), EMNIST (handwritten digits and alphabets), CIFAR-10 (photographic images) and GTSRB (real-life traffic sign images). Similar to our previous multi-class classification results, the application of QPF improved the binary image classification accuracy using neural network against MNIST, EMNIST, and CIFAR-10 from 98.9% to 99.2%, 97.8% to 98.3%, and 71.2% to 76.1%, respectively, but degraded it against GTSRB from 93.5% to 92.0%. We then applied QPF in cases using a smaller number of training and 
     
 

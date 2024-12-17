@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [CCT-Code: Cross-Consistency Training for Multilingual Clone Detection and Code Search.](http://arxiv.org/abs/2305.11626) | 本研究提出了多语言克隆检测问题，并从CodeForces数据集开发了一个新的基准数据集XCD。我们使用跨语言一致性训练（CCT）方法训练了语言模型，得到了具有新颖性能的CCT-LM模型，超过了现有的方法。 |
-| [^2] | [Pre-Training Representations of Binary Code Using Contrastive Learning.](http://arxiv.org/abs/2210.05102) | 提出了一种使用对比学习预训练二进制代码表示的方法，可以将源代码和注释信息纳入二进制代码的表示学习中，对于反向工程和计算机安全任务有重要意义。 |
+| [^1] | [DevBench: A Comprehensive Benchmark for Software Development](https://arxiv.org/abs/2403.08604) | DevBench是一个综合基准测试，评估大型语言模型在软件开发生命周期各个阶段的表现，并发现现有的模型在其中存在挑战。 |
+| [^2] | [RepairLLaMA: Efficient Representations and Fine-Tuned Adapters for Program Repair](https://arxiv.org/abs/2312.15698) | 高效表示和微调适配器相结合的新型程序修复方法RepairLLaMA可为语言模型修复错误产生高效的适配器。 |
 
 # 详细
 
-[^1]: CCT-Code：面向多语言克隆检测和代码搜索的跨语言一致性训练
+[^1]: DevBench：软件开发的综合基准测试
 
-    CCT-Code: Cross-Consistency Training for Multilingual Clone Detection and Code Search. (arXiv:2305.11626v1 [cs.CL])
+    DevBench: A Comprehensive Benchmark for Software Development
 
-    [http://arxiv.org/abs/2305.11626](http://arxiv.org/abs/2305.11626)
+    [https://arxiv.org/abs/2403.08604](https://arxiv.org/abs/2403.08604)
 
-    本研究提出了多语言克隆检测问题，并从CodeForces数据集开发了一个新的基准数据集XCD。我们使用跨语言一致性训练（CCT）方法训练了语言模型，得到了具有新颖性能的CCT-LM模型，超过了现有的方法。
-
-    
-
-    本文考虑源代码的克隆检测和信息检索问题，这两个问题对于任何编程语言都非常重要。我们提出了多语言克隆检测问题，并从CodeForces提交数据集产生了一个新的基准数据集XCD。此外，我们提出了一种新型的训练方法，称为跨语言一致性训练（CCT），用于在不同的编程语言中训练语言模型，进而得到基于CCT-LM 模型。该模型继承了GraphCodeBERT并用CCT微调，达到了95.67\% MAP和47.18\% MRR的性能，成功创造了新的最优结果。
-
-    We consider the clone detection and information retrieval problems for source code, well-known tasks important for any programming language. Although it is also an important and interesting problem to find code snippets that operate identically but are written in different programming languages, to the best of our knowledge multilingual clone detection has not been studied in literature. In this work, we formulate the multilingual clone detection problem and present XCD, a new benchmark dataset produced from the CodeForces submissions dataset. Moreover, we present a novel training procedure, called cross-consistency training (CCT), that we apply to train language models on source code in different programming languages. The resulting CCT-LM model, initialized with GraphCodeBERT and fine-tuned with CCT, achieves new state of the art, outperforming existing approaches on the POJ-104 clone detection benchmark with 95.67\% MAP and AdvTest code search benchmark with 47.18\% MRR; it also sho
-    
-[^2]: 使用对比学习预训练二进制代码表示
-
-    Pre-Training Representations of Binary Code Using Contrastive Learning. (arXiv:2210.05102v2 [cs.SE] UPDATED)
-
-    [http://arxiv.org/abs/2210.05102](http://arxiv.org/abs/2210.05102)
-
-    提出了一种使用对比学习预训练二进制代码表示的方法，可以将源代码和注释信息纳入二进制代码的表示学习中，对于反向工程和计算机安全任务有重要意义。
+    DevBench是一个综合基准测试，评估大型语言模型在软件开发生命周期各个阶段的表现，并发现现有的模型在其中存在挑战。
 
     
 
-    编译后的软件以可执行的二进制代码形式交付。开发人员编写源代码来表达软件的语义，但编译器将其转换为CPU可以直接执行的二进制格式。因此，二进制代码分析对于反向工程和计算机安全任务等没有源代码的应用程序至关重要。然而，与包含丰富语义信息的源代码和自然语言不同，二进制代码通常难以理解和分析。虽然现有的工作使用AI模型辅助源代码分析，但很少有研究考虑二进制代码。在本文中，我们提出了一种将源代码和注释信息纳入二进制代码进行表示学习的对比学习模型，称为COMBO。具体而言，我们在COMBO中提出了三个组件：（1）用于冷启动预训练的主要对比学习方法，（2）用于将源代码和注释信息插入到二进制代码中的单纯插值方法。
+    arXiv:2403.08604v1宣布类型：新的摘要：大型语言模型（LLMs）的最新进展显著提升了它们的编码能力。然而，现有的基准测试主要关注编程的简化或孤立方面，如单文件代码生成或存储库问题调试，未能全面衡量由真实世界编程活动提出的各种挑战的全谱。为此，我们提出了DevBench，一个综合基准测试，评估LLMs在软件开发生命周期的各个阶段，包括软件设计、环境设置、实现、验收测试和单元测试。DevBench具有各种编程语言和领域，高质量数据收集，并针对每个任务精心设计和验证的指标。实证研究表明，当前的LLMs，包括GPT-4-Turbo，无法解决DevBench提出的挑战。分析表明，模型难以理解
 
-    Compiled software is delivered as executable binary code. Developers write source code to express the software semantics, but the compiler converts it to a binary format that the CPU can directly execute. Therefore, binary code analysis is critical to applications in reverse engineering and computer security tasks where source code is not available. However, unlike source code and natural language that contain rich semantic information, binary code is typically difficult for human engineers to understand and analyze. While existing work uses AI models to assist source code analysis, few studies have considered binary code. In this paper, we propose a COntrastive learning Model for Binary cOde Analysis, or COMBO, that incorporates source code and comment information into binary code during representation learning. Specifically, we present three components in COMBO: (1) a primary contrastive learning method for cold-start pre-training, (2) a simplex interpolation method to incorporate so
+    arXiv:2403.08604v1 Announce Type: new  Abstract: Recent advancements in large language models (LLMs) have significantly enhanced their coding capabilities. However, existing benchmarks predominantly focused on simplified or isolated aspects of programming, such as single-file code generation or repository issue debugging, falling short of measuring the full spectrum of challenges raised by real-world programming activities. To this end, we propose DevBench, a comprehensive benchmark that evaluates LLMs across various stages of the software development lifecycle, including software design, environment setup, implementation, acceptance testing, and unit testing. DevBench features a wide range of programming languages and domains, high-quality data collection, and carefully designed and verified metrics for each task. Empirical studies show that current LLMs, including GPT-4-Turbo, fail to solve the challenges presented within DevBench. Analyses reveal that models struggle with understand
+    
+[^2]: RepairLLaMA：高效表示和微调适配器用于程序修复
+
+    RepairLLaMA: Efficient Representations and Fine-Tuned Adapters for Program Repair
+
+    [https://arxiv.org/abs/2312.15698](https://arxiv.org/abs/2312.15698)
+
+    高效表示和微调适配器相结合的新型程序修复方法RepairLLaMA可为语言模型修复错误产生高效的适配器。
+
+    
+
+    自动程序修复（APR）随着大型语言模型（LLMs）的出现已有了显著发展。对于程序修复进行LLMs的微调是最近研究的一个新领域，有许多未被探索的维度。现有工作大多使用简单的代码表示对LLMs进行微调，并在能够微调更大型LLMs的能力方面存在根本性局限。为解决这个问题，我们提出了RepairLLaMA，一个结合了1）用于APR的代码表示和2）最先进的参数高效的LLM微调技术LoRA的新型程序修复方法。这使得RepairLLaMA产生了一个高效的“程序修复适配器”，用于使用语言模型修复错误。我们的实验证明了这两个概念的有效性。首先，使用具有程序修复特定代码表示的微调适配器使模型能够使用有意义的修复信号。其次，参数高效的微调有助于微调...
+
+    arXiv:2312.15698v2 Announce Type: replace-cross  Abstract: Automated Program Repair (APR) has evolved significantly with the advent of Large Language Models (LLMs). Fine-tuning LLMs for program repair is a recent avenue of research, with many dimensions which have not been explored. Existing work mostly fine-tunes LLMs with naive code representations and is fundamentally limited in its ability to fine-tune larger LLMs. To address this problem, we propose RepairLLaMA, a novel program repair approach that combines 1) code representations for APR and 2) the state-of-the-art parameter-efficient LLM fine-tuning technique called LoRA. This results in RepairLLaMA producing a highly effective `program repair adapter' for fixing bugs with language models. Our experiments demonstrate the validity of both concepts. First, fine-tuning adapters with program repair specific code representations enables the model to use meaningful repair signals. Second, parameter-efficient fine-tuning helps fine-tun
     
 
