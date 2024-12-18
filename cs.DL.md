@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Literature Review of Literature Reviews in Pattern Analysis and Machine Intelligence](https://arxiv.org/abs/2402.12928) | 本文旨在提供对模式分析与机器智能领域文献综述的全面评估，引入大语言模型驱动的文献计量指标，并构建了RiPAMI元数据数据库和主题数据集以获取PAMI综述的统计特征。 |
+| [^1] | [On the Readiness of Scientific Data for a Fair and Transparent Use in Machine Learning.](http://arxiv.org/abs/2401.10304) | 本研究分析了科学数据文档如何满足机器学习社区和监管机构对其在机器学习技术中使用的需求，并提出了一套建议指南。 |
 
 # 详细
 
-[^1]: 模式分析与机器智能领域文献综述的文献综述
+[^1]: 论科学数据在机器学习中的公正和透明使用的准备情况
 
-    A Literature Review of Literature Reviews in Pattern Analysis and Machine Intelligence
+    On the Readiness of Scientific Data for a Fair and Transparent Use in Machine Learning. (arXiv:2401.10304v1 [cs.LG])
 
-    [https://arxiv.org/abs/2402.12928](https://arxiv.org/abs/2402.12928)
+    [http://arxiv.org/abs/2401.10304](http://arxiv.org/abs/2401.10304)
 
-    本文旨在提供对模式分析与机器智能领域文献综述的全面评估，引入大语言模型驱动的文献计量指标，并构建了RiPAMI元数据数据库和主题数据集以获取PAMI综述的统计特征。
+    本研究分析了科学数据文档如何满足机器学习社区和监管机构对其在机器学习技术中使用的需求，并提出了一套建议指南。
 
     
 
-    通过整合分散的知识，文献综述提供了对所研究主题的全面了解。然而，在模式分析与机器智能（PAMI）这一蓬勃发展的领域中，过多的综述引起了研究人员和评论者的关注。作为对这些关注的回应，本文旨在从多个角度全面审视PAMI领域的综述文献。
+    为了确保机器学习系统的公平性和可信性，最近的立法举措和机器学习社区的相关研究指出需要记录用于训练机器学习模型的数据。此外，为了实现可重复性，许多科学领域的数据共享实践近年来也有了发展。在这个意义上，学术机构采用了这些实践，鼓励研究人员将他们的数据和技术文件发布在同行评议的出版物上，如数据论文。本研究分析了科学数据文档如何满足机器学习社区和监管机构对其在机器学习技术中使用的需求。我们对4041篇不同领域的数据论文样本进行了评估，评估其完整性和覆盖范围，并研究了近年来的趋势，特别关注了最多和最少被记录的方面。作为结果，我们提出了一套数据创建者的建议指南。
 
-    arXiv:2402.12928v1 Announce Type: cross  Abstract: By consolidating scattered knowledge, the literature review provides a comprehensive understanding of the investigated topic. However, excessive reviews, especially in the booming field of pattern analysis and machine intelligence (PAMI), raise concerns for both researchers and reviewers. In response to these concerns, this Analysis aims to provide a thorough review of reviews in the PAMI field from diverse perspectives. First, large language model-empowered bibliometric indicators are proposed to evaluate literature reviews automatically. To facilitate this, a meta-data database dubbed RiPAMI, and a topic dataset are constructed, which are utilized to obtain statistical characteristics of PAMI reviews. Unlike traditional bibliometric measurements, the proposed article-level indicators provide real-time and field-normalized quantified assessments of reviews without relying on user-defined keywords. Second, based on these indicators, th
+    To ensure the fairness and trustworthiness of machine learning (ML) systems, recent legislative initiatives and relevant research in the ML community have pointed out the need to document the data used to train ML models. Besides, data-sharing practices in many scientific domains have evolved in recent years for reproducibility purposes. In this sense, the adoption of these practices by academic institutions has encouraged researchers to publish their data and technical documentation in peer-reviewed publications such as data papers. In this study, we analyze how this scientific data documentation meets the needs of the ML community and regulatory bodies for its use in ML technologies. We examine a sample of 4041 data papers of different domains, assessing their completeness and coverage of the requested dimensions, and trends in recent years, putting special emphasis on the most and least documented dimensions. As a result, we propose a set of recommendation guidelines for data creato
     
 
