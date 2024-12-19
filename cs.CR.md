@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Interpreting GNN-based IDS Detections Using Provenance Graph Structural Features.](http://arxiv.org/abs/2306.00934) | 基于PROVEXPLAINER框架，通过复制GNN-based security models的决策过程，利用决策树和图结构特征将抽象GNN决策边界投影到可解释的特征空间，以增强GNN安全模型的透明度和询问能力。 |
-| [^2] | [Differential Privacy via Distributionally Robust Optimization.](http://arxiv.org/abs/2304.12681) | 本文开发了一类机制，以实现无条件最优性保证的差分隐私。该机制将机制设计问题制定为无限维分布鲁棒优化问题。 |
+| [^1] | [Adversarially Robust Signed Graph Contrastive Learning from Balance Augmentation.](http://arxiv.org/abs/2401.10590) | 本研究提出了一种名为BA-SGCL的鲁棒SGNN框架，通过结合图对比学习原则和平衡增强技术，解决了带符号图对抗性攻击中平衡相关信息不可逆的问题。 |
+| [^2] | [No-Box Attacks on 3D Point Cloud Classification.](http://arxiv.org/abs/2210.14164) | 该论文介绍了一种新的方法，可以在不访问目标DNN模型的情况下预测3D点云中的对抗点，提供了无盒子攻击的新视角。 |
 
 # 详细
 
-[^1]: 基于权威图结构特征对基于GNN的IDS检测进行解释
+[^1]: Adversarially Robust Signed Graph Contrastive Learning from Balance Augmentation（从平衡增强中提取对抗性鲁棒的带符号图对比学习）
 
-    Interpreting GNN-based IDS Detections Using Provenance Graph Structural Features. (arXiv:2306.00934v2 [cs.CR] UPDATED)
+    Adversarially Robust Signed Graph Contrastive Learning from Balance Augmentation. (arXiv:2401.10590v1 [cs.LG])
 
-    [http://arxiv.org/abs/2306.00934](http://arxiv.org/abs/2306.00934)
+    [http://arxiv.org/abs/2401.10590](http://arxiv.org/abs/2401.10590)
 
-    基于PROVEXPLAINER框架，通过复制GNN-based security models的决策过程，利用决策树和图结构特征将抽象GNN决策边界投影到可解释的特征空间，以增强GNN安全模型的透明度和询问能力。
-
-    
-
-    复杂神经网络模型的黑匣子本质妨碍了它们在安全领域的普及，因为它们缺乏逻辑解释和可执行后续行动的预测。为了增强在系统来源分析中使用的图神经网络（GNN）安全模型的透明度和问责制，我们提出了PROVEXPLAINER，一种将抽象GNN决策边界投影到可解释特征空间的框架。我们首先使用简单且可解释的模型，如决策树（DT），复制基于GNN的安全模型的决策过程。为了最大化替代模型的准确性和保真度，我们提出了一种基于经典图论的图结构特征，并通过安全领域知识的广泛数据研究对其进行了增强。我们的图结构特征与系统来源领域中的问题空间行动密切相关，这使检测结果可用人类语言描述和解释。
-
-    The black-box nature of complex Neural Network (NN)-based models has hindered their widespread adoption in security domains due to the lack of logical explanations and actionable follow-ups for their predictions. To enhance the transparency and accountability of Graph Neural Network (GNN) security models used in system provenance analysis, we propose PROVEXPLAINER, a framework for projecting abstract GNN decision boundaries onto interpretable feature spaces.  We first replicate the decision-making process of GNNbased security models using simpler and explainable models such as Decision Trees (DTs). To maximize the accuracy and fidelity of the surrogate models, we propose novel graph structural features founded on classical graph theory and enhanced by extensive data study with security domain knowledge. Our graph structural features are closely tied to problem-space actions in the system provenance domain, which allows the detection results to be explained in descriptive, human languag
-    
-[^2]: 分布式鲁棒优化实现差分隐私保护
-
-    Differential Privacy via Distributionally Robust Optimization. (arXiv:2304.12681v1 [cs.CR])
-
-    [http://arxiv.org/abs/2304.12681](http://arxiv.org/abs/2304.12681)
-
-    本文开发了一类机制，以实现无条件最优性保证的差分隐私。该机制将机制设计问题制定为无限维分布鲁棒优化问题。
+    本研究提出了一种名为BA-SGCL的鲁棒SGNN框架，通过结合图对比学习原则和平衡增强技术，解决了带符号图对抗性攻击中平衡相关信息不可逆的问题。
 
     
 
-    近年来，差分隐私已成为共享数据集统计信息并限制涉及个人的私人信息披露的事实标准。通过对将要发布的统计数据进行随机扰动来实现这一目标，这反过来导致了隐私和准确性之间的权衡：更大的扰动提供更强的隐私保证，但结果是提供较低实用度的统计数据和更低的准确性。因此，特别感兴趣的是在预选隐私水平的情况下提供最高准确性的最佳机制。迄今为止，这一领域的工作集中在事先指定扰动族并随后证明其渐近和/或最佳性上，本文则开发了一类机制，它们具有非渐近和无条件的最佳性保证。为此，我们将机制设计问题制定为无限维分布鲁棒优化问题。
+    带符号图由边和符号组成，可以分为结构信息和平衡相关信息。现有的带符号图神经网络（SGNN）通常依赖于平衡相关信息来生成嵌入。然而，最近的对抗性攻击对平衡相关信息产生了不利影响。类似于结构学习可以恢复无符号图，通过改进被污染图的平衡度，可以将平衡学习应用于带符号图。然而，这种方法面临着“平衡相关信息的不可逆性”挑战-尽管平衡度得到改善，但恢复的边可能不是最初受到攻击影响的边，导致防御效果差。为了解决这个挑战，我们提出了一个鲁棒的SGNN框架，称为平衡增强带符号图对比学习（BA-SGCL），它将图对比学习原则与平衡增强相结合。
 
-    In recent years, differential privacy has emerged as the de facto standard for sharing statistics of datasets while limiting the disclosure of private information about the involved individuals. This is achieved by randomly perturbing the statistics to be published, which in turn leads to a privacy-accuracy trade-off: larger perturbations provide stronger privacy guarantees, but they result in less accurate statistics that offer lower utility to the recipients. Of particular interest are therefore optimal mechanisms that provide the highest accuracy for a pre-selected level of privacy. To date, work in this area has focused on specifying families of perturbations a priori and subsequently proving their asymptotic and/or best-in-class optimality. In this paper, we develop a class of mechanisms that enjoy non-asymptotic and unconditional optimality guarantees. To this end, we formulate the mechanism design problem as an infinite-dimensional distributionally robust optimization problem. W
+    Signed graphs consist of edges and signs, which can be separated into structural information and balance-related information, respectively. Existing signed graph neural networks (SGNNs) typically rely on balance-related information to generate embeddings. Nevertheless, the emergence of recent adversarial attacks has had a detrimental impact on the balance-related information. Similar to how structure learning can restore unsigned graphs, balance learning can be applied to signed graphs by improving the balance degree of the poisoned graph. However, this approach encounters the challenge "Irreversibility of Balance-related Information" - while the balance degree improves, the restored edges may not be the ones originally affected by attacks, resulting in poor defense effectiveness. To address this challenge, we propose a robust SGNN framework called Balance Augmented-Signed Graph Contrastive Learning (BA-SGCL), which combines Graph Contrastive Learning principles with balance augmentati
+    
+[^2]: 3D点云分类的无盒子攻击
+
+    No-Box Attacks on 3D Point Cloud Classification. (arXiv:2210.14164v3 [cs.CV] UPDATED)
+
+    [http://arxiv.org/abs/2210.14164](http://arxiv.org/abs/2210.14164)
+
+    该论文介绍了一种新的方法，可以在不访问目标DNN模型的情况下预测3D点云中的对抗点，提供了无盒子攻击的新视角。
+
+    
+
+    对于基于深度神经网络（DNN）的各种输入信号的分析，对抗攻击构成了严重挑战。在3D点云的情况下，已经开发出了一些方法来识别在网络决策中起关键作用的点，而这些方法在生成现有的对抗攻击中变得至关重要。例如，显著性图方法是一种流行的方法，用于识别对抗攻击会显著影响网络决策的点。通常，识别对抗点的方法依赖于对目标DNN模型的访问，以确定哪些点对模型的决策至关重要。本文旨在对这个问题提供一种新的视角，在不访问目标DNN模型的情况下预测对抗点，这被称为“无盒子”攻击。为此，我们定义了14个点云特征，并使用多元线性回归来检查这些特征是否可以用于预测对抗点，以及哪些特征对预测最为重要。
+
+    Adversarial attacks pose serious challenges for deep neural network (DNN)-based analysis of various input signals. In the case of 3D point clouds, methods have been developed to identify points that play a key role in network decision, and these become crucial in generating existing adversarial attacks. For example, a saliency map approach is a popular method for identifying adversarial drop points, whose removal would significantly impact the network decision. Generally, methods for identifying adversarial points rely on the access to the DNN model itself to determine which points are critically important for the model's decision. This paper aims to provide a novel viewpoint on this problem, where adversarial points can be predicted without access to the target DNN model, which is referred to as a ``no-box'' attack. To this end, we define 14 point cloud features and use multiple linear regression to examine whether these features can be used for adversarial point prediction, and which
     
 
