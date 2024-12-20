@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Extremal graphical modeling with latent variables](https://arxiv.org/abs/2403.09604) | 提出了一种针对混合变量的极端图模型的学习方法，能够有效恢复条件图和潜变量数量。 |
-| [^2] | [Sample-Efficient Clustering and Conquer Procedures for Parallel Large-Scale Ranking and Selection](https://arxiv.org/abs/2402.02196) | 我们提出了一种新颖的并行大规模排序和选择问题的聚类及征服方法，通过利用相关信息进行聚类以提高样本效率，在大规模AI应用中表现优异。 |
+| [^1] | [The VOROS: Lifting ROC curves to 3D](https://arxiv.org/abs/2402.18689) | 引入第三维度，将ROC曲线提升为ROC曲面，提出VOROS作为2D ROC曲线下面积的3D泛化，可以更好地捕捉不同分类器的成本。 |
+| [^2] | [Flexible and efficient spatial extremes emulation via variational autoencoders.](http://arxiv.org/abs/2307.08079) | 本文提出了一种新的空间极端值模型，通过集成在变分自动编码器的结构中，可以灵活、高效地模拟具有非平稳相关性的极端事件。实验证明，在时间效率和性能上，相对于传统的贝叶斯推断和许多具有平稳相关性的空间极端值模型，我们的方法具有优势。 |
 
 # 详细
 
-[^1]: 混合变量的极端图模型
+[^1]: VOROS：将ROC曲线提升到3D
 
-    Extremal graphical modeling with latent variables
+    The VOROS: Lifting ROC curves to 3D
 
-    [https://arxiv.org/abs/2403.09604](https://arxiv.org/abs/2403.09604)
+    [https://arxiv.org/abs/2402.18689](https://arxiv.org/abs/2402.18689)
 
-    提出了一种针对混合变量的极端图模型的学习方法，能够有效恢复条件图和潜变量数量。
-
-    
-
-    极端图模型编码多变量极端条件独立结构，并为量化罕见事件风险提供强大工具。我们提出了面向潜变量的可延伸图模型的可行凸规划方法，将 H\"usler-Reiss 精度矩阵分解为编码观察变量之间的图结构的稀疏部分和编码少量潜变量对观察变量的影响的低秩部分。我们提供了\texttt{eglatent}的有限样本保证，并展示它能一致地恢复条件图以及潜变量的数量。
-
-    arXiv:2403.09604v1 Announce Type: cross  Abstract: Extremal graphical models encode the conditional independence structure of multivariate extremes and provide a powerful tool for quantifying the risk of rare events. Prior work on learning these graphs from data has focused on the setting where all relevant variables are observed. For the popular class of H\"usler-Reiss models, we propose the \texttt{eglatent} method, a tractable convex program for learning extremal graphical models in the presence of latent variables. Our approach decomposes the H\"usler-Reiss precision matrix into a sparse component encoding the graphical structure among the observed variables after conditioning on the latent variables, and a low-rank component encoding the effect of a few latent variables on the observed variables. We provide finite-sample guarantees of \texttt{eglatent} and show that it consistently recovers the conditional graph as well as the number of latent variables. We highlight the improved 
-    
-[^2]: 并行大规模排序和选择问题的样本高效聚类及征服方法
-
-    Sample-Efficient Clustering and Conquer Procedures for Parallel Large-Scale Ranking and Selection
-
-    [https://arxiv.org/abs/2402.02196](https://arxiv.org/abs/2402.02196)
-
-    我们提出了一种新颖的并行大规模排序和选择问题的聚类及征服方法，通过利用相关信息进行聚类以提高样本效率，在大规模AI应用中表现优异。
+    引入第三维度，将ROC曲线提升为ROC曲面，提出VOROS作为2D ROC曲线下面积的3D泛化，可以更好地捕捉不同分类器的成本。
 
     
 
-    我们提出了一种新颖的"聚类和征服"方法，用于解决并行大规模排序和选择问题，通过利用相关信息进行聚类，以打破样本效率的瓶颈。在并行计算环境中，基于相关性的聚类可以实现O(p)的样本复杂度减少速度，这是理论上可达到的最佳减少速度。我们提出的框架是通用的，在固定预算和固定精度的范式下，可以无缝集成各种常见的排序和选择方法。它可以在无需高精确度相关估计和精确聚类的情况下实现改进。在大规模人工智能应用中，如神经结构搜索，我们的无筛选版本的方法惊人地超过了完全顺序化的基准，表现出更高的样本效率。这表明利用有价值的结构信息，如相关性，是绕过传统方法的一条可行路径。
+    ROC曲线下面积是一个常用的度量，通常用于排列不同二元分类器的相对性能。然而，正如以前所指出的，当真实类值或误分类成本在两个类别之间高度不平衡时，它可能无法准确捕捉不同分类器的效益。我们引入第三维来捕获这些成本，并以一种自然的方式将ROC曲线提升为ROC曲面。我们研究了这个曲面，并引入了VOROS，即ROC曲面上方的体积，作为2D ROC曲线下面积的3D泛化。对于存在预期成本或类别不平衡边界的问题，我们限制考虑适当子区域的ROC曲面的体积。我们展示了VOROS如何在经典和现代示例数据集上更好地捕捉不同分类器的成本。
 
-    We propose novel "clustering and conquer" procedures for the parallel large-scale ranking and selection (R&S) problem, which leverage correlation information for clustering to break the bottleneck of sample efficiency. In parallel computing environments, correlation-based clustering can achieve an $\mathcal{O}(p)$ sample complexity reduction rate, which is the optimal reduction rate theoretically attainable. Our proposed framework is versatile, allowing for seamless integration of various prevalent R&S methods under both fixed-budget and fixed-precision paradigms. It can achieve improvements without the necessity of highly accurate correlation estimation and precise clustering. In large-scale AI applications such as neural architecture search, a screening-free version of our procedure surprisingly surpasses fully-sequential benchmarks in terms of sample efficiency. This suggests that leveraging valuable structural information, such as correlation, is a viable path to bypassing the trad
+    arXiv:2402.18689v1 Announce Type: new  Abstract: The area under the ROC curve is a common measure that is often used to rank the relative performance of different binary classifiers. However, as has been also previously noted, it can be a measure that ill-captures the benefits of different classifiers when either the true class values or misclassification costs are highly unbalanced between the two classes. We introduce a third dimension to capture these costs, and lift the ROC curve to a ROC surface in a natural way. We study both this surface and introduce the VOROS, the volume over this ROC surface, as a 3D generalization of the 2D area under the ROC curve. For problems where there are only bounds on the expected costs or class imbalances, we restrict consideration to the volume of the appropriate subregion of the ROC surface. We show how the VOROS can better capture the costs of different classifiers on both a classical and a modern example dataset.
+    
+[^2]: 通过变分自动 编码器实现灵活高效的空间极端值模拟
+
+    Flexible and efficient spatial extremes emulation via variational autoencoders. (arXiv:2307.08079v1 [stat.ML])
+
+    [http://arxiv.org/abs/2307.08079](http://arxiv.org/abs/2307.08079)
+
+    本文提出了一种新的空间极端值模型，通过集成在变分自动编码器的结构中，可以灵活、高效地模拟具有非平稳相关性的极端事件。实验证明，在时间效率和性能上，相对于传统的贝叶斯推断和许多具有平稳相关性的空间极端值模型，我们的方法具有优势。
+
+    
+
+    许多现实世界的过程具有复杂的尾依赖结构，这种结构无法使用传统的高斯过程来描述。更灵活的空间极端值模型， 如高斯尺度混合模型和单站点调节模型，具有吸引人的极端依赖性质，但往往难以拟合和模拟。本文中，我们提出了一种新的空间极端值模型，具有灵活和非平稳的相关性属性，并将其集成到变分自动编码器 (extVAE) 的编码-解码结构中。 extVAE 可以作为一个时空模拟器，对潜在的机制模型输出状态的分布进行建模，并产生具有与输入相同属性的输出，尤其是在尾部区域。通过广泛的模拟研究，我们证明我们的extVAE比传统的贝叶斯推断更高效，并且在具有 平稳相关性结构的许多空间极端值模型中表现 更好。
+
+    Many real-world processes have complex tail dependence structures that cannot be characterized using classical Gaussian processes. More flexible spatial extremes models such as Gaussian scale mixtures and single-station conditioning models exhibit appealing extremal dependence properties but are often exceedingly prohibitive to fit and simulate from. In this paper, we develop a new spatial extremes model that has flexible and non-stationary dependence properties, and we integrate it in the encoding-decoding structure of a variational autoencoder (extVAE). The extVAE can be used as a spatio-temporal emulator that characterizes the distribution of potential mechanistic model output states and produces outputs that have the same properties as the inputs, especially in the tail. Through extensive simulation studies, we show that our extVAE is vastly more time-efficient than traditional Bayesian inference while also outperforming many spatial extremes models with a stationary dependence str
     
 
