@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Adversarially Robust Signed Graph Contrastive Learning from Balance Augmentation.](http://arxiv.org/abs/2401.10590) | 本研究提出了一种名为BA-SGCL的鲁棒SGNN框架，通过结合图对比学习原则和平衡增强技术，解决了带符号图对抗性攻击中平衡相关信息不可逆的问题。 |
-| [^2] | [No-Box Attacks on 3D Point Cloud Classification.](http://arxiv.org/abs/2210.14164) | 该论文介绍了一种新的方法，可以在不访问目标DNN模型的情况下预测3D点云中的对抗点，提供了无盒子攻击的新视角。 |
+| [^1] | [A Survey on Consumer IoT Traffic: Security and Privacy](https://arxiv.org/abs/2403.16149) | 本调查针对消费者物联网（CIoT）流量分析从安全和隐私的角度出发，总结了CIoT流量分析的新特征、最新进展和挑战，认为通过流量分析可以揭示CIoT领域中的安全和隐私问题。 |
+| [^2] | [UOR: Universal Backdoor Attacks on Pre-trained Language Models.](http://arxiv.org/abs/2305.09574) | 本文介绍了一种新的后门攻击方法UOR，可以自动选择触发器并学习通用输出表示，成功率高达99.3％，能够对多种预训练语言模型和下游任务实施攻击，且可突破最新的防御方法。 |
 
 # 详细
 
-[^1]: Adversarially Robust Signed Graph Contrastive Learning from Balance Augmentation（从平衡增强中提取对抗性鲁棒的带符号图对比学习）
+[^1]: 消费者物联网流量的调查：安全与隐私
 
-    Adversarially Robust Signed Graph Contrastive Learning from Balance Augmentation. (arXiv:2401.10590v1 [cs.LG])
+    A Survey on Consumer IoT Traffic: Security and Privacy
 
-    [http://arxiv.org/abs/2401.10590](http://arxiv.org/abs/2401.10590)
+    [https://arxiv.org/abs/2403.16149](https://arxiv.org/abs/2403.16149)
 
-    本研究提出了一种名为BA-SGCL的鲁棒SGNN框架，通过结合图对比学习原则和平衡增强技术，解决了带符号图对抗性攻击中平衡相关信息不可逆的问题。
-
-    
-
-    带符号图由边和符号组成，可以分为结构信息和平衡相关信息。现有的带符号图神经网络（SGNN）通常依赖于平衡相关信息来生成嵌入。然而，最近的对抗性攻击对平衡相关信息产生了不利影响。类似于结构学习可以恢复无符号图，通过改进被污染图的平衡度，可以将平衡学习应用于带符号图。然而，这种方法面临着“平衡相关信息的不可逆性”挑战-尽管平衡度得到改善，但恢复的边可能不是最初受到攻击影响的边，导致防御效果差。为了解决这个挑战，我们提出了一个鲁棒的SGNN框架，称为平衡增强带符号图对比学习（BA-SGCL），它将图对比学习原则与平衡增强相结合。
-
-    Signed graphs consist of edges and signs, which can be separated into structural information and balance-related information, respectively. Existing signed graph neural networks (SGNNs) typically rely on balance-related information to generate embeddings. Nevertheless, the emergence of recent adversarial attacks has had a detrimental impact on the balance-related information. Similar to how structure learning can restore unsigned graphs, balance learning can be applied to signed graphs by improving the balance degree of the poisoned graph. However, this approach encounters the challenge "Irreversibility of Balance-related Information" - while the balance degree improves, the restored edges may not be the ones originally affected by attacks, resulting in poor defense effectiveness. To address this challenge, we propose a robust SGNN framework called Balance Augmented-Signed Graph Contrastive Learning (BA-SGCL), which combines Graph Contrastive Learning principles with balance augmentati
-    
-[^2]: 3D点云分类的无盒子攻击
-
-    No-Box Attacks on 3D Point Cloud Classification. (arXiv:2210.14164v3 [cs.CV] UPDATED)
-
-    [http://arxiv.org/abs/2210.14164](http://arxiv.org/abs/2210.14164)
-
-    该论文介绍了一种新的方法，可以在不访问目标DNN模型的情况下预测3D点云中的对抗点，提供了无盒子攻击的新视角。
+    本调查针对消费者物联网（CIoT）流量分析从安全和隐私的角度出发，总结了CIoT流量分析的新特征、最新进展和挑战，认为通过流量分析可以揭示CIoT领域中的安全和隐私问题。
 
     
 
-    对于基于深度神经网络（DNN）的各种输入信号的分析，对抗攻击构成了严重挑战。在3D点云的情况下，已经开发出了一些方法来识别在网络决策中起关键作用的点，而这些方法在生成现有的对抗攻击中变得至关重要。例如，显著性图方法是一种流行的方法，用于识别对抗攻击会显著影响网络决策的点。通常，识别对抗点的方法依赖于对目标DNN模型的访问，以确定哪些点对模型的决策至关重要。本文旨在对这个问题提供一种新的视角，在不访问目标DNN模型的情况下预测对抗点，这被称为“无盒子”攻击。为此，我们定义了14个点云特征，并使用多元线性回归来检查这些特征是否可以用于预测对抗点，以及哪些特征对预测最为重要。
+    在过去几年里，消费者物联网（CIoT）已经进入了公众生活。尽管CIoT提高了人们日常生活的便利性，但也带来了新的安全和隐私问题。我们尝试通过流量分析这一安全领域中的流行方法，找出研究人员可以从流量分析中了解CIoT安全和隐私方面的内容。本调查从安全和隐私角度探讨了CIoT流量分析中的新特征、CIoT流量分析的最新进展以及尚未解决的挑战。我们从2018年1月至2023年12月收集了310篇与CIoT流量分析有关的安全和隐私角度的论文，总结了识别了CIoT新特征的CIoT流量分析过程。然后，我们根据五个应用目标详细介绍了现有的研究工作：设备指纹识别、用户活动推断、恶意行为检测、隐私泄露以及通信模式识别。
 
-    Adversarial attacks pose serious challenges for deep neural network (DNN)-based analysis of various input signals. In the case of 3D point clouds, methods have been developed to identify points that play a key role in network decision, and these become crucial in generating existing adversarial attacks. For example, a saliency map approach is a popular method for identifying adversarial drop points, whose removal would significantly impact the network decision. Generally, methods for identifying adversarial points rely on the access to the DNN model itself to determine which points are critically important for the model's decision. This paper aims to provide a novel viewpoint on this problem, where adversarial points can be predicted without access to the target DNN model, which is referred to as a ``no-box'' attack. To this end, we define 14 point cloud features and use multiple linear regression to examine whether these features can be used for adversarial point prediction, and which
+    arXiv:2403.16149v1 Announce Type: cross  Abstract: For the past few years, the Consumer Internet of Things (CIoT) has entered public lives. While CIoT has improved the convenience of people's daily lives, it has also brought new security and privacy concerns. In this survey, we try to figure out what researchers can learn about the security and privacy of CIoT by traffic analysis, a popular method in the security community. From the security and privacy perspective, this survey seeks out the new characteristics in CIoT traffic analysis, the state-of-the-art progress in CIoT traffic analysis, and the challenges yet to be solved. We collected 310 papers from January 2018 to December 2023 related to CIoT traffic analysis from the security and privacy perspective and summarized the process of CIoT traffic analysis in which the new characteristics of CIoT are identified. Then, we detail existing works based on five application goals: device fingerprinting, user activity inference, malicious
+    
+[^2]: UOR：预训练语言模型的通用后门攻击
+
+    UOR: Universal Backdoor Attacks on Pre-trained Language Models. (arXiv:2305.09574v1 [cs.CL])
+
+    [http://arxiv.org/abs/2305.09574](http://arxiv.org/abs/2305.09574)
+
+    本文介绍了一种新的后门攻击方法UOR，可以自动选择触发器并学习通用输出表示，成功率高达99.3％，能够对多种预训练语言模型和下游任务实施攻击，且可突破最新的防御方法。
+
+    
+
+    在预训练语言模型中植入后门可以传递到各种下游任务，这对安全构成了严重威胁。然而，现有的针对预训练语言模型的后门攻击大都是非目标和特定任务的。很少有针对目标和任务不可知性的方法使用手动预定义的触发器和输出表示，这使得攻击效果不够强大和普适。本文首先总结了一个更具威胁性的预训练语言模型后门攻击应满足的要求，然后提出了一种新的后门攻击方法UOR，通过将手动选择变成自动优化，打破了以往方法的瓶颈。具体来说，我们定义了被污染的监督对比学习，可以自动学习各种预训练语言模型触发器的更加均匀和通用输出表示。此外，我们使用梯度搜索选取适当的触发词，可以适应不同的预训练语言模型和词汇表。实验证明，UOR可以在各种PLMs和下游任务中实现高后门成功率（高达99.3％），优于现有方法。此外，UOR还可以突破对抗后门攻击的最新防御方法。
+
+    Backdoors implanted in pre-trained language models (PLMs) can be transferred to various downstream tasks, which exposes a severe security threat. However, most existing backdoor attacks against PLMs are un-targeted and task-specific. Few targeted and task-agnostic methods use manually pre-defined triggers and output representations, which prevent the attacks from being more effective and general. In this paper, we first summarize the requirements that a more threatening backdoor attack against PLMs should satisfy, and then propose a new backdoor attack method called UOR, which breaks the bottleneck of the previous approach by turning manual selection into automatic optimization. Specifically, we define poisoned supervised contrastive learning which can automatically learn the more uniform and universal output representations of triggers for various PLMs. Moreover, we use gradient search to select appropriate trigger words which can be adaptive to different PLMs and vocabularies. Experi
     
 

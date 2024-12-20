@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.NE</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.NE</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.NE</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.NE</description><item><title>&#26412;&#25991;&#20351;&#29992;&#20449;&#24687;&#20960;&#20309;&#26500;&#36896;&#20102;&#32447;&#24615;&#20960;&#20046;&#27431;&#20960;&#37324;&#24471;&#27969;&#24418;&#65292;&#36890;&#36807;&#24341;&#20837;&#20559;&#24494;&#20998;&#26041;&#31243;Ricci&#27969;&#65292;&#35299;&#20915;&#20102;&#31163;&#25955;&#31070;&#32463;&#32593;&#32476;&#35757;&#32451;&#20013;&#26799;&#24230;&#26080;&#31351;&#25110;&#38646;&#30340;&#38382;&#39064;&#12290;</title><link>http://arxiv.org/abs/2302.03390</link><description>&lt;p&gt;
+&#22312;Ricci&#27969;&#19979;&#23398;&#20064;&#31163;&#25955;&#31070;&#32463;&#32593;&#32476;
+&lt;/p&gt;
+&lt;p&gt;
+Learning Discretized Neural Networks under Ricci Flow. (arXiv:2302.03390v3 [cs.LG] UPDATED)
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2302.03390
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#20351;&#29992;&#20449;&#24687;&#20960;&#20309;&#26500;&#36896;&#20102;&#32447;&#24615;&#20960;&#20046;&#27431;&#20960;&#37324;&#24471;&#27969;&#24418;&#65292;&#36890;&#36807;&#24341;&#20837;&#20559;&#24494;&#20998;&#26041;&#31243;Ricci&#27969;&#65292;&#35299;&#20915;&#20102;&#31163;&#25955;&#31070;&#32463;&#32593;&#32476;&#35757;&#32451;&#20013;&#26799;&#24230;&#26080;&#31351;&#25110;&#38646;&#30340;&#38382;&#39064;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#32771;&#34385;&#20102;&#30001;&#20302;&#31934;&#24230;&#26435;&#37325;&#21644;&#28608;&#27963;&#20989;&#25968;&#26500;&#25104;&#30340;&#31163;&#25955;&#31070;&#32463;&#32593;&#32476;&#65288;DNNs&#65289;&#22312;&#35757;&#32451;&#36807;&#31243;&#20013;&#30001;&#20110;&#38750;&#21487;&#24494;&#20998;&#31163;&#25955;&#20989;&#25968;&#32780;&#36973;&#21463;&#26080;&#31351;&#25110;&#38646;&#26799;&#24230;&#30340;&#38382;&#39064;&#12290;&#26412;&#25991;&#38024;&#23545;&#27492;&#38382;&#39064;&#65292;&#25552;&#20986;&#20102;&#25226; STE&#36817;&#20284;&#26799;&#24230;&#30475;&#20316;&#25972;&#20307;&#20559;&#24046;&#30340;&#24230;&#37327;&#25200;&#21160;&#65292;&#36890;&#36807;&#23545;&#20598;&#29702;&#35770;&#23558;&#20854;&#30475;&#20316;&#40654;&#26364;&#27969;&#24418;&#19978;&#30340;&#24230;&#37327;&#25200;&#21160;&#65292;&#24182;&#22312;&#20449;&#24687;&#20960;&#20309;&#30340;&#22522;&#30784;&#19978;&#20026; DNN&#26500;&#36896;&#20102;&#32447;&#24615;&#20960;&#20046;&#27431;&#20960;&#37324;&#24471;&#65288;LNE&#65289;&#27969;&#24418;&#20197;&#22788;&#29702;&#25200;&#21160;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+In this paper, we consider Discretized Neural Networks (DNNs) consisting of low-precision weights and activations, which suffer from either infinite or zero gradients due to the non-differentiable discrete function in the training process. In this case, most training-based DNNs employ the standard Straight-Through Estimator (STE) to approximate the gradient w.r.t. discrete values. However, the STE gives rise to the problem of gradient mismatch, due to the perturbations of the approximated gradient. To address this problem, this paper reveals that this mismatch can be viewed as a metric perturbation in a Riemannian manifold through the lens of duality theory. Further, on the basis of the information geometry, we construct the Linearly Nearly Euclidean (LNE) manifold for DNNs as a background to deal with perturbations. By introducing a partial differential equation on metrics, i.e., the Ricci flow, we prove the dynamical stability and convergence of the LNE metric with the $L^2$-norm per
+&lt;/p&gt;</description></item></channel></rss>

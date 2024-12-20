@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Towards a Dynamic Future with Adaptable Computing and Network Convergence (ACNC)](https://arxiv.org/abs/2403.07573) | 本文提出了可适应性CNC（ACNC）的概念，作为一种自主的机器学习（ML）辅助机制，旨在联合编排计算和网络资源，满足对动态和大量用户请求的严格要求。 |
+| [^1] | [TurboSVM-FL: Boosting Federated Learning through SVM Aggregation for Lazy Clients.](http://arxiv.org/abs/2401.12012) | TurboSVM-FL是一种新颖的联邦聚合策略，通过SVM聚合为懒惰客户端增强联邦学习。这种策略在不增加客户端计算负担的情况下解决了联邦学习中的收敛速度慢的问题。 |
 
 # 详细
 
-[^1]: 迈向具有可适应性计算和网络融合的动态未来（ACNC）
+[^1]: TurboSVM-FL: 通过SVM聚合为懒惰客户端增强联邦学习
 
-    Towards a Dynamic Future with Adaptable Computing and Network Convergence (ACNC)
+    TurboSVM-FL: Boosting Federated Learning through SVM Aggregation for Lazy Clients. (arXiv:2401.12012v2 [cs.LG] UPDATED)
 
-    [https://arxiv.org/abs/2403.07573](https://arxiv.org/abs/2403.07573)
+    [http://arxiv.org/abs/2401.12012](http://arxiv.org/abs/2401.12012)
 
-    本文提出了可适应性CNC（ACNC）的概念，作为一种自主的机器学习（ML）辅助机制，旨在联合编排计算和网络资源，满足对动态和大量用户请求的严格要求。
+    TurboSVM-FL是一种新颖的联邦聚合策略，通过SVM聚合为懒惰客户端增强联邦学习。这种策略在不增加客户端计算负担的情况下解决了联邦学习中的收敛速度慢的问题。
 
     
 
-    在推进6G的背景下，预计会出现实质性的范式转变，突出了由大量连接和严格遵守服务质量/体验（QoS/E）先决条件所特征化的全面的一切对一切交互。即将面临的挑战源于资源稀缺，促使有意识地向计算-网络融合（CNC）过渡，作为联合资源编排的有前途的方法。虽然基于CNC的机制引起了人们的关注，但它们在实现未来服务方面的有效性，特别是在类似Metaverse的使用情景中，可能会由于用户、服务和资源不断变化的特性而受到限制。因此，本文提出了可适应性CNC（ACNC）的概念，作为一种自主的机器学习（ML）辅助机制，旨在联合编排计算和网络资源，满足对动态和大量用户请求的严格要求。
+    联邦学习是一种分布式协作机器学习范例，在近年来获得了强烈的推动力。在联邦学习中，中央服务器定期通过客户端协调模型，并聚合由客户端在本地训练的模型，而无需访问本地数据。尽管具有潜力，但联邦学习的实施仍然面临一些挑战，主要是由于数据异质性导致的收敛速度慢。收敛速度慢在跨设备联邦学习场景中尤为问题，其中客户端可能受到计算能力和存储空间的严重限制，因此对客户端产生额外计算或内存负担的方法，如辅助目标项和更大的训练迭代次数，可能不实际。在本文中，我们提出了一种新颖的联邦聚合策略TurboSVM-FL，它不会给客户端增加额外的计算负担
 
-    arXiv:2403.07573v1 Announce Type: cross  Abstract: In the context of advancing 6G, a substantial paradigm shift is anticipated, highlighting comprehensive everything-to-everything interactions characterized by numerous connections and stringent adherence to Quality of Service/Experience (QoS/E) prerequisites. The imminent challenge stems from resource scarcity, prompting a deliberate transition to Computing-Network Convergence (CNC) as an auspicious approach for joint resource orchestration. While CNC-based mechanisms have garnered attention, their effectiveness in realizing future services, particularly in use cases like the Metaverse, may encounter limitations due to the continually changing nature of users, services, and resources. Hence, this paper presents the concept of Adaptable CNC (ACNC) as an autonomous Machine Learning (ML)-aided mechanism crafted for the joint orchestration of computing and network resources, catering to dynamic and voluminous user requests with stringent r
+    Federated learning is a distributed collaborative machine learning paradigm that has gained strong momentum in recent years. In federated learning, a central server periodically coordinates models with clients and aggregates the models trained locally by clients without necessitating access to local data. Despite its potential, the implementation of federated learning continues to encounter several challenges, predominantly the slow convergence that is largely due to data heterogeneity. The slow convergence becomes particularly problematic in cross-device federated learning scenarios where clients may be strongly limited by computing power and storage space, and hence counteracting methods that induce additional computation or memory cost on the client side such as auxiliary objective terms and larger training iterations can be impractical. In this paper, we propose a novel federated aggregation strategy, TurboSVM-FL, that poses no additional computation burden on the client side and c
     
 

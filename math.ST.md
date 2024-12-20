@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [The VOROS: Lifting ROC curves to 3D](https://arxiv.org/abs/2402.18689) | 引入第三维度，将ROC曲线提升为ROC曲面，提出VOROS作为2D ROC曲线下面积的3D泛化，可以更好地捕捉不同分类器的成本。 |
+| [^1] | [Strong consistency and optimality of spectral clustering in symmetric binary non-uniform Hypergraph Stochastic Block Model.](http://arxiv.org/abs/2306.06845) | 论文提出了非均匀超图随机块模型下谱聚类的强一致性信息理论阈值，并且在该阈值以下给出估计标签的期望“不匹配率”上界。并且，单步谱算法可以在超过该阈值时非常高的概率正确地给定每个顶点的标签。 |
 
 # 详细
 
-[^1]: VOROS：将ROC曲线提升到3D
+[^1]: 对称二元非均匀超图随机块模型中谱聚类的强一致性与最优性
 
-    The VOROS: Lifting ROC curves to 3D
+    Strong consistency and optimality of spectral clustering in symmetric binary non-uniform Hypergraph Stochastic Block Model. (arXiv:2306.06845v1 [math.ST])
 
-    [https://arxiv.org/abs/2402.18689](https://arxiv.org/abs/2402.18689)
+    [http://arxiv.org/abs/2306.06845](http://arxiv.org/abs/2306.06845)
 
-    引入第三维度，将ROC曲线提升为ROC曲面，提出VOROS作为2D ROC曲线下面积的3D泛化，可以更好地捕捉不同分类器的成本。
+    论文提出了非均匀超图随机块模型下谱聚类的强一致性信息理论阈值，并且在该阈值以下给出估计标签的期望“不匹配率”上界。并且，单步谱算法可以在超过该阈值时非常高的概率正确地给定每个顶点的标签。
 
     
 
-    ROC曲线下面积是一个常用的度量，通常用于排列不同二元分类器的相对性能。然而，正如以前所指出的，当真实类值或误分类成本在两个类别之间高度不平衡时，它可能无法准确捕捉不同分类器的效益。我们引入第三维来捕获这些成本，并以一种自然的方式将ROC曲线提升为ROC曲面。我们研究了这个曲面，并引入了VOROS，即ROC曲面上方的体积，作为2D ROC曲线下面积的3D泛化。对于存在预期成本或类别不平衡边界的问题，我们限制考虑适当子区域的ROC曲面的体积。我们展示了VOROS如何在经典和现代示例数据集上更好地捕捉不同分类器的成本。
+    本论文考虑了在非均匀超图随机块模型下，两个等大小的社区（n/2）中的随机超图上的无监督分类问题，其中每个边只依赖于其顶点的标签，边以一定概率独立出现。在这篇论文中，建立了强一致性的信息理论阈值，在该阈值以下，任何算法都有很高概率会误分类至少两个顶点，而特征向量估计量的期望“不匹配率”上界为$n$的阈值的负指数。另一方面，当超过该阈值时，尽管张量收缩引起了信息损失，但单步谱算法仅在给定收缩的邻接矩阵时，即使SDP在某些情况下失败，也可以非常高的概率正确地给定每个顶点分配标签。此外，强一致性可以通过对所有次优聚合信息实现。
 
-    arXiv:2402.18689v1 Announce Type: new  Abstract: The area under the ROC curve is a common measure that is often used to rank the relative performance of different binary classifiers. However, as has been also previously noted, it can be a measure that ill-captures the benefits of different classifiers when either the true class values or misclassification costs are highly unbalanced between the two classes. We introduce a third dimension to capture these costs, and lift the ROC curve to a ROC surface in a natural way. We study both this surface and introduce the VOROS, the volume over this ROC surface, as a 3D generalization of the 2D area under the ROC curve. For problems where there are only bounds on the expected costs or class imbalances, we restrict consideration to the volume of the appropriate subregion of the ROC surface. We show how the VOROS can better capture the costs of different classifiers on both a classical and a modern example dataset.
+    Consider the unsupervised classification problem in random hypergraphs under the non-uniform \emph{Hypergraph Stochastic Block Model} (HSBM) with two equal-sized communities ($n/2$), where each edge appears independently with some probability depending only on the labels of its vertices. In this paper, an \emph{information-theoretical} threshold for strong consistency is established. Below the threshold, every algorithm would misclassify at least two vertices with high probability, and the expected \emph{mismatch ratio} of the eigenvector estimator is upper bounded by $n$ to the power of minus the threshold. On the other hand, when above the threshold, despite the information loss induced by tensor contraction, one-stage spectral algorithms assign every vertex correctly with high probability when only given the contracted adjacency matrix, even if \emph{semidefinite programming} (SDP) fails in some scenarios. Moreover, strong consistency is achievable by aggregating information from al
     
 
