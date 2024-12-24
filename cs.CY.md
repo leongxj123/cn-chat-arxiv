@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Born With a Silver Spoon? Investigating Socioeconomic Bias in Large Language Models](https://arxiv.org/abs/2403.14633) | 本文调查了大型语言模型中是否存在社会经济偏见，引入了一个新的数据集SilverSpoon，并评估了这种偏见的程度以及随着模型大小的变化。 |
+| [^1] | [Towards Democratized Flood Risk Management: An Advanced AI Assistant Enabled by GPT-4 for Enhanced Interpretability and Public Engagement](https://arxiv.org/abs/2403.03188) | 引入基于GPT-4的定制AI助手，旨在促进决策者、普通公众和洪水预报员之间的有效沟通，提升可解释性和公众参与度。 |
 
 # 详细
 
-[^1]: 出身富贵？探讨大型语言模型中的社会经济偏见
+[^1]: 达成民主化洪水风险管理：基于GPT-4的先进AI助手实现增强的可解释性和公众参与度
 
-    Born With a Silver Spoon? Investigating Socioeconomic Bias in Large Language Models
+    Towards Democratized Flood Risk Management: An Advanced AI Assistant Enabled by GPT-4 for Enhanced Interpretability and Public Engagement
 
-    [https://arxiv.org/abs/2403.14633](https://arxiv.org/abs/2403.14633)
+    [https://arxiv.org/abs/2403.03188](https://arxiv.org/abs/2403.03188)
 
-    本文调查了大型语言模型中是否存在社会经济偏见，引入了一个新的数据集SilverSpoon，并评估了这种偏见的程度以及随着模型大小的变化。
+    引入基于GPT-4的定制AI助手，旨在促进决策者、普通公众和洪水预报员之间的有效沟通，提升可解释性和公众参与度。
 
     
 
-    社会经济偏见在社会中加剧了不公平现象，根据个人经济和社会背景影响获取机会和资源的机会。这一普遍问题持续地延续了系统性的不平等，阻碍了作为一个社会追求包容性进步。在本文中，我们调查了大型语言模型中是否存在社会经济偏见。为此，我们引入了一个新的数据集（SilverSpoon），包含3000个样本，展示了牵涉到弱势群体由于他们的处境而实施道德模糊行为的假设情景，并问这种行为是否在道德上成立。此外，这个数据集具有双重标记方案，并由属于社会经济两端的人进行了注释。使用SilverSpoon，我们评估了大型语言模型中表现出的社会经济偏见程度以及该程度如何随模型大小变化。
+    实时洪水预测在促进及时有效的应急响应方面起着至关重要的作用。然而，一个重大挑战在于弥合复杂数字洪水模型与实际决策之间的差距。决策者经常依赖专家解释这些模型，以优化洪水减灾策略。公众需要复杂的技术来调查和理解社会文化和制度因素，这经常阻碍了公众对洪水风险的理解。为了克服这些挑战，我们的研究引入了一项创新解决方案：由GPT-4大型语言模型支持的定制AI助手。这个AI助手旨在促进决策者、普通公众和洪水预报员之间的有效沟通，而无需专业知识。这一新框架利用了GPT-4先进的自然语言理解和函数调用能力来实现这一目标。
 
-    arXiv:2403.14633v1 Announce Type: cross  Abstract: Socioeconomic bias in society exacerbates disparities, influencing access to opportunities and resources based on individuals' economic and social backgrounds. This pervasive issue perpetuates systemic inequalities, hindering the pursuit of inclusive progress as a society. In this paper, we investigate the presence of socioeconomic bias, if any, in large language models. To this end, we introduce a novel dataset (SilverSpoon), consisting of 3000 samples that illustrate hypothetical scenarios that involve underprivileged people performing ethically ambiguous actions due to their circumstances, and ask whether the action is ethically justified. Further, this dataset has a dual-labeling scheme and has been annotated by people belonging to both ends of the socioeconomic spectrum. Using SilverSpoon, we evaluate the degree of socioeconomic bias expressed in large language models and the variation of this degree as a function of model size. W
+    arXiv:2403.03188v1 Announce Type: new  Abstract: Real-time flood forecasting plays a crucial role in enabling timely and effective emergency responses. However, a significant challenge lies in bridging the gap between complex numerical flood models and practical decision-making. Decision-makers often rely on experts to interpret these models for optimizing flood mitigation strategies. And the public requires complex techniques to inquiry and understand socio-cultural and institutional factors, often hinders the public's understanding of flood risks. To overcome these challenges, our study introduces an innovative solution: a customized AI Assistant powered by the GPT-4 Large Language Model. This AI Assistant is designed to facilitate effective communication between decision-makers, the general public, and flood forecasters, without the requirement of specialized knowledge. The new framework utilizes GPT-4's advanced natural language understanding and function calling capabilities to pr
     
 

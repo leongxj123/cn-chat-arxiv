@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Locally Regular and Efficient Tests in Non-Regular Semiparametric Models](https://arxiv.org/abs/2403.05999) | 本文讨论了在可能是非正规的半参数模型中的假设检验，展示了C($\alpha$)风格的检验在局部正则情况下的性质，并推广了经典功率边界到这种情况下。 |
+| [^1] | [Data-Driven Tuning Parameter Selection for High-Dimensional Vector Autoregressions](https://arxiv.org/abs/2403.06657) | 通过提出一种基于数据驱动的加权Lasso估计器，解决高维向量自回归模型中调参选择问题。 |
 
 # 详细
 
-[^1]: 非正则半参数模型中的局部正则和高效检验
+[^1]: 基于数据驱动的高维向量自回归调参选择
 
-    Locally Regular and Efficient Tests in Non-Regular Semiparametric Models
+    Data-Driven Tuning Parameter Selection for High-Dimensional Vector Autoregressions
 
-    [https://arxiv.org/abs/2403.05999](https://arxiv.org/abs/2403.05999)
+    [https://arxiv.org/abs/2403.06657](https://arxiv.org/abs/2403.06657)
 
-    本文讨论了在可能是非正规的半参数模型中的假设检验，展示了C($\alpha$)风格的检验在局部正则情况下的性质，并推广了经典功率边界到这种情况下。
+    通过提出一种基于数据驱动的加权Lasso估计器，解决高维向量自回归模型中调参选择问题。
 
     
 
-    本文考虑了半参数模型中的假设检验，该模型可能是非正则的。在温和的条件下，我表明了C($\alpha$)风格的检验在局部正则情况下，包括那些局部正则估计器不存在的情况，如（半参数）弱识别的模型。我描述了适当的极限实验，用于研究非正规情况下检验的本地（渐近）最优性，从而将经典功率边界推广到这种情况。我给出了这些功率边界被提出的C($\alpha$)风格的检验达到的条件。将理论应用于单指数模型和工具变量模型，并进行了详细的讨论。
+    Lasso类型的估计器通常用于估计高维时间序列模型。Lasso的理论保证通常要求选择合适的惩罚水平，这通常取决于未知的总体数量。然而，得到的估计值和模型中保留的变量数量关键取决于所选择的惩罚水平。目前，在高维时间序列的情况下没有理论上的指导来做这个选择。我们通过考虑也许是最常用的多元时间序列模型之一，线性向量自回归（VAR）模型的估计来解决这个问题，并提出了一个以完全数据驱动方式选择惩罚的加权Lasso估计量。我们为这一方法建立的理论保证
 
-    arXiv:2403.05999v1 Announce Type: new  Abstract: This paper considers hypothesis testing in semiparametric models which may be non-regular. I show that C($\alpha$) style tests are locally regular under mild conditions, including in cases where locally regular estimators do not exist, such as models which are (semi-parametrically) weakly identified. I characterise the appropriate limit experiment in which to study local (asymptotic) optimality of tests in the non-regular case, permitting the generalisation of classical power bounds to this case. I give conditions under which these power bounds are attained by the proposed C($\alpha$) style tests. The application of the theory to a single index model and an instrumental variables model is worked out in detail.
+    arXiv:2403.06657v1 Announce Type: new  Abstract: Lasso-type estimators are routinely used to estimate high-dimensional time series models. The theoretical guarantees established for Lasso typically require the penalty level to be chosen in a suitable fashion often depending on unknown population quantities. Furthermore, the resulting estimates and the number of variables retained in the model depend crucially on the chosen penalty level. However, there is currently no theoretically founded guidance for this choice in the context of high-dimensional time series. Instead one resorts to selecting the penalty level in an ad hoc manner using, e.g., information criteria or cross-validation. We resolve this problem by considering estimation of the perhaps most commonly employed multivariate time series model, the linear vector autoregressive (VAR) model, and propose a weighted Lasso estimator with penalization chosen in a fully data-driven way. The theoretical guarantees that we establish for
     
 
