@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.NA</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.NA</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.NA</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.NA</description><item><title>&#26412;&#25991;&#25552;&#20986;&#20102;&#33021;&#37327;&#31283;&#23450;&#32593;&#32476;(EStable-Net)&#29992;&#20110;&#35299;&#20915;&#26799;&#24230;&#27969;&#26041;&#31243;&#65292;&#35813;&#32593;&#32476;&#33021;&#22815;&#38477;&#20302;&#31163;&#25955;&#33021;&#37327;&#24182;&#29983;&#25104;&#39640;&#20934;&#30830;&#24615;&#21644;&#31283;&#23450;&#24615;&#30340;&#39044;&#27979;&#12290;</title><link>http://arxiv.org/abs/2309.10002</link><description>&lt;p&gt;
+&#26799;&#24230;&#27969;&#26041;&#31243;&#30340;&#33021;&#37327;&#31283;&#23450;&#31070;&#32463;&#32593;&#32476;
+&lt;/p&gt;
+&lt;p&gt;
+Energy stable neural network for gradient flow equations. (arXiv:2309.10002v1 [cs.LG])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2309.10002
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#25552;&#20986;&#20102;&#33021;&#37327;&#31283;&#23450;&#32593;&#32476;(EStable-Net)&#29992;&#20110;&#35299;&#20915;&#26799;&#24230;&#27969;&#26041;&#31243;&#65292;&#35813;&#32593;&#32476;&#33021;&#22815;&#38477;&#20302;&#31163;&#25955;&#33021;&#37327;&#24182;&#29983;&#25104;&#39640;&#20934;&#30830;&#24615;&#21644;&#31283;&#23450;&#24615;&#30340;&#39044;&#27979;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#29992;&#20110;&#27714;&#35299;&#26799;&#24230;&#27969;&#26041;&#31243;&#30340;&#33021;&#37327;&#31283;&#23450;&#32593;&#32476;&#65288;EStable-Net&#65289;&#12290;&#25105;&#20204;&#30340;&#31070;&#32463;&#32593;&#32476;EStable-Net&#30340;&#35299;&#26356;&#26032;&#26041;&#26696;&#21463;&#21040;&#20102;&#26799;&#24230;&#27969;&#26041;&#31243;&#22522;&#20110;&#36741;&#21161;&#21464;&#37327;&#30340;&#31561;&#20215;&#24418;&#24335;&#30340;&#21551;&#21457;&#12290;EStable-Net&#33021;&#22815;&#22312;&#31070;&#32463;&#32593;&#32476;&#20013;&#38477;&#20302;&#31163;&#25955;&#33021;&#37327;&#65292;&#19982;&#26799;&#24230;&#27969;&#26041;&#31243;&#30340;&#28436;&#21270;&#36807;&#31243;&#30340;&#24615;&#36136;&#20445;&#25345;&#19968;&#33268;&#12290;&#31070;&#32463;&#32593;&#32476;EStable-Net&#30340;&#26550;&#26500;&#21253;&#25324;&#20960;&#20010;&#33021;&#37327;&#34928;&#20943;&#27169;&#22359;&#65292;&#27599;&#20010;&#27169;&#22359;&#30340;&#36755;&#20986;&#21487;&#20197;&#35299;&#37322;&#20026;&#26799;&#24230;&#27969;&#26041;&#31243;&#28436;&#21270;&#36807;&#31243;&#30340;&#20013;&#38388;&#29366;&#24577;&#12290;&#36825;&#31181;&#35774;&#35745;&#25552;&#20379;&#20102;&#19968;&#20010;&#31283;&#23450;&#12289;&#39640;&#25928;&#19988;&#21487;&#35299;&#37322;&#30340;&#32593;&#32476;&#32467;&#26500;&#12290;&#25968;&#20540;&#23454;&#39564;&#32467;&#26524;&#34920;&#26126;&#65292;&#25105;&#20204;&#30340;&#32593;&#32476;&#33021;&#22815;&#29983;&#25104;&#39640;&#20934;&#30830;&#24615;&#21644;&#31283;&#23450;&#24615;&#30340;&#39044;&#27979;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+In this paper, we propose an energy stable network (EStable-Net) for solving gradient flow equations. The solution update scheme in our neural network EStable-Net is inspired by a proposed auxiliary variable based equivalent form of the gradient flow equation. EStable-Net enables decreasing of a discrete energy along the neural network, which is consistent with the property in the evolution process of the gradient flow equation. The architecture of the neural network EStable-Net consists of a few energy decay blocks, and the output of each block can be interpreted as an intermediate state of the evolution process of the gradient flow equation. This design provides a stable, efficient and interpretable network structure. Numerical experimental results demonstrate that our network is able to generate high accuracy and stable predictions.
+&lt;/p&gt;</description></item></channel></rss>
