@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Energy stable neural network for gradient flow equations.](http://arxiv.org/abs/2309.10002) | 本文提出了能量稳定网络(EStable-Net)用于解决梯度流方程，该网络能够降低离散能量并生成高准确性和稳定性的预测。 |
+| [^1] | [Deep Kalman Filters Can Filter.](http://arxiv.org/abs/2310.19603) | 本研究展示了一类连续时间的深度卡尔曼滤波器（DKFs），可以近似实现一类非马尔可夫和条件高斯信号过程的条件分布律，从而具有在数学金融领域中传统模型基础上的滤波问题的应用潜力。 |
 
 # 详细
 
-[^1]: 梯度流方程的能量稳定神经网络
+[^1]: 深度卡尔曼滤波器可以进行滤波
 
-    Energy stable neural network for gradient flow equations. (arXiv:2309.10002v1 [cs.LG])
+    Deep Kalman Filters Can Filter. (arXiv:2310.19603v1 [cs.LG])
 
-    [http://arxiv.org/abs/2309.10002](http://arxiv.org/abs/2309.10002)
+    [http://arxiv.org/abs/2310.19603](http://arxiv.org/abs/2310.19603)
 
-    本文提出了能量稳定网络(EStable-Net)用于解决梯度流方程，该网络能够降低离散能量并生成高准确性和稳定性的预测。
+    本研究展示了一类连续时间的深度卡尔曼滤波器（DKFs），可以近似实现一类非马尔可夫和条件高斯信号过程的条件分布律，从而具有在数学金融领域中传统模型基础上的滤波问题的应用潜力。
 
     
 
-    本文提出了一种用于求解梯度流方程的能量稳定网络（EStable-Net）。我们的神经网络EStable-Net的解更新方案受到了梯度流方程基于辅助变量的等价形式的启发。EStable-Net能够在神经网络中降低离散能量，与梯度流方程的演化过程的性质保持一致。神经网络EStable-Net的架构包括几个能量衰减模块，每个模块的输出可以解释为梯度流方程演化过程的中间状态。这种设计提供了一个稳定、高效且可解释的网络结构。数值实验结果表明，我们的网络能够生成高准确性和稳定性的预测。
+    深度卡尔曼滤波器（DKFs）是一类神经网络模型，可以从序列数据中生成高斯概率测度。虽然DKFs受卡尔曼滤波器的启发，但它们缺乏与随机滤波问题的具体理论关联，从而限制了它们在传统模型基础上的滤波问题的应用，例如数学金融中的债券和期权定价模型校准。我们通过展示一类连续时间DKFs，可以近似实现一类非马尔可夫和条件高斯信号过程的条件分布律，从而解决了深度学习数学基础中的这个问题。我们的近似结果在路径的足够规则的紧致子集上一致成立，其中近似误差由在给定紧致路径集上均一地计算的最坏情况2-Wasserstein距离量化。
 
-    In this paper, we propose an energy stable network (EStable-Net) for solving gradient flow equations. The solution update scheme in our neural network EStable-Net is inspired by a proposed auxiliary variable based equivalent form of the gradient flow equation. EStable-Net enables decreasing of a discrete energy along the neural network, which is consistent with the property in the evolution process of the gradient flow equation. The architecture of the neural network EStable-Net consists of a few energy decay blocks, and the output of each block can be interpreted as an intermediate state of the evolution process of the gradient flow equation. This design provides a stable, efficient and interpretable network structure. Numerical experimental results demonstrate that our network is able to generate high accuracy and stable predictions.
+    Deep Kalman filters (DKFs) are a class of neural network models that generate Gaussian probability measures from sequential data. Though DKFs are inspired by the Kalman filter, they lack concrete theoretical ties to the stochastic filtering problem, thus limiting their applicability to areas where traditional model-based filters have been used, e.g.\ model calibration for bond and option prices in mathematical finance. We address this issue in the mathematical foundations of deep learning by exhibiting a class of continuous-time DKFs which can approximately implement the conditional law of a broad class of non-Markovian and conditionally Gaussian signal processes given noisy continuous-times measurements. Our approximation results hold uniformly over sufficiently regular compact subsets of paths, where the approximation error is quantified by the worst-case 2-Wasserstein distance computed uniformly over the given compact set of paths.
     
 

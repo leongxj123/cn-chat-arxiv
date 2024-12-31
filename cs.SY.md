@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Karma: An Experimental Study](https://arxiv.org/abs/2404.02687) | 实验证实因果报应在资源分配上带来显著且持久的福利好处，尤其在具有间歇急迫性的情境中效果更佳。 |
+| [^1] | [Decentralized Multi-Armed Bandits Can Outperform Centralized Upper Confidence Bound Algorithms.](http://arxiv.org/abs/2111.10933) | 本文研究了一个多智能体网络中的分布式多臂赌博机问题，提出了两种完全分布式的算法，基于经典的UCB算法和KL-UCB算法，实验证明这些算法能达到更好的对数渐近后悔，智能体之间的邻居关系越多，后悔值越好。 |
 
 # 详细
 
-[^1]: Karma：一个实验研究
+[^1]: 分布式多臂赌博机可以超越集中式上置信界限算法
 
-    Karma: An Experimental Study
+    Decentralized Multi-Armed Bandits Can Outperform Centralized Upper Confidence Bound Algorithms. (arXiv:2111.10933v2 [cs.LG] UPDATED)
 
-    [https://arxiv.org/abs/2404.02687](https://arxiv.org/abs/2404.02687)
+    [http://arxiv.org/abs/2111.10933](http://arxiv.org/abs/2111.10933)
 
-    实验证实因果报应在资源分配上带来显著且持久的福利好处，尤其在具有间歇急迫性的情境中效果更佳。
+    本文研究了一个多智能体网络中的分布式多臂赌博机问题，提出了两种完全分布式的算法，基于经典的UCB算法和KL-UCB算法，实验证明这些算法能达到更好的对数渐近后悔，智能体之间的邻居关系越多，后悔值越好。
 
     
 
-    非可交易积分系统，类似于因果报应，因此提议以此命名，是一种用于重复资源分配的机制，在理论上具有吸引人的效率和公平特性。在这项研究中，我们在一项在线实验中测试了因果报应，实验中人类被要求重复竞争获取一种具有时间变化和随机个人偏好或紧迫性的资源。我们确认，即使在没有任何事先培训的人群中，因果报应也具有显著且持久的福利好处。我们发现，在具有间歇急迫性的情境中，机制的使用次数比频繁中等紧迫性的情境更多，并且将其实施为一个简单（二元）的因果报应竞标方案，对于福利的提高特别有效：实现了相对较大的总体效率增益，这些增益几乎是帕累托改进的。这些发现为进一步测试和未来实施计划提供了指导。
+    本文研究了一个多智能体网络中的分布式多臂赌博机问题。假设N个智能体同时解决了这个问题，他们面对着一组共同的M个臂并共享相同的臂奖励分布。每个智能体只能从邻居处接收信息，智能体之间的邻居关系由一个无向图描述。本文提出了两种完全分布式的多臂赌博机算法，分别基于经典的上置信界限（UCB）算法和最先进的KL-UCB算法。所提出的分布式算法使网络中的每个智能体能够实现比其单一智能体相应算法更好的对数渐近后悔，前提是智能体至少有一个邻居，而且智能体有越多的邻居，后悔值会越好，这意味着整体的和大于其组成部分。
 
-    arXiv:2404.02687v1 Announce Type: new  Abstract: A system of non-tradable credits that flow between individuals like karma, hence proposed under that name, is a mechanism for repeated resource allocation that comes with attractive efficiency and fairness properties, in theory. In this study, we test karma in an online experiment in which human subjects repeatedly compete for a resource with time-varying and stochastic individual preferences or urgency to acquire the resource. We confirm that karma has significant and sustained welfare benefits even in a population with no prior training. We identify mechanism usage in contexts with sporadic high urgency, more so than with frequent moderate urgency, and implemented as an easy (binary) karma bidding scheme as particularly effective for welfare improvements: relatively larger aggregate efficiency gains are realized that are (almost) Pareto superior. These findings provide guidance for further testing and for future implementation plans of
+    This paper studies a decentralized multi-armed bandit problem in a multi-agent network. The problem is simultaneously solved by N agents assuming they face a common set of M arms and share the same arms' reward distributions. Each agent can receive information only from its neighbors, where the neighbor relationships among the agents are described by an undirected graph. Two fully decentralized multi-armed bandit algorithms are proposed, respectively based on the classic upper confidence bound (UCB) algorithm and the state-of-the-art KL-UCB algorithm. The proposed decentralized algorithms permit each agent in the network to achieve a better logarithmic asymptotic regret than their single-agent counterparts, provided that the agent has at least one neighbor, and the more neighbors an agent has, the better regret it will have, meaning that the sum is more than its component parts.
     
 
