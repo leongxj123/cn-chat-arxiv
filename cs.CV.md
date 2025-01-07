@@ -2,67 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Cheating Suffix: Targeted Attack to Text-To-Image Diffusion Models with Multi-Modal Priors](https://rss.arxiv.org/abs/2402.01369) | 本文提出了一种名为MMP-Attack的有针对性攻击方法，通过整合文本和图像特征，该方法能够有效地攻击商业文本到图像模型，并且具有更高的普适性和可转移性。 |
-| [^2] | [Towards Global Glacier Mapping with Deep Learning and Open Earth Observation Data.](http://arxiv.org/abs/2401.15113) | 本研究提出了一种使用深度学习和开放地球观测数据进行全球冰川制图的方法，通过新的模型和策略，在多种地形和传感器上实现了较高的准确性。通过添加合成孔径雷达数据，并报告冰川范围的校准置信度，提高了预测的可靠性和可解释性。 |
-| [^3] | [HPCR: Holistic Proxy-based Contrastive Replay for Online Continual Learning.](http://arxiv.org/abs/2309.15038) | HPCR是一种用于在线连续学习的新方法，该方法综合了基于代理和对比损失的重放方式。通过在对比损失中使用锚点-代理对替换锚点-样本对，HPCR能够减轻遗忘现象，并有效学习更细粒度的语义信息。实验证明，HPCR在多个任务上实现了最先进的性能。 |
-| [^4] | [Experimental Security Analysis of DNN-based Adaptive Cruise Control under Context-Aware Perception Attacks.](http://arxiv.org/abs/2307.08939) | 这项研究评估了基于深度神经网络的自适应巡航控制系统在隐蔽感知攻击下的安全性，并提出了一种上下文感知策略和基于优化的图像扰动生成方法。 |
+| [^1] | [Data augmentation with automated machine learning: approaches and performance comparison with classical data augmentation methods](https://arxiv.org/abs/2403.08352) | 自动化机器学习的数据增强方法旨在自动化数据增强过程，为改善机器学习模型泛化性能提供了更高效的方式。 |
+| [^2] | [Polyp-DDPM: Diffusion-Based Semantic Polyp Synthesis for Enhanced Segmentation](https://arxiv.org/abs/2402.04031) | Polyp-DDPM是一种基于扩散的方法，利用分割掩码生成逼真的胃肠道息肉图像，提升了分割效果，并在图像质量和分割性能方面优于现有方法，为训练提供了高质量、多样化的合成数据集，使得分割模型达到与真实图像相比可比的效果。 |
+| [^3] | [Zero-shot Inversion Process for Image Attribute Editing with Diffusion Models.](http://arxiv.org/abs/2308.15854) | 提出了一种零样本反演过程（ZIP）框架，用于图像属性编辑。该方法利用生成的视觉参考和文本引导注入扩散模型的语义潜空间，可以在文本提示的直观控制下产生多样的内容和属性，并展现出对不同属性操作的鲁棒性。 |
+| [^4] | [Test-Time Training on Video Streams.](http://arxiv.org/abs/2307.05014) | 该论文扩展了测试时培训（TTT）到视频流的设置中，提出了在线TTT方法，相对于固定模型基线和离线TTT，在多个任务上都有显著的性能优势，包括实例和全景分割。 |
 
 # 详细
 
-[^1]: 使用多模式先验的有针对性攻击文本到图像扩散模型
+[^1]: 利用自动化机器学习的数据增强方法及与传统数据增强方法性能比较
 
-    Cheating Suffix: Targeted Attack to Text-To-Image Diffusion Models with Multi-Modal Priors
+    Data augmentation with automated machine learning: approaches and performance comparison with classical data augmentation methods
 
-    [https://rss.arxiv.org/abs/2402.01369](https://rss.arxiv.org/abs/2402.01369)
+    [https://arxiv.org/abs/2403.08352](https://arxiv.org/abs/2403.08352)
 
-    本文提出了一种名为MMP-Attack的有针对性攻击方法，通过整合文本和图像特征，该方法能够有效地攻击商业文本到图像模型，并且具有更高的普适性和可转移性。
-
-    
-
-    扩散模型已广泛应用于各种图像生成任务中，展现了图像和文本模态之间的卓越联系。然而，它们面临着被恶意利用的挑战，通过在原始提示后附加特定后缀来生成有害或敏感图像。现有作品主要关注使用单模态信息进行攻击，未能利用多模态特征，导致性能不尽如人意。在本工作中，我们提出了一种名为MMP-Attack的有针对性攻击方法，它将多模态先验（MMP）即文本和图像特征进行整合。具体而言，MMP-Attack的目标是在图像内容中添加目标对象的同时，同时移除原始对象。与现有作品相比，MMP-Attack具有更高的普适性和可转移性，在攻击商业文本到图像（T2I）模型（如DALL-E 3）方面表现出明显优势。据我们所知，这标志着当前最佳的技术水平。
-
-    Diffusion models have been widely deployed in various image generation tasks, demonstrating an extraordinary connection between image and text modalities. However, they face challenges of being maliciously exploited to generate harmful or sensitive images by appending a specific suffix to the original prompt. Existing works mainly focus on using single-modal information to conduct attacks, which fails to utilize multi-modal features and results in less than satisfactory performance. Integrating multi-modal priors (MMP), i.e. both text and image features, we propose a targeted attack method named MMP-Attack in this work. Specifically, the goal of MMP-Attack is to add a target object into the image content while simultaneously removing the original object. The MMP-Attack shows a notable advantage over existing works with superior universality and transferability, which can effectively attack commercial text-to-image (T2I) models such as DALL-E 3. To the best of our knowledge, this marks 
-    
-[^2]: 使用深度学习和开放地球观测数据实现全球冰川制图
-
-    Towards Global Glacier Mapping with Deep Learning and Open Earth Observation Data. (arXiv:2401.15113v1 [cs.CV])
-
-    [http://arxiv.org/abs/2401.15113](http://arxiv.org/abs/2401.15113)
-
-    本研究提出了一种使用深度学习和开放地球观测数据进行全球冰川制图的方法，通过新的模型和策略，在多种地形和传感器上实现了较高的准确性。通过添加合成孔径雷达数据，并报告冰川范围的校准置信度，提高了预测的可靠性和可解释性。
+    自动化机器学习的数据增强方法旨在自动化数据增强过程，为改善机器学习模型泛化性能提供了更高效的方式。
 
     
 
-    准确的全球冰川制图对于理解气候变化的影响至关重要。这个过程受到冰川多样性、难以分类的碎石和大数据处理的挑战。本文提出了Glacier-VisionTransformer-U-Net (GlaViTU)，一个卷积-Transformer深度学习模型，并提出了五种利用开放卫星影像进行多时相全球冰川制图的策略。空间、时间和跨传感器的泛化性能评估表明，我们的最佳策略在大多数情况下实现了IoU（交并比）> 0.85，并且在以冰雪为主的地区增加到了> 0.90，而在高山亚洲等碎石丰富的区域则降至> 0.75。此外，添加合成孔径雷达数据，即回波和干涉相干度，可以提高所有可用地区的准确性。报告冰川范围的校准置信度使预测更可靠和可解释。我们还发布了一个基准数据集。
+    数据增强被认为是常用于提高机器学习模型泛化性能的最重要的正则化技术。它主要涉及应用适当的数据转换操作，以创建具有所需属性的新数据样本。尽管其有效性，这一过程通常具有挑战性，因为手动创建和测试不同候选增强及其超参数需耗费大量时间。自动化数据增强方法旨在自动化这一过程。最先进的方法通常依赖于自动化机器学习（AutoML）原则。本研究提供了基于AutoML的数据增强技术的全面调查。我们讨论了使用AutoML实现数据增强的各种方法，包括数据操作、数据集成和数据合成技术。我们详细讨论了技术
 
-    Accurate global glacier mapping is critical for understanding climate change impacts. It is challenged by glacier diversity, difficult-to-classify debris and big data processing. Here we propose Glacier-VisionTransformer-U-Net (GlaViTU), a convolutional-transformer deep learning model, and five strategies for multitemporal global-scale glacier mapping using open satellite imagery. Assessing the spatial, temporal and cross-sensor generalisation shows that our best strategy achieves intersection over union >0.85 on previously unobserved images in most cases, which drops to >0.75 for debris-rich areas such as High-Mountain Asia and increases to >0.90 for regions dominated by clean ice. Additionally, adding synthetic aperture radar data, namely, backscatter and interferometric coherence, increases the accuracy in all regions where available. The calibrated confidence for glacier extents is reported making the predictions more reliable and interpretable. We also release a benchmark dataset 
+    arXiv:2403.08352v1 Announce Type: cross  Abstract: Data augmentation is arguably the most important regularization technique commonly used to improve generalization performance of machine learning models. It primarily involves the application of appropriate data transformation operations to create new data samples with desired properties. Despite its effectiveness, the process is often challenging because of the time-consuming trial and error procedures for creating and testing different candidate augmentations and their hyperparameters manually. Automated data augmentation methods aim to automate the process. State-of-the-art approaches typically rely on automated machine learning (AutoML) principles. This work presents a comprehensive survey of AutoML-based data augmentation techniques. We discuss various approaches for accomplishing data augmentation with AutoML, including data manipulation, data integration and data synthesis techniques. We present extensive discussion of technique
     
-[^3]: HPCR: 基于代理的综合对比重放用于在线连续学习
+[^2]: Polyp-DDPM: 基于扩散的语义息肉合成方法，以增强分割效果
 
-    HPCR: Holistic Proxy-based Contrastive Replay for Online Continual Learning. (arXiv:2309.15038v1 [cs.LG])
+    Polyp-DDPM: Diffusion-Based Semantic Polyp Synthesis for Enhanced Segmentation
 
-    [http://arxiv.org/abs/2309.15038](http://arxiv.org/abs/2309.15038)
+    [https://arxiv.org/abs/2402.04031](https://arxiv.org/abs/2402.04031)
 
-    HPCR是一种用于在线连续学习的新方法，该方法综合了基于代理和对比损失的重放方式。通过在对比损失中使用锚点-代理对替换锚点-样本对，HPCR能够减轻遗忘现象，并有效学习更细粒度的语义信息。实验证明，HPCR在多个任务上实现了最先进的性能。
-
-    
-
-    在线连续学习（OCL）旨在通过一次在线数据流传递持续学习新数据。然而，它通常会面临灾难性遗忘问题。现有的基于重放的方法通过以代理为基础或对比为基础的重放方式有效地缓解了这个问题。在本文中，我们对这两种重放方式进行了全面分析，并发现它们可以相互补充。受到这一发现的启发，我们提出了一种新颖的基于重放的方法称为代理对比重放（PCR），它将对比损失中的锚点-样本对替换为锚点-代理对，以减轻遗忘现象。基于PCR，我们进一步开发了一种更高级的方法，称为综合代理对比重放（HPCR），它由三个组件组成。对比组件在PCR的基础上条件性地将锚点-样本对纳入其中，通过大型训练批次学习更细粒度的语义信息。第二个组件是重放组件，它在样本选择上采用了多样性策略，以确保代理数据与当前任务具有更高的关联性。第三个组件是正则化组件，通过缩小样本空间，促进学习模型对任务特定特征的更好表示。实验证明，HPCR方法在多个在线连续学习任务上实现了最先进的性能。
-
-    Online continual learning (OCL) aims to continuously learn new data from a single pass over the online data stream. It generally suffers from the catastrophic forgetting issue. Existing replay-based methods effectively alleviate this issue by replaying part of old data in a proxy-based or contrastive-based replay manner. In this paper, we conduct a comprehensive analysis of these two replay manners and find they can be complementary. Inspired by this finding, we propose a novel replay-based method called proxy-based contrastive replay (PCR), which replaces anchor-to-sample pairs with anchor-to-proxy pairs in the contrastive-based loss to alleviate the phenomenon of forgetting. Based on PCR, we further develop a more advanced method named holistic proxy-based contrastive replay (HPCR), which consists of three components. The contrastive component conditionally incorporates anchor-to-sample pairs to PCR, learning more fine-grained semantic information with a large training batch. The sec
-    
-[^4]: 基于深度神经网络的自适应巡航控制在上下文感知攻击下的安全性实验分析
-
-    Experimental Security Analysis of DNN-based Adaptive Cruise Control under Context-Aware Perception Attacks. (arXiv:2307.08939v1 [cs.CR])
-
-    [http://arxiv.org/abs/2307.08939](http://arxiv.org/abs/2307.08939)
-
-    这项研究评估了基于深度神经网络的自适应巡航控制系统在隐蔽感知攻击下的安全性，并提出了一种上下文感知策略和基于优化的图像扰动生成方法。
+    Polyp-DDPM是一种基于扩散的方法，利用分割掩码生成逼真的胃肠道息肉图像，提升了分割效果，并在图像质量和分割性能方面优于现有方法，为训练提供了高质量、多样化的合成数据集，使得分割模型达到与真实图像相比可比的效果。
 
     
 
-    自适应巡航控制（ACC）是一种广泛应用的驾驶员辅助功能，用于保持期望速度和与前方车辆的安全距离。本文评估基于深度神经网络（DNN）的ACC系统在隐蔽感知攻击下的安全性，该攻击会对摄像机数据进行有针对性的扰动，以导致前方碰撞事故。我们提出了一种基于知识和数据驱动的方法，设计了一种上下文感知策略，用于选择触发攻击最关键的时间点，并采用了一种新颖的基于优化的方法，在运行时生成适应性图像扰动。我们使用实际驾驶数据集和逼真的仿真平台评估了所提出攻击的有效性，该仿真平台使用了来自生产ACC系统的控制软件和物理世界驾驶模拟器，并考虑了驾驶员的干预以及自动紧急制动（AEB）和前向碰撞警示（FCW）等安全功能。
+    本研究提出了Polyp-DDPM，一种基于扩散的方法，用于在条件掩码上生成逼真的息肉图像，旨在增强胃肠道息肉的分割效果。我们的方法解决了医学图像数据限制、高昂的注释成本和隐私问题带来的挑战。通过将扩散模型条件化于分割掩码（表示异常区域的二进制掩码），Polyp-DDPM在图像质量和分割性能方面优于现有方法（Frechet Inception Distance (FID) 评分为78.47，而高于83.79的评分；Intersection over Union (IoU) 为0.7156，而基准模型合成图像为0.6694以下，真实数据为0.7067）。我们的方法生成了高质量、多样化的合成数据集用于训练，从而提升了息肉分割模型与真实图像的可比性，并提供更大的数据增强能力以改善分割效果。
 
-    Adaptive Cruise Control (ACC) is a widely used driver assistance feature for maintaining desired speed and safe distance to the leading vehicles. This paper evaluates the security of the deep neural network (DNN) based ACC systems under stealthy perception attacks that strategically inject perturbations into camera data to cause forward collisions. We present a combined knowledge-and-data-driven approach to design a context-aware strategy for the selection of the most critical times for triggering the attacks and a novel optimization-based method for the adaptive generation of image perturbations at run-time. We evaluate the effectiveness of the proposed attack using an actual driving dataset and a realistic simulation platform with the control software from a production ACC system and a physical-world driving simulator while considering interventions by the driver and safety features such as Automatic Emergency Braking (AEB) and Forward Collision Warning (FCW). Experimental results sh
+    This study introduces Polyp-DDPM, a diffusion-based method for generating realistic images of polyps conditioned on masks, aimed at enhancing the segmentation of gastrointestinal (GI) tract polyps. Our approach addresses the challenges of data limitations, high annotation costs, and privacy concerns associated with medical images. By conditioning the diffusion model on segmentation masks-binary masks that represent abnormal areas-Polyp-DDPM outperforms state-of-the-art methods in terms of image quality (achieving a Frechet Inception Distance (FID) score of 78.47, compared to scores above 83.79) and segmentation performance (achieving an Intersection over Union (IoU) of 0.7156, versus less than 0.6694 for synthetic images from baseline models and 0.7067 for real data). Our method generates a high-quality, diverse synthetic dataset for training, thereby enhancing polyp segmentation models to be comparable with real images and offering greater data augmentation capabilities to improve seg
+    
+[^3]: 图像属性编辑的零样本反演过程与扩散模型
+
+    Zero-shot Inversion Process for Image Attribute Editing with Diffusion Models. (arXiv:2308.15854v1 [cs.CV])
+
+    [http://arxiv.org/abs/2308.15854](http://arxiv.org/abs/2308.15854)
+
+    提出了一种零样本反演过程（ZIP）框架，用于图像属性编辑。该方法利用生成的视觉参考和文本引导注入扩散模型的语义潜空间，可以在文本提示的直观控制下产生多样的内容和属性，并展现出对不同属性操作的鲁棒性。
+
+    
+
+    降噪扩散模型在图像编辑中表现出优秀的性能。现有的方法倾向于使用图像引导方法，提供视觉参考但缺乏语义连贯性的控制，或者使用文本引导方法，确保对文本引导的忠实，但缺乏视觉质量。为了解决这个问题，我们提出了零样本反演过程（ZIP）框架，它将生成的视觉参考和文本引导的融合注入到预训练扩散模型的语义潜空间中。仅使用一个微小的神经网络，提出的ZIP在文本提示的直观控制下产生多样的内容和属性。此外，ZIP在真实图像上展示了对域内和域外属性操作的显著鲁棒性。我们在各种基准数据集上进行了详细的实验。与最先进的方法相比，ZIP产生了与之相当质量的图像，同时提供了逼真的编辑效果。
+
+    Denoising diffusion models have shown outstanding performance in image editing. Existing works tend to use either image-guided methods, which provide a visual reference but lack control over semantic coherence, or text-guided methods, which ensure faithfulness to text guidance but lack visual quality. To address the problem, we propose the Zero-shot Inversion Process (ZIP), a framework that injects a fusion of generated visual reference and text guidance into the semantic latent space of a \textit{frozen} pre-trained diffusion model. Only using a tiny neural network, the proposed ZIP produces diverse content and attributes under the intuitive control of the text prompt. Moreover, ZIP shows remarkable robustness for both in-domain and out-of-domain attribute manipulation on real images. We perform detailed experiments on various benchmark datasets. Compared to state-of-the-art methods, ZIP produces images of equivalent quality while providing a realistic editing effect.
+    
+[^4]: 视频流上的测试时培训
+
+    Test-Time Training on Video Streams. (arXiv:2307.05014v1 [cs.CV])
+
+    [http://arxiv.org/abs/2307.05014](http://arxiv.org/abs/2307.05014)
+
+    该论文扩展了测试时培训（TTT）到视频流的设置中，提出了在线TTT方法，相对于固定模型基线和离线TTT，在多个任务上都有显著的性能优势，包括实例和全景分割。
+
+    
+
+    先前的研究已经将测试时培训（TTT）确定为一种在测试时进一步改进训练模型的通用框架。在对每个测试实例进行预测之前，模型会使用自监督任务（例如使用掩蔽自动编码器进行图像重建）在同一实例上进行训练。我们将TTT扩展到流式设置中，其中多个测试实例（在我们的情况下为视频帧）按时间顺序到达。我们的扩展是在线TTT：当前模型从上个模型初始化，然后在当前帧和前几个帧的小窗口上进行训练。在线TTT在四个任务上明显优于固定模型基线，在三个实际数据集上的相对改进分别为45%和66%。令人惊讶的是，在线TTT也优于其离线版本，后者访问更多信息，可以训练所有帧而不考虑时间顺序。这与先前的研究结果不同。
+
+    Prior work has established test-time training (TTT) as a general framework to further improve a trained model at test time. Before making a prediction on each test instance, the model is trained on the same instance using a self-supervised task, such as image reconstruction with masked autoencoders. We extend TTT to the streaming setting, where multiple test instances - video frames in our case - arrive in temporal order. Our extension is online TTT: The current model is initialized from the previous model, then trained on the current frame and a small window of frames immediately before. Online TTT significantly outperforms the fixed-model baseline for four tasks, on three real-world datasets. The relative improvement is 45% and 66% for instance and panoptic segmentation. Surprisingly, online TTT also outperforms its offline variant that accesses more information, training on all frames from the entire test video regardless of temporal order. This differs from previous findings using 
     
 
