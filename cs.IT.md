@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Intent-Aware DRL-Based Uplink Dynamic Scheduler for 5G-NR](https://arxiv.org/abs/2403.18364) | 提出了一种面向工业物联网用户设备（IIoT UEs）的意图感知DRL上行动态调度器，通过深度强化学习（DRL）学习如何调度通信资源，并利用图结构的简化方案加速收敛，相较于传统调度方案，能有效保证IIoT UEs的意图表达。 |
+| [^1] | [Approximation and bounding techniques for the Fisher-Rao distances](https://arxiv.org/abs/2403.10089) | 本文考虑了几种数值上稳健的Fisher-Rao距离的近似和界定技术，包括基于闭合形式1D子模型Fisher-Rao距离的通用上界以及取决于测地线或预测测地线是否闭合形式获得的几种通用近似方案，并提出了一种通用方法保证近似误差任意小。 |
 
 # 详细
 
-[^1]: 面向5G-NR的意图感知DRL上行动态调度器
+[^1]: 用于Fisher-Rao距离的近似和界定技术
 
-    Intent-Aware DRL-Based Uplink Dynamic Scheduler for 5G-NR
+    Approximation and bounding techniques for the Fisher-Rao distances
 
-    [https://arxiv.org/abs/2403.18364](https://arxiv.org/abs/2403.18364)
+    [https://arxiv.org/abs/2403.10089](https://arxiv.org/abs/2403.10089)
 
-    提出了一种面向工业物联网用户设备（IIoT UEs）的意图感知DRL上行动态调度器，通过深度强化学习（DRL）学习如何调度通信资源，并利用图结构的简化方案加速收敛，相较于传统调度方案，能有效保证IIoT UEs的意图表达。
+    本文考虑了几种数值上稳健的Fisher-Rao距离的近似和界定技术，包括基于闭合形式1D子模型Fisher-Rao距离的通用上界以及取决于测地线或预测测地线是否闭合形式获得的几种通用近似方案，并提出了一种通用方法保证近似误差任意小。
 
     
 
-    我们研究了支持工业物联网用户设备（IIoT UEs）具有意图（即所请求的服务质量（QoS））和随机流量到达的问题。提出了一种基于深度强化学习（DRL）的集中动态调度器，用于学习如何在IIoT UEs之间调度可用通信资源的时间频率资源。所提出的调度器利用RL框架来适应无线通信系统和流量到达中的动态变化。此外，提出了一种基于图的简化方案，以减少RL框架的状态和动作空间，以实现快速收敛和更好的学习策略。仿真结果表明，与几种传统调度方案（如轮询、半静态和启发式方法）相比，所提出的智能调度器在保证IIoT UEs所表达的意图方面具有有效性。
+    统计模型的两个概率分布之间的Fisher-Rao距离被定义为Fisher信息度量诱导的Riemannian测地距离。为了以闭合形式计算Fisher-Rao距离，我们需要（1）推导出Fisher-Rao测地线的公式，以及（2）沿着这些测地线积分Fisher长度元素。我们考虑了几种数值上稳健的Fisher-Rao距离的近似和界定技术：首先，我们基于子模型的闭合形式1D Fisher-Rao距离报告了Fisher-Rao距离的通用上界。其次，我们描述了几种通用的近似方案，取决于Fisher-Rao测地线或预测测地线是否能以闭合形式获得。特别地，我们获得了一种通用的方法，可以保证在提供Fisher-Rao预测测地线和严格的下界和上界时近似产生任意小的附加误差。
 
-    arXiv:2403.18364v1 Announce Type: cross  Abstract: We investigate the problem of supporting Industrial Internet of Things user equipment (IIoT UEs) with intent (i.e., requested quality of service (QoS)) and random traffic arrival. A deep reinforcement learning (DRL) based centralized dynamic scheduler for time-frequency resources is proposed to learn how to schedule the available communication resources among the IIoT UEs. The proposed scheduler leverages an RL framework to adapt to the dynamic changes in the wireless communication system and traffic arrivals. Moreover, a graph-based reduction scheme is proposed to reduce the state and action space of the RL framework to allow fast convergence and a better learning strategy. Simulation results demonstrate the effectiveness of the proposed intelligent scheduler in guaranteeing the expressed intent of IIoT UEs compared to several traditional scheduling schemes, such as round-robin, semi-static, and heuristic approaches. The proposed sche
+    arXiv:2403.10089v1 Announce Type: cross  Abstract: The Fisher-Rao distance between two probability distributions of a statistical model is defined as the Riemannian geodesic distance induced by the Fisher information metric. In order to calculate the Fisher-Rao distance in closed-form, we need (1) to elicit a formula for the Fisher-Rao geodesics, and (2) to integrate the Fisher length element along those geodesics. We consider several numerically robust approximation and bounding techniques for the Fisher-Rao distances: First, we report generic upper bounds on Fisher-Rao distances based on closed-form 1D Fisher-Rao distances of submodels. Second, we describe several generic approximation schemes depending on whether the Fisher-Rao geodesics or pregeodesics are available in closed-form or not. In particular, we obtain a generic method to guarantee an arbitrarily small additive error on the approximation provided that Fisher-Rao pregeodesics and tight lower and upper bounds are available
     
 

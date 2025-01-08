@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Approximation by non-symmetric networks for cross-domain learning.](http://arxiv.org/abs/2305.03890) | 本文研究使用非对称内核进行基于内核网络逼近的通用方法，结果表明它可以在跨域学习中显著提高基于内核网络的逼近能力。 |
+| [^1] | [Unexpected Improvements to Expected Improvement for Bayesian Optimization.](http://arxiv.org/abs/2310.20708) | 提出了LogEI作为一类新的贝叶斯优化的获得函数，具有与传统的EI函数相同或近似相等的最优解，但数值上更容易进行优化。 |
 
 # 详细
 
-[^1]: 非对称网络逼近用于跨域学习
+[^1]: 对贝叶斯优化的期望改进的意外提升
 
-    Approximation by non-symmetric networks for cross-domain learning. (arXiv:2305.03890v1 [cs.LG])
+    Unexpected Improvements to Expected Improvement for Bayesian Optimization. (arXiv:2310.20708v1 [cs.LG])
 
-    [http://arxiv.org/abs/2305.03890](http://arxiv.org/abs/2305.03890)
+    [http://arxiv.org/abs/2310.20708](http://arxiv.org/abs/2310.20708)
 
-    本文研究使用非对称内核进行基于内核网络逼近的通用方法，结果表明它可以在跨域学习中显著提高基于内核网络的逼近能力。
+    提出了LogEI作为一类新的贝叶斯优化的获得函数，具有与传统的EI函数相同或近似相等的最优解，但数值上更容易进行优化。
 
     
 
-    在过去的30年中，机器学习在众多过程（如：浅层或深度神经网络逼近、径向基函数网络和各种内核方法）的逼近能力（表达能力）研究中促进了大量的研究。本文针对不变学习、传递学习和合成孔径雷达成像等应用，引入了一种使用非对称内核来研究基于内核网络逼近能力的通用方法。我们考虑使用一组内核的更一般方法，如广义平移网络（其中包括神经网络和平移不变核作为特殊情况）和旋转区函数核。与传统的基于内核的逼近方法不同，我们不能要求内核是正定的。研究结果表明，使用非对称内核可以显著提高内核网络的逼近能力，特别是对于源域和目标域可能在分布上不同的跨域学习。
+    期望改进（EI）可以说是贝叶斯优化中最流行的获得函数，并且已经在很多成功的应用中得到了应用。但是，EI的性能往往被一些新方法超越。尤其是，EI及其变种在并行和多目标设置中很难进行优化，因为它们的获得值在许多区域中数值上变为零。当观测次数增加、搜索空间的维度增加或约束条件的数量增加时，这种困难通常会增加，导致性能在文献中不一致且大多数情况下亚优化。在本论文中，我们提出了LogEI，这是一类新的采样函数。与标准EI相比，这些LogEI函数的成员要么具有相同的最优解，要么具有近似相等的最优解，但数值上更容易进行优化。我们证明了数值病态在“经典”分析EI、期望超体积改进（EHVI）以及它们的...
 
-    For the past 30 years or so, machine learning has stimulated a great deal of research in the study of approximation capabilities (expressive power) of a multitude of processes, such as approximation by shallow or deep neural networks, radial basis function networks, and a variety of kernel based methods. Motivated by applications such as invariant learning, transfer learning, and synthetic aperture radar imaging, we initiate in this paper a general approach to study the approximation capabilities of kernel based networks using non-symmetric kernels. While singular value decomposition is a natural instinct to study such kernels, we consider a more general approach to include the use of a family of kernels, such as generalized translation networks (which include neural networks and translation invariant kernels as special cases) and rotated zonal function kernels. Naturally, unlike traditional kernel based approximation, we cannot require the kernels to be positive definite. Our results 
+    Expected Improvement (EI) is arguably the most popular acquisition function in Bayesian optimization and has found countless successful applications, but its performance is often exceeded by that of more recent methods. Notably, EI and its variants, including for the parallel and multi-objective settings, are challenging to optimize because their acquisition values vanish numerically in many regions. This difficulty generally increases as the number of observations, dimensionality of the search space, or the number of constraints grow, resulting in performance that is inconsistent across the literature and most often sub-optimal. Herein, we propose LogEI, a new family of acquisition functions whose members either have identical or approximately equal optima as their canonical counterparts, but are substantially easier to optimize numerically. We demonstrate that numerical pathologies manifest themselves in "classic" analytic EI, Expected Hypervolume Improvement (EHVI), as well as their
     
 

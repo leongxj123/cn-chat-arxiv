@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Prompt-Singer: Controllable Singing-Voice-Synthesis with Natural Language Prompt](https://arxiv.org/abs/2403.11780) | 提出了Prompt-Singer，这是第一个能够用自然语言控制歌手性别、音域和音量的唱歌声音合成方法，采用了基于解码器的变压器模型架构和范围旋律解耦的音高表示方法。 |
+| [^1] | [Harnessing the Zero-Shot Power of Instruction-Tuned Large Language Model in End-to-End Speech Recognition.](http://arxiv.org/abs/2309.10524) | 本论文结合指导调整的大语言模型（LLM）和端到端自动语音识别（ASR），利用LLM的零-shot能力来改善语音识别性能。 |
 
 # 详细
 
-[^1]: Prompt-Singer: 带自然语言提示的可控唱歌声音合成
+[^1]: 发挥指导调整的大语言模型在端到端语音识别中的零-shot能力
 
-    Prompt-Singer: Controllable Singing-Voice-Synthesis with Natural Language Prompt
+    Harnessing the Zero-Shot Power of Instruction-Tuned Large Language Model in End-to-End Speech Recognition. (arXiv:2309.10524v1 [eess.AS])
 
-    [https://arxiv.org/abs/2403.11780](https://arxiv.org/abs/2403.11780)
+    [http://arxiv.org/abs/2309.10524](http://arxiv.org/abs/2309.10524)
 
-    提出了Prompt-Singer，这是第一个能够用自然语言控制歌手性别、音域和音量的唱歌声音合成方法，采用了基于解码器的变压器模型架构和范围旋律解耦的音高表示方法。
+    本论文结合指导调整的大语言模型（LLM）和端到端自动语音识别（ASR），利用LLM的零-shot能力来改善语音识别性能。
 
     
 
-    近期的唱歌声音合成(SVS)方法取得了显著的音频质量和自然度，然而它们缺乏显式控制合成唱歌风格属性的能力。我们提出Prompt-Singer，这是第一个能够用自然语言控制歌手性别、音域和音量的SVS方法。我们采用基于仅解码器的变压器模型架构，具有多尺度层次结构，并设计了一个分离音高表示的范围旋律解耦的方法，从而实现了基于文本的音域控制同时保持了旋律准确性。此外，我们探索了各种实验设置，包括不同类型的文本表示，文本编码器微调，以及引入语音数据以减轻数据稀缺性，旨在促进进一步研究。实验证明，我们的模型具有良好的控制能力和音频质量。音频示例可访问 http://prompt-singer.
+    我们提出了一种将指导调整的大语言模型和端到端自动语音识别相结合的新方法。现代大语言模型在零-shot学习中可以执行各种语言任务，只要提供明确的指导或提示来指导文本生成过程。我们探索使用这种零-shot能力的大语言模型来提取语言信息，以改善语音识别性能。具体来说，我们将大语言模型引导去纠正语音识别假设中的语法错误，并利用嵌入的语言知识进行端到端语音识别。所提出的模型基于混合连接主义时间分类和注意力架构，其中指导调整的大语言模型（即Llama2）被用作解码器的前端。通过CTC解码从编码器获得一个需要纠正的语音识别假设，然后将其与指导一起输入大语言模型。解码器随后采取...
 
-    arXiv:2403.11780v1 Announce Type: cross  Abstract: Recent singing-voice-synthesis (SVS) methods have achieved remarkable audio quality and naturalness, yet they lack the capability to control the style attributes of the synthesized singing explicitly. We propose Prompt-Singer, the first SVS method that enables attribute controlling on singer gender, vocal range and volume with natural language. We adopt a model architecture based on a decoder-only transformer with a multi-scale hierarchy, and design a range-melody decoupled pitch representation that enables text-conditioned vocal range control while keeping melodic accuracy. Furthermore, we explore various experiment settings, including different types of text representations, text encoder fine-tuning, and introducing speech data to alleviate data scarcity, aiming to facilitate further research. Experiments show that our model achieves favorable controlling ability and audio quality. Audio samples are available at http://prompt-singer.
+    We present a novel integration of an instruction-tuned large language model (LLM) and end-to-end automatic speech recognition (ASR). Modern LLMs can perform a wide range of linguistic tasks within zero-shot learning when provided with a precise instruction or a prompt to guide the text generation process towards the desired task. We explore using this zero-shot capability of LLMs to extract linguistic information that can contribute to improving ASR performance. Specifically, we direct an LLM to correct grammatical errors in an ASR hypothesis and harness the embedded linguistic knowledge to conduct end-to-end ASR. The proposed model is built on the hybrid connectionist temporal classification (CTC) and attention architecture, where an instruction-tuned LLM (i.e., Llama2) is employed as a front-end of the decoder. An ASR hypothesis, subject to correction, is obtained from the encoder via CTC decoding, which is then fed into the LLM along with an instruction. The decoder subsequently tak
     
 
