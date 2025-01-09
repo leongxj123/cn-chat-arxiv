@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Unexpected Improvements to Expected Improvement for Bayesian Optimization.](http://arxiv.org/abs/2310.20708) | 提出了LogEI作为一类新的贝叶斯优化的获得函数，具有与传统的EI函数相同或近似相等的最优解，但数值上更容易进行优化。 |
+| [^1] | [Manifold Filter-Combine Networks.](http://arxiv.org/abs/2307.04056) | 这篇论文介绍了一类称为流形滤波-组合网络的大型流形神经网络。作者提出了一种基于构建数据驱动图的方法来实现这种网络，并提供了收敛到连续极限的充分条件，其收敛速度不依赖于滤波器数量。 |
 
 # 详细
 
-[^1]: 对贝叶斯优化的期望改进的意外提升
+[^1]: 流形滤波-组合网络
 
-    Unexpected Improvements to Expected Improvement for Bayesian Optimization. (arXiv:2310.20708v1 [cs.LG])
+    Manifold Filter-Combine Networks. (arXiv:2307.04056v1 [stat.ML])
 
-    [http://arxiv.org/abs/2310.20708](http://arxiv.org/abs/2310.20708)
+    [http://arxiv.org/abs/2307.04056](http://arxiv.org/abs/2307.04056)
 
-    提出了LogEI作为一类新的贝叶斯优化的获得函数，具有与传统的EI函数相同或近似相等的最优解，但数值上更容易进行优化。
+    这篇论文介绍了一类称为流形滤波-组合网络的大型流形神经网络。作者提出了一种基于构建数据驱动图的方法来实现这种网络，并提供了收敛到连续极限的充分条件，其收敛速度不依赖于滤波器数量。
 
     
 
-    期望改进（EI）可以说是贝叶斯优化中最流行的获得函数，并且已经在很多成功的应用中得到了应用。但是，EI的性能往往被一些新方法超越。尤其是，EI及其变种在并行和多目标设置中很难进行优化，因为它们的获得值在许多区域中数值上变为零。当观测次数增加、搜索空间的维度增加或约束条件的数量增加时，这种困难通常会增加，导致性能在文献中不一致且大多数情况下亚优化。在本论文中，我们提出了LogEI，这是一类新的采样函数。与标准EI相比，这些LogEI函数的成员要么具有相同的最优解，要么具有近似相等的最优解，但数值上更容易进行优化。我们证明了数值病态在“经典”分析EI、期望超体积改进（EHVI）以及它们的...
+    我们介绍了一类大型流形神经网络(MNNs)，我们称之为流形滤波-组合网络。这个类别包括了Wang、Ruiz和Ribeiro之前的研究中考虑的MNNs，流形散射变换(一种基于小波的神经网络模型)，以及其他有趣的之前在文献中未考虑的示例，如Kipf和Welling的图卷积网络的流形等效。然后，我们考虑了一种基于构建数据驱动图的方法，用于在没有对流形有全局知识的情况下实现这样的网络，而只能访问有限数量的样本点。我们提供了网络在样本点数趋于无穷大时能够保证收敛到其连续极限的充分条件。与之前的工作(主要关注特定的MNN结构和图构建)不同，我们的收敛速度并不依赖于使用的滤波器数量。而且，它表现出线性的收敛速度。
 
-    Expected Improvement (EI) is arguably the most popular acquisition function in Bayesian optimization and has found countless successful applications, but its performance is often exceeded by that of more recent methods. Notably, EI and its variants, including for the parallel and multi-objective settings, are challenging to optimize because their acquisition values vanish numerically in many regions. This difficulty generally increases as the number of observations, dimensionality of the search space, or the number of constraints grow, resulting in performance that is inconsistent across the literature and most often sub-optimal. Herein, we propose LogEI, a new family of acquisition functions whose members either have identical or approximately equal optima as their canonical counterparts, but are substantially easier to optimize numerically. We demonstrate that numerical pathologies manifest themselves in "classic" analytic EI, Expected Hypervolume Improvement (EHVI), as well as their
+    We introduce a large class of manifold neural networks (MNNs) which we call Manifold Filter-Combine Networks. This class includes as special cases, the MNNs considered in previous work by Wang, Ruiz, and Ribeiro, the manifold scattering transform (a wavelet-based model of neural networks), and other interesting examples not previously considered in the literature such as the manifold equivalent of Kipf and Welling's graph convolutional network. We then consider a method, based on building a data-driven graph, for implementing such networks when one does not have global knowledge of the manifold, but merely has access to finitely many sample points. We provide sufficient conditions for the network to provably converge to its continuum limit as the number of sample points tends to infinity. Unlike previous work (which focused on specific MNN architectures and graph constructions), our rate of convergence does not explicitly depend on the number of filters used. Moreover, it exhibits line
     
 

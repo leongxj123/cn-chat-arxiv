@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Approximation and bounding techniques for the Fisher-Rao distances](https://arxiv.org/abs/2403.10089) | 本文考虑了几种数值上稳健的Fisher-Rao距离的近似和界定技术，包括基于闭合形式1D子模型Fisher-Rao距离的通用上界以及取决于测地线或预测测地线是否闭合形式获得的几种通用近似方案，并提出了一种通用方法保证近似误差任意小。 |
+| [^1] | [Multi-Fidelity Bayesian Optimization With Across-Task Transferable Max-Value Entropy Search](https://arxiv.org/abs/2403.09570) | 本文引入了一种新颖的信息理论获取函数，用于平衡在连续的优化任务中获得最优值或解信息的需求。 |
 
 # 详细
 
-[^1]: 用于Fisher-Rao距离的近似和界定技术
+[^1]: 基于多保真度的贝叶斯优化方法及跨任务可转移的最大值熵搜索
 
-    Approximation and bounding techniques for the Fisher-Rao distances
+    Multi-Fidelity Bayesian Optimization With Across-Task Transferable Max-Value Entropy Search
 
-    [https://arxiv.org/abs/2403.10089](https://arxiv.org/abs/2403.10089)
+    [https://arxiv.org/abs/2403.09570](https://arxiv.org/abs/2403.09570)
 
-    本文考虑了几种数值上稳健的Fisher-Rao距离的近似和界定技术，包括基于闭合形式1D子模型Fisher-Rao距离的通用上界以及取决于测地线或预测测地线是否闭合形式获得的几种通用近似方案，并提出了一种通用方法保证近似误差任意小。
+    本文引入了一种新颖的信息理论获取函数，用于平衡在连续的优化任务中获得最优值或解信息的需求。
 
     
 
-    统计模型的两个概率分布之间的Fisher-Rao距离被定义为Fisher信息度量诱导的Riemannian测地距离。为了以闭合形式计算Fisher-Rao距离，我们需要（1）推导出Fisher-Rao测地线的公式，以及（2）沿着这些测地线积分Fisher长度元素。我们考虑了几种数值上稳健的Fisher-Rao距离的近似和界定技术：首先，我们基于子模型的闭合形式1D Fisher-Rao距离报告了Fisher-Rao距离的通用上界。其次，我们描述了几种通用的近似方案，取决于Fisher-Rao测地线或预测测地线是否能以闭合形式获得。特别地，我们获得了一种通用的方法，可以保证在提供Fisher-Rao预测测地线和严格的下界和上界时近似产生任意小的附加误差。
+    在许多应用中，设计者面临一系列优化任务，任务的目标是昂贵评估的黑盒函数形式。本文介绍了一种新的信息理论获取函数，用于平衡需要获取不同任务的最优值或解的信息和通过参数的转移传递。
 
-    arXiv:2403.10089v1 Announce Type: cross  Abstract: The Fisher-Rao distance between two probability distributions of a statistical model is defined as the Riemannian geodesic distance induced by the Fisher information metric. In order to calculate the Fisher-Rao distance in closed-form, we need (1) to elicit a formula for the Fisher-Rao geodesics, and (2) to integrate the Fisher length element along those geodesics. We consider several numerically robust approximation and bounding techniques for the Fisher-Rao distances: First, we report generic upper bounds on Fisher-Rao distances based on closed-form 1D Fisher-Rao distances of submodels. Second, we describe several generic approximation schemes depending on whether the Fisher-Rao geodesics or pregeodesics are available in closed-form or not. In particular, we obtain a generic method to guarantee an arbitrarily small additive error on the approximation provided that Fisher-Rao pregeodesics and tight lower and upper bounds are available
+    arXiv:2403.09570v1 Announce Type: new  Abstract: In many applications, ranging from logistics to engineering, a designer is faced with a sequence of optimization tasks for which the objectives are in the form of black-box functions that are costly to evaluate. For example, the designer may need to tune the hyperparameters of neural network models for different learning tasks over time. Rather than evaluating the objective function for each candidate solution, the designer may have access to approximations of the objective functions, for which higher-fidelity evaluations entail a larger cost. Existing multi-fidelity black-box optimization strategies select candidate solutions and fidelity levels with the goal of maximizing the information accrued about the optimal value or solution for the current task. Assuming that successive optimization tasks are related, this paper introduces a novel information-theoretic acquisition function that balances the need to acquire information about the 
     
 

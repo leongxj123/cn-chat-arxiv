@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Harnessing the Zero-Shot Power of Instruction-Tuned Large Language Model in End-to-End Speech Recognition.](http://arxiv.org/abs/2309.10524) | 本论文结合指导调整的大语言模型（LLM）和端到端自动语音识别（ASR），利用LLM的零-shot能力来改善语音识别性能。 |
+| [^1] | [Prosody Analysis of Audiobooks.](http://arxiv.org/abs/2310.06930) | 本研究通过使用一个含有93个书籍和对应有声书的数据集，提出了改进的模型来预测有声书文本中的韵律属性。结果显示，我们的预测韵律与人类朗读比商业级TTS系统更相关，并且人们更喜欢韵律增强的有声书朗读。 |
 
 # 详细
 
-[^1]: 发挥指导调整的大语言模型在端到端语音识别中的零-shot能力
+[^1]: 《有声书的韵律分析》
 
-    Harnessing the Zero-Shot Power of Instruction-Tuned Large Language Model in End-to-End Speech Recognition. (arXiv:2309.10524v1 [eess.AS])
+    Prosody Analysis of Audiobooks. (arXiv:2310.06930v1 [cs.SD])
 
-    [http://arxiv.org/abs/2309.10524](http://arxiv.org/abs/2309.10524)
+    [http://arxiv.org/abs/2310.06930](http://arxiv.org/abs/2310.06930)
 
-    本论文结合指导调整的大语言模型（LLM）和端到端自动语音识别（ASR），利用LLM的零-shot能力来改善语音识别性能。
+    本研究通过使用一个含有93个书籍和对应有声书的数据集，提出了改进的模型来预测有声书文本中的韵律属性。结果显示，我们的预测韵律与人类朗读比商业级TTS系统更相关，并且人们更喜欢韵律增强的有声书朗读。
 
     
 
-    我们提出了一种将指导调整的大语言模型和端到端自动语音识别相结合的新方法。现代大语言模型在零-shot学习中可以执行各种语言任务，只要提供明确的指导或提示来指导文本生成过程。我们探索使用这种零-shot能力的大语言模型来提取语言信息，以改善语音识别性能。具体来说，我们将大语言模型引导去纠正语音识别假设中的语法错误，并利用嵌入的语言知识进行端到端语音识别。所提出的模型基于混合连接主义时间分类和注意力架构，其中指导调整的大语言模型（即Llama2）被用作解码器的前端。通过CTC解码从编码器获得一个需要纠正的语音识别假设，然后将其与指导一起输入大语言模型。解码器随后采取...
+    最近在文本转语音方面取得了一些进展，使得从文本中生成自然音效的音频成为可能。然而，有声书朗读涉及到读者的戏剧性声音和语调，更多地依赖情感、对话和叙述。使用我们的数据集，包括93本书与其对应的有声书，我们提出了改进的模型，用于从叙述文本中预测韵律属性（音高、音量和语速），并使用语言建模。我们预测的韵律属性与人类朗读的相关性要远高于商业级TTS系统的结果：在24本书中，我们预测的音高对22本书的人类阅读更具相关性，而我们预测的音量属性对23本书的人类阅读更加相似。最后，我们进行了一项人类评估研究，以量化人们更喜欢韵律增强的有声书朗读还是商业级文本转语音系统。
 
-    We present a novel integration of an instruction-tuned large language model (LLM) and end-to-end automatic speech recognition (ASR). Modern LLMs can perform a wide range of linguistic tasks within zero-shot learning when provided with a precise instruction or a prompt to guide the text generation process towards the desired task. We explore using this zero-shot capability of LLMs to extract linguistic information that can contribute to improving ASR performance. Specifically, we direct an LLM to correct grammatical errors in an ASR hypothesis and harness the embedded linguistic knowledge to conduct end-to-end ASR. The proposed model is built on the hybrid connectionist temporal classification (CTC) and attention architecture, where an instruction-tuned LLM (i.e., Llama2) is employed as a front-end of the decoder. An ASR hypothesis, subject to correction, is obtained from the encoder via CTC decoding, which is then fed into the LLM along with an instruction. The decoder subsequently tak
+    Recent advances in text-to-speech have made it possible to generate natural-sounding audio from text. However, audiobook narrations involve dramatic vocalizations and intonations by the reader, with greater reliance on emotions, dialogues, and descriptions in the narrative. Using our dataset of 93 aligned book-audiobook pairs, we present improved models for prosody prediction properties (pitch, volume, and rate of speech) from narrative text using language modeling. Our predicted prosody attributes correlate much better with human audiobook readings than results from a state-of-the-art commercial TTS system: our predicted pitch shows a higher correlation with human reading for 22 out of the 24 books, while our predicted volume attribute proves more similar to human reading for 23 out of the 24 books. Finally, we present a human evaluation study to quantify the extent that people prefer prosody-enhanced audiobook readings over commercial text-to-speech systems.
     
 
