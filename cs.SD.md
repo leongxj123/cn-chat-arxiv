@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Prosody Analysis of Audiobooks.](http://arxiv.org/abs/2310.06930) | 本研究通过使用一个含有93个书籍和对应有声书的数据集，提出了改进的模型来预测有声书文本中的韵律属性。结果显示，我们的预测韵律与人类朗读比商业级TTS系统更相关，并且人们更喜欢韵律增强的有声书朗读。 |
+| [^1] | [HAAQI-Net: A non-intrusive neural music quality assessment model for hearing aids.](http://arxiv.org/abs/2401.01145) | HAAQI-Net是一种适用于助听器用户的非侵入性神经音质评估模型，通过使用BLSTM和注意力机制，以及预训练的BEATs进行声学特征提取，能够快速且准确地预测音乐的HAAQI得分，相比传统方法具有更高的性能和更低的推理时间。 |
 
 # 详细
 
-[^1]: 《有声书的韵律分析》
+[^1]: HAAQI-Net: 一种适用于助听器的非侵入性神经音质评估模型
 
-    Prosody Analysis of Audiobooks. (arXiv:2310.06930v1 [cs.SD])
+    HAAQI-Net: A non-intrusive neural music quality assessment model for hearing aids. (arXiv:2401.01145v1 [eess.AS])
 
-    [http://arxiv.org/abs/2310.06930](http://arxiv.org/abs/2310.06930)
+    [http://arxiv.org/abs/2401.01145](http://arxiv.org/abs/2401.01145)
 
-    本研究通过使用一个含有93个书籍和对应有声书的数据集，提出了改进的模型来预测有声书文本中的韵律属性。结果显示，我们的预测韵律与人类朗读比商业级TTS系统更相关，并且人们更喜欢韵律增强的有声书朗读。
+    HAAQI-Net是一种适用于助听器用户的非侵入性神经音质评估模型，通过使用BLSTM和注意力机制，以及预训练的BEATs进行声学特征提取，能够快速且准确地预测音乐的HAAQI得分，相比传统方法具有更高的性能和更低的推理时间。
 
     
 
-    最近在文本转语音方面取得了一些进展，使得从文本中生成自然音效的音频成为可能。然而，有声书朗读涉及到读者的戏剧性声音和语调，更多地依赖情感、对话和叙述。使用我们的数据集，包括93本书与其对应的有声书，我们提出了改进的模型，用于从叙述文本中预测韵律属性（音高、音量和语速），并使用语言建模。我们预测的韵律属性与人类朗读的相关性要远高于商业级TTS系统的结果：在24本书中，我们预测的音高对22本书的人类阅读更具相关性，而我们预测的音量属性对23本书的人类阅读更加相似。最后，我们进行了一项人类评估研究，以量化人们更喜欢韵律增强的有声书朗读还是商业级文本转语音系统。
+    本文介绍了HAAQI-Net，一种针对助听器用户定制的非侵入性深度学习音质评估模型。与传统方法如Hearing Aid Audio Quality Index (HAAQI) 不同，HAAQI-Net采用了带有注意力机制的双向长短期记忆网络(BLSTM)。该模型以评估的音乐样本和听力损失模式作为输入，生成预测的HAAQI得分。模型采用了预训练的来自音频变换器(BEATs)的双向编码器表示进行声学特征提取。通过将预测分数与真实分数进行比较，HAAQI-Net达到了0.9257的长期一致性相关(LCC)，0.9394的斯皮尔曼等级相关系数(SRCC)，和0.0080的均方误差(MSE)。值得注意的是，这种高性能伴随着推理时间的大幅减少：从62.52秒(HAAQI)减少到2.71秒(HAAQI-Net)，为助听器用户提供了高效的音质评估模型。
 
-    Recent advances in text-to-speech have made it possible to generate natural-sounding audio from text. However, audiobook narrations involve dramatic vocalizations and intonations by the reader, with greater reliance on emotions, dialogues, and descriptions in the narrative. Using our dataset of 93 aligned book-audiobook pairs, we present improved models for prosody prediction properties (pitch, volume, and rate of speech) from narrative text using language modeling. Our predicted prosody attributes correlate much better with human audiobook readings than results from a state-of-the-art commercial TTS system: our predicted pitch shows a higher correlation with human reading for 22 out of the 24 books, while our predicted volume attribute proves more similar to human reading for 23 out of the 24 books. Finally, we present a human evaluation study to quantify the extent that people prefer prosody-enhanced audiobook readings over commercial text-to-speech systems.
+    This paper introduces HAAQI-Net, a non-intrusive deep learning model for music quality assessment tailored to hearing aid users. In contrast to traditional methods like the Hearing Aid Audio Quality Index (HAAQI), HAAQI-Net utilizes a Bidirectional Long Short-Term Memory (BLSTM) with attention. It takes an assessed music sample and a hearing loss pattern as input, generating a predicted HAAQI score. The model employs the pre-trained Bidirectional Encoder representation from Audio Transformers (BEATs) for acoustic feature extraction. Comparing predicted scores with ground truth, HAAQI-Net achieves a Longitudinal Concordance Correlation (LCC) of 0.9257, Spearman's Rank Correlation Coefficient (SRCC) of 0.9394, and Mean Squared Error (MSE) of 0.0080. Notably, this high performance comes with a substantial reduction in inference time: from 62.52 seconds (by HAAQI) to 2.71 seconds (by HAAQI-Net), serving as an efficient music quality assessment model for hearing aid users.
     
 
