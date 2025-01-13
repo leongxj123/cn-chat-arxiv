@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.PL</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.PL</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.PL</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.PL</description><item><title>&#26412;&#25991;&#26088;&#22312;&#25506;&#35752;&#31243;&#24207;&#21270;&#24378;&#21270;&#23398;&#20064;&#30340;&#29702;&#35770;&#22522;&#30784;&#65292;&#32473;&#20986;&#20102;&#23545;&#31243;&#24207;&#21270;&#24378;&#21270;&#23398;&#20064;&#20013;&#20851;&#38190;&#38382;&#39064;&#30340;&#21021;&#27493;&#22238;&#31572;</title><link>https://arxiv.org/abs/2402.11650</link><description>&lt;p&gt;
+&#31243;&#24207;&#21270;&#24378;&#21270;&#23398;&#20064;&#30340;&#29702;&#35770;&#22522;&#30784;
+&lt;/p&gt;
+&lt;p&gt;
+Theoretical foundations for programmatic reinforcement learning
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.11650
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#26088;&#22312;&#25506;&#35752;&#31243;&#24207;&#21270;&#24378;&#21270;&#23398;&#20064;&#30340;&#29702;&#35770;&#22522;&#30784;&#65292;&#32473;&#20986;&#20102;&#23545;&#31243;&#24207;&#21270;&#24378;&#21270;&#23398;&#20064;&#20013;&#20851;&#38190;&#38382;&#39064;&#30340;&#21021;&#27493;&#22238;&#31572;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#24378;&#21270;&#23398;&#20064;&#39046;&#22495;&#33268;&#21147;&#20110;&#22312;&#26410;&#30693;&#30340;&#38543;&#26426;&#29615;&#22659;&#20013;&#23398;&#20064;&#26368;&#20248;&#31574;&#30053;&#30340;&#31639;&#27861;&#12290;&#31243;&#24207;&#21270;&#24378;&#21270;&#23398;&#20064;&#30740;&#31350;&#23558;&#31574;&#30053;&#34920;&#31034;&#20026;&#31243;&#24207;&#65292;&#21363;&#28041;&#21450;&#25511;&#21046;&#24490;&#29615;&#31561;&#39640;&#38454;&#26500;&#36896;&#12290;&#23613;&#31649;&#22312;&#26426;&#22120;&#23398;&#20064;&#21644;&#24418;&#24335;&#26041;&#27861;&#20132;&#21449;&#39046;&#22495;&#21560;&#24341;&#20102;&#24456;&#22810;&#20851;&#27880;&#65292;&#20294;&#22312;&#31243;&#24207;&#21270;&#24378;&#21270;&#23398;&#20064;&#30340;&#29702;&#35770;&#26041;&#38754;&#30693;&#20043;&#29978;&#23569;&#65306;&#20160;&#20040;&#26679;&#30340;&#31243;&#24207;&#21270;&#31574;&#30053;&#26159;&#22909;&#30340;&#65311;&#26368;&#20248;&#31243;&#24207;&#21270;&#31574;&#30053;&#26377;&#22810;&#22823;&#65311;&#25105;&#20204;&#22914;&#20309;&#23398;&#20064;&#23427;&#20204;&#65311;&#26412;&#25991;&#30340;&#30446;&#26631;&#26159;&#39318;&#27425;&#22238;&#31572;&#36825;&#20123;&#38382;&#39064;&#65292;&#21551;&#21160;&#23545;&#31243;&#24207;&#21270;&#24378;&#21270;&#23398;&#20064;&#30340;&#29702;&#35770;&#30740;&#31350;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2402.11650v1 Announce Type: new  Abstract: The field of Reinforcement Learning (RL) is concerned with algorithms for learning optimal policies in unknown stochastic environments. Programmatic RL studies representations of policies as programs, meaning involving higher order constructs such as control loops. Despite attracting a lot of attention at the intersection of the machine learning and formal methods communities, very little is known on the theoretical front about programmatic RL: what are good classes of programmatic policies? How large are optimal programmatic policies? How can we learn them? The goal of this paper is to give first answers to these questions, initiating a theoretical study of programmatic RL.
+&lt;/p&gt;</description></item></channel></rss>
