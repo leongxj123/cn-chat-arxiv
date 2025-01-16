@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [ACPO: AI-Enabled Compiler-Driven Program Optimization](https://arxiv.org/abs/2312.09982) | 该论文提出了ACPO框架，通过机器学习模型提供给LLVM简单全面的工具，以实现编译器驱动的程序优化。 |
+| [^1] | [Synapse: Learning Preferential Concepts from Visual Demonstrations](https://arxiv.org/abs/2403.16689) | Synapse是一种神经符号化方法，旨在从有限演示中高效学习偏好概念，通过将偏好表示为神经符号程序并利用视觉解析、大型语言模型和程序合成相结合的方式来学习个人偏好。 |
 
 # 详细
 
-[^1]: ACPO: AI-Enabled Compiler-Driven Program Optimization
+[^1]: Synapse: 从视觉演示中学习优先概念
 
-    ACPO: AI-Enabled Compiler-Driven Program Optimization
+    Synapse: Learning Preferential Concepts from Visual Demonstrations
 
-    [https://arxiv.org/abs/2312.09982](https://arxiv.org/abs/2312.09982)
+    [https://arxiv.org/abs/2403.16689](https://arxiv.org/abs/2403.16689)
 
-    该论文提出了ACPO框架，通过机器学习模型提供给LLVM简单全面的工具，以实现编译器驱动的程序优化。
+    Synapse是一种神经符号化方法，旨在从有限演示中高效学习偏好概念，通过将偏好表示为神经符号程序并利用视觉解析、大型语言模型和程序合成相结合的方式来学习个人偏好。
 
     
 
-    该论文提出了ACPO：AI-Enabled Compiler-driven Program Optimization，这是一个新颖的框架，为LLVM提供简单全面的工具，以从应用机器学习模型来进行不同的优化通路中获益。首先展示了ACPO的高层视图、类层次结构和功能，然后通过将循环展开和函数内联传递的ML使能化，展示了ACPO的一些用例，描述了ACPO如何发挥作用。
+    本文解决了偏好学习问题，旨在从视觉输入中学习用户特定偏好（例如，“好停车位”，“方便的下车位置”）。尽管与学习事实概念（例如，“红色立方体”）相似，但偏好学习是一个基本更加困难的问题，因为它涉及主观性质和个人特定训练数据的缺乏。我们使用一种名为Synapse的新框架来解决这个问题，这是一种神经符号化方法，旨在有效地从有限演示中学习偏好概念。Synapse将偏好表示为在图像上运作的领域特定语言（DSL）中的神经符号程序，并利用视觉解析、大型语言模型和程序合成的新组合来学习代表个人偏好的程序。我们通过广泛的实验评估了Synapse，包括一个关注与移动相关的用户案例研究。
 
-    arXiv:2312.09982v2 Announce Type: replace-cross  Abstract: The key to performance optimization of a program is to decide correctly when a certain transformation should be applied by a compiler. This is an ideal opportunity to apply machine-learning models to speed up the tuning process; while this realization has been around since the late 90s, only recent advancements in ML enabled a practical application of ML to compilers as an end-to-end framework.   This paper presents ACPO: \textbf{\underline{A}}I-Enabled \textbf{\underline{C}}ompiler-driven \textbf{\underline{P}}rogram \textbf{\underline{O}}ptimization; a novel framework to provide LLVM with simple and comprehensive tools to benefit from employing ML models for different optimization passes. We first showcase the high-level view, class hierarchy, and functionalities of ACPO and subsequently, demonstrate a couple of use cases of ACPO by ML-enabling the Loop Unroll and Function Inlining passes and describe how ACPO can be leverage
+    arXiv:2403.16689v1 Announce Type: cross  Abstract: This paper addresses the problem of preference learning, which aims to learn user-specific preferences (e.g., "good parking spot", "convenient drop-off location") from visual input. Despite its similarity to learning factual concepts (e.g., "red cube"), preference learning is a fundamentally harder problem due to its subjective nature and the paucity of person-specific training data. We address this problem using a new framework called Synapse, which is a neuro-symbolic approach designed to efficiently learn preferential concepts from limited demonstrations. Synapse represents preferences as neuro-symbolic programs in a domain-specific language (DSL) that operates over images, and leverages a novel combination of visual parsing, large language models, and program synthesis to learn programs representing individual preferences. We evaluate Synapse through extensive experimentation including a user case study focusing on mobility-related
     
 
