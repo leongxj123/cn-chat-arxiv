@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Useful Compact Representations for Data-Fitting](https://arxiv.org/abs/2403.12206) | 我们提出了新的紧凑表示方法，在大型确定性问题的软件实现中表现良好，特别适用于大型特征值计算、张量分解和非线性回归。 |
-| [^2] | [Quasi-Monte Carlo for Efficient Fourier Pricing of Multi-Asset Options](https://arxiv.org/abs/2403.02832) | 本研究提出使用随机化拟蒙特卡洛积分来提高傅里叶方法在高维情境下的可扩展性，以解决高效定价多资产期权的挑战。 |
+| [^1] | [Coseparable Nonnegative Tensor Factorization With T-CUR Decomposition.](http://arxiv.org/abs/2401.16836) | 本文提出了一种基于T-CUR分解的可分离非负张量分解方法，用于在多维数据中提取有意义的特征。 |
 
 # 详细
 
-[^1]: 用于数据拟合的实用紧凑表示
+[^1]: 基于T-CUR分解的可分离非负张量分解
 
-    Useful Compact Representations for Data-Fitting
+    Coseparable Nonnegative Tensor Factorization With T-CUR Decomposition. (arXiv:2401.16836v1 [cs.LG])
 
-    [https://arxiv.org/abs/2403.12206](https://arxiv.org/abs/2403.12206)
+    [http://arxiv.org/abs/2401.16836](http://arxiv.org/abs/2401.16836)
 
-    我们提出了新的紧凑表示方法，在大型确定性问题的软件实现中表现良好，特别适用于大型特征值计算、张量分解和非线性回归。
-
-    
-
-    在没有2阶导数信息的最小化问题中，估计Hessian矩阵的方法非常有效。然而，传统技术生成的稠密矩阵对于大型问题是难以承受的。有限内存紧凑表示将稠密数组表示为低秩表示，已成为大型确定性问题软件实现的最新技术。我们开发了由向量选择参数化的新紧凑表示，并且对于特定选择，它们可以简化为现有的著名公式。我们展示了紧凑表示在大型特征值计算、张量分解和非线性回归中的有效性。
-
-    arXiv:2403.12206v1 Announce Type: cross  Abstract: For minimization problems without 2nd derivative information, methods that estimate Hessian matrices can be very effective. However, conventional techniques generate dense matrices that are prohibitive for large problems. Limited-memory compact representations express the dense arrays in terms of a low rank representation and have become the state-of-the-art for software implementations on large deterministic problems. We develop new compact representations that are parameterized by a choice of vectors and that reduce to existing well known formulas for special choices. We demonstrate effectiveness of the compact representations for large eigenvalue computations, tensor factorizations and nonlinear regressions.
-    
-[^2]: 高效傅里叶定价多资产期权的拟蒙特卡洛方法
-
-    Quasi-Monte Carlo for Efficient Fourier Pricing of Multi-Asset Options
-
-    [https://arxiv.org/abs/2403.02832](https://arxiv.org/abs/2403.02832)
-
-    本研究提出使用随机化拟蒙特卡洛积分来提高傅里叶方法在高维情境下的可扩展性，以解决高效定价多资产期权的挑战。
+    本文提出了一种基于T-CUR分解的可分离非负张量分解方法，用于在多维数据中提取有意义的特征。
 
     
 
-    在定量金融中，高效定价多资产期权是一个重要挑战。蒙特卡洛（MC）方法仍然是定价引擎的主要选择；然而，其收敛速度慢阻碍了其实际应用。傅里叶方法利用特征函数的知识，准确快速地估值多达两个资产的期权。然而，在高维设置中，由于常用的积分技术具有张量积（TP）结构，它们面临障碍。本文主张使用随机化拟蒙特卡洛（RQMC）积分来改善高维傅里叶方法的可扩展性。RQMC技术受益于被积函数的光滑性，缓解了维度灾难，同时提供了实用的误差估计。然而，RQMC在无界域$\mathbb{R}^d$上的适用性需要将域转换为$[0,1]^d$，这可能...
+    非负矩阵分解(NMF)是一种重要的无监督学习方法，用于从数据中提取有意义的特征。为了在多项式时间框架内解决NMF问题，研究人员引入了可分离性假设，最近演变为可分离的概念。这一进展为原始数据提供了更高效的核心表示。然而，在现实世界中，数据更自然地被表示为多维数组，如图像或视频。将NMF应用于高维数据涉及向量化，会导致丢失关键的多维度相关性。为了保留数据中这些固有的相关性，我们转向张量(多维数组)并利用张量t乘积。这种方法将可分离的NMF扩展到张量设置，从而创建了我们所称的可分离非负张量分解(NTF)。在这项工作中，我们提供了一种交替索引选择方法来选择cos
 
-    arXiv:2403.02832v1 Announce Type: new  Abstract: Efficiently pricing multi-asset options poses a significant challenge in quantitative finance. The Monte Carlo (MC) method remains the prevalent choice for pricing engines; however, its slow convergence rate impedes its practical application. Fourier methods leverage the knowledge of the characteristic function to accurately and rapidly value options with up to two assets. Nevertheless, they face hurdles in the high-dimensional settings due to the tensor product (TP) structure of commonly employed quadrature techniques. This work advocates using the randomized quasi-MC (RQMC) quadrature to improve the scalability of Fourier methods with high dimensions. The RQMC technique benefits from the smoothness of the integrand and alleviates the curse of dimensionality while providing practical error estimates. Nonetheless, the applicability of RQMC on the unbounded domain, $\mathbb{R}^d$, requires a domain transformation to $[0,1]^d$, which may r
+    Nonnegative Matrix Factorization (NMF) is an important unsupervised learning method to extract meaningful features from data. To address the NMF problem within a polynomial time framework, researchers have introduced a separability assumption, which has recently evolved into the concept of coseparability. This advancement offers a more efficient core representation for the original data. However, in the real world, the data is more natural to be represented as a multi-dimensional array, such as images or videos. The NMF's application to high-dimensional data involves vectorization, which risks losing essential multi-dimensional correlations. To retain these inherent correlations in the data, we turn to tensors (multidimensional arrays) and leverage the tensor t-product. This approach extends the coseparable NMF to the tensor setting, creating what we term coseparable Nonnegative Tensor Factorization (NTF). In this work, we provide an alternating index selection method to select the cos
     
 
