@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Bayesian Optimization with Hidden Constraints via Latent Decision Models.](http://arxiv.org/abs/2310.18449) | 本文介绍了一种基于潜在决策模型的贝叶斯优化方法，通过利用变分自编码器学习可行决策的分布，在原始空间和潜在空间之间实现了双向映射，从而解决了公共决策制定中的隐藏约束问题。 |
+| [^1] | [ProtChatGPT: Towards Understanding Proteins with Large Language Models](https://arxiv.org/abs/2402.09649) | ProtChatGPT是一个基于大型语言模型的系统，通过自然语言学习和理解蛋白质结构，为用户提供上传蛋白质、提问和交互式对话等功能，有助于进一步理解蛋白质的结构与功能关系。 |
 
 # 详细
 
-[^1]: 基于潜在决策模型的具有隐藏约束的贝叶斯优化方法
+[^1]: ProtChatGPT：用于理解大规模语言模型的蛋白质
 
-    Bayesian Optimization with Hidden Constraints via Latent Decision Models. (arXiv:2310.18449v1 [stat.ML])
+    ProtChatGPT: Towards Understanding Proteins with Large Language Models
 
-    [http://arxiv.org/abs/2310.18449](http://arxiv.org/abs/2310.18449)
+    [https://arxiv.org/abs/2402.09649](https://arxiv.org/abs/2402.09649)
 
-    本文介绍了一种基于潜在决策模型的贝叶斯优化方法，通过利用变分自编码器学习可行决策的分布，在原始空间和潜在空间之间实现了双向映射，从而解决了公共决策制定中的隐藏约束问题。
+    ProtChatGPT是一个基于大型语言模型的系统，通过自然语言学习和理解蛋白质结构，为用户提供上传蛋白质、提问和交互式对话等功能，有助于进一步理解蛋白质的结构与功能关系。
 
     
 
-    贝叶斯优化（BO）已经成为解决复杂决策问题的强大工具，尤其在公共政策领域如警察划区方面。然而，由于定义可行区域的复杂性和决策的高维度，其在公共决策制定中的广泛应用受到了阻碍。本文介绍了一种新的贝叶斯优化方法——隐藏约束潜在空间贝叶斯优化（HC-LSBO），该方法集成了潜在决策模型。该方法利用变分自编码器来学习可行决策的分布，实现了原始决策空间与较低维度的潜在空间之间的双向映射。通过这种方式，HC-LSBO捕捉了公共决策制定中固有的隐藏约束的细微差别，在潜在空间中进行优化的同时，在原始空间中评估目标。我们通过对合成数据集和真实数据集进行数值实验来验证我们的方法，特别关注大规模问题。
+    蛋白质研究在各个基础学科中至关重要，但理解其复杂的结构与功能关系仍然具有挑战性。最近的大型语言模型（LLMs）在理解特定任务的知识方面取得了重大进展，这表明了用于蛋白质的ChatGPT-like系统在促进基础研究方面的潜力。在这项工作中，我们介绍了ProtChatGPT，旨在通过自然语言学习和理解蛋白质结构。ProtChatGPT使用户可以上传蛋白质、提问并进行交互式对话以产生全面的回答。该系统包括蛋白编码器、蛋白语言相关转换器（PLP-former）、投影适配器和LLM。蛋白质首先通过蛋白编码器和PLP-former进行编码以产生蛋白质嵌入，然后通过适配器将其投射到与LLM相符合。最后，LLM将用户的问题与蛋白质嵌入进行综合处理。
 
-    Bayesian optimization (BO) has emerged as a potent tool for addressing intricate decision-making challenges, especially in public policy domains such as police districting. However, its broader application in public policymaking is hindered by the complexity of defining feasible regions and the high-dimensionality of decisions. This paper introduces the Hidden-Constrained Latent Space Bayesian Optimization (HC-LSBO), a novel BO method integrated with a latent decision model. This approach leverages a variational autoencoder to learn the distribution of feasible decisions, enabling a two-way mapping between the original decision space and a lower-dimensional latent space. By doing so, HC-LSBO captures the nuances of hidden constraints inherent in public policymaking, allowing for optimization in the latent space while evaluating objectives in the original space. We validate our method through numerical experiments on both synthetic and real data sets, with a specific focus on large-scal
+    arXiv:2402.09649v1 Announce Type: cross  Abstract: Protein research is crucial in various fundamental disciplines, but understanding their intricate structure-function relationships remains challenging. Recent Large Language Models (LLMs) have made significant strides in comprehending task-specific knowledge, suggesting the potential for ChatGPT-like systems specialized in protein to facilitate basic research. In this work, we introduce ProtChatGPT, which aims at learning and understanding protein structures via natural languages. ProtChatGPT enables users to upload proteins, ask questions, and engage in interactive conversations to produce comprehensive answers. The system comprises protein encoders, a Protein-Language Pertaining Transformer (PLP-former), a projection adapter, and an LLM. The protein first undergoes protein encoders and PLP-former to produce protein embeddings, which are then projected by the adapter to conform with the LLM. The LLM finally combines user questions wit
     
 
