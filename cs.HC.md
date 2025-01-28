@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Learning Personalized Decision Support Policies.](http://arxiv.org/abs/2304.06701) | 本文提出了一种学习个性化决策支持策略的算法 $\texttt{THREAD}$，可以为决策者提供不同形式的支持。同时，引入了 $\texttt{Modiste}$ 工具来提供个性化的医学诊断决策支持，使用 $\texttt{THREAD}$ 学习个性化决策支持策略，有效提高了预期的诊断正确性，并减少了严重并发症的风险，同时推荐了更少和更便宜的研究。 |
+| [^1] | [KnowAgent: Knowledge-Augmented Planning for LLM-Based Agents](https://arxiv.org/abs/2403.03101) | KnowAgent引入了显式动作知识，通过动作知识库和知识型自学习策略来增强LLM的规划能力，从而改善语言Agent的规划表现。 |
 
 # 详细
 
-[^1]: 学习个性化决策支持策略
+[^1]: KnowAgent: 知识增强规划用于基于LLM的Agent
 
-    Learning Personalized Decision Support Policies. (arXiv:2304.06701v1 [cs.LG])
+    KnowAgent: Knowledge-Augmented Planning for LLM-Based Agents
 
-    [http://arxiv.org/abs/2304.06701](http://arxiv.org/abs/2304.06701)
+    [https://arxiv.org/abs/2403.03101](https://arxiv.org/abs/2403.03101)
 
-    本文提出了一种学习个性化决策支持策略的算法 $\texttt{THREAD}$，可以为决策者提供不同形式的支持。同时，引入了 $\texttt{Modiste}$ 工具来提供个性化的医学诊断决策支持，使用 $\texttt{THREAD}$ 学习个性化决策支持策略，有效提高了预期的诊断正确性，并减少了严重并发症的风险，同时推荐了更少和更便宜的研究。
+    KnowAgent引入了显式动作知识，通过动作知识库和知识型自学习策略来增强LLM的规划能力，从而改善语言Agent的规划表现。
 
     
 
-    个体决策者可能需要不同形式的支持来提高决策结果，但重要的问题是，哪种形式的支持会在低成本下导致准确的决策。本文提出了学习决策支持策略的方法，它在给定输入时选择是否以及如何提供支持。我们考虑没有先验信息的决策者，并将学习各自的策略形式化为一个多目标优化问题，这个问题权衡了准确性和成本。使用随机环境的技术，我们提出了 $\texttt{THREAD}$，这是一种个性化决策支持策略的在线算法，并设计了一种超参数调整策略，以利用模拟人类行为来确定成本-性能权衡。我们提供计算实验来证明 $\texttt{THREAD}$ 相对于线下基线的优势。然后，我们推出了一个交互式工具 $\texttt{Modiste}$，它为现实中的医学诊断提供个性化决策支持。$\texttt{Modiste}$ 使用 $\texttt{THREAD}$ 为每位医生学习个性化的决策支持策略，并推荐个性化研究以优化患者的预期结果并将严重并发症的风险降至最低。使用电子健康记录数据，我们展示了 $\texttt{Modiste}$ 显著提高了预期的诊断正确性，并减少了严重并发症的风险，同时推荐了更少和更便宜的研究。
+    大型语言模型(LLMs)在复杂推理任务中表现出巨大潜力，但在处理更复杂的挑战时仍有所不足，特别是与环境互动通过生成可执行动作时。这种不足主要来自于语言Agent中缺乏内置动作知识，导致在任务求解过程中无法有效引导规划轨迹，从而导致规划幻觉。为了解决这个问题，我们引入了KnowAgent，一种旨在通过整合显式动作知识来增强LLM规划能力的新方法。具体而言，KnowAgent采用了一个动作知识库和一个知识型自学习策略来限制规划过程中的行动路径，实现更合理的轨迹合成，进而提高语言Agent的计划性能。基于HotpotQA和ALFWorld的实验结果基于不同的主干模型。
 
-    Individual human decision-makers may benefit from different forms of support to improve decision outcomes. However, a key question is which form of support will lead to accurate decisions at a low cost. In this work, we propose learning a decision support policy that, for a given input, chooses which form of support, if any, to provide. We consider decision-makers for whom we have no prior information and formalize learning their respective policies as a multi-objective optimization problem that trades off accuracy and cost. Using techniques from stochastic contextual bandits, we propose $\texttt{THREAD}$, an online algorithm to personalize a decision support policy for each decision-maker, and devise a hyper-parameter tuning strategy to identify a cost-performance trade-off using simulated human behavior. We provide computational experiments to demonstrate the benefits of $\texttt{THREAD}$ compared to offline baselines. We then introduce $\texttt{Modiste}$, an interactive tool that pr
+    arXiv:2403.03101v1 Announce Type: cross  Abstract: Large Language Models (LLMs) have demonstrated great potential in complex reasoning tasks, yet they fall short when tackling more sophisticated challenges, especially when interacting with environments through generating executable actions. This inadequacy primarily stems from the lack of built-in action knowledge in language agents, which fails to effectively guide the planning trajectories during task solving and results in planning hallucination. To address this issue, we introduce KnowAgent, a novel approach designed to enhance the planning capabilities of LLMs by incorporating explicit action knowledge. Specifically, KnowAgent employs an action knowledge base and a knowledgeable self-learning strategy to constrain the action path during planning, enabling more reasonable trajectory synthesis, and thereby enhancing the planning performance of language agents. Experimental results on HotpotQA and ALFWorld based on various backbone m
     
 
