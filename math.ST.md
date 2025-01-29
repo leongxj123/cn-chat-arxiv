@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [An analysis of the noise schedule for score-based generative models](https://arxiv.org/abs/2402.04650) | 本研究针对基于得分的生成模型噪声调度进行了分析，提出了目标分布和估计分布之间KL散度的上界以及Wasserstein距离的改进误差界限，同时提出了自动调节噪声调度的算法，并通过实验证明了算法的性能。 |
-| [^2] | [Improved learning theory for kernel distribution regression with two-stage sampling.](http://arxiv.org/abs/2308.14335) | 本文改进了核分布回归的学习理论，引入了新的近无偏条件，并提供了关于两阶段采样效果的新误差界。 |
+| [^1] | [A simple stochastic nonlinear AR model with application to bubble.](http://arxiv.org/abs/2401.07038) | 本文提出了一个简单的随机非线性AR模型，在探究泡沫动力学时具有重要应用。该模型的局部爆发机制可以有效地描绘泡沫的动态特征，并使用了准最大似然估计方法对其进行参数估计和模型拟合。 |
+| [^2] | [Causal clustering: design of cluster experiments under network interference.](http://arxiv.org/abs/2310.14983) | 本文研究了在网络干扰下设计集群实验来估计全局治疗效果，并提出了选择最优聚类的方法，通过使用现成的半定规划算法计算一个新型惩罚最小割优化问题的解来近似最优聚类，同时还确定了选择簇或个体级随机化之间易于检查的条件。 |
 
 # 详细
 
-[^1]: 基于得分的生成模型噪声调度分析
+[^1]: 一个简单的随机非线性AR模型及其在泡沫中的应用
 
-    An analysis of the noise schedule for score-based generative models
+    A simple stochastic nonlinear AR model with application to bubble. (arXiv:2401.07038v1 [math.ST])
 
-    [https://arxiv.org/abs/2402.04650](https://arxiv.org/abs/2402.04650)
+    [http://arxiv.org/abs/2401.07038](http://arxiv.org/abs/2401.07038)
 
-    本研究针对基于得分的生成模型噪声调度进行了分析，提出了目标分布和估计分布之间KL散度的上界以及Wasserstein距离的改进误差界限，同时提出了自动调节噪声调度的算法，并通过实验证明了算法的性能。
-
-    
-
-    基于得分的生成模型（SGMs）旨在通过仅使用目标数据的噪声扰动样本来学习得分函数，从而估计目标数据分布。最近的文献主要关注评估目标分布和估计分布之间的误差，通过KL散度和Wasserstein距离来衡量生成质量。至今为止，所有现有结果都是针对时间均匀变化的噪声调度得到的。在对数据分布进行温和假设的前提下，我们建立了目标分布和估计分布之间KL散度的上界，明确依赖于任何时间相关的噪声调度。假设得分是利普希茨连续的情况下，我们提供了更好的Wasserstein距离误差界限，利用了有利的收缩机制。我们还提出了一种使用所提出的上界自动调节噪声调度的算法。我们通过实验证明了算法的性能。
-
-    Score-based generative models (SGMs) aim at estimating a target data distribution by learning score functions using only noise-perturbed samples from the target. Recent literature has focused extensively on assessing the error between the target and estimated distributions, gauging the generative quality through the Kullback-Leibler (KL) divergence and Wasserstein distances.  All existing results  have been obtained so far for time-homogeneous speed of the noise schedule.  Under mild assumptions on the data distribution, we establish an upper bound for the KL divergence between the target and the estimated distributions, explicitly depending on any time-dependent noise schedule. Assuming that the score is Lipschitz continuous, we provide an improved error bound in Wasserstein distance, taking advantage of favourable underlying contraction mechanisms. We also propose an algorithm to automatically tune the noise schedule using the proposed upper bound. We illustrate empirically the perfo
-    
-[^2]: 改进的核分布回归学习理论与两阶段采样
-
-    Improved learning theory for kernel distribution regression with two-stage sampling. (arXiv:2308.14335v1 [math.ST])
-
-    [http://arxiv.org/abs/2308.14335](http://arxiv.org/abs/2308.14335)
-
-    本文改进了核分布回归的学习理论，引入了新的近无偏条件，并提供了关于两阶段采样效果的新误差界。
+    本文提出了一个简单的随机非线性AR模型，在探究泡沫动力学时具有重要应用。该模型的局部爆发机制可以有效地描绘泡沫的动态特征，并使用了准最大似然估计方法对其进行参数估计和模型拟合。
 
     
 
-    分布回归问题涵盖了许多重要的统计和机器学习任务，在各种应用中都有出现。在解决这个问题的各种现有方法中，核方法已经成为首选的方法。事实上，核分布回归在计算上是有利的，并且得到了最近的学习理论的支持。该理论还解决了两阶段采样的设置，其中只有输入分布的样本可用。在本文中，我们改进了核分布回归的学习理论。我们研究了基于希尔伯特嵌入的核，这些核包含了大多数（如果不是全部）现有方法。我们引入了嵌入的新近无偏条件，使我们能够通过新的分析提供关于两阶段采样效果的新误差界。我们证明了这种新近无偏条件对三个重要的核类别成立，这些核基于最优输运和平均嵌入。
+    经济和金融时间序列在形成泡沫时可能会表现出局部爆发行为。经济或金融泡沫，特别是其动力学，是一个引人入胜的话题，一直以来都受到关注。为了说明局部爆发本身的动力学，本文提出了一个新颖、简单而有用的时间序列模型，称为随机非线性自回归模型，具有严格平稳性和几何遍历性，并能够产生在许多宏观经济变量中观察到的长周期波动或持久性。当非线性自回归系数在某一范围之外时，该模型会出现周期性爆发行为，并可以用来描绘泡沫的动态。此外，对我们的模型进行了准最大似然估计（QMLE），并在对创新采取最小假设的情况下，证明了其强一致性和渐近正态性。还针对模型拟合进行了新的模型诊断检验统计量的开发。
 
-    The distribution regression problem encompasses many important statistics and machine learning tasks, and arises in a large range of applications. Among various existing approaches to tackle this problem, kernel methods have become a method of choice. Indeed, kernel distribution regression is both computationally favorable, and supported by a recent learning theory. This theory also tackles the two-stage sampling setting, where only samples from the input distributions are available. In this paper, we improve the learning theory of kernel distribution regression. We address kernels based on Hilbertian embeddings, that encompass most, if not all, of the existing approaches. We introduce the novel near-unbiased condition on the Hilbertian embeddings, that enables us to provide new error bounds on the effect of the two-stage sampling, thanks to a new analysis. We show that this near-unbiased condition holds for three important classes of kernels, based on optimal transport and mean embedd
+    Economic and financial time series can feature locally explosive behavior when a bubble is formed. The economic or financial bubble, especially its dynamics, is an intriguing topic that has been attracting longstanding attention. To illustrate the dynamics of the local explosion itself, the paper presents a novel, simple, yet useful time series model, called the stochastic nonlinear autoregressive model, which is always strictly stationary and geometrically ergodic and can create long swings or persistence observed in many macroeconomic variables. When a nonlinear autoregressive coefficient is outside of a certain range, the model has periodically explosive behaviors and can then be used to portray the bubble dynamics. Further, the quasi-maximum likelihood estimation (QMLE) of our model is considered, and its strong consistency and asymptotic normality are established under minimal assumptions on innovation. A new model diagnostic checking statistic is developed for model fitting adequ
+    
+[^2]: 因果聚类：在网络干扰下设计集群实验
+
+    Causal clustering: design of cluster experiments under network interference. (arXiv:2310.14983v1 [econ.EM])
+
+    [http://arxiv.org/abs/2310.14983](http://arxiv.org/abs/2310.14983)
+
+    本文研究了在网络干扰下设计集群实验来估计全局治疗效果，并提出了选择最优聚类的方法，通过使用现成的半定规划算法计算一个新型惩罚最小割优化问题的解来近似最优聚类，同时还确定了选择簇或个体级随机化之间易于检查的条件。
+
+    
+
+    本文研究了在单一网络存在外溢效应的情况下，设计集群实验来估计全局治疗效果。我们提供了一个计量经济学的框架，选择最小化估计的全局治疗效果的最坏均方误差的聚类方法。我们展示了最优聚类方法可以近似为通过现成的半定规划算法计算的一种新型惩罚最小割优化问题的解。我们的分析还确定了选择簇或个体级随机化之间易于检查的条件。我们使用来自Facebook用户宇宙的独特网络数据和现有的网络实验数据来说明该方法的特性。
+
+    This paper studies the design of cluster experiments to estimate the global treatment effect in the presence of spillovers on a single network. We provide an econometric framework to choose the clustering that minimizes the worst-case mean-squared error of the estimated global treatment effect. We show that the optimal clustering can be approximated as the solution of a novel penalized min-cut optimization problem computed via off-the-shelf semi-definite programming algorithms. Our analysis also characterizes easy-to-check conditions to choose between a cluster or individual-level randomization. We illustrate the method's properties using unique network data from the universe of Facebook's users and existing network data from a field experiment.
     
 

@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Survey of Neural Code Intelligence: Paradigms, Advances and Beyond](https://arxiv.org/abs/2403.14734) | 神经代码智能领域的调查系统回顾了50多种代表性模型和超过680项相关作品，突出了不同研究阶段的范式和技术转变。 |
-| [^2] | [Turbulence: Systematically and Automatically Testing Instruction-Tuned Large Language Models for Code.](http://arxiv.org/abs/2312.14856) | 这项研究提出了一种通过新的基准测试Turbulence来系统评估针对代码生成的指令调整大型语言模型（LLMs）的正确性和鲁棒性的方法。通过构建一组问题模板，可以评估LLMs在解决相似编程问题时的准确性，并发现其代码生成能力的缺陷和异常情况。这项研究在五个LLMs上进行了实验。 |
+| [^1] | [Evaluating Decision Optimality of Autonomous Driving via Metamorphic Testing](https://arxiv.org/abs/2402.18393) | 本文着重于评估自动驾驶系统的决策质量，提出了检测非最佳决策场景的方法，通过新颖的变形关系暴露最佳决策违规。 |
 
 # 详细
 
-[^1]: 一项神经代码智能的调查：范式、进展与未来
+[^1]: 通过变形测试评估自动驾驶的决策最佳性
 
-    A Survey of Neural Code Intelligence: Paradigms, Advances and Beyond
+    Evaluating Decision Optimality of Autonomous Driving via Metamorphic Testing
 
-    [https://arxiv.org/abs/2403.14734](https://arxiv.org/abs/2403.14734)
+    [https://arxiv.org/abs/2402.18393](https://arxiv.org/abs/2402.18393)
 
-    神经代码智能领域的调查系统回顾了50多种代表性模型和超过680项相关作品，突出了不同研究阶段的范式和技术转变。
-
-    
-
-    arXiv:2403.14734v1 公告类型: 跨领域 摘要: 神经代码智能--利用深度学习理解、生成和优化代码--在整个社会上具有巨大的潜力，可产生深远影响。作为自然语言和编程语言之间的桥梁，这一领域在过去几年引起了两个研究社区研究人员的极大关注。本调查系统地和按时间顺序回顾了代码智能方面的进展，包括50多种代表性模型及其变体、20多种任务类别以及超过680项相关作品。我们遵循历史进展，跟踪不同研究阶段的范式转变（例如，从使用循环神经网络对代码建模到大型语言模型时代）。同时，我们重点介绍了不同阶段涵盖的模型、任务和评估的主要技术转变。对于应用，我们
-
-    arXiv:2403.14734v1 Announce Type: cross  Abstract: Neural Code Intelligence -- leveraging deep learning to understand, generate, and optimize code -- holds immense potential for transformative impacts on the whole society. Bridging the gap between Natural Language and Programming Language, this domain has drawn significant attention from researchers in both research communities over the past few years. This survey presents a systematic and chronological review of the advancements in code intelligence, encompassing over 50 representative models and their variants, more than 20 categories of tasks, and an extensive coverage of over 680 related works. We follow the historical progression to trace the paradigm shifts across different research phases (e.g., from modeling code with recurrent neural networks to the era of Large Language Models). Concurrently, we highlight the major technical transitions in models, tasks, and evaluations spanning through different stages. For applications, we 
-    
-[^2]: 系统化和自动化测试针对代码的指令调整大型语言模型的涡流方法
-
-    Turbulence: Systematically and Automatically Testing Instruction-Tuned Large Language Models for Code. (arXiv:2312.14856v2 [cs.SE] UPDATED)
-
-    [http://arxiv.org/abs/2312.14856](http://arxiv.org/abs/2312.14856)
-
-    这项研究提出了一种通过新的基准测试Turbulence来系统评估针对代码生成的指令调整大型语言模型（LLMs）的正确性和鲁棒性的方法。通过构建一组问题模板，可以评估LLMs在解决相似编程问题时的准确性，并发现其代码生成能力的缺陷和异常情况。这项研究在五个LLMs上进行了实验。
+    本文着重于评估自动驾驶系统的决策质量，提出了检测非最佳决策场景的方法，通过新颖的变形关系暴露最佳决策违规。
 
     
 
-    我们提出了一种通过一个新的基准测试Turbulence，系统评估针对代码生成的指令调整大型语言模型（LLM）的正确性和鲁棒性的方法。Turbulence包含一组大量的自然语言“问题模板”，每个模板都是一个编程问题，参数化使得可以以多种不同形式提问。每个问题模板都有一个相关的“测试预测器”，用来判断LLM返回的代码解决方案是否正确。因此，通过一个问题模板，可以向LLM提问一个非常相似的编程问题“邻域”，并评估每个问题返回的结果的正确性。这允许识别LLM代码生成能力的差距，包括LLM在邻域中解决“几乎所有”问题但对特定参数实例化失败的“异常”。我们针对OpenAI、Co等五个LLM进行了实验。
+    arXiv:2402.18393v1 公告类型：新摘要：自动驾驶系统（ADS）的测试在ADS开发中至关重要，目前主要关注的是安全性。然而，评估非安全关键性能，特别是ADS制定最佳决策并为自动车辆（AV）生成最佳路径的能力同样重要，以确保AV的智能性并降低风险。目前，鲜有工作致力于评估ADS的最佳决策性能，因为缺乏相应的预言和生成有非最佳决策的场景难度较大。本文侧重于评估ADS的决策质量，并提出首个用于检测非最佳决策场景（NoDSs）的方法，即ADS未计算AV的最佳路径的情况。首先，为解决预言问题，我们提出了一种旨在暴露最佳决策违规情况的新颖变形关系（MR）。这个MR确定了性能最佳决策的违规。
 
-    We present a method for systematically evaluating the correctness and robustness of instruction-tuned large language models (LLMs) for code generation via a new benchmark, Turbulence. Turbulence consists of a large set of natural language $\textit{question templates}$, each of which is a programming problem, parameterised so that it can be asked in many different forms. Each question template has an associated $\textit{test oracle}$ that judges whether a code solution returned by an LLM is correct. Thus, from a single question template, it is possible to ask an LLM a $\textit{neighbourhood}$ of very similar programming questions, and assess the correctness of the result returned for each question. This allows gaps in an LLM's code generation abilities to be identified, including $\textit{anomalies}$ where the LLM correctly solves $\textit{almost all}$ questions in a neighbourhood but fails for particular parameter instantiations. We present experiments against five LLMs from OpenAI, Co
+    arXiv:2402.18393v1 Announce Type: new  Abstract: Autonomous Driving System (ADS) testing is crucial in ADS development, with the current primary focus being on safety. However, the evaluation of non-safety-critical performance, particularly the ADS's ability to make optimal decisions and produce optimal paths for autonomous vehicles (AVs), is equally vital to ensure the intelligence and reduce risks of AVs. Currently, there is little work dedicated to assessing ADSs' optimal decision-making performance due to the lack of corresponding oracles and the difficulty in generating scenarios with non-optimal decisions. In this paper, we focus on evaluating the decision-making quality of an ADS and propose the first method for detecting non-optimal decision scenarios (NoDSs), where the ADS does not compute optimal paths for AVs. Firstly, to deal with the oracle problem, we propose a novel metamorphic relation (MR) aimed at exposing violations of optimal decisions. The MR identifies the propert
     
 
