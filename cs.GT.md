@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Bandits with Deterministically Evolving States.](http://arxiv.org/abs/2307.11655) | 该论文提出了一种名为具有确定性演化状态的强盗模型，用于学习带有强盗反馈的推荐系统和在线广告。该模型考虑了状态演化的不同速率，能准确评估奖励与系统健康程度之间的关系。 |
+| [^1] | [Interference Among First-Price Pacing Equilibria: A Bias and Variance Analysis](https://arxiv.org/abs/2402.07322) | 本文提出了一种并行的预算控制的A/B测试设计，通过市场细分的方式在更大的市场中识别子市场，并在每个子市场上进行并行实验。 |
 
 # 详细
 
-[^1]: 具有确定性演化状态的强盗模型
+[^1]: 第一价拍卖均衡中的干扰：偏差和方差分析
 
-    Bandits with Deterministically Evolving States. (arXiv:2307.11655v1 [cs.LG])
+    Interference Among First-Price Pacing Equilibria: A Bias and Variance Analysis
 
-    [http://arxiv.org/abs/2307.11655](http://arxiv.org/abs/2307.11655)
+    [https://arxiv.org/abs/2402.07322](https://arxiv.org/abs/2402.07322)
 
-    该论文提出了一种名为具有确定性演化状态的强盗模型，用于学习带有强盗反馈的推荐系统和在线广告。该模型考虑了状态演化的不同速率，能准确评估奖励与系统健康程度之间的关系。
+    本文提出了一种并行的预算控制的A/B测试设计，通过市场细分的方式在更大的市场中识别子市场，并在每个子市场上进行并行实验。
 
     
 
-    我们提出了一种学习与强盗反馈结合的模型，同时考虑到确定性演化和不可观测的状态，我们称之为具有确定性演化状态的强盗模型。我们的模型主要应用于推荐系统和在线广告的学习。在这两种情况下，算法在每一轮获得的奖励是选择行动的短期奖励和系统的“健康”程度（即通过其状态测量）的函数。例如，在推荐系统中，平台从用户对特定类型内容的参与中获得的奖励不仅取决于具体内容的固有特征，还取决于用户与平台上其他类型内容互动后其偏好的演化。我们的通用模型考虑了状态演化的不同速率λ∈[0,1]（例如，用户的偏好因先前内容消费而快速变化）。
+    在互联网行业中，在线A/B测试被广泛用于决策新功能的推出。然而对于在线市场（如广告市场），标准的A/B测试方法可能导致结果出现偏差，因为买家在预算约束下运作，试验组的预算消耗会影响对照组的表现。为了解决这种干扰，可以采用“预算分割设计”，即每个实验组都有一个独立的预算约束，并且每个实验组接收相等的预算份额，从而实现“预算控制的A/B测试”。尽管预算控制的A/B测试有明显的优势，但当预算分割得太小时，性能会下降，限制了这种系统的总吞吐量。本文提出了一种并行的预算控制的A/B测试设计，通过市场细分的方式在更大的市场中识别子市场，并在每个子市场上进行并行实验。我们的贡献如下：首先，引入了一种新的方法来分析第一价拍卖的均衡状况，揭示了其中的偏差和方差。
 
-    We propose a model for learning with bandit feedback while accounting for deterministically evolving and unobservable states that we call Bandits with Deterministically Evolving States. The workhorse applications of our model are learning for recommendation systems and learning for online ads. In both cases, the reward that the algorithm obtains at each round is a function of the short-term reward of the action chosen and how ``healthy'' the system is (i.e., as measured by its state). For example, in recommendation systems, the reward that the platform obtains from a user's engagement with a particular type of content depends not only on the inherent features of the specific content, but also on how the user's preferences have evolved as a result of interacting with other types of content on the platform. Our general model accounts for the different rate $\lambda \in [0,1]$ at which the state evolves (e.g., how fast a user's preferences shift as a result of previous content consumption
+    Online A/B testing is widely used in the internet industry to inform decisions on new feature roll-outs. For online marketplaces (such as advertising markets), standard approaches to A/B testing may lead to biased results when buyers operate under a budget constraint, as budget consumption in one arm of the experiment impacts performance of the other arm. To counteract this interference, one can use a budget-split design where the budget constraint operates on a per-arm basis and each arm receives an equal fraction of the budget, leading to ``budget-controlled A/B testing.'' Despite clear advantages of budget-controlled A/B testing, performance degrades when budget are split too small, limiting the overall throughput of such systems. In this paper, we propose a parallel budget-controlled A/B testing design where we use market segmentation to identify submarkets in the larger market, and we run parallel experiments on each submarket.   Our contributions are as follows: First, we introdu
     
 

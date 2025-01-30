@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Evaluating Decision Optimality of Autonomous Driving via Metamorphic Testing](https://arxiv.org/abs/2402.18393) | 本文着重于评估自动驾驶系统的决策质量，提出了检测非最佳决策场景的方法，通过新颖的变形关系暴露最佳决策违规。 |
+| [^1] | [Homeostatic motion planning with innate physics knowledge](https://arxiv.org/abs/2402.15384) | 通过定义"任务"的方式和引入具有物理和因果关系理解的监督模块，我们提出了一种具有固有物理知识的稳态运动规划框架，可以在机器人上实现复杂计划。 |
 
 # 详细
 
-[^1]: 通过变形测试评估自动驾驶的决策最佳性
+[^1]: 具有固有物理知识的稳态运动规划
 
-    Evaluating Decision Optimality of Autonomous Driving via Metamorphic Testing
+    Homeostatic motion planning with innate physics knowledge
 
-    [https://arxiv.org/abs/2402.18393](https://arxiv.org/abs/2402.18393)
+    [https://arxiv.org/abs/2402.15384](https://arxiv.org/abs/2402.15384)
 
-    本文着重于评估自动驾驶系统的决策质量，提出了检测非最佳决策场景的方法，通过新颖的变形关系暴露最佳决策违规。
+    通过定义"任务"的方式和引入具有物理和因果关系理解的监督模块，我们提出了一种具有固有物理知识的稳态运动规划框架，可以在机器人上实现复杂计划。
 
     
 
-    arXiv:2402.18393v1 公告类型：新摘要：自动驾驶系统（ADS）的测试在ADS开发中至关重要，目前主要关注的是安全性。然而，评估非安全关键性能，特别是ADS制定最佳决策并为自动车辆（AV）生成最佳路径的能力同样重要，以确保AV的智能性并降低风险。目前，鲜有工作致力于评估ADS的最佳决策性能，因为缺乏相应的预言和生成有非最佳决策的场景难度较大。本文侧重于评估ADS的决策质量，并提出首个用于检测非最佳决策场景（NoDSs）的方法，即ADS未计算AV的最佳路径的情况。首先，为解决预言问题，我们提出了一种旨在暴露最佳决策违规情况的新颖变形关系（MR）。这个MR确定了性能最佳决策的违规。
+    生物体以闭环方式与周围环境进行互动，其中感官输入决定行为的启动和终止。即使是简单的动物也能制定并执行复杂计划，但纯闭环输入控制的机器人尚未复制这一点。我们提出通过定义一组离散临时闭环控制器，称为“任务”，每个任务代表一个闭环行为，来解决这个问题。我们进一步引入了一个具有固有物理和因果关系理解的监督模块，通过该模块可以模拟随时间执行任务序列并将结果存储在环境模型中。基于这个模型，可以通过链接临时闭环控制器进行制定计划。所提出的框架已在实际机器人中实施，并在两种场景下作为概念验证进行了测试。
 
-    arXiv:2402.18393v1 Announce Type: new  Abstract: Autonomous Driving System (ADS) testing is crucial in ADS development, with the current primary focus being on safety. However, the evaluation of non-safety-critical performance, particularly the ADS's ability to make optimal decisions and produce optimal paths for autonomous vehicles (AVs), is equally vital to ensure the intelligence and reduce risks of AVs. Currently, there is little work dedicated to assessing ADSs' optimal decision-making performance due to the lack of corresponding oracles and the difficulty in generating scenarios with non-optimal decisions. In this paper, we focus on evaluating the decision-making quality of an ADS and propose the first method for detecting non-optimal decision scenarios (NoDSs), where the ADS does not compute optimal paths for AVs. Firstly, to deal with the oracle problem, we propose a novel metamorphic relation (MR) aimed at exposing violations of optimal decisions. The MR identifies the propert
+    arXiv:2402.15384v1 Announce Type: cross  Abstract: Living organisms interact with their surroundings in a closed-loop fashion, where sensory inputs dictate the initiation and termination of behaviours. Even simple animals are able to develop and execute complex plans, which has not yet been replicated in robotics using pure closed-loop input control. We propose a solution to this problem by defining a set of discrete and temporary closed-loop controllers, called "tasks", each representing a closed-loop behaviour. We further introduce a supervisory module which has an innate understanding of physics and causality, through which it can simulate the execution of task sequences over time and store the results in a model of the environment. On the basis of this model, plans can be made by chaining temporary closed-loop controllers. The proposed framework was implemented for a real robot and tested in two scenarios as proof of concept.
     
 
