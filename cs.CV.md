@@ -2,52 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [FlexCap: Generating Rich, Localized, and Flexible Captions in Images](https://arxiv.org/abs/2403.12026) | FlexCap模型能够生成图像中具有不同长度的区域描述，在密集字幕任务和视觉问答系统中表现出优越性能。 |
-| [^2] | [Evaluating Text to Image Synthesis: Survey and Taxonomy of Image Quality Metrics](https://arxiv.org/abs/2403.11821) | 评估文本到图像合成中，提出了针对图像质量的新评估指标，以确保文本和图像内容的对齐，并提出了新的分类法来归纳这些指标 |
-| [^3] | [Out-of-distribution detection using normalizing flows on the data manifold.](http://arxiv.org/abs/2308.13792) | 利用正则化流在低维数据流形上进行外域检测，通过估计密度和测量与流形的距离来判断外域数据，有效提高外域检测的准确性。 |
+| [^1] | [Sine Activated Low-Rank Matrices for Parameter Efficient Learning](https://arxiv.org/abs/2403.19243) | 整合正弦函数到低秩分解过程中，提高模型准确性的同时保持参数高效性。 |
+| [^2] | [DreamArtist: Towards Controllable One-Shot Text-to-Image Generation via Contrastive Prompt-Tuning.](http://arxiv.org/abs/2211.11337) | DreamArtist采用正负prompt-tuning学习策略来生成可控的一次性文本到图像，并解决了传统方法可能会导致模型过度拟合的问题。 |
 
 # 详细
 
-[^1]: FlexCap：在图像中生成丰富、本地化和灵活的标题
+[^1]: 用正弦激活的低秩矩阵实现参数高效学习
 
-    FlexCap: Generating Rich, Localized, and Flexible Captions in Images
+    Sine Activated Low-Rank Matrices for Parameter Efficient Learning
 
-    [https://arxiv.org/abs/2403.12026](https://arxiv.org/abs/2403.12026)
+    [https://arxiv.org/abs/2403.19243](https://arxiv.org/abs/2403.19243)
 
-    FlexCap模型能够生成图像中具有不同长度的区域描述，在密集字幕任务和视觉问答系统中表现出优越性能。
-
-    
-
-    我们介绍了一种多功能的$\textit{灵活字幕}$视觉-语言模型（VLM），能够生成长度不同的特定区域描述。该模型FlexCap经过训练，可为输入的边界框生成长度条件的字幕，从而可以控制其输出的信息密度，描述范围从简洁的对象标签到详细的字幕。为了实现这一点，我们从带字幕的图像开始创建了大规模的图像区域描述训练数据集。这种灵活的字幕功能有几个宝贵的应用。首先，FlexCap在Visual Genome数据集上的密集字幕任务中表现出优越性能。其次，可以通过采用FlexCap生成本地化描述作为大型语言模型的输入来构建视觉问答（VQA）系统。由此产生的系统在许多VQ上实现了最新技术的零样本性能。
-
-    arXiv:2403.12026v1 Announce Type: cross  Abstract: We introduce a versatile $\textit{flexible-captioning}$ vision-language model (VLM) capable of generating region-specific descriptions of varying lengths. The model, FlexCap, is trained to produce length-conditioned captions for input bounding boxes, and this allows control over the information density of its output, with descriptions ranging from concise object labels to detailed captions. To achieve this we create large-scale training datasets of image region descriptions of varying length, starting from captioned images. This flexible-captioning capability has several valuable applications.   First, FlexCap demonstrates superior performance in dense captioning tasks on the Visual Genome dataset. Second, a visual question answering (VQA) system can be built by employing FlexCap to generate localized descriptions as inputs to a large language model. The resulting system achieves state-of-the-art zero-shot performance on a number of VQ
-    
-[^2]: 评估文本到图像合成：图像质量度量的调查与分类
-
-    Evaluating Text to Image Synthesis: Survey and Taxonomy of Image Quality Metrics
-
-    [https://arxiv.org/abs/2403.11821](https://arxiv.org/abs/2403.11821)
-
-    评估文本到图像合成中，提出了针对图像质量的新评估指标，以确保文本和图像内容的对齐，并提出了新的分类法来归纳这些指标
+    整合正弦函数到低秩分解过程中，提高模型准确性的同时保持参数高效性。
 
     
 
-    最近，通过利用语言和视觉结合的基础模型，推动了文本到图像合成方面的进展。这些模型在互联网或其他大规模数据库中的海量文本-图像对上进行了预训练。随着对高质量图像生成的需求转向确保文本与图像之间的内容对齐，已开发了新颖的评估度量标准，旨在模拟人类判断。因此，研究人员开始收集具有越来越复杂注释的数据集，以研究视觉语言模型的组成性及其作为文本与图像内容组成对齐质量度量的其纳入。在这项工作中，我们全面介绍了现有的文本到图像评估指标，并提出了一个新的分类法来对这些指标进行分类。我们还审查了经常采用的文本-图像基准数据集
+    低秩分解已经成为在神经网络架构中增强参数效率的重要工具，在机器学习的各种应用中越来越受到关注。这些技术显著降低了参数数量，取得了简洁性和性能之间的平衡。然而，一个常见的挑战是在参数效率和模型准确性之间做出妥协，参数减少往往导致准确性不及完整秩对应模型。在这项工作中，我们提出了一个创新的理论框架，在低秩分解过程中整合了一个正弦函数。这种方法不仅保留了低秩方法的参数效率特性的好处，还增加了分解的秩，从而提高了模型的准确性。我们的方法被证明是现有低秩模型的一种适应性增强，正如其成功证实的那样。
 
-    arXiv:2403.11821v1 Announce Type: cross  Abstract: Recent advances in text-to-image synthesis have been enabled by exploiting a combination of language and vision through foundation models. These models are pre-trained on tremendous amounts of text-image pairs sourced from the World Wide Web or other large-scale databases. As the demand for high-quality image generation shifts towards ensuring content alignment between text and image, novel evaluation metrics have been developed with the aim of mimicking human judgments. Thus, researchers have started to collect datasets with increasingly complex annotations to study the compositionality of vision-language models and their incorporation as a quality measure of compositional alignment between text and image contents. In this work, we provide a comprehensive overview of existing text-to-image evaluation metrics and propose a new taxonomy for categorizing these metrics. We also review frequently adopted text-image benchmark datasets befor
+    arXiv:2403.19243v1 Announce Type: new  Abstract: Low-rank decomposition has emerged as a vital tool for enhancing parameter efficiency in neural network architectures, gaining traction across diverse applications in machine learning. These techniques significantly lower the number of parameters, striking a balance between compactness and performance. However, a common challenge has been the compromise between parameter efficiency and the accuracy of the model, where reduced parameters often lead to diminished accuracy compared to their full-rank counterparts. In this work, we propose a novel theoretical framework that integrates a sinusoidal function within the low-rank decomposition process. This approach not only preserves the benefits of the parameter efficiency characteristic of low-rank methods but also increases the decomposition's rank, thereby enhancing model accuracy. Our method proves to be an adaptable enhancement for existing low-rank models, as evidenced by its successful 
     
-[^3]: 利用数据流形上的正则化流进行外域检测
+[^2]: DreamArtist: 通过对比prompt-tuning实现可控的一次性文本到图像生成
 
-    Out-of-distribution detection using normalizing flows on the data manifold. (arXiv:2308.13792v1 [cs.LG])
+    DreamArtist: Towards Controllable One-Shot Text-to-Image Generation via Contrastive Prompt-Tuning. (arXiv:2211.11337v2 [cs.CV] UPDATED)
 
-    [http://arxiv.org/abs/2308.13792](http://arxiv.org/abs/2308.13792)
+    [http://arxiv.org/abs/2211.11337](http://arxiv.org/abs/2211.11337)
 
-    利用正则化流在低维数据流形上进行外域检测，通过估计密度和测量与流形的距离来判断外域数据，有效提高外域检测的准确性。
+    DreamArtist采用正负prompt-tuning学习策略来生成可控的一次性文本到图像，并解决了传统方法可能会导致模型过度拟合的问题。
 
     
 
-    外域检测的一种常见方法是估计基础数据分布，为外域数据分配较低的可能性值。正则化流是基于可能性的生成模型，通过保持维度的可逆变换提供可计算的密度估计。传统的正则化流在外域检测中容易失败，因为基于可能性的模型面临着维度诅咒的问题。根据流形假设，现实世界的数据通常位于低维流形上。本研究调查了使用正则化流进行外域检测时的流形学习效果。我们通过在低维流形上估计密度，并结合测量与流形的距离作为外域检测的标准。然而，单独使用它们对于这个任务是不足够的。广泛的实验证明了流形学习对外域检测的有效性。
+    大规模文本到图像生成模型通过文本指导合成高质量、特征丰富、高分辨率的图像取得了可观的进展。然而，这些模型在处理新概念（例如新风格、物体实体等）时常常面临困难。尽管最近的尝试采用微调或prompt-tuning策略来教授预先训练的扩散模型从参考图像集中学习新概念，但它们存在过度拟合给定的参考图像，特别是在单次应用中，这对于保持生成可控性并产生多样化、高质量的图像是有害的。为了解决这个挑战，我们提出了一种简单而有效的方法DreamArtist，它采用了正负prompt-tuning学习策略。具体而言，DreamArtist结合了正负嵌入并联合训练它们。正嵌入积极地捕捉参考图像的显着特征来驱动图像生成，而负嵌入则强制模型生成多样性图像以降低过度拟合风险。
 
-    A common approach for out-of-distribution detection involves estimating an underlying data distribution, which assigns a lower likelihood value to out-of-distribution data. Normalizing flows are likelihood-based generative models providing a tractable density estimation via dimension-preserving invertible transformations. Conventional normalizing flows are prone to fail in out-of-distribution detection, because of the well-known curse of dimensionality problem of the likelihood-based models. According to the manifold hypothesis, real-world data often lie on a low-dimensional manifold. This study investigates the effect of manifold learning using normalizing flows on out-of-distribution detection. We proceed by estimating the density on a low-dimensional manifold, coupled with measuring the distance from the manifold, as criteria for out-of-distribution detection. However, individually, each of them is insufficient for this task. The extensive experimental results show that manifold lea
+    Large-scale text-to-image generation models have achieved remarkable progress in synthesizing high-quality, feature-rich images with high resolution guided by texts. However, these models often struggle with novel concepts, eg, new styles, object entities, etc. Although recent attempts have employed fine-tuning or prompt-tuning strategies to teach the pre-trained diffusion model novel concepts from a reference image set,they have the drawback of overfitting to the given reference images, particularly in one-shot applications, which is harmful to generate diverse and high-quality images while maintaining generation controllability.  To tackle this challenge, we present a simple yet effective method called DreamArtist, which employs a positive-negative prompt-tuning learning strategy. Specifically, DreamArtist incorporates both positive and negative embeddings and jointly trains them. The positive embedding aggressively captures the salient characteristics of the reference image to drive
     
 

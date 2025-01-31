@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Enhancing Low-Order Discontinuous Galerkin Methods with Neural Ordinary Differential Equations for Compressible Navier--Stokes Equations.](http://arxiv.org/abs/2310.18897) | 本研究提出了一种方法，通过在不连续Galerkin方法中加入神经常微分方程，学习子网格尺度模型的效果，从而提高模拟的准确性和加速计算过程。 |
+| [^1] | [Efficient Algorithms for Regularized Nonnegative Scale-invariant Low-rank Approximation Models](https://arxiv.org/abs/2403.18517) | 通过研究称为均匀正则化尺度不变的更一般模型，揭示了低秩逼近模型中尺度不变性导致隐式正则化的效果，有助于更好理解正则化函数的作用并指导正则化超参数的选择。 |
+| [^2] | [Generative Adversarial Reduced Order Modelling.](http://arxiv.org/abs/2305.15881) | 本文提出了一种基于GAN的简化建模方法GAROM，通过引入一个数据驱动的生成对抗模型，能够学习参数微分方程的解，并获得了较好的实验效果。 |
 
 # 详细
 
-[^1]: 使用神经常微分方程增强低阶不连续Galerkin方法在可压Navier-Stokes方程中的应用
+[^1]: 针对正则化非负尺度不变低秩逼近模型的高效算法
 
-    Enhancing Low-Order Discontinuous Galerkin Methods with Neural Ordinary Differential Equations for Compressible Navier--Stokes Equations. (arXiv:2310.18897v2 [physics.flu-dyn] UPDATED)
+    Efficient Algorithms for Regularized Nonnegative Scale-invariant Low-rank Approximation Models
 
-    [http://arxiv.org/abs/2310.18897](http://arxiv.org/abs/2310.18897)
+    [https://arxiv.org/abs/2403.18517](https://arxiv.org/abs/2403.18517)
 
-    本研究提出了一种方法，通过在不连续Galerkin方法中加入神经常微分方程，学习子网格尺度模型的效果，从而提高模拟的准确性和加速计算过程。
+    通过研究称为均匀正则化尺度不变的更一般模型，揭示了低秩逼近模型中尺度不变性导致隐式正则化的效果，有助于更好理解正则化函数的作用并指导正则化超参数的选择。
 
     
 
-    随着计算能力的增长，模拟变得更加复杂和准确。然而，高保真度的模拟需要巨大的计算资源。为了降低计算成本，通常会运行一个低保真度模型并采用子网格尺度模型，但选择适当的子网格尺度模型并对其进行调节是具有挑战性的。我们在不连续Galerkin（DG）空间离散化的背景下提出了一种新颖的方法，通过在偏微分方程模拟中引入神经常微分算子来学习子网格尺度模型的效果。我们的方法在连续级别上学习低阶DG求解器中缺失的尺度，从而提高低阶DG近似的准确性，同时以一定程度的精度加速滤波高阶DG模拟。我们通过实验证明了我们方法的性能。
+    正则化非负低秩逼近，如稀疏的非负矩阵分解或稀疏的非负Tucker分解，是具有增强可解释性的降维模型中的一个重要分支。然而，从实践角度来看，由于这些模型的多因素特性以及缺乏支持这些选择的理论，正则化函数和正则化系数的选择，以及高效算法的设计仍然具有挑战性。本文旨在改进这些问题。通过研究一个称为均匀正则化尺度不变的更一般模型，我们证明低秩逼近模型中固有的尺度不变性导致了隐式正则化，具有意想不到的有益和有害效果。这一发现使我们能够更好地理解低秩逼近模型中正则化函数的作用，指导正则化超参数的选择。
 
-    The growing computing power over the years has enabled simulations to become more complex and accurate. While immensely valuable for scientific discovery and problem-solving, however, high-fidelity simulations come with significant computational demands. As a result, it is common to run a low-fidelity model with a subgrid-scale model to reduce the computational cost, but selecting the appropriate subgrid-scale models and tuning them are challenging. We propose a novel method for learning the subgrid-scale model effects when simulating partial differential equations augmented by neural ordinary differential operators in the context of discontinuous Galerkin (DG) spatial discretization. Our approach learns the missing scales of the low-order DG solver at a continuous level and hence improves the accuracy of the low-order DG approximations as well as accelerates the filtered high-order DG simulations with a certain degree of precision. We demonstrate the performance of our approach throug
+    arXiv:2403.18517v1 Announce Type: new  Abstract: Regularized nonnegative low-rank approximations such as sparse Nonnegative Matrix Factorization or sparse Nonnegative Tucker Decomposition are an important branch of dimensionality reduction models with enhanced interpretability. However, from a practical perspective, the choice of regularizers and regularization coefficients, as well as the design of efficient algorithms, is challenging because of the multifactor nature of these models and the lack of theory to back these choices. This paper aims at improving upon these issues. By studying a more general model called the Homogeneous Regularized Scale-Invariant, we prove that the scale-invariance inherent to low-rank approximation models causes an implicit regularization with both unexpected beneficial and detrimental effects. This observation allows to better understand the effect of regularization functions in low-rank approximation models, to guide the choice of the regularization hyp
+    
+[^2]: 基于生成对抗网络的简化建模方法
+
+    Generative Adversarial Reduced Order Modelling. (arXiv:2305.15881v1 [cs.LG])
+
+    [http://arxiv.org/abs/2305.15881](http://arxiv.org/abs/2305.15881)
+
+    本文提出了一种基于GAN的简化建模方法GAROM，通过引入一个数据驱动的生成对抗模型，能够学习参数微分方程的解，并获得了较好的实验效果。
+
+    
+
+    本文提出了一种新的基于生成对抗网络（GAN）的简化建模方法——GAROM。GAN在多个深度学习领域得到广泛应用，但在简化建模中的应用却鲜有研究。我们将GAN和ROM框架相结合，引入了一种数据驱动的生成对抗模型，能够学习参数微分方程的解。我们将鉴别器网络建模为自编码器，提取输入的相关特征，并将微分方程参数作为生成器和鉴别器网络的输入条件。我们展示了如何将该方法应用于推断问题，提供了实验证据证明了模型的泛化能力，并进行了方法的收敛性研究。
+
+    In this work, we present GAROM, a new approach for reduced order modelling (ROM) based on generative adversarial networks (GANs). GANs have the potential to learn data distribution and generate more realistic data. While widely applied in many areas of deep learning, little research is done on their application for ROM, i.e. approximating a high-fidelity model with a simpler one. In this work, we combine the GAN and ROM framework, by introducing a data-driven generative adversarial model able to learn solutions to parametric differential equations. The latter is achieved by modelling the discriminator network as an autoencoder, extracting relevant features of the input, and applying a conditioning mechanism to the generator and discriminator networks specifying the differential equation parameters. We show how to apply our methodology for inference, provide experimental evidence of the model generalisation, and perform a convergence study of the method.
     
 
