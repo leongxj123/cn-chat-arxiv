@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Theoretical guarantees on the best-of-n alignment policy.](http://arxiv.org/abs/2401.01879) | 该论文研究了对齐生成模型的最佳n对齐策略，并证明了之前文献中的某个分析表达式是错误的。研究者们提出了一个新的KL散度估计方法，并通过实验证明其有效性。 |
+| [^1] | [Blind Channel Estimation and Joint Symbol Detection with Data-Driven Factor Graphs.](http://arxiv.org/abs/2401.12627) | 本论文研究了在时变线性干扰信道上基于因子图的盲信道估计和联合符号检测方法。通过使用置信传播算法和期望最大化算法相互交织的迭代，可以降低复杂度并提高性能。通过引入数据驱动的方法，算法在离线训练样本数量较少的情况下也能取得显著的性能提升。 |
 
 # 详细
 
-[^1]: 关于最佳n对齐策略的理论保证
+[^1]: 基于数据驱动因子图的盲信道估计和联合符号检测
 
-    Theoretical guarantees on the best-of-n alignment policy. (arXiv:2401.01879v1 [cs.LG])
+    Blind Channel Estimation and Joint Symbol Detection with Data-Driven Factor Graphs. (arXiv:2401.12627v1 [cs.IT])
 
-    [http://arxiv.org/abs/2401.01879](http://arxiv.org/abs/2401.01879)
+    [http://arxiv.org/abs/2401.12627](http://arxiv.org/abs/2401.12627)
 
-    该论文研究了对齐生成模型的最佳n对齐策略，并证明了之前文献中的某个分析表达式是错误的。研究者们提出了一个新的KL散度估计方法，并通过实验证明其有效性。
+    本论文研究了在时变线性干扰信道上基于因子图的盲信道估计和联合符号检测方法。通过使用置信传播算法和期望最大化算法相互交织的迭代，可以降低复杂度并提高性能。通过引入数据驱动的方法，算法在离线训练样本数量较少的情况下也能取得显著的性能提升。
 
     
 
-    一个简单有效的生成模型对齐方法是最佳n对齐策略，该策略从一个基本策略中抽取n个样本，并根据奖励函数对它们进行排序，选择排名最高的样本。文献中常用的分析表达式声称最佳n对齐策略与基本策略之间的KL散度等于$\log (n) (n-1)/n$。我们证明了该论断的不正确性，并展示了它只是实际KL散度的一个上界。我们还研究了在不同情况下该上界的紧致性。最后，我们提出了一种新的KL散度估计方法，并通过几个例子的实验证明它能提供一个紧致的近似。
+    我们研究了在时变线性干扰信道上盲联合信道估计和符号检测的因子图框架的应用。具体来说，我们考虑了最大似然估计的期望最大化（EM）算法，该算法通常由于需要在每次迭代中计算逐符号后验分布而导致计算复杂度高。我们通过在适当的因子图上使用置信传播（BP）算法来有效地逼近后验分布，从而解决了这个问题。通过交织BP和EM的迭代，检测复杂度进一步减少到每个EM步骤只需要一次BP迭代。此外，我们提出了我们算法的数据驱动版本，它引入了BP更新的动量，并学习了适当的EM参数更新计划，从而在仅有少量离线训练样本的情况下显著改善了性能-复杂度权衡。我们的数值实验证明了其出色的性能。
 
-    A simple and effective method for the alignment of generative models is the best-of-$n$ policy, where $n$ samples are drawn from a base policy, and ranked based on a reward function, and the highest ranking one is selected. A commonly used analytical expression in the literature claims that the KL divergence between the best-of-$n$ policy and the base policy is equal to $\log (n) (n-1)/n.$ We disprove the validity of this claim, and show that it is an upper bound on the actual KL divergence. We also explore the tightness of this upper bound in different regimes. Finally, we propose a new estimator for the KL divergence and empirically show that it provides a tight approximation through a few examples.
+    We investigate the application of the factor graph framework for blind joint channel estimation and symbol detection on time-variant linear inter-symbol interference channels. In particular, we consider the expectation maximization (EM) algorithm for maximum likelihood estimation, which typically suffers from high complexity as it requires the computation of the symbol-wise posterior distributions in every iteration. We address this issue by efficiently approximating the posteriors using the belief propagation (BP) algorithm on a suitable factor graph. By interweaving the iterations of BP and EM, the detection complexity can be further reduced to a single BP iteration per EM step. In addition, we propose a data-driven version of our algorithm that introduces momentum in the BP updates and learns a suitable EM parameter update schedule, thereby significantly improving the performance-complexity tradeoff with a few offline training samples. Our numerical experiments demonstrate the excel
     
 
