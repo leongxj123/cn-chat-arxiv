@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Quantum-noise-limited optical neural networks operating at a few quanta per activation.](http://arxiv.org/abs/2307.15712) | 本文研究了在极低功率下操作的光学神经网络，其中一些层只使用一个光子来引发神经元激活。尽管存在极高的噪声，仍可以训练这些网络以高精度执行确定性图像分类任务。 |
+| [^1] | [IDENAS: Internal Dependency Exploration for Neural Architecture Search.](http://arxiv.org/abs/2310.17250) | IDENAS是一种集成神经架构搜索和特征选择的方法，通过探索内部依赖性来提高分类任务的性能。 |
 
 # 详细
 
-[^1]: 少量子激活下量子噪声受限的光学神经网络
+[^1]: IDENAS: 内部依赖性探索用于神经架构搜索
 
-    Quantum-noise-limited optical neural networks operating at a few quanta per activation. (arXiv:2307.15712v1 [physics.optics])
+    IDENAS: Internal Dependency Exploration for Neural Architecture Search. (arXiv:2310.17250v1 [cs.LG])
 
-    [http://arxiv.org/abs/2307.15712](http://arxiv.org/abs/2307.15712)
+    [http://arxiv.org/abs/2310.17250](http://arxiv.org/abs/2310.17250)
 
-    本文研究了在极低功率下操作的光学神经网络，其中一些层只使用一个光子来引发神经元激活。尽管存在极高的噪声，仍可以训练这些网络以高精度执行确定性图像分类任务。
+    IDENAS是一种集成神经架构搜索和特征选择的方法，通过探索内部依赖性来提高分类任务的性能。
 
     
 
-    模拟物理神经网络被通常在相对高功率下操作，以保证信噪比大于10。本文研究了在极低功率下操作模拟系统时会发生什么，即系统行为变得高度随机且噪声不再是信号的小扰动。我们在光学神经网络中研究了这个问题，其中一些层只使用一个光子来引发神经元激活。在这种极低功率下，神经元激活受到量子噪声的主导，这是由于单光子检测弱光信号的基本概率性质。我们表明，尽管噪声极大（信噪比约为1），仍然可以训练随机光学神经网络以高精度执行确定性图像分类任务。
+    机器学习是从不同数据集中提取有价值信息和进行各种预测的强大工具。传统算法依赖于明确定义的输入和输出变量，然而，在某些情况下，输入和输出变量之间的区别以及模型的底层关联（输入和输出）层是未知的。神经架构搜索（NAS）和特征选择已成为这些场景中的有希望的解决方案。该研究提出了IDENAS，一种基于内部依赖性的神经架构搜索方法，将NAS与特征选择相结合。该方法在涉及1D传感器和2D图像数据的分类问题中探索了完整的参数空间的内部依赖性。IDENAS采用了修改的编码器-解码器模型和顺序前向搜索（SFS）算法，将输入-输出配置搜索与嵌入式特征选择相结合。实验结果证明了IDENAS的优越性能。
 
-    Analog physical neural networks, which hold promise for improved energy efficiency and speed compared to digital electronic neural networks, are nevertheless typically operated in a relatively high-power regime so that the signal-to-noise ratio (SNR) is large (>10). What happens if an analog system is instead operated in an ultra-low-power regime, in which the behavior of the system becomes highly stochastic and the noise is no longer a small perturbation on the signal? In this paper, we study this question in the setting of optical neural networks operated in the limit where some layers use only a single photon to cause a neuron activation. Neuron activations in this limit are dominated by quantum noise from the fundamentally probabilistic nature of single-photon detection of weak optical signals. We show that it is possible to train stochastic optical neural networks to perform deterministic image-classification tasks with high accuracy in spite of the extremely high noise (SNR ~ 1) 
+    Machine learning is a powerful tool for extracting valuable information and making various predictions from diverse datasets. Traditional algorithms rely on well-defined input and output variables however, there are scenarios where the distinction between the input and output variables and the underlying, associated (input and output) layers of the model, are unknown. Neural Architecture Search (NAS) and Feature Selection have emerged as promising solutions in such scenarios. This research proposes IDENAS, an Internal Dependency-based Exploration for Neural Architecture Search, integrating NAS with feature selection. The methodology explores internal dependencies in the complete parameter space for classification involving 1D sensor and 2D image data as well. IDENAS employs a modified encoder-decoder model and the Sequential Forward Search (SFS) algorithm, combining input-output configuration search with embedded feature selection. Experimental results demonstrate IDENASs superior perf
     
 
