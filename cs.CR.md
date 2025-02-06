@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [UFID: A Unified Framework for Input-level Backdoor Detection on Diffusion Models](https://arxiv.org/abs/2404.01101) | 扩散模型容易受到后门攻击，本文提出了一个统一的框架用于输入级后门检测，弥补了该领域的空白，并不需要访问模型的白盒信息。 |
+| [^1] | [Certifying LLM Safety against Adversarial Prompting.](http://arxiv.org/abs/2309.02705) | 本研究提出了首个具有可验证安全保证的框架——消除和检查，用于对抗敌对提示。通过逐个消除标记并使用安全过滤器检查生成的子序列，确保任何敌对修改的有害输入提示都能被正确标识为有害。 |
 
 # 详细
 
-[^1]: UFID: 一个统一的框架用于扩散模型上的输入级后门检测
+[^1]: 证明LLM对抗敌对提示的安全性
 
-    UFID: A Unified Framework for Input-level Backdoor Detection on Diffusion Models
+    Certifying LLM Safety against Adversarial Prompting. (arXiv:2309.02705v1 [cs.CL])
 
-    [https://arxiv.org/abs/2404.01101](https://arxiv.org/abs/2404.01101)
+    [http://arxiv.org/abs/2309.02705](http://arxiv.org/abs/2309.02705)
 
-    扩散模型容易受到后门攻击，本文提出了一个统一的框架用于输入级后门检测，弥补了该领域的空白，并不需要访问模型的白盒信息。
+    本研究提出了首个具有可验证安全保证的框架——消除和检查，用于对抗敌对提示。通过逐个消除标记并使用安全过滤器检查生成的子序列，确保任何敌对修改的有害输入提示都能被正确标识为有害。
 
     
 
-    扩散模型容易受到后门攻击，即恶意攻击者在训练阶段通过对部分训练样本进行毒化来注入后门。为了减轻后门攻击的威胁，对后门检测进行了大量研究。然而，没有人为扩散模型设计了专门的后门检测方法，使得这一领域较少被探索。此外，大多数先前的方法主要集中在传统神经网络的分类任务上，很难轻松地将其适应生成任务上的后门检测。此外，大多数先前的方法需要访问模型权重和架构的白盒访问，或概率logits作为额外信息，这并不总是切实可行的。在本文中
+    为了确保语言模型的输出安全，公开使用的大型语言模型（LLM）引入了所谓的“模型对齐”防护措施。一个对齐的语言模型应该拒绝用户的请求生成有害内容。然而，这种安全措施容易受到敌对提示的攻击，敌对提示包含恶意设计的标记序列，以规避模型的安全防护并导致生成有害内容。在这项工作中，我们介绍了可验证安全保证的第一个对抗敌对提示的框架——消除和检查。我们逐个消除标记，并使用安全过滤器检查生成的子序列。如果安全过滤器检测到任何子序列或输入提示有害，我们的过程将将输入提示标记为有害。这保证了对于某个特定大小的有害输入提示的任何敌对修改也将被标记为有害。我们对抗三种攻击模式：i)敌对后缀，即附加敌对序列…
 
-    arXiv:2404.01101v1 Announce Type: cross  Abstract: Diffusion Models are vulnerable to backdoor attacks, where malicious attackers inject backdoors by poisoning some parts of the training samples during the training stage. This poses a serious threat to the downstream users, who query the diffusion models through the API or directly download them from the internet. To mitigate the threat of backdoor attacks, there have been a plethora of investigations on backdoor detections. However, none of them designed a specialized backdoor detection method for diffusion models, rendering the area much under-explored. Moreover, these prior methods mainly focus on the traditional neural networks in the classification task, which cannot be adapted to the backdoor detections on the generative task easily. Additionally, most of the prior methods require white-box access to model weights and architectures, or the probability logits as additional information, which are not always practical. In this paper
+    Large language models (LLMs) released for public use incorporate guardrails to ensure their output is safe, often referred to as "model alignment." An aligned language model should decline a user's request to produce harmful content. However, such safety measures are vulnerable to adversarial prompts, which contain maliciously designed token sequences to circumvent the model's safety guards and cause it to produce harmful content. In this work, we introduce erase-and-check, the first framework to defend against adversarial prompts with verifiable safety guarantees. We erase tokens individually and inspect the resulting subsequences using a safety filter. Our procedure labels the input prompt as harmful if any subsequences or the input prompt are detected as harmful by the filter. This guarantees that any adversarial modification of a harmful prompt up to a certain size is also labeled harmful. We defend against three attack modes: i) adversarial suffix, which appends an adversarial seq
     
 
