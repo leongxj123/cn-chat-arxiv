@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Auctions with Dynamic Scoring](https://arxiv.org/abs/2403.11022) | 研究拍卖设计中市场厚度和信息之间的权衡，特别关注一价和二价拍卖。 |
+| [^1] | [Performative Prediction with Neural Networks.](http://arxiv.org/abs/2304.06879) | 本文提出了执行预测的框架，通过找到具有执行稳定性的分类器来适用于数据分布。通过假设数据分布相对于模型的预测值可Lipschitz连续，使得我们能够放宽对损失函数的假设要求。 |
 
 # 详细
 
-[^1]: 具有动态评分的拍卖
+[^1]: 神经网络下的执行预测
 
-    Auctions with Dynamic Scoring
+    Performative Prediction with Neural Networks. (arXiv:2304.06879v1 [cs.LG])
 
-    [https://arxiv.org/abs/2403.11022](https://arxiv.org/abs/2403.11022)
+    [http://arxiv.org/abs/2304.06879](http://arxiv.org/abs/2304.06879)
 
-    研究拍卖设计中市场厚度和信息之间的权衡，特别关注一价和二价拍卖。
+    本文提出了执行预测的框架，通过找到具有执行稳定性的分类器来适用于数据分布。通过假设数据分布相对于模型的预测值可Lipschitz连续，使得我们能够放宽对损失函数的假设要求。
 
     
 
-    我们研究了具有动态评分的拍卖设计，这些拍卖根据给定的评分规则分配单个物品。我们的动机来自在线广告拍卖，当用户在会话期间与平台互动时。平台根据投标和质量得分的组合对广告进行排名，并根据用户的在线活动在会话期间更新质量得分。平台必须决定何时在会话期间展示广告。通过推迟拍卖，拍卖者可以获取有关广告质量的信息，提高选择高质量广告的机会。然而，信息是有成本的，因为延迟会减少市场厚度，从而减少收入。拍卖者应该何时分配印象以平衡这些力量？我们开发了一个理论模型来研究市场设计对市场厚度和信息之间的权衡的影响。具体来说，我们关注一价和二价拍卖。
+    执行预测是一种学习模型并影响其预测数据的框架。本文旨在找到分类器，使其具有执行稳定性，即适用于其产生的数据分布的最佳分类器。在使用重复风险最小化方法找到具有执行稳定性的分类器的标准收敛结果中，假设数据分布对于模型参数是可Lipschitz连续的。在这种情况下，损失必须对这些参数强凸和平滑；否则，该方法将在某些问题上发散。然而本文则假设数据分布是相对于模型的预测值可Lipschitz连续的，这是执行系统的更加自然的假设。结果，我们能够显著放宽对损失函数的假设要求。作为一个说明，我们介绍了一种建模真实数据分布的重采样过程，并使用其来实证执行稳定性相对于其他目标的效益。
 
-    arXiv:2403.11022v1 Announce Type: new  Abstract: We study the design of auctions with dynamic scoring, which allocate a single item according to a given scoring rule. We are motivated by online advertising auctions when users interact with a platform over the course of a session. The platform ranks ads based on a combination of bids and quality scores, and updates the quality scores throughout the session based on the user's online activity. The platform must decide when to show an ad during the session. By delaying the auction, the auctioneer acquires information about an ad's quality, improving her chances of selecting a high quality ad. However information is costly, because delay reduces market thickness and in turn revenue. When should the auctioneer allocate the impression to balance these forces?   We develop a theoretical model to study the effect of market design on the trade-off between market thickness and information. In particular, we focus on first- and second-price aucti
+    Performative prediction is a framework for learning models that influence the data they intend to predict. We focus on finding classifiers that are performatively stable, i.e. optimal for the data distribution they induce. Standard convergence results for finding a performatively stable classifier with the method of repeated risk minimization assume that the data distribution is Lipschitz continuous to the model's parameters. Under this assumption, the loss must be strongly convex and smooth in these parameters; otherwise, the method will diverge for some problems. In this work, we instead assume that the data distribution is Lipschitz continuous with respect to the model's predictions, a more natural assumption for performative systems. As a result, we are able to significantly relax the assumptions on the loss function. In particular, we do not need to assume convexity with respect to the model's parameters. As an illustration, we introduce a resampling procedure that models realisti
     
 

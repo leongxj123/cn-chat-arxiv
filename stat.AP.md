@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Bayesian Approach to Online Learning for Contextual Restless Bandits with Applications to Public Health](https://arxiv.org/abs/2402.04933) | 基于贝叶斯方法的在线学习在公共卫生干预计划中的资源分配中具有重要的应用。我们提出了一种新颖的贝叶斯学习方法，结合了贝叶斯建模和汤普森抽样技术，能够灵活地处理上下文环境和非稳态的多臂赌博机问题，并且在预算有限的情况下能够快速学习未知的转移动态。实验证明，该方法实现了显著更高的收益率。 |
+| [^1] | [Quantitative knowledge retrieval from large language models](https://arxiv.org/abs/2402.07770) | 本文探讨了大型语言模型（LLMs）作为定量知识检索的可行性，以辅助数据分析任务。提出了一个提示工程框架，将LLMs作为科学文献潜在空间的接口。讨论了使用LLMs作为“专家”的影响和挑战。 |
 
 # 详细
 
-[^1]: 基于贝叶斯方法的在线学习在具有上下文环境的不安宁赌博机中的应用于公共卫生
+[^1]: 大型语言模型中的定量知识检索
 
-    A Bayesian Approach to Online Learning for Contextual Restless Bandits with Applications to Public Health
+    Quantitative knowledge retrieval from large language models
 
-    [https://arxiv.org/abs/2402.04933](https://arxiv.org/abs/2402.04933)
+    [https://arxiv.org/abs/2402.07770](https://arxiv.org/abs/2402.07770)
 
-    基于贝叶斯方法的在线学习在公共卫生干预计划中的资源分配中具有重要的应用。我们提出了一种新颖的贝叶斯学习方法，结合了贝叶斯建模和汤普森抽样技术，能够灵活地处理上下文环境和非稳态的多臂赌博机问题，并且在预算有限的情况下能够快速学习未知的转移动态。实验证明，该方法实现了显著更高的收益率。
+    本文探讨了大型语言模型（LLMs）作为定量知识检索的可行性，以辅助数据分析任务。提出了一个提示工程框架，将LLMs作为科学文献潜在空间的接口。讨论了使用LLMs作为“专家”的影响和挑战。
 
     
 
-    不安宁多臂赌博机（RMABs）用于建模公共卫生干预计划中的顺序资源分配。在这些情景中，潜在的转移动态通常是未知的，需要在线强化学习（RL）。然而，现有的RMAB在线RL方法无法整合到现实世界的公共卫生应用中常见的属性，如上下文信息和非稳态性。我们提出了基于贝叶斯模型和汤普森抽样的上下文RMAB的贝叶斯学习（BCoR），这是一种在线RL方法，可以灵活地模拟各种复杂的RMAB设置，如上下文和非稳态的RMAB。我们的方法的一个重要贡献是在预算有限的情况下能够充分利用内部和各个臂之间的共享信息，在相对短的时间范围内快速学习未知的RMAB转移动态。实证结果表明，BCoR在有限的时间内实现了显著更高的收益率。
+    大型语言模型（LLM）因其生成具有说服力的自然语言序列的能力而被广泛研究，但其作为定量信息检索的实用性尚不明确。本文探讨了将LLMs作为定量知识检索机制的可行性，以帮助数据分析任务，如贝叶斯模型的先验分布引导和缺失数据的填补。我们提出了一个提示工程框架，将LLMs视为科学文献潜在空间的接口，在不同上下文和领域中比较响应与更成熟的方法。讨论了使用LLMs作为“专家”的影响和挑战。
 
-    Restless multi-armed bandits (RMABs) are used to model sequential resource allocation in public health intervention programs. In these settings, the underlying transition dynamics are often unknown a priori, requiring online reinforcement learning (RL). However, existing methods in online RL for RMABs cannot incorporate properties often present in real-world public health applications, such as contextual information and non-stationarity. We present Bayesian Learning for Contextual RMABs (BCoR), an online RL approach for RMABs that novelly combines techniques in Bayesian modeling with Thompson sampling to flexibly model a wide range of complex RMAB settings, such as contextual and non-stationary RMABs. A key contribution of our approach is its ability to leverage shared information within and between arms to learn unknown RMAB transition dynamics quickly in budget-constrained settings with relatively short time horizons. Empirically, we show that BCoR achieves substantially higher finit
+    Large language models (LLMs) have been extensively studied for their abilities to generate convincing natural language sequences, however their utility for quantitative information retrieval is less well understood. In this paper we explore the feasibility of LLMs as a mechanism for quantitative knowledge retrieval to aid data analysis tasks such as elicitation of prior distributions for Bayesian models and imputation of missing data. We present a prompt engineering framework, treating an LLM as an interface to a latent space of scientific literature, comparing responses in different contexts and domains against more established approaches. Implications and challenges of using LLMs as 'experts' are discussed.
     
 
