@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [From Data Creator to Data Reuser: Distance Matters](https://arxiv.org/abs/2402.07926) | 这项研究提出了数据创建者和数据重用者之间距离的理论构建，并确定了影响有效传递知识能力的六个距离维度，为数据管理投资和改进数据交换过程提供指导。 |
-| [^2] | [The DSA Transparency Database: Auditing Self-reported Moderation Actions by Social Media.](http://arxiv.org/abs/2312.10269) | DSA透明数据库对欧盟八大社交媒体平台在前100天提交的审核行动数据进行了全面分析，揭示了这些平台在审核行动方面的部分遵循程度。 |
+| [^1] | [Design2Code: How Far Are We From Automating Front-End Engineering?](https://arxiv.org/abs/2403.03163) | 生成式人工智能在多模态理解和代码生成方面取得了突破，提出了Design2Code任务并进行了全面基准测试，展示了多模态LLMs直接将视觉设计转换为代码实现的能力。 |
+| [^2] | [Language-based Valence and Arousal Expressions between the United States and China: a Cross-Cultural Examination.](http://arxiv.org/abs/2401.05254) | 本文从跨文化的角度研究了美国和中国社交媒体上的情感表达之间的差异。研究发现，与美国Twitter用户相比，中国新浪微博用户在情感强度的变化和激动程度上有更明显的差异。 |
 
 # 详细
 
-[^1]: 从数据创建者到数据重用者：距离的重要性
+[^1]: Design2Code：我们离自动化前端工程有多远？
 
-    From Data Creator to Data Reuser: Distance Matters
+    Design2Code: How Far Are We From Automating Front-End Engineering?
 
-    [https://arxiv.org/abs/2402.07926](https://arxiv.org/abs/2402.07926)
+    [https://arxiv.org/abs/2403.03163](https://arxiv.org/abs/2403.03163)
 
-    这项研究提出了数据创建者和数据重用者之间距离的理论构建，并确定了影响有效传递知识能力的六个距离维度，为数据管理投资和改进数据交换过程提供指导。
-
-    
-
-    共享研究数据是复杂、劳动密集、昂贵的，需要多个利益相关者的基础设施投资。开放科学政策侧重于数据发布而不是数据重用，然而重用也是困难、昂贵的，可能永远不会发生。通过考虑谁可能重用数据，如何重用数据，为何重用数据，以及何时重用数据等因素，可以更明智地进行数据管理投资。数据创造者无法预见所有可能的重用或重用者；我们的目标是确定可能有助于利益相关者决定如何投资研究数据，如何确定潜在的重用和重用者，以及如何改进数据交换过程的因素。基于数据共享和重用的实证研究，我们开发了数据创建者和数据重用者之间距离的理论构建，并确定了影响有效传递知识能力的六个距离维度：领域、方法、合作、策划、目的和时间性。这些维度主要是
-
-    Sharing research data is complex, labor-intensive, expensive, and requires infrastructure investments by multiple stakeholders. Open science policies focus on data release rather than on data reuse, yet reuse is also difficult, expensive, and may never occur. Investments in data management could be made more wisely by considering who might reuse data, how, why, for what purposes, and when. Data creators cannot anticipate all possible reuses or reusers; our goal is to identify factors that may aid stakeholders in deciding how to invest in research data, how to identify potential reuses and reusers, and how to improve data exchange processes. Drawing upon empirical studies of data sharing and reuse, we develop the theoretical construct of distance between data creator and data reuser, identifying six distance dimensions that influence the ability to transfer knowledge effectively: domain, methods, collaboration, curation, purposes, and time and temporality. These dimensions are primarily
-    
-[^2]: DSA透明数据库：社交媒体自我报告的审核行动
-
-    The DSA Transparency Database: Auditing Self-reported Moderation Actions by Social Media. (arXiv:2312.10269v2 [cs.SI] UPDATED)
-
-    [http://arxiv.org/abs/2312.10269](http://arxiv.org/abs/2312.10269)
-
-    DSA透明数据库对欧盟八大社交媒体平台在前100天提交的审核行动数据进行了全面分析，揭示了这些平台在审核行动方面的部分遵循程度。
+    生成式人工智能在多模态理解和代码生成方面取得了突破，提出了Design2Code任务并进行了全面基准测试，展示了多模态LLMs直接将视觉设计转换为代码实现的能力。
 
     
 
-    从2023年9月开始，数字服务法案(DSA)要求大型在线平台向DSA透明数据库提交关于他们在欧盟内采取的每个审核行动的详细数据。从一开始，这个集中式数据库就引起了学术界的兴趣，因为它是现实世界在线审核数据的一个前所未有的、可能是独特的宝库。在这里，我们深入分析了欧盟八个最大社交媒体平台在数据库的前100天提交的所有3.53亿条记录。具体而言，我们对平台之间进行了比较研究，包括：审核行动的数量、决策依据、应用的限制类型、审核内容类型、审核行动的及时性和提交情况，以及使用的自动化程度。此外，我们系统地与平台自己的透明报告进行了内容交叉检查。我们的分析揭示了以下结果。(i)平台只在一定程度上遵循了审核行动的哲学和方法论。
+    近年来，生成式人工智能在多模态理解和代码生成方面取得了突飞猛进的进展，实现了前所未有的能力。这可以实现一种新的前端开发范式，其中多模态LLMs可能直接将视觉设计转换为代码实现。本文将这一过程形式化为Design2Code任务，并进行全面基准测试。我们手动策划了一个包含484个多样化真实网页的基准测试用例，并开发了一套自动评估指标，以评估当前多模态LLMs能否生成直接渲染为给定参考网页的代码实现，以输入为屏幕截图。我们还结合了全面的人工评估。我们开发了一套多模态提示方法，并展示了它们在GPT-4V和Gemini Pro Vision上的有效性。我们进一步对一个开源的Design2Code-18B模型进行了微调。
 
-    Since September 2023, the Digital Services Act (DSA) obliges large online platforms to submit detailed data on each moderation action they take within the European Union (EU) to the DSA Transparency Database. From its inception, this centralized database has sparked scholarly interest as an unprecedented and potentially unique trove of data on real-world online moderation. Here, we thoroughly analyze all 353.12M records submitted by the eight largest social media platforms in the EU during the first 100 days of the database. Specifically, we conduct a platform-wise comparative study of their: volume of moderation actions, grounds for decision, types of applied restrictions, types of moderated content, timeliness in undertaking and submitting moderation actions, and use of automation. Furthermore, we systematically cross-check the contents of the database with the platforms' own transparency reports. Our analyses reveal that (i) the platforms adhered only in part to the philosophy and s
+    arXiv:2403.03163v1 Announce Type: new  Abstract: Generative AI has made rapid advancements in recent years, achieving unprecedented capabilities in multimodal understanding and code generation. This can enable a new paradigm of front-end development, in which multimodal LLMs might directly convert visual designs into code implementations. In this work, we formalize this as a Design2Code task and conduct comprehensive benchmarking. Specifically, we manually curate a benchmark of 484 diverse real-world webpages as test cases and develop a set of automatic evaluation metrics to assess how well current multimodal LLMs can generate the code implementations that directly render into the given reference webpages, given the screenshots as input. We also complement automatic metrics with comprehensive human evaluations. We develop a suite of multimodal prompting methods and show their effectiveness on GPT-4V and Gemini Pro Vision. We further finetune an open-source Design2Code-18B model that su
+    
+[^2]: 中美两国之间基于语言的情绪表达的价值和激动对比：一个跨文化的研究
+
+    Language-based Valence and Arousal Expressions between the United States and China: a Cross-Cultural Examination. (arXiv:2401.05254v1 [cs.CY])
+
+    [http://arxiv.org/abs/2401.05254](http://arxiv.org/abs/2401.05254)
+
+    本文从跨文化的角度研究了美国和中国社交媒体上的情感表达之间的差异。研究发现，与美国Twitter用户相比，中国新浪微博用户在情感强度的变化和激动程度上有更明显的差异。
+
+    
+
+    尽管社交媒体上个体的情感表达已经得到了广泛研究，但研究主要集中在西方环境中。不同文化之间存在着引发情感表达的重要差异。本文研究了美国Twitter和中国新浪微博上的两个主要情感维度（价值和激动）之间的差异。我们研究了美国和中国个体之间的激动和价值之间的功能关系差异，并探讨了相关内容上的差异。此外，我们还对两个平台上的词语使用和话题进行了相关性分析，以解读它们之间的差异。我们观察到，对于Twitter用户来说，负面情绪和正面情绪之间的情感强度变化不太明显，而对于新浪微博用户来说，伴随着情感的上升，激动程度有更明显的升级。从语言特征中，我们发现情感表达方面的差异。
+
+    Although affective expressions of individuals have been extensively studied using social media, research has primarily focused on the Western context. There are substantial differences among cultures that contribute to their affective expressions. This paper examines the differences between Twitter (X) in the United States and Sina Weibo posts in China on two primary dimensions of affect - valence and arousal. We study the difference in the functional relationship between arousal and valence (so-called V-shaped) among individuals in the US and China and explore the associated content differences. Furthermore, we correlate word usage and topics in both platforms to interpret their differences. We observe that for Twitter users, the variation in emotional intensity is less distinct between negative and positive emotions compared to Weibo users, and there is a sharper escalation in arousal corresponding with heightened emotions. From language features, we discover that affective expressio
     
 
