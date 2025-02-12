@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [On Independent Samples Along the Langevin Diffusion and the Unadjusted Langevin Algorithm](https://arxiv.org/abs/2402.17067) | 在该论文中，我们研究了朗之凡扩散和未调整朗之凡算法中随机变量独立化速率的收敛性，证明了在目标函数强对数凹和平滑的情况下，互信息会以指数速率收敛于$0$。 |
-| [^2] | [Understanding Generalization in the Interpolation Regime using the Rate Function.](http://arxiv.org/abs/2306.10947) | 本文利用大偏差理论，提出一种基于函数的平滑模型特征描述方法，解释了为什么一些插值器有很好的泛化能力以及现代学习技术为什么能够找到它们。 |
+| [^1] | [Symmetric Bernoulli distributions and minimal dependence copulas.](http://arxiv.org/abs/2309.17346) | 本文研究了满足凸序最小要求的随机向量的联合分布，发现了它们的强负相关性；并在研究中发现了一类最小相关性联合概率密度函数。 |
+| [^2] | [The Isotonic Mechanism for Exponential Family Estimation.](http://arxiv.org/abs/2304.11160) | 本文利用扩展的保序机制，将其应用于指数族分布以提高同行评审的质量，并发现作者的同行评分可以较准确地在不需要知道具体分布情况下进行调整。 |
 
 # 详细
 
-[^1]: 关于朗之凡扩散和未调整朗之凡算法中独立样本的研究
+[^1]: 对称伯努利分布和最小相关性联合概率密度函数
 
-    On Independent Samples Along the Langevin Diffusion and the Unadjusted Langevin Algorithm
+    Symmetric Bernoulli distributions and minimal dependence copulas. (arXiv:2309.17346v1 [math.ST])
 
-    [https://arxiv.org/abs/2402.17067](https://arxiv.org/abs/2402.17067)
+    [http://arxiv.org/abs/2309.17346](http://arxiv.org/abs/2309.17346)
 
-    在该论文中，我们研究了朗之凡扩散和未调整朗之凡算法中随机变量独立化速率的收敛性，证明了在目标函数强对数凹和平滑的情况下，互信息会以指数速率收敛于$0$。
-
-    
-
-    我们研究了马尔可夫链中初始和当前随机变量独立化的速率，重点关注连续时间中的朗之凡扩散和离散时间中的未调整朗之凡算法（ULA）。我们通过它们的互信息度量随机变量之间的依赖关系。对于朗之凡扩散，我们展示了当目标函数强对数凹时，互信息以指数速率收敛于$0$，当目标函数弱对数凹时，以多项式速率收敛。这些速率类似于在类似条件下朗之凡扩散的混合时间。对于ULA，我们展示了当目标函数强对数凹且光滑时，互信息以指数速率收敛于$0$。我们通过发展这些马尔可夫链的互信息版本的混合时间分析来证明我们的结果。我们还提供了基于朗之凡扩散的强数据处理不等式的替代证明。
-
-    arXiv:2402.17067v1 Announce Type: cross  Abstract: We study the rate at which the initial and current random variables become independent along a Markov chain, focusing on the Langevin diffusion in continuous time and the Unadjusted Langevin Algorithm (ULA) in discrete time. We measure the dependence between random variables via their mutual information. For the Langevin diffusion, we show the mutual information converges to $0$ exponentially fast when the target is strongly log-concave, and at a polynomial rate when the target is weakly log-concave. These rates are analogous to the mixing time of the Langevin diffusion under similar assumptions. For the ULA, we show the mutual information converges to $0$ exponentially fast when the target is strongly log-concave and smooth. We prove our results by developing the mutual version of the mixing time analyses of these Markov chains. We also provide alternative proofs based on strong data processing inequalities for the Langevin diffusion 
-    
-[^2]: 使用速率函数理解插值区间的泛化
-
-    Understanding Generalization in the Interpolation Regime using the Rate Function. (arXiv:2306.10947v1 [cs.LG])
-
-    [http://arxiv.org/abs/2306.10947](http://arxiv.org/abs/2306.10947)
-
-    本文利用大偏差理论，提出一种基于函数的平滑模型特征描述方法，解释了为什么一些插值器有很好的泛化能力以及现代学习技术为什么能够找到它们。
+    本文研究了满足凸序最小要求的随机向量的联合分布，发现了它们的强负相关性；并在研究中发现了一类最小相关性联合概率密度函数。
 
     
 
-    本文基于大偏差理论的基本原理，提出了一种模型平滑度的新特征描述方法。与以往的工作不同，以往的工作通常用实数值（如权重范数）来表征模型的平滑度，我们表明可以用简单的实值函数来描述平滑度。基于模型平滑度的这一概念，我们提出了一个统一的理论解释，为什么一些插值器表现出非常好的泛化能力，以及为什么广泛使用的现代学习技术（如随机梯度下降，$\ell_2$-规范化，数据增强，不变的架构和超参数化）能够找到它们。我们得出的结论是，所有这些方法都提供了互补的过程，这些过程使优化器偏向于更平滑的插值器，而根据这种理论分析，更平滑的插值器是具有更好的泛化误差的插值器。
+    本文的主要结果是找到满足凸序最小要求的随机向量的所有联合分布。这些最小凸序和分布已知具有强负相关性。除了其本身的兴趣，这些结果还使我们能够在联合概率密度函数的类别中研究负相关性。实际上，可以从多元对称伯努利分布构建两类联合概率密度函数：极值混合联合概率密度函数和FGM联合概率密度函数。我们研究了与最小凸和伯努利向量对应的联合概率密度函数的极值负相关性结构，并明确找到了一类最小相关性联合概率密度函数。这些主要结果来自于多元对称伯努利分布的几何和代数表示，它们有效地编码了它们的多个统计特性。
 
-    In this paper, we present a novel characterization of the smoothness of a model based on basic principles of Large Deviation Theory. In contrast to prior work, where the smoothness of a model is normally characterized by a real value (e.g., the weights' norm), we show that smoothness can be described by a simple real-valued function. Based on this concept of smoothness, we propose an unifying theoretical explanation of why some interpolators generalize remarkably well and why a wide range of modern learning techniques (i.e., stochastic gradient descent, $\ell_2$-norm regularization, data augmentation, invariant architectures, and overparameterization) are able to find them. The emergent conclusion is that all these methods provide complimentary procedures that bias the optimizer to smoother interpolators, which, according to this theoretical analysis, are the ones with better generalization error.
+    The key result of this paper is to find all the joint distributions of random vectors whose sums $S=X_1+\ldots+X_d$ are minimal in convex order in the class of symmetric Bernoulli distributions. The minimal convex sums distributions are known to be strongly negatively dependent. Beyond their interest per se, these results enable us to explore negative dependence within the class of copulas. In fact, there are two classes of copulas that can be built from multivariate symmetric Bernoulli distributions: the extremal mixture copulas, and the FGM copulas. We study the extremal negative dependence structure of the copulas corresponding to symmetric Bernoulli vectors with minimal convex sums and we explicitly find a class of minimal dependence copulas. Our main results stem from the geometric and algebraic representations of multivariate symmetric Bernoulli distributions, which effectively encode several of their statistical properties.
+    
+[^2]: 利用保序机制提高机器学习和人工智能会议的同行评审
+
+    The Isotonic Mechanism for Exponential Family Estimation. (arXiv:2304.11160v1 [math.ST])
+
+    [http://arxiv.org/abs/2304.11160](http://arxiv.org/abs/2304.11160)
+
+    本文利用扩展的保序机制，将其应用于指数族分布以提高同行评审的质量，并发现作者的同行评分可以较准确地在不需要知道具体分布情况下进行调整。
+
+    
+
+    本文致力于扩展保序机制，将其应用于指数族分布以提高同行评审的质量。该机制可生成与原始评分接近的调整分数，并符合作者指定的排名要求，得到广泛的指数族分布应用，而且不需要知道具体的分布形式。研究表明，在一定的指数族分布下，如果作者的效用函数采用简单的凸可加函数，则激励作者提供准确的排名建议。
+
+    In 2023, the International Conference on Machine Learning (ICML) required authors with multiple submissions to rank their submissions based on perceived quality. In this paper, we aim to employ these author-specified rankings to enhance peer review in machine learning and artificial intelligence conferences by extending the Isotonic Mechanism (Su, 2021, 2022) to exponential family distributions. This mechanism generates adjusted scores closely align with the original scores while adhering to author-specified rankings. Despite its applicability to a broad spectrum of exponential family distributions, this mechanism's implementation does not necessitate knowledge of the specific distribution form. We demonstrate that an author is incentivized to provide accurate rankings when her utility takes the form of a convex additive function of the adjusted review scores. For a certain subclass of exponential family distributions, we prove that the author reports truthfully only if the question in
     
 
