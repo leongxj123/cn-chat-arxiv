@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Faster Convergence with Less Communication: Broadcast-Based Subgraph Sampling for Decentralized Learning over Wireless Networks.](http://arxiv.org/abs/2401.13779) | 本文提出了一种名为BASS的基于广播的子图采样方法，用于加速去中心化学习算法的收敛速度，并减少通信成本。 |
-| [^2] | [Communication-Efficient Federated Optimization over Semi-Decentralized Networks.](http://arxiv.org/abs/2311.18787) | 本文提出了一种基于半分散网络的通信高效算法PISCO, 通过概率性的代理间和代理与服务器之间的通信，实现了通信效率与收敛速度的折衷。 |
+| [^1] | [Solution Simplex Clustering for Heterogeneous Federated Learning](https://arxiv.org/abs/2403.03333) | 提出了Solution Simplex Clustered Federated Learning（SosicFL），通过学习解决方案单纯形的思想，为每个客户端分配单一区域，从而同时实现了学习本地和全局模型的目标。 |
 
 # 详细
 
-[^1]: 更快的收敛速度和更少的通信成本：用于无线网络的基于广播的子图采样的去中心化学习
+[^1]: Solution Simplex Clustering for Heterogeneous Federated Learning
 
-    Faster Convergence with Less Communication: Broadcast-Based Subgraph Sampling for Decentralized Learning over Wireless Networks. (arXiv:2401.13779v1 [cs.IT])
+    Solution Simplex Clustering for Heterogeneous Federated Learning
 
-    [http://arxiv.org/abs/2401.13779](http://arxiv.org/abs/2401.13779)
+    [https://arxiv.org/abs/2403.03333](https://arxiv.org/abs/2403.03333)
 
-    本文提出了一种名为BASS的基于广播的子图采样方法，用于加速去中心化学习算法的收敛速度，并减少通信成本。
-
-    
-
-    基于共识的去中心化随机梯度下降(D-SGD)是一种广泛采用的算法，用于网络代理之间的去中心化机器学习模型训练。D-SGD的一个关键部分是基于共识的模型平均，它严重依赖于节点之间的信息交换和融合。特别地，对于在无线网络上的共识平均，通信协调是必要的，以确定节点何时以及如何访问信道，并将信息传输（或接收）给（或从）邻居节点。在这项工作中，我们提出了一种名为BASS的基于广播的子图采样方法，旨在加快D-SGD的收敛速度，并考虑每轮迭代的实际通信成本。BASS创建一组混合矩阵候选项，表示基础拓扑的稀疏子图。在每个共识迭代中，将采样一个混合矩阵，从而产生一个特定的调度决策，激活多个无碰撞的节点子集。
-
-    Consensus-based decentralized stochastic gradient descent (D-SGD) is a widely adopted algorithm for decentralized training of machine learning models across networked agents. A crucial part of D-SGD is the consensus-based model averaging, which heavily relies on information exchange and fusion among the nodes. Specifically, for consensus averaging over wireless networks, communication coordination is necessary to determine when and how a node can access the channel and transmit (or receive) information to (or from) its neighbors. In this work, we propose $\texttt{BASS}$, a broadcast-based subgraph sampling method designed to accelerate the convergence of D-SGD while considering the actual communication cost per iteration. $\texttt{BASS}$ creates a set of mixing matrix candidates that represent sparser subgraphs of the base topology. In each consensus iteration, one mixing matrix is sampled, leading to a specific scheduling decision that activates multiple collision-free subsets of node
-    
-[^2]: 通信高效的半分散网络联邦优化
-
-    Communication-Efficient Federated Optimization over Semi-Decentralized Networks. (arXiv:2311.18787v2 [cs.LG] UPDATED)
-
-    [http://arxiv.org/abs/2311.18787](http://arxiv.org/abs/2311.18787)
-
-    本文提出了一种基于半分散网络的通信高效算法PISCO, 通过概率性的代理间和代理与服务器之间的通信，实现了通信效率与收敛速度的折衷。
+    提出了Solution Simplex Clustered Federated Learning（SosicFL），通过学习解决方案单纯形的思想，为每个客户端分配单一区域，从而同时实现了学习本地和全局模型的目标。
 
     
 
-    在大规模的联邦和分散式学习中，通信效率是最具挑战性的瓶颈之一。本文提出了一种半分散通信协议下的通信高效算法PISCO，通过概率性的代理间和代理与服务器之间的通信，实现了通信效率与收敛速度的折衷。PISCO算法通过梯度追踪和多个本地更新保证了对数据异质性的鲁棒性。我们证明了PISCO算法在非凸问题上的收敛速度，并展示了在数量方面，PISCO算法具有线性加速的优势。
+    我们针对联邦学习（FL）中的一个主要挑战提出了解决方案，即在高度异构的客户分布下实现良好的性能。这种困难部分源于两个看似矛盾的目标：通过聚合来自客户端的信息来学习一个通用模型，以及学习应适应每个本地分布的本地个性化模型。在这项工作中，我们提出了Solution Simplex Clustered Federated Learning（SosicFL）来消除这种矛盾。基于学习解决方案单纯形的最新思想，SosicFL为每个客户端分配一个单纯形中的子区域，并执行FL来学习一个通用解决方案单纯形。这使得客户端模型在解决方案单纯形的自由度范围内具有其特征，同时实现了学习一个全局通用模型的目标。我们的实验证明，SosicFL改善了性能，并加速了全局和训练过程。
 
-    In large-scale federated and decentralized learning, communication efficiency is one of the most challenging bottlenecks. While gossip communication -- where agents can exchange information with their connected neighbors -- is more cost-effective than communicating with the remote server, it often requires a greater number of communication rounds, especially for large and sparse networks. To tackle the trade-off, we examine the communication efficiency under a semi-decentralized communication protocol, in which agents can perform both agent-to-agent and agent-to-server communication in a probabilistic manner. We design a tailored communication-efficient algorithm over semi-decentralized networks, referred to as PISCO, which inherits the robustness to data heterogeneity thanks to gradient tracking and allows multiple local updates for saving communication. We establish the convergence rate of PISCO for nonconvex problems and show that PISCO enjoys a linear speedup in terms of the number
+    arXiv:2403.03333v1 Announce Type: new  Abstract: We tackle a major challenge in federated learning (FL) -- achieving good performance under highly heterogeneous client distributions. The difficulty partially arises from two seemingly contradictory goals: learning a common model by aggregating the information from clients, and learning local personalized models that should be adapted to each local distribution. In this work, we propose Solution Simplex Clustered Federated Learning (SosicFL) for dissolving such contradiction. Based on the recent ideas of learning solution simplices, SosicFL assigns a subregion in a simplex to each client, and performs FL to learn a common solution simplex. This allows the client models to possess their characteristics within the degrees of freedom in the solution simplex, and at the same time achieves the goal of learning a global common model. Our experiments show that SosicFL improves the performance and accelerates the training process for global and 
     
 
