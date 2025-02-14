@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [The Journey to Trustworthy AI- Part 1: Pursuit of Pragmatic Frameworks](https://arxiv.org/abs/2403.15457) | 本文回顾了值得信赖的人工智能（TAI）和其各种定义，主张不应将“负责任的”或“道德的”人工智能等术语视为TAI的替代，而是提倡以公平性、偏见、风险、安全性、可解释性和可靠性等关键属性为中心的方法，认识到地缘政治和地理原因导致的人工智能监管差异对跨国公司构成挑战。 |
+| [^1] | [The Calibration Gap between Model and Human Confidence in Large Language Models.](http://arxiv.org/abs/2401.13835) | 该论文研究了大型语言模型在传达置信度方面模型和人类之间存在的差距，并发现默认解释会导致用户过高估计模型置信度和准确性。 |
 
 # 详细
 
-[^1]: 走向值得信赖的人工智能之旅-第一部分：追求务实框架
+[^1]: 语言模型中模型和人类置信度之间的校准差距
 
-    The Journey to Trustworthy AI- Part 1: Pursuit of Pragmatic Frameworks
+    The Calibration Gap between Model and Human Confidence in Large Language Models. (arXiv:2401.13835v1 [cs.LG])
 
-    [https://arxiv.org/abs/2403.15457](https://arxiv.org/abs/2403.15457)
+    [http://arxiv.org/abs/2401.13835](http://arxiv.org/abs/2401.13835)
 
-    本文回顾了值得信赖的人工智能（TAI）和其各种定义，主张不应将“负责任的”或“道德的”人工智能等术语视为TAI的替代，而是提倡以公平性、偏见、风险、安全性、可解释性和可靠性等关键属性为中心的方法，认识到地缘政治和地理原因导致的人工智能监管差异对跨国公司构成挑战。
+    该论文研究了大型语言模型在传达置信度方面模型和人类之间存在的差距，并发现默认解释会导致用户过高估计模型置信度和准确性。
 
     
 
-    本文回顾了值得信赖的人工智能（TAI）及其各种定义。考虑到任何社会中尊重的原则，TAI通常被一些属性所特征，其中一些属性已导致监管或工程背景下的混淆。我们反对使用诸如“负责任的”或“道德的”人工智能等术语来替代TAI。为了帮助澄清任何混乱，我们建议将它们抛在脑后。鉴于TAI固有的主观性和复杂性，开发一个通用框架被认为是不可行的。相反，我们主张采取以公平性、偏见、风险、安全性、可解释性和可靠性等关键属性为中心的方法。我们审视了正在进行的监管环境，重点关注欧盟、中国和美国的倡议。我们认识到，基于地缘政治和地理原因而不同的人工智能监管对跨国公司构成额外挑战。
+    为了使大型语言模型（LLM）能够获得人类的信任，它们需要在某种意义上实现良好的校准，即能够准确评估和传达它们的预测正确的可能性。最近的研究关注了LLM内部置信度评估的质量，但问题仍然是LLM能够如何将这种内部模型置信度传达给人类用户。本文探讨了人类对LLM响应的外部置信度与模型内部置信度之间的差距。通过涉及多项选择题的实验，我们系统地检查了人类用户识别LLM输出可信度的能力。我们的研究重点分为两个方面：（1）评估用户对真实LLM置信度的感知和（2）调查个性化解释对该感知的影响。研究结果显示，LLM的默认解释往往会导致用户过高估计模型的置信度和准确性。通过修改解释的方式可以减小这种误差。
 
-    arXiv:2403.15457v1 Announce Type: cross  Abstract: This paper reviews Trustworthy Artificial Intelligence (TAI) and its various definitions. Considering the principles respected in any society, TAI is often characterized by a few attributes, some of which have led to confusion in regulatory or engineering contexts. We argue against using terms such as Responsible or Ethical AI as substitutes for TAI. And to help clarify any confusion, we suggest leaving them behind. Given the subjectivity and complexity inherent in TAI, developing a universal framework is deemed infeasible. Instead, we advocate for approaches centered on addressing key attributes and properties such as fairness, bias, risk, security, explainability, and reliability. We examine the ongoing regulatory landscape, with a focus on initiatives in the EU, China, and the USA. We recognize that differences in AI regulations based on geopolitical and geographical reasons pose an additional challenge for multinational companies. 
+    For large language models (LLMs) to be trusted by humans they need to be well-calibrated in the sense that they can accurately assess and communicate how likely it is that their predictions are correct. Recent work has focused on the quality of internal LLM confidence assessments, but the question remains of how well LLMs can communicate this internal model confidence to human users. This paper explores the disparity between external human confidence in an LLM's responses and the internal confidence of the model. Through experiments involving multiple-choice questions, we systematically examine human users' ability to discern the reliability of LLM outputs. Our study focuses on two key areas: (1) assessing users' perception of true LLM confidence and (2) investigating the impact of tailored explanations on this perception. The research highlights that default explanations from LLMs often lead to user overestimation of both the model's confidence and its' accuracy. By modifying the expl
     
 

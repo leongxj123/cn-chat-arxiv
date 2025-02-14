@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Solution Simplex Clustering for Heterogeneous Federated Learning](https://arxiv.org/abs/2403.03333) | 提出了Solution Simplex Clustered Federated Learning（SosicFL），通过学习解决方案单纯形的思想，为每个客户端分配单一区域，从而同时实现了学习本地和全局模型的目标。 |
+| [^1] | [Rendering Wireless Environments Useful for Gradient Estimators: A Zero-Order Stochastic Federated Learning Method](https://arxiv.org/abs/2401.17460) | 提出了一种新颖的零阶随机联邦学习方法，通过利用无线通信通道的特性，在学习算法中考虑了无线通道，避免了资源的浪费和分析难度。 |
 
 # 详细
 
-[^1]: Solution Simplex Clustering for Heterogeneous Federated Learning
+[^1]: 使无线环境对梯度估计器有用：一种零阶随机联邦学习方法
 
-    Solution Simplex Clustering for Heterogeneous Federated Learning
+    Rendering Wireless Environments Useful for Gradient Estimators: A Zero-Order Stochastic Federated Learning Method
 
-    [https://arxiv.org/abs/2403.03333](https://arxiv.org/abs/2403.03333)
+    [https://arxiv.org/abs/2401.17460](https://arxiv.org/abs/2401.17460)
 
-    提出了Solution Simplex Clustered Federated Learning（SosicFL），通过学习解决方案单纯形的思想，为每个客户端分配单一区域，从而同时实现了学习本地和全局模型的目标。
+    提出了一种新颖的零阶随机联邦学习方法，通过利用无线通信通道的特性，在学习算法中考虑了无线通道，避免了资源的浪费和分析难度。
 
     
 
-    我们针对联邦学习（FL）中的一个主要挑战提出了解决方案，即在高度异构的客户分布下实现良好的性能。这种困难部分源于两个看似矛盾的目标：通过聚合来自客户端的信息来学习一个通用模型，以及学习应适应每个本地分布的本地个性化模型。在这项工作中，我们提出了Solution Simplex Clustered Federated Learning（SosicFL）来消除这种矛盾。基于学习解决方案单纯形的最新思想，SosicFL为每个客户端分配一个单纯形中的子区域，并执行FL来学习一个通用解决方案单纯形。这使得客户端模型在解决方案单纯形的自由度范围内具有其特征，同时实现了学习一个全局通用模型的目标。我们的实验证明，SosicFL改善了性能，并加速了全局和训练过程。
+    联邦学习（FL）是一种新颖的机器学习方法，允许多个边缘设备协同训练模型，而无需公开原始数据。然而，当设备和服务器通过无线信道通信时，该方法面临着通信和计算瓶颈。通过利用一个通信高效的框架，我们提出了一种新颖的零阶（ZO）方法，采用一点梯度估计器，利用无线通信通道的特性，而无需知道通道状态系数。这是第一种将无线通道包含在学习算法本身中的方法，而不是浪费资源来分析和消除其影响。这项工作的两个主要困难是，在FL中，目标函数通常不是凸的，这使得将FL扩展到ZO方法具有挑战性，以及包括影响的难度。
 
-    arXiv:2403.03333v1 Announce Type: new  Abstract: We tackle a major challenge in federated learning (FL) -- achieving good performance under highly heterogeneous client distributions. The difficulty partially arises from two seemingly contradictory goals: learning a common model by aggregating the information from clients, and learning local personalized models that should be adapted to each local distribution. In this work, we propose Solution Simplex Clustered Federated Learning (SosicFL) for dissolving such contradiction. Based on the recent ideas of learning solution simplices, SosicFL assigns a subregion in a simplex to each client, and performs FL to learn a common solution simplex. This allows the client models to possess their characteristics within the degrees of freedom in the solution simplex, and at the same time achieves the goal of learning a global common model. Our experiments show that SosicFL improves the performance and accelerates the training process for global and 
+    Federated learning (FL) is a novel approach to machine learning that allows multiple edge devices to collaboratively train a model without disclosing their raw data. However, several challenges hinder the practical implementation of this approach, especially when devices and the server communicate over wireless channels, as it suffers from communication and computation bottlenecks in this case. By utilizing a communication-efficient framework, we propose a novel zero-order (ZO) method with a one-point gradient estimator that harnesses the nature of the wireless communication channel without requiring the knowledge of the channel state coefficient. It is the first method that includes the wireless channel in the learning algorithm itself instead of wasting resources to analyze it and remove its impact. The two main difficulties of this work are that in FL, the objective function is usually not convex, which makes the extension of FL to ZO methods challenging, and that including the impa
     
 
