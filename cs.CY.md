@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Large language models can rate news outlet credibility.](http://arxiv.org/abs/2304.00228) | 本文评估了 ChatGPT 是否能够评估新闻机构的可信度，结果表明 ChatGPT 可以为不同语言和讽刺性资源的新闻机构提供评级及其背景说明，并且这些评级与人类专家的评级相关。LLMs可以成为事实检查应用程序中可信度评级的经济参考。 |
+| [^1] | [ShaRP: Explaining Rankings with Shapley Values.](http://arxiv.org/abs/2401.16744) | ShaRP是一个基于Shapley值的框架，用于解释排名结果中各个特征的贡献。即使使用线性评分函数，特征的权重也不一定对应其Shapley值的贡献，而是取决于特征分布和评分特征之间的局部相互作用。 |
 
 # 详细
 
-[^1]: 大型语言模型可评估新闻机构的可信度。
+[^1]: ShaRP：用Shapley值解释排名
 
-    Large language models can rate news outlet credibility. (arXiv:2304.00228v1 [cs.CL])
+    ShaRP: Explaining Rankings with Shapley Values. (arXiv:2401.16744v1 [cs.AI])
 
-    [http://arxiv.org/abs/2304.00228](http://arxiv.org/abs/2304.00228)
+    [http://arxiv.org/abs/2401.16744](http://arxiv.org/abs/2401.16744)
 
-    本文评估了 ChatGPT 是否能够评估新闻机构的可信度，结果表明 ChatGPT 可以为不同语言和讽刺性资源的新闻机构提供评级及其背景说明，并且这些评级与人类专家的评级相关。LLMs可以成为事实检查应用程序中可信度评级的经济参考。
+    ShaRP是一个基于Shapley值的框架，用于解释排名结果中各个特征的贡献。即使使用线性评分函数，特征的权重也不一定对应其Shapley值的贡献，而是取决于特征分布和评分特征之间的局部相互作用。
 
     
 
-    虽然大型语言模型（LLMs）在各种自然语言处理任务中表现出色，但它们容易产生幻象。现代最先进的聊天机器人，如新的 Bing，尝试通过直接从互联网收集信息来解决这个问题。在这种情况下，区分值得信赖的信息源对于向用户提供适当的准确性背景至关重要。本文评估了知名的LLM ChatGPT是否能够评估新闻机构的可信度。在适当的指导下，ChatGPT可以为不同语言和讽刺性资源的新闻机构提供评级及其背景说明。我们的结果表明，这些评级与人类专家的评级相关（Spearmam's $\rho=0.54, p<0.001$）。这些发现表明，LLMs可以成为事实检查应用程序中可信度评级的经济参考。未来的LLMs应增强它们的对齐性。
+    在招聘、大学招生和贷款等重要领域的算法决策常常是基于排名的。由于这些决策对个人、组织和人群的影响，有必要了解它们：了解决策是否遵守法律，帮助个人提高他们的排名，并设计更好的排名程序。本文提出了ShaRP（Shapley for Rankings and Preferences），这是一个基于Shapley值的框架，用于解释特征对排名结果不同方面的贡献。使用ShaRP，我们展示了即使算法排名器使用的评分函数是已知的且是线性的，每个特征的权重也不一定对应其Shapley值的贡献。贡献取决于特征的分布以及评分特征之间微妙的局部相互作用。ShaRP基于量化输入影响框架，并可以计算贡献。
 
-    Although large language models (LLMs) have shown exceptional performance in various natural language processing tasks, they are prone to hallucinations. State-of-the-art chatbots, such as the new Bing, attempt to mitigate this issue by gathering information directly from the internet to ground their answers. In this setting, the capacity to distinguish trustworthy sources is critical for providing appropriate accuracy contexts to users. Here we assess whether ChatGPT, a prominent LLM, can evaluate the credibility of news outlets. With appropriate instructions, ChatGPT can provide ratings for a diverse set of news outlets, including those in non-English languages and satirical sources, along with contextual explanations. Our results show that these ratings correlate with those from human experts (Spearmam's $\rho=0.54, p<0.001$). These findings suggest that LLMs could be an affordable reference for credibility ratings in fact-checking applications. Future LLMs should enhance their align
+    Algorithmic decisions in critical domains such as hiring, college admissions, and lending are often based on rankings. Because of the impact these decisions have on individuals, organizations, and population groups, there is a need to understand them: to know whether the decisions are abiding by the law, to help individuals improve their rankings, and to design better ranking procedures.  In this paper, we present ShaRP (Shapley for Rankings and Preferences), a framework that explains the contributions of features to different aspects of a ranked outcome, and is based on Shapley values. Using ShaRP, we show that even when the scoring function used by an algorithmic ranker is known and linear, the weight of each feature does not correspond to its Shapley value contribution. The contributions instead depend on the feature distributions, and on the subtle local interactions between the scoring features. ShaRP builds on the Quantitative Input Influence framework, and can compute the contri
     
 
