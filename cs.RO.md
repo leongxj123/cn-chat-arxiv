@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [SWBT: Similarity Weighted Behavior Transformer with the Imperfect Demonstration for Robotic Manipulation.](http://arxiv.org/abs/2401.08957) | 本论文提出了一种新型框架SWBT，能够在机器人操作任务中有效地从专家演示和不完美演示中学习，而无需与环境进行交互。这是第一个将不完美演示整合到离线模仿学习设置中的机器人操作任务的研究。 |
+| [^1] | [Approximate Multiagent Reinforcement Learning for On-Demand Urban Mobility Problem on a Large Map (extended version).](http://arxiv.org/abs/2311.01534) | 本文研究了大型城市环境下的自主多智能体出租车路径问题，提出了一个近似滚动为基础的两阶段算法来减少计算量。 |
 
 # 详细
 
-[^1]: SWBT：具有不完美演示的相似性加权行为转换器用于机器人操作
+[^1]: 大型地图上的按需城市出行问题的近似多智能体强化学习（扩展版）
 
-    SWBT: Similarity Weighted Behavior Transformer with the Imperfect Demonstration for Robotic Manipulation. (arXiv:2401.08957v1 [cs.RO])
+    Approximate Multiagent Reinforcement Learning for On-Demand Urban Mobility Problem on a Large Map (extended version). (arXiv:2311.01534v1 [cs.MA])
 
-    [http://arxiv.org/abs/2401.08957](http://arxiv.org/abs/2401.08957)
+    [http://arxiv.org/abs/2311.01534](http://arxiv.org/abs/2311.01534)
 
-    本论文提出了一种新型框架SWBT，能够在机器人操作任务中有效地从专家演示和不完美演示中学习，而无需与环境进行交互。这是第一个将不完美演示整合到离线模仿学习设置中的机器人操作任务的研究。
+    本文研究了大型城市环境下的自主多智能体出租车路径问题，提出了一个近似滚动为基础的两阶段算法来减少计算量。
 
     
 
-    模仿学习旨在从专家演示中学习最佳控制策略，已成为机器人操作任务的有效方法。然而，先前的模仿学习方法要么仅使用昂贵的专家演示并忽略不完美的演示，要么依赖于与环境的交互和从在线经验中学习。在机器人操作的背景下，我们旨在克服上述两个挑战，并提出了一种名为Similarity Weighted Behavior Transformer（SWBT）的新型框架。SWBT能够有效地从专家演示和不完美演示中学习，而无需与环境进行交互。我们揭示了易获取的不完美演示，如正向和反向动力学，通过学习有益信息显著增强了网络。据我们所知，我们是第一个尝试将不完美演示整合到离线模仿学习设置中的机器人操作任务中的研究。在ManiSkill2 bench上进行了大量实验。
+    本文关注大型城市环境下的自主多智能体出租车路径问题，未来乘车请求的位置和数量事先未知，但遵循估计的经验分布。最近的理论表明，如果基础策略是稳定的，那么基于滚动的算法与这样的基础策略产生接近最优的稳定策略。尽管基于滚动的方法非常适合学习具有对未来需求考虑的合作多智能体策略，但将这些方法应用于大型城市环境可能计算上很昂贵。大型环境往往有大量请求，因此需要大型的出租车队保证稳定性。本文旨在解决多智能体（逐一）滚动的计算瓶颈问题，其中计算复杂性随代理数量线性增长。我们提出了一种近似逐一滚动为基础的两阶段算法，减少计算量
 
-    Imitation learning (IL), aiming to learn optimal control policies from expert demonstrations, has been an effective method for robot manipulation tasks. However, previous IL methods either only use expensive expert demonstrations and omit imperfect demonstrations or rely on interacting with the environment and learning from online experiences. In the context of robotic manipulation, we aim to conquer the above two challenges and propose a novel framework named Similarity Weighted Behavior Transformer (SWBT). SWBT effectively learn from both expert and imperfect demonstrations without interaction with environments. We reveal that the easy-to-get imperfect demonstrations, such as forward and inverse dynamics, significantly enhance the network by learning fruitful information. To the best of our knowledge, we are the first to attempt to integrate imperfect demonstrations into the offline imitation learning setting for robot manipulation tasks. Extensive experiments on the ManiSkill2 bench
+    In this paper, we focus on the autonomous multiagent taxi routing problem for a large urban environment where the location and number of future ride requests are unknown a-priori, but follow an estimated empirical distribution. Recent theory has shown that if a base policy is stable then a rollout-based algorithm with such a base policy produces a near-optimal stable policy. Although, rollout-based approaches are well-suited for learning cooperative multiagent policies with considerations for future demand, applying such methods to a large urban environment can be computationally expensive. Large environments tend to have a large volume of requests, and hence require a large fleet of taxis to guarantee stability. In this paper, we aim to address the computational bottleneck of multiagent (one-at-a-time) rollout, where the computational complexity grows linearly in the number of agents. We propose an approximate one-at-a-time rollout-based two-phase algorithm that reduces the computatio
     
 

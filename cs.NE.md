@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Stochastic Population Update Can Provably Be Helpful in Multi-Objective Evolutionary Algorithms](https://arxiv.org/abs/2306.02611) | 本研究通过理论分析证明，在多目标进化算法中采用随机种群更新机制可以显著降低算法的运行时间，从而提高问题的求解效率。 |
+| [^1] | [Calibration Error Estimation Using Fuzzy Binning.](http://arxiv.org/abs/2305.00543) | 本文提出了一种模糊校准误差度量（FCE），利用模糊分箱方法计算校准误差，从而缓解了概率偏斜的影响并提供了更紧密的估计值。与传统指标ECE相比，FCE在多类设置中表现更好，https://github.com/srdgFHE/FCE-paper。 |
+| [^2] | [Granular-ball Optimization Algorithm.](http://arxiv.org/abs/2303.12807) | 粒球优化算法(GBO)是一种新的多粒度优化算法，可以通过引入粒球计算来提高全局搜索能力和收敛速度，实验结果表明，在这些方面它比现有的最先进的算法表现更优。 |
 
 # 详细
 
-[^1]: 随机种群更新在多目标进化算法中可以被证明是有帮助的
+[^1]: 使用模糊分箱进行校准误差估计
 
-    Stochastic Population Update Can Provably Be Helpful in Multi-Objective Evolutionary Algorithms
+    Calibration Error Estimation Using Fuzzy Binning. (arXiv:2305.00543v1 [cs.LG])
 
-    [https://arxiv.org/abs/2306.02611](https://arxiv.org/abs/2306.02611)
+    [http://arxiv.org/abs/2305.00543](http://arxiv.org/abs/2305.00543)
 
-    本研究通过理论分析证明，在多目标进化算法中采用随机种群更新机制可以显著降低算法的运行时间，从而提高问题的求解效率。
+    本文提出了一种模糊校准误差度量（FCE），利用模糊分箱方法计算校准误差，从而缓解了概率偏斜的影响并提供了更紧密的估计值。与传统指标ECE相比，FCE在多类设置中表现更好，https://github.com/srdgFHE/FCE-paper。
 
     
 
-    进化算法（EAs）因其基于种群的搜索特性，已被广泛且成功地应用于解决多目标优化问题。种群更新是多目标进化算法（MOEAs）中的关键组成部分，通常以贪婪、确定性的方式进行。也就是说，下一代种群是通过从当前种群和新生成的解中选择最优解形成的（无论使用的选择标准是Pareto支配、拥挤度还是指标等）。本文对这种做法提出了质疑。我们从理论上证明了随机种群更新对于MOEAs的搜索是有益的。具体地，我们证明了将确定性种群更新机制替换为随机机制，可以指数级减少两个已经被广泛接受的MOEAs（SMS-EMOA和NSGA-II）在解决两个双目标问题（OneJumpZeroJump和双目标RealRoyalRoad）上的预计运行时间。此外，还进行了实证研究。
+    基于神经网络的决策往往会过于自信，其原始结果的概率并不符合真实的决策概率。神经网络的校准是实现更可靠的深度学习框架的关键步骤。先前的校准误差度量主要利用清晰的分箱成员资格度量。这加剧了模型概率的偏斜，并描绘了校准误差的不完整图像。在本文中，我们提出了一种利用模糊分箱方法计算校准误差的模糊校准误差度量（FCE）。这种方法缓解了概率偏斜的影响，并在测量校准误差时提供了更紧密的估计值。我们比较了我们的指标与ECE在不同的数据群体和类别成员身份中的表现。我们的结果显示，FCE在校准误差估计方面表现更好，特别是在多类设置中，缓解了模型置信度分数偏斜对校准误差估计的影响。我们提供了我们的代码https://github.com/srdgFHE/FCE-paper，以便未来的可重复性和使用FCE进行校准误差估计。
 
-    Evolutionary algorithms (EAs) have been widely and successfully applied to solve multi-objective optimization problems, due to their nature of population-based search. Population update, a key component in multi-objective EAs (MOEAs), is usually performed in a greedy, deterministic manner. That is, the next-generation population is formed by selecting the best solutions from the current population and newly-generated solutions (irrespective of the selection criteria used such as Pareto dominance, crowdedness and indicators). In this paper, we question this practice. We analytically present that stochastic population update can be beneficial for the search of MOEAs. Specifically, we prove that the expected running time of two well-established MOEAs, SMS-EMOA and NSGA-II, for solving two bi-objective problems, OneJumpZeroJump and bi-objective RealRoyalRoad, can be exponentially decreased if replacing its deterministic population update mechanism by a stochastic one. Empirical studies als
+    Neural network-based decisions tend to be overconfident, where their raw outcome probabilities do not align with the true decision probabilities. Calibration of neural networks is an essential step towards more reliable deep learning frameworks. Prior metrics of calibration error primarily utilize crisp bin membership-based measures. This exacerbates skew in model probabilities and portrays an incomplete picture of calibration error. In this work, we propose a Fuzzy Calibration Error metric (FCE) that utilizes a fuzzy binning approach to calculate calibration error. This approach alleviates the impact of probability skew and provides a tighter estimate while measuring calibration error. We compare our metric with ECE across different data populations and class memberships. Our results show that FCE offers better calibration error estimation, especially in multi-class settings, alleviating the effects of skew in model confidence scores on calibration error estimation. We make our code a
+    
+[^2]: 粒球优化算法
+
+    Granular-ball Optimization Algorithm. (arXiv:2303.12807v1 [cs.LG])
+
+    [http://arxiv.org/abs/2303.12807](http://arxiv.org/abs/2303.12807)
+
+    粒球优化算法(GBO)是一种新的多粒度优化算法，可以通过引入粒球计算来提高全局搜索能力和收敛速度，实验结果表明，在这些方面它比现有的最先进的算法表现更优。
+
+    
+
+    现有的智能优化算法都是基于最小粒度即点的设计，导致全局搜索能力较弱且效率低下。为了解决这个问题，我们提出了一种新的多粒度优化算法，即粒球优化算法(GBO)，通过引入粒球计算来实现。GBO使用多个粒球来覆盖解空间，使用许多细小的细粒度粒球来描述重要部分，使用少量的大粗粒度粒球来描述不重要的部分，精细的多粒度数据描述能力提高了全局搜索能力和收敛速度。针对二十个基准函数的实验结果表明，与最流行的最先进的算法相比，GBO具有更好的性能和更快的速度，更接近最优解，没有超参数，设计更简单。
+
+    The existing intelligent optimization algorithms are designed based on the finest granularity, i.e., a point. This leads to weak global search ability and inefficiency. To address this problem, we proposed a novel multi-granularity optimization algorithm, namely granular-ball optimization algorithm (GBO), by introducing granular-ball computing. GBO uses many granular-balls to cover the solution space. Quite a lot of small and fine-grained granular-balls are used to depict the important parts, and a little number of large and coarse-grained granular-balls are used to depict the inessential parts. Fine multi-granularity data description ability results in a higher global search capability and faster convergence speed. In comparison with the most popular and state-of-the-art algorithms, the experiments on twenty benchmark functions demonstrate its better performance. The faster speed, higher approximation ability of optimal solution, no hyper-parameters, and simpler design of GBO make it 
     
 
