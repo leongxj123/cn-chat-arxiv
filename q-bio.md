@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [FakET: Simulating Cryo-Electron Tomograms with Neural Style Transfer.](http://arxiv.org/abs/2304.02011) | 本文提出了一种使用加性噪声和神经风格迁移技术来模拟电子显微镜正向算子，以解决深度学习方法需要大量训练数据集的问题。该方法在粒子定位和分类任务上表现良好。 |
+| [^1] | [Substrate Scope Contrastive Learning: Repurposing Human Bias to Learn Atomic Representations](https://arxiv.org/abs/2402.16882) | 提出了一种新颖的预训练策略，底物范围对比学习，以学习适合化学反应性的原子表示。 |
 
 # 详细
 
-[^1]: FakET: 利用神经风格迁移模拟冷冻电子断层图像
+[^1]: 底物范围对比学习：重新利用人类偏见学习原子表示
 
-    FakET: Simulating Cryo-Electron Tomograms with Neural Style Transfer. (arXiv:2304.02011v1 [cs.LG])
+    Substrate Scope Contrastive Learning: Repurposing Human Bias to Learn Atomic Representations
 
-    [http://arxiv.org/abs/2304.02011](http://arxiv.org/abs/2304.02011)
+    [https://arxiv.org/abs/2402.16882](https://arxiv.org/abs/2402.16882)
 
-    本文提出了一种使用加性噪声和神经风格迁移技术来模拟电子显微镜正向算子，以解决深度学习方法需要大量训练数据集的问题。该方法在粒子定位和分类任务上表现良好。
+    提出了一种新颖的预训练策略，底物范围对比学习，以学习适合化学反应性的原子表示。
 
     
 
-    粒子定位和分类是计算显微学中最基本的问题之一。近年来，深度学习方法在这些任务中取得了巨大成功。这些监督式学习方法的一个关键缺点是它们需要大量的训练数据集，通常是与模拟透射电子显微镜物理的复杂数值正向模型中的粒子模型结合生成的。这些模型的计算机实现非常耗费计算资源，限制了它们的适用范围。本文提出了一种基于加性噪声和神经风格迁移技术模拟电子显微镜正向算子的简单方法。我们使用目前最先进的已经建立的状态之一对定位和分类任务进行评估，显示出与基准测试相当的性能。与以前的方法不同，我们的方法加速了运算，显著减少了计算成本。
+    学习分子表示是分子机器学习中的关键步骤，对建模成功产生显著影响，尤其在数据稀缺情况下。广义预训练神经网络的概念推动了计算机视觉、自然语言处理和蛋白质工程等领域的发展。然而，类似的方法在小有机分子方面并未取得类似的成功。在这项工作中，我们引入一种新颖的预训练策略，即底物范围对比学习，它学习适合化学反应性的原子表示。这种方法以已发表的底物范围表中底物的分组和产物收率作为化学反应性相似性或不相似性的衡量。我们关注 CAS Content Collection 中的 20,798 个芳香卤代烃，涵盖数千篇出版物，以学习芳香卤代烃的反应性表示。我们验证了我们的预训练方法。
 
-    Particle localization and -classification constitute two of the most fundamental problems in computational microscopy. In recent years, deep learning based approaches have been introduced for these tasks with great success. A key shortcoming of these supervised learning methods is their need for large training data sets, typically generated from particle models in conjunction with complex numerical forward models simulating the physics of transmission electron microscopes. Computer implementations of such forward models are computationally extremely demanding and limit the scope of their applicability. In this paper we propose a simple method for simulating the forward operator of an electron microscope based on additive noise and Neural Style Transfer techniques. We evaluate the method on localization and classification tasks using one of the established state-of-the-art architectures showing performance on par with the benchmark. In contrast to previous approaches, our method acceler
+    arXiv:2402.16882v1 Announce Type: cross  Abstract: Learning molecular representation is a critical step in molecular machine learning that significantly influences modeling success, particularly in data-scarce situations. The concept of broadly pre-training neural networks has advanced fields such as computer vision, natural language processing, and protein engineering. However, similar approaches for small organic molecules have not achieved comparable success. In this work, we introduce a novel pre-training strategy, substrate scope contrastive learning, which learns atomic representations tailored to chemical reactivity. This method considers the grouping of substrates and their yields in published substrate scope tables as a measure of their similarity or dissimilarity in terms of chemical reactivity. We focus on 20,798 aryl halides in the CAS Content Collection spanning thousands of publications to learn a representation of aryl halide reactivity. We validate our pre-training appr
     
 
