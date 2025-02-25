@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.RO</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.RO</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.RO</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.RO</description><item><title>ComSD&#25552;&#20986;&#20102;&#19968;&#31181;&#26032;&#26041;&#27861;&#65292;&#36890;&#36807;&#26356;&#21512;&#29702;&#30340;&#20114;&#20449;&#24687;&#20272;&#35745;&#21644;&#21160;&#24577;&#21152;&#26435;&#30340;&#20869;&#22312;&#22870;&#21169;&#26469;&#24179;&#34913;&#26080;&#30417;&#30563;&#25216;&#33021;&#21457;&#29616;&#20013;&#30340;&#34892;&#20026;&#36136;&#37327;&#21644;&#22810;&#26679;&#24615;&#12290;</title><link>http://arxiv.org/abs/2309.17203</link><description>&lt;p&gt;
+ComSD: &#22312;&#26080;&#30417;&#30563;&#25216;&#33021;&#21457;&#29616;&#20013;&#24179;&#34913;&#34892;&#20026;&#36136;&#37327;&#21644;&#22810;&#26679;&#24615;
+&lt;/p&gt;
+&lt;p&gt;
+ComSD: Balancing Behavioral Quality and Diversity in Unsupervised Skill Discovery. (arXiv:2309.17203v1 [cs.LG])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2309.17203
+&lt;/p&gt;
+&lt;p&gt;
+ComSD&#25552;&#20986;&#20102;&#19968;&#31181;&#26032;&#26041;&#27861;&#65292;&#36890;&#36807;&#26356;&#21512;&#29702;&#30340;&#20114;&#20449;&#24687;&#20272;&#35745;&#21644;&#21160;&#24577;&#21152;&#26435;&#30340;&#20869;&#22312;&#22870;&#21169;&#26469;&#24179;&#34913;&#26080;&#30417;&#30563;&#25216;&#33021;&#21457;&#29616;&#20013;&#30340;&#34892;&#20026;&#36136;&#37327;&#21644;&#22810;&#26679;&#24615;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#26080;&#30417;&#30563;&#25216;&#33021;&#21457;&#29616;&#30340;&#29702;&#24819;&#26041;&#27861;&#33021;&#22815;&#22312;&#27809;&#26377;&#22806;&#37096;&#22870;&#21169;&#30340;&#24773;&#20917;&#19979;&#20135;&#29983;&#22810;&#26679;&#19988;&#21512;&#26684;&#30340;&#25216;&#33021;&#65292;&#21516;&#26102;&#21457;&#29616;&#30340;&#25216;&#33021;&#38598;&#33021;&#22815;&#20197;&#21508;&#31181;&#26041;&#24335;&#39640;&#25928;&#22320;&#36866;&#24212;&#19979;&#28216;&#20219;&#21153;&#12290;&#26412;&#25991;&#25552;&#20986;&#20102;Contrastive multi-objectives Skill Discovery (ComSD)&#65292;&#36890;&#36807;&#26356;&#21512;&#29702;&#30340;&#20114;&#20449;&#24687;&#20272;&#35745;&#21644;&#21160;&#24577;&#21152;&#26435;&#30340;&#20869;&#22312;&#22870;&#21169;&#26469;&#20943;&#36731;&#21457;&#29616;&#30340;&#34892;&#20026;&#22312;&#36136;&#37327;&#21644;&#22810;&#26679;&#24615;&#20043;&#38388;&#30340;&#20914;&#31361;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+Learning diverse and qualified behaviors for utilization and adaptation without supervision is a key ability of intelligent creatures. Ideal unsupervised skill discovery methods are able to produce diverse and qualified skills in the absence of extrinsic reward, while the discovered skill set can efficiently adapt to downstream tasks in various ways. Maximizing the Mutual Information (MI) between skills and visited states can achieve ideal skill-conditioned behavior distillation in theory. However, it's difficult for recent advanced methods to well balance behavioral quality (exploration) and diversity (exploitation) in practice, which may be attributed to the unreasonable MI estimation by their rigid intrinsic reward design. In this paper, we propose Contrastive multi-objectives Skill Discovery (ComSD) which tries to mitigate the quality-versus-diversity conflict of discovered behaviors through a more reasonable MI estimation and a dynamically weighted intrinsic reward. ComSD proposes
+&lt;/p&gt;</description></item></channel></rss>

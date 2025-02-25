@@ -2,52 +2,97 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [LaRE^2: Latent Reconstruction Error Based Method for Diffusion-Generated Image Detection](https://arxiv.org/abs/2403.17465) | LaRE^2 提出了一种基于潜在重构误差的方法用于检测扩散生成的图像，通过引入潜在重构误差（LaRE）和误差引导特征细化模块（EGRE）实现了对特征的有效提取和增强，从而区分真实和生成图像。 |
-| [^2] | [MIM-Refiner: A Contrastive Learning Boost from Intermediate Pre-Trained Representations](https://arxiv.org/abs/2402.10093) | MIM-Refiner是一种对比学习提升方法，通过利用MIM模型中的中间层表示和多个对比头，能够将MIM模型的特征从次优的状态提升到最先进的状态，并在ImageNet-1K数据集上取得了新的最先进结果。 |
-| [^3] | [Towards Robust Probabilistic Modeling on SO(3) via Rotation Laplace Distribution.](http://arxiv.org/abs/2305.10465) | 本文提出了一种新的基于旋转拉普拉斯分布的SO(3)稳健概率建模方法，对异常值具有鲁棒性，并可以容忍不完美的注释。 |
+| [^1] | [One-Shot Domain Incremental Learning](https://arxiv.org/abs/2403.16707) | 提出了一种处理单次领域增量学习中批归一化层统计数据困难的技术，并展示了其有效性。 |
+| [^2] | [Tur[k]ingBench: A Challenge Benchmark for Web Agents](https://arxiv.org/abs/2403.11905) | Tur[k]ingBench是一个挑战性的网络代理基准测试，用于评估最先进的多模态模型在处理包含文本指示和多模态上下文的复杂任务时的泛化能力。 |
+| [^3] | [CIC: A framework for Culturally-aware Image Captioning](https://arxiv.org/abs/2402.05374) | CIC是一种面向文化感知图像字幕的框架，通过结合视觉问答和大型语言模型，它能够生成能描述图像中文化元素的详细字幕。 |
+| [^4] | [Your Diffusion Model is Secretly a Certifiably Robust Classifier](https://arxiv.org/abs/2402.02316) | 这项研究提出了一种新的扩散分类器家族，称为噪声扩散分类器（NDCs），其具有最新的可证明的鲁棒性。通过将扩散分类器推广到分类高斯受损数据，并将其与随机平滑技术相结合，构建了具有非常量Lipschitzness的平滑分类器。这些NDCs显示出卓越的认证鲁棒性。 |
+| [^5] | [SoK: Facial Deepfake Detectors.](http://arxiv.org/abs/2401.04364) | 本文对最新的面部深度伪造检测器进行了全面回顾和分析，提供了对其有效性影响因素的深入见解，并在各种攻击场景中进行了评估。 |
+| [^6] | [MIML: Multiplex Image Machine Learning for High Precision Cell Classification via Mechanical Traits within Microfluidic Systems.](http://arxiv.org/abs/2309.08421) | 本研究开发了一种新颖的机器学习框架MIML，该框架通过将无标记细胞图像与生物力学属性数据相结合，实现了高精度细胞分类。该方法利用了形态信息，将细胞属性理解得更全面，相较于仅考虑单一数据类型的模型，实现了98.3％的分类精度。该方法已在白细胞和肿瘤细胞分类中得到证明，并具有更广泛的应用潜力。 |
 
 # 详细
 
-[^1]: LaRE^2: 基于潜在重构误差的扩散生成图像检测方法
+[^1]: 单次领域增量学习
 
-    LaRE^2: Latent Reconstruction Error Based Method for Diffusion-Generated Image Detection
+    One-Shot Domain Incremental Learning
 
-    [https://arxiv.org/abs/2403.17465](https://arxiv.org/abs/2403.17465)
+    [https://arxiv.org/abs/2403.16707](https://arxiv.org/abs/2403.16707)
 
-    LaRE^2 提出了一种基于潜在重构误差的方法用于检测扩散生成的图像，通过引入潜在重构误差（LaRE）和误差引导特征细化模块（EGRE）实现了对特征的有效提取和增强，从而区分真实和生成图像。
-
-    
-
-    arXiv:2403.17465v1 类型：交叉 摘要：扩散模型的发展显著提高了图像生成质量，使真实图像和生成图像之间的区分变得越来越困难。尽管这一进展令人印象深刻，但也引发了重要的隐私和安全问题。为了解决这一问题，我们提出了一种新颖的基于潜在重构误差引导特征细化方法（LaRE^2）来检测扩散生成的图像。我们提出了潜在重构误差（LaRE），作为潜在空间中生成图像检测的第一个基于重构误差的特征。LaRE在特征提取效率方面超越了现有方法，同时保留了区分真假所需的关键线索。为了利用LaRE，我们提出了一种误差引导特征细化模块（EGRE），它可以通过LaRE引导的方式细化图像特征，以增强特征的区分能力。
-
-    arXiv:2403.17465v1 Announce Type: cross  Abstract: The evolution of Diffusion Models has dramatically improved image generation quality, making it increasingly difficult to differentiate between real and generated images. This development, while impressive, also raises significant privacy and security concerns. In response to this, we propose a novel Latent REconstruction error guided feature REfinement method (LaRE^2) for detecting the diffusion-generated images. We come up with the Latent Reconstruction Error (LaRE), the first reconstruction-error based feature in the latent space for generated image detection. LaRE surpasses existing methods in terms of feature extraction efficiency while preserving crucial cues required to differentiate between the real and the fake. To exploit LaRE, we propose an Error-Guided feature REfinement module (EGRE), which can refine the image feature guided by LaRE to enhance the discriminativeness of the feature. Our EGRE utilizes an align-then-refine m
-    
-[^2]: MIM-Refiner：一种从中间预训练表示中获得对比学习提升的方法
-
-    MIM-Refiner: A Contrastive Learning Boost from Intermediate Pre-Trained Representations
-
-    [https://arxiv.org/abs/2402.10093](https://arxiv.org/abs/2402.10093)
-
-    MIM-Refiner是一种对比学习提升方法，通过利用MIM模型中的中间层表示和多个对比头，能够将MIM模型的特征从次优的状态提升到最先进的状态，并在ImageNet-1K数据集上取得了新的最先进结果。
+    提出了一种处理单次领域增量学习中批归一化层统计数据困难的技术，并展示了其有效性。
 
     
 
-    我们引入了MIM-Refiner，这是一种用于预训练MIM模型的对比学习提升方法。MIM-Refiner的动机在于MIM模型中的最佳表示通常位于中间层。因此，MIM-Refiner利用连接到不同中间层的多个对比头。在每个头中，修改后的最近邻目标帮助构建相应的语义聚类。此过程短而有效，在几个epochs内，我们将MIM模型的特征从次优的状态提升到最先进的状态。使用data2vec 2.0在ImageNet-1K上预训练的ViT-H经过改进后，在线性探测和低样本分类方面取得了新的最先进结果（分别为84.7%和64.2%），超过了在ImageNet-1K上预训练的其他模型的表现。
+    在以前关于用于分类的深度神经网络模型的研究中已经讨论了领域增量学习（DIL）。在DIL中，我们假设随着时间的推移观察新领域上的样本。模型必须对所有领域上的输入进行分类。然而，在实践中，我们可能会遇到这样一种情况，即我们需要在新领域的样本仅间歇性地被观察的约束下执行DIL。因此，在本研究中，我们考虑了一个极端情况，即我们只有一份来自新领域的样本，我们称之为单次DIL。我们首先经验性地表明现有的DIL方法在单次DIL中表现不佳。通过各种调查，我们分析了这种失败的原因。根据我们的分析，我们明确了单次DIL的困难是由批归一化层中的统计数据引起的。因此，我们提出了一种关于这些统计数据的技术，并展示了我们技术的有效性。
 
-    arXiv:2402.10093v1 Announce Type: cross  Abstract: We introduce MIM (Masked Image Modeling)-Refiner, a contrastive learning boost for pre-trained MIM models. The motivation behind MIM-Refiner is rooted in the insight that optimal representations within MIM models generally reside in intermediate layers. Accordingly, MIM-Refiner leverages multiple contrastive heads that are connected to diverse intermediate layers. In each head, a modified nearest neighbor objective helps to construct respective semantic clusters.   The refinement process is short but effective. Within a few epochs, we refine the features of MIM models from subpar to state-of-the-art, off-the-shelf features. Refining a ViT-H, pre-trained with data2vec 2.0 on ImageNet-1K, achieves new state-of-the-art results in linear probing (84.7%) and low-shot classification among models that are pre-trained on ImageNet-1K. In ImageNet-1K 1-shot classification, MIM-Refiner sets a new state-of-the-art of 64.2%, outperforming larger mo
+    arXiv:2403.16707v1 Announce Type: cross  Abstract: Domain incremental learning (DIL) has been discussed in previous studies on deep neural network models for classification. In DIL, we assume that samples on new domains are observed over time. The models must classify inputs on all domains. In practice, however, we may encounter a situation where we need to perform DIL under the constraint that the samples on the new domain are observed only infrequently. Therefore, in this study, we consider the extreme case where we have only one sample from the new domain, which we call one-shot DIL. We first empirically show that existing DIL methods do not work well in one-shot DIL. We have analyzed the reason for this failure through various investigations. According to our analysis, we clarify that the difficulty of one-shot DIL is caused by the statistics in the batch normalization layers. Therefore, we propose a technique regarding these statistics and demonstrate the effectiveness of our tech
     
-[^3]: 基于旋转拉普拉斯分布的SO(3)稳健概率建模研究
+[^2]: Tur[k]ingBench：用于网络代理的挑战基准测试
 
-    Towards Robust Probabilistic Modeling on SO(3) via Rotation Laplace Distribution. (arXiv:2305.10465v1 [cs.CV])
+    Tur[k]ingBench: A Challenge Benchmark for Web Agents
 
-    [http://arxiv.org/abs/2305.10465](http://arxiv.org/abs/2305.10465)
+    [https://arxiv.org/abs/2403.11905](https://arxiv.org/abs/2403.11905)
 
-    本文提出了一种新的基于旋转拉普拉斯分布的SO(3)稳健概率建模方法，对异常值具有鲁棒性，并可以容忍不完美的注释。
+    Tur[k]ingBench是一个挑战性的网络代理基准测试，用于评估最先进的多模态模型在处理包含文本指示和多模态上下文的复杂任务时的泛化能力。
 
     
 
-    从单张RGB图像估计三维自由旋转是一项重要且具有挑战性的任务。概率旋转建模是一种流行的方法，相对于单预测旋转回归可以额外提供预测不确定性信息。对于SO(3)上的概率分布建模，使用类似于高斯的Bingham分布和矩阵Fisher分布是自然的，但是它们对异常预测很敏感，例如180度误差，因此不太可能以最佳性能收敛。本文从多元拉普拉斯分布中汲取灵感，提出了一种新的SO(3)旋转拉普拉斯分布。我们的旋转拉普拉斯分布对异常值的干扰具有鲁棒性，并强制施加梯度到低误差区域，以改进性能。此外，我们还证明了我们的方法对小噪声具有鲁棒性，因此可以容忍不完美的注释。利用这个优势，我们展示了在半监督回归任务上的优势。
+    最近的聊天机器人展示了在原始文本形式下理解和交流的令人印象深刻的能力。然而，世界上不仅仅是原始文本。例如，人们在网页上花费大量时间，在这些网页上，文本与其他形式交织在一起，并以各种复杂互动的形式完成任务。最先进的多模型是否能够推广到这种复杂的领域呢？为了回答这个问题，我们介绍了TurkingBench，一个由包含多模态背景的文本说明制定的任务基准。与现有的使用人工合成的网页的工作不同，这里我们使用最初设计用于各种注释目的的自然HTML页面。每个任务的HTML说明也被实例化为各种值（从众包任务获得）以形成任务的新实例。这个基准包含32.2K个实例。
 
-    Estimating the 3DoF rotation from a single RGB image is an important yet challenging problem. As a popular approach, probabilistic rotation modeling additionally carries prediction uncertainty information, compared to single-prediction rotation regression. For modeling probabilistic distribution over SO(3), it is natural to use Gaussian-like Bingham distribution and matrix Fisher, however they are shown to be sensitive to outlier predictions, e.g. $180^\circ$ error and thus are unlikely to converge with optimal performance. In this paper, we draw inspiration from multivariate Laplace distribution and propose a novel rotation Laplace distribution on SO(3). Our rotation Laplace distribution is robust to the disturbance of outliers and enforces much gradient to the low-error region that it can improve. In addition, we show that our method also exhibits robustness to small noises and thus tolerates imperfect annotations. With this benefit, we demonstrate its advantages in semi-supervised r
+    arXiv:2403.11905v1 Announce Type: new  Abstract: Recent chatbots have demonstrated impressive ability to understand and communicate in raw-text form. However, there is more to the world than raw text. For example, humans spend long hours of their time on web pages, where text is intertwined with other modalities and tasks are accomplished in the form of various complex interactions. Can state-of-the-art multi-modal models generalize to such complex domains?   To address this question, we introduce TurkingBench, a benchmark of tasks formulated as web pages containing textual instructions with multi-modal context. Unlike existing work which employs artificially synthesized web pages, here we use natural HTML pages that were originally designed for crowdsourcing workers for various annotation purposes. The HTML instructions of each task are also instantiated with various values (obtained from the crowdsourcing tasks) to form new instances of the task. This benchmark contains 32.2K instanc
+    
+[^3]: CIC：一种面向文化感知图像字幕的框架
+
+    CIC: A framework for Culturally-aware Image Captioning
+
+    [https://arxiv.org/abs/2402.05374](https://arxiv.org/abs/2402.05374)
+
+    CIC是一种面向文化感知图像字幕的框架，通过结合视觉问答和大型语言模型，它能够生成能描述图像中文化元素的详细字幕。
+
+    
+
+    图像字幕通过使用视觉-语言预训练模型（VLPs）如BLIP从图像生成描述性句子，这种方法已经取得了很大的改进。然而，当前的方法缺乏对图像中所描绘的文化元素（例如亚洲文化群体的传统服装）生成详细描述性字幕的能力。在本文中，我们提出了一种新的框架，\textbf{面向文化感知图像字幕（CIC）}，该框架能够从代表不同文化的图像中生成字幕并描述文化元素。受到将视觉模态和大型语言模型（LLMs）通过适当的提示进行组合的方法的启发，我们的框架（1）根据图像中的文化类别生成问题，（2）利用生成的问题从视觉问答（VQA）中提取文化视觉元素，（3）使用带有提示的LLMs生成文化感知字幕。我们在4个不同大学的45名参与者上进行了人工评估。
+
+    Image Captioning generates descriptive sentences from images using Vision-Language Pre-trained models (VLPs) such as BLIP, which has improved greatly. However, current methods lack the generation of detailed descriptive captions for the cultural elements depicted in the images, such as the traditional clothing worn by people from Asian cultural groups. In this paper, we propose a new framework, \textbf{Culturally-aware Image Captioning (CIC)}, that generates captions and describes cultural elements extracted from cultural visual elements in images representing cultures. Inspired by methods combining visual modality and Large Language Models (LLMs) through appropriate prompts, our framework (1) generates questions based on cultural categories from images, (2) extracts cultural visual elements from Visual Question Answering (VQA) using generated questions, and (3) generates culturally-aware captions using LLMs with the prompts. Our human evaluation conducted on 45 participants from 4 dif
+    
+[^4]: 你的扩散模型实际上是一个可证明鲁棒的分类器
+
+    Your Diffusion Model is Secretly a Certifiably Robust Classifier
+
+    [https://arxiv.org/abs/2402.02316](https://arxiv.org/abs/2402.02316)
+
+    这项研究提出了一种新的扩散分类器家族，称为噪声扩散分类器（NDCs），其具有最新的可证明的鲁棒性。通过将扩散分类器推广到分类高斯受损数据，并将其与随机平滑技术相结合，构建了具有非常量Lipschitzness的平滑分类器。这些NDCs显示出卓越的认证鲁棒性。
+
+    
+
+    近期，扩散模型被作为鲁棒分类的生成器分类器所采用。然而，对于扩散分类器鲁棒性的综合理论理解仍然缺乏，这让我们怀疑它们是否会容易受到未来更强攻击的影响。在本研究中，我们提出了一种新的扩散分类器家族，命名为噪声扩散分类器（NDCs），其具有最新的可证明的鲁棒性。具体来说，我们通过推导这些分布的证据下界（ELBOs），利用ELBO近似似然度量，并使用贝叶斯定理计算分类概率，将扩散分类器推广到分类高斯受损数据。我们将这些推广的扩散分类器与随机平滑技术相结合，构建具有非常量Lipschitzness的平滑分类器。实验结果表明我们提出的NDCs在鲁棒性方面具有卓越的认证能力。值得注意的是，我们是第一个达到80%的...
+
+    Diffusion models are recently employed as generative classifiers for robust classification. However, a comprehensive theoretical understanding of the robustness of diffusion classifiers is still lacking, leading us to question whether they will be vulnerable to future stronger attacks. In this study, we propose a new family of diffusion classifiers, named Noised Diffusion Classifiers~(NDCs), that possess state-of-the-art certified robustness. Specifically, we generalize the diffusion classifiers to classify Gaussian-corrupted data by deriving the evidence lower bounds (ELBOs) for these distributions, approximating the likelihood using the ELBO, and calculating classification probabilities via Bayes' theorem. We integrate these generalized diffusion classifiers with randomized smoothing to construct smoothed classifiers possessing non-constant Lipschitzness. Experimental results demonstrate the superior certified robustness of our proposed NDCs. Notably, we are the first to achieve 80\%
+    
+[^5]: SoK：面部深度伪造检测器
+
+    SoK: Facial Deepfake Detectors. (arXiv:2401.04364v1 [cs.CV])
+
+    [http://arxiv.org/abs/2401.04364](http://arxiv.org/abs/2401.04364)
+
+    本文对最新的面部深度伪造检测器进行了全面回顾和分析，提供了对其有效性影响因素的深入见解，并在各种攻击场景中进行了评估。
+
+    
+
+    深度伪造技术迅速成为对社会构成深远和严重威胁的原因之一，主要由于其易于制作和传播。这种情况加速了深度伪造检测技术的发展。然而，许多现有的检测器在验证时 heavily 依赖实验室生成的数据集，这可能无法有效地让它们应对新颖、新兴和实际的深度伪造技术。本文对最新的深度伪造检测器进行广泛全面的回顾和分析，根据几个关键标准对它们进行评估。这些标准将这些检测器分为 4 个高级组别和 13 个细粒度子组别，都遵循一个统一的标准概念框架。这种分类和框架提供了对影响检测器功效的因素的深入和实用的见解。我们对 16 个主要的检测器在各种标准的攻击场景中的普适性进行评估，包括黑盒攻击场景。
+
+    Deepfakes have rapidly emerged as a profound and serious threat to society, primarily due to their ease of creation and dissemination. This situation has triggered an accelerated development of deepfake detection technologies. However, many existing detectors rely heavily on lab-generated datasets for validation, which may not effectively prepare them for novel, emerging, and real-world deepfake techniques. In this paper, we conduct an extensive and comprehensive review and analysis of the latest state-of-the-art deepfake detectors, evaluating them against several critical criteria. These criteria facilitate the categorization of these detectors into 4 high-level groups and 13 fine-grained sub-groups, all aligned with a unified standard conceptual framework. This classification and framework offer deep and practical insights into the factors that affect detector efficacy. We assess the generalizability of 16 leading detectors across various standard attack scenarios, including black-bo
+    
+[^6]: MIML: 通过微流控系统内的机械特性对高精度细胞分类进行多重图像机器学习
+
+    MIML: Multiplex Image Machine Learning for High Precision Cell Classification via Mechanical Traits within Microfluidic Systems. (arXiv:2309.08421v1 [eess.IV])
+
+    [http://arxiv.org/abs/2309.08421](http://arxiv.org/abs/2309.08421)
+
+    本研究开发了一种新颖的机器学习框架MIML，该框架通过将无标记细胞图像与生物力学属性数据相结合，实现了高精度细胞分类。该方法利用了形态信息，将细胞属性理解得更全面，相较于仅考虑单一数据类型的模型，实现了98.3％的分类精度。该方法已在白细胞和肿瘤细胞分类中得到证明，并具有更广泛的应用潜力。
+
+    
+
+    无标记细胞分类有助于为进一步使用或检查提供原始细胞，然而现有技术在特异性和速度方面往往不足。在本研究中，我们通过开发一种新颖的机器学习框架MIML来解决这些局限性。该架构将无标记细胞图像与生物力学属性数据相结合，利用每个细胞固有的广阔且常常被低估的形态信息。通过整合这两种类型的数据，我们的模型提供了对细胞属性更全面的理解，利用了传统机器学习模型中通常被丢弃的形态信息。这种方法使细胞分类精度达到了惊人的98.3％，大大优于仅考虑单一数据类型的模型。MIML已被证明在白细胞和肿瘤细胞分类中有效，并具有更广泛的应用潜力。
+
+    Label-free cell classification is advantageous for supplying pristine cells for further use or examination, yet existing techniques frequently fall short in terms of specificity and speed. In this study, we address these limitations through the development of a novel machine learning framework, Multiplex Image Machine Learning (MIML). This architecture uniquely combines label-free cell images with biomechanical property data, harnessing the vast, often underutilized morphological information intrinsic to each cell. By integrating both types of data, our model offers a more holistic understanding of the cellular properties, utilizing morphological information typically discarded in traditional machine learning models. This approach has led to a remarkable 98.3\% accuracy in cell classification, a substantial improvement over models that only consider a single data type. MIML has been proven effective in classifying white blood cells and tumor cells, with potential for broader applicatio
     
 

@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Time-Uniform Confidence Spheres for Means of Random Vectors](https://arxiv.org/abs/2311.08168) | 该研究提出了时间均匀置信球序列，可以同时高概率地包含各种样本量下随机向量的均值，并针对不同分布假设进行了扩展和统一分析。 |
-| [^2] | [BART-SIMP: a novel framework for flexible spatial covariate modeling and prediction using Bayesian additive regression trees.](http://arxiv.org/abs/2309.13270) | BART-SIMP是一种灵活的空间协变建模和预测的新框架，通过结合高斯过程空间模型和贝叶斯加法回归树模型，可以提供可靠的不确定性估计，并成功应用于肯尼亚家庭集群样本中的人体测量响应预测。 |
+| [^1] | [A flexible Bayesian g-formula for causal survival analyses with time-dependent confounding](https://arxiv.org/abs/2402.02306) | 本文提出了一种更灵活的贝叶斯g形式估计器，用于具有时变混杂的因果生存分析。它采用贝叶斯附加回归树来模拟时变生成组件，并引入了纵向平衡分数以降低模型错误规范引起的偏差。 |
+| [^2] | [Causal Rule Learning: Enhancing the Understanding of Heterogeneous Treatment Effect via Weighted Causal Rules.](http://arxiv.org/abs/2310.06746) | 通过因果规则学习，我们可以利用加权因果规则来估计和加强对异质治疗效应的理解。 |
 
 # 详细
 
-[^1]: 随机向量均值的时间均匀置信球
+[^1]: 弹性贝叶斯g形式在具有时变混杂的因果生存分析中的应用
 
-    Time-Uniform Confidence Spheres for Means of Random Vectors
+    A flexible Bayesian g-formula for causal survival analyses with time-dependent confounding
 
-    [https://arxiv.org/abs/2311.08168](https://arxiv.org/abs/2311.08168)
+    [https://arxiv.org/abs/2402.02306](https://arxiv.org/abs/2402.02306)
 
-    该研究提出了时间均匀置信球序列，可以同时高概率地包含各种样本量下随机向量的均值，并针对不同分布假设进行了扩展和统一分析。
-
-    
-
-    我们推导并研究了时间均匀置信球——包含随机向量均值并且跨越所有样本量具有很高概率的置信球序列（CSSs）。受Catoni和Giulini原始工作启发，我们统一并扩展了他们的分析，涵盖顺序设置并处理各种分布假设。我们的结果包括有界随机向量的经验伯恩斯坦CSS（导致新颖的经验伯恩斯坦置信区间，渐近宽度按照真实未知方差成比例缩放）、用于子-$\psi$随机向量的CSS（包括子伽马、子泊松和子指数分布）、和用于重尾随机向量（仅有两阶矩）的CSS。最后，我们提供了两个抵抗Huber噪声污染的CSS。第一个是我们经验伯恩斯坦CSS的鲁棒版本，第二个扩展了单变量序列最近的工作。
-
-    arXiv:2311.08168v2 Announce Type: replace-cross  Abstract: We derive and study time-uniform confidence spheres -- confidence sphere sequences (CSSs) -- which contain the mean of random vectors with high probability simultaneously across all sample sizes. Inspired by the original work of Catoni and Giulini, we unify and extend their analysis to cover both the sequential setting and to handle a variety of distributional assumptions. Our results include an empirical-Bernstein CSS for bounded random vectors (resulting in a novel empirical-Bernstein confidence interval with asymptotic width scaling proportionally to the true unknown variance), CSSs for sub-$\psi$ random vectors (which includes sub-gamma, sub-Poisson, and sub-exponential), and CSSs for heavy-tailed random vectors (two moments only). Finally, we provide two CSSs that are robust to contamination by Huber noise. The first is a robust version of our empirical-Bernstein CSS, and the second extends recent work in the univariate se
-    
-[^2]: BART-SIMP：一种灵活的空间协变建模和预测的新框架使用贝叶斯加法回归树
-
-    BART-SIMP: a novel framework for flexible spatial covariate modeling and prediction using Bayesian additive regression trees. (arXiv:2309.13270v1 [stat.ME])
-
-    [http://arxiv.org/abs/2309.13270](http://arxiv.org/abs/2309.13270)
-
-    BART-SIMP是一种灵活的空间协变建模和预测的新框架，通过结合高斯过程空间模型和贝叶斯加法回归树模型，可以提供可靠的不确定性估计，并成功应用于肯尼亚家庭集群样本中的人体测量响应预测。
+    本文提出了一种更灵活的贝叶斯g形式估计器，用于具有时变混杂的因果生存分析。它采用贝叶斯附加回归树来模拟时变生成组件，并引入了纵向平衡分数以降低模型错误规范引起的偏差。
 
     
 
-    在空间统计学中，预测是一个经典的挑战，将空间协变量纳入具有潜在空间效应的模型中可以极大地提高预测性能。我们希望开发出灵活的回归模型，允许在协变量结构中存在非线性和交互作用。机器学习模型已经在空间环境中提出，允许残差中存在空间依赖性，但无法提供可靠的不确定性估计。在本文中，我们研究了高斯过程空间模型和贝叶斯加法回归树（BART）模型的新组合。通过将马尔可夫链蒙特卡洛（MCMC）与嵌套拉普拉斯近似（INLA）技术相结合，降低了方法的计算负担。我们通过模拟研究了该方法的性能，并使用该模型预测在肯尼亚家庭集群样本中收集的人体测量响应。
+    在具有时间至事件结果的纵向观察性研究中，因果分析的常见目标是在研究群体中估计在假设干预情景下的因果生存曲线。g形式是这种分析的一个特别有用的工具。为了增强传统的参数化g形式方法，我们开发了一种更灵活的贝叶斯g形式估计器。该估计器同时支持纵向预测和因果推断。它在模拟时变生成组件的建模中引入了贝叶斯附加回归树，旨在减轻由于模型错误规范造成的偏差。具体而言，我们引入了一类更通用的离散生存数据g形式。这些公式可以引入纵向平衡分数，这在处理越来越多的时变混杂因素时是一种有效的降维方法。
 
-    Prediction is a classic challenge in spatial statistics and the inclusion of spatial covariates can greatly improve predictive performance when incorporated into a model with latent spatial effects. It is desirable to develop flexible regression models that allow for nonlinearities and interactions in the covariate structure. Machine learning models have been suggested in the spatial context, allowing for spatial dependence in the residuals, but fail to provide reliable uncertainty estimates. In this paper, we investigate a novel combination of a Gaussian process spatial model and a Bayesian Additive Regression Tree (BART) model. The computational burden of the approach is reduced by combining Markov chain Monte Carlo (MCMC) with the Integrated Nested Laplace Approximation (INLA) technique. We study the performance of the method via simulations and use the model to predict anthropometric responses, collected via household cluster samples in Kenya.
+    In longitudinal observational studies with a time-to-event outcome, a common objective in causal analysis is to estimate the causal survival curve under hypothetical intervention scenarios within the study cohort. The g-formula is a particularly useful tool for this analysis. To enhance the traditional parametric g-formula approach, we developed a more adaptable Bayesian g-formula estimator. This estimator facilitates both longitudinal predictive and causal inference. It incorporates Bayesian additive regression trees in the modeling of the time-evolving generative components, aiming to mitigate bias due to model misspecification. Specifically, we introduce a more general class of g-formulas for discrete survival data. These formulas can incorporate the longitudinal balancing scores, which serve as an effective method for dimension reduction and are vital when dealing with an expanding array of time-varying confounders. The minimum sufficient formulation of these longitudinal balancing
+    
+[^2]: 因果规则学习：通过加权因果规则增强对异质治疗效应的理解
+
+    Causal Rule Learning: Enhancing the Understanding of Heterogeneous Treatment Effect via Weighted Causal Rules. (arXiv:2310.06746v1 [cs.LG])
+
+    [http://arxiv.org/abs/2310.06746](http://arxiv.org/abs/2310.06746)
+
+    通过因果规则学习，我们可以利用加权因果规则来估计和加强对异质治疗效应的理解。
+
+    
+
+    解释性是利用机器学习方法估计异质治疗效应时的关键问题，特别是对于医疗应用来说，常常需要做出高风险决策。受到解释性的预测性、描述性、相关性框架的启发，我们提出了因果规则学习，该方法通过找到描述潜在子群的精细因果规则集来估计和增强我们对异质治疗效应的理解。因果规则学习包括三个阶段：规则发现、规则选择和规则分析。在规则发现阶段，我们利用因果森林生成一组具有相应子群平均治疗效应的因果规则池。选择阶段使用D-学习方法从这些规则中选择子集，将个体水平的治疗效应作为子群水平效应的线性组合进行解构。这有助于回答之前文献忽视的问题：如果一个个体同时属于多个不同的治疗子群，会怎么样呢？
+
+    Interpretability is a key concern in estimating heterogeneous treatment effects using machine learning methods, especially for healthcare applications where high-stake decisions are often made. Inspired by the Predictive, Descriptive, Relevant framework of interpretability, we propose causal rule learning which finds a refined set of causal rules characterizing potential subgroups to estimate and enhance our understanding of heterogeneous treatment effects. Causal rule learning involves three phases: rule discovery, rule selection, and rule analysis. In the rule discovery phase, we utilize a causal forest to generate a pool of causal rules with corresponding subgroup average treatment effects. The selection phase then employs a D-learning method to select a subset of these rules to deconstruct individual-level treatment effects as a linear combination of the subgroup-level effects. This helps to answer an ignored question by previous literature: what if an individual simultaneously bel
     
 
