@@ -2,37 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [D-STGCNT: A Dense Spatio-Temporal Graph Conv-GRU Network based on transformer for assessment of patient physical rehabilitation.](http://arxiv.org/abs/2401.06150) | D-STGCNT是一种新的模型，结合了STGCN和transformer的架构，用于自动评估患者身体康复锻炼。它通过将骨架数据视为图形，并检测关键关节，在处理时空数据方面具有高效性。该模型通过密集连接和GRU机制来处理大型3D骨架输入，有效建立时空动态模型。transformer的注意力机制对于评估康复锻炼非常有用。 |
-| [^2] | [Machine Learning and Feature Ranking for Impact Fall Detection Event Using Multisensor Data.](http://arxiv.org/abs/2401.05407) | 本论文通过对多传感器数据进行彻底的预处理和特征选择，成功应用机器学习模型实现了冲击坠落检测，取得了较高的准确率。 |
+| [^1] | [Fast, Scale-Adaptive, and Uncertainty-Aware Downscaling of Earth System Model Fields with Generative Foundation Models](https://arxiv.org/abs/2403.02774) | 通过学习一致性模型，在不需要重新训练的情况下高效、准确地降尺度任意地球系统模型模拟，并产生概率性降尺度场。 |
+| [^2] | [Parameter-Efficient Tuning of Large Convolutional Models](https://arxiv.org/abs/2403.00269) | 通过引入滤波器子空间和滤波器原子的概念，本研究提出了一种在微调大型卷积模型时仅调整少量参数来提取任务特定表示的方法。 |
+| [^3] | [p$^3$VAE: a physics-integrated generative model. Application to the semantic segmentation of optical remote sensing images.](http://arxiv.org/abs/2210.10418) | 本文介绍了p$^3$VAE生成模型，它将一个完美的物理模型集成到模型中，并应用于高分辨率高光谱遥感图像的语义分割。模型具有更好的外推能力和可解释性，同时具有高度解缕能力。 |
 
 # 详细
 
-[^1]: D-STGCNT:一种基于transformer的密集时空图卷积GRU网络用于评估患者身体康复
+[^1]: 快速、自适应尺度和具有不确定性意识的地球系统模型场降尺度与生成基础模型
 
-    D-STGCNT: A Dense Spatio-Temporal Graph Conv-GRU Network based on transformer for assessment of patient physical rehabilitation. (arXiv:2401.06150v1 [eess.IV])
+    Fast, Scale-Adaptive, and Uncertainty-Aware Downscaling of Earth System Model Fields with Generative Foundation Models
 
-    [http://arxiv.org/abs/2401.06150](http://arxiv.org/abs/2401.06150)
+    [https://arxiv.org/abs/2403.02774](https://arxiv.org/abs/2403.02774)
 
-    D-STGCNT是一种新的模型，结合了STGCN和transformer的架构，用于自动评估患者身体康复锻炼。它通过将骨架数据视为图形，并检测关键关节，在处理时空数据方面具有高效性。该模型通过密集连接和GRU机制来处理大型3D骨架输入，有效建立时空动态模型。transformer的注意力机制对于评估康复锻炼非常有用。
-
-    
-
-    本文解决了自动评估无临床监督情况下患者进行身体康复锻炼的挑战。其目标是提供质量评分以确保正确执行和获得期望结果。为实现这一目标，引入了一种新的基于图结构的模型，Dense Spatio-Temporal Graph Conv-GRU Network with Transformer。该模型结合了改进的STGCN和transformer架构，用于高效处理时空数据。其关键思想是将骨架数据视为图形，并检测每个康复锻炼中起主要作用的关节。密集连接和GRU机制用于快速处理大型3D骨架输入并有效建模时空动态。transformer编码器的注意机制侧重于输入序列的相关部分，使其在评估康复锻炼方面非常有用。
-
-    This paper tackles the challenge of automatically assessing physical rehabilitation exercises for patients who perform the exercises without clinician supervision. The objective is to provide a quality score to ensure correct performance and achieve desired results. To achieve this goal, a new graph-based model, the Dense Spatio-Temporal Graph Conv-GRU Network with Transformer, is introduced. This model combines a modified version of STGCN and transformer architectures for efficient handling of spatio-temporal data. The key idea is to consider skeleton data respecting its non-linear structure as a graph and detecting joints playing the main role in each rehabilitation exercise. Dense connections and GRU mechanisms are used to rapidly process large 3D skeleton inputs and effectively model temporal dynamics. The transformer encoder's attention mechanism focuses on relevant parts of the input sequence, making it useful for evaluating rehabilitation exercises. The evaluation of our propose
-    
-[^2]: 机器学习和特征排序在多传感器数据的冲击坠落检测事件中的应用
-
-    Machine Learning and Feature Ranking for Impact Fall Detection Event Using Multisensor Data. (arXiv:2401.05407v1 [eess.SP])
-
-    [http://arxiv.org/abs/2401.05407](http://arxiv.org/abs/2401.05407)
-
-    本论文通过对多传感器数据进行彻底的预处理和特征选择，成功应用机器学习模型实现了冲击坠落检测，取得了较高的准确率。
+    通过学习一致性模型，在不需要重新训练的情况下高效、准确地降尺度任意地球系统模型模拟，并产生概率性降尺度场。
 
     
 
-    个人的跌倒，特别是老年人，可能导致严重的伤害和并发症。在跌倒事件中检测冲击瞬间对于及时提供帮助和减少负面影响至关重要。在这项工作中，我们通过对多传感器数据集应用彻底的预处理技术来解决这个挑战，目的是消除噪音并提高数据质量。此外，我们还使用特征选择过程来识别多传感器UP-FALL数据集中最相关的特征，从而提高机器学习模型的性能和效率。然后，我们使用多个传感器的结果数据信息评估各种机器学习模型在检测冲击瞬间方面的效率。通过大量实验，我们使用各种评估指标评估了我们方法的准确性。我们的结果在冲击检测方面取得了较高的准确率，展示了利用多传感器数据信息的能力。
+    精确和高分辨率的地球系统模型(ESM)模拟对于评估人为气候变化对生态和社会经济影响至关重要，但计算成本过高。最近的机器学习方法在ESM模拟的降尺度中表现出色，优于最先进的统计方法。然而，现有方法对每个ESM都需要计算昂贵的重新训练，并且在训练期间未见过的气候预测效果差。我们通过学习一个一致性模型(CM)，以零样本方式高效准确地降尺度任意ESM模拟来解决这些缺点。我们的基础模型方法以只受观测参考数据限制的分辨率产生概率性降尺度场。我们展示了CM在维持高可控性的同时以较低的计算成本优于最先进的扩散模型。
 
-    Falls among individuals, especially the elderly population, can lead to serious injuries and complications. Detecting impact moments within a fall event is crucial for providing timely assistance and minimizing the negative consequences. In this work, we aim to address this challenge by applying thorough preprocessing techniques to the multisensor dataset, the goal is to eliminate noise and improve data quality. Furthermore, we employ a feature selection process to identify the most relevant features derived from the multisensor UP-FALL dataset, which in turn will enhance the performance and efficiency of machine learning models. We then evaluate the efficiency of various machine learning models in detecting the impact moment using the resulting data information from multiple sensors. Through extensive experimentation, we assess the accuracy of our approach using various evaluation metrics. Our results achieve high accuracy rates in impact detection, showcasing the power of leveraging 
+    arXiv:2403.02774v1 Announce Type: cross  Abstract: Accurate and high-resolution Earth system model (ESM) simulations are essential to assess the ecological and socio-economic impacts of anthropogenic climate change, but are computationally too expensive. Recent machine learning approaches have shown promising results in downscaling ESM simulations, outperforming state-of-the-art statistical approaches. However, existing methods require computationally costly retraining for each ESM and extrapolate poorly to climates unseen during training. We address these shortcomings by learning a consistency model (CM) that efficiently and accurately downscales arbitrary ESM simulations without retraining in a zero-shot manner. Our foundation model approach yields probabilistic downscaled fields at resolution only limited by the observational reference data. We show that the CM outperforms state-of-the-art diffusion models at a fraction of computational cost while maintaining high controllability on
+    
+[^2]: 大型卷积模型的参数高效调整
+
+    Parameter-Efficient Tuning of Large Convolutional Models
+
+    [https://arxiv.org/abs/2403.00269](https://arxiv.org/abs/2403.00269)
+
+    通过引入滤波器子空间和滤波器原子的概念，本研究提出了一种在微调大型卷积模型时仅调整少量参数来提取任务特定表示的方法。
+
+    
+
+    为了解决微调大型预训练模型所需的高计算和参数复杂性，研究人员开发了参数高效的方法，仅更新下游任务的部分参数。然而，这些工作通常忽视了卷积核的独特属性，而卷积核仍然是许多大型模型的基本元素，比如Stable Diffusion。在本研究中，我们首先通过在每个网络层内分解卷积核到一小组滤波器子空间元素，即滤波器原子，引入了滤波器子空间。然后，我们通过仅调整滤波器原子（通常为几百个参数）对这些模型进行微调，以提取任务特定的表示。为了潜在地扩展调整的参数空间，我们进一步展示了一种简单的方法，通过递归地将每个筛选原子分解到另一组筛选原子来生成一个过完备的滤波器子空间。
+
+    arXiv:2403.00269v1 Announce Type: cross  Abstract: To address the high computational and parameter complexity associated with fine-tuning large pre-trained models, researchers have developed parameter-efficient methods, where only partial parameters are updated for downstream tasks. However, these works often overlook the distinct properties of convolutional kernels, which still remain essential elements in many large models, such as Stable Diffusion. In this study, we first introduce filter subspace by decomposing convolutional kernels within each network layer over a small set of filter subspace elements, referred to as filter atoms. We then fine-tune these models to extract task-specific representation by only adapting the filter atoms, a few hundred parameters typically. To potentially expand the parameter space for tuning, we further show a simple approach to generate an overcomplete filter subspace by recursively decomposing each filter atom over another set of filter atoms. The 
+    
+[^3]: p$^3$VAE：一个物理集成的生成模型，应用于光学遥感图像的语义分割
+
+    p$^3$VAE: a physics-integrated generative model. Application to the semantic segmentation of optical remote sensing images. (arXiv:2210.10418v3 [cs.CV] UPDATED)
+
+    [http://arxiv.org/abs/2210.10418](http://arxiv.org/abs/2210.10418)
+
+    本文介绍了p$^3$VAE生成模型，它将一个完美的物理模型集成到模型中，并应用于高分辨率高光谱遥感图像的语义分割。模型具有更好的外推能力和可解释性，同时具有高度解缕能力。
+
+    
+
+    将机器学习模型与物理模型相结合是学习强大数据表示的最新研究方向。本文介绍了p$^3$VAE，这是一个生成模型，它集成了一个完美的物理模型，部分解释了数据中真实的变化因素。为了充分利用我们的混合设计，我们提出了一种半监督优化过程和一种推断方案，同时伴随着有意义的不确定性估计。我们将p$^3$VAE应用于高分辨率高光谱遥感图像的语义分割。我们在一个模拟数据集上的实验表明，与传统的机器学习模型相比，我们的混合模型具有更好的外推能力和可解释性。特别是，我们展示了p$^3$VAE自然具有高度解缕能力。我们的代码和数据已在https://github.com/Romain3Ch216/p3VAE上公开发布。
+
+    The combination of machine learning models with physical models is a recent research path to learn robust data representations. In this paper, we introduce p$^3$VAE, a generative model that integrates a perfect physical model which partially explains the true underlying factors of variation in the data. To fully leverage our hybrid design, we propose a semi-supervised optimization procedure and an inference scheme that comes along meaningful uncertainty estimates. We apply p$^3$VAE to the semantic segmentation of high-resolution hyperspectral remote sensing images. Our experiments on a simulated data set demonstrated the benefits of our hybrid model against conventional machine learning models in terms of extrapolation capabilities and interpretability. In particular, we show that p$^3$VAE naturally has high disentanglement capabilities. Our code and data have been made publicly available at https://github.com/Romain3Ch216/p3VAE.
     
 

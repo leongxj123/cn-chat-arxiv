@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [The AI Assessment Scale (AIAS) in action: A pilot implementation of GenAI supported assessment](https://arxiv.org/abs/2403.14692) | 该论文介绍了AI评估量表（AIAS）的实践应用，通过灵活框架将GenAI技术纳入教育评估中，显著降低了与GenAI相关的学术不端案件，提高了学生的学业成绩。 |
+| [^1] | [Towards an AI Accountability Policy.](http://arxiv.org/abs/2307.13658) | 这份白皮书是对美国国家电信和信息管理局的“AI问责政策评论请求”的回应，提出了一组相互关联的AI问责政策建议。 |
 
 # 详细
 
-[^1]: AI 评估量表（AIAS）的实践：GenAI 支持评估的试点实施
+[^1]: 关于AI问责政策的探索
 
-    The AI Assessment Scale (AIAS) in action: A pilot implementation of GenAI supported assessment
+    Towards an AI Accountability Policy. (arXiv:2307.13658v1 [cs.CY])
 
-    [https://arxiv.org/abs/2403.14692](https://arxiv.org/abs/2403.14692)
+    [http://arxiv.org/abs/2307.13658](http://arxiv.org/abs/2307.13658)
 
-    该论文介绍了AI评估量表（AIAS）的实践应用，通过灵活框架将GenAI技术纳入教育评估中，显著降低了与GenAI相关的学术不端案件，提高了学生的学业成绩。
+    这份白皮书是对美国国家电信和信息管理局的“AI问责政策评论请求”的回应，提出了一组相互关联的AI问责政策建议。
 
     
 
-    在高等教育中快速采用生成人工智能（GenAI）技术引发了对学术诚信、评估实践和学生学习的关注。禁止或阻止GenAI工具已被证明是无效的，惩罚性方法忽略了这些技术的潜在好处。本文介绍了在英国越南大学（BUV）进行的试点研究的结果，探讨了人工智能评估量表（AIAS）的实施，这是一个灵活的框架，用于将GenAI纳入教育评估中。AIAS由五个级别组成，从“无AI”到“完全AI”，使教育工作者能够设计侧重于需要人类输入和批判性思维的评估。在实施AIAS后，试点研究结果表明与GenAI相关的学术不端案件显着减少，学生成绩提高了5.9%。
+    这份白皮书是对美国国家电信和信息管理局的“AI问责政策评论请求”作出的回应。在回答相关问题的关键句子末尾，提供了要求评论的问题编号的上标。该白皮书提出了一组相互关联的AI问责政策建议。
 
-    arXiv:2403.14692v1 Announce Type: cross  Abstract: The rapid adoption of Generative Artificial Intelligence (GenAI) technologies in higher education has raised concerns about academic integrity, assessment practices, and student learning. Banning or blocking GenAI tools has proven ineffective, and punitive approaches ignore the potential benefits of these technologies. This paper presents the findings of a pilot study conducted at British University Vietnam (BUV) exploring the implementation of the Artificial Intelligence Assessment Scale (AIAS), a flexible framework for incorporating GenAI into educational assessments. The AIAS consists of five levels, ranging from 'No AI' to 'Full AI', enabling educators to design assessments that focus on areas requiring human input and critical thinking.   Following the implementation of the AIAS, the pilot study results indicate a significant reduction in academic misconduct cases related to GenAI, a 5.9% increase in student attainment across the 
+    This white paper is a response to the "AI Accountability Policy Request for Comments" by the National Telecommunications and Information Administration of the United States. The question numbers for which comments were requested are provided in superscripts at the end of key sentences answering the respective questions. The white paper offers a set of interconnected recommendations for an AI accountability policy.
     
 
