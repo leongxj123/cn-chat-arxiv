@@ -1,1 +1,41 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CV</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CV</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CV</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CV</description><item><title>&#36890;&#36807;&#20351;&#29992;&#38750;&#24120;&#39640;&#30340;dropout&#29575;&#36827;&#34892;&#24494;&#35843;&#65292;&#21487;&#20197;&#23454;&#29616;&#36229;&#20986;&#20998;&#24067;&#24615;&#33021;&#65292;&#36825;&#36229;&#20986;&#20102;&#38598;&#25104;&#21644;&#26435;&#37325;&#24179;&#22343;&#26041;&#27861;&#12290;</title><link>https://arxiv.org/abs/2403.00946</link><description>&lt;p&gt;
+&#20351;&#29992;&#38750;&#24120;&#22823;&#30340;Dropout&#36827;&#34892;&#24494;&#35843;
+&lt;/p&gt;
+&lt;p&gt;
+Fine-tuning with Very Large Dropout
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.00946
+&lt;/p&gt;
+&lt;p&gt;
+&#36890;&#36807;&#20351;&#29992;&#38750;&#24120;&#39640;&#30340;dropout&#29575;&#36827;&#34892;&#24494;&#35843;&#65292;&#21487;&#20197;&#23454;&#29616;&#36229;&#20986;&#20998;&#24067;&#24615;&#33021;&#65292;&#36825;&#36229;&#20986;&#20102;&#38598;&#25104;&#21644;&#26435;&#37325;&#24179;&#22343;&#26041;&#27861;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#20170;&#22825;&#19981;&#21487;&#33021;&#20551;&#35013;&#26426;&#22120;&#23398;&#20064;&#23454;&#36341;&#19982;&#35757;&#32451;&#21644;&#27979;&#35797;&#25968;&#25454;&#36981;&#24490;&#30456;&#21516;&#20998;&#24067;&#30340;&#35266;&#24565;&#26159;&#20860;&#23481;&#30340;&#12290;&#35813;&#35770;&#25991;&#35843;&#26597;&#20102;&#20351;&#29992;&#38750;&#24120;&#39640;&#30340;&#20002;&#24323;&#29575;&#26469;&#33719;&#24471;&#36825;&#31181;&#20016;&#23500;&#34920;&#31034;&#65292;&#23613;&#31649;&#20351;&#29992;&#36825;&#26679;&#30340;&#20002;&#24323;&#29575;&#20174;&#22836;&#24320;&#22987;&#35757;&#32451;&#28145;&#24230;&#32593;&#32476;&#20960;&#20046;&#26159;&#19981;&#21487;&#33021;&#30340;&#65292;&#20294;&#22312;&#36825;&#20123;&#26465;&#20214;&#19979;&#23545;&#22823;&#22411;&#39044;&#35757;&#32451;&#27169;&#22411;&#36827;&#34892;&#24494;&#35843;&#19981;&#20165;&#26159;&#21487;&#33021;&#30340;&#65292;&#32780;&#19988;&#23454;&#29616;&#20102;&#36229;&#36234;&#38598;&#25104;&#21644;&#26435;&#37325;&#24179;&#22343;&#26041;&#27861;&#30340;&#36229;&#20986;&#20998;&#24067;&#24615;&#33021;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.00946v1 Announce Type: new  Abstract: It is impossible today to pretend that the practice of machine learning is compatible with the idea that training and testing data follow the same distribution. Several authors have recently used ensemble techniques to show how scenarios involving multiple data distributions are best served by representations that are both richer than those obtained by regularizing for the best in-distribution performance, and richer than those obtained under the influence of the implicit sparsity bias of common stochastic gradient procedures.   This contribution investigates the use of very high dropout rates instead of ensembles to obtain such rich representations. Although training a deep network from scratch using such dropout rates is virtually impossible, fine-tuning a large pre-trained model under such conditions is not only possible but also achieves out-of-distribution performances that exceed those of both ensembles and weight averaging methods
+&lt;/p&gt;</description></item><item><title>&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#19968;&#20307;&#21270;&#35270;&#35273;-&#35821;&#35328;&#36319;&#36394;&#26694;&#26550;&#65292;&#37319;&#29992;&#32479;&#19968;&#30340;Transformer&#20027;&#24178;&#32593;&#32476;&#65292;&#23454;&#29616;&#32852;&#21512;&#29305;&#24449;&#25552;&#21462;&#21644;&#20132;&#20114;&#65292;&#25552;&#39640;&#20102;&#22312;&#22797;&#26434;&#22330;&#26223;&#19979;&#30340;&#30446;&#26631;&#24863;&#30693;&#33021;&#21147;&#12290;</title><link>http://arxiv.org/abs/2307.03373</link><description>&lt;p&gt;
+&#19968;&#20307;&#21270;&#35270;&#35273;-&#35821;&#35328;&#36319;&#36394;&#30340;&#25506;&#32034;&#65306;&#22810;&#27169;&#24577;&#23545;&#40784;
+&lt;/p&gt;
+&lt;p&gt;
+All in One: Exploring Unified Vision-Language Tracking with Multi-Modal Alignment. (arXiv:2307.03373v1 [cs.CV])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2307.03373
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#19968;&#20307;&#21270;&#35270;&#35273;-&#35821;&#35328;&#36319;&#36394;&#26694;&#26550;&#65292;&#37319;&#29992;&#32479;&#19968;&#30340;Transformer&#20027;&#24178;&#32593;&#32476;&#65292;&#23454;&#29616;&#32852;&#21512;&#29305;&#24449;&#25552;&#21462;&#21644;&#20132;&#20114;&#65292;&#25552;&#39640;&#20102;&#22312;&#22797;&#26434;&#22330;&#26223;&#19979;&#30340;&#30446;&#26631;&#24863;&#30693;&#33021;&#21147;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#24403;&#21069;&#20027;&#27969;&#30340;&#35270;&#35273;-&#35821;&#35328;&#36319;&#36394;&#26694;&#26550;&#21253;&#25324;&#19977;&#20010;&#37096;&#20998;&#65292;&#21363;&#35270;&#35273;&#29305;&#24449;&#25552;&#21462;&#22120;&#12289;&#35821;&#35328;&#29305;&#24449;&#25552;&#21462;&#22120;&#21644;&#34701;&#21512;&#27169;&#22411;&#12290;&#20026;&#20102;&#36861;&#27714;&#26356;&#22909;&#30340;&#24615;&#33021;&#65292;&#35270;&#35273;-&#35821;&#35328;&#36319;&#36394;&#24120;&#24120;&#20351;&#29992;&#23450;&#21046;&#21644;&#26356;&#37325;&#30340;&#21333;&#27169;&#24577;&#32534;&#30721;&#22120;&#21644;&#22810;&#27169;&#24577;&#34701;&#21512;&#27169;&#22411;&#12290;&#23613;&#31649;&#26377;&#25928;&#65292;&#29616;&#26377;&#30340;&#35270;&#35273;-&#35821;&#35328;&#36319;&#36394;&#22120;&#23558;&#29305;&#24449;&#25552;&#21462;&#21644;&#29305;&#24449;&#38598;&#25104;&#20998;&#24320;&#65292;&#23548;&#33268;&#25552;&#21462;&#30340;&#29305;&#24449;&#32570;&#20047;&#35821;&#20041;&#24341;&#23548;&#65292;&#22312;&#22797;&#26434;&#22330;&#26223;&#19979;&#20855;&#26377;&#26377;&#38480;&#30340;&#30446;&#26631;&#24863;&#30693;&#33021;&#21147;&#65292;&#20363;&#22914;&#30456;&#20284;&#30340;&#24178;&#25200;&#29289;&#21644;&#26497;&#31471;&#20809;&#29031;&#12290;&#22312;&#36825;&#39033;&#30740;&#31350;&#20013;&#65292;&#21463;&#21040;&#36817;&#26399;&#22312;&#33258;&#28982;&#35821;&#35328;&#21644;&#35745;&#31639;&#26426;&#35270;&#35273;&#20219;&#21153;&#20013;&#32479;&#19968;&#26550;&#26500;&#25506;&#32034;&#30340;&#25104;&#21151;&#21551;&#21457;&#65292;&#25105;&#20204;&#25552;&#20986;&#20102;&#19968;&#31181;&#19968;&#20307;&#21270;&#26694;&#26550;&#65292;&#36890;&#36807;&#37319;&#29992;&#32479;&#19968;&#30340;Transformer&#20027;&#24178;&#32593;&#32476;&#26469;&#23398;&#20064;&#32852;&#21512;&#29305;&#24449;&#25552;&#21462;&#21644;&#20132;&#20114;&#12290;&#20855;&#20307;&#32780;&#35328;&#65292;&#25105;&#20204;&#28151;&#21512;&#21407;&#22987;&#30340;&#35270;&#35273;&#21644;&#35821;&#35328;&#20449;&#21495;&#26469;&#29983;&#25104;&#27880;&#20837;&#35821;&#35328;&#30340;&#35270;&#35273;&#21333;&#20803;&#65292;&#28982;&#21518;&#23558;&#23427;&#20204;&#36830;&#25509;&#36215;&#26469;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+Current mainstream vision-language (VL) tracking framework consists of three parts, \ie a visual feature extractor, a language feature extractor, and a fusion model. To pursue better performance, a natural modus operandi for VL tracking is employing customized and heavier unimodal encoders, and multi-modal fusion models. Albeit effective, existing VL trackers separate feature extraction and feature integration, resulting in extracted features that lack semantic guidance and have limited target-aware capability in complex scenarios, \eg similar distractors and extreme illumination. In this work, inspired by the recent success of exploring foundation models with unified architecture for both natural language and computer vision tasks, we propose an All-in-One framework, which learns joint feature extraction and interaction by adopting a unified transformer backbone. Specifically, we mix raw vision and language signals to generate language-injected vision tokens, which we then concatenate
+&lt;/p&gt;</description></item></channel></rss>
