@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Bootstrapping Fisher Market Equilibrium and First-Price Pacing Equilibrium](https://arxiv.org/abs/2402.02303) | 本文引入和设计了几个对线性费舍尔市场（LFM）和一手价格竞价均衡（FPPE）进行统计有效自举推断的过程，其中最具挑战性的是对一般FPPE进行自举。通过使用环收敛理论的有力工具，在温和的退化条件下成功设计了FPPE的自举过程。 |
-| [^2] | [Semidiscrete optimal transport with unknown costs.](http://arxiv.org/abs/2310.00786) | 本文研究了具有未知成本的半离散最优输运问题，提出了一种采用在线学习和随机逼近相结合的半局部算法，并证明其具有最优的收敛速度。 |
+| [^1] | [Asymptotic Behavior of Adversarial Training Estimator under $\ell_\infty$-Perturbation.](http://arxiv.org/abs/2401.15262) | 本文研究了在$\ell_\infty$-扰动下的对抗性训练，证明当真实参数为0时，对抗性训练估计器在该扰动下的极限分布可能在0处有一个正概率质量，提供了稀疏性恢复能力的理论保证，并提出了一种两步过程——自适应对抗性训练，可以进一步提高性能。 |
+| [^2] | [Optimal Decision Rules Under Partial Identification.](http://arxiv.org/abs/2111.04926) | 本文研究了在部分识别下的最优决策规则问题，提出了在已知方差的正态误差情况下的有限样本最小最大遗憾决策规则和渐近最小最大遗憾的可行决策规则，并应用于回归不连续设置中政策资格截断点的问题。 |
 
 # 详细
 
-[^1]: 自举费舍尔市场均衡和一手价格竞价均衡
+[^1]: 在$\ell_\infty$-扰动下对抗性训练估计器的渐近行为
 
-    Bootstrapping Fisher Market Equilibrium and First-Price Pacing Equilibrium
+    Asymptotic Behavior of Adversarial Training Estimator under $\ell_\infty$-Perturbation. (arXiv:2401.15262v1 [math.ST])
 
-    [https://arxiv.org/abs/2402.02303](https://arxiv.org/abs/2402.02303)
+    [http://arxiv.org/abs/2401.15262](http://arxiv.org/abs/2401.15262)
 
-    本文引入和设计了几个对线性费舍尔市场（LFM）和一手价格竞价均衡（FPPE）进行统计有效自举推断的过程，其中最具挑战性的是对一般FPPE进行自举。通过使用环收敛理论的有力工具，在温和的退化条件下成功设计了FPPE的自举过程。
-
-    
-
-    线性费舍尔市场（LFM）是经济学中的一个基本均衡模型，也在公平和高效的资源分配方面有应用。一手价格竞价均衡（FPPE）是一种捕捉第一价格拍卖中预算管理机制的模型。在某些实际情况下，如广告拍卖，在这些模型上进行统计推断具有一定的兴趣。一种广泛应用于一般统计推断的常用方法是自举过程。然而，对于LFM和FPPE，目前不存在有效应用自举程序的理论。在本文中，我们引入并设计了几个对LFM和FPPE进行统计有效自举推断的过程。最具挑战性的部分是对一般FPPE进行自举，这归结为自举约束M-估计量，这是一个很大程度上未开发的问题。我们通过使用环收敛理论的有力工具，在温和的退化条件下为FPPE设计了一个自举过程。通过合成和实际数据的实验证明了我们的方法的有效性。
-
-    The linear Fisher market (LFM) is a basic equilibrium model from economics, which also has applications in fair and efficient resource allocation. First-price pacing equilibrium (FPPE) is a model capturing budget-management mechanisms in first-price auctions. In certain practical settings such as advertising auctions, there is an interest in performing statistical inference over these models. A popular methodology for general statistical inference is the bootstrap procedure. Yet, for LFM and FPPE there is no existing theory for the valid application of bootstrap procedures. In this paper, we introduce and devise several statistically valid bootstrap inference procedures for LFM and FPPE. The most challenging part is to bootstrap general FPPE, which reduces to bootstrapping constrained M-estimators, a largely unexplored problem. We devise a bootstrap procedure for FPPE under mild degeneracy conditions by using the powerful tool of epi-convergence theory. Experiments with synthetic and s
-    
-[^2]: 具有未知成本的半离散最优输运
-
-    Semidiscrete optimal transport with unknown costs. (arXiv:2310.00786v1 [econ.EM])
-
-    [http://arxiv.org/abs/2310.00786](http://arxiv.org/abs/2310.00786)
-
-    本文研究了具有未知成本的半离散最优输运问题，提出了一种采用在线学习和随机逼近相结合的半局部算法，并证明其具有最优的收敛速度。
+    本文研究了在$\ell_\infty$-扰动下的对抗性训练，证明当真实参数为0时，对抗性训练估计器在该扰动下的极限分布可能在0处有一个正概率质量，提供了稀疏性恢复能力的理论保证，并提出了一种两步过程——自适应对抗性训练，可以进一步提高性能。
 
     
 
-    半离散最优输运是线性规划中经典输运问题的一种有挑战性的推广。其目标是以固定边际分布的方式设计两个随机变量（一个连续，一个离散）的联合分布，以最小化期望成本。我们提出了这个问题的一个新型变体，其中成本函数是未知的，但可以通过噪声观测学习；然而，每次只能采样一个函数。我们开发了一种半局部算法，将在线学习与随机逼近相结合，并证明其实现了最优的收敛速度，尽管随机梯度的非光滑性和目标函数的缺乏强凹性。
+    对抗性训练被提出来抵御机器学习和统计模型中的对抗性攻击。本文重点研究了在$\ell_\infty$-扰动下的对抗性训练，这个问题最近引起了很多研究的关注。在广义线性模型中研究了对抗性训练估计器的渐近行为。结果表明，当真实参数为0时，对抗性训练估计器在$\ell_\infty$-扰动下的极限分布可能在0处有一个正概率质量，为相关的稀疏性恢复能力提供了理论保证。此外，提出了一种两步过程——自适应对抗性训练，可以进一步提高在$\ell_\infty$-扰动下的对抗性训练的性能。具体而言，所提出的过程可以实现渐近无偏性和变量选择一致性。通过数值实验展示了稀疏性恢复的能力。
 
-    Semidiscrete optimal transport is a challenging generalization of the classical transportation problem in linear programming. The goal is to design a joint distribution for two random variables (one continuous, one discrete) with fixed marginals, in a way that minimizes expected cost. We formulate a novel variant of this problem in which the cost functions are unknown, but can be learned through noisy observations; however, only one function can be sampled at a time. We develop a semi-myopic algorithm that couples online learning with stochastic approximation, and prove that it achieves optimal convergence rates, despite the non-smoothness of the stochastic gradient and the lack of strong concavity in the objective function.
+    Adversarial training has been proposed to hedge against adversarial attacks in machine learning and statistical models. This paper focuses on adversarial training under $\ell_\infty$-perturbation, which has recently attracted much research attention. The asymptotic behavior of the adversarial training estimator is investigated in the generalized linear model. The results imply that the limiting distribution of the adversarial training estimator under $\ell_\infty$-perturbation could put a positive probability mass at $0$ when the true parameter is $0$, providing a theoretical guarantee of the associated sparsity-recovery ability. Alternatively, a two-step procedure is proposed -adaptive adversarial training, which could further improve the performance of adversarial training under $\ell_\infty$-perturbation. Specifically, the proposed procedure could achieve asymptotic unbiasedness and variable-selection consistency. Numerical experiments are conducted to show the sparsity-recovery a
+    
+[^2]: 在部分识别下的最优决策规则
+
+    Optimal Decision Rules Under Partial Identification. (arXiv:2111.04926v2 [econ.EM] UPDATED)
+
+    [http://arxiv.org/abs/2111.04926](http://arxiv.org/abs/2111.04926)
+
+    本文研究了在部分识别下的最优决策规则问题，提出了在已知方差的正态误差情况下的有限样本最小最大遗憾决策规则和渐近最小最大遗憾的可行决策规则，并应用于回归不连续设置中政策资格截断点的问题。
+
+    
+
+    本文考虑了一类统计决策问题，决策者必须在有限样本的基础上，在两种备选策略之间做出决策，以最大化社会福利。核心假设是潜在的、可能是无限维参数位于已知的凸集中，可能导致福利效应的部分识别。这些限制的一个例子是反事实结果函数的平滑性。作为主要理论结果，我在正态分布误差且方差已知的所有决策规则类中，推导出了一种有限样本的最小最大遗憾决策规则。当误差分布未知时，我得到了一种渐近最小最大遗憾的可行决策规则。我将我的结果应用于在回归不连续设置中是否改变政策资格截断点的问题，并在布基纳法索的学校建设项目的实证应用中进行了阐述。
+
+    I consider a class of statistical decision problems in which the policy maker must decide between two alternative policies to maximize social welfare based on a finite sample. The central assumption is that the underlying, possibly infinite-dimensional parameter, lies in a known convex set, potentially leading to partial identification of the welfare effect. An example of such restrictions is the smoothness of counterfactual outcome functions. As the main theoretical result, I derive a finite-sample, exact minimax regret decision rule within the class of all decision rules under normal errors with known variance. When the error distribution is unknown, I obtain a feasible decision rule that is asymptotically minimax regret. I apply my results to the problem of whether to change a policy eligibility cutoff in a regression discontinuity setup, and illustrate them in an empirical application to a school construction program in Burkina Faso.
     
 

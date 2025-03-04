@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Bootstrapping Fisher Market Equilibrium and First-Price Pacing Equilibrium](https://arxiv.org/abs/2402.02303) | 本文引入和设计了几个对线性费舍尔市场（LFM）和一手价格竞价均衡（FPPE）进行统计有效自举推断的过程，其中最具挑战性的是对一般FPPE进行自举。通过使用环收敛理论的有力工具，在温和的退化条件下成功设计了FPPE的自举过程。 |
+| [^1] | [Global bank network connectedness revisited: What is common, idiosyncratic and when?](https://arxiv.org/abs/2402.02482) | 本研究通过使用动态因子模型和稀疏VAR特殊分量，重新估计了高维全球银行网络连通性。研究发现，系统范围连通度（SWC）在全球危机期间急剧上升，而该方法能够最小化对SWC低估的风险。 |
 
 # 详细
 
-[^1]: 自举费舍尔市场均衡和一手价格竞价均衡
+[^1]: 全球银行网络连通性的再探：什么是共同的，特殊的和何时?
 
-    Bootstrapping Fisher Market Equilibrium and First-Price Pacing Equilibrium
+    Global bank network connectedness revisited: What is common, idiosyncratic and when?
 
-    [https://arxiv.org/abs/2402.02303](https://arxiv.org/abs/2402.02303)
+    [https://arxiv.org/abs/2402.02482](https://arxiv.org/abs/2402.02482)
 
-    本文引入和设计了几个对线性费舍尔市场（LFM）和一手价格竞价均衡（FPPE）进行统计有效自举推断的过程，其中最具挑战性的是对一般FPPE进行自举。通过使用环收敛理论的有力工具，在温和的退化条件下成功设计了FPPE的自举过程。
+    本研究通过使用动态因子模型和稀疏VAR特殊分量，重新估计了高维全球银行网络连通性。研究发现，系统范围连通度（SWC）在全球危机期间急剧上升，而该方法能够最小化对SWC低估的风险。
 
     
 
-    线性费舍尔市场（LFM）是经济学中的一个基本均衡模型，也在公平和高效的资源分配方面有应用。一手价格竞价均衡（FPPE）是一种捕捉第一价格拍卖中预算管理机制的模型。在某些实际情况下，如广告拍卖，在这些模型上进行统计推断具有一定的兴趣。一种广泛应用于一般统计推断的常用方法是自举过程。然而，对于LFM和FPPE，目前不存在有效应用自举程序的理论。在本文中，我们引入并设计了几个对LFM和FPPE进行统计有效自举推断的过程。最具挑战性的部分是对一般FPPE进行自举，这归结为自举约束M-估计量，这是一个很大程度上未开发的问题。我们通过使用环收敛理论的有力工具，在温和的退化条件下为FPPE设计了一个自举过程。通过合成和实际数据的实验证明了我们的方法的有效性。
+    我们重新审视了估计高维全球银行网络连通性的问题。与Demirer等人（2018）直接对实现的高维波动性向量进行正则化不同，我们估计了一个具有稀疏VAR特殊分量的动态因子模型。这样可以区分：（I）系统范围连通度（SWC）由共同成分冲击引起的部分（我们称之为“银行市场”），以及（II）由特殊冲击引起的部分（单个银行）。我们使用Demirer等人（2018）的原始数据集（每日数据，2003-2013）以及更新的数据集（2014-2023）。对于两者，我们计算由（I），（II），（I+II）产生的SWC，并提供自助法置信区间。与文献一致，我们发现SWC在全球危机期间猛增。然而，我们的方法将SWC低估的风险降至最低，这在高维数据集中，系统风险的发生可能既普遍又特殊的情况下至关重要。实际上，我们能够区分出...
 
-    The linear Fisher market (LFM) is a basic equilibrium model from economics, which also has applications in fair and efficient resource allocation. First-price pacing equilibrium (FPPE) is a model capturing budget-management mechanisms in first-price auctions. In certain practical settings such as advertising auctions, there is an interest in performing statistical inference over these models. A popular methodology for general statistical inference is the bootstrap procedure. Yet, for LFM and FPPE there is no existing theory for the valid application of bootstrap procedures. In this paper, we introduce and devise several statistically valid bootstrap inference procedures for LFM and FPPE. The most challenging part is to bootstrap general FPPE, which reduces to bootstrapping constrained M-estimators, a largely unexplored problem. We devise a bootstrap procedure for FPPE under mild degeneracy conditions by using the powerful tool of epi-convergence theory. Experiments with synthetic and s
+    We revisit the problem of estimating high-dimensional global bank network connectedness. Instead of directly regularizing the high-dimensional vector of realized volatilities as in Demirer et al. (2018), we estimate a dynamic factor model with sparse VAR idiosyncratic components. This allows to disentangle: (I) the part of system-wide connectedness (SWC) due to the common component shocks (what we call the "banking market"), and (II) the part due to the idiosyncratic shocks (the single banks). We employ both the original dataset as in Demirer et al. (2018) (daily data, 2003-2013), as well as a more recent vintage (2014-2023). For both, we compute SWC due to (I), (II), (I+II) and provide bootstrap confidence bands. In accordance with the literature, we find SWC to spike during global crises. However, our method minimizes the risk of SWC underestimation in high-dimensional datasets where episodes of systemic risk can be both pervasive and idiosyncratic. In fact, we are able to disentangl
     
 

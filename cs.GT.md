@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Bootstrapping Fisher Market Equilibrium and First-Price Pacing Equilibrium](https://arxiv.org/abs/2402.02303) | 本文引入和设计了几个对线性费舍尔市场（LFM）和一手价格竞价均衡（FPPE）进行统计有效自举推断的过程，其中最具挑战性的是对一般FPPE进行自举。通过使用环收敛理论的有力工具，在温和的退化条件下成功设计了FPPE的自举过程。 |
+| [^1] | [T\^atonnement in Homothetic Fisher Markets.](http://arxiv.org/abs/2306.04890) | 本论文识别了希克斯需求的价格弹性的绝对值最大值作为市场涨跌过程中的经济参数，在同类菲舍尔市场中证明了涨跌过程的收敛率为$O((1+\varepsilon^2)/T)$。 |
 
 # 详细
 
-[^1]: 自举费舍尔市场均衡和一手价格竞价均衡
+[^1]: 同类菲舍尔市场中的涨跌过程
 
-    Bootstrapping Fisher Market Equilibrium and First-Price Pacing Equilibrium
+    T\^atonnement in Homothetic Fisher Markets. (arXiv:2306.04890v1 [cs.GT])
 
-    [https://arxiv.org/abs/2402.02303](https://arxiv.org/abs/2402.02303)
+    [http://arxiv.org/abs/2306.04890](http://arxiv.org/abs/2306.04890)
 
-    本文引入和设计了几个对线性费舍尔市场（LFM）和一手价格竞价均衡（FPPE）进行统计有效自举推断的过程，其中最具挑战性的是对一般FPPE进行自举。通过使用环收敛理论的有力工具，在温和的退化条件下成功设计了FPPE的自举过程。
+    本论文识别了希克斯需求的价格弹性的绝对值最大值作为市场涨跌过程中的经济参数，在同类菲舍尔市场中证明了涨跌过程的收敛率为$O((1+\varepsilon^2)/T)$。
 
     
 
-    线性费舍尔市场（LFM）是经济学中的一个基本均衡模型，也在公平和高效的资源分配方面有应用。一手价格竞价均衡（FPPE）是一种捕捉第一价格拍卖中预算管理机制的模型。在某些实际情况下，如广告拍卖，在这些模型上进行统计推断具有一定的兴趣。一种广泛应用于一般统计推断的常用方法是自举过程。然而，对于LFM和FPPE，目前不存在有效应用自举程序的理论。在本文中，我们引入并设计了几个对LFM和FPPE进行统计有效自举推断的过程。最具挑战性的部分是对一般FPPE进行自举，这归结为自举约束M-估计量，这是一个很大程度上未开发的问题。我们通过使用环收敛理论的有力工具，在温和的退化条件下为FPPE设计了一个自举过程。通过合成和实际数据的实验证明了我们的方法的有效性。
+    经济学和计算领域中一个流行的主题是通过市场中卖家和买家可以发现均衡价格的自然价格调整过程。这种过程的一个例子是涨跌过程，这是一种类似于拍卖的算法，由法国经济学家瓦尔拉斯在1874年首次提出，卖家根据买家的马歇尔需求调整价格。消费者理论中的一个对偶概念是买家的希克斯需求。在本文中，我们确定希克斯需求的弹性的绝对值最大值，作为一个经济参数，足以捕捉和解释广泛类市场中收敛和非收敛的涨跌行为。特别是，在价格弹性受到限制的同类菲舍尔市场中，即由同类效用函数表示的消费者偏好和价格弹性受到限制的Fisher市场中，我们证明了tâtonnement的收敛率为$O((1+\varepsilon^2)/T)$。
 
-    The linear Fisher market (LFM) is a basic equilibrium model from economics, which also has applications in fair and efficient resource allocation. First-price pacing equilibrium (FPPE) is a model capturing budget-management mechanisms in first-price auctions. In certain practical settings such as advertising auctions, there is an interest in performing statistical inference over these models. A popular methodology for general statistical inference is the bootstrap procedure. Yet, for LFM and FPPE there is no existing theory for the valid application of bootstrap procedures. In this paper, we introduce and devise several statistically valid bootstrap inference procedures for LFM and FPPE. The most challenging part is to bootstrap general FPPE, which reduces to bootstrapping constrained M-estimators, a largely unexplored problem. We devise a bootstrap procedure for FPPE under mild degeneracy conditions by using the powerful tool of epi-convergence theory. Experiments with synthetic and s
+    A prevalent theme in the economics and computation literature is to identify natural price-adjustment processes by which sellers and buyers in a market can discover equilibrium prices. An example of such a process is t\^atonnement, an auction-like algorithm first proposed in 1874 by French economist Walras in which sellers adjust prices based on the Marshallian demands of buyers. A dual concept in consumer theory is a buyer's Hicksian demand. In this paper, we identify the maximum of the absolute value of the elasticity of the Hicksian demand, as an economic parameter sufficient to capture and explain a range of convergent and non-convergent t\^atonnement behaviors in a broad class of markets. In particular, we prove the convergence of t\^atonnement at a rate of $O((1+\varepsilon^2)/T)$, in homothetic Fisher markets with bounded price elasticity of Hicksian demand, i.e., Fisher markets in which consumers have preferences represented by homogeneous utility functions and the price elasti
     
 

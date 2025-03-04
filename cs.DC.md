@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [LoCoDL: Communication-Efficient Distributed Learning with Local Training and Compression](https://arxiv.org/abs/2403.04348) | LoCoDL是一种通信高效的分布式学习算法，结合了本地训练和压缩技术，具有双倍加速的通信复杂度优势，特别适用于一般异构条件下的强凸函数。 |
-| [^2] | [Fiddler: CPU-GPU Orchestration for Fast Inference of Mixture-of-Experts Models](https://arxiv.org/abs/2402.07033) | 本文介绍了Fiddler，一种用于Mixture-of-Experts模型的资源高效推断引擎，通过CPU-GPU编排实现最小化数据传输，相比现有方法提高了一个数量级的推断速度。 |
+| [^1] | [Full Scaling Automation for Sustainable Development of Green Data Centers.](http://arxiv.org/abs/2305.00706) | 提出了一种全面自动化扩展（FSA）机制来改善数据中心的能源利用效率，该机制利用深度表征学习来预测每个服务的未来负载并自动稳定相应的目标CPU使用率水平。 |
 
 # 详细
 
-[^1]: LoCoDL: 具有本地训练和压缩的通信高效分布式学习
+[^1]: 可持续发展绿色数据中心的全面自动化扩展机制
 
-    LoCoDL: Communication-Efficient Distributed Learning with Local Training and Compression
+    Full Scaling Automation for Sustainable Development of Green Data Centers. (arXiv:2305.00706v1 [cs.DC])
 
-    [https://arxiv.org/abs/2403.04348](https://arxiv.org/abs/2403.04348)
+    [http://arxiv.org/abs/2305.00706](http://arxiv.org/abs/2305.00706)
 
-    LoCoDL是一种通信高效的分布式学习算法，结合了本地训练和压缩技术，具有双倍加速的通信复杂度优势，特别适用于一般异构条件下的强凸函数。
-
-    
-
-    在分布式优化和学习中，甚至在现代联邦学习框架中，由于通信速度慢且成本高，通信至关重要。我们介绍了LoCoDL，这是一种通信高效的算法，它利用了本地训练和压缩这两种流行且有效的技术，本地训练降低了通信频率，压缩则是发送短的比特流而不是完整的浮点数向量。LoCoDL适用于大类别的无偏压缩器，其中包括广泛使用的稀疏化和量化方法。LoCoDL在一般异构条件下具有双倍加速的通信复杂度优势，这取决于函数的条件数和模型维度，特别是在强凸函数的情况下。在实践中得到了验证，LoCoDL胜过了现有的算法。
-
-    arXiv:2403.04348v1 Announce Type: cross  Abstract: In Distributed optimization and Learning, and even more in the modern framework of federated learning, communication, which is slow and costly, is critical. We introduce LoCoDL, a communication-efficient algorithm that leverages the two popular and effective techniques of Local training, which reduces the communication frequency, and Compression, in which short bitstreams are sent instead of full-dimensional vectors of floats. LoCoDL works with a large class of unbiased compressors that includes widely-used sparsification and quantization methods. LoCoDL provably benefits from local training and compression and enjoys a doubly-accelerated communication complexity, with respect to the condition number of the functions and the model dimension, in the general heterogenous regime with strongly convex functions. This is confirmed in practice, with LoCoDL outperforming existing algorithms.
-    
-[^2]: Fiddler：用于Mixture-of-Experts模型快速推断的CPU-GPU编排
-
-    Fiddler: CPU-GPU Orchestration for Fast Inference of Mixture-of-Experts Models
-
-    [https://arxiv.org/abs/2402.07033](https://arxiv.org/abs/2402.07033)
-
-    本文介绍了Fiddler，一种用于Mixture-of-Experts模型的资源高效推断引擎，通过CPU-GPU编排实现最小化数据传输，相比现有方法提高了一个数量级的推断速度。
+    提出了一种全面自动化扩展（FSA）机制来改善数据中心的能源利用效率，该机制利用深度表征学习来预测每个服务的未来负载并自动稳定相应的目标CPU使用率水平。
 
     
 
-    基于Mixture-of-Experts（MoE）架构的大型语言模型（LLM）在各种任务上表现出了很好的性能。然而，在资源受限的环境下运行这些模型，即GPU内存资源不丰富的情况下，由于模型规模庞大，存在挑战。现有的将模型权重卸载到CPU内存的系统，由于频繁地在CPU和GPU之间移动数据而导致显著的开销。在本文中，我们提出了Fiddler，一种用于MoE模型的资源高效推断引擎，实现了CPU-GPU编排。Fiddler的核心思想是利用CPU的计算能力来最小化CPU和GPU之间的数据传输。我们的评估结果表明，Fiddler能够在单个具有24GB内存的GPU上运行未压缩的Mixtral-8x7B模型（参数超过90GB），每秒生成超过3个token，相比现有方法提高一个数量级。Fiddler的代码可以公开访问，网址为\url{https://github.com/efeslab/fiddler}
+    云计算的快速崛起导致数据中心碳排放量惊人地增加，现在占全球温室气体排放的>3％，必须立即采取措施应对它们对全球气候日益增长的负担。这一努力的重点是提高资源利用率以节省电力消耗。我们提出的全面自动化扩展（FSA）机制是一种有效的方法，可以在大规模云计算集群中动态地适应不断变化的工作负载，使数据中心中的集群保持其所需的CPU利用率目标，从而改善能源效率。FSA利用深度表征学习的威力来准确预测每个服务的未来工作负载，并自动稳定相应的目标CPU使用率水平，不像之前的自动扩展方法，如Autopilot或FIRM，需要使用统计模型和专家知识来调整计算资源。
 
-    Large Language Models (LLMs) based on Mixture-of-Experts (MoE) architecture are showing promising performance on various tasks. However, running them on resource-constrained settings, where GPU memory resources are not abundant, is challenging due to huge model sizes. Existing systems that offload model weights to CPU memory suffer from the significant overhead of frequently moving data between CPU and GPU. In this paper, we propose Fiddler, a resource-efficient inference engine with CPU-GPU orchestration for MoE models. The key idea of Fiddler is to use the computation ability of the CPU to minimize the data movement between the CPU and GPU. Our evaluation shows that Fiddler can run the uncompressed Mixtral-8x7B model, which exceeds 90GB in parameters, to generate over $3$ tokens per second on a single GPU with 24GB memory, showing an order of magnitude improvement over existing methods. The code of Fiddler is publicly available at \url{https://github.com/efeslab/fiddler}
+    The rapid rise in cloud computing has resulted in an alarming increase in data centers' carbon emissions, which now accounts for >3% of global greenhouse gas emissions, necessitating immediate steps to combat their mounting strain on the global climate. An important focus of this effort is to improve resource utilization in order to save electricity usage. Our proposed Full Scaling Automation (FSA) mechanism is an effective method of dynamically adapting resources to accommodate changing workloads in large-scale cloud computing clusters, enabling the clusters in data centers to maintain their desired CPU utilization target and thus improve energy efficiency. FSA harnesses the power of deep representation learning to accurately predict the future workload of each service and automatically stabilize the corresponding target CPU usage level, unlike the previous autoscaling methods, such as Autopilot or FIRM, that need to adjust computing resources with statistical models and expert knowle
     
 
