@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Calib3D: Calibrating Model Preferences for Reliable 3D Scene Understanding](https://arxiv.org/abs/2403.17010) | Calib3D是一个从不确定性估计的角度出发，对多个3D场景理解模型进行了全面评估，发现现有模型虽然准确但不可靠，从而阐明了安全关键的背景下的重要性。 |
-| [^2] | [A Policy Adaptation Method for Implicit Multitask Reinforcement Learning Problems.](http://arxiv.org/abs/2308.16471) | 本研究提出了一种适用于动态运动生成任务的多任务强化学习算法，可用于适应单个运动类别中的隐式变化，并在头球任务中取得良好的适应效果。 |
+| [^1] | [Towards Agile Robots: Intuitive Robot Position Speculation with Neural Networks](https://arxiv.org/abs/2402.16281) | 本文提出了一种机器人位置推测网络(RPSN)，通过将可微分的逆运动学算法和神经网络结合，能够高成功率地推测移动操作器械的位置。 |
+| [^2] | [DiffTOP: Differentiable Trajectory Optimization for Deep Reinforcement and Imitation Learning](https://arxiv.org/abs/2402.05421) | DiffTOP使用可微分轨迹优化作为策略表示来生成动作，解决了模型基于强化学习算法中的“目标不匹配”问题，并在模仿学习任务上进行了性能基准测试。 |
 
 # 详细
 
-[^1]: Calib3D：校准模型偏好以实现可靠的3D场景理解
+[^1]: 朝着敏捷机器人：利用神经网络进行直观的机器人位置推测
 
-    Calib3D: Calibrating Model Preferences for Reliable 3D Scene Understanding
+    Towards Agile Robots: Intuitive Robot Position Speculation with Neural Networks
 
-    [https://arxiv.org/abs/2403.17010](https://arxiv.org/abs/2403.17010)
+    [https://arxiv.org/abs/2402.16281](https://arxiv.org/abs/2402.16281)
 
-    Calib3D是一个从不确定性估计的角度出发，对多个3D场景理解模型进行了全面评估，发现现有模型虽然准确但不可靠，从而阐明了安全关键的背景下的重要性。
-
-    
-
-    安全关键的3D场景理解任务需要的不仅仅是准确的预测，还需要来自3D感知模型的自信预测。本研究推出了Calib3D，这是一项开创性的工作，旨在从不确定性估计的角度基准和审查3D场景理解模型的可靠性。我们全面评估了28个最先进的模型在10个不同的3D数据集上，揭示了能够处理3D场景理解中的误差不确定性和认知不确定性的有见地的现象。我们发现，尽管现有模型取得了令人印象深刻的准确度水平，但它们经常无法提供可靠的不确定性估计 -- 这个关键的缺陷严重损害了它们在安全敏感环境中的适用性。通过对关键因素（如网络容量、LiDAR表示、光栅分辨率和3D数据增强技术）进行了广泛分析，我们直接将这些方面与模型校准相关联。
-
-    arXiv:2403.17010v1 Announce Type: cross  Abstract: Safety-critical 3D scene understanding tasks necessitate not only accurate but also confident predictions from 3D perception models. This study introduces Calib3D, a pioneering effort to benchmark and scrutinize the reliability of 3D scene understanding models from an uncertainty estimation viewpoint. We comprehensively evaluate 28 state-of-the-art models across 10 diverse 3D datasets, uncovering insightful phenomena that cope with both the aleatoric and epistemic uncertainties in 3D scene understanding. We discover that despite achieving impressive levels of accuracy, existing models frequently fail to provide reliable uncertainty estimates -- a pitfall that critically undermines their applicability in safety-sensitive contexts. Through extensive analysis of key factors such as network capacity, LiDAR representations, rasterization resolutions, and 3D data augmentation techniques, we correlate these aspects directly with the model cal
-    
-[^2]: 一种适用于隐式多任务强化学习问题的策略适应方法
-
-    A Policy Adaptation Method for Implicit Multitask Reinforcement Learning Problems. (arXiv:2308.16471v1 [cs.RO])
-
-    [http://arxiv.org/abs/2308.16471](http://arxiv.org/abs/2308.16471)
-
-    本研究提出了一种适用于动态运动生成任务的多任务强化学习算法，可用于适应单个运动类别中的隐式变化，并在头球任务中取得良好的适应效果。
+    本文提出了一种机器人位置推测网络(RPSN)，通过将可微分的逆运动学算法和神经网络结合，能够高成功率地推测移动操作器械的位置。
 
     
 
-    在动态运动生成任务中，包括接触和碰撞，策略参数的小改变可能导致极其不同的回报。例如，在足球中，通过稍微改变踢球位置或施加球的力或者球的摩擦力发生变化，球可以以完全不同的方向飞行。然而，很难想象在不同的方向上头球需要完全不同的技能。在本研究中，我们提出了一种多任务强化学习算法，用于在单个运动类别中适应目标或环境的隐式变化，包括不同的奖励函数或环境的物理参数。我们利用单脚机器人模型对所提出的方法进行了评估，在头球任务中取得了良好的适应效果。结果表明，所提出的方法可以适应目标位置的隐式变化或球的恢复系数的变化，而标准的领域随机化方法则不能。
+    机器人位置推测是控制移动操作器械的关键步骤之一，以确定底盘应该移动到哪里。为了满足敏捷机器人技术的需求，本文提出了一个机器人位置推测网络(RPSN)，这是一种基于学习的方法，旨在增强移动操作器械的敏捷性。RPSN将可微分的逆运动学算法和神经网络相结合。通过端到端训练，RPSN能够高成功率地推测位置。我们将RPSN应用于分解末期电动汽车电池的移动操作器械。在各种模拟环境和实际移动操作器械上进行了大量实验证明，RPSN提供的初始位置可能是理想位置的概率
 
-    In dynamic motion generation tasks, including contact and collisions, small changes in policy parameters can lead to extremely different returns. For example, in soccer, the ball can fly in completely different directions with a similar heading motion by slightly changing the hitting position or the force applied to the ball or when the friction of the ball varies. However, it is difficult to imagine that completely different skills are needed for heading a ball in different directions. In this study, we proposed a multitask reinforcement learning algorithm for adapting a policy to implicit changes in goals or environments in a single motion category with different reward functions or physical parameters of the environment. We evaluated the proposed method on the ball heading task using a monopod robot model. The results showed that the proposed method can adapt to implicit changes in the goal positions or the coefficients of restitution of the ball, whereas the standard domain randomi
+    arXiv:2402.16281v1 Announce Type: cross  Abstract: The robot position speculation, which determines where the chassis should move, is one key step to control the mobile manipulators. The target position must ensure the feasibility of chassis movement and manipulability, which is guaranteed by randomized sampling and kinematic checking in traditional methods. Addressing the demands of agile robotics, this paper proposes a robot position speculation network(RPSN), a learning-based approach to enhance the agility of mobile manipulators. The RPSN incorporates a differentiable inverse kinematic algorithm and a neural network. Through end-to-end training, the RPSN can speculate positions with a high success rate. We apply the RPSN to mobile manipulators disassembling end-of-life electric vehicle batteries (EOL-EVBs). Extensive experiments on various simulated environments and physical mobile manipulators demonstrate that the probability of the initial position provided by RPSN being the idea
+    
+[^2]: DiffTOP: 可微分轨迹优化在强化学习和模仿学习中的应用
+
+    DiffTOP: Differentiable Trajectory Optimization for Deep Reinforcement and Imitation Learning
+
+    [https://arxiv.org/abs/2402.05421](https://arxiv.org/abs/2402.05421)
+
+    DiffTOP使用可微分轨迹优化作为策略表示来生成动作，解决了模型基于强化学习算法中的“目标不匹配”问题，并在模仿学习任务上进行了性能基准测试。
+
+    
+
+    本文介绍了DiffTOP，它利用可微分轨迹优化作为策略表示，为深度强化学习和模仿学习生成动作。轨迹优化是一种在控制领域中广泛使用的算法，由成本和动力学函数参数化。我们的方法的关键是利用了最近在可微分轨迹优化方面的进展，使得可以计算损失对于轨迹优化的参数的梯度。因此，轨迹优化的成本和动力学函数可以端到端地学习。DiffTOP解决了之前模型基于强化学习算法中的“目标不匹配”问题，因为DiffTOP中的动力学模型通过轨迹优化过程中的策略梯度损失直接最大化任务性能。我们还对DiffTOP在标准机器人操纵任务套件中进行了模仿学习性能基准测试。
+
+    This paper introduces DiffTOP, which utilizes Differentiable Trajectory OPtimization as the policy representation to generate actions for deep reinforcement and imitation learning. Trajectory optimization is a powerful and widely used algorithm in control, parameterized by a cost and a dynamics function. The key to our approach is to leverage the recent progress in differentiable trajectory optimization, which enables computing the gradients of the loss with respect to the parameters of trajectory optimization. As a result, the cost and dynamics functions of trajectory optimization can be learned end-to-end. DiffTOP addresses the ``objective mismatch'' issue of prior model-based RL algorithms, as the dynamics model in DiffTOP is learned to directly maximize task performance by differentiating the policy gradient loss through the trajectory optimization process. We further benchmark DiffTOP for imitation learning on standard robotic manipulation task suites with high-dimensional sensory
     
 

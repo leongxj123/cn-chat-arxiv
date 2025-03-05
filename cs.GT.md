@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [T\^atonnement in Homothetic Fisher Markets.](http://arxiv.org/abs/2306.04890) | 本论文识别了希克斯需求的价格弹性的绝对值最大值作为市场涨跌过程中的经济参数，在同类菲舍尔市场中证明了涨跌过程的收敛率为$O((1+\varepsilon^2)/T)$。 |
+| [^1] | [Last-Iterate Convergence Properties of Regret-Matching Algorithms in Games.](http://arxiv.org/abs/2311.00676) | 这篇论文研究了基于遗憾匹配的算法在游戏中的最终迭代收敛性质。通过数值实验发现多个实际变体在简单的游戏中缺乏最终迭代收敛保证，而基于平滑技术的最近变体则具有最终迭代收敛性。 |
+| [^2] | [Bayesian Analysis of Linear Contracts.](http://arxiv.org/abs/2211.06850) | 本文在贝叶斯框架下为线性合同在实践中普遍存在的原因进行了解释和证明，并表明在线性合同中，当委托-代理环境中存在足够不确定性时，线性合同是近乎最优的。 |
 
 # 详细
 
-[^1]: 同类菲舍尔市场中的涨跌过程
+[^1]: Regret-Matching算法在游戏中的最终迭代收敛性质
 
-    T\^atonnement in Homothetic Fisher Markets. (arXiv:2306.04890v1 [cs.GT])
+    Last-Iterate Convergence Properties of Regret-Matching Algorithms in Games. (arXiv:2311.00676v1 [cs.GT])
 
-    [http://arxiv.org/abs/2306.04890](http://arxiv.org/abs/2306.04890)
+    [http://arxiv.org/abs/2311.00676](http://arxiv.org/abs/2311.00676)
 
-    本论文识别了希克斯需求的价格弹性的绝对值最大值作为市场涨跌过程中的经济参数，在同类菲舍尔市场中证明了涨跌过程的收敛率为$O((1+\varepsilon^2)/T)$。
+    这篇论文研究了基于遗憾匹配的算法在游戏中的最终迭代收敛性质。通过数值实验发现多个实际变体在简单的游戏中缺乏最终迭代收敛保证，而基于平滑技术的最近变体则具有最终迭代收敛性。
 
     
 
-    经济学和计算领域中一个流行的主题是通过市场中卖家和买家可以发现均衡价格的自然价格调整过程。这种过程的一个例子是涨跌过程，这是一种类似于拍卖的算法，由法国经济学家瓦尔拉斯在1874年首次提出，卖家根据买家的马歇尔需求调整价格。消费者理论中的一个对偶概念是买家的希克斯需求。在本文中，我们确定希克斯需求的弹性的绝对值最大值，作为一个经济参数，足以捕捉和解释广泛类市场中收敛和非收敛的涨跌行为。特别是，在价格弹性受到限制的同类菲舍尔市场中，即由同类效用函数表示的消费者偏好和价格弹性受到限制的Fisher市场中，我们证明了tâtonnement的收敛率为$O((1+\varepsilon^2)/T)$。
+    基于遗憾匹配的算法，特别是遗憾匹配+ (RM+)及其变种，是解决大规模双人零和游戏的最流行方法。与具有零和游戏的强最终迭代和遍历收敛性质的算法（如乐观梯度上升）不同，我们对于遗憾匹配算法的最终迭代性质几乎一无所知。鉴于最终迭代收敛性对于数值优化和模拟现实世界中的游戏学习的重要性，本文研究了各种流行的RM+变体的最终迭代收敛性质。首先，我们通过数值实验证明，包括同时RM+、交替RM+和同时预测RM+在内的几个实际变体，甚至在简单的3x3游戏中也缺乏最终迭代收敛保证。然后，我们证明了这些算法的最近变体，基于平滑技术得到了最终迭代收敛性。
 
-    A prevalent theme in the economics and computation literature is to identify natural price-adjustment processes by which sellers and buyers in a market can discover equilibrium prices. An example of such a process is t\^atonnement, an auction-like algorithm first proposed in 1874 by French economist Walras in which sellers adjust prices based on the Marshallian demands of buyers. A dual concept in consumer theory is a buyer's Hicksian demand. In this paper, we identify the maximum of the absolute value of the elasticity of the Hicksian demand, as an economic parameter sufficient to capture and explain a range of convergent and non-convergent t\^atonnement behaviors in a broad class of markets. In particular, we prove the convergence of t\^atonnement at a rate of $O((1+\varepsilon^2)/T)$, in homothetic Fisher markets with bounded price elasticity of Hicksian demand, i.e., Fisher markets in which consumers have preferences represented by homogeneous utility functions and the price elasti
+    Algorithms based on regret matching, specifically regret matching$^+$ (RM$^+$), and its variants are the most popular approaches for solving large-scale two-player zero-sum games in practice. Unlike algorithms such as optimistic gradient descent ascent, which have strong last-iterate and ergodic convergence properties for zero-sum games, virtually nothing is known about the last-iterate properties of regret-matching algorithms. Given the importance of last-iterate convergence for numerical optimization reasons and relevance as modeling real-word learning in games, in this paper, we study the last-iterate convergence properties of various popular variants of RM$^+$. First, we show numerically that several practical variants such as simultaneous RM$^+$, alternating RM$^+$, and simultaneous predictive RM$^+$, all lack last-iterate convergence guarantees even on a simple $3\times 3$ game. We then prove that recent variants of these algorithms based on a smoothing technique do enjoy last-it
+    
+[^2]: 线性合同的贝叶斯分析
+
+    Bayesian Analysis of Linear Contracts. (arXiv:2211.06850v2 [cs.GT] UPDATED)
+
+    [http://arxiv.org/abs/2211.06850](http://arxiv.org/abs/2211.06850)
+
+    本文在贝叶斯框架下为线性合同在实践中普遍存在的原因进行了解释和证明，并表明在线性合同中，当委托-代理环境中存在足够不确定性时，线性合同是近乎最优的。
+
+    
+
+    我们在贝叶斯框架下为实践中普遍存在的线性（佣金制）合同提供了合理性的证明。我们考虑了一个隐藏行动的委托-代理模型，在该模型中，不同行动需要不同的努力量，并且代理人的努力成本是私有的。我们展示了当在委托-代理环境中存在足够的不确定性时，线性合同是近乎最优的。
+
+    We provide a justification for the prevalence of linear (commission-based) contracts in practice under the Bayesian framework. We consider a hidden-action principal-agent model, in which actions require different amounts of effort, and the agent's cost per-unit-of-effort is private. We show that linear contracts are near-optimal whenever there is sufficient uncertainty in the principal-agent setting.
     
 
