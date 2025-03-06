@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.DC</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.DC</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.DC</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.DC</description><item><title>&#26412;&#35770;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#38544;&#31169;&#20445;&#25252;&#30340;&#12289;&#20998;&#24067;&#24335;&#30340;&#12289;&#21512;&#20316;&#30340;&#22522;&#20110;FCM&#30340;&#23398;&#20064;&#26041;&#27861;&#65292;&#29992;&#20110;&#30284;&#30151;&#30740;&#31350;&#65292;&#36890;&#36807;&#32852;&#37030;&#23398;&#20064;&#36807;&#31243;&#25913;&#36827;&#20102;&#27169;&#22411;&#30340;&#24615;&#33021;&#12290;</title><link>https://arxiv.org/abs/2402.10102</link><description>&lt;p&gt;
+&#19968;&#20010;&#38544;&#31169;&#20445;&#25252;&#30340;&#12289;&#20998;&#24067;&#24335;&#30340;&#12289;&#21512;&#20316;&#30340;&#22522;&#20110;FCM&#30340;&#30284;&#30151;&#30740;&#31350;&#23398;&#20064;&#26041;&#27861;
+&lt;/p&gt;
+&lt;p&gt;
+A privacy-preserving, distributed and cooperative FCM-based learning approach for Cancer Research
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.10102
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#35770;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#38544;&#31169;&#20445;&#25252;&#30340;&#12289;&#20998;&#24067;&#24335;&#30340;&#12289;&#21512;&#20316;&#30340;&#22522;&#20110;FCM&#30340;&#23398;&#20064;&#26041;&#27861;&#65292;&#29992;&#20110;&#30284;&#30151;&#30740;&#31350;&#65292;&#36890;&#36807;&#32852;&#37030;&#23398;&#20064;&#36807;&#31243;&#25913;&#36827;&#20102;&#27169;&#22411;&#30340;&#24615;&#33021;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#20998;&#24067;&#24335;&#20154;&#24037;&#26234;&#33021;&#24341;&#36215;&#20102;&#36234;&#26469;&#36234;&#22810;&#30340;&#20851;&#27880;&#12290;&#26412;&#25991;&#20171;&#32461;&#20102;&#19968;&#31181;&#21019;&#26032;&#30340;&#38544;&#31169;&#20445;&#25252;&#20998;&#24067;&#24335;&#23398;&#20064;&#26041;&#27861;&#65292;&#22522;&#20110;&#31890;&#23376;&#32676;&#20248;&#21270;&#30340;&#27169;&#31946;&#35748;&#30693;&#22270;&#12290;&#20316;&#32773;&#35774;&#35745;&#20102;&#19968;&#31181;&#21327;&#20316;FCM&#23398;&#20064;&#30340;&#35757;&#32451;&#26041;&#26696;&#65292;&#25552;&#20379;&#20102;&#31526;&#21512;&#24403;&#21069;&#35268;&#23450;&#30340;&#25968;&#25454;&#38544;&#31169;&#20445;&#25252;&#12290;&#35813;&#26041;&#27861;&#24212;&#29992;&#20110;&#30284;&#30151;&#26816;&#27979;&#38382;&#39064;&#65292;&#35777;&#26126;&#20102;&#32852;&#37030;&#23398;&#20064;&#36807;&#31243;&#25913;&#36827;&#20102;&#27169;&#22411;&#30340;&#24615;&#33021;&#65292;&#24182;&#33719;&#24471;&#20102;&#31867;&#20284;&#20110;&#25991;&#29486;&#20013;&#30340;&#32467;&#26524;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2402.10102v1 Announce Type: new  Abstract: Distributed Artificial Intelligence is attracting interest day by day. In this paper, the authors introduce an innovative methodology for distributed learning of Particle Swarm Optimization-based Fuzzy Cognitive Maps in a privacy-preserving way. The authors design a training scheme for collaborative FCM learning that offers data privacy compliant with the current regulation. This method is applied to a cancer detection problem, proving that the performance of the model is improved by the Federated Learning process, and obtaining similar results to the ones that can be found in the literature.
+&lt;/p&gt;</description></item></channel></rss>
