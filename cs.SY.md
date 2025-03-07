@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Optimal transmission expansion minimally reduces decarbonization costs of U.S. electricity](https://arxiv.org/abs/2402.14189) | 传输扩展对高比例可再生能源系统的好处远远超过传统发电系统，全国最佳计划下的传输扩展仅能将100%清洁系统的成本降低4%。 |
+| [^1] | [Introduction to Online Nonstochastic Control.](http://arxiv.org/abs/2211.09619) | 介绍了一种新兴的在线非随机控制方法，通过在一组策略中寻找低后悔，获得对最优策略的近似。 |
 
 # 详细
 
-[^1]: 最佳传输扩展最小化降低美国电力碳减排成本
+[^1]: 在线非随机控制简介
 
-    Optimal transmission expansion minimally reduces decarbonization costs of U.S. electricity
+    Introduction to Online Nonstochastic Control. (arXiv:2211.09619v2 [cs.LG] UPDATED)
 
-    [https://arxiv.org/abs/2402.14189](https://arxiv.org/abs/2402.14189)
+    [http://arxiv.org/abs/2211.09619](http://arxiv.org/abs/2211.09619)
 
-    传输扩展对高比例可再生能源系统的好处远远超过传统发电系统，全国最佳计划下的传输扩展仅能将100%清洁系统的成本降低4%。
+    介绍了一种新兴的在线非随机控制方法，通过在一组策略中寻找低后悔，获得对最优策略的近似。
 
     
 
-    太阳能和风能与化石燃料具有竞争力，但它们的间歇性特性带来了挑战。陆地、风力和太阳资源在时间和地理上存在显著差异，这表明远距离输电可能特别有益。我们使用详细的开源模型，联合分析了美国三个主要互联网的最佳传输扩展、存储、发电和小时运营。在高可再生能源系统中，传输扩展提供的好处远远超过主要采用传统发电的系统。然而，尽管一个最佳的全国计划需要将当前的地区间输电容量增加至三倍以上，与仅依靠当前输电的方案相比，传输仅能将100%清洁系统的成本降低4%。仅在现有互联网之间扩展容量即可实现大部分节约。对能源存储和发电的调整也能实现一定程度上的节约。
+    本文介绍了一种新兴的动态系统控制与可微强化学习范式——在线非随机控制，并应用在线凸优化和凸松弛技术得到了具有可证明保证的新方法，在最佳和鲁棒控制方面取得了显著成果。与其他框架不同，该方法的目标是对抗性攻击，在无法预测扰动模型的情况下，通过在一组策略中寻找低后悔，获得对最优策略的近似。
 
-    arXiv:2402.14189v1 Announce Type: new  Abstract: Solar and wind power are cost-competitive with fossil fuels, yet their intermittent nature presents challenges. Significant temporal and geographic differences in land, wind, and solar resources suggest that long-distance transmission could be particularly beneficial. Using a detailed, open-source model, we analyze optimal transmission expansion jointly with storage, generation, and hourly operations across the three primary interconnects in the United States. Transmission expansion offers far more benefits in a high-renewable system than in a system with mostly conventional generation. Yet while an optimal nationwide plan would have more than triple current interregional transmission, transmission decreases the cost of a 100% clean system by only 4% compared to a plan that relies solely on current transmission. Expanding capacity only within existing interconnects can achieve most of these savings. Adjustments to energy storage and gene
+    This text presents an introduction to an emerging paradigm in control of dynamical systems and differentiable reinforcement learning called online nonstochastic control. The new approach applies techniques from online convex optimization and convex relaxations to obtain new methods with provable guarantees for classical settings in optimal and robust control.  The primary distinction between online nonstochastic control and other frameworks is the objective. In optimal control, robust control, and other control methodologies that assume stochastic noise, the goal is to perform comparably to an offline optimal strategy. In online nonstochastic control, both the cost functions as well as the perturbations from the assumed dynamical model are chosen by an adversary. Thus the optimal policy is not defined a priori. Rather, the target is to attain low regret against the best policy in hindsight from a benchmark class of policies.  This objective suggests the use of the decision making frame
     
 
