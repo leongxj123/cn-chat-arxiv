@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Sparse Bayesian Multidimensional Item Response Theory.](http://arxiv.org/abs/2310.17820) | 本文开发了一种可扩展的贝叶斯EM算法，用于从二元和有序项目响应中估计稀疏因子载荷，并通过贝叶斯非参数方法解决了未知潜在因子维度的问题。 |
+| [^1] | [When Doubly Robust Methods Meet Machine Learning for Estimating Treatment Effects from Real-World Data: A Comparative Study.](http://arxiv.org/abs/2204.10969) | 本研究比较了多种常用的双重稳健方法，探讨了它们使用治疗模型和结果模型的策略异同，并研究了如何结合机器学习技术以提高其性能。 |
 
 # 详细
 
-[^1]: 稀疏贝叶斯多维项目反应理论
+[^1]: 当双重稳健方法遇到机器学习：用于从实际数据中估计治疗效果的比较研究
 
-    Sparse Bayesian Multidimensional Item Response Theory. (arXiv:2310.17820v1 [stat.ME])
+    When Doubly Robust Methods Meet Machine Learning for Estimating Treatment Effects from Real-World Data: A Comparative Study. (arXiv:2204.10969v3 [stat.ME] UPDATED)
 
-    [http://arxiv.org/abs/2310.17820](http://arxiv.org/abs/2310.17820)
+    [http://arxiv.org/abs/2204.10969](http://arxiv.org/abs/2204.10969)
 
-    本文开发了一种可扩展的贝叶斯EM算法，用于从二元和有序项目响应中估计稀疏因子载荷，并通过贝叶斯非参数方法解决了未知潜在因子维度的问题。
+    本研究比较了多种常用的双重稳健方法，探讨了它们使用治疗模型和结果模型的策略异同，并研究了如何结合机器学习技术以提高其性能。
 
     
 
-    多变量项目反应理论（MIRT）被应用研究人员广泛使用，以寻找问卷数据中响应模式背后的可解释（稀疏）解释。然而，在实践中，对于这种稀疏性发现工具的需求尚未得到满足。本文提出了一种用于二元和有序项目MIRT的贝叶斯平台，其需要最少的调整，并且由于其可并行化的特性，在相对较大的数据集上具有良好的可扩展性。MIRT模型的贝叶斯方法传统上依赖于MCMC模拟，在实践中可能既费时又难以通过额外的阈值设定实现精确的稀疏恢复。在本文中，我们开发了一种可扩展的贝叶斯EM算法，用于从二元和有序项目响应中估计稀疏因子载荷。我们利用贝叶斯非参数方法解决了未知潜在因子维度的看似不可逾越的问题，从而使得可以估计因子的数量。通过旋转可以实现稀疏性。
+    观察性队列研究越来越常用于比较效果研究，以评估治疗方法的安全性。最近，各种双重稳健方法已被提出，通过匹配、加权和回归等不同方式，通过组合治疗模型和结果模型来估计平均治疗效应。双重稳健估计器的关键优势在于，它们要求治疗模型或结果模型之一被正确规定，以获得平均治疗效果的一致估计值，从而导致更准确、通常更精确的推断。然而，很少有工作去理解双重稳健估计器由于使用治疗和结果模型的独特策略如何不同以及如何结合机器学习技术以提高其性能。在这里，我们检查了多个受欢迎的双重稳健方法，并使用不同的治疗和结果模型比较它们的性能。
 
-    Multivariate Item Response Theory (MIRT) is sought-after widely by applied researchers looking for interpretable (sparse) explanations underlying response patterns in questionnaire data. There is, however, an unmet demand for such sparsity discovery tools in practice. Our paper develops a Bayesian platform for binary and ordinal item MIRT which requires minimal tuning and scales well on relatively large datasets due to its parallelizable features. Bayesian methodology for MIRT models has traditionally relied on MCMC simulation, which cannot only be slow in practice, but also often renders exact sparsity recovery impossible without additional thresholding. In this work, we develop a scalable Bayesian EM algorithm to estimate sparse factor loadings from binary and ordinal item responses. We address the seemingly insurmountable problem of unknown latent factor dimensionality with tools from Bayesian nonparametrics which enable estimating the number of factors. Rotations to sparsity throug
+    Observational cohort studies are increasingly being used for comparative effectiveness research to assess the safety of therapeutics. Recently, various doubly robust methods have been proposed for average treatment effect estimation by combining the treatment model and the outcome model via different vehicles, such as matching, weighting, and regression. The key advantage of doubly robust estimators is that they require either the treatment model or the outcome model to be correctly specified to obtain a consistent estimator of average treatment effects, and therefore lead to a more accurate and often more precise inference. However, little work has been done to understand how doubly robust estimators differ due to their unique strategies of using the treatment and outcome models and how machine learning techniques can be combined to boost their performance. Here we examine multiple popular doubly robust methods and compare their performance using different treatment and outcome modeli
     
 

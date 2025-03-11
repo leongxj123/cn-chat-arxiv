@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Federated Multi-Agent Mapping for Planetary Exploration](https://arxiv.org/abs/2404.02289) | 联邦学习在多智能体机器人探测中的应用，利用隐式神经映射和地球数据集上的元初始化，实现了对不同领域如火星地形和冰川的强泛化能力。 |
+| [^1] | [CleanAgent: Automating Data Standardization with LLM-based Agents](https://arxiv.org/abs/2403.08291) | 提出了一个具有声明性、统一API的Python库，通过简洁的API调用简化LLM的代码生成流程 |
 
 # 详细
 
-[^1]: 行星探测的联邦多智能体建图
+[^1]: CleanAgent：基于LLM代理自动化数据标准化
 
-    Federated Multi-Agent Mapping for Planetary Exploration
+    CleanAgent: Automating Data Standardization with LLM-based Agents
 
-    [https://arxiv.org/abs/2404.02289](https://arxiv.org/abs/2404.02289)
+    [https://arxiv.org/abs/2403.08291](https://arxiv.org/abs/2403.08291)
 
-    联邦学习在多智能体机器人探测中的应用，利用隐式神经映射和地球数据集上的元初始化，实现了对不同领域如火星地形和冰川的强泛化能力。
+    提出了一个具有声明性、统一API的Python库，通过简洁的API调用简化LLM的代码生成流程
 
     
 
-    在多智能体机器人探测中，管理和有效利用动态环境产生的大量异构数据构成了一个重要挑战。联邦学习（FL）是一种有前途的分布式映射方法，它解决了协作学习中去中心化数据的挑战。FL使多个智能体之间可以进行联合模型训练，而无需集中化或共享原始数据，克服了带宽和存储限制。我们的方法利用隐式神经映射，将地图表示为由神经网络学习的连续函数，以便实现紧凑和适应性的表示。我们进一步通过在地球数据集上进行元初始化来增强这一方法，预训练网络以快速学习新的地图结构。这种组合在诸如火星地形和冰川等不同领域展现了较强的泛化能力。我们对这一方法进行了严格评估，展示了其有效性。
+    数据标准化是数据科学生命周期中至关重要的一部分。虽然诸如Pandas之类的工具提供了强大的功能，但它们的复杂性以及需要定制代码以适应不同列类型的手动操作带来了重大挑战。尽管大型语言模型（LLMs）如ChatGPT已经展现出通过自然语言理解和代码生成自动化此过程的潜力，但仍需要专业程度的编程知识和持续互动以进行及时的完善。为了解决这些挑战，我们的关键想法是提出一个具有声明性、统一API的Python库，用于标准化列类型，通过简洁的API调用简化LLM的代码生成流程。我们首先提出了Dataprep.Clean，作为Dataprep库的一个组件，通过一行代码实现特定列类型的标准化，极大降低了复杂性。然后我们介绍了CleanAgen
 
-    arXiv:2404.02289v1 Announce Type: cross  Abstract: In multi-agent robotic exploration, managing and effectively utilizing the vast, heterogeneous data generated from dynamic environments poses a significant challenge. Federated learning (FL) is a promising approach for distributed mapping, addressing the challenges of decentralized data in collaborative learning. FL enables joint model training across multiple agents without requiring the centralization or sharing of raw data, overcoming bandwidth and storage constraints. Our approach leverages implicit neural mapping, representing maps as continuous functions learned by neural networks, for compact and adaptable representations. We further enhance this approach with meta-initialization on Earth datasets, pre-training the network to quickly learn new map structures. This combination demonstrates strong generalization to diverse domains like Martian terrain and glaciers. We rigorously evaluate this approach, demonstrating its effectiven
+    arXiv:2403.08291v1 Announce Type: cross  Abstract: Data standardization is a crucial part in data science life cycle. While tools like Pandas offer robust functionalities, their complexity and the manual effort required for customizing code to diverse column types pose significant challenges. Although large language models (LLMs) like ChatGPT have shown promise in automating this process through natural language understanding and code generation, it still demands expert-level programming knowledge and continuous interaction for prompt refinement. To solve these challenges, our key idea is to propose a Python library with declarative, unified APIs for standardizing column types, simplifying the code generation of LLM with concise API calls. We first propose Dataprep.Clean which is written as a component of the Dataprep Library, offers a significant reduction in complexity by enabling the standardization of specific column types with a single line of code. Then we introduce the CleanAgen
     
 

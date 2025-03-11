@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [AI, Meet Human: Learning Paradigms for Hybrid Decision Making Systems](https://arxiv.org/abs/2402.06287) | 本调查提出了混合决策系统的分类方法，为理解如何对人与机器之间的交互进行建模提供了概念性和技术性的框架。 |
+| [^1] | [An Efficient Intelligent Semi-Automated Warehouse Inventory Stocktaking System.](http://arxiv.org/abs/2309.12365) | 本研究提出了一个智能库存管理系统，通过结合条码和分布式flutter应用技术，以及大数据分析实现数据驱动的决策，解决了库存管理中的准确性、监测延迟和过度依赖主观经验的挑战。 |
 
 # 详细
 
-[^1]: AI，与人相遇：混合决策系统的学习范式
+[^1]: 一个高效的智能半自动仓库库存盘点系统
 
-    AI, Meet Human: Learning Paradigms for Hybrid Decision Making Systems
+    An Efficient Intelligent Semi-Automated Warehouse Inventory Stocktaking System. (arXiv:2309.12365v1 [cs.HC])
 
-    [https://arxiv.org/abs/2402.06287](https://arxiv.org/abs/2402.06287)
+    [http://arxiv.org/abs/2309.12365](http://arxiv.org/abs/2309.12365)
 
-    本调查提出了混合决策系统的分类方法，为理解如何对人与机器之间的交互进行建模提供了概念性和技术性的框架。
+    本研究提出了一个智能库存管理系统，通过结合条码和分布式flutter应用技术，以及大数据分析实现数据驱动的决策，解决了库存管理中的准确性、监测延迟和过度依赖主观经验的挑战。
 
     
 
-    每天，我们越来越多地依赖机器学习模型来自动化和支持高风险任务和决策。这种日益增长的存在意味着人类现在不断与基于机器学习的系统进行互动，每天进行模型的培训和使用。计算机科学文献中有几种不同的技术来考虑人与机器学习系统的交互，但其分类稀疏且目标各异。本调查提出了混合决策系统的分类方法，为理解当前计算机科学文献如何对人与机器之间的交互进行建模提供了概念性和技术性的框架。
+    在不断发展的供应链管理背景下，高效的库存管理对于企业变得越来越重要。然而，传统的手工和经验驱动的方法往往难以满足现代市场需求的复杂性。本研究引入了一种智能库存管理系统，以解决与数据不准确、监测延迟和过度依赖主观经验的预测相关的挑战。该系统结合了条码和分布式 flutter 应用技术，用于智能感知，并通过全面的大数据分析实现数据驱动的决策。通过仔细的分析、系统设计、关键技术探索和模拟验证，成功展示了所提出系统的有效性。该智能系统实现了二级监测、高频检查和人工智能驱动的预测，从而提高了自动化程度。
 
-    Everyday we increasingly rely on machine learning models to automate and support high-stake tasks and decisions. This growing presence means that humans are now constantly interacting with machine learning-based systems, training and using models everyday. Several different techniques in computer science literature account for the human interaction with machine learning systems, but their classification is sparse and the goals varied. This survey proposes a taxonomy of Hybrid Decision Making Systems, providing both a conceptual and technical framework for understanding how current computer science literature models interaction between humans and machines.
+    In the context of evolving supply chain management, the significance of efficient inventory management has grown substantially for businesses. However, conventional manual and experience-based approaches often struggle to meet the complexities of modern market demands. This research introduces an intelligent inventory management system to address challenges related to inaccurate data, delayed monitoring, and overreliance on subjective experience in forecasting. The proposed system integrates bar code and distributed flutter application technologies for intelligent perception, alongside comprehensive big data analytics to enable data-driven decision-making. Through meticulous analysis, system design, critical technology exploration, and simulation validation, the effectiveness of the proposed system is successfully demonstrated. The intelligent system facilitates second-level monitoring, high-frequency checks, and artificial intelligence-driven forecasting, consequently enhancing the au
     
 

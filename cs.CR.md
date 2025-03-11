@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Privacy-Aware Semantic Cache for Large Language Models](https://arxiv.org/abs/2403.02694) | MeanCache是一种面向LLMs的语义缓存，能够识别语义上相似的查询，从而减少查询成本，服务提供商负载和环境影响。 |
-| [^2] | [Universal Post-Training Reverse-Engineering Defense Against Backdoors in Deep Neural Networks](https://arxiv.org/abs/2402.02034) | 本文提出了一种针对深度神经网络中后门攻击的通用后训练反向工程防御方法，通过依赖内部特征图来检测和反向工程后门，并识别其目标类别，具有广泛适用性和低计算开销。 |
+| [^1] | [Visual Privacy Auditing with Diffusion Models](https://arxiv.org/abs/2403.07588) | 在这项研究中，通过使用扩散模型进行重建攻击，作者发现在DP-SGD下，真实世界的数据先验对于重建成功具有显著影响。 |
+| [^2] | [Continual Adversarial Defense](https://arxiv.org/abs/2312.09481) | 提出了第一个能够动态适应任何攻击的持续对抗性防御（CAD）框架。 |
 
 # 详细
 
-[^1]: 面向大型语言模型的隐私感知语义缓存
+[^1]: 基于扩散模型的视觉隐私审计
 
-    Privacy-Aware Semantic Cache for Large Language Models
+    Visual Privacy Auditing with Diffusion Models
 
-    [https://arxiv.org/abs/2403.02694](https://arxiv.org/abs/2403.02694)
+    [https://arxiv.org/abs/2403.07588](https://arxiv.org/abs/2403.07588)
 
-    MeanCache是一种面向LLMs的语义缓存，能够识别语义上相似的查询，从而减少查询成本，服务提供商负载和环境影响。
-
-    
-
-    大型语言模型（LLMs）如ChatGPT、Google Bard、Claude和Llama 2彻底改变了自然语言处理和搜索引擎动态。然而，这些模型造成了异常高的计算成本。本文介绍了MeanCache，一种用于LLMs的语义缓存，它能够识别语义上相似的查询以确定缓存命中或未命中。
-
-    arXiv:2403.02694v1 Announce Type: cross  Abstract: Large Language Models (LLMs) like ChatGPT, Google Bard, Claude, and Llama 2 have revolutionized natural language processing and search engine dynamics. However, these models incur exceptionally high computational costs. For instance, GPT-3 consists of 175 billion parameters and inference on these models also demands billions of floating-point operations. Caching is a natural solution to reduce LLM inference costs on repeated queries. However, existing caching methods are incapable of finding semantic similarities among LLM queries, leading to unacceptable false hit-and-miss rates.   This paper introduces MeanCache, a semantic cache for LLMs that identifies semantically similar queries to determine cache hit or miss. Using MeanCache, the response to a user's semantically similar query can be retrieved from a local cache rather than re-querying the LLM, thus reducing costs, service provider load, and environmental impact. MeanCache lever
-    
-[^2]: 深度神经网络中针对后门攻击的通用后训练反向工程防御方法
-
-    Universal Post-Training Reverse-Engineering Defense Against Backdoors in Deep Neural Networks
-
-    [https://arxiv.org/abs/2402.02034](https://arxiv.org/abs/2402.02034)
-
-    本文提出了一种针对深度神经网络中后门攻击的通用后训练反向工程防御方法，通过依赖内部特征图来检测和反向工程后门，并识别其目标类别，具有广泛适用性和低计算开销。
+    在这项研究中，通过使用扩散模型进行重建攻击，作者发现在DP-SGD下，真实世界的数据先验对于重建成功具有显著影响。
 
     
 
-    针对深度神经网络分类器的后门攻击，提出了各种防御方法。通用方法旨在可靠地检测和/或减轻后门攻击，而反向工程方法通常明确假设其中一种。本文提出了一种新的检测器，它依赖于被防守的DNN的内部特征图来检测和反向工程后门，并识别其目标类别；它可以在后训练时操作（无需访问训练数据集）；对于不同的嵌入机制（即通用的）非常有效；并且具有低计算开销，因此可扩展。我们对基准CIFAR-10图像分类器的不同攻击进行了检测方法的评估。
+    arXiv:2403.07588v1 声明类型: 新的 摘要: 对机器学习模型的图像重建攻击可能会导致泄露敏感信息，从而对隐私构成重大风险。虽然使用差分隐私(DP)来抵御此类攻击已被证明是有效的，但确定适当的DP参数仍然具有挑战性。当前对数据重建成功的形式化保证受到了关于对手对目标数据的了解的过于理论化的假设的影响，特别是在图像领域。在这项工作中，我们通过实证调查这一差异，并发现这些假设的实际性在很大程度上取决于数据先验和重建目标之间的域转移。我们提出了一种基于扩散模型(DMs)的重建攻击，假设对手可以访问真实世界的图像先验，并评估其对在DP-SGD下的隐私泄露的影响。我们展示了(1)真实世界的数据先验显著影响重建成功，
 
-    A variety of defenses have been proposed against backdoors attacks on deep neural network (DNN) classifiers. Universal methods seek to reliably detect and/or mitigate backdoors irrespective of the incorporation mechanism used by the attacker, while reverse-engineering methods often explicitly assume one. In this paper, we describe a new detector that: relies on internal feature map of the defended DNN to detect and reverse-engineer the backdoor and identify its target class; can operate post-training (without access to the training dataset); is highly effective for various incorporation mechanisms (i.e., is universal); and which has low computational overhead and so is scalable. Our detection approach is evaluated for different attacks on a benchmark CIFAR-10 image classifier.
+    arXiv:2403.07588v1 Announce Type: new  Abstract: Image reconstruction attacks on machine learning models pose a significant risk to privacy by potentially leaking sensitive information. Although defending against such attacks using differential privacy (DP) has proven effective, determining appropriate DP parameters remains challenging. Current formal guarantees on data reconstruction success suffer from overly theoretical assumptions regarding adversary knowledge about the target data, particularly in the image domain. In this work, we empirically investigate this discrepancy and find that the practicality of these assumptions strongly depends on the domain shift between the data prior and the reconstruction target. We propose a reconstruction attack based on diffusion models (DMs) that assumes adversary access to real-world image priors and assess its implications on privacy leakage under DP-SGD. We show that (1) real-world data priors significantly influence reconstruction success, 
+    
+[^2]: 持续不断的对抗性防御
+
+    Continual Adversarial Defense
+
+    [https://arxiv.org/abs/2312.09481](https://arxiv.org/abs/2312.09481)
+
+    提出了第一个能够动态适应任何攻击的持续对抗性防御（CAD）框架。
+
+    
+
+    针对每月针对视觉分类器的对抗性攻击快速演变的特性，人们提出了许多防御方法，旨在尽可能通用化以抵御尽可能多的已知攻击。然而，设计一个能够对抗所有类型攻击的防御方法并不现实，因为防御系统运行的环境是动态的，包含随着时间出现的各种独特攻击。防御系统必须收集在线少样本对抗反馈以迅速增强自身，充分利用内存。因此，我们提出了第一个能够动态适应任何攻击的持续对抗性防御（CAD）框架，其中各种攻击逐个阶段出现。在实践中，CAD基于四项原则进行建模：(1) 持续适应新攻击而无灾难性遗忘，(2) 少样本适应，(3) 内存高效适应，以及(4) 高准确性
+
+    arXiv:2312.09481v2 Announce Type: replace-cross  Abstract: In response to the rapidly evolving nature of adversarial attacks against visual classifiers on a monthly basis, numerous defenses have been proposed to generalize against as many known attacks as possible. However, designing a defense method that generalizes to all types of attacks is not realistic because the environment in which defense systems operate is dynamic and comprises various unique attacks that emerge as time goes on. The defense system must gather online few-shot defense feedback to promptly enhance itself, leveraging efficient memory utilization. Therefore, we propose the first continual adversarial defense (CAD) framework that adapts to any attacks in a dynamic scenario, where various attacks emerge stage by stage. In practice, CAD is modeled under four principles: (1) continual adaptation to new attacks without catastrophic forgetting, (2) few-shot adaptation, (3) memory-efficient adaptation, and (4) high accur
     
 
