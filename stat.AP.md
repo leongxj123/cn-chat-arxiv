@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [When Doubly Robust Methods Meet Machine Learning for Estimating Treatment Effects from Real-World Data: A Comparative Study.](http://arxiv.org/abs/2204.10969) | 本研究比较了多种常用的双重稳健方法，探讨了它们使用治疗模型和结果模型的策略异同，并研究了如何结合机器学习技术以提高其性能。 |
+| [^1] | [Improving generalisation via anchor multivariate analysis](https://arxiv.org/abs/2403.01865) | 引入因果正则化扩展到锚回归（AR）中，提出了与锚框架相匹配的损失函数确保稳健性，各种多元分析算法均在锚框架内，简单正则化增强了OOD设置中的稳健性，验证了锚正则化的多功能性和对因果推断方法论的推进。 |
 
 # 详细
 
-[^1]: 当双重稳健方法遇到机器学习：用于从实际数据中估计治疗效果的比较研究
+[^1]: 通过锚多元分析改善泛化能力
 
-    When Doubly Robust Methods Meet Machine Learning for Estimating Treatment Effects from Real-World Data: A Comparative Study. (arXiv:2204.10969v3 [stat.ME] UPDATED)
+    Improving generalisation via anchor multivariate analysis
 
-    [http://arxiv.org/abs/2204.10969](http://arxiv.org/abs/2204.10969)
+    [https://arxiv.org/abs/2403.01865](https://arxiv.org/abs/2403.01865)
 
-    本研究比较了多种常用的双重稳健方法，探讨了它们使用治疗模型和结果模型的策略异同，并研究了如何结合机器学习技术以提高其性能。
+    引入因果正则化扩展到锚回归（AR）中，提出了与锚框架相匹配的损失函数确保稳健性，各种多元分析算法均在锚框架内，简单正则化增强了OOD设置中的稳健性，验证了锚正则化的多功能性和对因果推断方法论的推进。
 
     
 
-    观察性队列研究越来越常用于比较效果研究，以评估治疗方法的安全性。最近，各种双重稳健方法已被提出，通过匹配、加权和回归等不同方式，通过组合治疗模型和结果模型来估计平均治疗效应。双重稳健估计器的关键优势在于，它们要求治疗模型或结果模型之一被正确规定，以获得平均治疗效果的一致估计值，从而导致更准确、通常更精确的推断。然而，很少有工作去理解双重稳健估计器由于使用治疗和结果模型的独特策略如何不同以及如何结合机器学习技术以提高其性能。在这里，我们检查了多个受欢迎的双重稳健方法，并使用不同的治疗和结果模型比较它们的性能。
+    我们在锚回归（AR）中引入因果正则化扩展，以改善超出分布（OOD）的泛化能力。我们提出了与锚框架相匹配的损失函数，以确保对分布转移的稳健性。各种多元分析（MVA）算法，如（正交化）PLS、RRR和MLR，均在锚框架内。我们观察到简单的正则化增强了OOD设置中的稳健性。在合成和真实的气候科学问题中，为所选算法提供了估计器，展示了其一致性和有效性。经验验证突显了锚正则化的多功能性，强调其与MVA方法的兼容性，并强调其在增强可复制性的同时抵御分布转移中的作用。扩展的AR框架推进了因果推断方法论，解决了可靠OOD泛化的需求。
 
-    Observational cohort studies are increasingly being used for comparative effectiveness research to assess the safety of therapeutics. Recently, various doubly robust methods have been proposed for average treatment effect estimation by combining the treatment model and the outcome model via different vehicles, such as matching, weighting, and regression. The key advantage of doubly robust estimators is that they require either the treatment model or the outcome model to be correctly specified to obtain a consistent estimator of average treatment effects, and therefore lead to a more accurate and often more precise inference. However, little work has been done to understand how doubly robust estimators differ due to their unique strategies of using the treatment and outcome models and how machine learning techniques can be combined to boost their performance. Here we examine multiple popular doubly robust methods and compare their performance using different treatment and outcome modeli
+    arXiv:2403.01865v1 Announce Type: cross  Abstract: We introduce a causal regularisation extension to anchor regression (AR) for improved out-of-distribution (OOD) generalisation. We present anchor-compatible losses, aligning with the anchor framework to ensure robustness against distribution shifts. Various multivariate analysis (MVA) algorithms, such as (Orthonormalized) PLS, RRR, and MLR, fall within the anchor framework. We observe that simple regularisation enhances robustness in OOD settings. Estimators for selected algorithms are provided, showcasing consistency and efficacy in synthetic and real-world climate science problems. The empirical validation highlights the versatility of anchor regularisation, emphasizing its compatibility with MVA approaches and its role in enhancing replicability while guarding against distribution shifts. The extended AR framework advances causal inference methodologies, addressing the need for reliable OOD generalisation.
     
 

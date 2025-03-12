@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [How Much is Unseen Depends Chiefly on Information About the Seen](https://arxiv.org/abs/2402.05835) | 该论文发现，在未知种群中属于未在训练数据中出现的类的数据点的比例几乎完全取决于训练数据中出现相同次数的类的数量。论文提出了一个遗传算法，能够根据样本找到一个具有最小均方误差的估计量。 |
+| [^1] | [Associative Transformer Is A Sparse Representation Learner.](http://arxiv.org/abs/2309.12862) | 关联变换器（AiT）是一种采用低秩显式记忆和关联记忆的稀疏表示学习器，通过联合端到端训练实现模块特化和注意力瓶颈的形成。 |
 
 # 详细
 
-[^1]: 不可见数据取决于已知信息的多少
+[^1]: 关联变换器是一种稀疏表示学习器
 
-    How Much is Unseen Depends Chiefly on Information About the Seen
+    Associative Transformer Is A Sparse Representation Learner. (arXiv:2309.12862v1 [cs.LG])
 
-    [https://arxiv.org/abs/2402.05835](https://arxiv.org/abs/2402.05835)
+    [http://arxiv.org/abs/2309.12862](http://arxiv.org/abs/2309.12862)
 
-    该论文发现，在未知种群中属于未在训练数据中出现的类的数据点的比例几乎完全取决于训练数据中出现相同次数的类的数量。论文提出了一个遗传算法，能够根据样本找到一个具有最小均方误差的估计量。
+    关联变换器（AiT）是一种采用低秩显式记忆和关联记忆的稀疏表示学习器，通过联合端到端训练实现模块特化和注意力瓶颈的形成。
 
     
 
-    乍一看可能有些违反直觉：我们发现，在预期中，未知种群中属于在训练数据中没有出现的类的数据点的比例几乎完全由训练数据中出现相同次数的类的数量$f_k$确定。虽然在理论上我们证明了由该估计量引起的偏差在样本大小指数级衰减，但在实践中，高方差阻止我们直接使用它作为样本覆盖估计量。但是，我们对$f_k$之间的依赖关系进行了精确的描述，从而产生了多个不同期望值表示的搜索空间，可以确定地实例化为估计量。因此，我们转向优化，并开发了一种遗传算法，仅根据样本搜索平均均方误差（MSE）最小的估计量。在我们的实验证明，我们的遗传算法发现了具有明显较小方差的估计量。
+    在传统的Transformer模型中，出现了一种新兴的基于稀疏交互的注意力机制，这种机制与生物原理更为接近。包括Set Transformer和Perceiver在内的方法采用了与有限能力的潜在空间相结合的交叉注意力机制。基于最近对全局工作空间理论和关联记忆的神经科学研究，我们提出了关联变换器（AiT）。AiT引入了低秩显式记忆，既可以作为先验来指导共享工作空间的瓶颈注意力，又可以作为关联记忆的吸引子。通过联合端到端训练，这些先验自然地发展出模块的特化，每个模块对形成注意力瓶颈的归纳偏好有所贡献。瓶颈可以促进输入之间为将信息写入内存而进行竞争。我们展示了AiT是一种稀疏表示学习器。
 
-    It might seem counter-intuitive at first: We find that, in expectation, the proportion of data points in an unknown population-that belong to classes that do not appear in the training data-is almost entirely determined by the number $f_k$ of classes that do appear in the training data the same number of times. While in theory we show that the difference of the induced estimator decays exponentially in the size of the sample, in practice the high variance prevents us from using it directly for an estimator of the sample coverage. However, our precise characterization of the dependency between $f_k$'s induces a large search space of different representations of the expected value, which can be deterministically instantiated as estimators. Hence, we turn to optimization and develop a genetic algorithm that, given only the sample, searches for an estimator with minimal mean-squared error (MSE). In our experiments, our genetic algorithm discovers estimators that have a substantially smalle
+    Emerging from the monolithic pairwise attention mechanism in conventional Transformer models, there is a growing interest in leveraging sparse interactions that align more closely with biological principles. Approaches including the Set Transformer and the Perceiver employ cross-attention consolidated with a latent space that forms an attention bottleneck with limited capacity. Building upon recent neuroscience studies of Global Workspace Theory and associative memory, we propose the Associative Transformer (AiT). AiT induces low-rank explicit memory that serves as both priors to guide bottleneck attention in the shared workspace and attractors within associative memory of a Hopfield network. Through joint end-to-end training, these priors naturally develop module specialization, each contributing a distinct inductive bias to form attention bottlenecks. A bottleneck can foster competition among inputs for writing information into the memory. We show that AiT is a sparse representation 
     
 
