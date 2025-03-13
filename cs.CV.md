@@ -2,67 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [INPC: Implicit Neural Point Clouds for Radiance Field Rendering](https://arxiv.org/abs/2403.16862) | 提出了一种新颖的隐式点云表示方法，结合了连续八叉树概率场和多分辨率哈希网格，实现了快速渲染和保留细致几何细节的优势，并且在几个常见基准数据集上实现了最先进的图像质量。 |
-| [^2] | [Robust Diffusion Models for Adversarial Purification](https://arxiv.org/abs/2403.16067) | 提出一种独立于预训练扩散模型的稳健反向过程，避免了重新训练或微调，有效处理对抗净化中的语义信息损失问题。 |
-| [^3] | [Structure Preserving Diffusion Models](https://arxiv.org/abs/2402.19369) | 提出了一种结构保持的扩散过程，可以学习具有群对称性等额外结构的分布，并开发了一系列对称等变扩散模型来实现这一点。 |
-| [^4] | [Associative Transformer Is A Sparse Representation Learner.](http://arxiv.org/abs/2309.12862) | 关联变换器（AiT）是一种采用低秩显式记忆和关联记忆的稀疏表示学习器，通过联合端到端训练实现模块特化和注意力瓶颈的形成。 |
+| [^1] | [A Hybrid SNN-ANN Network for Event-based Object Detection with Spatial and Temporal Attention](https://arxiv.org/abs/2403.10173) | 提出了一种用于基于事件的对象检测的混合SNN-ANN网络，包括了新颖的基于注意力的桥接模块，能够有效捕捉稀疏的空间和时间关系，以提高任务性能。 |
+| [^2] | [On Distributed Larger-Than-Memory Subset Selection With Pairwise Submodular Functions](https://arxiv.org/abs/2402.16442) | 本文提出了一种新颖的分布式约束算法，通过迭代绑定最小和最大效用值来选择高质量的点并丢弃不重要的点。 |
+| [^3] | [Uncovering Hidden Connections: Iterative Tracking and Reasoning for Video-grounded Dialog.](http://arxiv.org/abs/2310.07259) | 本文提出了一种迭代跟踪和推理策略，结合文本编码器和视觉编码器以生成准确的响应，解决了视频对话中逐步理解对话历史和吸收视频信息的挑战。 |
+| [^4] | [RelationMatch: Matching In-batch Relationships for Semi-supervised Learning.](http://arxiv.org/abs/2305.10397) | RelationMatch是一种利用矩阵交叉熵（MCE）损失函数的方法，可以匹配批内关系，有效提高半监督学习和监督学习的性能。 |
 
 # 详细
 
-[^1]: INPC：用于辐射场渲染的隐式神经点云
+[^1]: 一种用于基于事件的对象检测的混合SNN-ANN网络，具有空间和时间注意力机制
 
-    INPC: Implicit Neural Point Clouds for Radiance Field Rendering
+    A Hybrid SNN-ANN Network for Event-based Object Detection with Spatial and Temporal Attention
 
-    [https://arxiv.org/abs/2403.16862](https://arxiv.org/abs/2403.16862)
+    [https://arxiv.org/abs/2403.10173](https://arxiv.org/abs/2403.10173)
 
-    提出了一种新颖的隐式点云表示方法，结合了连续八叉树概率场和多分辨率哈希网格，实现了快速渲染和保留细致几何细节的优势，并且在几个常见基准数据集上实现了最先进的图像质量。
-
-    
-
-    我们引入了一种新的方法，用于重建和合成无边界的现实世界场景。与以往使用体积场、基于网格的模型或离散点云代理的方法相比，我们提出了一种混合场景表示，它在连续八叉树概率场和多分辨率哈希网格中隐含地编码点云。通过这样做，我们结合了两个世界的优势，保留了在优化过程中有利的行为：我们的新颖隐式点云表示和可微的双线性光栅化器实现了快速渲染，同时保留了细微的几何细节，而无需依赖于像结构运动点云这样的初始先验。我们的方法在几个常见基准数据集上实现了最先进的图像质量。此外，我们实现了快速推理，可交互帧速率，并且可以提取显式点云以进一步提高性能。
-
-    arXiv:2403.16862v1 Announce Type: cross  Abstract: We introduce a new approach for reconstruction and novel-view synthesis of unbounded real-world scenes. In contrast to previous methods using either volumetric fields, grid-based models, or discrete point cloud proxies, we propose a hybrid scene representation, which implicitly encodes a point cloud in a continuous octree-based probability field and a multi-resolution hash grid. In doing so, we combine the benefits of both worlds by retaining favorable behavior during optimization: Our novel implicit point cloud representation and differentiable bilinear rasterizer enable fast rendering while preserving fine geometric detail without depending on initial priors like structure-from-motion point clouds. Our method achieves state-of-the-art image quality on several common benchmark datasets. Furthermore, we achieve fast inference at interactive frame rates, and can extract explicit point clouds to further enhance performance.
-    
-[^2]: 针对对抗净化的强大扩散模型
-
-    Robust Diffusion Models for Adversarial Purification
-
-    [https://arxiv.org/abs/2403.16067](https://arxiv.org/abs/2403.16067)
-
-    提出一种独立于预训练扩散模型的稳健反向过程，避免了重新训练或微调，有效处理对抗净化中的语义信息损失问题。
+    提出了一种用于基于事件的对象检测的混合SNN-ANN网络，包括了新颖的基于注意力的桥接模块，能够有效捕捉稀疏的空间和时间关系，以提高任务性能。
 
     
 
-    基于扩散模型（DM）的对抗净化（AP）已被证明是对抗训练（AT）最有力的替代方法。然而，这些方法忽略了预训练的扩散模型本身对对抗攻击并不稳健这一事实。此外，扩散过程很容易破坏语义信息，在反向过程后生成高质量图像但与原始输入图像完全不同，导致标准精度下降。为了解决这些问题，一个自然的想法是利用对抗训练策略重新训练或微调预训练的扩散模型，然而这在计算上是禁止的。我们提出了一种新颖的具有对抗引导的稳健反向过程，它独立于给定的预训练DMs，并且避免了重新训练或微调DMs。这种强大的引导不仅可以确保生成的净化示例保留更多的语义内容，还可以...
+    事件相机提供高时间分辨率和动态范围，几乎没有运动模糊，非常适合对象检测任务。尖峰神经网络（SNN）与事件驱动感知数据天生匹配，在神经形态硬件上能够实现超低功耗和低延迟推断，而人工神经网络（ANN）则展示出更稳定的训练动态和更快的收敛速度，从而具有更好的任务性能。混合SNN-ANN方法是一种有前途的替代方案，能够利用SNN和ANN体系结构的优势。在这项工作中，我们引入了第一个基于混合注意力的SNN-ANN骨干网络，用于使用事件相机进行对象检测。我们提出了一种新颖的基于注意力的SNN-ANN桥接模块，从SNN层中捕捉稀疏的空间和时间关系，并将其转换为密集特征图，供骨干网络的ANN部分使用。实验结果表明，我们提出的m
 
-    arXiv:2403.16067v1 Announce Type: cross  Abstract: Diffusion models (DMs) based adversarial purification (AP) has shown to be the most powerful alternative to adversarial training (AT). However, these methods neglect the fact that pre-trained diffusion models themselves are not robust to adversarial attacks as well. Additionally, the diffusion process can easily destroy semantic information and generate a high quality image but totally different from the original input image after the reverse process, leading to degraded standard accuracy. To overcome these issues, a natural idea is to harness adversarial training strategy to retrain or fine-tune the pre-trained diffusion model, which is computationally prohibitive. We propose a novel robust reverse process with adversarial guidance, which is independent of given pre-trained DMs and avoids retraining or fine-tuning the DMs. This robust guidance can not only ensure to generate purified examples retaining more semantic content but also m
+    arXiv:2403.10173v1 Announce Type: cross  Abstract: Event cameras offer high temporal resolution and dynamic range with minimal motion blur, making them promising for object detection tasks. While Spiking Neural Networks (SNNs) are a natural match for event-based sensory data and enable ultra-energy efficient and low latency inference on neuromorphic hardware, Artificial Neural Networks (ANNs) tend to display more stable training dynamics and faster convergence resulting in greater task performance. Hybrid SNN-ANN approaches are a promising alternative, enabling to leverage the strengths of both SNN and ANN architectures. In this work, we introduce the first Hybrid Attention-based SNN-ANN backbone for object detection using event cameras. We propose a novel Attention-based SNN-ANN bridge module to capture sparse spatial and temporal relations from the SNN layer and convert them into dense feature maps for the ANN part of the backbone. Experimental results demonstrate that our proposed m
     
-[^3]: 结构保持的扩散模型
+[^2]: 在具有配对次模模函数的分布式大于内存的子集选择问题研究
 
-    Structure Preserving Diffusion Models
+    On Distributed Larger-Than-Memory Subset Selection With Pairwise Submodular Functions
 
-    [https://arxiv.org/abs/2402.19369](https://arxiv.org/abs/2402.19369)
+    [https://arxiv.org/abs/2402.16442](https://arxiv.org/abs/2402.16442)
 
-    提出了一种结构保持的扩散过程，可以学习具有群对称性等额外结构的分布，并开发了一系列对称等变扩散模型来实现这一点。
-
-    
-
-    近年来，扩散模型已成为主要的分布学习方法。在本文中，我们介绍了结构保持的扩散过程，这是一类用于学习具有额外结构（如群对称性）的分布的扩散过程，通过制定扩散转换步骤保持对称性的理论条件。除了实现等变数据采样轨迹外，我们通过开发一系列不同的对称等变扩散模型来说明这些结果，这些模型能够学习固有对称的分布。我们使用实证研究验证所开发的模型符合提出的理论，并在样本均等性方面能够胜过现有方法。我们还展示了如何利用提出的模型实现理论上保证的等变图像噪声。
-
-    arXiv:2402.19369v1 Announce Type: new  Abstract: Diffusion models have become the leading distribution-learning method in recent years. Herein, we introduce structure-preserving diffusion processes, a family of diffusion processes for learning distributions that possess additional structure, such as group symmetries, by developing theoretical conditions under which the diffusion transition steps preserve said symmetry. While also enabling equivariant data sampling trajectories, we exemplify these results by developing a collection of different symmetry equivariant diffusion models capable of learning distributions that are inherently symmetric. Empirical studies, over both synthetic and real-world datasets, are used to validate the developed models adhere to the proposed theory and are capable of achieving improved performance over existing methods in terms of sample equality. We also show how the proposed models can be used to achieve theoretically guaranteed equivariant image noise r
-    
-[^4]: 关联变换器是一种稀疏表示学习器
-
-    Associative Transformer Is A Sparse Representation Learner. (arXiv:2309.12862v1 [cs.LG])
-
-    [http://arxiv.org/abs/2309.12862](http://arxiv.org/abs/2309.12862)
-
-    关联变换器（AiT）是一种采用低秩显式记忆和关联记忆的稀疏表示学习器，通过联合端到端训练实现模块特化和注意力瓶颈的形成。
+    本文提出了一种新颖的分布式约束算法，通过迭代绑定最小和最大效用值来选择高质量的点并丢弃不重要的点。
 
     
 
-    在传统的Transformer模型中，出现了一种新兴的基于稀疏交互的注意力机制，这种机制与生物原理更为接近。包括Set Transformer和Perceiver在内的方法采用了与有限能力的潜在空间相结合的交叉注意力机制。基于最近对全局工作空间理论和关联记忆的神经科学研究，我们提出了关联变换器（AiT）。AiT引入了低秩显式记忆，既可以作为先验来指导共享工作空间的瓶颈注意力，又可以作为关联记忆的吸引子。通过联合端到端训练，这些先验自然地发展出模块的特化，每个模块对形成注意力瓶颈的归纳偏好有所贡献。瓶颈可以促进输入之间为将信息写入内存而进行竞争。我们展示了AiT是一种稀疏表示学习器。
+    许多学习问题取决于子集选择的基本问题，即确定一组重要和代表性的点。本文提出了一种具有可证估计近似保证的新颖分布式约束算法，它通过迭代绑定最小和最大效用值来选择高质量的点并丢弃不重要的点。
 
-    Emerging from the monolithic pairwise attention mechanism in conventional Transformer models, there is a growing interest in leveraging sparse interactions that align more closely with biological principles. Approaches including the Set Transformer and the Perceiver employ cross-attention consolidated with a latent space that forms an attention bottleneck with limited capacity. Building upon recent neuroscience studies of Global Workspace Theory and associative memory, we propose the Associative Transformer (AiT). AiT induces low-rank explicit memory that serves as both priors to guide bottleneck attention in the shared workspace and attractors within associative memory of a Hopfield network. Through joint end-to-end training, these priors naturally develop module specialization, each contributing a distinct inductive bias to form attention bottlenecks. A bottleneck can foster competition among inputs for writing information into the memory. We show that AiT is a sparse representation 
+    arXiv:2402.16442v1 Announce Type: cross  Abstract: Many learning problems hinge on the fundamental problem of subset selection, i.e., identifying a subset of important and representative points. For example, selecting the most significant samples in ML training cannot only reduce training costs but also enhance model quality. Submodularity, a discrete analogue of convexity, is commonly used for solving subset selection problems. However, existing algorithms for optimizing submodular functions are sequential, and the prior distributed methods require at least one central machine to fit the target subset. In this paper, we relax the requirement of having a central machine for the target subset by proposing a novel distributed bounding algorithm with provable approximation guarantees. The algorithm iteratively bounds the minimum and maximum utility values to select high quality points and discard the unimportant ones. When bounding does not find the complete subset, we use a multi-round, 
+    
+[^3]: 揭示隐藏的联系：用于视频对话的迭代跟踪和推理
+
+    Uncovering Hidden Connections: Iterative Tracking and Reasoning for Video-grounded Dialog. (arXiv:2310.07259v1 [cs.CV])
+
+    [http://arxiv.org/abs/2310.07259](http://arxiv.org/abs/2310.07259)
+
+    本文提出了一种迭代跟踪和推理策略，结合文本编码器和视觉编码器以生成准确的响应，解决了视频对话中逐步理解对话历史和吸收视频信息的挑战。
+
+    
+
+    与传统的视觉问答相比，视频对话需要对对话历史和视频内容进行深入理解，以生成准确的响应。尽管现有的方法取得了令人称赞的进展，但它们常常面临逐步理解复杂的对话历史和吸收视频信息的挑战。为了弥补这一差距，我们提出了一种迭代跟踪和推理策略，将文本编码器、视觉编码器和生成器相结合。我们的文本编码器以路径跟踪和聚合机制为核心，能够从对话历史中获取重要的细微差别，以解释所提出的问题。同时，我们的视觉编码器利用迭代推理网络，精心设计以从视频中提取和强调关键视觉标记，增强对视觉理解的深度。最后，我们使用预训练的GPT-模型将这些丰富的信息综合起来。
+
+    In contrast to conventional visual question answering, video-grounded dialog necessitates a profound understanding of both dialog history and video content for accurate response generation. Despite commendable strides made by existing methodologies, they often grapple with the challenges of incrementally understanding intricate dialog histories and assimilating video information. In response to this gap, we present an iterative tracking and reasoning strategy that amalgamates a textual encoder, a visual encoder, and a generator. At its core, our textual encoder is fortified with a path tracking and aggregation mechanism, adept at gleaning nuances from dialog history that are pivotal to deciphering the posed questions. Concurrently, our visual encoder harnesses an iterative reasoning network, meticulously crafted to distill and emphasize critical visual markers from videos, enhancing the depth of visual comprehension. Culminating this enriched information, we employ the pre-trained GPT-
+    
+[^4]: RelationMatch：用于半监督学习的批内关系匹配技术
+
+    RelationMatch: Matching In-batch Relationships for Semi-supervised Learning. (arXiv:2305.10397v1 [cs.LG])
+
+    [http://arxiv.org/abs/2305.10397](http://arxiv.org/abs/2305.10397)
+
+    RelationMatch是一种利用矩阵交叉熵（MCE）损失函数的方法，可以匹配批内关系，有效提高半监督学习和监督学习的性能。
+
+    
+
+    半监督学习通过利用少量标记数据和未标记数据中的信息，已经在许多领域取得了显着的成功。然而，现有算法通常集中在来自相同来源的成对数据点的预测对准上，并忽略了每个批次内的点间关系。本文介绍了一种新方法RelationMatch，它利用一种矩阵交叉熵（MCE）损失函数来发掘批内关系。通过应用MCE，我们的方法在各种视觉数据集中始终优于现有最先进的方法，如FixMatch和FlexMatch。值得注意的是，在仅使用40个标签的STL-10数据集上，我们观察到相对于FlexMatch有15.21％的显著提高。此外，我们将MCE应用于监督学习场景，并观察到了一致的改进。
+
+    Semi-supervised learning has achieved notable success by leveraging very few labeled data and exploiting the wealth of information derived from unlabeled data. However, existing algorithms usually focus on aligning predictions on paired data points augmented from an identical source, and overlook the inter-point relationships within each batch. This paper introduces a novel method, RelationMatch, which exploits in-batch relationships with a matrix cross-entropy (MCE) loss function. Through the application of MCE, our proposed method consistently surpasses the performance of established state-of-the-art methods, such as FixMatch and FlexMatch, across a variety of vision datasets. Notably, we observed a substantial enhancement of 15.21% in accuracy over FlexMatch on the STL-10 dataset using only 40 labels. Moreover, we apply MCE to supervised learning scenarios, and observe consistent improvements as well.
     
 
