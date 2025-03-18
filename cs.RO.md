@@ -2,52 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [LIX: Implicitly Infusing Spatial Geometric Prior Knowledge into Visual Semantic Segmentation for Autonomous Driving](https://arxiv.org/abs/2403.08215) | 将双编码器教师模型获得的空间几何先验知识隐式注入单编码器学生模型，通过新的logit蒸馏和特征蒸馏方法，解决自动驾驶中的视觉语义分割问题。 |
-| [^2] | [CoPAL: Corrective Planning of Robot Actions with Large Language Models.](http://arxiv.org/abs/2310.07263) | 本文提出了一个具有大规模语言模型的机器人动作纠正规划系统，通过处理生成计划中的物理基础、逻辑和语义错误的再规划策略，实现了在复杂环境中的任务和动作规划。通过仿真和实际场景的验证，证明了该系统的有效性。 |
-| [^3] | [Virtual Guidance as a Mid-level Representation for Navigation.](http://arxiv.org/abs/2303.02731) | 该论文介绍了一种名为“虚拟导航”的新技术，通过在智能体的相机视图上叠加彩色路径或球的形式的视觉指引，以易于理解的导航指令传达抽象的导航信息。实验结果表明，在模拟和真实环境中，虚拟导航在遵循计划路径和避开障碍物等多个指标上优于现有方法。 |
+| [^1] | [Learn to Teach: Improve Sample Efficiency in Teacher-student Learning for Sim-to-Real Transfer](https://arxiv.org/abs/2402.06783) | 本文提出了一种样本效率学习框架，名为学习教学（L2T），通过回收教师智能体收集的经验，解决了教师-学生学习中的样本效率问题。 |
+| [^2] | [Constraint-Generation Policy Optimization (CGPO): Nonlinear Programming for Policy Optimization in Mixed Discrete-Continuous MDPs.](http://arxiv.org/abs/2401.12243) | Constraint-Generation Policy Optimization (CGPO)是一种针对混合离散连续MDPs的策略优化方法，能够提供有界的策略误差保证，推导出最优策略，并生成最坏情况的状态轨迹来诊断策略缺陷。 |
+| [^3] | [SWBT: Similarity Weighted Behavior Transformer with the Imperfect Demonstration for Robotic Manipulation.](http://arxiv.org/abs/2401.08957) | 本论文提出了一种新型框架SWBT，能够在机器人操作任务中有效地从专家演示和不完美演示中学习，而无需与环境进行交互。这是第一个将不完美演示整合到离线模仿学习设置中的机器人操作任务的研究。 |
 
 # 详细
 
-[^1]: LIX：将空间几何先验知识隐式注入视觉语义分割，用于自动驾驶
+[^1]: 学习教学：改善教师-学生学习中的样本效率，实现从模拟到现实的迁移
 
-    LIX: Implicitly Infusing Spatial Geometric Prior Knowledge into Visual Semantic Segmentation for Autonomous Driving
+    Learn to Teach: Improve Sample Efficiency in Teacher-student Learning for Sim-to-Real Transfer
 
-    [https://arxiv.org/abs/2403.08215](https://arxiv.org/abs/2403.08215)
+    [https://arxiv.org/abs/2402.06783](https://arxiv.org/abs/2402.06783)
 
-    将双编码器教师模型获得的空间几何先验知识隐式注入单编码器学生模型，通过新的logit蒸馏和特征蒸馏方法，解决自动驾驶中的视觉语义分割问题。
-
-    
-
-    尽管数据融合网络在视觉语义分割中表现出色，但当缺乏空间几何数据时，双编码器变得无效。将双编码器教师模型获得的空间几何先验知识隐式注入单编码器学生模型是一个实用但不太探索的研究领域。本文深入探讨了这个主题，并采用知识蒸馏方法来解决这个问题。我们引入了Learning to Infuse "X" (LIX) 框架，在logit蒸馏和特征蒸馏方面进行了新颖贡献。我们提出了一个数学证明，强调在解耦知识蒸馏中使用单一固定权重的局限性，并引入了logit智能动态权重控制器作为解决这个问题的方法。此外，我们开发了一种自适应重新校准的特征蒸馏算法，包括两种技术。
-
-    arXiv:2403.08215v1 Announce Type: cross  Abstract: Despite the impressive performance achieved by data-fusion networks with duplex encoders for visual semantic segmentation, they become ineffective when spatial geometric data are not available. Implicitly infusing the spatial geometric prior knowledge acquired by a duplex-encoder teacher model into a single-encoder student model is a practical, albeit less explored research avenue. This paper delves into this topic and resorts to knowledge distillation approaches to address this problem. We introduce the Learning to Infuse "X" (LIX) framework, with novel contributions in both logit distillation and feature distillation aspects. We present a mathematical proof that underscores the limitation of using a single fixed weight in decoupled knowledge distillation and introduce a logit-wise dynamic weight controller as a solution to this issue. Furthermore, we develop an adaptively-recalibrated feature distillation algorithm, including two tec
-    
-[^2]: CoPAL:具有大规模语言模型的机器人动作纠正规划
-
-    CoPAL: Corrective Planning of Robot Actions with Large Language Models. (arXiv:2310.07263v1 [cs.RO])
-
-    [http://arxiv.org/abs/2310.07263](http://arxiv.org/abs/2310.07263)
-
-    本文提出了一个具有大规模语言模型的机器人动作纠正规划系统，通过处理生成计划中的物理基础、逻辑和语义错误的再规划策略，实现了在复杂环境中的任务和动作规划。通过仿真和实际场景的验证，证明了该系统的有效性。
+    本文提出了一种样本效率学习框架，名为学习教学（L2T），通过回收教师智能体收集的经验，解决了教师-学生学习中的样本效率问题。
 
     
 
-    为了实现完全自主的机器人系统能够接管人类传统执行的任务，开放世界环境的复杂性提出了巨大的挑战。在这一背景下，本研究为应用于机器人任务和动作规划的大规模语言模型领域做出了贡献。我们提出了一个系统架构，协调多个认知层次之间的无缝交互，包括推理、规划和动作生成。其核心是一种处理生成的计划中的物理基础、逻辑和语义错误的新型再规划策略。通过在仿真环境和两个复杂的实际场景（方块世界、酒吧和比萨制作）中进行实证评估，我们展示了所提出的反馈架构的有效性，尤其是对可执行性、正确性和时间复杂性的影响。
+    模拟到现实（sim-to-real）的迁移是机器人学习中的一个基本问题。域随机化是一种在训练过程中添加随机性的强大技术，可以有效解决模拟与现实之间的差距。然而，观测中的噪声使得学习变得更加困难。最近的研究表明，采用教师-学生学习范式可以加速随机化环境中的训练。通过使用特权信息进行学习，教师智能体可以指导学生智能体在噪声环境中操作。然而，这种方法通常不是样本效率的，因为在训练学生智能体时完全舍弃了教师智能体收集的经验，浪费了环境所透露的信息。在这项工作中，我们通过提出一个名为学习教学（L2T）的样本效率学习框架来扩展教师-学生学习范式，该框架可以回收教师智能体收集的经验。我们观察到，对于一对教师-学生智能体，环境的动态特性对两者都有重要影响。
 
-    In the pursuit of fully autonomous robotic systems capable of taking over tasks traditionally performed by humans, the complexity of open-world environments poses a considerable challenge. Addressing this imperative, this study contributes to the field of Large Language Models (LLMs) applied to task and motion planning for robots. We propose a system architecture that orchestrates a seamless interplay between multiple cognitive levels, encompassing reasoning, planning, and motion generation. At its core lies a novel replanning strategy that handles physically grounded, logical, and semantic errors in the generated plans. We demonstrate the efficacy of the proposed feedback architecture, particularly its impact on executability, correctness, and time complexity via empirical evaluation in the context of a simulation and two intricate real-world scenarios: blocks world, barman and pizza preparation.
+    Simulation-to-reality (sim-to-real) transfer is a fundamental problem for robot learning. Domain Randomization, which adds randomization during training, is a powerful technique that effectively addresses the sim-to-real gap. However, the noise in observations makes learning significantly harder. Recently, studies have shown that employing a teacher-student learning paradigm can accelerate training in randomized environments. Learned with privileged information, a teacher agent can instruct the student agent to operate in noisy environments. However, this approach is often not sample efficient as the experience collected by the teacher is discarded completely when training the student, wasting information revealed by the environment. In this work, we extend the teacher-student learning paradigm by proposing a sample efficient learning framework termed Learn to Teach (L2T) that recycles experience collected by the teacher agent. We observe that the dynamics of the environments for both 
     
-[^3]: 导航的中层表示——虚拟导航
+[^2]: Constraint-Generation Policy Optimization (CGPO): 针对混合离散连续MDPs中的策略优化的非线性规划
 
-    Virtual Guidance as a Mid-level Representation for Navigation. (arXiv:2303.02731v2 [cs.LG] UPDATED)
+    Constraint-Generation Policy Optimization (CGPO): Nonlinear Programming for Policy Optimization in Mixed Discrete-Continuous MDPs. (arXiv:2401.12243v1 [math.OC])
 
-    [http://arxiv.org/abs/2303.02731](http://arxiv.org/abs/2303.02731)
+    [http://arxiv.org/abs/2401.12243](http://arxiv.org/abs/2401.12243)
 
-    该论文介绍了一种名为“虚拟导航”的新技术，通过在智能体的相机视图上叠加彩色路径或球的形式的视觉指引，以易于理解的导航指令传达抽象的导航信息。实验结果表明，在模拟和真实环境中，虚拟导航在遵循计划路径和避开障碍物等多个指标上优于现有方法。
+    Constraint-Generation Policy Optimization (CGPO)是一种针对混合离散连续MDPs的策略优化方法，能够提供有界的策略误差保证，推导出最优策略，并生成最坏情况的状态轨迹来诊断策略缺陷。
 
     
 
-    在自主导航的背景下，有效地传达抽象的导航指引给动态环境中的智能体存在挑战，特别是当导航信息是多模态的时候。为了解决这个问题，本文引入了一种名为“虚拟导航”的新技术，旨在以视觉方式呈现非视觉指令信号。这些视觉指引以彩色路径或球的形式叠加在智能体的相机视图上，作为易于理解的导航指令。我们通过在模拟和真实环境中进行实验来评估我们提出的方法。在模拟环境中，我们的虚拟导航在多项指标上优于基线混合方法，包括遵循计划路径和避开障碍物。此外，我们将虚拟导航的概念扩展到将基于文本提示的指令转换为用于真实环境实验的直观视觉格式。我们的结果验证了虚拟导航的适应性。
+    我们提出了Constraint-Generation Policy Optimization (CGPO)方法，用于在混合离散连续Markov Decision Processes (DC-MDPs)中优化策略参数。CGPO不仅能够提供有界的策略误差保证，覆盖具有表达能力的非线性动力学的无数初始状态范围的DC-MDPs，而且在结束时可以明确地推导出最优策略。此外，CGPO还能够生成最坏情况的状态轨迹来诊断策略缺陷，并提供最优行动的反事实解释。为了实现这些结果，CGPO提出了一个双层的混合整数非线性优化框架，用于在定义的表达能力类别（即分段(非)线性）内优化策略，并将其转化为一个最优的约束生成方法，通过对抗性生成最坏情况的状态轨迹。此外，借助现代非线性优化器，CGPO可以获得解决方案。
 
-    In the context of autonomous navigation, effectively conveying abstract navigational cues to agents in dynamic environments poses challenges, particularly when the navigation information is multimodal. To address this issue, the paper introduces a novel technique termed "Virtual Guidance," which is designed to visually represent non-visual instructional signals. These visual cues, rendered as colored paths or spheres, are overlaid onto the agent's camera view, serving as easily comprehensible navigational instructions. We evaluate our proposed method through experiments in both simulated and real-world settings. In the simulated environments, our virtual guidance outperforms baseline hybrid approaches in several metrics, including adherence to planned routes and obstacle avoidance. Furthermore, we extend the concept of virtual guidance to transform text-prompt-based instructions into a visually intuitive format for real-world experiments. Our results validate the adaptability of virtua
+    We propose Constraint-Generation Policy Optimization (CGPO) for optimizing policy parameters within compact and interpretable policy classes for mixed discrete-continuous Markov Decision Processes (DC-MDPs). CGPO is not only able to provide bounded policy error guarantees over an infinite range of initial states for many DC-MDPs with expressive nonlinear dynamics, but it can also provably derive optimal policies in cases where it terminates with zero error. Furthermore, CGPO can generate worst-case state trajectories to diagnose policy deficiencies and provide counterfactual explanations of optimal actions. To achieve such results, CGPO proposes a bi-level mixed-integer nonlinear optimization framework for optimizing policies within defined expressivity classes (i.e. piecewise (non)-linear) and reduces it to an optimal constraint generation methodology that adversarially generates worst-case state trajectories. Furthermore, leveraging modern nonlinear optimizers, CGPO can obtain soluti
+    
+[^3]: SWBT：具有不完美演示的相似性加权行为转换器用于机器人操作
+
+    SWBT: Similarity Weighted Behavior Transformer with the Imperfect Demonstration for Robotic Manipulation. (arXiv:2401.08957v1 [cs.RO])
+
+    [http://arxiv.org/abs/2401.08957](http://arxiv.org/abs/2401.08957)
+
+    本论文提出了一种新型框架SWBT，能够在机器人操作任务中有效地从专家演示和不完美演示中学习，而无需与环境进行交互。这是第一个将不完美演示整合到离线模仿学习设置中的机器人操作任务的研究。
+
+    
+
+    模仿学习旨在从专家演示中学习最佳控制策略，已成为机器人操作任务的有效方法。然而，先前的模仿学习方法要么仅使用昂贵的专家演示并忽略不完美的演示，要么依赖于与环境的交互和从在线经验中学习。在机器人操作的背景下，我们旨在克服上述两个挑战，并提出了一种名为Similarity Weighted Behavior Transformer（SWBT）的新型框架。SWBT能够有效地从专家演示和不完美演示中学习，而无需与环境进行交互。我们揭示了易获取的不完美演示，如正向和反向动力学，通过学习有益信息显著增强了网络。据我们所知，我们是第一个尝试将不完美演示整合到离线模仿学习设置中的机器人操作任务中的研究。在ManiSkill2 bench上进行了大量实验。
+
+    Imitation learning (IL), aiming to learn optimal control policies from expert demonstrations, has been an effective method for robot manipulation tasks. However, previous IL methods either only use expensive expert demonstrations and omit imperfect demonstrations or rely on interacting with the environment and learning from online experiences. In the context of robotic manipulation, we aim to conquer the above two challenges and propose a novel framework named Similarity Weighted Behavior Transformer (SWBT). SWBT effectively learn from both expert and imperfect demonstrations without interaction with environments. We reveal that the easy-to-get imperfect demonstrations, such as forward and inverse dynamics, significantly enhance the network by learning fruitful information. To the best of our knowledge, we are the first to attempt to integrate imperfect demonstrations into the offline imitation learning setting for robot manipulation tasks. Extensive experiments on the ManiSkill2 bench
     
 

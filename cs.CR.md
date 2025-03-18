@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Uncertainty, Calibration, and Membership Inference Attacks: An Information-Theoretic Perspective](https://arxiv.org/abs/2402.10686) | 通过信息论框架分析了最先进的似然比攻击对不确定性、校准水平和数据集大小的影响，研究了成员推理攻击中隐含的风险 |
+| [^1] | [Permute-and-Flip: An optimally robust and watermarkable decoder for LLMs](https://arxiv.org/abs/2402.05864) | 提出了一种名为Permute-and-Flip（PF）解码器，其具有最佳的鲁棒性和质量-鲁棒性的 tradeoff，且比采样方法更好。还设计了一种针对PF解码器的水印方案，能够保持样本的分布不变，并实现任意低的假阳性率和高的召回率。实验证明PF解码器在困惑度方面明显优于朴素采样，为LLM解码提供了一种有希望的新方法。 |
+| [^2] | [Model Stealing Attack against Multi-Exit Networks.](http://arxiv.org/abs/2305.13584) | 该论文介绍了第一个能同时窃取多出口网络模型函数和输出策略的攻击方法，并使用贝叶斯变点检测和性能损失、策略损失指导替代模型的训练。开发了一种新的输出策略搜索方法。 |
 
 # 详细
 
-[^1]: 不确定性、校准和成员推理攻击：信息论视角
+[^1]: Permute-and-Flip：一种具有最佳鲁棒性和可加水印的LLMs解码器
 
-    Uncertainty, Calibration, and Membership Inference Attacks: An Information-Theoretic Perspective
+    Permute-and-Flip: An optimally robust and watermarkable decoder for LLMs
 
-    [https://arxiv.org/abs/2402.10686](https://arxiv.org/abs/2402.10686)
+    [https://arxiv.org/abs/2402.05864](https://arxiv.org/abs/2402.05864)
 
-    通过信息论框架分析了最先进的似然比攻击对不确定性、校准水平和数据集大小的影响，研究了成员推理攻击中隐含的风险
+    提出了一种名为Permute-and-Flip（PF）解码器，其具有最佳的鲁棒性和质量-鲁棒性的 tradeoff，且比采样方法更好。还设计了一种针对PF解码器的水印方案，能够保持样本的分布不变，并实现任意低的假阳性率和高的召回率。实验证明PF解码器在困惑度方面明显优于朴素采样，为LLM解码提供了一种有希望的新方法。
 
     
 
-    在成员推理攻击（MIA）中，攻击者利用典型机器学习模型表现出的过度自信来确定特定数据点是否被用于训练目标模型。在本文中，我们在一个信息理论框架内分析了最先进的似然比攻击（LiRA）的性能，这个框架可以允许研究真实数据生成过程中的不确定性的影响，由有限训练数据集引起的认知不确定性以及目标模型的校准水平。我们比较了三种不同的设置，其中攻击者从目标模型接收到的信息逐渐减少：置信向量（CV）披露，其中输出概率向量被发布；真实标签置信度（TLC）披露，其中只有模型分配给真实标签的概率是可用的；以及决策集（DS）披露。
+    在本文中，我们提出了一种名为Permute-and-Flip（PF）解码器的新解码方法。它具有与标准采样解码器相似的鲁棒性特性，但在质量和鲁棒性的 tradeoff 上证明比采样方法更好，且永远不会差于任何其他解码器。同时，我们还设计了一种类似于Aaronson的Gumbel水印的加密水印方案，但是针对PF解码器而自然量身定制。该水印方案不改变样本的分布，同时允许任意低的假阳性率和高的召回率，只要生成的文本具有高熵。我们的实验证明，PF解码器（及其带有水印的对应物）在困惑度方面明显优于朴素采样（及其带有Gumbel水印的对应物），同时保持相同的鲁棒性（和可检测性），因此为LLM解码提供了一个有希望的新方法。代码可在https://github.com/XuandongZhao/pf-decoding找到。
 
-    arXiv:2402.10686v1 Announce Type: cross  Abstract: In a membership inference attack (MIA), an attacker exploits the overconfidence exhibited by typical machine learning models to determine whether a specific data point was used to train a target model. In this paper, we analyze the performance of the state-of-the-art likelihood ratio attack (LiRA) within an information-theoretical framework that allows the investigation of the impact of the aleatoric uncertainty in the true data generation process, of the epistemic uncertainty caused by a limited training data set, and of the calibration level of the target model. We compare three different settings, in which the attacker receives decreasingly informative feedback from the target model: confidence vector (CV) disclosure, in which the output probability vector is released; true label confidence (TLC) disclosure, in which only the probability assigned to the true label is made available by the model; and decision set (DS) disclosure, in 
+    In this paper, we propose a new decoding method called Permute-and-Flip (PF) decoder. It enjoys robustness properties similar to the standard sampling decoder, but is provably up to 2x better in its quality-robustness tradeoff than sampling and never worse than any other decoder. We also design a cryptographic watermarking scheme analogous to Aaronson's Gumbel watermark, but naturally tailored for PF decoder. The watermarking scheme does not change the distribution to sample, while allowing arbitrarily low false positive rate and high recall whenever the generated text has high entropy. Our experiments show that the PF decoder (and its watermarked counterpart) significantly outperform(s) naive sampling (and it's Gumbel watermarked counterpart) in terms of perplexity, while retaining the same robustness (and detectability), hence making it a promising new approach for LLM decoding. The code is available at https://github.com/XuandongZhao/pf-decoding
+    
+[^2]: 针对多出口网络的模型窃取攻击
+
+    Model Stealing Attack against Multi-Exit Networks. (arXiv:2305.13584v1 [cs.CR])
+
+    [http://arxiv.org/abs/2305.13584](http://arxiv.org/abs/2305.13584)
+
+    该论文介绍了第一个能同时窃取多出口网络模型函数和输出策略的攻击方法，并使用贝叶斯变点检测和性能损失、策略损失指导替代模型的训练。开发了一种新的输出策略搜索方法。
+
+    
+
+    与具有单个出口的传统神经网络相比，多出口网络具有多个出口，这些出口允许从模型的中间层早期输出，从而在保持类似识别精度的情况下提高计算效率。当使用传统的模型窃取攻击方法尝试窃取这些有价值的模型时，我们发现传统方法只能窃取模型的分类函数，而不能捕捉其输出策略。这导致窃取的替代模型的计算效率显著降低，失去多出口网络的优点。在本文中，我们提出了第一个窃取模型攻击，可以提取模型函数和输出策略。我们采用贝叶斯变点检测来分析目标模型的输出策略，并使用性能损失和策略损失来指导替代模型的训练。此外，我们设计了一种新颖的输出策略搜索方法，以使替代模型还原窃取目标模型的输出策略。
+
+    Compared to traditional neural networks with a single exit, a multi-exit network has multiple exits that allow for early output from intermediate layers of the model, thus bringing significant improvement in computational efficiency while maintaining similar recognition accuracy. When attempting to steal such valuable models using traditional model stealing attacks, we found that conventional methods can only steal the model's classification function while failing to capture its output strategy. This results in a significant decrease in computational efficiency for the stolen substitute model, thereby losing the advantages of multi-exit networks.In this paper, we propose the first model stealing attack to extract both the model function and output strategy. We employ bayesian changepoint detection to analyze the target model's output strategy and use performance loss and strategy loss to guide the training of the substitute model. Furthermore, we designed a novel output strategy search
     
 
