@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Leveraging Large Language Models for Collective Decision-Making.](http://arxiv.org/abs/2311.04928) | 本论文提出了一种利用大型语言模型（LLM）促进集体决策的系统，通过管理对话和平衡个人偏好来提供满足成员需求的选项，实现高效协调并不断优化系统性能。 |
+| [^1] | [Hypergraph Neural Networks through the Lens of Message Passing: A Common Perspective to Homophily and Architecture Design](https://arxiv.org/abs/2310.07684) | 本文通过消息传递机制的视角，提出了一种新的对高阶网络同質性的概念化，并探索了一些处理高阶结构的策略，为超图神经网络的架构设计和性能提供了新的视野和方法。 |
 
 # 详细
 
-[^1]: 利用大型语言模型进行集体决策
+[^1]: 透过消息传递的视角看超图神经网络：同質性与架构设计的共同视野
 
-    Leveraging Large Language Models for Collective Decision-Making. (arXiv:2311.04928v2 [cs.CL] UPDATED)
+    Hypergraph Neural Networks through the Lens of Message Passing: A Common Perspective to Homophily and Architecture Design
 
-    [http://arxiv.org/abs/2311.04928](http://arxiv.org/abs/2311.04928)
+    [https://arxiv.org/abs/2310.07684](https://arxiv.org/abs/2310.07684)
 
-    本论文提出了一种利用大型语言模型（LLM）促进集体决策的系统，通过管理对话和平衡个人偏好来提供满足成员需求的选项，实现高效协调并不断优化系统性能。
+    本文通过消息传递机制的视角，提出了一种新的对高阶网络同質性的概念化，并探索了一些处理高阶结构的策略，为超图神经网络的架构设计和性能提供了新的视野和方法。
 
     
 
-    在各种工作环境中，如会议安排、合作和项目规划中，集体决策是必不可少的，但由于个体偏好多样性、工作焦点不同和成员之间的权力动态等因素，常常具有挑战性。为了解决这个问题，我们提出了一种利用大型语言模型（LLM）来促进群体决策的系统，通过管理对话和平衡个人偏好来实现。我们的系统旨在从对话中提取个体偏好，并提出满足成员偏好的选项。我们特别将此系统应用于企业会议安排。我们利用LLM创建了合成员工配置文件，并模拟了大规模的对话，通过利用LLM评估系统表现来作为开展用户研究的新方法。我们的结果表明，系统能实现成员与LLM系统之间的高效协调，并随着时间的推移对其提出的选项进行改进和完善，确保优化系统性能。
+    当前大部分的超图学习方法和基准数据集都是通过从图的类比中提升过来的，忽略了超图的特殊性。本文尝试解决一些相关的问题：Q1 同質性在超图神经网络中是否起到了关键作用？Q2 是否可以通过细致处理高阶网络的特征来改善当前的超图神经网络架构？Q3 现有数据集是否对超图神经网络提供了有意义的基准？为了解决这些问题，我们首先引入了基于消息传递机制的高阶网络同質性的新概念化，统一了高阶网络的分析和建模。此外，我们还研究了在超图神经网络中处理高阶结构的一些自然但大部分未被探索的策略，比如保留超边依赖的节点表示，或是以节点和超边共同编码的方式进行处理。
 
-    In various work contexts, such as meeting scheduling, collaborating, and project planning, collective decision-making is essential but often challenging due to diverse individual preferences, varying work focuses, and power dynamics among members. To address this, we propose a system leveraging Large Language Models (LLMs) to facilitate group decision-making by managing conversations and balancing preferences among individuals. Our system aims to extract individual preferences from conversations and suggest options that satisfy the preferences of the members. We specifically apply this system to corporate meeting scheduling. We create synthetic employee profiles and simulate conversations at scale, leveraging LLMs to evaluate the system performance as a novel approach to conducting a user study. Our results indicate efficient coordination with reduced interactions between the members and the LLM-based system. The system refines and improves its proposed options over time, ensuring that
+    Most of the current hypergraph learning methodologies and benchmarking datasets in the hypergraph realm are obtained by lifting procedures from their graph analogs, leading to overshadowing specific characteristics of hypergraphs. This paper attempts to confront some pending questions in that regard: Q1 Can the concept of homophily play a crucial role in Hypergraph Neural Networks (HNNs)? Q2 Is there room for improving current HNN architectures by carefully addressing specific characteristics of higher-order networks? Q3 Do existing datasets provide a meaningful benchmark for HNNs? To address them, we first introduce a novel conceptualization of homophily in higher-order networks based on a Message Passing (MP) scheme, unifying both the analytical examination and the modeling of higher-order networks. Further, we investigate some natural, yet mostly unexplored, strategies for processing higher-order structures within HNNs such as keeping hyperedge-dependent node representations, or per
     
 

@@ -2,67 +2,82 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Sine Activated Low-Rank Matrices for Parameter Efficient Learning](https://arxiv.org/abs/2403.19243) | 整合正弦函数到低秩分解过程中，提高模型准确性的同时保持参数高效性。 |
-| [^2] | [Learning with Noisy Foundation Models](https://arxiv.org/abs/2403.06869) | 本文首次全面了解和分析了预训练数据集中的噪声性质，有效减轻其对下游任务影响。 |
-| [^3] | [Valley: Video Assistant with Large Language model Enhanced abilitY.](http://arxiv.org/abs/2306.07207) | 本文介绍了一个名为Valley的视频助手，它是一个以大型语言模型增强的多模态基础模型，能够在一个通用框架内理解视频、图像和语言。 |
-| [^4] | [RViDeformer: Efficient Raw Video Denoising Transformer with a Larger Benchmark Dataset.](http://arxiv.org/abs/2305.00767) | 本文提出了RViDeformer原始视频去噪变换器及其配套数据集ReCRVD，其中利用高低ISO设置重新捕捉现有视频以构建噪声-清晰对，同时探索了非本地时空依赖关系的解决方案。 |
+| [^1] | [VSTAR: Generative Temporal Nursing for Longer Dynamic Video Synthesis](https://arxiv.org/abs/2403.13501) | 提出了一种名为VSTAR的方法，通过引入生成时序护理（GTN）的概念，自动生成视频梗概并改善对时序动态的控制，从而实现生成更长、更动态的视频 |
+| [^2] | [Align and Distill: Unifying and Improving Domain Adaptive Object Detection](https://arxiv.org/abs/2403.12029) | 引入了统一的基准测试和实现框架ALDI以及新的DAOD基准数据集CFC-DAOD，解决了领域自适应目标检测中的基准问题，并支持未来方法的发展。 |
+| [^3] | [Semi-Supervised Semantic Segmentation Based on Pseudo-Labels: A Survey](https://arxiv.org/abs/2403.01909) | 这项综述提供了关于基于伪标签方法在半监督语义分割领域最新研究成果的全面且有组织的概述，探讨了伪标签技术在不同应用领域的具体方法，还研究了其在医学和遥感图像分割中的应用，提出了未来研究方向。 |
+| [^4] | [StochGradAdam: Accelerating Neural Networks Training with Stochastic Gradient Sampling.](http://arxiv.org/abs/2310.17042) | StochGradAdam是一种利用随机梯度抽样加速神经网络训练的优化器，通过选择性梯度考虑，能够稳定收敛，提升鲁棒训练。在图像分类和分割任务中表现优异。 |
+| [^5] | [On the Transition from Neural Representation to Symbolic Knowledge.](http://arxiv.org/abs/2308.02000) | 该论文提出了一种神经-符号过渡字典学习框架，可以将神经网络与符号思维进行结合。通过学习过渡表示，并自监督地发现隐含的谓词结构，以及通过博弈和强化学习调整学习到的原型，该框架可以实现对高维信息的压缩和符号表示的学习。 |
 
 # 详细
 
-[^1]: 用正弦激活的低秩矩阵实现参数高效学习
+[^1]: VSTAR：用于生成长动态视频合成的时间护理
 
-    Sine Activated Low-Rank Matrices for Parameter Efficient Learning
+    VSTAR: Generative Temporal Nursing for Longer Dynamic Video Synthesis
 
-    [https://arxiv.org/abs/2403.19243](https://arxiv.org/abs/2403.19243)
+    [https://arxiv.org/abs/2403.13501](https://arxiv.org/abs/2403.13501)
 
-    整合正弦函数到低秩分解过程中，提高模型准确性的同时保持参数高效性。
-
-    
-
-    低秩分解已经成为在神经网络架构中增强参数效率的重要工具，在机器学习的各种应用中越来越受到关注。这些技术显著降低了参数数量，取得了简洁性和性能之间的平衡。然而，一个常见的挑战是在参数效率和模型准确性之间做出妥协，参数减少往往导致准确性不及完整秩对应模型。在这项工作中，我们提出了一个创新的理论框架，在低秩分解过程中整合了一个正弦函数。这种方法不仅保留了低秩方法的参数效率特性的好处，还增加了分解的秩，从而提高了模型的准确性。我们的方法被证明是现有低秩模型的一种适应性增强，正如其成功证实的那样。
-
-    arXiv:2403.19243v1 Announce Type: new  Abstract: Low-rank decomposition has emerged as a vital tool for enhancing parameter efficiency in neural network architectures, gaining traction across diverse applications in machine learning. These techniques significantly lower the number of parameters, striking a balance between compactness and performance. However, a common challenge has been the compromise between parameter efficiency and the accuracy of the model, where reduced parameters often lead to diminished accuracy compared to their full-rank counterparts. In this work, we propose a novel theoretical framework that integrates a sinusoidal function within the low-rank decomposition process. This approach not only preserves the benefits of the parameter efficiency characteristic of low-rank methods but also increases the decomposition's rank, thereby enhancing model accuracy. Our method proves to be an adaptable enhancement for existing low-rank models, as evidenced by its successful 
-    
-[^2]: 在有噪声基础模型中学习
-
-    Learning with Noisy Foundation Models
-
-    [https://arxiv.org/abs/2403.06869](https://arxiv.org/abs/2403.06869)
-
-    本文首次全面了解和分析了预训练数据集中的噪声性质，有效减轻其对下游任务影响。
+    提出了一种名为VSTAR的方法，通过引入生成时序护理（GTN）的概念，自动生成视频梗概并改善对时序动态的控制，从而实现生成更长、更动态的视频
 
     
 
-    基础模型通常是在大规模数据集上进行预训练，然后通过调整来适应下游任务。然而，大规模预训练数据集往往无法获取或成本过高，可能包含标签噪声，这可能会对模型的泛化能力造成不利影响，并带来意想不到的风险。本文是首个全面了解和分析预训练数据集中噪声性质，并有效减轻其对下游任务影响的工作。具体而言，通过在合成有噪声的ImageNet-1K、YFCC15M和CC12M数据集上进行完全监督和图像-文本对比预训练的广泛实验，我们证明了，尽管预训练中的轻微噪声可以使同领域（ID）性能受益，即训练和测试数据共享类似分布，但它总是会破坏跨领域（OOD）性能，在那里训练和测试分布明显不同。
+    尽管在文本到视频（T2V）合成领域取得了巨大进展，但开源的T2V扩散模型难以生成具有动态变化和不断进化内容的较长视频。它们往往合成准静态视频，忽略了文本提示中涉及的必要随时间变化的视觉变化。与此同时，将这些模型扩展到实现更长、更动态的视频合成往往在计算上难以处理。为了解决这一挑战，我们引入了生成时序护理（GTN）的概念，旨在在推理过程中即时改变生成过程，以改善对时序动态的控制，并实现生成更长的视频。我们提出了一种GTN方法，名为VSTAR，它包括两个关键要素：1）视频梗概提示（VSP）-基于原始单个提示自动生成视频梗概，利用LLMs提供准确的文本指导，以实现对时序动态的精确控制。
 
-    arXiv:2403.06869v1 Announce Type: cross  Abstract: Foundation models are usually pre-trained on large-scale datasets and then adapted to downstream tasks through tuning. However, the large-scale pre-training datasets, often inaccessible or too expensive to handle, can contain label noise that may adversely affect the generalization of the model and pose unexpected risks. This paper stands out as the first work to comprehensively understand and analyze the nature of noise in pre-training datasets and then effectively mitigate its impacts on downstream tasks. Specifically, through extensive experiments of fully-supervised and image-text contrastive pre-training on synthetic noisy ImageNet-1K, YFCC15M, and CC12M datasets, we demonstrate that, while slight noise in pre-training can benefit in-domain (ID) performance, where the training and testing data share a similar distribution, it always deteriorates out-of-domain (OOD) performance, where training and testing distributions are signific
+    arXiv:2403.13501v1 Announce Type: cross  Abstract: Despite tremendous progress in the field of text-to-video (T2V) synthesis, open-sourced T2V diffusion models struggle to generate longer videos with dynamically varying and evolving content. They tend to synthesize quasi-static videos, ignoring the necessary visual change-over-time implied in the text prompt. At the same time, scaling these models to enable longer, more dynamic video synthesis often remains computationally intractable. To address this challenge, we introduce the concept of Generative Temporal Nursing (GTN), where we aim to alter the generative process on the fly during inference to improve control over the temporal dynamics and enable generation of longer videos. We propose a method for GTN, dubbed VSTAR, which consists of two key ingredients: 1) Video Synopsis Prompting (VSP) - automatic generation of a video synopsis based on the original single prompt leveraging LLMs, which gives accurate textual guidance to differe
     
-[^3]: Valley: 大型语言模型增强视频助手
+[^2]: 对齐与提炼：统一和改进领域自适应目标检测
 
-    Valley: Video Assistant with Large Language model Enhanced abilitY. (arXiv:2306.07207v2 [cs.CV] UPDATED)
+    Align and Distill: Unifying and Improving Domain Adaptive Object Detection
 
-    [http://arxiv.org/abs/2306.07207](http://arxiv.org/abs/2306.07207)
+    [https://arxiv.org/abs/2403.12029](https://arxiv.org/abs/2403.12029)
 
-    本文介绍了一个名为Valley的视频助手，它是一个以大型语言模型增强的多模态基础模型，能够在一个通用框架内理解视频、图像和语言。
-
-    
-
-    大型语言模型(LLMs)以其卓越的会话能力，在各种应用中表现出色，并成为强大的AI助手。鉴于此，一个直观的问题是：我们能否利用LLMs的能力构建多模态的视觉应用AI助手？最近，已经开发了几个多模态模型来实现这个目的。它们通常预先训练一个适应模块来对齐视觉编码器和语言模型的语义，然后在指令跟随数据上进行微调。然而，尽管这个流程在图像和语言理解方面取得了成功，在视频和语言理解方面的有效性还没有得到广泛探索。在本文中，我们旨在开发一个能够在一个通用框架内理解视频、图像和语言的新型多模态基础模型。为了实现这一目标，我们引入了Valley，一个以大型语言模型增强的视频助手。
-
-    Large language models (LLMs), with their remarkable conversational capabilities, have demonstrated impressive performance across various applications and have emerged as formidable AI assistants. In view of this, it raises an intuitive question: Can we harness the power of LLMs to build multimodal AI assistants for visual applications? Recently, several multi-modal models have been developed for this purpose. They typically pre-train an adaptation module to align the semantics of the vision encoder and language model, followed by fine-tuning on instruction-following data. However, despite the success of this pipeline in image and language understanding, its effectiveness in joint video and language understanding has not been widely explored. In this paper, we aim to develop a novel multi-modal foundation model capable of comprehending video, image, and language within a general framework. To achieve this goal, we introduce Valley, a Video Assistant with Large Language model Enhanced ab
-    
-[^4]: RViDeformer：具有更大基准数据集的高效原始视频去噪变换器
-
-    RViDeformer: Efficient Raw Video Denoising Transformer with a Larger Benchmark Dataset. (arXiv:2305.00767v1 [cs.CV])
-
-    [http://arxiv.org/abs/2305.00767](http://arxiv.org/abs/2305.00767)
-
-    本文提出了RViDeformer原始视频去噪变换器及其配套数据集ReCRVD，其中利用高低ISO设置重新捕捉现有视频以构建噪声-清晰对，同时探索了非本地时空依赖关系的解决方案。
+    引入了统一的基准测试和实现框架ALDI以及新的DAOD基准数据集CFC-DAOD，解决了领域自适应目标检测中的基准问题，并支持未来方法的发展。
 
     
 
-    近年来，由于与成像过程的一致性和原始领域中成熟的噪声建模，原始视频去噪引起了越来越多的关注。然而，仍存在两个问题阻碍了去噪性能。首先，对于受控的原始视频去噪来说，没有具有真实运动的大型数据集，因为为真实动态场景捕捉噪声和清晰帧是困难的。为了解决这个问题，我们提出重新捕捉以高低ISO设置显示的现有高分辨率视频以构建噪声-清晰配对帧。这样，我们构建一个视频去噪数据集（命名为ReCRVD），其中包括120组噪声-清晰视频，其ISO值从1600到25600不等。其次，虽然非本地时空关注对于去噪有益，但它通常导致沉重的计算成本。为此，我们提出了一种高效的原始视频去噪变换器网络（RViDeformer），它探索了短距离和长距离相关性。具体而言，我们提出了一个空间变换器，用于处理本地视觉特征以减少空间冗余并加速计算。此外，为了解决长程噪声相关性，我们采用了一种新的时间变换器网络，同时模型化非本地时空依赖关系。
+    目标检测器通常表现不佳于与其训练集不同的数据。最近，领域自适应目标检测（DAOD）方法已经展示了在应对这一挑战上的强大结果。遗憾的是，我们发现了系统化的基准测试陷阱，这些陷阱对过去的结果提出质疑并阻碍了进一步的进展：（a）由于基线不足导致性能高估，（b）不一致的实现实践阻止了方法的透明比较，（c）由于过时的骨干和基准测试缺乏多样性，导致缺乏普遍性。我们通过引入以下问题来解决这些问题：（1）一个统一的基准测试和实现框架，Align and Distill（ALDI），支持DAOD方法的比较并支持未来发展，（2）一个公平且现代的DAOD训练和评估协议，解决了基准测试的陷阱，（3）一个新的DAOD基准数据集，CFC-DAOD，能够在多样化的真实环境中进行评估。
 
-    In recent years, raw video denoising has garnered increased attention due to the consistency with the imaging process and well-studied noise modeling in the raw domain. However, two problems still hinder the denoising performance. Firstly, there is no large dataset with realistic motions for supervised raw video denoising, as capturing noisy and clean frames for real dynamic scenes is difficult. To address this, we propose recapturing existing high-resolution videos displayed on a 4K screen with high-low ISO settings to construct noisy-clean paired frames. In this way, we construct a video denoising dataset (named as ReCRVD) with 120 groups of noisy-clean videos, whose ISO values ranging from 1600 to 25600. Secondly, while non-local temporal-spatial attention is beneficial for denoising, it often leads to heavy computation costs. We propose an efficient raw video denoising transformer network (RViDeformer) that explores both short and long-distance correlations. Specifically, we propos
+    arXiv:2403.12029v1 Announce Type: cross  Abstract: Object detectors often perform poorly on data that differs from their training set. Domain adaptive object detection (DAOD) methods have recently demonstrated strong results on addressing this challenge. Unfortunately, we identify systemic benchmarking pitfalls that call past results into question and hamper further progress: (a) Overestimation of performance due to underpowered baselines, (b) Inconsistent implementation practices preventing transparent comparisons of methods, and (c) Lack of generality due to outdated backbones and lack of diversity in benchmarks. We address these problems by introducing: (1) A unified benchmarking and implementation framework, Align and Distill (ALDI), enabling comparison of DAOD methods and supporting future development, (2) A fair and modern training and evaluation protocol for DAOD that addresses benchmarking pitfalls, (3) A new DAOD benchmark dataset, CFC-DAOD, enabling evaluation on diverse real
+    
+[^3]: 基于伪标签的半监督语义分割：综述
+
+    Semi-Supervised Semantic Segmentation Based on Pseudo-Labels: A Survey
+
+    [https://arxiv.org/abs/2403.01909](https://arxiv.org/abs/2403.01909)
+
+    这项综述提供了关于基于伪标签方法在半监督语义分割领域最新研究成果的全面且有组织的概述，探讨了伪标签技术在不同应用领域的具体方法，还研究了其在医学和遥感图像分割中的应用，提出了未来研究方向。
+
+    
+
+    语义分割是计算机视觉中一个重要且热门的研究领域，侧重于基于语义对图像中的像素进行分类。然而，监督学习需要大量数据来训练模型，而逐像素标记图像的过程耗时且繁琐。本综述旨在提供半监督语义分割领域中伪标签方法的最新研究成果的首次综合和有组织的概述，我们从不同角度对其进行分类，并提出了针对特定应用领域的具体方法。此外，我们还探讨了伪标签技术在医学和遥感图像分割中的应用。最后，我们还提出了一些可行的未来研究方向，以解决现有挑战。
+
+    arXiv:2403.01909v1 Announce Type: cross  Abstract: Semantic segmentation is an important and popular research area in computer vision that focuses on classifying pixels in an image based on their semantics. However, supervised deep learning requires large amounts of data to train models and the process of labeling images pixel by pixel is time-consuming and laborious. This review aims to provide a first comprehensive and organized overview of the state-of-the-art research results on pseudo-label methods in the field of semi-supervised semantic segmentation, which we categorize from different perspectives and present specific methods for specific application areas. In addition, we explore the application of pseudo-label technology in medical and remote-sensing image segmentation. Finally, we also propose some feasible future research directions to address the existing challenges.
+    
+[^4]: StochGradAdam: 利用随机梯度抽样加速神经网络训练
+
+    StochGradAdam: Accelerating Neural Networks Training with Stochastic Gradient Sampling. (arXiv:2310.17042v1 [cs.LG])
+
+    [http://arxiv.org/abs/2310.17042](http://arxiv.org/abs/2310.17042)
+
+    StochGradAdam是一种利用随机梯度抽样加速神经网络训练的优化器，通过选择性梯度考虑，能够稳定收敛，提升鲁棒训练。在图像分类和分割任务中表现优异。
+
+    
+
+    在深度学习优化领域中，本文介绍了StochGradAdam优化器，这是对广受赞誉的Adam算法的新颖改进。StochGradAdam的核心是其梯度抽样技术。该方法不仅确保稳定收敛，而且利用选择性梯度考虑的优势，通过减轻噪声或异常数据的影响和增强损失函数空间的探索，提升了鲁棒训练。在图像分类和分割任务中，StochGradAdam表现出优于传统Adam优化器的性能。通过在每次迭代中精心选择一部分梯度进行抽样，该优化器能够有效应对复杂模型的管理。本文从数学基础到偏差校正策略全面探讨了StochGradAdam的方法，展示了深度学习训练技术的可期进展。
+
+    In the rapidly advancing domain of deep learning optimization, this paper unveils the StochGradAdam optimizer, a novel adaptation of the well-regarded Adam algorithm. Central to StochGradAdam is its gradient sampling technique. This method not only ensures stable convergence but also leverages the advantages of selective gradient consideration, fostering robust training by potentially mitigating the effects of noisy or outlier data and enhancing the exploration of the loss landscape for more dependable convergence. In both image classification and segmentation tasks, StochGradAdam has demonstrated superior performance compared to the traditional Adam optimizer. By judiciously sampling a subset of gradients at each iteration, the optimizer is optimized for managing intricate models. The paper provides a comprehensive exploration of StochGradAdam's methodology, from its mathematical foundations to bias correction strategies, heralding a promising advancement in deep learning training tec
+    
+[^5]: 从神经表示到符号知识的过渡
+
+    On the Transition from Neural Representation to Symbolic Knowledge. (arXiv:2308.02000v1 [cs.AI])
+
+    [http://arxiv.org/abs/2308.02000](http://arxiv.org/abs/2308.02000)
+
+    该论文提出了一种神经-符号过渡字典学习框架，可以将神经网络与符号思维进行结合。通过学习过渡表示，并自监督地发现隐含的谓词结构，以及通过博弈和强化学习调整学习到的原型，该框架可以实现对高维信息的压缩和符号表示的学习。
+
+    
+
+    弥合神经表示与符号表示之间的巨大差距可能使符号思维从本质上融入神经网络。受人类如何逐渐从通过知觉和环境交互学习到的原型符号构建复杂的符号表示的启发，我们提出了一种神经-符号过渡字典学习（TDL）框架，该框架使用EM算法学习数据的过渡表示，将输入的高维视觉部分信息压缩到一组张量作为神经变量，并自监督地发现隐含的谓词结构。我们通过将输入分解视为合作博弈来实现框架，使用扩散模型学习谓词，并通过RL基于扩散模型的马尔可夫性质进一步调整学习到的原型，以融入主观因素。
+
+    Bridging the huge disparity between neural and symbolic representation can potentially enable the incorporation of symbolic thinking into neural networks from essence. Motivated by how human gradually builds complex symbolic representation from the prototype symbols that are learned through perception and environmental interactions. We propose a Neural-Symbolic Transitional Dictionary Learning (TDL) framework that employs an EM algorithm to learn a transitional representation of data that compresses high-dimension information of visual parts of an input into a set of tensors as neural variables and discover the implicit predicate structure in a self-supervised way. We implement the framework with a diffusion model by regarding the decomposition of input as a cooperative game, then learn predicates by prototype clustering. We additionally use RL enabled by the Markovian of diffusion models to further tune the learned prototypes by incorporating subjective factors. Extensive experiments 
     
 

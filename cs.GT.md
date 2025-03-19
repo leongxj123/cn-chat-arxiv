@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Tractable Local Equilibria in Non-Concave Games](https://arxiv.org/abs/2403.08171) | 提出了一个新的解决概念，$(\varepsilon, \Phi(\delta))$-局部均衡，以解决在非凹游戏中局部均衡存在但难以处理的问题。 |
+| [^1] | [Efficient Last-iterate Convergence Algorithms in Solving Games.](http://arxiv.org/abs/2308.11256) | 该论文研究了求解博弈中高效收敛算法的问题，通过分析乐观梯度下降上升（OGDA）和乐观乘法权重更新（OMWU）算法，以及基于奖励转化（RT）框架的算法，提出了解决这些问题的方法。 |
 
 # 详细
 
-[^1]: 在非凹游戏中可处理的局部均衡
+[^1]: 在求解博弈中的高效收敛算法
 
-    Tractable Local Equilibria in Non-Concave Games
+    Efficient Last-iterate Convergence Algorithms in Solving Games. (arXiv:2308.11256v1 [cs.GT])
 
-    [https://arxiv.org/abs/2403.08171](https://arxiv.org/abs/2403.08171)
+    [http://arxiv.org/abs/2308.11256](http://arxiv.org/abs/2308.11256)
 
-    提出了一个新的解决概念，$(\varepsilon, \Phi(\delta))$-局部均衡，以解决在非凹游戏中局部均衡存在但难以处理的问题。
+    该论文研究了求解博弈中高效收敛算法的问题，通过分析乐观梯度下降上升（OGDA）和乐观乘法权重更新（OMWU）算法，以及基于奖励转化（RT）框架的算法，提出了解决这些问题的方法。
 
     
 
-    虽然众所周知在线梯度下降和其他无悔学习程序可以有效地收敛到协调均衡，在每个Agent的效用对于其自身策略呈凹形的情况下，但当效用是非凹的时，这种情况在机器学习应用中很常见，其中Agent的策略由深度神经网络参数化，或者Agent的效用由神经网络计算，或两者兼而有之。实际上，非凹游戏存在一系列博弈论和优化挑战：(i) Nash均衡可能不存在；(ii) 局部Nash均衡存在但是不可处理；(iii) 混合Nash、协调和粗糙协调均衡在一般情况下具有无限支持，并且是不可处理的。为了避开这些挑战，我们提出了一个新的解决概念，称为$(\varepsilon, \Phi(\delta))$-局部均衡，该概念在非凹游戏中概括了局部Nash均衡。
+    无悔算法在学习两人零和标准型游戏和扩展型游戏的纳什均衡中很受欢迎。最近的许多研究考虑了最后一次迭代收敛的无悔算法。其中，最有名的两个算法是乐观梯度下降上升（OGDA）和乐观乘法权重更新（OMWU）。然而，OGDA的每次迭代复杂度很高。OMWU具有较低的每次迭代复杂度，但实验性能较差，并且它的收敛仅在纳什均衡唯一时成立。最近的研究提出了一种基于奖励转化（RT）框架用于MWU，它消除了唯一性条件，并且在与OMWU相同迭代次数的情况下实现了有竞争力的性能。不幸的是，基于RT的算法在相同迭代次数下表现不如OGDA，并且它们的收敛保证基于连续时间反馈假设，这在大多数情况下不成立。为了解决这些问题，我们对RT框架进行了更详细的分析。
 
-    arXiv:2403.08171v1 Announce Type: cross  Abstract: While Online Gradient Descent and other no-regret learning procedures are known to efficiently converge to coarse correlated equilibrium in games where each agent's utility is concave in their own strategy, this is not the case when the utilities are non-concave, a situation that is common in machine learning applications where the agents' strategies are parameterized by deep neural networks, or the agents' utilities are computed by a neural network, or both. Indeed, non-concave games present a host of game-theoretic and optimization challenges: (i) Nash equilibria may fail to exist; (ii) local Nash equilibria exist but are intractable; and (iii) mixed Nash, correlated, and coarse correlated equilibria have infinite support in general, and are intractable. To sidestep these challenges we propose a new solution concept, termed $(\varepsilon, \Phi(\delta))$-local equilibrium, which generalizes local Nash equilibrium in non-concave games,
+    No-regret algorithms are popular for learning Nash equilibrium (NE) in two-player zero-sum normal-form games (NFGs) and extensive-form games (EFGs). Many recent works consider the last-iterate convergence no-regret algorithms. Among them, the two most famous algorithms are Optimistic Gradient Descent Ascent (OGDA) and Optimistic Multiplicative Weight Update (OMWU). However, OGDA has high per-iteration complexity. OMWU exhibits a lower per-iteration complexity but poorer empirical performance, and its convergence holds only when NE is unique. Recent works propose a Reward Transformation (RT) framework for MWU, which removes the uniqueness condition and achieves competitive performance with OMWU. Unfortunately, RT-based algorithms perform worse than OGDA under the same number of iterations, and their convergence guarantee is based on the continuous-time feedback assumption, which does not hold in most scenarios. To address these issues, we provide a closer analysis of the RT framework, w
     
 

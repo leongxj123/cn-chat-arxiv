@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [On the Byzantine-Resilience of Distillation-Based Federated Learning](https://arxiv.org/abs/2402.12265) | 基于蒸馏的联邦学习在拜占庭环境下表现出极强的弹性，介绍了两种新的拜占庭攻击，并提出了一种增强拜占庭弹性的新方法。 |
+| [^1] | [Lower Bounds and Accelerated Algorithms in Distributed Stochastic Optimization with Communication Compression.](http://arxiv.org/abs/2305.07612) | 本文研究采用通信压缩的分布式随机优化算法的性能下限并提出了一种名为NEOLITHIC的新型通信压缩算法，通过加速收敛速率缩小下限和现有算法的差距。 |
 
 # 详细
 
-[^1]: 论基于蒸馏的联邦学习在拜占庭环境下的弹性
+[^1]: 通信压缩下的分布式随机优化中的下限和加速算法
 
-    On the Byzantine-Resilience of Distillation-Based Federated Learning
+    Lower Bounds and Accelerated Algorithms in Distributed Stochastic Optimization with Communication Compression. (arXiv:2305.07612v1 [cs.LG])
 
-    [https://arxiv.org/abs/2402.12265](https://arxiv.org/abs/2402.12265)
+    [http://arxiv.org/abs/2305.07612](http://arxiv.org/abs/2305.07612)
 
-    基于蒸馏的联邦学习在拜占庭环境下表现出极强的弹性，介绍了两种新的拜占庭攻击，并提出了一种增强拜占庭弹性的新方法。
+    本文研究采用通信压缩的分布式随机优化算法的性能下限并提出了一种名为NEOLITHIC的新型通信压缩算法，通过加速收敛速率缩小下限和现有算法的差距。
 
     
 
-    由于在隐私、非独立同分布数据和通信成本方面的优势，使用知识蒸馏（KD）的联邦学习（FL）算法受到越来越多的关注。本文研究了这些方法在拜占庭环境中的性能，展示了基于KD的FL算法相当具有弹性，并分析了拜占庭客户端如何影响学习过程相对于联邦平均算法。根据这些见解，我们介绍了两种新的拜占庭攻击，并证明它们对先前的拜占庭弹性方法是有效的。此外，我们提出了FilterExp，一种旨在增强拜占庭弹性的新方法。
+    通信压缩是减轻分布式随机优化中计算节点间信息交换量的重要策略。本文研究了采用通信压缩的分布式随机优化算法的性能下限，并关注两种主要类型的压缩器：无偏和压缩型，并解决了可以通过这些压缩器获得的最佳收敛速率问题。本文针对六种不同设置，结合强凸、一般凸或非凸函数，并用无偏或压缩型压缩器建立了分布式随机优化的收敛速率下限。我们提出了一种名为NEOLITHIC的新型通信压缩算法，通过加速收敛速率相比经典方法，缩小了下限和现有算法的差距。理论分析和数值实验提供了关于分布式随机优化中通信压缩算法的最优性能的见解。
 
-    arXiv:2402.12265v1 Announce Type: cross  Abstract: Federated Learning (FL) algorithms using Knowledge Distillation (KD) have received increasing attention due to their favorable properties with respect to privacy, non-i.i.d. data and communication cost. These methods depart from transmitting model parameters and, instead, communicate information about a learning task by sharing predictions on a public dataset. In this work, we study the performance of such approaches in the byzantine setting, where a subset of the clients act in an adversarial manner aiming to disrupt the learning process. We show that KD-based FL algorithms are remarkably resilient and analyze how byzantine clients can influence the learning process compared to Federated Averaging. Based on these insights, we introduce two new byzantine attacks and demonstrate that they are effective against prior byzantine-resilient methods. Additionally, we propose FilterExp, a novel method designed to enhance the byzantine resilien
+    Communication compression is an essential strategy for alleviating communication overhead by reducing the volume of information exchanged between computing nodes in large-scale distributed stochastic optimization. Although numerous algorithms with convergence guarantees have been obtained, the optimal performance limit under communication compression remains unclear.  In this paper, we investigate the performance limit of distributed stochastic optimization algorithms employing communication compression. We focus on two main types of compressors, unbiased and contractive, and address the best-possible convergence rates one can obtain with these compressors. We establish the lower bounds for the convergence rates of distributed stochastic optimization in six different settings, combining strongly-convex, generally-convex, or non-convex functions with unbiased or contractive compressor types. To bridge the gap between lower bounds and existing algorithms' rates, we propose NEOLITHIC, a n
     
 
