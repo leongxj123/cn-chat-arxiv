@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Inverse estimation of the transfer velocity of money.](http://arxiv.org/abs/2209.01512) | 本文提出了一种新的方法，利用微观级交易数据逆向估计货币的传输速度。通过测量货币在个人账户上的持有时间，并计算其逆反，我们发现Sarafu在肯尼亚的传输速度比总体上更高，因为并非所有的Sarafu单位都保持在活跃循环中。 |
+| [^1] | [Signed graphs in data sciences via communicability geometry](https://arxiv.org/abs/2403.07493) | 提出了符号图的可通信性几何概念，证明了其度量是欧几里德的和球形的，然后应用于解决符号图数据分析中的多个问题。 |
 
 # 详细
 
-[^1]: 货币传输速度的逆推估计
+[^1]: 通过可通信性几何学在数据科学中的符号图
 
-    Inverse estimation of the transfer velocity of money. (arXiv:2209.01512v2 [econ.GN] UPDATED)
+    Signed graphs in data sciences via communicability geometry
 
-    [http://arxiv.org/abs/2209.01512](http://arxiv.org/abs/2209.01512)
+    [https://arxiv.org/abs/2403.07493](https://arxiv.org/abs/2403.07493)
 
-    本文提出了一种新的方法，利用微观级交易数据逆向估计货币的传输速度。通过测量货币在个人账户上的持有时间，并计算其逆反，我们发现Sarafu在肯尼亚的传输速度比总体上更高，因为并非所有的Sarafu单位都保持在活跃循环中。
+    提出了符号图的可通信性几何概念，证明了其度量是欧几里德的和球形的，然后应用于解决符号图数据分析中的多个问题。
 
     
 
-    监测货币供应是进行健全货币政策的重要前提，但传统上货币指标的估计是以总体为单位进行的。本文提出了一种能够利用现实世界支付系统的微观级交易数据的新方法。我们应用一种新颖的计算技术来测量货币在个人账户中持有的持续时间，并通过其逆反计算货币的传输速度。我们的新定义在传统假设下退化为现有定义。然而，在总余额波动和消费模式发生改变的支付系统中，逆估计仍然适用。我们的方法应用于肯尼亚的一个小型数字社区货币Sarafu的研究中，从2020年1月25日到2021年6月15日可以获得交易数据。我们发现，Sarafu的传输速度比看起来的要高，因为并非所有的Sarafu单位都保持在活跃循环中。
+    符号图是表示多种存在冲突交互的数据的新兴方式，包括来自生物学、生态学和社会系统的数据。我们在这里提出了符号图的可通信性几何概念，证明了在这个空间中的度量，比如可通信性距离和角度，是欧几里德的和球形的。然后我们将这些度量应用于以统一方式解决符号图数据分析中的几个问题，包括符号图的分区、维度约简、找到符号网络中的联盟等级以及量化系统中现有派系之间极化程度的问题。
 
-    Monitoring the money supply is an important prerequisite for conducting sound monetary policy, yet monetary indicators are conventionally estimated in aggregate. This paper proposes a new methodology that is able to leverage micro-level transaction data from real-world payment systems. We apply a novel computational technique to measure the durations for which money is held in individual accounts, and compute the transfer velocity of money from its inverse. Our new definition reduces to existing definitions under conventional assumptions. However, inverse estimation remains suitable for payment systems where the total balance fluctuates and spending patterns change in time. Our method is applied to study Sarafu, a small digital community currency in Kenya, where transaction data is available from 25 January 2020 to 15 June 2021. We find that the transfer velocity of Sarafu was higher than it would seem, in aggregate, because not all units of Sarafu remained in active circulation. Moreo
+    arXiv:2403.07493v1 Announce Type: cross  Abstract: Signed graphs are an emergent way of representing data in a variety of contexts were conflicting interactions exist. These include data from biological, ecological, and social systems. Here we propose the concept of communicability geometry for signed graphs, proving that metrics in this space, such as the communicability distance and angles, are Euclidean and spherical. We then apply these metrics to solve several problems in data analysis of signed graphs in a unified way. They include the partitioning of signed graphs, dimensionality reduction, finding hierarchies of alliances in signed networks as well as the quantification of the degree of polarization between the existing factions in systems represented by this type of graphs.
     
 

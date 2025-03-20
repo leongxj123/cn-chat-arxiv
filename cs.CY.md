@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Unfair Utilities and First Steps Towards Improving Them.](http://arxiv.org/abs/2306.00636) | 该论文提出了一个新的公平框架——考虑政策优化哪个效用，定义了信息价值公平，提出不应使用不满足这一标准的实用程序，并探讨了修改实用程序以满足此公平标准可能对最优政策产生的影响。 |
+| [^1] | [On the Need and Applicability of Causality for Fair Machine Learning.](http://arxiv.org/abs/2207.04053) | 本论文探讨了因果关系在公平机器学习中的必要性和适用性，强调了非因果预测的社会影响和法律反歧视过程依赖于因果主张。同时讨论了在实际场景中应用因果关系所面临的挑战和限制，并提出了可能的解决方案。 |
 
 # 详细
 
-[^1]: 不公平的实用程序及其改进的第一步
+[^1]: 论公平机器学习中因果关系的必要性和适用性
 
-    Unfair Utilities and First Steps Towards Improving Them. (arXiv:2306.00636v1 [stat.ML])
+    On the Need and Applicability of Causality for Fair Machine Learning. (arXiv:2207.04053v2 [cs.LG] UPDATED)
 
-    [http://arxiv.org/abs/2306.00636](http://arxiv.org/abs/2306.00636)
+    [http://arxiv.org/abs/2207.04053](http://arxiv.org/abs/2207.04053)
 
-    该论文提出了一个新的公平框架——考虑政策优化哪个效用，定义了信息价值公平，提出不应使用不满足这一标准的实用程序，并探讨了修改实用程序以满足此公平标准可能对最优政策产生的影响。
+    本论文探讨了因果关系在公平机器学习中的必要性和适用性，强调了非因果预测的社会影响和法律反歧视过程依赖于因果主张。同时讨论了在实际场景中应用因果关系所面临的挑战和限制，并提出了可能的解决方案。
 
     
 
-    许多公平标准对政策或预测器的选择进行限制。在这项工作中，我们提出了一个不同的思考公平的框架：我们考虑政策正在优化哪个效用，而不是限制政策或预测器的选择。我们定义了信息价值公平，并建议不使用不满足此标准的实用程序。我们描述了如何修改实用程序以满足这种公平标准，并讨论了这可能对相应的最优政策产生的影响。
+    除了在流行病学、政治和社会科学中的常见应用案例外，事实证明因果关系在评估自动决策的公正性方面十分重要，无论是在法律上还是日常生活中。我们提供了关于为何因果关系对公平性评估尤为重要的论点和示例。特别是，我们指出了非因果预测的社会影响以及依赖因果主张的法律反歧视过程。我们最后讨论了应用因果关系在实际场景中的挑战和局限性，以及可能的解决方案。
 
-    Many fairness criteria constrain the policy or choice of predictors. In this work, we propose a different framework for thinking about fairness: Instead of constraining the policy or choice of predictors, we consider which utility a policy is optimizing for. We define value of information fairness and propose to not use utilities that do not satisfy this criterion. We describe how to modify a utility to satisfy this fairness criterion and discuss the consequences this might have on the corresponding optimal policies.
+    Besides its common use cases in epidemiology, political, and social sciences, causality turns out to be crucial in evaluating the fairness of automated decisions, both in a legal and everyday sense. We provide arguments and examples, of why causality is particularly important for fairness evaluation. In particular, we point out the social impact of non-causal predictions and the legal anti-discrimination process that relies on causal claims. We conclude with a discussion about the challenges and limitations of applying causality in practical scenarios as well as possible solutions.
     
 
