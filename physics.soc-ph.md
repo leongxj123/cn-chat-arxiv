@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Signed graphs in data sciences via communicability geometry](https://arxiv.org/abs/2403.07493) | 提出了符号图的可通信性几何概念，证明了其度量是欧几里德的和球形的，然后应用于解决符号图数据分析中的多个问题。 |
+| [^1] | [Uncertain research country rankings. Should we continue producing uncertain rankings?.](http://arxiv.org/abs/2312.17560) | 这项研究对基于引用的国家排名进行了分析，发现这些排名可能对日本的科研地位进行错误的分类。研究还发现了引用分布的偏离情况，并评估了其对评估的影响。 |
 
 # 详细
 
-[^1]: 通过可通信性几何学在数据科学中的符号图
+[^1]: 不确定性的研究国家排名：我们应该继续制作不确定性排名吗？
 
-    Signed graphs in data sciences via communicability geometry
+    Uncertain research country rankings. Should we continue producing uncertain rankings?. (arXiv:2312.17560v2 [cs.DL] UPDATED)
 
-    [https://arxiv.org/abs/2403.07493](https://arxiv.org/abs/2403.07493)
+    [http://arxiv.org/abs/2312.17560](http://arxiv.org/abs/2312.17560)
 
-    提出了符号图的可通信性几何概念，证明了其度量是欧几里德的和球形的，然后应用于解决符号图数据分析中的多个问题。
+    这项研究对基于引用的国家排名进行了分析，发现这些排名可能对日本的科研地位进行错误的分类。研究还发现了引用分布的偏离情况，并评估了其对评估的影响。
 
     
 
-    符号图是表示多种存在冲突交互的数据的新兴方式，包括来自生物学、生态学和社会系统的数据。我们在这里提出了符号图的可通信性几何概念，证明了在这个空间中的度量，比如可通信性距离和角度，是欧几里德的和球形的。然后我们将这些度量应用于以统一方式解决符号图数据分析中的几个问题，包括符号图的分区、维度约简、找到符号网络中的联盟等级以及量化系统中现有派系之间极化程度的问题。
+    基于引用的国家排名通常将日本划为发展中国家，甚至是在最有声望的机构中也是如此。考虑到日本的科研地位提升，这种分类挑战了这些排名的可信度。在大多数情况下，这些排名使用百分位指标，如果国家的引用符合理想的分布模型，那么这些排名是准确的，但在偏离的情况下，它们可能具有误导性。理想模型意味着对数正态分布的引用分布和基于幂律的引用分布的双重排名：全球和国家排名。本研究对偏离理想模型的情况进行了系统性的检查，以及其对评估的影响。研究评估了三个具有科学相关性的主题的六个选定国家，并利用莱顿排名评估了300多所大学。研究结果显示了对数正态分布的三种偏离类型：i 极端上尾部的偏离；ii 膨胀的下尾部；
 
-    arXiv:2403.07493v1 Announce Type: cross  Abstract: Signed graphs are an emergent way of representing data in a variety of contexts were conflicting interactions exist. These include data from biological, ecological, and social systems. Here we propose the concept of communicability geometry for signed graphs, proving that metrics in this space, such as the communicability distance and angles, are Euclidean and spherical. We then apply these metrics to solve several problems in data analysis of signed graphs in a unified way. They include the partitioning of signed graphs, dimensionality reduction, finding hierarchies of alliances in signed networks as well as the quantification of the degree of polarization between the existing factions in systems represented by this type of graphs.
+    Citation based country rankings consistently categorize Japan as a developing country, even in those from the most reputed institutions. This categorization challenges the credibility of such rankings, considering Japan elevated scientific standing. In most cases, these rankings use percentile indicators and are accurate if country citations fit an ideal model of distribution, but they can be misleading in cases of deviations. The ideal model implies a lognormal citation distribution and a power law citation based double rank: in the global and country lists. This report conducts a systematic examination of deviations from the ideal model and their consequential impact on evaluations. The study evaluates six selected countries across three scientifically relevant topics and utilizes Leiden Ranking assessments of over 300 universities. The findings reveal three types of deviations from the lognormal citation distribution: i deviations in the extreme upper tail; ii inflated lower tails; 
     
 

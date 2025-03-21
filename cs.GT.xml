@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.GT</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.GT</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.GT</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.GT</description><item><title>&#26412;&#25991;&#30740;&#31350;&#20102;&#35821;&#35328;&#28216;&#25103;&#20013;&#30340;&#31163;&#32447;&#31574;&#30053;&#35780;&#20272;&#65292;&#24182;&#25552;&#20986;&#20102;&#19968;&#31181;&#32467;&#21512;&#30495;&#23454;&#21644;&#27169;&#25311;&#25968;&#25454;&#30340;&#26032;&#26041;&#27861;&#12290;</title><link>http://arxiv.org/abs/2305.10361</link><description>&lt;p&gt;
+&#38750;&#21512;&#20316;&#21338;&#24328;&#20013;&#30340;&#20154;&#31867;&#36873;&#25321;&#39044;&#27979;&#65306;&#22522;&#20110;&#27169;&#25311;&#30340;&#31163;&#32447;&#31574;&#30053;&#35780;&#20272;
+&lt;/p&gt;
+&lt;p&gt;
+Human Choice Prediction in Non-Cooperative Games: Simulation-based Off-Policy Evaluation. (arXiv:2305.10361v1 [cs.LG])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2305.10361
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#30740;&#31350;&#20102;&#35821;&#35328;&#28216;&#25103;&#20013;&#30340;&#31163;&#32447;&#31574;&#30053;&#35780;&#20272;&#65292;&#24182;&#25552;&#20986;&#20102;&#19968;&#31181;&#32467;&#21512;&#30495;&#23454;&#21644;&#27169;&#25311;&#25968;&#25454;&#30340;&#26032;&#26041;&#27861;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#35828;&#26381;&#28216;&#25103;&#22312;&#32463;&#27982;&#21644;&#20154;&#24037;&#26234;&#33021;&#30740;&#31350;&#20013;&#20855;&#26377;&#37325;&#35201;&#24847;&#20041;&#24182;&#20855;&#26377;&#37325;&#35201;&#30340;&#23454;&#38469;&#24212;&#29992;&#12290;&#26412;&#25991;&#25506;&#35752;&#20102;&#22312;&#22522;&#20110;&#35821;&#35328;&#30340;&#35828;&#26381;&#28216;&#25103;&#20013;&#31163;&#32447;&#31574;&#30053;&#35780;&#20272;&#65288;OPE&#65289;&#30340;&#25361;&#25112;&#24615;&#38382;&#39064;&#65292;&#25552;&#20986;&#20102;&#19968;&#31181;&#32467;&#21512;&#30495;&#23454;&#21644;&#27169;&#25311;&#20154;&#31867; - &#26426;&#22120;&#20154;&#20132;&#20114;&#25968;&#25454;&#30340;&#26032;&#26041;&#27861;&#65292;&#24182;&#32473;&#20986;&#20102;&#19968;&#31181;&#28145;&#24230;&#23398;&#20064;&#35757;&#32451;&#31639;&#27861;&#65292;&#35813;&#31639;&#27861;&#26377;&#25928;&#22320;&#25972;&#21512;&#20102;&#30495;&#23454;&#20132;&#20114;&#21644;&#27169;&#25311;&#25968;&#25454;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+Persuasion games have been fundamental in economics and AI research, and have significant practical applications. Recent works in this area have started to incorporate natural language, moving beyond the traditional stylized message setting. However, previous research has focused on on-policy prediction, where the train and test data have the same distribution, which is not representative of real-life scenarios. In this paper, we tackle the challenging problem of off-policy evaluation (OPE) in language-based persuasion games. To address the inherent difficulty of human data collection in this setup, we propose a novel approach which combines real and simulated human-bot interaction data. Our simulated data is created by an exogenous model assuming decision makers (DMs) start with a mixture of random and decision-theoretic based behaviors and improve over time. We present a deep learning training algorithm that effectively integrates real interaction and simulated data, substantially im
+&lt;/p&gt;</description></item></channel></rss>
