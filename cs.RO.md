@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [NavCoT: Boosting LLM-Based Vision-and-Language Navigation via Learning Disentangled Reasoning](https://arxiv.org/abs/2403.07376) | 本文提出了一种名为NavCoT的新策略，在视觉与语言导航中通过学习解耦推理，实现了自主导航决策，有效减轻了领域差距。 |
+| [^1] | [Morphological Symmetries in Robotics](https://arxiv.org/abs/2402.15552) | 形态对称性是机器人系统中的固有性质，通过对运动结构和质量的对称分布，延伸至机器人状态空间和传感器测量，进而影响机器人的运动方程和最优控制策略，并在机器人学建模、控制和设计中具有重要意义。 |
 
 # 详细
 
-[^1]: NavCoT: 通过学习解耦推理提升基于LLM的视觉与语言导航
+[^1]: 机器人学中的形态对称性
 
-    NavCoT: Boosting LLM-Based Vision-and-Language Navigation via Learning Disentangled Reasoning
+    Morphological Symmetries in Robotics
 
-    [https://arxiv.org/abs/2403.07376](https://arxiv.org/abs/2403.07376)
+    [https://arxiv.org/abs/2402.15552](https://arxiv.org/abs/2402.15552)
 
-    本文提出了一种名为NavCoT的新策略，在视觉与语言导航中通过学习解耦推理，实现了自主导航决策，有效减轻了领域差距。
+    形态对称性是机器人系统中的固有性质，通过对运动结构和质量的对称分布，延伸至机器人状态空间和传感器测量，进而影响机器人的运动方程和最优控制策略，并在机器人学建模、控制和设计中具有重要意义。
 
     
 
-    视觉与语言导航(VLN)作为具有重要研究价值的具身人工智能问题，需要一个具身代理根据自然语言指示穿越复杂的3D环境。最近的研究突出了大型语言模型(LLMs)在VLN中提高导航推理准确性和可解释性的潜力。然而，它们主要在离线方式下的使用通常在VLN任务和LLM训练语料库之间遭受显著的领域差距。本文引入了一种名为导航思维链(NavCoT)的新型策略，我们通过完成领域内高效参数训练，实现自主导航决策，有效减轻领域差距的成本。具体地，在每个时间步，LLM被提示通过作为世界模型来预测导航思维链：1)根据
+    我们提出了一个全面的框架来研究和利用机器人系统中的形态对称性。这些是机器人形态的固有特性，经常在动物生物学和机器人学中观察到，源于运动结构的复制和质量的对称分布。我们说明了这些对称性如何延伸到机器人的状态空间以及本体感知和外部感知传感器测量，导致机器人的运动方程和最优控制策略的等不变性。因此，我们认识到形态对称性作为一个相关且以前未被探索的受物理启示的几何先验，对机器人建模、控制、估计和设计中使用的数据驱动和分析方法都具有重要影响。对于数据驱动方法，我们演示了形态对称性如何提高机器学习模型的样本效率和泛化能力
 
-    arXiv:2403.07376v1 Announce Type: cross  Abstract: Vision-and-Language Navigation (VLN), as a crucial research problem of Embodied AI, requires an embodied agent to navigate through complex 3D environments following natural language instructions. Recent research has highlighted the promising capacity of large language models (LLMs) in VLN by improving navigational reasoning accuracy and interpretability. However, their predominant use in an offline manner usually suffers from substantial domain gap between the VLN task and the LLM training corpus. This paper introduces a novel strategy called Navigational Chain-of-Thought (NavCoT), where we fulfill parameter-efficient in-domain training to enable self-guided navigational decision, leading to a significant mitigation of the domain gap in a cost-effective manner. Specifically, at each timestep, the LLM is prompted to forecast the navigational chain-of-thought by: 1) acting as a world model to imagine the next observation according to the
+    arXiv:2402.15552v1 Announce Type: cross  Abstract: We present a comprehensive framework for studying and leveraging morphological symmetries in robotic systems. These are intrinsic properties of the robot's morphology, frequently observed in animal biology and robotics, which stem from the replication of kinematic structures and the symmetrical distribution of mass. We illustrate how these symmetries extend to the robot's state space and both proprioceptive and exteroceptive sensor measurements, resulting in the equivariance of the robot's equations of motion and optimal control policies. Thus, we recognize morphological symmetries as a relevant and previously unexplored physics-informed geometric prior, with significant implications for both data-driven and analytical methods used in modeling, control, estimation and design in robotics. For data-driven methods, we demonstrate that morphological symmetries can enhance the sample efficiency and generalization of machine learning models 
     
 
