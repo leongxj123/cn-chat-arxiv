@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Phylo2Vec: a vector representation for binary trees.](http://arxiv.org/abs/2304.12693) | Phylo2Vec是一种新的二叉树简明表示方法，它能够轻松采样二叉树，并以系统性的方法遍历树空间。这种方法用于构建深度神经网络，能够显著提高蛋白质类别预测的性能。 |
+| [^1] | [Diffusion Variational Inference: Diffusion Models as Expressive Variational Posteriors.](http://arxiv.org/abs/2401.02739) | 本文提出了去噪扩散变分推断（DDVI）算法，该算法使用扩散模型作为表达性变分后验，并通过反转加噪过程在潜空间中进行扩散。该方法易于实现，兼容黑盒变分推断，并在深度潜变量模型中的任务中表现优异。 |
 
 # 详细
 
-[^1]: Phylo2Vec: 一种二叉树的向量表示方法
+[^1]: 扩散变分推断：扩散模型作为表达性变分后验
 
-    Phylo2Vec: a vector representation for binary trees. (arXiv:2304.12693v1 [q-bio.PE])
+    Diffusion Variational Inference: Diffusion Models as Expressive Variational Posteriors. (arXiv:2401.02739v1 [cs.LG])
 
-    [http://arxiv.org/abs/2304.12693](http://arxiv.org/abs/2304.12693)
+    [http://arxiv.org/abs/2401.02739](http://arxiv.org/abs/2401.02739)
 
-    Phylo2Vec是一种新的二叉树简明表示方法，它能够轻松采样二叉树，并以系统性的方法遍历树空间。这种方法用于构建深度神经网络，能够显著提高蛋白质类别预测的性能。
+    本文提出了去噪扩散变分推断（DDVI）算法，该算法使用扩散模型作为表达性变分后验，并通过反转加噪过程在潜空间中进行扩散。该方法易于实现，兼容黑盒变分推断，并在深度潜变量模型中的任务中表现优异。
 
     
 
-    从生物数据推断得到的二叉进化树对于理解生物之间共享的进化历史至关重要。根据最大似然等某个最优性准则推断出树中潜在节点的位置是NP-hard问题，这推动了大量启发式方法的发展。然而，这些启发式方法通常缺乏一种系统性的方法来均匀采样随机树或有效地探索指数级增长的树空间，这对于机器学习等优化问题至关重要。因此，我们提出了Phylo2Vec，这是一种新的简明表示方法来表示进化树。Phylo2Vec将任何具有n个叶子的二叉树映射到长度为n的整数向量。我们证明了Phylo2Vec在空间中既是良定的又是双射的。Phylo2Vec的优点是：i）轻松均匀采样二叉树；ii）以非常大或小的步长系统地遍历树空间。作为概念验证，我们使用Phylo2Vec构建了一个深度神经网络，以从氨基酸序列预测蛋白质类别。我们证明了Phylo2Vec显著提高了网络的性能，超过了之前的最优结果。
+    我们提出了去噪扩散变分推断（DDVI），一种用扩散模型作为表达性变分后验的潜变量模型的近似推断算法。我们的方法通过辅助潜变量增加了变分后验，从而得到一个表达性的模型类，通过反转用户指定的加噪过程在潜空间中进行扩散。我们通过优化一个受到觉醒-睡眠算法启发的边际似然新下界来拟合这些模型。我们的方法易于实现（它适配了正则化的ELBO扩展），与黑盒变分推断兼容，并且表现优于基于归一化流或对抗网络的替代近似后验类别。将我们的方法应用于深度潜变量模型时，我们的方法得到了去噪扩散变分自动编码器（DD-VAE）算法。我们将该算法应用于生物学中的一个激励任务 -- 从人类基因组中推断潜在血统 -- 超过了强基线模型。
 
-    Binary phylogenetic trees inferred from biological data are central to understanding the shared evolutionary history of organisms. Inferring the placement of latent nodes in a tree by any optimality criterion (e.g., maximum likelihood) is an NP-hard problem, propelling the development of myriad heuristic approaches. Yet, these heuristics often lack a systematic means of uniformly sampling random trees or effectively exploring a tree space that grows factorially, which are crucial to optimisation problems such as machine learning. Accordingly, we present Phylo2Vec, a new parsimonious representation of a phylogenetic tree. Phylo2Vec maps any binary tree with $n$ leaves to an integer vector of length $n$. We prove that Phylo2Vec is both well-defined and bijective to the space of phylogenetic trees. The advantages of Phylo2Vec are twofold: i) easy uniform sampling of binary trees and ii) systematic ability to traverse tree space in very large or small jumps. As a proof of concept, we use P
+    We propose denoising diffusion variational inference (DDVI), an approximate inference algorithm for latent variable models which relies on diffusion models as expressive variational posteriors. Our method augments variational posteriors with auxiliary latents, which yields an expressive class of models that perform diffusion in latent space by reversing a user-specified noising process. We fit these models by optimizing a novel lower bound on the marginal likelihood inspired by the wake-sleep algorithm. Our method is easy to implement (it fits a regularized extension of the ELBO), is compatible with black-box variational inference, and outperforms alternative classes of approximate posteriors based on normalizing flows or adversarial networks. When applied to deep latent variable models, our method yields the denoising diffusion VAE (DD-VAE) algorithm. We use this algorithm on a motivating task in biology -- inferring latent ancestry from human genomes -- outperforming strong baselines
     
 

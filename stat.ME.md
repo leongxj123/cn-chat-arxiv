@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [What To Do (and Not to Do) with Causal Panel Analysis under Parallel Trends: Lessons from A Large Reanalysis Study.](http://arxiv.org/abs/2309.15983) | 通过对37篇使用观察面板数据的文章进行复制和重新分析，我们发现双向固定效应模型的核心结论在新的异质治疗效应鲁棒估计器下基本保持不变，但平行趋势假设违反和统计力量不足仍然是可信推论的重要障碍。 |
+| [^1] | [Deep Learning Framework with Uncertainty Quantification for Survey Data: Assessing and Predicting Diabetes Mellitus Risk in the American Population](https://arxiv.org/abs/2403.19752) | 该论文提出了一个利用神经网络模型进行回归和分类的预测框架，并引入了适用于复杂调查设计数据的不确定性量化算法，以评估美国人群糖尿病风险。 |
 
 # 详细
 
-[^1]: 如何在平行趋势下进行因果面板分析：一项大规模再分析研究的教训
+[^1]: 具有不确定性量化的调查数据深度学习框架: 评估和预测美国人群糖尿病风险
 
-    What To Do (and Not to Do) with Causal Panel Analysis under Parallel Trends: Lessons from A Large Reanalysis Study. (arXiv:2309.15983v1 [stat.ME])
+    Deep Learning Framework with Uncertainty Quantification for Survey Data: Assessing and Predicting Diabetes Mellitus Risk in the American Population
 
-    [http://arxiv.org/abs/2309.15983](http://arxiv.org/abs/2309.15983)
+    [https://arxiv.org/abs/2403.19752](https://arxiv.org/abs/2403.19752)
 
-    通过对37篇使用观察面板数据的文章进行复制和重新分析，我们发现双向固定效应模型的核心结论在新的异质治疗效应鲁棒估计器下基本保持不变，但平行趋势假设违反和统计力量不足仍然是可信推论的重要障碍。
+    该论文提出了一个利用神经网络模型进行回归和分类的预测框架，并引入了适用于复杂调查设计数据的不确定性量化算法，以评估美国人群糖尿病风险。
 
     
 
-    双向固定效应模型在政治科学中的因果面板分析中普遍应用。然而，最近的方法论讨论挑战了其在存在异质治疗效应和平行趋势假设违反情况下的有效性。这一新兴的文献引入了多个估计器和诊断方法，导致实证研究人员在两个方面产生了困惑：基于双向固定效应模型的现有结果的可靠性和目前的最佳实践。为了解决这些问题，我们考察、复制和重新分析了三个领先政治科学期刊上共37篇运用观察面板数据和二元治疗的文章。使用六种新引入的异质治疗效应鲁棒估计器，我们发现尽管精确性可能受到影响，但基于双向固定效应估计的核心结论在很大程度上保持不变。然而，平行趋势假设的违反和统计力量不足仍然是可信推论的重要障碍。
+    多种医学队列中通常采用复杂的调查设计。在这种情况下，开发反映研究设计的独特特征的特定病例预测风险评分模型至关重要。本文的目标是:(i) 提出一个通用的预测框架，利用神经网络(NN)建模进行回归和分类，其将调查权重纳入估计过程中;(ii) 引入一种模型预测的不确定性量化算法，专为来自复杂调查设计的数据量身定制;(iii) 应用这种方法开发健壮的风险评分模型，评估美国人群糖尿病风险，利用NHANES 2011-2014队列中的数据。我们的估计器的理论性质旨在确保最小偏差和统计一致性，从而确保我们的
 
-    Two-way fixed effects (TWFE) models are ubiquitous in causal panel analysis in political science. However, recent methodological discussions challenge their validity in the presence of heterogeneous treatment effects (HTE) and violations of the parallel trends assumption (PTA). This burgeoning literature has introduced multiple estimators and diagnostics, leading to confusion among empirical researchers on two fronts: the reliability of existing results based on TWFE models and the current best practices. To address these concerns, we examined, replicated, and reanalyzed 37 articles from three leading political science journals that employed observational panel data with binary treatments. Using six newly introduced HTE-robust estimators, we find that although precision may be affected, the core conclusions derived from TWFE estimates largely remain unchanged. PTA violations and insufficient statistical power, however, continue to be significant obstacles to credible inferences. Based 
+    arXiv:2403.19752v1 Announce Type: cross  Abstract: Complex survey designs are commonly employed in many medical cohorts. In such scenarios, developing case-specific predictive risk score models that reflect the unique characteristics of the study design is essential. This approach is key to minimizing potential selective biases in results. The objectives of this paper are: (i) To propose a general predictive framework for regression and classification using neural network (NN) modeling, which incorporates survey weights into the estimation process; (ii) To introduce an uncertainty quantification algorithm for model prediction, tailored for data from complex survey designs; (iii) To apply this method in developing robust risk score models to assess the risk of Diabetes Mellitus in the US population, utilizing data from the NHANES 2011-2014 cohort. The theoretical properties of our estimators are designed to ensure minimal bias and the statistical consistency, thereby ensuring that our m
     
 

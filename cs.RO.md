@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Morphological Symmetries in Robotics](https://arxiv.org/abs/2402.15552) | 形态对称性是机器人系统中的固有性质，通过对运动结构和质量的对称分布，延伸至机器人状态空间和传感器测量，进而影响机器人的运动方程和最优控制策略，并在机器人学建模、控制和设计中具有重要意义。 |
+| [^1] | [TwoStep: Multi-agent Task Planning using Classical Planners and Large Language Models](https://arxiv.org/abs/2403.17246) | 该论文将经典规划和大型语言模型相结合，通过近似人类直觉，以实现多智能体任务规划。 |
 
 # 详细
 
-[^1]: 机器人学中的形态对称性
+[^1]: TwoStep: 使用经典规划器和大型语言模型进行多智能体任务规划
 
-    Morphological Symmetries in Robotics
+    TwoStep: Multi-agent Task Planning using Classical Planners and Large Language Models
 
-    [https://arxiv.org/abs/2402.15552](https://arxiv.org/abs/2402.15552)
+    [https://arxiv.org/abs/2403.17246](https://arxiv.org/abs/2403.17246)
 
-    形态对称性是机器人系统中的固有性质，通过对运动结构和质量的对称分布，延伸至机器人状态空间和传感器测量，进而影响机器人的运动方程和最优控制策略，并在机器人学建模、控制和设计中具有重要意义。
+    该论文将经典规划和大型语言模型相结合，通过近似人类直觉，以实现多智能体任务规划。
 
     
 
-    我们提出了一个全面的框架来研究和利用机器人系统中的形态对称性。这些是机器人形态的固有特性，经常在动物生物学和机器人学中观察到，源于运动结构的复制和质量的对称分布。我们说明了这些对称性如何延伸到机器人的状态空间以及本体感知和外部感知传感器测量，导致机器人的运动方程和最优控制策略的等不变性。因此，我们认识到形态对称性作为一个相关且以前未被探索的受物理启示的几何先验，对机器人建模、控制、估计和设计中使用的数据驱动和分析方法都具有重要影响。对于数据驱动方法，我们演示了形态对称性如何提高机器学习模型的样本效率和泛化能力
+    类似规划领域定义语言（PDDL）之类的经典规划公式允许确定可实现目标状态的动作序列，只要存在任何可能的初始状态。然而，PDDL中定义的推理问题并未捕获行动进行的时间方面，例如领域中的两个智能体如果彼此的后况不干扰前提条件，则可以同时执行一个动作。人类专家可以将目标分解为大部分独立的组成部分，并将每个智能体分配给其中一个子目标，以利用同时进行动作来加快计划步骤的执行，每个部分仅使用单个智能体规划。相比之下，直接推断计划步骤的大型语言模型（LLMs）并不保证执行成功，但利用常识推理来组装动作序列。我们通过近似人类直觉，结合了经典规划和LLMs的优势
 
-    arXiv:2402.15552v1 Announce Type: cross  Abstract: We present a comprehensive framework for studying and leveraging morphological symmetries in robotic systems. These are intrinsic properties of the robot's morphology, frequently observed in animal biology and robotics, which stem from the replication of kinematic structures and the symmetrical distribution of mass. We illustrate how these symmetries extend to the robot's state space and both proprioceptive and exteroceptive sensor measurements, resulting in the equivariance of the robot's equations of motion and optimal control policies. Thus, we recognize morphological symmetries as a relevant and previously unexplored physics-informed geometric prior, with significant implications for both data-driven and analytical methods used in modeling, control, estimation and design in robotics. For data-driven methods, we demonstrate that morphological symmetries can enhance the sample efficiency and generalization of machine learning models 
+    arXiv:2403.17246v1 Announce Type: new  Abstract: Classical planning formulations like the Planning Domain Definition Language (PDDL) admit action sequences guaranteed to achieve a goal state given an initial state if any are possible. However, reasoning problems defined in PDDL do not capture temporal aspects of action taking, for example that two agents in the domain can execute an action simultaneously if postconditions of each do not interfere with preconditions of the other. A human expert can decompose a goal into largely independent constituent parts and assign each agent to one of these subgoals to take advantage of simultaneous actions for faster execution of plan steps, each using only single agent planning. By contrast, large language models (LLMs) used for directly inferring plan steps do not guarantee execution success, but do leverage commonsense reasoning to assemble action sequences. We combine the strengths of classical planning and LLMs by approximating human intuition
     
 
