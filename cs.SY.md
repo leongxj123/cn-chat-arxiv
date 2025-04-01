@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Attention-Based Transformer Networks for Quantum State Tomography.](http://arxiv.org/abs/2305.05433) | 本研究提出一种基于注意力机制和变压器网络的 QST 方法，可捕捉不同测量之间的相关性，并成功应用于检索量子态的密度矩阵，特别是对于受限测量数据的情况表现良好。 |
+| [^1] | [Scalable Multi-modal Model Predictive Control via Duality-based Interaction Predictions](https://rss.arxiv.org/abs/2402.01116) | 我们提出了一个层级架构，通过使用对偶交互预测和精简的MPC问题，实现了可扩展的实时模型预测控制，在复杂的多模态交通场景中展示了12倍的速度提升。 |
+| [^2] | [Learning Algorithms for Verification of Markov Decision Processes](https://arxiv.org/abs/2403.09184) | 该研究提出了一个通用框架，将学习算法和启发式引导应用于马尔可夫决策过程（MDP）的验证，旨在提高性能，避免对状态空间进行穷尽探索。 |
 
 # 详细
 
-[^1]: 基于注意力机制的变压器网络用于量子态重构
+[^1]: 可扩展多模型MPC的基于对偶交互预测的层级架构
 
-    Attention-Based Transformer Networks for Quantum State Tomography. (arXiv:2305.05433v1 [quant-ph])
+    Scalable Multi-modal Model Predictive Control via Duality-based Interaction Predictions
 
-    [http://arxiv.org/abs/2305.05433](http://arxiv.org/abs/2305.05433)
+    [https://rss.arxiv.org/abs/2402.01116](https://rss.arxiv.org/abs/2402.01116)
 
-    本研究提出一种基于注意力机制和变压器网络的 QST 方法，可捕捉不同测量之间的相关性，并成功应用于检索量子态的密度矩阵，特别是对于受限测量数据的情况表现良好。
+    我们提出了一个层级架构，通过使用对偶交互预测和精简的MPC问题，实现了可扩展的实时模型预测控制，在复杂的多模态交通场景中展示了12倍的速度提升。
 
     
 
-    由于其良好的表达能力，神经网络一直被用于量子态重构（QST）。为了进一步提高重构量子态的效率，本文探讨了语言建模与量子态重构之间的相似性，并提出了一种基于注意力机制和变压器网络的 QST 方法，用于捕捉不同测量之间的相关性。我们的方法直接从测量统计数据中检索量子态的密度矩阵，并辅助使用综合损失函数来帮助最小化实际态与检索态之间的差异。然后，我们系统地跟踪了涉及各种参数调整的常见训练策略对基于注意力机制的 QST 方法的不同影响。结合这些技术，我们建立了一个稳健的基准线，可以有效地重构纯态和混合态。此外，通过比较三种不同的神经网络方法的性能，我们证明了我们的基于注意力机制的方法表现优于其他方法，特别是对于受限测量数据的情况。
+    我们提出了一个层级架构，用于在复杂的多模态交通场景中实现可扩展的实时模型预测控制(MPC)。该架构由两个关键组件组成：1) RAID-Net，一种基于注意力机制的新颖循环神经网络，使用拉格朗日对偶性预测自动驾驶车辆与周围车辆之间在MPC预测范围内的相关交互；2) 一个简化的随机MPC问题，消除不相关的避碰约束，提高计算效率。我们的方法在一个模拟交通路口中演示，展示了解决运动规划问题的12倍速提升。您可以在这里找到展示该架构在多个复杂交通场景中的视频：https://youtu.be/-TcMeolCLWc
 
-    Neural networks have been actively explored for quantum state tomography (QST) due to their favorable expressibility. To further enhance the efficiency of reconstructing quantum states, we explore the similarity between language modeling and quantum state tomography and propose an attention-based QST method that utilizes the Transformer network to capture the correlations between measured results from different measurements. Our method directly retrieves the density matrices of quantum states from measured statistics, with the assistance of an integrated loss function that helps minimize the difference between the actual states and the retrieved states. Then, we systematically trace different impacts within a bag of common training strategies involving various parameter adjustments on the attention-based QST method. Combining these techniques, we establish a robust baseline that can efficiently reconstruct pure and mixed quantum states. Furthermore, by comparing the performance of thre
+    We propose a hierarchical architecture designed for scalable real-time Model Predictive Control (MPC) in complex, multi-modal traffic scenarios. This architecture comprises two key components: 1) RAID-Net, a novel attention-based Recurrent Neural Network that predicts relevant interactions along the MPC prediction horizon between the autonomous vehicle and the surrounding vehicles using Lagrangian duality, and 2) a reduced Stochastic MPC problem that eliminates irrelevant collision avoidance constraints, enhancing computational efficiency. Our approach is demonstrated in a simulated traffic intersection with interactive surrounding vehicles, showcasing a 12x speed-up in solving the motion planning problem. A video demonstrating the proposed architecture in multiple complex traffic scenarios can be found here: https://youtu.be/-TcMeolCLWc
+    
+[^2]: 学习算法用于验证马尔可夫决策过程
+
+    Learning Algorithms for Verification of Markov Decision Processes
+
+    [https://arxiv.org/abs/2403.09184](https://arxiv.org/abs/2403.09184)
+
+    该研究提出了一个通用框架，将学习算法和启发式引导应用于马尔可夫决策过程（MDP）的验证，旨在提高性能，避免对状态空间进行穷尽探索。
+
+    
+
+    我们提出了一个通用框架，将学习算法和启发式引导应用于马尔可夫决策过程（MDP）的验证，基于Br\'azdil, T.等人（2014）的想法。该框架的主要目标是通过避免对状态空间进行穷尽探索来提高性能，而是依靠启发式。本研究在很大程度上扩展了这种方法。对基础理论的几个细节进行了改进和错误修正。第1.3节提供了所有差异的概述。该框架专注于概率可达性，这是验证中的一个核心问题，并具体化为两种不同的场景。第一个假设完全了解MDP，尤其是精确的转移概率。它执行基于启发式的模型部分探索，产生精准的结果。
+
+    arXiv:2403.09184v1 Announce Type: cross  Abstract: We present a general framework for applying learning algorithms and heuristical guidance to the verification of Markov decision processes (MDPs), based on the ideas of Br\'azdil, T. et al. (2014). Verification of Markov Decision Processes Using Learning Algorithms. The primary goal of the techniques presented in that work is to improve performance by avoiding an exhaustive exploration of the state space, guided by heuristics. This approach is significantly extended in this work. Several details of the base theory are refined and errors are fixed. Section 1.3 provides an overview of all differences.   The presented framework focuses on probabilistic reachability, which is a core problem in verification, and is instantiated in two distinct scenarios. The first assumes that full knowledge of the MDP is available, in particular precise transition probabilities. It performs a heuristic-driven partial exploration of the model, yielding preci
     
 
