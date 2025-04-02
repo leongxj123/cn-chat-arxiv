@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Scalable Multi-modal Model Predictive Control via Duality-based Interaction Predictions](https://rss.arxiv.org/abs/2402.01116) | 我们提出了一个层级架构，通过使用对偶交互预测和精简的MPC问题，实现了可扩展的实时模型预测控制，在复杂的多模态交通场景中展示了12倍的速度提升。 |
-| [^2] | [Verifiably Following Complex Robot Instructions with Foundation Models](https://arxiv.org/abs/2402.11498) | 提出了一种名为语言指令地面化运动规划（LIMP）系统，利用基础模型和时间逻辑生成指令条件的语义地图，使机器人能够可验证地遵循富有表现力和长期的指令，包括开放词汇参照和复杂的时空约束。 |
+| [^1] | [Temporal and Semantic Evaluation Metrics for Foundation Models in Post-Hoc Analysis of Robotic Sub-tasks](https://arxiv.org/abs/2403.17238) | 提出了一种基于基础模型的自动化框架，通过新颖的提示策略将轨迹数据分解为时间和语言描述的子任务，同时引入了时间相似性和语义相似性两种新的评估指标。 |
 
 # 详细
 
-[^1]: 可扩展多模型MPC的基于对偶交互预测的层级架构
+[^1]: 基于时间和语义评估指标的基础模型在机器人子任务事后分析中的应用
 
-    Scalable Multi-modal Model Predictive Control via Duality-based Interaction Predictions
+    Temporal and Semantic Evaluation Metrics for Foundation Models in Post-Hoc Analysis of Robotic Sub-tasks
 
-    [https://rss.arxiv.org/abs/2402.01116](https://rss.arxiv.org/abs/2402.01116)
+    [https://arxiv.org/abs/2403.17238](https://arxiv.org/abs/2403.17238)
 
-    我们提出了一个层级架构，通过使用对偶交互预测和精简的MPC问题，实现了可扩展的实时模型预测控制，在复杂的多模态交通场景中展示了12倍的速度提升。
-
-    
-
-    我们提出了一个层级架构，用于在复杂的多模态交通场景中实现可扩展的实时模型预测控制(MPC)。该架构由两个关键组件组成：1) RAID-Net，一种基于注意力机制的新颖循环神经网络，使用拉格朗日对偶性预测自动驾驶车辆与周围车辆之间在MPC预测范围内的相关交互；2) 一个简化的随机MPC问题，消除不相关的避碰约束，提高计算效率。我们的方法在一个模拟交通路口中演示，展示了解决运动规划问题的12倍速提升。您可以在这里找到展示该架构在多个复杂交通场景中的视频：https://youtu.be/-TcMeolCLWc
-
-    We propose a hierarchical architecture designed for scalable real-time Model Predictive Control (MPC) in complex, multi-modal traffic scenarios. This architecture comprises two key components: 1) RAID-Net, a novel attention-based Recurrent Neural Network that predicts relevant interactions along the MPC prediction horizon between the autonomous vehicle and the surrounding vehicles using Lagrangian duality, and 2) a reduced Stochastic MPC problem that eliminates irrelevant collision avoidance constraints, enhancing computational efficiency. Our approach is demonstrated in a simulated traffic intersection with interactive surrounding vehicles, showcasing a 12x speed-up in solving the motion planning problem. A video demonstrating the proposed architecture in multiple complex traffic scenarios can be found here: https://youtu.be/-TcMeolCLWc
-    
-[^2]: 使用基础模型可验证地遵循复杂机器人指令
-
-    Verifiably Following Complex Robot Instructions with Foundation Models
-
-    [https://arxiv.org/abs/2402.11498](https://arxiv.org/abs/2402.11498)
-
-    提出了一种名为语言指令地面化运动规划（LIMP）系统，利用基础模型和时间逻辑生成指令条件的语义地图，使机器人能够可验证地遵循富有表现力和长期的指令，包括开放词汇参照和复杂的时空约束。
+    提出了一种基于基础模型的自动化框架，通过新颖的提示策略将轨迹数据分解为时间和语言描述的子任务，同时引入了时间相似性和语义相似性两种新的评估指标。
 
     
 
-    让机器人能够遵循复杂的自然语言指令是一个重要但具有挑战性的问题。人们希望在指导机器人时能够灵活表达约束，指向任意地标并验证行为。相反，机器人必须将人类指令消除歧义，将指令参照物联系到真实世界中。我们提出了一种名为语言指令地面化运动规划（LIMP）的系统，该系统利用基础模型和时间逻辑生成指令条件的语义地图，使机器人能够可验证地遵循富有表现力和长期的指令，涵盖了开放词汇参照和复杂的时空约束。与先前在机器人任务执行中使用基础模型的方法相比，LIMP构建了一个可解释的指令表示，揭示了机器人与指导者预期动机的一致性，并实现了机器人行为的综合。
+    最近在任务和运动规划（TAMP）领域的研究表明，在使用带有质量标记数据的语言监督机器人轨迹进行控制策略训练可以显着提高代理任务成功率。然而，这类数据的稀缺性对将这些方法扩展到一般用例构成重大障碍。为了解决这一问题，我们提出了一种自动化框架，通过利用最近的基础模型（FMs）的提示策略，包括大型语言模型（LLMs）和视觉语言模型（VLMs），将轨迹数据分解为基于时间和自然语言的描述性子任务。我们的框架为构成完整轨迹的底层子任务提供了基于时间和语言的描述。为了严格评估我们的自动标记框架的质量，我们提出了一种算法 SIMILARITY 来生成两种新颖的指标，即时间相似性和语义相似性。
 
-    arXiv:2402.11498v1 Announce Type: cross  Abstract: Enabling robots to follow complex natural language instructions is an important yet challenging problem. People want to flexibly express constraints, refer to arbitrary landmarks and verify behavior when instructing robots. Conversely, robots must disambiguate human instructions into specifications and ground instruction referents in the real world. We propose Language Instruction grounding for Motion Planning (LIMP), a system that leverages foundation models and temporal logics to generate instruction-conditioned semantic maps that enable robots to verifiably follow expressive and long-horizon instructions with open vocabulary referents and complex spatiotemporal constraints. In contrast to prior methods for using foundation models in robot task execution, LIMP constructs an explainable instruction representation that reveals the robot's alignment with an instructor's intended motives and affords the synthesis of robot behaviors that 
+    arXiv:2403.17238v1 Announce Type: cross  Abstract: Recent works in Task and Motion Planning (TAMP) show that training control policies on language-supervised robot trajectories with quality labeled data markedly improves agent task success rates. However, the scarcity of such data presents a significant hurdle to extending these methods to general use cases. To address this concern, we present an automated framework to decompose trajectory data into temporally bounded and natural language-based descriptive sub-tasks by leveraging recent prompting strategies for Foundation Models (FMs) including both Large Language Models (LLMs) and Vision Language Models (VLMs). Our framework provides both time-based and language-based descriptions for lower-level sub-tasks that comprise full trajectories. To rigorously evaluate the quality of our automatic labeling framework, we contribute an algorithm SIMILARITY to produce two novel metrics, temporal similarity and semantic similarity. The metrics me
     
 
