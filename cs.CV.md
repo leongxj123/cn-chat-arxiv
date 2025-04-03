@@ -2,52 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Masked LoGoNet: Fast and Accurate 3D Image Analysis for Medical Domain](https://arxiv.org/abs/2402.06190) | 本文介绍了一种名为LoGoNet的新型神经网络架构，采用自监督学习方法来应对医学图像分析中的挑战。LoGoNet通过采用大内核注意力和双重编码策略，灵活捕捉长、短距离特征相关性。这种创新的组合技术在医学图像分割中特别有益。 |
-| [^2] | [Cultural and Linguistic Diversity Improves Visual Representations.](http://arxiv.org/abs/2310.14356) | 这项研究发现数据集和模型生成的图像描述在不同语言间存在显著的语义差异，多语言数据有更高的语义覆盖率，并且基于多语言训练的模型表现更好。 |
-| [^3] | [Interpretable Few-shot Learning with Online Attribute Selection.](http://arxiv.org/abs/2211.09107) | 本文提出了一种在线属性选择机制的天然可解释模型来处理小样本学习，通过减少每个episode中涉及的属性数量提高准确性和可解释性，同时自动检测并补偿人工智能属性池不足的episode。 |
+| [^1] | [Towards Adversarially Robust Dataset Distillation by Curvature Regularization](https://arxiv.org/abs/2403.10045) | 本文探讨了如何通过曲率正则化方法在精炼数据集中嵌入对抗鲁棒性，以保持模型高准确性并获得更好的对抗鲁棒性。 |
+| [^2] | [Towards Enhanced Controllability of Diffusion Models.](http://arxiv.org/abs/2302.14368) | 本文介绍了一种基于条件输入的扩散模型，利用两个潜在编码控制生成过程中的空间结构和语义风格，提出了两种通用采样技术和时间步相关的潜在权重调度，实现了对生成过程的更好控制。 |
 
 # 详细
 
-[^1]: Masked LoGoNet：用于医学领域的快速准确3D图像分析
+[^1]: 通过曲率正则化实现对抗鲁棒性数据集精炼
 
-    Masked LoGoNet: Fast and Accurate 3D Image Analysis for Medical Domain
+    Towards Adversarially Robust Dataset Distillation by Curvature Regularization
 
-    [https://arxiv.org/abs/2402.06190](https://arxiv.org/abs/2402.06190)
+    [https://arxiv.org/abs/2403.10045](https://arxiv.org/abs/2403.10045)
 
-    本文介绍了一种名为LoGoNet的新型神经网络架构，采用自监督学习方法来应对医学图像分析中的挑战。LoGoNet通过采用大内核注意力和双重编码策略，灵活捕捉长、短距离特征相关性。这种创新的组合技术在医学图像分割中特别有益。
-
-    
-
-    标准的现代机器学习图像方法在医学应用中面临挑战，因为数据集构建的高成本和有限的标记训练数据。此外，这些方法在部署时通常用于每天处理大量数据，给医疗设施带来高维护成本。在本文中，我们引入了一种新的神经网络架构LoGoNet，采用定制的自监督学习（SSL）方法来缓解这些挑战。LoGoNet在U形架构内整合了一种新颖的特征提取器，利用大内核注意力（LKA）和双重编码策略，灵活地捕捉长、短距离特征相关性。这与现有方法依赖增加网络容量以增强特征提取的方式形成对比。我们模型中这些新技术的组合在医学图像分割中特别有益，考虑到其困难性。
-
-    Standard modern machine-learning-based imaging methods have faced challenges in medical applications due to the high cost of dataset construction and, thereby, the limited labeled training data available. Additionally, upon deployment, these methods are usually used to process a large volume of data on a daily basis, imposing a high maintenance cost on medical facilities. In this paper, we introduce a new neural network architecture, termed LoGoNet, with a tailored self-supervised learning (SSL) method to mitigate such challenges. LoGoNet integrates a novel feature extractor within a U-shaped architecture, leveraging Large Kernel Attention (LKA) and a dual encoding strategy to capture both long-range and short-range feature dependencies adeptly. This is in contrast to existing methods that rely on increasing network capacity to enhance feature extraction. This combination of novel techniques in our model is especially beneficial in medical image segmentation, given the difficulty of le
-    
-[^2]: 文化和语言多样性提高了视觉表示
-
-    Cultural and Linguistic Diversity Improves Visual Representations. (arXiv:2310.14356v1 [cs.CV] CROSS LISTED)
-
-    [http://arxiv.org/abs/2310.14356](http://arxiv.org/abs/2310.14356)
-
-    这项研究发现数据集和模型生成的图像描述在不同语言间存在显著的语义差异，多语言数据有更高的语义覆盖率，并且基于多语言训练的模型表现更好。
+    本文探讨了如何通过曲率正则化方法在精炼数据集中嵌入对抗鲁棒性，以保持模型高准确性并获得更好的对抗鲁棒性。
 
     
 
-    计算机视觉通常将感知视为客观的，并且这种假设在数据集收集和模型训练中得到反映。例如，不同语言的图像描述通常被假定为相同语义内容的翻译。然而，跨文化心理学和语言学的研究表明，个体的视觉感知因其文化背景和所说的语言而异。在本文中，我们展示了在数据集和模型生成的标题中，不同语言之间存在显著的语义内容差异。当数据是多语言而不是单语言时，标题的语义覆盖率平均更高，以场景图、嵌入和语言复杂性进行测量。例如，与一组单语标题相比，多语标题平均有21.8％更多的对象，24.5％更多的关系，以及27.1％更多的属性。此外，使用来自不同语言的内容训练的模型表现最好。
+    数据集精炼（DD）允许将数据集精炼为原始大小的分数，同时保留丰富的分布信息，使得在精炼数据集上训练的模型可以在节省显著计算负载的同时达到可比的准确性。最近在这一领域的研究集中在提高在精炼数据集上训练的模型的准确性。在本文中，我们旨在探索DD的一种新视角。我们研究如何在精炼数据集中嵌入对抗鲁棒性，以使在这些数据集上训练的模型保持高精度的同时获得更好的对抗鲁棒性。我们提出了一种通过将曲率正则化纳入到精炼过程中来实现这一目标的新方法，而这种方法的计算开销比标准的对抗训练要少得多。大量的实证实验表明，我们的方法不仅在准确性上优于标准对抗训练，同时在对抗性能方面也取得了显著改进。
 
-    Computer vision often treats perception as objective, and this assumption gets reflected in the way that datasets are collected and models are trained. For instance, image descriptions in different languages are typically assumed to be translations of the same semantic content. However, work in cross-cultural psychology and linguistics has shown that individuals differ in their visual perception depending on their cultural background and the language they speak. In this paper, we demonstrate significant differences in semantic content across languages in both dataset and model-produced captions. When data is multilingual as opposed to monolingual, captions have higher semantic coverage on average, as measured by scene graph, embedding, and linguistic complexity. For example, multilingual captions have on average 21.8% more objects, 24.5% more relations, and 27.1% more attributes than a set of monolingual captions. Moreover, models trained on content from different languages perform bes
+    arXiv:2403.10045v1 Announce Type: new  Abstract: Dataset distillation (DD) allows datasets to be distilled to fractions of their original size while preserving the rich distributional information so that models trained on the distilled datasets can achieve a comparable accuracy while saving significant computational loads. Recent research in this area has been focusing on improving the accuracy of models trained on distilled datasets. In this paper, we aim to explore a new perspective of DD. We study how to embed adversarial robustness in distilled datasets, so that models trained on these datasets maintain the high accuracy and meanwhile acquire better adversarial robustness. We propose a new method that achieves this goal by incorporating curvature regularization into the distillation process with much less computational overhead than standard adversarial training. Extensive empirical experiments suggest that our method not only outperforms standard adversarial training on both accur
     
-[^3]: 在线属性选择的可解释的小样本学习
+[^2]: 实现扩展扩展扩散模型的可控性
 
-    Interpretable Few-shot Learning with Online Attribute Selection. (arXiv:2211.09107v2 [cs.LG] UPDATED)
+    Towards Enhanced Controllability of Diffusion Models. (arXiv:2302.14368v2 [cs.CV] UPDATED)
 
-    [http://arxiv.org/abs/2211.09107](http://arxiv.org/abs/2211.09107)
+    [http://arxiv.org/abs/2302.14368](http://arxiv.org/abs/2302.14368)
 
-    本文提出了一种在线属性选择机制的天然可解释模型来处理小样本学习，通过减少每个episode中涉及的属性数量提高准确性和可解释性，同时自动检测并补偿人工智能属性池不足的episode。
+    本文介绍了一种基于条件输入的扩散模型，利用两个潜在编码控制生成过程中的空间结构和语义风格，提出了两种通用采样技术和时间步相关的潜在权重调度，实现了对生成过程的更好控制。
 
     
 
-    小样本学习(few-shot learning, FSL)是一种挑战性的学习问题，每个类别只有很少的样本可用。在FSL中决策的解释比传统分类更加重要，因为错误的几率更大。然而，大多数以前的FSL方法都是黑匣子模型。本文提出了一种基于易于理解的属性的天然可解释模型来处理FSL。此外，我们提出了一种在线属性选择机制，以有效过滤每个episode中不相关的属性。该属性选择机制通过减少每个episode中涉及的属性数量来提高准确性和可解释性。我们提出了一种机制，自动检测人工智能属性池不足的episode，并通过涉及学习的未知属性来补偿。我们证明了所提出的方法可以实现与黑匣子小样本学习模型相当的结果。
+    去噪扩散模型在生成逼真、高质量和多样化图像方面表现出卓越能力。然而，在生成过程中的可控程度尚未得到充分探讨。受基于GAN潜在空间的图像操纵技术启发，我们训练了一个条件于两个潜在编码、一个空间内容掩码和一个扁平的样式嵌入的扩散模型。我们依赖于扩散模型渐进去噪过程的感性偏置，在空间结构掩码中编码姿势/布局信息，在样式代码中编码语义/样式信息。我们提出了两种通用的采样技术来改善可控性。我们扩展了可组合的扩散模型，允许部分依赖于条件输入，以提高生成质量，同时还提供对每个潜在代码和它们的联合分布量的控制。我们还提出了时间步相关的内容和样式潜在权重调度，进一步提高了控制性。
 
-    Few-shot learning (FSL) is a challenging learning problem in which only a few samples are available for each class. Decision interpretation is more important in few-shot classification since there is a greater chance of error than in traditional classification. However, most of the previous FSL methods are black-box models. In this paper, we propose an inherently interpretable model for FSL based on human-friendly attributes. Moreover, we propose an online attribute selection mechanism that can effectively filter out irrelevant attributes in each episode. The attribute selection mechanism improves the accuracy and helps with interpretability by reducing the number of participated attributes in each episode. We propose a mechanism that automatically detects the episodes where the pool of human-friendly attributes are not adequate, and compensates by engaging learned unknown attributes. We demonstrate that the proposed method achieves results on par with black-box few-shot-learning model
+    Denoising Diffusion models have shown remarkable capabilities in generating realistic, high-quality and diverse images. However, the extent of controllability during generation is underexplored. Inspired by techniques based on GAN latent space for image manipulation, we train a diffusion model conditioned on two latent codes, a spatial content mask and a flattened style embedding. We rely on the inductive bias of the progressive denoising process of diffusion models to encode pose/layout information in the spatial structure mask and semantic/style information in the style code. We propose two generic sampling techniques for improving controllability. We extend composable diffusion models to allow for some dependence between conditional inputs, to improve the quality of generations while also providing control over the amount of guidance from each latent code and their joint distribution. We also propose timestep dependent weight scheduling for content and style latents to further impro
     
 
