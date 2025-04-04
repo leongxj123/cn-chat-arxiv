@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.DC</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.DC</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.DC</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.DC</description><item><title>&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#26032;&#39062;&#30340;&#20998;&#24067;&#24335;&#32422;&#26463;&#31639;&#27861;&#65292;&#36890;&#36807;&#36845;&#20195;&#32465;&#23450;&#26368;&#23567;&#21644;&#26368;&#22823;&#25928;&#29992;&#20540;&#26469;&#36873;&#25321;&#39640;&#36136;&#37327;&#30340;&#28857;&#24182;&#20002;&#24323;&#19981;&#37325;&#35201;&#30340;&#28857;&#12290;</title><link>https://arxiv.org/abs/2402.16442</link><description>&lt;p&gt;
+&#22312;&#20855;&#26377;&#37197;&#23545;&#27425;&#27169;&#27169;&#20989;&#25968;&#30340;&#20998;&#24067;&#24335;&#22823;&#20110;&#20869;&#23384;&#30340;&#23376;&#38598;&#36873;&#25321;&#38382;&#39064;&#30740;&#31350;
+&lt;/p&gt;
+&lt;p&gt;
+On Distributed Larger-Than-Memory Subset Selection With Pairwise Submodular Functions
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.16442
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#26032;&#39062;&#30340;&#20998;&#24067;&#24335;&#32422;&#26463;&#31639;&#27861;&#65292;&#36890;&#36807;&#36845;&#20195;&#32465;&#23450;&#26368;&#23567;&#21644;&#26368;&#22823;&#25928;&#29992;&#20540;&#26469;&#36873;&#25321;&#39640;&#36136;&#37327;&#30340;&#28857;&#24182;&#20002;&#24323;&#19981;&#37325;&#35201;&#30340;&#28857;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#35768;&#22810;&#23398;&#20064;&#38382;&#39064;&#21462;&#20915;&#20110;&#23376;&#38598;&#36873;&#25321;&#30340;&#22522;&#26412;&#38382;&#39064;&#65292;&#21363;&#30830;&#23450;&#19968;&#32452;&#37325;&#35201;&#21644;&#20195;&#34920;&#24615;&#30340;&#28857;&#12290;&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#20855;&#26377;&#21487;&#35777;&#20272;&#35745;&#36817;&#20284;&#20445;&#35777;&#30340;&#26032;&#39062;&#20998;&#24067;&#24335;&#32422;&#26463;&#31639;&#27861;&#65292;&#23427;&#36890;&#36807;&#36845;&#20195;&#32465;&#23450;&#26368;&#23567;&#21644;&#26368;&#22823;&#25928;&#29992;&#20540;&#26469;&#36873;&#25321;&#39640;&#36136;&#37327;&#30340;&#28857;&#24182;&#20002;&#24323;&#19981;&#37325;&#35201;&#30340;&#28857;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2402.16442v1 Announce Type: cross  Abstract: Many learning problems hinge on the fundamental problem of subset selection, i.e., identifying a subset of important and representative points. For example, selecting the most significant samples in ML training cannot only reduce training costs but also enhance model quality. Submodularity, a discrete analogue of convexity, is commonly used for solving subset selection problems. However, existing algorithms for optimizing submodular functions are sequential, and the prior distributed methods require at least one central machine to fit the target subset. In this paper, we relax the requirement of having a central machine for the target subset by proposing a novel distributed bounding algorithm with provable approximation guarantees. The algorithm iteratively bounds the minimum and maximum utility values to select high quality points and discard the unimportant ones. When bounding does not find the complete subset, we use a multi-round, 
+&lt;/p&gt;</description></item></channel></rss>
