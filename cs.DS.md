@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Orthogonal Non-negative Matrix Factorization: a Maximum-Entropy-Principle Approach.](http://arxiv.org/abs/2210.02672) | 本文提出了一种新的解决正交非负矩阵分解问题的方法，该方法使用了基于最大熵原则的解决方案，并保证了矩阵的正交性和稀疏性以及非负性。该方法在不影响近似质量的情况下具有较好的性能速度和优于文献中类似方法的稀疏性、正交性。 |
+| [^1] | [Quantifying the Cost of Learning in Queueing Systems.](http://arxiv.org/abs/2308.07817) | 本文提出了一种新的度量方法，即学习队列中的成本 (CLQ)，用于量化由参数不确定性导致的时间平均队列长度最大增加量。该度量方法可以捕捉学习队列系统的统计复杂性，不局限于渐近性能。 |
 
 # 详细
 
-[^1]: 正交非负矩阵分解:最大熵原则方法
+[^1]: 量化队列系统中的学习成本
 
-    Orthogonal Non-negative Matrix Factorization: a Maximum-Entropy-Principle Approach. (arXiv:2210.02672v2 [cs.DS] UPDATED)
+    Quantifying the Cost of Learning in Queueing Systems. (arXiv:2308.07817v1 [cs.LG])
 
-    [http://arxiv.org/abs/2210.02672](http://arxiv.org/abs/2210.02672)
+    [http://arxiv.org/abs/2308.07817](http://arxiv.org/abs/2308.07817)
 
-    本文提出了一种新的解决正交非负矩阵分解问题的方法，该方法使用了基于最大熵原则的解决方案，并保证了矩阵的正交性和稀疏性以及非负性。该方法在不影响近似质量的情况下具有较好的性能速度和优于文献中类似方法的稀疏性、正交性。
+    本文提出了一种新的度量方法，即学习队列中的成本 (CLQ)，用于量化由参数不确定性导致的时间平均队列长度最大增加量。该度量方法可以捕捉学习队列系统的统计复杂性，不局限于渐近性能。
 
     
 
-    本文提出了一种解决正交非负矩阵分解（ONMF）问题的新方法，该问题的目标是通过两个非负矩阵（特征矩阵和混合矩阵）的乘积来近似输入数据矩阵，其中一个矩阵是正交的。我们展示了如何将ONMF解释为特定的设施定位问题，并针对ONMF问题采用基于最大熵原则的FLP解决方案进行了调整。所提出的方法保证了特征矩阵或混合矩阵的正交性和稀疏性，同时确保了两者的非负性。此外，我们的方法还开发了一个定量的“真实”潜在特征数量的特征-超参数用于ONMF。针对合成数据集以及标准的基因芯片数组数据集进行的评估表明，该方法在不影响近似质量的情况下具有较好的稀疏性、正交性和性能速度，相对于文献中类似方法有显著的改善。
+    队列系统是广泛应用的随机模型，应用于通信网络、医疗保健、服务系统等等。虽然它们的最优控制已经得到了广泛研究，但大多数现有方法都假设系统参数的完美知识。然而，在实践中，参数不确定性很常见，因此最近一系列关于队列系统的学习的研究产生了。这个新兴的研究方向主要关注所提算法的渐近性能。本文中，我们认为渐近度量，即着眼于后期性能的度量，无法捕捉学习队列系统中固有的统计复杂性，这种复杂性通常出现在早期阶段。相反，我们提出了学习队列中的成本 (CLQ)，这是一种新的度量方法，可以衡量由参数不确定性导致的时间平均队列长度的最大增加量。我们对单队列多服务器系统的CLQ进行了表征。
 
-    In this paper, we introduce a new methodology to solve the orthogonal nonnegative matrix factorization (ONMF) problem, where the objective is to approximate an input data matrix by a product of two nonnegative matrices, the features matrix and the mixing matrix, where one of them is orthogonal. We show how the ONMF can be interpreted as a specific facility-location problem (FLP), and adapt a maximum-entropy-principle based solution for FLP to the ONMF problem. The proposed approach guarantees orthogonality and sparsity of the features or the mixing matrix, while ensuring nonnegativity of both. Additionally, our methodology develops a quantitative characterization of ``true" number of underlying features - a hyperparameter required for the ONMF. An evaluation of the proposed method conducted on synthetic datasets, as well as a standard genetic microarray dataset indicates significantly better sparsity, orthogonality, and performance speed compared to similar methods in the literature, w
+    Queueing systems are widely applicable stochastic models with use cases in communication networks, healthcare, service systems, etc. Although their optimal control has been extensively studied, most existing approaches assume perfect knowledge of system parameters. Of course, this assumption rarely holds in practice where there is parameter uncertainty, thus motivating a recent line of work on bandit learning for queueing systems. This nascent stream of research focuses on the asymptotic performance of the proposed algorithms.  In this paper, we argue that an asymptotic metric, which focuses on late-stage performance, is insufficient to capture the intrinsic statistical complexity of learning in queueing systems which typically occurs in the early stage. Instead, we propose the Cost of Learning in Queueing (CLQ), a new metric that quantifies the maximum increase in time-averaged queue length caused by parameter uncertainty. We characterize the CLQ of a single-queue multi-server system,
     
 

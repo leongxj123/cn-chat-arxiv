@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Metrics on Markov Equivalence Classes for Evaluating Causal Discovery Algorithms](https://arxiv.org/abs/2402.04952) | 本文提出了三个新的距离度量指标（s/c距离、马尔科夫距离和忠实度距离），用于评估因果推断算法的输出图与真实情况的分离/连接程度。 |
-| [^2] | [Latent Gaussian dynamic factor modeling and forecasting for multivariate count time series.](http://arxiv.org/abs/2307.10454) | 本文提出了一种针对多元计数时间序列的潜在高斯动态因子建模与预测方法，通过计数和底层高斯模型的二阶特性进行估计，并利用粒子顺序蒙特卡洛方法进行预测。 |
+| [^1] | [Distillation Decision Tree.](http://arxiv.org/abs/2206.04661) | 精馏决策树（DDT）是一种通过将黑盒模型中的知识精馏到决策树中来促进解释性的方法。该方法建立在知识精馏的理论基础上，并且在结构稳定性的条件下可以有效实现。 |
 
 # 详细
 
-[^1]: 评估因果推断算法的马尔科夫等价类指标
+[^1]: 精馏决策树
 
-    Metrics on Markov Equivalence Classes for Evaluating Causal Discovery Algorithms
+    Distillation Decision Tree. (arXiv:2206.04661v2 [stat.ME] UPDATED)
 
-    [https://arxiv.org/abs/2402.04952](https://arxiv.org/abs/2402.04952)
+    [http://arxiv.org/abs/2206.04661](http://arxiv.org/abs/2206.04661)
 
-    本文提出了三个新的距离度量指标（s/c距离、马尔科夫距离和忠实度距离），用于评估因果推断算法的输出图与真实情况的分离/连接程度。
-
-    
-
-    许多最先进的因果推断方法旨在生成一个输出图，该图编码了生成数据过程的因果图的图形分离和连接陈述。在本文中，我们认为，对合成数据的因果推断方法进行评估应该包括分析该方法的输出与真实情况的分离/连接程度，以衡量这一明确目标的实现情况。我们证明现有的评估指标不能准确捕捉到两个因果图的分离/连接差异，并引入了三个新的距离度量指标，即s/c距离、马尔科夫距离和忠实度距离，以解决这个问题。我们通过玩具示例、实证实验和伪代码来补充我们的理论分析。
-
-    Many state-of-the-art causal discovery methods aim to generate an output graph that encodes the graphical separation and connection statements of the causal graph that underlies the data-generating process. In this work, we argue that an evaluation of a causal discovery method against synthetic data should include an analysis of how well this explicit goal is achieved by measuring how closely the separations/connections of the method's output align with those of the ground truth. We show that established evaluation measures do not accurately capture the difference in separations/connections of two causal graphs, and we introduce three new measures of distance called s/c-distance, Markov distance and Faithfulness distance that address this shortcoming. We complement our theoretical analysis with toy examples, empirical experiments and pseudocode.
-    
-[^2]: 针对多元计数时间序列的潜在高斯动态因子建模与预测
-
-    Latent Gaussian dynamic factor modeling and forecasting for multivariate count time series. (arXiv:2307.10454v1 [stat.ME])
-
-    [http://arxiv.org/abs/2307.10454](http://arxiv.org/abs/2307.10454)
-
-    本文提出了一种针对多元计数时间序列的潜在高斯动态因子建模与预测方法，通过计数和底层高斯模型的二阶特性进行估计，并利用粒子顺序蒙特卡洛方法进行预测。
+    精馏决策树（DDT）是一种通过将黑盒模型中的知识精馏到决策树中来促进解释性的方法。该方法建立在知识精馏的理论基础上，并且在结构稳定性的条件下可以有效实现。
 
     
 
-    本文考虑了一种基于高斯动态因子模型的多元计数时间序列模型的估计和预测方法，该方法基于计数和底层高斯模型的二阶特性，并适用于模型维数大于样本长度的情况。此外，本文提出了用于模型选择的新型交叉验证方案。预测通过基于粒子的顺序蒙特卡洛方法进行，利用卡尔曼滤波技术。还进行了模拟研究和应用分析。
+    机器学习模型，特别是黑盒模型，因其出色的预测能力而受到广泛青睐。然而，由于缺乏可解释性，它们经常面临批评和挑战。矛盾的是，它们强大的预测能力表明对底层数据有深入的理解，从而意味着重要的解释潜力。借助知识精馏的新概念，我们引入了精馏决策树（DDT）的方法。该方法将关于数据的知识从黑盒模型精馏到决策树中，从而促进了对黑盒模型的解释。通过知识精馏过程构建的DDT的可解释性在很大程度上依赖于其结构的稳定性。我们为DDT的结构稳定性建立了理论基础，证明其在一些假设下可以实现结构稳定性。此外，我们还开发了算法用于...
 
-    This work considers estimation and forecasting in a multivariate count time series model based on a copula-type transformation of a Gaussian dynamic factor model. The estimation is based on second-order properties of the count and underlying Gaussian models and applies to the case where the model dimension is larger than the sample length. In addition, novel cross-validation schemes are suggested for model selection. The forecasting is carried out through a particle-based sequential Monte Carlo, leveraging Kalman filtering techniques. A simulation study and an application are also considered.
+    Machine learning models, particularly the black-box models, are widely favored for their outstanding predictive capabilities. However, they often face scrutiny and criticism due to the lack of interpretability. Paradoxically, their strong predictive capabilities suggest a deep understanding about the underlying data, implying significant potential for interpretation. Leveraging the emerging concept of knowledge distillation, we introduced the method of distillation decision tree (DDT). This method enables the distillation of knowledge about the data from a black-box model into a decision tree, thereby facilitating the interpretation of the black-box model. Constructed through the knowledge distillation process, the interpretability of DDT relies significantly on the stability of its structure. We establish the theoretical foundations for the structural stability of DDT, demonstrating that its structure can achieve stability under mild assumptions. Furthermore, we develop algorithms for
     
 

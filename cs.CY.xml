@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CY</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CY</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CY</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CY</description><item><title>KTbench&#25552;&#20986;&#20102;&#19968;&#31181;&#26080;&#25968;&#25454;&#27844;&#28431;&#30340;&#30693;&#35782;&#36861;&#36394;&#26694;&#26550;&#65292;&#35299;&#20915;&#20102;KT&#27169;&#22411;&#20013;KC&#20043;&#38388;&#30340;&#30456;&#20851;&#24615;&#23398;&#20064;&#21487;&#33021;&#23548;&#33268;&#30340;&#24615;&#33021;&#19979;&#38477;&#38382;&#39064;&#12290;</title><link>https://arxiv.org/abs/2403.15304</link><description>&lt;p&gt;
+KTbench&#65306;&#19968;&#31181;&#20840;&#26032;&#30340;&#26080;&#25968;&#25454;&#27844;&#28431;&#30340;&#30693;&#35782;&#36861;&#36394;&#26694;&#26550;
+&lt;/p&gt;
+&lt;p&gt;
+KTbench: A Novel Data Leakage-Free Framework for Knowledge Tracing
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.15304
+&lt;/p&gt;
+&lt;p&gt;
+KTbench&#25552;&#20986;&#20102;&#19968;&#31181;&#26080;&#25968;&#25454;&#27844;&#28431;&#30340;&#30693;&#35782;&#36861;&#36394;&#26694;&#26550;&#65292;&#35299;&#20915;&#20102;KT&#27169;&#22411;&#20013;KC&#20043;&#38388;&#30340;&#30456;&#20851;&#24615;&#23398;&#20064;&#21487;&#33021;&#23548;&#33268;&#30340;&#24615;&#33021;&#19979;&#38477;&#38382;&#39064;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#30693;&#35782;&#36861;&#36394;&#65288;KT&#65289;&#28041;&#21450;&#22312;&#26234;&#33021;&#36741;&#23548;&#31995;&#32479;&#20013;&#39044;&#27979;&#23398;&#29983;&#23545;&#23398;&#20064;&#39033;&#30446;&#30340;&#26410;&#26469;&#34920;&#29616;&#12290;&#23398;&#20064;&#39033;&#30446;&#34987;&#26631;&#35760;&#20026;&#31216;&#20026;&#30693;&#35782;&#27010;&#24565;&#65288;KCs&#65289;&#30340;&#25216;&#33021;&#26631;&#31614;&#12290;&#35768;&#22810;KT&#27169;&#22411;&#36890;&#36807;&#29992;&#26500;&#25104;KC&#30340;&#23398;&#20064;&#39033;&#30446;&#21462;&#20195;&#23398;&#20064;&#39033;&#30446;&#26469;&#23558;&#23398;&#20064;&#39033;&#30446;-&#23398;&#29983;&#20132;&#20114;&#24207;&#21015;&#25193;&#23637;&#20026;KC-&#23398;&#29983;&#20132;&#20114;&#24207;&#21015;&#65292;&#20174;&#32780;&#35299;&#20915;&#20102;&#31232;&#30095;&#30340;&#23398;&#20064;&#39033;&#30446;-&#23398;&#29983;&#20132;&#20114;&#38382;&#39064;&#24182;&#26368;&#23567;&#21270;&#20102;&#27169;&#22411;&#21442;&#25968;&#12290;&#28982;&#32780;&#65292;&#36825;&#31181;&#26041;&#27861;&#23384;&#22312;&#20004;&#20010;&#38382;&#39064;&#12290;&#31532;&#19968;&#20010;&#38382;&#39064;&#26159;&#27169;&#22411;&#23398;&#20064;&#21516;&#19968;&#39033;&#30446;&#20869;&#30340;KC&#20043;&#38388;&#30340;&#30456;&#20851;&#24615;&#30340;&#33021;&#21147;&#65292;&#36825;&#21487;&#33021;&#23548;&#33268;&#22522;&#26412;&#20107;&#23454;&#26631;&#31614;&#30340;&#27844;&#28431;&#24182;&#38459;&#30861;&#27169;&#22411;&#24615;&#33021;&#12290;&#31532;&#20108;&#20010;&#38382;&#39064;&#26159;&#29616;&#26377;&#30340;&#22522;&#20934;&#23454;&#29616;&#24573;&#30053;&#20102;&#35745;&#25968;&#38382;&#39064;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.15304v1 Announce Type: cross  Abstract: Knowledge Tracing (KT) is concerned with predicting students' future performance on learning items in intelligent tutoring systems. Learning items are tagged with skill labels called knowledge concepts (KCs). Many KT models expand the sequence of item-student interactions into KC-student interactions by replacing learning items with their constituting KCs. This often results in a longer sequence length. This approach addresses the issue of sparse item-student interactions and minimises model parameters. However, two problems have been identified with such models.   The first problem is the model's ability to learn correlations between KCs belonging to the same item, which can result in the leakage of ground truth labels and hinder performance. This problem can lead to a significant decrease in performance on datasets with a higher number of KCs per item. The second problem is that the available benchmark implementations ignore accounti
+&lt;/p&gt;</description></item></channel></rss>
