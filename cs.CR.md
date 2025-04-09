@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Differentially Private Sliced Inverse Regression: Minimax Optimality and Algorithm.](http://arxiv.org/abs/2401.08150) | 本文提出了针对充足维度减少中的隐私问题的最佳差分隐私算法，并在低维和高维设置下建立了不同ially private 切片逆回归的下界。通过仿真和真实数据分析验证了这些算法的有效性。 |
-| [^2] | [Backdoor Defense with Non-Adversarial Backdoor.](http://arxiv.org/abs/2307.15539) | 提出了一种非对抗性后门防御框架，通过在被污染样本中注入非对抗性后门，当触发时可以抑制攻击者对污染数据的后门攻击，同时保持对干净数据的影响有限。 |
+| [^1] | [Relating Implicit Bias and Adversarial Attacks through Intrinsic Dimension.](http://arxiv.org/abs/2305.15203) | 本文通过研究神经网络的隐性偏差，着眼于其中涉及的傅里叶频率与图像分类和对抗性攻击之间的关系。研究提出了一种新方法，可以发现这些频率之间的非线性相关性。 |
 
 # 详细
 
-[^1]: 差分隐私切片逆回归: 极小极大性和算法
+[^1]: 通过内在维度将隐性偏见和对抗性攻击相关联
 
-    Differentially Private Sliced Inverse Regression: Minimax Optimality and Algorithm. (arXiv:2401.08150v1 [stat.ML])
+    Relating Implicit Bias and Adversarial Attacks through Intrinsic Dimension. (arXiv:2305.15203v1 [cs.LG])
 
-    [http://arxiv.org/abs/2401.08150](http://arxiv.org/abs/2401.08150)
+    [http://arxiv.org/abs/2305.15203](http://arxiv.org/abs/2305.15203)
 
-    本文提出了针对充足维度减少中的隐私问题的最佳差分隐私算法，并在低维和高维设置下建立了不同ially private 切片逆回归的下界。通过仿真和真实数据分析验证了这些算法的有效性。
-
-    
-
-    随着数据驱动应用的普及，隐私保护已成为高维数据分析中的一个关键问题。切片逆回归是一种广泛应用的统计技术，通过降低协变量的维度，同时保持足够的统计信息。本文提出了针对充足维度减少中的隐私问题的最佳差分隐私算法。我们在低维和高维设置下建立了不同ially private 切片逆回归的下界。此外，我们设计了差分隐私算法，实现了极小极大下界的要求，并在降维空间中同时保护隐私和保存重要信息的有效性。通过一系列的仿真实验和真实数据分析，我们证明了这些差分隐私算法的有效性。
-
-    Privacy preservation has become a critical concern in high-dimensional data analysis due to the growing prevalence of data-driven applications. Proposed by Li (1991), sliced inverse regression has emerged as a widely utilized statistical technique for reducing covariate dimensionality while maintaining sufficient statistical information. In this paper, we propose optimally differentially private algorithms specifically designed to address privacy concerns in the context of sufficient dimension reduction. We proceed to establish lower bounds for differentially private sliced inverse regression in both the low and high-dimensional settings. Moreover, we develop differentially private algorithms that achieve the minimax lower bounds up to logarithmic factors. Through a combination of simulations and real data analysis, we illustrate the efficacy of these differentially private algorithms in safeguarding privacy while preserving vital information within the reduced dimension space. As a na
-    
-[^2]: 非对抗性后门防御
-
-    Backdoor Defense with Non-Adversarial Backdoor. (arXiv:2307.15539v1 [cs.LG])
-
-    [http://arxiv.org/abs/2307.15539](http://arxiv.org/abs/2307.15539)
-
-    提出了一种非对抗性后门防御框架，通过在被污染样本中注入非对抗性后门，当触发时可以抑制攻击者对污染数据的后门攻击，同时保持对干净数据的影响有限。
+    本文通过研究神经网络的隐性偏差，着眼于其中涉及的傅里叶频率与图像分类和对抗性攻击之间的关系。研究提出了一种新方法，可以发现这些频率之间的非线性相关性。
 
     
 
-    深度神经网络（DNNs）容易受到后门攻击的影响，这种攻击并不会影响网络对干净数据的性能，但一旦添加触发模式，就会操纵网络行为。现有的防御方法大大降低了攻击成功率，但它们在干净数据上的预测准确性仍然远远落后于干净模型。受后门攻击的隐蔽性和有效性的启发，我们提出了一个简单但非常有效的防御框架，该框架注入了针对被污染样本的非对抗性后门。按照后门攻击的一般步骤，我们检测一小组可疑样本，然后对它们应用毒化策略。一旦触发，非对抗性后门抑制了攻击者对污染数据的后门攻击，但对干净数据的影响有限。防御可以在数据预处理期间进行，而不需要对标准的端到端训练流程进行任何修改。
+    尽管神经网络在分类方面表现出色，但众所周知它们易受对抗性攻击的影响。这些攻击是针对模型的输入数据进行的小干扰，旨在欺骗模型。自然而然的问题是，模型的结构、设置或属性与攻击的性质之间可能存在潜在联系。在本文中，我们旨在通过关注神经网络的隐性偏差来解决这个问题，这指的是其固有倾向于支持特定模式或结果。具体而言，我们研究了隐性偏差的一个方面，其中包括进行准确图像分类所需的基本傅里叶频率。我们进行测试以评估这些频率与成功攻击所需的频率之间的统计关系。为了深入探讨这种关系，我们提出了一种新的方法，可以揭示坐标集之间的非线性相关性，在我们的情况下，这些坐标集就是前述的傅里叶频率。
 
-    Deep neural networks (DNNs) are vulnerable to backdoor attack, which does not affect the network's performance on clean data but would manipulate the network behavior once a trigger pattern is added. Existing defense methods have greatly reduced attack success rate, but their prediction accuracy on clean data still lags behind a clean model by a large margin. Inspired by the stealthiness and effectiveness of backdoor attack, we propose a simple but highly effective defense framework which injects non-adversarial backdoors targeting poisoned samples. Following the general steps in backdoor attack, we detect a small set of suspected samples and then apply a poisoning strategy to them. The non-adversarial backdoor, once triggered, suppresses the attacker's backdoor on poisoned data, but has limited influence on clean data. The defense can be carried out during data preprocessing, without any modification to the standard end-to-end training pipeline. We conduct extensive experiments on mul
+    Despite their impressive performance in classification, neural networks are known to be vulnerable to adversarial attacks. These attacks are small perturbations of the input data designed to fool the model. Naturally, a question arises regarding the potential connection between the architecture, settings, or properties of the model and the nature of the attack. In this work, we aim to shed light on this problem by focusing on the implicit bias of the neural network, which refers to its inherent inclination to favor specific patterns or outcomes. Specifically, we investigate one aspect of the implicit bias, which involves the essential Fourier frequencies required for accurate image classification. We conduct tests to assess the statistical relationship between these frequencies and those necessary for a successful attack. To delve into this relationship, we propose a new method that can uncover non-linear correlations between sets of coordinates, which, in our case, are the aforementio
     
 
