@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Mitigating Communication Costs in Neural Networks: The Role of Dendritic Nonlinearity.](http://arxiv.org/abs/2306.11950) | 本研究发现，在神经网络中整合非线性树突结构可以显著提高模型的容量和性能，同时控制信号通信成本，这对于未来神经网络的发展具有重要的意义。 |
+| [^1] | [Genetic Programming for Explainable Manifold Learning](https://arxiv.org/abs/2403.14139) | 遗传规划方法提出了用于可解释流形学习的新方法，帮助解决当前流形学习中功能映射不明确的挑战。 |
 
 # 详细
 
-[^1]: 缓解神经网络中的通信成本：树突非线性的作用
+[^1]: 用于可解释流形学习的遗传规划
 
-    Mitigating Communication Costs in Neural Networks: The Role of Dendritic Nonlinearity. (arXiv:2306.11950v1 [cs.NE])
+    Genetic Programming for Explainable Manifold Learning
 
-    [http://arxiv.org/abs/2306.11950](http://arxiv.org/abs/2306.11950)
+    [https://arxiv.org/abs/2403.14139](https://arxiv.org/abs/2403.14139)
 
-    本研究发现，在神经网络中整合非线性树突结构可以显著提高模型的容量和性能，同时控制信号通信成本，这对于未来神经网络的发展具有重要的意义。
+    遗传规划方法提出了用于可解释流形学习的新方法，帮助解决当前流形学习中功能映射不明确的挑战。
 
     
 
-    生物神经网络的理解深刻地影响了人工神经网络（ANNs）的发展。然而，ANN中使用的神经元与其生物模型存在明显偏差，主要是由于缺少包含局部非线性的复杂树突。尽管存在这样的差异，先前的研究表明点神经元可以在执行计算任务方面在功能上替代树突神经元。在本研究中，我们审查了神经网络中非线性树突的重要性。通过使用机器学习方法，我们评估了树突结构非线性对神经网络性能的影响。我们的发现表明，整合树突结构可以在保持信号通信成本有效抑制的同时，显著增强模型容量和性能。这项研究提供了重要的见解，对未来神经网络的发展具有重要的意义。
+    流形学习技术在机器学习中发挥着关键作用，通过揭示高维数据中的低维嵌入，从而将数据转换为更低维的表示形式，提高了数据分析的效率和可解释性。然而，当前流形学习方法的一个显著挑战是它们缺乏明确的功能映射，在许多现实世界应用中解释性至关重要。遗传规划以其可解释的基于功能树的模型而闻名，已成为解决这一挑战的一种有希望的方法。先前的研究利用多目标遗传规划来平衡流形质量与嵌入维度，产生了一系列嵌入大小下的功能映射。然而，这些映射树经常变得复杂，阻碍了解释性。作为回应，在本文中，我们提出了用于可解释流形学习的遗传规划（GP-EMaL）。
 
-    Our comprehension of biological neuronal networks has profoundly influenced the evolution of artificial neural networks (ANNs). However, the neurons employed in ANNs exhibit remarkable deviations from their biological analogs, mainly due to the absence of complex dendritic trees encompassing local nonlinearity. Despite such disparities, previous investigations have demonstrated that point neurons can functionally substitute dendritic neurons in executing computational tasks. In this study, we scrutinized the importance of nonlinear dendrites within neural networks. By employing machine-learning methodologies, we assessed the impact of dendritic structure nonlinearity on neural network performance. Our findings reveal that integrating dendritic structures can substantially enhance model capacity and performance while keeping signal communication costs effectively restrained. This investigation offers pivotal insights that hold considerable implications for the development of future neur
+    arXiv:2403.14139v1 Announce Type: cross  Abstract: Manifold learning techniques play a pivotal role in machine learning by revealing lower-dimensional embeddings within high-dimensional data, thus enhancing both the efficiency and interpretability of data analysis by transforming the data into a lower-dimensional representation. However, a notable challenge with current manifold learning methods is their lack of explicit functional mappings, crucial for explainability in many real-world applications. Genetic programming, known for its interpretable functional tree-based models, has emerged as a promising approach to address this challenge. Previous research leveraged multi-objective GP to balance manifold quality against embedding dimensionality, producing functional mappings across a range of embedding sizes. Yet, these mapping trees often became complex, hindering explainability. In response, in this paper, we introduce Genetic Programming for Explainable Manifold Learning (GP-EMaL),
     
 
