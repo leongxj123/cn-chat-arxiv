@@ -1,1 +1,41 @@
-<rss version="2.0"><channel><title>Chat Arxiv math.ST</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for math.ST</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv math.ST</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for math.ST</description><item><title>&#25552;&#20986;&#20102;&#19968;&#31181;&#38024;&#23545;&#28151;&#21512;&#21464;&#37327;&#30340;&#26497;&#31471;&#22270;&#27169;&#22411;&#30340;&#23398;&#20064;&#26041;&#27861;&#65292;&#33021;&#22815;&#26377;&#25928;&#24674;&#22797;&#26465;&#20214;&#22270;&#21644;&#28508;&#21464;&#37327;&#25968;&#37327;&#12290;</title><link>https://arxiv.org/abs/2403.09604</link><description>&lt;p&gt;
+&#28151;&#21512;&#21464;&#37327;&#30340;&#26497;&#31471;&#22270;&#27169;&#22411;
+&lt;/p&gt;
+&lt;p&gt;
+Extremal graphical modeling with latent variables
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.09604
+&lt;/p&gt;
+&lt;p&gt;
+&#25552;&#20986;&#20102;&#19968;&#31181;&#38024;&#23545;&#28151;&#21512;&#21464;&#37327;&#30340;&#26497;&#31471;&#22270;&#27169;&#22411;&#30340;&#23398;&#20064;&#26041;&#27861;&#65292;&#33021;&#22815;&#26377;&#25928;&#24674;&#22797;&#26465;&#20214;&#22270;&#21644;&#28508;&#21464;&#37327;&#25968;&#37327;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#26497;&#31471;&#22270;&#27169;&#22411;&#32534;&#30721;&#22810;&#21464;&#37327;&#26497;&#31471;&#26465;&#20214;&#29420;&#31435;&#32467;&#26500;&#65292;&#24182;&#20026;&#37327;&#21270;&#32597;&#35265;&#20107;&#20214;&#39118;&#38505;&#25552;&#20379;&#24378;&#22823;&#24037;&#20855;&#12290;&#25105;&#20204;&#25552;&#20986;&#20102;&#38754;&#21521;&#28508;&#21464;&#37327;&#30340;&#21487;&#24310;&#20280;&#22270;&#27169;&#22411;&#30340;&#21487;&#34892;&#20984;&#35268;&#21010;&#26041;&#27861;&#65292;&#23558; H\"usler-Reiss &#31934;&#24230;&#30697;&#38453;&#20998;&#35299;&#20026;&#32534;&#30721;&#35266;&#23519;&#21464;&#37327;&#20043;&#38388;&#30340;&#22270;&#32467;&#26500;&#30340;&#31232;&#30095;&#37096;&#20998;&#21644;&#32534;&#30721;&#23569;&#37327;&#28508;&#21464;&#37327;&#23545;&#35266;&#23519;&#21464;&#37327;&#30340;&#24433;&#21709;&#30340;&#20302;&#31209;&#37096;&#20998;&#12290;&#25105;&#20204;&#25552;&#20379;&#20102;\texttt{eglatent}&#30340;&#26377;&#38480;&#26679;&#26412;&#20445;&#35777;&#65292;&#24182;&#23637;&#31034;&#23427;&#33021;&#19968;&#33268;&#22320;&#24674;&#22797;&#26465;&#20214;&#22270;&#20197;&#21450;&#28508;&#21464;&#37327;&#30340;&#25968;&#37327;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.09604v1 Announce Type: cross  Abstract: Extremal graphical models encode the conditional independence structure of multivariate extremes and provide a powerful tool for quantifying the risk of rare events. Prior work on learning these graphs from data has focused on the setting where all relevant variables are observed. For the popular class of H\"usler-Reiss models, we propose the \texttt{eglatent} method, a tractable convex program for learning extremal graphical models in the presence of latent variables. Our approach decomposes the H\"usler-Reiss precision matrix into a sparse component encoding the graphical structure among the observed variables after conditioning on the latent variables, and a low-rank component encoding the effect of a few latent variables on the observed variables. We provide finite-sample guarantees of \texttt{eglatent} and show that it consistently recovers the conditional graph as well as the number of latent variables. We highlight the improved 
+&lt;/p&gt;</description></item><item><title>&#26412;&#25991;&#30740;&#31350;&#20102;&#26368;&#20339;&#23376;&#38598;&#36873;&#25321;&#22312;&#39640;&#32500;&#31232;&#30095;&#32447;&#24615;&#22238;&#24402;&#35774;&#32622;&#20013;&#30340;&#21464;&#37327;&#36873;&#25321;&#24615;&#36136;&#65292;&#36890;&#36807;&#30740;&#31350;&#27531;&#24046;&#21270;&#29305;&#24449;&#21644;&#34394;&#20551;&#25237;&#24433;&#30340;&#22797;&#26434;&#24615;&#26469;&#25581;&#31034;&#27169;&#22411;&#19968;&#33268;&#24615;&#30340;&#36793;&#30028;&#26465;&#20214;&#12290;</title><link>http://arxiv.org/abs/2301.06259</link><description>&lt;p&gt;
+&#20102;&#35299;&#26368;&#20339;&#23376;&#38598;&#36873;&#25321;: &#20004;&#31181;&#22797;&#26434;&#24615;&#30340;&#25925;&#20107;
+&lt;/p&gt;
+&lt;p&gt;
+Understanding Best Subset Selection: A Tale of Two C(omplex)ities. (arXiv:2301.06259v2 [math.ST] UPDATED)
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2301.06259
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#30740;&#31350;&#20102;&#26368;&#20339;&#23376;&#38598;&#36873;&#25321;&#22312;&#39640;&#32500;&#31232;&#30095;&#32447;&#24615;&#22238;&#24402;&#35774;&#32622;&#20013;&#30340;&#21464;&#37327;&#36873;&#25321;&#24615;&#36136;&#65292;&#36890;&#36807;&#30740;&#31350;&#27531;&#24046;&#21270;&#29305;&#24449;&#21644;&#34394;&#20551;&#25237;&#24433;&#30340;&#22797;&#26434;&#24615;&#26469;&#25581;&#31034;&#27169;&#22411;&#19968;&#33268;&#24615;&#30340;&#36793;&#30028;&#26465;&#20214;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#20960;&#21313;&#24180;&#26469;&#65292;&#26368;&#20339;&#23376;&#38598;&#36873;&#25321;(BSS)&#20027;&#35201;&#30001;&#20110;&#35745;&#31639;&#29942;&#39048;&#32780;&#22256;&#25200;&#32479;&#35745;&#23398;&#23478;&#12290;&#28982;&#32780;&#65292;&#30452;&#21040;&#26368;&#36817;&#65292;&#29616;&#20195;&#35745;&#31639;&#31361;&#30772;&#37325;&#26032;&#28857;&#29123;&#20102;&#23545;BSS&#30340;&#29702;&#35770;&#20852;&#36259;&#24182;&#23548;&#33268;&#20102;&#26032;&#30340;&#21457;&#29616;&#12290;&#26368;&#36817;&#65292;Guo&#31561;&#20154;&#34920;&#26126;&#65292;BSS&#30340;&#27169;&#22411;&#36873;&#25321;&#24615;&#33021;&#21463;&#21040;&#20102;&#40065;&#26834;&#24615;&#35774;&#35745;&#20381;&#36182;&#30340;&#36793;&#30028;&#37327;&#30340;&#25511;&#21046;&#65292;&#19981;&#20687;LASSO&#12289;SCAD&#12289;MCP&#31561;&#29616;&#20195;&#26041;&#27861;&#12290;&#22312;&#20182;&#20204;&#30340;&#29702;&#35770;&#32467;&#26524;&#30340;&#28608;&#21169;&#19979;&#65292;&#26412;&#25991;&#36824;&#30740;&#31350;&#20102;&#39640;&#32500;&#31232;&#30095;&#32447;&#24615;&#22238;&#24402;&#35774;&#32622;&#19979;&#26368;&#20339;&#23376;&#38598;&#36873;&#25321;&#30340;&#21464;&#37327;&#36873;&#25321;&#24615;&#36136;&#12290;&#25105;&#20204;&#23637;&#31034;&#20102;&#38500;&#20102;&#21487;&#36776;&#35782;&#24615;&#36793;&#30028;&#20197;&#22806;&#65292;&#19979;&#21015;&#20004;&#31181;&#22797;&#26434;&#24615;&#24230;&#37327;&#22312;&#34920;&#24449;&#27169;&#22411;&#19968;&#33268;&#24615;&#36793;&#30028;&#26465;&#20214;&#20013;&#36215;&#30528;&#22522;&#26412;&#30340;&#20316;&#29992;&#65306;(a)&#8220;&#27531;&#24046;&#21270;&#29305;&#24449;&#8221;&#30340;&#22797;&#26434;&#24615;&#65292;(b)&#8220;&#34394;&#20551;&#25237;&#24433;&#8221;&#30340;&#22797;&#26434;&#24615;&#12290;&#29305;&#21035;&#22320;&#65292;&#25105;&#20204;&#24314;&#31435;&#20102;&#19968;&#20010;&#20165;&#20381;&#36182;&#20110;&#21487;&#36776;&#35782;&#24615;&#36793;&#30028;&#30340;&#31616;&#21333;&#36793;&#30028;&#26465;&#20214;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+For decades, best subset selection (BSS) has eluded statisticians mainly due to its computational bottleneck. However, until recently, modern computational breakthroughs have rekindled theoretical interest in BSS and have led to new findings. Recently, \cite{guo2020best} showed that the model selection performance of BSS is governed by a margin quantity that is robust to the design dependence, unlike modern methods such as LASSO, SCAD, MCP, etc. Motivated by their theoretical results, in this paper, we also study the variable selection properties of best subset selection for high-dimensional sparse linear regression setup. We show that apart from the identifiability margin, the following two complexity measures play a fundamental role in characterizing the margin condition for model consistency: (a) complexity of \emph{residualized features}, (b) complexity of \emph{spurious projections}. In particular, we establish a simple margin condition that depends only on the identifiability mar
+&lt;/p&gt;</description></item></channel></rss>
