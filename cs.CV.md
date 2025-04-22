@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [On the Shift Invariance of Max Pooling Feature Maps in Convolutional Neural Networks.](http://arxiv.org/abs/2209.11740) | 本文研究了卷积神经网络中最大池化特征图的位移不变性问题，并提出了一种近似复数模的条件，实现了位移稳定性。实验证实了理论的有效性。 |
-| [^2] | [Energy-Latency Attacks via Sponge Poisoning.](http://arxiv.org/abs/2203.08147) | 本文探讨了一种名为“海绵毒化”的攻击方法，首次证明了在训练时注入海绵样本可以在测试时提高机器学习模型在每个输入上的能耗和延迟，并且即使攻击者只控制了一些模型更新也可以进行此攻击，海绵毒化几乎完全消除了硬件加速器的效果。 |
+| [^1] | [HyperFusion: A Hypernetwork Approach to Multimodal Integration of Tabular and Medical Imaging Data for Predictive Modeling](https://arxiv.org/abs/2403.13319) | 提出一种基于超网络的新框架，通过将图像处理条件设置在EHR的值和测量上，以整合临床成像和表格数据，旨在利用这些数据中的互补信息。 |
+| [^2] | [Recognize Any Regions.](http://arxiv.org/abs/2311.01373) | 本文提出了一种名为RegionSpot的新型、通用且高效的区域识别架构，旨在解决在计算机视觉中理解无约束图像中区域的语义的挑战。 |
 
 # 详细
 
-[^1]: 关于卷积神经网络中最大池化特征图的位移不变性
+[^1]: HyperFusion：一种用于预测建模的多模态整合表格和医学成像数据的超网络方法
 
-    On the Shift Invariance of Max Pooling Feature Maps in Convolutional Neural Networks. (arXiv:2209.11740v2 [cs.CV] UPDATED)
+    HyperFusion: A Hypernetwork Approach to Multimodal Integration of Tabular and Medical Imaging Data for Predictive Modeling
 
-    [http://arxiv.org/abs/2209.11740](http://arxiv.org/abs/2209.11740)
+    [https://arxiv.org/abs/2403.13319](https://arxiv.org/abs/2403.13319)
 
-    本文研究了卷积神经网络中最大池化特征图的位移不变性问题，并提出了一种近似复数模的条件，实现了位移稳定性。实验证实了理论的有效性。
-
-    
-
-    本文致力于改善卷积神经网络（CNN）在图像分类领域中的数学可解释性。具体而言，我们解决了在其第一层中出现的不稳定性问题。当在像ImageNet这样的数据集上进行训练时，其第一层往往学习到与方向边通滤波器非常相似的参数。使用这样的Gabor滤波器进行子采样卷积容易出现混叠问题，导致对输入的小偏移敏感。在这个背景下，我们建立了最大池化算子近似复数模的条件，使其几乎具有位移不变性。然后，我们推导了子采样卷积后最大池化的位移稳定性度量。特别地，我们强调了滤波器的频率和方向在实现稳定性方面的关键作用。通过考虑基于双树复小波包变换的确定性特征提取器，即离散Gabor的一种特殊情况，我们通过实验证实了我们的理论。
-
-    This paper focuses on improving the mathematical interpretability of convolutional neural networks (CNNs) in the context of image classification. Specifically, we tackle the instability issue arising in their first layer, which tends to learn parameters that closely resemble oriented band-pass filters when trained on datasets like ImageNet. Subsampled convolutions with such Gabor-like filters are prone to aliasing, causing sensitivity to small input shifts. In this context, we establish conditions under which the max pooling operator approximates a complex modulus, which is nearly shift invariant. We then derive a measure of shift invariance for subsampled convolutions followed by max pooling. In particular, we highlight the crucial role played by the filter's frequency and orientation in achieving stability. We experimentally validate our theory by considering a deterministic feature extractor based on the dual-tree complex wavelet packet transform, a particular case of discrete Gabor
-    
-[^2]: 基于海绵毒化的能耗延迟攻击。
-
-    Energy-Latency Attacks via Sponge Poisoning. (arXiv:2203.08147v4 [cs.CR] UPDATED)
-
-    [http://arxiv.org/abs/2203.08147](http://arxiv.org/abs/2203.08147)
-
-    本文探讨了一种名为“海绵毒化”的攻击方法，首次证明了在训练时注入海绵样本可以在测试时提高机器学习模型在每个输入上的能耗和延迟，并且即使攻击者只控制了一些模型更新也可以进行此攻击，海绵毒化几乎完全消除了硬件加速器的效果。
+    提出一种基于超网络的新框架，通过将图像处理条件设置在EHR的值和测量上，以整合临床成像和表格数据，旨在利用这些数据中的互补信息。
 
     
 
-    海绵样本是在测试时精心优化的输入，可在硬件加速器上部署时增加神经网络的能量消耗和延迟。本文首次证明了海绵样本也可通过一种名为海绵毒化的攻击注入到训练中。该攻击允许在每个测试时输入中不加区分地提高机器学习模型的能量消耗和延迟。我们提出了一种新的海绵毒化形式化方法，克服了与优化测试时海绵样本相关的限制，并表明即使攻击者仅控制几个模型更新，例如模型训练被外包给不受信任的第三方或通过联邦学习分布式进行，也可以进行这种攻击。我们进行了广泛的实验分析，表明海绵毒化几乎完全消除了硬件加速器的效果。同时，我们还分析了毒化模型的激活，确定了哪些计算对导致能量消耗和延迟增加起重要作用。
+    ARXIV: 2403.13319v1 公告类型: 交叉摘要: 整合各种临床模式，如医学成像和患者电子健康记录（EHR）获得的表格数据，是现代医疗保健的关键方面。多源数据的综合分析可以全面了解患者的状况，并可以增强诊断和治疗决策。深度神经网络（DNN）在医学领域的多模态任务中一直展示出出色的性能。然而，有效地将医学成像与以数字表格数据表示的临床、人口统计和遗传信息进行融合的复杂努力仍然是一个高度活跃的持续研究追求。
 
-    Sponge examples are test-time inputs carefully optimized to increase energy consumption and latency of neural networks when deployed on hardware accelerators. In this work, we are the first to demonstrate that sponge examples can also be injected at training time, via an attack that we call sponge poisoning. This attack allows one to increase the energy consumption and latency of machine-learning models indiscriminately on each test-time input. We present a novel formalization for sponge poisoning, overcoming the limitations related to the optimization of test-time sponge examples, and show that this attack is possible even if the attacker only controls a few model updates; for instance, if model training is outsourced to an untrusted third-party or distributed via federated learning. Our extensive experimental analysis shows that sponge poisoning can almost completely vanish the effect of hardware accelerators. We also analyze the activations of poisoned models, identifying which comp
+    arXiv:2403.13319v1 Announce Type: cross  Abstract: The integration of diverse clinical modalities such as medical imaging and the tabular data obtained by the patients' Electronic Health Records (EHRs) is a crucial aspect of modern healthcare. The integrative analysis of multiple sources can provide a comprehensive understanding of a patient's condition and can enhance diagnoses and treatment decisions. Deep Neural Networks (DNNs) consistently showcase outstanding performance in a wide range of multimodal tasks in the medical domain. However, the complex endeavor of effectively merging medical imaging with clinical, demographic and genetic information represented as numerical tabular data remains a highly active and ongoing research pursuit.   We present a novel framework based on hypernetworks to fuse clinical imaging and tabular data by conditioning the image processing on the EHR's values and measurements. This approach aims to leverage the complementary information present in these
+    
+[^2]: 认证任何区域
+
+    Recognize Any Regions. (arXiv:2311.01373v1 [cs.CV])
+
+    [http://arxiv.org/abs/2311.01373](http://arxiv.org/abs/2311.01373)
+
+    本文提出了一种名为RegionSpot的新型、通用且高效的区域识别架构，旨在解决在计算机视觉中理解无约束图像中区域的语义的挑战。
+
+    
+
+    理解无约束图像中各个区域或块的语义，例如在开放世界物体检测中，代表了一项关键而具有挑战性的计算机视觉任务。在基于强大的图像级视觉语言（ViL）基础模型如CLIP的成功基础上，最近的努力要么通过使用广泛的区域-标签对集合从头开始训练对比模型，要么将检测模型的输出与区域建议的图像级表示对齐，以发挥它们的能力。尽管取得了显著进展，但这些方法都受到计算密集型的训练需求、数据噪声的影响以及环境信息的不足等限制。为了解决这些问题，我们探索了现成的基础模型的协同潜力，利用它们在定位和语义方面的各自优势。我们引入了一种新颖的、通用的、高效的区域识别架构，称为RegionSpot。
+
+    Understanding the semantics of individual regions or patches within unconstrained images, such as in open-world object detection, represents a critical yet challenging task in computer vision. Building on the success of powerful image-level vision-language (ViL) foundation models like CLIP, recent efforts have sought to harness their capabilities by either training a contrastive model from scratch with an extensive collection of region-label pairs or aligning the outputs of a detection model with image-level representations of region proposals. Despite notable progress, these approaches are plagued by computationally intensive training requirements, susceptibility to data noise, and deficiency in contextual information. To address these limitations, we explore the synergistic potential of off-the-shelf foundation models, leveraging their respective strengths in localization and semantics. We introduce a novel, generic, and efficient region recognition architecture, named RegionSpot, de
     
 

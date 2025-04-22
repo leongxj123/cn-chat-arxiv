@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks](https://arxiv.org/abs/2404.02151) | 展示了对齐的LLM对简单自适应越狱攻击不具有鲁棒性，并成功实现了在多个模型上几乎100%的攻击成功率，同时还介绍了对于不公开logprobs的模型如何进行越狱以及如何在受污染的模型中查找木马字符串的方法。 |
-| [^2] | [Energy-Latency Attacks via Sponge Poisoning.](http://arxiv.org/abs/2203.08147) | 本文探讨了一种名为“海绵毒化”的攻击方法，首次证明了在训练时注入海绵样本可以在测试时提高机器学习模型在每个输入上的能耗和延迟，并且即使攻击者只控制了一些模型更新也可以进行此攻击，海绵毒化几乎完全消除了硬件加速器的效果。 |
+| [^1] | [Federated Transfer Learning with Differential Privacy](https://arxiv.org/abs/2403.11343) | 本文提出了具有差分隐私的联邦迁移学习框架，通过利用多个异构源数据集的信息来增强对目标数据集的学习，同时考虑隐私约束。 |
+| [^2] | [Vulnerabilities of Foundation Model Integrated Federated Learning Under Adversarial Threats.](http://arxiv.org/abs/2401.10375) | 本文研究基于基础模型集成的联邦学习在敌对威胁下的漏洞，提出了一种新的攻击策略，揭示了该模型在不同配置的联邦学习下对敌对威胁的高敏感性。 |
 
 # 详细
 
-[^1]: 用简单自适应攻击越狱功能对齐的LLM
+[^1]: 具有差分隐私的联邦迁移学习
 
-    Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks
+    Federated Transfer Learning with Differential Privacy
 
-    [https://arxiv.org/abs/2404.02151](https://arxiv.org/abs/2404.02151)
+    [https://arxiv.org/abs/2403.11343](https://arxiv.org/abs/2403.11343)
 
-    展示了对齐的LLM对简单自适应越狱攻击不具有鲁棒性，并成功实现了在多个模型上几乎100%的攻击成功率，同时还介绍了对于不公开logprobs的模型如何进行越狱以及如何在受污染的模型中查找木马字符串的方法。
-
-    
-
-    我们展示了即使是最新的安全对齐的LLM也不具有抵抗简单自适应越狱攻击的稳健性。首先，我们展示了如何成功利用对logprobs的访问进行越狱：我们最初设计了一个对抗性提示模板（有时会适应目标LLM），然后我们在后缀上应用随机搜索以最大化目标logprob（例如token“Sure”），可能会进行多次重启。通过这种方式，我们实现了对GPT-3.5/4、Llama-2-Chat-7B/13B/70B、Gemma-7B和针对GCG攻击进行对抗训练的HarmBench上的R2D2等几乎100%的攻击成功率--根据GPT-4的评判。我们还展示了如何通过转移或预填充攻击以100%的成功率对所有不暴露logprobs的Claude模型进行越狱。此外，我们展示了如何在受污染的模型中使用对一组受限制的token执行随机搜索以查找木马字符串的方法--这项任务与许多其他任务共享相同的属性。
-
-    arXiv:2404.02151v1 Announce Type: cross  Abstract: We show that even the most recent safety-aligned LLMs are not robust to simple adaptive jailbreaking attacks. First, we demonstrate how to successfully leverage access to logprobs for jailbreaking: we initially design an adversarial prompt template (sometimes adapted to the target LLM), and then we apply random search on a suffix to maximize the target logprob (e.g., of the token "Sure"), potentially with multiple restarts. In this way, we achieve nearly 100\% attack success rate -- according to GPT-4 as a judge -- on GPT-3.5/4, Llama-2-Chat-7B/13B/70B, Gemma-7B, and R2D2 from HarmBench that was adversarially trained against the GCG attack. We also show how to jailbreak all Claude models -- that do not expose logprobs -- via either a transfer or prefilling attack with 100\% success rate. In addition, we show how to use random search on a restricted set of tokens for finding trojan strings in poisoned models -- a task that shares many s
-    
-[^2]: 基于海绵毒化的能耗延迟攻击。
-
-    Energy-Latency Attacks via Sponge Poisoning. (arXiv:2203.08147v4 [cs.CR] UPDATED)
-
-    [http://arxiv.org/abs/2203.08147](http://arxiv.org/abs/2203.08147)
-
-    本文探讨了一种名为“海绵毒化”的攻击方法，首次证明了在训练时注入海绵样本可以在测试时提高机器学习模型在每个输入上的能耗和延迟，并且即使攻击者只控制了一些模型更新也可以进行此攻击，海绵毒化几乎完全消除了硬件加速器的效果。
+    本文提出了具有差分隐私的联邦迁移学习框架，通过利用多个异构源数据集的信息来增强对目标数据集的学习，同时考虑隐私约束。
 
     
 
-    海绵样本是在测试时精心优化的输入，可在硬件加速器上部署时增加神经网络的能量消耗和延迟。本文首次证明了海绵样本也可通过一种名为海绵毒化的攻击注入到训练中。该攻击允许在每个测试时输入中不加区分地提高机器学习模型的能量消耗和延迟。我们提出了一种新的海绵毒化形式化方法，克服了与优化测试时海绵样本相关的限制，并表明即使攻击者仅控制几个模型更新，例如模型训练被外包给不受信任的第三方或通过联邦学习分布式进行，也可以进行这种攻击。我们进行了广泛的实验分析，表明海绵毒化几乎完全消除了硬件加速器的效果。同时，我们还分析了毒化模型的激活，确定了哪些计算对导致能量消耗和延迟增加起重要作用。
+    联邦学习越来越受到欢迎，数据异构性和隐私性是两个突出的挑战。在本文中，我们在联邦迁移学习框架内解决了这两个问题，旨在通过利用来自多个异构源数据集的信息来增强对目标数据集的学习，同时遵守隐私约束。我们严格制定了\textit{联邦差分隐私}的概念，为每个数据集提供隐私保证，而无需假设有一个受信任的中央服务器。在这个隐私约束下，我们研究了三个经典的统计问题，即单变量均值估计、低维线性回归和高维线性回归。通过研究极小值率并确定这些问题的隐私成本，我们展示了联邦差分隐私是已建立的局部和中央模型之间的一种中间隐私模型。
 
-    Sponge examples are test-time inputs carefully optimized to increase energy consumption and latency of neural networks when deployed on hardware accelerators. In this work, we are the first to demonstrate that sponge examples can also be injected at training time, via an attack that we call sponge poisoning. This attack allows one to increase the energy consumption and latency of machine-learning models indiscriminately on each test-time input. We present a novel formalization for sponge poisoning, overcoming the limitations related to the optimization of test-time sponge examples, and show that this attack is possible even if the attacker only controls a few model updates; for instance, if model training is outsourced to an untrusted third-party or distributed via federated learning. Our extensive experimental analysis shows that sponge poisoning can almost completely vanish the effect of hardware accelerators. We also analyze the activations of poisoned models, identifying which comp
+    arXiv:2403.11343v1 Announce Type: new  Abstract: Federated learning is gaining increasing popularity, with data heterogeneity and privacy being two prominent challenges. In this paper, we address both issues within a federated transfer learning framework, aiming to enhance learning on a target data set by leveraging information from multiple heterogeneous source data sets while adhering to privacy constraints. We rigorously formulate the notion of \textit{federated differential privacy}, which offers privacy guarantees for each data set without assuming a trusted central server. Under this privacy constraint, we study three classical statistical problems, namely univariate mean estimation, low-dimensional linear regression, and high-dimensional linear regression. By investigating the minimax rates and identifying the costs of privacy for these problems, we show that federated differential privacy is an intermediate privacy model between the well-established local and central models of 
+    
+[^2]: 基于基础模型集成的联邦学习在敌对威胁下的漏洞
+
+    Vulnerabilities of Foundation Model Integrated Federated Learning Under Adversarial Threats. (arXiv:2401.10375v1 [cs.CR])
+
+    [http://arxiv.org/abs/2401.10375](http://arxiv.org/abs/2401.10375)
+
+    本文研究基于基础模型集成的联邦学习在敌对威胁下的漏洞，提出了一种新的攻击策略，揭示了该模型在不同配置的联邦学习下对敌对威胁的高敏感性。
+
+    
+
+    联邦学习是解决与数据隐私和安全相关的机器学习的重要问题，但在某些情况下存在数据不足和不平衡问题。基础模型的出现为现有联邦学习框架的局限性提供了潜在的解决方案，例如通过生成合成数据进行模型初始化。然而，由于基础模型的内在安全性问题，将基础模型集成到联邦学习中可能引入新的风险，这方面的研究尚属未开发。为了填补这一空白，我们首次研究基于基础模型集成的联邦学习在敌对威胁下的漏洞。基于基础模型集成的联邦学习的统一框架，我们引入了一种新的攻击策略，利用基础模型的安全性问题来破坏联邦学习客户端模型。通过在图像和文本领域中使用知名模型和基准数据集进行广泛实验，我们揭示了基于基础模型集成的联邦学习在不同配置的联邦学习下对这种新威胁的高敏感性。
+
+    Federated Learning (FL) addresses critical issues in machine learning related to data privacy and security, yet suffering from data insufficiency and imbalance under certain circumstances. The emergence of foundation models (FMs) offers potential solutions to the limitations of existing FL frameworks, e.g., by generating synthetic data for model initialization. However, due to the inherent safety concerns of FMs, integrating FMs into FL could introduce new risks, which remains largely unexplored. To address this gap, we conduct the first investigation on the vulnerability of FM integrated FL (FM-FL) under adversarial threats. Based on a unified framework of FM-FL, we introduce a novel attack strategy that exploits safety issues of FM to compromise FL client models. Through extensive experiments with well-known models and benchmark datasets in both image and text domains, we reveal the high susceptibility of the FM-FL to this new threat under various FL configurations. Furthermore, we f
     
 
