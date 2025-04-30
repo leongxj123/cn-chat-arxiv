@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Hufu: A Modality-Agnositc Watermarking System for Pre-Trained Transformers via Permutation Equivariance](https://arxiv.org/abs/2403.05842) | Hufu提出了一种适用于预训练Transformer模型的模态不可知水印系统，利用Transformer的置换等变性质，实现了在模型中嵌入水印并保持高保真度。 |
+| [^1] | [Twin Auto-Encoder Model for Learning Separable Representation in Cyberattack Detection](https://arxiv.org/abs/2403.15509) | 提出一种新型双自动编码器模型(TAE)，通过将潜在表示转换为可分离表示来解决网络攻击检测中混合表示的问题 |
 
 # 详细
 
-[^1]: Hufu：一种通过置换等变性对预训练的Transformer进行水印处理的模态不可知水印系统
+[^1]: 双自动编码器模型用于学习网络攻击检测中的可分离表示
 
-    Hufu: A Modality-Agnositc Watermarking System for Pre-Trained Transformers via Permutation Equivariance
+    Twin Auto-Encoder Model for Learning Separable Representation in Cyberattack Detection
 
-    [https://arxiv.org/abs/2403.05842](https://arxiv.org/abs/2403.05842)
+    [https://arxiv.org/abs/2403.15509](https://arxiv.org/abs/2403.15509)
 
-    Hufu提出了一种适用于预训练Transformer模型的模态不可知水印系统，利用Transformer的置换等变性质，实现了在模型中嵌入水印并保持高保真度。
+    提出一种新型双自动编码器模型(TAE)，通过将潜在表示转换为可分离表示来解决网络攻击检测中混合表示的问题
 
     
 
-    随着深度学习模型和服务的蓬勃发展，保护宝贵的模型参数免受盗窃已成为一项迫切关注的问题。水印技术被认为是所有权验证的重要工具。然而，当前的水印方案针对不同的模型和任务定制，难以作为集成的知识产权保护服务。我们提出了Hufu，这是一种针对预训练的基于Transformer的模型的模态不可知水印系统，依赖于Transformer的置换等变性质。Hufu通过微调预训练模型在特定置换的一组数据样本上嵌入水印，嵌入的模型基本上包含两组权重 -- 一组用于正常使用，另一组用于水印提取，触发条件是经过置换的输入。置换等变性确保这两组模型权重之间的最小干扰，从而在水印提取时具有高保真度。
+    表征学习在网络攻击检测等许多问题的成功中起着关键作用。大多数网络攻击检测的表征学习方法基于自动编码器（AE）模型的潜在向量。为了解决AEs表示中混合的问题，我们提出了一种称为双自动编码器（TAE）的新型模型。TAE将潜在表示确定地转换为更易区分的表示，即\textit{可分离表示}，并在输出端重建可分离表示。
 
-    arXiv:2403.05842v1 Announce Type: cross  Abstract: With the blossom of deep learning models and services, it has become an imperative concern to safeguard the valuable model parameters from being stolen. Watermarking is considered an important tool for ownership verification. However, current watermarking schemes are customized for different models and tasks, hard to be integrated as an integrated intellectual protection service. We propose Hufu, a modality-agnostic watermarking system for pre-trained Transformer-based models, relying on the permutation equivariance property of Transformers. Hufu embeds watermark by fine-tuning the pre-trained model on a set of data samples specifically permuted, and the embedded model essentially contains two sets of weights -- one for normal use and the other for watermark extraction which is triggered on permuted inputs. The permutation equivariance ensures minimal interference between these two sets of model weights and thus high fidelity on downst
+    arXiv:2403.15509v1 Announce Type: cross  Abstract: Representation Learning (RL) plays a pivotal role in the success of many problems including cyberattack detection. Most of the RL methods for cyberattack detection are based on the latent vector of Auto-Encoder (AE) models. An AE transforms raw data into a new latent representation that better exposes the underlying characteristics of the input data. Thus, it is very useful for identifying cyberattacks. However, due to the heterogeneity and sophistication of cyberattacks, the representation of AEs is often entangled/mixed resulting in the difficulty for downstream attack detection models. To tackle this problem, we propose a novel mod called Twin Auto-Encoder (TAE). TAE deterministically transforms the latent representation into a more distinguishable representation namely the \textit{separable representation} and the reconstructsuct the separable representation at the output. The output of TAE called the \textit{reconstruction represe
     
 
