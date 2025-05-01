@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [The Era of Semantic Decoding](https://arxiv.org/abs/2403.14562) | 提出了一种名为语义解码的新观点，将LLM、人类输入和各种工具之间的协作过程构建为语义空间中的优化过程，促进了高效输出的构建。 |
+| [^1] | [LEyes: A Lightweight Framework for Deep Learning-Based Eye Tracking using Synthetic Eye Images.](http://arxiv.org/abs/2309.06129) | 本研究提出了一种名为LEyes的轻量级深度学习眼动跟踪框架，利用合成眼部图像进行训练，解决了由于训练数据集不足和眼部图像变异导致的模型泛化问题。实验结果表明，LEyes训练的模型在瞳孔和CR定位方面优于其他算法。 |
 
 # 详细
 
-[^1]: 语义解码时代
+[^1]: LEyes：一种轻量级深度学习眼动跟踪框架，使用合成眼部图像
 
-    The Era of Semantic Decoding
+    LEyes: A Lightweight Framework for Deep Learning-Based Eye Tracking using Synthetic Eye Images. (arXiv:2309.06129v1 [cs.CV])
 
-    [https://arxiv.org/abs/2403.14562](https://arxiv.org/abs/2403.14562)
+    [http://arxiv.org/abs/2309.06129](http://arxiv.org/abs/2309.06129)
 
-    提出了一种名为语义解码的新观点，将LLM、人类输入和各种工具之间的协作过程构建为语义空间中的优化过程，促进了高效输出的构建。
+    本研究提出了一种名为LEyes的轻量级深度学习眼动跟踪框架，利用合成眼部图像进行训练，解决了由于训练数据集不足和眼部图像变异导致的模型泛化问题。实验结果表明，LEyes训练的模型在瞳孔和CR定位方面优于其他算法。
 
     
 
-    最近的研究展现了在LLM（大型语言模型）、人类输入和各种工具之间编排协作以解决LLM固有局限性的想法具有巨大潜力。我们提出了一个名为语义解码的新观点，将这些协作过程构建为语义空间中的优化过程。具体来说，我们将LLM概念化为操纵我们称之为语义标记（已知思想）的有意义信息片段的语义处理器。LLM是众多其他语义处理器之一，包括人类和工具，比如搜索引擎或代码执行器。语义处理器集体参与语义标记的动态交流，逐步构建高效输出。我们称这些在语义空间中进行优化和搜索的协同作用，为语义解码算法。这个概念与已广为研究的语义解码问题直接平行。
+    深度学习已经加强了凝视估计技术，但实际部署受到不足的训练数据集的限制。眼部图像的硬件引起的变异以及记录的参与者之间固有的生物差异会导致特征和像素级别的差异，阻碍了在特定数据集上训练的模型的泛化能力。虚拟数据集可以是一个解决方案，但创建虚拟数据集既需要时间又需要资源。为了解决这个问题，我们提出了一个名为Light Eyes or "LEyes"的框架，与传统的逼真方法不同，LEyes仅模拟视频眼动跟踪所需的关键图像特征。LEyes便于在多样化的凝视估计任务上训练神经网络。我们证明，使用LEyes训练的模型在眼睛瞳孔和CR定位方面优于其他最先进的算法。
 
-    arXiv:2403.14562v1 Announce Type: cross  Abstract: Recent work demonstrated great promise in the idea of orchestrating collaborations between LLMs, human input, and various tools to address the inherent limitations of LLMs. We propose a novel perspective called semantic decoding, which frames these collaborative processes as optimization procedures in semantic space. Specifically, we conceptualize LLMs as semantic processors that manipulate meaningful pieces of information that we call semantic tokens (known thoughts). LLMs are among a large pool of other semantic processors, including humans and tools, such as search engines or code executors. Collectively, semantic processors engage in dynamic exchanges of semantic tokens to progressively construct high-utility outputs. We refer to these orchestrated interactions among semantic processors, optimizing and searching in semantic space, as semantic decoding algorithms. This concept draws a direct parallel to the well-studied problem of s
+    Deep learning has bolstered gaze estimation techniques, but real-world deployment has been impeded by inadequate training datasets. This problem is exacerbated by both hardware-induced variations in eye images and inherent biological differences across the recorded participants, leading to both feature and pixel-level variance that hinders the generalizability of models trained on specific datasets. While synthetic datasets can be a solution, their creation is both time and resource-intensive. To address this problem, we present a framework called Light Eyes or "LEyes" which, unlike conventional photorealistic methods, only models key image features required for video-based eye tracking using simple light distributions. LEyes facilitates easy configuration for training neural networks across diverse gaze-estimation tasks. We demonstrate that models trained using LEyes outperform other state-of-the-art algorithms in terms of pupil and CR localization across well-known datasets. In addit
     
 

@@ -2,37 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [3DCoMPaT$^{++}$: An improved Large-scale 3D Vision Dataset for Compositional Recognition](https://arxiv.org/abs/2310.18511) | 3DCoMPaT$^{++}$提出了一个大规模的多模态2D/3D数据集，包含1.6亿个渲染视图的风格化三维形状，带有详细的部件实例级别标注，用于组合识别。 |
-| [^2] | [Prompting Large Language Models with Answer Heuristics for Knowledge-based Visual Question Answering.](http://arxiv.org/abs/2303.01903) | 本研究提出了一个名为Prophet的框架，使用答案启发式方式促使GPT-3解决基于知识的视觉问答问题。在特定的知识型VQA数据集上训练一个纯VQA模型，并从中提取出答案启发式，可提高模型的性能。 |
+| [^1] | [Neural Redshift: Random Networks are not Random Functions](https://arxiv.org/abs/2403.02241) | 本论文研究了未经训练的随机权重网络，发现即使简单的MLPs也具有强烈的归纳偏见，不同于传统观点的是，NNs并不具有固有的“简单偏见”，而是依赖于组件的作用。 |
+| [^2] | [EyePreserve: Identity-Preserving Iris Synthesis.](http://arxiv.org/abs/2312.12028) | 本论文提出了一种完全数据驱动的、保持身份的、瞳孔尺寸变化的虹膜图像合成方法，能够合成不同瞳孔尺寸的虹膜图像，代表不存在的身份，并能够在保持身份的同时进行非线性纹理变形。 |
+| [^3] | [LEyes: A Lightweight Framework for Deep Learning-Based Eye Tracking using Synthetic Eye Images.](http://arxiv.org/abs/2309.06129) | 本研究提出了一种名为LEyes的轻量级深度学习眼动跟踪框架，利用合成眼部图像进行训练，解决了由于训练数据集不足和眼部图像变异导致的模型泛化问题。实验结果表明，LEyes训练的模型在瞳孔和CR定位方面优于其他算法。 |
+| [^4] | [Semantic Positive Pairs for Enhancing Contrastive Instance Discrimination.](http://arxiv.org/abs/2306.16122) | 提出了一种名为语义正向对集合（SPPS）的方法，可以在表示学习过程中识别具有相似语义内容的图像，并将它们视为正向实例，从而减少丢弃重要特征的风险。在多个实验数据集上的实验证明了该方法的有效性。 |
 
 # 详细
 
-[^1]: 3DCoMPaT$^{++}$：一个用于组合识别的改进型大规模三维视觉数据集
+[^1]: 神经红移：随机网络并非随机函数
 
-    3DCoMPaT$^{++}$: An improved Large-scale 3D Vision Dataset for Compositional Recognition
+    Neural Redshift: Random Networks are not Random Functions
 
-    [https://arxiv.org/abs/2310.18511](https://arxiv.org/abs/2310.18511)
+    [https://arxiv.org/abs/2403.02241](https://arxiv.org/abs/2403.02241)
 
-    3DCoMPaT$^{++}$提出了一个大规模的多模态2D/3D数据集，包含1.6亿个渲染视图的风格化三维形状，带有详细的部件实例级别标注，用于组合识别。
-
-    
-
-    在这项工作中，我们提出了3DCoMPaT$^{++}$，这是一个包含1.6亿个以上10百万个风格化三维形状的渲染视图的多模态2D/3D数据集，这些形状在部件实例级别上进行了精心注释，并配有匹配的RGB点云、3D纹理网格、深度图和分割蒙版。3DCoMPaT$^{++}$涵盖了41个形状类别、275个细粒度部分类别和293个细粒度材料类别，这些类别可以组合应用于三维物体的各部分。我们从四个等间距视图和四个随机视图中渲染了一百万个风格化形状的子集，共计1.6亿个渲染。部件在实例级别、粗粒度和细粒度语义级别上进行了分割。我们引入了一个名为Grounded CoMPaT Recognition (GCR)的新任务，旨在共同识别和基于物体部分的材料组合。另外，我们还报告了一个数据挑战活动的结果。
-
-    arXiv:2310.18511v2 Announce Type: replace-cross  Abstract: In this work, we present 3DCoMPaT$^{++}$, a multimodal 2D/3D dataset with 160 million rendered views of more than 10 million stylized 3D shapes carefully annotated at the part-instance level, alongside matching RGB point clouds, 3D textured meshes, depth maps, and segmentation masks. 3DCoMPaT$^{++}$ covers 41 shape categories, 275 fine-grained part categories, and 293 fine-grained material classes that can be compositionally applied to parts of 3D objects. We render a subset of one million stylized shapes from four equally spaced views as well as four randomized views, leading to a total of 160 million renderings. Parts are segmented at the instance level, with coarse-grained and fine-grained semantic levels. We introduce a new task, called Grounded CoMPaT Recognition (GCR), to collectively recognize and ground compositions of materials on parts of 3D objects. Additionally, we report the outcomes of a data challenge organized a
-    
-[^2]: 用答案启发式方式促使大型语言模型解决基于知识的视觉问答问题
-
-    Prompting Large Language Models with Answer Heuristics for Knowledge-based Visual Question Answering. (arXiv:2303.01903v2 [cs.CV] UPDATED)
-
-    [http://arxiv.org/abs/2303.01903](http://arxiv.org/abs/2303.01903)
-
-    本研究提出了一个名为Prophet的框架，使用答案启发式方式促使GPT-3解决基于知识的视觉问答问题。在特定的知识型VQA数据集上训练一个纯VQA模型，并从中提取出答案启发式，可提高模型的性能。
+    本论文研究了未经训练的随机权重网络，发现即使简单的MLPs也具有强烈的归纳偏见，不同于传统观点的是，NNs并不具有固有的“简单偏见”，而是依赖于组件的作用。
 
     
 
-    基于知识的视觉问答需要超出图像范围的外部知识来回答问题。早期的研究从显式知识库（KBs）检索所需的知识，这经常会引入与问题无关的信息，从而限制了模型的性能。最近的研究试图将大型语言模型（即GPT-3）作为隐含式知识引擎来获取回答所需的必要知识。尽管这些方法取得了令人鼓舞的结果，但我们认为它们还没有充分发挥GPT-3的能力，因为提供的输入信息仍然不足。在本文中，我们提出了Prophet——一个概念上简单的框架，旨在通过回答启发式方式，促使GPT-3解决基于知识的VQA问题。具体来说，我们首先在特定的基于知识的VQA数据集上训练一个纯VQA模型，而不使用外部知识。之后，我们从模型中提取了两种互补的答案启发式：答案候选项。
+    我们对神经网络（NNs）的泛化能力的理解仍不完整。目前的解释基于梯度下降（GD）的隐含偏见，但无法解释梯度自由方法中模型的能力，也无法解释最近观察到的未经训练网络的简单偏见。本文寻找NNs中的其他泛化源。为了独立于GD理解体系结构提供的归纳偏见，我们研究未经训练的随机权重网络。即使是简单的MLPs也表现出强烈的归纳偏见：在权重空间中进行均匀抽样会产生一个非常偏向于复杂性的函数分布。但与常规智慧不同，NNs并不具有固有的“简单偏见”。这一特性取决于组件，如ReLU、残差连接和层归一化。可利用替代体系结构构建偏向于任何复杂性水平的偏见。Transformers也具有这一特性。
 
-    Knowledge-based visual question answering (VQA) requires external knowledge beyond the image to answer the question. Early studies retrieve required knowledge from explicit knowledge bases (KBs), which often introduces irrelevant information to the question, hence restricting the performance of their models. Recent works have sought to use a large language model (i.e., GPT-3) as an implicit knowledge engine to acquire the necessary knowledge for answering. Despite the encouraging results achieved by these methods, we argue that they have not fully activated the capacity of GPT-3 as the provided input information is insufficient. In this paper, we present Prophet -- a conceptually simple framework designed to prompt GPT-3 with answer heuristics for knowledge-based VQA. Specifically, we first train a vanilla VQA model on a specific knowledge-based VQA dataset without external knowledge. After that, we extract two types of complementary answer heuristics from the model: answer candidates 
+    arXiv:2403.02241v1 Announce Type: cross  Abstract: Our understanding of the generalization capabilities of neural networks (NNs) is still incomplete. Prevailing explanations are based on implicit biases of gradient descent (GD) but they cannot account for the capabilities of models from gradient-free methods nor the simplicity bias recently observed in untrained networks. This paper seeks other sources of generalization in NNs.   Findings. To understand the inductive biases provided by architectures independently from GD, we examine untrained, random-weight networks. Even simple MLPs show strong inductive biases: uniform sampling in weight space yields a very biased distribution of functions in terms of complexity. But unlike common wisdom, NNs do not have an inherent "simplicity bias". This property depends on components such as ReLUs, residual connections, and layer normalizations. Alternative architectures can be built with a bias for any level of complexity. Transformers also inher
+    
+[^2]: EyePreserve: 保持身份的虹膜合成
+
+    EyePreserve: Identity-Preserving Iris Synthesis. (arXiv:2312.12028v2 [cs.CV] UPDATED)
+
+    [http://arxiv.org/abs/2312.12028](http://arxiv.org/abs/2312.12028)
+
+    本论文提出了一种完全数据驱动的、保持身份的、瞳孔尺寸变化的虹膜图像合成方法，能够合成不同瞳孔尺寸的虹膜图像，代表不存在的身份，并能够在保持身份的同时进行非线性纹理变形。
+
+    
+
+    在广泛的瞳孔尺寸范围内保持身份的同身份生物特征虹膜图像的合成是复杂的，因为它涉及到虹膜肌肉收缩机制，需要将虹膜非线性纹理变形模型嵌入到合成流程中。本论文提出了一种完全数据驱动的、保持身份的、瞳孔尺寸变化的虹膜图像合成方法。这种方法能够合成具有不同瞳孔尺寸的虹膜图像，代表不存在的身份，并能够在给定目标虹膜图像的分割掩膜下非线性地变形现有主体的虹膜图像纹理。虹膜识别实验表明，所提出的变形模型不仅在改变瞳孔尺寸时保持身份，而且在瞳孔尺寸有显著差异的同身份虹膜样本之间提供更好的相似度，与最先进的线性方法相比。
+
+    Synthesis of same-identity biometric iris images, both for existing and non-existing identities while preserving the identity across a wide range of pupil sizes, is complex due to intricate iris muscle constriction mechanism, requiring a precise model of iris non-linear texture deformations to be embedded into the synthesis pipeline. This paper presents the first method of fully data-driven, identity-preserving, pupil size-varying s ynthesis of iris images. This approach is capable of synthesizing images of irises with different pupil sizes representing non-existing identities as well as non-linearly deforming the texture of iris images of existing subjects given the segmentation mask of the target iris image. Iris recognition experiments suggest that the proposed deformation model not only preserves the identity when changing the pupil size but offers better similarity between same-identity iris samples with significant differences in pupil size, compared to state-of-the-art linear an
+    
+[^3]: LEyes：一种轻量级深度学习眼动跟踪框架，使用合成眼部图像
+
+    LEyes: A Lightweight Framework for Deep Learning-Based Eye Tracking using Synthetic Eye Images. (arXiv:2309.06129v1 [cs.CV])
+
+    [http://arxiv.org/abs/2309.06129](http://arxiv.org/abs/2309.06129)
+
+    本研究提出了一种名为LEyes的轻量级深度学习眼动跟踪框架，利用合成眼部图像进行训练，解决了由于训练数据集不足和眼部图像变异导致的模型泛化问题。实验结果表明，LEyes训练的模型在瞳孔和CR定位方面优于其他算法。
+
+    
+
+    深度学习已经加强了凝视估计技术，但实际部署受到不足的训练数据集的限制。眼部图像的硬件引起的变异以及记录的参与者之间固有的生物差异会导致特征和像素级别的差异，阻碍了在特定数据集上训练的模型的泛化能力。虚拟数据集可以是一个解决方案，但创建虚拟数据集既需要时间又需要资源。为了解决这个问题，我们提出了一个名为Light Eyes or "LEyes"的框架，与传统的逼真方法不同，LEyes仅模拟视频眼动跟踪所需的关键图像特征。LEyes便于在多样化的凝视估计任务上训练神经网络。我们证明，使用LEyes训练的模型在眼睛瞳孔和CR定位方面优于其他最先进的算法。
+
+    Deep learning has bolstered gaze estimation techniques, but real-world deployment has been impeded by inadequate training datasets. This problem is exacerbated by both hardware-induced variations in eye images and inherent biological differences across the recorded participants, leading to both feature and pixel-level variance that hinders the generalizability of models trained on specific datasets. While synthetic datasets can be a solution, their creation is both time and resource-intensive. To address this problem, we present a framework called Light Eyes or "LEyes" which, unlike conventional photorealistic methods, only models key image features required for video-based eye tracking using simple light distributions. LEyes facilitates easy configuration for training neural networks across diverse gaze-estimation tasks. We demonstrate that models trained using LEyes outperform other state-of-the-art algorithms in terms of pupil and CR localization across well-known datasets. In addit
+    
+[^4]: 增强对比实例区分的语义正向对
+
+    Semantic Positive Pairs for Enhancing Contrastive Instance Discrimination. (arXiv:2306.16122v1 [cs.CV])
+
+    [http://arxiv.org/abs/2306.16122](http://arxiv.org/abs/2306.16122)
+
+    提出了一种名为语义正向对集合（SPPS）的方法，可以在表示学习过程中识别具有相似语义内容的图像，并将它们视为正向实例，从而减少丢弃重要特征的风险。在多个实验数据集上的实验证明了该方法的有效性。
+
+    
+
+    基于实例区分的自监督学习算法有效地防止表示坍缩，并在表示学习中产生了有希望的结果。然而，在嵌入空间中吸引正向对（即相同实例的两个视图）并排斥所有其他实例（即负向对），无论它们的类别，可能导致丢弃重要的特征。为了解决这个问题，我们提出了一种方法来识别具有相似语义内容的图像，并将它们视为正向实例，命名为语义正向对集合（SPPS），从而在表示学习中减少了丢弃重要特征的风险。我们的方法可以与任何对比实例区分框架（如SimCLR或MOCO）一起使用。我们在三个数据集（ImageNet、STL-10和CIFAR-10）上进行实验证明了我们的方法的有效性。实验结果表明，我们的方法始终优于基线方法vanilla。
+
+    Self-supervised learning algorithms based on instance discrimination effectively prevent representation collapse and produce promising results in representation learning. However, the process of attracting positive pairs (i.e., two views of the same instance) in the embedding space and repelling all other instances (i.e., negative pairs) irrespective of their categories could result in discarding important features. To address this issue, we propose an approach to identifying those images with similar semantic content and treating them as positive instances, named semantic positive pairs set (SPPS), thereby reducing the risk of discarding important features during representation learning. Our approach could work with any contrastive instance discrimination framework such as SimCLR or MOCO. We conduct experiments on three datasets: ImageNet, STL-10 and CIFAR-10 to evaluate our approach. The experimental results show that our approach consistently outperforms the baseline method vanilla 
     
 
