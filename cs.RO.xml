@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.RO</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.RO</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.RO</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.RO</description><item><title>&#20171;&#32461;&#20102;&#19968;&#31181;&#26032;&#20852;&#30340;&#22312;&#32447;&#38750;&#38543;&#26426;&#25511;&#21046;&#26041;&#27861;&#65292;&#36890;&#36807;&#22312;&#19968;&#32452;&#31574;&#30053;&#20013;&#23547;&#25214;&#20302;&#21518;&#24724;&#65292;&#33719;&#24471;&#23545;&#26368;&#20248;&#31574;&#30053;&#30340;&#36817;&#20284;&#12290;</title><link>http://arxiv.org/abs/2211.09619</link><description>&lt;p&gt;
+&#22312;&#32447;&#38750;&#38543;&#26426;&#25511;&#21046;&#31616;&#20171;
+&lt;/p&gt;
+&lt;p&gt;
+Introduction to Online Nonstochastic Control. (arXiv:2211.09619v2 [cs.LG] UPDATED)
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2211.09619
+&lt;/p&gt;
+&lt;p&gt;
+&#20171;&#32461;&#20102;&#19968;&#31181;&#26032;&#20852;&#30340;&#22312;&#32447;&#38750;&#38543;&#26426;&#25511;&#21046;&#26041;&#27861;&#65292;&#36890;&#36807;&#22312;&#19968;&#32452;&#31574;&#30053;&#20013;&#23547;&#25214;&#20302;&#21518;&#24724;&#65292;&#33719;&#24471;&#23545;&#26368;&#20248;&#31574;&#30053;&#30340;&#36817;&#20284;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#20171;&#32461;&#20102;&#19968;&#31181;&#26032;&#20852;&#30340;&#21160;&#24577;&#31995;&#32479;&#25511;&#21046;&#19982;&#21487;&#24494;&#24378;&#21270;&#23398;&#20064;&#33539;&#24335;&#8212;&#8212;&#22312;&#32447;&#38750;&#38543;&#26426;&#25511;&#21046;&#65292;&#24182;&#24212;&#29992;&#22312;&#32447;&#20984;&#20248;&#21270;&#21644;&#20984;&#26494;&#24347;&#25216;&#26415;&#24471;&#21040;&#20102;&#20855;&#26377;&#21487;&#35777;&#26126;&#20445;&#35777;&#30340;&#26032;&#26041;&#27861;&#65292;&#22312;&#26368;&#20339;&#21644;&#40065;&#26834;&#25511;&#21046;&#26041;&#38754;&#21462;&#24471;&#20102;&#26174;&#33879;&#25104;&#26524;&#12290;&#19982;&#20854;&#20182;&#26694;&#26550;&#19981;&#21516;&#65292;&#35813;&#26041;&#27861;&#30340;&#30446;&#26631;&#26159;&#23545;&#25239;&#24615;&#25915;&#20987;&#65292;&#22312;&#26080;&#27861;&#39044;&#27979;&#25200;&#21160;&#27169;&#22411;&#30340;&#24773;&#20917;&#19979;&#65292;&#36890;&#36807;&#22312;&#19968;&#32452;&#31574;&#30053;&#20013;&#23547;&#25214;&#20302;&#21518;&#24724;&#65292;&#33719;&#24471;&#23545;&#26368;&#20248;&#31574;&#30053;&#30340;&#36817;&#20284;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+This text presents an introduction to an emerging paradigm in control of dynamical systems and differentiable reinforcement learning called online nonstochastic control. The new approach applies techniques from online convex optimization and convex relaxations to obtain new methods with provable guarantees for classical settings in optimal and robust control.  The primary distinction between online nonstochastic control and other frameworks is the objective. In optimal control, robust control, and other control methodologies that assume stochastic noise, the goal is to perform comparably to an offline optimal strategy. In online nonstochastic control, both the cost functions as well as the perturbations from the assumed dynamical model are chosen by an adversary. Thus the optimal policy is not defined a priori. Rather, the target is to attain low regret against the best policy in hindsight from a benchmark class of policies.  This objective suggests the use of the decision making frame
+&lt;/p&gt;</description></item></channel></rss>
