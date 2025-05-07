@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Conformal Predictive Programming for Chance Constrained Optimization](https://arxiv.org/abs/2402.07407) | 可容许预测规划（CPP）是一种解决受任意随机参数影响的优化问题的方法，通过利用样本和量子引理将机遇受限优化（CCO）问题转化为确定性优化问题，并具备边际概率可行性保证。 |
+| [^1] | [Imitation-regularized Optimal Transport on Networks: Provable Robustness and Application to Logistics Planning](https://arxiv.org/abs/2402.17967) | 本研究探讨了在网络上进行模仿正则化的最优输运（I-OT），通过模仿先验分布来提高网络系统的鲁棒性。 |
 
 # 详细
 
-[^1]: 可容许预测规划用于机遇受限优化
+[^1]: 在网络上进行模仿正则化的最优输运：可证明的鲁棒性及其在物流规划中的应用
 
-    Conformal Predictive Programming for Chance Constrained Optimization
+    Imitation-regularized Optimal Transport on Networks: Provable Robustness and Application to Logistics Planning
 
-    [https://arxiv.org/abs/2402.07407](https://arxiv.org/abs/2402.07407)
+    [https://arxiv.org/abs/2402.17967](https://arxiv.org/abs/2402.17967)
 
-    可容许预测规划（CPP）是一种解决受任意随机参数影响的优化问题的方法，通过利用样本和量子引理将机遇受限优化（CCO）问题转化为确定性优化问题，并具备边际概率可行性保证。
+    本研究探讨了在网络上进行模仿正则化的最优输运（I-OT），通过模仿先验分布来提高网络系统的鲁棒性。
 
     
 
-    在对预测规划（CP）的进展的激励下，我们提出了可容许预测规划（CPP），一种解决机遇受限优化（CCO）问题的方法，即受任意随机参数影响的非线性约束函数的优化问题。CPP利用这些随机参数的样本以及量子引理（CP的核心）将CCO问题转化为确定性优化问题。然后，我们通过：（1）将量子表示为线性规划以及其KKT条件（CPP-KKT）；（2）使用混合整数规划（CPP-MIP）来呈现CPP的两种易于处理的改进。CPP具备对CCO问题进行边际概率可行性保证，这与现有方法（例如样本逼近和场景方法）在概念上有所不同。尽管我们探讨了与样本逼近方法的算法相似之处，但我们强调CPP的优势在于易于扩展。
+    网络系统构成了现代社会的基础，在各种应用中起着至关重要的作用。然而，这些系统面临着由灾难等不可预见情况带来的重大风险。鉴于此，迫切需要研究加强网络系统的鲁棒性。最近在强化学习中，已经确定了获取鲁棒性和正则化熵之间的关系。此外，在这一框架内使用了模仿学习来反映专家的行为。然而，关于在网络上的最优输运中使用类似模仿框架的全面研究还没有。因此，在本研究中，研究了在网络上进行的模仿正则化的最优输运（I-OT）。它通过模仿给定的先验分布对网络的先验知识进行编码。I-OT解决方案在网络上定义的成本方面表现出了鲁棒性。
 
-    Motivated by the advances in conformal prediction (CP), we propose conformal predictive programming (CPP), an approach to solve chance constrained optimization (CCO) problems, i.e., optimization problems with nonlinear constraint functions affected by arbitrary random parameters. CPP utilizes samples from these random parameters along with the quantile lemma -- which is central to CP -- to transform the CCO problem into a deterministic optimization problem. We then present two tractable reformulations of CPP by: (1) writing the quantile as a linear program along with its KKT conditions (CPP-KKT), and (2) using mixed integer programming (CPP-MIP). CPP comes with marginal probabilistic feasibility guarantees for the CCO problem that are conceptually different from existing approaches, e.g., the sample approximation and the scenario approach. While we explore algorithmic similarities with the sample approximation approach, we emphasize that the strength of CPP is that it can easily be ext
+    arXiv:2402.17967v1 Announce Type: new  Abstract: Network systems form the foundation of modern society, playing a critical role in various applications. However, these systems are at significant risk of being adversely affected by unforeseen circumstances, such as disasters. Considering this, there is a pressing need for research to enhance the robustness of network systems. Recently, in reinforcement learning, the relationship between acquiring robustness and regularizing entropy has been identified. Additionally, imitation learning is used within this framework to reflect experts' behavior. However, there are no comprehensive studies on the use of a similar imitation framework for optimal transport on networks. Therefore, in this study, imitation-regularized optimal transport (I-OT) on networks was investigated. It encodes prior knowledge on the network by imitating a given prior distribution. The I-OT solution demonstrated robustness in terms of the cost defined on the network. More
     
 
