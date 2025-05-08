@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Revealing CNN Architectures via Side-Channel Analysis in Dataflow-based Inference Accelerators.](http://arxiv.org/abs/2311.00579) | 本文通过评估数据流加速器上的侧信道信息，提出了一种攻击方法来恢复CNN模型的架构。该攻击利用了数据流映射的数据重用以及架构线索，成功恢复了流行的CNN模型Lenet，Alexnet和VGGnet16的结构。 |
-| [^2] | [Breaking NoC Anonymity using Flow Correlation Attack.](http://arxiv.org/abs/2309.15687) | 本文研究了NoC架构中现有匿名路由协议的安全性，并展示了现有的匿名路由对基于机器学习的流相关攻击易受攻击。我们提出了一种轻量级的匿名路由，使用流量混淆技术，可以抵御基于机器学习的流相关攻击。 |
+| [^1] | [TransAxx: Efficient Transformers with Approximate Computing](https://arxiv.org/abs/2402.07545) | TransAxx是一个基于PyTorch库的框架，可以支持近似计算，并通过对Vision Transformer模型进行近似感知微调，来提高在低功耗设备上的计算效率。 |
 
 # 详细
 
-[^1]: 通过数据流推理加速器中的侧信道分析揭示CNN架构
+[^1]: TransAxx：具有近似计算能力的高效Transformer模型
 
-    Revealing CNN Architectures via Side-Channel Analysis in Dataflow-based Inference Accelerators. (arXiv:2311.00579v1 [cs.CR])
+    TransAxx: Efficient Transformers with Approximate Computing
 
-    [http://arxiv.org/abs/2311.00579](http://arxiv.org/abs/2311.00579)
+    [https://arxiv.org/abs/2402.07545](https://arxiv.org/abs/2402.07545)
 
-    本文通过评估数据流加速器上的侧信道信息，提出了一种攻击方法来恢复CNN模型的架构。该攻击利用了数据流映射的数据重用以及架构线索，成功恢复了流行的CNN模型Lenet，Alexnet和VGGnet16的结构。
-
-    
-
-    卷积神经网络（CNN）广泛应用于各个领域。最近在基于数据流的CNN加速器的进展使得CNN推理可以在资源有限的边缘设备上进行。这些数据流加速器利用卷积层的固有数据重用来高效处理CNN模型。隐藏CNN模型的架构对于隐私和安全至关重要。本文评估了基于内存的侧信道信息，以从数据流加速器中恢复CNN架构。所提出的攻击利用了CNN加速器上数据流映射的空间和时间数据重用以及架构线索来恢复CNN模型的结构。实验结果表明，我们提出的侧信道攻击可以恢复流行的CNN模型Lenet，Alexnet和VGGnet16的结构。
-
-    Convolution Neural Networks (CNNs) are widely used in various domains. Recent advances in dataflow-based CNN accelerators have enabled CNN inference in resource-constrained edge devices. These dataflow accelerators utilize inherent data reuse of convolution layers to process CNN models efficiently. Concealing the architecture of CNN models is critical for privacy and security. This paper evaluates memory-based side-channel information to recover CNN architectures from dataflow-based CNN inference accelerators. The proposed attack exploits spatial and temporal data reuse of the dataflow mapping on CNN accelerators and architectural hints to recover the structure of CNN models. Experimental results demonstrate that our proposed side-channel attack can recover the structures of popular CNN models, namely Lenet, Alexnet, and VGGnet16.
-    
-[^2]: 打破NoC匿名性使用流相关攻击
-
-    Breaking NoC Anonymity using Flow Correlation Attack. (arXiv:2309.15687v1 [cs.CR])
-
-    [http://arxiv.org/abs/2309.15687](http://arxiv.org/abs/2309.15687)
-
-    本文研究了NoC架构中现有匿名路由协议的安全性，并展示了现有的匿名路由对基于机器学习的流相关攻击易受攻击。我们提出了一种轻量级的匿名路由，使用流量混淆技术，可以抵御基于机器学习的流相关攻击。
+    TransAxx是一个基于PyTorch库的框架，可以支持近似计算，并通过对Vision Transformer模型进行近似感知微调，来提高在低功耗设备上的计算效率。
 
     
 
-    网络片上互连（NoC）广泛用作当今多核片上系统（SoC）设计中的内部通信结构。片上通信的安全性至关重要，因为利用共享的NoC中的任何漏洞对攻击者来说都是一个富矿。NoC安全依赖于对各种攻击的有效防范措施。我们研究了NoC架构中现有匿名路由协议的安全性。具体而言，本文作出了两个重要贡献。我们展示了现有的匿名路由对基于机器学习（ML）的流相关攻击是易受攻击的。我们提出了一种轻量级的匿名路由，使用流量混淆技术，可以抵御基于ML的流相关攻击。使用实际和合成流量进行的实验研究表明，我们提出的攻击能够成功地对抗NoC架构中最先进的匿名路由，对于多种流量模式的分类准确率高达99％，同时。
+    最近，基于Transformer架构引入的Vision Transformer (ViT)模型已经展现出很大的竞争力，并且往往成为卷积神经网络(CNNs)的一种流行替代方案。然而，这些模型高计算需求限制了它们在低功耗设备上的实际应用。当前最先进的方法采用近似乘法器来解决DNN加速器高计算需求的问题，但之前的研究并没有探索其在ViT模型上的应用。在这项工作中，我们提出了TransAxx，这是一个基于流行的PyTorch库的框架，它能够快速支持近似算术，以无缝地评估近似计算对于DNN (如ViT模型)的影响。使用TransAxx，我们分析了Transformer模型在ImageNet数据集上对近似乘法的敏感性，并进行了近似感知的微调以恢复准确性。此外，我们提出了一种生成近似加法的方法。
 
-    Network-on-Chip (NoC) is widely used as the internal communication fabric in today's multicore System-on-Chip (SoC) designs. Security of the on-chip communication is crucial because exploiting any vulnerability in shared NoC would be a goldmine for an attacker. NoC security relies on effective countermeasures against diverse attacks. We investigate the security strength of existing anonymous routing protocols in NoC architectures. Specifically, this paper makes two important contributions. We show that the existing anonymous routing is vulnerable to machine learning (ML) based flow correlation attacks on NoCs. We propose a lightweight anonymous routing that use traffic obfuscation techniques which can defend against ML-based flow correlation attacks. Experimental studies using both real and synthetic traffic reveal that our proposed attack is successful against state-of-the-art anonymous routing in NoC architectures with a high accuracy (up to 99%) for diverse traffic patterns, while o
+    Vision Transformer (ViT) models which were recently introduced by the transformer architecture have shown to be very competitive and often become a popular alternative to Convolutional Neural Networks (CNNs). However, the high computational requirements of these models limit their practical applicability especially on low-power devices. Current state-of-the-art employs approximate multipliers to address the highly increased compute demands of DNN accelerators but no prior research has explored their use on ViT models. In this work we propose TransAxx, a framework based on the popular PyTorch library that enables fast inherent support for approximate arithmetic to seamlessly evaluate the impact of approximate computing on DNNs such as ViT models. Using TransAxx we analyze the sensitivity of transformer models on the ImageNet dataset to approximate multiplications and perform approximate-aware finetuning to regain accuracy. Furthermore, we propose a methodology to generate approximate ac
     
 
