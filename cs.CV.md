@@ -2,37 +2,67 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Neural Slot Interpreters: Grounding Object Semantics in Emergent Slot Representations](https://arxiv.org/abs/2403.07887) | 提出了神经槽解释器（NSI），通过槽表示学习接地和生成物体语义，实现了将现实世界的物体语义结合到抽象中。 |
-| [^2] | [A novel image space formalism of Fourier domain interpolation neural networks for noise propagation analysis](https://arxiv.org/abs/2402.17410) | 提出了一种用于MRI重建的傅里叶域插值神经网络的图像空间形式主义，并分析了在CNN推断过程中噪声传播的估计方法。 |
+| [^1] | [Revealing Multimodal Contrastive Representation Learning through Latent Partial Causal Models](https://arxiv.org/abs/2402.06223) | 通过潜在部分因果模型，我们展示了多模式对比表示学习在识别潜在耦合变量方面的优秀能力，并揭示了预训练的多模态模型通过线性独立分量分析学习分离表示的潜力。 |
+| [^2] | [Gemini: A Family of Highly Capable Multimodal Models](https://arxiv.org/abs/2312.11805) | Gemini家族是一系列在图像、音频、视频和文本理解方面表现出色的多模态模型，其中最具能力的Gemini Ultra模型在30个基准测试中推进了技术前沿，并改进了所有20个多模态基准测试的技术状态。 |
+| [^3] | [Cultural and Linguistic Diversity Improves Visual Representations.](http://arxiv.org/abs/2310.14356) | 这项研究发现数据集和模型生成的图像描述在不同语言间存在显著的语义差异，多语言数据有更高的语义覆盖率，并且基于多语言训练的模型表现更好。 |
+| [^4] | [Review helps learn better: Temporal Supervised Knowledge Distillation.](http://arxiv.org/abs/2307.00811) | 本文提出了一种基于时间的监督知识蒸馏方法，利用评论来帮助学生网络的学习。通过提取学生网络在不同训练阶段的时空特征，并通过动态目标进行训练，实现了对学生网络中旧知识的优化和利用，从而提高了网络的训练性能。 |
 
 # 详细
 
-[^1]: 神经槽解释器：在新兴的槽表示中接地对象语义
+[^1]: 通过潜在部分因果模型揭示多模式对比表示学习
 
-    Neural Slot Interpreters: Grounding Object Semantics in Emergent Slot Representations
+    Revealing Multimodal Contrastive Representation Learning through Latent Partial Causal Models
 
-    [https://arxiv.org/abs/2403.07887](https://arxiv.org/abs/2403.07887)
+    [https://arxiv.org/abs/2402.06223](https://arxiv.org/abs/2402.06223)
 
-    提出了神经槽解释器（NSI），通过槽表示学习接地和生成物体语义，实现了将现实世界的物体语义结合到抽象中。
-
-    
-
-    物体中心方法在将原始感知无监督分解为丰富的类似物体的抽象方面取得了重大进展。然而，将现实世界的物体语义接地到学到的抽象中的能力有限，这阻碍了它们在下游理解应用中的采用。我们提出神经槽解释器（NSI），它通过槽表示学习接地和生成物体语义。NSI的核心是一种类似XML的编程语言，它使用简单的语法规则将场景的物体语义组织成以物体为中心的程序原语。然后，一个对齐模型学习通过共享嵌入空间上的双层对比学习目标将程序原语接地到槽。最后，我们构建NSI程序生成模型，利用对齐模型推断的密集关联从槽生成以物体为中心的程序。在双模式检索实验中，
-
-    arXiv:2403.07887v1 Announce Type: cross  Abstract: Object-centric methods have seen significant progress in unsupervised decomposition of raw perception into rich object-like abstractions. However, limited ability to ground object semantics of the real world into the learned abstractions has hindered their adoption in downstream understanding applications. We present the Neural Slot Interpreter (NSI) that learns to ground and generate object semantics via slot representations. At the core of NSI is an XML-like programming language that uses simple syntax rules to organize the object semantics of a scene into object-centric program primitives. Then, an alignment model learns to ground program primitives into slots through a bi-level contrastive learning objective over a shared embedding space. Finally, we formulate the NSI program generator model to use the dense associations inferred from the alignment model to generate object-centric programs from slots. Experiments on bi-modal retrie
-    
-[^2]: 傅里叶域插值神经网络的图像空间形式主义用于噪声传播分析
-
-    A novel image space formalism of Fourier domain interpolation neural networks for noise propagation analysis
-
-    [https://arxiv.org/abs/2402.17410](https://arxiv.org/abs/2402.17410)
-
-    提出了一种用于MRI重建的傅里叶域插值神经网络的图像空间形式主义，并分析了在CNN推断过程中噪声传播的估计方法。
+    通过潜在部分因果模型，我们展示了多模式对比表示学习在识别潜在耦合变量方面的优秀能力，并揭示了预训练的多模态模型通过线性独立分量分析学习分离表示的潜力。
 
     
 
-    旨在为MRI重建中的图像域插值开发多层卷积神经网络（CNNs）的图像空间形式主义，并在CNN推断过程中对噪声传播进行分析。通过使用复值整流线性单元在傅里叶域（也称为k空间）中的非线性激活，将其表示为与激活掩模的逐元素乘法。这种操作在图像空间中转换为卷积。在k空间网络训练后，这种方法为相对于别名线圈图像的重建图像的导数提供了一个代数表达式，这些别名线圈图像作为图像空间中网络的输入张量。这使得可以通过分析估计网络推断中的方差，并用于描述噪声特性。通过蒙特卡洛模拟和基于自动微分的数值方法进行验证。
+    多模式对比表示学习方法在各个领域取得了成功，部分原因是由于它们能够生成复杂现象的有意义的共享表示。为了增强对这些获得的表示的深度分析和理解，我们引入了一种特别针对多模态数据设计的统一因果模型。通过研究这个模型，我们展示了多模式对比表示学习在识别在提出的统一模型中的潜在耦合变量方面的优秀能力，即使在不同假设下导致的线性或置换变换。我们的发现揭示了预训练的多模态模型（如CLIP）通过线性独立分量分析这一令人惊讶的简单而高效的工具学习分离表示的潜力。实验证明了我们发现的鲁棒性，即使在被违反假设的情况下，也验证了所提出方法在学习疾病方面的有效性。
 
-    arXiv:2402.17410v1 Announce Type: cross  Abstract: Purpose: To develop an image space formalism of multi-layer convolutional neural networks (CNNs) for Fourier domain interpolation in MRI reconstructions and analytically estimate noise propagation during CNN inference. Theory and Methods: Nonlinear activations in the Fourier domain (also known as k-space) using complex-valued Rectifier Linear Units are expressed as elementwise multiplication with activation masks. This operation is transformed into a convolution in the image space. After network training in k-space, this approach provides an algebraic expression for the derivative of the reconstructed image with respect to the aliased coil images, which serve as the input tensors to the network in the image space. This allows the variance in the network inference to be estimated analytically and to be used to describe noise characteristics. Monte-Carlo simulations and numerical approaches based on auto-differentiation were used for val
+    Multimodal contrastive representation learning methods have proven successful across a range of domains, partly due to their ability to generate meaningful shared representations of complex phenomena. To enhance the depth of analysis and understanding of these acquired representations, we introduce a unified causal model specifically designed for multimodal data. By examining this model, we show that multimodal contrastive representation learning excels at identifying latent coupled variables within the proposed unified model, up to linear or permutation transformations resulting from different assumptions. Our findings illuminate the potential of pre-trained multimodal models, eg, CLIP, in learning disentangled representations through a surprisingly simple yet highly effective tool: linear independent component analysis. Experiments demonstrate the robustness of our findings, even when the assumptions are violated, and validate the effectiveness of the proposed method in learning dise
+    
+[^2]: Gemini：一系列高性能多模态模型
+
+    Gemini: A Family of Highly Capable Multimodal Models
+
+    [https://arxiv.org/abs/2312.11805](https://arxiv.org/abs/2312.11805)
+
+    Gemini家族是一系列在图像、音频、视频和文本理解方面表现出色的多模态模型，其中最具能力的Gemini Ultra模型在30个基准测试中推进了技术前沿，并改进了所有20个多模态基准测试的技术状态。
+
+    
+
+    本报告介绍了一种新的多模态模型系列Gemini，展示出在图像、音频、视频和文本理解方面的显著能力。Gemini系列包括Ultra、Pro和Nano尺寸，适用于从复杂推理任务到设备内存受限应用的各种应用场景。在广泛的基准测试中，我们最具能力的Gemini Ultra模型在32个基准测试中的30个中推进了技术前沿 - 显著地是第一个在被广泛研究的考试基准测试MMLU上实现人类专家水平表现的模型，并在我们研究的每一个20个多模态基准测试中改进了技术前沿。我们相信Gemini系列在跨模态推理和语言理解方面的新能力将能够支持各种用例。我们讨论了负责任地向用户提供Gemini模型的训练后和部署方法，包括使用服务。
+
+    arXiv:2312.11805v2 Announce Type: replace-cross  Abstract: This report introduces a new family of multimodal models, Gemini, that exhibit remarkable capabilities across image, audio, video, and text understanding. The Gemini family consists of Ultra, Pro, and Nano sizes, suitable for applications ranging from complex reasoning tasks to on-device memory-constrained use-cases. Evaluation on a broad range of benchmarks shows that our most-capable Gemini Ultra model advances the state of the art in 30 of 32 of these benchmarks - notably being the first model to achieve human-expert performance on the well-studied exam benchmark MMLU, and improving the state of the art in every one of the 20 multimodal benchmarks we examined. We believe that the new capabilities of the Gemini family in cross-modal reasoning and language understanding will enable a wide variety of use cases. We discuss our approach toward post-training and deploying Gemini models responsibly to users through services includi
+    
+[^3]: 文化和语言多样性提高了视觉表示
+
+    Cultural and Linguistic Diversity Improves Visual Representations. (arXiv:2310.14356v1 [cs.CV] CROSS LISTED)
+
+    [http://arxiv.org/abs/2310.14356](http://arxiv.org/abs/2310.14356)
+
+    这项研究发现数据集和模型生成的图像描述在不同语言间存在显著的语义差异，多语言数据有更高的语义覆盖率，并且基于多语言训练的模型表现更好。
+
+    
+
+    计算机视觉通常将感知视为客观的，并且这种假设在数据集收集和模型训练中得到反映。例如，不同语言的图像描述通常被假定为相同语义内容的翻译。然而，跨文化心理学和语言学的研究表明，个体的视觉感知因其文化背景和所说的语言而异。在本文中，我们展示了在数据集和模型生成的标题中，不同语言之间存在显著的语义内容差异。当数据是多语言而不是单语言时，标题的语义覆盖率平均更高，以场景图、嵌入和语言复杂性进行测量。例如，与一组单语标题相比，多语标题平均有21.8％更多的对象，24.5％更多的关系，以及27.1％更多的属性。此外，使用来自不同语言的内容训练的模型表现最好。
+
+    Computer vision often treats perception as objective, and this assumption gets reflected in the way that datasets are collected and models are trained. For instance, image descriptions in different languages are typically assumed to be translations of the same semantic content. However, work in cross-cultural psychology and linguistics has shown that individuals differ in their visual perception depending on their cultural background and the language they speak. In this paper, we demonstrate significant differences in semantic content across languages in both dataset and model-produced captions. When data is multilingual as opposed to monolingual, captions have higher semantic coverage on average, as measured by scene graph, embedding, and linguistic complexity. For example, multilingual captions have on average 21.8% more objects, 24.5% more relations, and 27.1% more attributes than a set of monolingual captions. Moreover, models trained on content from different languages perform bes
+    
+[^4]: 评论帮助更好地学习：基于时间的监督知识蒸馏
+
+    Review helps learn better: Temporal Supervised Knowledge Distillation. (arXiv:2307.00811v2 [cs.CV] UPDATED)
+
+    [http://arxiv.org/abs/2307.00811](http://arxiv.org/abs/2307.00811)
+
+    本文提出了一种基于时间的监督知识蒸馏方法，利用评论来帮助学生网络的学习。通过提取学生网络在不同训练阶段的时空特征，并通过动态目标进行训练，实现了对学生网络中旧知识的优化和利用，从而提高了网络的训练性能。
+
+    
+
+    在学习知识时，评论发挥了重要作用。在某个时间点获取的知识可能在之前的经验帮助下得到极大的启发。因此，知识增长过程应该在时间维度上展现出强烈的关联性。在我们的研究中，我们发现在网络训练过程中，特征图的演化遵循时间序列特性。适当的时间监督可以进一步提高网络训练性能。受到这一观察的启发，我们提出了基于时间的监督知识蒸馏（TSKD）。具体而言，我们通过卷积长短期记忆网络（Conv-LSTM）提取学生网络在不同训练阶段的时空特征。然后，我们通过动态目标训练学生网络，而不是静态的教师网络特征。这个过程实现了学生网络中旧知识的优化，并将其用于辅助当前的学习。广泛的实验证实了该方法的有效性。
+
+    Reviewing plays an important role when learning knowledge. The knowledge acquisition at a certain time point may be strongly inspired with the help of previous experience. Thus the knowledge growing procedure should show strong relationship along the temporal dimension. In our research, we find that during the network training, the evolution of feature map follows temporal sequence property. A proper temporal supervision may further improve the network training performance. Inspired by this observation, we propose Temporal Supervised Knowledge Distillation (TSKD). Specifically, we extract the spatiotemporal features in the different training phases of student by convolutional Long Short-term memory network (Conv-LSTM). Then, we train the student net through a dynamic target, rather than static teacher network features. This process realizes the refinement of old knowledge in student network, and utilizes it to assist current learning. Extensive experiments verify the effectiveness and 
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [CoverUp: Coverage-Guided LLM-Based Test Generation](https://arxiv.org/abs/2403.16218) | CoverUp通过覆盖率分析和大型语言模型相结合的方式，驱动生成高覆盖率的Python回归测试，并在改进覆盖率方面取得显著成就。 |
+| [^1] | [LOOPer: A Learned Automatic Code Optimizer For Polyhedral Compilers](https://arxiv.org/abs/2403.11522) | LOOPer是针对多面体编译器的学习型自动代码优化器，通过机器学习建立成本模型来指导多面体优化搜索，突破了传统编译器在选择代码转换方面的限制。 |
 
 # 详细
 
-[^1]: CoverUp：基于覆盖率引导的LLM测试生成系统
+[^1]: LOOPer: 一个针对多面体编译器的学习型自动代码优化器
 
-    CoverUp: Coverage-Guided LLM-Based Test Generation
+    LOOPer: A Learned Automatic Code Optimizer For Polyhedral Compilers
 
-    [https://arxiv.org/abs/2403.16218](https://arxiv.org/abs/2403.16218)
+    [https://arxiv.org/abs/2403.11522](https://arxiv.org/abs/2403.11522)
 
-    CoverUp通过覆盖率分析和大型语言模型相结合的方式，驱动生成高覆盖率的Python回归测试，并在改进覆盖率方面取得显著成就。
+    LOOPer是针对多面体编译器的学习型自动代码优化器，通过机器学习建立成本模型来指导多面体优化搜索，突破了传统编译器在选择代码转换方面的限制。
 
     
 
-    本文介绍了CoverUp，这是一个新型系统，通过覆盖率分析和大型语言模型（LLM）的结合驱动生成高覆盖率的Python回归测试。CoverUp通过迭代改善覆盖率，将覆盖率分析与LLM对话交替进行，以便将注意力集中在尚未涵盖的代码行和分支上。最终的测试套件相比当前技术水平显著提高了覆盖率：与CodaMosa相比，一种混合LLM / 基于搜索的软件测试系统，CoverUp在各方面都大幅提高了覆盖率。以模块为基础，CoverUp实现了81%的中位线覆盖率（对比62%）、53%的分支覆盖率（对比35%）和78%的线+分支覆盖率（对比55%）。我们展示了CoverUp的迭代、覆盖率引导方法对其有效性至关重要，为其成功的近一半作出了贡献。
+    虽然多面体编译器在实现高级代码转换方面已经取得成功，但在选择能够带来最佳加速的最有利转换方面仍然面临挑战。这促使使用机器学习构建成本模型来引导多面体优化的搜索。最先进的多面体编译器已经展示了这种方法的可行性概念验证。虽然这种概念验证显示出了希望，但仍然存在显著限制。使用深度学习成本模型的最先进多面体编译器只支持少量仿射变换的子集，限制了它们应用复杂代码变换的能力。它们还只支持具有单个循环嵌套和矩形迭代域的简单程序，限制了它们对许多程序的适用性。这些限制显著影响了这样的编译器和自动调度器的通用性
 
-    arXiv:2403.16218v1 Announce Type: cross  Abstract: This paper presents CoverUp, a novel system that drives the generation of high-coverage Python regression tests via a combination of coverage analysis and large-language models (LLMs). CoverUp iteratively improves coverage, interleaving coverage analysis with dialogs with the LLM to focus its attention on as yet uncovered lines and branches. The resulting test suites significantly improve coverage over the current state of the art: compared to CodaMosa, a hybrid LLM / search-based software testing system, CoverUp substantially improves coverage across the board. On a per-module basis, CoverUp achieves median line coverage of 81% (vs. 62%), branch coverage of 53% (vs. 35%) and line+branch coverage of 78% (vs. 55%). We show that CoverUp's iterative, coverage-guided approach is crucial to its effectiveness, contributing to nearly half of its successes.
+    arXiv:2403.11522v1 Announce Type: cross  Abstract: While polyhedral compilers have shown success in implementing advanced code transformations, they still have challenges in selecting the most profitable transformations that lead to the best speedups. This has motivated the use of machine learning to build cost models to guide the search for polyhedral optimizations. State-of-the-art polyhedral compilers have demonstrated a viable proof-of-concept of this approach. While such a proof-of-concept has shown promise, it still has significant limitations. State-of-the-art polyhedral compilers that use a deep-learning cost model only support a small subset of affine transformations, limiting their ability to apply complex code transformations. They also only support simple programs that have a single loop nest and a rectangular iteration domain, limiting their applicability to many programs. These limitations significantly impact the generality of such compilers and autoschedulers and put in
     
 
