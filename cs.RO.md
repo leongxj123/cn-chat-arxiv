@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [DittoGym: Learning to Control Soft Shape-Shifting Robots.](http://arxiv.org/abs/2401.13231) | 这篇论文介绍了一种学习控制软形变机器人的方法，并且提出了一个全面的强化学习基准系统DittoGym，该系统需要对机器人的形态进行细粒度变化来完成任务。 |
+| [^1] | [Unravelling Responsibility for AI.](http://arxiv.org/abs/2308.02608) | 本文旨在解构人工智能责任的概念，提出了一种包含四种责任意义的有效组合，以支持对人工智能责任的实践推理。 |
 
 # 详细
 
-[^1]: DittoGym:学习控制软形变机器人
+[^1]: 解构人工智能责任
 
-    DittoGym: Learning to Control Soft Shape-Shifting Robots. (arXiv:2401.13231v1 [cs.RO] CROSS LISTED)
+    Unravelling Responsibility for AI. (arXiv:2308.02608v1 [cs.AI])
 
-    [http://arxiv.org/abs/2401.13231](http://arxiv.org/abs/2401.13231)
+    [http://arxiv.org/abs/2308.02608](http://arxiv.org/abs/2308.02608)
 
-    这篇论文介绍了一种学习控制软形变机器人的方法，并且提出了一个全面的强化学习基准系统DittoGym，该系统需要对机器人的形态进行细粒度变化来完成任务。
+    本文旨在解构人工智能责任的概念，提出了一种包含四种责任意义的有效组合，以支持对人工智能责任的实践推理。
 
     
 
-    机器人共同设计，其中机器人的形态优化与学习的策略共同解决特定任务，是一个新兴的研究领域。对于软机器人来说，这一领域具有特别的潜力，因为软机器人可以通过新颖的制造技术实现学习到的形态和执行器。受自然界和最近的新型机器人设计的启发，我们提出更进一步探索新型可重构机器人，即在其寿命内可以改变形态的机器人。我们将可重构软机器人的控制形式化为高维强化学习问题。我们在同一action空间中统一形态变化、运动和与环境的互动，并引入合适的粗到细的课程表，使我们能够发现实现对最终机器人进行细粒度控制的策略。我们还介绍了DittoGym，这是一个针对可重构软机器人的全面强化学习基准，需要对形态进行细粒度变化来完成任务。
+    为了在涉及人工智能系统的复杂情况下合理思考责任应该放在何处，我们首先需要一个足够清晰和详细的跨学科词汇来谈论责任。责任是一种三元关系，涉及到一个行为者、一个事件和一种责任方式。作为一种有意识的为了支持对人工智能责任进行实践推理的“解构”责任概念的努力，本文采取了“行为者A对事件O负责”的三部分表述，并确定了A、负责、O的子类别的有效组合。这些有效组合我们称之为“责任串”，分为四种责任意义：角色责任、因果责任、法律责任和道德责任。我们通过两个运行示例进行了说明，一个涉及医疗AI系统，另一个涉及AV与行人的致命碰撞。
 
-    Robot co-design, where the morphology of a robot is optimized jointly with a learned policy to solve a specific task, is an emerging area of research. It holds particular promise for soft robots, which are amenable to novel manufacturing techniques that can realize learned morphologies and actuators. Inspired by nature and recent novel robot designs, we propose to go a step further and explore the novel reconfigurable robots, defined as robots that can change their morphology within their lifetime. We formalize control of reconfigurable soft robots as a high-dimensional reinforcement learning (RL) problem. We unify morphology change, locomotion, and environment interaction in the same action space, and introduce an appropriate, coarse-to-fine curriculum that enables us to discover policies that accomplish fine-grained control of the resulting robots. We also introduce DittoGym, a comprehensive RL benchmark for reconfigurable soft robots that require fine-grained morphology changes to a
+    To reason about where responsibility does and should lie in complex situations involving AI-enabled systems, we first need a sufficiently clear and detailed cross-disciplinary vocabulary for talking about responsibility. Responsibility is a triadic relation involving an actor, an occurrence, and a way of being responsible. As part of a conscious effort towards 'unravelling' the concept of responsibility to support practical reasoning about responsibility for AI, this paper takes the three-part formulation, 'Actor A is responsible for Occurrence O' and identifies valid combinations of subcategories of A, is responsible for, and O. These valid combinations - which we term "responsibility strings" - are grouped into four senses of responsibility: role-responsibility; causal responsibility; legal liability-responsibility; and moral responsibility. They are illustrated with two running examples, one involving a healthcare AI-based system and another the fatal collision of an AV with a pedes
     
 
