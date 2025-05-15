@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Nonlinearity Enhanced Adaptive Activation Function](https://arxiv.org/abs/2403.19896) | 引入了一种带有甚至立方非线性的简单实现激活函数，通过引入可优化参数使得激活函数具有更大的自由度，可以提高神经网络的准确性，同时不需要太多额外的计算资源。 |
-| [^2] | [Equipping Sketch Patches with Context-Aware Positional Encoding for Graphic Sketch Representation](https://arxiv.org/abs/2403.17525) | 提出了一种通过为素描补丁配备上下文感知的位置编码来保护不同绘图版本的方法，将绘图顺序信息嵌入图节点中，以更好地学习图形素描表示。 |
+| [^1] | [Efficient approximation of Earth Mover's Distance Based on Nearest Neighbor Search.](http://arxiv.org/abs/2401.07378) | 本文提出了一种基于最近邻搜索的新方法NNS-EMD来逼近地球移动距离（EMD），以实现高精度、低时间复杂度和高内存效率。该方法通过减少数据点的比较数量和并行处理提供了高效的近似计算，并通过在GPU上进行向量化加速，特别适用于大型数据集。 |
 
 # 详细
 
-[^1]: 非线性增强自适应激活函数
+[^1]: 基于最近邻搜索的地球移动距离的高效逼近方法
 
-    Nonlinearity Enhanced Adaptive Activation Function
+    Efficient approximation of Earth Mover's Distance Based on Nearest Neighbor Search. (arXiv:2401.07378v2 [cs.CV] UPDATED)
 
-    [https://arxiv.org/abs/2403.19896](https://arxiv.org/abs/2403.19896)
+    [http://arxiv.org/abs/2401.07378](http://arxiv.org/abs/2401.07378)
 
-    引入了一种带有甚至立方非线性的简单实现激活函数，通过引入可优化参数使得激活函数具有更大的自由度，可以提高神经网络的准确性，同时不需要太多额外的计算资源。
-
-    
-
-    引入一种简单实现的激活函数，具有甚至立方非线性，可以提高神经网络的准确性，而不需要太多额外的计算资源。通过一种明显的收敛与准确性之间的权衡来实现。该激活函数通过引入可优化参数来泛化标准RELU函数，从而增加了额外的自由度，使得非线性程度可以被调整。通过与标准技术进行比较，将在MNIST数字数据集的背景下量化相关准确性的提升。
-
-    arXiv:2403.19896v1 Announce Type: new  Abstract: A simply implemented activation function with even cubic nonlinearity is introduced that increases the accuracy of neural networks without substantial additional computational resources. This is partially enabled through an apparent tradeoff between convergence and accuracy. The activation function generalizes the standard RELU function by introducing additional degrees of freedom through optimizable parameters that enable the degree of nonlinearity to be adjusted. The associated accuracy enhancement is quantified in the context of the MNIST digit data set through a comparison with standard techniques.
-    
-[^2]: 为图形素描表示装备具有上下文感知的位置编码的素描补丁
-
-    Equipping Sketch Patches with Context-Aware Positional Encoding for Graphic Sketch Representation
-
-    [https://arxiv.org/abs/2403.17525](https://arxiv.org/abs/2403.17525)
-
-    提出了一种通过为素描补丁配备上下文感知的位置编码来保护不同绘图版本的方法，将绘图顺序信息嵌入图节点中，以更好地学习图形素描表示。
+    本文提出了一种基于最近邻搜索的新方法NNS-EMD来逼近地球移动距离（EMD），以实现高精度、低时间复杂度和高内存效率。该方法通过减少数据点的比较数量和并行处理提供了高效的近似计算，并通过在GPU上进行向量化加速，特别适用于大型数据集。
 
     
 
-    一幅素描的绘制顺序记录了它是如何逐笔由人类创建的。对于图形素描表示学习，最近的研究通过根据基于时间的最近邻策略将每个补丁与另一个相连，将素描绘图顺序注入到图边构建中。然而，这样构建的图边可能不可靠，因为素描可能有不同版本的绘图。在本文中，我们提出了一种经过变体绘制保护的方法，通过为素描补丁配备具有上下文感知的位置编码(PE)，以更好地利用绘图顺序来学习图形素描表示。我们没有将素描绘制注入到图边中，而是仅将这些顺序信息嵌入到图节点中。具体来说，每个补丁嵌入都配备有正弦绝对PE，以突出绘图顺序中的顺序位置。它的相邻补丁按self-att的价值排序
+    地球移动距离（EMD）是计算机视觉和其他应用领域中的两个分布之间的重要相似度度量。然而，其精确计算的计算和内存消耗较大，限制了其在大规模问题上的可扩展性和适用性。为了降低计算成本，提出了各种近似EMD算法，但它们精度较低，可能需要额外的内存使用或手动参数调整。在本文中，我们提出了一种新颖的方法，称为NNS-EMD，使用最近邻搜索（NNS）来逼近EMD，以实现高精度、低时间复杂度和高内存效率。NNS操作减少了每次NNS迭代中所比较的数据点的数量，并提供了并行处理的机会。我们还通过在GPU上进行向量化来加速NNS-EMD，这对于大型数据集尤为有益。我们将NNS-EMD与精确EMD和最先进的近似EMD算法进行了比较。
 
-    arXiv:2403.17525v1 Announce Type: cross  Abstract: The drawing order of a sketch records how it is created stroke-by-stroke by a human being. For graphic sketch representation learning, recent studies have injected sketch drawing orders into graph edge construction by linking each patch to another in accordance to a temporal-based nearest neighboring strategy. However, such constructed graph edges may be unreliable, since a sketch could have variants of drawings. In this paper, we propose a variant-drawing-protected method by equipping sketch patches with context-aware positional encoding (PE) to make better use of drawing orders for learning graphic sketch representation. Instead of injecting sketch drawings into graph edges, we embed these sequential information into graph nodes only. More specifically, each patch embedding is equipped with a sinusoidal absolute PE to highlight the sequential position in the drawing order. And its neighboring patches, ranked by the values of self-att
+    Earth Mover's Distance (EMD) is an important similarity measure between two distributions, used in computer vision and many other application domains. However, its exact calculation is computationally and memory intensive, which hinders its scalability and applicability for large-scale problems. Various approximate EMD algorithms have been proposed to reduce computational costs, but they suffer lower accuracy and may require additional memory usage or manual parameter tuning. In this paper, we present a novel approach, NNS-EMD, to approximate EMD using Nearest Neighbor Search (NNS), in order to achieve high accuracy, low time complexity, and high memory efficiency. The NNS operation reduces the number of data points compared in each NNS iteration and offers opportunities for parallel processing. We further accelerate NNS-EMD via vectorization on GPU, which is especially beneficial for large datasets. We compare NNS-EMD with both the exact EMD and state-of-the-art approximate EMD algori
     
 

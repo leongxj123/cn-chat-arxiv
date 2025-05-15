@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Uncertainty, Calibration, and Membership Inference Attacks: An Information-Theoretic Perspective](https://arxiv.org/abs/2402.10686) | 通过信息论框架分析了最先进的似然比攻击对不确定性、校准水平和数据集大小的影响，研究了成员推理攻击中隐含的风险 |
+| [^1] | [TREET: TRansfer Entropy Estimation via Transformer](https://arxiv.org/abs/2402.06919) | 本研究提出了TREET，一种基于Transformer的传输熵估计方法，通过引入Donsker-Vardhan表示法和注意力机制，实现了对稳定过程的传输熵估计。我们设计了估计TE的优化方案，并展示了通过联合优化方案优化通信通道容量和估计器的记忆能力。 |
 
 # 详细
 
-[^1]: 不确定性、校准和成员推理攻击：信息论视角
+[^1]: TREET: 基于Transformer的传输熵估计
 
-    Uncertainty, Calibration, and Membership Inference Attacks: An Information-Theoretic Perspective
+    TREET: TRansfer Entropy Estimation via Transformer
 
-    [https://arxiv.org/abs/2402.10686](https://arxiv.org/abs/2402.10686)
+    [https://arxiv.org/abs/2402.06919](https://arxiv.org/abs/2402.06919)
 
-    通过信息论框架分析了最先进的似然比攻击对不确定性、校准水平和数据集大小的影响，研究了成员推理攻击中隐含的风险
+    本研究提出了TREET，一种基于Transformer的传输熵估计方法，通过引入Donsker-Vardhan表示法和注意力机制，实现了对稳定过程的传输熵估计。我们设计了估计TE的优化方案，并展示了通过联合优化方案优化通信通道容量和估计器的记忆能力。
 
     
 
-    在成员推理攻击（MIA）中，攻击者利用典型机器学习模型表现出的过度自信来确定特定数据点是否被用于训练目标模型。在本文中，我们在一个信息理论框架内分析了最先进的似然比攻击（LiRA）的性能，这个框架可以允许研究真实数据生成过程中的不确定性的影响，由有限训练数据集引起的认知不确定性以及目标模型的校准水平。我们比较了三种不同的设置，其中攻击者从目标模型接收到的信息逐渐减少：置信向量（CV）披露，其中输出概率向量被发布；真实标签置信度（TLC）披露，其中只有模型分配给真实标签的概率是可用的；以及决策集（DS）披露。
+    传输熵（TE）是信息论中揭示过程之间信息流动方向的度量，对各种实际应用提供了宝贵的见解。本研究提出了一种名为TREET的基于Transformer的传输熵估计方法，用于估计稳定过程的TE。所提出的方法利用Donsker-Vardhan（DV）表示法对TE进行估计，并利用注意力机制进行神经估计任务。我们对TREET进行了详细的理论和实证研究，并将其与现有方法进行了比较。为了增加其适用性，我们设计了一种基于功能表示引理的估计TE优化方案。之后，我们利用联合优化方案来优化具有记忆性的通信通道容量，这是信息论中的一个典型优化问题，并展示了我们估计器的记忆能力。
 
-    arXiv:2402.10686v1 Announce Type: cross  Abstract: In a membership inference attack (MIA), an attacker exploits the overconfidence exhibited by typical machine learning models to determine whether a specific data point was used to train a target model. In this paper, we analyze the performance of the state-of-the-art likelihood ratio attack (LiRA) within an information-theoretical framework that allows the investigation of the impact of the aleatoric uncertainty in the true data generation process, of the epistemic uncertainty caused by a limited training data set, and of the calibration level of the target model. We compare three different settings, in which the attacker receives decreasingly informative feedback from the target model: confidence vector (CV) disclosure, in which the output probability vector is released; true label confidence (TLC) disclosure, in which only the probability assigned to the true label is made available by the model; and decision set (DS) disclosure, in 
+    Transfer entropy (TE) is a measurement in information theory that reveals the directional flow of information between processes, providing valuable insights for a wide range of real-world applications. This work proposes Transfer Entropy Estimation via Transformers (TREET), a novel transformer-based approach for estimating the TE for stationary processes. The proposed approach employs Donsker-Vardhan (DV) representation to TE and leverages the attention mechanism for the task of neural estimation. We propose a detailed theoretical and empirical study of the TREET, comparing it to existing methods. To increase its applicability, we design an estimated TE optimization scheme that is motivated by the functional representation lemma. Afterwards, we take advantage of the joint optimization scheme to optimize the capacity of communication channels with memory, which is a canonical optimization problem in information theory, and show the memory capabilities of our estimator. Finally, we apply
     
 

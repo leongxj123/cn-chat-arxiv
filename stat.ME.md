@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A stochastic optimization approach to train non-linear neural networks with regularization of higher-order total variation.](http://arxiv.org/abs/2308.02293) | 通过引入高阶总变差正则化的随机优化算法，可以高效地训练非线性神经网络，避免过拟合问题。 |
+| [^1] | [On Improved Semi-parametric Bounds for Tail Probability and Expected Loss](https://arxiv.org/abs/2404.02400) | 本研究提出了对累积随机实现的尾部概率和期望线性损失的新的更尖锐界限，这些界限在基础分布半参数的情况下不受限制，补充了已有的结果，开辟了丰富的实际应用。 |
 
 # 详细
 
-[^1]: 用正则化高阶总变差的随机优化方法训练非线性神经网络
+[^1]: 关于累积随机实现的尾部概率和期望损失的改进半参数界限
 
-    A stochastic optimization approach to train non-linear neural networks with regularization of higher-order total variation. (arXiv:2308.02293v1 [stat.ME])
+    On Improved Semi-parametric Bounds for Tail Probability and Expected Loss
 
-    [http://arxiv.org/abs/2308.02293](http://arxiv.org/abs/2308.02293)
+    [https://arxiv.org/abs/2404.02400](https://arxiv.org/abs/2404.02400)
 
-    通过引入高阶总变差正则化的随机优化算法，可以高效地训练非线性神经网络，避免过拟合问题。
+    本研究提出了对累积随机实现的尾部概率和期望线性损失的新的更尖锐界限，这些界限在基础分布半参数的情况下不受限制，补充了已有的结果，开辟了丰富的实际应用。
 
     
 
-    尽管包括深度神经网络在内的高度表达的参数模型可以更好地建模复杂概念，但训练这种高度非线性模型已知会导致严重的过拟合风险。针对这个问题，本研究考虑了一种k阶总变差（k-TV）正则化，它被定义为要训练的参数模型的k阶导数的平方积分，通过惩罚k-TV来产生一个更平滑的函数，从而避免过拟合。尽管将k-TV项应用于一般的参数模型由于积分而导致计算复杂，本研究提供了一种随机优化算法，可以高效地训练带有k-TV正则化的一般模型，而无需进行显式的数值积分。这种方法可以应用于结构任意的深度神经网络的训练，因为它只需要进行简单的随机梯度优化即可实现。
+    我们重新审视了当个别实现是独立的时，累积随机实现的尾部行为的基本问题，并在半参数的基础分布未受限制的情况下，开发了对尾部概率和期望线性损失的新的更尖锐的界限。我们的尖锐界限很好地补充了文献中已经建立的结果，包括基于聚合的方法，后者经常未能充分考虑独立性并使用不够优雅的证明。新的见解包括在非相同情况下的证明，达到界限的分布具有相等的范围属性，并且每个随机变量对总和的期望值的影响可以通过对Korkine恒等式的推广来孤立出来。我们表明，新的界限不仅补充了现有结果，而且开拓了大量的实际应用，包括改进定价。
 
-    While highly expressive parametric models including deep neural networks have an advantage to model complicated concepts, training such highly non-linear models is known to yield a high risk of notorious overfitting. To address this issue, this study considers a $k$th order total variation ($k$-TV) regularization, which is defined as the squared integral of the $k$th order derivative of the parametric models to be trained; penalizing the $k$-TV is expected to yield a smoother function, which is expected to avoid overfitting. While the $k$-TV terms applied to general parametric models are computationally intractable due to the integration, this study provides a stochastic optimization algorithm, that can efficiently train general models with the $k$-TV regularization without conducting explicit numerical integration. The proposed approach can be applied to the training of even deep neural networks whose structure is arbitrary, as it can be implemented by only a simple stochastic gradien
+    arXiv:2404.02400v1 Announce Type: new  Abstract: We revisit the fundamental issue of tail behavior of accumulated random realizations when individual realizations are independent, and we develop new sharper bounds on the tail probability and expected linear loss. The underlying distribution is semi-parametric in the sense that it remains unrestricted other than the assumed mean and variance. Our sharp bounds complement well-established results in the literature, including those based on aggregation, which often fail to take full account of independence and use less elegant proofs. New insights include a proof that in the non-identical case, the distributions attaining the bounds have the equal range property, and that the impact of each random variable on the expected value of the sum can be isolated using an extension of the Korkine identity. We show that the new bounds not only complement the extant results but also open up abundant practical applications, including improved pricing 
     
 
