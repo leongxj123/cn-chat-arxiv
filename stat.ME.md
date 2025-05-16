@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [On Improved Semi-parametric Bounds for Tail Probability and Expected Loss](https://arxiv.org/abs/2404.02400) | 本研究提出了对累积随机实现的尾部概率和期望线性损失的新的更尖锐界限，这些界限在基础分布半参数的情况下不受限制，补充了已有的结果，开辟了丰富的实际应用。 |
+| [^1] | [Time-Uniform Confidence Spheres for Means of Random Vectors](https://arxiv.org/abs/2311.08168) | 该研究提出了时间均匀置信球序列，可以同时高概率地包含各种样本量下随机向量的均值，并针对不同分布假设进行了扩展和统一分析。 |
 
 # 详细
 
-[^1]: 关于累积随机实现的尾部概率和期望损失的改进半参数界限
+[^1]: 随机向量均值的时间均匀置信球
 
-    On Improved Semi-parametric Bounds for Tail Probability and Expected Loss
+    Time-Uniform Confidence Spheres for Means of Random Vectors
 
-    [https://arxiv.org/abs/2404.02400](https://arxiv.org/abs/2404.02400)
+    [https://arxiv.org/abs/2311.08168](https://arxiv.org/abs/2311.08168)
 
-    本研究提出了对累积随机实现的尾部概率和期望线性损失的新的更尖锐界限，这些界限在基础分布半参数的情况下不受限制，补充了已有的结果，开辟了丰富的实际应用。
+    该研究提出了时间均匀置信球序列，可以同时高概率地包含各种样本量下随机向量的均值，并针对不同分布假设进行了扩展和统一分析。
 
     
 
-    我们重新审视了当个别实现是独立的时，累积随机实现的尾部行为的基本问题，并在半参数的基础分布未受限制的情况下，开发了对尾部概率和期望线性损失的新的更尖锐的界限。我们的尖锐界限很好地补充了文献中已经建立的结果，包括基于聚合的方法，后者经常未能充分考虑独立性并使用不够优雅的证明。新的见解包括在非相同情况下的证明，达到界限的分布具有相等的范围属性，并且每个随机变量对总和的期望值的影响可以通过对Korkine恒等式的推广来孤立出来。我们表明，新的界限不仅补充了现有结果，而且开拓了大量的实际应用，包括改进定价。
+    我们推导并研究了时间均匀置信球——包含随机向量均值并且跨越所有样本量具有很高概率的置信球序列（CSSs）。受Catoni和Giulini原始工作启发，我们统一并扩展了他们的分析，涵盖顺序设置并处理各种分布假设。我们的结果包括有界随机向量的经验伯恩斯坦CSS（导致新颖的经验伯恩斯坦置信区间，渐近宽度按照真实未知方差成比例缩放）、用于子-$\psi$随机向量的CSS（包括子伽马、子泊松和子指数分布）、和用于重尾随机向量（仅有两阶矩）的CSS。最后，我们提供了两个抵抗Huber噪声污染的CSS。第一个是我们经验伯恩斯坦CSS的鲁棒版本，第二个扩展了单变量序列最近的工作。
 
-    arXiv:2404.02400v1 Announce Type: new  Abstract: We revisit the fundamental issue of tail behavior of accumulated random realizations when individual realizations are independent, and we develop new sharper bounds on the tail probability and expected linear loss. The underlying distribution is semi-parametric in the sense that it remains unrestricted other than the assumed mean and variance. Our sharp bounds complement well-established results in the literature, including those based on aggregation, which often fail to take full account of independence and use less elegant proofs. New insights include a proof that in the non-identical case, the distributions attaining the bounds have the equal range property, and that the impact of each random variable on the expected value of the sum can be isolated using an extension of the Korkine identity. We show that the new bounds not only complement the extant results but also open up abundant practical applications, including improved pricing 
+    arXiv:2311.08168v2 Announce Type: replace-cross  Abstract: We derive and study time-uniform confidence spheres -- confidence sphere sequences (CSSs) -- which contain the mean of random vectors with high probability simultaneously across all sample sizes. Inspired by the original work of Catoni and Giulini, we unify and extend their analysis to cover both the sequential setting and to handle a variety of distributional assumptions. Our results include an empirical-Bernstein CSS for bounded random vectors (resulting in a novel empirical-Bernstein confidence interval with asymptotic width scaling proportionally to the true unknown variance), CSSs for sub-$\psi$ random vectors (which includes sub-gamma, sub-Poisson, and sub-exponential), and CSSs for heavy-tailed random vectors (two moments only). Finally, we provide two CSSs that are robust to contamination by Huber noise. The first is a robust version of our empirical-Bernstein CSS, and the second extends recent work in the univariate se
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Efficient approximation of Earth Mover's Distance Based on Nearest Neighbor Search.](http://arxiv.org/abs/2401.07378) | 本文提出了一种基于最近邻搜索的新方法NNS-EMD来逼近地球移动距离（EMD），以实现高精度、低时间复杂度和高内存效率。该方法通过减少数据点的比较数量和并行处理提供了高效的近似计算，并通过在GPU上进行向量化加速，特别适用于大型数据集。 |
+| [^1] | [CreativeSynth: Creative Blending and Synthesis of Visual Arts based on Multimodal Diffusion.](http://arxiv.org/abs/2401.14066) | CreativeSynth是一种基于多模态扩散的创新统一框架，通过整合多模态特征和定制的注意力机制，实现了将现实世界的语义内容导入到艺术领域中，能够协调多模态输入和多任务，在艺术图像生成方面具有重要意义。 |
 
 # 详细
 
-[^1]: 基于最近邻搜索的地球移动距离的高效逼近方法
+[^1]: CreativeSynth：基于多模态扩散的视觉艺术创意融合与合成
 
-    Efficient approximation of Earth Mover's Distance Based on Nearest Neighbor Search. (arXiv:2401.07378v2 [cs.CV] UPDATED)
+    CreativeSynth: Creative Blending and Synthesis of Visual Arts based on Multimodal Diffusion. (arXiv:2401.14066v1 [cs.CV])
 
-    [http://arxiv.org/abs/2401.07378](http://arxiv.org/abs/2401.07378)
+    [http://arxiv.org/abs/2401.14066](http://arxiv.org/abs/2401.14066)
 
-    本文提出了一种基于最近邻搜索的新方法NNS-EMD来逼近地球移动距离（EMD），以实现高精度、低时间复杂度和高内存效率。该方法通过减少数据点的比较数量和并行处理提供了高效的近似计算，并通过在GPU上进行向量化加速，特别适用于大型数据集。
+    CreativeSynth是一种基于多模态扩散的创新统一框架，通过整合多模态特征和定制的注意力机制，实现了将现实世界的语义内容导入到艺术领域中，能够协调多模态输入和多任务，在艺术图像生成方面具有重要意义。
 
     
 
-    地球移动距离（EMD）是计算机视觉和其他应用领域中的两个分布之间的重要相似度度量。然而，其精确计算的计算和内存消耗较大，限制了其在大规模问题上的可扩展性和适用性。为了降低计算成本，提出了各种近似EMD算法，但它们精度较低，可能需要额外的内存使用或手动参数调整。在本文中，我们提出了一种新颖的方法，称为NNS-EMD，使用最近邻搜索（NNS）来逼近EMD，以实现高精度、低时间复杂度和高内存效率。NNS操作减少了每次NNS迭代中所比较的数据点的数量，并提供了并行处理的机会。我们还通过在GPU上进行向量化来加速NNS-EMD，这对于大型数据集尤为有益。我们将NNS-EMD与精确EMD和最先进的近似EMD算法进行了比较。
+    大规模的文本到图像生成模型取得了巨大的进步，展示了其合成各种高质量图像的能力。然而，将这些模型应用于艺术图像编辑面临两个重要挑战。首先，用户往往难以构建详细描述输入图像视觉元素的文本提示。其次，现有模型在特定区域进行修改时常常会破坏整体艺术风格，使得实现一致且具有审美统一的作品变得更加复杂。为了克服这些障碍，我们构建了一种创新的统一框架CreativeSynth，该框架基于具有协调多模态输入和多任务能力的扩散模型，通过整合多模态特征和定制的注意力机制，CreativeSynth实现了将现实世界的语义内容导入到艺术领域中，实现了反转和实时风格转移。
 
-    Earth Mover's Distance (EMD) is an important similarity measure between two distributions, used in computer vision and many other application domains. However, its exact calculation is computationally and memory intensive, which hinders its scalability and applicability for large-scale problems. Various approximate EMD algorithms have been proposed to reduce computational costs, but they suffer lower accuracy and may require additional memory usage or manual parameter tuning. In this paper, we present a novel approach, NNS-EMD, to approximate EMD using Nearest Neighbor Search (NNS), in order to achieve high accuracy, low time complexity, and high memory efficiency. The NNS operation reduces the number of data points compared in each NNS iteration and offers opportunities for parallel processing. We further accelerate NNS-EMD via vectorization on GPU, which is especially beneficial for large datasets. We compare NNS-EMD with both the exact EMD and state-of-the-art approximate EMD algori
+    Large-scale text-to-image generative models have made impressive strides, showcasing their ability to synthesize a vast array of high-quality images. However, adapting these models for artistic image editing presents two significant challenges. Firstly, users struggle to craft textual prompts that meticulously detail visual elements of the input image. Secondly, prevalent models, when effecting modifications in specific zones, frequently disrupt the overall artistic style, complicating the attainment of cohesive and aesthetically unified artworks. To surmount these obstacles, we build the innovative unified framework CreativeSynth, which is based on a diffusion model with the ability to coordinate multimodal inputs and multitask in the field of artistic image generation. By integrating multimodal features with customized attention mechanisms, CreativeSynth facilitates the importation of real-world semantic content into the domain of art through inversion and real-time style transfer. T
     
 
