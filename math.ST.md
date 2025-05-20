@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Inference on eigenvectors of non-symmetric matrices.](http://arxiv.org/abs/2303.18233) | 本研究探讨了建立渐近推断非对称矩阵特征向量程序的必要条件，并针对完全向量和每个系数假设分别建立了 Wald 和 t 检验的分布理论，是多元统计学中的一种有用工具。 |
+| [^1] | [Structural restrictions in local causal discovery: identifying direct causes of a target variable.](http://arxiv.org/abs/2307.16048) | 这项研究的目标是从观测数据中识别目标变量的直接原因，通过不对其他变量做太多假设，研究者提出了可识别性结果和两种实用算法。 |
 
 # 详细
 
-[^1]: 非对称矩阵特征向量的推断
+[^1]: 局部因果发现中的结构限制: 识别目标变量的直接原因
 
-    Inference on eigenvectors of non-symmetric matrices. (arXiv:2303.18233v1 [math.ST])
+    Structural restrictions in local causal discovery: identifying direct causes of a target variable. (arXiv:2307.16048v1 [stat.ME])
 
-    [http://arxiv.org/abs/2303.18233](http://arxiv.org/abs/2303.18233)
+    [http://arxiv.org/abs/2307.16048](http://arxiv.org/abs/2307.16048)
 
-    本研究探讨了建立渐近推断非对称矩阵特征向量程序的必要条件，并针对完全向量和每个系数假设分别建立了 Wald 和 t 检验的分布理论，是多元统计学中的一种有用工具。
+    这项研究的目标是从观测数据中识别目标变量的直接原因，通过不对其他变量做太多假设，研究者提出了可识别性结果和两种实用算法。
 
     
 
-    本文认为，Tyler（1981）的可对称化条件并非建立渐近推断特征向量程序所必需的。 我们为完全向量和每个系数假设分别建立了 Wald 和 t 检验的分布理论。 我们的检验统计量来源于非对称矩阵的特征投影。 通过将投影表示为从基础矩阵到其谱数据的映射，我们通过解析摄动理论找到了导数。 这些结果演示了 Sun（1991）的解析摄动理论是多元统计学中的一种有用工具，并且具有独立的兴趣。作为一种应用，我们为由有向图引发的邻接矩阵估计的 Bonacich 中心性定义置信区间。
+    我们考虑从观察联合分布中学习目标变量的一组直接原因的问题。学习表示因果结构的有向无环图(DAG)是科学中的一个基本问题。当完整的DAG从分布中可识别时，已知有一些结果，例如假设非线性高斯数据生成过程。通常，我们只对识别一个目标变量的直接原因（局部因果结构），而不是完整的DAG感兴趣。在本文中，我们讨论了对目标变量的数据生成过程的不同假设，该假设下直接原因集合可以从分布中识别出来。在这样做的过程中，我们对除目标变量之外的变量基本上没有任何假设。除了新的可识别性结果，我们还提供了两种从有限随机样本估计直接原因的实用算法，并在几个基准数据集上证明了它们的有效性。
 
-    This paper argues that the symmetrisability condition in Tyler(1981) is not necessary to establish asymptotic inference procedures for eigenvectors. We establish distribution theory for a Wald and t-test for full-vector and individual coefficient hypotheses, respectively. Our test statistics originate from eigenprojections of non-symmetric matrices. Representing projections as a mapping from the underlying matrix to its spectral data, we find derivatives through analytic perturbation theory. These results demonstrate how the analytic perturbation theory of Sun(1991) is a useful tool in multivariate statistics and are of independent interest. As an application, we define confidence sets for Bonacich centralities estimated from adjacency matrices induced by directed graphs.
+    We consider the problem of learning a set of direct causes of a target variable from an observational joint distribution. Learning directed acyclic graphs (DAGs) that represent the causal structure is a fundamental problem in science. Several results are known when the full DAG is identifiable from the distribution, such as assuming a nonlinear Gaussian data-generating process. Often, we are only interested in identifying the direct causes of one target variable (local causal structure), not the full DAG. In this paper, we discuss different assumptions for the data-generating process of the target variable under which the set of direct causes is identifiable from the distribution. While doing so, we put essentially no assumptions on the variables other than the target variable. In addition to the novel identifiability results, we provide two practical algorithms for estimating the direct causes from a finite random sample and demonstrate their effectiveness on several benchmark dataset
     
 
