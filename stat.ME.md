@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Quasi-Bayesian Estimation and Inference with Control Functions](https://arxiv.org/abs/2402.17374) | 该研究提出了一种拟贝叶斯方法，结合了第一阶段的频率主义估计和第二阶段的贝叶斯估计/推断方法，适用于结构离散选择模型中的内生性偏误修正，其中拟贝叶斯点估计保持一致，并渐近地等价于频率主义两阶段估计量。 |
-| [^2] | [Structural restrictions in local causal discovery: identifying direct causes of a target variable.](http://arxiv.org/abs/2307.16048) | 这项研究的目标是从观测数据中识别目标变量的直接原因，通过不对其他变量做太多假设，研究者提出了可识别性结果和两种实用算法。 |
+| [^1] | [Sequential Kernelized Independence Testing.](http://arxiv.org/abs/2212.07383) | 该论文介绍了顺序核独立性测试的方法，以解决传统批量测试在流数据上的问题，实现了根据任务复杂性自适应调整样本大小，并在收集新数据后持续监测和控制误报率。 |
 
 # 详细
 
-[^1]: 具有控制函数的拟贝叶斯估计与推断
+[^1]: 顺序核独立性测试
 
-    Quasi-Bayesian Estimation and Inference with Control Functions
+    Sequential Kernelized Independence Testing. (arXiv:2212.07383v3 [stat.ML] UPDATED)
 
-    [https://arxiv.org/abs/2402.17374](https://arxiv.org/abs/2402.17374)
+    [http://arxiv.org/abs/2212.07383](http://arxiv.org/abs/2212.07383)
 
-    该研究提出了一种拟贝叶斯方法，结合了第一阶段的频率主义估计和第二阶段的贝叶斯估计/推断方法，适用于结构离散选择模型中的内生性偏误修正，其中拟贝叶斯点估计保持一致，并渐近地等价于频率主义两阶段估计量。
-
-    
-
-    我们考虑一种拟贝叶斯方法，该方法在第一阶段结合了频率主义估计和第二阶段的贝叶斯估计/推断方法。这项研究受到了使用控制函数方法纠正内生性偏误的结构离散选择模型的启发。在这种情况下，第一阶段使用一些频率主义参数化或非参数化方法来估计控制函数。与一些复杂的似然函数相关的结构方程可以更方便地使用贝叶斯方法进行处理。本文研究了从第二阶段获得的拟后验分布的渐近特性。我们证明，相应的拟贝叶斯可信集在大样本中不具有所需的覆盖率。尽管如此，拟贝叶斯点估计保持一致，并且渐近地等价于频率主义两阶段估计量。
-
-    arXiv:2402.17374v1 Announce Type: new  Abstract: We consider a quasi-Bayesian method that combines a frequentist estimation in the first stage and a Bayesian estimation/inference approach in the second stage. The study is motivated by structural discrete choice models that use the control function methodology to correct for endogeneity bias. In this scenario, the first stage estimates the control function using some frequentist parametric or nonparametric approach. The structural equation in the second stage, associated with certain complicated likelihood functions, can be more conveniently dealt with using a Bayesian approach. This paper studies the asymptotic properties of the quasi-posterior distributions obtained from the second stage. We prove that the corresponding quasi-Bayesian credible set does not have the desired coverage in large samples. Nonetheless, the quasi-Bayesian point estimator remains consistent and is asymptotically equivalent to a frequentist two-stage estimator.
-    
-[^2]: 局部因果发现中的结构限制: 识别目标变量的直接原因
-
-    Structural restrictions in local causal discovery: identifying direct causes of a target variable. (arXiv:2307.16048v1 [stat.ME])
-
-    [http://arxiv.org/abs/2307.16048](http://arxiv.org/abs/2307.16048)
-
-    这项研究的目标是从观测数据中识别目标变量的直接原因，通过不对其他变量做太多假设，研究者提出了可识别性结果和两种实用算法。
+    该论文介绍了顺序核独立性测试的方法，以解决传统批量测试在流数据上的问题，实现了根据任务复杂性自适应调整样本大小，并在收集新数据后持续监测和控制误报率。
 
     
 
-    我们考虑从观察联合分布中学习目标变量的一组直接原因的问题。学习表示因果结构的有向无环图(DAG)是科学中的一个基本问题。当完整的DAG从分布中可识别时，已知有一些结果，例如假设非线性高斯数据生成过程。通常，我们只对识别一个目标变量的直接原因（局部因果结构），而不是完整的DAG感兴趣。在本文中，我们讨论了对目标变量的数据生成过程的不同假设，该假设下直接原因集合可以从分布中识别出来。在这样做的过程中，我们对除目标变量之外的变量基本上没有任何假设。除了新的可识别性结果，我们还提供了两种从有限随机样本估计直接原因的实用算法，并在几个基准数据集上证明了它们的有效性。
+    独立性测试是一个经典的统计问题，在固定采集数据之前的批量设置中得到了广泛研究。然而，实践者们往往更喜欢能够根据问题的复杂性进行自适应的程序，而不是事先设定样本大小。理想情况下，这样的程序应该（a）在简单任务上尽早停止（在困难任务上稍后停止），因此更好地利用可用资源，以及（b）在收集新数据之后，持续监测数据并高效地整合统计证据，同时控制误报率。经典的批量测试不适用于流数据：在数据观察后进行有效推断需要对多重测试进行校正，这导致了低功率。遵循通过投注进行测试的原则，我们设计了顺序核独立性测试，克服了这些缺点。我们通过采用由核相关性测度（如Hilbert-）启发的投注来说明我们的广泛框架。
 
-    We consider the problem of learning a set of direct causes of a target variable from an observational joint distribution. Learning directed acyclic graphs (DAGs) that represent the causal structure is a fundamental problem in science. Several results are known when the full DAG is identifiable from the distribution, such as assuming a nonlinear Gaussian data-generating process. Often, we are only interested in identifying the direct causes of one target variable (local causal structure), not the full DAG. In this paper, we discuss different assumptions for the data-generating process of the target variable under which the set of direct causes is identifiable from the distribution. While doing so, we put essentially no assumptions on the variables other than the target variable. In addition to the novel identifiability results, we provide two practical algorithms for estimating the direct causes from a finite random sample and demonstrate their effectiveness on several benchmark dataset
+    Independence testing is a classical statistical problem that has been extensively studied in the batch setting when one fixes the sample size before collecting data. However, practitioners often prefer procedures that adapt to the complexity of a problem at hand instead of setting sample size in advance. Ideally, such procedures should (a) stop earlier on easy tasks (and later on harder tasks), hence making better use of available resources, and (b) continuously monitor the data and efficiently incorporate statistical evidence after collecting new data, while controlling the false alarm rate. Classical batch tests are not tailored for streaming data: valid inference after data peeking requires correcting for multiple testing which results in low power. Following the principle of testing by betting, we design sequential kernelized independence tests that overcome such shortcomings. We exemplify our broad framework using bets inspired by kernelized dependence measures, e.g., the Hilbert-
     
 
