@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Breast Cancer Classification Using Gradient Boosting Algorithms Focusing on Reducing the False Negative and SHAP for Explainability](https://arxiv.org/abs/2403.09548) | 本研究使用梯度提升算法对乳腺癌进行分类，关注提高召回率，以实现更好的检测和预测效果。 |
+| [^1] | [Diagnostic test accuracy (DTA) of artificial intelligence in digital pathology: a systematic review, meta-analysis and quality assessment.](http://arxiv.org/abs/2306.07999) | 本文进行了数字病理图像中应用人工智能的所有病理学领域的诊断准确度的系统综述和Meta分析。结果表明，人工智能在数字病理学中取得了高度的准确度，是可行的辅助诊断工具。 |
 
 # 详细
 
-[^1]: 使用梯度提升算法对乳腺癌进行分类，重点减少假阴性和使用 SHAP 进行解释性研究
+[^1]: 数字病理学中人工智能的诊断测试准确度：系统综述、Meta分析和质量评估
 
-    Breast Cancer Classification Using Gradient Boosting Algorithms Focusing on Reducing the False Negative and SHAP for Explainability
+    Diagnostic test accuracy (DTA) of artificial intelligence in digital pathology: a systematic review, meta-analysis and quality assessment. (arXiv:2306.07999v1 [physics.med-ph])
 
-    [https://arxiv.org/abs/2403.09548](https://arxiv.org/abs/2403.09548)
+    [http://arxiv.org/abs/2306.07999](http://arxiv.org/abs/2306.07999)
 
-    本研究使用梯度提升算法对乳腺癌进行分类，关注提高召回率，以实现更好的检测和预测效果。
+    本文进行了数字病理图像中应用人工智能的所有病理学领域的诊断准确度的系统综述和Meta分析。结果表明，人工智能在数字病理学中取得了高度的准确度，是可行的辅助诊断工具。
 
     
 
-    癌症是世界上夺走最多女性生命的疾病之一，其中乳腺癌占据了癌症病例和死亡人数最高的位置。然而，通过早期检测可以预防乳腺癌，从而进行早期治疗。许多研究关注的是在癌症预测中具有高准确性的模型，但有时仅依靠准确性可能并非始终可靠。本研究对使用提升技术基于不同机器学习算法预测乳腺癌的性能进行了调查性研究，重点关注召回率指标。提升机器学习算法已被证明是检测医学疾病的有效工具。利用加州大学尔湾分校 (UCI) 数据集对训练和测试模型分类器进行训练，其中包含各自属性。
+    确保临床使用之前AI模型的诊断表现是关键，以确保这些技术的安全和成功的采用。近年来，报道应用于数字病理学图像进行诊断目的的AI研究数量迅速增加。本研究旨在提供数字病理学中AI的诊断准确度的概述，涵盖了所有病理学领域。这项系统性综述和Meta分析包括使用任何类型的人工智能应用于任何疾病类型的WSI图像的诊断准确性研究。参考标准是通过组织病理学评估和/或免疫组化诊断。搜索在2022年6月在PubMed、EMBASE和CENTRAL中进行。在2976项研究中，有100项纳入综述，48项纳入完整的Meta分析。使用QUADAS-2工具评估了偏倚风险和适用性的关注点。数据提取由两个调查员进行，并进行了Meta分析。
 
-    arXiv:2403.09548v1 Announce Type: new  Abstract: Cancer is one of the diseases that kill the most women in the world, with breast cancer being responsible for the highest number of cancer cases and consequently deaths. However, it can be prevented by early detection and, consequently, early treatment. Any development for detection or perdition this kind of cancer is important for a better healthy life. Many studies focus on a model with high accuracy in cancer prediction, but sometimes accuracy alone may not always be a reliable metric. This study implies an investigative approach to studying the performance of different machine learning algorithms based on boosting to predict breast cancer focusing on the recall metric. Boosting machine learning algorithms has been proven to be an effective tool for detecting medical diseases. The dataset of the University of California, Irvine (UCI) repository has been utilized to train and test the model classifier that contains their attributes. Th
+    Ensuring diagnostic performance of AI models before clinical use is key to the safe and successful adoption of these technologies. Studies reporting AI applied to digital pathology images for diagnostic purposes have rapidly increased in number in recent years. The aim of this work is to provide an overview of the diagnostic accuracy of AI in digital pathology images from all areas of pathology. This systematic review and meta-analysis included diagnostic accuracy studies using any type of artificial intelligence applied to whole slide images (WSIs) in any disease type. The reference standard was diagnosis through histopathological assessment and / or immunohistochemistry. Searches were conducted in PubMed, EMBASE and CENTRAL in June 2022. We identified 2976 studies, of which 100 were included in the review and 48 in the full meta-analysis. Risk of bias and concerns of applicability were assessed using the QUADAS-2 tool. Data extraction was conducted by two investigators and meta-analy
     
 

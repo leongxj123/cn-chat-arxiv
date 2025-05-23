@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Breast Cancer Classification Using Gradient Boosting Algorithms Focusing on Reducing the False Negative and SHAP for Explainability](https://arxiv.org/abs/2403.09548) | 本研究使用梯度提升算法对乳腺癌进行分类，关注提高召回率，以实现更好的检测和预测效果。 |
+| [^1] | [FairSIN: Achieving Fairness in Graph Neural Networks through Sensitive Information Neutralization](https://arxiv.org/abs/2403.12474) | 通过引入促进公平性的特征（F3）来中和图神经网络中的敏感偏见，进而提高预测性能和公平性的权衡。 |
 
 # 详细
 
-[^1]: 使用梯度提升算法对乳腺癌进行分类，重点减少假阴性和使用 SHAP 进行解释性研究
+[^1]: FairSIN：通过敏感信息中和实现图神经网络中的公平性
 
-    Breast Cancer Classification Using Gradient Boosting Algorithms Focusing on Reducing the False Negative and SHAP for Explainability
+    FairSIN: Achieving Fairness in Graph Neural Networks through Sensitive Information Neutralization
 
-    [https://arxiv.org/abs/2403.09548](https://arxiv.org/abs/2403.09548)
+    [https://arxiv.org/abs/2403.12474](https://arxiv.org/abs/2403.12474)
 
-    本研究使用梯度提升算法对乳腺癌进行分类，关注提高召回率，以实现更好的检测和预测效果。
+    通过引入促进公平性的特征（F3）来中和图神经网络中的敏感偏见，进而提高预测性能和公平性的权衡。
 
     
 
-    癌症是世界上夺走最多女性生命的疾病之一，其中乳腺癌占据了癌症病例和死亡人数最高的位置。然而，通过早期检测可以预防乳腺癌，从而进行早期治疗。许多研究关注的是在癌症预测中具有高准确性的模型，但有时仅依靠准确性可能并非始终可靠。本研究对使用提升技术基于不同机器学习算法预测乳腺癌的性能进行了调查性研究，重点关注召回率指标。提升机器学习算法已被证明是检测医学疾病的有效工具。利用加州大学尔湾分校 (UCI) 数据集对训练和测试模型分类器进行训练，其中包含各自属性。
+    尽管图神经网络（GNNs）在对图结构数据进行建模方面取得了显著成功，但与其他机器学习模型一样，GNNs也容易根据敏感属性（如种族和性别）做出有偏见的预测。为了公平考虑，最近的最先进方法提出从输入或表示中过滤掉敏感信息，例如删除边或屏蔽特征。然而，我们认为基于此类过滤策略可能也会过滤掉一些非敏感的特征信息，导致在预测性能和公平性之间产生次优的权衡。为解决这一问题，我们提出一种创新的中和基础范式，即在信息传递之前将额外的促进公平性的特征（F3）纳入节点特征或表示中。这些F3预期在统计上中和节点表示中的敏感偏见，并提供额外的非敏感信息。
 
-    arXiv:2403.09548v1 Announce Type: new  Abstract: Cancer is one of the diseases that kill the most women in the world, with breast cancer being responsible for the highest number of cancer cases and consequently deaths. However, it can be prevented by early detection and, consequently, early treatment. Any development for detection or perdition this kind of cancer is important for a better healthy life. Many studies focus on a model with high accuracy in cancer prediction, but sometimes accuracy alone may not always be a reliable metric. This study implies an investigative approach to studying the performance of different machine learning algorithms based on boosting to predict breast cancer focusing on the recall metric. Boosting machine learning algorithms has been proven to be an effective tool for detecting medical diseases. The dataset of the University of California, Irvine (UCI) repository has been utilized to train and test the model classifier that contains their attributes. Th
+    arXiv:2403.12474v1 Announce Type: new  Abstract: Despite the remarkable success of graph neural networks (GNNs) in modeling graph-structured data, like other machine learning models, GNNs are also susceptible to making biased predictions based on sensitive attributes, such as race and gender. For fairness consideration, recent state-of-the-art (SOTA) methods propose to filter out sensitive information from inputs or representations, e.g., edge dropping or feature masking. However, we argue that such filtering-based strategies may also filter out some non-sensitive feature information, leading to a sub-optimal trade-off between predictive performance and fairness. To address this issue, we unveil an innovative neutralization-based paradigm, where additional Fairness-facilitating Features (F3) are incorporated into node features or representations before message passing. The F3 are expected to statistically neutralize the sensitive bias in node representations and provide additional nons
     
 
