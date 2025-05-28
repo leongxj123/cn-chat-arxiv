@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [The Sample Complexity of Simple Binary Hypothesis Testing](https://arxiv.org/abs/2403.16981) | 该论文导出了一个公式，用于刻画简单二元假设检验的样本复杂度（乘法常数独立于$p$、$q$和所有错误参数），适用于不同的设置条件。 |
+| [^1] | [Model-based Clustering using Non-parametric Hidden Markov Models.](http://arxiv.org/abs/2309.12238) | 本文研究了使用非参数隐马尔可夫模型进行基于模型的聚类时的贝叶斯风险，并提出了相应的聚类方法。通过研究分类的贝叶斯风险和聚类的贝叶斯风险之间的关系，确定了聚类任务的难度。同时，在插值分类器和在线设置中的结果也得到了证明。模拟实验验证了这些发现。 |
 
 # 详细
 
-[^1]: 简单二元假设检验的样本复杂度
+[^1]: 使用非参数隐马尔可夫模型的基于模型的聚类
 
-    The Sample Complexity of Simple Binary Hypothesis Testing
+    Model-based Clustering using Non-parametric Hidden Markov Models. (arXiv:2309.12238v1 [math.ST])
 
-    [https://arxiv.org/abs/2403.16981](https://arxiv.org/abs/2403.16981)
+    [http://arxiv.org/abs/2309.12238](http://arxiv.org/abs/2309.12238)
 
-    该论文导出了一个公式，用于刻画简单二元假设检验的样本复杂度（乘法常数独立于$p$、$q$和所有错误参数），适用于不同的设置条件。
+    本文研究了使用非参数隐马尔可夫模型进行基于模型的聚类时的贝叶斯风险，并提出了相应的聚类方法。通过研究分类的贝叶斯风险和聚类的贝叶斯风险之间的关系，确定了聚类任务的难度。同时，在插值分类器和在线设置中的结果也得到了证明。模拟实验验证了这些发现。
 
     
 
-    简单的二元假设检验的样本复杂度是区分两个分布$p$和$q$所需的最小独立同分布样本数量，可以通过以下方式之一进行：(i) 无先验设置，类型-I错误最大为$\alpha$，类型-II错误最大为$\beta$; 或者 (ii) 贝叶斯设置，贝叶斯错误最大为$\delta$，先验分布为$(\alpha, 1-\alpha)$。 迄今为止，只在$\alpha = \beta$（无先验）或$\alpha = 1/2$（贝叶斯）时研究了此问题，并且已知样本复杂度可以用$p$和$q$之间的Hellinger散度来刻画，直到乘法常数。 在本文中，我们导出了一个公式，用来刻画样本复杂度（乘法常数独立于$p$、$q$和所有错误参数），适用于：(i) 先验设置中所有$0 \le \alpha, \beta \le 1/8$；以及 (ii) 贝叶斯设置中所有$\delta \le \alpha/4$。 特别地，该公式适用于
+    非参数隐马尔可夫模型（HMM）由于其依赖结构，可以在不指定群组分布的情况下进行基于模型的聚类。本文研究了在使用HMM进行聚类时的贝叶斯风险，并提出了相应的聚类方法。首先，我们给出了将分类的贝叶斯风险与聚类的贝叶斯风险联系起来的结果，用以确定聚类任务的难度的关键数量。我们还在独立同分布的框架下证明了这一结果，这可能具有独立的兴趣。然后我们研究了插值分类器的过度风险。所有这些结果都被证明在在线设置中仍然有效，在该设置下，观测结果被顺序聚类。模拟实验证明了我们的发现。
 
-    arXiv:2403.16981v1 Announce Type: cross  Abstract: The sample complexity of simple binary hypothesis testing is the smallest number of i.i.d. samples required to distinguish between two distributions $p$ and $q$ in either: (i) the prior-free setting, with type-I error at most $\alpha$ and type-II error at most $\beta$; or (ii) the Bayesian setting, with Bayes error at most $\delta$ and prior distribution $(\alpha, 1-\alpha)$. This problem has only been studied when $\alpha = \beta$ (prior-free) or $\alpha = 1/2$ (Bayesian), and the sample complexity is known to be characterized by the Hellinger divergence between $p$ and $q$, up to multiplicative constants. In this paper, we derive a formula that characterizes the sample complexity (up to multiplicative constants that are independent of $p$, $q$, and all error parameters) for: (i) all $0 \le \alpha, \beta \le 1/8$ in the prior-free setting; and (ii) all $\delta \le \alpha/4$ in the Bayesian setting. In particular, the formula admits eq
+    Thanks to their dependency structure, non-parametric Hidden Markov Models (HMMs) are able to handle model-based clustering without specifying group distributions. The aim of this work is to study the Bayes risk of clustering when using HMMs and to propose associated clustering procedures. We first give a result linking the Bayes risk of classification and the Bayes risk of clustering, which we use to identify the key quantity determining the difficulty of the clustering task. We also give a proof of this result in the i.i.d. framework, which might be of independent interest. Then we study the excess risk of the plugin classifier. All these results are shown to remain valid in the online setting where observations are clustered sequentially. Simulations illustrate our findings.
     
 

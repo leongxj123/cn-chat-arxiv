@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [SCANet: Correcting LEGO Assembly Errors with Self-Correct Assembly Network](https://arxiv.org/abs/2403.18195) | 介绍了单步组装错误校正任务和LEGO错误校正组装数据集（LEGO-ECA），提出了用于这一任务的自校正组装网络（SCANet）。 |
-| [^2] | [Simplifying Complex Observation Models in Continuous POMDP Planning with Probabilistic Guarantees and Practice.](http://arxiv.org/abs/2311.07745) | 本研究在解决具有高维度和连续观测的部分可观测马尔可夫决策过程中，提出了一种基于统计总变差距离的新型概率界限，能够简化观测模型并保证解决方案的质量。 |
+| [^1] | [CoBOS: Constraint-Based Online Scheduler for Human-Robot Collaboration](https://arxiv.org/abs/2403.18459) | CoBOS提出了一种新颖的在线基于约束的调度方法，在人机协作中实现了机器人对不确定事件的适应性，大大减轻了用户的压力，提高了工作效率。 |
+| [^2] | [Pointing the Way: Refining Radar-Lidar Localization Using Learned ICP Weights.](http://arxiv.org/abs/2309.08731) | 本文提出了一种深度学习方法，通过学习到的ICP权重优化雷达-激光雷达的定位，从而改善了雷达测量对激光雷达地图的定位效果。这一方法在保持高质量地图定位性能的同时，提高了在降水和大雾等恶劣天气条件下的定位准确性。 |
 
 # 详细
 
-[^1]: 用自校正组装网络纠正LEGO组装错误
+[^1]: CoBOS: 基于约束的人机协作在线调度器
 
-    SCANet: Correcting LEGO Assembly Errors with Self-Correct Assembly Network
+    CoBOS: Constraint-Based Online Scheduler for Human-Robot Collaboration
 
-    [https://arxiv.org/abs/2403.18195](https://arxiv.org/abs/2403.18195)
+    [https://arxiv.org/abs/2403.18459](https://arxiv.org/abs/2403.18459)
 
-    介绍了单步组装错误校正任务和LEGO错误校正组装数据集（LEGO-ECA），提出了用于这一任务的自校正组装网络（SCANet）。
-
-    
-
-    在机器人学和3D视觉中，自主组装面临着重大挑战，尤其是确保组装正确性。主流方法如MEPNet目前专注于基于手动提供的图像进行组件组装。然而，这些方法在需要长期规划的任务中往往难以取得满意的结果。在同一时间，我们观察到整合自校正模块可以在一定程度上缓解这些问题。受此问题启发，我们引入了单步组装错误校正任务，其中涉及识别和纠正组件组装错误。为支持这一领域的研究，我们提出了LEGO错误校正组装数据集（LEGO-ECA），包括用于组装步骤和组装失败实例的手动图像。此外，我们提出了自校正组装网络（SCANet），这是一种新颖的方法来解决这一任务。SCANet将组装的部件视为查询，
-
-    arXiv:2403.18195v1 Announce Type: cross  Abstract: Autonomous assembly in robotics and 3D vision presents significant challenges, particularly in ensuring assembly correctness. Presently, predominant methods such as MEPNet focus on assembling components based on manually provided images. However, these approaches often fall short in achieving satisfactory results for tasks requiring long-term planning. Concurrently, we observe that integrating a self-correction module can partially alleviate such issues. Motivated by this concern, we introduce the single-step assembly error correction task, which involves identifying and rectifying misassembled components. To support research in this area, we present the LEGO Error Correction Assembly Dataset (LEGO-ECA), comprising manual images for assembly steps and instances of assembly failures. Additionally, we propose the Self-Correct Assembly Network (SCANet), a novel method to address this task. SCANet treats assembled components as queries, de
-    
-[^2]: 在具有概率保证和实践的连续POMDP规划中简化复杂的观测模型
-
-    Simplifying Complex Observation Models in Continuous POMDP Planning with Probabilistic Guarantees and Practice. (arXiv:2311.07745v4 [cs.AI] UPDATED)
-
-    [http://arxiv.org/abs/2311.07745](http://arxiv.org/abs/2311.07745)
-
-    本研究在解决具有高维度和连续观测的部分可观测马尔可夫决策过程中，提出了一种基于统计总变差距离的新型概率界限，能够简化观测模型并保证解决方案的质量。
+    CoBOS提出了一种新颖的在线基于约束的调度方法，在人机协作中实现了机器人对不确定事件的适应性，大大减轻了用户的压力，提高了工作效率。
 
     
 
-    解决具有高维度和连续观测（如相机图像）的部分可观测马尔可夫决策过程(POMDP)对于许多实际机器人和规划问题是必需的。最近的研究建议使用机器学习的概率模型作为观测模型，但它们目前在线部署时计算成本过高。我们探讨了在规划中使用简化观测模型的影响，同时保持对解决方案质量的形式化保证。我们的主要贡献是一种基于简化模型的统计总变差距离的新型概率界限。我们证明，通过推广最近的粒子置信度MDP集中界限的结果，它将理论POMDP值与简化模型下的实际规划值进行了约束。我们的计算可以分为离线和在线部分，并且我们可以得到形式化的保证，而无需
+    涉及人类和机器人的装配过程是具有挑战性的场景，因为个人活动和共享工作空间的访问必须协调。固定的机器人程序不允许偏离固定协议。在这样的过程中工作可能会让用户感到有压力，并导致行为无效或失败。我们提出了一种新颖的在线基于约束的调度方法，位于支持行为树的反应式执行控制框架中，名为CoBOS。这使得机器人能够适应延迟活动完成和活动选择（由人类）等不确定事件。用户将体验到较少的压力，因为机器人同事会调整其行为以最好地补充人类选择的活动，以完成共同任务。除了改善的工作条件，我们的算法还导致了效率的提高，即使在高度不确定的情况下也是如此。我们使用一个概率性的si来评估我们的算法
 
-    Solving partially observable Markov decision processes (POMDPs) with high dimensional and continuous observations, such as camera images, is required for many real life robotics and planning problems. Recent researches suggested machine learned probabilistic models as observation models, but their use is currently too computationally expensive for online deployment. We deal with the question of what would be the implication of using simplified observation models for planning, while retaining formal guarantees on the quality of the solution. Our main contribution is a novel probabilistic bound based on a statistical total variation distance of the simplified model. We show that it bounds the theoretical POMDP value w.r.t. original model, from the empirical planned value with the simplified model, by generalizing recent results of particle-belief MDP concentration bounds. Our calculations can be separated into offline and online parts, and we arrive at formal guarantees without having to
+    arXiv:2403.18459v1 Announce Type: cross  Abstract: Assembly processes involving humans and robots are challenging scenarios because the individual activities and access to shared workspace have to be coordinated. Fixed robot programs leave no room to diverge from a fixed protocol. Working on such a process can be stressful for the user and lead to ineffective behavior or failure. We propose a novel approach of online constraint-based scheduling in a reactive execution control framework facilitating behavior trees called CoBOS. This allows the robot to adapt to uncertain events such as delayed activity completions and activity selection (by the human). The user will experience less stress as the robotic coworkers adapt their behavior to best complement the human-selected activities to complete the common task. In addition to the improved working conditions, our algorithm leads to increased efficiency, even in highly uncertain scenarios. We evaluate our algorithm using a probabilistic si
+    
+[^2]: 指引的方法：利用学习到的ICP权重改进雷达-激光雷达定位
+
+    Pointing the Way: Refining Radar-Lidar Localization Using Learned ICP Weights. (arXiv:2309.08731v1 [cs.RO])
+
+    [http://arxiv.org/abs/2309.08731](http://arxiv.org/abs/2309.08731)
+
+    本文提出了一种深度学习方法，通过学习到的ICP权重优化雷达-激光雷达的定位，从而改善了雷达测量对激光雷达地图的定位效果。这一方法在保持高质量地图定位性能的同时，提高了在降水和大雾等恶劣天气条件下的定位准确性。
+
+    
+
+    本文提出了一种基于深度学习的新方法，用于改进雷达测量对激光雷达地图的定位。虽然目前定位的技术水平是将激光雷达数据与激光雷达地图进行匹配，但是雷达被认为是一种有前途的替代方法，因为它对降水和大雾等恶劣天气具有更强的韧性。为了利用现有的高质量激光雷达地图，同时在恶劣天气下保持性能，将雷达数据与激光雷达地图进行匹配具有重要意义。然而，由于雷达测量中存在的独特伪影，雷达-激光雷达定位一直难以达到与激光雷达-激光雷达系统相媲美的性能，使其无法用于自动驾驶。本工作在基于ICP的雷达-激光雷达定位系统基础上，包括一个学习的预处理步骤，根据高层次的扫描信息对雷达点进行加权。将经过验证的分析方法与学习到的权重相结合，减小了雷达定位中的误差。
+
+    This paper presents a novel deep-learning-based approach to improve localizing radar measurements against lidar maps. Although the state of the art for localization is matching lidar data to lidar maps, radar has been considered as a promising alternative, as it is potentially more resilient against adverse weather such as precipitation and heavy fog. To make use of existing high-quality lidar maps, while maintaining performance in adverse weather, matching radar data to lidar maps is of interest. However, owing in part to the unique artefacts present in radar measurements, radar-lidar localization has struggled to achieve comparable performance to lidar-lidar systems, preventing it from being viable for autonomous driving. This work builds on an ICP-based radar-lidar localization system by including a learned preprocessing step that weights radar points based on high-level scan information. Combining a proven analytical approach with a learned weight reduces localization errors in rad
     
 
