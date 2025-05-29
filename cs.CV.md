@@ -2,52 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [CLEVRER-Humans: Describing Physical and Causal Events the Human Way.](http://arxiv.org/abs/2310.03635) | CLEVRER-Humans是一个用于因果判断的视频推理数据集，通过人工标注来解决合成事件和合成语言描述的缺乏多样性问题，并通过迭代事件填空和神经语言生成模型提高数据收集效率。 |
-| [^2] | [Distilling Inductive Bias: Knowledge Distillation Beyond Model Compression.](http://arxiv.org/abs/2310.00369) | 本文提出了一种超越模型压缩的知识蒸馏方法，通过从轻量级教师模型中提取归纳偏差，使Vision Transformers (ViTs) 的应用成为可能。这种方法包括使用一组不同架构的教师模型来指导学生Transformer，从而有效提高学生的性能。 |
-| [^3] | [Multiple Different Explanations for Image Classifiers.](http://arxiv.org/abs/2309.14309) | 这篇论文介绍了一种算法和工具，可以为图像分类器的输出计算多个解释，从而提高对分类器行为的洞察力。 |
+| [^1] | [Meta Co-Training: Two Views are Better than One](https://arxiv.org/abs/2311.18083) | 元共训练通过在数据上构建不同的视角，并利用未标记数据进行共同训练，提高了半监督学习的性能。 |
+| [^2] | [LMM-Assisted Breast Cancer Treatment Target Segmentation with Consistency Embedding](https://arxiv.org/abs/2311.15876) | RO-LMM是一个针对放射肿瘤学领域设计的多功能大型多模型，提出了一种Consistency Embedding Fine-Tuning（CEFTune）技术，使其能够在保持处理干净输入能力的同时提升对嘈杂输入的鲁棒性，用于放射治疗计划和目标体积分割。 |
+| [^3] | [Variational Positive-incentive Noise: How Noise Benefits Models.](http://arxiv.org/abs/2306.07651) | 本文研究了如何通过正激励噪声框架下的随机噪声使经典模型受益，并提出了变分Pi-Noise，它可以在不改变原始模型结构的情况下增强和简化模型。 |
 
 # 详细
 
-[^1]: CLEVRER-Humans: 用人类的方式描述物理和因果事件
+[^1]: 元共训练：两种视角优于一种
 
-    CLEVRER-Humans: Describing Physical and Causal Events the Human Way. (arXiv:2310.03635v1 [cs.AI])
+    Meta Co-Training: Two Views are Better than One
 
-    [http://arxiv.org/abs/2310.03635](http://arxiv.org/abs/2310.03635)
+    [https://arxiv.org/abs/2311.18083](https://arxiv.org/abs/2311.18083)
 
-    CLEVRER-Humans是一个用于因果判断的视频推理数据集，通过人工标注来解决合成事件和合成语言描述的缺乏多样性问题，并通过迭代事件填空和神经语言生成模型提高数据收集效率。
-
-    
-
-    构建能够推理物理事件及其因果关系的机器对于与物理世界进行灵活互动非常重要。然而，现有的大多数物理和因果推理基准都仅基于合成事件和合成自然语言描述的因果关系。这种设计存在两个问题：一是事件类型和自然语言描述缺乏多样性；二是基于手动定义的启发式规则的因果关系与人类判断不一致。为了解决这两个问题，我们提出了CLEVRER-Humans基准，这是一个用人工标注的视频推理数据集，用于对物理事件的因果判断。我们采用了两种技术来提高数据收集效率：首先，一种新颖的迭代事件填空任务，以 eliciting 视频中事件的新表示方式，我们称之为因果事件图 (CEGs)；其次，一种基于神经语言生成模型的数据增强技术。
-
-    Building machines that can reason about physical events and their causal relationships is crucial for flexible interaction with the physical world. However, most existing physical and causal reasoning benchmarks are exclusively based on synthetically generated events and synthetic natural language descriptions of causal relationships. This design brings up two issues. First, there is a lack of diversity in both event types and natural language descriptions; second, causal relationships based on manually-defined heuristics are different from human judgments. To address both shortcomings, we present the CLEVRER-Humans benchmark, a video reasoning dataset for causal judgment of physical events with human labels. We employ two techniques to improve data collection efficiency: first, a novel iterative event cloze task to elicit a new representation of events in videos, which we term Causal Event Graphs (CEGs); second, a data augmentation technique based on neural language generative models.
-    
-[^2]: 提炼归纳偏差：超越模型压缩的知识蒸馏
-
-    Distilling Inductive Bias: Knowledge Distillation Beyond Model Compression. (arXiv:2310.00369v2 [cs.CV] UPDATED)
-
-    [http://arxiv.org/abs/2310.00369](http://arxiv.org/abs/2310.00369)
-
-    本文提出了一种超越模型压缩的知识蒸馏方法，通过从轻量级教师模型中提取归纳偏差，使Vision Transformers (ViTs) 的应用成为可能。这种方法包括使用一组不同架构的教师模型来指导学生Transformer，从而有效提高学生的性能。
+    元共训练通过在数据上构建不同的视角，并利用未标记数据进行共同训练，提高了半监督学习的性能。
 
     
 
-    随着计算机视觉的快速发展，Vision Transformers (ViTs) 提供了在视觉和文本领域中实现统一信息处理的诱人前景。但是由于ViTs缺乏固有的归纳偏差，它们需要大量的训练数据。为了使它们的应用实际可行，我们引入了一种创新的基于集成的蒸馏方法，从轻量级的教师模型中提取归纳偏差。以前的系统仅依靠基于卷积的教学方法。然而，这种方法将一组具有不同架构倾向的轻量级教师模型（例如卷积和非线性卷积）同时用于指导学生Transformer。由于这些独特的归纳偏差，教师模型可以从各种存储数据集中获得广泛的知识，从而提高学生的性能。我们提出的框架还涉及预先计算和存储logits，从根本上实现了非归一化的状态匹配。
+    在许多实际的计算机视觉场景中，未标记的数据很多，但标签却稀缺且难以获得。因此，半监督学习利用未标记的数据提升监督分类器的性能已经在最近的文献中引起了重要的关注。其中一种主要的半监督算法是共训练。在共训练中，两种不同的模型利用数据的不同独立和足够的“视角”来共同进行更好的预测。在共训练过程中，每个模型在未标记的数据点上创建伪标签，用于改进另一个模型的性能。我们展示了在常见情况下，当独立视角不可用时，我们可以使用预训练模型来廉价地构建这些视角。在构建的视角上进行共训练可以提高性能，优于我们构建的任何单个视角，并且与半监督学习中的最新方法性能相当，但具有一些不可取之处。
 
-    With the rapid development of computer vision, Vision Transformers (ViTs) offer the tantalizing prospect of unified information processing across visual and textual domains. But due to the lack of inherent inductive biases in ViTs, they require enormous amount of data for training. To make their applications practical, we introduce an innovative ensemble-based distillation approach distilling inductive bias from complementary lightweight teacher models. Prior systems relied solely on convolution-based teaching. However, this method incorporates an ensemble of light teachers with different architectural tendencies, such as convolution and involution, to instruct the student transformer jointly. Because of these unique inductive biases, instructors can accumulate a wide range of knowledge, even from readily identifiable stored datasets, which leads to enhanced student performance. Our proposed framework also involves precomputing and storing logits in advance, essentially the unnormalize
+    In many practical computer vision scenarios unlabeled data is plentiful, but labels are scarce and difficult to obtain. As a result, semi-supervised learning which leverages unlabeled data to boost the performance of supervised classifiers have received significant attention in recent literature. One major class of semi-supervised algorithms is co-training. In co-training two different models leverage different independent and sufficient "views" of the data to jointly make better predictions. During co-training each model creates pseudo labels on unlabeled points which are used to improve the other model. We show that in the common case when independent views are not available we can construct such views inexpensively using pre-trained models. Co-training on the constructed views yields a performance improvement over any of the individual views we construct and performance comparable with recent approaches in semi-supervised learning, but has some undesirable properties. To alleviate t
     
-[^3]: 图像分类器的多个不同解释
+[^2]: LMM辅助的一致性嵌入下乳腺癌治疗目标分割
 
-    Multiple Different Explanations for Image Classifiers. (arXiv:2309.14309v2 [cs.CV] UPDATED)
+    LMM-Assisted Breast Cancer Treatment Target Segmentation with Consistency Embedding
 
-    [http://arxiv.org/abs/2309.14309](http://arxiv.org/abs/2309.14309)
+    [https://arxiv.org/abs/2311.15876](https://arxiv.org/abs/2311.15876)
 
-    这篇论文介绍了一种算法和工具，可以为图像分类器的输出计算多个解释，从而提高对分类器行为的洞察力。
+    RO-LMM是一个针对放射肿瘤学领域设计的多功能大型多模型，提出了一种Consistency Embedding Fine-Tuning（CEFTune）技术，使其能够在保持处理干净输入能力的同时提升对嘈杂输入的鲁棒性，用于放射治疗计划和目标体积分割。
 
     
 
-    现有的图像分类器解释工具通常只会给出一种对于图像的解释。然而，对于许多图像来说，无论是人类还是图像分类器都接受多个解释来解释图像标签。因此，限制解释的数量只有一个严重限制了对分类器行为的洞察力。在本文中，我们描述了一种算法和工具REX，用于计算黑盒图像分类器对给定图像的输出的多个解释。我们的算法基于因果理论的可靠方法。我们分析了其理论复杂性，并提供了实验结果，显示REX在ImageNet-mini基准测试中找到的多个解释比之前的工作多7倍。
+    人工智能的最新进展深刻影响了医学领域，为降低临床工作量提供了工具。然而，大多数人工智能模型受限于执行单模式任务，与医学专业人员所使用的综合方法形成鲜明对比。为解决这一问题，本文介绍了RO-LMM，一个专为放射肿瘤学领域设计的多功能大型多模型（LMM）。该模型涵盖了临床工作流中的一系列任务，擅长临床报告摘要、放疗治疗计划建议和计划引导的目标体积分割。为了执行连续的临床任务，我们进一步提出了一种新颖的一致性嵌入微调（CEFTune）技术，提升了LMM对嘈杂输入的鲁棒性，同时保持了处理干净输入的能力，并将该概念转化为LMM驱动的分割框架，即一致性嵌入S。
 
-    Existing explanation tools for image classifiers usually give only one single explanation for an image. For many images, however, both humans and image classifiers accept more than one explanation for the image label. Thus, restricting the number of explanations to just one severely limits the insight into the behavior of the classifier. In this paper, we describe an algorithm and a tool, REX, for computing multiple explanations of the output of a black-box image classifier for a given image. Our algorithm uses a principled approach based on causal theory. We analyse its theoretical complexity and provide experimental results showing that REX finds multiple explanations on 7 times more images than the previous work on the ImageNet-mini benchmark.
+    arXiv:2311.15876v2 Announce Type: replace-cross  Abstract: Recent advancements in Artificial Intelligence (AI) have profoundly influenced medical fields, by providing tools to reduce clinical workloads. However, most AI models are constrained to execute unimodal tasks, in stark contrast to the comprehensive approaches utilized by medical professionals. To address this, here we present RO-LMM, a multi-purpose large multimodal model (LMM) tailored for the field of radiation oncology. This model covers series of tasks within clinical workflow, adept at clinical report summarization, radiation treatment plan suggestion, and plan-guided target volume segmentation. In particular, to perform consecutive clinical tasks, we further present a novel Consistency Embedding Fine-Tuning (CEFTune) technique, which boosts LMM's robustness to noisy inputs while preserving the capability of handling clean inputs, and transform this concept into LMM-driven segmentation framework as Consistency Embedding S
+    
+[^3]: 变分激励噪声：噪声如何改进模型
+
+    Variational Positive-incentive Noise: How Noise Benefits Models. (arXiv:2306.07651v1 [cs.LG])
+
+    [http://arxiv.org/abs/2306.07651](http://arxiv.org/abs/2306.07651)
+
+    本文研究了如何通过正激励噪声框架下的随机噪声使经典模型受益，并提出了变分Pi-Noise，它可以在不改变原始模型结构的情况下增强和简化模型。
+
+    
+
+    大量研究旨在减轻由于负面噪声的基本假设而导致的噪声影响。但是，一些现有的研究表明，这种假设并不总是成立的。本文研究了如何在正激励噪声（Pi-Noise）框架下通过随机噪声使经典模型受益。由于Pi-Noise的理想目标是难以实现的，我们提出了对其变分下界进行优化的变分Pi-Noise（VPN），通过变分推断，设计了一个VPN生成器来增强基础模型并简化基础模型的推断，而不改变基础模型的架构。由于基础模型和VPN生成器的独立设计， VPN生成器可以与大多数现有模型一起使用。从实验结果来看，所提出的VPN生成器可以改进基本模型。值得称赞的是，训练有素的变分VPN生成器更喜欢独立密集型噪声。（翻译有删减）
+
+    A large number of works aim to alleviate the impact of noise due to an underlying conventional assumption of the negative role of noise. However, some existing works show that the assumption does not always hold. In this paper, we investigate how to benefit the classical models by random noise under the framework of Positive-incentive Noise (Pi-Noise). Since the ideal objective of Pi-Noise is intractable, we propose to optimize its variational bound instead, namely variational Pi-Noise (VPN). With the variational inference, a VPN generator implemented by neural networks is designed for enhancing base models and simplifying the inference of base models, without changing the architecture of base models. Benefiting from the independent design of base models and VPN generators, the VPN generator can work with most existing models. From the experiments, it is shown that the proposed VPN generator can improve the base models. It is appealing that the trained variational VPN generator prefers
     
 
