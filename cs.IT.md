@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [FedStruct: Federated Decoupled Learning over Interconnected Graphs](https://arxiv.org/abs/2402.19163) | FedStruct提出了一种新的框架，利用深层结构依赖关系在互联图上进行联合解耦学习，有效地维护隐私并捕捉节点间的依赖关系。 |
+| [^1] | [Theoretical guarantees on the best-of-n alignment policy.](http://arxiv.org/abs/2401.01879) | 该论文研究了对齐生成模型的最佳n对齐策略，并证明了之前文献中的某个分析表达式是错误的。研究者们提出了一个新的KL散度估计方法，并通过实验证明其有效性。 |
 
 # 详细
 
-[^1]: FedStruct：联合解耦学习在互联图上
+[^1]: 关于最佳n对齐策略的理论保证
 
-    FedStruct: Federated Decoupled Learning over Interconnected Graphs
+    Theoretical guarantees on the best-of-n alignment policy. (arXiv:2401.01879v1 [cs.LG])
 
-    [https://arxiv.org/abs/2402.19163](https://arxiv.org/abs/2402.19163)
+    [http://arxiv.org/abs/2401.01879](http://arxiv.org/abs/2401.01879)
 
-    FedStruct提出了一种新的框架，利用深层结构依赖关系在互联图上进行联合解耦学习，有效地维护隐私并捕捉节点间的依赖关系。
+    该论文研究了对齐生成模型的最佳n对齐策略，并证明了之前文献中的某个分析表达式是错误的。研究者们提出了一个新的KL散度估计方法，并通过实验证明其有效性。
 
     
 
-    我们解决了分布在多个客户端上的图结构数据上的联合学习挑战。具体来说，我们关注互联子图的普遍情况，其中不同客户端之间的相互连接起着关键作用。我们提出了针对这种情况的一种新颖框架，名为FedStruct，它利用深层结构依赖关系。为了维护隐私，与现有方法不同，FedStruct消除了在客户端之间共享或生成敏感节点特征或嵌入的必要性。相反，它利用显式全局图结构信息来捕捉节点间的依赖关系。我们通过在六个数据集上进行的实验结果验证了FedStruct的有效性，展示了在各种情况下（包括不同数据分区方法、不同标签可用性以及客户个数的）接近于集中式方法的性能。
+    一个简单有效的生成模型对齐方法是最佳n对齐策略，该策略从一个基本策略中抽取n个样本，并根据奖励函数对它们进行排序，选择排名最高的样本。文献中常用的分析表达式声称最佳n对齐策略与基本策略之间的KL散度等于$\log (n) (n-1)/n$。我们证明了该论断的不正确性，并展示了它只是实际KL散度的一个上界。我们还研究了在不同情况下该上界的紧致性。最后，我们提出了一种新的KL散度估计方法，并通过几个例子的实验证明它能提供一个紧致的近似。
 
-    arXiv:2402.19163v1 Announce Type: new  Abstract: We address the challenge of federated learning on graph-structured data distributed across multiple clients. Specifically, we focus on the prevalent scenario of interconnected subgraphs, where inter-connections between different clients play a critical role. We present a novel framework for this scenario, named FedStruct, that harnesses deep structural dependencies. To uphold privacy, unlike existing methods, FedStruct eliminates the necessity of sharing or generating sensitive node features or embeddings among clients. Instead, it leverages explicit global graph structure information to capture inter-node dependencies. We validate the effectiveness of FedStruct through experimental results conducted on six datasets for semi-supervised node classification, showcasing performance close to the centralized approach across various scenarios, including different data partitioning methods, varying levels of label availability, and number of cl
+    A simple and effective method for the alignment of generative models is the best-of-$n$ policy, where $n$ samples are drawn from a base policy, and ranked based on a reward function, and the highest ranking one is selected. A commonly used analytical expression in the literature claims that the KL divergence between the best-of-$n$ policy and the base policy is equal to $\log (n) (n-1)/n.$ We disprove the validity of this claim, and show that it is an upper bound on the actual KL divergence. We also explore the tightness of this upper bound in different regimes. Finally, we propose a new estimator for the KL divergence and empirically show that it provides a tight approximation through a few examples.
     
 

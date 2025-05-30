@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Bridging Language, Vision and Action: Multimodal VAEs in Robotic Manipulation Tasks](https://arxiv.org/abs/2404.01932) | 本研究探索了多模态VAE如何在无监督机器人操作任务中实现，提出了一个新的模型训练方法，可以使模拟器中的模型性能提高55%。 |
+| [^1] | [Safety Implications of Explainable Artificial Intelligence in End-to-End Autonomous Driving](https://arxiv.org/abs/2403.12176) | 自动驾驶中可解释人工智能的安全影响对于确保车辆自动化安全至关重要，但当前研究中安全性和可解释性方面往往被分开砠。 |
 
 # 详细
 
-[^1]: 跨越语言、视觉和行动：多模态VAE在机器人操作任务中的应用
+[^1]: 自动驾驶中可解释人工智能的安全影响
 
-    Bridging Language, Vision and Action: Multimodal VAEs in Robotic Manipulation Tasks
+    Safety Implications of Explainable Artificial Intelligence in End-to-End Autonomous Driving
 
-    [https://arxiv.org/abs/2404.01932](https://arxiv.org/abs/2404.01932)
+    [https://arxiv.org/abs/2403.12176](https://arxiv.org/abs/2403.12176)
 
-    本研究探索了多模态VAE如何在无监督机器人操作任务中实现，提出了一个新的模型训练方法，可以使模拟器中的模型性能提高55%。
+    自动驾驶中可解释人工智能的安全影响对于确保车辆自动化安全至关重要，但当前研究中安全性和可解释性方面往往被分开砠。
 
     
 
-    在这项工作中，我们关注机器人操作领域中无监督的视觉-语言-动作映射。我们探讨了多模态变分自动编码器（VAE）在模拟环境中如何被应用于无监督机器人操作任务中，并提出了一个改进模型性能的模型不变式训练方法，可以使模拟器中的模型性能提高高达55%。
+    末端到末端学习管道正在逐渐改变高度自主车辆的持续发展，这主要归功于深度学习的进步、大规模训练数据集的可用性以及综合传感器设备的改进。然而，当代学习方法在实时决策中缺乏可解释性，妨碍了用户的信任，并减弱了这类车辆的广泛部署和商业化。此外，当这些汽车参与或导致交通事故时，问题会变得更加严重。这种缺点从社会和法律的角度引起了严重的安全担忧。因此，在末端到末端自动驾驶中解释性是促进车辆自动化安全的关键。然而，当今最先进技术中研究人员通常将自动驾驶的安全性和可解释性方面分开研究。在本文中，我们旨在弥合这一差距
 
-    arXiv:2404.01932v1 Announce Type: cross  Abstract: In this work, we focus on unsupervised vision-language-action mapping in the area of robotic manipulation. Recently, multiple approaches employing pre-trained large language and vision models have been proposed for this task. However, they are computationally demanding and require careful fine-tuning of the produced outputs. A more lightweight alternative would be the implementation of multimodal Variational Autoencoders (VAEs) which can extract the latent features of the data and integrate them into a joint representation, as has been demonstrated mostly on image-image or image-text data for the state-of-the-art models. Here we explore whether and how can multimodal VAEs be employed in unsupervised robotic manipulation tasks in a simulated environment. Based on the obtained results, we propose a model-invariant training alternative that improves the models' performance in a simulator by up to 55%. Moreover, we systematically evaluate 
+    arXiv:2403.12176v1 Announce Type: cross  Abstract: The end-to-end learning pipeline is gradually creating a paradigm shift in the ongoing development of highly autonomous vehicles, largely due to advances in deep learning, the availability of large-scale training datasets, and improvements in integrated sensor devices. However, a lack of interpretability in real-time decisions with contemporary learning methods impedes user trust and attenuates the widespread deployment and commercialization of such vehicles. Moreover, the issue is exacerbated when these cars are involved in or cause traffic accidents. Such drawback raises serious safety concerns from societal and legal perspectives. Consequently, explainability in end-to-end autonomous driving is essential to enable the safety of vehicular automation. However, the safety and explainability aspects of autonomous driving have generally been investigated disjointly by researchers in today's state of the art. In this paper, we aim to brid
     
 

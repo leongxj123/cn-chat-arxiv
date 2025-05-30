@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [InterpretCC: Conditional Computation for Inherently Interpretable Neural Networks](https://arxiv.org/abs/2402.02933) | InterpretCC是一种新的解释性神经网络模型，通过条件计算和稀疏激活特征，在保持性能的同时实现了人类中心的解释能力。该模型适用于需要可信解释、可操作解释和准确预测的人类面向领域。 |
+| [^1] | [Ensuring User-side Fairness in Dynamic Recommender Systems.](http://arxiv.org/abs/2308.15651) | 本文提出了一种名为FADE的端到端框架，通过微调策略动态减轻推荐系统中用户群体之间的性能差异。 |
 
 # 详细
 
-[^1]: InterpretCC: 适于解释的神经网络的条件计算
+[^1]: 在动态推荐系统中确保用户侧公平性
 
-    InterpretCC: Conditional Computation for Inherently Interpretable Neural Networks
+    Ensuring User-side Fairness in Dynamic Recommender Systems. (arXiv:2308.15651v1 [cs.IR])
 
-    [https://arxiv.org/abs/2402.02933](https://arxiv.org/abs/2402.02933)
+    [http://arxiv.org/abs/2308.15651](http://arxiv.org/abs/2308.15651)
 
-    InterpretCC是一种新的解释性神经网络模型，通过条件计算和稀疏激活特征，在保持性能的同时实现了人类中心的解释能力。该模型适用于需要可信解释、可操作解释和准确预测的人类面向领域。
+    本文提出了一种名为FADE的端到端框架，通过微调策略动态减轻推荐系统中用户群体之间的性能差异。
 
     
 
-    神经网络的真实世界解释性在三个方面之间存在权衡：1）需要人类信任解释的近似（例如事后方法）；2）削弱了解释的可理解性（例如自动识别的特征掩码）；3）削弱了模型性能（例如决策树）。这些缺点对于面向人类的领域（如教育、医疗保健或自然语言）是不可接受的，这些领域需要可信的解释、可操作的解释和准确的预测。在这项工作中，我们提出了InterpretCC（可解释的条件计算），这是一种可解释性的设计神经网络系列，通过在预测之前自适应和稀疏地激活特征，确保人类中心的可解释性，同时保持与最先进模型相当的性能。我们将这个思想扩展为可解释的专家混合模型，允许人们离散地指定兴趣话题。
+    用户侧群体公平性对现代推荐系统至关重要，它旨在减轻由敏感属性（如性别、种族或年龄）定义的用户群体之间的性能差异。我们发现这种差异往往会随着时间的推移而持续存在甚至增加。这需要在动态环境中有效解决用户侧公平性的方法，然而这在文献中很少被探讨。然而，用于确保用户侧公平性（即减少性能差异）的典型方法——公平约束重新排名，在动态设定中面临两个基本挑战：（1）基于排名的公平约束的非可微性，阻碍了端到端训练范式；（2）时间效率低下，阻碍了对用户偏好变化的快速适应。在本文中，我们提出了一种名为FADE的端到端框架，通过微调策略动态减轻性能差异。为了解决上述挑战，FADE提出了一种 fine-tuning 策略。
 
-    Real-world interpretability for neural networks is a tradeoff between three concerns: 1) it requires humans to trust the explanation approximation (e.g. post-hoc approaches), 2) it compromises the understandability of the explanation (e.g. automatically identified feature masks), and 3) it compromises the model performance (e.g. decision trees). These shortcomings are unacceptable for human-facing domains, like education, healthcare, or natural language, which require trustworthy explanations, actionable interpretations, and accurate predictions. In this work, we present InterpretCC (interpretable conditional computation), a family of interpretable-by-design neural networks that guarantee human-centric interpretability while maintaining comparable performance to state-of-the-art models by adaptively and sparsely activating features before prediction. We extend this idea into an interpretable mixture-of-experts model, that allows humans to specify topics of interest, discretely separate
+    User-side group fairness is crucial for modern recommender systems, as it aims to alleviate performance disparity between groups of users defined by sensitive attributes such as gender, race, or age. We find that the disparity tends to persist or even increase over time. This calls for effective ways to address user-side fairness in a dynamic environment, which has been infrequently explored in the literature. However, fairness-constrained re-ranking, a typical method to ensure user-side fairness (i.e., reducing performance disparity), faces two fundamental challenges in the dynamic setting: (1) non-differentiability of the ranking-based fairness constraint, which hinders the end-to-end training paradigm, and (2) time-inefficiency, which impedes quick adaptation to changes in user preferences. In this paper, we propose FAir Dynamic rEcommender (FADE), an end-to-end framework with fine-tuning strategy to dynamically alleviate performance disparity. To tackle the above challenges, FADE u
     
 
