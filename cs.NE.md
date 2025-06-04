@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Learning Successor Representations with Distributed Hebbian Temporal Memory.](http://arxiv.org/abs/2310.13391) | 本文提出了一种名为DHTM的算法，它基于因子图形式和多组成神经元模型，利用分布式表示、稀疏转移矩阵和局部Hebbian样学习规则来解决在线隐藏表示学习的挑战。实验结果表明，DHTM在变化的环境中比经典的LSTM效果更好，并与更先进的类似RNN的算法性能相当，可以加速继任者表示的时间差异学习。 |
+| [^1] | [Respiratory motion forecasting with online learning of recurrent neural networks for safety enhancement in externally guided radiotherapy](https://arxiv.org/abs/2403.01607) | 该研究评估了资源高效的在线RNN算法在放疗治疗过程中准确预测呼吸运动的能力。 |
 
 # 详细
 
-[^1]: 使用分布式Hebbian Temporal Memory学习继任者表示法
+[^1]: 针对外部导向放疗中安全增强的呼吸运动预测与在线学习的循环神经网络
 
-    Learning Successor Representations with Distributed Hebbian Temporal Memory. (arXiv:2310.13391v1 [cs.LG])
+    Respiratory motion forecasting with online learning of recurrent neural networks for safety enhancement in externally guided radiotherapy
 
-    [http://arxiv.org/abs/2310.13391](http://arxiv.org/abs/2310.13391)
+    [https://arxiv.org/abs/2403.01607](https://arxiv.org/abs/2403.01607)
 
-    本文提出了一种名为DHTM的算法，它基于因子图形式和多组成神经元模型，利用分布式表示、稀疏转移矩阵和局部Hebbian样学习规则来解决在线隐藏表示学习的挑战。实验结果表明，DHTM在变化的环境中比经典的LSTM效果更好，并与更先进的类似RNN的算法性能相当，可以加速继任者表示的时间差异学习。
+    该研究评估了资源高效的在线RNN算法在放疗治疗过程中准确预测呼吸运动的能力。
 
     
 
-    本文提出了一种新颖的方法来解决在线隐藏表示学习的挑战，该方法用于在不稳定的、部分可观测的环境中进行决策。所提出的算法，分布式Hebbian Temporal Memory (DHTM)，基于因子图形式和多组成神经元模型。DHTM旨在捕捉顺序数据关系并对未来观察作出累积预测，形成继任者表示。受新皮层的神经生理学模型启发，该算法利用分布式表示、稀疏转移矩阵和局部Hebbian样学习规则克服了传统时间记忆算法（如RNN和HMM）的不稳定性和慢速学习过程。实验结果表明，DHTM优于经典的LSTM，并与更先进的类似RNN的算法性能相当，在变化的环境中加速了继任者表示的时间差异学习。此外，我们还进行了比较。
+    在肺部放疗中，红外摄像头可以记录胸部反射物体的位置，以推断由于呼吸而移动的肿瘤位置，但治疗系统的延迟影响了放射束精度。实时循环学习（RTRL）是一个潜在的解决方案，因为它可以学习非平稳呼吸数据中的模式，但具有较高的复杂性。本研究评估了资源高效的在线RNN算法，即无偏在线循环优化（UORO）、稀疏-1步逼近（SnAp-1）和解耦神经接口（DNI），以准确预测放疗治疗过程中的呼吸运动。我们使用了健康受试者胸部外部标记物的包含3D位置的时间序列。我们提出了基于影响和即时雅可比矩阵的压缩以及线性系数的准确更新用于信用分配的SnAp-1和DNI的高效实现。
 
-    This paper presents a novel approach to address the challenge of online hidden representation learning for decision-making under uncertainty in non-stationary, partially observable environments. The proposed algorithm, Distributed Hebbian Temporal Memory (DHTM), is based on factor graph formalism and a multicomponent neuron model. DHTM aims to capture sequential data relationships and make cumulative predictions about future observations, forming Successor Representation (SR). Inspired by neurophysiological models of the neocortex, the algorithm utilizes distributed representations, sparse transition matrices, and local Hebbian-like learning rules to overcome the instability and slow learning process of traditional temporal memory algorithms like RNN and HMM. Experimental results demonstrate that DHTM outperforms classical LSTM and performs comparably to more advanced RNN-like algorithms, speeding up Temporal Difference learning for SR in changing environments. Additionally, we compare
+    arXiv:2403.01607v1 Announce Type: new  Abstract: In lung radiotherapy, infrared cameras can record the location of reflective objects on the chest to infer the position of the tumor moving due to breathing, but treatment system latencies hinder radiation beam precision. Real-time recurrent learning (RTRL), is a potential solution as it can learn patterns within non-stationary respiratory data but has high complexity. This study assesses the capabilities of resource-efficient online RNN algorithms, namely unbiased online recurrent optimization (UORO), sparse-1 step approximation (SnAp-1), and decoupled neural interfaces (DNI) to forecast respiratory motion during radiotherapy treatment accurately. We use time series containing the 3D position of external markers on the chest of healthy subjects. We propose efficient implementations for SnAp-1 and DNI based on compression of the influence and immediate Jacobian matrices and an accurate update of the linear coefficients used in credit ass
     
 
