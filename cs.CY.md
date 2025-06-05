@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [The Male CEO and the Female Assistant: Probing Gender Biases in Text-To-Image Models Through Paired Stereotype Test](https://arxiv.org/abs/2402.11089) | 通过成对刻板印象测试（PST）框架，在文本-图像模型中探究性别偏见，并评估了DALLE-3在性别职业和组织权力方面的偏见。 |
+| [^1] | [Concept-Guided Chain-of-Thought Prompting for Pairwise Comparison Scaling of Texts with Large Language Models.](http://arxiv.org/abs/2310.12049) | 这项研究开发了一种文本缩放方法，利用生成性大型语言模型的模式识别能力，通过概念导向思维链图和大型语言模型进行文本比较，并使用Bradley-Terry模型来估计评分尺度。该方法在Twitter上对情感言论的缩放效果更好。 |
 
 # 详细
 
-[^1]: 男性CEO和女性助理：通过成对刻板印象测试探究文本-图像模型中的性别偏见
+[^1]: Concept-Guided Chain-of-Thought Prompting for Pairwise Comparison Scaling of Texts with Large Language Models (使用大型语言模型的概念导向思维链图提示进行文本配对比较缩放)
 
-    The Male CEO and the Female Assistant: Probing Gender Biases in Text-To-Image Models Through Paired Stereotype Test
+    Concept-Guided Chain-of-Thought Prompting for Pairwise Comparison Scaling of Texts with Large Language Models. (arXiv:2310.12049v1 [cs.CL])
 
-    [https://arxiv.org/abs/2402.11089](https://arxiv.org/abs/2402.11089)
+    [http://arxiv.org/abs/2310.12049](http://arxiv.org/abs/2310.12049)
 
-    通过成对刻板印象测试（PST）框架，在文本-图像模型中探究性别偏见，并评估了DALLE-3在性别职业和组织权力方面的偏见。
+    这项研究开发了一种文本缩放方法，利用生成性大型语言模型的模式识别能力，通过概念导向思维链图和大型语言模型进行文本比较，并使用Bradley-Terry模型来估计评分尺度。该方法在Twitter上对情感言论的缩放效果更好。
 
     
 
-    最近大规模的文本到图像（T2I）模型（如DALLE-3）展示了在新应用中的巨大潜力，但也面临前所未有的公平挑战。先前的研究揭示了单人图像生成中的性别偏见，但T2I模型应用可能需要同时描绘两个或更多人。该设定中的潜在偏见仍未被探究，导致使用中的公平相关风险。为了研究T2I模型中性别偏见的基本方面，我们提出了一种新颖的成对刻板印象测试（PST）偏见评估框架。PST促使模型生成同一图像中的两个个体，用与相反性别刻板印象相关联的两个社会身份来描述他们。通过生成的图像遵从性别刻板印象的程度来衡量偏见。利用PST，我们从两个角度评估DALLE-3：性别职业中的偏见和组织权力中的偏见。
+    现有的文本缩放方法经常需要大型语料库，难以处理短文本，或需要有标签的数据。我们开发了一种利用生成性大型语言模型（LLM）的模式识别能力来进行文本缩放的方法。具体而言，我们提出了概念导向思维链图（CGCoT），它使用设计用于总结想法并在文本中识别目标方的提示来生成概念特定的细分，类似于人类编码器内容分析的指导。CGCoT将配对文本比较从一个推理问题转变为一个模式识别问题。然后，我们使用LLM对概念特定的细分进行配对比较。我们利用这些配对比较的结果使用Bradley-Terry模型来估计一个评分尺度。我们利用这种方法对Twitter上的情感言论进行缩放。我们的测量值与人类判断的相关性比Wordfish等替代方法更强。除了一小组用于开发CGCoT提示的试验数据之外，...
 
-    arXiv:2402.11089v1 Announce Type: cross  Abstract: Recent large-scale Text-To-Image (T2I) models such as DALLE-3 demonstrate great potential in new applications, but also face unprecedented fairness challenges. Prior studies revealed gender biases in single-person image generation, but T2I model applications might require portraying two or more people simultaneously. Potential biases in this setting remain unexplored, leading to fairness-related risks in usage. To study these underlying facets of gender biases in T2I models, we propose a novel Paired Stereotype Test (PST) bias evaluation framework. PST prompts the model to generate two individuals in the same image. They are described with two social identities that are stereotypically associated with the opposite gender. Biases can then be measured by the level of conformation to gender stereotypes in generated images. Using PST, we evaluate DALLE-3 from 2 perspectives: biases in gendered occupation and biases in organizational power.
+    Existing text scaling methods often require a large corpus, struggle with short texts, or require labeled data. We develop a text scaling method that leverages the pattern recognition capabilities of generative large language models (LLMs). Specifically, we propose concept-guided chain-of-thought (CGCoT), which uses prompts designed to summarize ideas and identify target parties in texts to generate concept-specific breakdowns, in many ways similar to guidance for human coder content analysis. CGCoT effectively shifts pairwise text comparisons from a reasoning problem to a pattern recognition problem. We then pairwise compare concept-specific breakdowns using an LLM. We use the results of these pairwise comparisons to estimate a scale using the Bradley-Terry model. We use this approach to scale affective speech on Twitter. Our measures correlate more strongly with human judgments than alternative approaches like Wordfish. Besides a small set of pilot data to develop the CGCoT prompts, 
     
 
