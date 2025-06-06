@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Concept-Guided Chain-of-Thought Prompting for Pairwise Comparison Scaling of Texts with Large Language Models.](http://arxiv.org/abs/2310.12049) | 这项研究开发了一种文本缩放方法，利用生成性大型语言模型的模式识别能力，通过概念导向思维链图和大型语言模型进行文本比较，并使用Bradley-Terry模型来估计评分尺度。该方法在Twitter上对情感言论的缩放效果更好。 |
+| [^1] | [From User Surveys to Telemetry-Driven Agents: Exploring the Potential of Personalized Productivity Solutions.](http://arxiv.org/abs/2401.08960) | 本研究提出了一个以用户为中心的方法，以了解AI基于的生产力代理的偏好，并开发出个性化解决方案。通过调查和使用遥测数据，我们开发了一个GPT-4驱动的个性化生产力代理，并在研究中与其他辅助工具进行了比较。我们的研究突出了用户中心设计、适应性和个性化与隐私之间的平衡的重要性。 |
 
 # 详细
 
-[^1]: Concept-Guided Chain-of-Thought Prompting for Pairwise Comparison Scaling of Texts with Large Language Models (使用大型语言模型的概念导向思维链图提示进行文本配对比较缩放)
+[^1]: 从用户调查到遥测驱动代理：探索个性化的生产力解决方案的潜力
 
-    Concept-Guided Chain-of-Thought Prompting for Pairwise Comparison Scaling of Texts with Large Language Models. (arXiv:2310.12049v1 [cs.CL])
+    From User Surveys to Telemetry-Driven Agents: Exploring the Potential of Personalized Productivity Solutions. (arXiv:2401.08960v1 [cs.HC])
 
-    [http://arxiv.org/abs/2310.12049](http://arxiv.org/abs/2310.12049)
+    [http://arxiv.org/abs/2401.08960](http://arxiv.org/abs/2401.08960)
 
-    这项研究开发了一种文本缩放方法，利用生成性大型语言模型的模式识别能力，通过概念导向思维链图和大型语言模型进行文本比较，并使用Bradley-Terry模型来估计评分尺度。该方法在Twitter上对情感言论的缩放效果更好。
+    本研究提出了一个以用户为中心的方法，以了解AI基于的生产力代理的偏好，并开发出个性化解决方案。通过调查和使用遥测数据，我们开发了一个GPT-4驱动的个性化生产力代理，并在研究中与其他辅助工具进行了比较。我们的研究突出了用户中心设计、适应性和个性化与隐私之间的平衡的重要性。
 
     
 
-    现有的文本缩放方法经常需要大型语料库，难以处理短文本，或需要有标签的数据。我们开发了一种利用生成性大型语言模型（LLM）的模式识别能力来进行文本缩放的方法。具体而言，我们提出了概念导向思维链图（CGCoT），它使用设计用于总结想法并在文本中识别目标方的提示来生成概念特定的细分，类似于人类编码器内容分析的指导。CGCoT将配对文本比较从一个推理问题转变为一个模式识别问题。然后，我们使用LLM对概念特定的细分进行配对比较。我们利用这些配对比较的结果使用Bradley-Terry模型来估计一个评分尺度。我们利用这种方法对Twitter上的情感言论进行缩放。我们的测量值与人类判断的相关性比Wordfish等替代方法更强。除了一小组用于开发CGCoT提示的试验数据之外，...
+    我们提出了一个综合的以用户为中心的方法，用于了解基于人工智能的生产力代理的偏好，并开发出根据用户需求定制的个性化解决方案。通过两个阶段的方法，我们首先对363名参与者进行了调查，探索了生产力、沟通风格、代理方法、个性特征、个性化和隐私等各个方面。借助调查结果，我们开发了一个由Viva Insights收集的遥测数据驱动的个性化生产力代理，该代理利用GPT-4提供定制的帮助。我们在涉及40名参与者的研究中，将其性能与仪表板和叙述等替代的生产力辅助工具进行了比较。我们的研究结果凸显了用户中心设计、适应性以及个性化和隐私之间的平衡在AI辅助生产力工具中的重要性。通过借鉴我们研究中提炼的见解，我们相信我们的工作可以启发和指导未来的研究。
 
-    Existing text scaling methods often require a large corpus, struggle with short texts, or require labeled data. We develop a text scaling method that leverages the pattern recognition capabilities of generative large language models (LLMs). Specifically, we propose concept-guided chain-of-thought (CGCoT), which uses prompts designed to summarize ideas and identify target parties in texts to generate concept-specific breakdowns, in many ways similar to guidance for human coder content analysis. CGCoT effectively shifts pairwise text comparisons from a reasoning problem to a pattern recognition problem. We then pairwise compare concept-specific breakdowns using an LLM. We use the results of these pairwise comparisons to estimate a scale using the Bradley-Terry model. We use this approach to scale affective speech on Twitter. Our measures correlate more strongly with human judgments than alternative approaches like Wordfish. Besides a small set of pilot data to develop the CGCoT prompts, 
+    We present a comprehensive, user-centric approach to understand preferences in AI-based productivity agents and develop personalized solutions tailored to users' needs. Utilizing a two-phase method, we first conducted a survey with 363 participants, exploring various aspects of productivity, communication style, agent approach, personality traits, personalization, and privacy. Drawing on the survey insights, we developed a GPT-4 powered personalized productivity agent that utilizes telemetry data gathered via Viva Insights from information workers to provide tailored assistance. We compared its performance with alternative productivity-assistive tools, such as dashboard and narrative, in a study involving 40 participants. Our findings highlight the importance of user-centric design, adaptability, and the balance between personalization and privacy in AI-assisted productivity tools. By building on the insights distilled from our study, we believe that our work can enable and guide futur
     
 

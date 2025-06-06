@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv stat.AP</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for stat.AP</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv stat.AP</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for stat.AP</description><item><title>&#36825;&#39033;&#30740;&#31350;&#25506;&#35752;&#20102;&#35821;&#35328;&#27169;&#22411;&#20013;&#20559;&#35265;&#30340;&#36127;&#38754;&#24433;&#21709;&#65292;&#30740;&#31350;&#20102;"&#25216;&#24039;&#27979;&#35797;"&#19982;&#26356;&#29616;&#23454;&#19990;&#30028;&#20013;&#34920;&#29616;&#30340;RUTEd&#35780;&#20272;&#20043;&#38388;&#30340;&#20851;&#32852;&#24615;&#65292;&#29305;&#21035;&#20851;&#27880;&#24615;&#21035;-&#32844;&#19994;&#20559;&#35265;&#65292;&#24182;&#36827;&#34892;&#20102;&#22810;&#39033;&#35780;&#20272;&#27604;&#36739;&#12290;</title><link>https://arxiv.org/abs/2402.12649</link><description>&lt;p&gt;
+&#35821;&#35328;&#27169;&#22411;&#20013;&#30340;&#20559;&#35265;&#65306;&#36229;&#36234;&#25216;&#24039;&#27979;&#35797;&#65292;&#36208;&#21521;RUTEd&#35780;&#20272;
+&lt;/p&gt;
+&lt;p&gt;
+Bias in Language Models: Beyond Trick Tests and Toward RUTEd Evaluation
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.12649
+&lt;/p&gt;
+&lt;p&gt;
+&#36825;&#39033;&#30740;&#31350;&#25506;&#35752;&#20102;&#35821;&#35328;&#27169;&#22411;&#20013;&#20559;&#35265;&#30340;&#36127;&#38754;&#24433;&#21709;&#65292;&#30740;&#31350;&#20102;"&#25216;&#24039;&#27979;&#35797;"&#19982;&#26356;&#29616;&#23454;&#19990;&#30028;&#20013;&#34920;&#29616;&#30340;RUTEd&#35780;&#20272;&#20043;&#38388;&#30340;&#20851;&#32852;&#24615;&#65292;&#29305;&#21035;&#20851;&#27880;&#24615;&#21035;-&#32844;&#19994;&#20559;&#35265;&#65292;&#24182;&#36827;&#34892;&#20102;&#22810;&#39033;&#35780;&#20272;&#27604;&#36739;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+Bias benchmarks are a popular method for studying the negative impacts of bias in LLMs, yet there has been little empirical investigation of whether these benchmarks are actually indicative of how real world harm may manifest in the real world. In this work, we study the correspondence between such decontextualized "trick tests" and evaluations that are more grounded in Realistic Use and Tangible {Effects (i.e. RUTEd evaluations). We explore this correlation in the context of gender-occupation bias--a popular genre of bias evaluation. We compare three de-contextualized evaluations adapted from the current literature to three analogous RUTEd evaluations applied to long-form content generation. We conduct each evaluation for seven instruction-tuned LLMs. For the RUTEd evaluations, we conduct repeated trials of three text generation tasks: children's bedtime stories, user personas, and English language learning exercises. We found no corres
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2402.12649v1 Announce Type: new  Abstract: Bias benchmarks are a popular method for studying the negative impacts of bias in LLMs, yet there has been little empirical investigation of whether these benchmarks are actually indicative of how real world harm may manifest in the real world. In this work, we study the correspondence between such decontextualized "trick tests" and evaluations that are more grounded in Realistic Use and Tangible {Effects (i.e. RUTEd evaluations). We explore this correlation in the context of gender-occupation bias--a popular genre of bias evaluation. We compare three de-contextualized evaluations adapted from the current literature to three analogous RUTEd evaluations applied to long-form content generation. We conduct each evaluation for seven instruction-tuned LLMs. For the RUTEd evaluations, we conduct repeated trials of three text generation tasks: children's bedtime stories, user personas, and English language learning exercises. We found no corres
+&lt;/p&gt;</description></item></channel></rss>
