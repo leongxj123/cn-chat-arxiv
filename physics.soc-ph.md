@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Artificial Intelligence for Complex Network: Potential, Methodology and Application](https://arxiv.org/abs/2402.16887) | 人工智能技术与丰富真实网络数据的存在开启了复杂网络科学研究的新时代，有望克服现存挑战。 |
+| [^1] | [The Face of Populism: Examining Differences in Facial Emotional Expressions of Political Leaders Using Machine Learning.](http://arxiv.org/abs/2304.09914) | 本文使用机器学习的算法分析了来自15个不同国家的220个政治领袖的YouTube视频，总结了政治领袖面部情感表达的差异。 |
 
 # 详细
 
-[^1]: 复杂网络的人工智能：潜力、方法论和应用
+[^1]: 柿子政治的面孔：使用机器学习比较政治领袖面部情感表达的差异
 
-    Artificial Intelligence for Complex Network: Potential, Methodology and Application
+    The Face of Populism: Examining Differences in Facial Emotional Expressions of Political Leaders Using Machine Learning. (arXiv:2304.09914v1 [cs.CY])
 
-    [https://arxiv.org/abs/2402.16887](https://arxiv.org/abs/2402.16887)
+    [http://arxiv.org/abs/2304.09914](http://arxiv.org/abs/2304.09914)
 
-    人工智能技术与丰富真实网络数据的存在开启了复杂网络科学研究的新时代，有望克服现存挑战。
+    本文使用机器学习的算法分析了来自15个不同国家的220个政治领袖的YouTube视频，总结了政治领袖面部情感表达的差异。
 
     
 
-    复杂网络存在于各种真实世界系统中，从自然环境到人类社会。这些网络的本质在于它们能够从微观混乱-其中网络拓扑和节点动态交织-转变和演化为具有特定集体行为的宏观秩序。在过去的二十年里，复杂网络科学显著增强了我们对真实世界网络潜在机制、结构和动态的理解。尽管取得了这些进展，但在探索更加真实系统和提升实际应用方面仍然存在着相当大的挑战。人工智能技术的出现，以及丰富多样的真实世界网络数据的存在，开启了复杂网络科学研究的新时代。本调查旨在系统地探讨人工智能在克服复杂网络科学研究所面临的挑战方面的潜在优势。
+    网络媒体已经彻底改变了政治信息在全球范围内的传播和消费方式，这种转变促使政治人物采取新的策略来捕捉和保持选民的注意力。这些策略往往依赖于情感说服和吸引。随着虚拟空间中视觉内容越来越普遍，很多政治沟通也被标志着唤起情感的视频内容和图像。本文提供了一种新的分析方法。我们将基于现有训练好的卷积神经网络架构提供的Python库fer，应用一种基于深度学习的计算机视觉算法，对描绘来自15个不同国家的政治领袖的220个YouTube视频样本进行分析。该算法返回情绪分数，每一帧都代表6种情绪状态（愤怒，厌恶，恐惧，快乐，悲伤和惊讶）和一个中性表情。
 
-    arXiv:2402.16887v1 Announce Type: cross  Abstract: Complex networks pervade various real-world systems, from the natural environment to human societies. The essence of these networks is in their ability to transition and evolve from microscopic disorder-where network topology and node dynamics intertwine-to a macroscopic order characterized by certain collective behaviors. Over the past two decades, complex network science has significantly enhanced our understanding of the statistical mechanics, structures, and dynamics underlying real-world networks. Despite these advancements, there remain considerable challenges in exploring more realistic systems and enhancing practical applications. The emergence of artificial intelligence (AI) technologies, coupled with the abundance of diverse real-world network data, has heralded a new era in complex network science research. This survey aims to systematically address the potential advantages of AI in overcoming the lingering challenges of com
+    Online media has revolutionized the way political information is disseminated and consumed on a global scale, and this shift has compelled political figures to adopt new strategies of capturing and retaining voter attention. These strategies often rely on emotional persuasion and appeal, and as visual content becomes increasingly prevalent in virtual space, much of political communication too has come to be marked by evocative video content and imagery. The present paper offers a novel approach to analyzing material of this kind. We apply a deep-learning-based computer-vision algorithm to a sample of 220 YouTube videos depicting political leaders from 15 different countries, which is based on an existing trained convolutional neural network architecture provided by the Python library fer. The algorithm returns emotion scores representing the relative presence of 6 emotional states (anger, disgust, fear, happiness, sadness, and surprise) and a neutral expression for each frame of the pr
     
 
