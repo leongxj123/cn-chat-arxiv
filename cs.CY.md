@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Multi-Task Media-Bias Analysis Generalization for Pre-Trained Identification of Expressions](https://arxiv.org/abs/2403.07910) | MAGPIE是第一个为媒体偏见检测定制的大规模多任务预训练方法，在媒体偏见检测方面表现优异，并且相对于单一任务方法需要更少的微调步骤。 |
+| [^1] | [Incentive Compatibility for AI Alignment in Sociotechnical Systems: Positions and Prospects](https://arxiv.org/abs/2402.12907) | 该论文提出了激励兼容性社会技术对齐问题（ICSAP），旨在探讨如何利用博弈论中的激励兼容性原则来维持AI与人类社会的共识。 |
 
 # 详细
 
-[^1]: 多任务媒体偏见分析通用化的预训练表达识别
+[^1]: AI对齐在社会技术系统中的激励兼容性：立场与前景
 
-    Multi-Task Media-Bias Analysis Generalization for Pre-Trained Identification of Expressions
+    Incentive Compatibility for AI Alignment in Sociotechnical Systems: Positions and Prospects
 
-    [https://arxiv.org/abs/2403.07910](https://arxiv.org/abs/2403.07910)
+    [https://arxiv.org/abs/2402.12907](https://arxiv.org/abs/2402.12907)
 
-    MAGPIE是第一个为媒体偏见检测定制的大规模多任务预训练方法，在媒体偏见检测方面表现优异，并且相对于单一任务方法需要更少的微调步骤。
+    该论文提出了激励兼容性社会技术对齐问题（ICSAP），旨在探讨如何利用博弈论中的激励兼容性原则来维持AI与人类社会的共识。
 
     
 
-    媒体偏见检测是一个复杂的、多方面的问题，传统上通过使用单一任务模型和小型领域内数据集来解决，因此缺乏泛化能力。为了解决这一问题，我们介绍了MAGPIE，这是第一个专门为媒体偏见检测定制的大规模多任务预训练方法。为了实现规模化的预训练，我们提出了大偏见混合（LBM），这是一个包含59个与偏见相关的任务的编译。MAGPIE在Bias Annotation By Experts (BABE)数据集上的媒体偏见检测方面优于先前的方法，F1分数相对提高了3.3%。MAGPIE在Media Bias Identification Benchmark (MBIB)中的8个任务中有5个方面表现优于先前的模型。使用RoBERTa编码器，MAGPIE仅需要相对于单一任务方法的15%的微调步骤。我们的评估表明，比如任务如情感和情绪会增强所有学习，所有任务会增强假新闻检测，
+    人工智能（AI）日益融入人类社会，对社会治理和安全带来重要影响。尽管在解决AI对齐挑战方面取得了重大进展，但现有方法主要集中在技术方面，往往忽视了AI系统复杂的社会技术性质，这可能导致开发和部署背景之间的不一致。因此，我们提出一个值得探索的新问题：激励兼容性社会技术对齐问题（ICSAP）。我们希望这能呼吁更多研究人员探讨如何利用博弈论中的激励兼容性原则来弥合技术和社会组成部分之间的鸿沟，以在不同背景下维持AI与人类社会的共识。我们进一步讨论了实现IC的三个经典博弈问题：机制设计、契约理论和贝叶斯说服。
 
-    arXiv:2403.07910v1 Announce Type: cross  Abstract: Media bias detection poses a complex, multifaceted problem traditionally tackled using single-task models and small in-domain datasets, consequently lacking generalizability. To address this, we introduce MAGPIE, the first large-scale multi-task pre-training approach explicitly tailored for media bias detection. To enable pre-training at scale, we present Large Bias Mixture (LBM), a compilation of 59 bias-related tasks. MAGPIE outperforms previous approaches in media bias detection on the Bias Annotation By Experts (BABE) dataset, with a relative improvement of 3.3% F1-score. MAGPIE also performs better than previous models on 5 out of 8 tasks in the Media Bias Identification Benchmark (MBIB). Using a RoBERTa encoder, MAGPIE needs only 15% of finetuning steps compared to single-task approaches. Our evaluation shows, for instance, that tasks like sentiment and emotionality boost all learning, all tasks enhance fake news detection, and s
+    arXiv:2402.12907v1 Announce Type: new  Abstract: The burgeoning integration of artificial intelligence (AI) into human society brings forth significant implications for societal governance and safety. While considerable strides have been made in addressing AI alignment challenges, existing methodologies primarily focus on technical facets, often neglecting the intricate sociotechnical nature of AI systems, which can lead to a misalignment between the development and deployment contexts. To this end, we posit a new problem worth exploring: Incentive Compatibility Sociotechnical Alignment Problem (ICSAP). We hope this can call for more researchers to explore how to leverage the principles of Incentive Compatibility (IC) from game theory to bridge the gap between technical and societal components to maintain AI consensus with human societies in different contexts. We further discuss three classical game problems for achieving IC: mechanism design, contract theory, and Bayesian persuasion,
     
 
