@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Sample complexity of quantum hypothesis testing](https://arxiv.org/abs/2403.17868) | 本文研究了量子假设检验的样本复杂度，得出了对称和非对称设置中的二进制量子假设检验的样本复杂度与反错误概率的对数和保真度的负对数的关系。 |
+| [^1] | [Compression of enumerations and gain.](http://arxiv.org/abs/2304.03030) | 本文研究了枚举的可压缩性对于计算可枚举集合的相对Kolmogorov复杂度的影响，并证明了任何计算可枚举集合都可以进行强压缩和无增益弱压缩。 |
 
 # 详细
 
-[^1]: 量子假设检验的样本复杂度
+[^1]: 枚举压缩与增益
 
-    Sample complexity of quantum hypothesis testing
+    Compression of enumerations and gain. (arXiv:2304.03030v1 [cs.CL])
 
-    [https://arxiv.org/abs/2403.17868](https://arxiv.org/abs/2403.17868)
+    [http://arxiv.org/abs/2304.03030](http://arxiv.org/abs/2304.03030)
 
-    本文研究了量子假设检验的样本复杂度，得出了对称和非对称设置中的二进制量子假设检验的样本复杂度与反错误概率的对数和保真度的负对数的关系。
+    本文研究了枚举的可压缩性对于计算可枚举集合的相对Kolmogorov复杂度的影响，并证明了任何计算可枚举集合都可以进行强压缩和无增益弱压缩。
 
     
 
-    传统上，人们从信息论的角度研究量子假设检验，在这种情况下，人们对错误概率的最优衰减速率感兴趣，这个速率是未知状态的样本数量函数。本文研究了量子假设检验的样本复杂度，旨在确定达到所需错误概率所需的最少样本数量。通过利用已有文献中关于量子假设检验的丰富知识，我们表征了对称和非对称设置中的二进制量子假设检验的样本复杂度，并提供了多个量子假设检验的样本复杂度的界限。更详细地说，我们证明了对称二进制量子假设检验的样本复杂度对反错误概率的对数和保真度的负对数的对数。
+    我们研究了枚举的可压缩性，以及其在计算可枚举集合的相对Kolmogorov复杂度中密度方面的作用。我们关注了强压缩和弱压缩，以及压缩枚举中嵌入的附加信息的数量：增益。我们证明了任何计算可枚举集合都可以进行强压缩和无增益弱压缩，并研究了位置游戏以理解强无增益压缩。
 
-    arXiv:2403.17868v1 Announce Type: cross  Abstract: Quantum hypothesis testing has been traditionally studied from the information-theoretic perspective, wherein one is interested in the optimal decay rate of error probabilities as a function of the number of samples of an unknown state. In this paper, we study the sample complexity of quantum hypothesis testing, wherein the goal is to determine the minimum number of samples needed to reach a desired error probability. By making use of the wealth of knowledge that already exists in the literature on quantum hypothesis testing, we characterize the sample complexity of binary quantum hypothesis testing in the symmetric and asymmetric settings, and we provide bounds on the sample complexity of multiple quantum hypothesis testing. In more detail, we prove that the sample complexity of symmetric binary quantum hypothesis testing depends logarithmically on the inverse error probability and inversely on the negative logarithm of the fidelity. 
+    We study the compressibility of enumerations, and its role in the relative Kolmogorov complexity of computably enumerable sets, with respect to density. With respect to a strong and a weak form of compression, we examine the gain: the amount of auxiliary information embedded in the compressed enumeration. Strong compression and weak gainless compression is shown for any computably enumerable set, and a positional game is studied toward understanding strong gainless compression.
     
 
