@@ -2,52 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Contextual Fixed-Budget Best Arm Identification: Adaptive Experimental Design with Policy Learning.](http://arxiv.org/abs/2401.03756) | 该论文研究了个性化治疗推荐的问题，提出了一个上下文固定预算的最佳臂识别模型，通过自适应实验设计和策略学习来推荐最佳治疗方案，并通过最坏情况下的期望简单遗憾来衡量推荐的有效性。 |
-| [^2] | [Conformal prediction for frequency-severity modeling.](http://arxiv.org/abs/2307.13124) | 这个论文提出了一个非参数的模型无关框架，用于建立保险理赔的预测区间，并具有有限样本的统计保证，扩展了split conformal prediction技术到两阶段频率-严重性建模领域，并通过使用随机森林作为严重性模型，利用了袋外机制消除了校准集的需要，并实现了具有自适应宽度的预测区间的生成。 |
-| [^3] | [Assessing Omitted Variable Bias when the Controls are Endogenous.](http://arxiv.org/abs/2206.02303) | 该论文提出了一种新的敏感性分析方法，避免了传统方法中常常被认为是强假设和不可行的假设，允许省略的变量与包含的控制变量相关，并允许研究人员校准灵敏度。 |
+| [^1] | [A Bayesian Non-parametric Approach to Generative Models: Integrating Variational Autoencoder and Generative Adversarial Networks using Wasserstein and Maximum Mean Discrepancy.](http://arxiv.org/abs/2308.14048) | 本研究提出了一种融合生成对抗网络和变分自编码器的贝叶斯非参数方法，通过在损失函数中使用Wasserstein和最大均值差异度量，实现了对潜在空间的有效学习，并能够生成多样且高质量的样本。 |
+| [^2] | [Structural restrictions in local causal discovery: identifying direct causes of a target variable.](http://arxiv.org/abs/2307.16048) | 这项研究的目标是从观测数据中识别目标变量的直接原因，通过不对其他变量做太多假设，研究者提出了可识别性结果和两种实用算法。 |
 
 # 详细
 
-[^1]: 上下文固定预算的最佳臂识别：适应性实验设计与策略学习
+[^1]: 一种贝叶斯非参数方法用于生成模型：使用Wasserstein和最大均值差异度量集成变分自编码器和生成对抗网络
 
-    Contextual Fixed-Budget Best Arm Identification: Adaptive Experimental Design with Policy Learning. (arXiv:2401.03756v1 [cs.LG])
+    A Bayesian Non-parametric Approach to Generative Models: Integrating Variational Autoencoder and Generative Adversarial Networks using Wasserstein and Maximum Mean Discrepancy. (arXiv:2308.14048v1 [stat.ML])
 
-    [http://arxiv.org/abs/2401.03756](http://arxiv.org/abs/2401.03756)
+    [http://arxiv.org/abs/2308.14048](http://arxiv.org/abs/2308.14048)
 
-    该论文研究了个性化治疗推荐的问题，提出了一个上下文固定预算的最佳臂识别模型，通过自适应实验设计和策略学习来推荐最佳治疗方案，并通过最坏情况下的期望简单遗憾来衡量推荐的有效性。
-
-    
-
-    个性化治疗推荐是基于证据的决策中的关键任务。在这项研究中，我们将这个任务作为一个带有上下文信息的固定预算最佳臂识别（Best Arm Identification, BAI）问题来进行建模。在这个设置中，我们考虑了一个给定多个治疗臂的自适应试验。在每一轮中，决策者观察一个刻画实验单位的上下文（协变量），并将该单位分配给其中一个治疗臂。在实验结束时，决策者推荐一个在给定上下文条件下预计产生最高期望结果的治疗臂（最佳治疗臂）。该决策的有效性通过最坏情况下的期望简单遗憾（策略遗憾）来衡量，该遗憾表示在给定上下文条件下，最佳治疗臂和推荐治疗臂的条件期望结果之间的最大差异。我们的初始步骤是推导最坏情况下期望简单遗憾的渐近下界，该下界还暗示着解决该问题的一些思路。
-
-    Individualized treatment recommendation is a crucial task in evidence-based decision-making. In this study, we formulate this task as a fixed-budget best arm identification (BAI) problem with contextual information. In this setting, we consider an adaptive experiment given multiple treatment arms. At each round, a decision-maker observes a context (covariate) that characterizes an experimental unit and assigns the unit to one of the treatment arms. At the end of the experiment, the decision-maker recommends a treatment arm estimated to yield the highest expected outcome conditioned on a context (best treatment arm). The effectiveness of this decision is measured in terms of the worst-case expected simple regret (policy regret), which represents the largest difference between the conditional expected outcomes of the best and recommended treatment arms given a context. Our initial step is to derive asymptotic lower bounds for the worst-case expected simple regret, which also implies idea
-    
-[^2]: 频率-严重性建模的符合性预测
-
-    Conformal prediction for frequency-severity modeling. (arXiv:2307.13124v1 [stat.ME])
-
-    [http://arxiv.org/abs/2307.13124](http://arxiv.org/abs/2307.13124)
-
-    这个论文提出了一个非参数的模型无关框架，用于建立保险理赔的预测区间，并具有有限样本的统计保证，扩展了split conformal prediction技术到两阶段频率-严重性建模领域，并通过使用随机森林作为严重性模型，利用了袋外机制消除了校准集的需要，并实现了具有自适应宽度的预测区间的生成。
+    本研究提出了一种融合生成对抗网络和变分自编码器的贝叶斯非参数方法，通过在损失函数中使用Wasserstein和最大均值差异度量，实现了对潜在空间的有效学习，并能够生成多样且高质量的样本。
 
     
 
-    我们提出了一个非参数的模型无关框架，用于建立保险理赔的预测区间，并具有有限样本的统计保证，将分割符合性预测技术扩展到两阶段频率-严重性建模领域。通过模拟和真实数据集展示了该框架的有效性。当基础严重性模型是随机森林时，我们扩展了两阶段分割符合性预测过程，展示了如何利用袋外机制消除校准集的需要，并实现具有自适应宽度的预测区间的生成。
+    生成模型已成为一种产生与真实图像难以区分的高质量图像的有前途的技术。生成对抗网络（GAN）和变分自编码器（VAE）是最为重要且被广泛研究的两种生成模型。GAN在生成逼真图像方面表现出色，而VAE则能够生成多样的图像。然而，GAN忽视了大部分可能的输出空间，这导致不能完全体现目标分布的多样性，而VAE则常常生成模糊图像。为了充分发挥两种模型的优点并减轻它们的弱点，我们采用了贝叶斯非参数方法将GAN和VAE相结合。我们的方法在损失函数中同时使用了Wasserstein和最大均值差异度量，以有效学习潜在空间并生成多样且高质量的样本。
 
-    We present a nonparametric model-agnostic framework for building prediction intervals of insurance claims, with finite sample statistical guarantees, extending the technique of split conformal prediction to the domain of two-stage frequency-severity modeling. The effectiveness of the framework is showcased with simulated and real datasets. When the underlying severity model is a random forest, we extend the two-stage split conformal prediction procedure, showing how the out-of-bag mechanism can be leveraged to eliminate the need for a calibration set and to enable the production of prediction intervals with adaptive width.
+    Generative models have emerged as a promising technique for producing high-quality images that are indistinguishable from real images. Generative adversarial networks (GANs) and variational autoencoders (VAEs) are two of the most prominent and widely studied generative models. GANs have demonstrated excellent performance in generating sharp realistic images and VAEs have shown strong abilities to generate diverse images. However, GANs suffer from ignoring a large portion of the possible output space which does not represent the full diversity of the target distribution, and VAEs tend to produce blurry images. To fully capitalize on the strengths of both models while mitigating their weaknesses, we employ a Bayesian non-parametric (BNP) approach to merge GANs and VAEs. Our procedure incorporates both Wasserstein and maximum mean discrepancy (MMD) measures in the loss function to enable effective learning of the latent space and generate diverse and high-quality samples. By fusing the di
     
-[^3]: 当控制变量存在内生性时，评估省略变量偏误
+[^2]: 局部因果发现中的结构限制: 识别目标变量的直接原因
 
-    Assessing Omitted Variable Bias when the Controls are Endogenous. (arXiv:2206.02303v3 [econ.EM] UPDATED)
+    Structural restrictions in local causal discovery: identifying direct causes of a target variable. (arXiv:2307.16048v1 [stat.ME])
 
-    [http://arxiv.org/abs/2206.02303](http://arxiv.org/abs/2206.02303)
+    [http://arxiv.org/abs/2307.16048](http://arxiv.org/abs/2307.16048)
 
-    该论文提出了一种新的敏感性分析方法，避免了传统方法中常常被认为是强假设和不可行的假设，允许省略的变量与包含的控制变量相关，并允许研究人员校准灵敏度。
+    这项研究的目标是从观测数据中识别目标变量的直接原因，通过不对其他变量做太多假设，研究者提出了可识别性结果和两种实用算法。
 
     
 
-    省略变量是导致因果效应识别受到最大威胁的因素之一。包括Oster（2019）在内的几种广泛使用的方法通过将可观测选择测量与不可观测选择测量进行比较来评估省略变量对经验结论的影响。这些方法要么（1）假设省略的变量与包括的控制变量不相关，这个假设常常被认为是强假设和不可行的，要么（2）使用残差法来避免这个假设。在我们的第一项贡献中，我们开发了一个框架，用于客观地比较敏感度参数。我们利用这个框架正式证明残差化方法通常会导致有关鲁棒性的错误结论。在我们的第二项贡献中，我们提出了一种新的敏感性分析方法，避免了这个批评，允许省略的变量与包含的控制变量相关，并允许研究人员校准灵敏度。
+    我们考虑从观察联合分布中学习目标变量的一组直接原因的问题。学习表示因果结构的有向无环图(DAG)是科学中的一个基本问题。当完整的DAG从分布中可识别时，已知有一些结果，例如假设非线性高斯数据生成过程。通常，我们只对识别一个目标变量的直接原因（局部因果结构），而不是完整的DAG感兴趣。在本文中，我们讨论了对目标变量的数据生成过程的不同假设，该假设下直接原因集合可以从分布中识别出来。在这样做的过程中，我们对除目标变量之外的变量基本上没有任何假设。除了新的可识别性结果，我们还提供了两种从有限随机样本估计直接原因的实用算法，并在几个基准数据集上证明了它们的有效性。
 
-    Omitted variables are one of the most important threats to the identification of causal effects. Several widely used approaches, including Oster (2019), assess the impact of omitted variables on empirical conclusions by comparing measures of selection on observables with measures of selection on unobservables. These approaches either (1) assume the omitted variables are uncorrelated with the included controls, an assumption that is often considered strong and implausible, or (2) use a method called residualization to avoid this assumption. In our first contribution, we develop a framework for objectively comparing sensitivity parameters. We use this framework to formally prove that the residualization method generally leads to incorrect conclusions about robustness. In our second contribution, we then provide a new approach to sensitivity analysis that avoids this critique, allows the omitted variables to be correlated with the included controls, and lets researchers calibrate sensitiv
+    We consider the problem of learning a set of direct causes of a target variable from an observational joint distribution. Learning directed acyclic graphs (DAGs) that represent the causal structure is a fundamental problem in science. Several results are known when the full DAG is identifiable from the distribution, such as assuming a nonlinear Gaussian data-generating process. Often, we are only interested in identifying the direct causes of one target variable (local causal structure), not the full DAG. In this paper, we discuss different assumptions for the data-generating process of the target variable under which the set of direct causes is identifiable from the distribution. While doing so, we put essentially no assumptions on the variables other than the target variable. In addition to the novel identifiability results, we provide two practical algorithms for estimating the direct causes from a finite random sample and demonstrate their effectiveness on several benchmark dataset
     
 
