@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Semi-Supervised Learning Approach for Efficient Resource Allocation with Network Slicing in O-RAN.](http://arxiv.org/abs/2401.08861) | 本文提出了一种半监督学习方法，解决了O-RAN中网络切片和资源分配的问题。通过设计两个xAPPs，分别处理功率控制和物理资源块分配，我们的方法能够在用户设备之间实现最大化的加权吞吐量，并优先考虑增强型移动宽带和超可靠低延迟通信这两种服务类型。 |
+| [^1] | [Convergence analysis of online algorithms for vector-valued kernel regression.](http://arxiv.org/abs/2309.07779) | 本文考虑了在线学习算法在向量值内核回归问题中的收敛性能，证明了在RKHS范数中的期望平方误差可以被一个特定公式所限制。 |
 
 # 详细
 
-[^1]: O-RAN中利用半监督学习方法进行网络切片的资源分配的研究
+[^1]: 在向量值内核回归的在线算法的收敛分析
 
-    Semi-Supervised Learning Approach for Efficient Resource Allocation with Network Slicing in O-RAN. (arXiv:2401.08861v1 [cs.NI])
+    Convergence analysis of online algorithms for vector-valued kernel regression. (arXiv:2309.07779v1 [stat.ML])
 
-    [http://arxiv.org/abs/2401.08861](http://arxiv.org/abs/2401.08861)
+    [http://arxiv.org/abs/2309.07779](http://arxiv.org/abs/2309.07779)
 
-    本文提出了一种半监督学习方法，解决了O-RAN中网络切片和资源分配的问题。通过设计两个xAPPs，分别处理功率控制和物理资源块分配，我们的方法能够在用户设备之间实现最大化的加权吞吐量，并优先考虑增强型移动宽带和超可靠低延迟通信这两种服务类型。
+    本文考虑了在线学习算法在向量值内核回归问题中的收敛性能，证明了在RKHS范数中的期望平方误差可以被一个特定公式所限制。
 
     
 
-    开放式无线接入网络（O-RAN）技术作为一种有前景的解决方案，为网络运营商提供了一个开放和有利的环境。在O-RAN内确保有效地协调x应用程序（xAPPs）对于网络切片和资源分配至关重要。本文介绍了一种创新的资源分配方法，旨在协调O-RAN中多个独立xAPPs的协调。我们的方法侧重于在用户设备（UE）之间最大化加权吞吐量，并分配物理资源块（PRBs）。我们优先考虑增强型移动宽带和超可靠低延迟通信这两种服务类型。为此，我们设计了两个xAPPs：每个UE的功率控制xAPP和PRB分配xAPP。所提出的方法包括两个部分的训练阶段，其中第一部分使用带有变分自动编码器的监督学习进行训练。
+    我们考虑使用适当的再生核希尔伯特空间（RKHS）作为先验，通过在线学习算法从噪声向量值数据中逼近回归函数的问题。在在线算法中，独立同分布的样本通过随机过程逐个可用，并依次处理以构建对回归函数的近似。我们关注这种在线逼近算法的渐近性能，并证明了在RKHS范数中的期望平方误差可以被$C^2(m+1)^{-s/(2+s)}$绑定，其中$m$为当下处理的数据数量，参数$0<s\leq 1$表示对回归函数的额外光滑性假设，常数$C$取决于输入噪声的方差、回归函数的光滑性以及算法的其他参数。
 
-    The Open Radio Access Network (O-RAN) technology has emerged as a promising solution for network operators, providing them with an open and favorable environment. Ensuring effective coordination of x-applications (xAPPs) is crucial to enhance flexibility and optimize network performance within the O-RAN. In this paper, we introduce an innovative approach to the resource allocation problem, aiming to coordinate multiple independent xAPPs for network slicing and resource allocation in O-RAN. Our proposed method focuses on maximizing the weighted throughput among user equipments (UE), as well as allocating physical resource blocks (PRBs). We prioritize two service types, namely enhanced Mobile Broadband and Ultra Reliable Low Latency Communication. To achieve this, we have designed two xAPPs: a power control xAPP for each UE and a PRB allocation xAPP. The proposed method consists of a two-part training phase, where the first part uses supervised learning with a Variational Autoencoder tra
+    We consider the problem of approximating the regression function from noisy vector-valued data by an online learning algorithm using an appropriate reproducing kernel Hilbert space (RKHS) as prior. In an online algorithm, i.i.d. samples become available one by one by a random process and are successively processed to build approximations to the regression function. We are interested in the asymptotic performance of such online approximation algorithms and show that the expected squared error in the RKHS norm can be bounded by $C^2 (m+1)^{-s/(2+s)}$, where $m$ is the current number of processed data, the parameter $0<s\leq 1$ expresses an additional smoothness assumption on the regression function and the constant $C$ depends on the variance of the input noise, the smoothness of the regression function and further parameters of the algorithm.
     
 
