@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [SOFARI: High-Dimensional Manifold-Based Inference.](http://arxiv.org/abs/2309.15032) | 本研究提出了一种基于高维流形的SOFAR推断（SOFARI）方法，通过结合Neyman近正交推断和SVD约束的Stiefel流形结构，实现了对多任务学习中潜在因子矩阵的准确推断。 |
+| [^1] | [Uniform Inference on High-dimensional Spatial Panel Networks.](http://arxiv.org/abs/2105.07424) | 本研究在大规模空间面板网络上提出了一种均匀推断理论，该理论能够对感兴趣的参数进行假设检验，包括网络结构中的零或非零元素。 |
 
 # 详细
 
-[^1]: SOFARI:基于高维流形的推断
+[^1]: 高维空间面板网络上的均匀推断
 
-    SOFARI: High-Dimensional Manifold-Based Inference. (arXiv:2309.15032v1 [stat.ME])
+    Uniform Inference on High-dimensional Spatial Panel Networks. (arXiv:2105.07424v3 [econ.EM] UPDATED)
 
-    [http://arxiv.org/abs/2309.15032](http://arxiv.org/abs/2309.15032)
+    [http://arxiv.org/abs/2105.07424](http://arxiv.org/abs/2105.07424)
 
-    本研究提出了一种基于高维流形的SOFAR推断（SOFARI）方法，通过结合Neyman近正交推断和SVD约束的Stiefel流形结构，实现了对多任务学习中潜在因子矩阵的准确推断。
+    本研究在大规模空间面板网络上提出了一种均匀推断理论，该理论能够对感兴趣的参数进行假设检验，包括网络结构中的零或非零元素。
 
     
 
-    多任务学习是一种广泛使用的技术，用于从各种任务中提取信息。最近，基于系数矩阵中的稀疏奇异值分解（SVD）的稀疏正交因子回归（SOFAR）框架被引入到可解释的多任务学习中，可以发现不同层次之间有意义的潜在特征-响应关联网络。然而，由于稀疏SVD约束的正交性约束，对潜在因子矩阵进行精确推断仍然具有挑战性。在本文中，我们提出了一种新颖的方法，称为基于高维流形的SOFAR推断（SOFARI），借鉴了Neyman近正交推断，并结合了SVD约束所施加的Stiefel流形结构。通过利用潜在的Stiefel流形结构，SOFARI为潜在左因子向量和奇异值提供了偏差校正的估计量。
+    我们提出了一种偏差-正则化的高维广义矩方法（GMM）框架，用于对大规模空间面板网络进行推断。特别是，利用偏差机器学习方法估计具有灵活稀疏偏差的网络结构，这可以被视为潜在的或者与预定的邻接矩阵不匹配。理论分析确立了我们提出的估计器的一致性和渐近正态性，考虑了数据生成过程中的一般时间和空间依赖性。讨论了依赖性存在时的维度允许性。我们研究的一个主要贡献是开发了一种均匀推断理论，能够对感兴趣的参数进行假设检验，包括网络结构中的零或非零元素。此外，对估计器的渐近性质进行了线性和非线性时刻的推导。模拟实验证明了所提方法的有效性。
 
-    Multi-task learning is a widely used technique for harnessing information from various tasks. Recently, the sparse orthogonal factor regression (SOFAR) framework, based on the sparse singular value decomposition (SVD) within the coefficient matrix, was introduced for interpretable multi-task learning, enabling the discovery of meaningful latent feature-response association networks across different layers. However, conducting precise inference on the latent factor matrices has remained challenging due to orthogonality constraints inherited from the sparse SVD constraint. In this paper, we suggest a novel approach called high-dimensional manifold-based SOFAR inference (SOFARI), drawing on the Neyman near-orthogonality inference while incorporating the Stiefel manifold structure imposed by the SVD constraints. By leveraging the underlying Stiefel manifold structure, SOFARI provides bias-corrected estimators for both latent left factor vectors and singular values, for which we show to enj
+    We propose employing a debiased-regularized, high-dimensional generalized method of moments (GMM) framework to perform inference on large-scale spatial panel networks. In particular, network structure with a flexible sparse deviation, which can be regarded either as latent or as misspecified from a predetermined adjacency matrix, is estimated using debiased machine learning approach. The theoretical analysis establishes the consistency and asymptotic normality of our proposed estimator, taking into account general temporal and spatial dependency inherent in the data-generating processes. The dimensionality allowance in presence of dependency is discussed. A primary contribution of our study is the development of uniform inference theory that enables hypothesis testing on the parameters of interest, including zero or non-zero elements in the network structure. Additionally, the asymptotic properties for the estimator are derived for both linear and nonlinear moments. Simulations demonst
     
 
