@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [SpikeNAS: A Fast Memory-Aware Neural Architecture Search Framework for Spiking Neural Network Systems](https://arxiv.org/abs/2402.11322) | SpikeNAS提出了一种快速内存感知神经架构搜索框架，旨在帮助脉冲神经网络系统快速找到在给定内存预算下高准确性的适当架构。 |
+| [^1] | [Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data.](http://arxiv.org/abs/2306.13840) | 本论文提出使用多样性系数作为LLM预训练数据质量的指标，研究表明公开可用的LLM数据集的多样性系数很高。 |
 
 # 详细
 
-[^1]: SpikeNAS: 一种面向脉冲神经网络系统的快速内存感知神经架构搜索框架
+[^1]: 超越规模：多样性系数作为数据质量指标证明了LLMs是在形式多样的数据上预先训练的
 
-    SpikeNAS: A Fast Memory-Aware Neural Architecture Search Framework for Spiking Neural Network Systems
+    Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data. (arXiv:2306.13840v1 [cs.CL])
 
-    [https://arxiv.org/abs/2402.11322](https://arxiv.org/abs/2402.11322)
+    [http://arxiv.org/abs/2306.13840](http://arxiv.org/abs/2306.13840)
 
-    SpikeNAS提出了一种快速内存感知神经架构搜索框架，旨在帮助脉冲神经网络系统快速找到在给定内存预算下高准确性的适当架构。
+    本论文提出使用多样性系数作为LLM预训练数据质量的指标，研究表明公开可用的LLM数据集的多样性系数很高。
 
     
 
-    脉冲神经网络（SNN）为解决机器学习任务提供了实现超低功耗计算的有前途的解决方案。目前，大多数SNN架构都源自人工神经网络，其神经元的架构和操作与SNN不同，或者在不考虑来自底层处理硬件的内存预算的情况下开发。这些限制阻碍了SNN在准确性和效率方面充分发挥潜力。为此，我们提出了SpikeNAS，一种新颖的内存感知神经架构搜索（NAS）框架，可在给定内存预算下快速找到一个具有高准确性的适当SNN架构。为实现这一目标，我们的SpikeNAS采用了几个关键步骤：分析网络操作对准确性的影响，增强网络架构以提高学习质量，并开发快速内存感知搜索算法。
+    当前，预先训练强大的大语言模型(LLMs)的趋势主要集中在模型和数据集规模的扩大。然而，预先训练数据的质量对于训练强大的LLMs来说是一个重要因素，但它是一个模糊的概念，尚未完全表征。因此，我们使用最近提出的Task2Vec多样性系数来基于数据质量的形式方面，超越规模本身。具体而言，我们测量公开可用的预先训练数据集的多样性系数，以证明它们的形式多样性高于理论的下限和上限。此外，为了建立对多样性系数的信心，我们进行可解释性实验，并发现该系数与多样性的直观属性相吻合，例如，随着潜在概念数量的增加，它增加。我们得出结论，多样性系数是可靠的，表明公开可用的LLM数据集的多样性系数很高，并推测它可以作为预训练LLMs模型的数据质量指标。
 
-    arXiv:2402.11322v1 Announce Type: cross  Abstract: Spiking Neural Networks (SNNs) offer a promising solution to achieve ultra low-power/energy computation for solving machine learning tasks. Currently, most of the SNN architectures are derived from Artificial Neural Networks whose neurons' architectures and operations are different from SNNs, or developed without considering memory budgets from the underlying processing hardware. These limitations hinder the SNNs from reaching their full potential in accuracy and efficiency. Towards this, we propose SpikeNAS, a novel memory-aware neural architecture search (NAS) framework for SNNs that can quickly find an appropriate SNN architecture with high accuracy under the given memory budgets. To do this, our SpikeNAS employs several key steps: analyzing the impacts of network operations on the accuracy, enhancing the network architecture to improve the learning quality, and developing a fast memory-aware search algorithm. The experimental resul
+    Current trends to pre-train capable Large Language Models (LLMs) mostly focus on scaling of model and dataset size. However, the quality of pre-training data is an important factor for training powerful LLMs, yet it is a nebulous concept that has not been fully characterized. Therefore, we use the recently proposed Task2Vec diversity coefficient to ground and understand formal aspects of data quality, to go beyond scale alone. Specifically, we measure the diversity coefficient of publicly available pre-training datasets to demonstrate that their formal diversity is high when compared to theoretical lower and upper bounds. In addition, to build confidence in the diversity coefficient, we conduct interpretability experiments and find that the coefficient aligns with intuitive properties of diversity, e.g., it increases as the number of latent concepts increases. We conclude the diversity coefficient is reliable, show it's high for publicly available LLM datasets, and conjecture it can be
     
 

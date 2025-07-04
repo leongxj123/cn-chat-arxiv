@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv physics.data-an</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for physics.data-an</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv physics.data-an</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for physics.data-an</description><item><title>TreeDOX&#26159;&#19968;&#31181;&#22522;&#20110;&#26641;&#30340;&#26041;&#27861;&#65292;&#19981;&#38656;&#35201;&#36229;&#21442;&#25968;&#35843;&#25972;&#65292;&#20351;&#29992;&#26102;&#38388;&#24310;&#36831;&#36807;&#24230;&#23884;&#20837;&#21644;&#39069;&#22806;&#26641;&#22238;&#24402;&#22120;&#36827;&#34892;&#29305;&#24449;&#38477;&#32500;&#21644;&#39044;&#27979;&#65292;&#24182;&#22312;&#28145;&#24230;&#39044;&#27979;&#28151;&#27788;&#31995;&#32479;&#20013;&#34920;&#29616;&#20986;state-of-the-art&#30340;&#24615;&#33021;&#12290;</title><link>https://arxiv.org/abs/2403.13836</link><description>&lt;p&gt;
+&#22522;&#20110;&#26641;&#30340;&#23398;&#20064;&#29992;&#20110;&#28145;&#24230;&#39044;&#27979;&#28151;&#27788;&#29616;&#35937;
+&lt;/p&gt;
+&lt;p&gt;
+Tree-based Learning for High-Fidelity Prediction of Chaos
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.13836
+&lt;/p&gt;
+&lt;p&gt;
+TreeDOX&#26159;&#19968;&#31181;&#22522;&#20110;&#26641;&#30340;&#26041;&#27861;&#65292;&#19981;&#38656;&#35201;&#36229;&#21442;&#25968;&#35843;&#25972;&#65292;&#20351;&#29992;&#26102;&#38388;&#24310;&#36831;&#36807;&#24230;&#23884;&#20837;&#21644;&#39069;&#22806;&#26641;&#22238;&#24402;&#22120;&#36827;&#34892;&#29305;&#24449;&#38477;&#32500;&#21644;&#39044;&#27979;&#65292;&#24182;&#22312;&#28145;&#24230;&#39044;&#27979;&#28151;&#27788;&#31995;&#32479;&#20013;&#34920;&#29616;&#20986;state-of-the-art&#30340;&#24615;&#33021;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#28145;&#24230;&#39044;&#27979;&#28151;&#27788;&#31995;&#32479;&#30340;&#26102;&#38388;&#28436;&#21464;&#26159;&#33267;&#20851;&#37325;&#35201;&#20294;&#20855;&#26377;&#25361;&#25112;&#24615;&#30340;&#12290;&#29616;&#26377;&#35299;&#20915;&#26041;&#26696;&#38656;&#35201;&#36827;&#34892;&#36229;&#21442;&#25968;&#35843;&#25972;&#65292;&#36825;&#20005;&#37325;&#38459;&#30861;&#20102;&#23427;&#20204;&#30340;&#24191;&#27867;&#24212;&#29992;&#12290;&#22312;&#36825;&#39033;&#24037;&#20316;&#20013;&#65292;&#25105;&#20204;&#24341;&#20837;&#20102;&#19968;&#31181;&#26080;&#38656;&#36229;&#21442;&#25968;&#35843;&#25972;&#30340;&#22522;&#20110;&#26641;&#30340;&#26041;&#27861;&#65306;TreeDOX&#12290;&#23427;&#20351;&#29992;&#26102;&#38388;&#24310;&#36831;&#36807;&#24230;&#23884;&#20837;&#20316;&#20026;&#26174;&#24335;&#30701;&#26399;&#35760;&#24518;&#65292;&#20197;&#21450;&#39069;&#22806;&#26641;&#22238;&#24402;&#22120;&#26469;&#25191;&#34892;&#29305;&#24449;&#38477;&#32500;&#21644;&#39044;&#27979;&#12290;&#25105;&#20204;&#20351;&#29992;Henon&#26144;&#23556;&#65292;Lorenz&#21644;Kuramoto-Sivashinsky&#31995;&#32479;&#20197;&#21450;&#29616;&#23454;&#19990;&#30028;&#30340;Southern Oscillation Index&#23637;&#31034;&#20102;TreeDOX&#30340;&#26368;&#20808;&#36827;&#24615;&#33021;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.13836v1 Announce Type: new  Abstract: Model-free forecasting of the temporal evolution of chaotic systems is crucial but challenging. Existing solutions require hyperparameter tuning, significantly hindering their wider adoption. In this work, we introduce a tree-based approach not requiring hyperparameter tuning: TreeDOX. It uses time delay overembedding as explicit short-term memory and Extra-Trees Regressors to perform feature reduction and forecasting. We demonstrate the state-of-the-art performance of TreeDOX using the Henon map, Lorenz and Kuramoto-Sivashinsky systems, and the real-world Southern Oscillation Index.
+&lt;/p&gt;</description></item></channel></rss>
