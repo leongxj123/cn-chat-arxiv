@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv stat.AP</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for stat.AP</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv stat.AP</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for stat.AP</description><item><title>&#25552;&#20986;&#20102;&#19968;&#20010;&#22522;&#20110;&#20998;&#20301;&#25968;&#22238;&#24402;&#30340;&#26032;&#22411;&#21160;&#24577;&#19977;&#22240;&#23376;&#27169;&#22411;&#65292;&#33021;&#22815;&#23545;&#25910;&#30410;&#29575;&#30340;&#25972;&#20010;&#26465;&#20214;&#20998;&#24067;&#36827;&#34892;&#24314;&#27169;&#65292;&#24182;&#25581;&#31034;&#20102;&#25910;&#30410;&#29575;&#20043;&#38388;&#30340;&#26174;&#33879;&#24322;&#36136;&#24615;&#12290;</title><link>http://arxiv.org/abs/2401.09874</link><description>&lt;p&gt;
+&#19968;&#20010;&#20998;&#20301;&#25968;Nelson-Siegel&#27169;&#22411;
+&lt;/p&gt;
+&lt;p&gt;
+A Quantile Nelson-Siegel model. (arXiv:2401.09874v1 [stat.AP])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2401.09874
+&lt;/p&gt;
+&lt;p&gt;
+&#25552;&#20986;&#20102;&#19968;&#20010;&#22522;&#20110;&#20998;&#20301;&#25968;&#22238;&#24402;&#30340;&#26032;&#22411;&#21160;&#24577;&#19977;&#22240;&#23376;&#27169;&#22411;&#65292;&#33021;&#22815;&#23545;&#25910;&#30410;&#29575;&#30340;&#25972;&#20010;&#26465;&#20214;&#20998;&#24067;&#36827;&#34892;&#24314;&#27169;&#65292;&#24182;&#25581;&#31034;&#20102;&#25910;&#30410;&#29575;&#20043;&#38388;&#30340;&#26174;&#33879;&#24322;&#36136;&#24615;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#24314;&#31435;&#20102;&#19968;&#20010;&#22522;&#20110;&#20998;&#20301;&#25968;&#22238;&#24402;&#30340;&#26032;&#22411;&#21160;&#24577;&#19977;&#22240;&#23376;&#27169;&#22411;&#65292;&#20197;&#35299;&#20915;&#20256;&#32479;&#23439;&#35266;&#32463;&#27982;&#21464;&#37327;&#19982;&#25910;&#30410;&#29575;&#26354;&#32447;&#20043;&#38388;&#30456;&#20114;&#20316;&#29992;&#24314;&#27169;&#30340;&#38382;&#39064;&#12290;&#35813;&#26041;&#27861;&#21033;&#29992;&#20998;&#20301;&#25968;&#22238;&#24402;&#30340;&#28508;&#21147;&#26469;&#24314;&#27169;&#25910;&#30410;&#29575;&#30340;&#25972;&#20010;&#26465;&#20214;&#20998;&#24067;&#65292;&#32780;&#19981;&#20165;&#38480;&#20110;&#20854;&#22343;&#20540;&#12290;&#23545;20&#19990;&#32426;70&#24180;&#20195;&#30340;&#32654;&#22269;&#25968;&#25454;&#36827;&#34892;&#20102;&#24212;&#29992;&#65292;&#24182;&#26174;&#31034;&#20986;&#25910;&#30410;&#29575;&#20043;&#38388;&#30340;&#26174;&#33879;&#24322;&#36136;&#24615;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+A widespread approach to modelling the interaction between macroeconomic variables and the yield curve relies on three latent factors usually interpreted as the level, slope, and curvature (Diebold et al., 2006). This approach is inherently focused on the conditional mean of the yields and postulates a dynamic linear model where the latent factors smoothly change over time. However, periods of deep crisis, such as the Great Recession and the recent pandemic, have highlighted the importance of statistical models that account for asymmetric shocks and are able to forecast the tails of a variable's distribution. A new version of the dynamic three-factor model is proposed to address this issue based on quantile regressions. The novel approach leverages the potential of quantile regression to model the entire (conditional) distribution of the yields instead of restricting to its mean. An application to US data from the 1970s shows the significant heterogeneity of the interactions between fi
+&lt;/p&gt;</description></item></channel></rss>

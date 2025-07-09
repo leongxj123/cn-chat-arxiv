@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Recurrent networks recognize patterns with low-dimensional oscillations.](http://arxiv.org/abs/2310.07908) | 本研究提出了一种通过相位变化识别模式的循环神经网络机制，并通过验证手工制作的振荡模型证实了这一解释。该研究不仅提供了一种潜在的动力学机制用于模式识别，还暗示了有限状态自动机的神经实现方式，并且对深度学习模型的可解释性进行了贡献。 |
+| [^1] | [TopCoW: Benchmarking Topology-Aware Anatomical Segmentation of the Circle of Willis (CoW) for CTA and MRA.](http://arxiv.org/abs/2312.17670) | 这项研究提出了TopCoW挑战，通过发布具有13种血管组分注释的Willis循环（CoW）数据集，并使用虚拟现实（VR）技术进行拓扑感知解剖分割，解决了手动和耗时的CoW表征问题。 |
 
 # 详细
 
-[^1]: 循环网络通过低维振荡识别模式
+[^1]: TopCoW：基于拓扑感知解剖分割的Willis循环（CoW）在CTA和MRA中的基准测试
 
-    Recurrent networks recognize patterns with low-dimensional oscillations. (arXiv:2310.07908v1 [q-bio.NC])
+    TopCoW: Benchmarking Topology-Aware Anatomical Segmentation of the Circle of Willis (CoW) for CTA and MRA. (arXiv:2312.17670v2 [cs.CV] UPDATED)
 
-    [http://arxiv.org/abs/2310.07908](http://arxiv.org/abs/2310.07908)
+    [http://arxiv.org/abs/2312.17670](http://arxiv.org/abs/2312.17670)
 
-    本研究提出了一种通过相位变化识别模式的循环神经网络机制，并通过验证手工制作的振荡模型证实了这一解释。该研究不仅提供了一种潜在的动力学机制用于模式识别，还暗示了有限状态自动机的神经实现方式，并且对深度学习模型的可解释性进行了贡献。
+    这项研究提出了TopCoW挑战，通过发布具有13种血管组分注释的Willis循环（CoW）数据集，并使用虚拟现实（VR）技术进行拓扑感知解剖分割，解决了手动和耗时的CoW表征问题。
 
     
 
-    本研究提出了一种通过解释在SET卡牌游戏启发下进行训练的循环神经网络(RNN)在简单任务上的动力学机制来识别模式。我们将训练后的RNN解释为通过低维极限环中的相位变化进行模式识别，类似于有限状态自动机(FSA)中的转换。我们进一步通过手工制作一个简单的振荡模型来验证了这一解释，该模型复制了训练后的RNN的动力学特性。我们的发现不仅暗示了一种潜在的动力学机制能够实现模式识别，还暗示了一种有限状态自动机的潜在神经实现。最重要的是，这项工作有助于关于深度学习模型可解释性的讨论。
+    Willis循环（CoW）是连接大脑主要循环的重要动脉网络。其血管结构被认为影响着严重神经血管疾病的风险、严重程度和临床结果。然而，对高度变化的CoW解剖进行表征仍然是一项需要手动和耗时的专家任务。CoW通常通过两种血管造影成像模式进行成像，即磁共振血管成像（MRA）和计算机断层血管造影（CTA），但是关于CTA的CoW解剖的公共数据集及其注释非常有限。因此，我们在2023年组织了TopCoW挑战赛，并发布了一个带有注释的CoW数据集。TopCoW数据集是第一个具有13种可能的CoW血管组分的体素级注释的公共数据集，通过虚拟现实（VR）技术实现。它也是第一个带有来自同一患者的成对MRA和CTA的大型数据集。TopCoW挑战将CoW表征问题形式化为多类问题。
 
-    This study proposes a novel dynamical mechanism for pattern recognition discovered by interpreting a recurrent neural network (RNN) trained on a simple task inspired by the SET card game. We interpreted the trained RNN as recognizing patterns via phase shifts in a low-dimensional limit cycle in a manner analogous to transitions in a finite state automaton (FSA). We further validated this interpretation by handcrafting a simple oscillatory model that reproduces the dynamics of the trained RNN. Our findings not only suggest of a potential dynamical mechanism capable of pattern recognition, but also suggest of a potential neural implementation of FSA. Above all, this work contributes to the growing discourse on deep learning model interpretability.
+    The Circle of Willis (CoW) is an important network of arteries connecting major circulations of the brain. Its vascular architecture is believed to affect the risk, severity, and clinical outcome of serious neuro-vascular diseases. However, characterizing the highly variable CoW anatomy is still a manual and time-consuming expert task. The CoW is usually imaged by two angiographic imaging modalities, magnetic resonance angiography (MRA) and computed tomography angiography (CTA), but there exist limited public datasets with annotations on CoW anatomy, especially for CTA. Therefore we organized the TopCoW Challenge in 2023 with the release of an annotated CoW dataset. The TopCoW dataset was the first public dataset with voxel-level annotations for thirteen possible CoW vessel components, enabled by virtual-reality (VR) technology. It was also the first large dataset with paired MRA and CTA from the same patients. TopCoW challenge formalized the CoW characterization problem as a multiclas
     
 
