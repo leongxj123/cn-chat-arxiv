@@ -3,8 +3,7 @@
 | Ref | Title | Summary |
 | --- | --- | --- |
 | [^1] | [Average Calibration Error: A Differentiable Loss for Improved Reliability in Image Segmentation](https://arxiv.org/abs/2403.06759) | 提出一种平均L1校准误差（mL1-ACE）作为辅助损失函数，用于改善图像分割中的像素级校准，减少了校准误差并引入了数据集可靠性直方图以提高校准评估。 |
-| [^2] | [GoalNet: Goal Areas Oriented Pedestrian Trajectory Prediction](https://arxiv.org/abs/2402.19002) | 通过利用场景背景和观察到的轨迹信息，该研究提出了一种基于行人目标区域的轨迹预测神经网络，可以将不确定性限制在几个目标区域内。 |
-| [^3] | [SDR-GAIN: A High Real-Time Occluded Pedestrian Pose Completion Method for Autonomous Driving.](http://arxiv.org/abs/2306.03538) | SDR-GAIN是一种用于解决行人姿态中部分遮挡问题的关键点补全方法，它通过对不完整的关键点进行降维，统一特征分布，并使用GAN框架的两种生成模型来完成姿态的补全。该方法的实验表明性能优于基本的GAIN框架。 |
+| [^2] | [Understanding Pan-Sharpening via Generalized Inverse.](http://arxiv.org/abs/2310.02718) | 通过研究广义逆理论，本文提出了一种新的全色增强算法，该算法基于简单矩阵方程描述全色增强问题，并探讨解的条件和光谱、空间分辨率的获取。通过引入降采样增强方法，我们得到了与分量替代和多分辨率分析方法相对应的广义逆矩阵表达式，并提出了一个新的模型先验来解决全色增强中的理论误差问题。 |
 
 # 详细
 
@@ -22,32 +21,18 @@
 
     arXiv:2403.06759v1 Announce Type: cross  Abstract: Deep neural networks for medical image segmentation often produce overconfident results misaligned with empirical observations. Such miscalibration, challenges their clinical translation. We propose to use marginal L1 average calibration error (mL1-ACE) as a novel auxiliary loss function to improve pixel-wise calibration without compromising segmentation quality. We show that this loss, despite using hard binning, is directly differentiable, bypassing the need for approximate but differentiable surrogate or soft binning approaches. Our work also introduces the concept of dataset reliability histograms which generalises standard reliability diagrams for refined visual assessment of calibration in semantic segmentation aggregated at the dataset level. Using mL1-ACE, we reduce average and maximum calibration error by 45% and 55% respectively, maintaining a Dice score of 87% on the BraTS 2021 dataset. We share our code here: https://github
     
-[^2]: GoalNet: 面向目标区域的行人轨迹预测
+[^2]: 通过广义逆理解全色增强算法
 
-    GoalNet: Goal Areas Oriented Pedestrian Trajectory Prediction
+    Understanding Pan-Sharpening via Generalized Inverse. (arXiv:2310.02718v1 [cs.LG])
 
-    [https://arxiv.org/abs/2402.19002](https://arxiv.org/abs/2402.19002)
+    [http://arxiv.org/abs/2310.02718](http://arxiv.org/abs/2310.02718)
 
-    通过利用场景背景和观察到的轨迹信息，该研究提出了一种基于行人目标区域的轨迹预测神经网络，可以将不确定性限制在几个目标区域内。
-
-    
-
-    预测道路上行人未来的轨迹是自动驾驶中的重要任务。行人轨迹预测受场景路径、行人意图和决策影响，这是一个多模态问题。最近的研究大多使用过去的轨迹来预测各种潜在的未来轨迹分布，这并未考虑场景背景和行人目标。我们提出了一种不直接预测未来轨迹的方法，即首先使用场景背景和观察到的轨迹来预测目标点，然后重复使用目标点来预测未来轨迹。通过利用场景背景和观察到的轨迹信息，我们可以将不确定性限制在几个目标区域内，这些区域代表了行人的“目标”。在本文中，我们提出了GoalNet，一种基于行人目标区域的新轨迹预测神经网络。
-
-    arXiv:2402.19002v1 Announce Type: cross  Abstract: Predicting the future trajectories of pedestrians on the road is an important task for autonomous driving. The pedestrian trajectory prediction is affected by scene paths, pedestrian's intentions and decision-making, which is a multi-modal problem. Most recent studies use past trajectories to predict a variety of potential future trajectory distributions, which do not account for the scene context and pedestrian targets. Instead of predicting the future trajectory directly, we propose to use scene context and observed trajectory to predict the goal points first, and then reuse the goal points to predict the future trajectories. By leveraging the information from scene context and observed trajectory, the uncertainty can be limited to a few target areas, which represent the "goals" of the pedestrians. In this paper, we propose GoalNet, a new trajectory prediction neural network based on the goal areas of a pedestrian. Our network can pr
-    
-[^3]: SDR-GAIN：一种用于自动驾驶的高实时遮挡行人姿态完成方法
-
-    SDR-GAIN: A High Real-Time Occluded Pedestrian Pose Completion Method for Autonomous Driving. (arXiv:2306.03538v1 [cs.CV])
-
-    [http://arxiv.org/abs/2306.03538](http://arxiv.org/abs/2306.03538)
-
-    SDR-GAIN是一种用于解决行人姿态中部分遮挡问题的关键点补全方法，它通过对不完整的关键点进行降维，统一特征分布，并使用GAN框架的两种生成模型来完成姿态的补全。该方法的实验表明性能优于基本的GAIN框架。
+    通过研究广义逆理论，本文提出了一种新的全色增强算法，该算法基于简单矩阵方程描述全色增强问题，并探讨解的条件和光谱、空间分辨率的获取。通过引入降采样增强方法，我们得到了与分量替代和多分辨率分析方法相对应的广义逆矩阵表达式，并提出了一个新的模型先验来解决全色增强中的理论误差问题。
 
     
 
-    为了缓解基于人体姿态关键点的行人检测算法中部分遮挡带来的挑战，我们提出了一种称为分离和降维基于生成对抗性补全网络(SDR-GAIN)的新型行人姿势关键点补全方法。首先，我们利用OpenPose在图像中估计行人的姿态。然后，我们对由于遮挡或其他因素而不完整的行人头部和躯干关键点进行维度缩减，以增强特征并进一步统一特征分布。最后，我们引入了基于生成对抗网络(GAN)框架的两种生成模型，这些模型融合了Huber损失、残差结构和L1正则化来生成部分遮挡行人不完整头部和躯干姿态关键点的缺失部分，从而实现了姿态补全。我们在MS COCO和JAAD数据集上的实验表明，SDR-GAIN的性能优于基本的GAIN框架。
+    全色增强算法利用全色图像和多光谱图像获取具有高空间和高光谱的图像。然而，这些算法的优化是根据不同的标准设计的。我们采用简单的矩阵方程来描述全色增强问题，并讨论解的存在条件以及光谱和空间分辨率的获取。我们引入了一种降采样增强方法，以更好地获取空间和光谱降采样矩阵。通过广义逆理论，我们推导出了两种形式的广义逆矩阵表达式，可以对应于两个主要的全色增强方法：分量替代和多分辨率分析方法。具体而言，我们证明了Gram Schmidt自适应(GSA)方法遵循分量替代的广义逆矩阵表达式。我们提出了一个在光谱函数的广义逆矩阵之前的模型先验。我们对理论误差进行了分析。
 
-    To mitigate the challenges arising from partial occlusion in human pose keypoint based pedestrian detection methods , we present a novel pedestrian pose keypoint completion method called the separation and dimensionality reduction-based generative adversarial imputation networks (SDR-GAIN) . Firstly, we utilize OpenPose to estimate pedestrian poses in images. Then, we isolate the head and torso keypoints of pedestrians with incomplete keypoints due to occlusion or other factors and perform dimensionality reduction to enhance features and further unify feature distribution. Finally, we introduce two generative models based on the generative adversarial networks (GAN) framework, which incorporate Huber loss, residual structure, and L1 regularization to generate missing parts of the incomplete head and torso pose keypoints of partially occluded pedestrians, resulting in pose completion. Our experiments on MS COCO and JAAD datasets demonstrate that SDR-GAIN outperforms basic GAIN framework
+    Pan-sharpening algorithm utilizes panchromatic image and multispectral image to obtain a high spatial and high spectral image. However, the optimizations of the algorithms are designed with different standards. We adopt the simple matrix equation to describe the Pan-sharpening problem. The solution existence condition and the acquirement of spectral and spatial resolution are discussed. A down-sampling enhancement method was introduced for better acquiring the spatial and spectral down-sample matrices. By the generalized inverse theory, we derived two forms of general inverse matrix formulations that can correspond to the two prominent classes of Pan-sharpening methods, that is, component substitution and multi-resolution analysis methods. Specifically, the Gram Schmidt Adaptive(GSA) was proved to follow the general inverse matrix formulation of component substitution. A model prior to the general inverse matrix of the spectral function was rendered. The theoretical errors are analyzed
     
 
