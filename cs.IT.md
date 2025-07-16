@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Approaching Rate-Distortion Limits in Neural Compression with Lattice Transform Coding](https://arxiv.org/abs/2403.07320) | 格点变换编码（LTC）通过在潜空间中采用格点量化，实现了神经压缩中接近速率失真极限的优化。 |
+| [^1] | [Beyond PCA: A Probabilistic Gram-Schmidt Approach to Feature Extraction](https://arxiv.org/abs/2311.09386) | 本研究提出了一种概率性Gram-Schmidt方法来进行特征提取，该方法可以检测和去除非线性依赖性，从而提取数据中的线性特征并去除非线性冗余。 |
 
 # 详细
 
-[^1]: 用格点变换编码接近神经压缩中的速率失真极限
+[^1]: 超越PCA：一种概率性Gram-Schmidt方法的特征提取
 
-    Approaching Rate-Distortion Limits in Neural Compression with Lattice Transform Coding
+    Beyond PCA: A Probabilistic Gram-Schmidt Approach to Feature Extraction
 
-    [https://arxiv.org/abs/2403.07320](https://arxiv.org/abs/2403.07320)
+    [https://arxiv.org/abs/2311.09386](https://arxiv.org/abs/2311.09386)
 
-    格点变换编码（LTC）通过在潜空间中采用格点量化，实现了神经压缩中接近速率失真极限的优化。
+    本研究提出了一种概率性Gram-Schmidt方法来进行特征提取，该方法可以检测和去除非线性依赖性，从而提取数据中的线性特征并去除非线性冗余。
 
     
 
-    神经压缩在设计具有良好速率失真（RD）性能但复杂度低的有损压缩器方面取得了巨大进展。迄今为止，神经压缩设计涉及将源转换为潜变量，然后舍入为整数并进行熵编码。尽管这种方法已被证明在某些源上的一次性情况下是最佳的，但我们表明在i.i.d.序列上它是高度次优的，事实上总是恢复原始源序列的标量量化。我们展示亚优越性是由于潜空间中量化方案的选择，而非变换设计所致。通过在潜空间中采用格点量化而非标量量化，我们展示了格点变换编码（Lattice Transform Coding，LTC）能够在各个维度上恢复最佳矢量量化，并在合理的复杂度下接近渐近可实现的速率失真函数。
+    在无监督学习中，线性特征提取在数据中存在非线性依赖的情况下是一个基本挑战。我们提出使用概率性Gram-Schmidt (GS)类型的正交化过程来检测和映射出冗余维度。具体而言，通过在一族函数上应用GS过程，该族函数预计捕捉到数据中的非线性依赖性，我们构建了一系列协方差矩阵，可以用于识别新的大方差方向，或者将这些依赖性从主成分中去除。在前一种情况下，我们提供了熵减少的信息理论保证。在后一种情况下，我们证明在某些假设下，所得算法在所选择函数族的线性张成空间中可以检测和去除非线性依赖性。两种提出的方法都可以从数据中提取线性特征并去除非线性冗余。
 
-    arXiv:2403.07320v1 Announce Type: cross  Abstract: Neural compression has brought tremendous progress in designing lossy compressors with good rate-distortion (RD) performance at low complexity. Thus far, neural compression design involves transforming the source to a latent vector, which is then rounded to integers and entropy coded. While this approach has been shown to be optimal in a one-shot sense on certain sources, we show that it is highly sub-optimal on i.i.d. sequences, and in fact always recovers scalar quantization of the original source sequence. We demonstrate that the sub-optimality is due to the choice of quantization scheme in the latent space, and not the transform design. By employing lattice quantization instead of scalar quantization in the latent space, we demonstrate that Lattice Transform Coding (LTC) is able to recover optimal vector quantization at various dimensions and approach the asymptotically-achievable rate-distortion function at reasonable complexity. 
+    Linear feature extraction at the presence of nonlinear dependencies among the data is a fundamental challenge in unsupervised learning. We propose using a probabilistic Gram-Schmidt (GS) type orthogonalization process in order to detect and map out redundant dimensions. Specifically, by applying the GS process over a family of functions which presumably captures the nonlinear dependencies in the data, we construct a series of covariance matrices that can either be used to identify new large-variance directions, or to remove those dependencies from the principal components. In the former case, we provide information-theoretic guarantees in terms of entropy reduction. In the latter, we prove that under certain assumptions the resulting algorithms detect and remove nonlinear dependencies whenever those dependencies lie in the linear span of the chosen function family. Both proposed methods extract linear features from the data while removing nonlinear redundancies. We provide simulation r
     
 

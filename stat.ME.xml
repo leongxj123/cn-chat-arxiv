@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv stat.ME</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for stat.ME</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv stat.ME</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for stat.ME</description><item><title>&#26412;&#30740;&#31350;&#25552;&#20986;&#20102;&#19968;&#31181;&#21452;&#37325;&#31283;&#20581;&#25512;&#26029;&#26041;&#27861;&#65292;&#35813;&#26041;&#27861;&#21487;&#29992;&#20110;&#26500;&#24314;&#22312;&#24046;&#20998;&#20013;&#30340;&#32452;&#26102;&#38388;&#26465;&#20214;&#24179;&#22343;&#22788;&#29702;&#25928;&#24212;&#20989;&#25968;&#30340;&#19968;&#33268;&#32622;&#20449;&#24102;&#12290;</title><link>http://arxiv.org/abs/2305.02185</link><description>&lt;p&gt;
+&#21452;&#37325;&#31283;&#20581;&#19968;&#33268;&#32622;&#20449;&#24102;&#22312;&#24046;&#20998;&#20013;&#30340;&#32452;&#26102;&#38388;&#26465;&#20214;&#24179;&#22343;&#22788;&#29702;&#25928;&#24212;&#20013;&#30340;&#24212;&#29992;
+&lt;/p&gt;
+&lt;p&gt;
+Doubly Robust Uniform Confidence Bands for Group-Time Conditional Average Treatment Effects in Difference-in-Differences. (arXiv:2305.02185v1 [econ.EM])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2305.02185
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#30740;&#31350;&#25552;&#20986;&#20102;&#19968;&#31181;&#21452;&#37325;&#31283;&#20581;&#25512;&#26029;&#26041;&#27861;&#65292;&#35813;&#26041;&#27861;&#21487;&#29992;&#20110;&#26500;&#24314;&#22312;&#24046;&#20998;&#20013;&#30340;&#32452;&#26102;&#38388;&#26465;&#20214;&#24179;&#22343;&#22788;&#29702;&#25928;&#24212;&#20989;&#25968;&#30340;&#19968;&#33268;&#32622;&#20449;&#24102;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#30740;&#31350;&#32771;&#34385;&#20102;&#23545;&#38754;&#26495;&#25968;&#25454;&#36827;&#34892;&#20998;&#26512;&#65292;&#20197;&#30740;&#31350;&#22312;Callaway&#21644;Sant'Anna&#65288;2021&#65289;&#30340;&#38169;&#20301;&#24046;&#20998;&#35774;&#32622;&#20013;&#65292;&#38024;&#23545;&#24863;&#20852;&#36259;&#30340;&#39044;&#22788;&#29702;&#21327;&#21464;&#37327;&#30340;&#27835;&#30103;&#25928;&#24212;&#24322;&#36136;&#24615;&#12290;&#22312;&#19968;&#32452;&#26631;&#20934;&#35782;&#21035;&#26465;&#20214;&#19979;&#65292;&#19968;&#20010;&#22522;&#20110;&#21327;&#21464;&#37327;&#30340;&#21452;&#37325;&#31283;&#20581;&#20272;&#35745;&#20540;&#35782;&#21035;&#20102;&#32473;&#23450;&#21327;&#21464;&#37327;&#30340;&#32452;&#26102;&#38388;&#26465;&#20214;&#24179;&#22343;&#22788;&#29702;&#25928;&#24212;&#12290;&#37492;&#20110;&#36825;&#20010;&#35782;&#21035;&#32467;&#26524;&#65292;&#25105;&#20204;&#25552;&#20986;&#20102;&#19968;&#20010;&#22522;&#20110;&#38750;&#21442;&#25968;&#23616;&#37096;&#32447;&#24615;&#22238;&#24402;&#21644;&#21442;&#25968;&#20272;&#35745;&#26041;&#27861;&#30340;&#19977;&#27493;&#20272;&#35745;&#31243;&#24207;&#65292;&#24182;&#24320;&#21457;&#20102;&#19968;&#20010;&#21452;&#37325;&#31283;&#20581;&#25512;&#26029;&#26041;&#27861;&#26469;&#26500;&#24314;&#32452;&#26102;&#38388;&#26465;&#20214;&#24179;&#22343;&#22788;&#29702;&#25928;&#24212;&#20989;&#25968;&#30340;&#19968;&#33268;&#32622;&#20449;&#24102;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+This study considers a panel data analysis to examine the heterogeneity in treatment effects with respect to a pre-treatment covariate of interest in the staggered difference-in-differences setting in Callaway and Sant'Anna (2021). Under a set of standard identification conditions, a doubly robust estimand conditional on the covariate identifies the group-time conditional average treatment effect given the covariate. Given this identification result, we propose a three-step estimation procedure based on nonparametric local linear regressions and parametric estimation methods, and develop a doubly robust inference method to construct a uniform confidence band of the group-time conditional average treatment effect function.
+&lt;/p&gt;</description></item></channel></rss>
