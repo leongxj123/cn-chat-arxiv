@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [FairTargetSim: An Interactive Simulator for Understanding and Explaining the Fairness Effects of Target Variable Definition](https://arxiv.org/abs/2403.06031) | FairTargetSim提供了一个交互式模拟器，展示了目标变量定义对公平性的影响，适用于算法开发者、研究人员和非技术利益相关者。 |
+| [^1] | [Governance of Generative Artificial Intelligence for Companies](https://arxiv.org/abs/2403.08802) | 本综述填补了有关企业中生成式人工智能（GenAI）治理的研究空白，提出了一个框架，旨在利用业务机会并减轻与GenAI整合相关风险。 |
 
 # 详细
 
-[^1]: FairTargetSim：用于理解和解释目标变量定义公平性影响的交互式模拟器
+[^1]: 企业中生成式人工智能的治理
 
-    FairTargetSim: An Interactive Simulator for Understanding and Explaining the Fairness Effects of Target Variable Definition
+    Governance of Generative Artificial Intelligence for Companies
 
-    [https://arxiv.org/abs/2403.06031](https://arxiv.org/abs/2403.06031)
+    [https://arxiv.org/abs/2403.08802](https://arxiv.org/abs/2403.08802)
 
-    FairTargetSim提供了一个交互式模拟器，展示了目标变量定义对公平性的影响，适用于算法开发者、研究人员和非技术利益相关者。
+    本综述填补了有关企业中生成式人工智能（GenAI）治理的研究空白，提出了一个框架，旨在利用业务机会并减轻与GenAI整合相关风险。
 
     
 
-    机器学习需要为预测或决策定义目标变量，这个过程可能对公平性产生深远影响：偏见通常已经被编码在目标变量定义本身中，而不是在任何数据收集或训练之前。我们提出了一个交互式模拟器，FairTargetSim (FTS)，展示了目标变量定义如何影响公平性。FTS是一个有价值的工具，适用于算法开发者、研究人员和非技术利益相关者。FTS使用了算法招聘的案例研究，使用真实世界数据和用户定义的目标变量。FTS是开源的，可在以下网址找到：http://tinyurl.com/ftsinterface。本文附带的视频网址为：http://tinyurl.com/ijcaifts。
+    生成式人工智能（GenAI），特别是像ChatGPT这样的大型语言模型，已迅速进入企业，但缺乏充分的治理，带来机遇和挑战。尽管对GenAI具有变革性质和监管措施的广泛讨论，但有限的研究涉及组织治理，包括技术和业务视角。本综述填补了这一空白，调查了最近的研究。它不仅仅是总结，还通过制定适用于企业内的GenAI治理框架来进行。我们的框架详细描述了范围、目标和治理机制，旨在利用业务机会并减轻与GenAI整合相关风险。该研究提供了一种专注于GenAI治理的方法，为企业在负责任的AI采用挑战中提供了实用见解。对于技术人员来说，也有助于拓宽他们的视角。
 
-    arXiv:2403.06031v1 Announce Type: cross  Abstract: Machine learning requires defining one's target variable for predictions or decisions, a process that can have profound implications on fairness: biases are often encoded in target variable definition itself, before any data collection or training. We present an interactive simulator, FairTargetSim (FTS), that illustrates how target variable definition impacts fairness. FTS is a valuable tool for algorithm developers, researchers, and non-technical stakeholders. FTS uses a case study of algorithmic hiring, using real-world data and user-defined target variables. FTS is open-source and available at: http://tinyurl.com/ftsinterface. The video accompanying this paper is here: http://tinyurl.com/ijcaifts.
+    arXiv:2403.08802v1 Announce Type: new  Abstract: Generative Artificial Intelligence (GenAI), specifically large language models like ChatGPT, has swiftly entered organizations without adequate governance, posing both opportunities and risks. Despite extensive debates on GenAI's transformative nature and regulatory measures, limited research addresses organizational governance, encompassing technical and business perspectives. This review paper fills this gap by surveying recent works. It goes beyond mere summarization by developing a framework for GenAI governance within companies. Our framework outlines the scope, objectives, and governance mechanisms tailored to harness business opportunities and mitigate risks associated with GenAI integration. This research contributes a focused approach to GenAI governance, offering practical insights for companies navigating the challenges of responsible AI adoption. It is also valuable for a technical audience to broaden their perspective as inc
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [VFedMH: Vertical Federated Learning for Training Multi-party Heterogeneous Models.](http://arxiv.org/abs/2310.13367) | VFedMH是一种垂直联合学习方法，通过在前向传播过程中聚合参与者的嵌入来处理参与者之间的异构模型，解决了现有VFL方法面临的挑战。 |
+| [^1] | [Programming Distributed Collective Processes in the eXchange Calculus.](http://arxiv.org/abs/2401.11212) | 本研究在交换演算中考虑了集合设备的动态合作行为，提出了分布式集体过程的抽象表示，用于编程计算集体的行为。 |
 
 # 详细
 
-[^1]: VFedMH: 垂直联合学习用于训练多参与方异构模型
+[^1]: 在交换演算中编程分布式集体过程
 
-    VFedMH: Vertical Federated Learning for Training Multi-party Heterogeneous Models. (arXiv:2310.13367v1 [cs.LG])
+    Programming Distributed Collective Processes in the eXchange Calculus. (arXiv:2401.11212v1 [cs.DC])
 
-    [http://arxiv.org/abs/2310.13367](http://arxiv.org/abs/2310.13367)
+    [http://arxiv.org/abs/2401.11212](http://arxiv.org/abs/2401.11212)
 
-    VFedMH是一种垂直联合学习方法，通过在前向传播过程中聚合参与者的嵌入来处理参与者之间的异构模型，解决了现有VFL方法面临的挑战。
+    本研究在交换演算中考虑了集合设备的动态合作行为，提出了分布式集体过程的抽象表示，用于编程计算集体的行为。
 
     
 
-    垂直联合学习（VFL）作为一种集成样本对齐和特征合并的新型训练范式，已经引起了越来越多的关注。然而，现有的VFL方法在处理参与者之间存在异构本地模型时面临挑战，这影响了优化收敛性和泛化能力。为了解决这个问题，本文提出了一种名为VFedMH的新方法，用于训练多方异构模型。VFedMH的重点是在前向传播期间聚合每个参与者知识的嵌入，而不是中间结果。主动方，拥有样本的标签和特征，在VFedMH中安全地聚合本地嵌入以获得全局知识嵌入，并将其发送给被动方。被动方仅拥有样本的特征，然后利用全局嵌入在其本地异构网络上进行前向传播。然而，被动方不拥有标签。
+    最近的趋势如物联网（IoT）提出了在几乎所有环境中密集和多尺度部署计算设备的愿景。一个突出的工程挑战围绕着编程这种计算生态系统的集体自适应行为。这需要能够捕捉概念（动态合作设备群组）和集体任务（由合奏组执行的联合活动）的抽象。在这项工作中，我们考虑与邻居交互并以几乎同步的感知-计算-交互循环执行的设备集合，其中计算由一个将感知值和传入消息映射到输出和传出消息的单个程序给出。为了支持整个计算集体的编程，我们提出了分布式集体过程的抽象，它可以同时定义合奏组的形成逻辑和它的集体任务。我们在交换演算中形式化了这种抽象。
 
-    Vertical Federated Learning (VFL) has gained increasing attention as a novel training paradigm that integrates sample alignment and feature union. However, existing VFL methods face challenges when dealing with heterogeneous local models among participants, which affects optimization convergence and generalization. To address this issue, this paper proposes a novel approach called Vertical Federated learning for training Multi-parties Heterogeneous models (VFedMH). VFedMH focuses on aggregating the embeddings of each participant's knowledge instead of intermediate results during forward propagation. The active party, who possesses labels and features of the sample, in VFedMH securely aggregates local embeddings to obtain global knowledge embeddings, and sends them to passive parties. The passive parties, who own only features of the sample, then utilize the global embeddings to propagate forward on their local heterogeneous networks. However, the passive party does not own the labels, 
+    Recent trends like the Internet of Things (IoT) suggest a vision of dense and multi-scale deployments of computing devices in nearly all kinds of environments. A prominent engineering challenge revolves around programming the collective adaptive behaviour of such computational ecosystems. This requires abstractions able to capture concepts like ensembles (dynamic groups of cooperating devices) and collective tasks (joint activities carried out by ensembles). In this work, we consider collections of devices interacting with neighbours and that execute in nearly-synchronised sense-compute-interact rounds, where the computation is given by a single program mapping sensing values and incoming messages to output and outcoming messages. To support programming whole computational collectives, we propose the abstraction of a distributed collective process, which can be used to define at once the ensemble formation logic and its collective task. We formalise the abstraction in the eXchange Calc
     
 

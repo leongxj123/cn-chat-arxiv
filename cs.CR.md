@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [X Hacking: The Threat of Misguided AutoML](https://arxiv.org/abs/2401.08513) | 本文介绍了X黑客的概念，即利用自动化机器学习流程来操纵可解释AI（XAI）指标，从而产生所需解释的模型，而不降低其预测性能。研究者总结了X黑客现象的严重性，并提出了可能的检测和预防方法，同时探讨了对XAI研究可信度和可重现性的伦理影响。 |
+| [^1] | [Ghost Sentence: A Tool for Everyday Users to Copyright Data from Large Language Models](https://arxiv.org/abs/2403.15740) | 通过在文档中插入个人密码并识别生成内容中的“幽灵句子”，普通用户可以确认大型语言模型是否滥用其数据，从而实现数据版权保护。 |
 
 # 详细
 
-[^1]: X黑客：误导的自动机器学习的威胁
+[^1]: Ghost Sentence：一种供普通用户使用的工具，用于对大型语言模型中的数据进行版权保护
 
-    X Hacking: The Threat of Misguided AutoML
+    Ghost Sentence: A Tool for Everyday Users to Copyright Data from Large Language Models
 
-    [https://arxiv.org/abs/2401.08513](https://arxiv.org/abs/2401.08513)
+    [https://arxiv.org/abs/2403.15740](https://arxiv.org/abs/2403.15740)
 
-    本文介绍了X黑客的概念，即利用自动化机器学习流程来操纵可解释AI（XAI）指标，从而产生所需解释的模型，而不降低其预测性能。研究者总结了X黑客现象的严重性，并提出了可能的检测和预防方法，同时探讨了对XAI研究可信度和可重现性的伦理影响。
+    通过在文档中插入个人密码并识别生成内容中的“幽灵句子”，普通用户可以确认大型语言模型是否滥用其数据，从而实现数据版权保护。
 
     
 
-    可解释的人工智能（XAI）和可解释的机器学习方法有助于建立对模型预测和派生见解的信任，但也为分析师提供了一种扭曲的动机，即操纵XAI指标以支持预先规定的结论。本文介绍了X黑客的概念，即将p-hacking应用于诸如Shap值之类的XAI指标。我们展示了如何利用自动化的机器学习流程来寻找“可辩护”的模型，这些模型可以产生所需的解释并在维持优越的预测性能时。我们将解释和准确性之间的权衡表述为一个多目标优化问题，并通过熟悉的真实世界数据集在经验上展示了X黑客的可行性和严重性。最后，我们提出了可能的检测和预防方法，并讨论了对XAI研究的可信度和可重现性的伦理影响。
+    Web用户数据在预训练大型语言模型（LLMs）及其微调变种的生态系统中起着核心作用。本文提出了一种方法，建议用户在其文档中反复插入个人密码，使LLMs能够记忆这些密码。这些用户文档中隐藏的密码，被称为“幽灵句子”，一旦它们出现在LLMs生成的内容中，用户就可以确信他们的数据被用于训练。为了探索这种版权工具的有效性和用法，我们利用幽灵句子定义了“用户训练数据识别”任务。我们创建了来自不同来源、不同规模的多个数据集，并使用不同规模的LLMs进行测试。为了评估，我们引入了一个最后$k$个单词验证的方式。
 
-    Explainable AI (XAI) and interpretable machine learning methods help to build trust in model predictions and derived insights, yet also present a perverse incentive for analysts to manipulate XAI metrics to support pre-specified conclusions. This paper introduces the concept of X-hacking, a form of p-hacking applied to XAI metrics such as Shap values. We show how an automated machine learning pipeline can be used to search for 'defensible' models that produce a desired explanation while maintaining superior predictive performance to a common baseline. We formulate the trade-off between explanation and accuracy as a multi-objective optimization problem and illustrate the feasibility and severity of X-hacking empirically on familiar real-world datasets. Finally, we suggest possible methods for detection and prevention, and discuss ethical implications for the credibility and reproducibility of XAI research.
+    arXiv:2403.15740v1 Announce Type: new  Abstract: Web user data plays a central role in the ecosystem of pre-trained large language models (LLMs) and their fine-tuned variants. Billions of data are crawled from the web and fed to LLMs. How can \textit{\textbf{everyday web users}} confirm if LLMs misuse their data without permission? In this work, we suggest that users repeatedly insert personal passphrases into their documents, enabling LLMs to memorize them. These concealed passphrases in user documents, referred to as \textit{ghost sentences}, once they are identified in the generated content of LLMs, users can be sure that their data is used for training. To explore the effectiveness and usage of this copyrighting tool, we define the \textit{user training data identification} task with ghost sentences. Multiple datasets from various sources at different scales are created and tested with LLMs of different sizes. For evaluation, we introduce a last $k$ words verification manner along 
     
 
