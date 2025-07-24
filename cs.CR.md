@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Quantifying and Mitigating Privacy Risks for Tabular Generative Models](https://arxiv.org/abs/2403.07842) | 该论文研究了量化和减轻表格生成模型的隐私风险，通过对五种最先进的表格合成器进行实证分析，提出了差分隐私表格潜在扩散模型。 |
+| [^1] | [An Optimal and Scalable Matrix Mechanism for Noisy Marginals under Convex Loss Functions.](http://arxiv.org/abs/2305.08175) | ResidualPlanner是一种用于带有高斯噪声的边缘的矩阵机制，既优化又可扩展，可以优化许多可以写成边际方差的凸函数的损失函数。 |
 
 # 详细
 
-[^1]: 量化和减轻表格生成模型的隐私风险
+[^1]: 一种优化且可扩展的矩阵机制用于扰动边缘数据下凸损失函数。
 
-    Quantifying and Mitigating Privacy Risks for Tabular Generative Models
+    An Optimal and Scalable Matrix Mechanism for Noisy Marginals under Convex Loss Functions. (arXiv:2305.08175v1 [cs.DB])
 
-    [https://arxiv.org/abs/2403.07842](https://arxiv.org/abs/2403.07842)
+    [http://arxiv.org/abs/2305.08175](http://arxiv.org/abs/2305.08175)
 
-    该论文研究了量化和减轻表格生成模型的隐私风险，通过对五种最先进的表格合成器进行实证分析，提出了差分隐私表格潜在扩散模型。
+    ResidualPlanner是一种用于带有高斯噪声的边缘的矩阵机制，既优化又可扩展，可以优化许多可以写成边际方差的凸函数的损失函数。
 
     
 
-    针对合成数据生成模型出现作为保护隐私的数据共享解决方案的情况，该合成数据集应该类似于原始数据，而不会透露可识别的私人信息。表格合成器的核心技术根植于图像生成模型，范围从生成对抗网络（GAN）到最近的扩散模型。最近的先前工作揭示和量化了表格数据上的效用-隐私权衡，揭示了合成数据的隐私风险。我们首先进行了详尽的实证分析，突出了五种最先进的表格合成器针对八种隐私攻击的效用-隐私权衡，特别关注成员推断攻击。在观察到表格扩散中高数据质量但也高隐私风险的情况下，我们提出了DP-TLDM，差分隐私表格潜在扩散模型，由自动编码器网络组成。
+    扰动的边缘数据是一种常见的保护数据隐私的形式，可用于诸如列联表分析、贝叶斯网络构建和合成数据生成等下游任务。我们提出了ResidualPlanner，这是一种用于带有高斯噪声的边缘的矩阵机制，既优化又可扩展。ResidualPlanner可以优化许多可以写成边际方差的凸函数的损失函数。此外，ResidualPlanner可以在几秒钟内优化大规模设置中的边缘准确性，即使之前的最先进技术（HDMM）也会占用过多的内存。甚至在具有100个属性的数据集上也可以在几分钟内运行。此外，ResidualPlanner还可以有效地计算每个边缘的方差/协方差值（之前的方法会很快失败）。
 
-    arXiv:2403.07842v1 Announce Type: new  Abstract: Synthetic data from generative models emerges as the privacy-preserving data-sharing solution. Such a synthetic data set shall resemble the original data without revealing identifiable private information. The backbone technology of tabular synthesizers is rooted in image generative models, ranging from Generative Adversarial Networks (GANs) to recent diffusion models. Recent prior work sheds light on the utility-privacy tradeoff on tabular data, revealing and quantifying privacy risks on synthetic data. We first conduct an exhaustive empirical analysis, highlighting the utility-privacy tradeoff of five state-of-the-art tabular synthesizers, against eight privacy attacks, with a special focus on membership inference attacks. Motivated by the observation of high data quality but also high privacy risk in tabular diffusion, we propose DP-TLDM, Differentially Private Tabular Latent Diffusion Model, which is composed of an autoencoder networ
+    Noisy marginals are a common form of confidentiality-protecting data release and are useful for many downstream tasks such as contingency table analysis, construction of Bayesian networks, and even synthetic data generation. Privacy mechanisms that provide unbiased noisy answers to linear queries (such as marginals) are known as matrix mechanisms.  We propose ResidualPlanner, a matrix mechanism for marginals with Gaussian noise that is both optimal and scalable. ResidualPlanner can optimize for many loss functions that can be written as a convex function of marginal variances (prior work was restricted to just one predefined objective function). ResidualPlanner can optimize the accuracy of marginals in large scale settings in seconds, even when the previous state of the art (HDMM) runs out of memory. It even runs on datasets with 100 attributes in a couple of minutes. Furthermore ResidualPlanner can efficiently compute variance/covariance values for each marginal (prior methods quickly
     
 
