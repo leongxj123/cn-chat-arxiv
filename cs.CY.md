@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Algorithmic neutrality.](http://arxiv.org/abs/2303.05103) | 研究算法中立性以及与算法偏见的关系，以搜索引擎为案例研究，得出搜索中立性是不可能的结论。 |
+| [^1] | [Quantifying the Uniqueness of Donald Trump in Presidential Discourse.](http://arxiv.org/abs/2401.01405) | 这项研究使用了一种新的度量标准来量化唐纳德·特朗普在总统演讲中的独特性，并发现了他在使用具有分裂性和对抗性的语言、重复强调等方面与其他总统候选人存在显著差异。此外，特朗普比共和党同僚更具独特性。 |
 
 # 详细
 
-[^1]: 算法中立性
+[^1]: 量化唐纳德·特朗普在总统演讲中的独特性
 
-    Algorithmic neutrality. (arXiv:2303.05103v2 [cs.CY] UPDATED)
+    Quantifying the Uniqueness of Donald Trump in Presidential Discourse. (arXiv:2401.01405v1 [cs.CL])
 
-    [http://arxiv.org/abs/2303.05103](http://arxiv.org/abs/2303.05103)
+    [http://arxiv.org/abs/2401.01405](http://arxiv.org/abs/2401.01405)
 
-    研究算法中立性以及与算法偏见的关系，以搜索引擎为案例研究，得出搜索中立性是不可能的结论。
+    这项研究使用了一种新的度量标准来量化唐纳德·特朗普在总统演讲中的独特性，并发现了他在使用具有分裂性和对抗性的语言、重复强调等方面与其他总统候选人存在显著差异。此外，特朗普比共和党同僚更具独特性。
 
     
 
-    偏见影响着越来越多掌控我们生活的算法。预测性警务系统错误地高估有色人种社区的犯罪率；招聘算法削弱了合格的女性候选人的机会；人脸识别软件难以识别黑皮肤的面部。算法偏见已经受到了重视，相比之下，算法中立性却基本被忽视了。算法中立性是我的研究主题。我提出了三个问题。算法中立性是什么？算法中立性是否可能？当我们考虑算法中立性时，我们可以从算法偏见中学到什么？为了具体回答这些问题，我选择了一个案例研究：搜索引擎。借鉴关于科学中立性的研究，我认为只有当搜索引擎的排名不受某些价值观的影响时，搜索引擎才是中立的，比如政治意识形态或搜索引擎运营商的经济利益。我认为搜索中立性是不可能的。
+    唐纳德·特朗普与其他总统在演讲中是否表达出不同的风格？如果是，有哪些方面的不同？这些差异是否局限于任何单一的沟通媒介？为了调查这些问题，本文引入了一种基于大型语言模型的独特性度量标准，开发了一个新的分裂性演讲词库，并提出了比较政治对手词汇特征的框架。将这些工具应用于多种总统演讲语料库，我们发现有相当多的证据表明特朗普的讲话模式与近代历任主要总统候选人不同。一些显著的发现包括特朗普使用特别具有分裂性和对抗性的语言针对他的政治对手，并且他重复强调的模式。此外，特朗普比他的共和党同僚更加独特，而他们的独特性值与民主党相对较接近。这些差异在多种度量方法下保持一致。
 
-    Bias infects the algorithms that wield increasing control over our lives. Predictive policing systems overestimate crime in communities of color; hiring algorithms dock qualified female candidates; and facial recognition software struggles to recognize dark-skinned faces. Algorithmic bias has received significant attention. Algorithmic neutrality, in contrast, has been largely neglected. Algorithmic neutrality is my topic. I take up three questions. What is algorithmic neutrality? Is algorithmic neutrality possible? When we have algorithmic neutrality in mind, what can we learn about algorithmic bias? To answer these questions in concrete terms, I work with a case study: search engines. Drawing on work about neutrality in science, I say that a search engine is neutral only if certain values -- like political ideologies or the financial interests of the search engine operator -- play no role in how the search engine ranks pages. Search neutrality, I argue, is impossible. Its impossibili
+    Does Donald Trump speak differently from other presidents? If so, in what ways? Are these differences confined to any single medium of communication? To investigate these questions, this paper introduces a novel metric of uniqueness based on large language models, develops a new lexicon for divisive speech, and presents a framework for comparing the lexical features of political opponents. Applying these tools to a variety of corpora of presidential speeches, we find considerable evidence that Trump's speech patterns diverge from those of all major party nominees for the presidency in recent history. Some notable findings include Trump's employment of particularly divisive and antagonistic language targeting of his political opponents and his patterns of repetition for emphasis. Furthermore, Trump is significantly more distinctive than his fellow Republicans, whose uniqueness values are comparably closer to those of the Democrats. These differences hold across a variety of measurement 
     
 
