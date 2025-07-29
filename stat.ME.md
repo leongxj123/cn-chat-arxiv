@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Estimation of conditional average treatment effects on distributed data: A privacy-preserving approach](https://arxiv.org/abs/2402.02672) | 本论文提出了一种数据协作双机器学习（DC-DML）方法，该方法可以在保护分布式数据隐私的情况下估计条件平均治疗效果（CATE）模型。通过数值实验验证了该方法的有效性。该方法的三个主要贡献是：实现了对分布式数据上的非迭代通信的半参数CATE模型的估计和测试，提高了模型的鲁棒性。 |
+| [^1] | [Identifying Socially Disruptive Policies.](http://arxiv.org/abs/2306.15000) | 本文中，我们提供了一种辨识社会破坏的方法，并应用在两个实证说明中。我们展示了社会破坏一般不是点辨识的，但可以构建出信息丰富的上下界。此外，我们还推导出了一个封闭形式的表示来进行点辨识。 |
 
 # 详细
 
-[^1]: 对分布式数据的条件平均治疗效果估计：一种保护隐私的方法
+[^1]: 辨识社会破坏性政策
 
-    Estimation of conditional average treatment effects on distributed data: A privacy-preserving approach
+    Identifying Socially Disruptive Policies. (arXiv:2306.15000v1 [econ.EM])
 
-    [https://arxiv.org/abs/2402.02672](https://arxiv.org/abs/2402.02672)
+    [http://arxiv.org/abs/2306.15000](http://arxiv.org/abs/2306.15000)
 
-    本论文提出了一种数据协作双机器学习（DC-DML）方法，该方法可以在保护分布式数据隐私的情况下估计条件平均治疗效果（CATE）模型。通过数值实验验证了该方法的有效性。该方法的三个主要贡献是：实现了对分布式数据上的非迭代通信的半参数CATE模型的估计和测试，提高了模型的鲁棒性。
+    本文中，我们提供了一种辨识社会破坏的方法，并应用在两个实证说明中。我们展示了社会破坏一般不是点辨识的，但可以构建出信息丰富的上下界。此外，我们还推导出了一个封闭形式的表示来进行点辨识。
 
     
 
-    在医学和社会科学等各个领域中，对条件平均治疗效果（CATEs）的估计是一个重要的课题。如果分布在多个参与方之间的数据可以集中，可以对CATEs进行高精度的估计。然而，如果这些数据包含隐私信息，则很难进行数据聚合。为了解决这个问题，我们提出了数据协作双机器学习（DC-DML）方法，该方法可以在保护分布式数据隐私的情况下估计CATE模型，并通过数值实验对该方法进行了评估。我们的贡献总结如下三点。首先，我们的方法能够在分布式数据上进行非迭代通信的半参数CATE模型的估计和测试。半参数或非参数的CATE模型能够比参数模型更稳健地进行估计和测试，对于模型偏差的鲁棒性更强。然而，据我们所知，目前还没有提出有效的通信方法来估计和测试这些模型。
+    社会破坏发生在政策创建或破坏了许多个体之间的网络连接时。对于政策的福利影响评估，越来越多的实证文献建议测量和考虑社会破坏。然而，目前很少有工作描述实际数据中能够学到关于社会破坏的内容。本文中，我们考虑了一个在文献中很受欢迎的研究设计用于辨识社会破坏的问题。我们提供两组辨识结果。首先，我们展示了社会破坏通常不是点辨识的，但研究者可以使用观测到的网络邻接矩阵的特征值构建信息丰富的上下界。其次，我们展示了点辨识来自于一个理论上有所启发的单调性条件，并推导出了一个封闭形式的表示。我们在两个实证说明中应用了我们的方法。
 
-    Estimation of conditional average treatment effects (CATEs) is an important topic in various fields such as medical and social sciences. CATEs can be estimated with high accuracy if distributed data across multiple parties can be centralized. However, it is difficult to aggregate such data if they contain privacy information. To address this issue, we proposed data collaboration double machine learning (DC-DML), a method that can estimate CATE models with privacy preservation of distributed data, and evaluated the method through numerical experiments. Our contributions are summarized in the following three points. First, our method enables estimation and testing of semi-parametric CATE models without iterative communication on distributed data. Semi-parametric or non-parametric CATE models enable estimation and testing that is more robust to model mis-specification than parametric models. However, to our knowledge, no communication-efficient method has been proposed for estimating and 
+    Social disruption occurs when a policy creates or destroys many network connections between agents. It is a costly side effect of many interventions and so a growing empirical literature recommends measuring and accounting for social disruption when evaluating the welfare impact of a policy. However, there is currently little work characterizing what can actually be learned about social disruption from data in practice. In this paper, we consider the problem of identifying social disruption in a research design that is popular in the literature. We provide two sets of identification results. First, we show that social disruption is not generally point identified, but informative bounds can be constructed using the eigenvalues of the network adjacency matrices observed by the researcher. Second, we show that point identification follows from a theoretically motivated monotonicity condition, and we derive a closed form representation. We apply our methods in two empirical illustrations a
     
 
