@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.RO</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.RO</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.RO</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.RO</description><item><title>&#25552;&#20986;&#20102;&#19968;&#31181;&#38750;&#22320;&#24179;&#32447;&#30340;&#38598;&#20013;&#24335;&#31639;&#27861;&#65292;&#23454;&#29616;&#20102;&#22312;&#32447;&#22810;&#26426;&#22120;&#20154;&#35206;&#30422;&#36335;&#24452;&#35268;&#21010;&#20013;&#30340;&#24182;&#21457;&#35268;&#21010;&#21644;&#25191;&#34892;&#12290;</title><link>https://arxiv.org/abs/2403.10460</link><description>&lt;p&gt;
+&#22312;&#32447;&#24182;&#21457;&#22810;&#26426;&#22120;&#20154;&#35206;&#30422;&#36335;&#24452;&#35268;&#21010;
+&lt;/p&gt;
+&lt;p&gt;
+Online Concurrent Multi-Robot Coverage Path Planning
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.10460
+&lt;/p&gt;
+&lt;p&gt;
+&#25552;&#20986;&#20102;&#19968;&#31181;&#38750;&#22320;&#24179;&#32447;&#30340;&#38598;&#20013;&#24335;&#31639;&#27861;&#65292;&#23454;&#29616;&#20102;&#22312;&#32447;&#22810;&#26426;&#22120;&#20154;&#35206;&#30422;&#36335;&#24452;&#35268;&#21010;&#20013;&#30340;&#24182;&#21457;&#35268;&#21010;&#21644;&#25191;&#34892;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#36817;&#26399;&#65292;&#38598;&#20013;&#24335;&#36880;&#27493;&#22320;&#24179;&#32447;&#22312;&#32447;&#22810;&#26426;&#22120;&#20154;&#35206;&#30422;&#36335;&#24452;&#35268;&#21010;&#31639;&#27861;&#23637;&#29616;&#20986;&#22312;&#24443;&#24213;&#25506;&#32034;&#25317;&#26377;&#22823;&#37327;&#26426;&#22120;&#20154;&#30340;&#22823;&#22411;&#12289;&#22797;&#26434;&#12289;&#26410;&#30693;&#24037;&#20316;&#31354;&#38388;&#26041;&#38754;&#30340;&#20986;&#33394;&#21487;&#20280;&#32553;&#24615;&#12290;&#22312;&#19968;&#20010;&#26102;&#38388;&#27573;&#20869;&#65292;&#36335;&#24452;&#35268;&#21010;&#21644;&#36335;&#24452;&#25191;&#34892;&#20132;&#26367;&#36827;&#34892;&#65292;&#21363;&#24403;&#20026;&#27809;&#26377;&#36335;&#24452;&#30340;&#26426;&#22120;&#20154;&#36827;&#34892;&#36335;&#24452;&#35268;&#21010;&#26102;&#65292;&#20855;&#26377;&#26410;&#23436;&#25104;&#36335;&#24452;&#30340;&#26426;&#22120;&#20154;&#19981;&#25191;&#34892;&#65292;&#21453;&#20043;&#20134;&#28982;&#12290;&#20026;&#27492;&#65292;&#25105;&#20204;&#25552;&#20986;&#20102;&#19968;&#20010;&#38750;&#22522;&#20110;&#22320;&#24179;&#32447;&#30340;&#38598;&#20013;&#24335;&#31639;&#27861;&#12290;&#35813;&#31639;&#27861;&#38543;&#26102;&#20026;&#27809;&#26377;&#36335;&#24452;&#30340;&#26426;&#22120;&#20154;&#23376;&#38598;&#65288;&#21363;&#24050;&#36798;&#21040;&#20854;&#20808;&#21069;&#20998;&#37197;&#30446;&#26631;&#30340;&#26426;&#22120;&#20154;&#65289;&#35268;&#21010;&#36335;&#24452;&#65292;&#32780;&#20854;&#20313;&#26426;&#22120;&#20154;&#25191;&#34892;&#20854;&#26410;&#23436;&#25104;&#30340;&#36335;&#24452;&#65292;&#20174;&#32780;&#23454;&#29616;&#24182;&#21457;&#35268;&#21010;&#21644;&#25191;&#34892;&#12290;&#25105;&#20204;&#27491;&#24335;&#35777;&#26126;&#20102;&#35813;&#25552;&#35758;&#30340;...
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.10460v1 Announce Type: cross  Abstract: Recently, centralized receding horizon online multi-robot coverage path planning algorithms have shown remarkable scalability in thoroughly exploring large, complex, unknown workspaces with many robots. In a horizon, the path planning and the path execution interleave, meaning when the path planning occurs for robots with no paths, the robots with outstanding paths do not execute, and subsequently, when the robots with new or outstanding paths execute to reach respective goals, path planning does not occur for those robots yet to get new paths, leading to wastage of both the robotic and the computation resources. As a remedy, we propose a centralized algorithm that is not horizon-based. It plans paths at any time for a subset of robots with no paths, i.e., who have reached their previously assigned goals, while the rest execute their outstanding paths, thereby enabling concurrent planning and execution. We formally prove that the propo
+&lt;/p&gt;</description></item></channel></rss>

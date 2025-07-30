@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [ShaRP: Explaining Rankings with Shapley Values.](http://arxiv.org/abs/2401.16744) | ShaRP是一个基于Shapley值的框架，用于解释排名结果中各个特征的贡献。即使使用线性评分函数，特征的权重也不一定对应其Shapley值的贡献，而是取决于特征分布和评分特征之间的局部相互作用。 |
+| [^1] | [Demystifying Misconceptions in Social Bots Research.](http://arxiv.org/abs/2303.17251) | 这篇文章揭示了关于社交机器人研究的普遍误解，强调需要以严谨、公正和负责任的方式讨论虚假信息研究。 |
 
 # 详细
 
-[^1]: ShaRP：用Shapley值解释排名
+[^1]: 揭开对社交机器人研究的误解
 
-    ShaRP: Explaining Rankings with Shapley Values. (arXiv:2401.16744v1 [cs.AI])
+    Demystifying Misconceptions in Social Bots Research. (arXiv:2303.17251v1 [cs.SI])
 
-    [http://arxiv.org/abs/2401.16744](http://arxiv.org/abs/2401.16744)
+    [http://arxiv.org/abs/2303.17251](http://arxiv.org/abs/2303.17251)
 
-    ShaRP是一个基于Shapley值的框架，用于解释排名结果中各个特征的贡献。即使使用线性评分函数，特征的权重也不一定对应其Shapley值的贡献，而是取决于特征分布和评分特征之间的局部相互作用。
+    这篇文章揭示了关于社交机器人研究的普遍误解，强调需要以严谨、公正和负责任的方式讨论虚假信息研究。
 
     
 
-    在招聘、大学招生和贷款等重要领域的算法决策常常是基于排名的。由于这些决策对个人、组织和人群的影响，有必要了解它们：了解决策是否遵守法律，帮助个人提高他们的排名，并设计更好的排名程序。本文提出了ShaRP（Shapley for Rankings and Preferences），这是一个基于Shapley值的框架，用于解释特征对排名结果不同方面的贡献。使用ShaRP，我们展示了即使算法排名器使用的评分函数是已知的且是线性的，每个特征的权重也不一定对应其Shapley值的贡献。贡献取决于特征的分布以及评分特征之间微妙的局部相互作用。ShaRP基于量化输入影响框架，并可以计算贡献。
+    社交机器人科学寻求解决网络虚假信息最受争议的形式之一的知识和解决方案。然而，社交机器人研究受到普遍的偏见、夸大的结果和误解的困扰，这些都为歧义、不切实际的期望和看似无法调和的发现打下了基础。克服这些问题对于确保可靠的解决方案和重申科学方法的有效性至关重要。在这篇文章中，我们修订了社交机器人研究中的一些最新结果，强调和纠正了事实错误以及方法论和概念问题。更重要的是，我们揭开了普遍的误解，解决了有关如何讨论社交机器人研究的基本问题。我们的分析揭示了以严谨、公正和负责任的方式讨论虚假信息研究的必要性。本文通过确定并驳斥社交机器人研究的支持者和反对者常用的谬误论证，支持这种努力。
 
-    Algorithmic decisions in critical domains such as hiring, college admissions, and lending are often based on rankings. Because of the impact these decisions have on individuals, organizations, and population groups, there is a need to understand them: to know whether the decisions are abiding by the law, to help individuals improve their rankings, and to design better ranking procedures.  In this paper, we present ShaRP (Shapley for Rankings and Preferences), a framework that explains the contributions of features to different aspects of a ranked outcome, and is based on Shapley values. Using ShaRP, we show that even when the scoring function used by an algorithmic ranker is known and linear, the weight of each feature does not correspond to its Shapley value contribution. The contributions instead depend on the feature distributions, and on the subtle local interactions between the scoring features. ShaRP builds on the Quantitative Input Influence framework, and can compute the contri
+    The science of social bots seeks knowledge and solutions to one of the most debated forms of online misinformation. Yet, social bots research is plagued by widespread biases, hyped results, and misconceptions that set the stage for ambiguities, unrealistic expectations, and seemingly irreconcilable findings. Overcoming such issues is instrumental towards ensuring reliable solutions and reaffirming the validity of the scientific method. In this contribution we revise some recent results in social bots research, highlighting and correcting factual errors as well as methodological and conceptual issues. More importantly, we demystify common misconceptions, addressing fundamental points on how social bots research is discussed. Our analysis surfaces the need to discuss misinformation research in a rigorous, unbiased, and responsible way. This article bolsters such effort by identifying and refuting common fallacious arguments used by both proponents and opponents of social bots research as
     
 
