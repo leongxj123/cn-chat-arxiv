@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [MacroSwarm: A Field-based Compositional Framework for Swarm Programming.](http://arxiv.org/abs/2401.10969) | MacroSwarm是一种基于场的群体编程框架，通过可组合的功能模块实现复杂的群体行为，通过将感知场映射为执行目标场，提供了一种系统化的设计和实现群体行为的方法。 |
+| [^1] | [End-To-End Set-Based Training for Neural Network Verification.](http://arxiv.org/abs/2401.14961) | 本论文提出了一种端到端基于集合的训练方法，用于训练鲁棒性神经网络进行形式化验证，并证明该方法能够简化验证过程并有效训练出易于验证的神经网络。 |
 
 # 详细
 
-[^1]: MacroSwarm: 一种基于场的组合框架用于群体编程
+[^1]: 神经网络验证的端到端基于集合的训练方法
 
-    MacroSwarm: A Field-based Compositional Framework for Swarm Programming. (arXiv:2401.10969v1 [cs.AI])
+    End-To-End Set-Based Training for Neural Network Verification. (arXiv:2401.14961v1 [cs.LG])
 
-    [http://arxiv.org/abs/2401.10969](http://arxiv.org/abs/2401.10969)
+    [http://arxiv.org/abs/2401.14961](http://arxiv.org/abs/2401.14961)
 
-    MacroSwarm是一种基于场的群体编程框架，通过可组合的功能模块实现复杂的群体行为，通过将感知场映射为执行目标场，提供了一种系统化的设计和实现群体行为的方法。
+    本论文提出了一种端到端基于集合的训练方法，用于训练鲁棒性神经网络进行形式化验证，并证明该方法能够简化验证过程并有效训练出易于验证的神经网络。
 
     
 
-    群体行为工程是一项旨在研究协调简单智能体团体内计算和行动的方法和技术，以实现复杂的全局目标，如图案形成、集体移动、聚类和分布式感知。尽管在群体（无人机、机器人、车辆）分析和工程方面取得了一些进展，但仍然需要通用的设计和实现方法和工具，以系统化的方式定义复杂的群体行为。为了对此做出贡献，本文提出了一种新的基于场的协调方法，称为MacroSwarm，以可重用且完全可组合的功能模块为基础，嵌入集体计算和协调。基于集成计算的宏编程范式，MacroSwarm提出了将每个群体行为块表示为将感知场映射为执行目标场的纯函数的思路。
+    神经网络容易受到对抗性攻击，即微小的输入扰动可能导致神经网络输出产生重大变化。安全关键环境需要对输入扰动具有鲁棒性的神经网络。然而，训练和形式化验证鲁棒性神经网络是具有挑战性的。我们首次采用端到端基于集合的训练方法来解决这个挑战，该训练方法能够训练出可进行形式化验证的鲁棒性神经网络。我们的训练方法能够大大简化已训练神经网络的后续形式化鲁棒性验证过程。相比于以往的研究主要关注增强神经网络训练的对抗性攻击，我们的方法利用基于集合的计算来训练整个扰动输入集合上的神经网络。此外，我们证明我们的基于集合的训练方法可以有效训练出易于验证的鲁棒性神经网络。
 
-    Swarm behaviour engineering is an area of research that seeks to investigate methods and techniques for coordinating computation and action within groups of simple agents to achieve complex global goals like pattern formation, collective movement, clustering, and distributed sensing. Despite recent progress in the analysis and engineering of swarms (of drones, robots, vehicles), there is still a need for general design and implementation methods and tools that can be used to define complex swarm behaviour in a principled way. To contribute to this quest, this article proposes a new field-based coordination approach, called MacroSwarm, to design and program swarm behaviour in terms of reusable and fully composable functional blocks embedding collective computation and coordination. Based on the macroprogramming paradigm of aggregate computing, MacroSwarm builds on the idea of expressing each swarm behaviour block as a pure function mapping sensing fields into actuation goal fields, e.g.
+    Neural networks are vulnerable to adversarial attacks, i.e., small input perturbations can result in substantially different outputs of a neural network. Safety-critical environments require neural networks that are robust against input perturbations. However, training and formally verifying robust neural networks is challenging. We address this challenge by employing, for the first time, a end-to-end set-based training procedure that trains robust neural networks for formal verification. Our training procedure drastically simplifies the subsequent formal robustness verification of the trained neural network. While previous research has predominantly focused on augmenting neural network training with adversarial attacks, our approach leverages set-based computing to train neural networks with entire sets of perturbed inputs. Moreover, we demonstrate that our set-based training procedure effectively trains robust neural networks, which are easier to verify. In many cases, set-based trai
     
 
