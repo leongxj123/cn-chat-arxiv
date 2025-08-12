@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Hypergraph Structure Inference From Data Under Smoothness Prior.](http://arxiv.org/abs/2308.14172) | 本文提出了一种光滑性先验方法，用于从节点特征中推断超图的结构，并捕捉数据内在的关系。该方法不需要标记数据作为监督，能够推断出每个潜在超边的概率。 |
+| [^1] | [Empathy Detection Using Machine Learning on Text, Audiovisual, Audio or Physiological Signals.](http://arxiv.org/abs/2311.00721) | 本论文对共情检测领域的机器学习研究进行了综述和分析，包括文本、视听、音频和生理信号四种输入模态的处理和网络设计，以及评估协议和数据集的描述。 |
 
 # 详细
 
-[^1]: 从数据中基于光滑性先验推断超图结构
+[^1]: 使用机器学习在文本、视听、音频或生理信号上进行共情检测
 
-    Hypergraph Structure Inference From Data Under Smoothness Prior. (arXiv:2308.14172v1 [cs.LG])
+    Empathy Detection Using Machine Learning on Text, Audiovisual, Audio or Physiological Signals. (arXiv:2311.00721v1 [cs.HC])
 
-    [http://arxiv.org/abs/2308.14172](http://arxiv.org/abs/2308.14172)
+    [http://arxiv.org/abs/2311.00721](http://arxiv.org/abs/2311.00721)
 
-    本文提出了一种光滑性先验方法，用于从节点特征中推断超图的结构，并捕捉数据内在的关系。该方法不需要标记数据作为监督，能够推断出每个潜在超边的概率。
+    本论文对共情检测领域的机器学习研究进行了综述和分析，包括文本、视听、音频和生理信号四种输入模态的处理和网络设计，以及评估协议和数据集的描述。
 
     
 
-    超图在处理涉及多个实体的高阶关系数据中非常重要。在没有明确超图可用的情况下，希望能够从节点特征中推断出有意义的超图结构，以捕捉数据内在的关系。然而，现有的方法要么采用简单预定义的规则，不能精确捕捉潜在超图结构的分布，要么学习超图结构和节点特征之间的映射，但需要大量标记数据（即预先存在的超图结构）进行训练。这两种方法都局限于实际情景中的应用。为了填补这一空白，我们提出了一种新的光滑性先验，使我们能够设计一种方法，在没有标记数据作为监督的情况下推断出每个潜在超边的概率。所提出的先验表示超边中的节点特征与包含该超边的超边的特征高度相关。
+    共情是一个社交技能，表明一个个体理解他人的能力。近年来，共情引起了包括情感计算、认知科学和心理学在内的各个学科的关注。共情是一个依赖于上下文的术语，因此检测或识别共情在社会、医疗和教育等领域具有潜在的应用。尽管共情检测领域涉及范围广泛且有重叠，但从整体文献角度来看，利用机器学习的共情检测研究仍然相对较少。为此，我们系统收集和筛选了来自10个知名数据库的801篇论文，并分析了选定的54篇论文。我们根据共情检测系统的输入模态，即文本、视听、音频和生理信号，对论文进行分组。我们分别研究了特定模态的预处理和网络架构设计协议、常见数据集的描述和可用性详情，以及评估协议。
 
-    Hypergraphs are important for processing data with higher-order relationships involving more than two entities. In scenarios where explicit hypergraphs are not readily available, it is desirable to infer a meaningful hypergraph structure from the node features to capture the intrinsic relations within the data. However, existing methods either adopt simple pre-defined rules that fail to precisely capture the distribution of the potential hypergraph structure, or learn a mapping between hypergraph structures and node features but require a large amount of labelled data, i.e., pre-existing hypergraph structures, for training. Both restrict their applications in practical scenarios. To fill this gap, we propose a novel smoothness prior that enables us to design a method to infer the probability for each potential hyperedge without labelled data as supervision. The proposed prior indicates features of nodes in a hyperedge are highly correlated by the features of the hyperedge containing th
+    Empathy is a social skill that indicates an individual's ability to understand others. Over the past few years, empathy has drawn attention from various disciplines, including but not limited to Affective Computing, Cognitive Science and Psychology. Empathy is a context-dependent term; thus, detecting or recognising empathy has potential applications in society, healthcare and education. Despite being a broad and overlapping topic, the avenue of empathy detection studies leveraging Machine Learning remains underexplored from a holistic literature perspective. To this end, we systematically collect and screen 801 papers from 10 well-known databases and analyse the selected 54 papers. We group the papers based on input modalities of empathy detection systems, i.e., text, audiovisual, audio and physiological signals. We examine modality-specific pre-processing and network architecture design protocols, popular dataset descriptions and availability details, and evaluation protocols. We fur
     
 
