@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Combat Urban Congestion via Collaboration: Heterogeneous GNN-based MARL for Coordinated Platooning and Traffic Signal Control.](http://arxiv.org/abs/2310.10948) | 本文提出了一种基于异构图多智能体强化学习和交通理论的创新解决方案，通过将车辆编队和交通信号控制作为不同的强化学习智能体，并结合图神经网络实现协调，以优化交通流量和缓解城市拥堵。 |
+| [^1] | [ABIDES-Economist: Agent-Based Simulation of Economic Systems with Learning Agents](https://arxiv.org/abs/2402.09563) | ABIDES-Economist是一个多智能体模拟器，用于经济系统，具有学习代理、规则性策略和基于现实数据的设计。它提供了一种使用强化学习策略的模拟环境，并可以模拟和分析各种经济情景。 |
 
 # 详细
 
-[^1]: 通过协作解决城市拥堵：基于异构GNN的协调编队和交通信号控制的多智能体强化学习方法
+[^1]: ABIDES-Economist: 具有学习代理的经济系统的基于代理的模拟
 
-    Combat Urban Congestion via Collaboration: Heterogeneous GNN-based MARL for Coordinated Platooning and Traffic Signal Control. (arXiv:2310.10948v1 [cs.LG])
+    ABIDES-Economist: Agent-Based Simulation of Economic Systems with Learning Agents
 
-    [http://arxiv.org/abs/2310.10948](http://arxiv.org/abs/2310.10948)
+    [https://arxiv.org/abs/2402.09563](https://arxiv.org/abs/2402.09563)
 
-    本文提出了一种基于异构图多智能体强化学习和交通理论的创新解决方案，通过将车辆编队和交通信号控制作为不同的强化学习智能体，并结合图神经网络实现协调，以优化交通流量和缓解城市拥堵。
+    ABIDES-Economist是一个多智能体模拟器，用于经济系统，具有学习代理、规则性策略和基于现实数据的设计。它提供了一种使用强化学习策略的模拟环境，并可以模拟和分析各种经济情景。
 
     
 
-    多年来，强化学习已经成为一种流行的方法，用于独立或分层方式开发信号控制和车辆编队策略。然而，在实时中联合控制这两者以减轻交通拥堵带来了新的挑战，如信号控制和编队之间固有的物理和行为异质性，以及它们之间的协调。本文提出了一种创新的解决方案来应对这些挑战，基于异构图多智能体强化学习和交通理论。我们的方法包括：1）将编队和信号控制设计为不同的强化学习智能体，具有自己的观测、动作和奖励函数，以优化交通流量；2）通过在多智能体强化学习中引入图神经网络来设计协调，以促进区域范围内智能体之间的无缝信息交换。我们通过SUMO模拟环境评估了我们的方法。
+    我们介绍了一个多智能体模拟器，用于由异质家庭、异质公司、中央银行和政府代理组成的经济系统，该系统可以受到外生的随机冲击。代理之间的互动定义了经济中商品的生产和消费以及资金的流动。每个代理可以根据固定的、规则性的策略行动，也可以通过与模拟器中其他代理的互动来学习自己的策略。我们通过选择基于经济文献的代理异质性参数，并将其行动空间设计与美国的实际数据相一致，来使我们的模拟器具备现实基础。我们的模拟器通过为经济系统定义 OpenAI Gym 风格的环境，促进了代理使用强化学习策略的能力。通过模拟和分析两种假设的（但有趣的）经济情景，我们展示了我们模拟器的实用性。
 
-    Over the years, reinforcement learning has emerged as a popular approach to develop signal control and vehicle platooning strategies either independently or in a hierarchical way. However, jointly controlling both in real-time to alleviate traffic congestion presents new challenges, such as the inherent physical and behavioral heterogeneity between signal control and platooning, as well as coordination between them. This paper proposes an innovative solution to tackle these challenges based on heterogeneous graph multi-agent reinforcement learning and traffic theories. Our approach involves: 1) designing platoon and signal control as distinct reinforcement learning agents with their own set of observations, actions, and reward functions to optimize traffic flow; 2) designing coordination by incorporating graph neural networks within multi-agent reinforcement learning to facilitate seamless information exchange among agents on a regional scale. We evaluate our approach through SUMO simu
+    arXiv:2402.09563v1 Announce Type: cross  Abstract: We introduce a multi-agent simulator for economic systems comprised of heterogeneous Households, heterogeneous Firms, Central Bank and Government agents, that could be subjected to exogenous, stochastic shocks. The interaction between agents defines the production and consumption of goods in the economy alongside the flow of money. Each agent can be designed to act according to fixed, rule-based strategies or learn their strategies using interactions with others in the simulator. We ground our simulator by choosing agent heterogeneity parameters based on economic literature, while designing their action spaces in accordance with real data in the United States. Our simulator facilitates the use of reinforcement learning strategies for the agents via an OpenAI Gym style environment definition for the economic system. We demonstrate the utility of our simulator by simulating and analyzing two hypothetical (yet interesting) economic scenar
     
 

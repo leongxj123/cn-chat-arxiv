@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.GT</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.GT</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.GT</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.GT</description><item><title>&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#20010;&#27169;&#22411;&#65292;&#25429;&#25417;&#20869;&#23481;&#23457;&#26680;&#20013;&#20154;&#24037;&#26234;&#33021;&#30340;&#30456;&#20114;&#20316;&#29992;&#12290;</title><link>https://arxiv.org/abs/2402.12237</link><description>&lt;p&gt;
+&#23398;&#20064;&#22312;&#20869;&#23481;&#23457;&#26680;&#20013;&#25512;&#36831;&#65306;&#20154;&#24037;&#26234;&#33021;&#19982;&#20154;&#31867;&#21327;&#21516;&#20316;&#29992;
+&lt;/p&gt;
+&lt;p&gt;
+Learning to Defer in Content Moderation: The Human-AI Interplay
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.12237
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#20010;&#27169;&#22411;&#65292;&#25429;&#25417;&#20869;&#23481;&#23457;&#26680;&#20013;&#20154;&#24037;&#26234;&#33021;&#30340;&#30456;&#20114;&#20316;&#29992;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#25104;&#21151;&#30340;&#22312;&#32447;&#24179;&#21488;&#20869;&#23481;&#23457;&#26680;&#20381;&#36182;&#20110;&#20154;&#24037;&#26234;&#33021;&#21327;&#21516;&#26041;&#27861;&#12290;&#26412;&#25991;&#20171;&#32461;&#20102;&#19968;&#20010;&#27169;&#22411;&#65292;&#25429;&#25417;&#20869;&#23481;&#23457;&#26680;&#20013;&#20154;&#24037;&#26234;&#33021;&#30340;&#30456;&#20114;&#20316;&#29992;&#12290;&#31639;&#27861;&#35266;&#23519;&#21040;&#21363;&#23558;&#21457;&#24067;&#30340;&#24086;&#23376;&#30340;&#32972;&#26223;&#20449;&#24687;&#65292;&#20570;&#20986;&#20998;&#31867;&#21644;&#20934;&#20837;&#20915;&#31574;&#65292;&#24182;&#23433;&#25490;&#24086;&#23376;&#36827;&#34892;&#20154;&#24037;&#23457;&#26680;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2402.12237v1 Announce Type: cross  Abstract: Successful content moderation in online platforms relies on a human-AI collaboration approach. A typical heuristic estimates the expected harmfulness of a post and uses fixed thresholds to decide whether to remove it and whether to send it for human review. This disregards the prediction uncertainty, the time-varying element of human review capacity and post arrivals, and the selective sampling in the dataset (humans only review posts filtered by the admission algorithm).   In this paper, we introduce a model to capture the human-AI interplay in content moderation. The algorithm observes contextual information for incoming posts, makes classification and admission decisions, and schedules posts for human review. Only admitted posts receive human reviews on their harmfulness. These reviews help educate the machine-learning algorithms but are delayed due to congestion in the human review system. The classical learning-theoretic way to ca
+&lt;/p&gt;</description></item></channel></rss>
