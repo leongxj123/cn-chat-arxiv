@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Inference in Cluster Randomized Trials with Matched Pairs.](http://arxiv.org/abs/2211.14903) | 本文研究了在匹配对簇随机试验中进行统计推断的问题，提出了加权均值差估计量和方差估计量，建立了基于这些估计量的渐近精确性，并探讨了常用的两种测试程序的特性。 |
+| [^1] | [Continuous Tensor Relaxation for Finding Diverse Solutions in Combinatorial Optimization Problems](https://arxiv.org/abs/2402.02190) | 本研究提出了连续张量放松方法(CTRA)，用于在组合优化问题中寻找多样化的解决方案。CTRA通过对离散决策变量进行连续放松，解决了寻找多样化解决方案的挑战。 |
 
 # 详细
 
-[^1]: 匹配对簇随机试验中的推断
+[^1]: 在组合优化问题中寻找多样化解决方案的连续张量放松方法
 
-    Inference in Cluster Randomized Trials with Matched Pairs. (arXiv:2211.14903v2 [econ.EM] UPDATED)
+    Continuous Tensor Relaxation for Finding Diverse Solutions in Combinatorial Optimization Problems
 
-    [http://arxiv.org/abs/2211.14903](http://arxiv.org/abs/2211.14903)
+    [https://arxiv.org/abs/2402.02190](https://arxiv.org/abs/2402.02190)
 
-    本文研究了在匹配对簇随机试验中进行统计推断的问题，提出了加权均值差估计量和方差估计量，建立了基于这些估计量的渐近精确性，并探讨了常用的两种测试程序的特性。
+    本研究提出了连续张量放松方法(CTRA)，用于在组合优化问题中寻找多样化的解决方案。CTRA通过对离散决策变量进行连续放松，解决了寻找多样化解决方案的挑战。
 
     
 
-    本文研究了在匹配对簇随机试验中进行推断的问题。匹配对设计意味着根据基线簇级协变量对一组簇进行匹配，然后在每对簇中随机选择一个簇进行处理。我们研究了加权均值差估计量的大样本行为，并根据匹配过程是否匹配簇大小，导出了两组不同的结果。然后，我们提出了一个方差估计量，无论匹配过程是匹配簇大小还是不匹配簇大小，都是一致的。结合这些结果，建立了基于这些估计量的检验的渐近精确性。接下来，我们考虑了基于线性回归构造的$t$测试的两种常见测试程序的特性，并声称这两种程序通常是保守的。
+    在组合优化问题中，寻找最佳解是最常见的目标。然而，在实际场景中，单一解决方案可能不适用，因为目标函数和约束条件只是原始现实世界情况的近似值。为了解决这个问题，寻找具有不同特征的多样化解决方案和约束严重性的变化成为自然的方向。这种策略提供了在后处理过程中选择合适解决方案的灵活性。然而，发现这些多样化解决方案比确定单一解决方案更具挑战性。为了克服这一挑战，本研究引入了连续张量松弛退火 (CTRA) 方法，用于基于无监督学习的组合优化求解器。CTRA通过扩展连续松弛方法，将离散决策变量转换为连续张量，同时解决了多个问题。该方法找到了不同特征的多样化解决方案和约束严重性的变化。
 
-    This paper considers the problem of inference in cluster randomized trials where treatment status is determined according to a "matched pairs'' design. Here, by a cluster randomized experiment, we mean one in which treatment is assigned at the level of the cluster; by a "matched pairs'' design we mean that a sample of clusters is paired according to baseline, cluster-level covariates and, within each pair, one cluster is selected at random for treatment. We study the large sample behavior of a weighted difference-in-means estimator and derive two distinct sets of results depending on if the matching procedure does or does not match on cluster size. We then propose a variance estimator which is consistent in either case. Combining these results establishes the asymptotic exactness of tests based on these estimators. Next, we consider the properties of two common testing procedures based on $t$-tests constructed from linear regressions, and argue that both are generally conservative in o
+    Finding the best solution is the most common objective in combinatorial optimization (CO) problems. However, a single solution may not be suitable in practical scenarios, as the objective functions and constraints are only approximations of original real-world situations. To tackle this, finding (i) "heterogeneous solutions", diverse solutions with distinct characteristics, and (ii) "penalty-diversified solutions", variations in constraint severity, are natural directions. This strategy provides the flexibility to select a suitable solution during post-processing. However, discovering these diverse solutions is more challenging than identifying a single solution. To overcome this challenge, this study introduces Continual Tensor Relaxation Annealing (CTRA) for unsupervised-learning-based CO solvers. CTRA addresses various problems simultaneously by extending the continual relaxation approach, which transforms discrete decision variables into continual tensors. This method finds heterog
     
 
