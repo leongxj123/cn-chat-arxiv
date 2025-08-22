@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Enhancing Depression-Diagnosis-Oriented Chat with Psychological State Tracking](https://arxiv.org/abs/2403.09717) | 本文提出将心理状态跟踪集成到大型语言模型中，以明确引导抑郁症诊断导向的聊天，从而能更好地捕捉患者在对话过程中的信息、情绪或症状变化。 |
+| [^1] | [Using a Cognitive Architecture to consider antiblackness in design and development of AI systems.](http://arxiv.org/abs/2207.00644) | 本文利用ACT-R/{\Phi}认知体系结构和现有的知识图系统ConceptNet，从认知、社会文化和生理学三个角度考虑反黑和种族主义对AI系统的影响，并认为在认知建模中典型的回避社会文化过程和知识结构，隐含地推动了认知建模的色盲方法，并隐藏了总是存在于AI系统中的社会文化背景。 |
 
 # 详细
 
-[^1]: 通过心理状态跟踪提升面向抑郁症诊断的聊天系统
+[^1]: 应用认知体系结构考虑反黑和种族主义对AI系统设计和开发的影响
 
-    Enhancing Depression-Diagnosis-Oriented Chat with Psychological State Tracking
+    Using a Cognitive Architecture to consider antiblackness in design and development of AI systems. (arXiv:2207.00644v2 [cs.CY] UPDATED)
 
-    [https://arxiv.org/abs/2403.09717](https://arxiv.org/abs/2403.09717)
+    [http://arxiv.org/abs/2207.00644](http://arxiv.org/abs/2207.00644)
 
-    本文提出将心理状态跟踪集成到大型语言模型中，以明确引导抑郁症诊断导向的聊天，从而能更好地捕捉患者在对话过程中的信息、情绪或症状变化。
+    本文利用ACT-R/{\Phi}认知体系结构和现有的知识图系统ConceptNet，从认知、社会文化和生理学三个角度考虑反黑和种族主义对AI系统的影响，并认为在认知建模中典型的回避社会文化过程和知识结构，隐含地推动了认知建模的色盲方法，并隐藏了总是存在于AI系统中的社会文化背景。
 
     
 
-    抑郁症诊断导向的聊天旨在引导患者进行自我表达，收集抑郁症检测的关键症状。最近的工作集中于结合任务导向对话和闲聊，模拟基于访谈的抑郁症诊断。然而，这些方法无法很好地捕捉患者在对话过程中的信息、情绪或症状的变化。此外，还没有明确的框架用于引导对话，这导致一些无用的交流影响了体验。本文提出将心理状态跟踪（POST）集成到大型语言模型（LLM）中，以明确引导抑郁症诊断导向的聊天。具体而言，该状态源自于心理理论模型，包括四个组件，即阶段、信息、总结和下一步。我们微调了一个LLM模型以生成动态心理状态，进而用于辅助r
+    我们如何利用认知建模来考虑反黑和种族主义更广泛地影响AI系统的设计和开发？我们提供了一个讨论和一个示例来回答这个问题。我们使用ACT-R/{\Phi}认知体系结构和现有的知识图系统ConceptNet，不仅从认知和社会文化的角度考虑这个问题，也从生理学的角度考虑。除了利用认知建模来探索反黑如何在AI系统的设计和开发中表现出来（尤其是从软件工程的角度），我们还介绍了反黑、人类和计算认知建模之间的联系。我们认为，在认知体系结构和认知建模中典型的回避社会文化过程和知识结构，隐含地推动了认知建模的色盲方法，并隐藏了总是存在于AI系统中的社会文化背景。
 
-    arXiv:2403.09717v1 Announce Type: cross  Abstract: Depression-diagnosis-oriented chat aims to guide patients in self-expression to collect key symptoms for depression detection. Recent work focuses on combining task-oriented dialogue and chitchat to simulate the interview-based depression diagnosis. Whereas, these methods can not well capture the changing information, feelings, or symptoms of the patient during dialogues. Moreover, no explicit framework has been explored to guide the dialogue, which results in some useless communications that affect the experience. In this paper, we propose to integrate Psychological State Tracking (POST) within the large language model (LLM) to explicitly guide depression-diagnosis-oriented chat. Specifically, the state is adapted from a psychological theoretical model, which consists of four components, namely Stage, Information, Summary and Next. We fine-tune an LLM model to generate the dynamic psychological state, which is further used to assist r
+    How might we use cognitive modeling to consider the ways in which antiblackness, and racism more broadly, impact the design and development of AI systems? We provide a discussion and an example towards an answer to this question. We use the ACT-R/{\Phi} cognitive architecture and an existing knowledge graph system, ConceptNet, to consider this question not only from a cognitive and sociocultural perspective, but also from a physiological perspective. In addition to using a cognitive modeling as a means to explore how antiblackness may manifest in the design and development of AI systems (particularly from a software engineering perspective), we also introduce connections between antiblackness, the Human, and computational cognitive modeling. We argue that the typical eschewing of sociocultural processes and knowledge structures in cognitive architectures and cognitive modeling implicitly furthers a colorblind approach to cognitive modeling and hides sociocultural context that is always
     
 
