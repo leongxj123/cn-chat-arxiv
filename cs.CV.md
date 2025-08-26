@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Curious Case of Remarkable Resilience to Gradient Attacks via Fully Convolutional and Differentiable Front End with a Skip Connection](https://arxiv.org/abs/2402.17018) | 通过在神经模型中引入不同iable和完全卷积的前端模型，并结合跳跃连接，成功实现对梯度攻击的显著韧性，并通过将模型组合成随机集合，有效对抗黑盒攻击。 |
-| [^2] | [Distilling Inductive Bias: Knowledge Distillation Beyond Model Compression.](http://arxiv.org/abs/2310.00369) | 本文提出了一种超越模型压缩的知识蒸馏方法，通过从轻量级教师模型中提取归纳偏差，使Vision Transformers (ViTs) 的应用成为可能。这种方法包括使用一组不同架构的教师模型来指导学生Transformer，从而有效提高学生的性能。 |
+| [^1] | [SVGCraft: Beyond Single Object Text-to-SVG Synthesis with Comprehensive Canvas Layout](https://arxiv.org/abs/2404.00412) | SVGCraft引入了一种端到端框架，可以从文本描述中生成描绘整个场景的矢量图，其中包括利用预训练的LLM进行布局生成、产生遮罩潜变量以进行准确对象放置、融合注意力图以及使用扩散U-Net进行合成，同时通过预训练的编码器和LPIPS损失进行优化。 |
+| [^2] | [Towards Identifiable Unsupervised Domain Translation: A Diversified Distribution Matching Approach.](http://arxiv.org/abs/2401.09671) | 本研究旨在解决无监督领域转换中的可识别性问题，引入了一个MPA消除理论，解决了CycleGAN及其变体产生内容不对齐的限制。 |
 
 # 详细
 
-[^1]: 通过完全卷积和可微的前端与跳跃连接对梯度攻击表现出显著韧性的耐人寻味案例
+[^1]: SVGCraft:超越单个目标文字到SVG综合画布布局
 
-    A Curious Case of Remarkable Resilience to Gradient Attacks via Fully Convolutional and Differentiable Front End with a Skip Connection
+    SVGCraft: Beyond Single Object Text-to-SVG Synthesis with Comprehensive Canvas Layout
 
-    [https://arxiv.org/abs/2402.17018](https://arxiv.org/abs/2402.17018)
+    [https://arxiv.org/abs/2404.00412](https://arxiv.org/abs/2404.00412)
 
-    通过在神经模型中引入不同iable和完全卷积的前端模型，并结合跳跃连接，成功实现对梯度攻击的显著韧性，并通过将模型组合成随机集合，有效对抗黑盒攻击。
-
-    
-
-    我们测试了通过在一个冻结的分类器之前增加一个可微且完全卷积的模型，并具有跳跃连接的前端增强神经模型。通过使用较小的学习率进行大约一个epoch的训练，我们获得了一些模型，这些模型在保持骨干分类器准确性的同时，对包括AutoAttack软件包中的APGD和FAB-T攻击在内的梯度攻击具有异常的抵抗力，这归因于梯度掩盖。梯度掩盖现象并不新鲜，但对于这些没有梯度破坏部分（如JPEG压缩或预计导致梯度减小的部分）的完全可微模型来说，掩盖的程度相当显著。尽管黑盒攻击对梯度掩盖可能部分有效，但通过将模型组合成随机集合，可以轻松击败它们。我们估计这样的集合在CIFAR10和CIF等上实现了几乎SOTA级别的AutoAttack准确性。
-
-    arXiv:2402.17018v1 Announce Type: cross  Abstract: We tested front-end enhanced neural models where a frozen classifier was prepended by a differentiable and fully convolutional model with a skip connection. By training them using a small learning rate for about one epoch, we obtained models that retained the accuracy of the backbone classifier while being unusually resistant to gradient attacks including APGD and FAB-T attacks from the AutoAttack package, which we attributed to gradient masking. The gradient masking phenomenon is not new, but the degree of masking was quite remarkable for fully differentiable models that did not have gradient-shattering components such as JPEG compression or components that are expected to cause diminishing gradients.   Though black box attacks can be partially effective against gradient masking, they are easily defeated by combining models into randomized ensembles. We estimate that such ensembles achieve near-SOTA AutoAttack accuracy on CIFAR10, CIF
-    
-[^2]: 提炼归纳偏差：超越模型压缩的知识蒸馏
-
-    Distilling Inductive Bias: Knowledge Distillation Beyond Model Compression. (arXiv:2310.00369v2 [cs.CV] UPDATED)
-
-    [http://arxiv.org/abs/2310.00369](http://arxiv.org/abs/2310.00369)
-
-    本文提出了一种超越模型压缩的知识蒸馏方法，通过从轻量级教师模型中提取归纳偏差，使Vision Transformers (ViTs) 的应用成为可能。这种方法包括使用一组不同架构的教师模型来指导学生Transformer，从而有效提高学生的性能。
+    SVGCraft引入了一种端到端框架，可以从文本描述中生成描绘整个场景的矢量图，其中包括利用预训练的LLM进行布局生成、产生遮罩潜变量以进行准确对象放置、融合注意力图以及使用扩散U-Net进行合成，同时通过预训练的编码器和LPIPS损失进行优化。
 
     
 
-    随着计算机视觉的快速发展，Vision Transformers (ViTs) 提供了在视觉和文本领域中实现统一信息处理的诱人前景。但是由于ViTs缺乏固有的归纳偏差，它们需要大量的训练数据。为了使它们的应用实际可行，我们引入了一种创新的基于集成的蒸馏方法，从轻量级的教师模型中提取归纳偏差。以前的系统仅依靠基于卷积的教学方法。然而，这种方法将一组具有不同架构倾向的轻量级教师模型（例如卷积和非线性卷积）同时用于指导学生Transformer。由于这些独特的归纳偏差，教师模型可以从各种存储数据集中获得广泛的知识，从而提高学生的性能。我们提出的框架还涉及预先计算和存储logits，从根本上实现了非归一化的状态匹配。
+    生成从文本提示到矢量图的VectorArt是一项具有挑战性的视觉任务，需要对已知和未知实体进行多样化而真实的描述。然而，现有研究主要局限于生成单个对象，而不是由多个元素组成的场景。为此，本文介绍了SVGCraft，这是一个新颖的端到端框架，用于从文本描述中生成描绘整个场景的矢量图。该框架利用预训练的LLM从文本提示生成布局，并引入了一种技术，通过生产特定边界框中的掩膜潜变量实现准确的对象放置。它引入了一个融合机制，用于集成注意力图，并使用扩散U-Net进行连贯的合成，加快绘图过程。生成的SVG使用预训练的编码器和LPIPS损失进行优化，通过透明度调制来最大程度地增加相似性。
 
-    With the rapid development of computer vision, Vision Transformers (ViTs) offer the tantalizing prospect of unified information processing across visual and textual domains. But due to the lack of inherent inductive biases in ViTs, they require enormous amount of data for training. To make their applications practical, we introduce an innovative ensemble-based distillation approach distilling inductive bias from complementary lightweight teacher models. Prior systems relied solely on convolution-based teaching. However, this method incorporates an ensemble of light teachers with different architectural tendencies, such as convolution and involution, to instruct the student transformer jointly. Because of these unique inductive biases, instructors can accumulate a wide range of knowledge, even from readily identifiable stored datasets, which leads to enhanced student performance. Our proposed framework also involves precomputing and storing logits in advance, essentially the unnormalize
+    arXiv:2404.00412v1 Announce Type: cross  Abstract: Generating VectorArt from text prompts is a challenging vision task, requiring diverse yet realistic depictions of the seen as well as unseen entities. However, existing research has been mostly limited to the generation of single objects, rather than comprehensive scenes comprising multiple elements. In response, this work introduces SVGCraft, a novel end-to-end framework for the creation of vector graphics depicting entire scenes from textual descriptions. Utilizing a pre-trained LLM for layout generation from text prompts, this framework introduces a technique for producing masked latents in specified bounding boxes for accurate object placement. It introduces a fusion mechanism for integrating attention maps and employs a diffusion U-Net for coherent composition, speeding up the drawing process. The resulting SVG is optimized using a pre-trained encoder and LPIPS loss with opacity modulation to maximize similarity. Additionally, th
+    
+[^2]: 迈向可识别的无监督领域转换：一种多样化分布匹配的方法
+
+    Towards Identifiable Unsupervised Domain Translation: A Diversified Distribution Matching Approach. (arXiv:2401.09671v1 [cs.LG])
+
+    [http://arxiv.org/abs/2401.09671](http://arxiv.org/abs/2401.09671)
+
+    本研究旨在解决无监督领域转换中的可识别性问题，引入了一个MPA消除理论，解决了CycleGAN及其变体产生内容不对齐的限制。
+
+    
+
+    无监督领域转换（UDT）旨在找到将一个领域的样本（例如素描）转换为另一个领域（例如照片）的函数，同时不改变高层语义意义（也称为“内容”）。这些转换函数通常通过转换源领域和目标领域的概率分布来寻找。CycleGAN可以说是这一领域中最具代表性的方法。然而，文献中指出CycleGAN及其变体可能无法识别所需的转换函数，并产生内容不对齐的转换。这种局限性源于学习准则解空间中存在多个转换函数，称为“保度自同构（MPA）”。尽管意识到了这种可识别性问题，但解决方案仍然难以找到。本研究深入探究了核心的可识别性问题，并引入了MPA消除理论。我们的分析表明...
+
+    Unsupervised domain translation (UDT) aims to find functions that convert samples from one domain (e.g., sketches) to another domain (e.g., photos) without changing the high-level semantic meaning (also referred to as ``content''). The translation functions are often sought by probability distribution matching of the transformed source domain and target domain. CycleGAN stands as arguably the most representative approach among this line of work. However, it was noticed in the literature that CycleGAN and variants could fail to identify the desired translation functions and produce content-misaligned translations. This limitation arises due to the presence of multiple translation functions -- referred to as ``measure-preserving automorphism" (MPA) -- in the solution space of the learning criteria. Despite awareness of such identifiability issues, solutions have remained elusive. This study delves into the core identifiability inquiry and introduces an MPA elimination theory. Our analysi
     
 
