@@ -1,1 +1,41 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CV</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CV</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CV</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CV</description><item><title>TorchCP&#26159;&#19968;&#20010;&#22522;&#20110;PyTorch&#30340;Python&#24037;&#20855;&#21253;&#65292;&#20026;&#28145;&#24230;&#23398;&#20064;&#27169;&#22411;&#19978;&#30340;&#21512;&#25311;&#24120;&#35268;&#39044;&#27979;&#30740;&#31350;&#25552;&#20379;&#20102;&#23454;&#29616;&#21518;&#39564;&#21644;&#35757;&#32451;&#26041;&#27861;&#30340;&#22810;&#31181;&#24037;&#20855;&#65292;&#21253;&#25324;&#20998;&#31867;&#21644;&#22238;&#24402;&#20219;&#21153;&#12290;En_Tdlr: TorchCP is a Python toolbox built on PyTorch for conformal prediction research on deep learning models, providing various implementations for posthoc and training methods for classification and regression tasks, including multi-dimension output.</title><link>https://arxiv.org/abs/2402.12683</link><description>&lt;p&gt;
+TorchCP&#65306;&#22522;&#20110;PyTorch&#30340;&#19968;&#31181;&#36866;&#29992;&#20110;&#21512;&#25311;&#24120;&#35268;&#39044;&#27979;&#30340;&#24211;
+&lt;/p&gt;
+&lt;p&gt;
+TorchCP: A Library for Conformal Prediction based on PyTorch
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.12683
+&lt;/p&gt;
+&lt;p&gt;
+TorchCP&#26159;&#19968;&#20010;&#22522;&#20110;PyTorch&#30340;Python&#24037;&#20855;&#21253;&#65292;&#20026;&#28145;&#24230;&#23398;&#20064;&#27169;&#22411;&#19978;&#30340;&#21512;&#25311;&#24120;&#35268;&#39044;&#27979;&#30740;&#31350;&#25552;&#20379;&#20102;&#23454;&#29616;&#21518;&#39564;&#21644;&#35757;&#32451;&#26041;&#27861;&#30340;&#22810;&#31181;&#24037;&#20855;&#65292;&#21253;&#25324;&#20998;&#31867;&#21644;&#22238;&#24402;&#20219;&#21153;&#12290;En_Tdlr: TorchCP is a Python toolbox built on PyTorch for conformal prediction research on deep learning models, providing various implementations for posthoc and training methods for classification and regression tasks, including multi-dimension output.
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+TorchCP&#26159;&#19968;&#20010;&#29992;&#20110;&#28145;&#24230;&#23398;&#20064;&#27169;&#22411;&#19978;&#30340;&#21512;&#25311;&#24120;&#35268;&#39044;&#27979;&#30740;&#31350;&#30340;Python&#24037;&#20855;&#21253;&#12290;&#23427;&#21253;&#21547;&#20102;&#29992;&#20110;&#21518;&#39564;&#21644;&#35757;&#32451;&#26041;&#27861;&#30340;&#21508;&#31181;&#23454;&#29616;&#65292;&#29992;&#20110;&#20998;&#31867;&#21644;&#22238;&#24402;&#20219;&#21153;&#65288;&#21253;&#25324;&#22810;&#32500;&#36755;&#20986;&#65289;&#12290;TorchCP&#24314;&#31435;&#22312;PyTorch&#20043;&#19978;&#65292;&#24182;&#21033;&#29992;&#30697;&#38453;&#35745;&#31639;&#30340;&#20248;&#21183;&#65292;&#25552;&#20379;&#31616;&#27905;&#39640;&#25928;&#30340;&#25512;&#29702;&#23454;&#29616;&#12290;&#35813;&#20195;&#30721;&#37319;&#29992;LGPL&#35768;&#21487;&#35777;&#65292;&#24182;&#22312;$\href{https://github.com/ml-stat-Sustech/TorchCP}{\text{this https URL}}$&#24320;&#28304;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2402.12683v1 Announce Type: new  Abstract: TorchCP is a Python toolbox for conformal prediction research on deep learning models. It contains various implementations for posthoc and training methods for classification and regression tasks (including multi-dimension output). TorchCP is built on PyTorch (Paszke et al., 2019) and leverages the advantages of matrix computation to provide concise and efficient inference implementations. The code is licensed under the LGPL license and is open-sourced at $\href{https://github.com/ml-stat-Sustech/TorchCP}{\text{this https URL}}$.
+&lt;/p&gt;</description></item><item><title>&#26412;&#30740;&#31350;&#21033;&#29992;&#20960;&#20309;&#28145;&#24230;&#23398;&#20064;&#21644;&#21435;&#22122;&#25193;&#25955;&#27010;&#29575;&#27169;&#22411;&#20248;&#21270;&#22823;&#32928;&#30340;&#20998;&#21106;&#32467;&#26524;&#65292;&#24182;&#32467;&#21512;&#20808;&#36827;&#30340;&#34920;&#38754;&#37325;&#26500;&#27169;&#22411;&#65292;&#23454;&#29616;&#23545;&#22823;&#32928;3D&#24418;&#29366;&#30340;&#31934;&#21270;&#24674;&#22797;&#12290;</title><link>http://arxiv.org/abs/2309.08289</link><description>&lt;p&gt;
+&#21033;&#29992;&#28857;&#25193;&#25955;&#27169;&#22411;&#23545;&#22823;&#32928;&#30340;3D&#24418;&#29366;&#36827;&#34892;&#31934;&#21270;&#20197;&#29983;&#25104;&#25968;&#23383;&#24187;&#24433;
+&lt;/p&gt;
+&lt;p&gt;
+Large Intestine 3D Shape Refinement Using Point Diffusion Models for Digital Phantom Generation. (arXiv:2309.08289v1 [cs.CV])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2309.08289
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#30740;&#31350;&#21033;&#29992;&#20960;&#20309;&#28145;&#24230;&#23398;&#20064;&#21644;&#21435;&#22122;&#25193;&#25955;&#27010;&#29575;&#27169;&#22411;&#20248;&#21270;&#22823;&#32928;&#30340;&#20998;&#21106;&#32467;&#26524;&#65292;&#24182;&#32467;&#21512;&#20808;&#36827;&#30340;&#34920;&#38754;&#37325;&#26500;&#27169;&#22411;&#65292;&#23454;&#29616;&#23545;&#22823;&#32928;3D&#24418;&#29366;&#30340;&#31934;&#21270;&#24674;&#22797;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#20934;&#30830;&#24314;&#27169;&#20154;&#20307;&#22120;&#23448;&#22312;&#26500;&#24314;&#34394;&#25311;&#25104;&#20687;&#35797;&#39564;&#30340;&#35745;&#31639;&#20223;&#30495;&#20013;&#36215;&#30528;&#33267;&#20851;&#37325;&#35201;&#30340;&#20316;&#29992;&#12290;&#28982;&#32780;&#65292;&#20174;&#35745;&#31639;&#26426;&#26029;&#23618;&#25195;&#25551;&#20013;&#29983;&#25104;&#35299;&#21078;&#23398;&#19978;&#21487;&#20449;&#30340;&#22120;&#23448;&#34920;&#38754;&#37325;&#24314;&#20173;&#28982;&#23545;&#20154;&#20307;&#32467;&#26500;&#20013;&#30340;&#35768;&#22810;&#22120;&#23448;&#26469;&#35828;&#26159;&#20010;&#25361;&#25112;&#12290;&#22312;&#22788;&#29702;&#22823;&#32928;&#26102;&#65292;&#36825;&#20010;&#25361;&#25112;&#23588;&#20026;&#26126;&#26174;&#12290;&#22312;&#36825;&#39033;&#30740;&#31350;&#20013;&#65292;&#25105;&#20204;&#21033;&#29992;&#20960;&#20309;&#28145;&#24230;&#23398;&#20064;&#21644;&#21435;&#22122;&#25193;&#25955;&#27010;&#29575;&#27169;&#22411;&#30340;&#26368;&#26032;&#36827;&#23637;&#26469;&#20248;&#21270;&#22823;&#32928;&#20998;&#21106;&#32467;&#26524;&#12290;&#39318;&#20808;&#65292;&#25105;&#20204;&#23558;&#22120;&#23448;&#34920;&#31034;&#20026;&#20174;3D&#20998;&#21106;&#25513;&#27169;&#34920;&#38754;&#37319;&#26679;&#24471;&#21040;&#30340;&#28857;&#20113;&#12290;&#38543;&#21518;&#65292;&#25105;&#20204;&#20351;&#29992;&#20998;&#23618;&#21464;&#20998;&#33258;&#32534;&#30721;&#22120;&#33719;&#24471;&#22120;&#23448;&#24418;&#29366;&#30340;&#20840;&#23616;&#21644;&#23616;&#37096;&#28508;&#22312;&#34920;&#31034;&#12290;&#25105;&#20204;&#22312;&#20998;&#23618;&#28508;&#22312;&#31354;&#38388;&#20013;&#35757;&#32451;&#20004;&#20010;&#26465;&#20214;&#21435;&#22122;&#25193;&#25955;&#27169;&#22411;&#26469;&#36827;&#34892;&#24418;&#29366;&#31934;&#21270;&#12290;&#20026;&#20102;&#36827;&#19968;&#27493;&#25552;&#39640;&#25105;&#20204;&#30340;&#26041;&#27861;&#65292;&#25105;&#20204;&#36824;&#32467;&#21512;&#20102;&#19968;&#31181;&#20808;&#36827;&#30340;&#34920;&#38754;&#37325;&#26500;&#27169;&#22411;&#65292;&#20174;&#32780;&#23454;&#29616;&#24418;&#29366;&#30340;&#26356;&#22909;&#24674;&#22797;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+Accurate 3D modeling of human organs plays a crucial role in building computational phantoms for virtual imaging trials. However, generating anatomically plausible reconstructions of organ surfaces from computed tomography scans remains challenging for many structures in the human body. This challenge is particularly evident when dealing with the large intestine. In this study, we leverage recent advancements in geometric deep learning and denoising diffusion probabilistic models to refine the segmentation results of the large intestine. We begin by representing the organ as point clouds sampled from the surface of the 3D segmentation mask. Subsequently, we employ a hierarchical variational autoencoder to obtain global and local latent representations of the organ's shape. We train two conditional denoising diffusion models in the hierarchical latent space to perform shape refinement. To further enhance our method, we incorporate a state-of-the-art surface reconstruction model, allowin
+&lt;/p&gt;</description></item></channel></rss>
