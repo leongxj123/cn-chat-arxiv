@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Jump detection in high-frequency order prices](https://arxiv.org/abs/2403.00819) | 该论文的主要贡献是提出了一种全局跳跃检测方法，利用本地次序统计量检测、定位和估计高频次序价格中的价格跳跃。 |
-| [^2] | [Combining Evidence Across Filtrations](https://arxiv.org/abs/2402.09698) | 这篇论文研究了合并使用不同过滤器计算的e进程的方法，探讨了其在顺序推理中的应用。 |
+| [^1] | [The Curse of Memory in Stochastic Approximation: Extended Version.](http://arxiv.org/abs/2309.02944) | 本文研究了随机逼近中的记忆诅咒问题，并探讨了在不同情况下的结果。在具有几何遍历马尔可夫扰动的情况下，目标偏差一般非零。此外，当参数估计使用平均法时，估计值收敛到渐近无偏，且具有近似最优的渐近协方差。 |
 
 # 详细
 
-[^1]: 高频次序价格中的跳跃检测
+[^1]: 随机逼近中的记忆诅咒：扩展版本
 
-    Jump detection in high-frequency order prices
+    The Curse of Memory in Stochastic Approximation: Extended Version. (arXiv:2309.02944v1 [math.ST])
 
-    [https://arxiv.org/abs/2403.00819](https://arxiv.org/abs/2403.00819)
+    [http://arxiv.org/abs/2309.02944](http://arxiv.org/abs/2309.02944)
 
-    该论文的主要贡献是提出了一种全局跳跃检测方法，利用本地次序统计量检测、定位和估计高频次序价格中的价格跳跃。
-
-    
-
-    我们提出了一种推断半-martingale跳跃的方法，该方法基于离散、嘈杂、高频次序的观察描述了长期价格动态。与经典的加性、中心的市场微观结构噪声模型不同，我们考虑了限价单委托价格的单侧微观结构噪声。我们开发了使用本地次序统计量估计、定位和检验跳跃的方法。我们提供了一种本地检验，并展示我们可以一致地估计价格跳跃。主要贡献是全局跳跃检验。我们建立了该检验的渐近性质和最优性。基于极值理论，我们推导了无跳跃的零假设下最大统计量的渐近分布。我们证明了在备择假设下的一致性。我们确定并展示了本地备择情况下的收敛速度远远快于标准市场微观结构噪声模型的最优速度。
-
-    arXiv:2403.00819v1 Announce Type: new  Abstract: We propose methods to infer jumps of a semi-martingale, which describes long-term price dynamics based on discrete, noisy, high-frequency observations. Different to the classical model of additive, centered market microstructure noise, we consider one-sided microstructure noise for order prices in a limit order book. We develop methods to estimate, locate and test for jumps using local order statistics. We provide a local test and show that we can consistently estimate price jumps. The main contribution is a global test for jumps. We establish the asymptotic properties and optimality of this test. We derive the asymptotic distribution of a maximum statistic under the null hypothesis of no jumps based on extreme value theory. We prove consistency under the alternative hypothesis. The rate of convergence for local alternatives is determined and shown to be much faster than optimal rates for the standard market microstructure noise model. T
-    
-[^2]: 合并不同过滤器中的证据
-
-    Combining Evidence Across Filtrations
-
-    [https://arxiv.org/abs/2402.09698](https://arxiv.org/abs/2402.09698)
-
-    这篇论文研究了合并使用不同过滤器计算的e进程的方法，探讨了其在顺序推理中的应用。
+    本文研究了随机逼近中的记忆诅咒问题，并探讨了在不同情况下的结果。在具有几何遍历马尔可夫扰动的情况下，目标偏差一般非零。此外，当参数估计使用平均法时，估计值收敛到渐近无偏，且具有近似最优的渐近协方差。
 
     
 
-    在任何时刻有效的顺序推理中，已知任何可接受的推理方法必须基于测试鞅和它们的组合广义化，称为e进程，它们是非负进程，其在任何任意停时的期望上界不超过一。e进程量化了针对复合零假设的一系列结果的累积证据。本文研究了使用不同信息集（即过滤器）计算的e进程的合并方法，针对一个零假设。尽管在相同过滤器上构建的e进程可以轻松地合并（例如，通过平均），但在不同过滤器上构建的e进程不能那么容易地合并，因为它们在较粗的过滤器中的有效性不能转换为在更细的过滤器中的有效性。我们讨论了文献中三个具体例子：可交换性测试，独立性测试等。
+    自适应控制的最早的日子以来，随机逼近（SA）的理论和应用在控制系统的社区中得到了快速发展。本文以新的视角重新审视了这个主题，受到最近的结果的启发，该结果证明使用（足够小的）恒定步长α>0的SA具有非凡的性能。如果采用平均法获取最终的参数估计，则估计值在渐近无偏和近似最优的渐近协方差下收敛。这些结果是针对具有独立同分布系数的随机线性SA递归获得的。本文在更常见的几何遍历马尔可夫扰动的情况下获得了非常不同的结论：（i）在非线性SA的情况下，识别出了“目标偏差”，并且一般上不为零。其余的结果是针对线性SA递归建立的：（ii）双变量参数扰动过程在拓扑意义上具有几何遍历性；（iii）偏差的表示具有简单的性质。
 
-    arXiv:2402.09698v1 Announce Type: cross  Abstract: In anytime-valid sequential inference, it is known that any admissible inference procedure must be based on test martingales and their composite generalization, called e-processes, which are nonnegative processes whose expectation at any arbitrary stopping time is upper-bounded by one. An e-process quantifies the accumulated evidence against a composite null hypothesis over a sequence of outcomes. This paper studies methods for combining e-processes that are computed using different information sets, i.e., filtrations, for a null hypothesis. Even though e-processes constructed on the same filtration can be combined effortlessly (e.g., by averaging), e-processes constructed on different filtrations cannot be combined as easily because their validity in a coarser filtration does not translate to validity in a finer filtration. We discuss three concrete examples of such e-processes in the literature: exchangeability tests, independence te
+    Theory and application of stochastic approximation (SA) has grown within the control systems community since the earliest days of adaptive control. This paper takes a new look at the topic, motivated by recent results establishing remarkable performance of SA with (sufficiently small) constant step-size $\alpha>0$. If averaging is implemented to obtain the final parameter estimate, then the estimates are asymptotically unbiased with nearly optimal asymptotic covariance. These results have been obtained for random linear SA recursions with i.i.d.\ coefficients. This paper obtains very different conclusions in the more common case of geometrically ergodic Markovian disturbance: (i) The \textit{target bias} is identified, even in the case of non-linear SA, and is in general non-zero. The remaining results are established for linear SA recursions: (ii) the bivariate parameter-disturbance process is geometrically ergodic in a topological sense; (iii) the representation for bias has a simple
     
 

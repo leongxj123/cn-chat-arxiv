@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Balanced Donor Coordination.](http://arxiv.org/abs/2305.10286) | 这篇论文提出了一种既尊重个人意愿又高效的捐赠机制，通过以高效的方式分配每个捐赠者的贡献，没有任何捐助人有动机重新分配他们的捐款。 |
+| [^1] | [An Exponentially Converging Particle Method for the Mixed Nash Equilibrium of Continuous Games.](http://arxiv.org/abs/2211.01280) | 本文提出并分析了一种基于粒子的方法，用于计算具有连续纯策略集和对收益函数的一阶访问的两人零和博弈的混合纳什均衡问题，并在满足假设的情况下从任何初始化指数收敛于准确的解。 |
 
 # 详细
 
-[^1]: 平衡捐赠者协调
+[^1]: 一种连续博弈混合纳什均衡的指数收敛粒子方法
 
-    Balanced Donor Coordination. (arXiv:2305.10286v1 [econ.TH])
+    An Exponentially Converging Particle Method for the Mixed Nash Equilibrium of Continuous Games. (arXiv:2211.01280v3 [math.OC] UPDATED)
 
-    [http://arxiv.org/abs/2305.10286](http://arxiv.org/abs/2305.10286)
+    [http://arxiv.org/abs/2211.01280](http://arxiv.org/abs/2211.01280)
 
-    这篇论文提出了一种既尊重个人意愿又高效的捐赠机制，通过以高效的方式分配每个捐赠者的贡献，没有任何捐助人有动机重新分配他们的捐款。
+    本文提出并分析了一种基于粒子的方法，用于计算具有连续纯策略集和对收益函数的一阶访问的两人零和博弈的混合纳什均衡问题，并在满足假设的情况下从任何初始化指数收敛于准确的解。
 
     
 
-    慈善通常由个人捐赠者或中央组织（如政府或市政机构）进行，他们收集个人捐款并将它们分配给一组慈善机构。一方面，个人慈善尊重捐赠者的意愿，但由于缺乏协调而可能效率低下。另一方面，集中慈善可能更有效，但可能忽略个人捐赠者的意愿。我们提出了一种机制，它结合了两种方法的优点，通过以高效的方式分配每个捐赠者的贡献，没有任何捐助人有动机重新分配他们的捐款。在假设Leontief效用函数（即每个捐赠者均希望最大化所有慈善机构的最小贡献的个人加权之和）的情况下，我们的机制是组策略正确、偏好单调、贡献单调、最大化纳什福利并可以计算。
+    本文考虑解决具有连续纯策略集和对收益函数的一阶访问的两人零和博弈的混合纳什均衡计算问题。该问题在以博弈理论为灵感的机器学习应用中出现，如分布式稳健学习。在这些应用中，策略集是高维的，因此基于离散化的方法不能返回高精度的解。本文引入并分析了一种基于粒子的方法，该方法针对此问题具有保证的局部收敛性。该方法将混合策略参数化为原子测度，并对原子的权重和位置应用近端点更新。它可以被解释为“相互作用”Wasserstein-Fisher-Rao梯度流的时间隐式离散化。我们证明，在非退化的假设下，该方法从任何初始化以指数速度收敛于准确的混合纳什均衡，并提供数值实验来说明该方法的实际性能。
 
-    Charity is typically done either by individual donors, who donate money to the charities that they support, or by centralized organizations such as governments or municipalities, which collect the individual contributions and distribute them among a set of charities. On the one hand, individual charity respects the will of the donors but may be inefficient due to a lack of coordination. On the other hand, centralized charity is potentially more efficient but may ignore the will of individual donors. We present a mechanism that combines the advantages of both methods by distributing the contribution of each donor in an efficient way such that no subset of donors has an incentive to redistribute their donations. Assuming Leontief utilities (i.e., each donor is interested in maximizing an individually weighted minimum of all contributions across the charities), our mechanism is group-strategyproof, preference-monotonic, contribution-monotonic, maximizes Nash welfare, and can be computed u
+    We consider the problem of computing mixed Nash equilibria of two-player zero-sum games with continuous sets of pure strategies and with first-order access to the payoff function. This problem arises for example in game-theory-inspired machine learning applications, such as distributionally-robust learning. In those applications, the strategy sets are high-dimensional and thus methods based on discretisation cannot tractably return high-accuracy solutions.  In this paper, we introduce and analyze a particle-based method that enjoys guaranteed local convergence for this problem. This method consists in parametrizing the mixed strategies as atomic measures and applying proximal point updates to both the atoms' weights and positions. It can be interpreted as a time-implicit discretization of the "interacting" Wasserstein-Fisher-Rao gradient flow.  We prove that, under non-degeneracy assumptions, this method converges at an exponential rate to the exact mixed Nash equilibrium from any init
     
 
