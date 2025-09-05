@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Survey on Human-AI Teaming with Large Pre-Trained Models](https://arxiv.org/abs/2403.04931) | 本文调查了大型预训练模型与人工智能合作的重要性，强调了这些模型如何超越传统方法增强协作智能，并探讨了其在增强人类能力、改善AI模型、有效团队合作、道德考虑以及在各个领域广泛应用方面的潜在作用。 |
-| [^2] | [Does mapping elites illuminate search spaces? A large-scale user study of MAP--Elites applied to human--AI collaborative design](https://arxiv.org/abs/2402.07911) | 通过两项研究，揭示了MAP-Elites在人机协同设计中对搜索空间的作用。这些研究使用了基于进化算法的设计工具，以实现设计推荐对设计过程的影响的理解。 |
+| [^1] | [(Ir)rationality in AI: State of the Art, Research Challenges and Open Questions](https://arxiv.org/abs/2311.17165) | 这篇论文调查了人工智能中理性与非理性的概念，提出了未解问题。重点讨论了行为在某些情况下的非理性行为可能是最优的情况。已经提出了一些方法来处理非理性代理，但仍存在挑战和问题。 |
 
 # 详细
 
-[^1]: 人工智能与大型预训练模型合作调查
+[^1]: (非)理性在人工智能中的应用：现状、研究挑战和未解之问
 
-    A Survey on Human-AI Teaming with Large Pre-Trained Models
+    (Ir)rationality in AI: State of the Art, Research Challenges and Open Questions
 
-    [https://arxiv.org/abs/2403.04931](https://arxiv.org/abs/2403.04931)
+    [https://arxiv.org/abs/2311.17165](https://arxiv.org/abs/2311.17165)
 
-    本文调查了大型预训练模型与人工智能合作的重要性，强调了这些模型如何超越传统方法增强协作智能，并探讨了其在增强人类能力、改善AI模型、有效团队合作、道德考虑以及在各个领域广泛应用方面的潜在作用。
-
-    
-
-    在人工智能（AI）迅速发展的景观中，人类智能和AI系统之间的协作，即人工智能（HAI）合作，已成为推进问题解决和决策过程的基石。大型预训练模型（LPtM）的出现显著改变了这一景观，通过利用大量数据来理解和预测复杂模式，为人类提供了前所未有的能力。本文调查了LPtMs与HAI的关键整合，强调了这些模型如何超越传统方法增强协作智能。重点探讨了LPtMs在增强人类能力方面的协同潜力，讨论了这种协作对AI模型改进、有效的团队合作、道德考虑以及在各个领域的广泛应用影响。通过这一探索，研究揭示了LPtM增强HAI的变革性影响。
-
-    arXiv:2403.04931v1 Announce Type: new  Abstract: In the rapidly evolving landscape of artificial intelligence (AI), the collaboration between human intelligence and AI systems, known as Human-AI (HAI) Teaming, has emerged as a cornerstone for advancing problem-solving and decision-making processes. The advent of Large Pre-trained Models (LPtM) has significantly transformed this landscape, offering unprecedented capabilities by leveraging vast amounts of data to understand and predict complex patterns. This paper surveys the pivotal integration of LPtMs with HAI, emphasizing how these models enhance collaborative intelligence beyond traditional approaches. It examines the synergistic potential of LPtMs in augmenting human capabilities, discussing this collaboration for AI model improvements, effective teaming, ethical considerations, and their broad applied implications in various sectors. Through this exploration, the study sheds light on the transformative impact of LPtM-enhanced HAI 
-    
-[^2]: MAP-Elites应用于人机协同设计中，显现搜索空间的作用：一项大规模用户研究
-
-    Does mapping elites illuminate search spaces? A large-scale user study of MAP--Elites applied to human--AI collaborative design
-
-    [https://arxiv.org/abs/2402.07911](https://arxiv.org/abs/2402.07911)
-
-    通过两项研究，揭示了MAP-Elites在人机协同设计中对搜索空间的作用。这些研究使用了基于进化算法的设计工具，以实现设计推荐对设计过程的影响的理解。
+    这篇论文调查了人工智能中理性与非理性的概念，提出了未解问题。重点讨论了行为在某些情况下的非理性行为可能是最优的情况。已经提出了一些方法来处理非理性代理，但仍存在挑战和问题。
 
     
 
-    为了了解设计建议对设计过程的影响，进行了两项人工智能协同设计工具的研究。所研究的工具基于进化算法，旨在设计一辆在固定时间内行驶最远的虚拟汽车。参与者可以设计自己的汽车，向算法提出建议，并查看算法提供的一系列建议。算法提供的设计是之前经过测试的设计；其中一些是随机选择的，另一些是使用MAP-Elites选择的。在第一项研究中，作为科学普及计划的一部分，记录了808次设计会话，每次会话都有参与者使用工具的分析数据。为了提供定量数据的背景信息，还进行了一项包含12位参与者的双盲实验室研究。在实验室研究中，收集了与大规模研究的相同定量数据，并收集了对访谈问题的回答。
+    理性概念在人工智能领域中占据着重要地位。无论是模拟人类推理还是追求有限最优性，我们通常希望使人工智能代理尽可能理性。尽管这个概念在人工智能中非常核心，但对于什么构成理性代理并没有统一的定义。本文调查了人工智能中的理性与非理性，并提出了这个领域的未解问题。在其他领域对理性的理解对其在人工智能中的概念产生了影响，特别是经济学、哲学和心理学方面的研究。着重考虑人工智能代理的行为，我们探讨了在某些情境中非理性行为可能是最优的情况。关于处理非理性代理的方法已经得到了一些发展，包括识别和交互等方面的研究，然而，在这个领域的工作仍然存在一些挑战和问题。
 
-    Two studies of a human-AI collaborative design tool were carried out in order to understand the influence design recommendations have on the design process. The tool investigated is based on an evolutionary algorithm attempting to design a virtual car to travel as far as possible in a fixed time. Participants were able to design their own cars, make recommendations to the algorithm and view sets of recommendations from the algorithm. The algorithm-recommended sets were designs which had been previously tested; some sets were simply randomly picked and other sets were picked using MAP-Elites. In the first study 808 design sessions were recorded as part of a science outreach program, each with analytical data of how each participant used the tool. To provide context to this quantitative data, a smaller double-blind lab study was also carried out with 12 participants. In the lab study the same quantitative data from the large scale study was collected alongside responses to interview ques
+    arXiv:2311.17165v2 Announce Type: replace Abstract: The concept of rationality is central to the field of artificial intelligence. Whether we are seeking to simulate human reasoning, or the goal is to achieve bounded optimality, we generally seek to make artificial agents as rational as possible. Despite the centrality of the concept within AI, there is no unified definition of what constitutes a rational agent. This article provides a survey of rationality and irrationality in artificial intelligence, and sets out the open questions in this area. The understanding of rationality in other fields has influenced its conception within artificial intelligence, in particular work in economics, philosophy and psychology. Focusing on the behaviour of artificial agents, we consider irrational behaviours that can prove to be optimal in certain scenarios. Some methods have been developed to deal with irrational agents, both in terms of identification and interaction, however work in this area re
     
 
