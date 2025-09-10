@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Towards Principled Assessment of Tabular Data Synthesis Algorithms](https://arxiv.org/abs/2402.06806) | 本文提出了一个原则性和系统化的评估框架来评估表格数据合成算法，包括保真度、隐私性和实用性等新指标，以解决现有评估指标的限制。通过这个框架，对不同算法进行了比较和总结。 |
-| [^2] | [On Rate-Optimal Partitioning Classification from Observable and from Privatised Data](https://arxiv.org/abs/2312.14889) | 研究了在放宽条件下的分区分类方法的收敛速率，提出了绝对连续分量的新特性，计算了分类错误概率的精确收敛率 |
+| [^1] | [Leveraging Public Representations for Private Transfer Learning.](http://arxiv.org/abs/2312.15551) | 该论文探讨了如何利用公共数据来改进私有学习的问题。研究发现，通过学习公共数据中的共享表示，可以在两种迁移学习场景中实现最优的学习效果。在单任务迁移场景中，算法在给定子空间范围内搜索线性模型，并实现了最优超额风险。在多任务个性化场景中，足够的公共数据可以消除私有协调需求，并通过纯局部学习达到相同的效用。 |
+| [^2] | [Protect Federated Learning Against Backdoor Attacks via Data-Free Trigger Generation.](http://arxiv.org/abs/2308.11333) | 通过数据审计和触发器图像过滤等机制，我们提出了一种无数据生成触发器的防御方法来保护联邦学习免受后门攻击。该方法利用后门攻击特征来学习触发器，并生成具有新学习知识的图像。 |
 
 # 详细
 
-[^1]: 关于表格数据合成算法的原则性评估
+[^1]: 利用公共表示来进行私有迁移学习
 
-    Towards Principled Assessment of Tabular Data Synthesis Algorithms
+    Leveraging Public Representations for Private Transfer Learning. (arXiv:2312.15551v2 [cs.LG] UPDATED)
 
-    [https://arxiv.org/abs/2402.06806](https://arxiv.org/abs/2402.06806)
+    [http://arxiv.org/abs/2312.15551](http://arxiv.org/abs/2312.15551)
 
-    本文提出了一个原则性和系统化的评估框架来评估表格数据合成算法，包括保真度、隐私性和实用性等新指标，以解决现有评估指标的限制。通过这个框架，对不同算法进行了比较和总结。
-
-    
-
-    数据合成被认为是一种利用数据同时保护数据隐私的重要方法。已经提出了大量的表格数据合成算法（我们称之为合成器）。一些合成器满足差分隐私，而其他一些则旨在以启发式的方式提供隐私保护。由于缺乏原则性评估指标以及对利用扩散模型和最新的基于边际的合成器与大型语言模型进行面对面比较的新开发的合成器的理解尚不全面，对这些合成器的优势和弱点的全面了解仍然难以实现。在本文中，我们提出了一个原则性和系统化的评估框架来评估表格数据合成算法。具体而言，我们检查和批评现有的评估指标，并引入了一组新的指标，以解决其限制，包括保真度、隐私性和实用性。基于提出的指标，我们还设计了一个统一的评估组织框架，以对不同算法进行评估并进行比较和总结。
-
-    Data synthesis has been advocated as an important approach for utilizing data while protecting data privacy. A large number of tabular data synthesis algorithms (which we call synthesizers) have been proposed. Some synthesizers satisfy Differential Privacy, while others aim to provide privacy in a heuristic fashion. A comprehensive understanding of the strengths and weaknesses of these synthesizers remains elusive due to lacking principled evaluation metrics and missing head-to-head comparisons of newly developed synthesizers that take advantage of diffusion models and large language models with state-of-the-art marginal-based synthesizers.   In this paper, we present a principled and systematic evaluation framework for assessing tabular data synthesis algorithms. Specifically, we examine and critique existing evaluation metrics, and introduce a set of new metrics in terms of fidelity, privacy, and utility to address their limitations. Based on the proposed metrics, we also devise a un
-    
-[^2]: 论从可观测和私密数据中实现速率最优分区分类
-
-    On Rate-Optimal Partitioning Classification from Observable and from Privatised Data
-
-    [https://arxiv.org/abs/2312.14889](https://arxiv.org/abs/2312.14889)
-
-    研究了在放宽条件下的分区分类方法的收敛速率，提出了绝对连续分量的新特性，计算了分类错误概率的精确收敛率
+    该论文探讨了如何利用公共数据来改进私有学习的问题。研究发现，通过学习公共数据中的共享表示，可以在两种迁移学习场景中实现最优的学习效果。在单任务迁移场景中，算法在给定子空间范围内搜索线性模型，并实现了最优超额风险。在多任务个性化场景中，足够的公共数据可以消除私有协调需求，并通过纯局部学习达到相同的效用。
 
     
 
-    在这篇论文中，我们重新审视了分区分类的经典方法，并研究了在放宽条件下的收敛速率，包括可观测（非私密）和私密数据。我们假设特征向量$X$取值于$\mathbb{R}^d$，其标签为$Y$。之前关于分区分类器的结果基于强密度假设，这种假设限制较大，我们通过简单的例子加以证明。我们假设$X$的分布是绝对连续分布和离散分布的混合体，其中绝对连续分量集中于一个$d_a$维子空间。在这里，我们在更宽松的条件下研究了这个问题：除了标准的Lipschitz和边际条件外，我们还引入了绝对连续分量的一个新特性，通过该特性计算了分类错误概率的精确收敛率，对于...
+    受到将公共数据纳入差分隐私学习的最新实证成功的启发，我们在理论上研究了从公共数据中学到的共享表示如何改进私有学习。我们探讨了线性回归的两种常见迁移学习场景，两者都假设公共任务和私有任务（回归向量）在高维空间中共享一个低秩子空间。在第一种单任务迁移场景中，目标是学习一个在所有用户之间共享的单一模型，每个用户对应数据集中的一行。我们提供了匹配的上下界，证明了我们的算法在给定子空间估计范围内搜索线性模型的算法类中实现了最优超额风险。在多任务模型个性化的第二种情景中，我们表明在有足够的公共数据情况下，用户可以避免私有协调，因为在给定子空间内纯粹的局部学习可以达到相同的效用。
 
-    arXiv:2312.14889v2 Announce Type: replace-cross  Abstract: In this paper we revisit the classical method of partitioning classification and study its convergence rate under relaxed conditions, both for observable (non-privatised) and for privatised data. Let the feature vector $X$ take values in $\mathbb{R}^d$ and denote its label by $Y$. Previous results on the partitioning classifier worked with the strong density assumption, which is restrictive, as we demonstrate through simple examples. We assume that the distribution of $X$ is a mixture of an absolutely continuous and a discrete distribution, such that the absolutely continuous component is concentrated to a $d_a$ dimensional subspace. Here, we study the problem under much milder assumptions: in addition to the standard Lipschitz and margin conditions, a novel characteristic of the absolutely continuous component is introduced, by which the exact convergence rate of the classification error probability is calculated, both for the
+    Motivated by the recent empirical success of incorporating public data into differentially private learning, we theoretically investigate how a shared representation learned from public data can improve private learning. We explore two common scenarios of transfer learning for linear regression, both of which assume the public and private tasks (regression vectors) share a low-rank subspace in a high-dimensional space. In the first single-task transfer scenario, the goal is to learn a single model shared across all users, each corresponding to a row in a dataset. We provide matching upper and lower bounds showing that our algorithm achieves the optimal excess risk within a natural class of algorithms that search for the linear model within the given subspace estimate. In the second scenario of multitask model personalization, we show that with sufficient public data, users can avoid private coordination, as purely local learning within the given subspace achieves the same utility. Take
+    
+[^2]: 无数据生成触发器保护联邦学习免受后门攻击
+
+    Protect Federated Learning Against Backdoor Attacks via Data-Free Trigger Generation. (arXiv:2308.11333v1 [cs.LG])
+
+    [http://arxiv.org/abs/2308.11333](http://arxiv.org/abs/2308.11333)
+
+    通过数据审计和触发器图像过滤等机制，我们提出了一种无数据生成触发器的防御方法来保护联邦学习免受后门攻击。该方法利用后门攻击特征来学习触发器，并生成具有新学习知识的图像。
+
+    
+
+    作为分布式机器学习范 paradigm，联邦学习 (FL) 可以使大规模客户端在不共享原始数据的情况下协同训练模型。然而，由于对不可信客户端的数据审计缺失，FL 易受污染攻击，特别是后门攻击。攻击者可以通过使用污染数据进行本地训练或直接更改模型参数，轻而易举地将后门注入模型，从而触发模型对图像中的目标模式进行错误分类。为解决这些问题，我们提出了一种基于两个后门攻击特征的新型无数据生成触发器防御方法：i) 触发器学习速度比普通知识更快，ii) 触发器模式对图像分类的影响大于普通类别模式。我们的方法通过识别旧和新全局模型之间的差异，生成具有新学习知识的图像，并通过评估方法过滤触发器图像。
+
+    As a distributed machine learning paradigm, Federated Learning (FL) enables large-scale clients to collaboratively train a model without sharing their raw data. However, due to the lack of data auditing for untrusted clients, FL is vulnerable to poisoning attacks, especially backdoor attacks. By using poisoned data for local training or directly changing the model parameters, attackers can easily inject backdoors into the model, which can trigger the model to make misclassification of targeted patterns in images. To address these issues, we propose a novel data-free trigger-generation-based defense approach based on the two characteristics of backdoor attacks: i) triggers are learned faster than normal knowledge, and ii) trigger patterns have a greater effect on image classification than normal class patterns. Our approach generates the images with newly learned knowledge by identifying the differences between the old and new global models, and filters trigger images by evaluating the 
     
 
