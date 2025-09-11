@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.DC</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.DC</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.DC</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.DC</description><item><title>FedComLoc&#21033;&#29992;Scaffnew&#31639;&#27861;&#30340;&#22522;&#30784;&#65292;&#24341;&#20837;&#20102;&#21387;&#32553;&#21644;&#26412;&#22320;&#35757;&#32451;&#65292;&#26174;&#33879;&#38477;&#20302;&#20102;&#20998;&#24067;&#24335;&#35757;&#32451;&#20013;&#30340;&#36890;&#20449;&#24320;&#38144;&#12290;</title><link>https://arxiv.org/abs/2403.09904</link><description>&lt;p&gt;
+FedComLoc: &#31232;&#30095;&#21644;&#37327;&#21270;&#27169;&#22411;&#30340;&#36890;&#20449;&#39640;&#25928;&#20998;&#24067;&#24335;&#35757;&#32451;
+&lt;/p&gt;
+&lt;p&gt;
+FedComLoc: Communication-Efficient Distributed Training of Sparse and Quantized Models
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.09904
+&lt;/p&gt;
+&lt;p&gt;
+FedComLoc&#21033;&#29992;Scaffnew&#31639;&#27861;&#30340;&#22522;&#30784;&#65292;&#24341;&#20837;&#20102;&#21387;&#32553;&#21644;&#26412;&#22320;&#35757;&#32451;&#65292;&#26174;&#33879;&#38477;&#20302;&#20102;&#20998;&#24067;&#24335;&#35757;&#32451;&#20013;&#30340;&#36890;&#20449;&#24320;&#38144;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#32852;&#37030;&#23398;&#20064;&#65288;FL&#65289;&#30001;&#20110;&#20854;&#20801;&#35768;&#24322;&#26500;&#23458;&#25143;&#31471;&#22312;&#26412;&#22320;&#22788;&#29702;&#20854;&#31169;&#26377;&#25968;&#25454;&#24182;&#19982;&#20013;&#22830;&#26381;&#21153;&#22120;&#20114;&#21160;&#65292;&#21516;&#26102;&#23562;&#37325;&#38544;&#31169;&#30340;&#29420;&#29305;&#29305;&#28857;&#32780;&#21463;&#21040;&#36234;&#26469;&#36234;&#22810;&#30340;&#20851;&#27880;&#12290;&#25105;&#20204;&#30340;&#24037;&#20316;&#21463;&#21040;&#20102;&#21019;&#26032;&#30340;Scaffnew&#31639;&#27861;&#30340;&#21551;&#21457;&#65292;&#35813;&#31639;&#27861;&#22312;FL&#20013;&#22823;&#22823;&#25512;&#21160;&#20102;&#36890;&#20449;&#22797;&#26434;&#24615;&#30340;&#38477;&#20302;&#12290;&#25105;&#20204;&#24341;&#20837;&#20102;FedComLoc&#65288;&#32852;&#37030;&#21387;&#32553;&#21644;&#26412;&#22320;&#35757;&#32451;&#65289;&#65292;&#23558;&#23454;&#29992;&#19988;&#26377;&#25928;&#30340;&#21387;&#32553;&#38598;&#25104;&#21040;Scaffnew&#20013;&#65292;&#20197;&#36827;&#19968;&#27493;&#22686;&#24378;&#36890;&#20449;&#25928;&#29575;&#12290;&#24191;&#27867;&#30340;&#23454;&#39564;&#35777;&#26126;&#65292;&#20351;&#29992;&#27969;&#34892;&#30340;TopK&#21387;&#32553;&#22120;&#21644;&#37327;&#21270;&#65292;&#23427;&#22312;&#22823;&#24133;&#20943;&#23569;&#24322;&#26500;&#20013;&#30340;&#36890;&#20449;&#24320;&#38144;&#26041;&#38754;&#20855;&#26377;&#21331;&#36234;&#30340;&#24615;&#33021;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.09904v1 Announce Type: cross  Abstract: Federated Learning (FL) has garnered increasing attention due to its unique characteristic of allowing heterogeneous clients to process their private data locally and interact with a central server, while being respectful of privacy. A critical bottleneck in FL is the communication cost. A pivotal strategy to mitigate this burden is \emph{Local Training}, which involves running multiple local stochastic gradient descent iterations between communication phases. Our work is inspired by the innovative \emph{Scaffnew} algorithm, which has considerably advanced the reduction of communication complexity in FL. We introduce FedComLoc (Federated Compressed and Local Training), integrating practical and effective compression into \emph{Scaffnew} to further enhance communication efficiency. Extensive experiments, using the popular TopK compressor and quantization, demonstrate its prowess in substantially reducing communication overheads in heter
+&lt;/p&gt;</description></item></channel></rss>
