@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [FlexFringe: Modeling Software Behavior by Learning Probabilistic Automata.](http://arxiv.org/abs/2203.16331) | FlexFringe提供了高效的概率有限自动机学习方法，可用于建模软件行为。该方法在实践中通过实现改进的状态合并策略实现了显著性能提升，并且能够从软件日志中学习可解释的模型，用于异常检测。与基于神经网络的解决方案相比，学习更小更复杂的模型能够提高FlexFringe在异常检测中的性能。 |
+| [^1] | [A minimal coalition logic](https://arxiv.org/abs/2403.14704) | 提出了一个基于一般并发博弈模型的最小联盟逻辑，不具备传统模型中的独立性、序列性和确定性假设，展示了其完备性并与传统模型进行了比较 |
+| [^2] | [Inconsistency Handling in Prioritized Databases with Universal Constraints: Complexity Analysis and Links with Active Integrity Constraints.](http://arxiv.org/abs/2306.03523) | 本文研究解决了具有全局约束的不一致数据库的修复和查询问题，通过对称差分修复并指定首选修复行动，扩展了现有的最优修复概念，并且研究了修复概念的计算属性，同时澄清了与主动完整性约束框架中引入的修复概念之间的关系。 |
 
 # 详细
 
-[^1]: FlexFringe:通过学习概率有限自动机来建模软件行为
+[^1]: 一个最小联盟逻辑
 
-    FlexFringe: Modeling Software Behavior by Learning Probabilistic Automata. (arXiv:2203.16331v2 [cs.LG] UPDATED)
+    A minimal coalition logic
 
-    [http://arxiv.org/abs/2203.16331](http://arxiv.org/abs/2203.16331)
+    [https://arxiv.org/abs/2403.14704](https://arxiv.org/abs/2403.14704)
 
-    FlexFringe提供了高效的概率有限自动机学习方法，可用于建模软件行为。该方法在实践中通过实现改进的状态合并策略实现了显著性能提升，并且能够从软件日志中学习可解释的模型，用于异常检测。与基于神经网络的解决方案相比，学习更小更复杂的模型能够提高FlexFringe在异常检测中的性能。
+    提出了一个基于一般并发博弈模型的最小联盟逻辑，不具备传统模型中的独立性、序列性和确定性假设，展示了其完备性并与传统模型进行了比较
 
     
 
-    我们介绍了FlexFringe中可用的概率确定性有限自动机学习方法的高效实现。这些实现了众所周知的状态合并策略，包括几种修改以提高它们在实践中的性能。我们通过实验证明这些算法能够获得有竞争力的结果，并在默认实现上实现了显著的改进。我们还展示了如何使用FlexFringe从软件日志中学习可解释的模型，并将其用于异常检测。虽然这些模型较难解释，但我们展示了学习更小、更复杂的模型如何提高FlexFringe在异常检测中的性能，优于基于神经网络的现有解决方案。
+    联盟逻辑是战略推理研究中的一个中心逻辑。本文首先指出联盟逻辑模型，即并发博弈模型，存在三个过于强的假设。其一是代理的独立性；即，两个不同联盟的两个可用联合动作的合并总是可以合并成两个联盟的联盟。其二是序列性；即，联盟总是有可用的联合动作。其三是确定性，即，大联盟的合作动作总是有唯一结果。其次，我们提出了一个基于一般并发博弈模型的联盟逻辑，该模型不具备这三个假设。我们展示了这一逻辑的完备性，并与联盟逻辑进行了详细比较。在战略推理的背景下，这一逻辑似乎是最小的。
 
-    We present the efficient implementations of probabilistic deterministic finite automaton learning methods available in FlexFringe. These implement well-known strategies for state-merging including several modifications to improve their performance in practice. We show experimentally that these algorithms obtain competitive results and significant improvements over a default implementation. We also demonstrate how to use FlexFringe to learn interpretable models from software logs and use these for anomaly detection. Although less interpretable, we show that learning smaller more convoluted models improves the performance of FlexFringe on anomaly detection, outperforming an existing solution based on neural nets.
+    arXiv:2403.14704v1 Announce Type: cross  Abstract: Coalition logic is a central logic in strategic reasoning studies. In this paper, we first argue that Coalition Logic models, concurrent game models, have three too-strong assumptions. The first one is the independence of agents; that is, the merge of two available joint actions of two disjoint coalitions is always available for the union of the two coalitions. The second one is seriality; that is, coalitions always have available joint actions. The third one is determinism, that is, the grand coalition's joint actions always have a unique outcome. Second, we present a coalition logic based on general concurrent game models, which do not have the three assumptions. We show the completeness of this logic and compare it with Coalition Logic in detail. This logic seems minimal in the context of strategic reasoning.
+    
+[^2]: 具有全局约束的优先数据库中的不一致性处理：复杂度分析和与主动完整性约束的联系(arXiv:2306.03523v1 [cs.DB])
+
+    Inconsistency Handling in Prioritized Databases with Universal Constraints: Complexity Analysis and Links with Active Integrity Constraints. (arXiv:2306.03523v1 [cs.DB])
+
+    [http://arxiv.org/abs/2306.03523](http://arxiv.org/abs/2306.03523)
+
+    本文研究解决了具有全局约束的不一致数据库的修复和查询问题，通过对称差分修复并指定首选修复行动，扩展了现有的最优修复概念，并且研究了修复概念的计算属性，同时澄清了与主动完整性约束框架中引入的修复概念之间的关系。
+
+    
+
+    本文重新审视了带有全局约束的不一致数据库的修复和查询问题。采用对称差分修复，即通过删除和添加事实来恢复一致性，并假设通过对（否定）事实的二元优先关系来指定首选修复行动。我们的第一个贡献是展示如何适当地将现有的最优修复概念（仅对基于事实删除的简单拒绝约束和修复定义）扩展到我们更丰富的设置中。接下来，我们研究了所得到的修复概念的计算属性，特别是修复检查和容忍不一致查询的数据复杂性。最后，我们澄清了优先数据库的最优修复与在主动完整性约束框架中引入的修复概念之间的关系。特别地，我们表明在我们的设置中的帕累托最优修复对应于 founded、grounded 和 just。
+
+    This paper revisits the problem of repairing and querying inconsistent databases equipped with universal constraints. We adopt symmetric difference repairs, in which both deletions and additions of facts can be used to restore consistency, and suppose that preferred repair actions are specified via a binary priority relation over (negated) facts. Our first contribution is to show how existing notions of optimal repairs, defined for simpler denial constraints and repairs solely based on fact deletion, can be suitably extended to our richer setting. We next study the computational properties of the resulting repair notions, in particular, the data complexity of repair checking and inconsistency-tolerant query answering. Finally, we clarify the relationship between optimal repairs of prioritized databases and repair notions introduced in the framework of active integrity constraints. In particular, we show that Pareto-optimal repairs in our setting correspond to founded, grounded and just
     
 
