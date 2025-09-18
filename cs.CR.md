@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Revisiting Transferable Adversarial Image Examples: Attack Categorization, Evaluation Guidelines, and New Insights.](http://arxiv.org/abs/2310.11850) | 本论文重新审视了可转移的对抗性图像示例的评估方法，提出了新的攻击分类策略，并通过大规模评估揭示了一些新的见解和共识挑战。 |
+| [^1] | [Tabdoor: Backdoor Vulnerabilities in Transformer-based Neural Networks for Tabular Data.](http://arxiv.org/abs/2311.07550) | 这项研究全面分析了使用DNNs对表格数据进行后门攻击，揭示了基于转换器的DNNs对表格数据非常容易受到后门攻击，甚至只需最小的特征值修改。该攻击还可以推广到其他模型。 |
 
 # 详细
 
-[^1]: 重新审视可转移的对抗性图像示例：攻击分类，评估指南和新见解
+[^1]: Tabdoor：基于转换器的表格数据神经网络存在后门漏洞
 
-    Revisiting Transferable Adversarial Image Examples: Attack Categorization, Evaluation Guidelines, and New Insights. (arXiv:2310.11850v1 [cs.CR])
+    Tabdoor: Backdoor Vulnerabilities in Transformer-based Neural Networks for Tabular Data. (arXiv:2311.07550v2 [cs.CR] UPDATED)
 
-    [http://arxiv.org/abs/2310.11850](http://arxiv.org/abs/2310.11850)
+    [http://arxiv.org/abs/2311.07550](http://arxiv.org/abs/2311.07550)
 
-    本论文重新审视了可转移的对抗性图像示例的评估方法，提出了新的攻击分类策略，并通过大规模评估揭示了一些新的见解和共识挑战。
+    这项研究全面分析了使用DNNs对表格数据进行后门攻击，揭示了基于转换器的DNNs对表格数据非常容易受到后门攻击，甚至只需最小的特征值修改。该攻击还可以推广到其他模型。
 
     
 
-    可转移的对抗性示例在现实世界的黑盒攻击场景中引发了关键的安全问题。然而，在这项工作中，我们发现了常见评估实践中的两个主要问题：(1) 对于攻击的可转移性，缺乏系统化的，一对一的攻击比较和公平的超参数设置。(2) 对于攻击的隐蔽性，简单地没有比较。为了解决这些问题，我们通过(1) 提出一种新的攻击分类策略，并在可转移性方面进行系统化和公平的同类别分析，以及(2) 从攻击回溯的角度考虑多样的难以察觉的度量和更细粒度的隐蔽特性来建立新的评估指南。为此，我们对ImageNet上的可转移的对抗性示例进行了首次大规模评估，涉及对9种代表性防御的23种代表性攻击。我们的评估提供了一些新的见解，包括挑战共识的见解。
+    深度神经网络(DNNs)在各个领域都显示出巨大的潜力。与这些发展同时，与DNN训练相关的漏洞，如后门攻击，是一个重大关切。这些攻击涉及在模型训练过程中微妙地插入触发器，从而允许操纵预测。最近，由于转换器模型的崛起，DNNs用于表格数据越来越受关注。我们的研究对使用DNNs对表格数据进行后门攻击进行了全面分析，特别关注转换器。鉴于表格数据的固有复杂性，我们探究了嵌入后门的挑战。通过对基准数据集进行系统实验，我们发现基于转换器的DNNs对表格数据非常容易受到后门攻击，即使只有最小的特征值修改。我们还验证了我们的攻击可以推广到其他模型，如XGBoost和DeepFM。我们的研究结果几乎表明后门攻击可以完美实现。
 
-    Transferable adversarial examples raise critical security concerns in real-world, black-box attack scenarios. However, in this work, we identify two main problems in common evaluation practices: (1) For attack transferability, lack of systematic, one-to-one attack comparison and fair hyperparameter settings. (2) For attack stealthiness, simply no comparisons. To address these problems, we establish new evaluation guidelines by (1) proposing a novel attack categorization strategy and conducting systematic and fair intra-category analyses on transferability, and (2) considering diverse imperceptibility metrics and finer-grained stealthiness characteristics from the perspective of attack traceback. To this end, we provide the first large-scale evaluation of transferable adversarial examples on ImageNet, involving 23 representative attacks against 9 representative defenses. Our evaluation leads to a number of new insights, including consensus-challenging ones: (1) Under a fair attack hyper
+    Deep Neural Networks (DNNs) have shown great promise in various domains. Alongside these developments, vulnerabilities associated with DNN training, such as backdoor attacks, are a significant concern. These attacks involve the subtle insertion of triggers during model training, allowing for manipulated predictions.More recently, DNNs for tabular data have gained increasing attention due to the rise of transformer models.  Our research presents a comprehensive analysis of backdoor attacks on tabular data using DNNs, particularly focusing on transformers. Given the inherent complexities of tabular data, we explore the challenges of embedding backdoors. Through systematic experimentation across benchmark datasets, we uncover that transformer-based DNNs for tabular data are highly susceptible to backdoor attacks, even with minimal feature value alterations. We also verify that our attack can be generalized to other models, like XGBoost and DeepFM. Our results indicate nearly perfect attac
     
 
