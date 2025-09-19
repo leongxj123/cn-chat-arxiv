@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Tabdoor: Backdoor Vulnerabilities in Transformer-based Neural Networks for Tabular Data.](http://arxiv.org/abs/2311.07550) | 这项研究全面分析了使用DNNs对表格数据进行后门攻击，揭示了基于转换器的DNNs对表格数据非常容易受到后门攻击，甚至只需最小的特征值修改。该攻击还可以推广到其他模型。 |
+| [^1] | [Differentially private multivariate medians](https://arxiv.org/abs/2210.06459) | 差分私有多变量中位数的有限样本性能保证为常用深度函数提供了尖锐的结果，表明重尾位置估计的成本超过了隐私保护成本。 |
 
 # 详细
 
-[^1]: Tabdoor：基于转换器的表格数据神经网络存在后门漏洞
+[^1]: 差分私有多变量中位数
 
-    Tabdoor: Backdoor Vulnerabilities in Transformer-based Neural Networks for Tabular Data. (arXiv:2311.07550v2 [cs.CR] UPDATED)
+    Differentially private multivariate medians
 
-    [http://arxiv.org/abs/2311.07550](http://arxiv.org/abs/2311.07550)
+    [https://arxiv.org/abs/2210.06459](https://arxiv.org/abs/2210.06459)
 
-    这项研究全面分析了使用DNNs对表格数据进行后门攻击，揭示了基于转换器的DNNs对表格数据非常容易受到后门攻击，甚至只需最小的特征值修改。该攻击还可以推广到其他模型。
+    差分私有多变量中位数的有限样本性能保证为常用深度函数提供了尖锐的结果，表明重尾位置估计的成本超过了隐私保护成本。
 
     
 
-    深度神经网络(DNNs)在各个领域都显示出巨大的潜力。与这些发展同时，与DNN训练相关的漏洞，如后门攻击，是一个重大关切。这些攻击涉及在模型训练过程中微妙地插入触发器，从而允许操纵预测。最近，由于转换器模型的崛起，DNNs用于表格数据越来越受关注。我们的研究对使用DNNs对表格数据进行后门攻击进行了全面分析，特别关注转换器。鉴于表格数据的固有复杂性，我们探究了嵌入后门的挑战。通过对基准数据集进行系统实验，我们发现基于转换器的DNNs对表格数据非常容易受到后门攻击，即使只有最小的特征值修改。我们还验证了我们的攻击可以推广到其他模型，如XGBoost和DeepFM。我们的研究结果几乎表明后门攻击可以完美实现。
+    现代数据分析需要满足严格隐私保证的统计工具。众所周知，对污染的鲁棒性与差分隐私有关。尽管如此，使用多元中位数进行差分私有和鲁棒的多元位置估计尚未得到系统研究。我们为差分私有多元深度中位数开发了新颖的有限样本性能保证，这些保证基本上是尖锐的。我们的结果涵盖了常用的深度函数，如半平面（或Tukey）深度，空间深度和集成双深度。我们展示了在柯西边际下，重尾位置估计的代价超过了隐私的代价。我们在高达d = 100的维度上使用高斯污染模型进行了数值演示，并将其与最先进的私有均值估计算法进行了比较。作为我们研究的一个副产品，
 
-    Deep Neural Networks (DNNs) have shown great promise in various domains. Alongside these developments, vulnerabilities associated with DNN training, such as backdoor attacks, are a significant concern. These attacks involve the subtle insertion of triggers during model training, allowing for manipulated predictions.More recently, DNNs for tabular data have gained increasing attention due to the rise of transformer models.  Our research presents a comprehensive analysis of backdoor attacks on tabular data using DNNs, particularly focusing on transformers. Given the inherent complexities of tabular data, we explore the challenges of embedding backdoors. Through systematic experimentation across benchmark datasets, we uncover that transformer-based DNNs for tabular data are highly susceptible to backdoor attacks, even with minimal feature value alterations. We also verify that our attack can be generalized to other models, like XGBoost and DeepFM. Our results indicate nearly perfect attac
+    arXiv:2210.06459v2 Announce Type: replace-cross  Abstract: Statistical tools which satisfy rigorous privacy guarantees are necessary for modern data analysis. It is well-known that robustness against contamination is linked to differential privacy. Despite this fact, using multivariate medians for differentially private and robust multivariate location estimation has not been systematically studied. We develop novel finite-sample performance guarantees for differentially private multivariate depth-based medians, which are essentially sharp. Our results cover commonly used depth functions, such as the halfspace (or Tukey) depth, spatial depth, and the integrated dual depth. We show that under Cauchy marginals, the cost of heavy-tailed location estimation outweighs the cost of privacy. We demonstrate our results numerically using a Gaussian contamination model in dimensions up to d = 100, and compare them to a state-of-the-art private mean estimation algorithm. As a by-product of our inv
     
 
