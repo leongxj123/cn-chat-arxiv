@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Modelling with Discretized Variables](https://arxiv.org/abs/2403.15220) | 该文提出了一种通过离散化方法来实现回归参数点标识的模型，同时保护数据机密性，适用于解决面板数据中多元线性回归参数估计的方法。 |
-| [^2] | [Causal inference for the expected number of recurrent events in the presence of a terminal event.](http://arxiv.org/abs/2306.16571) | 在存在终结事件的情况下，研究经常性事件的因果推断和高效估计，提出了一种基于乘法鲁棒估计的方法，不依赖于分布假设，并指出了一些有趣的因果生命周期中的不一致性。 |
+| [^1] | [Covariate Balancing and the Equivalence of Weighting and Doubly Robust Estimators of Average Treatment Effects.](http://arxiv.org/abs/2310.18563) | 本研究展示了在合适的协变量平衡程序下，逆概率加权估计器（IPW）、增强逆概率加权估计器（AIPW）和逆概率加权回归调整估计器（IPWRA）在评估平均处理效应（ATE）或被处理对象的平均处理效应（ATT）上在数值上是相同的，且适当选择的协变量平衡权重自动归一化。 |
 
 # 详细
 
-[^1]: 使用离散变量建模
+[^1]: 协变量平衡和加权与双重稳健估计器在评估平均处理效应上的等效性
 
-    Modelling with Discretized Variables
+    Covariate Balancing and the Equivalence of Weighting and Doubly Robust Estimators of Average Treatment Effects. (arXiv:2310.18563v1 [econ.EM])
 
-    [https://arxiv.org/abs/2403.15220](https://arxiv.org/abs/2403.15220)
+    [http://arxiv.org/abs/2310.18563](http://arxiv.org/abs/2310.18563)
 
-    该文提出了一种通过离散化方法来实现回归参数点标识的模型，同时保护数据机密性，适用于解决面板数据中多元线性回归参数估计的方法。
-
-    
-
-    本文讨论了在计量经济模型中，因变量、一些解释变量或两者均以被截断的区间数据的形式观测到的情况。这种离散化通常是由于敏感变量如收入的保密性造成的。使用这些变量的模型无法对回归参数进行点识别，因为条件矩未知，这导致文献使用区间估计。在这里，我们提出了一种离散化方法，通过该方法可以点识别回归参数，同时保护数据的机密性。我们展示了OLS估计器在面板数据的多元线性回归中的渐近性质。理论发现得到蒙特卡洛实验的支持，并通过应用到澳大利亚性别工资差距上进行了说明。
-
-    arXiv:2403.15220v1 Announce Type: new  Abstract: This paper deals with econometric models in which the dependent variable, some explanatory variables, or both are observed as censored interval data. This discretization often happens due to confidentiality of sensitive variables like income. Models using these variables cannot point identify regression parameters as the conditional moments are unknown, which led the literature to use interval estimates. Here, we propose a discretization method through which the regression parameters can be point identified while preserving data confidentiality. We demonstrate the asymptotic properties of the OLS estimator for the parameters in multivariate linear regressions for cross-sectional data. The theoretical findings are supported by Monte Carlo experiments and illustrated with an application to the Australian gender wage gap.
-    
-[^2]: 在存在终结事件的情况下，关于经常性事件的因果推断
-
-    Causal inference for the expected number of recurrent events in the presence of a terminal event. (arXiv:2306.16571v1 [stat.ME])
-
-    [http://arxiv.org/abs/2306.16571](http://arxiv.org/abs/2306.16571)
-
-    在存在终结事件的情况下，研究经常性事件的因果推断和高效估计，提出了一种基于乘法鲁棒估计的方法，不依赖于分布假设，并指出了一些有趣的因果生命周期中的不一致性。
+    本研究展示了在合适的协变量平衡程序下，逆概率加权估计器（IPW）、增强逆概率加权估计器（AIPW）和逆概率加权回归调整估计器（IPWRA）在评估平均处理效应（ATE）或被处理对象的平均处理效应（ATT）上在数值上是相同的，且适当选择的协变量平衡权重自动归一化。
 
     
 
-    我们研究了在存在终结事件的情况下，关于经常性事件的因果推断和高效估计。我们将估计目标定义为包括经常性事件的预期数量以及在一系列里程碑时间点处评估的失败生存函数的向量。我们在右截尾和因果选择的情况下确定了估计目标，作为观察数据的功能性，推导了非参数效率界限，并提出了一种多重鲁棒估计器，该估计器达到了界限，并允许非参数估计辅助参数。在整个过程中，我们对失败、截尾或观察数据的概率分布没有做绝对连续性的假设。此外，当分割分布已知时，我们导出了影响函数的类别，并回顾了已发表估计器如何属于该类别。在此过程中，我们强调了因果生命周期中一些有趣的不一致性。
+    我们展示了当倾向得分使用合适的协变量平衡程序进行估计时，常用的逆概率加权（IPW）估计器，带有线性条件均值的增强逆概率加权（AIPW）估计器以及带有线性条件均值的逆概率加权回归调整（IPWRA）估计器在评估平均处理效应（ATE）或被处理对象的平均处理效应（ATT）时数值上是相同的。此外，经过适当选择的协变量平衡权重自动进行了归一化处理，这意味着归一化和非归一化版本的IPW和AIPW是相同的。对于估计ATE，实现IPW，AIPW和IPWRA代数等价的权重是基于使用Graham，Pinto和Egel（2012）提出的逆概率倾斜（IPT）方法估计得到的倾向得分计算的。对于ATT，权重是使用Imai和Ratkovic（2014）发展的协变量平衡倾向得分（CBPS）方法获得的。
 
-    We study causal inference and efficient estimation for the expected number of recurrent events in the presence of a terminal event. We define our estimand as the vector comprising both the expected number of recurrent events and the failure survival function evaluated along a sequence of landmark times. We identify the estimand in the presence of right-censoring and causal selection as an observed data functional under coarsening at random, derive the nonparametric efficiency bound, and propose a multiply-robust estimator that achieves the bound and permits nonparametric estimation of nuisance parameters. Throughout, no absolute continuity assumption is made on the underlying probability distributions of failure, censoring, or the observed data. Additionally, we derive the class of influence functions when the coarsening distribution is known and review how published estimators may belong to the class. Along the way, we highlight some interesting inconsistencies in the causal lifetime 
+    We show that when the propensity score is estimated using a suitable covariate balancing procedure, the commonly used inverse probability weighting (IPW) estimator, augmented inverse probability weighting (AIPW) with linear conditional mean, and inverse probability weighted regression adjustment (IPWRA) with linear conditional mean are all numerically the same for estimating the average treatment effect (ATE) or the average treatment effect on the treated (ATT). Further, suitably chosen covariate balancing weights are automatically normalized, which means that normalized and unnormalized versions of IPW and AIPW are identical. For estimating the ATE, the weights that achieve the algebraic equivalence of IPW, AIPW, and IPWRA are based on propensity scores estimated using the inverse probability tilting (IPT) method of Graham, Pinto and Egel (2012). For the ATT, the weights are obtained using the covariate balancing propensity score (CBPS) method developed in Imai and Ratkovic (2014). Th
     
 
