@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Covariate Balancing and the Equivalence of Weighting and Doubly Robust Estimators of Average Treatment Effects.](http://arxiv.org/abs/2310.18563) | 本研究展示了在合适的协变量平衡程序下，逆概率加权估计器（IPW）、增强逆概率加权估计器（AIPW）和逆概率加权回归调整估计器（IPWRA）在评估平均处理效应（ATE）或被处理对象的平均处理效应（ATT）上在数值上是相同的，且适当选择的协变量平衡权重自动归一化。 |
+| [^1] | [Quasi-randomization tests for network interference](https://arxiv.org/abs/2403.16673) | 构建条件准随机化检验来解决网络中干扰存在时的推理问题，使零假设在受限人口上成为尖锐。 |
 
 # 详细
 
-[^1]: 协变量平衡和加权与双重稳健估计器在评估平均处理效应上的等效性
+[^1]: 网络干扰的准随机化检验
 
-    Covariate Balancing and the Equivalence of Weighting and Doubly Robust Estimators of Average Treatment Effects. (arXiv:2310.18563v1 [econ.EM])
+    Quasi-randomization tests for network interference
 
-    [http://arxiv.org/abs/2310.18563](http://arxiv.org/abs/2310.18563)
+    [https://arxiv.org/abs/2403.16673](https://arxiv.org/abs/2403.16673)
 
-    本研究展示了在合适的协变量平衡程序下，逆概率加权估计器（IPW）、增强逆概率加权估计器（AIPW）和逆概率加权回归调整估计器（IPWRA）在评估平均处理效应（ATE）或被处理对象的平均处理效应（ATT）上在数值上是相同的，且适当选择的协变量平衡权重自动归一化。
+    构建条件准随机化检验来解决网络中干扰存在时的推理问题，使零假设在受限人口上成为尖锐。
 
     
 
-    我们展示了当倾向得分使用合适的协变量平衡程序进行估计时，常用的逆概率加权（IPW）估计器，带有线性条件均值的增强逆概率加权（AIPW）估计器以及带有线性条件均值的逆概率加权回归调整（IPWRA）估计器在评估平均处理效应（ATE）或被处理对象的平均处理效应（ATT）时数值上是相同的。此外，经过适当选择的协变量平衡权重自动进行了归一化处理，这意味着归一化和非归一化版本的IPW和AIPW是相同的。对于估计ATE，实现IPW，AIPW和IPWRA代数等价的权重是基于使用Graham，Pinto和Egel（2012）提出的逆概率倾斜（IPT）方法估计得到的倾向得分计算的。对于ATT，权重是使用Imai和Ratkovic（2014）发展的协变量平衡倾向得分（CBPS）方法获得的。
+    许多经典的推理方法在人口单位之间存在干扰时失效。这意味着一个单位的处理状态会影响人口中其他单位的潜在结果。在这种情况下测试这种影响的零假设会使零假设非尖锐。解决这种设置中零假设非尖锐性的一个有趣方法是构建条件随机化检验，使得零假设在受限人口上是尖锐的。在随机实验中，条件随机化检验具有有限样本有效性。这种方法可能会带来计算挑战，因为根据实验设计找到这些适当的子人口可能涉及解决一个NP难的问题。在这篇论文中，我们将人口之间的网络视为一个随机变量而不是固定的。我们提出了一种建立条件准随机化检验的新方法。我们的主要思想是
 
-    We show that when the propensity score is estimated using a suitable covariate balancing procedure, the commonly used inverse probability weighting (IPW) estimator, augmented inverse probability weighting (AIPW) with linear conditional mean, and inverse probability weighted regression adjustment (IPWRA) with linear conditional mean are all numerically the same for estimating the average treatment effect (ATE) or the average treatment effect on the treated (ATT). Further, suitably chosen covariate balancing weights are automatically normalized, which means that normalized and unnormalized versions of IPW and AIPW are identical. For estimating the ATE, the weights that achieve the algebraic equivalence of IPW, AIPW, and IPWRA are based on propensity scores estimated using the inverse probability tilting (IPT) method of Graham, Pinto and Egel (2012). For the ATT, the weights are obtained using the covariate balancing propensity score (CBPS) method developed in Imai and Ratkovic (2014). Th
+    arXiv:2403.16673v1 Announce Type: cross  Abstract: Many classical inferential approaches fail to hold when interference exists among the population units. This amounts to the treatment status of one unit affecting the potential outcome of other units in the population. Testing for such spillover effects in this setting makes the null hypothesis non-sharp. An interesting approach to tackling the non-sharp nature of the null hypothesis in this setup is constructing conditional randomization tests such that the null is sharp on the restricted population. In randomized experiments, conditional randomized tests hold finite sample validity. Such approaches can pose computational challenges as finding these appropriate sub-populations based on experimental design can involve solving an NP-hard problem. In this paper, we view the network amongst the population as a random variable instead of being fixed. We propose a new approach that builds a conditional quasi-randomization test. Our main ide
     
 
