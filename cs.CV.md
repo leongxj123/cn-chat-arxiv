@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Is Pre-training Truly Better Than Meta-Learning?.](http://arxiv.org/abs/2306.13841) | 在少样本学习中，当数据集的正式多样性较低时，预训练模型（PT）胜过模型无关元学习（MAML）。当正式多样性较高时，MAML更好。 |
+| [^1] | [CLIP Can Understand Depth](https://arxiv.org/abs/2402.03251) | 本文研究了将CLIP用于单目深度估计的问题，通过联合训练反卷积解码器和可学习嵌入矩阵，使得CLIP能够理解深度，该方法在深度估计任务上取得了令人印象深刻的性能，并优于之前的方法。 |
 
 # 详细
 
-[^1]: 预训练真的比元学习更好吗？
+[^1]: CLIP可以理解深度
 
-    Is Pre-training Truly Better Than Meta-Learning?. (arXiv:2306.13841v1 [cs.LG])
+    CLIP Can Understand Depth
 
-    [http://arxiv.org/abs/2306.13841](http://arxiv.org/abs/2306.13841)
+    [https://arxiv.org/abs/2402.03251](https://arxiv.org/abs/2402.03251)
 
-    在少样本学习中，当数据集的正式多样性较低时，预训练模型（PT）胜过模型无关元学习（MAML）。当正式多样性较高时，MAML更好。
+    本文研究了将CLIP用于单目深度估计的问题，通过联合训练反卷积解码器和可学习嵌入矩阵，使得CLIP能够理解深度，该方法在深度估计任务上取得了令人印象深刻的性能，并优于之前的方法。
 
     
 
-    在少样本学习的背景下，目前普遍认为固定的预训练模型（PT）加上在评价时微调最后一层，胜过标准的元学习算法。我们通过深入的实证研究和广泛的数据集比较PT和模型无关元学习（MAML）这些说法。与以前的工作不同，我们强调使用相同的体系结构、相同的优化器，以及所有模型都训练到收敛。关键地，我们使用一个更严格的统计工具——效应量（Cohen's d）——来确定使用PT与使用MAML之间的模型差异的实际意义。然后使用一个预先提出的度量——多样性系数——来计算数据集的平均正式多样性。使用这种分析，我们证明了以下事实：1. 当数据集的正式多样性较低时，PT在平均意义上胜过MAML；2. 当正式多样性较高时，MAML胜过PT。
+    最近关于将CLIP推广到单目深度估计的研究表明，在网络爬取的数据上预训练的CLIP在图像块和与深度相关的提示之间得到适当相似性是低效的。在本文中，我们适应CLIP用于有意义的密集预测单目深度估计，而无需微调其原始的视觉-语言对齐。通过联合训练一个紧凑的反卷积解码器和一个名为mirror的小型可学习嵌入矩阵作为其文本编码器的静态提示，CLIP能够理解深度。通过这种方法，我们的模型在NYU Depth v2和KITTI数据集上展现出了令人印象深刻的性能，与几个先前的仅视觉模型相匹配，而且胜过了每个基于CLIP的深度估计模型。关于时间深度一致性和空间连续性的实验证明，我们提出的框架能够有效地优化CLIP的先验知识。此外，对于时滞研究进行了消融实验。
 
-    In the context of few-shot learning, it is currently believed that a fixed pre-trained (PT) model, along with fine-tuning the final layer during evaluation, outperforms standard meta-learning algorithms. We re-evaluate these claims under an in-depth empirical examination of an extensive set of formally diverse datasets and compare PT to Model Agnostic Meta-Learning (MAML). Unlike previous work, we emphasize a fair comparison by using: the same architecture, the same optimizer, and all models trained to convergence. Crucially, we use a more rigorous statistical tool -- the effect size (Cohen's d) -- to determine the practical significance of the difference between a model trained with PT vs. a MAML. We then use a previously proposed metric -- the diversity coefficient -- to compute the average formal diversity of a dataset. Using this analysis, we demonstrate the following: 1. when the formal diversity of a data set is low, PT beats MAML on average and 2. when the formal diversity is hi
+    Recent studies on generalizing CLIP for monocular depth estimation reveal that CLIP pre-trained on web-crawled data is inefficient for deriving proper similarities between image patches and depth-related prompts. In this paper, we adapt CLIP for meaningful quality of monocular depth estimation with dense prediction, without fine-tuning its original vision-language alignment. By jointly training a compact deconvolutional decoder with a tiny learnable embedding matrix named mirror, as a static prompt for its text encoder, CLIP is enabled to understand depth. With this approach, our model exhibits impressive performance matching several previous state-of-the-art vision-only models on the NYU Depth v2 and KITTI datasets, outperforming every CLIP-based depth estimation model with a large margin. Experiments on temporal depth consistency and spatial continuity demonstrate that the prior knowledge of CLIP can be effectively refined by our proposed framework. Furthermore, an ablation study on 
     
 
