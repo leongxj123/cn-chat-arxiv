@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [CLIP Can Understand Depth](https://arxiv.org/abs/2402.03251) | 本文研究了将CLIP用于单目深度估计的问题，通过联合训练反卷积解码器和可学习嵌入矩阵，使得CLIP能够理解深度，该方法在深度估计任务上取得了令人印象深刻的性能，并优于之前的方法。 |
+| [^1] | [Decentralized Federated Unlearning on Blockchain](https://arxiv.org/abs/2402.16294) | 提出了基于区块链的联邦遗忘（BlockFUL），使用Chameleon Hash（CH）技术重新设计区块链结构，减少模型更新的复杂性和成本。 |
 
 # 详细
 
-[^1]: CLIP可以理解深度
+[^1]: 区块链上的去中心化联邦遗忘
 
-    CLIP Can Understand Depth
+    Decentralized Federated Unlearning on Blockchain
 
-    [https://arxiv.org/abs/2402.03251](https://arxiv.org/abs/2402.03251)
+    [https://arxiv.org/abs/2402.16294](https://arxiv.org/abs/2402.16294)
 
-    本文研究了将CLIP用于单目深度估计的问题，通过联合训练反卷积解码器和可学习嵌入矩阵，使得CLIP能够理解深度，该方法在深度估计任务上取得了令人印象深刻的性能，并优于之前的方法。
+    提出了基于区块链的联邦遗忘（BlockFUL），使用Chameleon Hash（CH）技术重新设计区块链结构，减少模型更新的复杂性和成本。
 
     
 
-    最近关于将CLIP推广到单目深度估计的研究表明，在网络爬取的数据上预训练的CLIP在图像块和与深度相关的提示之间得到适当相似性是低效的。在本文中，我们适应CLIP用于有意义的密集预测单目深度估计，而无需微调其原始的视觉-语言对齐。通过联合训练一个紧凑的反卷积解码器和一个名为mirror的小型可学习嵌入矩阵作为其文本编码器的静态提示，CLIP能够理解深度。通过这种方法，我们的模型在NYU Depth v2和KITTI数据集上展现出了令人印象深刻的性能，与几个先前的仅视觉模型相匹配，而且胜过了每个基于CLIP的深度估计模型。关于时间深度一致性和空间连续性的实验证明，我们提出的框架能够有效地优化CLIP的先验知识。此外，对于时滞研究进行了消融实验。
+    区块链联邦学习（FL）在确保FL过程的完整性和可追溯性方面越来越受到关注。区块链FL涉及参与者在本地训练模型并随后将模型发布到区块链上，形成表示模型关系的类似有向无环图（DAG）的继承结构。然而，这种基于DAG的结构在使用敏感数据更新模型时存在挑战，因为涉及的复杂性和开销较大。为了解决这个问题，我们提出了基于区块链的联邦遗忘（BlockFUL），这是一个通用框架，使用变色龙哈希（CH）技术重新设计区块链结构，以减轻模型更新的复杂性，从而降低遗忘任务的计算和共识成本。此外，BlockFUL支持各种联邦遗忘方法，确保模型更新的完整性和可追溯性。
 
-    Recent studies on generalizing CLIP for monocular depth estimation reveal that CLIP pre-trained on web-crawled data is inefficient for deriving proper similarities between image patches and depth-related prompts. In this paper, we adapt CLIP for meaningful quality of monocular depth estimation with dense prediction, without fine-tuning its original vision-language alignment. By jointly training a compact deconvolutional decoder with a tiny learnable embedding matrix named mirror, as a static prompt for its text encoder, CLIP is enabled to understand depth. With this approach, our model exhibits impressive performance matching several previous state-of-the-art vision-only models on the NYU Depth v2 and KITTI datasets, outperforming every CLIP-based depth estimation model with a large margin. Experiments on temporal depth consistency and spatial continuity demonstrate that the prior knowledge of CLIP can be effectively refined by our proposed framework. Furthermore, an ablation study on 
+    arXiv:2402.16294v1 Announce Type: cross  Abstract: Blockchained Federated Learning (FL) has been gaining traction for ensuring the integrity and traceability of FL processes. Blockchained FL involves participants training models locally with their data and subsequently publishing the models on the blockchain, forming a Directed Acyclic Graph (DAG)-like inheritance structure that represents the model relationship. However, this particular DAG-based structure presents challenges in updating models with sensitive data, due to the complexity and overhead involved. To address this, we propose Blockchained Federated Unlearning (BlockFUL), a generic framework that redesigns the blockchain structure using Chameleon Hash (CH) technology to mitigate the complexity of model updating, thereby reducing the computational and consensus costs of unlearning tasks.Furthermore, BlockFUL supports various federated unlearning methods, ensuring the integrity and traceability of model updates, whether conduc
     
 
