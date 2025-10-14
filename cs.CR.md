@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Privacy-Preserving Prompt Tuning for Large Language Model Services.](http://arxiv.org/abs/2305.06212) | RAPT是一个提供隐私保证的大语言模型服务的提示调整框架，采用本地差分隐私设置和新颖的隐私化标记重建任务，并在多种任务中取得有竞争力的性能和良好的隐私保护效果。 |
+| [^1] | [Privacy-aware Gaussian Process Regression.](http://arxiv.org/abs/2305.16541) | 以高斯过程回归为基础，我们提出了实现数据隐私保护的方法。方法将综合噪声添加到数据中，使得高斯过程预测模型达到特定的隐私级别。我们还通过核方法介绍了连续隐私约束下的隐私感知解形式，以及研究了其理论性质。所提出的方法应用于卫星轨迹跟踪模型。 |
 
 # 详细
 
-[^1]: 大语言模型服务的隐私保护提示调整
+[^1]: 面向隐私的高斯过程回归
 
-    Privacy-Preserving Prompt Tuning for Large Language Model Services. (arXiv:2305.06212v1 [cs.CL])
+    Privacy-aware Gaussian Process Regression. (arXiv:2305.16541v1 [cs.LG])
 
-    [http://arxiv.org/abs/2305.06212](http://arxiv.org/abs/2305.06212)
+    [http://arxiv.org/abs/2305.16541](http://arxiv.org/abs/2305.16541)
 
-    RAPT是一个提供隐私保证的大语言模型服务的提示调整框架，采用本地差分隐私设置和新颖的隐私化标记重建任务，并在多种任务中取得有竞争力的性能和良好的隐私保护效果。
+    以高斯过程回归为基础，我们提出了实现数据隐私保护的方法。方法将综合噪声添加到数据中，使得高斯过程预测模型达到特定的隐私级别。我们还通过核方法介绍了连续隐私约束下的隐私感知解形式，以及研究了其理论性质。所提出的方法应用于卫星轨迹跟踪模型。
 
     
 
-    提示调整为用户在新兴的大语言模型服务场景下使用其私有数据自定义大语言模型(LLM)的有效方式。但是，私有数据的敏感性需要在LLM服务定制中保护隐私。基于提示调整，我们提出了一种名为隐私保护提示调整(RAPT)的框架，为LLM服务提供隐私保证。RAPT采用本地隐私设置，允许用户使用本地差分隐私对其数据进行本地化隐私处理。由于在直接训练隐私化数据的情况下，提示调整表现不佳，因此我们引入了一种新颖的隐私化标记重建任务，与下游任务一起进行培训，使LLM学习更好的任务相关表示。尽管我们的框架简单，但实验表明，RAPT在各种任务中均具有竞争力的性能，并提供抵御对手的隐私保证。
+    我们提出了第一个在隐私约束条件下的高斯过程回归的理论和方法框架。所提出的方法可以在数据所有者因隐私担忧而不愿与公众分享其从其数据构建的高保真监督学习模型时使用。所提出方法的关键思想是通过添加综合噪声来使高斯过程预测模型的预测方差达到预先指定的隐私级别。合成噪声的最优协方差矩阵以半定编程的形式给出。我们还介绍了基于核的方法来研究在连续约束隐私条件下的隐私感知解的形式，并研究了它们的理论属性。所提出的方法使用跟踪卫星轨迹的模型进行了说明。
 
-    Prompt tuning provides an efficient way for users to customize Large Language Models (LLMs) with their private data in the emerging LLM service scenario. However, the sensitive nature of private data brings the need for privacy preservation in LLM service customization. Based on prompt tuning, we propose Privacy-Preserving Prompt Tuning (RAPT), a framework that provides privacy guarantees for LLM services. \textsc{rapt} adopts a local privacy setting, allowing users to privatize their data locally with local differential privacy. As prompt tuning performs poorly when directly trained on privatized data, we introduce a novel privatized token reconstruction task that is trained jointly with the downstream task, allowing LLMs to learn better task-dependent representations. Despite the simplicity of our framework, experiments show that RAPT achieves competitive performance across tasks while providing privacy guarantees against adversaries.
+    We propose the first theoretical and methodological framework for Gaussian process regression subject to privacy constraints. The proposed method can be used when a data owner is unwilling to share a high-fidelity supervised learning model built from their data with the public due to privacy concerns. The key idea of the proposed method is to add synthetic noise to the data until the predictive variance of the Gaussian process model reaches a prespecified privacy level. The optimal covariance matrix of the synthetic noise is formulated in terms of semi-definite programming. We also introduce the formulation of privacy-aware solutions under continuous privacy constraints using kernel-based approaches, and study their theoretical properties. The proposed method is illustrated by considering a model that tracks the trajectories of satellites.
     
 
