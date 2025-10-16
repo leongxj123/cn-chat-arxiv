@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [HyFL: A Hybrid Framework For Private Federated Learning.](http://arxiv.org/abs/2302.09904) | HyFL是一种混合框架，它结合了安全多方计算技术和分层联合学习，并能够在分布式环境中保证数据和全局模型的隐私安全，有助于大规模部署。 |
+| [^1] | [Improving Transferability of Adversarial Examples via Bayesian Attacks.](http://arxiv.org/abs/2307.11334) | 通过将贝叶斯公式应用于模型参数和模型输入，本文提出了一种改进对抗性样本可迁移性的方法，实证研究表明具有显著提高效果，并超过了当前最新技术。 |
 
 # 详细
 
-[^1]: HyFL:一种用于私有联合学习的混合框架
+[^1]: 通过贝叶斯攻击提高对抗性样本的可迁移性
 
-    HyFL: A Hybrid Framework For Private Federated Learning. (arXiv:2302.09904v2 [cs.LG] UPDATED)
+    Improving Transferability of Adversarial Examples via Bayesian Attacks. (arXiv:2307.11334v1 [cs.LG])
 
-    [http://arxiv.org/abs/2302.09904](http://arxiv.org/abs/2302.09904)
+    [http://arxiv.org/abs/2307.11334](http://arxiv.org/abs/2307.11334)
 
-    HyFL是一种混合框架，它结合了安全多方计算技术和分层联合学习，并能够在分布式环境中保证数据和全局模型的隐私安全，有助于大规模部署。
+    通过将贝叶斯公式应用于模型参数和模型输入，本文提出了一种改进对抗性样本可迁移性的方法，实证研究表明具有显著提高效果，并超过了当前最新技术。
 
     
 
-    联合学习已经成为分布式机器学习的有效方法，通过在客户端设备上保留训练数据来确保数据隐私。然而，最近的研究强调了FL中的漏洞，包括通过单个模型更新甚至整个全局模型泄漏敏感信息。虽然关注点已放在客户端数据隐私上，但有限的研究解决了全局模型隐私问题。此外，客户端本地训练为恶意客户端启动强大的模型污染攻击开辟了途径。不幸的是，目前没有现有工作提供全面解决所有这些问题的解决方案。因此，我们介绍了HyFL，这是一种混合框架，可实现数据和全局模型隐私，并促进大规模部署。HyFL的基础是安全多方计算技术和分层联合学习的独特组合。在HyFL的训练过程中，客户端模型在多个抽象层次上进行安全聚合，以在分布式环境中提供隐私保护。实验证明，HyFL在大规模数据集上实现良好性能，同时确保客户端数据和全局模型的强大隐私和安全保障。
+    本文是对我们在ICLR上发表工作的重要扩展。我们的ICLR工作提出了将贝叶斯公式应用于模型参数，以提高对抗性样本的可迁移性，从而有效模拟了无限多个深度神经网络的集合。而在这篇论文中，我们通过将贝叶斯公式应用于模型输入，引入了一种新颖的扩展，使得模型输入和模型参数都能够进行联合多样化。我们的实证研究证明：1）对模型输入和模型参数同时应用贝叶斯公式可以显著提高可迁移性；2）通过引入对模型输入后验分布的高级近似，攻击无需模型微调时，对抗性可迁移性得到进一步提升，超过了所有的最新技术。此外，我们还提出了一种有原则的方法来对模型参数进行微调。
 
-    Federated learning (FL) has emerged as an efficient approach for large-scale distributed machine learning, ensuring data privacy by keeping training data on client devices. However, recent research has highlighted vulnerabilities in FL, including the potential disclosure of sensitive information through individual model updates and even the aggregated global model. While much attention has been given to clients' data privacy, limited research has addressed the issue of global model privacy. Furthermore, local training at the client's side has opened avenues for malicious clients to launch powerful model poisoning attacks. Unfortunately, no existing work has provided a comprehensive solution that tackles all these issues. Therefore, we introduce HyFL, a hybrid framework that enables data and global model privacy while facilitating large-scale deployments. The foundation of HyFL is a unique combination of secure multi-party computation (MPC) techniques with hierarchical federated learnin
+    This paper presents a substantial extension of our work published at ICLR. Our ICLR work advocated for enhancing transferability in adversarial examples by incorporating a Bayesian formulation into model parameters, which effectively emulates the ensemble of infinitely many deep neural networks, while, in this paper, we introduce a novel extension by incorporating the Bayesian formulation into the model input as well, enabling the joint diversification of both the model input and model parameters. Our empirical findings demonstrate that: 1) the combination of Bayesian formulations for both the model input and model parameters yields significant improvements in transferability; 2) by introducing advanced approximations of the posterior distribution over the model input, adversarial transferability achieves further enhancement, surpassing all state-of-the-arts when attacking without model fine-tuning. Moreover, we propose a principled approach to fine-tune model parameters in such an ext
     
 
