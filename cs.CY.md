@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Censoring chemical data to mitigate dual use risk.](http://arxiv.org/abs/2304.10510) | 为了缓解化学数据被用于开发识别新型毒素或化学战剂的预测模型的双重用途风险，提出了一种基于模型不可知的方法，可在保留有利于训练深度神经网络的数据的效用区域的同时，对敏感信息的数据集进行有选择性的添加噪音，该方法被证明是有效的，并且忽略敏感数据会增加模型的方差。 |
+| [^1] | [Datasheets for Machine Learning Sensors.](http://arxiv.org/abs/2306.08848) | 本研究提出了一种用于机器学习传感器的标准数据表模板，并讨论了其主要组成部分。这些数据表可以促进对传感器数据在机器学习应用中的理解和利用，并提供了客观的性能评估指标。 |
 
 # 详细
 
-[^1]: 缓解双重用途风险的化学数据审查方法
+[^1]: 机器学习传感器的数据表
 
-    Censoring chemical data to mitigate dual use risk. (arXiv:2304.10510v1 [cs.LG])
+    Datasheets for Machine Learning Sensors. (arXiv:2306.08848v2 [cs.LG] UPDATED)
 
-    [http://arxiv.org/abs/2304.10510](http://arxiv.org/abs/2304.10510)
+    [http://arxiv.org/abs/2306.08848](http://arxiv.org/abs/2306.08848)
 
-    为了缓解化学数据被用于开发识别新型毒素或化学战剂的预测模型的双重用途风险，提出了一种基于模型不可知的方法，可在保留有利于训练深度神经网络的数据的效用区域的同时，对敏感信息的数据集进行有选择性的添加噪音，该方法被证明是有效的，并且忽略敏感数据会增加模型的方差。
+    本研究提出了一种用于机器学习传感器的标准数据表模板，并讨论了其主要组成部分。这些数据表可以促进对传感器数据在机器学习应用中的理解和利用，并提供了客观的性能评估指标。
 
     
 
-    机器学习应用的双重用途（模型既可以用于有益用途又可以用于恶意目的）提出了重大挑战。最近，在化学领域，由于含有敏感标签（如毒理学信息）的化学数据集可能被用于开发识别新型毒素或化学战剂的预测模型，这已成为一个特别的担忧。为了缓解双重用途风险，我们提出了一种基于模型不可知的方法，可以有选择性地添加噪音到数据集中，同时保留有利于训练深度神经网络的数据的效用区域。我们评估了所提出方法在最小二乘法、多层感知器和图神经网络中的有效性, 发现有选择性添加噪声数据可以引入模型的方差和预测敏感标签的偏差，这表明可以实现包含敏感信息的数据集的安全共享。我们还发现，忽略敏感数据通常会增加模型的方差。
+    机器学习（ML）传感器提供了一种新的感知范式，能够在边缘进行智能化，同时赋予终端用户更多对其数据的控制权。由于这些ML传感器在智能设备的发展中起着至关重要的作用，清晰地记录其规格、功能和限制非常关键。本文介绍了一种用于ML传感器的标准数据表模板，并讨论了其主要组成部分，包括系统的硬件、ML模型和数据集属性、端到端性能指标以及环境影响。我们提供了一个我们自己ML传感器的示例数据表，并详细讨论了每个部分。我们强调这些数据表如何促进对ML应用中传感器数据的更好理解和利用，并提供了客观的衡量系统性能的指标进行评估和比较。ML传感器及其数据表共同提供了更高的隐私、安全性、透明度、可解释性、可审计性和
 
-    The dual use of machine learning applications, where models can be used for both beneficial and malicious purposes, presents a significant challenge. This has recently become a particular concern in chemistry, where chemical datasets containing sensitive labels (e.g. toxicological information) could be used to develop predictive models that identify novel toxins or chemical warfare agents. To mitigate dual use risks, we propose a model-agnostic method of selectively noising datasets while preserving the utility of the data for training deep neural networks in a beneficial region. We evaluate the effectiveness of the proposed method across least squares, a multilayer perceptron, and a graph neural network. Our findings show selectively noised datasets can induce model variance and bias in predictions for sensitive labels with control, suggesting the safe sharing of datasets containing sensitive information is feasible. We also find omitting sensitive data often increases model variance 
+    Machine learning (ML) sensors offer a new paradigm for sensing that enables intelligence at the edge while empowering end-users with greater control of their data. As these ML sensors play a crucial role in the development of intelligent devices, clear documentation of their specifications, functionalities, and limitations is pivotal. This paper introduces a standard datasheet template for ML sensors and discusses its essential components including: the system's hardware, ML model and dataset attributes, end-to-end performance metrics, and environmental impact. We provide an example datasheet for our own ML sensor and discuss each section in detail. We highlight how these datasheets can facilitate better understanding and utilization of sensor data in ML applications, and we provide objective measures upon which system performance can be evaluated and compared. Together, ML sensors and their datasheets provide greater privacy, security, transparency, explainability, auditability, and u
     
 
