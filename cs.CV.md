@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Hyperparameters in Continual Learning: a Reality Check](https://arxiv.org/abs/2403.09066) | 超参数对于连续学习的重要性被强调，提出了一个涉及超参数调整和评估阶段的评估协议。 |
+| [^1] | [Verification for Object Detection -- IBP IoU](https://arxiv.org/abs/2403.08788) | 介绍了一种针对目标检测模型的新颖区间边界传播（IBP）方法，IBP IoU在确保准确性和稳定性方面表现出色，为更安全和更稳健的机器学习应用做出贡献。 |
 
 # 详细
 
-[^1]: Continual Learning中的超参数：现实检验
+[^1]: 针对目标检测的验证--IBP IoU
 
-    Hyperparameters in Continual Learning: a Reality Check
+    Verification for Object Detection -- IBP IoU
 
-    [https://arxiv.org/abs/2403.09066](https://arxiv.org/abs/2403.09066)
+    [https://arxiv.org/abs/2403.08788](https://arxiv.org/abs/2403.08788)
 
-    超参数对于连续学习的重要性被强调，提出了一个涉及超参数调整和评估阶段的评估协议。
+    介绍了一种针对目标检测模型的新颖区间边界传播（IBP）方法，IBP IoU在确保准确性和稳定性方面表现出色，为更安全和更稳健的机器学习应用做出贡献。
 
     
 
-    不同的连续学习（CL）算法旨在在CL过程中有效地缓解稳定性和可塑性之间的权衡，为了实现这一目标，调整每种算法的适当超参数是必不可少的。本文主张现行的评估协议既不切实际，也无法有效评估连续学习算法的能力。
+    我们介绍了一种新颖的区间边界传播（IBP）方法，用于形式验证对象检测模型，特别针对交并比（IoU）度量。该方法已在一个名为IBP IoU的开源代码中实现，与流行的基于抽象解释的验证工具兼容。该验证器在着陆途径跑道检测和手写数字识别案例研究上进行了评估。与基线（Vanilla IBP IoU）的比较突出了IBP IoU在确保准确性和稳定性方面的出色性能，有助于实现更安全和更稳健的机器学习应用。
 
-    arXiv:2403.09066v1 Announce Type: new  Abstract: Various algorithms for continual learning (CL) have been designed with the goal of effectively alleviating the trade-off between stability and plasticity during the CL process. To achieve this goal, tuning appropriate hyperparameters for each algorithm is essential. As an evaluation protocol, it has been common practice to train a CL algorithm using diverse hyperparameter values on a CL scenario constructed with a benchmark dataset. Subsequently, the best performance attained with the optimal hyperparameter value serves as the criterion for evaluating the CL algorithm. In this paper, we contend that this evaluation protocol is not only impractical but also incapable of effectively assessing the CL capability of a CL algorithm. Returning to the fundamental principles of model evaluation in machine learning, we propose an evaluation protocol that involves Hyperparameter Tuning and Evaluation phases. Those phases consist of different datase
+    arXiv:2403.08788v1 Announce Type: cross  Abstract: We introduce a novel Interval Bound Propagation (IBP) approach for the formal verification of object detection models, specifically targeting the Intersection over Union (IoU) metric. The approach has been implemented in an open source code, named IBP IoU, compatible with popular abstract interpretation based verification tools. The resulting verifier is evaluated on landing approach runway detection and handwritten digit recognition case studies. Comparisons against a baseline (Vanilla IBP IoU) highlight the superior performance of IBP IoU in ensuring accuracy and stability, contributing to more secure and robust machine learning applications.
     
 

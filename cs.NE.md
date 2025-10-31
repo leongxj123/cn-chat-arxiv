@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Brain-Inspired Computational Intelligence via Predictive Coding.](http://arxiv.org/abs/2308.07870) | 这项研究介绍了一种通过预测编码的脑启发式计算智能方法，它可以解决现有人工智能方法的一些重要限制，并具有在机器学习领域有希望的应用潜力。 |
+| [^1] | [Verification for Object Detection -- IBP IoU](https://arxiv.org/abs/2403.08788) | 介绍了一种针对目标检测模型的新颖区间边界传播（IBP）方法，IBP IoU在确保准确性和稳定性方面表现出色，为更安全和更稳健的机器学习应用做出贡献。 |
 
 # 详细
 
-[^1]: 通过预测编码实现脑启发式计算智能
+[^1]: 针对目标检测的验证--IBP IoU
 
-    Brain-Inspired Computational Intelligence via Predictive Coding. (arXiv:2308.07870v1 [cs.AI])
+    Verification for Object Detection -- IBP IoU
 
-    [http://arxiv.org/abs/2308.07870](http://arxiv.org/abs/2308.07870)
+    [https://arxiv.org/abs/2403.08788](https://arxiv.org/abs/2403.08788)
 
-    这项研究介绍了一种通过预测编码的脑启发式计算智能方法，它可以解决现有人工智能方法的一些重要限制，并具有在机器学习领域有希望的应用潜力。
+    介绍了一种针对目标检测模型的新颖区间边界传播（IBP）方法，IBP IoU在确保准确性和稳定性方面表现出色，为更安全和更稳健的机器学习应用做出贡献。
 
     
 
-    人工智能（AI）正在迅速成为本世纪的关键技术之一。到目前为止，在AI领域取得的大部分成果都是使用误差反向传播学习算法训练的深度神经网络所实现的。然而，这种方法的普及应用已经凸显出了一些重要的局限性，例如计算成本高、难以量化不确定性、缺乏鲁棒性、不可靠性和生物学上的不合理性。解决这些限制可能需要受到神经科学理论的启发和指导的方案。其中一种理论称为预测编码（PC），在机器智能任务中表现出有希望的性能，具有令人兴奋的特性，使其在机器学习社区中具有潜在的价值：PC可以模拟不同脑区的信息处理，可以用于认知控制和机器人技术，并在变分推理方面具有坚实的数学基础，提供了一个强大的工具。
+    我们介绍了一种新颖的区间边界传播（IBP）方法，用于形式验证对象检测模型，特别针对交并比（IoU）度量。该方法已在一个名为IBP IoU的开源代码中实现，与流行的基于抽象解释的验证工具兼容。该验证器在着陆途径跑道检测和手写数字识别案例研究上进行了评估。与基线（Vanilla IBP IoU）的比较突出了IBP IoU在确保准确性和稳定性方面的出色性能，有助于实现更安全和更稳健的机器学习应用。
 
-    Artificial intelligence (AI) is rapidly becoming one of the key technologies of this century. The majority of results in AI thus far have been achieved using deep neural networks trained with the error backpropagation learning algorithm. However, the ubiquitous adoption of this approach has highlighted some important limitations such as substantial computational cost, difficulty in quantifying uncertainty, lack of robustness, unreliability, and biological implausibility. It is possible that addressing these limitations may require schemes that are inspired and guided by neuroscience theories. One such theory, called predictive coding (PC), has shown promising performance in machine intelligence tasks, exhibiting exciting properties that make it potentially valuable for the machine learning community: PC can model information processing in different brain areas, can be used in cognitive control and robotics, and has a solid mathematical grounding in variational inference, offering a pow
+    arXiv:2403.08788v1 Announce Type: cross  Abstract: We introduce a novel Interval Bound Propagation (IBP) approach for the formal verification of object detection models, specifically targeting the Intersection over Union (IoU) metric. The approach has been implemented in an open source code, named IBP IoU, compatible with popular abstract interpretation based verification tools. The resulting verifier is evaluated on landing approach runway detection and handwritten digit recognition case studies. Comparisons against a baseline (Vanilla IBP IoU) highlight the superior performance of IBP IoU in ensuring accuracy and stability, contributing to more secure and robust machine learning applications.
     
 
