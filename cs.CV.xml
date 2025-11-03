@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CV</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CV</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CV</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CV</description><item><title>&#35813;&#35770;&#25991;&#25552;&#20986;&#20102;&#25345;&#32493;&#35270;&#35273;&#21644;&#35821;&#35328;&#23548;&#33322;&#65288;CVLN&#65289;&#33539;&#24335;&#65292;&#26088;&#22312;&#35299;&#20915;&#29616;&#26377;&#35757;&#32451;VLN&#20195;&#29702;&#26041;&#27861;&#22266;&#26377;&#30340;&#22266;&#23450;&#25968;&#25454;&#38598;&#30340;&#37325;&#22823;&#38480;&#21046;&#65292;&#20351;&#20195;&#29702;&#33021;&#22815;&#22312;&#19981;&#26029;&#21464;&#21270;&#30340;&#30495;&#23454;&#19990;&#30028;&#20013;&#36827;&#34892;&#23548;&#33322;&#12290;</title><link>https://arxiv.org/abs/2403.15049</link><description>&lt;p&gt;
+Continual Vision-and-Language Navigation
+&lt;/p&gt;
+&lt;p&gt;
+Continual Vision-and-Language Navigation
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.15049
+&lt;/p&gt;
+&lt;p&gt;
+&#35813;&#35770;&#25991;&#25552;&#20986;&#20102;&#25345;&#32493;&#35270;&#35273;&#21644;&#35821;&#35328;&#23548;&#33322;&#65288;CVLN&#65289;&#33539;&#24335;&#65292;&#26088;&#22312;&#35299;&#20915;&#29616;&#26377;&#35757;&#32451;VLN&#20195;&#29702;&#26041;&#27861;&#22266;&#26377;&#30340;&#22266;&#23450;&#25968;&#25454;&#38598;&#30340;&#37325;&#22823;&#38480;&#21046;&#65292;&#20351;&#20195;&#29702;&#33021;&#22815;&#22312;&#19981;&#26029;&#21464;&#21270;&#30340;&#30495;&#23454;&#19990;&#30028;&#20013;&#36827;&#34892;&#23548;&#33322;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#35270;&#35273;&#21644;&#35821;&#35328;&#23548;&#33322;&#65288;VLN&#65289;&#20195;&#29702;&#26681;&#25454;&#33258;&#28982;&#35821;&#35328;&#25351;&#20196;&#21644;&#35266;&#23519;&#21040;&#30340;&#35270;&#35273;&#20449;&#24687;&#23548;&#33322;&#21040;&#30446;&#30340;&#22320;&#12290;&#29616;&#26377;&#30340;VLN&#20195;&#29702;&#35757;&#32451;&#26041;&#27861;&#39044;&#35774;&#22266;&#23450;&#25968;&#25454;&#38598;&#65292;&#23548;&#33268;&#19968;&#20010;&#37325;&#22823;&#38480;&#21046;&#65306;&#24341;&#20837;&#26032;&#29615;&#22659;&#38656;&#35201;&#37325;&#26032;&#35757;&#32451;&#20197;&#20445;&#30041;&#24050;&#32463;&#36935;&#21040;&#30340;&#29615;&#22659;&#30340;&#30693;&#35782;&#12290;&#36825;&#20351;&#24471;&#22312;&#19981;&#26029;&#21464;&#21270;&#30340;&#30495;&#23454;&#19990;&#30028;&#20013;&#35757;&#32451;VLN&#20195;&#29702;&#21464;&#24471;&#22256;&#38590;&#12290;&#20026;&#20102;&#35299;&#20915;&#36825;&#19968;&#38480;&#21046;&#65292;&#25105;&#20204;&#25552;&#20986;&#20102;&#25345;&#32493;&#35270;&#35273;&#21644;&#35821;&#35328;&#23548;&#33322;&#65288;CVLN&#65289;&#33539;&#24335;&#65292;&#26088;&#22312;&#36890;&#36807;&#19968;&#20010;&#25345;&#32493;&#23398;&#20064;&#36807;&#31243;&#35780;&#20272;&#20195;&#29702;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.15049v1 Announce Type: cross  Abstract: Vision-and-Language Navigation (VLN) agents navigate to a destination using natural language instructions and the visual information they observe. Existing methods for training VLN agents presuppose fixed datasets, leading to a significant limitation: the introduction of new environments necessitates retraining with previously encountered environments to preserve their knowledge. This makes it difficult to train VLN agents that operate in the ever-changing real world. To address this limitation, we present the Continual Vision-and-Language Navigation (CVLN) paradigm, designed to evaluate agents trained through a continual learning process. For the training and evaluation of CVLN agents, we re-arrange existing VLN datasets to propose two datasets: CVLN-I, focused on navigation via initial-instruction interpretation, and CVLN-D, aimed at navigation through dialogue with other agents. Furthermore, we propose two novel rehearsal-based meth
+&lt;/p&gt;</description></item></channel></rss>
