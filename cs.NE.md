@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Understanding the Application of Utility Theory in Robotics and Artificial Intelligence: A Survey.](http://arxiv.org/abs/2306.09445) | 本文是一项了解机器人和人工智能中效用理论应用的调查，探讨了如何通过合适的效用模型指导智能体选择合理策略来实现系统的最优效用和保证每个群体成员的可持续发展。 |
+| [^1] | [APALU: A Trainable, Adaptive Activation Function for Deep Learning Networks](https://arxiv.org/abs/2402.08244) | APALU 是一种可训练的激活函数，通过增强深度学习的学习性能，在适应复杂数据表示的同时保持稳定和高效。 在图像分类任务中，APALU相对于传统激活函数能够显著提高准确性。 |
 
 # 详细
 
-[^1]: 了解效用理论在机器人和人工智能中的应用：一项调查
+[^1]: APALU: 一种可训练、适应性激活函数用于深度学习网络
 
-    Understanding the Application of Utility Theory in Robotics and Artificial Intelligence: A Survey. (arXiv:2306.09445v1 [cs.RO])
+    APALU: A Trainable, Adaptive Activation Function for Deep Learning Networks
 
-    [http://arxiv.org/abs/2306.09445](http://arxiv.org/abs/2306.09445)
+    [https://arxiv.org/abs/2402.08244](https://arxiv.org/abs/2402.08244)
 
-    本文是一项了解机器人和人工智能中效用理论应用的调查，探讨了如何通过合适的效用模型指导智能体选择合理策略来实现系统的最优效用和保证每个群体成员的可持续发展。
+    APALU 是一种可训练的激活函数，通过增强深度学习的学习性能，在适应复杂数据表示的同时保持稳定和高效。 在图像分类任务中，APALU相对于传统激活函数能够显著提高准确性。
 
     
 
-    作为经济学、博弈论和运筹学中的一个统一概念，效用在机器人和人工智能领域中被用来评估个体需求、偏好和利益水平。特别是在多智能体/机器人系统（MAS/MRS）的决策和学习中，合适的效用模型可以指导智能体选择合理的策略来实现其当前需求并学会合作和组织其行为，优化系统的效用，建立稳定可靠的关系，并保证每个群体成员的可持续发展，类似于人类社会。虽然这些系统的复杂、大规模和长期的行为很大程度上由底层关系的基本特性决定，但在机器人和人工智能领域，对机制的理论方面和应用领域的讨论较少。本文引入了一个以效用为导向的需求范式，描述和评估了内部和外部关系。
+    激活函数是深度学习的关键组成部分，有助于提取复杂的数据模式。虽然类似ReLU及其变种的经典激活函数被广泛应用，但它们的静态特性和简洁性，尽管有利，但通常限制了它们在特定任务中的有效性。可训练的激活函数有时也难以适应数据的独特特征。针对这些限制，我们引入了一种新颖的可训练激活函数，即自适应分段逼近激活线性单元（APALU），以增强深度学习在各种任务中的学习性能。它具有一套独特的特性，使其能够在学习过程中保持稳定和高效，并适应复杂的数据表示。实验证实，在不同任务中，与广泛使用的激活函数相比，APALU取得了显著的改进。在图像分类中，APALU提升了MobileNet和GoogleNet的准确性。
 
-    As a unifying concept in economics, game theory, and operations research, even in the Robotics and AI field, the utility is used to evaluate the level of individual needs, preferences, and interests. Especially for decision-making and learning in multi-agent/robot systems (MAS/MRS), a suitable utility model can guide agents in choosing reasonable strategies to achieve their current needs and learning to cooperate and organize their behaviors, optimizing the system's utility, building stable and reliable relationships, and guaranteeing each group member's sustainable development, similar to the human society. Although these systems' complex, large-scale, and long-term behaviors are strongly determined by the fundamental characteristics of the underlying relationships, there has been less discussion on the theoretical aspects of mechanisms and the fields of applications in Robotics and AI. This paper introduces a utility-orient needs paradigm to describe and evaluate inter and outer rela
+    Activation function is a pivotal component of deep learning, facilitating the extraction of intricate data patterns. While classical activation functions like ReLU and its variants are extensively utilized, their static nature and simplicity, despite being advantageous, often limit their effectiveness in specialized tasks. The trainable activation functions also struggle sometimes to adapt to the unique characteristics of the data. Addressing these limitations, we introduce a novel trainable activation function, adaptive piecewise approximated activation linear unit (APALU), to enhance the learning performance of deep learning across a broad range of tasks. It presents a unique set of features that enable it to maintain stability and efficiency in the learning process while adapting to complex data representations. Experiments reveal significant improvements over widely used activation functions for different tasks. In image classification, APALU increases MobileNet and GoogleNet accur
     
 
