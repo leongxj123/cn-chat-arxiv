@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Inference with Mondrian Random Forests.](http://arxiv.org/abs/2310.09702) | 本文在回归设置下给出了Mondrian随机森林的估计中心极限定理和去偏过程，使其能够进行统计推断和实现最小极大估计速率。 |
+| [^1] | [Diffusion Posterior Sampling is Computationally Intractable](https://arxiv.org/abs/2402.12727) | 我们证明了后验抽样在计算上是难以解决的：在加密学中最基本的假设下——单向函数存在的假设下，存在一些实例，对于这些实例，每个算法都需要超多项式时间，即使无条件抽样可以证明是快速的。 |
 
 # 详细
 
-[^1]: 带有Mondrian随机森林的推理
+[^1]: 扩散后验抽样在计算上是难以解决的
 
-    Inference with Mondrian Random Forests. (arXiv:2310.09702v1 [math.ST])
+    Diffusion Posterior Sampling is Computationally Intractable
 
-    [http://arxiv.org/abs/2310.09702](http://arxiv.org/abs/2310.09702)
+    [https://arxiv.org/abs/2402.12727](https://arxiv.org/abs/2402.12727)
 
-    本文在回归设置下给出了Mondrian随机森林的估计中心极限定理和去偏过程，使其能够进行统计推断和实现最小极大估计速率。
+    我们证明了后验抽样在计算上是难以解决的：在加密学中最基本的假设下——单向函数存在的假设下，存在一些实例，对于这些实例，每个算法都需要超多项式时间，即使无条件抽样可以证明是快速的。
 
     
 
-    随机森林是一种常用的分类和回归方法，在最近几年中提出了许多不同的变体。一个有趣的例子是Mondrian随机森林，其中底层树是根据Mondrian过程构建的。在本文中，我们给出了Mondrian随机森林在回归设置下的估计的中心极限定理。当与偏差表征和一致方差估计器相结合时，这允许进行渐近有效的统计推断，如构建置信区间，对未知的回归函数进行推断。我们还提供了一种去偏过程，用于Mondrian随机森林，使其能够在适当的参数调整下实现$\beta$-H\"older回归函数的最小极大估计速率，对于所有的$\beta$和任意维度。
+    扩散模型是学习和从分布$p(x)$中抽样的一种非常有效的方法。在后验抽样中，人们还会给出一个测量模型$p(y \mid x)$和一个测量$y$，希望从$p(x \mid y)$中抽样。后验抽样对于诸如修补、超分辨率和MRI重建等任务非常有用，因此一些最近的工作已经给出了启发式近似算法；但没有一个已知能在多项式时间内收敛到正确的分布。
 
-    Random forests are popular methods for classification and regression, and many different variants have been proposed in recent years. One interesting example is the Mondrian random forest, in which the underlying trees are constructed according to a Mondrian process. In this paper we give a central limit theorem for the estimates made by a Mondrian random forest in the regression setting. When combined with a bias characterization and a consistent variance estimator, this allows one to perform asymptotically valid statistical inference, such as constructing confidence intervals, on the unknown regression function. We also provide a debiasing procedure for Mondrian random forests which allows them to achieve minimax-optimal estimation rates with $\beta$-H\"older regression functions, for all $\beta$ and in arbitrary dimension, assuming appropriate parameter tuning.
+    arXiv:2402.12727v1 Announce Type: cross  Abstract: Diffusion models are a remarkably effective way of learning and sampling from a distribution $p(x)$. In posterior sampling, one is also given a measurement model $p(y \mid x)$ and a measurement $y$, and would like to sample from $p(x \mid y)$. Posterior sampling is useful for tasks such as inpainting, super-resolution, and MRI reconstruction, so a number of recent works have given algorithms to heuristically approximate it; but none are known to converge to the correct distribution in polynomial time.   In this paper we show that posterior sampling is \emph{computationally intractable}: under the most basic assumption in cryptography -- that one-way functions exist -- there are instances for which \emph{every} algorithm takes superpolynomial time, even though \emph{unconditional} sampling is provably fast. We also show that the exponential-time rejection sampling algorithm is essentially optimal under the stronger plausible assumption 
     
 

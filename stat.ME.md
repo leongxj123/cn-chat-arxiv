@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Inference with Mondrian Random Forests.](http://arxiv.org/abs/2310.09702) | 本文在回归设置下给出了Mondrian随机森林的估计中心极限定理和去偏过程，使其能够进行统计推断和实现最小极大估计速率。 |
-| [^2] | [Synthetic Control Methods by Density Matching under Implicit Endogeneitiy.](http://arxiv.org/abs/2307.11127) | 本文提出了一种新型的合成对照方法，通过密度匹配来解决现有SCMs中的隐式内生性问题。该方法通过将经过处理单元的结果密度与未处理单元的密度进行加权平均来估计SC权重。 |
+| [^1] | [Sample-Efficient Clustering and Conquer Procedures for Parallel Large-Scale Ranking and Selection](https://arxiv.org/abs/2402.02196) | 我们提出了一种新颖的并行大规模排序和选择问题的聚类及征服方法，通过利用相关信息进行聚类以提高样本效率，在大规模AI应用中表现优异。 |
+| [^2] | [Simple Estimation of Semiparametric Models with Measurement Errors.](http://arxiv.org/abs/2306.14311) | 本文提出了一种解决广义矩量方法（GMM）框架下变量误差（EIV）问题的方法，对于任何初始矩条件，该方法提供了纠正后对EIV具有鲁棒性的矩条件集，这使得GMM估计量是根号下n一致的，标准检验和置信区间提供有效的推论，对于具有多个协变量和多元的，序贯相关或非经典EIV的应用程序特别重要。 |
 
 # 详细
 
-[^1]: 带有Mondrian随机森林的推理
+[^1]: 并行大规模排序和选择问题的样本高效聚类及征服方法
 
-    Inference with Mondrian Random Forests. (arXiv:2310.09702v1 [math.ST])
+    Sample-Efficient Clustering and Conquer Procedures for Parallel Large-Scale Ranking and Selection
 
-    [http://arxiv.org/abs/2310.09702](http://arxiv.org/abs/2310.09702)
+    [https://arxiv.org/abs/2402.02196](https://arxiv.org/abs/2402.02196)
 
-    本文在回归设置下给出了Mondrian随机森林的估计中心极限定理和去偏过程，使其能够进行统计推断和实现最小极大估计速率。
-
-    
-
-    随机森林是一种常用的分类和回归方法，在最近几年中提出了许多不同的变体。一个有趣的例子是Mondrian随机森林，其中底层树是根据Mondrian过程构建的。在本文中，我们给出了Mondrian随机森林在回归设置下的估计的中心极限定理。当与偏差表征和一致方差估计器相结合时，这允许进行渐近有效的统计推断，如构建置信区间，对未知的回归函数进行推断。我们还提供了一种去偏过程，用于Mondrian随机森林，使其能够在适当的参数调整下实现$\beta$-H\"older回归函数的最小极大估计速率，对于所有的$\beta$和任意维度。
-
-    Random forests are popular methods for classification and regression, and many different variants have been proposed in recent years. One interesting example is the Mondrian random forest, in which the underlying trees are constructed according to a Mondrian process. In this paper we give a central limit theorem for the estimates made by a Mondrian random forest in the regression setting. When combined with a bias characterization and a consistent variance estimator, this allows one to perform asymptotically valid statistical inference, such as constructing confidence intervals, on the unknown regression function. We also provide a debiasing procedure for Mondrian random forests which allows them to achieve minimax-optimal estimation rates with $\beta$-H\"older regression functions, for all $\beta$ and in arbitrary dimension, assuming appropriate parameter tuning.
-    
-[^2]: 通过密度匹配实现的合成对照方法下的隐式内生性问题
-
-    Synthetic Control Methods by Density Matching under Implicit Endogeneitiy. (arXiv:2307.11127v1 [econ.EM])
-
-    [http://arxiv.org/abs/2307.11127](http://arxiv.org/abs/2307.11127)
-
-    本文提出了一种新型的合成对照方法，通过密度匹配来解决现有SCMs中的隐式内生性问题。该方法通过将经过处理单元的结果密度与未处理单元的密度进行加权平均来估计SC权重。
+    我们提出了一种新颖的并行大规模排序和选择问题的聚类及征服方法，通过利用相关信息进行聚类以提高样本效率，在大规模AI应用中表现优异。
 
     
 
-    合成对照方法（SCMs）已成为比较案例研究中因果推断的重要工具。SCMs的基本思想是通过使用来自未处理单元的观测结果的加权和来估计经过处理单元的反事实结果。合成对照（SC）的准确性对于估计因果效应至关重要，因此，SC权重的估计成为了研究的焦点。在本文中，我们首先指出现有的SCMs存在一个隐式内生性问题，即未处理单元的结果与反事实结果模型中的误差项之间的相关性。我们展示了这个问题会对因果效应估计器产生偏差。然后，我们提出了一种基于密度匹配的新型SCM，假设经过处理单元的结果密度可以用未处理单元的密度的加权平均来近似（即混合模型）。基于这一假设，我们通过匹配来估计SC权重。
+    我们提出了一种新颖的"聚类和征服"方法，用于解决并行大规模排序和选择问题，通过利用相关信息进行聚类，以打破样本效率的瓶颈。在并行计算环境中，基于相关性的聚类可以实现O(p)的样本复杂度减少速度，这是理论上可达到的最佳减少速度。我们提出的框架是通用的，在固定预算和固定精度的范式下，可以无缝集成各种常见的排序和选择方法。它可以在无需高精确度相关估计和精确聚类的情况下实现改进。在大规模人工智能应用中，如神经结构搜索，我们的无筛选版本的方法惊人地超过了完全顺序化的基准，表现出更高的样本效率。这表明利用有价值的结构信息，如相关性，是绕过传统方法的一条可行路径。
 
-    Synthetic control methods (SCMs) have become a crucial tool for causal inference in comparative case studies. The fundamental idea of SCMs is to estimate counterfactual outcomes for a treated unit by using a weighted sum of observed outcomes from untreated units. The accuracy of the synthetic control (SC) is critical for estimating the causal effect, and hence, the estimation of SC weights has been the focus of much research. In this paper, we first point out that existing SCMs suffer from an implicit endogeneity problem, which is the correlation between the outcomes of untreated units and the error term in the model of a counterfactual outcome. We show that this problem yields a bias in the causal effect estimator. We then propose a novel SCM based on density matching, assuming that the density of outcomes of the treated unit can be approximated by a weighted average of the densities of untreated units (i.e., a mixture model). Based on this assumption, we estimate SC weights by matchi
+    We propose novel "clustering and conquer" procedures for the parallel large-scale ranking and selection (R&S) problem, which leverage correlation information for clustering to break the bottleneck of sample efficiency. In parallel computing environments, correlation-based clustering can achieve an $\mathcal{O}(p)$ sample complexity reduction rate, which is the optimal reduction rate theoretically attainable. Our proposed framework is versatile, allowing for seamless integration of various prevalent R&S methods under both fixed-budget and fixed-precision paradigms. It can achieve improvements without the necessity of highly accurate correlation estimation and precise clustering. In large-scale AI applications such as neural architecture search, a screening-free version of our procedure surprisingly surpasses fully-sequential benchmarks in terms of sample efficiency. This suggests that leveraging valuable structural information, such as correlation, is a viable path to bypassing the trad
+    
+[^2]: 测量误差中半参数模型的简单估计
+
+    Simple Estimation of Semiparametric Models with Measurement Errors. (arXiv:2306.14311v1 [econ.EM])
+
+    [http://arxiv.org/abs/2306.14311](http://arxiv.org/abs/2306.14311)
+
+    本文提出了一种解决广义矩量方法（GMM）框架下变量误差（EIV）问题的方法，对于任何初始矩条件，该方法提供了纠正后对EIV具有鲁棒性的矩条件集，这使得GMM估计量是根号下n一致的，标准检验和置信区间提供有效的推论，对于具有多个协变量和多元的，序贯相关或非经典EIV的应用程序特别重要。
+
+    
+
+    我们在广义矩量方法（GMM）框架下开发了一种解决变量误差（EIV）问题的实用方法。我们关注的是EIV的可变性是测量误差变量的一小部分的情况，这在实证应用中很常见。对于任何初始矩条件，我们的方法提供了纠正后对EIV具有鲁棒性的矩条件集。我们表明，基于这些矩的GMM估计量是根号下n一致的，标准检验和置信区间提供有效的推论。即使EIV很大，朴素估计量（忽略EIV问题）可能严重偏误并且置信区间的覆盖率为0％，我们的方法也能处理。我们的方法不涉及非参数估计，这对于具有多个协变量和多元的，序贯相关或非经典EIV的应用程序特别重要。
+
+    We develop a practical way of addressing the Errors-In-Variables (EIV) problem in the Generalized Method of Moments (GMM) framework. We focus on the settings in which the variability of the EIV is a fraction of that of the mismeasured variables, which is typical for empirical applications. For any initial set of moment conditions our approach provides a corrected set of moment conditions that are robust to the EIV. We show that the GMM estimator based on these moments is root-n-consistent, with the standard tests and confidence intervals providing valid inference. This is true even when the EIV are so large that naive estimators (that ignore the EIV problem) may be heavily biased with the confidence intervals having 0% coverage. Our approach involves no nonparametric estimation, which is particularly important for applications with multiple covariates, and settings with multivariate, serially correlated, or non-classical EIV.
     
 
