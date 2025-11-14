@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Prompt Injection Attacks and Defenses in LLM-Integrated Applications.](http://arxiv.org/abs/2310.12815) | 本文提出了一个通用框架来形式化提示注入攻击，并系统化防御这种类型的攻击。 |
+| [^1] | [Investigating Feature and Model Importance in Android Malware Detection: An Implemented Survey and Experimental Comparison of ML-Based Methods](https://arxiv.org/abs/2301.12778) | 本文重新实现和评估了18个代表性的过去研究，并在包含124,000个应用程序的平衡、相关和最新数据集上进行了新实验，发现仅通过静态分析提取的特征就能实现高达96.8%的恶意软件检测准确性。 |
 
 # 详细
 
-[^1]: LLM-集成应用中的提示注入攻击和防御
+[^1]: 探究安卓恶意软件检测中的特征和模型重要性：一项实施调查和机器学习方法实验比较
 
-    Prompt Injection Attacks and Defenses in LLM-Integrated Applications. (arXiv:2310.12815v1 [cs.CR])
+    Investigating Feature and Model Importance in Android Malware Detection: An Implemented Survey and Experimental Comparison of ML-Based Methods
 
-    [http://arxiv.org/abs/2310.12815](http://arxiv.org/abs/2310.12815)
+    [https://arxiv.org/abs/2301.12778](https://arxiv.org/abs/2301.12778)
 
-    本文提出了一个通用框架来形式化提示注入攻击，并系统化防御这种类型的攻击。
+    本文重新实现和评估了18个代表性的过去研究，并在包含124,000个应用程序的平衡、相关和最新数据集上进行了新实验，发现仅通过静态分析提取的特征就能实现高达96.8%的恶意软件检测准确性。
 
     
 
-    大型语言模型（LLMs）越来越多地用作各种称为LLM-集成应用的实际应用程序的后端。最近的多项研究表明，LLM-集成应用容易受到提示注入攻击的威胁，攻击者可以将恶意指令/数据注入这些应用程序的输入中，以达到攻击者的预期结果。然而，现有的研究仅限于案例研究，缺乏对提示注入攻击及其防御的系统理解。本论文旨在填补这一空白。我们提出了一个通用框架来形式化提示注入攻击，并将研究论文和博客文章中讨论的现有攻击视为我们框架的特例。我们的框架使我们能够通过组合现有攻击设计新的攻击方式。此外，我们还提出了一个系统化提示注入攻击防御的框架。利用我们的框架，我们可以预防和缓解这种类型的攻击。
+    Android的普及意味着它成为恶意软件的常见目标。多年来，各种研究发现机器学习模型能够有效区分恶意软件和良性应用程序。然而，随着操作系统的演进，恶意软件也在不断发展，对先前研究的发现提出了质疑，其中许多报告称使用小型、过时且经常不平衡的数据集能够获得非常高的准确性。在本文中，我们重新实现了18项具代表性的过去研究并使用包括124,000个应用程序的平衡、相关且最新的数据集对它们进行重新评估。我们还进行了新的实验，以填补现有知识中的空白，并利用研究结果确定在当代环境中用于安卓恶意软件检测的最有效特征和模型。我们表明，仅通过静态分析提取的特征即可实现高达96.8%的检测准确性。
 
-    Large Language Models (LLMs) are increasingly deployed as the backend for a variety of real-world applications called LLM-Integrated Applications. Multiple recent works showed that LLM-Integrated Applications are vulnerable to prompt injection attacks, in which an attacker injects malicious instruction/data into the input of those applications such that they produce results as the attacker desires. However, existing works are limited to case studies. As a result, the literature lacks a systematic understanding of prompt injection attacks and their defenses. We aim to bridge the gap in this work. In particular, we propose a general framework to formalize prompt injection attacks. Existing attacks, which are discussed in research papers and blog posts, are special cases in our framework. Our framework enables us to design a new attack by combining existing attacks. Moreover, we also propose a framework to systematize defenses against prompt injection attacks. Using our frameworks, we con
+    arXiv:2301.12778v2 Announce Type: replace  Abstract: The popularity of Android means it is a common target for malware. Over the years, various studies have found that machine learning models can effectively discriminate malware from benign applications. However, as the operating system evolves, so does malware, bringing into question the findings of these previous studies, many of which report very high accuracies using small, outdated, and often imbalanced datasets. In this paper, we reimplement 18 representative past works and reevaluate them using a balanced, relevant, and up-to-date dataset comprising 124,000 applications. We also carry out new experiments designed to fill holes in existing knowledge, and use our findings to identify the most effective features and models to use for Android malware detection within a contemporary environment. We show that high detection accuracies (up to 96.8%) can be achieved using features extracted through static analysis alone, yielding a mode
     
 
