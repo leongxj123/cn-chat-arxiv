@@ -2,9 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-
+| [^1] | [Multiple-Input Auto-Encoder Guided Feature Selection for IoT Intrusion Detection Systems](https://arxiv.org/abs/2403.15511) | 该论文提出了一种名为多输入自动编码器(MIAE)的新型神经网络架构，通过训练MIAE模型，在无监督学习模式下将异构输入转换为较低维表示，有助于分类器区分正常行为和不同类型的攻击。 |
 
 # 详细
 
+[^1]: IoT入侵检测系统中的多输入自动编码器引导特征选择
 
+    Multiple-Input Auto-Encoder Guided Feature Selection for IoT Intrusion Detection Systems
+
+    [https://arxiv.org/abs/2403.15511](https://arxiv.org/abs/2403.15511)
+
+    该论文提出了一种名为多输入自动编码器(MIAE)的新型神经网络架构，通过训练MIAE模型，在无监督学习模式下将异构输入转换为较低维表示，有助于分类器区分正常行为和不同类型的攻击。
+
+    
+
+    入侵检测系统(IDSs)受益于IoT数据特征的多样性和泛化，数据的多样性使得在IoT IDSs中训练有效的机器学习模型变得困难。本文首先介绍了一种名为多输入自动编码器(MIAE)的新型神经网络架构。MIAE由多个子编码器组成，可以处理具有不同特征的不同来源的输入。 MIAE模型以无监督学习模式进行训练，将异构输入转换为较低维表示，有助于分类器区分正常行为和不同类型的攻击。
+
+    arXiv:2403.15511v1 Announce Type: cross  Abstract: While intrusion detection systems (IDSs) benefit from the diversity and generalization of IoT data features, the data diversity (e.g., the heterogeneity and high dimensions of data) also makes it difficult to train effective machine learning models in IoT IDSs. This also leads to potentially redundant/noisy features that may decrease the accuracy of the detection engine in IDSs. This paper first introduces a novel neural network architecture called Multiple-Input Auto-Encoder (MIAE). MIAE consists of multiple sub-encoders that can process inputs from different sources with different characteristics. The MIAE model is trained in an unsupervised learning mode to transform the heterogeneous inputs into lower-dimensional representation, which helps classifiers distinguish between normal behaviour and different types of attacks. To distil and retain more relevant features but remove less important/redundant ones during the training process,
+    
 

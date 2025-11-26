@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description><item><title>&#35813;&#35770;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#21517;&#20026;&#22810;&#36755;&#20837;&#33258;&#21160;&#32534;&#30721;&#22120;(MIAE)&#30340;&#26032;&#22411;&#31070;&#32463;&#32593;&#32476;&#26550;&#26500;&#65292;&#36890;&#36807;&#35757;&#32451;MIAE&#27169;&#22411;&#65292;&#22312;&#26080;&#30417;&#30563;&#23398;&#20064;&#27169;&#24335;&#19979;&#23558;&#24322;&#26500;&#36755;&#20837;&#36716;&#25442;&#20026;&#36739;&#20302;&#32500;&#34920;&#31034;&#65292;&#26377;&#21161;&#20110;&#20998;&#31867;&#22120;&#21306;&#20998;&#27491;&#24120;&#34892;&#20026;&#21644;&#19981;&#21516;&#31867;&#22411;&#30340;&#25915;&#20987;&#12290;</title><link>https://arxiv.org/abs/2403.15511</link><description>&lt;p&gt;
+IoT&#20837;&#20405;&#26816;&#27979;&#31995;&#32479;&#20013;&#30340;&#22810;&#36755;&#20837;&#33258;&#21160;&#32534;&#30721;&#22120;&#24341;&#23548;&#29305;&#24449;&#36873;&#25321;
+&lt;/p&gt;
+&lt;p&gt;
+Multiple-Input Auto-Encoder Guided Feature Selection for IoT Intrusion Detection Systems
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.15511
+&lt;/p&gt;
+&lt;p&gt;
+&#35813;&#35770;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#21517;&#20026;&#22810;&#36755;&#20837;&#33258;&#21160;&#32534;&#30721;&#22120;(MIAE)&#30340;&#26032;&#22411;&#31070;&#32463;&#32593;&#32476;&#26550;&#26500;&#65292;&#36890;&#36807;&#35757;&#32451;MIAE&#27169;&#22411;&#65292;&#22312;&#26080;&#30417;&#30563;&#23398;&#20064;&#27169;&#24335;&#19979;&#23558;&#24322;&#26500;&#36755;&#20837;&#36716;&#25442;&#20026;&#36739;&#20302;&#32500;&#34920;&#31034;&#65292;&#26377;&#21161;&#20110;&#20998;&#31867;&#22120;&#21306;&#20998;&#27491;&#24120;&#34892;&#20026;&#21644;&#19981;&#21516;&#31867;&#22411;&#30340;&#25915;&#20987;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#20837;&#20405;&#26816;&#27979;&#31995;&#32479;(IDSs)&#21463;&#30410;&#20110;IoT&#25968;&#25454;&#29305;&#24449;&#30340;&#22810;&#26679;&#24615;&#21644;&#27867;&#21270;&#65292;&#25968;&#25454;&#30340;&#22810;&#26679;&#24615;&#20351;&#24471;&#22312;IoT IDSs&#20013;&#35757;&#32451;&#26377;&#25928;&#30340;&#26426;&#22120;&#23398;&#20064;&#27169;&#22411;&#21464;&#24471;&#22256;&#38590;&#12290;&#26412;&#25991;&#39318;&#20808;&#20171;&#32461;&#20102;&#19968;&#31181;&#21517;&#20026;&#22810;&#36755;&#20837;&#33258;&#21160;&#32534;&#30721;&#22120;(MIAE)&#30340;&#26032;&#22411;&#31070;&#32463;&#32593;&#32476;&#26550;&#26500;&#12290;MIAE&#30001;&#22810;&#20010;&#23376;&#32534;&#30721;&#22120;&#32452;&#25104;&#65292;&#21487;&#20197;&#22788;&#29702;&#20855;&#26377;&#19981;&#21516;&#29305;&#24449;&#30340;&#19981;&#21516;&#26469;&#28304;&#30340;&#36755;&#20837;&#12290; MIAE&#27169;&#22411;&#20197;&#26080;&#30417;&#30563;&#23398;&#20064;&#27169;&#24335;&#36827;&#34892;&#35757;&#32451;&#65292;&#23558;&#24322;&#26500;&#36755;&#20837;&#36716;&#25442;&#20026;&#36739;&#20302;&#32500;&#34920;&#31034;&#65292;&#26377;&#21161;&#20110;&#20998;&#31867;&#22120;&#21306;&#20998;&#27491;&#24120;&#34892;&#20026;&#21644;&#19981;&#21516;&#31867;&#22411;&#30340;&#25915;&#20987;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.15511v1 Announce Type: cross  Abstract: While intrusion detection systems (IDSs) benefit from the diversity and generalization of IoT data features, the data diversity (e.g., the heterogeneity and high dimensions of data) also makes it difficult to train effective machine learning models in IoT IDSs. This also leads to potentially redundant/noisy features that may decrease the accuracy of the detection engine in IDSs. This paper first introduces a novel neural network architecture called Multiple-Input Auto-Encoder (MIAE). MIAE consists of multiple sub-encoders that can process inputs from different sources with different characteristics. The MIAE model is trained in an unsupervised learning mode to transform the heterogeneous inputs into lower-dimensional representation, which helps classifiers distinguish between normal behaviour and different types of attacks. To distil and retain more relevant features but remove less important/redundant ones during the training process,
+&lt;/p&gt;</description></item></channel></rss>
