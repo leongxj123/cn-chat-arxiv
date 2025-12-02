@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Leveraging Biomolecule and Natural Language through Multi-Modal Learning: A Survey](https://arxiv.org/abs/2403.01528) | 生物分子与自然语言相结合的多模态学习为全面表示和分析生物分子开辟了新途径。 |
+| [^1] | [Recurrent networks recognize patterns with low-dimensional oscillations.](http://arxiv.org/abs/2310.07908) | 本研究提出了一种通过相位变化识别模式的循环神经网络机制，并通过验证手工制作的振荡模型证实了这一解释。该研究不仅提供了一种潜在的动力学机制用于模式识别，还暗示了有限状态自动机的神经实现方式，并且对深度学习模型的可解释性进行了贡献。 |
 
 # 详细
 
-[^1]: 利用生物分子和自然语言的多模态学习：一项综述
+[^1]: 循环网络通过低维振荡识别模式
 
-    Leveraging Biomolecule and Natural Language through Multi-Modal Learning: A Survey
+    Recurrent networks recognize patterns with low-dimensional oscillations. (arXiv:2310.07908v1 [q-bio.NC])
 
-    [https://arxiv.org/abs/2403.01528](https://arxiv.org/abs/2403.01528)
+    [http://arxiv.org/abs/2310.07908](http://arxiv.org/abs/2310.07908)
 
-    生物分子与自然语言相结合的多模态学习为全面表示和分析生物分子开辟了新途径。
+    本研究提出了一种通过相位变化识别模式的循环神经网络机制，并通过验证手工制作的振荡模型证实了这一解释。该研究不仅提供了一种潜在的动力学机制用于模式识别，还暗示了有限状态自动机的神经实现方式，并且对深度学习模型的可解释性进行了贡献。
 
     
 
-    集成生物分子建模与自然语言（BL）已经成为人工智能、化学和生物学交叉领域中的一个具有前景的跨学科领域。这种方法利用文本数据源中包含的生物分子的丰富多面描述，增强我们对基本理解，并实现生物分子性质预测等计算任务。通过将自然语言中表达的微妙叙述与通过各种分子建模技术描述的生物分子的结构和功能细节融合，打开了全面表征和分析生物分子的新途径。通过将围绕生物分子的上下文语言数据纳入建模中，BL旨在捕捉包含语言传达的符号特性以及数量化结构特征的整体视图。
+    本研究提出了一种通过解释在SET卡牌游戏启发下进行训练的循环神经网络(RNN)在简单任务上的动力学机制来识别模式。我们将训练后的RNN解释为通过低维极限环中的相位变化进行模式识别，类似于有限状态自动机(FSA)中的转换。我们进一步通过手工制作一个简单的振荡模型来验证了这一解释，该模型复制了训练后的RNN的动力学特性。我们的发现不仅暗示了一种潜在的动力学机制能够实现模式识别，还暗示了一种有限状态自动机的潜在神经实现。最重要的是，这项工作有助于关于深度学习模型可解释性的讨论。
 
-    arXiv:2403.01528v1 Announce Type: cross  Abstract: The integration of biomolecular modeling with natural language (BL) has emerged as a promising interdisciplinary area at the intersection of artificial intelligence, chemistry and biology. This approach leverages the rich, multifaceted descriptions of biomolecules contained within textual data sources to enhance our fundamental understanding and enable downstream computational tasks such as biomolecule property prediction. The fusion of the nuanced narratives expressed through natural language with the structural and functional specifics of biomolecules described via various molecular modeling techniques opens new avenues for comprehensively representing and analyzing biomolecules. By incorporating the contextual language data that surrounds biomolecules into their modeling, BL aims to capture a holistic view encompassing both the symbolic qualities conveyed through language as well as quantitative structural characteristics. In this r
+    This study proposes a novel dynamical mechanism for pattern recognition discovered by interpreting a recurrent neural network (RNN) trained on a simple task inspired by the SET card game. We interpreted the trained RNN as recognizing patterns via phase shifts in a low-dimensional limit cycle in a manner analogous to transitions in a finite state automaton (FSA). We further validated this interpretation by handcrafting a simple oscillatory model that reproduces the dynamics of the trained RNN. Our findings not only suggest of a potential dynamical mechanism capable of pattern recognition, but also suggest of a potential neural implementation of FSA. Above all, this work contributes to the growing discourse on deep learning model interpretability.
     
 

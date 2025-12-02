@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Strong consistency and optimality of spectral clustering in symmetric binary non-uniform Hypergraph Stochastic Block Model.](http://arxiv.org/abs/2306.06845) | 论文提出了非均匀超图随机块模型下谱聚类的强一致性信息理论阈值，并且在该阈值以下给出估计标签的期望“不匹配率”上界。并且，单步谱算法可以在超过该阈值时非常高的概率正确地给定每个顶点的标签。 |
+| [^1] | [Estimating the Mixing Coefficients of Geometrically Ergodic Markov Processes](https://arxiv.org/abs/2402.07296) | 该论文提出了一种方法来估计几何遗传马尔可夫过程的混合系数，我们通过在满足特定条件和无需密度假设的情况下，得到了估计器的预期误差收敛速度和高概率界限。 |
+| [^2] | [Sparse PCA With Multiple Components.](http://arxiv.org/abs/2209.14790) | 本研究提出了一种新的方法来解决稀疏主成分分析问题，通过将正交性条件重新表述为秩约束，并同时对稀疏性和秩约束进行优化。我们设计了紧凑的半正定松弛来提供高质量的上界，当每个主成分的个体稀疏性被指定时，我们通过额外的二阶锥不等式加强上界。 |
 
 # 详细
 
-[^1]: 对称二元非均匀超图随机块模型中谱聚类的强一致性与最优性
+[^1]: 估计几何遗传马尔可夫过程的混合系数
 
-    Strong consistency and optimality of spectral clustering in symmetric binary non-uniform Hypergraph Stochastic Block Model. (arXiv:2306.06845v1 [math.ST])
+    Estimating the Mixing Coefficients of Geometrically Ergodic Markov Processes
 
-    [http://arxiv.org/abs/2306.06845](http://arxiv.org/abs/2306.06845)
+    [https://arxiv.org/abs/2402.07296](https://arxiv.org/abs/2402.07296)
 
-    论文提出了非均匀超图随机块模型下谱聚类的强一致性信息理论阈值，并且在该阈值以下给出估计标签的期望“不匹配率”上界。并且，单步谱算法可以在超过该阈值时非常高的概率正确地给定每个顶点的标签。
+    该论文提出了一种方法来估计几何遗传马尔可夫过程的混合系数，我们通过在满足特定条件和无需密度假设的情况下，得到了估计器的预期误差收敛速度和高概率界限。
 
     
 
-    本论文考虑了在非均匀超图随机块模型下，两个等大小的社区（n/2）中的随机超图上的无监督分类问题，其中每个边只依赖于其顶点的标签，边以一定概率独立出现。在这篇论文中，建立了强一致性的信息理论阈值，在该阈值以下，任何算法都有很高概率会误分类至少两个顶点，而特征向量估计量的期望“不匹配率”上界为$n$的阈值的负指数。另一方面，当超过该阈值时，尽管张量收缩引起了信息损失，但单步谱算法仅在给定收缩的邻接矩阵时，即使SDP在某些情况下失败，也可以非常高的概率正确地给定每个顶点分配标签。此外，强一致性可以通过对所有次优聚合信息实现。
+    我们提出了一种方法来估计实值几何遗传马尔可夫过程的单个β-混合系数从一个单一的样本路径X0，X1，...，Xn。在对密度的标准光滑条件下，即对于每个m，对$(X_0,X_m)$对的联合密度都属于某个已知$s>0$的 Besov 空间$B^s_{1,\infty}(\mathbb R^2)$，我们得到了我们在这种情况下的估计器的预期误差的收敛速度为$\mathcal{O}(\log(n) n^{-[s]/(2[s]+2)})$ 的收敛速度。我们通过对估计误差的高概率界限进行了补充，并在状态空间有限的情况下获得了这些界限的类比。在这种情况下不需要密度的假设；预期误差率显示为$\mathcal O(\log(
 
-    Consider the unsupervised classification problem in random hypergraphs under the non-uniform \emph{Hypergraph Stochastic Block Model} (HSBM) with two equal-sized communities ($n/2$), where each edge appears independently with some probability depending only on the labels of its vertices. In this paper, an \emph{information-theoretical} threshold for strong consistency is established. Below the threshold, every algorithm would misclassify at least two vertices with high probability, and the expected \emph{mismatch ratio} of the eigenvector estimator is upper bounded by $n$ to the power of minus the threshold. On the other hand, when above the threshold, despite the information loss induced by tensor contraction, one-stage spectral algorithms assign every vertex correctly with high probability when only given the contracted adjacency matrix, even if \emph{semidefinite programming} (SDP) fails in some scenarios. Moreover, strong consistency is achievable by aggregating information from al
+    We propose methods to estimate the individual $\beta$-mixing coefficients of a real-valued geometrically ergodic Markov process from a single sample-path $X_0,X_1, \dots,X_n$. Under standard smoothness conditions on the densities, namely, that the joint density of the pair $(X_0,X_m)$ for each $m$ lies in a Besov space $B^s_{1,\infty}(\mathbb R^2)$ for some known $s>0$, we obtain a rate of convergence of order $\mathcal{O}(\log(n) n^{-[s]/(2[s]+2)})$ for the expected error of our estimator in this case\footnote{We use $[s]$ to denote the integer part of the decomposition $s=[s]+\{s\}$ of $s \in (0,\infty)$ into an integer term and a {\em strictly positive} remainder term $\{s\} \in (0,1]$.}. We complement this result with a high-probability bound on the estimation error, and further obtain analogues of these bounds in the case where the state-space is finite. Naturally no density assumptions are required in this setting; the expected error rate is shown to be of order $\mathcal O(\log(
+    
+[^2]: 多组分的稀疏主成分分析
+
+    Sparse PCA With Multiple Components. (arXiv:2209.14790v2 [math.OC] UPDATED)
+
+    [http://arxiv.org/abs/2209.14790](http://arxiv.org/abs/2209.14790)
+
+    本研究提出了一种新的方法来解决稀疏主成分分析问题，通过将正交性条件重新表述为秩约束，并同时对稀疏性和秩约束进行优化。我们设计了紧凑的半正定松弛来提供高质量的上界，当每个主成分的个体稀疏性被指定时，我们通过额外的二阶锥不等式加强上界。
+
+    
+
+    稀疏主成分分析是一种用于以可解释的方式解释高维数据集方差的基本技术。这涉及解决一个稀疏性和正交性约束的凸最大化问题，其计算复杂度非常高。大多数现有的方法通过迭代计算一个稀疏主成分并缩减协方差矩阵来解决稀疏主成分分析，但在寻找多个相互正交的主成分时，这些方法不能保证所得解的正交性和最优性。我们挑战这种现状，通过将正交性条件重新表述为秩约束，并同时对稀疏性和秩约束进行优化。我们设计了紧凑的半正定松弛来提供高质量的上界，当每个主成分的个体稀疏性被指定时，我们通过额外的二阶锥不等式加强上界。此外，我们采用另一种方法来加强上界，我们使用额外的二阶锥不等式来加强上界。
+
+    Sparse Principal Component Analysis (sPCA) is a cardinal technique for obtaining combinations of features, or principal components (PCs), that explain the variance of high-dimensional datasets in an interpretable manner. This involves solving a sparsity and orthogonality constrained convex maximization problem, which is extremely computationally challenging. Most existing works address sparse PCA via methods-such as iteratively computing one sparse PC and deflating the covariance matrix-that do not guarantee the orthogonality, let alone the optimality, of the resulting solution when we seek multiple mutually orthogonal PCs. We challenge this status by reformulating the orthogonality conditions as rank constraints and optimizing over the sparsity and rank constraints simultaneously. We design tight semidefinite relaxations to supply high-quality upper bounds, which we strengthen via additional second-order cone inequalities when each PC's individual sparsity is specified. Further, we de
     
 

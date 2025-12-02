@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Fast multiplication by two's complement addition of numbers represented as a set of polynomial radix 2 indexes, stored as an integer list for massively parallel computation](https://arxiv.org/abs/2311.09922) | 本论文介绍了一种基于多项式基数2指数集合的快速乘法方法，在特定位数范围内比传统方法更快。该方法把数字表示为整数索引列表，并实现了分布式计算。 |
-| [^2] | [Receiver-Oriented Cheap Talk Design.](http://arxiv.org/abs/2401.03671) | 本文研究了接收方导向的廉价谈话设计，提出了透明动机和过滤信息两种模型，并证明在透明动机下接收方不会从过滤信息中获益。然而，一般情况下接收方可以通过过滤获得严格的好处，并提供了计算最优均衡的有效算法。这对于用户控制信息的平台具有创新性，揭示了通信动态并提供了策略性互动预测。 |
+| [^1] | [Improving Expressivity of Graph Neural Networks using Localization.](http://arxiv.org/abs/2305.19659) | 本文提出了Weisfeiler-Leman (WL)算法的局部版本，用于解决子图计数问题并提高图神经网络的表达能力，同时，也给出了一些时间和空间效率更高的$k-$WL变体和分裂技术。 |
 
 # 详细
 
-[^1]: 通过采用整数列表作为多项式基数2指数的集合来实现快速乘法
+[^1]: 利用局部化提高图神经网络的表达能力
 
-    Fast multiplication by two's complement addition of numbers represented as a set of polynomial radix 2 indexes, stored as an integer list for massively parallel computation
+    Improving Expressivity of Graph Neural Networks using Localization. (arXiv:2305.19659v1 [cs.LG])
 
-    [https://arxiv.org/abs/2311.09922](https://arxiv.org/abs/2311.09922)
+    [http://arxiv.org/abs/2305.19659](http://arxiv.org/abs/2305.19659)
 
-    本论文介绍了一种基于多项式基数2指数集合的快速乘法方法，在特定位数范围内比传统方法更快。该方法把数字表示为整数索引列表，并实现了分布式计算。
-
-    
-
-    我们演示了一种基于用整数列表表示的多项式基数2指数集合的乘法方法。该方法采用python代码实现了一组算法。我们展示了该方法在某一位数范围内比数论变换(NTT)和卡拉茨巴(Karatsuba)乘法更快。我们还实现了用python代码进行比较，与多项式基数2整数方法进行比较。我们展示了任何整数或实数都可以表示为整数索引列表，表示二进制中的有限级数。该数字的整数索引有限级数可以存储和分布在多个CPU / GPU上。我们展示了加法和乘法运算可以应用于作为索引整数表示的两个补码加法，并可以完全分布在给定的CPU / GPU架构上。我们展示了完全的分布性能。
-
-    We demonstrate a multiplication method based on numbers represented as set of polynomial radix 2 indices stored as an integer list. The 'polynomial integer index multiplication' method is a set of algorithms implemented in python code. We demonstrate the method to be faster than both the Number Theoretic Transform (NTT) and Karatsuba for multiplication within a certain bit range. Also implemented in python code for comparison purposes with the polynomial radix 2 integer method. We demonstrate that it is possible to express any integer or real number as a list of integer indices, representing a finite series in base two. The finite series of integer index representation of a number can then be stored and distributed across multiple CPUs / GPUs. We show that operations of addition and multiplication can be applied as two's complement additions operating on the index integer representations and can be fully distributed across a given CPU / GPU architecture. We demonstrate fully distribute
-    
-[^2]: 接收方导向的廉价谈话设计
-
-    Receiver-Oriented Cheap Talk Design. (arXiv:2401.03671v1 [cs.GT])
-
-    [http://arxiv.org/abs/2401.03671](http://arxiv.org/abs/2401.03671)
-
-    本文研究了接收方导向的廉价谈话设计，提出了透明动机和过滤信息两种模型，并证明在透明动机下接收方不会从过滤信息中获益。然而，一般情况下接收方可以通过过滤获得严格的好处，并提供了计算最优均衡的有效算法。这对于用户控制信息的平台具有创新性，揭示了通信动态并提供了策略性互动预测。
+    本文提出了Weisfeiler-Leman (WL)算法的局部版本，用于解决子图计数问题并提高图神经网络的表达能力，同时，也给出了一些时间和空间效率更高的$k-$WL变体和分裂技术。
 
     
 
-    本文考虑了发送方和接收方之间廉价谈话交互的动态，与传统模型的不同之处在于侧重于接收方的角度。我们研究了两种模型，一种有透明的动机，另一种是接收方可以\emph{过滤}发送方可以访问的信息。我们给出了在透明动机下最佳接收方均衡的几何特征，并证明接收方在这种情况下不会从过滤信息中获益。然而，一般情况下，我们显示接收方可以通过过滤获得严格的好处，并提供计算最优均衡的有效算法。这种创新性的分析与用户导向的平台一致，在这些平台上，接收方（用户）控制发送方（卖家）可以访问的信息。我们的发现揭示了通信动态，弥平了发送方固有的优势，并提供了策略性互动预测。
+    本文提出了Weisfeiler-Leman (WL)算法的局部版本，旨在增加表达能力并减少计算负担。我们专注于子图计数问题，并为任意$k$给出$k-$WL的局部版本。我们分析了Local $k-$WL的作用，并证明其比$k-$WL更具表现力，并且至多与$(k+1)-$WL一样具有表现力。我们给出了一些模式的特征，如果两个图是Local $k-$WL等价的，则它们的子图和诱导子图的计数是不变的。我们还介绍了$k-$WL的两个变体：层$k-$WL和递归$k-$WL。这些方法的时间和空间效率比在整个图上应用$k-$WL更高。我们还提出了一种分裂技术，使用$1-$WL即可保证所有大小不超过4的诱导子图的准确计数。相同的方法可以使用$k>1$进一步扩展到更大的模式。我们还将Local $k-$WL的表现力与其他GNN层次结构进行了比较。
 
-    This paper considers the dynamics of cheap talk interactions between a sender and receiver, departing from conventional models by focusing on the receiver's perspective. We study two models, one with transparent motives and another one in which the receiver can \emph{filter} the information that is accessible by the sender. We give a geometric characterization of the best receiver equilibrium under transparent motives and prove that the receiver does not benefit from filtering information in this case. However, in general, we show that the receiver can strictly benefit from filtering and provide efficient algorithms for computing optimal equilibria. This innovative analysis aligns with user-based platforms where receivers (users) control information accessible to senders (sellers). Our findings provide insights into communication dynamics, leveling the sender's inherent advantage, and offering strategic interaction predictions.
+    In this paper, we propose localized versions of Weisfeiler-Leman (WL) algorithms in an effort to both increase the expressivity, as well as decrease the computational overhead. We focus on the specific problem of subgraph counting and give localized versions of $k-$WL for any $k$. We analyze the power of Local $k-$WL and prove that it is more expressive than $k-$WL and at most as expressive as $(k+1)-$WL. We give a characterization of patterns whose count as a subgraph and induced subgraph are invariant if two graphs are Local $k-$WL equivalent. We also introduce two variants of $k-$WL: Layer $k-$WL and recursive $k-$WL. These methods are more time and space efficient than applying $k-$WL on the whole graph. We also propose a fragmentation technique that guarantees the exact count of all induced subgraphs of size at most 4 using just $1-$WL. The same idea can be extended further for larger patterns using $k>1$. We also compare the expressive power of Local $k-$WL with other GNN hierarc
     
 

@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Fast multiplication by two's complement addition of numbers represented as a set of polynomial radix 2 indexes, stored as an integer list for massively parallel computation](https://arxiv.org/abs/2311.09922) | 本论文介绍了一种基于多项式基数2指数集合的快速乘法方法，在特定位数范围内比传统方法更快。该方法把数字表示为整数索引列表，并实现了分布式计算。 |
+| [^1] | [Scheduling and Aggregation Design for Asynchronous Federated Learning over Wireless Networks.](http://arxiv.org/abs/2212.07356) | 本文提出了一种异步联邦学习的调度策略和聚合加权设计，通过采用基于信道感知数据重要性的调度策略和“年龄感知”的聚合加权设计来解决FL系统中的“拖沓”问题，并通过仿真证实了其有效性。 |
 
 # 详细
 
-[^1]: 通过采用整数列表作为多项式基数2指数的集合来实现快速乘法
+[^1]: 异步联邦学习在无线网络中的调度和聚合设计
 
-    Fast multiplication by two's complement addition of numbers represented as a set of polynomial radix 2 indexes, stored as an integer list for massively parallel computation
+    Scheduling and Aggregation Design for Asynchronous Federated Learning over Wireless Networks. (arXiv:2212.07356v2 [cs.LG] UPDATED)
 
-    [https://arxiv.org/abs/2311.09922](https://arxiv.org/abs/2311.09922)
+    [http://arxiv.org/abs/2212.07356](http://arxiv.org/abs/2212.07356)
 
-    本论文介绍了一种基于多项式基数2指数集合的快速乘法方法，在特定位数范围内比传统方法更快。该方法把数字表示为整数索引列表，并实现了分布式计算。
+    本文提出了一种异步联邦学习的调度策略和聚合加权设计，通过采用基于信道感知数据重要性的调度策略和“年龄感知”的聚合加权设计来解决FL系统中的“拖沓”问题，并通过仿真证实了其有效性。
 
     
 
-    我们演示了一种基于用整数列表表示的多项式基数2指数集合的乘法方法。该方法采用python代码实现了一组算法。我们展示了该方法在某一位数范围内比数论变换(NTT)和卡拉茨巴(Karatsuba)乘法更快。我们还实现了用python代码进行比较，与多项式基数2整数方法进行比较。我们展示了任何整数或实数都可以表示为整数索引列表，表示二进制中的有限级数。该数字的整数索引有限级数可以存储和分布在多个CPU / GPU上。我们展示了加法和乘法运算可以应用于作为索引整数表示的两个补码加法，并可以完全分布在给定的CPU / GPU架构上。我们展示了完全的分布性能。
+    联邦学习（FL）是一种协作的机器学习（ML）框架，它结合了设备上的训练和基于服务器的聚合来在分布式代理间训练通用的ML模型。本文中，我们提出了一种异步FL设计，采用周期性的聚合来解决FL系统中的“拖沓”问题。考虑到有限的无线通信资源，我们研究了不同调度策略和聚合设计对收敛性能的影响。基于降低聚合模型更新的偏差和方差的重要性，我们提出了一个调度策略，它同时考虑了用户设备的信道质量和训练数据表示。通过仿真验证了我们的基于信道感知数据重要性的调度策略相对于同步联邦学习提出的现有最新方法的有效性。此外，我们还展示了一种“年龄感知”的聚合加权设计可以显著提高学习性能。
 
-    We demonstrate a multiplication method based on numbers represented as set of polynomial radix 2 indices stored as an integer list. The 'polynomial integer index multiplication' method is a set of algorithms implemented in python code. We demonstrate the method to be faster than both the Number Theoretic Transform (NTT) and Karatsuba for multiplication within a certain bit range. Also implemented in python code for comparison purposes with the polynomial radix 2 integer method. We demonstrate that it is possible to express any integer or real number as a list of integer indices, representing a finite series in base two. The finite series of integer index representation of a number can then be stored and distributed across multiple CPUs / GPUs. We show that operations of addition and multiplication can be applied as two's complement additions operating on the index integer representations and can be fully distributed across a given CPU / GPU architecture. We demonstrate fully distribute
+    Federated Learning (FL) is a collaborative machine learning (ML) framework that combines on-device training and server-based aggregation to train a common ML model among distributed agents. In this work, we propose an asynchronous FL design with periodic aggregation to tackle the straggler issue in FL systems. Considering limited wireless communication resources, we investigate the effect of different scheduling policies and aggregation designs on the convergence performance. Driven by the importance of reducing the bias and variance of the aggregated model updates, we propose a scheduling policy that jointly considers the channel quality and training data representation of user devices. The effectiveness of our channel-aware data-importance-based scheduling policy, compared with state-of-the-art methods proposed for synchronous FL, is validated through simulations. Moreover, we show that an ``age-aware'' aggregation weighting design can significantly improve the learning performance i
     
 
