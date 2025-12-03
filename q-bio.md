@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Recurrent networks recognize patterns with low-dimensional oscillations.](http://arxiv.org/abs/2310.07908) | 本研究提出了一种通过相位变化识别模式的循环神经网络机制，并通过验证手工制作的振荡模型证实了这一解释。该研究不仅提供了一种潜在的动力学机制用于模式识别，还暗示了有限状态自动机的神经实现方式，并且对深度学习模型的可解释性进行了贡献。 |
+| [^1] | [Brain-grounding of semantic vectors improves neural decoding of visual stimuli](https://arxiv.org/abs/2403.15176) | 提出了一种表示学习框架，称为语义向量的脑接地，通过微调预训练的特征向量，使其更好地与人类大脑中视觉刺激的神经表示对齐。 |
 
 # 详细
 
-[^1]: 循环网络通过低维振荡识别模式
+[^1]: 语义向量的脑接地改善了神经解码视觉刺激
 
-    Recurrent networks recognize patterns with low-dimensional oscillations. (arXiv:2310.07908v1 [q-bio.NC])
+    Brain-grounding of semantic vectors improves neural decoding of visual stimuli
 
-    [http://arxiv.org/abs/2310.07908](http://arxiv.org/abs/2310.07908)
+    [https://arxiv.org/abs/2403.15176](https://arxiv.org/abs/2403.15176)
 
-    本研究提出了一种通过相位变化识别模式的循环神经网络机制，并通过验证手工制作的振荡模型证实了这一解释。该研究不仅提供了一种潜在的动力学机制用于模式识别，还暗示了有限状态自动机的神经实现方式，并且对深度学习模型的可解释性进行了贡献。
+    提出了一种表示学习框架，称为语义向量的脑接地，通过微调预训练的特征向量，使其更好地与人类大脑中视觉刺激的神经表示对齐。
 
     
 
-    本研究提出了一种通过解释在SET卡牌游戏启发下进行训练的循环神经网络(RNN)在简单任务上的动力学机制来识别模式。我们将训练后的RNN解释为通过低维极限环中的相位变化进行模式识别，类似于有限状态自动机(FSA)中的转换。我们进一步通过手工制作一个简单的振荡模型来验证了这一解释，该模型复制了训练后的RNN的动力学特性。我们的发现不仅暗示了一种潜在的动力学机制能够实现模式识别，还暗示了一种有限状态自动机的潜在神经实现。最重要的是，这项工作有助于关于深度学习模型可解释性的讨论。
+    发展准确全面的算法来解码大脑内容是神经科学和脑机接口领域的一个长期目标。之前的研究已经证明了通过训练机器学习模型将大脑活动模式映射到一个语义向量表示的神经解码的可行性。为了解决这个问题，我们提出了一个表示学习框架，称为语义向量的脑接地，它对预训练的特征向量进行微调，以更好地与人类大脑中视觉刺激的神经表示对齐。
 
-    This study proposes a novel dynamical mechanism for pattern recognition discovered by interpreting a recurrent neural network (RNN) trained on a simple task inspired by the SET card game. We interpreted the trained RNN as recognizing patterns via phase shifts in a low-dimensional limit cycle in a manner analogous to transitions in a finite state automaton (FSA). We further validated this interpretation by handcrafting a simple oscillatory model that reproduces the dynamics of the trained RNN. Our findings not only suggest of a potential dynamical mechanism capable of pattern recognition, but also suggest of a potential neural implementation of FSA. Above all, this work contributes to the growing discourse on deep learning model interpretability.
+    arXiv:2403.15176v1 Announce Type: cross  Abstract: Developing algorithms for accurate and comprehensive neural decoding of mental contents is one of the long-cherished goals in the field of neuroscience and brain-machine interfaces. Previous studies have demonstrated the feasibility of neural decoding by training machine learning models to map brain activity patterns into a semantic vector representation of stimuli. These vectors, hereafter referred as pretrained feature vectors, are usually derived from semantic spaces based solely on image and/or text features and therefore they might have a totally different characteristics than how visual stimuli is represented in the human brain, resulting in limiting the capability of brain decoders to learn this mapping. To address this issue, we propose a representation learning framework, termed brain-grounding of semantic vectors, which fine-tunes pretrained feature vectors to better align with the neural representation of visual stimuli in t
     
 
