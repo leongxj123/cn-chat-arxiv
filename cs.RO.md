@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Towards Inferring Users' Impressions of Robot Performance in Navigation Scenarios.](http://arxiv.org/abs/2310.11590) | 本研究拟通过非语言行为提示和机器学习技术预测人们对机器人行为印象，并提供了一个数据集和分析结果，发现在导航场景中，空间特征是最关键的信息。 |
+| [^1] | [Are you a robot? Detecting Autonomous Vehicles from Behavior Analysis](https://arxiv.org/abs/2403.09571) | 提出了一个框架，通过监视车辆的行为和状态信息来自动识别自动驾驶车辆，无需车辆主动通知。 |
 
 # 详细
 
-[^1]: 探索在导航场景下推断用户对机器人性能的印象
+[^1]: 你是机器人吗？从行为分析中检测自动驾驶车辆
 
-    Towards Inferring Users' Impressions of Robot Performance in Navigation Scenarios. (arXiv:2310.11590v1 [cs.RO])
+    Are you a robot? Detecting Autonomous Vehicles from Behavior Analysis
 
-    [http://arxiv.org/abs/2310.11590](http://arxiv.org/abs/2310.11590)
+    [https://arxiv.org/abs/2403.09571](https://arxiv.org/abs/2403.09571)
 
-    本研究拟通过非语言行为提示和机器学习技术预测人们对机器人行为印象，并提供了一个数据集和分析结果，发现在导航场景中，空间特征是最关键的信息。
+    提出了一个框架，通过监视车辆的行为和状态信息来自动识别自动驾驶车辆，无需车辆主动通知。
 
     
 
-    人们对机器人性能的印象通常通过调查问卷来衡量。作为一种更可扩展且成本效益更高的替代方案，我们研究了使用非语言行为提示和机器学习技术预测人们对机器人行为印象的可能性。为此，我们首先提供了SEAN TOGETHER数据集，该数据集包括在虚拟现实模拟中人与移动机器人相互作用的观察结果，以及用户对机器人性能的5点量表评价。其次，我们对人类和监督学习技术如何基于不同的观察类型（例如面部、空间和地图特征）来预测感知到的机器人性能进行了分析。我们的结果表明，仅仅面部表情就能提供关于人们对机器人性能印象的有用信息；但在我们测试的导航场景中，空间特征是这种推断任务最关键的信息。
+    自动驾驶技术的巨大热潮急切地呼唤新兴和创新技术，以支持先进的移动性使用案例。随着汽车制造商不断开发SAE 3级及以上系统来提高乘客的安全性和舒适性，交通管理机构需要建立新程序来管理从人工驾驶到完全自动驾驶车辆的过渡，并提供一个反馈机制来微调设想的自动驾驶系统。因此，自动对自动驾驶车辆进行自动分析并将其与人工驾驶车辆区分开是必要的。本文提出了一个完整的框架，通过监视使用摄像头图像和状态信息的活动车辆，以确定车辆是否为自动驾驶，而无需车辆主动通知。基本上，它依赖车辆之间的合作，这些车辆共享在道路上获取的数据，供机器学习使用。
 
-    Human impressions of robot performance are often measured through surveys. As a more scalable and cost-effective alternative, we study the possibility of predicting people's impressions of robot behavior using non-verbal behavioral cues and machine learning techniques. To this end, we first contribute the SEAN TOGETHER Dataset consisting of observations of an interaction between a person and a mobile robot in a Virtual Reality simulation, together with impressions of robot performance provided by users on a 5-point scale. Second, we contribute analyses of how well humans and supervised learning techniques can predict perceived robot performance based on different combinations of observation types (e.g., facial, spatial, and map features). Our results show that facial expressions alone provide useful information about human impressions of robot performance; but in the navigation scenarios we tested, spatial features are the most critical piece of information for this inference task. Als
+    arXiv:2403.09571v1 Announce Type: cross  Abstract: The tremendous hype around autonomous driving is eagerly calling for emerging and novel technologies to support advanced mobility use cases. As car manufactures keep developing SAE level 3+ systems to improve the safety and comfort of passengers, traffic authorities need to establish new procedures to manage the transition from human-driven to fully-autonomous vehicles while providing a feedback-loop mechanism to fine-tune envisioned autonomous systems. Thus, a way to automatically profile autonomous vehicles and differentiate those from human-driven ones is a must. In this paper, we present a fully-fledged framework that monitors active vehicles using camera images and state information in order to determine whether vehicles are autonomous, without requiring any active notification from the vehicles themselves. Essentially, it builds on the cooperation among vehicles, which share their data acquired on the road feeding a machine learn
     
 
