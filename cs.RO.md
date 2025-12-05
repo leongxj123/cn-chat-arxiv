@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Are you a robot? Detecting Autonomous Vehicles from Behavior Analysis](https://arxiv.org/abs/2403.09571) | 提出了一个框架，通过监视车辆的行为和状态信息来自动识别自动驾驶车辆，无需车辆主动通知。 |
+| [^1] | [Purpose for Open-Ended Learning Robots: A Computational Taxonomy, Definition, and Operationalisation](https://arxiv.org/abs/2403.02514) | 提出了设定机器人目的的概念，以帮助机器人更加关注获取与目的相关的知识。 |
 
 # 详细
 
-[^1]: 你是机器人吗？从行为分析中检测自动驾驶车辆
+[^1]: 为开放式学习机器人设定目的：一个计算分类、定义和操作化
 
-    Are you a robot? Detecting Autonomous Vehicles from Behavior Analysis
+    Purpose for Open-Ended Learning Robots: A Computational Taxonomy, Definition, and Operationalisation
 
-    [https://arxiv.org/abs/2403.09571](https://arxiv.org/abs/2403.09571)
+    [https://arxiv.org/abs/2403.02514](https://arxiv.org/abs/2403.02514)
 
-    提出了一个框架，通过监视车辆的行为和状态信息来自动识别自动驾驶车辆，无需车辆主动通知。
+    提出了设定机器人目的的概念，以帮助机器人更加关注获取与目的相关的知识。
 
     
 
-    自动驾驶技术的巨大热潮急切地呼唤新兴和创新技术，以支持先进的移动性使用案例。随着汽车制造商不断开发SAE 3级及以上系统来提高乘客的安全性和舒适性，交通管理机构需要建立新程序来管理从人工驾驶到完全自动驾驶车辆的过渡，并提供一个反馈机制来微调设想的自动驾驶系统。因此，自动对自动驾驶车辆进行自动分析并将其与人工驾驶车辆区分开是必要的。本文提出了一个完整的框架，通过监视使用摄像头图像和状态信息的活动车辆，以确定车辆是否为自动驾驶，而无需车辆主动通知。基本上，它依赖车辆之间的合作，这些车辆共享在道路上获取的数据，供机器学习使用。
+    arXiv:2403.02514v1 公告类型: 跨领域 摘要: 自主开放式学习(OEL)机器人能够通过与环境的直接交互累积获取新技能和知识，例如依靠内在动机和自动生成的目标的指导。OEL机器人对应用具有很高的相关性，因为它们可以使用自主获取的知识来完成对人类用户有关的任务。然而，OEL机器人面临一个重要限制：这可能导致获取的知识对完成用户任务并不那么重要。本文分析了这个问题的一个可能解决方案，它围绕“目的”这一新概念展开。目的表示设计者和/或用户希望机器人从中获得什么。机器人应使用目的的内部表征，这里称为“愿望”，来将其开放式探索集中于获取与其完成目的相关的知识。这项工作有助于发展一个共同
 
-    arXiv:2403.09571v1 Announce Type: cross  Abstract: The tremendous hype around autonomous driving is eagerly calling for emerging and novel technologies to support advanced mobility use cases. As car manufactures keep developing SAE level 3+ systems to improve the safety and comfort of passengers, traffic authorities need to establish new procedures to manage the transition from human-driven to fully-autonomous vehicles while providing a feedback-loop mechanism to fine-tune envisioned autonomous systems. Thus, a way to automatically profile autonomous vehicles and differentiate those from human-driven ones is a must. In this paper, we present a fully-fledged framework that monitors active vehicles using camera images and state information in order to determine whether vehicles are autonomous, without requiring any active notification from the vehicles themselves. Essentially, it builds on the cooperation among vehicles, which share their data acquired on the road feeding a machine learn
+    arXiv:2403.02514v1 Announce Type: cross  Abstract: Autonomous open-ended learning (OEL) robots are able to cumulatively acquire new skills and knowledge through direct interaction with the environment, for example relying on the guidance of intrinsic motivations and self-generated goals. OEL robots have a high relevance for applications as they can use the autonomously acquired knowledge to accomplish tasks relevant for their human users. OEL robots, however, encounter an important limitation: this may lead to the acquisition of knowledge that is not so much relevant to accomplish the users' tasks. This work analyses a possible solution to this problem that pivots on the novel concept of `purpose'. Purposes indicate what the designers and/or users want from the robot. The robot should use internal representations of purposes, called here `desires', to focus its open-ended exploration towards the acquisition of knowledge relevant to accomplish them. This work contributes to develop a co
     
 
