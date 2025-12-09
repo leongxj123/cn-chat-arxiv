@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Efficient adjustment for complex covariates: Gaining efficiency with DOPE](https://arxiv.org/abs/2402.12980) | 提出了一种适应任何协变量信息子集的调整的通用框架，并通过理论结果引入了Debiased Outcome-adapted Propensity Estimator（DOPE）以实现有效调整。 |
+| [^1] | [Theoretical Guarantees for the Subspace-Constrained Tyler's Estimator](https://arxiv.org/abs/2403.18658) | 该论文分析了子空间约束的Tyler估计器用于在高度受到离群值污染的数据集中恢复低维子空间的情况，并展示了当初始化条件得到满足时，该估计器可以有效地恢复潜在的子空间。 |
 
 # 详细
 
-[^1]: 复杂协变量的有效调整：利用DOPE提高效率
+[^1]: 对子空间约束的Tyler估计器的理论保证
 
-    Efficient adjustment for complex covariates: Gaining efficiency with DOPE
+    Theoretical Guarantees for the Subspace-Constrained Tyler's Estimator
 
-    [https://arxiv.org/abs/2402.12980](https://arxiv.org/abs/2402.12980)
+    [https://arxiv.org/abs/2403.18658](https://arxiv.org/abs/2403.18658)
 
-    提出了一种适应任何协变量信息子集的调整的通用框架，并通过理论结果引入了Debiased Outcome-adapted Propensity Estimator（DOPE）以实现有效调整。
+    该论文分析了子空间约束的Tyler估计器用于在高度受到离群值污染的数据集中恢复低维子空间的情况，并展示了当初始化条件得到满足时，该估计器可以有效地恢复潜在的子空间。
 
     
 
-    协变量调整是一种用于从观测数据中估计平均处理效应（ATE）的普遍方法。最近的研究结果假设数据生成模型的图结构已知，给出了用于最佳调整的图形标准，从而实现了ATE的有效估计。然而，对于高维和复杂数据，图形方法具有挑战性，并且要指定非欧几里得数据（如文本）的有意义图形模型并不简单。我们提出了一个通用框架，可适应由协变量表达的任何信息子集的调整。我们推广了先前的工作，并利用这些结果识别了用于有效调整的最佳协变量信息。这些信息在给定处理条件下对结果的预测是最小充分的。
+    本文分析了用于恢复可能受到严重污染的数据集中的低维子空间的子空间约束的Tyler估计器（STE）。它假设一个弱的内点-外点模型，并允许内点的比例小于导致鲁棒子空间恢复问题计算困难的比例。在这种情况下，它显示如果STE的初始化满足某些条件，那么STE可以有效地恢复潜在的子空间。此外，它还表明在广义的干草堆模型下，由Tyler的M-估计器（TME）初始化的STE可以在内点的比例太小以至于TME无法处理时恢复子空间。
 
-    arXiv:2402.12980v1 Announce Type: cross  Abstract: Covariate adjustment is a ubiquitous method used to estimate the average treatment effect (ATE) from observational data. Assuming a known graphical structure of the data generating model, recent results give graphical criteria for optimal adjustment, which enables efficient estimation of the ATE. However, graphical approaches are challenging for high-dimensional and complex data, and it is not straightforward to specify a meaningful graphical model of non-Euclidean data such as texts. We propose an general framework that accommodates adjustment for any subset of information expressed by the covariates. We generalize prior works and leverage these results to identify the optimal covariate information for efficient adjustment. This information is minimally sufficient for prediction of the outcome conditionally on treatment.   Based on our theoretical results, we propose the Debiased Outcome-adapted Propensity Estimator (DOPE) for efficie
+    arXiv:2403.18658v1 Announce Type: cross  Abstract: This work analyzes the subspace-constrained Tyler's estimator (STE) designed for recovering a low-dimensional subspace within a dataset that may be highly corrupted with outliers. It assumes a weak inlier-outlier model and allows the fraction of inliers to be smaller than a fraction that leads to computational hardness of the robust subspace recovery problem. It shows that in this setting, if the initialization of STE, which is an iterative algorithm, satisfies a certain condition, then STE can effectively recover the underlying subspace. It further shows that under the generalized haystack model, STE initialized by the Tyler's M-estimator (TME), can recover the subspace when the fraction of iniliers is too small for TME to handle.
     
 
