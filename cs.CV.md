@@ -2,22 +2,9 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [MiniGPT-5: Interleaved Vision-and-Language Generation via Generative Vokens.](http://arxiv.org/abs/2310.02239) | MiniGPT-5使用生成凭据作为桥梁，引入了一种创新的交错视觉与语言生成技术，并通过独特的两阶段训练策略和无分类器的指导来实现无描述的多模态生成。 |
+
 
 # 详细
 
-[^1]: MiniGPT-5: 通过生成凭据实现交错的视觉与语言生成
 
-    MiniGPT-5: Interleaved Vision-and-Language Generation via Generative Vokens. (arXiv:2310.02239v2 [cs.CV] UPDATED)
-
-    [http://arxiv.org/abs/2310.02239](http://arxiv.org/abs/2310.02239)
-
-    MiniGPT-5使用生成凭据作为桥梁，引入了一种创新的交错视觉与语言生成技术，并通过独特的两阶段训练策略和无分类器的指导来实现无描述的多模态生成。
-
-    
-
-    大型语言模型（LLMs）因其在自然语言处理方面的进展而引起了广泛关注，展示了在文本理解和生成方面无与伦比的能力。然而，同时生成具有连贯文本叙述的图像仍然是一个不断发展的前沿。为此，我们引入了一种创新的交错视觉与语言生成技术，以"生成凭据"的概念为基础，作为协调图像文本输出的桥梁。我们的方法特点是独特的两阶段训练策略，重点是无描述的多模态生成，训练过程不需要对图像进行全面的描述。为了增强模型的完整性，我们还引入了无分类器的指导，增强了生成凭据在图像生成方面的效果。我们的模型MiniGPT-5在MMDialog数据集上相比基线Divter模型有显著改进，并始终提供优越或可比的多模态输出。
-
-    Large Language Models (LLMs) have garnered significant attention for their advancements in natural language processing, demonstrating unparalleled prowess in text comprehension and generation. Yet, the simultaneous generation of images with coherent textual narratives remains an evolving frontier. In response, we introduce an innovative interleaved vision-and-language generation technique anchored by the concept of "generative vokens," acting as the bridge for harmonized image-text outputs. Our approach is characterized by a distinctive two-staged training strategy focusing on description-free multimodal generation, where the training requires no comprehensive descriptions of images. To bolster model integrity, classifier-free guidance is incorporated, enhancing the effectiveness of vokens on image generation. Our model, MiniGPT-5, exhibits substantial improvement over the baseline Divter model on the MMDialog dataset and consistently delivers superior or comparable multimodal outputs 
-    
 
