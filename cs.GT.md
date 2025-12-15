@@ -2,9 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-
+| [^1] | [Data as voters: instance selection using approval-based multi-winner voting.](http://arxiv.org/abs/2304.09995) | 该论文提出了一种基于赞成票的多获胜者投票的实例选择方法，通过代表性投票规则选择获胜者，并将其作为减少训练集的数据实例。 |
 
 # 详细
 
+[^1]: 基于投票的实例筛选方法：使用基于赞成票的多获胜者投票
 
+    Data as voters: instance selection using approval-based multi-winner voting. (arXiv:2304.09995v1 [cs.LG])
+
+    [http://arxiv.org/abs/2304.09995](http://arxiv.org/abs/2304.09995)
+
+    该论文提出了一种基于赞成票的多获胜者投票的实例选择方法，通过代表性投票规则选择获胜者，并将其作为减少训练集的数据实例。
+
+    
+
+    我们提出了一种新的机器学习（或数据挖掘）中的实例筛选方法。我们的方法基于最近关于基于赞成票的多获胜者选举中代表性表征的结果。在我们的模型中，实例扮演选民和候选人的双重角色。每个训练集中的实例（作为选民）赞成其本地集合中的实例（扮演候选人的角色）（除自身以外的实例），这个概念在文献中已经存在。然后，我们使用代表性投票规则选择选举获胜者，并作为减少训练集中的数据实例保留。
+
+    We present a novel approach to the instance selection problem in machine learning (or data mining). Our approach is based on recent results on (proportional) representation in approval-based multi-winner elections. In our model, instances play a double role as voters and candidates. Each instance in the training set (acting as a voter) approves of the instances (playing the role of candidates) belonging to its local set (except itself), a concept already existing in the literature. We then select the election winners using a representative voting rule, and such winners are the data instances kept in the reduced training set.
+    
 
