@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Statistical inference for pairwise comparison models.](http://arxiv.org/abs/2401.08463) | 本论文通过建立极大似然估计量的渐近正态性结果，填补了配对比较模型中统计推断的空白，为各种配对比较模型提供了统一的方法，超越了Bradley-Terry模型，为实践者提供了坚实的理论保证。 |
+| [^1] | [Theoretical Guarantees of Learning Ensembling Strategies with Applications to Time Series Forecasting.](http://arxiv.org/abs/2305.15786) | 本文研究了学习集合策略在时间序列预测中的应用，证明了在有限或有限维叠加泛化模型中选择基于交叉验证性能的最优叠加泛化与最优解性能相近。 |
 
 # 详细
 
-[^1]: 对于配对比较模型的统计推断
+[^1]: 学习集合策略的理论保证及其在时间序列预测中的应用
 
-    Statistical inference for pairwise comparison models. (arXiv:2401.08463v1 [math.ST])
+    Theoretical Guarantees of Learning Ensembling Strategies with Applications to Time Series Forecasting. (arXiv:2305.15786v1 [cs.LG])
 
-    [http://arxiv.org/abs/2401.08463](http://arxiv.org/abs/2401.08463)
+    [http://arxiv.org/abs/2305.15786](http://arxiv.org/abs/2305.15786)
 
-    本论文通过建立极大似然估计量的渐近正态性结果，填补了配对比较模型中统计推断的空白，为各种配对比较模型提供了统一的方法，超越了Bradley-Terry模型，为实践者提供了坚实的理论保证。
+    本文研究了学习集合策略在时间序列预测中的应用，证明了在有限或有限维叠加泛化模型中选择基于交叉验证性能的最优叠加泛化与最优解性能相近。
 
     
 
-    配对比较模型被用于各个领域的实用性和排名评估。现代问题规模的增加强调了对于当被比较对象数量无限增加时，对于这些模型中的统计推断的理解的需求。目前，文献中对于这些模型中的统计推断的理解还相当有限，除非只是在少数特殊实例中。本文通过在广泛的配对比较模型中建立极大似然估计量的渐近正态性结果来填补这一空白。关键思想在于将费舍尔信息矩阵识别为加权图拉普拉斯矩阵，通过一种细致入微的谱分析方法来进行研究。我们的发现为在各种配对比较模型中进行统计推断提供了第一个统一的方法，超越了Bradley-Terry模型，为实践者提供了坚实的理论保证。通过利用合成数据进行的模拟验证这一渐近正态性结果，然后进行了
+    集合是机器学习中最常用的工具之一，由于其能够有效地减少方差，从而提高泛化性能。针对黑盒基学习器的大多数集合方法都属于“叠加泛化”范畴，即训练一个接受基学习器推理作为输入的机器学习算法。虽然叠加泛化在实践中广泛应用，但其理论性质仍然不为人所知。本文证明了一个新的结果，表明选择基于交叉验证性能的“有限或有限维”叠加泛化中的最佳叠加泛化并不比最优解表现“差得多”。这一结果加强和大大扩展了Van der Laan等人（2007年）的结果。受到理论分析的启发，我们在概率预测的背景下进一步提出了一系列不同敏感性的叠加泛化模型。
 
-    Pairwise comparison models are used for quantitatively evaluating utility and ranking in various fields. The increasing scale of modern problems underscores the need to understand statistical inference in these models when the number of subjects diverges, which is currently lacking in the literature except in a few special instances. This paper addresses this gap by establishing an asymptotic normality result for the maximum likelihood estimator in a broad class of pairwise comparison models. The key idea lies in identifying the Fisher information matrix as a weighted graph Laplacian matrix which can be studied via a meticulous spectral analysis. Our findings provide the first unified theory for performing statistical inference in a wide range of pairwise comparison models beyond the Bradley--Terry model, benefiting practitioners with a solid theoretical guarantee for their use. Simulations utilizing synthetic data are conducted to validate the asymptotic normality result, followed by 
+    Ensembling is among the most popular tools in machine learning (ML) due to its effectiveness in minimizing variance and thus improving generalization. Most ensembling methods for black-box base learners fall under the umbrella of "stacked generalization," namely training an ML algorithm that takes the inferences from the base learners as input. While stacking has been widely applied in practice, its theoretical properties are poorly understood. In this paper, we prove a novel result, showing that choosing the best stacked generalization from a (finite or finite-dimensional) family of stacked generalizations based on cross-validated performance does not perform "much worse" than the oracle best. Our result strengthens and significantly extends the results in Van der Laan et al. (2007). Inspired by the theoretical analysis, we further propose a particular family of stacked generalizations in the context of probabilistic forecasting, each one with a different sensitivity for how much the 
     
 

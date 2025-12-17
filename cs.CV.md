@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [3D Human Pose Analysis via Diffusion Synthesis.](http://arxiv.org/abs/2401.08930) | 本文提出了一种名为PADS的框架，通过扩散合成过程学习姿势先验，解决3D人体姿势分析中的各种挑战，将多个姿势分析任务统一为逆问题的实例，验证了其性能和适应性。 |
+| [^1] | [MIMIR: Masked Image Modeling for Mutual Information-based Adversarial Robustness.](http://arxiv.org/abs/2312.04960) | MIMIR提出了一种新颖的防御方法，通过在预训练中利用遮罩图像建模，构建了一个不同的对抗性训练方法。该方法旨在增强Vision Transformers（ViTs）对抗攻击的鲁棒性。 |
 
 # 详细
 
-[^1]: 通过扩散合成进行3D人体姿势分析
+[^1]: MIMIR: 基于互信息的对抗鲁棒性的遮罩图像建模
 
-    3D Human Pose Analysis via Diffusion Synthesis. (arXiv:2401.08930v1 [cs.CV])
+    MIMIR: Masked Image Modeling for Mutual Information-based Adversarial Robustness. (arXiv:2312.04960v2 [cs.CV] UPDATED)
 
-    [http://arxiv.org/abs/2401.08930](http://arxiv.org/abs/2401.08930)
+    [http://arxiv.org/abs/2312.04960](http://arxiv.org/abs/2312.04960)
 
-    本文提出了一种名为PADS的框架，通过扩散合成过程学习姿势先验，解决3D人体姿势分析中的各种挑战，将多个姿势分析任务统一为逆问题的实例，验证了其性能和适应性。
+    MIMIR提出了一种新颖的防御方法，通过在预训练中利用遮罩图像建模，构建了一个不同的对抗性训练方法。该方法旨在增强Vision Transformers（ViTs）对抗攻击的鲁棒性。
 
     
 
-    扩散模型在生成建模方面取得了显著的成功。本文提出了一种名为PADS（通过扩散合成进行姿势分析）的新框架，旨在通过一个统一的流程解决3D人体姿势分析中的各种挑战。PADS的核心是两个独特的策略：i）使用扩散合成过程学习一个任务无关的姿势先验，从而有效地捕捉人体姿势数据中的运动约束；ii）将估计、补全、去噪等多个姿势分析任务统一为逆问题的实例。学习到的姿势先验将被视为对任务特定约束的正则化，通过一系列条件去噪步骤引导优化过程。PADS代表了首个基于扩散的框架，用于解决逆问题框架内的通用3D人体姿势分析。其性能已在不同基准测试上得到了验证，显示出其适应性和鲁棒性。
+    视觉变压器（ViTs）相对于卷积神经网络（CNNs）在各种任务上实现了卓越的性能，但ViTs也容易受到对抗性攻击。对抗性训练是建立强大的CNN模型的最成功方法之一。因此，最近的研究探索了基于ViTs和CNNs之间的差异的对抗性训练的新方法，如更好的训练策略，防止注意力集中在单个块上，或丢弃低注意力的嵌入。然而，这些方法仍然遵循传统监督对抗训练的设计，限制了对ViTs的对抗训练的潜力。本文提出了一种新颖的防御方法MIMIR，旨在通过利用预训练中的遮罩图像建模构建不同的对抗性训练方法。我们创建了一个自编码器，它接受对抗性例子作为输入，但将干净的例子作为建模目标。然后，我们创建了一个互信息（MI）
 
-    Diffusion models have demonstrated remarkable success in generative modeling. In this paper, we propose PADS (Pose Analysis by Diffusion Synthesis), a novel framework designed to address various challenges in 3D human pose analysis through a unified pipeline. Central to PADS are two distinctive strategies: i) learning a task-agnostic pose prior using a diffusion synthesis process to effectively capture the kinematic constraints in human pose data, and ii) unifying multiple pose analysis tasks like estimation, completion, denoising, etc, as instances of inverse problems. The learned pose prior will be treated as a regularization imposing on task-specific constraints, guiding the optimization process through a series of conditional denoising steps. PADS represents the first diffusion-based framework for tackling general 3D human pose analysis within the inverse problem framework. Its performance has been validated on different benchmarks, signaling the adaptability and robustness of this
+    Vision Transformers (ViTs) achieve superior performance on various tasks compared to convolutional neural networks (CNNs), but ViTs are also vulnerable to adversarial attacks. Adversarial training is one of the most successful methods to build robust CNN models. Thus, recent works explored new methodologies for adversarial training of ViTs based on the differences between ViTs and CNNs, such as better training strategies, preventing attention from focusing on a single block, or discarding low-attention embeddings. However, these methods still follow the design of traditional supervised adversarial training, limiting the potential of adversarial training on ViTs. This paper proposes a novel defense method, MIMIR, which aims to build a different adversarial training methodology by utilizing Masked Image Modeling at pre-training. We create an autoencoder that accepts adversarial examples as input but takes the clean examples as the modeling target. Then, we create a mutual information (MI
     
 
