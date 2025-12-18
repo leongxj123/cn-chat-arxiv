@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Theoretical Guarantees of Learning Ensembling Strategies with Applications to Time Series Forecasting.](http://arxiv.org/abs/2305.15786) | 本文研究了学习集合策略在时间序列预测中的应用，证明了在有限或有限维叠加泛化模型中选择基于交叉验证性能的最优叠加泛化与最优解性能相近。 |
+| [^1] | [Testing for equivalence of pre-trends in Difference-in-Differences estimation.](http://arxiv.org/abs/2310.15796) | 本文提出了一种测试方法，旨在评估Difference-in-Differences估计中“平行趋势假设”的合理性，从而提高治疗效果估计的可信度。 |
 
 # 详细
 
-[^1]: 学习集合策略的理论保证及其在时间序列预测中的应用
+[^1]: Difference-in-Differences估计中的前期趋势等效性测试
 
-    Theoretical Guarantees of Learning Ensembling Strategies with Applications to Time Series Forecasting. (arXiv:2305.15786v1 [cs.LG])
+    Testing for equivalence of pre-trends in Difference-in-Differences estimation. (arXiv:2310.15796v1 [econ.EM])
 
-    [http://arxiv.org/abs/2305.15786](http://arxiv.org/abs/2305.15786)
+    [http://arxiv.org/abs/2310.15796](http://arxiv.org/abs/2310.15796)
 
-    本文研究了学习集合策略在时间序列预测中的应用，证明了在有限或有限维叠加泛化模型中选择基于交叉验证性能的最优叠加泛化与最优解性能相近。
+    本文提出了一种测试方法，旨在评估Difference-in-Differences估计中“平行趋势假设”的合理性，从而提高治疗效果估计的可信度。
 
     
 
-    集合是机器学习中最常用的工具之一，由于其能够有效地减少方差，从而提高泛化性能。针对黑盒基学习器的大多数集合方法都属于“叠加泛化”范畴，即训练一个接受基学习器推理作为输入的机器学习算法。虽然叠加泛化在实践中广泛应用，但其理论性质仍然不为人所知。本文证明了一个新的结果，表明选择基于交叉验证性能的“有限或有限维”叠加泛化中的最佳叠加泛化并不比最优解表现“差得多”。这一结果加强和大大扩展了Van der Laan等人（2007年）的结果。受到理论分析的启发，我们在概率预测的背景下进一步提出了一系列不同敏感性的叠加泛化模型。
+    通常通过对双组平均结果的差异在治疗前时间段保持恒定的零假设进行测试来评估Difference-in-Differences估计中“平行趋势假设”的合理性。然而，未能拒绝零假设并不意味着两组之间的时间趋势没有差异。我们提供了等效性测试，使研究人员能够找到支持平行趋势假设的证据，从而增加他们的治疗效果估计的可信度。虽然我们在标准的双向固定效应模型中对我们的测试进行了解释，但我们还讨论了在时间分散的治疗采用设置中的简单扩展。
 
-    Ensembling is among the most popular tools in machine learning (ML) due to its effectiveness in minimizing variance and thus improving generalization. Most ensembling methods for black-box base learners fall under the umbrella of "stacked generalization," namely training an ML algorithm that takes the inferences from the base learners as input. While stacking has been widely applied in practice, its theoretical properties are poorly understood. In this paper, we prove a novel result, showing that choosing the best stacked generalization from a (finite or finite-dimensional) family of stacked generalizations based on cross-validated performance does not perform "much worse" than the oracle best. Our result strengthens and significantly extends the results in Van der Laan et al. (2007). Inspired by the theoretical analysis, we further propose a particular family of stacked generalizations in the context of probabilistic forecasting, each one with a different sensitivity for how much the 
+    The plausibility of the ``parallel trends assumption'' in Difference-in-Differences estimation is usually assessed by a test of the null hypothesis that the difference between the average outcomes of both groups is constant over time before the treatment. However, failure to reject the null hypothesis does not imply the absence of differences in time trends between both groups. We provide equivalence tests that allow researchers to find evidence in favor of the parallel trends assumption and thus increase the credibility of their treatment effect estimates. While we motivate our tests in the standard two-way fixed effects model, we discuss simple extensions to settings in which treatment adoption is staggered over time.
     
 

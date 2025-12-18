@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [MIMIR: Masked Image Modeling for Mutual Information-based Adversarial Robustness.](http://arxiv.org/abs/2312.04960) | MIMIR提出了一种新颖的防御方法，通过在预训练中利用遮罩图像建模，构建了一个不同的对抗性训练方法。该方法旨在增强Vision Transformers（ViTs）对抗攻击的鲁棒性。 |
+| [^1] | [REAL: Representation Enhanced Analytic Learning for Exemplar-free Class-incremental Learning](https://arxiv.org/abs/2403.13522) | 本文提出了REAL方法，通过构建双流基础预训练和表示增强蒸馏过程来增强提取器的表示，从而解决了无范例类增量学习中的遗忘问题。 |
 
 # 详细
 
-[^1]: MIMIR: 基于互信息的对抗鲁棒性的遮罩图像建模
+[^1]: REAL：用于无范例类增量学习的表示增强分析学习
 
-    MIMIR: Masked Image Modeling for Mutual Information-based Adversarial Robustness. (arXiv:2312.04960v2 [cs.CV] UPDATED)
+    REAL: Representation Enhanced Analytic Learning for Exemplar-free Class-incremental Learning
 
-    [http://arxiv.org/abs/2312.04960](http://arxiv.org/abs/2312.04960)
+    [https://arxiv.org/abs/2403.13522](https://arxiv.org/abs/2403.13522)
 
-    MIMIR提出了一种新颖的防御方法，通过在预训练中利用遮罩图像建模，构建了一个不同的对抗性训练方法。该方法旨在增强Vision Transformers（ViTs）对抗攻击的鲁棒性。
+    本文提出了REAL方法，通过构建双流基础预训练和表示增强蒸馏过程来增强提取器的表示，从而解决了无范例类增量学习中的遗忘问题。
 
     
 
-    视觉变压器（ViTs）相对于卷积神经网络（CNNs）在各种任务上实现了卓越的性能，但ViTs也容易受到对抗性攻击。对抗性训练是建立强大的CNN模型的最成功方法之一。因此，最近的研究探索了基于ViTs和CNNs之间的差异的对抗性训练的新方法，如更好的训练策略，防止注意力集中在单个块上，或丢弃低注意力的嵌入。然而，这些方法仍然遵循传统监督对抗训练的设计，限制了对ViTs的对抗训练的潜力。本文提出了一种新颖的防御方法MIMIR，旨在通过利用预训练中的遮罩图像建模构建不同的对抗性训练方法。我们创建了一个自编码器，它接受对抗性例子作为输入，但将干净的例子作为建模目标。然后，我们创建了一个互信息（MI）
+    无范例的类增量学习(EFCIL)旨在减轻类增量学习中的灾难性遗忘，而没有可用的历史数据。与存储历史样本的回放式CIL相比，EFCIL在无范例约束下更容易遗忘。在本文中，受最近发展的基于分析学习(AL)的CIL的启发，我们提出了一种用于EFCIL的表示增强分析学习(REAL)。REAL构建了一个双流基础预训练(DS-BPT)和一个表示增强蒸馏(RED)过程，以增强提取器的表示。DS-BPT在监督学习和自监督对比学习(SSCL)两个流中预训练模型，用于基础知识提取。RED过程将监督知识提炼到SSCL预训练骨干部分，促进后续的基于AL的CIL，将CIL转换为递归最小化学习
 
-    Vision Transformers (ViTs) achieve superior performance on various tasks compared to convolutional neural networks (CNNs), but ViTs are also vulnerable to adversarial attacks. Adversarial training is one of the most successful methods to build robust CNN models. Thus, recent works explored new methodologies for adversarial training of ViTs based on the differences between ViTs and CNNs, such as better training strategies, preventing attention from focusing on a single block, or discarding low-attention embeddings. However, these methods still follow the design of traditional supervised adversarial training, limiting the potential of adversarial training on ViTs. This paper proposes a novel defense method, MIMIR, which aims to build a different adversarial training methodology by utilizing Masked Image Modeling at pre-training. We create an autoencoder that accepts adversarial examples as input but takes the clean examples as the modeling target. Then, we create a mutual information (MI
+    arXiv:2403.13522v1 Announce Type: new  Abstract: Exemplar-free class-incremental learning (EFCIL) aims to mitigate catastrophic forgetting in class-incremental learning without available historical data. Compared with its counterpart (replay-based CIL) that stores historical samples, the EFCIL suffers more from forgetting issues under the exemplar-free constraint. In this paper, inspired by the recently developed analytic learning (AL) based CIL, we propose a representation enhanced analytic learning (REAL) for EFCIL. The REAL constructs a dual-stream base pretraining (DS-BPT) and a representation enhancing distillation (RED) process to enhance the representation of the extractor. The DS-BPT pretrains model in streams of both supervised learning and self-supervised contrastive learning (SSCL) for base knowledge extraction. The RED process distills the supervised knowledge to the SSCL pretrained backbone and facilitates a subsequent AL-basd CIL that converts the CIL to a recursive least
     
 
