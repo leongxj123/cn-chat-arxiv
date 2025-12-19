@@ -2,22 +2,9 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Testing for equivalence of pre-trends in Difference-in-Differences estimation.](http://arxiv.org/abs/2310.15796) | 本文提出了一种测试方法，旨在评估Difference-in-Differences估计中“平行趋势假设”的合理性，从而提高治疗效果估计的可信度。 |
+
 
 # 详细
 
-[^1]: Difference-in-Differences估计中的前期趋势等效性测试
 
-    Testing for equivalence of pre-trends in Difference-in-Differences estimation. (arXiv:2310.15796v1 [econ.EM])
-
-    [http://arxiv.org/abs/2310.15796](http://arxiv.org/abs/2310.15796)
-
-    本文提出了一种测试方法，旨在评估Difference-in-Differences估计中“平行趋势假设”的合理性，从而提高治疗效果估计的可信度。
-
-    
-
-    通常通过对双组平均结果的差异在治疗前时间段保持恒定的零假设进行测试来评估Difference-in-Differences估计中“平行趋势假设”的合理性。然而，未能拒绝零假设并不意味着两组之间的时间趋势没有差异。我们提供了等效性测试，使研究人员能够找到支持平行趋势假设的证据，从而增加他们的治疗效果估计的可信度。虽然我们在标准的双向固定效应模型中对我们的测试进行了解释，但我们还讨论了在时间分散的治疗采用设置中的简单扩展。
-
-    The plausibility of the ``parallel trends assumption'' in Difference-in-Differences estimation is usually assessed by a test of the null hypothesis that the difference between the average outcomes of both groups is constant over time before the treatment. However, failure to reject the null hypothesis does not imply the absence of differences in time trends between both groups. We provide equivalence tests that allow researchers to find evidence in favor of the parallel trends assumption and thus increase the credibility of their treatment effect estimates. While we motivate our tests in the standard two-way fixed effects model, we discuss simple extensions to settings in which treatment adoption is staggered over time.
-    
 
