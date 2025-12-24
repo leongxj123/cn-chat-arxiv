@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Optimal Scoring for Dynamic Information Acquisition.](http://arxiv.org/abs/2310.19147) | 这篇论文研究了一个委托人通过雇佣代理人以动态方式获取信息的问题，在条件允许的情况下，委托人无法通过一次性收集所有信息之后再从代理人那里获取单个报告来获得更好的结果，并且在较强的条件违反下，静态合同是次优的。与此同时，该论文还展示了在动态环境中，即使代理人对状态预测错误，最优合同也可能会给予代理人严格正的基本奖励。 |
+| [^1] | [Optimal Budget Aggregation with Single-Peaked Preferences](https://arxiv.org/abs/2402.15904) | 论文研究了具有单峰偏好的最优预算聚合问题，并在多维泛化的星形效用函数类别中探讨不同模型。对于两种备选方案，证明了统一幻影机制是唯一满足比例性的策略证明机制。然后，对于超过两种备选方案的情况，论文表明不存在同时满足效率、策略性和比例性的机制。 |
 
 # 详细
 
-[^1]: 动态信息获取的最佳评分
+[^1]: 具有单峰偏好的最优预算聚合
 
-    Optimal Scoring for Dynamic Information Acquisition. (arXiv:2310.19147v1 [econ.TH])
+    Optimal Budget Aggregation with Single-Peaked Preferences
 
-    [http://arxiv.org/abs/2310.19147](http://arxiv.org/abs/2310.19147)
+    [https://arxiv.org/abs/2402.15904](https://arxiv.org/abs/2402.15904)
 
-    这篇论文研究了一个委托人通过雇佣代理人以动态方式获取信息的问题，在条件允许的情况下，委托人无法通过一次性收集所有信息之后再从代理人那里获取单个报告来获得更好的结果，并且在较强的条件违反下，静态合同是次优的。与此同时，该论文还展示了在动态环境中，即使代理人对状态预测错误，最优合同也可能会给予代理人严格正的基本奖励。
+    论文研究了具有单峰偏好的最优预算聚合问题，并在多维泛化的星形效用函数类别中探讨不同模型。对于两种备选方案，证明了统一幻影机制是唯一满足比例性的策略证明机制。然后，对于超过两种备选方案的情况，论文表明不存在同时满足效率、策略性和比例性的机制。
 
     
 
-    一个委托人试图通过雇佣一个代理人来使用泊松信息到达技术随着时间来获取关于二进制状态的信息。代理人会私下了解这个状态，而委托人无法观察到代理人的努力选择。委托人可以根据代理人的报告序列和实现的状态，以一个固定价值的奖品来奖励代理人。我们确定了一些条件，每个条件都确保委托人无法比在获取了所有信息后从代理人那里提取单个报告更好。我们还证明了在这些条件足够强烈的违反下，这样的静态合同是次优的。我们将我们的解决方案与代理人一次性获取所有信息的情况进行对比；值得注意的是，在动态环境中，即使代理人对状态的预测是错误的，最优合同可能会向代理人提供严格正的基本奖励。
+    我们研究了将分布（如预算提案）聚合成集体分布的问题。理想的聚合机制应该是帕累托有效、策略证明和公平的。大多数先前的工作假设代理根据其理想预算与$\ell_1$距离来评估预算。我们研究并比较了来自星形效用函数更大类别的不同模型，这是单峰偏好的多维泛化。对于两种备选方案的情况，我们通过证明在非常一般的假设下，统一幻影机制是唯一满足比例性的策略证明机制，从而扩展了现有结果。对于超过两种备选方案的情况，我们对$\ell_1$和$\ell_\infty$的不满意性建立了全面的不可能性：没有机制能够同时满足效率、策略性和比例性。
 
-    A principal seeks to learn about a binary state and can do so by enlisting an agent to acquire information over time using a Poisson information arrival technology. The agent learns about this state privately, and his effort choices are unobserved by the principal. The principal can reward the agent with a prize of fixed value as a function of the agent's sequence of reports and the realized state. We identify conditions that each individually ensure that the principal cannot do better than by eliciting a single report from the agent after all information has been acquired. We also show that such a static contract is suboptimal under sufficiently strong violations of these conditions. We contrast our solution to the case where the agent acquires information "all at once;" notably, the optimal contract in the dynamic environment may provide strictly positive base rewards to the agent even if his prediction about the state is incorrect.
+    arXiv:2402.15904v1 Announce Type: new  Abstract: We study the problem of aggregating distributions, such as budget proposals, into a collective distribution. An ideal aggregation mechanism would be Pareto efficient, strategyproof, and fair. Most previous work assumes that agents evaluate budgets according to the $\ell_1$ distance to their ideal budget. We investigate and compare different models from the larger class of star-shaped utility functions - a multi-dimensional generalization of single-peaked preferences. For the case of two alternatives, we extend existing results by proving that under very general assumptions, the uniform phantom mechanism is the only strategyproof mechanism that satisfies proportionality - a minimal notion of fairness introduced by Freeman et al. (2021). Moving to the case of more than two alternatives, we establish sweeping impossibilities for $\ell_1$ and $\ell_\infty$ disutilities: no mechanism satisfies efficiency, strategyproofness, and proportionalit
     
 
