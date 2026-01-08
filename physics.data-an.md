@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A new high-resolution indoor radon map for Germany using a machine learning based probabilistic exposure model.](http://arxiv.org/abs/2310.11143) | 本研究提出了一种基于机器学习的概率暴露模型，可以更准确地估计德国室内氡气分布，并具有更高的空间分辨率。 |
+| [^1] | [Inference in conditioned dynamics through causality restoration.](http://arxiv.org/abs/2210.10179) | 本文提出了一种经由因果性恢复的方式来产生条件分布下的独立样本。 |
 
 # 详细
 
-[^1]: 一种基于机器学习的概率暴露模型的德国高分辨率室内氡气地图
+[^1]: 经由因果性恢复在条件动力学中进行推断
 
-    A new high-resolution indoor radon map for Germany using a machine learning based probabilistic exposure model. (arXiv:2310.11143v1 [stat.ML])
+    Inference in conditioned dynamics through causality restoration. (arXiv:2210.10179v2 [physics.data-an] UPDATED)
 
-    [http://arxiv.org/abs/2310.11143](http://arxiv.org/abs/2310.11143)
+    [http://arxiv.org/abs/2210.10179](http://arxiv.org/abs/2210.10179)
 
-    本研究提出了一种基于机器学习的概率暴露模型，可以更准确地估计德国室内氡气分布，并具有更高的空间分辨率。
+    本文提出了一种经由因果性恢复的方式来产生条件分布下的独立样本。
 
     
 
-    室内氡气是一种致癌的放射性气体，可以在室内积累。通常情况下，全国范围内的室内氡暴露是基于广泛的测量活动估计得来的。然而，样本的特征往往与人口特征不同，这是由于许多相关因素，如地质源氡气的可用性或楼层水平。此外，样本大小通常不允许以高空间分辨率进行暴露估计。我们提出了一种基于模型的方法，可以比纯数据方法更加现实地估计室内氡分布，并具有更高的空间分辨率。我们采用了两阶段建模方法：1）应用分位数回归森林，使用环境和建筑数据作为预测因子，估计了德国每个住宅楼的每个楼层的室内氡概率分布函数；2）使用概率蒙特卡罗抽样技术使它们组合和。
+    从有条件的动力学中计算可观测量通常是计算上困难的，因为虽然从非条件的动力学中高效地获取独立样本通常是可行的，但通常必须丢弃大部分样本(以一种重要性抽样的形式)因为它们不满足所施加的条件。直接从有条件的分布中抽样是不易的，因为条件打破了动力学的因果特性，最终使抽样过程变得低效。一种标准的方法是通过Metropolis Monte-Carlo过程实现，但这个过程通常很慢，需要大量的Monte-Carlo步骤来获得少量的统计独立样本。我们提出了一种替代方法，用于从有条件的分布中产生独立的样本。该方法学习一个广义动力学模型的参数，该模型最优地描述了条件分布的变分。
 
-    Radon is a carcinogenic, radioactive gas that can accumulate indoors. Indoor radon exposure at the national scale is usually estimated on the basis of extensive measurement campaigns. However, characteristics of the sample often differ from the characteristics of the population due to the large number of relevant factors such as the availability of geogenic radon or floor level. Furthermore, the sample size usually does not allow exposure estimation with high spatial resolution. We propose a model-based approach that allows a more realistic estimation of indoor radon distribution with a higher spatial resolution than a purely data-based approach. We applied a two-stage modelling approach: 1) a quantile regression forest using environmental and building data as predictors was applied to estimate the probability distribution function of indoor radon for each floor level of each residential building in Germany; (2) a probabilistic Monte Carlo sampling technique enabled the combination and
+    Computing observables from conditioned dynamics is typically computationally hard, because, although obtaining independent samples efficiently from the unconditioned dynamics is usually feasible, generally most of the samples must be discarded (in a form of importance sampling) because they do not satisfy the imposed conditions. Sampling directly from the conditioned distribution is non-trivial, as conditioning breaks the causal properties of the dynamics which ultimately renders the sampling procedure efficient. One standard way of achieving it is through a Metropolis Monte-Carlo procedure, but this procedure is normally slow and a very large number of Monte-Carlo steps is needed to obtain a small number of statistically independent samples. In this work, we propose an alternative method to produce independent samples from a conditioned distribution. The method learns the parameters of a generalized dynamical model that optimally describe the conditioned distribution in a variational 
     
 

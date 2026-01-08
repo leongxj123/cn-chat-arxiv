@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv q-bio</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for q-bio</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv q-bio</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for q-bio</description><item><title>&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#32463;&#30001;&#22240;&#26524;&#24615;&#24674;&#22797;&#30340;&#26041;&#24335;&#26469;&#20135;&#29983;&#26465;&#20214;&#20998;&#24067;&#19979;&#30340;&#29420;&#31435;&#26679;&#26412;&#12290;</title><link>http://arxiv.org/abs/2210.10179</link><description>&lt;p&gt;
+&#32463;&#30001;&#22240;&#26524;&#24615;&#24674;&#22797;&#22312;&#26465;&#20214;&#21160;&#21147;&#23398;&#20013;&#36827;&#34892;&#25512;&#26029;
+&lt;/p&gt;
+&lt;p&gt;
+Inference in conditioned dynamics through causality restoration. (arXiv:2210.10179v2 [physics.data-an] UPDATED)
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2210.10179
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#25552;&#20986;&#20102;&#19968;&#31181;&#32463;&#30001;&#22240;&#26524;&#24615;&#24674;&#22797;&#30340;&#26041;&#24335;&#26469;&#20135;&#29983;&#26465;&#20214;&#20998;&#24067;&#19979;&#30340;&#29420;&#31435;&#26679;&#26412;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#20174;&#26377;&#26465;&#20214;&#30340;&#21160;&#21147;&#23398;&#20013;&#35745;&#31639;&#21487;&#35266;&#27979;&#37327;&#36890;&#24120;&#26159;&#35745;&#31639;&#19978;&#22256;&#38590;&#30340;&#65292;&#22240;&#20026;&#34429;&#28982;&#20174;&#38750;&#26465;&#20214;&#30340;&#21160;&#21147;&#23398;&#20013;&#39640;&#25928;&#22320;&#33719;&#21462;&#29420;&#31435;&#26679;&#26412;&#36890;&#24120;&#26159;&#21487;&#34892;&#30340;&#65292;&#20294;&#36890;&#24120;&#24517;&#39035;&#20002;&#24323;&#22823;&#37096;&#20998;&#26679;&#26412;(&#20197;&#19968;&#31181;&#37325;&#35201;&#24615;&#25277;&#26679;&#30340;&#24418;&#24335;)&#22240;&#20026;&#23427;&#20204;&#19981;&#28385;&#36275;&#25152;&#26045;&#21152;&#30340;&#26465;&#20214;&#12290;&#30452;&#25509;&#20174;&#26377;&#26465;&#20214;&#30340;&#20998;&#24067;&#20013;&#25277;&#26679;&#26159;&#19981;&#26131;&#30340;&#65292;&#22240;&#20026;&#26465;&#20214;&#25171;&#30772;&#20102;&#21160;&#21147;&#23398;&#30340;&#22240;&#26524;&#29305;&#24615;&#65292;&#26368;&#32456;&#20351;&#25277;&#26679;&#36807;&#31243;&#21464;&#24471;&#20302;&#25928;&#12290;&#19968;&#31181;&#26631;&#20934;&#30340;&#26041;&#27861;&#26159;&#36890;&#36807;Metropolis Monte-Carlo&#36807;&#31243;&#23454;&#29616;&#65292;&#20294;&#36825;&#20010;&#36807;&#31243;&#36890;&#24120;&#24456;&#24930;&#65292;&#38656;&#35201;&#22823;&#37327;&#30340;Monte-Carlo&#27493;&#39588;&#26469;&#33719;&#24471;&#23569;&#37327;&#30340;&#32479;&#35745;&#29420;&#31435;&#26679;&#26412;&#12290;&#25105;&#20204;&#25552;&#20986;&#20102;&#19968;&#31181;&#26367;&#20195;&#26041;&#27861;&#65292;&#29992;&#20110;&#20174;&#26377;&#26465;&#20214;&#30340;&#20998;&#24067;&#20013;&#20135;&#29983;&#29420;&#31435;&#30340;&#26679;&#26412;&#12290;&#35813;&#26041;&#27861;&#23398;&#20064;&#19968;&#20010;&#24191;&#20041;&#21160;&#21147;&#23398;&#27169;&#22411;&#30340;&#21442;&#25968;&#65292;&#35813;&#27169;&#22411;&#26368;&#20248;&#22320;&#25551;&#36848;&#20102;&#26465;&#20214;&#20998;&#24067;&#30340;&#21464;&#20998;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+Computing observables from conditioned dynamics is typically computationally hard, because, although obtaining independent samples efficiently from the unconditioned dynamics is usually feasible, generally most of the samples must be discarded (in a form of importance sampling) because they do not satisfy the imposed conditions. Sampling directly from the conditioned distribution is non-trivial, as conditioning breaks the causal properties of the dynamics which ultimately renders the sampling procedure efficient. One standard way of achieving it is through a Metropolis Monte-Carlo procedure, but this procedure is normally slow and a very large number of Monte-Carlo steps is needed to obtain a small number of statistically independent samples. In this work, we propose an alternative method to produce independent samples from a conditioned distribution. The method learns the parameters of a generalized dynamical model that optimally describe the conditioned distribution in a variational 
+&lt;/p&gt;</description></item></channel></rss>
