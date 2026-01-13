@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Scalability of Metropolis-within-Gibbs schemes for high-dimensional Bayesian models](https://arxiv.org/abs/2403.09416) | 研究了Metropolis-within-Gibbs方案在高维贝叶斯模型中的可扩展性，建立了与数值证据密切一致的与维度无关的收敛结果，并讨论了其在二元回归和离散观察扩散贝叶斯模型中的应用。 |
+| [^1] | [Learning Operators with Stochastic Gradient Descent in General Hilbert Spaces](https://arxiv.org/abs/2402.04691) | 本研究在一般希尔伯特空间中使用随机梯度下降（SGD）学习算子，提出了适用于目标算子的规则条件，并建立了SGD算法的收敛速度上界，同时展示了对于非线性算子学习的有效性及线性近似收敛特性。 |
 
 # 详细
 
-[^1]: Metropolis-within-Gibbs方案在高维贝叶斯模型中的可扩展性
+[^1]: 在一般希尔伯特空间中使用随机梯度下降学习算子
 
-    Scalability of Metropolis-within-Gibbs schemes for high-dimensional Bayesian models
+    Learning Operators with Stochastic Gradient Descent in General Hilbert Spaces
 
-    [https://arxiv.org/abs/2403.09416](https://arxiv.org/abs/2403.09416)
+    [https://arxiv.org/abs/2402.04691](https://arxiv.org/abs/2402.04691)
 
-    研究了Metropolis-within-Gibbs方案在高维贝叶斯模型中的可扩展性，建立了与数值证据密切一致的与维度无关的收敛结果，并讨论了其在二元回归和离散观察扩散贝叶斯模型中的应用。
+    本研究在一般希尔伯特空间中使用随机梯度下降（SGD）学习算子，提出了适用于目标算子的规则条件，并建立了SGD算法的收敛速度上界，同时展示了对于非线性算子学习的有效性及线性近似收敛特性。
 
     
 
-    我们研究了一般的坐标逐步MCMC方案（如Metropolis-within-Gibbs抽样器），这些方案通常用于拟合贝叶斯非共轭分层模型。我们将它们的收敛性质与相应的（可能无法实现的）Gibbs抽样器的概念联系起来，通过条件导纳的概念。这使我们能够研究流行的Metropolis-within-Gibbs方案在高维情况下（数据点和参数同时增加）的非共轭分层模型的性能。在给定随机数据生成假设的情况下，我们建立了与数值证据密切一致的与维度无关的收敛结果。还讨论了在具有未知超参数的二元回归贝叶斯模型和离散观察扩散方面的应用。受这类统计应用的启发，我们还讨论了关于近似导纳和扰动的独立兴趣的辅助结果。
+    本研究探讨了利用随机梯度下降（SGD）在一般希尔伯特空间中学习算子的方法。我们提出了针对目标算子的弱和强规则条件，以描述其内在结构和复杂性。在这些条件下，我们建立了SGD算法的收敛速度的上界，并进行了极小值下界分析，进一步说明我们的收敛分析和规则条件定量地刻画了使用SGD算法解决算子学习问题的可行性。值得强调的是，我们的收敛分析对于非线性算子学习仍然有效。我们证明了SGD估计器将收敛于非线性目标算子的最佳线性近似。此外，将我们的分析应用于基于矢量值和实值再生核希尔伯特空间的算子学习问题，产生了新的收敛结果，从而完善了现有文献的结论。
 
-    arXiv:2403.09416v1 Announce Type: cross  Abstract: We study general coordinate-wise MCMC schemes (such as Metropolis-within-Gibbs samplers), which are commonly used to fit Bayesian non-conjugate hierarchical models. We relate their convergence properties to the ones of the corresponding (potentially not implementable) Gibbs sampler through the notion of conditional conductance. This allows us to study the performances of popular Metropolis-within-Gibbs schemes for non-conjugate hierarchical models, in high-dimensional regimes where both number of datapoints and parameters increase. Given random data-generating assumptions, we establish dimension-free convergence results, which are in close accordance with numerical evidences. Applications to Bayesian models for binary regression with unknown hyperparameters and discretely observed diffusions are also discussed. Motivated by such statistical applications, auxiliary results of independent interest on approximate conductances and perturba
+    This study investigates leveraging stochastic gradient descent (SGD) to learn operators between general Hilbert spaces. We propose weak and strong regularity conditions for the target operator to depict its intrinsic structure and complexity. Under these conditions, we establish upper bounds for convergence rates of the SGD algorithm and conduct a minimax lower bound analysis, further illustrating that our convergence analysis and regularity conditions quantitatively characterize the tractability of solving operator learning problems using the SGD algorithm. It is crucial to highlight that our convergence analysis is still valid for nonlinear operator learning. We show that the SGD estimator will converge to the best linear approximation of the nonlinear target operator. Moreover, applying our analysis to operator learning problems based on vector-valued and real-valued reproducing kernel Hilbert spaces yields new convergence results, thereby refining the conclusions of existing litera
     
 
