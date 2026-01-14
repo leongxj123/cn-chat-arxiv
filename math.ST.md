@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Learning Operators with Stochastic Gradient Descent in General Hilbert Spaces](https://arxiv.org/abs/2402.04691) | 本研究在一般希尔伯特空间中使用随机梯度下降（SGD）学习算子，提出了适用于目标算子的规则条件，并建立了SGD算法的收敛速度上界，同时展示了对于非线性算子学习的有效性及线性近似收敛特性。 |
+| [^1] | [Statistical learning on measures: an application to persistence diagrams.](http://arxiv.org/abs/2303.08456) | 本文提出了一个新的统计学习框架，用于处理紧致空间上的测度数据，并且向我们展示了如何使用拓扑信息进行分类。 |
 
 # 详细
 
-[^1]: 在一般希尔伯特空间中使用随机梯度下降学习算子
+[^1]: 应用于持续图的测度统计学习
 
-    Learning Operators with Stochastic Gradient Descent in General Hilbert Spaces
+    Statistical learning on measures: an application to persistence diagrams. (arXiv:2303.08456v1 [cs.CG])
 
-    [https://arxiv.org/abs/2402.04691](https://arxiv.org/abs/2402.04691)
+    [http://arxiv.org/abs/2303.08456](http://arxiv.org/abs/2303.08456)
 
-    本研究在一般希尔伯特空间中使用随机梯度下降（SGD）学习算子，提出了适用于目标算子的规则条件，并建立了SGD算法的收敛速度上界，同时展示了对于非线性算子学习的有效性及线性近似收敛特性。
+    本文提出了一个新的统计学习框架，用于处理紧致空间上的测度数据，并且向我们展示了如何使用拓扑信息进行分类。
 
     
 
-    本研究探讨了利用随机梯度下降（SGD）在一般希尔伯特空间中学习算子的方法。我们提出了针对目标算子的弱和强规则条件，以描述其内在结构和复杂性。在这些条件下，我们建立了SGD算法的收敛速度的上界，并进行了极小值下界分析，进一步说明我们的收敛分析和规则条件定量地刻画了使用SGD算法解决算子学习问题的可行性。值得强调的是，我们的收敛分析对于非线性算子学习仍然有效。我们证明了SGD估计器将收敛于非线性目标算子的最佳线性近似。此外，将我们的分析应用于基于矢量值和实值再生核希尔伯特空间的算子学习问题，产生了新的收敛结果，从而完善了现有文献的结论。
+    我们考虑了一个二元有监督学习分类问题，其中我们观察到紧致空间 $\mathcal{X}$ 上的测度，而不是在有限维欧几里得空间中观察到数据。更具体地说，我们观察到数据 $D_N = (\mu_1, Y_1), \ldots, (\mu_N, Y_N)$ ，其中 $\mu_i$ 是 $\mathcal{X}$ 上的测度， $Y_i$ 是 $0$ 或 $1$ 中的标签。对于 $\mathcal{X}$ 上的基分类器的集合 $\mathcal{F}$ ，我们在测度空间中构建相应的分类器。我们提供了这种新分类器类的 Rademacher 复杂性的上下界，它可以简单地用 $\mathcal{F}$ 类相关量来表达。如果 $\mu_i$ 是有限集上的均匀分布，那么这个分类任务就会变成一个多实例学习问题。但是，我们的方法允许我们处理更具有灵活性和多样性的输入数据。虽然这种框架有许多可能的应用，但本文强调通过拓扑数据进行分类。
 
-    This study investigates leveraging stochastic gradient descent (SGD) to learn operators between general Hilbert spaces. We propose weak and strong regularity conditions for the target operator to depict its intrinsic structure and complexity. Under these conditions, we establish upper bounds for convergence rates of the SGD algorithm and conduct a minimax lower bound analysis, further illustrating that our convergence analysis and regularity conditions quantitatively characterize the tractability of solving operator learning problems using the SGD algorithm. It is crucial to highlight that our convergence analysis is still valid for nonlinear operator learning. We show that the SGD estimator will converge to the best linear approximation of the nonlinear target operator. Moreover, applying our analysis to operator learning problems based on vector-valued and real-valued reproducing kernel Hilbert spaces yields new convergence results, thereby refining the conclusions of existing litera
+    We consider a binary supervised learning classification problem where instead of having data in a finite-dimensional Euclidean space, we observe measures on a compact space $\mathcal{X}$. Formally, we observe data $D_N = (\mu_1, Y_1), \ldots, (\mu_N, Y_N)$ where $\mu_i$ is a measure on $\mathcal{X}$ and $Y_i$ is a label in $\{0, 1\}$. Given a set $\mathcal{F}$ of base-classifiers on $\mathcal{X}$, we build corresponding classifiers in the space of measures. We provide upper and lower bounds on the Rademacher complexity of this new class of classifiers that can be expressed simply in terms of corresponding quantities for the class $\mathcal{F}$. If the measures $\mu_i$ are uniform over a finite set, this classification task boils down to a multi-instance learning problem. However, our approach allows more flexibility and diversity in the input data we can deal with. While such a framework has many possible applications, this work strongly emphasizes on classifying data via topological d
     
 
