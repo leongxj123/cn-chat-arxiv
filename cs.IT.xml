@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.IT</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.IT</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.IT</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.IT</description><item><title>&#26412;&#25991;&#30740;&#31350;&#20102;Hamiltonian&#30340;&#26412;&#22320;&#24615;&#27979;&#35797;&#20316;&#20026;&#23646;&#24615;&#27979;&#35797;&#38382;&#39064;&#65292;&#37325;&#28857;&#22312;&#20110;&#30830;&#23450;&#26410;&#30693;&#30340;$n$&#27604;&#29305;Hamiltonian&#26159;&#21542;&#26159;$k$&#23616;&#37096;&#30340;&#65292;&#36890;&#36807;&#23545;$H$&#30340;&#26102;&#38388;&#28436;&#21270;&#36827;&#34892;&#35775;&#38382;&#26469;&#35299;&#20915;&#38382;&#39064;&#12290;</title><link>https://arxiv.org/abs/2403.02968</link><description>&lt;p&gt;
+Hamiltonian&#24615;&#36136;&#27979;&#35797;
+&lt;/p&gt;
+&lt;p&gt;
+Hamiltonian Property Testing
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.02968
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#30740;&#31350;&#20102;Hamiltonian&#30340;&#26412;&#22320;&#24615;&#27979;&#35797;&#20316;&#20026;&#23646;&#24615;&#27979;&#35797;&#38382;&#39064;&#65292;&#37325;&#28857;&#22312;&#20110;&#30830;&#23450;&#26410;&#30693;&#30340;$n$&#27604;&#29305;Hamiltonian&#26159;&#21542;&#26159;$k$&#23616;&#37096;&#30340;&#65292;&#36890;&#36807;&#23545;$H$&#30340;&#26102;&#38388;&#28436;&#21270;&#36827;&#34892;&#35775;&#38382;&#26469;&#35299;&#20915;&#38382;&#39064;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#25991;&#30740;&#31350;&#20102;Hamiltonian&#26412;&#22320;&#24615;&#27979;&#35797;&#20316;&#20026;&#19968;&#20010;&#23646;&#24615;&#27979;&#35797;&#38382;&#39064;&#65292;&#21363;&#30830;&#23450;&#19968;&#20010;&#26410;&#30693;&#30340;$n$&#27604;&#29305;Hamiltonian $H$&#26159;&#21542;&#26159;$k$&#23616;&#37096;&#30340;&#65292;&#25110;&#32773;&#19982;&#25152;&#26377;$k$&#23616;&#37096;Hamiltonian&#37117;&#30456;&#36317;$\varepsilon$&#65292;&#24182;&#36890;&#36807;&#23545;$H$&#30340;&#26102;&#38388;&#28436;&#21270;&#36827;&#34892;&#35775;&#38382;&#26469;&#35299;&#20915;&#38382;&#39064;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.02968v1 Announce Type: cross  Abstract: Locality is a fundamental feature of many physical time evolutions. Assumptions on locality and related structural properties also underlie recently proposed procedures for learning an unknown Hamiltonian from access to the induced time evolution. However, no protocols to rigorously test whether an unknown Hamiltonian is local were known. We investigate Hamiltonian locality testing as a property testing problem, where the task is to determine whether an unknown $n$-qubit Hamiltonian $H$ is $k$-local or $\varepsilon$-far from all $k$-local Hamiltonians, given access to the time evolution along $H$. First, we emphasize the importance of the chosen distance measure: With respect to the operator norm, a worst-case distance measure, incoherent quantum locality testers require $\tilde{\Omega}(2^n)$ many time evolution queries and an expected total evolution time of $\tilde{\Omega}(2^n / \varepsilon)$, and even coherent testers need $\Omega(2
+&lt;/p&gt;</description></item></channel></rss>
