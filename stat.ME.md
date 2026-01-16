@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Adaptive Neyman Allocation.](http://arxiv.org/abs/2309.08808) | 该论文介绍了一种自适应的Neyman分配方法，该方法能够根据不同阶段的观测来估计标准差，从而指导后续阶段的分组决策。 |
+| [^1] | [Local-Polynomial Estimation for Multivariate Regression Discontinuity Designs](https://arxiv.org/abs/2402.08941) | 在多元回归不连续设计中，我们提出了一种多元局部多项式估计方法，能够处理多元设计并捕捉边界处的异质治疗效应。 |
+| [^2] | [Robust Bayesian Inference for Measurement Error Models.](http://arxiv.org/abs/2306.01468) | 该文提出了一个Bayesian非参数学习框架，对于测量误差具有强鲁棒性，不需要知道误差分布和协变量可重复测量的假设，并能够吸收先验信念，这能产生两种通过不同损失函数的测量误差强鲁棒方法。 |
 
 # 详细
 
-[^1]: 自适应的Neyman分配
+[^1]: 多元回归不连续设计的局部多项式估计方法
 
-    Adaptive Neyman Allocation. (arXiv:2309.08808v1 [stat.ME])
+    Local-Polynomial Estimation for Multivariate Regression Discontinuity Designs
 
-    [http://arxiv.org/abs/2309.08808](http://arxiv.org/abs/2309.08808)
+    [https://arxiv.org/abs/2402.08941](https://arxiv.org/abs/2402.08941)
 
-    该论文介绍了一种自适应的Neyman分配方法，该方法能够根据不同阶段的观测来估计标准差，从而指导后续阶段的分组决策。
+    在多元回归不连续设计中，我们提出了一种多元局部多项式估计方法，能够处理多元设计并捕捉边界处的异质治疗效应。
 
     
 
-    在实验设计中，Neyman分配是指将受试者分配到处理组和对照组的做法，可能按照它们各自的标准差成比例地分配，其目标是最小化治疗效应估计器的方差。这种广泛认可的方法在处理组和对照组具有不同标准差的情况下增加了统计效力，这在社会实验、临床试验、市场研究和在线A/B测试中经常发生。然而，除非提前知道标准差，否则无法实施Neyman分配。幸运的是，上述应用的多阶段性质使得可以使用较早阶段的观测来估计标准差，进一步指导后续阶段的分配决策。在本文中，我们引入了一个竞争分析框架来研究这个多阶段实验设计问题。我们提出了一种简单的自适应Neyman分配方法。
+    我们引入了一个多元局部线性估计器，用于处理多元回归不连续设计中的治疗分配问题。现有的方法使用从边界点到欧氏距离作为标量运行变量，因此多元设计被处理为单变量设计。然而，距离运行变量与渐近有效性的假设不相容。我们将多元设计作为多元处理。在这项研究中，我们开发了一种针对多元局部多项式估计器的新型渐近正常性。我们的估计器是渐近有效的，并能捕捉边界处的异质治疗效应。通过数值模拟，我们证明了我们估计器的有效性。我们在哥伦比亚奖学金研究中的实证说明揭示了治疗效应的更丰富的异质性（包括其不存在）。
 
-    In experimental design, Neyman allocation refers to the practice of allocating subjects into treated and control groups, potentially in unequal numbers proportional to their respective standard deviations, with the objective of minimizing the variance of the treatment effect estimator. This widely recognized approach increases statistical power in scenarios where the treated and control groups have different standard deviations, as is often the case in social experiments, clinical trials, marketing research, and online A/B testing. However, Neyman allocation cannot be implemented unless the standard deviations are known in advance. Fortunately, the multi-stage nature of the aforementioned applications allows the use of earlier stage observations to estimate the standard deviations, which further guide allocation decisions in later stages. In this paper, we introduce a competitive analysis framework to study this multi-stage experimental design problem. We propose a simple adaptive Neym
+    arXiv:2402.08941v1 Announce Type: new Abstract: We introduce a multivariate local-linear estimator for multivariate regression discontinuity designs in which treatment is assigned by crossing a boundary in the space of running variables. The dominant approach uses the Euclidean distance from a boundary point as the scalar running variable; hence, multivariate designs are handled as uni-variate designs. However, the distance running variable is incompatible with the assumption for asymptotic validity. We handle multivariate designs as multivariate. In this study, we develop a novel asymptotic normality for multivariate local-polynomial estimators. Our estimator is asymptotically valid and can capture heterogeneous treatment effects over the boundary. We demonstrate the effectiveness of our estimator through numerical simulations. Our empirical illustration of a Colombian scholarship study reveals a richer heterogeneity (including its absence) of the treatment effect that is hidden in th
+    
+[^2]: 测量误差模型的强鲁棒性Bayesian推断
+
+    Robust Bayesian Inference for Measurement Error Models. (arXiv:2306.01468v1 [stat.ME])
+
+    [http://arxiv.org/abs/2306.01468](http://arxiv.org/abs/2306.01468)
+
+    该文提出了一个Bayesian非参数学习框架，对于测量误差具有强鲁棒性，不需要知道误差分布和协变量可重复测量的假设，并能够吸收先验信念，这能产生两种通过不同损失函数的测量误差强鲁棒方法。
+
+    
+
+    测量误差是指影响响应变量的协变量受到噪声干扰。这可能会导致误导性的推断结果，尤其是在估计协变量和响应变量之间关系的准确性至关重要的问题中，如因果效应估计问题中。现有的处理测量误差的方法通常依赖于强假设，例如对误差分布或其方差的知识和协变量可重复测量的可用性。我们提出了一个Bayesian非参数学习框架，它对于测量误差具有强鲁棒性，不需要上述假设，并能够吸收关于真实误差分布的先验信念。我们的方法产生了两种通过不同损失函数的测量误差强鲁棒方法：一种基于总最小二乘目标，另一种基于最大平均偏差（MMD）。后者允许推广到非高斯分布的情况。
+
+    Measurement error occurs when a set of covariates influencing a response variable are corrupted by noise. This can lead to misleading inference outcomes, particularly in problems where accurately estimating the relationship between covariates and response variables is crucial, such as causal effect estimation. Existing methods for dealing with measurement error often rely on strong assumptions such as knowledge of the error distribution or its variance and availability of replicated measurements of the covariates. We propose a Bayesian Nonparametric Learning framework which is robust to mismeasured covariates, does not require the preceding assumptions, and is able to incorporate prior beliefs about the true error distribution. Our approach gives rise to two methods that are robust to measurement error via different loss functions: one based on the Total Least Squares objective and the other based on Maximum Mean Discrepancy (MMD). The latter allows for generalisation to non-Gaussian d
     
 
