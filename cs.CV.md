@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Sora as an AGI World Model? A Complete Survey on Text-to-Video Generation](https://arxiv.org/abs/2403.05131) | 对文本到视频生成技术的发展进行了详细调查, 着重介绍了从传统生成模型到尖端Sora模型的转变，强调了可扩展性和通用性的发展。 |
-| [^2] | [Benchmark data to study the influence of pre-training on explanation performance in MR image classification.](http://arxiv.org/abs/2306.12150) | 本研究提出了一个MRI分类任务的基准数据集，用于评估不同模型的解释性能。实验结果表明，XAI方法并不一定比简单模型提供更好的解释，且CNN的解释能力取决于底层数据的复杂性和标签的质量。 |
+| [^1] | [Multi-event Video-Text Retrieval.](http://arxiv.org/abs/2308.11551) | 本研究引入了多事件视频文本检索（MeVTR）任务，解决了传统视频文本检索任务中的一种特殊场景，即每个视频包含多个不同事件的情况。 |
 
 # 详细
 
-[^1]: Sora作为AGI世界模型？关于文本到视频生成的完整调查
+[^1]: 多事件视频文本检索
 
-    Sora as an AGI World Model? A Complete Survey on Text-to-Video Generation
+    Multi-event Video-Text Retrieval. (arXiv:2308.11551v1 [cs.CV])
 
-    [https://arxiv.org/abs/2403.05131](https://arxiv.org/abs/2403.05131)
+    [http://arxiv.org/abs/2308.11551](http://arxiv.org/abs/2308.11551)
 
-    对文本到视频生成技术的发展进行了详细调查, 着重介绍了从传统生成模型到尖端Sora模型的转变，强调了可扩展性和通用性的发展。
-
-    
-
-    arXiv:2403.05131v1 公告类型: 新摘要: 文本到视频生成标志着生成式人工智能不断发展领域中的重要前沿，整合了文本到图像合成、视频字幕和文本引导编辑的进展。本调查对文本到视频技术的发展进行了批判性审视，重点关注传统生成模型向尖端Sora模型转变的过程，突出了可扩展性和通用性的发展。区别于以往作品的分析，我们深入探讨了这些模型的技术框架和演化路径。此外，我们还深入探讨了实际应用，并解决了伦理和技术挑战，如无法执行多实体处理、理解因果关系学习、理解物理互动、感知物体缩放和比例以及对抗物体幻觉，这也是生成模型中长期存在的问题。
-
-    arXiv:2403.05131v1 Announce Type: new  Abstract: Text-to-video generation marks a significant frontier in the rapidly evolving domain of generative AI, integrating advancements in text-to-image synthesis, video captioning, and text-guided editing. This survey critically examines the progression of text-to-video technologies, focusing on the shift from traditional generative models to the cutting-edge Sora model, highlighting developments in scalability and generalizability. Distinguishing our analysis from prior works, we offer an in-depth exploration of the technological frameworks and evolutionary pathways of these models. Additionally, we delve into practical applications and address ethical and technological challenges such as the inability to perform multiple entity handling, comprehend causal-effect learning, understand physical interaction, perceive object scaling and proportioning, and combat object hallucination which is also a long-standing problem in generative models. Our c
-    
-[^2]: 基于预训练的影响因素研究医学图像分类解释性能的基准数据
-
-    Benchmark data to study the influence of pre-training on explanation performance in MR image classification. (arXiv:2306.12150v1 [cs.CV])
-
-    [http://arxiv.org/abs/2306.12150](http://arxiv.org/abs/2306.12150)
-
-    本研究提出了一个MRI分类任务的基准数据集，用于评估不同模型的解释性能。实验结果表明，XAI方法并不一定比简单模型提供更好的解释，且CNN的解释能力取决于底层数据的复杂性和标签的质量。
+    本研究引入了多事件视频文本检索（MeVTR）任务，解决了传统视频文本检索任务中的一种特殊场景，即每个视频包含多个不同事件的情况。
 
     
 
-    卷积神经网络（CNN）常常在医学预测任务中被成功地应用，通常与迁移学习相结合，在训练数据不足时能够提高性能。然而，由于CNN产生的模型高度复杂且通常不提供任何有关其预测机制的信息，这促使了“可解释性”人工智能（XAI）领域的研究。本文提出了一个基准数据集，用于在MRI分类任务中定量评估解释性能。通过这个基准数据集，我们可以了解迁移学习对解释质量的影响。实验结果表明，应用于基于迁移学习的CNN的流行XAI方法并不一定比简单模型提供更好的解释，并且CNN提供有意义解释的能力严重依赖于底层数据的复杂性和标签的质量。
+    视频文本检索（VTR）是互联网上海量视频文本数据时代中一项关键的多模态任务。使用双流视觉-语言模型架构学习视频文本对的联合表示成为VTR任务中一种突出的方法。然而，这些模型在假设视频文本对应是双射的情况下运行，并忽视了更实际的情况，即视频内容通常涵盖多个事件，而用户查询或网页元数据等文本往往是具体的，并对应单个事件。这造成了之前的训练目标与实际应用之间的差距，在推理过程中可能导致早期模型的性能下降。本研究引入了多事件视频文本检索（MeVTR）任务，针对每个视频包含多个不同事件的场景，作为传统视频文本检索任务的一个利基场景。
 
-    Convolutional Neural Networks (CNNs) are frequently and successfully used in medical prediction tasks. They are often used in combination with transfer learning, leading to improved performance when training data for the task are scarce. The resulting models are highly complex and typically do not provide any insight into their predictive mechanisms, motivating the field of 'explainable' artificial intelligence (XAI). However, previous studies have rarely quantitatively evaluated the 'explanation performance' of XAI methods against ground-truth data, and transfer learning and its influence on objective measures of explanation performance has not been investigated. Here, we propose a benchmark dataset that allows for quantifying explanation performance in a realistic magnetic resonance imaging (MRI) classification task. We employ this benchmark to understand the influence of transfer learning on the quality of explanations. Experimental results show that popular XAI methods applied to t
+    Video-Text Retrieval (VTR) is a crucial multi-modal task in an era of massive video-text data on the Internet. A plethora of work characterized by using a two-stream Vision-Language model architecture that learns a joint representation of video-text pairs has become a prominent approach for the VTR task. However, these models operate under the assumption of bijective video-text correspondences and neglect a more practical scenario where video content usually encompasses multiple events, while texts like user queries or webpage metadata tend to be specific and correspond to single events. This establishes a gap between the previous training objective and real-world applications, leading to the potential performance degradation of earlier models during inference. In this study, we introduce the Multi-event Video-Text Retrieval (MeVTR) task, addressing scenarios in which each video contains multiple different events, as a niche scenario of the conventional Video-Text Retrieval Task. We pr
     
 
