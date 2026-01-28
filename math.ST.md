@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [An Efficient Quasi-Random Sampling for Copulas](https://arxiv.org/abs/2403.05281) | 使用生成对抗网络（GANs）为任何Copula生成准随机样本的高效方法 |
+| [^1] | [Statistical Hypothesis Testing for Information Value (IV).](http://arxiv.org/abs/2309.13183) | 该论文提出了信息价值（IV）的统计假设检验方法，为模型建立前的特征选择提供了理论框架，并通过实验证明了该方法的有效性。 |
 
 # 详细
 
-[^1]: 一种高效的用于Copulas的准随机抽样方法
+[^1]: 信息价值（IV）的统计假设检验
 
-    An Efficient Quasi-Random Sampling for Copulas
+    Statistical Hypothesis Testing for Information Value (IV). (arXiv:2309.13183v1 [math.ST])
 
-    [https://arxiv.org/abs/2403.05281](https://arxiv.org/abs/2403.05281)
+    [http://arxiv.org/abs/2309.13183](http://arxiv.org/abs/2309.13183)
 
-    使用生成对抗网络（GANs）为任何Copula生成准随机样本的高效方法
+    该论文提出了信息价值（IV）的统计假设检验方法，为模型建立前的特征选择提供了理论框架，并通过实验证明了该方法的有效性。
 
     
 
-    这篇论文研究了一种在蒙特卡罗计算中用于Copulas的高效准随机抽样方法。传统方法如条件分布法（CDM）在处理高维或隐式Copulas时存在局限性，指的是那些无法通过现有参数Copulas准确表示的Copulas。相反，本文提出使用生成模型，例如生成对抗网络（GANs），为任何Copula生成准随机样本。GANs是一种用于学习复杂数据分布的隐式生成模型，有助于简化抽样过程。在我们的研究中，GANs被用来学习从均匀分布到Copulas的映射。一旦学习了这种映射，从Copula获取准随机样本只需输入来自均匀分布的准随机样本。这种方法为任何Copula提供了更灵活的方式。此外，我们提供了t
+    信息价值（IV）是模型建立前进行特征选择的一种常用技术。目前存在一些实际标准，但基于IV的判断是否一个预测因子具有足够的预测能力的理论依据依然神秘且缺乏。然而，关于该技术的数学发展和统计推断方法在文献中几乎没有提及。在本研究中，我们提出了一个关于IV的理论框架，并提出了一种非参数假设检验方法来测试预测能力。我们展示了如何高效计算检验统计量，并在模拟数据上研究其表现。此外，我们将这一方法应用于银行欺诈数据，并提供了一个实现我们结果的Python库。
 
-    arXiv:2403.05281v1 Announce Type: new  Abstract: This paper examines an efficient method for quasi-random sampling of copulas in Monte Carlo computations. Traditional methods, like conditional distribution methods (CDM), have limitations when dealing with high-dimensional or implicit copulas, which refer to those that cannot be accurately represented by existing parametric copulas. Instead, this paper proposes the use of generative models, such as Generative Adversarial Networks (GANs), to generate quasi-random samples for any copula. GANs are a type of implicit generative models used to learn the distribution of complex data, thus facilitating easy sampling. In our study, GANs are employed to learn the mapping from a uniform distribution to copulas. Once this mapping is learned, obtaining quasi-random samples from the copula only requires inputting quasi-random samples from the uniform distribution. This approach offers a more flexible method for any copula. Additionally, we provide t
+    Information value (IV) is a quite popular technique for feature selection prior to the modeling phase. There are practical criteria, but at the same time mysterious and lacking theoretical arguments, based on the IV, to decide if a predictor has sufficient predictive power to be considered in the modeling phase. However, the mathematical development and statistical inference methods for this technique is almost non-existent in the literature. In this work we present a theoretical framework for the IV and propose a non-parametric hypothesis test to test the predictive power. We show how to efficiently calculate the test statistic and study its performance on simulated data. Additionally, we apply our test on bank fraud data and provide a Python library where we implement our results.
     
 

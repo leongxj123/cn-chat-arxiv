@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description><item><title>&#26412;&#30740;&#31350;&#25552;&#20986;&#20102;&#19968;&#31181;&#22522;&#20110;CNN&#30340;&#29289;&#32852;&#32593;&#35774;&#22791;&#35782;&#21035;&#26041;&#27861;&#65292;&#21487;&#23545;&#35774;&#22791;&#36827;&#34892;&#35782;&#21035;&#24182;&#26816;&#27979;&#20854;&#23433;&#20840;&#28431;&#27934;&#12290;</title><link>http://arxiv.org/abs/2304.13894</link><description>&lt;p&gt;
+&#22522;&#20110;CNN&#30340;&#29289;&#32852;&#32593;&#35774;&#22791;&#35782;&#21035;
+&lt;/p&gt;
+&lt;p&gt;
+CNN based IoT Device Identification. (arXiv:2304.13894v1 [cs.CR])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2304.13894
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#30740;&#31350;&#25552;&#20986;&#20102;&#19968;&#31181;&#22522;&#20110;CNN&#30340;&#29289;&#32852;&#32593;&#35774;&#22791;&#35782;&#21035;&#26041;&#27861;&#65292;&#21487;&#23545;&#35774;&#22791;&#36827;&#34892;&#35782;&#21035;&#24182;&#26816;&#27979;&#20854;&#23433;&#20840;&#28431;&#27934;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#38543;&#30528;&#29289;&#32852;&#32593;&#30340;&#20351;&#29992;&#36234;&#26469;&#36234;&#26222;&#21450;&#65292;&#24066;&#22330;&#19978;&#24341;&#20837;&#20102;&#22823;&#37327;&#35774;&#22791;&#65292;&#23548;&#33268;&#35768;&#22810;&#23433;&#20840;&#28431;&#27934;&#30340;&#20135;&#29983;&#12290;&#22312;&#36825;&#31181;&#29615;&#22659;&#20013;&#65292;&#29289;&#32852;&#32593;&#35774;&#22791;&#35782;&#21035;&#26041;&#27861;&#20316;&#20026;&#35782;&#21035;&#36825;&#20123;&#35774;&#22791;&#24182;&#26816;&#27979;&#23427;&#20204;&#25152;&#21463;&#28431;&#27934;&#30340;&#37325;&#35201;&#22240;&#32032;&#65292;&#25552;&#20379;&#20102;&#19968;&#39033;&#39044;&#38450;&#24615;&#30340;&#23433;&#20840;&#25514;&#26045;&#12290;&#26412;&#30740;&#31350;&#25552;&#20986;&#20102;&#19968;&#31181;&#36890;&#36807;&#21367;&#31215;&#31070;&#32463;&#32593;&#32476;&#65288;CNN&#65289;&#35782;&#21035;Aalto&#25968;&#25454;&#38598;&#20013;&#35774;&#22791;&#30340;&#26041;&#27861;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+While the use of the Internet of Things is becoming more and more popular, many security vulnerabilities are emerging with the large number of devices being introduced to the market. In this environment, IoT device identification methods provide a preventive security measure as an important factor in identifying these devices and detecting the vulnerabilities they suffer from. In this study, we present a method that identifies devices in the Aalto dataset using the convolutional neural network (CNN).
+&lt;/p&gt;</description></item></channel></rss>
