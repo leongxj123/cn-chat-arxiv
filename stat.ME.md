@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Inflation Target at Risk: A Time-varying Parameter Distributional Regression](https://arxiv.org/abs/2403.12456) | 介绍了一种新颖的半参数方法，用于构建时间变化的条件分布，通过分布回归估计所有模型参数，预测美国通货膨胀分布的风险。 |
+| [^1] | [Identifiable Latent Neural Causal Models](https://arxiv.org/abs/2403.15711) | 该研究确定了在潜在附加噪声模型背景下导致可识别性的分布变化类型的充分且必要条件，同时提出了当只有部分分布变化满足条件时的部分可识别性结果。 |
 
 # 详细
 
-[^1]: 通货膨胀目标风险：一种时变参数分布回归
+[^1]: 可识别的潜在神经因果模型
 
-    Inflation Target at Risk: A Time-varying Parameter Distributional Regression
+    Identifiable Latent Neural Causal Models
 
-    [https://arxiv.org/abs/2403.12456](https://arxiv.org/abs/2403.12456)
+    [https://arxiv.org/abs/2403.15711](https://arxiv.org/abs/2403.15711)
 
-    介绍了一种新颖的半参数方法，用于构建时间变化的条件分布，通过分布回归估计所有模型参数，预测美国通货膨胀分布的风险。
+    该研究确定了在潜在附加噪声模型背景下导致可识别性的分布变化类型的充分且必要条件，同时提出了当只有部分分布变化满足条件时的部分可识别性结果。
 
     
 
-    宏观变量经常显示时间变化的分布，这是由经济、社会和环境因素的动态和演变特征所驱动的，这些因素持续地重塑着统治这些变量的基本模式和关系。为了更好地理解超出中心趋势的分布动态，本文引入了一种新颖的半参数方法，用于构建时间变化的条件分布，依赖于分布回归的最新进展。我们提出了一种高效的基于精度的马尔可夫链蒙特卡罗算法，可以同时估计所有模型参数，同时明确地施加条件分布函数上的单调性条件。我们的模型被应用于构建美国通货膨胀的预测分布，条件于一组宏观经济和金融指标。未来通货膨胀偏离过高或过低的风险
+    因果表征学习旨在从低级观测数据中揭示潜在的高级因果表征。它特别擅长预测在未见分布变化下，因为这些变化通常可以解释为干预的后果。因此，利用{已见}分布变化成为帮助识别因果表征的自然策略，进而有助于预测以前{未见}分布的情况。确定这些分布变化的类型（或条件）对于因果表征的可识别性至关重要。该工作建立了在潜在附加噪声模型背景下，表征导致可识别性的分布变化类型的充分且必要条件。此外，我们提出了当只有部分分布变化满足条件时的部分可识别性结果。
 
-    arXiv:2403.12456v1 Announce Type: new  Abstract: Macro variables frequently display time-varying distributions, driven by the dynamic and evolving characteristics of economic, social, and environmental factors that consistently reshape the fundamental patterns and relationships governing these variables. To better understand the distributional dynamics beyond the central tendency, this paper introduces a novel semi-parametric approach for constructing time-varying conditional distributions, relying on the recent advances in distributional regression. We present an efficient precision-based Markov Chain Monte Carlo algorithm that simultaneously estimates all model parameters while explicitly enforcing the monotonicity condition on the conditional distribution function. Our model is applied to construct the forecasting distribution of inflation for the U.S., conditional on a set of macroeconomic and financial indicators. The risks of future inflation deviating excessively high or low fro
+    arXiv:2403.15711v1 Announce Type: new  Abstract: Causal representation learning seeks to uncover latent, high-level causal representations from low-level observed data. It is particularly good at predictions under unseen distribution shifts, because these shifts can generally be interpreted as consequences of interventions. Hence leveraging {seen} distribution shifts becomes a natural strategy to help identifying causal representations, which in turn benefits predictions where distributions are previously {unseen}. Determining the types (or conditions) of such distribution shifts that do contribute to the identifiability of causal representations is critical. This work establishes a {sufficient} and {necessary} condition characterizing the types of distribution shifts for identifiability in the context of latent additive noise models. Furthermore, we present partial identifiability results when only a portion of distribution shifts meets the condition. In addition, we extend our findin
     
 
