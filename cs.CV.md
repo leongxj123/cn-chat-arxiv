@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [TorchCP: A Library for Conformal Prediction based on PyTorch](https://arxiv.org/abs/2402.12683) | TorchCP是一个基于PyTorch的Python工具包，为深度学习模型上的合拟常规预测研究提供了实现后验和训练方法的多种工具，包括分类和回归任务。En_Tdlr: TorchCP is a Python toolbox built on PyTorch for conformal prediction research on deep learning models, providing various implementations for posthoc and training methods for classification and regression tasks, including multi-dimension output. |
-| [^2] | [Can Continual Learning Improve Long-Tailed Recognition? Toward a Unified Framework.](http://arxiv.org/abs/2306.13275) | 本文针对长尾识别问题，提出一种持续学习方法，通过将头部集和尾部集的学习视为两个独立连续的步骤，并利用定理证明持续学习可以有效地更新学习者的权重以学习尾部，同时不会忘记头部。 |
+| [^1] | [InterDreamer: Zero-Shot Text to 3D Dynamic Human-Object Interaction](https://arxiv.org/abs/2403.19652) | 通过解耦交互语义和动态，本文展示了在没有直接训练文本-交互对数据的情况下生成人物-物体交互的潜力。 |
+| [^2] | [Factorized Tensor Networks for Multi-Task and Multi-Domain Learning.](http://arxiv.org/abs/2310.06124) | 本文提出了一种分解张量网络（FTN），它可以克服多任务多领域学习中的共享信息利用挑战，并在准确性、存储成本、计算量和样本复杂度等方面实现高效率。实验结果表明，FTN相对于现有方法需要更少的任务特定参数，并且可以适应大量的目标领域和任务。 |
 
 # 详细
 
-[^1]: TorchCP：基于PyTorch的一种适用于合拟常规预测的库
+[^1]: InterDreamer：零样本文本到三维动态人物-物体交互
 
-    TorchCP: A Library for Conformal Prediction based on PyTorch
+    InterDreamer: Zero-Shot Text to 3D Dynamic Human-Object Interaction
 
-    [https://arxiv.org/abs/2402.12683](https://arxiv.org/abs/2402.12683)
+    [https://arxiv.org/abs/2403.19652](https://arxiv.org/abs/2403.19652)
 
-    TorchCP是一个基于PyTorch的Python工具包，为深度学习模型上的合拟常规预测研究提供了实现后验和训练方法的多种工具，包括分类和回归任务。En_Tdlr: TorchCP is a Python toolbox built on PyTorch for conformal prediction research on deep learning models, providing various implementations for posthoc and training methods for classification and regression tasks, including multi-dimension output.
-
-    
-
-    TorchCP是一个用于深度学习模型上的合拟常规预测研究的Python工具包。它包含了用于后验和训练方法的各种实现，用于分类和回归任务（包括多维输出）。TorchCP建立在PyTorch之上，并利用矩阵计算的优势，提供简洁高效的推理实现。该代码采用LGPL许可证，并在$\href{https://github.com/ml-stat-Sustech/TorchCP}{\text{this https URL}}$开源。
-
-    arXiv:2402.12683v1 Announce Type: new  Abstract: TorchCP is a Python toolbox for conformal prediction research on deep learning models. It contains various implementations for posthoc and training methods for classification and regression tasks (including multi-dimension output). TorchCP is built on PyTorch (Paszke et al., 2019) and leverages the advantages of matrix computation to provide concise and efficient inference implementations. The code is licensed under the LGPL license and is open-sourced at $\href{https://github.com/ml-stat-Sustech/TorchCP}{\text{this https URL}}$.
-    
-[^2]: 持续学习能改进长尾识别吗？走向统一框架
-
-    Can Continual Learning Improve Long-Tailed Recognition? Toward a Unified Framework. (arXiv:2306.13275v1 [cs.LG])
-
-    [http://arxiv.org/abs/2306.13275](http://arxiv.org/abs/2306.13275)
-
-    本文针对长尾识别问题，提出一种持续学习方法，通过将头部集和尾部集的学习视为两个独立连续的步骤，并利用定理证明持续学习可以有效地更新学习者的权重以学习尾部，同时不会忘记头部。
+    通过解耦交互语义和动态，本文展示了在没有直接训练文本-交互对数据的情况下生成人物-物体交互的潜力。
 
     
 
-    在高度不平衡的数据集中，不同类别之间的样本数量极度失衡会出现长尾识别（LTR）问题。LTR方法旨在准确地学习包含一个较大“头”集和一个较小“尾”集的数据集。我们提出了一个定理，假设损失函数是强凸的，那么完整数据集上训练的学习者的权重在同一个学习者严格训练头集时的权重上限之内。接下来，我们声称将头集和尾集的学习视为两个独立的连续步骤，持续学习（CL）方法可以有效地更新学习者的权重以学习尾部，而不会忘记头部。首先，我们使用玩具MNIST-LT数据集验证了我们的理论发现。接着，我们在两个标准LTR基准（CIFAR100-LT和CIFAR10-L）的多个不平衡变体上评估了几种CL策略的有效性。
+    arXiv:2403.19652v1 宣布类型：跨领域 摘要：在广泛的动作捕捉数据和相应的文本注释上训练的扩散模型已经显著推动了文本条件的人体运动生成。然而，将这种成功延伸到三维动态人物-物体交互（HOI）生成面临着显著挑战，主要是由于缺乏大规模交互数据和与这些交互一致的全面描述。本文采取了行动，并展示了在没有直接训练文本-交互对数据的情况下生成人物-物体交互的潜力。我们在实现这一点的关键见解是交互语义和动态可以解耦。无法通过监督训练学习交互语义，我们转而利用预训练的大型模型，将来自大型语言模型和文本到运动模型的知识相辅相成。尽管这样的知识提供了对交互语义的高级控制，但不能提供到不成对交互文本的直接学习。
 
-    The Long-Tailed Recognition (LTR) problem emerges in the context of learning from highly imbalanced datasets, in which the number of samples among different classes is heavily skewed. LTR methods aim to accurately learn a dataset comprising both a larger Head set and a smaller Tail set. We propose a theorem where under the assumption of strong convexity of the loss function, the weights of a learner trained on the full dataset are within an upper bound of the weights of the same learner trained strictly on the Head. Next, we assert that by treating the learning of the Head and Tail as two separate and sequential steps, Continual Learning (CL) methods can effectively update the weights of the learner to learn the Tail without forgetting the Head. First, we validate our theoretical findings with various experiments on the toy MNIST-LT dataset. We then evaluate the efficacy of several CL strategies on multiple imbalanced variations of two standard LTR benchmarks (CIFAR100-LT and CIFAR10-L
+    arXiv:2403.19652v1 Announce Type: cross  Abstract: Text-conditioned human motion generation has experienced significant advancements with diffusion models trained on extensive motion capture data and corresponding textual annotations. However, extending such success to 3D dynamic human-object interaction (HOI) generation faces notable challenges, primarily due to the lack of large-scale interaction data and comprehensive descriptions that align with these interactions. This paper takes the initiative and showcases the potential of generating human-object interactions without direct training on text-interaction pair data. Our key insight in achieving this is that interaction semantics and dynamics can be decoupled. Being unable to learn interaction semantics through supervised training, we instead leverage pre-trained large models, synergizing knowledge from a large language model and a text-to-motion model. While such knowledge offers high-level control over interaction semantics, it c
+    
+[^2]: 分解张量网络用于多任务和多领域学习
+
+    Factorized Tensor Networks for Multi-Task and Multi-Domain Learning. (arXiv:2310.06124v1 [cs.LG])
+
+    [http://arxiv.org/abs/2310.06124](http://arxiv.org/abs/2310.06124)
+
+    本文提出了一种分解张量网络（FTN），它可以克服多任务多领域学习中的共享信息利用挑战，并在准确性、存储成本、计算量和样本复杂度等方面实现高效率。实验结果表明，FTN相对于现有方法需要更少的任务特定参数，并且可以适应大量的目标领域和任务。
+
+    
+
+    多任务和多领域学习方法旨在使用单个统一的网络共同学习多个任务/领域，或者先后学习它们。关键挑战和机会是利用任务和领域之间的共享信息，提高统一网络的效率，包括准确性、存储成本、计算量或样本复杂度。本文提出了一种分解张量网络（FTN），可以通过增加少量附加参数实现与独立单任务/领域网络相当的准确性。FTN使用源模型的冻结主干网络，并逐步添加任务/领域特定的低秩张量因子到共享的冻结网络中。这种方法可以适应大量目标领域和任务，而不会出现灾难性遗忘。此外，与现有方法相比，FTN需要较少的任务特定参数。我们在广泛使用的多领域和多任务数据集上进行了实验。
+
+    Multi-task and multi-domain learning methods seek to learn multiple tasks/domains, jointly or one after another, using a single unified network. The key challenge and opportunity is to exploit shared information across tasks and domains to improve the efficiency of the unified network. The efficiency can be in terms of accuracy, storage cost, computation, or sample complexity. In this paper, we propose a factorized tensor network (FTN) that can achieve accuracy comparable to independent single-task/domain networks with a small number of additional parameters. FTN uses a frozen backbone network from a source model and incrementally adds task/domain-specific low-rank tensor factors to the shared frozen network. This approach can adapt to a large number of target domains and tasks without catastrophic forgetting. Furthermore, FTN requires a significantly smaller number of task-specific parameters compared to existing methods. We performed experiments on widely used multi-domain and multi-
     
 
