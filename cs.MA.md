@@ -2,22 +2,9 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A computational framework of human values for ethical AI.](http://arxiv.org/abs/2305.02748) | 该论文提出了一个根据社会科学理论建立的计算框架，为研究人类价值观如何支持设计道德人工智能提供了基础。 |
+
 
 # 详细
 
-[^1]: 人类价值观的计算框架对于道德人工智能的应用
 
-    A computational framework of human values for ethical AI. (arXiv:2305.02748v1 [cs.AI])
-
-    [http://arxiv.org/abs/2305.02748](http://arxiv.org/abs/2305.02748)
-
-    该论文提出了一个根据社会科学理论建立的计算框架，为研究人类价值观如何支持设计道德人工智能提供了基础。
-
-    
-
-    从心理学、哲学和社会科学的多元化探索中，可以得出一个明确的共识，那就是价值观指导着行为。最近，人们认识到，价值观为工程化道德人工智能提供了一种方式。我们基于社会科学的正式概念框架，提出了对于人类价值观的计算形式定义，为系统、综合和跨学科地研究人类价值观如何支持设计道德人工智能提供了基础。
-
-    In the diverse array of work investigating the nature of human values from psychology, philosophy and social sciences, there is a clear consensus that values guide behaviour. More recently, a recognition that values provide a means to engineer ethical AI has emerged. Indeed, Stuart Russell proposed shifting AI's focus away from simply ``intelligence'' towards intelligence ``provably aligned with human values''. This challenge -- the value alignment problem -- with others including an AI's learning of human values, aggregating individual values to groups, and designing computational mechanisms to reason over values, has energised a sustained research effort. Despite this, no formal, computational definition of values has yet been proposed. We address this through a formal conceptual framework rooted in the social sciences, that provides a foundation for the systematic, integrated and interdisciplinary investigation into how human values can support designing ethical AI.
-    
 
