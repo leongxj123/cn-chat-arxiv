@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.NA</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.NA</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.NA</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.NA</description><item><title>&#31070;&#32463;&#32593;&#32476;&#20013;&#30340;&#26435;&#37325;&#34928;&#20943;&#21644;&#23567;&#30340;&#31867;&#20869;&#21464;&#21270;&#19982;&#20302;&#31209;&#20559;&#24046;&#29616;&#35937;&#26377;&#20851;</title><link>https://arxiv.org/abs/2402.03991</link><description>&lt;p&gt;
+&#31070;&#32463;&#32593;&#32476;&#30340;&#26435;&#37325;&#34928;&#20943;&#21644;&#31867;&#20869;&#21464;&#21270;&#23567;&#20250;&#23548;&#33268;&#20302;&#31209;&#20559;&#24046;
+&lt;/p&gt;
+&lt;p&gt;
+Neural Rank Collapse: Weight Decay and Small Within-Class Variability Yield Low-Rank Bias
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.03991
+&lt;/p&gt;
+&lt;p&gt;
+&#31070;&#32463;&#32593;&#32476;&#20013;&#30340;&#26435;&#37325;&#34928;&#20943;&#21644;&#23567;&#30340;&#31867;&#20869;&#21464;&#21270;&#19982;&#20302;&#31209;&#20559;&#24046;&#29616;&#35937;&#26377;&#20851;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#36817;&#26399;&#22312;&#28145;&#24230;&#23398;&#20064;&#39046;&#22495;&#30340;&#30740;&#31350;&#26174;&#31034;&#20102;&#19968;&#20010;&#38544;&#21547;&#30340;&#20302;&#31209;&#20559;&#24046;&#29616;&#35937;&#65306;&#28145;&#24230;&#32593;&#32476;&#20013;&#30340;&#26435;&#37325;&#30697;&#38453;&#24448;&#24448;&#36817;&#20284;&#20026;&#20302;&#31209;&#65292;&#22312;&#35757;&#32451;&#36807;&#31243;&#20013;&#25110;&#20174;&#24050;&#32463;&#35757;&#32451;&#22909;&#30340;&#27169;&#22411;&#20013;&#21435;&#38500;&#30456;&#23545;&#36739;&#23567;&#30340;&#22855;&#24322;&#20540;&#21487;&#20197;&#26174;&#33879;&#20943;&#23567;&#27169;&#22411;&#22823;&#23567;&#65292;&#21516;&#26102;&#20445;&#25345;&#29978;&#33267;&#25552;&#21319;&#27169;&#22411;&#24615;&#33021;&#12290;&#28982;&#32780;&#65292;&#22823;&#22810;&#25968;&#20851;&#20110;&#31070;&#32463;&#32593;&#32476;&#20302;&#31209;&#20559;&#24046;&#30340;&#29702;&#35770;&#30740;&#31350;&#37117;&#28041;&#21450;&#21040;&#31616;&#21270;&#30340;&#32447;&#24615;&#28145;&#24230;&#32593;&#32476;&#12290;&#22312;&#26412;&#25991;&#20013;&#65292;&#25105;&#20204;&#32771;&#34385;&#20102;&#24102;&#26377;&#38750;&#32447;&#24615;&#28608;&#27963;&#20989;&#25968;&#21644;&#26435;&#37325;&#34928;&#20943;&#21442;&#25968;&#30340;&#36890;&#29992;&#32593;&#32476;&#65292;&#24182;&#23637;&#31034;&#20102;&#19968;&#20010;&#26377;&#36259;&#30340;&#31070;&#32463;&#31209;&#23849;&#28291;&#29616;&#35937;&#65292;&#23427;&#23558;&#35757;&#32451;&#22909;&#30340;&#32593;&#32476;&#30340;&#20302;&#31209;&#20559;&#24046;&#19982;&#32593;&#32476;&#30340;&#31070;&#32463;&#23849;&#28291;&#29305;&#24615;&#32852;&#31995;&#36215;&#26469;&#65306;&#38543;&#30528;&#26435;&#37325;&#34928;&#20943;&#21442;&#25968;&#30340;&#22686;&#21152;&#65292;&#32593;&#32476;&#20013;&#27599;&#19968;&#23618;&#30340;&#31209;&#21576;&#27604;&#20363;&#36882;&#20943;&#65292;&#19982;&#21069;&#38754;&#23618;&#30340;&#38544;&#34255;&#31354;&#38388;&#23884;&#20837;&#30340;&#31867;&#20869;&#21464;&#21270;&#25104;&#21453;&#27604;&#12290;&#25105;&#20204;&#30340;&#29702;&#35770;&#21457;&#29616;&#24471;&#21040;&#20102;&#25903;&#25345;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+Recent work in deep learning has shown strong empirical and theoretical evidence of an implicit low-rank bias: weight matrices in deep networks tend to be approximately low-rank and removing relatively small singular values during training or from available trained models may significantly reduce model size while maintaining or even improving model performance. However, the majority of the theoretical investigations around low-rank bias in neural networks deal with oversimplified deep linear networks. In this work, we consider general networks with nonlinear activations and the weight decay parameter, and we show the presence of an intriguing neural rank collapse phenomenon, connecting the low-rank bias of trained networks with networks' neural collapse properties: as the weight decay parameter grows, the rank of each layer in the network decreases proportionally to the within-class variability of the hidden-space embeddings of the previous layers. Our theoretical findings are supporte
+&lt;/p&gt;</description></item></channel></rss>
