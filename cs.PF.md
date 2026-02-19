@@ -2,22 +2,9 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Energy Concerns with HPC Systems and Applications.](http://arxiv.org/abs/2309.08615) | 该论文讨论了HPC系统和应用中的能源问题，特别关注了嵌入式计算和超级计算两个上下文中的能源限制和问题。尤其在面对人工智能的应用时，高效的计算支持显得尤为重要。 |
+
 
 # 详细
 
-[^1]: HPC系统和应用中的能源问题
 
-    Energy Concerns with HPC Systems and Applications. (arXiv:2309.08615v1 [cs.CY])
-
-    [http://arxiv.org/abs/2309.08615](http://arxiv.org/abs/2309.08615)
-
-    该论文讨论了HPC系统和应用中的能源问题，特别关注了嵌入式计算和超级计算两个上下文中的能源限制和问题。尤其在面对人工智能的应用时，高效的计算支持显得尤为重要。
-
-    
-
-    出于与气候变化相关的各种原因，能源已经成为与所有相关活动和技术设计密切相关的一个关键问题。对于计算机活动的特殊情况而言，随着所谓的智能设备的出现和普及，问题变得更加严重。从应用的角度来看，我们指出了人工智能这个特殊主题，它明显需要高效的计算支持，以便在成为无处不在的助手的目标上取得成功。能源是两个上下文中最重要的问题的一个：嵌入式计算和超级计算。对于前者，功耗至关重要，因为设备可用能源的量是有限的。对于后者，散热是一个严重的故障源，与能源相关的财务成本很可能是维护预算的重要组成部分。在单个计算机上，这个问题通常也会变得紧迫。
-
-    For various reasons including those related to climate changes, {\em energy} has become a critical concern in all relevant activities and technical designs. For the specific case of computer activities, the problem is exacerbated with the emergence and pervasiveness of the so called {\em intelligent devices}. From the application side, we point out the special topic of {\em Artificial Intelligence}, who clearly needs an efficient computing support in order to succeed in its purpose of being a {\em ubiquitous assistant}. There are mainly two contexts where {\em energy} is one of the top priority concerns: {\em embedded computing} and {\em supercomputing}. For the former, power consumption is critical because the amount of energy that is available for the devices is limited. For the latter, the heat dissipated is a serious source of failure and the financial cost related to energy is likely to be a significant part of the maintenance budget. On a single computer, the problem is commonly 
-    
 
