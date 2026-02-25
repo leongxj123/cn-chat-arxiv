@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Dynamic covariate balancing: estimating treatment effects over time with potential local projections.](http://arxiv.org/abs/2103.01280) | 本文提出了一种通过动态协变量平衡方法，基于过去历史上潜在结果期望的局部投影，估计面板数据中动态变化的治疗效果，并考虑结果和时间变化的协变量与治疗轨迹的关系以及治疗效应的异质性。研究结果表明该方法具有良好的渐近性质和数值特性，在实证应用中具有优势。 |
+| [^1] | [Information Based Inference in Models with Set-Valued Predictions and Misspecification.](http://arxiv.org/abs/2401.11046) | 本文介绍了一种基于信息的推断方法，用于处理具有集合值预测和错误规范化的模型中的部分识别参数，该方法可以在模型规范正确和错误时有效地进行推断。 |
 
 # 详细
 
-[^1]: 动态协变量平衡：基于潜在局部投影的治疗效果随时间估计
+[^1]: 具有集合值预测和错误规范化的模型中的基于信息的推断方法
 
-    Dynamic covariate balancing: estimating treatment effects over time with potential local projections. (arXiv:2103.01280v3 [econ.EM] UPDATED)
+    Information Based Inference in Models with Set-Valued Predictions and Misspecification. (arXiv:2401.11046v1 [econ.EM])
 
-    [http://arxiv.org/abs/2103.01280](http://arxiv.org/abs/2103.01280)
+    [http://arxiv.org/abs/2401.11046](http://arxiv.org/abs/2401.11046)
 
-    本文提出了一种通过动态协变量平衡方法，基于过去历史上潜在结果期望的局部投影，估计面板数据中动态变化的治疗效果，并考虑结果和时间变化的协变量与治疗轨迹的关系以及治疗效应的异质性。研究结果表明该方法具有良好的渐近性质和数值特性，在实证应用中具有优势。
+    本文介绍了一种基于信息的推断方法，用于处理具有集合值预测和错误规范化的模型中的部分识别参数，该方法可以在模型规范正确和错误时有效地进行推断。
 
     
 
-    本文研究了面板数据中治疗历史的估计和推断问题，特别是在治疗在时间上动态变化的情况下。我们提出了一种方法，允许治疗根据高维协变量、过去的结果和治疗动态分配，同时考虑结果和时间变化的协变量与治疗轨迹的关系，以及治疗效应的异质性。我们的方法通过在过去历史上对潜在结果期望进行递归投影，然后通过平衡动态可观测特征来控制偏差。我们研究了估计量的渐近性质和数值特性，并在实证应用中展示了该方法的优势。
+    本文提出了一种基于信息的推断方法，用于不完整模型中部分识别的参数，该方法在模型规范正确和错误时均有效。该方法的关键特点是：（i）基于最小化适当定义的Kullback-Leibler信息准则，考虑模型的不完整性，并提供非空伪真集；（ii）计算可行；（iii）无论模型规范正确与否，实现方法相同；（iv）利用离散和连续协变量的变异提供的所有信息；（v）依赖于Rao的评分统计量，该统计量被证明是渐近基本的。
 
-    This paper studies the estimation and inference of treatment histories in panel data settings when treatments change dynamically over time.  We propose a method that allows for (i) treatments to be assigned dynamically over time based on high-dimensional covariates, past outcomes and treatments; (ii) outcomes and time-varying covariates to depend on treatment trajectories; (iii) heterogeneity of treatment effects.  Our approach recursively projects potential outcomes' expectations on past histories. It then controls the bias by balancing dynamically observable characteristics. We study the asymptotic and numerical properties of the estimator and illustrate the benefits of the procedure in an empirical application.
+    This paper proposes an information-based inference method for partially identified parameters in incomplete models that is valid both when the model is correctly specified and when it is misspecified. Key features of the method are: (i) it is based on minimizing a suitably defined Kullback-Leibler information criterion that accounts for incompleteness of the model and delivers a non-empty pseudo-true set; (ii) it is computationally tractable; (iii) its implementation is the same for both correctly and incorrectly specified models; (iv) it exploits all information provided by variation in discrete and continuous covariates; (v) it relies on Rao's score statistic, which is shown to be asymptotically pivotal.
     
 
