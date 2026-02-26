@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CY</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CY</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CY</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CY</description><item><title>ChatGPT&#24102;&#26469;&#30340;&#22823;&#35821;&#35328;&#27169;&#22411;(LLMs)&#34429;&#28982;&#26377;&#24456;&#22810;&#20248;&#21183;&#65292;&#20294;&#26159;&#38543;&#26426;&#40550;&#40521;&#21644;&#24187;&#35273;&#31561;&#26032;&#30340;&#27861;&#24459;&#21644;&#20262;&#29702;&#39118;&#38505;&#20063;&#38543;&#20043;&#32780;&#26469;&#12290;&#27431;&#27954;AI&#30417;&#31649;&#33539;&#24335;&#38656;&#35201;&#36827;&#19968;&#27493;&#21457;&#23637;&#20197;&#20943;&#36731;&#36825;&#20123;&#39118;&#38505;&#12290;</title><link>http://arxiv.org/abs/2304.14347</link><description>&lt;p&gt;
+ChatGPT&#30340;&#40657;&#26263;&#38754;&#65306;&#26469;&#33258;&#38543;&#26426;&#40550;&#40521;&#21644;&#24187;&#35273;&#30340;&#27861;&#24459;&#21644;&#20262;&#29702;&#25361;&#25112;
+&lt;/p&gt;
+&lt;p&gt;
+The Dark Side of ChatGPT: Legal and Ethical Challenges from Stochastic Parrots and Hallucination. (arXiv:2304.14347v1 [cs.CY])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2304.14347
+&lt;/p&gt;
+&lt;p&gt;
+ChatGPT&#24102;&#26469;&#30340;&#22823;&#35821;&#35328;&#27169;&#22411;(LLMs)&#34429;&#28982;&#26377;&#24456;&#22810;&#20248;&#21183;&#65292;&#20294;&#26159;&#38543;&#26426;&#40550;&#40521;&#21644;&#24187;&#35273;&#31561;&#26032;&#30340;&#27861;&#24459;&#21644;&#20262;&#29702;&#39118;&#38505;&#20063;&#38543;&#20043;&#32780;&#26469;&#12290;&#27431;&#27954;AI&#30417;&#31649;&#33539;&#24335;&#38656;&#35201;&#36827;&#19968;&#27493;&#21457;&#23637;&#20197;&#20943;&#36731;&#36825;&#20123;&#39118;&#38505;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#38543;&#30528;ChatGPT&#30340;&#25512;&#20986;&#65292;&#22823;&#35821;&#35328;&#27169;&#22411;&#65288;LLMs&#65289;&#27491;&#22312;&#21160;&#25671;&#25105;&#20204;&#25972;&#20010;&#31038;&#20250;&#65292;&#24555;&#36895;&#25913;&#21464;&#25105;&#20204;&#30340;&#24605;&#32500;&#12289;&#21019;&#36896;&#21644;&#29983;&#27963;&#26041;&#24335;&#12290;&#28982;&#32780;&#65292;&#38543;&#30528;&#38543;&#26426;&#40550;&#40521;&#21644;&#24187;&#35273;&#31561;&#26032;&#30340;&#27861;&#24459;&#21644;&#20262;&#29702;&#39118;&#38505;&#20986;&#29616;&#65292;&#26032;&#20852;LLMs&#20063;&#24102;&#26469;&#20102;&#35768;&#22810;&#25361;&#25112;&#12290;&#27431;&#30431;&#26159;&#31532;&#19968;&#20010;&#23558;&#37325;&#28857;&#25918;&#22312;AI&#27169;&#22411;&#30417;&#31649;&#19978;&#30340;&#21496;&#27861;&#31649;&#36758;&#21306;&#12290;&#28982;&#32780;&#65292;&#26032;LLMs&#24102;&#26469;&#30340;&#39118;&#38505;&#21487;&#33021;&#20250;&#34987;&#26032;&#20852;&#30340;&#27431;&#30431;&#30417;&#31649;&#33539;&#24335;&#25152;&#20302;&#20272;&#12290;&#22240;&#27492;&#65292;&#26412;&#20989;&#21578;&#35686;&#31034;&#27431;&#27954;AI&#30417;&#31649;&#33539;&#24335;&#24517;&#39035;&#36827;&#19968;&#27493;&#21457;&#23637;&#20197;&#20943;&#36731;&#36825;&#20123;&#39118;&#38505;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+With the launch of ChatGPT, Large Language Models (LLMs) are shaking up our whole society, rapidly altering the way we think, create and live. For instance, the GPT integration in Bing has altered our approach to online searching. While nascent LLMs have many advantages, new legal and ethical risks are also emerging, stemming in particular from stochastic parrots and hallucination. The EU is the first and foremost jurisdiction that has focused on the regulation of AI models. However, the risks posed by the new LLMs are likely to be underestimated by the emerging EU regulatory paradigm. Therefore, this correspondence warns that the European AI regulatory paradigm must evolve further to mitigate such risks.
+&lt;/p&gt;</description></item></channel></rss>
