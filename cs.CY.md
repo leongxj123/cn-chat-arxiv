@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [The Dark Side of ChatGPT: Legal and Ethical Challenges from Stochastic Parrots and Hallucination.](http://arxiv.org/abs/2304.14347) | ChatGPT带来的大语言模型(LLMs)虽然有很多优势，但是随机鹦鹉和幻觉等新的法律和伦理风险也随之而来。欧洲AI监管范式需要进一步发展以减轻这些风险。 |
+| [^1] | [Market Responses to Genuine Versus Strategic Generosity: An Empirical Examination of NFT Charity Fundraisers.](http://arxiv.org/abs/2401.12064) | 本文通过观察NFT慈善筹款活动中捐助人购买NFT对其后续市场结果的影响，探讨了真诚与策略性慷慨行为对市场的回应，并发现了明确的异质模式。 |
 
 # 详细
 
-[^1]: ChatGPT的黑暗面：来自随机鹦鹉和幻觉的法律和伦理挑战
+[^1]: 真诚与策略性慷慨行为对市场的回应：对NFT慈善筹款的实证研究
 
-    The Dark Side of ChatGPT: Legal and Ethical Challenges from Stochastic Parrots and Hallucination. (arXiv:2304.14347v1 [cs.CY])
+    Market Responses to Genuine Versus Strategic Generosity: An Empirical Examination of NFT Charity Fundraisers. (arXiv:2401.12064v1 [econ.GN])
 
-    [http://arxiv.org/abs/2304.14347](http://arxiv.org/abs/2304.14347)
+    [http://arxiv.org/abs/2401.12064](http://arxiv.org/abs/2401.12064)
 
-    ChatGPT带来的大语言模型(LLMs)虽然有很多优势，但是随机鹦鹉和幻觉等新的法律和伦理风险也随之而来。欧洲AI监管范式需要进一步发展以减轻这些风险。
+    本文通过观察NFT慈善筹款活动中捐助人购买NFT对其后续市场结果的影响，探讨了真诚与策略性慷慨行为对市场的回应，并发现了明确的异质模式。
 
     
 
-    随着ChatGPT的推出，大语言模型（LLMs）正在动摇我们整个社会，快速改变我们的思维、创造和生活方式。然而，随着随机鹦鹉和幻觉等新的法律和伦理风险出现，新兴LLMs也带来了许多挑战。欧盟是第一个将重点放在AI模型监管上的司法管辖区。然而，新LLMs带来的风险可能会被新兴的欧盟监管范式所低估。因此，本函告警示欧洲AI监管范式必须进一步发展以减轻这些风险。
+    加密货币捐赠现在占据全球慈善捐赠的重要份额。非同质化代币（NFT）慈善筹款作为一种新的发展方式，在这个领域中出现了。NFT慈善筹款的一个独特之处在于捐助人有可能从所购买的NFT上升值中获得经济利益。对于这些慈善筹款的捐助人动机可能会产生负面的社会形象。因此，NFT慈善筹款提供了一个了解捐助人社会形象经济后果的独特机会。我们通过利用区块链上交易处理时间的随机变动，研究了一个大型NFT慈善筹款活动中购买NFT对捐助人后续市场结果的因果效应。此外，我们展示了明确的异质模式。
 
-    With the launch of ChatGPT, Large Language Models (LLMs) are shaking up our whole society, rapidly altering the way we think, create and live. For instance, the GPT integration in Bing has altered our approach to online searching. While nascent LLMs have many advantages, new legal and ethical risks are also emerging, stemming in particular from stochastic parrots and hallucination. The EU is the first and foremost jurisdiction that has focused on the regulation of AI models. However, the risks posed by the new LLMs are likely to be underestimated by the emerging EU regulatory paradigm. Therefore, this correspondence warns that the European AI regulatory paradigm must evolve further to mitigate such risks.
+    Crypto donations now represent a significant fraction of charitable giving worldwide. Nonfungible token (NFT) charity fundraisers, which involve the sale of NFTs of artistic works with the proceeds donated to philanthropic causes, have emerged as a novel development in this space. A unique aspect of NFT charity fundraisers is the significant potential for donors to reap financial gains from the rising value of purchased NFTs. Questions may arise about the motivations of donors in these charity fundraisers, resulting in a negative social image. NFT charity fundraisers thus offer a unique opportunity to understand the economic consequences of a donor's social image. We investigate these effects in the context of a large NFT charity fundraiser. We identify the causal effect of purchasing an NFT within the charity fundraiser on a donor's later market outcomes by leveraging random variation in transaction processing times on the blockchain. Further, we demonstrate a clear pattern of heterog
     
 
