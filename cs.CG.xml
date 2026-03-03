@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CG</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CG</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CG</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CG</description><item><title>&#21487;&#35299;&#37322;&#32858;&#31867;&#20013;&#65292;&#20915;&#31574;&#26641;&#28145;&#24230;&#26159;&#26080;&#27861;&#20943;&#23569;&#30340;&#22266;&#26377;&#22797;&#26434;&#24230;&#24230;&#37327;&#20043;&#19968;&#65292;&#20943;&#23569;&#28145;&#24230;&#20250;&#26174;&#33879;&#38477;&#20302;&#32858;&#31867;&#36136;&#37327;&#12290;</title><link>http://arxiv.org/abs/2305.02850</link><description>&lt;p&gt;
+&#21487;&#35299;&#37322;&#32858;&#31867;&#20013;&#28145;&#24230;&#20943;&#23569;&#30340;&#19981;&#21487;&#33021;&#24615;&#35777;&#26126;
+&lt;/p&gt;
+&lt;p&gt;
+Impossibility of Depth Reduction in Explainable Clustering. (arXiv:2305.02850v1 [cs.LG])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2305.02850
+&lt;/p&gt;
+&lt;p&gt;
+&#21487;&#35299;&#37322;&#32858;&#31867;&#20013;&#65292;&#20915;&#31574;&#26641;&#28145;&#24230;&#26159;&#26080;&#27861;&#20943;&#23569;&#30340;&#22266;&#26377;&#22797;&#26434;&#24230;&#24230;&#37327;&#20043;&#19968;&#65292;&#20943;&#23569;&#28145;&#24230;&#20250;&#26174;&#33879;&#38477;&#20302;&#32858;&#31867;&#36136;&#37327;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#36817;&#24180;&#26469;&#65292;&#21487;&#35299;&#37322;&#32858;&#31867;&#24341;&#36215;&#20102;&#35768;&#22810;&#20851;&#27880;&#12290;&#26412;&#35770;&#25991;&#22312;Euclidean&#24179;&#38754;&#20013;&#35777;&#26126;&#65292;&#23545;&#20110;&#21487;&#35299;&#37322;&#30340;k-means&#21644;k-median&#32858;&#31867;&#38382;&#39064;&#65292;&#20915;&#31574;&#26641;&#30340;&#28145;&#24230;&#26159;&#19981;&#21487;&#36991;&#20813;&#30340;&#22797;&#26434;&#24230;&#24230;&#37327;&#20043;&#19968;&#65292;&#26080;&#27861;&#20943;&#23569;&#32780;&#19981;&#26174;&#33879;&#38477;&#20302;&#32858;&#31867;&#36136;&#37327;&#12290;&#25105;&#20204;&#35777;&#26126;&#20102;&#23545;&#20110;&#20219;&#20309;&#22312;Euclidean&#24179;&#38754;&#19978;&#30340;&#25968;&#25454;X&#65292;&#28145;&#24230;&#20026;k-1&#30340;&#20915;&#31574;&#26641;&#30340;k-means/k-median&#32858;&#31867;&#20195;&#20215;&#19982;X&#30340;&#20248;&#21270;&#32858;&#31867;&#20195;&#20215;&#30456;&#21516;&#65292;&#20294;&#26159;&#23545;&#20110;&#28145;&#24230;&#23567;&#20110;k-1&#30340;&#20915;&#31574;&#26641;&#65292;&#20854;&#32858;&#31867;&#20195;&#20215;&#30456;&#23545;&#20110;&#26368;&#20248;&#32858;&#31867;&#20195;&#20215;&#32780;&#35328;&#26159;&#19981;&#21487;&#25509;&#21463;&#30340;&#12290;&#25105;&#20204;&#36824;&#23558;&#32467;&#26524;&#25193;&#23637;&#21040;&#20102;k-center&#30446;&#26631;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+Over the last few years Explainable Clustering has gathered a lot of attention. Dasgupta et al. [ICML'20] initiated the study of explainable k-means and k-median clustering problems where the explanation is captured by a threshold decision tree which partitions the space at each node using axis parallel hyperplanes. Recently, Laber et al. [Pattern Recognition'23] made a case to consider the depth of the decision tree as an additional complexity measure of interest.  In this work, we prove that even when the input points are in the Euclidean plane, then any depth reduction in the explanation incurs unbounded loss in the k-means and k-median cost. Formally, we show that there exists a data set X in the Euclidean plane, for which there is a decision tree of depth k-1 whose k-means/k-median cost matches the optimal clustering cost of X, but every decision tree of depth less than k-1 has unbounded cost w.r.t. the optimal cost of clustering. We extend our results to the k-center objective as
+&lt;/p&gt;</description></item></channel></rss>
