@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description><item><title>&#25552;&#20986;&#20102;&#19968;&#31181;&#26032;&#30340;&#22522;&#20110;&#20027;&#39064;&#30340;&#27700;&#21360;&#31639;&#27861;&#65292;&#26088;&#22312;&#35299;&#20915;&#24403;&#21069;&#27700;&#21360;&#26041;&#26696;&#30340;&#23616;&#38480;&#24615;&#65292;&#20026;&#21306;&#20998;LLM&#29983;&#25104;&#30340;&#25991;&#26412;&#21644;&#20154;&#31867;&#29983;&#25104;&#30340;&#25991;&#26412;&#25552;&#20379;&#20102;&#26032;&#30340;&#24605;&#36335;&#12290;</title><link>https://arxiv.org/abs/2404.02138</link><description>&lt;p&gt;
+&#22522;&#20110;&#20027;&#39064;&#30340;LLM&#29983;&#25104;&#25991;&#26412;&#30340;&#27700;&#21360;
+&lt;/p&gt;
+&lt;p&gt;
+Topic-based Watermarks for LLM-Generated Text
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2404.02138
+&lt;/p&gt;
+&lt;p&gt;
+&#25552;&#20986;&#20102;&#19968;&#31181;&#26032;&#30340;&#22522;&#20110;&#20027;&#39064;&#30340;&#27700;&#21360;&#31639;&#27861;&#65292;&#26088;&#22312;&#35299;&#20915;&#24403;&#21069;&#27700;&#21360;&#26041;&#26696;&#30340;&#23616;&#38480;&#24615;&#65292;&#20026;&#21306;&#20998;LLM&#29983;&#25104;&#30340;&#25991;&#26412;&#21644;&#20154;&#31867;&#29983;&#25104;&#30340;&#25991;&#26412;&#25552;&#20379;&#20102;&#26032;&#30340;&#24605;&#36335;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#22823;&#22411;&#35821;&#35328;&#27169;&#22411;&#65288;LLMs&#65289;&#30340;&#26368;&#26032;&#36827;&#23637;&#23548;&#33268;&#20102;&#29983;&#25104;&#30340;&#25991;&#26412;&#36755;&#20986;&#19982;&#20154;&#31867;&#29983;&#25104;&#30340;&#25991;&#26412;&#30456;&#20284;&#24230;&#38590;&#20197;&#20998;&#36776;&#12290;&#27700;&#21360;&#31639;&#27861;&#26159;&#28508;&#22312;&#24037;&#20855;&#65292;&#36890;&#36807;&#22312;LLM&#29983;&#25104;&#30340;&#36755;&#20986;&#20013;&#23884;&#20837;&#21487;&#26816;&#27979;&#30340;&#31614;&#21517;&#65292;&#21487;&#20197;&#21306;&#20998;LLM&#29983;&#25104;&#30340;&#25991;&#26412;&#21644;&#20154;&#31867;&#29983;&#25104;&#30340;&#25991;&#26412;&#12290;&#28982;&#32780;&#65292;&#24403;&#21069;&#30340;&#27700;&#21360;&#26041;&#26696;&#22312;&#24050;&#30693;&#25915;&#20987;&#19979;&#32570;&#20047;&#20581;&#22766;&#24615;&#12290;&#27492;&#22806;&#65292;&#32771;&#34385;&#21040;LLM&#27599;&#22825;&#29983;&#25104;&#25968;&#19975;&#20010;&#25991;&#26412;&#36755;&#20986;&#65292;&#27700;&#21360;&#31639;&#27861;&#38656;&#35201;&#35760;&#24518;&#27599;&#20010;&#36755;&#20986;&#25165;&#33021;&#35753;&#26816;&#27979;&#27491;&#24120;&#24037;&#20316;&#65292;&#36825;&#26159;&#19981;&#20999;&#23454;&#38469;&#30340;&#12290;&#26412;&#25991;&#38024;&#23545;&#24403;&#21069;&#27700;&#21360;&#26041;&#26696;&#30340;&#23616;&#38480;&#24615;&#65292;&#25552;&#20986;&#20102;&#38024;&#23545;LLMs&#30340;&#8220;&#22522;&#20110;&#20027;&#39064;&#30340;&#27700;&#21360;&#31639;&#27861;&#8221;&#27010;&#24565;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2404.02138v1 Announce Type: cross  Abstract: Recent advancements of large language models (LLMs) have resulted in indistinguishable text outputs comparable to human-generated text. Watermarking algorithms are potential tools that offer a way to differentiate between LLM- and human-generated text by embedding detectable signatures within LLM-generated output. However, current watermarking schemes lack robustness against known attacks against watermarking algorithms. In addition, they are impractical considering an LLM generates tens of thousands of text outputs per day and the watermarking algorithm needs to memorize each output it generates for the detection to work. In this work, focusing on the limitations of current watermarking schemes, we propose the concept of a "topic-based watermarking algorithm" for LLMs. The proposed algorithm determines how to generate tokens for the watermarked LLM output based on extracted topics of an input prompt or the output of a non-watermarked 
+&lt;/p&gt;</description></item></channel></rss>

@@ -2,9 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-
+| [^1] | [Statistical Inference with Stochastic Gradient Methods under $\phi$-mixing Data.](http://arxiv.org/abs/2302.12717) | 本文提出了一种基于 mini-batch SGD 估计器进行 $\varphi$-混合数据统计推断的方法，有效解决了普通方法在构建置信区间时面临的相关性问题。 |
 
 # 详细
 
+[^1]: 基于 $\varphi$-混合数据的随机梯度方法在统计推断中的应用
 
+    Statistical Inference with Stochastic Gradient Methods under $\phi$-mixing Data. (arXiv:2302.12717v2 [stat.ME] UPDATED)
+
+    [http://arxiv.org/abs/2302.12717](http://arxiv.org/abs/2302.12717)
+
+    本文提出了一种基于 mini-batch SGD 估计器进行 $\varphi$-混合数据统计推断的方法，有效解决了普通方法在构建置信区间时面临的相关性问题。
+
+    
+
+    随机梯度下降（SGD）是一种可扩展且内存效率高的优化算法，适用于大型数据集和流式数据的处理，因此受到了广泛关注和欢迎。SGD 基于的估计器在统计推断中的应用，如区间估计，也取得了巨大成功。然而，大多数相关工作都是基于独立同分布观测或马尔可夫链的。当观测数据来自一个混合时间序列时，如何进行有效的统计推断尚未研究。事实上，观测数据之间的一般相关性给区间估计带来了挑战。大多数现有方法可能会忽略这种相关性并导致无效的置信区间。本文提出了一种基于 mini-batch SGD 估计器进行 $\varphi$-混合数据统计推断的方法。置信区间是使用相关的 mini-batch bootstrap SGD 程序构建的。通过使用 \cite{yu1994rates} 中的 “独立块” 技巧，我们证明了该方法的有效性。
+
+    Stochastic gradient descent (SGD) is a scalable and memory-efficient optimization algorithm for large datasets and stream data, which has drawn a great deal of attention and popularity. The applications of SGD-based estimators to statistical inference such as interval estimation have also achieved great success. However, most of the related works are based on i.i.d. observations or Markov chains. When the observations come from a mixing time series, how to conduct valid statistical inference remains unexplored. As a matter of fact, the general correlation among observations imposes a challenge on interval estimation. Most existing methods may ignore this correlation and lead to invalid confidence intervals. In this paper, we propose a mini-batch SGD estimator for statistical inference when the data is $\phi$-mixing. The confidence intervals are constructed using an associated mini-batch bootstrap SGD procedure. Using ``independent block'' trick from \cite{yu1994rates}, we show that the
+    
 
