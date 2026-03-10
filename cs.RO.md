@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [RAG-Driver: Generalisable Driving Explanations with Retrieval-Augmented In-Context Learning in Multi-Modal Large Language Model](https://arxiv.org/abs/2402.10828) | RAG-Driver 提出了一种适用于自动驾驶的通用化驾驶解释系统，通过检索增强上下文学习，解决了多模态大语言模型训练成本高、数据稀缺和泛化能力限制等问题。 |
+| [^1] | [Understanding the Application of Utility Theory in Robotics and Artificial Intelligence: A Survey.](http://arxiv.org/abs/2306.09445) | 本文是一项了解机器人和人工智能中效用理论应用的调查，探讨了如何通过合适的效用模型指导智能体选择合理策略来实现系统的最优效用和保证每个群体成员的可持续发展。 |
 
 # 详细
 
-[^1]: RAG-Driver：在多模态大语言模型中通过检索增强上下文学习实现可泛化的驾驶解释
+[^1]: 了解效用理论在机器人和人工智能中的应用：一项调查
 
-    RAG-Driver: Generalisable Driving Explanations with Retrieval-Augmented In-Context Learning in Multi-Modal Large Language Model
+    Understanding the Application of Utility Theory in Robotics and Artificial Intelligence: A Survey. (arXiv:2306.09445v1 [cs.RO])
 
-    [https://arxiv.org/abs/2402.10828](https://arxiv.org/abs/2402.10828)
+    [http://arxiv.org/abs/2306.09445](http://arxiv.org/abs/2306.09445)
 
-    RAG-Driver 提出了一种适用于自动驾驶的通用化驾驶解释系统，通过检索增强上下文学习，解决了多模态大语言模型训练成本高、数据稀缺和泛化能力限制等问题。
+    本文是一项了解机器人和人工智能中效用理论应用的调查，探讨了如何通过合适的效用模型指导智能体选择合理策略来实现系统的最优效用和保证每个群体成员的可持续发展。
 
     
 
-    由“黑匣子”模型驱动的机器人需要提供人类可信赖的可理解解释。因此，可解释性在可信任的自主决策中扮演着关键角色，以促进透明度和最终用户的接受度，特别是在复杂的自动驾驶场景中。最近多模态大语言模型（MLLMs）的进展显示出了增强解释性作为驾驶代理的潜力，通过产生控制预测以及自然语言解释。然而，由于昂贵的注释成本和不同数据集之间的显著领域差异，导致的严重数据稀缺使得开发一个强大且具有通用性的系统变得异常具有挑战性。此外，MLLM的训练要求昂贵，而灾难性遗忘问题的尚未解决也限制了它们在部署后的泛化能力。为了解决这些挑战，我们提出了RAG-Driver。
+    作为经济学、博弈论和运筹学中的一个统一概念，效用在机器人和人工智能领域中被用来评估个体需求、偏好和利益水平。特别是在多智能体/机器人系统（MAS/MRS）的决策和学习中，合适的效用模型可以指导智能体选择合理的策略来实现其当前需求并学会合作和组织其行为，优化系统的效用，建立稳定可靠的关系，并保证每个群体成员的可持续发展，类似于人类社会。虽然这些系统的复杂、大规模和长期的行为很大程度上由底层关系的基本特性决定，但在机器人和人工智能领域，对机制的理论方面和应用领域的讨论较少。本文引入了一个以效用为导向的需求范式，描述和评估了内部和外部关系。
 
-    arXiv:2402.10828v1 Announce Type: cross  Abstract: Robots powered by 'blackbox' models need to provide human-understandable explanations which we can trust. Hence, explainability plays a critical role in trustworthy autonomous decision-making to foster transparency and acceptance among end users, especially in complex autonomous driving. Recent advancements in Multi-Modal Large Language models (MLLMs) have shown promising potential in enhancing the explainability as a driving agent by producing control predictions along with natural language explanations. However, severe data scarcity due to expensive annotation costs and significant domain gaps between different datasets makes the development of a robust and generalisable system an extremely challenging task. Moreover, the prohibitively expensive training requirements of MLLM and the unsolved problem of catastrophic forgetting further limit their generalisability post-deployment. To address these challenges, we present RAG-Driver, a n
+    As a unifying concept in economics, game theory, and operations research, even in the Robotics and AI field, the utility is used to evaluate the level of individual needs, preferences, and interests. Especially for decision-making and learning in multi-agent/robot systems (MAS/MRS), a suitable utility model can guide agents in choosing reasonable strategies to achieve their current needs and learning to cooperate and organize their behaviors, optimizing the system's utility, building stable and reliable relationships, and guaranteeing each group member's sustainable development, similar to the human society. Although these systems' complex, large-scale, and long-term behaviors are strongly determined by the fundamental characteristics of the underlying relationships, there has been less discussion on the theoretical aspects of mechanisms and the fields of applications in Robotics and AI. This paper introduces a utility-orient needs paradigm to describe and evaluate inter and outer rela
     
 

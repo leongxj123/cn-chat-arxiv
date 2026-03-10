@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Analyzing the Performance of ChatGPT in Cardiology and Vascular Pathologies.](http://arxiv.org/abs/2307.02518) | ChatGPT是由OpenAI开发的大型语言模型，该研究分析了ChatGPT在心脏病和血管病理学中的表现。结果表明，ChatGPT在回答挑战性多项选择题方面表现优于医学生，显示了ChatGPT在提供准确答案方面具有潜在的高效性。 |
+| [^1] | [Survey of Computerized Adaptive Testing: A Machine Learning Perspective](https://arxiv.org/abs/2404.00712) | 本文以机器学习视角综述了计算机自适应测试（CAT），重点解析其测试问题选择算法和如何优化认知诊断模型、题库构建和测试控制。 |
 
 # 详细
 
-[^1]: 分析ChatGPT在心脏病和血管病理学中的表现
+[^1]: 计算机自适应测试综述：机器学习视角
 
-    Analyzing the Performance of ChatGPT in Cardiology and Vascular Pathologies. (arXiv:2307.02518v1 [cs.CL])
+    Survey of Computerized Adaptive Testing: A Machine Learning Perspective
 
-    [http://arxiv.org/abs/2307.02518](http://arxiv.org/abs/2307.02518)
+    [https://arxiv.org/abs/2404.00712](https://arxiv.org/abs/2404.00712)
 
-    ChatGPT是由OpenAI开发的大型语言模型，该研究分析了ChatGPT在心脏病和血管病理学中的表现。结果表明，ChatGPT在回答挑战性多项选择题方面表现优于医学生，显示了ChatGPT在提供准确答案方面具有潜在的高效性。
+    本文以机器学习视角综述了计算机自适应测试（CAT），重点解析其测试问题选择算法和如何优化认知诊断模型、题库构建和测试控制。
 
     
 
-    该文章旨在分析OpenAI开发的大型语言模型ChatGPT在心脏病和血管病理学领域的表现。该研究评估了ChatGPT在回答挑战性多项选择题的准确性，使用了来自Siamois-QCM平台的190个问题数据集。研究目标是评估ChatGPT在医学教育中与两名成绩优秀的医学生相比的潜力。结果显示，ChatGPT在190道问题中获得了175个正确答案，准确率为92.10\%，而两名学生分别得分163和159，准确率分别为85.78\%和82.63\%。这些结果展示了ChatGPT在心脏病和血管病理学领域具有准确回答相关问题的潜力。
+    计算机自适应测试（CAT）提供了一种高效、量身定制的评估考生熟练程度的方法，通过根据他们的表现动态调整测试问题。CAT广泛应用于教育、医疗、体育和社会学等多个领域，彻底改变了测试实践。然而，随着大规模测试的增加复杂性，CAT已经融合了机器学习技术。本文旨在提供一个以机器学习为重点的CAT综述，从新的角度解读这种自适应测试方法。通过研究CAT适应性核心的测试问题选择算法，我们揭示了其功能。此外，我们探讨了认知诊断模型、题库构建和CAT中的测试控制，探索了机器学习如何优化这些组成部分。通过对当前情况的分析，
 
-    The article aims to analyze the performance of ChatGPT, a large language model developed by OpenAI, in the context of cardiology and vascular pathologies. The study evaluated the accuracy of ChatGPT in answering challenging multiple-choice questions (QCM) using a dataset of 190 questions from the Siamois-QCM platform. The goal was to assess ChatGPT potential as a valuable tool in medical education compared to two well-ranked students of medicine. The results showed that ChatGPT outperformed the students, scoring 175 out of 190 correct answers with a percentage of 92.10\%, while the two students achieved scores of 163 and 159 with percentages of 85.78\% and 82.63\%, respectively. These results showcase how ChatGPT has the potential to be highly effective in the fields of cardiology and vascular pathologies by providing accurate answers to relevant questions.
+    arXiv:2404.00712v1 Announce Type: cross  Abstract: Computerized Adaptive Testing (CAT) provides an efficient and tailored method for assessing the proficiency of examinees, by dynamically adjusting test questions based on their performance. Widely adopted across diverse fields like education, healthcare, sports, and sociology, CAT has revolutionized testing practices. While traditional methods rely on psychometrics and statistics, the increasing complexity of large-scale testing has spurred the integration of machine learning techniques. This paper aims to provide a machine learning-focused survey on CAT, presenting a fresh perspective on this adaptive testing method. By examining the test question selection algorithm at the heart of CAT's adaptivity, we shed light on its functionality. Furthermore, we delve into cognitive diagnosis models, question bank construction, and test control within CAT, exploring how machine learning can optimize these components. Through an analysis of curre
     
 
