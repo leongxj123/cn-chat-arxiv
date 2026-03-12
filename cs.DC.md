@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Survey on Decentralized Federated Learning.](http://arxiv.org/abs/2308.04604) | 最近几年，联邦学习成为训练分布式、大规模、保护隐私的机器学习系统的流行范式。然而，其中一个关键挑战是克服集中式编排的单点故障问题。 |
+| [^1] | [Communication-Efficient Multimodal Federated Learning: Joint Modality and Client Selection.](http://arxiv.org/abs/2401.16685) | 本文提出了一种新的多模态联邦学习方法，通过联合模态和客户选择来解决多样的模态集合和通信限制的挑战。 |
 
 # 详细
 
-[^1]: 分散式联邦学习综述
+[^1]: 通信高效的多模态联邦学习：联合模态和客户选择
 
-    A Survey on Decentralized Federated Learning. (arXiv:2308.04604v1 [cs.LG])
+    Communication-Efficient Multimodal Federated Learning: Joint Modality and Client Selection. (arXiv:2401.16685v1 [cs.LG])
 
-    [http://arxiv.org/abs/2308.04604](http://arxiv.org/abs/2308.04604)
+    [http://arxiv.org/abs/2401.16685](http://arxiv.org/abs/2401.16685)
 
-    最近几年，联邦学习成为训练分布式、大规模、保护隐私的机器学习系统的流行范式。然而，其中一个关键挑战是克服集中式编排的单点故障问题。
+    本文提出了一种新的多模态联邦学习方法，通过联合模态和客户选择来解决多样的模态集合和通信限制的挑战。
 
     
 
-    最近几年，联邦学习（FL）已经成为训练分布式、大规模、保护隐私的机器学习（ML）系统的流行范式。与标准ML不同，需要将数据收集在训练执行的确切位置，FL利用数百万边缘设备的计算能力来协同训练共享的全局模型，同时不会披露其本地私有数据。在典型的FL系统中，中央服务器只充当协调器的角色；它迭代地收集和汇总每个客户端在自己的私有数据上训练的本地模型，直到收敛。尽管FL在设计上具有许多优点（例如通过设计保护私有数据所有权），但也存在一些弱点。其中最关键的挑战之一是克服经典FL客户端-服务器架构的集中式编排，这被认为是易受单点故障攻击的。
+    多模态联邦学习旨在丰富在客户端收集多模态测量的联邦学习环境中的模型训练。然而，多模态联邦学习面临一些尚未解决的关键挑战，特别是在异构网络环境中：(i)每个客户端收集的模态集合将是多样的，(ii)通信限制阻止客户端将其所有本地训练的模态模型上传到服务器。在本文中，我们提出了多模态联邦学习与联合模态和客户选择(mmFedMC)，一种新的联邦学习方法，可以解决多模态环境中的上述挑战。联合选择算法包含两个主要组成部分：(a)为每个客户端设计的模态选择方法，根据Shapley值分析评估模态的影响，根据通信开销的模态模型大小，结合模态模型更新频率（称为最近更新）作为权重，以增强模态选择的效果。
 
-    In recent years, federated learning (FL) has become a very popular paradigm for training distributed, large-scale, and privacy-preserving machine learning (ML) systems. In contrast to standard ML, where data must be collected at the exact location where training is performed, FL takes advantage of the computational capabilities of millions of edge devices to collaboratively train a shared, global model without disclosing their local private data. Specifically, in a typical FL system, the central server acts only as an orchestrator; it iteratively gathers and aggregates all the local models trained by each client on its private data until convergence. Although FL undoubtedly has several benefits over traditional ML (e.g., it protects private data ownership by design), it suffers from several weaknesses. One of the most critical challenges is to overcome the centralized orchestration of the classical FL client-server architecture, which is known to be vulnerable to single-point-of-failur
+    Multimodal federated learning (FL) aims to enrich model training in FL settings where clients are collecting measurements across multiple modalities. However, key challenges to multimodal FL remain unaddressed, particularly in heterogeneous network settings where: (i) the set of modalities collected by each client will be diverse, and (ii) communication limitations prevent clients from uploading all their locally trained modality models to the server. In this paper, we propose multimodal Federated learning with joint Modality and Client selection (mmFedMC), a new FL methodology that can tackle the above-mentioned challenges in multimodal settings. The joint selection algorithm incorporates two main components: (a) A modality selection methodology for each client, which weighs (i) the impact of the modality, gauged by Shapley value analysis, (ii) the modality model size as a gauge of communication overhead, against (iii) the frequency of modality model updates, denoted recency, to enhan
     
 
