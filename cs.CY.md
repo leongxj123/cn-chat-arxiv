@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Personalizing explanations of AI-driven hints to users cognitive abilities: an empirical evaluation](https://arxiv.org/abs/2403.04035) | 该研究调查了如何个性化智能辅导系统生成的提示的解释，以帮助促进学生学习，实证结果表明，该个性化方法显著提高了目标用户与提示解释的互动、理解和学习效果。 |
-| [^2] | [Increasing Fairness via Combination with Learning Guarantees.](http://arxiv.org/abs/2301.10813) | 该论文提出了一种公平质量度量方法，名为判别风险，旨在反映个体和群体公平性。此外，研究者还讨论了公平性是否可以在理论上得到保证。 |
+| [^1] | [A Multi-Perspective Machine Learning Approach to Evaluate Police-Driver Interaction in Los Angeles](https://arxiv.org/abs/2402.01703) | 该研究提出了一种多角度的机器学习方法，用于分析洛杉矶警察与司机的互动。该方法利用多模态的数据包括音频、视频和文字信息，旨在提供对复杂和有争议的警民互动的分析工具。 |
 
 # 详细
 
-[^1]: 个性化AI驱动提示对用户认知能力的解释：一项实证评估
+[^1]: 一种多角度的机器学习方法用于评估洛杉矶警察与司机的互动
 
-    Personalizing explanations of AI-driven hints to users cognitive abilities: an empirical evaluation
+    A Multi-Perspective Machine Learning Approach to Evaluate Police-Driver Interaction in Los Angeles
 
-    [https://arxiv.org/abs/2403.04035](https://arxiv.org/abs/2403.04035)
+    [https://arxiv.org/abs/2402.01703](https://arxiv.org/abs/2402.01703)
 
-    该研究调查了如何个性化智能辅导系统生成的提示的解释，以帮助促进学生学习，实证结果表明，该个性化方法显著提高了目标用户与提示解释的互动、理解和学习效果。
-
-    
-
-    我们调查了个性化解释智能辅导系统生成的提示，以证明它们提供提示促进学生学习的有效性。个性化针对具有两种特征（认知需求和认真度）较低水平的学生，旨在增强这些学生对解释的参与，基于先前研究发现，这些学生不会自然参与解释，但如果他们这样做将会受益。为了评估个性化的有效性，我们进行了一项用户研究，我们发现我们提出的个性化显著增加了我们目标用户与提示解释的互动、他们对提示的理解以及他们的学习。因此，这项工作为个性化AI驱动解释提供了有价值的见解，适用于如学习等认知要求高的任务。
-
-    arXiv:2403.04035v1 Announce Type: new  Abstract: We investigate personalizing the explanations that an Intelligent Tutoring System generates to justify the hints it provides to students to foster their learning. The personalization targets students with low levels of two traits, Need for Cognition and Conscientiousness, and aims to enhance these students' engagement with the explanations, based on prior findings that these students do not naturally engage with the explanations but they would benefit from them if they do. To evaluate the effectiveness of the personalization, we conducted a user study where we found that our proposed personalization significantly increases our target users' interaction with the hint explanations, their understanding of the hints and their learning. Hence, this work provides valuable insights into effectively personalizing AI-driven explanations for cognitively demanding tasks such as learning.
-    
-[^2]: 通过学习保证提高公平性
-
-    Increasing Fairness via Combination with Learning Guarantees. (arXiv:2301.10813v2 [cs.LG] UPDATED)
-
-    [http://arxiv.org/abs/2301.10813](http://arxiv.org/abs/2301.10813)
-
-    该论文提出了一种公平质量度量方法，名为判别风险，旨在反映个体和群体公平性。此外，研究者还讨论了公平性是否可以在理论上得到保证。
+    该研究提出了一种多角度的机器学习方法，用于分析洛杉矶警察与司机的互动。该方法利用多模态的数据包括音频、视频和文字信息，旨在提供对复杂和有争议的警民互动的分析工具。
 
     
 
-    随着机器学习系统在越来越多的现实场景中得到广泛应用，对于隐藏在机器学习模型中的潜在歧视的担忧正在增加。许多技术已经被开发出来以增强公平性，包括常用的群体公平性度量和几种结合集成学习的公平感知方法。然而，现有的公平度量只能关注其中之一，即群体公平性或个体公平性，它们之间的硬性兼容性暗示了即使其中之一得到满足，仍可能存在偏见。此外，现有的提升公平性的机制通常只提供经验结果来证明其有效性，但很少有论文讨论公平性是否可以在理论上得到保证。为了解决这些问题，本文提出了一种公平质量度量方法——判别风险，以反映个体和群体公平性两个方面。此外，我们还研究了p...
+    政府官员与市民之间的互动影响公共福祉和民主社会的正当性。警察是国家最显而易见、最接触市民的代理人，在交通站停期间，他们每年与公众互动超过2000万次。如今，这些互动经常被戴在身上的摄像机记录下来，这被视为提高警察问责制和改善警民互动的手段。然而，由于缺乏可靠的自动化工具来分析这些复杂而有争议的警民互动，这些记录的及时分析受到了阻碍。本文提出了一种新的多角度、多模态机器学习（ML）工具的方法，用于分析来自这些身上摄像机记录的音频、视频和文字信息。我们的方法首先确定与不同利益相关者最相关的沟通方面，包括共同感知互动的标志标记以及具有这些标记的符号。
 
-    The concern about underlying discrimination hidden in ML models is increasing, as ML systems have been widely applied in more and more real-world scenarios and any discrimination hidden in them will directly affect human life. Many techniques have been developed to enhance fairness including commonly-used group fairness measures and several fairness-aware methods combining ensemble learning. However, existing fairness measures can only focus on one aspect -- either group or individual fairness, and the hard compatibility among them indicates a possibility of remaining biases even if one of them is satisfied. Moreover, existing mechanisms to boost fairness usually present empirical results to show validity, yet few of them discuss whether fairness can be boosted with certain theoretical guarantees. To address these issues, we propose a fairness quality measure named discriminative risk in this paper to reflect both individual and group fairness aspects. Furthermore, we investigate the p
+    Interactions between the government officials and civilians affect public wellbeing and the state legitimacy that is necessary for the functioning of democratic society. Police officers, the most visible and contacted agents of the state, interact with the public more than 20 million times a year during traffic stops. Today, these interactions are regularly recorded by body-worn cameras (BWCs), which are lauded as a means to enhance police accountability and improve police-public interactions. However, the timely analysis of these recordings is hampered by a lack of reliable automated tools that can enable the analysis of these complex and contested police-public interactions. This article proposes an approach to developing new multi-perspective, multimodal machine learning (ML) tools to analyze the audio, video, and transcript information from this BWC footage. Our approach begins by identifying the aspects of communication most salient to different stakeholders, including both commun
     
 
