@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Deformation-Invariant Neural Network and Its Applications in Distorted Image Restoration and Analysis.](http://arxiv.org/abs/2310.02641) | 本文提出了一种弹性不变神经网络（DINN）用于处理受到几何形变影响的图像的图像处理任务。DINN通过融入拟保形变换网络（QCTN）来输出一致的潜在特征，使得具有相同原始对象或场景的几何形变图像能够更接近自然或良好图像分布。 |
+| [^1] | [Selective Prediction for Semantic Segmentation using Post-Hoc Confidence Estimation and Its Performance under Distribution Shift](https://arxiv.org/abs/2402.10665) | 本文研究了在低资源环境中语义分割的选择性预测，提出了一种针对语义分割量身定制的新型图像级置信度测量，并通过实验证明了其有效性 |
 
 # 详细
 
-[^1]: 弹性不变神经网络及其在变形图像恢复和分析中的应用
+[^1]: 使用事后置信度估计的选择性预测在语义分割中的性能及其在分布偏移下的表现
 
-    Deformation-Invariant Neural Network and Its Applications in Distorted Image Restoration and Analysis. (arXiv:2310.02641v1 [cs.CV])
+    Selective Prediction for Semantic Segmentation using Post-Hoc Confidence Estimation and Its Performance under Distribution Shift
 
-    [http://arxiv.org/abs/2310.02641](http://arxiv.org/abs/2310.02641)
+    [https://arxiv.org/abs/2402.10665](https://arxiv.org/abs/2402.10665)
 
-    本文提出了一种弹性不变神经网络（DINN）用于处理受到几何形变影响的图像的图像处理任务。DINN通过融入拟保形变换网络（QCTN）来输出一致的潜在特征，使得具有相同原始对象或场景的几何形变图像能够更接近自然或良好图像分布。
+    本文研究了在低资源环境中语义分割的选择性预测，提出了一种针对语义分割量身定制的新型图像级置信度测量，并通过实验证明了其有效性
 
     
 
-    受到几何形变影响的图像对于目标识别等图像处理和计算机视觉任务来说是一个重要的挑战。基于深度学习的图像模型通常无法对几何形变图像给出准确的性能。本文中，我们提出了一种弹性不变神经网络（DINN），用于解决几何形变图像的图像处理任务。DINN为几何形变图像输出一致的潜在特征，这些图像具有相同的原始对象或场景。DINN的思想是将一个简单的组件，称为拟保形变换网络（QCTN），融入到其他现有的深度网络中进行图像处理任务。QCTN是一个深度神经网络，它输出一个拟保形映射，可以将几何形变的图像转换为更接近自然或良好图像分布的改进版本。它首先输出一个贝尔特拉密系数，用于衡量拟保形映射的效果。
+    语义分割在各种计算机视觉应用中扮演着重要角色，然而其有效性常常受到高质量标记数据的缺乏所限。为了解决这一挑战，一个常见策略是利用在不同种群上训练的模型，如公开可用的数据集。然而，这种方法导致了分布偏移问题，在兴趣种群上表现出降低的性能。在模型错误可能带来重大后果的情况下，选择性预测方法提供了一种减轻风险、减少对专家监督依赖的手段。本文研究了在资源匮乏环境下语义分割的选择性预测，着重于应用于在分布偏移下运行的预训练模型的事后置信度估计器。我们提出了一种针对语义分割量身定制的新型图像级置信度测量，并通过实验证明了其有效性。
 
-    Images degraded by geometric distortions pose a significant challenge to imaging and computer vision tasks such as object recognition. Deep learning-based imaging models usually fail to give accurate performance for geometrically distorted images. In this paper, we propose the deformation-invariant neural network (DINN), a framework to address the problem of imaging tasks for geometrically distorted images. The DINN outputs consistent latent features for images that are geometrically distorted but represent the same underlying object or scene. The idea of DINN is to incorporate a simple component, called the quasiconformal transformer network (QCTN), into other existing deep networks for imaging tasks. The QCTN is a deep neural network that outputs a quasiconformal map, which can be used to transform a geometrically distorted image into an improved version that is closer to the distribution of natural or good images. It first outputs a Beltrami coefficient, which measures the quasiconf
+    arXiv:2402.10665v1 Announce Type: new  Abstract: Semantic segmentation plays a crucial role in various computer vision applications, yet its efficacy is often hindered by the lack of high-quality labeled data. To address this challenge, a common strategy is to leverage models trained on data from different populations, such as publicly available datasets. This approach, however, leads to the distribution shift problem, presenting a reduced performance on the population of interest. In scenarios where model errors can have significant consequences, selective prediction methods offer a means to mitigate risks and reduce reliance on expert supervision. This paper investigates selective prediction for semantic segmentation in low-resource settings, thus focusing on post-hoc confidence estimators applied to pre-trained models operating under distribution shift. We propose a novel image-level confidence measure tailored for semantic segmentation and demonstrate its effectiveness through expe
     
 
