@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv math.ST</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for math.ST</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv math.ST</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for math.ST</description><item><title>&#25552;&#20986;&#20102;&#19968;&#31181;&#33258;&#36866;&#24212;&#21435;&#20559;&#26426;&#22120;&#23398;&#20064;&#65288;ADML&#65289;&#26694;&#26550;&#65292;&#36890;&#36807;&#32467;&#21512;&#25968;&#25454;&#39537;&#21160;&#30340;&#27169;&#22411;&#36873;&#25321;&#21644;&#21435;&#20559;&#26426;&#22120;&#23398;&#20064;&#25216;&#26415;&#65292;&#26500;&#24314;&#20102;&#28176;&#36827;&#32447;&#24615;&#12289;&#33258;&#36866;&#24212;&#21644;&#36229;&#25928;&#29575;&#30340;&#36335;&#24452;&#21487;&#24494;&#30340;&#21151;&#33021;&#20272;&#35745;&#22120;&#12290;</title><link>http://arxiv.org/abs/2307.12544</link><description>&lt;p&gt;
+&#33258;&#36866;&#24212;&#21435;&#20559;&#26426;&#22120;&#23398;&#20064;&#26041;&#27861;&#21450;&#25968;&#25454;&#39537;&#21160;&#27169;&#22411;&#36873;&#25321;&#25216;&#26415;
+&lt;/p&gt;
+&lt;p&gt;
+Adaptive debiased machine learning using data-driven model selection techniques. (arXiv:2307.12544v1 [stat.ME])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2307.12544
+&lt;/p&gt;
+&lt;p&gt;
+&#25552;&#20986;&#20102;&#19968;&#31181;&#33258;&#36866;&#24212;&#21435;&#20559;&#26426;&#22120;&#23398;&#20064;&#65288;ADML&#65289;&#26694;&#26550;&#65292;&#36890;&#36807;&#32467;&#21512;&#25968;&#25454;&#39537;&#21160;&#30340;&#27169;&#22411;&#36873;&#25321;&#21644;&#21435;&#20559;&#26426;&#22120;&#23398;&#20064;&#25216;&#26415;&#65292;&#26500;&#24314;&#20102;&#28176;&#36827;&#32447;&#24615;&#12289;&#33258;&#36866;&#24212;&#21644;&#36229;&#25928;&#29575;&#30340;&#36335;&#24452;&#21487;&#24494;&#30340;&#21151;&#33021;&#20272;&#35745;&#22120;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#38750;&#21442;&#25968;&#25512;&#26029;&#20013;&#30340;&#21435;&#20559;&#26426;&#22120;&#23398;&#20064;&#20272;&#35745;&#22120;&#21487;&#33021;&#23384;&#22312;&#36807;&#39640;&#30340;&#21464;&#24322;&#24615;&#21644;&#19981;&#31283;&#23450;&#24615;&#12290;&#20026;&#20102;&#35299;&#20915;&#36825;&#20010;&#38382;&#39064;&#65292;&#25105;&#20204;&#25552;&#20986;&#20102;&#33258;&#36866;&#24212;&#21435;&#20559;&#26426;&#22120;&#23398;&#20064;&#65288;ADML&#65289;&#26694;&#26550;&#65292;&#36890;&#36807;&#32467;&#21512;&#25968;&#25454;&#39537;&#21160;&#30340;&#27169;&#22411;&#36873;&#25321;&#21644;&#21435;&#20559;&#26426;&#22120;&#23398;&#20064;&#25216;&#26415;&#65292;&#26500;&#24314;&#28176;&#36827;&#32447;&#24615;&#12289;&#33258;&#36866;&#24212;&#21644;&#36229;&#25928;&#29575;&#30340;&#36335;&#24452;&#21487;&#24494;&#30340;&#21151;&#33021;&#20272;&#35745;&#22120;&#12290;&#36890;&#36807;&#20174;&#25968;&#25454;&#20013;&#30452;&#25509;&#23398;&#20064;&#27169;&#22411;&#32467;&#26500;&#65292;ADML&#36991;&#20813;&#20102;&#27169;&#22411;&#35268;&#33539;&#38169;&#35823;&#24341;&#20837;&#30340;&#20559;&#24046;&#65292;&#24182;&#25670;&#33073;&#20102;&#21442;&#25968;&#21270;&#21644;&#21322;&#21442;&#25968;&#21270;&#27169;&#22411;&#30340;&#38480;&#21046;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+Debiased machine learning estimators for nonparametric inference of smooth functionals of the data-generating distribution can suffer from excessive variability and instability. For this reason, practitioners may resort to simpler models based on parametric or semiparametric assumptions. However, such simplifying assumptions may fail to hold, and estimates may then be biased due to model misspecification. To address this problem, we propose Adaptive Debiased Machine Learning (ADML), a nonparametric framework that combines data-driven model selection and debiased machine learning techniques to construct asymptotically linear, adaptive, and superefficient estimators for pathwise differentiable functionals. By learning model structure directly from data, ADML avoids the bias introduced by model misspecification and remains free from the restrictions of parametric and semiparametric models. While they may exhibit irregular behavior for the target parameter in a nonparametric statistical mo
+&lt;/p&gt;</description></item></channel></rss>
