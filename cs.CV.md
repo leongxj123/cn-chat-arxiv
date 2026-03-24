@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Hyper-STTN: Social Group-aware Spatial-Temporal Transformer Network for Human Trajectory Prediction with Hypergraph Reasoning.](http://arxiv.org/abs/2401.06344) | 本论文提出了Hyper-STTN，一种基于超图的时空转换网络，用于人群轨迹预测。通过构建多尺度超图来捕捉拥挤场景中的群体间相互作用，并利用空间-时间转换器来捕捉行人的成对潜在相互作用。这些异构的群体间和成对间相互作用通过一个多模态转换网络进行融合和对准。 |
+| [^1] | [Vision Reimagined: AI-Powered Breakthroughs in WiFi Indoor Imaging.](http://arxiv.org/abs/2401.04317) | 这项研究首次将WiFi室内成像作为多模态图像生成任务来考虑，通过WiFi-GEN网络将测量的WiFi功率转换为高分辨率室内图像。与物理模型反演方法相比，该网络实现了更高的形状重建精度，并显著降低了Frechet Inception距离分数。此外，作者还发布了一个大规模数据集，用于验证模型的有效性。 |
 
 # 详细
 
-[^1]: 超级-STTN：社交群体感知的时空转换网络用于人体轨迹预测与超图推理
+[^1]: 视觉再构想：WiFi室内成像中的人工智能突破
 
-    Hyper-STTN: Social Group-aware Spatial-Temporal Transformer Network for Human Trajectory Prediction with Hypergraph Reasoning. (arXiv:2401.06344v1 [cs.CV] CROSS LISTED)
+    Vision Reimagined: AI-Powered Breakthroughs in WiFi Indoor Imaging. (arXiv:2401.04317v1 [cs.CV])
 
-    [http://arxiv.org/abs/2401.06344](http://arxiv.org/abs/2401.06344)
+    [http://arxiv.org/abs/2401.04317](http://arxiv.org/abs/2401.04317)
 
-    本论文提出了Hyper-STTN，一种基于超图的时空转换网络，用于人群轨迹预测。通过构建多尺度超图来捕捉拥挤场景中的群体间相互作用，并利用空间-时间转换器来捕捉行人的成对潜在相互作用。这些异构的群体间和成对间相互作用通过一个多模态转换网络进行融合和对准。
+    这项研究首次将WiFi室内成像作为多模态图像生成任务来考虑，通过WiFi-GEN网络将测量的WiFi功率转换为高分辨率室内图像。与物理模型反演方法相比，该网络实现了更高的形状重建精度，并显著降低了Frechet Inception距离分数。此外，作者还发布了一个大规模数据集，用于验证模型的有效性。
 
     
 
-    在各种现实世界的应用中，包括服务机器人和自动驾驶汽车，预测拥挤的意图和轨迹是至关重要的。理解环境动态是具有挑战性的，不仅因为对建模成对的空间和时间相互作用的复杂性，还因为群体间相互作用的多样性。为了解码拥挤场景中全面的成对和群体间相互作用，我们引入了Hyper-STTN，这是一种基于超图的时空转换网络，用于人群轨迹预测。在Hyper-STTN中，通过一组多尺度超图构建了拥挤的群体间相关性，这些超图具有不同的群体大小，通过基于随机游走概率的超图谱卷积进行捕捉。此外，还采用了空间-时间转换器来捕捉行人在空间-时间维度上的对照相互作用。然后，这些异构的群体间和成对间相互作用通过一个多模态转换网络进行融合和对准。
+    室内成像对于机器人和物联网是一项关键任务。作为无处不在的信号，WiFi是进行被动成像和将最新信息同步到所有连接设备的有希望的选择。这是第一个将WiFi室内成像作为多模态图像生成任务来考虑的研究工作，将测量的WiFi功率转换为高分辨率室内图像。我们提出的WiFi-GEN网络实现了形状重建精度，比基于物理模型的反演方法高出275%。此外，Frechet Inception距离分数显著降低了82%。为了验证模型在这个任务中的有效性，我们发布了第一个大规模数据集，包含80,000对WiFi信号和成像目标。我们的模型吸收了基于模型的方法的挑战，包括非线性、不适定性和不确定性，并将其转化为我们生成性人工智能网络的大量参数。
 
-    Predicting crowded intents and trajectories is crucial in varouls real-world applications, including service robots and autonomous vehicles. Understanding environmental dynamics is challenging, not only due to the complexities of modeling pair-wise spatial and temporal interactions but also the diverse influence of group-wise interactions. To decode the comprehensive pair-wise and group-wise interactions in crowded scenarios, we introduce Hyper-STTN, a Hypergraph-based Spatial-Temporal Transformer Network for crowd trajectory prediction. In Hyper-STTN, crowded group-wise correlations are constructed using a set of multi-scale hypergraphs with varying group sizes, captured through random-walk robability-based hypergraph spectral convolution. Additionally, a spatial-temporal transformer is adapted to capture pedestrians' pair-wise latent interactions in spatial-temporal dimensions. These heterogeneous group-wise and pair-wise are then fused and aligned though a multimodal transformer net
+    Indoor imaging is a critical task for robotics and internet-of-things. WiFi as an omnipresent signal is a promising candidate for carrying out passive imaging and synchronizing the up-to-date information to all connected devices. This is the first research work to consider WiFi indoor imaging as a multi-modal image generation task that converts the measured WiFi power into a high-resolution indoor image. Our proposed WiFi-GEN network achieves a shape reconstruction accuracy that is 275% of that achieved by physical model-based inversion methods. Additionally, the Frechet Inception Distance score has been significantly reduced by 82%. To examine the effectiveness of models for this task, the first large-scale dataset is released containing 80,000 pairs of WiFi signal and imaging target. Our model absorbs challenges for the model-based methods including the non-linearity, ill-posedness and non-certainty into massive parameters of our generative AI network. The network is also designed to
     
 
