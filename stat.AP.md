@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [On Consistency of Signatures Using Lasso.](http://arxiv.org/abs/2305.10413) | 本文重新审视了Lasso回归对于签名变换的一致性问题，并发现对于不同的过程和时间序列，选择适当的签名定义和随机模型可以提高Lasso回归的一致性。 |
+| [^1] | [AttentionMixer: An Accurate and Interpretable Framework for Process Monitoring.](http://arxiv.org/abs/2302.10426) | AttentionMixer是一个旨在为能量变换厂建立准确且可解释的辐射监测框架的数据驱动方法，其技术创新点为空间和时间自适应消息传递块和注意力和可视化技术。 |
 
 # 详细
 
-[^1]: 使用Lasso的签名一致性研究
+[^1]: AttentionMixer：一个准确且可解释的过程监测框架
 
-    On Consistency of Signatures Using Lasso. (arXiv:2305.10413v1 [stat.ML])
+    AttentionMixer: An Accurate and Interpretable Framework for Process Monitoring. (arXiv:2302.10426v2 [cs.AI] UPDATED)
 
-    [http://arxiv.org/abs/2305.10413](http://arxiv.org/abs/2305.10413)
+    [http://arxiv.org/abs/2302.10426](http://arxiv.org/abs/2302.10426)
 
-    本文重新审视了Lasso回归对于签名变换的一致性问题，并发现对于不同的过程和时间序列，选择适当的签名定义和随机模型可以提高Lasso回归的一致性。
+    AttentionMixer是一个旨在为能量变换厂建立准确且可解释的辐射监测框架的数据驱动方法，其技术创新点为空间和时间自适应消息传递块和注意力和可视化技术。
 
     
 
-    签名变换是连续和离散时间序列数据的迭代路径积分，它们的普遍非线性通过线性化特征选择问题。本文在理论和数值上重新审视了Lasso回归对于签名变换的一致性问题。我们的研究表明，对于更接近布朗运动或具有较弱跨维度相关性的过程和时间序列，签名定义为It\^o积分的Lasso回归更具一致性；对于均值回归过程和时间序列，其签名定义为Stratonovich积分在Lasso回归中具有更高的一致性。我们的发现强调了在统计推断和机器学习中选择适当的签名和随机模型的重要性。
+    在极端工作条件下运行的高效能转换工厂的安全性高度依赖于准确且可解释的自动监测系统。然而，目前可用的数据驱动监测系统在高准确性或可解释性方面往往无法满足要求，从而阻碍了它们在实践中的应用。为了克服这一限制，提出了一种基于广义消息传递框架的数据驱动方法——AttentionMixer，旨在为能量变换厂建立一个准确且可解释的辐射监测框架。为了提高模型的准确性，第一项技术贡献包括开发空间和时间自适应消息传递块，分别用于捕获空间和时间相关性；这两个块通过混合算子级联。为了增强模型可解释性，第二项技术贡献涉及实现注意力和可视化技术，使得可以对模型的预测做出解释。
 
-    Signature transforms are iterated path integrals of continuous and discrete-time time series data, and their universal nonlinearity linearizes the problem of feature selection. This paper revisits the consistency issue of Lasso regression for the signature transform, both theoretically and numerically. Our study shows that, for processes and time series that are closer to Brownian motion or random walk with weaker inter-dimensional correlations, the Lasso regression is more consistent for their signatures defined by It\^o integrals; for mean reverting processes and time series, their signatures defined by Stratonovich integrals have more consistency in the Lasso regression. Our findings highlight the importance of choosing appropriate definitions of signatures and stochastic models in statistical inference and machine learning.
+    An accurate and explainable automatic monitoring system is critical for the safety of high efficiency energy conversion plants that operate under extreme working condition. Nonetheless, currently available data-driven monitoring systems often fall short in meeting the requirements for either high-accuracy or interpretability, which hinders their application in practice. To overcome this limitation, a data-driven approach, AttentionMixer, is proposed under a generalized message passing framework, with the goal of establishing an accurate and interpretable radiation monitoring framework for energy conversion plants. To improve the model accuracy, the first technical contribution involves the development of spatial and temporal adaptive message passing blocks, which enable the capture of spatial and temporal correlations, respectively; the two blocks are cascaded through a mixing operator. To enhance the model interpretability, the second technical contribution involves the implementation
     
 
