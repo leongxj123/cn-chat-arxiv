@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [CARAMEL: A Succinct Read-Only Lookup Table via Compressed Static Functions.](http://arxiv.org/abs/2305.16545) | CARAMEL是一种基于静态函数构建技术的空间高效的只读查找表，专门用于处理值是多集合的情况。 |
+| [^1] | [Semiring Provenance for Lightweight Description Logics.](http://arxiv.org/abs/2310.16472) | 这篇论文研究了在描述逻辑中使用半环溯源的框架，并定义了一种适用于轻量级描述逻辑的溯源语义。论文证明了在半环施加限制的情况下，语义满足一些重要的特性，并对why溯源方法进行了研究。 |
 
 # 详细
 
-[^1]: CARAMEL：通过压缩静态函数实现的简洁只读查找表
+[^1]: 适用于轻量级描述逻辑的半环溯源
 
-    CARAMEL: A Succinct Read-Only Lookup Table via Compressed Static Functions. (arXiv:2305.16545v1 [cs.DS])
+    Semiring Provenance for Lightweight Description Logics. (arXiv:2310.16472v1 [cs.LO])
 
-    [http://arxiv.org/abs/2305.16545](http://arxiv.org/abs/2305.16545)
+    [http://arxiv.org/abs/2310.16472](http://arxiv.org/abs/2310.16472)
 
-    CARAMEL是一种基于静态函数构建技术的空间高效的只读查找表，专门用于处理值是多集合的情况。
+    这篇论文研究了在描述逻辑中使用半环溯源的框架，并定义了一种适用于轻量级描述逻辑的溯源语义。论文证明了在半环施加限制的情况下，语义满足一些重要的特性，并对why溯源方法进行了研究。
 
     
 
-    查找表是许多数据处理和系统应用程序中的基本结构。随着网络规模越来越大，这些应用程序经常需要压缩技术来支持快速随机O（1）查找压缩数据中的单个参数（即在RAM中进行块解压缩）。受最近静态函数构建技术的进展启发，我们提出了一种名为CARAMEL的空间高效的不可变键值数据表示，专门针对值是多集合的情况。
+    我们研究了半环溯源——一种最初在关系数据库环境中定义的成功框架，用于描述逻辑。在此上下文中，本体公理被用交换半环的元素进行注释，并且这些注释根据它们的推导方式传播到本体的结果中。我们定义了一种溯源语义，适用于包括几种轻量级描述逻辑的语言，并展示了它与为带有特定类型注释（如模糊度）的本体定义的其他语义之间的关系。我们证明了在一些对半环施加限制的情况下，语义满足一些期望的特性（如扩展了数据库中定义的半环溯源）。然后我们专注于著名的why溯源方法，它允许计算每个加法幂等和乘法幂等的交换半环的半环溯源，并研究了与这种溯源方法相关的问题的复杂性。
 
-    Lookup tables are a fundamental structure in many data processing and systems applications. Examples include tokenized text in NLP, quantized embedding collections in recommendation systems, integer sketches for streaming data, and hash-based string representations in genomics. With the increasing size of web-scale data, such applications often require compression techniques that support fast random $O(1)$ lookup of individual parameters directly on the compressed data (i.e. without blockwise decompression in RAM). While the community has proposd a number of succinct data structures that support queries over compressed representations, these approaches do not fully leverage the low-entropy structure prevalent in real-world workloads to reduce space. Inspired by recent advances in static function construction techniques, we propose a space-efficient representation of immutable key-value data, called CARAMEL, specifically designed for the case where the values are multi-sets. By carefull
+    We investigate semiring provenance--a successful framework originally defined in the relational database setting--for description logics. In this context, the ontology axioms are annotated with elements of a commutative semiring and these annotations are propagated to the ontology consequences in a way that reflects how they are derived. We define a provenance semantics for a language that encompasses several lightweight description logics and show its relationships with semantics that have been defined for ontologies annotated with a specific kind of annotation (such as fuzzy degrees). We show that under some restrictions on the semiring, the semantics satisfies desirable properties (such as extending the semiring provenance defined for databases). We then focus on the well-known why-provenance, which allows to compute the semiring provenance for every additively and multiplicatively idempotent commutative semiring, and for which we study the complexity of problems related to the prov
     
 
