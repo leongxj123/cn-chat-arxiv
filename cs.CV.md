@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [HEDI: First-Time Clinical Application and Results of a Biomechanical Evaluation and Visualisation Tool for Incisional Hernia Repair.](http://arxiv.org/abs/2307.01502) | HEDI是一种用于切口疝修复的生物力学评估和可视化工具，通过考虑腹壁的不稳定性，能够自动检测和评估疝的大小、体积和腹壁不稳定性。在31名患者的预手术评估中，HEDI显示出明显改善的成功率，所有患者在随访三年后仍然没有疼痛和疝再发。 |
+| [^1] | [Just Say the Name: Online Continual Learning with Category Names Only via Data Generation](https://arxiv.org/abs/2403.10853) | 提出了在线连续学习框架G-NoCL，采用生成数据并利用DIverSity和COmplexity enhancing ensemBlER（DISCOBER）进行数据融合，展示了其在在线连续学习基准测试中的优越性能。 |
 
 # 详细
 
-[^1]: HEDI: 第一次临床应用的切口疝修复生物力学评估和可视化工具的结果
+[^1]: 只说名称：通过数据生成实现仅利用类别名称进行在线连续学习
 
-    HEDI: First-Time Clinical Application and Results of a Biomechanical Evaluation and Visualisation Tool for Incisional Hernia Repair. (arXiv:2307.01502v1 [cs.CV])
+    Just Say the Name: Online Continual Learning with Category Names Only via Data Generation
 
-    [http://arxiv.org/abs/2307.01502](http://arxiv.org/abs/2307.01502)
+    [https://arxiv.org/abs/2403.10853](https://arxiv.org/abs/2403.10853)
 
-    HEDI是一种用于切口疝修复的生物力学评估和可视化工具，通过考虑腹壁的不稳定性，能够自动检测和评估疝的大小、体积和腹壁不稳定性。在31名患者的预手术评估中，HEDI显示出明显改善的成功率，所有患者在随访三年后仍然没有疼痛和疝再发。
+    提出了在线连续学习框架G-NoCL，采用生成数据并利用DIverSity和COmplexity enhancing ensemBlER（DISCOBER）进行数据融合，展示了其在在线连续学习基准测试中的优越性能。
 
     
 
-    腹壁缺陷通常导致疼痛、不适以及切口疝再发，全球范围内造成重大发病率和多次手术修复。对于大型疝，网格修复通常基于缺陷区域与固定重叠，而不考虑生物力学方面的因素，如肌肉激活、腹腔内压力、组织弹性和腹壁扩张。为了解决这个问题，我们提出了一种考虑不稳定腹壁的切口疝修复的生物力学方法。此外，我们介绍了HEDI，这是一种利用Valsalva动作的动态计算机断层扫描技术来自动检测和评估疝大小、体积和腹壁不稳定性的工具。我们在31名患者预手术评估中首次临床应用了HEDI，与报道的成功率相比，显示出明显改善，所有患者在随访三年后仍然没有疼痛和疝再发。
+    在现实世界的场景中，由于成本过高，对于连续学习进行大量手动注释是不切实际的。虽然之前的研究受到大规模网络监督训练的影响，建议在连续学习中利用网络抓取的数据，但这带来了诸如数据不平衡、使用限制和隐私问题等挑战。为了解决连续网络监督训练的风险，我们提出了一种在线连续学习框架 - 仅使用名称的生成式连续学习（G-NoCL）。所提出的G-NoCL使用一组生成器G以及学习者。当遇到新概念（例如，类别）时，G-NoCL采用新颖的样本复杂性引导数据合成技术DIverSity and COmplexity enhancing ensemBlER（DISCOBER）从生成的数据中最优抽样训练数据。通过大量实验，我们展示了DISCOBER在G-NoCL在线连续学习基准测试中表现出的优越性能，涵盖了In-Distributi。
 
-    Abdominal wall defects often lead to pain, discomfort, and recurrence of incisional hernias, resulting in significant morbidity and repeated surgical repairs worldwide. Mesh repair for large hernias is usually based on the defect area with a fixed overlap, without considering biomechanical aspects such as muscle activation, intra-abdominal pressure, tissue elasticity, and abdominal wall distention. To address this issue, we present a biomechanical approach to incisional hernia repair that takes into account the unstable abdominal wall. Additionally, we introduce HEDI, a tool that uses dynamic computed tomography with Valsalva maneuver to automatically detect and assess hernia size, volume, and abdominal wall instability. Our first clinical application of HEDI in the preoperative evaluation of 31 patients shows significantly improved success rates compared to reported rates, with all patients remaining pain-free and showing no hernia recurrence after three years of follow-up.
+    arXiv:2403.10853v1 Announce Type: cross  Abstract: In real-world scenarios, extensive manual annotation for continual learning is impractical due to prohibitive costs. Although prior arts, influenced by large-scale webly supervised training, suggest leveraging web-scraped data in continual learning, this poses challenges such as data imbalance, usage restrictions, and privacy concerns. Addressing the risks of continual webly supervised training, we present an online continual learning framework - Generative Name only Continual Learning (G-NoCL). The proposed G-NoCL uses a set of generators G along with the learner. When encountering new concepts (i.e., classes), G-NoCL employs the novel sample complexity-guided data ensembling technique DIverSity and COmplexity enhancing ensemBlER (DISCOBER) to optimally sample training data from generated data. Through extensive experimentation, we demonstrate superior performance of DISCOBER in G-NoCL online CL benchmarks, covering both In-Distributi
     
 
