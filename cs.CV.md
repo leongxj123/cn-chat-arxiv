@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Just Say the Name: Online Continual Learning with Category Names Only via Data Generation](https://arxiv.org/abs/2403.10853) | 提出了在线连续学习框架G-NoCL，采用生成数据并利用DIverSity和COmplexity enhancing ensemBlER（DISCOBER）进行数据融合，展示了其在在线连续学习基准测试中的优越性能。 |
+| [^1] | [Learning to Grow Artificial Hippocampi in Vision Transformers for Resilient Lifelong Learning.](http://arxiv.org/abs/2303.08250) | 本文提出了一种在Vision Transformer中学习成长人工海马的方法，以实现弹性终身学习。通过神经架构搜索进行维护，选取多头自注意力块中的最终线性投影层进行ArtiHippo的实现和成长。 |
 
 # 详细
 
-[^1]: 只说名称：通过数据生成实现仅利用类别名称进行在线连续学习
+[^1]: 在视觉Transformer中学习成长人工海马，实现弹性终身学习
 
-    Just Say the Name: Online Continual Learning with Category Names Only via Data Generation
+    Learning to Grow Artificial Hippocampi in Vision Transformers for Resilient Lifelong Learning. (arXiv:2303.08250v1 [cs.CV])
 
-    [https://arxiv.org/abs/2403.10853](https://arxiv.org/abs/2403.10853)
+    [http://arxiv.org/abs/2303.08250](http://arxiv.org/abs/2303.08250)
 
-    提出了在线连续学习框架G-NoCL，采用生成数据并利用DIverSity和COmplexity enhancing ensemBlER（DISCOBER）进行数据融合，展示了其在在线连续学习基准测试中的优越性能。
+    本文提出了一种在Vision Transformer中学习成长人工海马的方法，以实现弹性终身学习。通过神经架构搜索进行维护，选取多头自注意力块中的最终线性投影层进行ArtiHippo的实现和成长。
 
     
 
-    在现实世界的场景中，由于成本过高，对于连续学习进行大量手动注释是不切实际的。虽然之前的研究受到大规模网络监督训练的影响，建议在连续学习中利用网络抓取的数据，但这带来了诸如数据不平衡、使用限制和隐私问题等挑战。为了解决连续网络监督训练的风险，我们提出了一种在线连续学习框架 - 仅使用名称的生成式连续学习（G-NoCL）。所提出的G-NoCL使用一组生成器G以及学习者。当遇到新概念（例如，类别）时，G-NoCL采用新颖的样本复杂性引导数据合成技术DIverSity and COmplexity enhancing ensemBlER（DISCOBER）从生成的数据中最优抽样训练数据。通过大量实验，我们展示了DISCOBER在G-NoCL在线连续学习基准测试中表现出的优越性能，涵盖了In-Distributi。
+    终身学习需要拥有人类智能的韧性，即不存在灾难性遗忘，这种韧性与大脑中复杂的记忆机制，尤其是海马维护的长期记忆（LM）紧密相关。Transformer已经成为人工智能“大脑”的对应体，但LM组件在终身学习中尚未充分探索。本文提出了一种在Vision Transformer中学习成长人工海马（ArtiHippo）以实现弹性终身学习的方法。通过全面消融实验，选定多头自注意力（MHSA）块中的最终线性投影层来实现和成长ArtiHippo。ArtiHippo由专家混合（MoEs）表示。每个专家组件是线性投影层的现场变体，通过神经架构搜索（NAS）进行维护，搜索空间由四个基本成长操作（跳过、重用、适应和新）定义。
 
-    arXiv:2403.10853v1 Announce Type: cross  Abstract: In real-world scenarios, extensive manual annotation for continual learning is impractical due to prohibitive costs. Although prior arts, influenced by large-scale webly supervised training, suggest leveraging web-scraped data in continual learning, this poses challenges such as data imbalance, usage restrictions, and privacy concerns. Addressing the risks of continual webly supervised training, we present an online continual learning framework - Generative Name only Continual Learning (G-NoCL). The proposed G-NoCL uses a set of generators G along with the learner. When encountering new concepts (i.e., classes), G-NoCL employs the novel sample complexity-guided data ensembling technique DIverSity and COmplexity enhancing ensemBlER (DISCOBER) to optimally sample training data from generated data. Through extensive experimentation, we demonstrate superior performance of DISCOBER in G-NoCL online CL benchmarks, covering both In-Distributi
+    Lifelong learning without catastrophic forgetting (i.e., resiliency) possessed by human intelligence is entangled with sophisticated memory mechanisms in the brain, especially the long-term memory (LM) maintained by Hippocampi. To a certain extent, Transformers have emerged as the counterpart ``Brain" of Artificial Intelligence (AI), and yet leave the LM component under-explored for lifelong learning settings. This paper presents a method of learning to grow Artificial Hippocampi (ArtiHippo) in Vision Transformers (ViTs) for resilient lifelong learning. With a comprehensive ablation study, the final linear projection layer in the multi-head self-attention (MHSA) block is selected in realizing and growing ArtiHippo. ArtiHippo is represented by a mixture of experts (MoEs). Each expert component is an on-site variant of the linear projection layer, maintained via neural architecture search (NAS) with the search space defined by four basic growing operations -- skip, reuse, adapt, and new 
     
 
