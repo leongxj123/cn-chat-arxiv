@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Learning to Grow Artificial Hippocampi in Vision Transformers for Resilient Lifelong Learning.](http://arxiv.org/abs/2303.08250) | 本文提出了一种在Vision Transformer中学习成长人工海马的方法，以实现弹性终身学习。通过神经架构搜索进行维护，选取多头自注意力块中的最终线性投影层进行ArtiHippo的实现和成长。 |
+| [^1] | [Strategic Client Selection to Address Non-IIDness in HAPS-enabled FL Networks.](http://arxiv.org/abs/2401.05308) | 该研究介绍了一种针对高空平台站（HAPS）使能的垂直异构网络中数据分布不均问题的战略客户选择策略，通过利用用户的网络流量行为预测和分类，优先选择数据呈现相似模式的客户参与，以提高联合学习（FL）模型的训练效果。 |
 
 # 详细
 
-[^1]: 在视觉Transformer中学习成长人工海马，实现弹性终身学习
+[^1]: 面对HAPS使能的FL网络中的非独立同分布问题，战略客户选择的研究
 
-    Learning to Grow Artificial Hippocampi in Vision Transformers for Resilient Lifelong Learning. (arXiv:2303.08250v1 [cs.CV])
+    Strategic Client Selection to Address Non-IIDness in HAPS-enabled FL Networks. (arXiv:2401.05308v1 [cs.NI])
 
-    [http://arxiv.org/abs/2303.08250](http://arxiv.org/abs/2303.08250)
+    [http://arxiv.org/abs/2401.05308](http://arxiv.org/abs/2401.05308)
 
-    本文提出了一种在Vision Transformer中学习成长人工海马的方法，以实现弹性终身学习。通过神经架构搜索进行维护，选取多头自注意力块中的最终线性投影层进行ArtiHippo的实现和成长。
+    该研究介绍了一种针对高空平台站（HAPS）使能的垂直异构网络中数据分布不均问题的战略客户选择策略，通过利用用户的网络流量行为预测和分类，优先选择数据呈现相似模式的客户参与，以提高联合学习（FL）模型的训练效果。
 
     
 
-    终身学习需要拥有人类智能的韧性，即不存在灾难性遗忘，这种韧性与大脑中复杂的记忆机制，尤其是海马维护的长期记忆（LM）紧密相关。Transformer已经成为人工智能“大脑”的对应体，但LM组件在终身学习中尚未充分探索。本文提出了一种在Vision Transformer中学习成长人工海马（ArtiHippo）以实现弹性终身学习的方法。通过全面消融实验，选定多头自注意力（MHSA）块中的最终线性投影层来实现和成长ArtiHippo。ArtiHippo由专家混合（MoEs）表示。每个专家组件是线性投影层的现场变体，通过神经架构搜索（NAS）进行维护，搜索空间由四个基本成长操作（跳过、重用、适应和新）定义。
+    在由高空平台站（HAPS）使能的垂直异构网络中部署联合学习（FL）为各种不同通信和计算能力的客户提供了参与的机会。这种多样性不仅提高了FL模型的训练精度，还加快了其收敛速度。然而，在这些广阔的网络中应用FL存在显著的非独立同分布问题。这种数据异质性往往导致收敛速度较慢和模型训练性能的降低。我们的研究引入了一种针对此问题的客户选择策略，利用用户网络流量行为进行预测和分类。该策略通过战略性选择数据呈现相似模式的客户参与，同时优先考虑用户隐私。
 
-    Lifelong learning without catastrophic forgetting (i.e., resiliency) possessed by human intelligence is entangled with sophisticated memory mechanisms in the brain, especially the long-term memory (LM) maintained by Hippocampi. To a certain extent, Transformers have emerged as the counterpart ``Brain" of Artificial Intelligence (AI), and yet leave the LM component under-explored for lifelong learning settings. This paper presents a method of learning to grow Artificial Hippocampi (ArtiHippo) in Vision Transformers (ViTs) for resilient lifelong learning. With a comprehensive ablation study, the final linear projection layer in the multi-head self-attention (MHSA) block is selected in realizing and growing ArtiHippo. ArtiHippo is represented by a mixture of experts (MoEs). Each expert component is an on-site variant of the linear projection layer, maintained via neural architecture search (NAS) with the search space defined by four basic growing operations -- skip, reuse, adapt, and new 
+    The deployment of federated learning (FL) within vertical heterogeneous networks, such as those enabled by high-altitude platform station (HAPS), offers the opportunity to engage a wide array of clients, each endowed with distinct communication and computational capabilities. This diversity not only enhances the training accuracy of FL models but also hastens their convergence. Yet, applying FL in these expansive networks presents notable challenges, particularly the significant non-IIDness in client data distributions. Such data heterogeneity often results in slower convergence rates and reduced effectiveness in model training performance. Our study introduces a client selection strategy tailored to address this issue, leveraging user network traffic behaviour. This strategy involves the prediction and classification of clients based on their network usage patterns while prioritizing user privacy. By strategically selecting clients whose data exhibit similar patterns for participation
     
 
