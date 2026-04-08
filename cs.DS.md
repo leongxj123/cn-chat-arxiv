@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Importance Sparsification for Sinkhorn Algorithm.](http://arxiv.org/abs/2306.06581) | Spar-Sink是一种重要性稀疏化方法，能够有效近似熵正则化最优传输和不平衡最优传输问题，并且在实验中表现优异。 |
+| [^1] | [The Umeyama algorithm for matching correlated Gaussian geometric models in the low-dimensional regime](https://arxiv.org/abs/2402.15095) | 该论文研究了匹配通过潜在节点排列相关的两个高斯几何模型的问题，为低维情况下的精确和几乎精确恢复建立了信息阈值，并进行了梅山算法的数值实验。 |
 
 # 详细
 
-[^1]: Sinkhorn算法的重要性稀疏化
+[^1]: 用于匹配低维情况下的相关高斯几何模型的梅山算法
 
-    Importance Sparsification for Sinkhorn Algorithm. (arXiv:2306.06581v1 [stat.ML])
+    The Umeyama algorithm for matching correlated Gaussian geometric models in the low-dimensional regime
 
-    [http://arxiv.org/abs/2306.06581](http://arxiv.org/abs/2306.06581)
+    [https://arxiv.org/abs/2402.15095](https://arxiv.org/abs/2402.15095)
 
-    Spar-Sink是一种重要性稀疏化方法，能够有效近似熵正则化最优传输和不平衡最优传输问题，并且在实验中表现优异。
+    该论文研究了匹配通过潜在节点排列相关的两个高斯几何模型的问题，为低维情况下的精确和几乎精确恢复建立了信息阈值，并进行了梅山算法的数值实验。
 
     
 
-    Sinkhorn算法被广泛应用于近似求解最优传输（OT）和不平衡最优传输（UOT）问题。但由于高计算复杂度，其实际应用受到限制。为减轻计算负担，我们提出了一种新的重要性稀疏化方法Spar-Sink，用于高效近似熵正则化OT和UOT解。具体来说，我们的方法利用未知最优传输计划的自然上界确定有效的采样概率，并构建稀疏的核矩阵以加速Sinkhorn迭代，将每次迭代的计算成本从$ O（n ^ 2）$降低到$\widetilde {O（n）}$适用于样本大小为$ n $的情况。理论上，我们证明了对于温和正则性条件下，所提出的OT和UOT问题的估计量是一致的。在各种合成数据上的实验表明，在估计误差方面，Spar-Sink优于主流竞争对手。
+    受到匹配两个相关的随机几何图的问题的启发，我们研究了通过潜在节点排列相关的两个高斯几何模型的匹配问题。具体来说，给定$\{1,\ldots,n\}$上的一个未知排列$\pi^*$，以及给定$n$对在$\mathbb{R}^d$中通过噪声参数$\sigma$相关的高斯向量$\{X_{\pi^*(i)},Y_i\}$，我们考虑具有边权重$A_{i,j}=\langle X_i,X_j \rangle$，$B_{i,j}=\langle Y_i,Y_j \rangle$的两种类型的(相关的)加权完全图。目标是基于观察到的矩阵$A$和$B$恢复隐藏的顶点对应$\pi^*$。在维数为$d=O(\log n)$的低维情况下，Wang, Wu, Xu和Yolou [WWXY22+]建立了匹配相关的高斯几何模型中精确和几乎精确恢复的信息阈值。他们还对经典的梅山算法进行了数值实验。
 
-    Sinkhorn algorithm has been used pervasively to approximate the solution to optimal transport (OT) and unbalanced optimal transport (UOT) problems. However, its practical application is limited due to the high computational complexity. To alleviate the computational burden, we propose a novel importance sparsification method, called Spar-Sink, to efficiently approximate entropy-regularized OT and UOT solutions. Specifically, our method employs natural upper bounds for unknown optimal transport plans to establish effective sampling probabilities, and constructs a sparse kernel matrix to accelerate Sinkhorn iterations, reducing the computational cost of each iteration from $O(n^2)$ to $\widetilde{O}(n)$ for a sample of size $n$. Theoretically, we show the proposed estimators for the regularized OT and UOT problems are consistent under mild regularity conditions. Experiments on various synthetic data demonstrate Spar-Sink outperforms mainstream competitors in terms of both estimation erro
+    arXiv:2402.15095v1 Announce Type: cross  Abstract: Motivated by the problem of matching two correlated random geometric graphs, we study the problem of matching two Gaussian geometric models correlated through a latent node permutation. Specifically, given an unknown permutation $\pi^*$ on $\{1,\ldots,n\}$ and given $n$ i.i.d. pairs of correlated Gaussian vectors $\{X_{\pi^*(i)},Y_i\}$ in $\mathbb{R}^d$ with noise parameter $\sigma$, we consider two types of (correlated) weighted complete graphs with edge weights given by $A_{i,j}=\langle X_i,X_j \rangle$, $B_{i,j}=\langle Y_i,Y_j \rangle$. The goal is to recover the hidden vertex correspondence $\pi^*$ based on the observed matrices $A$ and $B$. For the low-dimensional regime where $d=O(\log n)$, Wang, Wu, Xu, and Yolou [WWXY22+] established the information thresholds for exact and almost exact recovery in matching correlated Gaussian geometric models. They also conducted numerical experiments for the classical Umeyama algorithm. In o
     
 

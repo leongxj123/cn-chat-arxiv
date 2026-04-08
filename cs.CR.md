@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Federated Transfer Learning with Differential Privacy](https://arxiv.org/abs/2403.11343) | 本文提出了具有差分隐私的联邦迁移学习框架，通过利用多个异构源数据集的信息来增强对目标数据集的学习，同时考虑隐私约束。 |
+| [^1] | [Towards Better Statistical Understanding of Watermarking LLMs](https://arxiv.org/abs/2403.13027) | 本文研究了水印LLMs的问题，提出了一种基于优化算法的水印算法，实现了模型失真和检测能力之间的最优平衡。 |
 
 # 详细
 
-[^1]: 具有差分隐私的联邦迁移学习
+[^1]: 更好地统计理解水印LLMs
 
-    Federated Transfer Learning with Differential Privacy
+    Towards Better Statistical Understanding of Watermarking LLMs
 
-    [https://arxiv.org/abs/2403.11343](https://arxiv.org/abs/2403.11343)
+    [https://arxiv.org/abs/2403.13027](https://arxiv.org/abs/2403.13027)
 
-    本文提出了具有差分隐私的联邦迁移学习框架，通过利用多个异构源数据集的信息来增强对目标数据集的学习，同时考虑隐私约束。
+    本文研究了水印LLMs的问题，提出了一种基于优化算法的水印算法，实现了模型失真和检测能力之间的最优平衡。
 
     
 
-    联邦学习越来越受到欢迎，数据异构性和隐私性是两个突出的挑战。在本文中，我们在联邦迁移学习框架内解决了这两个问题，旨在通过利用来自多个异构源数据集的信息来增强对目标数据集的学习，同时遵守隐私约束。我们严格制定了\textit{联邦差分隐私}的概念，为每个数据集提供隐私保证，而无需假设有一个受信任的中央服务器。在这个隐私约束下，我们研究了三个经典的统计问题，即单变量均值估计、低维线性回归和高维线性回归。通过研究极小值率并确定这些问题的隐私成本，我们展示了联邦差分隐私是已建立的局部和中央模型之间的一种中间隐私模型。
+    在本文中，我们研究了水印大型语言模型（LLMs）的问题。我们考虑模型失真和检测能力之间的权衡，并将其构建为基于Kirchenbauer等人（2023a）的绿-红算法的受限优化问题。我们展示了优化问题的最优解享有良好的分析性质，这有助于更好地理解并启发水印过程的算法设计。我们根据这一优化公式开发了一个在线双梯度上升水印算法，并证明了其在模型失真和检测能力之间的渐近帕累托最优性。这样的结果保证了平均增加的绿色列表概率，从而明确提高了检测能力（与先前结果相比）。此外，我们对水印问题的模型失真度量的选择进行了系统讨论。
 
-    arXiv:2403.11343v1 Announce Type: new  Abstract: Federated learning is gaining increasing popularity, with data heterogeneity and privacy being two prominent challenges. In this paper, we address both issues within a federated transfer learning framework, aiming to enhance learning on a target data set by leveraging information from multiple heterogeneous source data sets while adhering to privacy constraints. We rigorously formulate the notion of \textit{federated differential privacy}, which offers privacy guarantees for each data set without assuming a trusted central server. Under this privacy constraint, we study three classical statistical problems, namely univariate mean estimation, low-dimensional linear regression, and high-dimensional linear regression. By investigating the minimax rates and identifying the costs of privacy for these problems, we show that federated differential privacy is an intermediate privacy model between the well-established local and central models of 
+    arXiv:2403.13027v1 Announce Type: cross  Abstract: In this paper, we study the problem of watermarking large language models (LLMs). We consider the trade-off between model distortion and detection ability and formulate it as a constrained optimization problem based on the green-red algorithm of Kirchenbauer et al. (2023a). We show that the optimal solution to the optimization problem enjoys a nice analytical property which provides a better understanding and inspires the algorithm design for the watermarking process. We develop an online dual gradient ascent watermarking algorithm in light of this optimization formulation and prove its asymptotic Pareto optimality between model distortion and detection ability. Such a result guarantees an averaged increased green list probability and henceforth detection ability explicitly (in contrast to previous results). Moreover, we provide a systematic discussion on the choice of the model distortion metrics for the watermarking problem. We justi
     
 
