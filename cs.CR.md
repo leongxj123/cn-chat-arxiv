@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Towards Better Statistical Understanding of Watermarking LLMs](https://arxiv.org/abs/2403.13027) | 本文研究了水印LLMs的问题，提出了一种基于优化算法的水印算法，实现了模型失真和检测能力之间的最优平衡。 |
+| [^1] | [Teach Large Language Models to Forget Privacy.](http://arxiv.org/abs/2401.00870) | 这项研究提出了Prompt2Forget（P2F）框架，通过教导大型语言模型（LLM）忘记隐私信息，解决了LLM本地隐私挑战。P2F方法将问题分解为片段并生成虚构答案，模糊化模型对原始输入的记忆。实验证明，P2F具有很强的模糊化能力，并且可以在各种应用场景下自适应使用，无需手动设置。 |
 
 # 详细
 
-[^1]: 更好地统计理解水印LLMs
+[^1]: 教导大型语言模型忘记隐私
 
-    Towards Better Statistical Understanding of Watermarking LLMs
+    Teach Large Language Models to Forget Privacy. (arXiv:2401.00870v1 [cs.CR])
 
-    [https://arxiv.org/abs/2403.13027](https://arxiv.org/abs/2403.13027)
+    [http://arxiv.org/abs/2401.00870](http://arxiv.org/abs/2401.00870)
 
-    本文研究了水印LLMs的问题，提出了一种基于优化算法的水印算法，实现了模型失真和检测能力之间的最优平衡。
+    这项研究提出了Prompt2Forget（P2F）框架，通过教导大型语言模型（LLM）忘记隐私信息，解决了LLM本地隐私挑战。P2F方法将问题分解为片段并生成虚构答案，模糊化模型对原始输入的记忆。实验证明，P2F具有很强的模糊化能力，并且可以在各种应用场景下自适应使用，无需手动设置。
 
     
 
-    在本文中，我们研究了水印大型语言模型（LLMs）的问题。我们考虑模型失真和检测能力之间的权衡，并将其构建为基于Kirchenbauer等人（2023a）的绿-红算法的受限优化问题。我们展示了优化问题的最优解享有良好的分析性质，这有助于更好地理解并启发水印过程的算法设计。我们根据这一优化公式开发了一个在线双梯度上升水印算法，并证明了其在模型失真和检测能力之间的渐近帕累托最优性。这样的结果保证了平均增加的绿色列表概率，从而明确提高了检测能力（与先前结果相比）。此外，我们对水印问题的模型失真度量的选择进行了系统讨论。
+    大型语言模型（LLM）已被证明具有强大的能力，但隐私泄露的风险仍然是一个重要问题。传统的保护隐私方法，如差分隐私和同态加密，在只有黑盒API的环境下是不足够的，要求模型透明性或大量计算资源。我们提出了Prompt2Forget（P2F），这是第一个设计用于解决LLM本地隐私挑战的框架，通过教导LLM忘记来实现。该方法涉及将完整问题分解为较小的片段，生成虚构的答案，并使模型对原始输入的记忆模糊化。我们根据不同领域的包含隐私敏感信息的问题创建了基准数据集。P2F实现了零-shot泛化，可以在多种应用场景下自适应，无需手动调整。实验结果表明，P2F具有很强的模糊化LLM记忆的能力，而不会损失任何实用性。
 
-    arXiv:2403.13027v1 Announce Type: cross  Abstract: In this paper, we study the problem of watermarking large language models (LLMs). We consider the trade-off between model distortion and detection ability and formulate it as a constrained optimization problem based on the green-red algorithm of Kirchenbauer et al. (2023a). We show that the optimal solution to the optimization problem enjoys a nice analytical property which provides a better understanding and inspires the algorithm design for the watermarking process. We develop an online dual gradient ascent watermarking algorithm in light of this optimization formulation and prove its asymptotic Pareto optimality between model distortion and detection ability. Such a result guarantees an averaged increased green list probability and henceforth detection ability explicitly (in contrast to previous results). Moreover, we provide a systematic discussion on the choice of the model distortion metrics for the watermarking problem. We justi
+    Large Language Models (LLMs) have proven powerful, but the risk of privacy leakage remains a significant concern. Traditional privacy-preserving methods, such as Differential Privacy and Homomorphic Encryption, are inadequate for black-box API-only settings, demanding either model transparency or heavy computational resources. We propose Prompt2Forget (P2F), the first framework designed to tackle the LLM local privacy challenge by teaching LLM to forget. The method involves decomposing full questions into smaller segments, generating fabricated answers, and obfuscating the model's memory of the original input. A benchmark dataset was crafted with questions containing privacy-sensitive information from diverse fields. P2F achieves zero-shot generalization, allowing adaptability across a wide range of use cases without manual adjustments. Experimental results indicate P2F's robust capability to obfuscate LLM's memory, attaining a forgetfulness score of around 90\% without any utility los
     
 

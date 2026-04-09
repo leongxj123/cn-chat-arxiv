@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [The Umeyama algorithm for matching correlated Gaussian geometric models in the low-dimensional regime](https://arxiv.org/abs/2402.15095) | 该论文研究了匹配通过潜在节点排列相关的两个高斯几何模型的问题，为低维情况下的精确和几乎精确恢复建立了信息阈值，并进行了梅山算法的数值实验。 |
+| [^1] | [An Efficient Quasi-Random Sampling for Copulas](https://arxiv.org/abs/2403.05281) | 使用生成对抗网络（GANs）为任何Copula生成准随机样本的高效方法 |
 
 # 详细
 
-[^1]: 用于匹配低维情况下的相关高斯几何模型的梅山算法
+[^1]: 一种高效的用于Copulas的准随机抽样方法
 
-    The Umeyama algorithm for matching correlated Gaussian geometric models in the low-dimensional regime
+    An Efficient Quasi-Random Sampling for Copulas
 
-    [https://arxiv.org/abs/2402.15095](https://arxiv.org/abs/2402.15095)
+    [https://arxiv.org/abs/2403.05281](https://arxiv.org/abs/2403.05281)
 
-    该论文研究了匹配通过潜在节点排列相关的两个高斯几何模型的问题，为低维情况下的精确和几乎精确恢复建立了信息阈值，并进行了梅山算法的数值实验。
+    使用生成对抗网络（GANs）为任何Copula生成准随机样本的高效方法
 
     
 
-    受到匹配两个相关的随机几何图的问题的启发，我们研究了通过潜在节点排列相关的两个高斯几何模型的匹配问题。具体来说，给定$\{1,\ldots,n\}$上的一个未知排列$\pi^*$，以及给定$n$对在$\mathbb{R}^d$中通过噪声参数$\sigma$相关的高斯向量$\{X_{\pi^*(i)},Y_i\}$，我们考虑具有边权重$A_{i,j}=\langle X_i,X_j \rangle$，$B_{i,j}=\langle Y_i,Y_j \rangle$的两种类型的(相关的)加权完全图。目标是基于观察到的矩阵$A$和$B$恢复隐藏的顶点对应$\pi^*$。在维数为$d=O(\log n)$的低维情况下，Wang, Wu, Xu和Yolou [WWXY22+]建立了匹配相关的高斯几何模型中精确和几乎精确恢复的信息阈值。他们还对经典的梅山算法进行了数值实验。
+    这篇论文研究了一种在蒙特卡罗计算中用于Copulas的高效准随机抽样方法。传统方法如条件分布法（CDM）在处理高维或隐式Copulas时存在局限性，指的是那些无法通过现有参数Copulas准确表示的Copulas。相反，本文提出使用生成模型，例如生成对抗网络（GANs），为任何Copula生成准随机样本。GANs是一种用于学习复杂数据分布的隐式生成模型，有助于简化抽样过程。在我们的研究中，GANs被用来学习从均匀分布到Copulas的映射。一旦学习了这种映射，从Copula获取准随机样本只需输入来自均匀分布的准随机样本。这种方法为任何Copula提供了更灵活的方式。此外，我们提供了t
 
-    arXiv:2402.15095v1 Announce Type: cross  Abstract: Motivated by the problem of matching two correlated random geometric graphs, we study the problem of matching two Gaussian geometric models correlated through a latent node permutation. Specifically, given an unknown permutation $\pi^*$ on $\{1,\ldots,n\}$ and given $n$ i.i.d. pairs of correlated Gaussian vectors $\{X_{\pi^*(i)},Y_i\}$ in $\mathbb{R}^d$ with noise parameter $\sigma$, we consider two types of (correlated) weighted complete graphs with edge weights given by $A_{i,j}=\langle X_i,X_j \rangle$, $B_{i,j}=\langle Y_i,Y_j \rangle$. The goal is to recover the hidden vertex correspondence $\pi^*$ based on the observed matrices $A$ and $B$. For the low-dimensional regime where $d=O(\log n)$, Wang, Wu, Xu, and Yolou [WWXY22+] established the information thresholds for exact and almost exact recovery in matching correlated Gaussian geometric models. They also conducted numerical experiments for the classical Umeyama algorithm. In o
+    arXiv:2403.05281v1 Announce Type: new  Abstract: This paper examines an efficient method for quasi-random sampling of copulas in Monte Carlo computations. Traditional methods, like conditional distribution methods (CDM), have limitations when dealing with high-dimensional or implicit copulas, which refer to those that cannot be accurately represented by existing parametric copulas. Instead, this paper proposes the use of generative models, such as Generative Adversarial Networks (GANs), to generate quasi-random samples for any copula. GANs are a type of implicit generative models used to learn the distribution of complex data, thus facilitating easy sampling. In our study, GANs are employed to learn the mapping from a uniform distribution to copulas. Once this mapping is learned, obtaining quasi-random samples from the copula only requires inputting quasi-random samples from the uniform distribution. This approach offers a more flexible method for any copula. Additionally, we provide t
     
 
