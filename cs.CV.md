@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [DiffSketcher: Text Guided Vector Sketch Synthesis through Latent Diffusion Models.](http://arxiv.org/abs/2306.14685) | 本文介绍了DiffSketcher，一种通过隐式扩散模型实现文本引导的矢量素描合成的创新算法。DiffSketcher通过直接优化贝塞尔曲线和扩散模型损失来生成矢量化的手绘素描，并通过注意力图加快生成过程。实验结果表明DiffSketcher的素描质量高于之前方法。 |
+| [^1] | [Improving Image Coding for Machines through Optimizing Encoder via Auxiliary Loss](https://arxiv.org/abs/2402.08267) | 通过应用辅助损失优化编码器，我们提出了一种改进的机器图像编码方法，能够在目标检测和语义分割任务中实现显著的速率提高。 |
 
 # 详细
 
-[^1]: DiffSketcher: 通过隐式扩散模型实现文本引导的矢量素描合成
+[^1]: 通过优化编码器和辅助损失改进机器图像编码
 
-    DiffSketcher: Text Guided Vector Sketch Synthesis through Latent Diffusion Models. (arXiv:2306.14685v2 [cs.CV] UPDATED)
+    Improving Image Coding for Machines through Optimizing Encoder via Auxiliary Loss
 
-    [http://arxiv.org/abs/2306.14685](http://arxiv.org/abs/2306.14685)
+    [https://arxiv.org/abs/2402.08267](https://arxiv.org/abs/2402.08267)
 
-    本文介绍了DiffSketcher，一种通过隐式扩散模型实现文本引导的矢量素描合成的创新算法。DiffSketcher通过直接优化贝塞尔曲线和扩散模型损失来生成矢量化的手绘素描，并通过注意力图加快生成过程。实验结果表明DiffSketcher的素描质量高于之前方法。
+    通过应用辅助损失优化编码器，我们提出了一种改进的机器图像编码方法，能够在目标检测和语义分割任务中实现显著的速率提高。
 
     
 
-    尽管主要训练于图像，但我们发现预训练的扩散模型在引导素描合成方面表现出惊人的能力。本文提出了DiffSketcher，一种创新的算法，利用自然语言输入创建矢量化的手绘素描。DiffSketcher基于预训练的文本到图像扩散模型开发，通过使用扩展版本的得分蒸馏采样（SDS）损失直接优化一组贝塞尔曲线，使得我们可以将栅格级扩散模型作为先验来优化参数化的矢量素描生成器。此外，我们还探索了扩散模型中嵌入的注意力图，在生成过程中实现有效的笔画初始化以加快速度。生成的素描展示了多层次的抽象，同时保持了被绘制主题的可识别性、基本结构和重要的视觉细节。我们的实验证明，DiffSketcher的质量优于之前方法。
+    机器图像编码（ICM）旨在通过识别模型而不是人眼视觉来压缩图像以供机器分析。因此，在ICM中，编码器识别和压缩对于机器识别任务来说是至关重要的。学习型ICM有两种主要方法：基于任务损失的压缩模型优化和基于感兴趣区域（ROI）的比特分配。这些方法为编码器提供了识别能力。然而，当识别模型很深时，使用任务损失进行优化变得困难，而基于ROI的方法在评估过程中通常会增加额外开销。在本研究中，我们提出了一种用于学习型ICM模型的新训练方法，通过对编码器应用辅助损失来提高其识别能力和速率-失真性能。与传统训练方法相比，我们的方法在目标检测和语义分割任务中实现了27.7%和20.3%的Bjontegaard Delta速率改进。
 
-    Even though trained mainly on images, we discover that pretrained diffusion models show impressive power in guiding sketch synthesis. In this paper, we present DiffSketcher, an innovative algorithm that creates vectorized free-hand sketches using natural language input. DiffSketcher is developed based on a pre-trained text-to-image diffusion model. It performs the task by directly optimizing a set of Bezier curves with an extended version of the score distillation sampling (SDS) loss, which allows us to use a raster-level diffusion model as a prior for optimizing a parametric vectorized sketch generator. Furthermore, we explore attention maps embedded in the diffusion model for effective stroke initialization to speed up the generation process. The generated sketches demonstrate multiple levels of abstraction while maintaining recognizability, underlying structure, and essential visual details of the subject drawn. Our experiments show that DiffSketcher achieves greater quality than pr
+    Image coding for machines (ICM) aims to compress images for machine analysis using recognition models rather than human vision. Hence, in ICM, it is important for the encoder to recognize and compress the information necessary for the machine recognition task. There are two main approaches in learned ICM; optimization of the compression model based on task loss, and Region of Interest (ROI) based bit allocation. These approaches provide the encoder with the recognition capability. However, optimization with task loss becomes difficult when the recognition model is deep, and ROI-based methods often involve extra overhead during evaluation. In this study, we propose a novel training method for learned ICM models that applies auxiliary loss to the encoder to improve its recognition capability and rate-distortion performance. Our method achieves Bjontegaard Delta rate improvements of 27.7% and 20.3% in object detection and semantic segmentation tasks, compared to the conventional training 
     
 
