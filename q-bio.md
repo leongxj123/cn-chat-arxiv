@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Cross-system biological image quality enhancement based on the generative adversarial network as a foundation for establishing a multi-institute microscopy cooperative network](https://arxiv.org/abs/2403.18026) | 通过生成对抗网络实现了共聚焦显微镜和广场荧光显微镜之间的图像质量转换，提供了低均方误差、高结构相似性和高峰值信噪比的高质量图像。 |
+| [^1] | [Deep Learning Predicts Biomarker Status and Discovers Related Histomorphology Characteristics for Low-Grade Glioma.](http://arxiv.org/abs/2310.07464) | 该研究提出了一种基于深度学习的多生物标志物组织形态学发现者模型，利用全切片图像预测低级别胶质瘤中五个生物标志物的状态。该模型通过将单类分类纳入多实例学习框架，实现了准确的实例级别监督，在提高生物标志物预测性能方面表现出优势。 |
 
 # 详细
 
-[^1]: 基于生成对抗网络的交叉系统生物图像质量增强，用作建立多机构显微镜合作网络的基础
+[^1]: 深度学习预测低级别胶质瘤的生物标志物状态并发现相关的组织形态学特征
 
-    Cross-system biological image quality enhancement based on the generative adversarial network as a foundation for establishing a multi-institute microscopy cooperative network
+    Deep Learning Predicts Biomarker Status and Discovers Related Histomorphology Characteristics for Low-Grade Glioma. (arXiv:2310.07464v1 [eess.IV])
 
-    [https://arxiv.org/abs/2403.18026](https://arxiv.org/abs/2403.18026)
+    [http://arxiv.org/abs/2310.07464](http://arxiv.org/abs/2310.07464)
 
-    通过生成对抗网络实现了共聚焦显微镜和广场荧光显微镜之间的图像质量转换，提供了低均方误差、高结构相似性和高峰值信噪比的高质量图像。
+    该研究提出了一种基于深度学习的多生物标志物组织形态学发现者模型，利用全切片图像预测低级别胶质瘤中五个生物标志物的状态。该模型通过将单类分类纳入多实例学习框架，实现了准确的实例级别监督，在提高生物标志物预测性能方面表现出优势。
 
     
 
-    生物系统的高质量荧光成像受限于光漂白和光毒性等过程，以及在许多情况下，受限于最新一代显微镜的有限访问。此外，低时间分辨率可能导致活体系统中的运动模糊效果。我们的工作提出了一种基于深度学习生成对抗方法的解决方案，用于基于低质量（LQ）图像获得高质量（HQ）图像的问题。我们提出了一种生成对抗网络（GAN），用于两种不同独立显微系统之间的对比传递：共聚焦显微镜（产生HQ图像）和广场荧光显微镜（产生LQ图像）。我们的模型证明了这种传递是可能的，使我们能够收到具有低均方误差（MSE）值、高结构相似性指数（SSIM）和高峰值信噪比（PSNR）值的HQ生成图像。对于我们最好的模型
+    生物标志物检测是低级别胶质瘤（LGG）诊断和治疗中不可或缺的一部分。然而，当前的LGG生物标志物检测方法依赖于昂贵而复杂的分子遗传学测试，需要专业人员分析结果，且常常存在内部一致性差异。为了克服这些挑战，我们提出了一种可解释的深度学习流程，即基于多实例学习（MIL）框架的多生物标志物组织形态学发现者（Multi-Beholder）模型，仅使用苏木精-伊红染色的全切片图像和切片级生物标志物状态标签预测LGG中五个生物标志物的状态。具体而言，通过将单类分类融入MIL框架，实现了准确的示例伪标签，用于实例级别监督，这极大地补充了切片级标签，并提高了生物标志物预测性能。 Multi-Beholder展示了优越的预测性能。
 
-    arXiv:2403.18026v1 Announce Type: cross  Abstract: High-quality fluorescence imaging of biological systems is limited by processes like photobleaching and phototoxicity, and also in many cases, by limited access to the latest generations of microscopes. Moreover, low temporal resolution can lead to a motion blur effect in living systems. Our work presents a deep learning (DL) generative-adversarial approach to the problem of obtaining high-quality (HQ) images based on their low-quality (LQ) equivalents. We propose a generative-adversarial network (GAN) for contrast transfer between two different separate microscopy systems: a confocal microscope (producing HQ images) and a wide-field fluorescence microscope (producing LQ images). Our model proves that such transfer is possible, allowing us to receive HQ-generated images characterized by low mean squared error (MSE) values, high structural similarity index (SSIM), and high peak signal-to-noise ratio (PSNR) values. For our best model in 
+    Biomarker detection is an indispensable part in the diagnosis and treatment of low-grade glioma (LGG). However, current LGG biomarker detection methods rely on expensive and complex molecular genetic testing, for which professionals are required to analyze the results, and intra-rater variability is often reported. To overcome these challenges, we propose an interpretable deep learning pipeline, a Multi-Biomarker Histomorphology Discoverer (Multi-Beholder) model based on the multiple instance learning (MIL) framework, to predict the status of five biomarkers in LGG using only hematoxylin and eosin-stained whole slide images and slide-level biomarker status labels. Specifically, by incorporating the one-class classification into the MIL framework, accurate instance pseudo-labeling is realized for instance-level supervision, which greatly complements the slide-level labels and improves the biomarker prediction performance. Multi-Beholder demonstrates superior prediction performance and g
     
 
