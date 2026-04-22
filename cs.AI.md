@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Automatic Combination of Sample Selection Strategies for Few-Shot Learning](https://arxiv.org/abs/2402.03038) | 本文研究了20种样本选择策略对少样本学习性能的影响，并提出了一种自动组合样本选择策略的方法（ACSESS），在多个数据集上证明了其优越性能。 |
-| [^2] | [Deep Learning Based Amharic Chatbot for FAQs in Universities](https://arxiv.org/abs/2402.01720) | 本文提出了一个基于深度学习的阿姆哈拉语常见问题解答聊天机器人模型，可以帮助大学生解答常见问题，通过使用自然语言处理和深度学习技术，采用多种机器学习模型算法进行分析和分类，取得了最好的成绩。 |
+| [^1] | [Generative Models and Connected and Automated Vehicles: A Survey in Exploring the Intersection of Transportation and AI](https://arxiv.org/abs/2403.10559) | 生成模型与联网自动驾驶车辆的整合有望提升自动车辆的预测建模、模拟精度和决策流程，对交通行业的安全和创新具有潜在推动作用。 |
+| [^2] | [Unifying Controller Design for Stabilizing Nonlinear Systems with Norm-Bounded Control Inputs](https://arxiv.org/abs/2403.03030) | 提出了一种统一的控制器设计方法，通过引入通用的缩放项，实现了针对非线性系统稳定控制器设计的通用性并生成了多种有利特性的备选通用公式。 |
 
 # 详细
 
-[^1]: 自动组合样本选择策略用于少样本学习
+[^1]: 生成模型与联网自动驾驶车辆：探索交通和人工智能交叉领域的调查
 
-    Automatic Combination of Sample Selection Strategies for Few-Shot Learning
+    Generative Models and Connected and Automated Vehicles: A Survey in Exploring the Intersection of Transportation and AI
 
-    [https://arxiv.org/abs/2402.03038](https://arxiv.org/abs/2402.03038)
+    [https://arxiv.org/abs/2403.10559](https://arxiv.org/abs/2403.10559)
 
-    本文研究了20种样本选择策略对少样本学习性能的影响，并提出了一种自动组合样本选择策略的方法（ACSESS），在多个数据集上证明了其优越性能。
-
-    
-
-    在少样本学习中，如元学习、少样本微调或上下文学习中，用于训练模型的有限样本数量对整体成功具有显著影响。尽管存在大量的样本选择策略，但它们对少样本学习性能的影响尚不十分明确，因为大部分只被在典型的监督设置中进行了评估。本文通过对8个图像和6个文本数据集上的5种少样本学习方法，彻底研究了20种样本选择策略对性能的影响。此外，我们提出了一种新的自动组合样本选择策略的方法（ACSESS），它充分利用了个体策略的优势和互补信息。实验结果表明，我们的方法始终优于个体选择策略，以及最近提出的上下文学习支持样本选择方法。
-
-    In few-shot learning, such as meta-learning, few-shot fine-tuning or in-context learning, the limited number of samples used to train a model have a significant impact on the overall success. Although a large number of sample selection strategies exist, their impact on the performance of few-shot learning is not extensively known, as most of them have been so far evaluated in typical supervised settings only. In this paper, we thoroughly investigate the impact of 20 sample selection strategies on the performance of 5 few-shot learning approaches over 8 image and 6 text datasets. In addition, we propose a new method for automatic combination of sample selection strategies (ACSESS) that leverages the strengths and complementary information of the individual strategies. The experimental results show that our method consistently outperforms the individual selection strategies, as well as the recently proposed method for selecting support examples for in-context learning. We also show a str
-    
-[^2]: 基于深度学习的阿姆哈拉语常见问题解答聊天机器人
-
-    Deep Learning Based Amharic Chatbot for FAQs in Universities
-
-    [https://arxiv.org/abs/2402.01720](https://arxiv.org/abs/2402.01720)
-
-    本文提出了一个基于深度学习的阿姆哈拉语常见问题解答聊天机器人模型，可以帮助大学生解答常见问题，通过使用自然语言处理和深度学习技术，采用多种机器学习模型算法进行分析和分类，取得了最好的成绩。
+    生成模型与联网自动驾驶车辆的整合有望提升自动车辆的预测建模、模拟精度和决策流程，对交通行业的安全和创新具有潜在推动作用。
 
     
 
-    大学生常常花费大量时间向管理员或教师寻求常见问题的答案。这对双方来说都很繁琐，需要找到一个解决方案。为此，本文提出了一个聊天机器人模型，利用自然语言处理和深度学习技术，在阿姆哈拉语中回答常见问题。聊天机器人是通过人工智能模拟人类对话的计算机程序，作为虚拟助手处理问题和其他任务。所提出的聊天机器人程序使用标记化、规范化、去除停用词和词干提取对阿姆哈拉语输入句子进行分析和分类。采用了三种机器学习模型算法来分类标记和检索合适的回答：支持向量机（SVM）、多项式朴素贝叶斯和通过TensorFlow、Keras和NLTK实现的深度神经网络。深度学习模型取得了最好的成绩。
+    这份报告调查了生成模型和联网自动驾驶车辆（CAVs）两种推动技术和交通进步的突破性力量的历史和影响。通过关注生成模型在CAVs背景下的应用，该研究旨在揭示这种整合如何提升自动驾驶车辆的预测建模、模拟精度和决策流程。本文讨论了在交通领域整合生成模型和CAV技术的益处和挑战，旨在强调取得的进展、剩余的障碍以及在安全和创新方面的潜力。
 
-    University students often spend a considerable amount of time seeking answers to common questions from administrators or teachers. This can become tedious for both parties, leading to a need for a solution. In response, this paper proposes a chatbot model that utilizes natural language processing and deep learning techniques to answer frequently asked questions (FAQs) in the Amharic language. Chatbots are computer programs that simulate human conversation through the use of artificial intelligence (AI), acting as a virtual assistant to handle questions and other tasks. The proposed chatbot program employs tokenization, normalization, stop word removal, and stemming to analyze and categorize Amharic input sentences. Three machine learning model algorithms were used to classify tokens and retrieve appropriate responses: Support Vector Machine (SVM), Multinomial Na\"ive Bayes, and deep neural networks implemented through TensorFlow, Keras, and NLTK. The deep learning model achieved the be
+    arXiv:2403.10559v1 Announce Type: cross  Abstract: This report investigates the history and impact of Generative Models and Connected and Automated Vehicles (CAVs), two groundbreaking forces pushing progress in technology and transportation. By focusing on the application of generative models within the context of CAVs, the study aims to unravel how this integration could enhance predictive modeling, simulation accuracy, and decision-making processes in autonomous vehicles. This thesis discusses the benefits and challenges of integrating generative models and CAV technology in transportation. It aims to highlight the progress made, the remaining obstacles, and the potential for advancements in safety and innovation.
+    
+[^2]: 统一控制器设计用于稳定具有范数有界控制输入的非线性系统
+
+    Unifying Controller Design for Stabilizing Nonlinear Systems with Norm-Bounded Control Inputs
+
+    [https://arxiv.org/abs/2403.03030](https://arxiv.org/abs/2403.03030)
+
+    提出了一种统一的控制器设计方法，通过引入通用的缩放项，实现了针对非线性系统稳定控制器设计的通用性并生成了多种有利特性的备选通用公式。
+
+    
+
+    本文重新审视了设计非线性系统稳定控制器面临的经典挑战，通过扩展Lin-Sontag的通用公式并引入一种通用（依赖于状态）的缩放项，提出了一种统一的控制器设计方法。引入这种通用的缩放项给出了一个统一的控制器，并使得能够推导出具有各种有利特性的备选通用公式，使其适用于定制控制设计以满足特定要求，并提供跨不同控制场景的通用性。此外，我们提出了一种确定最优缩放项的构造方法，导致一个明确的解决方案，称为基于优化的通用公式的优化问题。得到的控制器确保渐近稳定性，满足范数有界的输入约束，并优化预定义的成本函数。
+
+    arXiv:2403.03030v1 Announce Type: cross  Abstract: This paper revisits a classical challenge in the design of stabilizing controllers for nonlinear systems with a norm-bounded input constraint. By extending Lin-Sontag's universal formula and introducing a generic (state-dependent) scaling term, a unifying controller design method is proposed. The incorporation of this generic scaling term gives a unified controller and enables the derivation of alternative universal formulas with various favorable properties, which makes it suitable for tailored control designs to meet specific requirements and provides versatility across different control scenarios. Additionally, we present a constructive approach to determine the optimal scaling term, leading to an explicit solution to an optimization problem, named optimization-based universal formula. The resulting controller ensures asymptotic stability, satisfies a norm-bounded input constraint, and optimizes a predefined cost function. Finally, 
     
 

@@ -2,22 +2,9 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Deep Learning Predicts Biomarker Status and Discovers Related Histomorphology Characteristics for Low-Grade Glioma.](http://arxiv.org/abs/2310.07464) | 该研究提出了一种基于深度学习的多生物标志物组织形态学发现者模型，利用全切片图像预测低级别胶质瘤中五个生物标志物的状态。该模型通过将单类分类纳入多实例学习框架，实现了准确的实例级别监督，在提高生物标志物预测性能方面表现出优势。 |
+
 
 # 详细
 
-[^1]: 深度学习预测低级别胶质瘤的生物标志物状态并发现相关的组织形态学特征
 
-    Deep Learning Predicts Biomarker Status and Discovers Related Histomorphology Characteristics for Low-Grade Glioma. (arXiv:2310.07464v1 [eess.IV])
-
-    [http://arxiv.org/abs/2310.07464](http://arxiv.org/abs/2310.07464)
-
-    该研究提出了一种基于深度学习的多生物标志物组织形态学发现者模型，利用全切片图像预测低级别胶质瘤中五个生物标志物的状态。该模型通过将单类分类纳入多实例学习框架，实现了准确的实例级别监督，在提高生物标志物预测性能方面表现出优势。
-
-    
-
-    生物标志物检测是低级别胶质瘤（LGG）诊断和治疗中不可或缺的一部分。然而，当前的LGG生物标志物检测方法依赖于昂贵而复杂的分子遗传学测试，需要专业人员分析结果，且常常存在内部一致性差异。为了克服这些挑战，我们提出了一种可解释的深度学习流程，即基于多实例学习（MIL）框架的多生物标志物组织形态学发现者（Multi-Beholder）模型，仅使用苏木精-伊红染色的全切片图像和切片级生物标志物状态标签预测LGG中五个生物标志物的状态。具体而言，通过将单类分类融入MIL框架，实现了准确的示例伪标签，用于实例级别监督，这极大地补充了切片级标签，并提高了生物标志物预测性能。 Multi-Beholder展示了优越的预测性能。
-
-    Biomarker detection is an indispensable part in the diagnosis and treatment of low-grade glioma (LGG). However, current LGG biomarker detection methods rely on expensive and complex molecular genetic testing, for which professionals are required to analyze the results, and intra-rater variability is often reported. To overcome these challenges, we propose an interpretable deep learning pipeline, a Multi-Biomarker Histomorphology Discoverer (Multi-Beholder) model based on the multiple instance learning (MIL) framework, to predict the status of five biomarkers in LGG using only hematoxylin and eosin-stained whole slide images and slide-level biomarker status labels. Specifically, by incorporating the one-class classification into the MIL framework, accurate instance pseudo-labeling is realized for instance-level supervision, which greatly complements the slide-level labels and improves the biomarker prediction performance. Multi-Beholder demonstrates superior prediction performance and g
-    
 

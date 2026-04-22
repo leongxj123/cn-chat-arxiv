@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Unraveling the Key of Machine Learning Solutions for Android Malware Detection](https://arxiv.org/abs/2402.02953) | 本文通过调查和分析，提出了一个全面研究基于机器学习的Android恶意软件检测的方案，并重新实现了12个代表性方法的评估。 |
+| [^1] | [Whispers in the Machine: Confidentiality in LLM-integrated Systems](https://arxiv.org/abs/2402.06922) | 本研究提供了一种评估LLM集成系统保密性的系统化方法，通过形式化一个"秘密密钥"游戏来捕捉模型隐藏私人信息的能力。评估了八种攻击和四种防御方法，发现当前的防御方法缺乏泛化性能。 |
 
 # 详细
 
-[^1]: 揭示解决Android恶意软件检测的机器学习方案的关键
+[^1]: 机器中的私语：LLM集成系统中的保密性
 
-    Unraveling the Key of Machine Learning Solutions for Android Malware Detection
+    Whispers in the Machine: Confidentiality in LLM-integrated Systems
 
-    [https://arxiv.org/abs/2402.02953](https://arxiv.org/abs/2402.02953)
+    [https://arxiv.org/abs/2402.06922](https://arxiv.org/abs/2402.06922)
 
-    本文通过调查和分析，提出了一个全面研究基于机器学习的Android恶意软件检测的方案，并重新实现了12个代表性方法的评估。
+    本研究提供了一种评估LLM集成系统保密性的系统化方法，通过形式化一个"秘密密钥"游戏来捕捉模型隐藏私人信息的能力。评估了八种攻击和四种防御方法，发现当前的防御方法缺乏泛化性能。
 
     
 
-    Android恶意软件检测作为对恶意应用程序的第一道防线。随着机器学习（ML）的快速发展，基于ML的Android恶意软件检测因其能够自动捕获Android APK中的恶意模式而受到越来越多的关注。这些基于学习的方法在检测恶意软件方面取得了有希望的结果。然而，缺乏对当前研究进展的深入分析，使得很难对这一领域的最新发展有一个全面的了解。本文对基于ML的Android恶意软件检测进行了全面的实证和定量分析。我们首先对文献进行了调查，并根据Android特征工程和ML建模过程将贡献分类。然后，我们设计了一个通用的ML-based Android恶意软件检测框架，重新实现了来自不同研究社区的12个代表性方法，并从三个方面对其进行了评估。
+    大规模语言模型（LLM）越来越多地与外部工具集成。尽管这些集成可以显著提高LLM的功能，但它们也在不同组件之间创建了一个新的攻击面，可能泄露机密数据。具体而言，恶意工具可以利用LLM本身的漏洞来操纵模型并损害其他服务的数据，这引发了在LLM集成环境中如何保护私密数据的问题。在这项工作中，我们提供了一种系统评估LLM集成系统保密性的方法。为此，我们形式化了一个"秘密密钥"游戏，可以捕捉模型隐藏私人信息的能力。这使我们能够比较模型对保密性攻击的脆弱性以及不同防御策略的有效性。在这个框架中，我们评估了八种先前发表的攻击和四种防御方法。我们发现当前的防御方法缺乏泛化性能。
 
-    Android malware detection serves as the front line against malicious apps. With the rapid advancement of machine learning (ML), ML-based Android malware detection has attracted increasing attention due to its capability of automatically capturing malicious patterns from Android APKs. These learning-driven methods have reported promising results in detecting malware. However, the absence of an in-depth analysis of current research progress makes it difficult to gain a holistic picture of the state of the art in this area.   This paper presents a comprehensive investigation to date into ML-based Android malware detection with empirical and quantitative analysis. We first survey the literature, categorizing contributions into a taxonomy based on the Android feature engineering and ML modeling pipeline. Then, we design a general-propose framework for ML-based Android malware detection, re-implement 12 representative approaches from different research communities, and evaluate them from thr
+    Large Language Models (LLMs) are increasingly integrated with external tools. While these integrations can significantly improve the functionality of LLMs, they also create a new attack surface where confidential data may be disclosed between different components. Specifically, malicious tools can exploit vulnerabilities in the LLM itself to manipulate the model and compromise the data of other services, raising the question of how private data can be protected in the context of LLM integrations.   In this work, we provide a systematic way of evaluating confidentiality in LLM-integrated systems. For this, we formalize a "secret key" game that can capture the ability of a model to conceal private information. This enables us to compare the vulnerability of a model against confidentiality attacks and also the effectiveness of different defense strategies. In this framework, we evaluate eight previously published attacks and four defenses. We find that current defenses lack generalization
     
 
