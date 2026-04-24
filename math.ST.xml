@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv math.ST</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for math.ST</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv math.ST</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for math.ST</description><item><title>&#38750;&#23545;&#25968;&#20985;&#21183;V&#30340;&#39640;&#32500;&#37319;&#26679;&#36895;&#29575;&#21487;&#20197;&#22312;&#19968;&#20123;&#26465;&#20214;&#19979;&#23454;&#29616;&#19982;&#20984;&#20989;&#25968;&#30456;&#21516;&#30340;&#25910;&#25947;&#36895;&#29575;&#12290;</title><link>http://arxiv.org/abs/2303.03237</link><description>&lt;p&gt;
+&#38750;&#23545;&#25968;&#20985;&#37319;&#26679;&#21644;&#23545;&#25968;&#20998;&#21306;&#20272;&#35745;&#30340;&#25910;&#25947;&#36895;&#29575;
+&lt;/p&gt;
+&lt;p&gt;
+Convergence Rates for Non-Log-Concave Sampling and Log-Partition Estimation. (arXiv:2303.03237v2 [stat.ML] UPDATED)
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2303.03237
+&lt;/p&gt;
+&lt;p&gt;
+&#38750;&#23545;&#25968;&#20985;&#21183;V&#30340;&#39640;&#32500;&#37319;&#26679;&#36895;&#29575;&#21487;&#20197;&#22312;&#19968;&#20123;&#26465;&#20214;&#19979;&#23454;&#29616;&#19982;&#20984;&#20989;&#25968;&#30456;&#21516;&#30340;&#25910;&#25947;&#36895;&#29575;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#20174;&#21513;&#24067;&#26031;&#20998;&#24067;$p(x)\propto\exp(-V(x)/\epsilon)$&#20013;&#37319;&#26679;&#24182;&#35745;&#31639;&#20854;&#23545;&#25968;&#20998;&#21306;&#20989;&#25968;&#26159;&#32479;&#35745;&#23398;&#12289;&#26426;&#22120;&#23398;&#20064;&#21644;&#32479;&#35745;&#29289;&#29702;&#20013;&#30340;&#22522;&#26412;&#20219;&#21153;&#12290;&#28982;&#32780;&#65292;&#34429;&#28982;&#26377;&#25928;&#30340;&#31639;&#27861;&#24050;&#30693;&#20110;&#20984;&#21183;&#20989;&#25968;$V$&#65292;&#20294;&#38750;&#20984;&#24773;&#20917;&#19979;&#30340;&#24773;&#20917;&#35201;&#22256;&#38590;&#24471;&#22810;&#65292;&#31639;&#27861;&#24517;&#28982;&#22312;&#26368;&#22351;&#24773;&#20917;&#19979;&#21463;&#21040;&#32500;&#24230;&#28798;&#38590;&#30340;&#22256;&#25200;&#12290;&#26368;&#36817;&#65292;&#24050;&#32463;&#35777;&#26126;&#22312;&#36866;&#24403;&#30340;&#26465;&#20214;&#19979;&#65292;&#39640;&#32500;&#37319;&#26679;&#38750;&#23545;&#25968;&#20985;&#21183;V&#30340;&#36895;&#29575;&#20063;&#21487;&#20197;&#36798;&#21040;&#21516;&#26679;&#24555;&#30340;&#36895;&#24230;&#12290;&#26412;&#25991;&#23545;&#36825;&#20123;&#32467;&#26524;&#36827;&#34892;&#20102;&#22238;&#39038;&#65292;&#24182;&#24378;&#35843;&#20102;&#39046;&#22495;&#20013;&#30340;&#19968;&#20123;&#24320;&#25918;&#38382;&#39064;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+Sampling from Gibbs distributions $p(x) \propto \exp(-V(x)/\varepsilon)$ and computing their log-partition function are fundamental tasks in statistics, machine learning, and statistical physics. However, while efficient algorithms are known for convex potentials $V$, the situation is much more difficult in the non-convex case, where algorithms necessarily suffer from the curse of dimensionality in the worst case. For optimization, which can be seen as a low-temperature limit of sampling, it is known that smooth functions $V$ allow faster convergence rates. Specifically, for $m$-times differentiable functions in $d$ dimensions, the optimal rate for algorithms with $n$ function evaluations is known to be $O(n^{-m/d})$, where the constant can potentially depend on $m, d$ and the function to be optimized. Hence, the curse of dimensionality can be alleviated for smooth functions at least in terms of the convergence rate. Recently, it has been shown that similarly fast rates can also be ach
+&lt;/p&gt;</description></item></channel></rss>
