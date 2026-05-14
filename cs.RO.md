@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Transformer-based models and hardware acceleration analysis in autonomous driving: A survey.](http://arxiv.org/abs/2304.10891) | 本文综述了基于Transformer的模型在自动驾驶中的应用，探讨了不同体系结构和运算符的优缺点，重点讨论了针对便携计算平台的硬件加速方案，并对卷积神经网络和Transformer的层进行了对比。 |
+| [^1] | [Combining Vision and Tactile Sensation for Video Prediction.](http://arxiv.org/abs/2304.11193) | 本文研究将触觉反馈集成到物理机器人交互的视频预测模型中的影响，并介绍了两个新的机器人推动数据集，使用基于磁性的触觉传感器进行无监督学习。 |
 
 # 详细
 
-[^1]: 自动驾驶中基于Transformer的模型及其硬件加速分析：综述 (arXiv:2304.10891v1 [cs.LG])
+[^1]: 视觉和触觉感觉相结合的视频预测
 
-    Transformer-based models and hardware acceleration analysis in autonomous driving: A survey. (arXiv:2304.10891v1 [cs.LG])
+    Combining Vision and Tactile Sensation for Video Prediction. (arXiv:2304.11193v1 [cs.RO])
 
-    [http://arxiv.org/abs/2304.10891](http://arxiv.org/abs/2304.10891)
+    [http://arxiv.org/abs/2304.11193](http://arxiv.org/abs/2304.11193)
 
-    本文综述了基于Transformer的模型在自动驾驶中的应用，探讨了不同体系结构和运算符的优缺点，重点讨论了针对便携计算平台的硬件加速方案，并对卷积神经网络和Transformer的层进行了对比。
+    本文研究将触觉反馈集成到物理机器人交互的视频预测模型中的影响，并介绍了两个新的机器人推动数据集，使用基于磁性的触觉传感器进行无监督学习。
 
     
 
-    近年来，Transformer架构在各种自动驾驶应用中表现出了很好的性能。另一方面，将其专门用于便携式计算平台的硬件加速已成为实际部署在真实自动汽车中的下一步关键步骤。本综述论文提供了针对自动驾驶任务的基于Transformer的模型的全面概述、基准和分析，例如车道检测、分割、跟踪、规划和决策制定。我们审查了不同的体系结构，用于组织Transformer的输入和输出，例如编码器-解码器和仅编码器结构，并探讨了它们各自的优缺点。此外，我们深入讨论了Transformer相关的运算符及其硬件加速方案，考虑到关键因素，如量化和运行时。我们特别在移动和桌面平台上对卷积神经网络的层与基于Transformer的模型的运算符进行了对比。总的来说，本综述论文为研究人员和从业者提供了系统的指南，以了解基于Transformer的模型及其在自动驾驶中的硬件加速的当前进展和挑战。
+    本文探讨将触觉感觉添加到物理机器人交互的视频预测模型中的影响。预测机器人行为对环境的影响是机器人技术中的关键挑战。目前的方法利用视觉和机器人动作数据来生成一定时间段内的视频预测，然后可以用于调整机器人动作。然而，人类依赖于视觉和触觉反馈来发展和维护他们对物理环境的心理模型。本文研究了将触觉反馈集成到物理机器人交互的视频预测模型中的影响。我们提出了三种多模态集成方法，并比较了这些触觉增强的视频预测模型的表现。此外，我们还介绍了两个新的机器人推动数据集，使用基于磁性的触觉传感器进行无监督学习。第一个数据集包含具有不同物理特性的视觉上相同的对象，第二个数据集用于测试模型的泛化性能。
 
-    Transformer architectures have exhibited promising performance in various autonomous driving applications in recent years. On the other hand, its dedicated hardware acceleration on portable computational platforms has become the next critical step for practical deployment in real autonomous vehicles. This survey paper provides a comprehensive overview, benchmark, and analysis of Transformer-based models specifically tailored for autonomous driving tasks such as lane detection, segmentation, tracking, planning, and decision-making. We review different architectures for organizing Transformer inputs and outputs, such as encoder-decoder and encoder-only structures, and explore their respective advantages and disadvantages. Furthermore, we discuss Transformer-related operators and their hardware acceleration schemes in depth, taking into account key factors such as quantization and runtime. We specifically illustrate the operator level comparison between layers from convolutional neural ne
+    In this paper, we explore the impact of adding tactile sensation to video prediction models for physical robot interactions. Predicting the impact of robotic actions on the environment is a fundamental challenge in robotics. Current methods leverage visual and robot action data to generate video predictions over a given time period, which can then be used to adjust robot actions. However, humans rely on both visual and tactile feedback to develop and maintain a mental model of their physical surroundings. In this paper, we investigate the impact of integrating tactile feedback into video prediction models for physical robot interactions. We propose three multi-modal integration approaches and compare the performance of these tactile-enhanced video prediction models. Additionally, we introduce two new datasets of robot pushing that use a magnetic-based tactile sensor for unsupervised learning. The first dataset contains visually identical objects with different physical properties, whil
     
 
