@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Causal Influences over Social Learning Networks.](http://arxiv.org/abs/2307.09575) | 本论文研究了社交学习网络中代理之间的因果影响，并提出了一种算法来评估整体影响力和发现高度有影响力的代理。 |
+| [^1] | [Monitoring AI-Modified Content at Scale: A Case Study on the Impact of ChatGPT on AI Conference Peer Reviews](https://arxiv.org/abs/2403.07183) | 该研究提出了一种估计大语料库中被大语言模型大幅修改的文本比例的方法，并在AI会议的同行评审中进行了实证分析，发现6.5%至16.9%的文本可能被LLMs大幅修改，揭示了用户行为的一些见解。 |
 
 # 详细
 
-[^1]: 社交学习网络中的因果影响研究
+[^1]: 在规模上监测AI修改的内容：AI会议同行评审中ChatGPT影响的案例研究
 
-    Causal Influences over Social Learning Networks. (arXiv:2307.09575v1 [cs.SI])
+    Monitoring AI-Modified Content at Scale: A Case Study on the Impact of ChatGPT on AI Conference Peer Reviews
 
-    [http://arxiv.org/abs/2307.09575](http://arxiv.org/abs/2307.09575)
+    [https://arxiv.org/abs/2403.07183](https://arxiv.org/abs/2403.07183)
 
-    本论文研究了社交学习网络中代理之间的因果影响，并提出了一种算法来评估整体影响力和发现高度有影响力的代理。
+    该研究提出了一种估计大语料库中被大语言模型大幅修改的文本比例的方法，并在AI会议的同行评审中进行了实证分析，发现6.5%至16.9%的文本可能被LLMs大幅修改，揭示了用户行为的一些见解。
 
     
 
-    本文研究了相互连接且经过时间交互的代理之间的因果影响。具体而言，本论文考察了社交学习模型和分布式决策协议的动态，并推导出了表明代理之间因果关系并解释网络上影响流动的表达式。结果表明，这些因果关系取决于图的拓扑结构和每个代理对于他们试图解决的推理问题的信息水平。基于这些结论，本文提出了一种算法来评估代理之间的整体影响力，以发现高度有影响力的代理。还提供了一种从原始观测数据中学习必要的模型参数的方法。结果和所提出的算法通过考虑合成数据和真实的Twitter数据加以说明。
+    我们提出了一种估计大语料库中文本可能被大语言模型（LLM）大幅修改或生成的部分比例的方法。我们的最大似然模型利用专家撰写和AI生成的参考文本，准确高效地检查语料库级别上真实世界LLM使用。我们将这种方法应用于AI会议上科学同行评审的案例研究，该研究发生在ChatGPT发布之后，包括ICLR 2024、NeurIPS 2023、CoRL 2023和EMNLP 2023。我们的研究结果表明，在这些会议提交的同行评审中，6.5%至16.9%的文本可能是由LLMs大幅修改的，即超出拼写检查或小幅更新的范围。生成文本出现的情况为用户行为提供了见解：在报告信心较低、在截止日期前提交的评论以及从评论公司
 
-    This paper investigates causal influences between agents linked by a social graph and interacting over time. In particular, the work examines the dynamics of social learning models and distributed decision-making protocols, and derives expressions that reveal the causal relations between pairs of agents and explain the flow of influence over the network. The results turn out to be dependent on the graph topology and the level of information that each agent has about the inference problem they are trying to solve. Using these conclusions, the paper proposes an algorithm to rank the overall influence between agents to discover highly influential agents. It also provides a method to learn the necessary model parameters from raw observational data. The results and the proposed algorithm are illustrated by considering both synthetic data and real Twitter data.
+    arXiv:2403.07183v1 Announce Type: cross  Abstract: We present an approach for estimating the fraction of text in a large corpus which is likely to be substantially modified or produced by a large language model (LLM). Our maximum likelihood model leverages expert-written and AI-generated reference texts to accurately and efficiently examine real-world LLM-use at the corpus level. We apply this approach to a case study of scientific peer review in AI conferences that took place after the release of ChatGPT: ICLR 2024, NeurIPS 2023, CoRL 2023 and EMNLP 2023. Our results suggest that between 6.5% and 16.9% of text submitted as peer reviews to these conferences could have been substantially modified by LLMs, i.e. beyond spell-checking or minor writing updates. The circumstances in which generated text occurs offer insight into user behavior: the estimated fraction of LLM-generated text is higher in reviews which report lower confidence, were submitted close to the deadline, and from review
     
 
