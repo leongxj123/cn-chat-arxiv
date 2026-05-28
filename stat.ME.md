@@ -2,22 +2,9 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Robust Classification of High-Dimensional Data using Data-Adaptive Energy Distance.](http://arxiv.org/abs/2306.13985) | 该论文提出了一种用于高维低样本量数据分类的稳健的数据自适应能量距离分类器，该分类器无需调参且在一定条件下可以实现完美分类，已在模拟研究和实际数据分析中得到证明比其他方法表现更优。 |
+
 
 # 详细
 
-[^1]: 使用数据自适应能量距离的高维数据稳健分类
 
-    Robust Classification of High-Dimensional Data using Data-Adaptive Energy Distance. (arXiv:2306.13985v1 [stat.ML])
-
-    [http://arxiv.org/abs/2306.13985](http://arxiv.org/abs/2306.13985)
-
-    该论文提出了一种用于高维低样本量数据分类的稳健的数据自适应能量距离分类器，该分类器无需调参且在一定条件下可以实现完美分类，已在模拟研究和实际数据分析中得到证明比其他方法表现更优。
-
-    
-
-    在真实世界中，高维低样本量（HDLSS）数据的分类面临挑战，例如基因表达研究、癌症研究和医学成像等领域。本文提出了一些专门为HDLSS数据设计的分类器的开发和分析。这些分类器没有调节参数，并且是稳健的，因为它们不受底层数据分布的任何矩条件的影响。研究表明，在一些相当普遍的条件下，它们在HDLSS渐近区域内可以实现完美分类。还比较了所提出分类器的性能。我们的理论结果得到了广泛的模拟研究和实际数据分析的支持，证明了所提出分类技术优于几种广泛认可的方法的有希望优势。
-
-    Classification of high-dimensional low sample size (HDLSS) data poses a challenge in a variety of real-world situations, such as gene expression studies, cancer research, and medical imaging. This article presents the development and analysis of some classifiers that are specifically designed for HDLSS data. These classifiers are free of tuning parameters and are robust, in the sense that they are devoid of any moment conditions of the underlying data distributions. It is shown that they yield perfect classification in the HDLSS asymptotic regime, under some fairly general conditions. The comparative performance of the proposed classifiers is also investigated. Our theoretical results are supported by extensive simulation studies and real data analysis, which demonstrate promising advantages of the proposed classification techniques over several widely recognized methods.
-    
 
