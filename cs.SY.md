@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Optimal transmission expansion minimally reduces decarbonization costs of U.S. electricity](https://arxiv.org/abs/2402.14189) | 传输扩展对高比例可再生能源系统的好处远远超过传统发电系统，全国最佳计划下的传输扩展仅能将100%清洁系统的成本降低4%。 |
-| [^2] | [Autoencoder with Ordered Variance for Nonlinear Model Identification](https://arxiv.org/abs/2402.14031) | 提出了一种具有有序方差的自编码器，通过添加方差正则化项来保持潜空间的顺序，并且在无监督设置中展示了其在提取非线性关系方面的有效性。 |
+| [^1] | [Graph-Structured Kernel Design for Power Flow Learning using Gaussian Processes.](http://arxiv.org/abs/2308.07867) | 本文提出了一种图结构核设计，用于使用高斯过程进行功率流学习，通过顶点度核和网络扫描主动学习方案，实现了更高效的学习和样本复杂度降低。 |
 
 # 详细
 
-[^1]: 最佳传输扩展最小化降低美国电力碳减排成本
+[^1]: 使用高斯过程进行功率流学习的图结构核设计
 
-    Optimal transmission expansion minimally reduces decarbonization costs of U.S. electricity
+    Graph-Structured Kernel Design for Power Flow Learning using Gaussian Processes. (arXiv:2308.07867v1 [eess.SY])
 
-    [https://arxiv.org/abs/2402.14189](https://arxiv.org/abs/2402.14189)
+    [http://arxiv.org/abs/2308.07867](http://arxiv.org/abs/2308.07867)
 
-    传输扩展对高比例可再生能源系统的好处远远超过传统发电系统，全国最佳计划下的传输扩展仅能将100%清洁系统的成本降低4%。
-
-    
-
-    太阳能和风能与化石燃料具有竞争力，但它们的间歇性特性带来了挑战。陆地、风力和太阳资源在时间和地理上存在显著差异，这表明远距离输电可能特别有益。我们使用详细的开源模型，联合分析了美国三个主要互联网的最佳传输扩展、存储、发电和小时运营。在高可再生能源系统中，传输扩展提供的好处远远超过主要采用传统发电的系统。然而，尽管一个最佳的全国计划需要将当前的地区间输电容量增加至三倍以上，与仅依靠当前输电的方案相比，传输仅能将100%清洁系统的成本降低4%。仅在现有互联网之间扩展容量即可实现大部分节约。对能源存储和发电的调整也能实现一定程度上的节约。
-
-    arXiv:2402.14189v1 Announce Type: new  Abstract: Solar and wind power are cost-competitive with fossil fuels, yet their intermittent nature presents challenges. Significant temporal and geographic differences in land, wind, and solar resources suggest that long-distance transmission could be particularly beneficial. Using a detailed, open-source model, we analyze optimal transmission expansion jointly with storage, generation, and hourly operations across the three primary interconnects in the United States. Transmission expansion offers far more benefits in a high-renewable system than in a system with mostly conventional generation. Yet while an optimal nationwide plan would have more than triple current interregional transmission, transmission decreases the cost of a 100% clean system by only 4% compared to a plan that relies solely on current transmission. Expanding capacity only within existing interconnects can achieve most of these savings. Adjustments to energy storage and gene
-    
-[^2]: 具有有序方差的自编码器用于非线性模型识别
-
-    Autoencoder with Ordered Variance for Nonlinear Model Identification
-
-    [https://arxiv.org/abs/2402.14031](https://arxiv.org/abs/2402.14031)
-
-    提出了一种具有有序方差的自编码器，通过添加方差正则化项来保持潜空间的顺序，并且在无监督设置中展示了其在提取非线性关系方面的有效性。
+    本文提出了一种图结构核设计，用于使用高斯过程进行功率流学习，通过顶点度核和网络扫描主动学习方案，实现了更高效的学习和样本复杂度降低。
 
     
 
-    本文提出了一种新颖的具有有序方差（AEO）的自编码器，其中通过修改损失函数，添加方差正则化项以强制在潜空间中保持顺序。此外，通过使用ResNets对自编码器进行修改，得到了一个ResNet AEO（RAEO）。该论文还展示了AEO和RAEO在无监督设置下提取输入变量之间的非线性关系的有效性。
+    本文提出了一种基于物理启发的图结构核设计，用于使用高斯过程进行功率流学习。该核被命名为顶点度核（VDK），它依赖于基于网络图或拓扑的电压注入关系的潜在分解。值得注意的是，VDK设计避免了需要解决核搜索的优化问题。为了提高效率，我们还探索了一种图缩减方法，以获得具有较少项的VDK表示。此外，我们提出了一种新颖的网络扫描主动学习方案，它智能地选择顺序训练输入，加速VDK的学习。利用VDK的可加性结构，主动学习算法对GP的预测方差进行了块下降类型的过程，作为信息增益的代理。仿真结果表明，所提出的VDK-GP与中等规模500个节点和大规模1354个节点的完整GP相比，实现了超过两倍的样本复杂度降低。
 
-    arXiv:2402.14031v1 Announce Type: cross  Abstract: This paper presents a novel autoencoder with ordered variance (AEO) in which the loss function is modified with a variance regularization term to enforce order in the latent space. Further, the autoencoder is modified using ResNets, which results in a ResNet AEO (RAEO). The paper also illustrates the effectiveness of AEO and RAEO in extracting nonlinear relationships among input variables in an unsupervised setting.
+    This paper presents a physics-inspired graph-structured kernel designed for power flow learning using Gaussian Process (GP). The kernel, named the vertex-degree kernel (VDK), relies on latent decomposition of voltage-injection relationship based on the network graph or topology. Notably, VDK design avoids the need to solve optimization problems for kernel search. To enhance efficiency, we also explore a graph-reduction approach to obtain a VDK representation with lesser terms. Additionally, we propose a novel network-swipe active learning scheme, which intelligently selects sequential training inputs to accelerate the learning of VDK. Leveraging the additive structure of VDK, the active learning algorithm performs a block-descent type procedure on GP's predictive variance, serving as a proxy for information gain. Simulations demonstrate that the proposed VDK-GP achieves more than two fold sample complexity reduction, compared to full GP on medium scale 500-Bus and large scale 1354-Bus 
     
 
