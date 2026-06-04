@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Reconciling the Theory of Factor Sequences.](http://arxiv.org/abs/2307.10067) | 该论文研究了动态因子序列和静态因子序列之间的区别，强调了忽略弱共同成分对于因子模型在结构分析和预测中的应用可能产生的重大影响，同时指出动态共同成分才能被解释为潜在经济变量。 |
-| [^2] | [Exact recovery for the non-uniform Hypergraph Stochastic Block Model.](http://arxiv.org/abs/2304.13139) | 本文首次建立了非均匀超图随机块模型（HSBM）下的精确恢复的尖锐阈值，提供了两种有效算法，并依赖于非均匀随机超图的邻接矩阵的集中和正则化进行理论分析。 |
+| [^1] | [Blessing from Human-AI Interaction: Super Reinforcement Learning in Confounded Environments.](http://arxiv.org/abs/2209.15448) | 本文介绍了一种新的强化学习范式——超级强化学习，它通过人工智能与人类的互动来实现数据驱动的顺序决策。在决策过程中，利用过去代理的行为可以提供有关未披露信息的洞见。通过以合法的方式将这些信息纳入策略搜索中，超级强化学习将得到一个在性能上优于标准最优策略和行为策略的超级策略。我们将这个更强大的神谕称为人工智能与人类互动的福音。 |
 
 # 详细
 
-[^1]: 调和因子序列理论
+[^1]: 人工智能与人类互动的福音：在混杂环境中的超级强化学习
 
-    Reconciling the Theory of Factor Sequences. (arXiv:2307.10067v1 [econ.EM])
+    Blessing from Human-AI Interaction: Super Reinforcement Learning in Confounded Environments. (arXiv:2209.15448v2 [cs.LG] UPDATED)
 
-    [http://arxiv.org/abs/2307.10067](http://arxiv.org/abs/2307.10067)
+    [http://arxiv.org/abs/2209.15448](http://arxiv.org/abs/2209.15448)
 
-    该论文研究了动态因子序列和静态因子序列之间的区别，强调了忽略弱共同成分对于因子模型在结构分析和预测中的应用可能产生的重大影响，同时指出动态共同成分才能被解释为潜在经济变量。
-
-    
-
-    因子序列是随机的双序列$(y_{it}: i \in \mathbb N, t \in \mathbb Z)$，以时间和横截面为索引，具有所谓的因子结构。该名词由Forni等人于2001年提出，引入了动态因子序列。我们展示了动态因子序列和静态因子序列之间的区别，静态因子序列是计量经济学因子分析中最常见的工作模型，基于Chamberlain和Rothschild （1983），Stock和Watson（2002）和Bai和Ng（2002）。区别在于我们所称的弱共同成分，该成分由潜在无限多个弱因子所构成。忽略弱共同成分可能对结构分析和预测中因子模型的应用产生重大影响。我们还展示了动态因子序列的动态共同成分在一般条件下是因果从属于输出的。因此，只有动态共同成分才能作为潜在经济变量的解释。
-
-    Factor Sequences are stochastic double sequences $(y_{it}: i \in \mathbb N, t \in \mathbb Z)$ indexed in time and cross-section which have a so called factor structure. The name was coined by Forni et al. 2001, who introduced dynamic factor sequences. We show the difference between dynamic factor sequences and static factor sequences which are the most common workhorse model of econometric factor analysis building on Chamberlain and Rothschild (1983), Stock and Watson (2002) and Bai and Ng (2002). The difference consists in what we call the weak common component which is spanned by a potentially infinite number of weak factors. Ignoring the weak common component can have substantial consequences for applications of factor models in structural analysis and forecasting. We also show that the dynamic common component of a dynamic factor sequence is causally subordinated to the output under general conditions. As a consequence only the dynamic common component can be interpreted as the pro
-    
-[^2]: 非均匀超图随机块模型的精确恢复
-
-    Exact recovery for the non-uniform Hypergraph Stochastic Block Model. (arXiv:2304.13139v1 [math.ST])
-
-    [http://arxiv.org/abs/2304.13139](http://arxiv.org/abs/2304.13139)
-
-    本文首次建立了非均匀超图随机块模型（HSBM）下的精确恢复的尖锐阈值，提供了两种有效算法，并依赖于非均匀随机超图的邻接矩阵的集中和正则化进行理论分析。
+    本文介绍了一种新的强化学习范式——超级强化学习，它通过人工智能与人类的互动来实现数据驱动的顺序决策。在决策过程中，利用过去代理的行为可以提供有关未披露信息的洞见。通过以合法的方式将这些信息纳入策略搜索中，超级强化学习将得到一个在性能上优于标准最优策略和行为策略的超级策略。我们将这个更强大的神谕称为人工智能与人类互动的福音。
 
     
 
-    考虑在非均匀超图随机块模型（HSBM）下的随机超图中的社区检测问题，其中每个超边独立地以某些给定概率出现，该概率仅取决于其顶点的标签。我们在本文中首次建立了在这种非均匀情况下实现精确恢复的尖锐阈值，受到次要约束；尤其是，我们考虑了具有K类别的模型和对称二进制模型（K=2）。关键点是通过聚合所有均匀层的信息，即使在考虑每个层时似乎不可能实现精确恢复，我们也可以获得精确恢复。我们提供了两种有效算法，成功地在阈值以上实现了精确恢复。我们算法的理论分析依赖于非均匀随机超图的邻接矩阵的集中和正则化，这可能具有独立的兴趣。我们还解决了一些实际问题
+    随着人工智能在社会中的普及，有效地整合人类和人工智能系统，发挥各自的优势并减少风险已成为一个重要的优先事项。在本文中，我们介绍了利用人工智能与人类互动的超级强化学习范式，用于数据驱动的顺序决策。该方法利用观察到的行为（来自人工智能或人类）作为决策者（人类或人工智能）策略学习的更强大的神谕输入。在存在未测量混杂的决策过程中，过去代理的行为可以提供有关未披露信息的宝贵见解。通过以一种新颖和合法的方式将这些信息包括在策略搜索中，所提出的超级强化学习将产生一个管保能在标准最优策略和行为策略（例如过去代理的行为）之上表现更好的超级策略。我们将这个更强大的神谕称为来自人工智能与人类互动的福音。
 
-    Consider the community detection problem in random hypergraphs under the non-uniform hypergraph stochastic block model (HSBM), where each hyperedge appears independently with some given probability depending only on the labels of its vertices. We establish, for the first time in the literature, a sharp threshold for exact recovery under this non-uniform case, subject to minor constraints; in particular, we consider the model with $K$ classes as well as the symmetric binary model ($K=2$). One crucial point here is that by aggregating information from all the uniform layers, we may obtain exact recovery even in cases when this may appear impossible if each layer were considered alone. Two efficient algorithms that successfully achieve exact recovery above the threshold are provided. The theoretical analysis of our algorithms relies on the concentration and regularization of the adjacency matrix for non-uniform random hypergraphs, which could be of independent interest. We also address so
+    As AI becomes more prevalent throughout society, effective methods of integrating humans and AI systems that leverage their respective strengths and mitigate risk have become an important priority. In this paper, we introduce the paradigm of super reinforcement learning that takes advantage of Human-AI interaction for data driven sequential decision making. This approach utilizes the observed action, either from AI or humans, as input for achieving a stronger oracle in policy learning for the decision maker (humans or AI). In the decision process with unmeasured confounding, the actions taken by past agents can offer valuable insights into undisclosed information. By including this information for the policy search in a novel and legitimate manner, the proposed super reinforcement learning will yield a super-policy that is guaranteed to outperform both the standard optimal policy and the behavior one (e.g., past agents' actions). We call this stronger oracle a blessing from human-AI in
     
 

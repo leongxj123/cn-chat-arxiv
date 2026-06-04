@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Graph-Structured Kernel Design for Power Flow Learning using Gaussian Processes.](http://arxiv.org/abs/2308.07867) | 本文提出了一种图结构核设计，用于使用高斯过程进行功率流学习，通过顶点度核和网络扫描主动学习方案，实现了更高效的学习和样本复杂度降低。 |
+| [^1] | [Transformer-based models and hardware acceleration analysis in autonomous driving: A survey.](http://arxiv.org/abs/2304.10891) | 本文综述了基于Transformer的模型在自动驾驶中的应用，探讨了不同体系结构和运算符的优缺点，重点讨论了针对便携计算平台的硬件加速方案，并对卷积神经网络和Transformer的层进行了对比。 |
 
 # 详细
 
-[^1]: 使用高斯过程进行功率流学习的图结构核设计
+[^1]: 自动驾驶中基于Transformer的模型及其硬件加速分析：综述 (arXiv:2304.10891v1 [cs.LG])
 
-    Graph-Structured Kernel Design for Power Flow Learning using Gaussian Processes. (arXiv:2308.07867v1 [eess.SY])
+    Transformer-based models and hardware acceleration analysis in autonomous driving: A survey. (arXiv:2304.10891v1 [cs.LG])
 
-    [http://arxiv.org/abs/2308.07867](http://arxiv.org/abs/2308.07867)
+    [http://arxiv.org/abs/2304.10891](http://arxiv.org/abs/2304.10891)
 
-    本文提出了一种图结构核设计，用于使用高斯过程进行功率流学习，通过顶点度核和网络扫描主动学习方案，实现了更高效的学习和样本复杂度降低。
+    本文综述了基于Transformer的模型在自动驾驶中的应用，探讨了不同体系结构和运算符的优缺点，重点讨论了针对便携计算平台的硬件加速方案，并对卷积神经网络和Transformer的层进行了对比。
 
     
 
-    本文提出了一种基于物理启发的图结构核设计，用于使用高斯过程进行功率流学习。该核被命名为顶点度核（VDK），它依赖于基于网络图或拓扑的电压注入关系的潜在分解。值得注意的是，VDK设计避免了需要解决核搜索的优化问题。为了提高效率，我们还探索了一种图缩减方法，以获得具有较少项的VDK表示。此外，我们提出了一种新颖的网络扫描主动学习方案，它智能地选择顺序训练输入，加速VDK的学习。利用VDK的可加性结构，主动学习算法对GP的预测方差进行了块下降类型的过程，作为信息增益的代理。仿真结果表明，所提出的VDK-GP与中等规模500个节点和大规模1354个节点的完整GP相比，实现了超过两倍的样本复杂度降低。
+    近年来，Transformer架构在各种自动驾驶应用中表现出了很好的性能。另一方面，将其专门用于便携式计算平台的硬件加速已成为实际部署在真实自动汽车中的下一步关键步骤。本综述论文提供了针对自动驾驶任务的基于Transformer的模型的全面概述、基准和分析，例如车道检测、分割、跟踪、规划和决策制定。我们审查了不同的体系结构，用于组织Transformer的输入和输出，例如编码器-解码器和仅编码器结构，并探讨了它们各自的优缺点。此外，我们深入讨论了Transformer相关的运算符及其硬件加速方案，考虑到关键因素，如量化和运行时。我们特别在移动和桌面平台上对卷积神经网络的层与基于Transformer的模型的运算符进行了对比。总的来说，本综述论文为研究人员和从业者提供了系统的指南，以了解基于Transformer的模型及其在自动驾驶中的硬件加速的当前进展和挑战。
 
-    This paper presents a physics-inspired graph-structured kernel designed for power flow learning using Gaussian Process (GP). The kernel, named the vertex-degree kernel (VDK), relies on latent decomposition of voltage-injection relationship based on the network graph or topology. Notably, VDK design avoids the need to solve optimization problems for kernel search. To enhance efficiency, we also explore a graph-reduction approach to obtain a VDK representation with lesser terms. Additionally, we propose a novel network-swipe active learning scheme, which intelligently selects sequential training inputs to accelerate the learning of VDK. Leveraging the additive structure of VDK, the active learning algorithm performs a block-descent type procedure on GP's predictive variance, serving as a proxy for information gain. Simulations demonstrate that the proposed VDK-GP achieves more than two fold sample complexity reduction, compared to full GP on medium scale 500-Bus and large scale 1354-Bus 
+    Transformer architectures have exhibited promising performance in various autonomous driving applications in recent years. On the other hand, its dedicated hardware acceleration on portable computational platforms has become the next critical step for practical deployment in real autonomous vehicles. This survey paper provides a comprehensive overview, benchmark, and analysis of Transformer-based models specifically tailored for autonomous driving tasks such as lane detection, segmentation, tracking, planning, and decision-making. We review different architectures for organizing Transformer inputs and outputs, such as encoder-decoder and encoder-only structures, and explore their respective advantages and disadvantages. Furthermore, we discuss Transformer-related operators and their hardware acceleration schemes in depth, taking into account key factors such as quantization and runtime. We specifically illustrate the operator level comparison between layers from convolutional neural ne
     
 
