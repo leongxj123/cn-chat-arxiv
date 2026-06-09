@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Tune without Validation: Searching for Learning Rate and Weight Decay on Training Sets](https://arxiv.org/abs/2403.05532) | 提出了一种名为Tune without Validation (Twin)的方法，在没有验证集的情况下通过学习率和权重衰减的调整来预测泛化性能，强调了权重范数与泛化性能预测的强相关性。 |
+| [^1] | [Are Classification Robustness and Explanation Robustness Really Strongly Correlated? An Analysis Through Input Loss Landscape](https://arxiv.org/abs/2403.06013) | 通过新颖的评估方法和训练方法，本研究发现增强解释鲁棒性并不能提高分类鲁棒性，这一发现挑战了传统观念。 |
 
 # 详细
 
-[^1]: 在训练集上搜索学习率和权重衰减：无需验证的调参方法
+[^1]: 分类鲁棒性和解释鲁棒性是否真的强相关？通过输入损失景观的分析
 
-    Tune without Validation: Searching for Learning Rate and Weight Decay on Training Sets
+    Are Classification Robustness and Explanation Robustness Really Strongly Correlated? An Analysis Through Input Loss Landscape
 
-    [https://arxiv.org/abs/2403.05532](https://arxiv.org/abs/2403.05532)
+    [https://arxiv.org/abs/2403.06013](https://arxiv.org/abs/2403.06013)
 
-    提出了一种名为Tune without Validation (Twin)的方法，在没有验证集的情况下通过学习率和权重衰减的调整来预测泛化性能，强调了权重范数与泛化性能预测的强相关性。
+    通过新颖的评估方法和训练方法，本研究发现增强解释鲁棒性并不能提高分类鲁棒性，这一发现挑战了传统观念。
 
     
 
-    我们介绍了一种叫做Tune without Validation (Twin)的方法，用于在没有验证集的情况下调整学习率和权重衰减。我们利用了关于假设空间中学习阶段的最新理论框架，设计了一种启发式方法，可以预测哪些超参数组合会产生更好的泛化性能。Twin根据一个早停/非早停的调度程序对试验进行网格搜索，然后分割出在训练损失方面提供最佳结果的区域。在这些试验中，权重范数与泛化性能的预测强相关。为了评估Twin的有效性，我们在20个图像分类数据集上进行了大量实验，并训练了几个系列的深度网络，包括卷积、Transformer和前馈模型。我们展示了在从头开始训练和微调时正确的超参数选择，重点强调了小样本场景。
+    本文深入探讨了深度学习鲁棒性领域，挑战了传统观念，即图像分类系统中的分类鲁棒性和解释鲁棒性本质上是相关的。通过一种新颖的评估方法，利用聚类来有效评估解释鲁棒性，我们展示了增强解释鲁棒性并不一定会使输入损失景观相对于解释损失变平 - 与损失景观变平表示更好的分类鲁棒性相反。为了深入研究这一矛盾，提出了一种突破性的训练方法，旨在调整相对于解释损失的损失景观。通过这种新的训练方法，我们发现虽然这种调整可以影响解释的鲁棒性，但它们对分类的鲁棒性没有影响。这些发现不仅挑战了流行的观念
 
-    arXiv:2403.05532v1 Announce Type: new  Abstract: We introduce Tune without Validation (Twin), a pipeline for tuning learning rate and weight decay without validation sets. We leverage a recent theoretical framework concerning learning phases in hypothesis space to devise a heuristic that predicts what hyper-parameter (HP) combinations yield better generalization. Twin performs a grid search of trials according to an early-/non-early-stopping scheduler and then segments the region that provides the best results in terms of training loss. Among these trials, the weight norm strongly correlates with predicting generalization. To assess the effectiveness of Twin, we run extensive experiments on 20 image classification datasets and train several families of deep networks, including convolutional, transformer, and feed-forward models. We demonstrate proper HP selection when training from scratch and fine-tuning, emphasizing small-sample scenarios.
+    arXiv:2403.06013v1 Announce Type: new  Abstract: This paper delves into the critical area of deep learning robustness, challenging the conventional belief that classification robustness and explanation robustness in image classification systems are inherently correlated. Through a novel evaluation approach leveraging clustering for efficient assessment of explanation robustness, we demonstrate that enhancing explanation robustness does not necessarily flatten the input loss landscape with respect to explanation loss - contrary to flattened loss landscapes indicating better classification robustness. To deeply investigate this contradiction, a groundbreaking training method designed to adjust the loss landscape with respect to explanation loss is proposed. Through the new training method, we uncover that although such adjustments can impact the robustness of explanations, they do not have an influence on the robustness of classification. These findings not only challenge the prevailing 
     
 
