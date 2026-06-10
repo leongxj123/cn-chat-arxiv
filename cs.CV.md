@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Are Classification Robustness and Explanation Robustness Really Strongly Correlated? An Analysis Through Input Loss Landscape](https://arxiv.org/abs/2403.06013) | 通过新颖的评估方法和训练方法，本研究发现增强解释鲁棒性并不能提高分类鲁棒性，这一发现挑战了传统观念。 |
+| [^1] | [The Emergence of Reproducibility and Consistency in Diffusion Models](https://arxiv.org/abs/2310.05264) | 该论文研究了扩散模型中的一致模型可重复性现象，实验证实了无论模型框架、模型架构或训练过程如何，不同的扩散模型都能够一致地达到相同的数据分布和评分函数。此外，研究发现扩散模型在学习过程中受训练数据规模的影响，表现出两种不同的训练模式：记忆化模式和泛化模式。 |
 
 # 详细
 
-[^1]: 分类鲁棒性和解释鲁棒性是否真的强相关？通过输入损失景观的分析
+[^1]: 扩散模型中的可重复性和一致性的出现
 
-    Are Classification Robustness and Explanation Robustness Really Strongly Correlated? An Analysis Through Input Loss Landscape
+    The Emergence of Reproducibility and Consistency in Diffusion Models
 
-    [https://arxiv.org/abs/2403.06013](https://arxiv.org/abs/2403.06013)
+    [https://arxiv.org/abs/2310.05264](https://arxiv.org/abs/2310.05264)
 
-    通过新颖的评估方法和训练方法，本研究发现增强解释鲁棒性并不能提高分类鲁棒性，这一发现挑战了传统观念。
+    该论文研究了扩散模型中的一致模型可重复性现象，实验证实了无论模型框架、模型架构或训练过程如何，不同的扩散模型都能够一致地达到相同的数据分布和评分函数。此外，研究发现扩散模型在学习过程中受训练数据规模的影响，表现出两种不同的训练模式：记忆化模式和泛化模式。
 
     
 
-    本文深入探讨了深度学习鲁棒性领域，挑战了传统观念，即图像分类系统中的分类鲁棒性和解释鲁棒性本质上是相关的。通过一种新颖的评估方法，利用聚类来有效评估解释鲁棒性，我们展示了增强解释鲁棒性并不一定会使输入损失景观相对于解释损失变平 - 与损失景观变平表示更好的分类鲁棒性相反。为了深入研究这一矛盾，提出了一种突破性的训练方法，旨在调整相对于解释损失的损失景观。通过这种新的训练方法，我们发现虽然这种调整可以影响解释的鲁棒性，但它们对分类的鲁棒性没有影响。这些发现不仅挑战了流行的观念
+    在这项工作中，我们研究了扩散模型中的一个有趣且普遍存在的现象，我们称之为“一致的模型可重复性”：在给定相同的起始噪声输入和确定性采样器的情况下，不同的扩散模型通常产生非常相似的输出。我们通过全面的实验证实了这一现象，表明不同的扩散模型无论扩散模型框架、模型架构或训练过程如何，在数据分布和评分函数上都能够一致地达到相同的结果。更令人惊讶的是，我们进一步的调查表明，扩散模型在学习受训数据规模影响下的不同分布。这一点得到了两种不同训练模式下模型可重复性的体现：（i）“记忆化模式”，其中扩散模型过度拟合于训练数据分布，和（ii）“泛化模式”，其中模型学习到了基础数据分布。
 
-    arXiv:2403.06013v1 Announce Type: new  Abstract: This paper delves into the critical area of deep learning robustness, challenging the conventional belief that classification robustness and explanation robustness in image classification systems are inherently correlated. Through a novel evaluation approach leveraging clustering for efficient assessment of explanation robustness, we demonstrate that enhancing explanation robustness does not necessarily flatten the input loss landscape with respect to explanation loss - contrary to flattened loss landscapes indicating better classification robustness. To deeply investigate this contradiction, a groundbreaking training method designed to adjust the loss landscape with respect to explanation loss is proposed. Through the new training method, we uncover that although such adjustments can impact the robustness of explanations, they do not have an influence on the robustness of classification. These findings not only challenge the prevailing 
+    arXiv:2310.05264v2 Announce Type: replace  Abstract: In this work, we investigate an intriguing and prevalent phenomenon of diffusion models which we term as "consistent model reproducibility": given the same starting noise input and a deterministic sampler, different diffusion models often yield remarkably similar outputs. We confirm this phenomenon through comprehensive experiments, implying that different diffusion models consistently reach the same data distribution and scoring function regardless of diffusion model frameworks, model architectures, or training procedures. More strikingly, our further investigation implies that diffusion models are learning distinct distributions affected by the training data size. This is supported by the fact that the model reproducibility manifests in two distinct training regimes: (i) "memorization regime", where the diffusion model overfits to the training data distribution, and (ii) "generalization regime", where the model learns the underlyin
     
 
