@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description><item><title>&#26412;&#30740;&#31350;&#25552;&#20986;&#20102;&#19968;&#31181;&#20351;&#29992;LSTM&#36827;&#34892;&#29289;&#32852;&#32593;&#35774;&#22791;&#35782;&#21035;&#30340;&#26041;&#27861;&#65292;&#20197;&#39044;&#38450;&#23433;&#20840;&#23041;&#32961;&#21644;&#26816;&#27979;&#28431;&#27934;&#20026;&#30446;&#26631;&#12290;</title><link>http://arxiv.org/abs/2304.13905</link><description>&lt;p&gt;
+&#22522;&#20110;LSTM&#30340;&#29289;&#32852;&#32593;&#35774;&#22791;&#35782;&#21035;
+&lt;/p&gt;
+&lt;p&gt;
+LSTM based IoT Device Identification. (arXiv:2304.13905v1 [cs.CR])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2304.13905
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#30740;&#31350;&#25552;&#20986;&#20102;&#19968;&#31181;&#20351;&#29992;LSTM&#36827;&#34892;&#29289;&#32852;&#32593;&#35774;&#22791;&#35782;&#21035;&#30340;&#26041;&#27861;&#65292;&#20197;&#39044;&#38450;&#23433;&#20840;&#23041;&#32961;&#21644;&#26816;&#27979;&#28431;&#27934;&#20026;&#30446;&#26631;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#38543;&#30528;&#29289;&#32852;&#32593;&#30340;&#20351;&#29992;&#36234;&#26469;&#36234;&#26222;&#36941;&#65292;&#38543;&#20043;&#32780;&#26469;&#30340;&#26159;&#22823;&#37327;&#35774;&#22791;&#36896;&#25104;&#30340;&#23433;&#20840;&#28431;&#27934;&#12290;&#22312;&#36825;&#26679;&#30340;&#29615;&#22659;&#19979;&#65292;&#29289;&#32852;&#32593;&#35774;&#22791;&#35782;&#21035;&#26041;&#27861;&#25104;&#20026;&#37325;&#35201;&#30340;&#39044;&#38450;&#24615;&#23433;&#20840;&#25514;&#26045;&#65292;&#21487;&#20197;&#35782;&#21035;&#36825;&#20123;&#35774;&#22791;&#24182;&#26816;&#27979;&#23427;&#20204;&#25152;&#38754;&#20020;&#30340;&#28431;&#27934;&#12290;&#26412;&#30740;&#31350;&#25552;&#20986;&#20102;&#19968;&#31181;&#20351;&#29992;&#38271;&#30701;&#26102;&#35760;&#24518;&#65288;LSTM&#65289;&#30340;&#26041;&#27861;&#65292;&#22312;Aalto&#25968;&#25454;&#38598;&#20013;&#35782;&#21035;&#35774;&#22791;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+While the use of the Internet of Things is becoming more and more popular, many security vulnerabilities are emerging with the large number of devices being introduced to the market. In this environment, IoT device identification methods provide a preventive security measure as an important factor in identifying these devices and detecting the vulnerabilities they suffer from. In this study, we present a method that identifies devices in the Aalto dataset using Long short-term memory (LSTM)
+&lt;/p&gt;</description></item></channel></rss>
