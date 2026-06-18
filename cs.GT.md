@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Karma: An Experimental Study](https://arxiv.org/abs/2404.02687) | 实验证实因果报应在资源分配上带来显著且持久的福利好处，尤其在具有间歇急迫性的情境中效果更佳。 |
+| [^1] | [Recursive Joint Simulation in Games](https://arxiv.org/abs/2402.08128) | 本文研究了游戏中AI代理之间的递归协同模拟的互动方式，并证明了这种方式与原始游戏的无限重复版本在战略上是等价的。 |
 
 # 详细
 
-[^1]: Karma：一个实验研究
+[^1]: 递归协同模拟在游戏中的应用
 
-    Karma: An Experimental Study
+    Recursive Joint Simulation in Games
 
-    [https://arxiv.org/abs/2404.02687](https://arxiv.org/abs/2404.02687)
+    [https://arxiv.org/abs/2402.08128](https://arxiv.org/abs/2402.08128)
 
-    实验证实因果报应在资源分配上带来显著且持久的福利好处，尤其在具有间歇急迫性的情境中效果更佳。
+    本文研究了游戏中AI代理之间的递归协同模拟的互动方式，并证明了这种方式与原始游戏的无限重复版本在战略上是等价的。
 
     
 
-    非可交易积分系统，类似于因果报应，因此提议以此命名，是一种用于重复资源分配的机制，在理论上具有吸引人的效率和公平特性。在这项研究中，我们在一项在线实验中测试了因果报应，实验中人类被要求重复竞争获取一种具有时间变化和随机个人偏好或紧迫性的资源。我们确认，即使在没有任何事先培训的人群中，因果报应也具有显著且持久的福利好处。我们发现，在具有间歇急迫性的情境中，机制的使用次数比频繁中等紧迫性的情境更多，并且将其实施为一个简单（二元）的因果报应竞标方案，对于福利的提高特别有效：实现了相对较大的总体效率增益，这些增益几乎是帕累托改进的。这些发现为进一步测试和未来实施计划提供了指导。
+    人工智能(AI)代理之间的博弈动态与传统的人-人互动可能存在各种不同之处。其中一个区别是可能能够准确地模拟AI代理，例如因为其源代码是已知的。我们的目标是探索利用这种可能性在战略设置中实现更合作的结果的方法。在本文中，我们研究了AI代理之间运行递归协同模拟的互动。即，代理首先共同观察他们所面对情境的模拟。这种模拟反过来递归地包括了额外的模拟（为了避免无限递归，具有小概率的失败），并且在选择行动之前观察所有这些嵌套模拟的结果。我们证明，由此产生的互动在战略上等价于原始游戏的无限重复版本，从而可以直接转移诸如各种民间定理等现有结果。
 
-    arXiv:2404.02687v1 Announce Type: new  Abstract: A system of non-tradable credits that flow between individuals like karma, hence proposed under that name, is a mechanism for repeated resource allocation that comes with attractive efficiency and fairness properties, in theory. In this study, we test karma in an online experiment in which human subjects repeatedly compete for a resource with time-varying and stochastic individual preferences or urgency to acquire the resource. We confirm that karma has significant and sustained welfare benefits even in a population with no prior training. We identify mechanism usage in contexts with sporadic high urgency, more so than with frequent moderate urgency, and implemented as an easy (binary) karma bidding scheme as particularly effective for welfare improvements: relatively larger aggregate efficiency gains are realized that are (almost) Pareto superior. These findings provide guidance for further testing and for future implementation plans of
+    Game-theoretic dynamics between AI agents could differ from traditional human-human interactions in various ways. One such difference is that it may be possible to accurately simulate an AI agent, for example because its source code is known. Our aim is to explore ways of leveraging this possibility to achieve more cooperative outcomes in strategic settings. In this paper, we study an interaction between AI agents where the agents run a recursive joint simulation. That is, the agents first jointly observe a simulation of the situation they face. This simulation in turn recursively includes additional simulations (with a small chance of failure, to avoid infinite recursion), and the results of all these nested simulations are observed before an action is chosen. We show that the resulting interaction is strategically equivalent to an infinitely repeated version of the original game, allowing a direct transfer of existing results such as the various folk theorems.
     
 
