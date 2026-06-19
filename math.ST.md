@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Reconciling the Theory of Factor Sequences.](http://arxiv.org/abs/2307.10067) | 该论文研究了动态因子序列和静态因子序列之间的区别，强调了忽略弱共同成分对于因子模型在结构分析和预测中的应用可能产生的重大影响，同时指出动态共同成分才能被解释为潜在经济变量。 |
+| [^1] | [Algebraic and Statistical Properties of the Ordinary Least Squares Interpolator.](http://arxiv.org/abs/2309.15769) | 本文研究了普通最小二乘插值器在高维环境中的代数和统计属性，并为最小l2范数OLS插值器提供了基本结果。这些结果对理解OLS插值器的泛化能力具有重要意义。 |
 
 # 详细
 
-[^1]: 调和因子序列理论
+[^1]: 普通最小二乘插值器的代数和统计属性
 
-    Reconciling the Theory of Factor Sequences. (arXiv:2307.10067v1 [econ.EM])
+    Algebraic and Statistical Properties of the Ordinary Least Squares Interpolator. (arXiv:2309.15769v1 [math.ST])
 
-    [http://arxiv.org/abs/2307.10067](http://arxiv.org/abs/2307.10067)
+    [http://arxiv.org/abs/2309.15769](http://arxiv.org/abs/2309.15769)
 
-    该论文研究了动态因子序列和静态因子序列之间的区别，强调了忽略弱共同成分对于因子模型在结构分析和预测中的应用可能产生的重大影响，同时指出动态共同成分才能被解释为潜在经济变量。
+    本文研究了普通最小二乘插值器在高维环境中的代数和统计属性，并为最小l2范数OLS插值器提供了基本结果。这些结果对理解OLS插值器的泛化能力具有重要意义。
 
     
 
-    因子序列是随机的双序列$(y_{it}: i \in \mathbb N, t \in \mathbb Z)$，以时间和横截面为索引，具有所谓的因子结构。该名词由Forni等人于2001年提出，引入了动态因子序列。我们展示了动态因子序列和静态因子序列之间的区别，静态因子序列是计量经济学因子分析中最常见的工作模型，基于Chamberlain和Rothschild （1983），Stock和Watson（2002）和Bai和Ng（2002）。区别在于我们所称的弱共同成分，该成分由潜在无限多个弱因子所构成。忽略弱共同成分可能对结构分析和预测中因子模型的应用产生重大影响。我们还展示了动态因子序列的动态共同成分在一般条件下是因果从属于输出的。因此，只有动态共同成分才能作为潜在经济变量的解释。
+    深度学习研究揭示了对超参数化统计模型的良性过拟合现象，近年来引起了重大的理论兴趣。鉴于其简单性和实用性，普通最小二乘（OLS）插值器已成为获得对这种现象基础洞察力的关键所在。尽管OLS在经典环境中的性质已经得到了很好的建立，但在高维环境中的行为还没有像岭回归或套索回归那样被探索得那么透彻，尽管近年来已取得了显著进展。我们通过为最小l2范数OLS插值器提供基本的代数和统计结果来贡献于这一日益增长的文献。特别地，我们提供了（i）留-k-out残差公式的高维代数等价物，（ii） Cochran公式，以及（iii）Frisch-Waugh-Lovell定理。这些结果有助于理解OLS插值器的泛化能力并具有实质性的影响。
 
-    Factor Sequences are stochastic double sequences $(y_{it}: i \in \mathbb N, t \in \mathbb Z)$ indexed in time and cross-section which have a so called factor structure. The name was coined by Forni et al. 2001, who introduced dynamic factor sequences. We show the difference between dynamic factor sequences and static factor sequences which are the most common workhorse model of econometric factor analysis building on Chamberlain and Rothschild (1983), Stock and Watson (2002) and Bai and Ng (2002). The difference consists in what we call the weak common component which is spanned by a potentially infinite number of weak factors. Ignoring the weak common component can have substantial consequences for applications of factor models in structural analysis and forecasting. We also show that the dynamic common component of a dynamic factor sequence is causally subordinated to the output under general conditions. As a consequence only the dynamic common component can be interpreted as the pro
+    Deep learning research has uncovered the phenomenon of benign overfitting for over-parameterized statistical models, which has drawn significant theoretical interest in recent years. Given its simplicity and practicality, the ordinary least squares (OLS) interpolator has become essential to gain foundational insights into this phenomenon. While properties of OLS are well established in classical settings, its behavior in high-dimensional settings is less explored (unlike for ridge or lasso regression) though significant progress has been made of late. We contribute to this growing literature by providing fundamental algebraic and statistical results for the minimum $\ell_2$-norm OLS interpolator. In particular, we provide high-dimensional algebraic equivalents of (i) the leave-$k$-out residual formula, (ii) Cochran's formula, and (iii) the Frisch-Waugh-Lovell theorem. These results aid in understanding the OLS interpolator's ability to generalize and have substantive implications for c
     
 
