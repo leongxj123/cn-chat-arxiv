@@ -2,22 +2,9 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Assortment Planning with Sponsored Products](https://arxiv.org/abs/2402.06158) | 本研究主要关注零售中带有赞助产品的品类规划挑战并将其建模为组合优化任务，以实现在考虑赞助产品的情况下优化预期收入的目的。 |
+
 
 # 详细
 
-[^1]: 带有赞助产品的品类规划
 
-    Assortment Planning with Sponsored Products
-
-    [https://arxiv.org/abs/2402.06158](https://arxiv.org/abs/2402.06158)
-
-    本研究主要关注零售中带有赞助产品的品类规划挑战并将其建模为组合优化任务，以实现在考虑赞助产品的情况下优化预期收入的目的。
-
-    
-
-    在零售行业快速发展的背景下，品类规划对于企业的成功起着至关重要的作用。随着赞助产品在在线市场的日益突出地位，零售商在有效管理产品品类方面面临新的挑战。值得注意的是，以前的品类规划研究大多忽视了赞助产品的存在及其对整体推荐效果可能产生的影响。相反，他们通常简化地假设所有产品都是有机产品或非赞助产品。这个研究空白突显了在赞助产品存在的情况下更深入探讨品类规划挑战的必要性。我们将在存在赞助产品的情况下将品类规划问题建模为组合优化任务。最终目标是计算出一种最优的品类规划方案，既能优化预期收入，又能考虑到赞助产品的存在。
-
-    In the rapidly evolving landscape of retail, assortment planning plays a crucial role in determining the success of a business. With the rise of sponsored products and their increasing prominence in online marketplaces, retailers face new challenges in effectively managing their product assortment in the presence of sponsored products. Remarkably, previous research in assortment planning largely overlooks the existence of sponsored products and their potential impact on overall recommendation effectiveness. Instead, they commonly make the simplifying assumption that all products are either organic or non-sponsored. This research gap underscores the necessity for a more thorough investigation of the assortment planning challenge when sponsored products are in play. We formulate the assortment planning problem in the presence of sponsored products as a combinatorial optimization task. The ultimate objective is to compute an assortment plan that optimizes expected revenue while considerin
-    
 

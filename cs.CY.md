@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Algorithmic neutrality.](http://arxiv.org/abs/2303.05103) | 研究算法中立性以及与算法偏见的关系，以搜索引擎为案例研究，得出搜索中立性是不可能的结论。 |
+| [^1] | [The Double-Edged Sword of Input Perturbations to Robust Accurate Fairness](https://arxiv.org/abs/2404.01356) | 该论文研究了深度神经网络对敌对输入扰动的敏感性，提出了新的鲁棒准确公平性定义，并介绍了一种敌对攻击方法和相应的解决方案。 |
 
 # 详细
 
-[^1]: 算法中立性
+[^1]: 输入扰动对鲁棒准确公平性的双刃剑
 
-    Algorithmic neutrality. (arXiv:2303.05103v2 [cs.CY] UPDATED)
+    The Double-Edged Sword of Input Perturbations to Robust Accurate Fairness
 
-    [http://arxiv.org/abs/2303.05103](http://arxiv.org/abs/2303.05103)
+    [https://arxiv.org/abs/2404.01356](https://arxiv.org/abs/2404.01356)
 
-    研究算法中立性以及与算法偏见的关系，以搜索引擎为案例研究，得出搜索中立性是不可能的结论。
+    该论文研究了深度神经网络对敌对输入扰动的敏感性，提出了新的鲁棒准确公平性定义，并介绍了一种敌对攻击方法和相应的解决方案。
 
     
 
-    偏见影响着越来越多掌控我们生活的算法。预测性警务系统错误地高估有色人种社区的犯罪率；招聘算法削弱了合格的女性候选人的机会；人脸识别软件难以识别黑皮肤的面部。算法偏见已经受到了重视，相比之下，算法中立性却基本被忽视了。算法中立性是我的研究主题。我提出了三个问题。算法中立性是什么？算法中立性是否可能？当我们考虑算法中立性时，我们可以从算法偏见中学到什么？为了具体回答这些问题，我选择了一个案例研究：搜索引擎。借鉴关于科学中立性的研究，我认为只有当搜索引擎的排名不受某些价值观的影响时，搜索引擎才是中立的，比如政治意识形态或搜索引擎运营商的经济利益。我认为搜索中立性是不可能的。
+    深度神经网络(DNNs)被认为对敌对输入扰动敏感，导致预测的准确性或个体公平性降低。为了共同表征预测准确性和个体公平性对敌对扰动的敏感性，我们引入了一个名为鲁棒准确公平性的新定义。鲁棒准确公平性要求当实例及其相似对应物受到输入扰动时，预测与地面事实一致。我们提出一种敌对攻击方法RAFair，以暴露DNN中的虚假或偏见敌对缺陷，这些缺陷会欺骗准确性或损害个体公平性。然后，我们展示这样的敌对实例可以通过精心设计的良性扰动有效地解决，从而使它们的预测准确而公平。我们的工作探讨了输入对准确公平性的双刃剑。
 
-    Bias infects the algorithms that wield increasing control over our lives. Predictive policing systems overestimate crime in communities of color; hiring algorithms dock qualified female candidates; and facial recognition software struggles to recognize dark-skinned faces. Algorithmic bias has received significant attention. Algorithmic neutrality, in contrast, has been largely neglected. Algorithmic neutrality is my topic. I take up three questions. What is algorithmic neutrality? Is algorithmic neutrality possible? When we have algorithmic neutrality in mind, what can we learn about algorithmic bias? To answer these questions in concrete terms, I work with a case study: search engines. Drawing on work about neutrality in science, I say that a search engine is neutral only if certain values -- like political ideologies or the financial interests of the search engine operator -- play no role in how the search engine ranks pages. Search neutrality, I argue, is impossible. Its impossibili
+    arXiv:2404.01356v1 Announce Type: cross  Abstract: Deep neural networks (DNNs) are known to be sensitive to adversarial input perturbations, leading to a reduction in either prediction accuracy or individual fairness. To jointly characterize the susceptibility of prediction accuracy and individual fairness to adversarial perturbations, we introduce a novel robustness definition termed robust accurate fairness. Informally, robust accurate fairness requires that predictions for an instance and its similar counterparts consistently align with the ground truth when subjected to input perturbations. We propose an adversarial attack approach dubbed RAFair to expose false or biased adversarial defects in DNN, which either deceive accuracy or compromise individual fairness. Then, we show that such adversarial instances can be effectively addressed by carefully designed benign perturbations, correcting their predictions to be accurate and fair. Our work explores the double-edged sword of input 
     
 
