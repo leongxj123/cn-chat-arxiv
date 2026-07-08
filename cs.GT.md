@@ -2,22 +2,9 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Proportionally Representative Clustering.](http://arxiv.org/abs/2304.13917) | 本文提出了一个新的公平性准则——比例代表性公平性（PRF），并设计了有效的算法满足该准则。 |
+
 
 # 详细
 
-[^1]: 比例代表性聚类
 
-    Proportionally Representative Clustering. (arXiv:2304.13917v1 [cs.LG])
-
-    [http://arxiv.org/abs/2304.13917](http://arxiv.org/abs/2304.13917)
-
-    本文提出了一个新的公平性准则——比例代表性公平性（PRF），并设计了有效的算法满足该准则。
-
-    
-
-    近年来，机器学习领域对公平概念的形式化表述越来越受关注。本文关注于聚类，是无监督机器学习中最基础的任务之一。我们提出了一个新的公平性准则——比例代表性公平性（PRF），我们认为该概念以一种更有说服力的方式达到了文献中几个现存概念的理由。但现有的公平聚类算法不能满足我们的公平性概念。我们设计了高效的算法，以满足无约束聚类和离散聚类问题的PRF。
-
-    In recent years, there has been a surge in effort to formalize notions of fairness in machine learning. We focus on clustering -- one of the fundamental tasks in unsupervised machine learning. We propose a new axiom that captures proportional representation fairness (PRF). We make a case that the concept achieves the raison d'{\^{e}}tre of several existing concepts in the literature in an arguably more convincing manner. Our fairness concept is not satisfied by existing fair clustering algorithms. We design efficient algorithms to achieve PRF both for unconstrained and discrete clustering problems.
-    
 
