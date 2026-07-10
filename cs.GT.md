@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Optimal Queueing Regimes.](http://arxiv.org/abs/2401.13812) | 该论文研究了一个M/M/1排队模型，顾客可以根据策略决定加入队列或退出队列，并且给出了一类排队制度，使得在任何参数下，社会效率行为都是均衡结果。 |
+| [^1] | [Calibrated Stackelberg Games: Learning Optimal Commitments Against Calibrated Agents.](http://arxiv.org/abs/2306.02704) | 本文提出了一种新的校准史塔克伯格博弈（CSG）框架，其中智能体根据校准预测进行最佳响应。同时引入了自适应校准概念，提供精细的任何时候校准保证。在有限CSG中，主体可以获得最优解。 |
 
 # 详细
 
-[^1]: 最优排队制度
+[^1]: 校准史塔克伯格博弈：学习对抗校准智能体的最优承诺
 
-    Optimal Queueing Regimes. (arXiv:2401.13812v1 [econ.TH])
+    Calibrated Stackelberg Games: Learning Optimal Commitments Against Calibrated Agents. (arXiv:2306.02704v1 [cs.GT] CROSS LISTED)
 
-    [http://arxiv.org/abs/2401.13812](http://arxiv.org/abs/2401.13812)
+    [http://arxiv.org/abs/2306.02704](http://arxiv.org/abs/2306.02704)
 
-    该论文研究了一个M/M/1排队模型，顾客可以根据策略决定加入队列或退出队列，并且给出了一类排队制度，使得在任何参数下，社会效率行为都是均衡结果。
+    本文提出了一种新的校准史塔克伯格博弈（CSG）框架，其中智能体根据校准预测进行最佳响应。同时引入了自适应校准概念，提供精细的任何时候校准保证。在有限CSG中，主体可以获得最优解。
 
     
 
-    我们考虑了一个M/M/1排队模型，其中顾客可以根据策略决定是否加入队列、何时退出队列。我们对排队制度的类别进行了刻画，使得在模型的任何参数下，社会效率行为都是均衡结果。
+    本文提出了标准史塔克伯格博弈（SG）框架的一种推广：校准史塔克伯格博弈（CSG）。在CSG中，一个主体与一个智能体反复交互，后者不像标准SG一样直接访问主体的动作，而是对其进行校准预测，以达到最佳响应。CSG是一个强大的建模工具，超越了假定代理使用特定算法进行战略交互的做法，因此更加鲁棒地应对了SG最初旨在捕捉的现实应用。除了CSG外，本文还介绍了更强的校准概念，称为自适应校准，可针对敌对序列提供精细的任何时候校准保证。本文给出了获得自适应校准算法的一般方法，并将其专门用于有限CSG。在我们的主要技术结果中，我们证明在CSG中，主体可以获得收敛于最优解的效用。
 
-    We consider an M/M/1 queueing model where customers can strategically decide whether to join the queue or balk and when to renege. We characterize the class of queueing regimes such that, for any parameters of the model, the socially efficient behavior is an equilibrium outcome.
+    In this paper, we introduce a generalization of the standard Stackelberg Games (SGs) framework: Calibrated Stackelberg Games (CSGs). In CSGs, a principal repeatedly interacts with an agent who (contrary to standard SGs) does not have direct access to the principal's action but instead best-responds to calibrated forecasts about it. CSG is a powerful modeling tool that goes beyond assuming that agents use ad hoc and highly specified algorithms for interacting in strategic settings and thus more robustly addresses real-life applications that SGs were originally intended to capture. Along with CSGs, we also introduce a stronger notion of calibration, termed adaptive calibration, that provides fine-grained any-time calibration guarantees against adversarial sequences. We give a general approach for obtaining adaptive calibration algorithms and specialize them for finite CSGs. In our main technical result, we show that in CSGs, the principal can achieve utility that converges to the optimum
     
 
