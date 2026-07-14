@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Entity Alignment Method of Science and Technology Patent based on Graph Convolution Network and Information Fusion.](http://arxiv.org/abs/2311.00300) | 本研究提出了一种使用图卷积网络和信息融合的方法来实现科技专利的实体对齐，通过将知识图的结构信息和实体属性信息嵌入和表示，从而提高实体对齐的性能。 |
+| [^1] | [HiQA: A Hierarchical Contextual Augmentation RAG for Massive Documents QA](https://arxiv.org/abs/2402.01767) | HiQA是一个先进的多文档问答框架，使用分层的上下文增强和多路径检索机制，解决了大规模文档问答中的检索准确性问题，并在多文档环境中展示了最先进的性能。 |
 
 # 详细
 
-[^1]: 基于图卷积网络和信息融合的科技专利实体对齐方法
+[^1]: HiQA：一种用于大规模文档问答的分层上下文增强的RAG模型
 
-    Entity Alignment Method of Science and Technology Patent based on Graph Convolution Network and Information Fusion. (arXiv:2311.00300v1 [cs.CL])
+    HiQA: A Hierarchical Contextual Augmentation RAG for Massive Documents QA
 
-    [http://arxiv.org/abs/2311.00300](http://arxiv.org/abs/2311.00300)
+    [https://arxiv.org/abs/2402.01767](https://arxiv.org/abs/2402.01767)
 
-    本研究提出了一种使用图卷积网络和信息融合的方法来实现科技专利的实体对齐，通过将知识图的结构信息和实体属性信息嵌入和表示，从而提高实体对齐的性能。
+    HiQA是一个先进的多文档问答框架，使用分层的上下文增强和多路径检索机制，解决了大规模文档问答中的检索准确性问题，并在多文档环境中展示了最先进的性能。
 
     
 
-    科技专利的实体对齐旨在链接不同科技专利数据源的知识图中的等价实体。大多数实体对齐方法仅使用图神经网络获取图结构的嵌入或使用属性文本描述获取语义表示，忽视了科技专利中多信息融合的过程。为了利用图结构和专利实体的名称、描述和属性等辅助信息，本文提出了一种基于图卷积网络的科技专利信息融合的实体对齐方法。通过图卷积网络和BERT模型，将科技专利知识图的结构信息和实体属性信息嵌入和表示，实现多信息融合，从而提高实体对齐的性能。
+    随着利用外部工具的语言模型代理迅速发展，使用补充文档和检索增强生成（RAG）方法的问答（QA）方法学取得了重要进展。这种进步提高了语言模型的回答质量，并减轻了幻觉的出现。然而，当面临大量无法区分的文档时，这些方法在检索准确性方面表现有限，给实际应用带来了显著挑战。针对这些新兴的挑战，我们提出了HiQA，这是一个先进的多文档问答（MDQA）框架，将级联的元数据整合到内容中，同时具备多路径检索机制。我们还发布了一个名为MasQA的基准来评估和研究MDQA。最后，HiQA在多文档环境中展示了最先进的性能。
 
-    The entity alignment of science and technology patents aims to link the equivalent entities in the knowledge graph of different science and technology patent data sources. Most entity alignment methods only use graph neural network to obtain the embedding of graph structure or use attribute text description to obtain semantic representation, ignoring the process of multi-information fusion in science and technology patents. In order to make use of the graphic structure and auxiliary information such as the name, description and attribute of the patent entity, this paper proposes an entity alignment method based on the graph convolution network for science and technology patent information fusion. Through the graph convolution network and BERT model, the structure information and entity attribute information of the science and technology patent knowledge graph are embedded and represented to achieve multi-information fusion, thus improving the performance of entity alignment. Experiment
+    As language model agents leveraging external tools rapidly evolve, significant progress has been made in question-answering(QA) methodologies utilizing supplementary documents and the Retrieval-Augmented Generation (RAG) approach. This advancement has improved the response quality of language models and alleviates the appearance of hallucination. However, these methods exhibit limited retrieval accuracy when faced with massive indistinguishable documents, presenting notable challenges in their practical application. In response to these emerging challenges, we present HiQA, an advanced framework for multi-document question-answering (MDQA) that integrates cascading metadata into content as well as a multi-route retrieval mechanism. We also release a benchmark called MasQA to evaluate and research in MDQA. Finally, HiQA demonstrates the state-of-the-art performance in multi-document environments.
     
 
