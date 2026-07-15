@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [HiQA: A Hierarchical Contextual Augmentation RAG for Massive Documents QA](https://arxiv.org/abs/2402.01767) | HiQA是一个先进的多文档问答框架，使用分层的上下文增强和多路径检索机制，解决了大规模文档问答中的检索准确性问题，并在多文档环境中展示了最先进的性能。 |
+| [^1] | [TTA-Nav: Test-time Adaptive Reconstruction for Point-Goal Navigation under Visual Corruptions](https://arxiv.org/abs/2403.01977) | TTA-Nav提出了一种测试时自适应方法，通过引入自顶向下解码器，从损坏图像中重建出更清晰的图像，显著增强了点目标导航性能。 |
 
 # 详细
 
-[^1]: HiQA：一种用于大规模文档问答的分层上下文增强的RAG模型
+[^1]: TTA-Nav: 测试时自适应重建用于视觉损坏下的点目标导航
 
-    HiQA: A Hierarchical Contextual Augmentation RAG for Massive Documents QA
+    TTA-Nav: Test-time Adaptive Reconstruction for Point-Goal Navigation under Visual Corruptions
 
-    [https://arxiv.org/abs/2402.01767](https://arxiv.org/abs/2402.01767)
+    [https://arxiv.org/abs/2403.01977](https://arxiv.org/abs/2403.01977)
 
-    HiQA是一个先进的多文档问答框架，使用分层的上下文增强和多路径检索机制，解决了大规模文档问答中的检索准确性问题，并在多文档环境中展示了最先进的性能。
+    TTA-Nav提出了一种测试时自适应方法，通过引入自顶向下解码器，从损坏图像中重建出更清晰的图像，显著增强了点目标导航性能。
 
     
 
-    随着利用外部工具的语言模型代理迅速发展，使用补充文档和检索增强生成（RAG）方法的问答（QA）方法学取得了重要进展。这种进步提高了语言模型的回答质量，并减轻了幻觉的出现。然而，当面临大量无法区分的文档时，这些方法在检索准确性方面表现有限，给实际应用带来了显著挑战。针对这些新兴的挑战，我们提出了HiQA，这是一个先进的多文档问答（MDQA）框架，将级联的元数据整合到内容中，同时具备多路径检索机制。我们还发布了一个名为MasQA的基准来评估和研究MDQA。最后，HiQA在多文档环境中展示了最先进的性能。
+    arXiv:2403.01977v1 公告类型: 跨  摘要: 在视觉损坏下的机器人导航是一个巨大的挑战。为了解决这一问题，我们提出了一种名为TTA-Nav的测试时自适应（TTA）方法，用于在视觉损坏下的点目标导航。我们的“即插即用”方法将自顶向下的解码器与预训练的导航模型相结合。首先，预训练的导航模型接收一个损坏的图像并提取特征。其次，自顶向下的解码器根据预训练模型提取的高级特征生成重建图像。然后，将损坏图像的重建图像馈送回预训练模型。最后，预训练模型再次进行前向传播以输出动作。尽管仅在清晰图像上训练，自顶向下的解码器可以从损坏图像中重建出更清晰的图像，无需基于梯度的自适应。具有我们自顶向下解码器的预训练导航模型显著提高了导航性能。
 
-    As language model agents leveraging external tools rapidly evolve, significant progress has been made in question-answering(QA) methodologies utilizing supplementary documents and the Retrieval-Augmented Generation (RAG) approach. This advancement has improved the response quality of language models and alleviates the appearance of hallucination. However, these methods exhibit limited retrieval accuracy when faced with massive indistinguishable documents, presenting notable challenges in their practical application. In response to these emerging challenges, we present HiQA, an advanced framework for multi-document question-answering (MDQA) that integrates cascading metadata into content as well as a multi-route retrieval mechanism. We also release a benchmark called MasQA to evaluate and research in MDQA. Finally, HiQA demonstrates the state-of-the-art performance in multi-document environments.
+    arXiv:2403.01977v1 Announce Type: cross  Abstract: Robot navigation under visual corruption presents a formidable challenge. To address this, we propose a Test-time Adaptation (TTA) method, named as TTA-Nav, for point-goal navigation under visual corruptions. Our "plug-and-play" method incorporates a top-down decoder to a pre-trained navigation model. Firstly, the pre-trained navigation model gets a corrupted image and extracts features. Secondly, the top-down decoder produces the reconstruction given the high-level features extracted by the pre-trained model. Then, it feeds the reconstruction of a corrupted image back to the pre-trained model. Finally, the pre-trained model does forward pass again to output action. Despite being trained solely on clean images, the top-down decoder can reconstruct cleaner images from corrupted ones without the need for gradient-based adaptation. The pre-trained navigation model with our top-down decoder significantly enhances navigation performance acr
     
 
