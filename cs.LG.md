@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Predicting Instability in Complex Oscillator Networks: Limitations and Potentials of Network Measures and Machine Learning](https://arxiv.org/abs/2402.17500) | 通过研究发现，对于振荡系统的同步稳定性预测，网络特征无法可靠地进行预测，只有通过结合所有网络特征和节点机器学习才能匹敌图神经网络(GNNs)的性能。 |
+| [^1] | [FLTrojan: Privacy Leakage Attacks against Federated Language Models Through Selective Weight Tampering.](http://arxiv.org/abs/2310.16152) | 本文提出了一种FLTrojan攻击方法，通过选择性权重篡改，从联邦语言模型中泄露隐私敏感用户数据。通过观察到FL中中间轮次的模型快照可以引起更大的隐私泄露，并发现隐私泄露可以通过篡改模型的选择性权重来加剧。 |
 
 # 详细
 
-[^1]: 预测复杂振荡器网络中的不稳定性: 网络特征与机器学习的局限性与潜力
+[^1]: FLTrojan: 通过选择性权重篡改对联邦语言模型进行隐私泄露攻击
 
-    Predicting Instability in Complex Oscillator Networks: Limitations and Potentials of Network Measures and Machine Learning
+    FLTrojan: Privacy Leakage Attacks against Federated Language Models Through Selective Weight Tampering. (arXiv:2310.16152v1 [cs.CR])
 
-    [https://arxiv.org/abs/2402.17500](https://arxiv.org/abs/2402.17500)
+    [http://arxiv.org/abs/2310.16152](http://arxiv.org/abs/2310.16152)
 
-    通过研究发现，对于振荡系统的同步稳定性预测，网络特征无法可靠地进行预测，只有通过结合所有网络特征和节点机器学习才能匹敌图神经网络(GNNs)的性能。
+    本文提出了一种FLTrojan攻击方法，通过选择性权重篡改，从联邦语言模型中泄露隐私敏感用户数据。通过观察到FL中中间轮次的模型快照可以引起更大的隐私泄露，并发现隐私泄露可以通过篡改模型的选择性权重来加剧。
 
     
 
-    网络科学的一个核心问题是系统的功能特性如何从其结构中产生。对于网络动力系统，结构通常用网络特征来量化。对于振荡系统而言，一个理论上和实际上感兴趣的功能特性是同步稳定性对局部扰动的响应。最近，图神经网络（GNNs）已被证明成功地预测这种稳定性; 与此同时，网络特征却难以描绘出清晰的图景。在这里，我们收集了46个相关的网络特征，发现没有任何小的子集能够可靠地预测稳定性。GNNs的性能只有通过结合所有网络特征和节点机器学习才能匹敌。然而，与GNNs不同，这种方法无法从网络集合推广到几种真实的电力网络拓扑结构。这表明网络特征与功能的相关性可能具有误导性，而GNNs
+    联邦学习(Federated learning, FL)正成为许多技术应用中的关键组件，包括语言建模领域，其中个体FL参与者在其本地数据集中往往具有敏感的文本数据。然而，确定联邦语言模型中的隐私泄露程度并不简单，现有的攻击只是试图提取数据，而不考虑数据的敏感性或天真性。为了填补这一空白，在本文中，我们介绍了关于从联邦语言模型中泄露隐私敏感用户数据的两个新发现。首先，我们观察到FL中中间轮次的模型快照比最终训练模型能够造成更大的隐私泄露。其次，我们确定隐私泄露可以通过篡改模型的选择性权重来加剧，这些权重特别负责记忆敏感训练数据。我们展示了恶意客户端如何在FL中泄露其他用户的隐私敏感数据。
 
-    arXiv:2402.17500v1 Announce Type: cross  Abstract: A central question of network science is how functional properties of systems arise from their structure. For networked dynamical systems, structure is typically quantified with network measures. A functional property that is of theoretical and practical interest for oscillatory systems is the stability of synchrony to localized perturbations. Recently, Graph Neural Networks (GNNs) have been shown to predict this stability successfully; at the same time, network measures have struggled to paint a clear picture. Here we collect 46 relevant network measures and find that no small subset can reliably predict stability. The performance of GNNs can only be matched by combining all network measures and nodewise machine learning. However, unlike GNNs, this approach fails to extrapolate from network ensembles to several real power grid topologies. This suggests that correlations of network measures and function may be misleading, and that GNNs
+    Federated learning (FL) is becoming a key component in many technology-based applications including language modeling -- where individual FL participants often have privacy-sensitive text data in their local datasets. However, realizing the extent of privacy leakage in federated language models is not straightforward and the existing attacks only intend to extract data regardless of how sensitive or naive it is. To fill this gap, in this paper, we introduce two novel findings with regard to leaking privacy-sensitive user data from federated language models. Firstly, we make a key observation that model snapshots from the intermediate rounds in FL can cause greater privacy leakage than the final trained model. Secondly, we identify that privacy leakage can be aggravated by tampering with a model's selective weights that are specifically responsible for memorizing the sensitive training data. We show how a malicious client can leak the privacy-sensitive data of some other user in FL even
     
 
