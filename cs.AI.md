@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [CarbonNet: How Computer Vision Plays a Role in Climate Change? Application: Learning Geomechanics from Subsurface Geometry of CCS to Mitigate Global Warming](https://arxiv.org/abs/2403.06025) | 这项研究介绍了一种利用计算机视觉从地下储存空间几何图像中预测陆地表面位移的新方法，为碳捕集和封存项目中的决策提供支持。 |
+| [^1] | [Saving the legacy of Hero Ibash: Evaluating Four Language Models for Aminoacian](https://arxiv.org/abs/2402.18121) | 本研究评估了四种语言模型在未被充分探索的氨基酸语言中的适应性、有效性和局限性，并为未来自然语言处理的进展奠定了基础。 |
 
 # 详细
 
-[^1]: CarbonNet: 计算机视觉在气候变化中的作用是什么？ 应用：学习从地下储存空间几何形状中减缓全球变暖的地质力学
+[^1]: 拯救英雄伊巴什的遗产：评估四种语言模型在氨基酸语言中的表现
 
-    CarbonNet: How Computer Vision Plays a Role in Climate Change? Application: Learning Geomechanics from Subsurface Geometry of CCS to Mitigate Global Warming
+    Saving the legacy of Hero Ibash: Evaluating Four Language Models for Aminoacian
 
-    [https://arxiv.org/abs/2403.06025](https://arxiv.org/abs/2403.06025)
+    [https://arxiv.org/abs/2402.18121](https://arxiv.org/abs/2402.18121)
 
-    这项研究介绍了一种利用计算机视觉从地下储存空间几何图像中预测陆地表面位移的新方法，为碳捕集和封存项目中的决策提供支持。
+    本研究评估了四种语言模型在未被充分探索的氨基酸语言中的适应性、有效性和局限性，并为未来自然语言处理的进展奠定了基础。
 
     
 
-    我们介绍了一种新方法，使用计算机视觉从地下储存空间几何图像中预测陆地表面位移，以应用于碳捕集和封存（CCS）。CCS已被证明是碳中和社会的关键组成部分。然而，科学家发现存在挑战，包括由于大模型尺度而导致的高计算成本，以及难以泛化具有复杂物理学的预训练模型的限制。我们通过直接从地下储存空间几何图像训练模型来应对这些挑战。我们的目标是理解由碳注入导致的陆地表面位移响应，并利用我们训练的模型来为CCS项目的决策提供信息。
+    本研究评估了四种前沿语言模型在未开发的氨基酸语言中的表现。通过评估，本研究审查了它们在文本生成、语义连贯性和上下文理解方面的适应性，有效性和局限性。揭示这些模型在低资源语言中的表现，为弥合语言差距开辟了道路。通过提供基准和理解挑战，为未来自然语言处理的进展奠定了基础，旨在提升语言模型在类似语言环境中的适用性，标志着语言技术包容性和进步的重要一步。
 
-    arXiv:2403.06025v1 Announce Type: cross  Abstract: We introduce a new approach using computer vision to predict the land surface displacement from subsurface geometry images for Carbon Capture and Sequestration (CCS). CCS has been proved to be a key component for a carbon neutral society. However, scientists see there are challenges along the way including the high computational cost due to the large model scale and limitations to generalize a pre-trained model with complex physics. We tackle those challenges by training models directly from the subsurface geometry images. The goal is to understand the respons of land surface displacement due to carbon injection and utilize our trained models to inform decision making in CCS projects.   We implement multiple models (CNN, ResNet, and ResNetUNet) for static mechanics problem, which is a image prediction problem. Next, we use the LSTM and transformer for transient mechanics scenario, which is a video prediction problem. It shows ResNetUNe
+    arXiv:2402.18121v1 Announce Type: cross  Abstract: This study assesses four cutting-edge language models in the underexplored Aminoacian language. Through evaluation, it scrutinizes their adaptability, effectiveness, and limitations in text generation, semantic coherence, and contextual understanding. Uncovering insights into these models' performance in a low-resourced language, this research pioneers pathways to bridge linguistic gaps. By offering benchmarks and understanding challenges, it lays groundwork for future advancements in natural language processing, aiming to elevate the applicability of language models in similar linguistic landscapes, marking a significant step toward inclusivity and progress in language technology.
     
 

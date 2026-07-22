@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [FLTrojan: Privacy Leakage Attacks against Federated Language Models Through Selective Weight Tampering.](http://arxiv.org/abs/2310.16152) | 本文提出了一种FLTrojan攻击方法，通过选择性权重篡改，从联邦语言模型中泄露隐私敏感用户数据。通过观察到FL中中间轮次的模型快照可以引起更大的隐私泄露，并发现隐私泄露可以通过篡改模型的选择性权重来加剧。 |
+| [^1] | [Cross-system biological image quality enhancement based on the generative adversarial network as a foundation for establishing a multi-institute microscopy cooperative network](https://arxiv.org/abs/2403.18026) | 通过生成对抗网络实现了共聚焦显微镜和广场荧光显微镜之间的图像质量转换，提供了低均方误差、高结构相似性和高峰值信噪比的高质量图像。 |
 
 # 详细
 
-[^1]: FLTrojan: 通过选择性权重篡改对联邦语言模型进行隐私泄露攻击
+[^1]: 基于生成对抗网络的交叉系统生物图像质量增强，用作建立多机构显微镜合作网络的基础
 
-    FLTrojan: Privacy Leakage Attacks against Federated Language Models Through Selective Weight Tampering. (arXiv:2310.16152v1 [cs.CR])
+    Cross-system biological image quality enhancement based on the generative adversarial network as a foundation for establishing a multi-institute microscopy cooperative network
 
-    [http://arxiv.org/abs/2310.16152](http://arxiv.org/abs/2310.16152)
+    [https://arxiv.org/abs/2403.18026](https://arxiv.org/abs/2403.18026)
 
-    本文提出了一种FLTrojan攻击方法，通过选择性权重篡改，从联邦语言模型中泄露隐私敏感用户数据。通过观察到FL中中间轮次的模型快照可以引起更大的隐私泄露，并发现隐私泄露可以通过篡改模型的选择性权重来加剧。
+    通过生成对抗网络实现了共聚焦显微镜和广场荧光显微镜之间的图像质量转换，提供了低均方误差、高结构相似性和高峰值信噪比的高质量图像。
 
     
 
-    联邦学习(Federated learning, FL)正成为许多技术应用中的关键组件，包括语言建模领域，其中个体FL参与者在其本地数据集中往往具有敏感的文本数据。然而，确定联邦语言模型中的隐私泄露程度并不简单，现有的攻击只是试图提取数据，而不考虑数据的敏感性或天真性。为了填补这一空白，在本文中，我们介绍了关于从联邦语言模型中泄露隐私敏感用户数据的两个新发现。首先，我们观察到FL中中间轮次的模型快照比最终训练模型能够造成更大的隐私泄露。其次，我们确定隐私泄露可以通过篡改模型的选择性权重来加剧，这些权重特别负责记忆敏感训练数据。我们展示了恶意客户端如何在FL中泄露其他用户的隐私敏感数据。
+    生物系统的高质量荧光成像受限于光漂白和光毒性等过程，以及在许多情况下，受限于最新一代显微镜的有限访问。此外，低时间分辨率可能导致活体系统中的运动模糊效果。我们的工作提出了一种基于深度学习生成对抗方法的解决方案，用于基于低质量（LQ）图像获得高质量（HQ）图像的问题。我们提出了一种生成对抗网络（GAN），用于两种不同独立显微系统之间的对比传递：共聚焦显微镜（产生HQ图像）和广场荧光显微镜（产生LQ图像）。我们的模型证明了这种传递是可能的，使我们能够收到具有低均方误差（MSE）值、高结构相似性指数（SSIM）和高峰值信噪比（PSNR）值的HQ生成图像。对于我们最好的模型
 
-    Federated learning (FL) is becoming a key component in many technology-based applications including language modeling -- where individual FL participants often have privacy-sensitive text data in their local datasets. However, realizing the extent of privacy leakage in federated language models is not straightforward and the existing attacks only intend to extract data regardless of how sensitive or naive it is. To fill this gap, in this paper, we introduce two novel findings with regard to leaking privacy-sensitive user data from federated language models. Firstly, we make a key observation that model snapshots from the intermediate rounds in FL can cause greater privacy leakage than the final trained model. Secondly, we identify that privacy leakage can be aggravated by tampering with a model's selective weights that are specifically responsible for memorizing the sensitive training data. We show how a malicious client can leak the privacy-sensitive data of some other user in FL even
+    arXiv:2403.18026v1 Announce Type: cross  Abstract: High-quality fluorescence imaging of biological systems is limited by processes like photobleaching and phototoxicity, and also in many cases, by limited access to the latest generations of microscopes. Moreover, low temporal resolution can lead to a motion blur effect in living systems. Our work presents a deep learning (DL) generative-adversarial approach to the problem of obtaining high-quality (HQ) images based on their low-quality (LQ) equivalents. We propose a generative-adversarial network (GAN) for contrast transfer between two different separate microscopy systems: a confocal microscope (producing HQ images) and a wide-field fluorescence microscope (producing LQ images). Our model proves that such transfer is possible, allowing us to receive HQ-generated images characterized by low mean squared error (MSE) values, high structural similarity index (SSIM), and high peak signal-to-noise ratio (PSNR) values. For our best model in 
     
 
