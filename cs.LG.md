@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Cross-system biological image quality enhancement based on the generative adversarial network as a foundation for establishing a multi-institute microscopy cooperative network](https://arxiv.org/abs/2403.18026) | 通过生成对抗网络实现了共聚焦显微镜和广场荧光显微镜之间的图像质量转换，提供了低均方误差、高结构相似性和高峰值信噪比的高质量图像。 |
+| [^1] | [Kernel Ridge Regression Inference.](http://arxiv.org/abs/2302.06578) | 我们提供了核岭回归方法的一致推断和置信带，为广泛应用于各种数据类型的非参数回归估计器提供了准确的统计推断方法。 |
 
 # 详细
 
-[^1]: 基于生成对抗网络的交叉系统生物图像质量增强，用作建立多机构显微镜合作网络的基础
+[^1]: 核岭回归推断
 
-    Cross-system biological image quality enhancement based on the generative adversarial network as a foundation for establishing a multi-institute microscopy cooperative network
+    Kernel Ridge Regression Inference. (arXiv:2302.06578v2 [math.ST] UPDATED)
 
-    [https://arxiv.org/abs/2403.18026](https://arxiv.org/abs/2403.18026)
+    [http://arxiv.org/abs/2302.06578](http://arxiv.org/abs/2302.06578)
 
-    通过生成对抗网络实现了共聚焦显微镜和广场荧光显微镜之间的图像质量转换，提供了低均方误差、高结构相似性和高峰值信噪比的高质量图像。
+    我们提供了核岭回归方法的一致推断和置信带，为广泛应用于各种数据类型的非参数回归估计器提供了准确的统计推断方法。
 
     
 
-    生物系统的高质量荧光成像受限于光漂白和光毒性等过程，以及在许多情况下，受限于最新一代显微镜的有限访问。此外，低时间分辨率可能导致活体系统中的运动模糊效果。我们的工作提出了一种基于深度学习生成对抗方法的解决方案，用于基于低质量（LQ）图像获得高质量（HQ）图像的问题。我们提出了一种生成对抗网络（GAN），用于两种不同独立显微系统之间的对比传递：共聚焦显微镜（产生HQ图像）和广场荧光显微镜（产生LQ图像）。我们的模型证明了这种传递是可能的，使我们能够收到具有低均方误差（MSE）值、高结构相似性指数（SSIM）和高峰值信噪比（PSNR）值的HQ生成图像。对于我们最好的模型
+    我们提供了核岭回归(KRR)的一致推断和置信带，这是一种广泛应用于包括排名、图像和图表在内的一般数据类型的非参数回归估计器。尽管这些数据的普遍存在，如学校分配中的排序优先级列表，但KRR的推断理论尚未完全知悉，限制了它在经济学和其他科学领域中的作用。我们构建了针对一般回归器的尖锐、一致的置信区间。为了进行推断，我们开发了一种有效的自举程序，通过对称化来消除偏差并限制计算开销。为了证明该程序，我们推导了再生核希尔伯特空间(RKHS)中部分和的有限样本、均匀高斯和自举耦合。这些推导暗示了基于RKHS单位球的经验过程的强逼近，对覆盖数具有对数依赖关系。模拟验证了置信度。
 
-    arXiv:2403.18026v1 Announce Type: cross  Abstract: High-quality fluorescence imaging of biological systems is limited by processes like photobleaching and phototoxicity, and also in many cases, by limited access to the latest generations of microscopes. Moreover, low temporal resolution can lead to a motion blur effect in living systems. Our work presents a deep learning (DL) generative-adversarial approach to the problem of obtaining high-quality (HQ) images based on their low-quality (LQ) equivalents. We propose a generative-adversarial network (GAN) for contrast transfer between two different separate microscopy systems: a confocal microscope (producing HQ images) and a wide-field fluorescence microscope (producing LQ images). Our model proves that such transfer is possible, allowing us to receive HQ-generated images characterized by low mean squared error (MSE) values, high structural similarity index (SSIM), and high peak signal-to-noise ratio (PSNR) values. For our best model in 
+    We provide uniform inference and confidence bands for kernel ridge regression (KRR), a widely-used non-parametric regression estimator for general data types including rankings, images, and graphs. Despite the prevalence of these data -e.g., ranked preference lists in school assignment -- the inferential theory of KRR is not fully known, limiting its role in economics and other scientific domains. We construct sharp, uniform confidence sets for KRR, which shrink at nearly the minimax rate, for general regressors. To conduct inference, we develop an efficient bootstrap procedure that uses symmetrization to cancel bias and limit computational overhead. To justify the procedure, we derive finite-sample, uniform Gaussian and bootstrap couplings for partial sums in a reproducing kernel Hilbert space (RKHS). These imply strong approximation for empirical processes indexed by the RKHS unit ball with logarithmic dependence on the covering number. Simulations verify coverage. We use our proce
     
 
