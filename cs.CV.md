@@ -2,9 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-
+| [^1] | [Keypoint-Guided Optimal Transport.](http://arxiv.org/abs/2303.13102) | 本文提出了一种关键点引导的最优输运模型，通过掩模约束和关键点的关系指导匹配，并可用Sinkhorn算法求解。 |
 
 # 详细
 
+[^1]: 关键点引导的最优输运模型
 
+    Keypoint-Guided Optimal Transport. (arXiv:2303.13102v1 [cs.CV])
+
+    [http://arxiv.org/abs/2303.13102](http://arxiv.org/abs/2303.13102)
+
+    本文提出了一种关键点引导的最优输运模型，通过掩模约束和关键点的关系指导匹配，并可用Sinkhorn算法求解。
+
+    
+
+    现有的最优输运方法主要通过输运成本/距离最小化来推导最优的输运计划/匹配，但这种方法在某些情况下可能导致错误的匹配。在许多应用程序中，在域之间注释一些匹配的关键点是合理的，甚至是不费力的。因此，研究如何利用注释的关键点来指导OT中的正确匹配具有价值。本文提出了一种新型的基于关键点引导的最优输运模型，通过关键点引导寻找最优匹配（即输运计划）。为了在OT中使用关键点，首先，我们提出了一种基于掩模的输运计划约束，用于保留关键点成对的匹配关系。其次，我们提出了保留每个数据点与关键点的关系以指导匹配的方法。所提出的KPG-RL模型可以通过Sinkhorn的算法求解，并且在分布在不同空间上时也适用。
+
+    Existing Optimal Transport (OT) methods mainly derive the optimal transport plan/matching under the criterion of transport cost/distance minimization, which may cause incorrect matching in some cases. In many applications, annotating a few matched keypoints across domains is reasonable or even effortless in annotation burden. It is valuable to investigate how to leverage the annotated keypoints to guide the correct matching in OT. In this paper, we propose a novel KeyPoint-Guided model by ReLation preservation (KPG-RL) that searches for the optimal matching (i.e., transport plan) guided by the keypoints in OT. To impose the keypoints in OT, first, we propose a mask-based constraint of the transport plan that preserves the matching of keypoint pairs. Second, we propose to preserve the relation of each data point to the keypoints to guide the matching. The proposed KPG-RL model can be solved by Sinkhorn's algorithm and is applicable even when distributions are supported in different spac
+    
 
