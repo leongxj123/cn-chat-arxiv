@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Differentially Private Permutation Tests: Applications to Kernel Methods.](http://arxiv.org/abs/2310.19043) | 本文提出了差分隐私排列检验的框架，扩展了经典的非私有排列检验，以在私有环境中保持有限样本有效性和差分隐私性质。该检验的功率取决于检验统计量的选择，并建立了一般条件来保证一致性和非渐进均匀的功率。 |
+| [^1] | [A Review on Building Blocks of Decentralized Artificial Intelligence](https://arxiv.org/abs/2402.02885) | 本文综述了分散式人工智能（DEAI）领域的构建模块，从底层开始分析，探讨了DEAI解决方案和网络，并提出了未来的研究方向和开放性问题。 |
 
 # 详细
 
-[^1]: 差分隐私排列检验：应用于核方法
+[^1]: 分散式人工智能的构建模块综述
 
-    Differentially Private Permutation Tests: Applications to Kernel Methods. (arXiv:2310.19043v1 [math.ST])
+    A Review on Building Blocks of Decentralized Artificial Intelligence
 
-    [http://arxiv.org/abs/2310.19043](http://arxiv.org/abs/2310.19043)
+    [https://arxiv.org/abs/2402.02885](https://arxiv.org/abs/2402.02885)
 
-    本文提出了差分隐私排列检验的框架，扩展了经典的非私有排列检验，以在私有环境中保持有限样本有效性和差分隐私性质。该检验的功率取决于检验统计量的选择，并建立了一般条件来保证一致性和非渐进均匀的功率。
+    本文综述了分散式人工智能（DEAI）领域的构建模块，从底层开始分析，探讨了DEAI解决方案和网络，并提出了未来的研究方向和开放性问题。
 
     
 
-    近年来，人们对敏感数据的隐私问题越来越关注。为了应对这些问题，差分隐私作为一种严格的隐私保护框架应运而生，在学术界和工业界广泛认可。尽管在私有数据分析方面取得了相当大的进展，但现有的方法往往存在不实用或明显的统计效率损失。本文旨在通过引入差分隐私排列检验来缓解这些担忧。所提出的框架将经典的非私有排列检验扩展到私有环境中，以严格的方式保持有限样本有效性和差分隐私性质。所提出的检验的功率取决于一个检验统计量的选择，并建立了一般条件保证了一致性和非渐进均匀的功率。为了证明我们框架的实用性和可行性，我们重点关注重现核方法。
+    人工智能正在改变我们的生活，技术进步和从学术和理论领域向现实世界的转移年复一年加速。但在这个进程和转变中，一些开放性问题和疑问需要得到解决，以实现该领域的道德发展，例如数字隐私、所有权和控制。这些是目前最流行的人工智能方法——集中式人工智能（CEAI）存在问题的原因之一，其他方向也被广泛探索，如分散式人工智能（DEAI），以解决一些最广泛的问题。本文对DEAI领域的现有工作进行了系统文献综述，总结了71个研究的发现。本文的主要重点是识别DEAI解决方案和网络的构建模块，采用自下而上的方法进行DEAI分析。最后，提出未来的研究方向和开放性问题。
 
-    Recent years have witnessed growing concerns about the privacy of sensitive data. In response to these concerns, differential privacy has emerged as a rigorous framework for privacy protection, gaining widespread recognition in both academic and industrial circles. While substantial progress has been made in private data analysis, existing methods often suffer from impracticality or a significant loss of statistical efficiency. This paper aims to alleviate these concerns in the context of hypothesis testing by introducing differentially private permutation tests. The proposed framework extends classical non-private permutation tests to private settings, maintaining both finite-sample validity and differential privacy in a rigorous manner. The power of the proposed test depends on the choice of a test statistic, and we establish general conditions for consistency and non-asymptotic uniform power. To demonstrate the utility and practicality of our framework, we focus on reproducing kerne
+    Artificial intelligence is transforming our lives, and technological progress and transfer from the academic and theoretical sphere to the real world are accelerating yearly. But during that progress and transition, several open problems and questions need to be addressed for the field to develop ethically, such as digital privacy, ownership, and control. These are some of the reasons why the currently most popular approaches of artificial intelligence, i.e., centralized AI (CEAI), are questionable, with other directions also being widely explored, such as decentralized artificial intelligence (DEAI), to solve some of the most reaching problems. This paper provides a systematic literature review (SLR) of existing work in the field of DEAI, presenting the findings of 71 identified studies. The paper's primary focus is identifying the building blocks of DEAI solutions and networks, tackling the DEAI analysis from a bottom-up approach. In the end, future directions of research and open pr
     
 
