@@ -2,22 +2,9 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Crowdsourced Multilingual Speech Intelligibility Testing](https://arxiv.org/abs/2403.14817) | 本研究提出了一种众包多语言语音可懂度评估方法，通过收集和公开发布多语言语音数据，解决了现有实验室测量昂贵且不易扩展的问题。 |
+
 
 # 详细
 
-[^1]: 众包多语言语音可懂度测试
 
-    Crowdsourced Multilingual Speech Intelligibility Testing
-
-    [https://arxiv.org/abs/2403.14817](https://arxiv.org/abs/2403.14817)
-
-    本研究提出了一种众包多语言语音可懂度评估方法，通过收集和公开发布多语言语音数据，解决了现有实验室测量昂贵且不易扩展的问题。
-
-    
-
-    随着生成音频特性的出现，对其对语音可懂度的影响进行快速评估的需求日益增加。除了现有的昂贵且不易扩展的实验室测量外，对于众包评估语言可懂度的工作相对较少。相关标准和建议尚未明确定义，公开的多语言测试材料也尚未充足。为了应对这一挑战，我们提出了一种众包可懂度评估方法。我们详细介绍了测试设计、多语言语音数据的收集和公开发布，以及我们早期实验的结果。
-
-    arXiv:2403.14817v1 Announce Type: cross  Abstract: With the advent of generative audio features, there is an increasing need for rapid evaluation of their impact on speech intelligibility. Beyond the existing laboratory measures, which are expensive and do not scale well, there has been comparatively little work on crowdsourced assessment of intelligibility. Standards and recommendations are yet to be defined, and publicly available multilingual test materials are lacking. In response to this challenge, we propose an approach for a crowdsourced intelligibility assessment. We detail the test design, the collection and public release of the multilingual speech data, and the results of our early experiments.
-    
 
