@@ -2,22 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Towards a Theoretical Understanding of Two-Stage Recommender Systems](https://arxiv.org/abs/2403.00802) | 这里是中文总结出的一句话要点: 该论文研究了两阶段推荐系统的理论行为，证明了其向最佳推荐系统的强收敛性，同时揭示了它在输入特征的固有维度上实现更快收敛的特性。 |
+| [^1] | [Explainable Machine Learning-Based Security and Privacy Protection Framework for Internet of Medical Things Systems](https://arxiv.org/abs/2403.09752) | 该论文提出了面向互联网医疗物联网系统的可解释机器学习安全与隐私保护框架，旨在解决IoMT系统面临的安全挑战，包括数据敏感性、恶意攻击和异常检测。 |
+| [^2] | [Convergence Guarantees for Stochastic Subgradient Methods in Nonsmooth Nonconvex Optimization.](http://arxiv.org/abs/2307.10053) | 本文研究了非平滑非凸优化中随机次梯度方法的收敛性质，并提出了一种新的框架，证明了其在单时间尺度和双时间尺度情况下的全局收敛性，包括了多种已知的SGD类型方法。对于有限和形式的目标函数，证明了这些方法能够在随机选择的步长和初始点上找到Clarke稳定点。 |
 
 # 详细
 
-[^1]: 朝向理论理解两阶段推荐系统
+[^1]: 面向IoMT系统的可解释机器学习安全与隐私保护框架
 
-    Towards a Theoretical Understanding of Two-Stage Recommender Systems
+    Explainable Machine Learning-Based Security and Privacy Protection Framework for Internet of Medical Things Systems
 
-    [https://arxiv.org/abs/2403.00802](https://arxiv.org/abs/2403.00802)
+    [https://arxiv.org/abs/2403.09752](https://arxiv.org/abs/2403.09752)
 
-    这里是中文总结出的一句话要点: 该论文研究了两阶段推荐系统的理论行为，证明了其向最佳推荐系统的强收敛性，同时揭示了它在输入特征的固有维度上实现更快收敛的特性。
+    该论文提出了面向互联网医疗物联网系统的可解释机器学习安全与隐私保护框架，旨在解决IoMT系统面临的安全挑战，包括数据敏感性、恶意攻击和异常检测。
 
     
 
-    arXiv:2403.00802v1 公告类型:跨域 摘要:生产级推荐系统在在线媒体服务中广泛使用大规模语料库，包括Netflix、Pinterest和Amazon。这些系统通过学习用户和物品在低维空间中投影的嵌入、通过两阶段模型（两个深度神经网络）丰富推荐，这有助于它们的嵌入构建以预测与物品相关的用户反馈。尽管它在推荐中很受欢迎，但其理论行为仍未得到全面探讨。我们研究了两阶段推荐的渐近行为，这包括对最佳推荐系统的强收敛。我们建立了两阶段推荐的一些理论性质和统计保证。除了渐近行为，我们还展示了两阶段推荐系统通过依赖输入特征的固有维度实现更快的收敛。最后，我们通过数值方法展示
+    互联网医疗物联网（IoMT）跨越了传统医疗边界，实现了从被动治疗向主动预防的过渡。这种创新方法通过实时健康数据收集实现早期疾病检测和个性化护理，特别在慢性病管理方面，IoMT可以自动化治疗。然而，由于处理数据的敏感性和价值，IoMT面临着严重的安全挑战，这会威胁到其用户的生命，因此吸引了恶意利益。此外，利用无线通信进行数据传输会使医疗数据暴露于被网络犯罪分子截获和篡改的风险之下。此外，由于人为错误、网络干扰或硬件故障，可能会出现异常。在这种背景下，基于机器学习（ML）的异常检测是一个有趣的解决方案，但它再次出现。
 
-    arXiv:2403.00802v1 Announce Type: cross  Abstract: Production-grade recommender systems rely heavily on a large-scale corpus used by online media services, including Netflix, Pinterest, and Amazon. These systems enrich recommendations by learning users' and items' embeddings projected in a low-dimensional space with two-stage models (two deep neural networks), which facilitate their embedding constructs to predict users' feedback associated with items. Despite its popularity for recommendations, its theoretical behaviors remain comprehensively unexplored. We study the asymptotic behaviors of the two-stage recommender that entail a strong convergence to the optimal recommender system. We establish certain theoretical properties and statistical assurance of the two-stage recommender. In addition to asymptotic behaviors, we demonstrate that the two-stage recommender system attains faster convergence by relying on the intrinsic dimensions of the input features. Finally, we show numerically
+    arXiv:2403.09752v1 Announce Type: cross  Abstract: The Internet of Medical Things (IoMT) transcends traditional medical boundaries, enabling a transition from reactive treatment to proactive prevention. This innovative method revolutionizes healthcare by facilitating early disease detection and tailored care, particularly in chronic disease management, where IoMT automates treatments based on real-time health data collection. Nonetheless, its benefits are countered by significant security challenges that endanger the lives of its users due to the sensitivity and value of the processed data, thereby attracting malicious interests. Moreover, the utilization of wireless communication for data transmission exposes medical data to interception and tampering by cybercriminals. Additionally, anomalies may arise due to human errors, network interference, or hardware malfunctions. In this context, anomaly detection based on Machine Learning (ML) is an interesting solution, but it comes up again
+    
+[^2]: 非平滑非凸优化中随机次梯度方法的收敛性保证
+
+    Convergence Guarantees for Stochastic Subgradient Methods in Nonsmooth Nonconvex Optimization. (arXiv:2307.10053v1 [math.OC])
+
+    [http://arxiv.org/abs/2307.10053](http://arxiv.org/abs/2307.10053)
+
+    本文研究了非平滑非凸优化中随机次梯度方法的收敛性质，并提出了一种新的框架，证明了其在单时间尺度和双时间尺度情况下的全局收敛性，包括了多种已知的SGD类型方法。对于有限和形式的目标函数，证明了这些方法能够在随机选择的步长和初始点上找到Clarke稳定点。
+
+    
+
+    本文研究了随机梯度下降（SGD）方法及其变种在训练由非平滑激活函数构建的神经网络中的收敛性质。我们提出了一种新颖的框架，为更新动量项和变量的步长分配了不同的时间尺度。在一些温和的条件下，我们证明了我们提出的框架在单时间尺度和双时间尺度情况下的全局收敛性。我们还证明了我们提出的框架包含了很多已知的SGD类型方法，包括heavy-ball SGD、SignSGD、Lion、normalized SGD和clipped SGD。此外，当目标函数采用有限和形式时，我们基于我们提出的框架证明了这些SGD类型方法的收敛性质。特别地，在温和的假设下，我们证明了这些SGD类型方法在随机选择的步长和初始点上能够找到目标函数的Clarke稳定点。
+
+    In this paper, we investigate the convergence properties of the stochastic gradient descent (SGD) method and its variants, especially in training neural networks built from nonsmooth activation functions. We develop a novel framework that assigns different timescales to stepsizes for updating the momentum terms and variables, respectively. Under mild conditions, we prove the global convergence of our proposed framework in both single-timescale and two-timescale cases. We show that our proposed framework encompasses a wide range of well-known SGD-type methods, including heavy-ball SGD, SignSGD, Lion, normalized SGD and clipped SGD. Furthermore, when the objective function adopts a finite-sum formulation, we prove the convergence properties for these SGD-type methods based on our proposed framework. In particular, we prove that these SGD-type methods find the Clarke stationary points of the objective function with randomly chosen stepsizes and initial points under mild assumptions. Preli
     
 
