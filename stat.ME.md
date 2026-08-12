@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Causal Falsification of Digital Twins.](http://arxiv.org/abs/2301.07210) | 这篇论文提出了一种数字孪生的因果伪证方法，以可靠并实用的方式在最小限度的假设下提供孪生的信息和评估结果。 |
+| [^1] | [Donut Regression Discontinuity Designs.](http://arxiv.org/abs/2308.14464) | 本文研究了甜甜圈回归不连续设计的计量性质，并发现甜甜圈回归不连续估计器的偏差和方差可能比传统回归不连续估计器要大得多。此外，我们还提供了一个比较甜甜圈和传统回归不连续估计结果的形式化测试框架。 |
 
 # 详细
 
-[^1]: 数字孪生的因果伪证
+[^1]: 甜甜圈回归不连续设计
 
-    Causal Falsification of Digital Twins. (arXiv:2301.07210v3 [stat.ME] UPDATED)
+    Donut Regression Discontinuity Designs. (arXiv:2308.14464v1 [econ.EM])
 
-    [http://arxiv.org/abs/2301.07210](http://arxiv.org/abs/2301.07210)
+    [http://arxiv.org/abs/2308.14464](http://arxiv.org/abs/2308.14464)
 
-    这篇论文提出了一种数字孪生的因果伪证方法，以可靠并实用的方式在最小限度的假设下提供孪生的信息和评估结果。
+    本文研究了甜甜圈回归不连续设计的计量性质，并发现甜甜圈回归不连续估计器的偏差和方差可能比传统回归不连续估计器要大得多。此外，我们还提供了一个比较甜甜圈和传统回归不连续估计结果的形式化测试框架。
 
     
 
-    数字孪生在很多应用中具有巨大的潜力，但是在安全关键场景下广泛部署它们的精度评估需要严格的程序。通过在因果推理框架内制定这个任务，我们表明，使用现实数据尝试证明孪生的正确性是不可靠的，除非在数据生成过程中进行可能有风险的假设。为了避免这些假设，我们提出了一种评估策略，旨在找到孪生不正确的情况，并提出了用于实现此目标的通用统计过程，可用于各种应用和孪生模型。我们的方法在最小假设下提供了可靠和可操作的孪生信息和评估结果。通过包含脉冲生理学引擎中脓毒症建模的大型案例研究，我们证明了我们方法的有效性。
+    我们研究了所谓的甜甜圈回归不连续设计的计量性质，这是一种鲁棒性练习，它涉及在某一治疗阈值周围的某些数据点不重复估计和推断。这种方法常常是出于担心治疗阈值附近可能存在的单位的系统性分拣或类似数据问题可能扭曲回归不连续治疗效应的估计和推断。我们发现甜甜圈回归不连续估计器的偏差和方差可能比传统回归不连续估计器要大得多，并且对应的置信区间可能要长得多。我们还提供了一个形式化的测试框架来比较甜甜圈和传统回归不连续估计的结果。
 
-    Digital twins hold substantial promise in many applications, but rigorous procedures for assessing their accuracy are essential for their widespread deployment in safety-critical settings. By formulating this task within the framework of causal inference, we show that attempts to certify the correctness of a twin using real-world observational data are unsound unless potentially tenuous assumptions are made about the data-generating process. To avoid these assumptions, we propose an assessment strategy that instead aims to find cases where the twin is not correct, and present a general-purpose statistical procedure for doing so that may be used across a wide variety of applications and twin models. Our approach yields reliable and actionable information about the twin under minimal assumptions about the twin and the real-world process of interest. We demonstrate the effectiveness of our methodology via a large-scale case study involving sepsis modelling within the Pulse Physiology Engi
+    We study the econometric properties of so-called donut regression discontinuity (RD) designs, a robustness exercise which involves repeating estimation and inference without the data points in some area around the treatment threshold. This approach is often motivated by concerns that possible systematic sorting of units, or similar data issues, in some neighborhood of the treatment threshold might distort estimation and inference of RD treatment effects. We show that donut RD estimators can have substantially larger bias and variance than contentional RD estimators, and that the corresponding confidence intervals can be substantially longer. We also provide a formal testing framework for comparing donut and conventional RD estimation results.
     
 

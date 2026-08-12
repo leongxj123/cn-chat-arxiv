@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [From Fake to Real (FFR): A two-stage training pipeline for mitigating spurious correlations with synthetic data.](http://arxiv.org/abs/2308.04553) | 本文提出了一个两阶段训练流程，通过在一个平衡的合成数据集上进行预训练，然后在真实数据上进行微调，减少了视觉识别模型学习到与数据集偏差相关的错误的问题。 |
+| [^1] | [Emergent Neural Network Mechanisms for Generalization to Objects in Novel Orientations.](http://arxiv.org/abs/2109.13445) | 本研究提供了证据表明，深度神经网络具有通过传播方向不变性来泛化到新颖方向上的对象的能力。这种能力受到训练中使用的熟悉对象数量的影响，但仅限于涉及2D旋转的熟悉方向。 |
 
 # 详细
 
-[^1]: 从假到真（FFR）：一种用于减少与合成数据相关性错误的两阶段训练流程
+[^1]: 新颖方向上对象泛化的新兴神经网络机制
 
-    From Fake to Real (FFR): A two-stage training pipeline for mitigating spurious correlations with synthetic data. (arXiv:2308.04553v1 [cs.CV])
+    Emergent Neural Network Mechanisms for Generalization to Objects in Novel Orientations. (arXiv:2109.13445v2 [cs.CV] UPDATED)
 
-    [http://arxiv.org/abs/2308.04553](http://arxiv.org/abs/2308.04553)
+    [http://arxiv.org/abs/2109.13445](http://arxiv.org/abs/2109.13445)
 
-    本文提出了一个两阶段训练流程，通过在一个平衡的合成数据集上进行预训练，然后在真实数据上进行微调，减少了视觉识别模型学习到与数据集偏差相关的错误的问题。
+    本研究提供了证据表明，深度神经网络具有通过传播方向不变性来泛化到新颖方向上的对象的能力。这种能力受到训练中使用的熟悉对象数量的影响，但仅限于涉及2D旋转的熟悉方向。
 
     
 
-    视觉识别模型容易学习到由于训练集的不平衡导致的相关性错误，其中某些群体（如女性）在某些类别（如程序员）中代表性不足。生成模型通过为少数样本生成合成数据来减少这种偏差，从而平衡训练集。然而，先前使用这些方法的工作忽视了视觉识别模型往往能够学习区分真实图像和合成图像的能力，因此无法消除原始数据集中的偏差。在我们的工作中，我们提出了一种新颖的两阶段流程来减少这个问题，其中1）我们在平衡的合成数据集上进行预训练，然后2）在真实数据上进行微调。使用这个流程，我们避免了在真实数据和合成数据上的训练，从而避免了真实数据和合成数据之间的偏差。此外，在第一步中我们学习到了抵抗偏差的稳健特征，在第二步中减轻了偏差。
+    深度神经网络（DNNs）在识别训练数据分布之外的方向上的对象的能力尚不完全了解。我们提供证据表明，DNNs能够通过传播从多个视点观察到的熟悉对象获得的方向不变性来泛化到新颖方向上的对象。这种能力在训练DNN时使用越来越多的熟悉对象时会增强，但仅限于涉及到熟悉方向的2D旋转的方向。我们展示了这种传播是通过调整到熟悉和不熟悉对象之间共同特征的神经元实现的。这些结果揭示了类脑神经机制的泛化能力。
 
-    Visual recognition models are prone to learning spurious correlations induced by an imbalanced training set where certain groups (\eg Females) are under-represented in certain classes (\eg Programmers). Generative models offer a promising direction in mitigating this bias by generating synthetic data for the minority samples and thus balancing the training set. However, prior work that uses these approaches overlooks that visual recognition models could often learn to differentiate between real and synthetic images and thus fail to unlearn the bias in the original dataset. In our work, we propose a novel two-stage pipeline to mitigate this issue where 1) we pre-train a model on a balanced synthetic dataset and then 2) fine-tune on the real data. Using this pipeline, we avoid training on both real and synthetic data, thus avoiding the bias between real and synthetic data. Moreover, we learn robust features against the bias in the first step that mitigate the bias in the second step. Mor
+    The capability of Deep Neural Networks (DNNs) to recognize objects in orientations outside the distribution of the training data is not well understood. We present evidence that DNNs are capable of generalizing to objects in novel orientations by disseminating orientation-invariance obtained from familiar objects seen from many viewpoints. This capability strengthens when training the DNN with an increasing number of familiar objects, but only in orientations that involve 2D rotations of familiar orientations. We show that this dissemination is achieved via neurons tuned to common features between familiar and unfamiliar objects. These results implicate brain-like neural mechanisms for generalization.
     
 
