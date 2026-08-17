@@ -2,9 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-
+| [^1] | [Why North Korean Refugees are Reluctant to Compete: The Roles of Cognitive Ability.](http://arxiv.org/abs/2108.08097) | 该研究通过实验室实验和分析发现，朝鲜难民相对于韩国人和韩国华人移民更不愿参加竞争比赛，这可能是由较低的认知能力导致的。 |
 
 # 详细
 
+[^1]: 为什么朝鲜难民不愿参与竞争：认知能力的作用
 
+    Why North Korean Refugees are Reluctant to Compete: The Roles of Cognitive Ability. (arXiv:2108.08097v2 [econ.GN] UPDATED)
+
+    [http://arxiv.org/abs/2108.08097](http://arxiv.org/abs/2108.08097)
+
+    该研究通过实验室实验和分析发现，朝鲜难民相对于韩国人和韩国华人移民更不愿参加竞争比赛，这可能是由较低的认知能力导致的。
+
+    
+
+    该研究比较了在不同制度环境下长大的三个韩国群体（韩国、朝鲜和中国）的竞争力。实验室实验发现，朝鲜难民相对于韩国人和韩国华人移民更不愿参加竞争比赛。通过使用概率加权的选择模型进行分析，研究表明较低的认知能力可能导致较低的预期表现、更悲观的信念和对竞争的更大逆感。
+
+    The study compares the competitiveness of three Korean groups raised in different institutional environments: South Korea, North Korea, and China. Laboratory experiments reveal that North Korean refugees are less likely to participate in competitive tournaments than South Koreans and Korean-Chinese immigrants. Analysis using a choice model with probability weighting suggests that lower cognitive ability may lead to lower expected performance, more pessimistic beliefs, and greater aversion to competition.
+    
 
