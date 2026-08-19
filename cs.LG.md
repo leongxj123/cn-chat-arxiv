@@ -2,71 +2,41 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Pointer Networks with Q-Learning for OP Combinatorial Optimization](https://arxiv.org/abs/2311.02629) | 提出了Pointer Q-Network (PQN)方法，将Ptr-Nets和Q-learning相结合，利用其批评者性质，出色地捕获了嵌入图中的关系，从而有效解决了OP组合优化中的具体挑战 |
-| [^2] | [ShadowNet for Data-Centric Quantum System Learning.](http://arxiv.org/abs/2308.11290) | 本研究提出了一个数据为中心的量子系统学习范式，将神经网络和经典阴影相结合，以解决大型量子系统动力学的预测和泛化问题。 |
-| [^3] | [ODTlearn: A Package for Learning Optimal Decision Trees for Prediction and Prescription.](http://arxiv.org/abs/2307.15691) | ODTlearn是一个开源的Python包，用于学习预测和处方的最优决策树。它提供了多种优化方法，并支持各种问题和算法的扩展。 |
-| [^4] | [Dynamic Pricing and Learning with Bayesian Persuasion.](http://arxiv.org/abs/2304.14385) | 本研究提出了一种计算有效的在线算法，在没有先验知识的情况下，自适应学习最优定价和广告策略，达到次线性后悔。 |
-| [^5] | [Doubly robust nearest neighbors in factor models.](http://arxiv.org/abs/2211.14297) | 该论文介绍了一种在潜在因子模型中处理缺失数据的双重稳健最近邻方法，可以提供一致的估计，并在存在良好的行和列邻居时提供（近似）二次改进非渐近性能。 |
+| [^1] | [Analyzing Male Domestic Violence through Exploratory Data Analysis and Explainable Machine Learning Insights](https://arxiv.org/abs/2403.15594) | 该研究是关于在孟加拉国背景下对男性家庭暴力进行开创性探索，揭示了男性受害者的存在、模式和潜在因素，填补了现有文献对男性受害者研究空白的重要性。 |
+| [^2] | [Spikformer V2: Join the High Accuracy Club on ImageNet with an SNN Ticket.](http://arxiv.org/abs/2401.02020) | Spikformer V2是一种基于SNNs和自注意机制的脉冲神经网络，通过提出脉冲自注意机制和脉冲Transformer来实现高准确度的图像识别。 |
+| [^3] | [Doubly robust nearest neighbors in factor models.](http://arxiv.org/abs/2211.14297) | 该论文介绍了一种在潜在因子模型中处理缺失数据的双重稳健最近邻方法，可以提供一致的估计，并在存在良好的行和列邻居时提供（近似）二次改进非渐近性能。 |
 
 # 详细
 
-[^1]: 带有Q-Learning的指针网络用于OP组合优化
+[^1]: 通过探索性数据分析和可解释的机器学习洞见分析男性家庭暴力
 
-    Pointer Networks with Q-Learning for OP Combinatorial Optimization
+    Analyzing Male Domestic Violence through Exploratory Data Analysis and Explainable Machine Learning Insights
 
-    [https://arxiv.org/abs/2311.02629](https://arxiv.org/abs/2311.02629)
+    [https://arxiv.org/abs/2403.15594](https://arxiv.org/abs/2403.15594)
 
-    提出了Pointer Q-Network (PQN)方法，将Ptr-Nets和Q-learning相结合，利用其批评者性质，出色地捕获了嵌入图中的关系，从而有效解决了OP组合优化中的具体挑战
-
-    
-
-    Orienteering Problem（OP）在组合优化（CO）中提出了独特挑战，突显了其在物流、交付和运输规划中的广泛应用。由于OP的NP-hard性质，获得最优解本质上是复杂的。尽管指针网络（Ptr-Nets）在各种组合任务中表现出色，但它们在OP上的表现以及需要专注于未来回报或探索的任务方面仍有改进空间。认识到将强化学习（RL）方法与序列-序列模型相结合的潜能，本研究揭示了指针Q网络（PQN）。该方法结合了Ptr-Nets和Q-learning，由于其仅具批评者性质，它在捕获嵌入图中的关系方面表现出色，这是有效应对OP提出的具体挑战的基本要求。我们探讨了架构和功能
-
-    arXiv:2311.02629v2 Announce Type: replace  Abstract: The Orienteering Problem (OP) presents a unique challenge in Combinatorial Optimization (CO), emphasized by its widespread use in logistics, delivery, and transportation planning. Given the NP-hard nature of OP, obtaining optimal solutions is inherently complex. While Pointer Networks (Ptr-Nets) have exhibited prowess in various combinatorial tasks, their performance in the context of OP, and duties requiring focus on future return or exploration, leaves room for improvement. Recognizing the potency combining Reinforcement Learning (RL) methods with sequence-to-sequence models, this research unveils the Pointer Q-Network (PQN). This method combines Ptr-Nets and Q-learning, which, thanks to its critic only nature, outstands in its capability of capturing relationships within an embedded graph, a fundamental requirement in order to effectively address the specific challenges presented by OP. We explore the architecture and functionalit
-    
-[^2]: 数据为中心的量子系统学习的影子网络
-
-    ShadowNet for Data-Centric Quantum System Learning. (arXiv:2308.11290v1 [quant-ph])
-
-    [http://arxiv.org/abs/2308.11290](http://arxiv.org/abs/2308.11290)
-
-    本研究提出了一个数据为中心的量子系统学习范式，将神经网络和经典阴影相结合，以解决大型量子系统动力学的预测和泛化问题。
+    该研究是关于在孟加拉国背景下对男性家庭暴力进行开创性探索，揭示了男性受害者的存在、模式和潜在因素，填补了现有文献对男性受害者研究空白的重要性。
 
     
 
-    由于维度诅咒，理解大型量子系统的动力学变得困难。统计学习通过神经网络协议和经典阴影在这个领域提供了新的可能性，然而这两种方法都存在局限性：前者受到预测不确定性的困扰，后者缺乏泛化能力。在这里，我们提出了一个数据为中心的学习范式，结合了这两种方法的优势，以促进多样化的量子系统学习任务。特别地，我们的范式利用了经典阴影和其他易于获取的量子系统信息来创建训练数据集，然后通过神经网络来学习探索的量子系统学习问题的潜在映射规律。利用神经网络的泛化能力，这个范式可以在离线训练，并且在推理阶段能够优秀地预测之前未见过的系统，即使只有很少的状态副本。此外，它还继承了
+    家庭暴力通常被视为一个关于女性受害者的性别问题，在近年来越来越受到关注。尽管有这种关注，孟加拉国特别是男性受害者仍然主要被忽视。我们的研究代表了在孟加拉国背景下对男性家庭暴力（MDV）这一未被充分探讨领域的开创性探索，揭示了其普遍性、模式和潜在因素。现有文献主要强调家庭暴力情境中女性的受害，导致对男性受害者的研究空白。我们从孟加拉国主要城市收集了数据，并进行了探索性数据分析以了解潜在动态。我们使用了11种传统机器学习模型（包括默认和优化的超参数）、2种深度学习和4种集成模型。尽管采用了各种方法，CatBoost由于其...
 
-    Understanding the dynamics of large quantum systems is hindered by the curse of dimensionality. Statistical learning offers new possibilities in this regime by neural-network protocols and classical shadows, while both methods have limitations: the former is plagued by the predictive uncertainty and the latter lacks the generalization ability. Here we propose a data-centric learning paradigm combining the strength of these two approaches to facilitate diverse quantum system learning (QSL) tasks. Particularly, our paradigm utilizes classical shadows along with other easily obtainable information of quantum systems to create the training dataset, which is then learnt by neural networks to unveil the underlying mapping rule of the explored QSL problem. Capitalizing on the generalization power of neural networks, this paradigm can be trained offline and excel at predicting previously unseen systems at the inference stage, even with few state copies. Besides, it inherits the characteristic 
+    arXiv:2403.15594v1 Announce Type: cross  Abstract: Domestic violence, which is often perceived as a gendered issue among female victims, has gained increasing attention in recent years. Despite this focus, male victims of domestic abuse remain primarily overlooked, particularly in Bangladesh. Our study represents a pioneering exploration of the underexplored realm of male domestic violence (MDV) within the Bangladeshi context, shedding light on its prevalence, patterns, and underlying factors. Existing literature predominantly emphasizes female victimization in domestic violence scenarios, leading to an absence of research on male victims. We collected data from the major cities of Bangladesh and conducted exploratory data analysis to understand the underlying dynamics. We implemented 11 traditional machine learning models with default and optimized hyperparameters, 2 deep learning, and 4 ensemble models. Despite various approaches, CatBoost has emerged as the top performer due to its 
     
-[^3]: ODTlearn: 一个用于学习预测和处方的最优决策树的包
+[^2]: Spikformer V2：通过SNN Ticket在ImageNet上实现高准确度
 
-    ODTlearn: A Package for Learning Optimal Decision Trees for Prediction and Prescription. (arXiv:2307.15691v1 [stat.ML])
+    Spikformer V2: Join the High Accuracy Club on ImageNet with an SNN Ticket. (arXiv:2401.02020v1 [cs.NE])
 
-    [http://arxiv.org/abs/2307.15691](http://arxiv.org/abs/2307.15691)
+    [http://arxiv.org/abs/2401.02020](http://arxiv.org/abs/2401.02020)
 
-    ODTlearn是一个开源的Python包，用于学习预测和处方的最优决策树。它提供了多种优化方法，并支持各种问题和算法的扩展。
-
-    
-
-    ODTLearn是一个开源的Python包，提供了基于混合整数优化(MIO)框架的高风险预测和处方任务的最优决策树学习方法。该包的当前版本提供了学习最优分类树、公平最优分类树、鲁棒最优分类树和从观测数据学习最优处方树的实现。我们设计了该包以便于维护和扩展，当引入新的最优决策树问题类、重构策略和解决算法时，可以轻松更新。为此，该包遵循面向对象的设计原则，并支持商业(Gurobi)和开源(COIN-OR branch and cut)求解器。包的文档和详细用户指南可以在https://d3m-research-group.github.io/odtlearn/找到。
-
-    ODTLearn is an open-source Python package that provides methods for learning optimal decision trees for high-stakes predictive and prescriptive tasks based on the mixed-integer optimization (MIO) framework proposed in Aghaei et al. (2019) and several of its extensions. The current version of the package provides implementations for learning optimal classification trees, optimal fair classification trees, optimal classification trees robust to distribution shifts, and optimal prescriptive trees from observational data. We have designed the package to be easy to maintain and extend as new optimal decision tree problem classes, reformulation strategies, and solution algorithms are introduced. To this end, the package follows object-oriented design principles and supports both commercial (Gurobi) and open source (COIN-OR branch and cut) solvers. The package documentation and an extensive user guide can be found at https://d3m-research-group.github.io/odtlearn/. Additionally, users can view
-    
-[^4]: 带有贝叶斯说服的动态定价和学习
-
-    Dynamic Pricing and Learning with Bayesian Persuasion. (arXiv:2304.14385v1 [cs.GT])
-
-    [http://arxiv.org/abs/2304.14385](http://arxiv.org/abs/2304.14385)
-
-    本研究提出了一种计算有效的在线算法，在没有先验知识的情况下，自适应学习最优定价和广告策略，达到次线性后悔。
+    Spikformer V2是一种基于SNNs和自注意机制的脉冲神经网络，通过提出脉冲自注意机制和脉冲Transformer来实现高准确度的图像识别。
 
     
 
-    我们考虑了一个新颖的动态定价和学习设置，在按顺序设置产品价格的同时，卖家还预先承诺“广告方案”。也就是说，在每轮开始时，卖家可以决定提供什么样的信号来告知买家产品实际的质量。我们使用流行的贝叶斯说服框架来模拟这些信号对买家的评估和购买反应的影响，我们制定了在最大化卖方预期收入的同时找到广告方案和定价方案的最优设计问题。在没有任何先验知识的情况下，我们的目标是设计一个在线算法，该算法可以使用过去的购买反应来自适应地学习最优定价和广告策略。我们研究了算法的后悔，与最优的千里之堤价格和广告计划进行比较。我们的主要结果是一种计算有效的在线算法，即使卖家没有买家需求函数的先验知识，也可以实现与最佳固定价格和广告方案相关的次线性后悔。
+    脉冲神经网络（SNNs）因其生物学合理的结构而闻名，但其性能受到限制。基于生物启发结构的高性能Transformer中的自注意机制在现有的SNNs中缺失。为此，我们探索了利用自注意能力和SNNs的生物特性的潜力，并提出了一种新颖的脉冲自注意（SSA）和脉冲Transformer（Spikformer）。SSA机制消除了对softmax的需求，并利用基于脉冲的查询、键和值捕获稀疏的视觉特征。这种无乘法的稀疏计算使得SSA高效且节能。此外，我们还开发了一种脉冲卷积干细胞（SCS）和补充卷积层来增强Spikformer的架构。加上SCS的Spikformer被称为Spikformer V2。为了训练更大更深的Spikformer V2，我们引入了一种开创性的探+
 
-    We consider a novel dynamic pricing and learning setting where in addition to setting prices of products in sequential rounds, the seller also ex-ante commits to 'advertising schemes'. That is, in the beginning of each round the seller can decide what kind of signal they will provide to the buyer about the product's quality upon realization. Using the popular Bayesian persuasion framework to model the effect of these signals on the buyers' valuation and purchase responses, we formulate the problem of finding an optimal design of the advertising scheme along with a pricing scheme that maximizes the seller's expected revenue. Without any apriori knowledge of the buyers' demand function, our goal is to design an online algorithm that can use past purchase responses to adaptively learn the optimal pricing and advertising strategy. We study the regret of the algorithm when compared to the optimal clairvoyant price and advertising scheme.  Our main result is a computationally efficient onlin
+    Spiking Neural Networks (SNNs), known for their biologically plausible architecture, face the challenge of limited performance. The self-attention mechanism, which is the cornerstone of the high-performance Transformer and also a biologically inspired structure, is absent in existing SNNs. To this end, we explore the potential of leveraging both self-attention capability and biological properties of SNNs, and propose a novel Spiking Self-Attention (SSA) and Spiking Transformer (Spikformer). The SSA mechanism eliminates the need for softmax and captures the sparse visual feature employing spike-based Query, Key, and Value. This sparse computation without multiplication makes SSA efficient and energy-saving. Further, we develop a Spiking Convolutional Stem (SCS) with supplementary convolutional layers to enhance the architecture of Spikformer. The Spikformer enhanced with the SCS is referred to as Spikformer V2. To train larger and deeper Spikformer V2, we introduce a pioneering explorat
     
-[^5]: 因子模型中的双重稳健最近邻方法
+[^3]: 因子模型中的双重稳健最近邻方法
 
     Doubly robust nearest neighbors in factor models. (arXiv:2211.14297v3 [stat.ML] UPDATED)
 
