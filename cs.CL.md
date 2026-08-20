@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [An Analysis of Langauge Frequency and Error Correction for Esperanto](https://arxiv.org/abs/2402.09696) | 本论文运用 Eo-GP 数据集进行了世界语的频率分析，引入了 Eo-GEC 数据集用于错误识别。实验表明 GPT-4 在自动化和人工评估中的性能优于 GPT-3.5，展示了先进语言模型在增强对于较少研究语言的 GEC 策略方面的潜力。 |
+| [^1] | [Corrections of Zipf's and Heaps' Laws Derived from Hapax Rate Models.](http://arxiv.org/abs/2307.12896) | 本文的创新是基于Hapax Rate模型引入了对Zipf和Heaps定律的修正，并发现逻辑模型拟合效果最优。 |
 
 # 详细
 
-[^1]: 对于世界语的语言频率和错误修正的分析
+[^1]: 从Hapax Rate模型导出的Zipf和Heaps定律的修正
 
-    An Analysis of Langauge Frequency and Error Correction for Esperanto
+    Corrections of Zipf's and Heaps' Laws Derived from Hapax Rate Models. (arXiv:2307.12896v2 [cs.CL] UPDATED)
 
-    [https://arxiv.org/abs/2402.09696](https://arxiv.org/abs/2402.09696)
+    [http://arxiv.org/abs/2307.12896](http://arxiv.org/abs/2307.12896)
 
-    本论文运用 Eo-GP 数据集进行了世界语的频率分析，引入了 Eo-GEC 数据集用于错误识别。实验表明 GPT-4 在自动化和人工评估中的性能优于 GPT-3.5，展示了先进语言模型在增强对于较少研究语言的 GEC 策略方面的潜力。
+    本文的创新是基于Hapax Rate模型引入了对Zipf和Heaps定律的修正，并发现逻辑模型拟合效果最优。
 
     
 
-    目前的语法错误修正 (GEC) 项目往往着重于主要语言，而对于像世界语这样的资源匮乏语言则关注较少。本文通过首先使用专门为此目的创建的 Eo-GP 数据集进行全面的频率分析，开始弥补这一差距。然后，我们引入了源自真实用户案例并用于错误识别的细粒度语言细节进行注释的 Eo-GEC 数据集。利用 GPT-3.5 和 GPT-4，我们的实验证明 GPT-4 在自动化和人工评估中的表现优于 GPT-3.5，突出了其在解决世界语语法特殊性方面的效果，并展示了先进语言模型在增强对于较少研究语言的 GEC 策略方面的潜力。
+    本文基于Hapax Rate模型引入了对Zipf和Heaps定律的修正。推导基于两个假设：第一个假设是标准的瓮模型，预测较短文本的边际词频分布看起来就像是从一个给定的较长文本中盲目采样词元。第二个假设假定Hapax的频率是文本大小的简单函数。讨论了四个这样的函数：常数模型、Davis模型、线性模型和逻辑模型。结果显示逻辑模型拟合效果最好。
 
-    arXiv:2402.09696v1 Announce Type: new  Abstract: Current Grammar Error Correction (GEC) initiatives tend to focus on major languages, with less attention given to low-resource languages like Esperanto. In this article, we begin to bridge this gap by first conducting a comprehensive frequency analysis using the Eo-GP dataset, created explicitly for this purpose. We then introduce the Eo-GEC dataset, derived from authentic user cases and annotated with fine-grained linguistic details for error identification. Leveraging GPT-3.5 and GPT-4, our experiments show that GPT-4 outperforms GPT-3.5 in both automated and human evaluations, highlighting its efficacy in addressing Esperanto's grammatical peculiarities and illustrating the potential of advanced language models to enhance GEC strategies for less commonly studied languages.
+    The article introduces corrections to Zipf's and Heaps' laws based on systematic models of the hapax rate. The derivation rests on two assumptions: The first one is the standard urn model which predicts that marginal frequency distributions for shorter texts look as if word tokens were sampled blindly from a given longer text. The second assumption posits that the rate of hapaxes is a simple function of the text size. Four such functions are discussed: the constant model, the Davis model, the linear model, and the logistic model. It is shown that the logistic model yields the best fit.
     
 
