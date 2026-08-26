@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [A Survey on Human-AI Teaming with Large Pre-Trained Models](https://arxiv.org/abs/2403.04931) | 本文调查了大型预训练模型与人工智能合作的重要性，强调了这些模型如何超越传统方法增强协作智能，并探讨了其在增强人类能力、改善AI模型、有效团队合作、道德考虑以及在各个领域广泛应用方面的潜在作用。 |
-| [^2] | [Driving Generative Agents With Their Personality](https://arxiv.org/abs/2402.14879) | 大型语言模型（LLMs）利用心理测量值，在视频游戏角色开发中代表给定的人格特征，增强游戏角色的类人特性。 |
+| [^1] | [HiQA: A Hierarchical Contextual Augmentation RAG for Massive Documents QA](https://arxiv.org/abs/2402.01767) | HiQA是一个先进的多文档问答框架，使用分层的上下文增强和多路径检索机制，解决了大规模文档问答中的检索准确性问题，并在多文档环境中展示了最先进的性能。 |
+| [^2] | [Topological Guided Actor-Critic Modular Learning of Continuous Systems with Temporal Objectives.](http://arxiv.org/abs/2304.10041) | 本文介绍了一种基于拓扑指导的 Actor-Critic 模块化学习方法，用于解决连续系统中的最优策略综合问题，并提出了一种广义的最优备份顺序来加速学习过程。 |
 
 # 详细
 
-[^1]: 人工智能与大型预训练模型合作调查
+[^1]: HiQA：一种用于大规模文档问答的分层上下文增强的RAG模型
 
-    A Survey on Human-AI Teaming with Large Pre-Trained Models
+    HiQA: A Hierarchical Contextual Augmentation RAG for Massive Documents QA
 
-    [https://arxiv.org/abs/2403.04931](https://arxiv.org/abs/2403.04931)
+    [https://arxiv.org/abs/2402.01767](https://arxiv.org/abs/2402.01767)
 
-    本文调查了大型预训练模型与人工智能合作的重要性，强调了这些模型如何超越传统方法增强协作智能，并探讨了其在增强人类能力、改善AI模型、有效团队合作、道德考虑以及在各个领域广泛应用方面的潜在作用。
-
-    
-
-    在人工智能（AI）迅速发展的景观中，人类智能和AI系统之间的协作，即人工智能（HAI）合作，已成为推进问题解决和决策过程的基石。大型预训练模型（LPtM）的出现显著改变了这一景观，通过利用大量数据来理解和预测复杂模式，为人类提供了前所未有的能力。本文调查了LPtMs与HAI的关键整合，强调了这些模型如何超越传统方法增强协作智能。重点探讨了LPtMs在增强人类能力方面的协同潜力，讨论了这种协作对AI模型改进、有效的团队合作、道德考虑以及在各个领域的广泛应用影响。通过这一探索，研究揭示了LPtM增强HAI的变革性影响。
-
-    arXiv:2403.04931v1 Announce Type: new  Abstract: In the rapidly evolving landscape of artificial intelligence (AI), the collaboration between human intelligence and AI systems, known as Human-AI (HAI) Teaming, has emerged as a cornerstone for advancing problem-solving and decision-making processes. The advent of Large Pre-trained Models (LPtM) has significantly transformed this landscape, offering unprecedented capabilities by leveraging vast amounts of data to understand and predict complex patterns. This paper surveys the pivotal integration of LPtMs with HAI, emphasizing how these models enhance collaborative intelligence beyond traditional approaches. It examines the synergistic potential of LPtMs in augmenting human capabilities, discussing this collaboration for AI model improvements, effective teaming, ethical considerations, and their broad applied implications in various sectors. Through this exploration, the study sheds light on the transformative impact of LPtM-enhanced HAI 
-    
-[^2]: 以人格驱动生成式智能体
-
-    Driving Generative Agents With Their Personality
-
-    [https://arxiv.org/abs/2402.14879](https://arxiv.org/abs/2402.14879)
-
-    大型语言模型（LLMs）利用心理测量值，在视频游戏角色开发中代表给定的人格特征，增强游戏角色的类人特性。
+    HiQA是一个先进的多文档问答框架，使用分层的上下文增强和多路径检索机制，解决了大规模文档问答中的检索准确性问题，并在多文档环境中展示了最先进的性能。
 
     
 
-    本研究探讨了大型语言模型（LLMs）利用心理测量值，特别是人格信息，在视频游戏角色开发背景下的潜力。情感计算（AC）系统量化了非玩家角色（NPC）的心理，LLM可以利用该系统的信息，使用值进行提示生成。研究表明，LLM可以始终代表给定的人格特征，从而增强游戏角色的类人特性。将人类检查重新用于评估LLM的国际人格项目池（IPIP）问卷表明，该模型能够准确生成与所提供人格相关的内容。结果显示，LLM的改进，如最新的GPT-4模型，可以始终利用和解释人格以代表行为。
+    随着利用外部工具的语言模型代理迅速发展，使用补充文档和检索增强生成（RAG）方法的问答（QA）方法学取得了重要进展。这种进步提高了语言模型的回答质量，并减轻了幻觉的出现。然而，当面临大量无法区分的文档时，这些方法在检索准确性方面表现有限，给实际应用带来了显著挑战。针对这些新兴的挑战，我们提出了HiQA，这是一个先进的多文档问答（MDQA）框架，将级联的元数据整合到内容中，同时具备多路径检索机制。我们还发布了一个名为MasQA的基准来评估和研究MDQA。最后，HiQA在多文档环境中展示了最先进的性能。
 
-    arXiv:2402.14879v1 Announce Type: cross  Abstract: This research explores the potential of Large Language Models (LLMs) to utilize psychometric values, specifically personality information, within the context of video game character development. Affective Computing (AC) systems quantify a Non-Player character's (NPC) psyche, and an LLM can take advantage of the system's information by using the values for prompt generation. The research shows an LLM can consistently represent a given personality profile, thereby enhancing the human-like characteristics of game characters. Repurposing a human examination, the International Personality Item Pool (IPIP) questionnaire, to evaluate an LLM shows that the model can accurately generate content concerning the personality provided. Results show that the improvement of LLM, such as the latest GPT-4 model, can consistently utilize and interpret a personality to represent behavior.
+    As language model agents leveraging external tools rapidly evolve, significant progress has been made in question-answering(QA) methodologies utilizing supplementary documents and the Retrieval-Augmented Generation (RAG) approach. This advancement has improved the response quality of language models and alleviates the appearance of hallucination. However, these methods exhibit limited retrieval accuracy when faced with massive indistinguishable documents, presenting notable challenges in their practical application. In response to these emerging challenges, we present HiQA, an advanced framework for multi-document question-answering (MDQA) that integrates cascading metadata into content as well as a multi-route retrieval mechanism. We also release a benchmark called MasQA to evaluate and research in MDQA. Finally, HiQA demonstrates the state-of-the-art performance in multi-document environments.
+    
+[^2]: 面向具有时间目标的连续系统的拓扑指导的 Actor-Critic 模块化学习
+
+    Topological Guided Actor-Critic Modular Learning of Continuous Systems with Temporal Objectives. (arXiv:2304.10041v1 [cs.AI])
+
+    [http://arxiv.org/abs/2304.10041](http://arxiv.org/abs/2304.10041)
+
+    本文介绍了一种基于拓扑指导的 Actor-Critic 模块化学习方法，用于解决连续系统中的最优策略综合问题，并提出了一种广义的最优备份顺序来加速学习过程。
+
+    
+
+    本文研究了在线性时间逻辑中给定高级规范的连续状态随机动态系统的正式策略综合。为了学习最大化满足概率的最优策略，我们对动态系统和翻译出的自动机进行了乘积构造，从而构建了一个乘积系统，然后在其中解决了最优计划问题。由于乘积系统具有混合乘积状态空间，导致奖励稀疏，因此我们引入了一种广义的最优备份顺序，与拓扑顺序相反，以指导值备份并加速学习过程。我们提供了使用广义最优备份顺序进行最优计划问题的最优性证明。此外，本文提出了一种基于拓扑顺序的演员-评论家强化学习算法。该算法利用先进的数学技术，并具有超参数自调整的特性。我们提供了该算法的最优性和收敛性证明。
+
+    This work investigates the formal policy synthesis of continuous-state stochastic dynamic systems given high-level specifications in linear temporal logic. To learn an optimal policy that maximizes the satisfaction probability, we take a product between a dynamic system and the translated automaton to construct a product system on which we solve an optimal planning problem. Since this product system has a hybrid product state space that results in reward sparsity, we introduce a generalized optimal backup order, in reverse to the topological order, to guide the value backups and accelerate the learning process. We provide the optimality proof for using the generalized optimal backup order in this optimal planning problem. Further, this paper presents an actor-critic reinforcement learning algorithm when topological order applies. This algorithm leverages advanced mathematical techniques and enjoys the property of hyperparameter self-tuning. We provide proof of the optimality and conver
     
 
