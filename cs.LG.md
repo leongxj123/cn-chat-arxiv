@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Noise Contrastive Estimation-based Matching Framework for Low-resource Security Attack Pattern Recognition.](http://arxiv.org/abs/2401.10337) | 该论文提出了一种基于噪声对比估计的低资源安全攻击模式识别匹配框架，通过直接语义相似度决定文本与攻击模式之间的关联，以降低大量类别、标签分布不均和标签空间复杂性带来的学习难度。 |
-| [^2] | [Theoretically Principled Federated Learning for Balancing Privacy and Utility.](http://arxiv.org/abs/2305.15148) | 本文提出基于扭曲模型参数的保护机制的通用学习框架，用于实现联合学习中隐私保护和数据效用的平衡。算法可以在每个通信轮中实现个性化的效用-隐私折衷，我们在理论上证明了算法的次线性性质，该算法可以提高隐私保护的联合学习效力。 |
+| [^1] | [Revisiting Recurrent Reinforcement Learning with Memory Monoids](https://arxiv.org/abs/2402.09900) | 这篇论文重新审视了使用内存单子的循环强化学习方法。通过定义新颖的内存单子框架并提出一种新的批处理方法，改进了样本效率、增加了回报并简化了实现过程。 |
 
 # 详细
 
-[^1]: 基于噪声对比估计的低资源安全攻击模式识别匹配框架
+[^1]: 重新审视带有内存单子的循环强化学习
 
-    Noise Contrastive Estimation-based Matching Framework for Low-resource Security Attack Pattern Recognition. (arXiv:2401.10337v1 [cs.LG])
+    Revisiting Recurrent Reinforcement Learning with Memory Monoids
 
-    [http://arxiv.org/abs/2401.10337](http://arxiv.org/abs/2401.10337)
+    [https://arxiv.org/abs/2402.09900](https://arxiv.org/abs/2402.09900)
 
-    该论文提出了一种基于噪声对比估计的低资源安全攻击模式识别匹配框架，通过直接语义相似度决定文本与攻击模式之间的关联，以降低大量类别、标签分布不均和标签空间复杂性带来的学习难度。
-
-    
-
-    战术、技术和程序（TTPs）是网络安全领域中复杂的攻击模式，在文本知识库中有详细的描述。在网络安全写作中识别TTPs，通常称为TTP映射，是一个重要而具有挑战性的任务。传统的学习方法通常以经典的多类或多标签分类设置为目标。由于存在大量的类别（即TTPs），标签分布的不均衡和标签空间的复杂层次结构，这种设置限制了模型的学习能力。我们采用了一种不同的学习范式来解决这个问题，其中将文本与TTP标签之间的直接语义相似度决定为文本分配给TTP标签，从而减少了仅仅在大型标签空间上竞争的复杂性。为此，我们提出了一种具有有效的基于采样的学习比较机制的神经匹配架构，促进学习过程。
-
-    Tactics, Techniques and Procedures (TTPs) represent sophisticated attack patterns in the cybersecurity domain, described encyclopedically in textual knowledge bases. Identifying TTPs in cybersecurity writing, often called TTP mapping, is an important and challenging task. Conventional learning approaches often target the problem in the classical multi-class or multilabel classification setting. This setting hinders the learning ability of the model due to a large number of classes (i.e., TTPs), the inevitable skewness of the label distribution and the complex hierarchical structure of the label space. We formulate the problem in a different learning paradigm, where the assignment of a text to a TTP label is decided by the direct semantic similarity between the two, thus reducing the complexity of competing solely over the large labeling space. To that end, we propose a neural matching architecture with an effective sampling-based learn-to-compare mechanism, facilitating the learning pr
-    
-[^2]: 理论指导的联合学习实现了隐私保护和数据效用的平衡
-
-    Theoretically Principled Federated Learning for Balancing Privacy and Utility. (arXiv:2305.15148v2 [cs.LG] UPDATED)
-
-    [http://arxiv.org/abs/2305.15148](http://arxiv.org/abs/2305.15148)
-
-    本文提出基于扭曲模型参数的保护机制的通用学习框架，用于实现联合学习中隐私保护和数据效用的平衡。算法可以在每个通信轮中实现个性化的效用-隐私折衷，我们在理论上证明了算法的次线性性质，该算法可以提高隐私保护的联合学习效力。
+    这篇论文重新审视了使用内存单子的循环强化学习方法。通过定义新颖的内存单子框架并提出一种新的批处理方法，改进了样本效率、增加了回报并简化了实现过程。
 
     
 
-    我们提出了一种保护机制的通用学习框架，通过扭曲模型参数来保护隐私，实现隐私和效用之间的平衡。该算法适用于任意将扭曲映射到实值的隐私测量。在联合学习中，它可以为每个模型参数，每个客户端，在每个通信轮中实现个性化的效用-隐私折衷。这种自适应和细粒度的保护可以提高保护隐私的联合学习的效力。从理论上讲，我们证明了算法保护超参数的效用损失与最优保护超参数的效用损失之间的差距是总迭代次数的次线性。我们的算法次线性的特点表明，当迭代次数趋近于无穷大时，算法性能和最优性能之间的平均差距趋近于零。此外，我们提供了收敛性证明。
+    在强化学习中，像RNN和transformers这样的记忆模型通过将轨迹映射到潜在的马尔可夫状态来处理部分可观察的马尔可夫决策过程（POMDPs）。这些模型对于长序列的规模化处理能力并不特别好，尤其是与一类新兴的记忆模型（有时称为线性循环模型）相比。我们发现这些模型的循环更新是一个单子，因此我们正式定义了一个新颖的内存单子框架。我们重新审视了循环强化学习中的传统批处理方法，突出了理论和实证上的不足之处。利用内存单子的特性，我们提出了一种新的批处理方法，改进了样本效率，增加了回报，并简化了循环丢失函数在强化学习中的实施。
 
-    We propose a general learning framework for the protection mechanisms that protects privacy via distorting model parameters, which facilitates the trade-off between privacy and utility. The algorithm is applicable to arbitrary privacy measurements that maps from the distortion to a real value. It can achieve personalized utility-privacy trade-off for each model parameter, on each client, at each communication round in federated learning. Such adaptive and fine-grained protection can improve the effectiveness of privacy-preserved federated learning.  Theoretically, we show that gap between the utility loss of the protection hyperparameter output by our algorithm and that of the optimal protection hyperparameter is sub-linear in the total number of iterations. The sublinearity of our algorithm indicates that the average gap between the performance of our algorithm and that of the optimal performance goes to zero when the number of iterations goes to infinity. Further, we provide the conv
+    arXiv:2402.09900v1 Announce Type: cross  Abstract: In RL, memory models such as RNNs and transformers address Partially Observable Markov Decision Processes (POMDPs) by mapping trajectories to latent Markov states. Neither model scales particularly well to long sequences, especially compared to an emerging class of memory models sometimes called linear recurrent models. We discover that the recurrent update of these models is a monoid, leading us to formally define a novel memory monoid framework. We revisit the traditional approach to batching in recurrent RL, highlighting both theoretical and empirical deficiencies. Leveraging the properties of memory monoids, we propose a new batching method that improves sample efficiency, increases the return, and simplifies the implementation of recurrent loss functions in RL.
     
 

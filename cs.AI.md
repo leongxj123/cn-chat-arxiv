@@ -2,37 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [HiQA: A Hierarchical Contextual Augmentation RAG for Massive Documents QA](https://arxiv.org/abs/2402.01767) | HiQA是一个先进的多文档问答框架，使用分层的上下文增强和多路径检索机制，解决了大规模文档问答中的检索准确性问题，并在多文档环境中展示了最先进的性能。 |
-| [^2] | [Topological Guided Actor-Critic Modular Learning of Continuous Systems with Temporal Objectives.](http://arxiv.org/abs/2304.10041) | 本文介绍了一种基于拓扑指导的 Actor-Critic 模块化学习方法，用于解决连续系统中的最优策略综合问题，并提出了一种广义的最优备份顺序来加速学习过程。 |
+| [^1] | [Revisiting Recurrent Reinforcement Learning with Memory Monoids](https://arxiv.org/abs/2402.09900) | 这篇论文重新审视了使用内存单子的循环强化学习方法。通过定义新颖的内存单子框架并提出一种新的批处理方法，改进了样本效率、增加了回报并简化了实现过程。 |
 
 # 详细
 
-[^1]: HiQA：一种用于大规模文档问答的分层上下文增强的RAG模型
+[^1]: 重新审视带有内存单子的循环强化学习
 
-    HiQA: A Hierarchical Contextual Augmentation RAG for Massive Documents QA
+    Revisiting Recurrent Reinforcement Learning with Memory Monoids
 
-    [https://arxiv.org/abs/2402.01767](https://arxiv.org/abs/2402.01767)
+    [https://arxiv.org/abs/2402.09900](https://arxiv.org/abs/2402.09900)
 
-    HiQA是一个先进的多文档问答框架，使用分层的上下文增强和多路径检索机制，解决了大规模文档问答中的检索准确性问题，并在多文档环境中展示了最先进的性能。
-
-    
-
-    随着利用外部工具的语言模型代理迅速发展，使用补充文档和检索增强生成（RAG）方法的问答（QA）方法学取得了重要进展。这种进步提高了语言模型的回答质量，并减轻了幻觉的出现。然而，当面临大量无法区分的文档时，这些方法在检索准确性方面表现有限，给实际应用带来了显著挑战。针对这些新兴的挑战，我们提出了HiQA，这是一个先进的多文档问答（MDQA）框架，将级联的元数据整合到内容中，同时具备多路径检索机制。我们还发布了一个名为MasQA的基准来评估和研究MDQA。最后，HiQA在多文档环境中展示了最先进的性能。
-
-    As language model agents leveraging external tools rapidly evolve, significant progress has been made in question-answering(QA) methodologies utilizing supplementary documents and the Retrieval-Augmented Generation (RAG) approach. This advancement has improved the response quality of language models and alleviates the appearance of hallucination. However, these methods exhibit limited retrieval accuracy when faced with massive indistinguishable documents, presenting notable challenges in their practical application. In response to these emerging challenges, we present HiQA, an advanced framework for multi-document question-answering (MDQA) that integrates cascading metadata into content as well as a multi-route retrieval mechanism. We also release a benchmark called MasQA to evaluate and research in MDQA. Finally, HiQA demonstrates the state-of-the-art performance in multi-document environments.
-    
-[^2]: 面向具有时间目标的连续系统的拓扑指导的 Actor-Critic 模块化学习
-
-    Topological Guided Actor-Critic Modular Learning of Continuous Systems with Temporal Objectives. (arXiv:2304.10041v1 [cs.AI])
-
-    [http://arxiv.org/abs/2304.10041](http://arxiv.org/abs/2304.10041)
-
-    本文介绍了一种基于拓扑指导的 Actor-Critic 模块化学习方法，用于解决连续系统中的最优策略综合问题，并提出了一种广义的最优备份顺序来加速学习过程。
+    这篇论文重新审视了使用内存单子的循环强化学习方法。通过定义新颖的内存单子框架并提出一种新的批处理方法，改进了样本效率、增加了回报并简化了实现过程。
 
     
 
-    本文研究了在线性时间逻辑中给定高级规范的连续状态随机动态系统的正式策略综合。为了学习最大化满足概率的最优策略，我们对动态系统和翻译出的自动机进行了乘积构造，从而构建了一个乘积系统，然后在其中解决了最优计划问题。由于乘积系统具有混合乘积状态空间，导致奖励稀疏，因此我们引入了一种广义的最优备份顺序，与拓扑顺序相反，以指导值备份并加速学习过程。我们提供了使用广义最优备份顺序进行最优计划问题的最优性证明。此外，本文提出了一种基于拓扑顺序的演员-评论家强化学习算法。该算法利用先进的数学技术，并具有超参数自调整的特性。我们提供了该算法的最优性和收敛性证明。
+    在强化学习中，像RNN和transformers这样的记忆模型通过将轨迹映射到潜在的马尔可夫状态来处理部分可观察的马尔可夫决策过程（POMDPs）。这些模型对于长序列的规模化处理能力并不特别好，尤其是与一类新兴的记忆模型（有时称为线性循环模型）相比。我们发现这些模型的循环更新是一个单子，因此我们正式定义了一个新颖的内存单子框架。我们重新审视了循环强化学习中的传统批处理方法，突出了理论和实证上的不足之处。利用内存单子的特性，我们提出了一种新的批处理方法，改进了样本效率，增加了回报，并简化了循环丢失函数在强化学习中的实施。
 
-    This work investigates the formal policy synthesis of continuous-state stochastic dynamic systems given high-level specifications in linear temporal logic. To learn an optimal policy that maximizes the satisfaction probability, we take a product between a dynamic system and the translated automaton to construct a product system on which we solve an optimal planning problem. Since this product system has a hybrid product state space that results in reward sparsity, we introduce a generalized optimal backup order, in reverse to the topological order, to guide the value backups and accelerate the learning process. We provide the optimality proof for using the generalized optimal backup order in this optimal planning problem. Further, this paper presents an actor-critic reinforcement learning algorithm when topological order applies. This algorithm leverages advanced mathematical techniques and enjoys the property of hyperparameter self-tuning. We provide proof of the optimality and conver
+    arXiv:2402.09900v1 Announce Type: cross  Abstract: In RL, memory models such as RNNs and transformers address Partially Observable Markov Decision Processes (POMDPs) by mapping trajectories to latent Markov states. Neither model scales particularly well to long sequences, especially compared to an emerging class of memory models sometimes called linear recurrent models. We discover that the recurrent update of these models is a monoid, leading us to formally define a novel memory monoid framework. We revisit the traditional approach to batching in recurrent RL, highlighting both theoretical and empirical deficiencies. Leveraging the properties of memory monoids, we propose a new batching method that improves sample efficiency, increases the return, and simplifies the implementation of recurrent loss functions in RL.
     
 
