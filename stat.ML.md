@@ -2,67 +2,82 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [On diffusion models for amortized inference: Benchmarking and improving stochastic control and sampling](https://arxiv.org/abs/2402.05098) | 本研究探讨了训练扩散模型以从给定分布中采样的问题，并针对随机控制和采样提出了一种新的探索策略，通过基准测试比较了不同推断方法的相对优劣，并对过去的工作提出了质疑。 |
-| [^2] | [Joint Bayesian Inference of Graphical Structure and Parameters with a Single Generative Flow Network.](http://arxiv.org/abs/2305.19366) | 本文提出了在单一生成流网络中联合建模贝叶斯网络结构和参数的方法，包括非离散样本空间，提高了贝叶斯网络局部概率模型的灵活性。 |
-| [^3] | [Let the Flows Tell: Solving Graph Combinatorial Optimization Problems with GFlowNets.](http://arxiv.org/abs/2305.17010) | 本文提出了一种名为GFlowNets的机器，可以有效地解决组合优化问题，同时在训练方面进行了优化，结果表明其可以高效地找到高质量的解决方案。 |
-| [^4] | [Trajectory balance: Improved credit assignment in GFlowNets.](http://arxiv.org/abs/2201.13259) | GFlowNets使用轨迹平衡作为一种更高效的学习目标，解决了先前学习目标中信用传播效率低下的问题，并且在实验中证明了其在收敛性、生成样本多样性以及鲁棒性方面的优势。 |
+| [^1] | [PQMass: Probabilistic Assessment of the Quality of Generative Models using Probability Mass Estimation](https://arxiv.org/abs/2402.04355) | PQMass是一种使用概率质量估计来评估生成模型质量的全面方法，能够直接处理高维数据，不依赖于假设或训练其他模型。 |
+| [^2] | [PhyloGFN: Phylogenetic inference with generative flow networks.](http://arxiv.org/abs/2310.08774) | PhyloGFN是一种基于生成流网络的系统发育推断方法，通过采样复杂的组合结构，能够产生多样且高质量的进化假设，并在边缘似然估计方面具有竞争力。 |
+| [^3] | [Delta-AI: Local objectives for amortized inference in sparse graphical models.](http://arxiv.org/abs/2310.02423) | Delta-AI算法提出了一种基于稀疏图模型的摊还推理方法，通过局部信用分配和离策略训练加快了训练速度。 |
+| [^4] | [Potential Energy Advantage of Quantum Economy.](http://arxiv.org/abs/2308.08025) | 量子计算在能源效率方面具有优势，并且能够在盈利和能源效率上超越经典计算。这使得量子计算成为计算行业更可持续的选择。 |
+| [^5] | [Deep graph kernel point processes.](http://arxiv.org/abs/2306.11313) | 本文提出了一种基于潜在图拓扑的图点过程方法，并开发了一种新颖的深度图核来描述事件之间的触发和抑制效应，该方法在合成和实际数据集上具有优越性。 |
 
 # 详细
 
-[^1]: 关于分散推断模型的扩散模型：基准测试和改进随机控制和采样
+[^1]: PQMass: 使用概率质量估计的生成模型质量的概率评估
 
-    On diffusion models for amortized inference: Benchmarking and improving stochastic control and sampling
+    PQMass: Probabilistic Assessment of the Quality of Generative Models using Probability Mass Estimation
 
-    [https://arxiv.org/abs/2402.05098](https://arxiv.org/abs/2402.05098)
+    [https://arxiv.org/abs/2402.04355](https://arxiv.org/abs/2402.04355)
 
-    本研究探讨了训练扩散模型以从给定分布中采样的问题，并针对随机控制和采样提出了一种新的探索策略，通过基准测试比较了不同推断方法的相对优劣，并对过去的工作提出了质疑。
-
-    
-
-    我们研究了训练扩散模型以从给定的非标准化密度或能量函数分布中采样的问题。我们对几种扩散结构推断方法进行了基准测试，包括基于模拟的变分方法和离策略方法（连续生成流网络）。我们的结果揭示了现有算法的相对优势，同时对过去的研究提出了一些质疑。我们还提出了一种新颖的离策略方法探索策略，基于目标空间中的局部搜索和回放缓冲区的使用，并证明它可以改善各种目标分布上的样本质量。我们研究的采样方法和基准测试的代码已公开在https://github.com/GFNOrg/gfn-diffusion，作为未来在分散推断模型上工作的基础。
-
-    We study the problem of training diffusion models to sample from a distribution with a given unnormalized density or energy function. We benchmark several diffusion-structured inference methods, including simulation-based variational approaches and off-policy methods (continuous generative flow networks). Our results shed light on the relative advantages of existing algorithms while bringing into question some claims from past work. We also propose a novel exploration strategy for off-policy methods, based on local search in the target space with the use of a replay buffer, and show that it improves the quality of samples on a variety of target distributions. Our code for the sampling methods and benchmarks studied is made public at https://github.com/GFNOrg/gfn-diffusion as a base for future work on diffusion models for amortized inference.
-    
-[^2]: 单一生成流网络中的图结构与参数的联合贝叶斯推理
-
-    Joint Bayesian Inference of Graphical Structure and Parameters with a Single Generative Flow Network. (arXiv:2305.19366v1 [cs.LG])
-
-    [http://arxiv.org/abs/2305.19366](http://arxiv.org/abs/2305.19366)
-
-    本文提出了在单一生成流网络中联合建模贝叶斯网络结构和参数的方法，包括非离散样本空间，提高了贝叶斯网络局部概率模型的灵活性。
+    PQMass是一种使用概率质量估计来评估生成模型质量的全面方法，能够直接处理高维数据，不依赖于假设或训练其他模型。
 
     
 
-    生成流网络是一类对离散和结构化样本空间进行建模的生成模型。先前的研究已将其应用于推断给定观测数据的贝叶斯网络的有向无环图（DAG）的边缘后验分布。本文基于最近的研究进展，在非离散样本空间上将此框架扩展到联合后验分布的建模，不仅包括贝叶斯网络的结构，还考虑了其条件概率分布的参数。
+    我们提出了一种全面的基于样本的方法来评估生成模型的质量。所提出的方法能够估计两个样本集合来自同一分布的概率，为评估单个生成模型的性能或比较在同一数据集上训练的多个竞争模型提供了一个统计上严格的方法。该比较可以通过将空间划分为非重叠的区域并比较每个区域中的数据样本数量来进行。该方法仅需要生成模型和测试数据的样本。它能够直接处理高维数据，无需降维。显著的是，该方法不依赖于关于真实分布密度的假设，并且不依赖于训练或拟合任何辅助模型。相反，它着重于近似计算密度的积分（概率质量）。
 
-    Generative Flow Networks (GFlowNets), a class of generative models over discrete and structured sample spaces, have been previously applied to the problem of inferring the marginal posterior distribution over the directed acyclic graph (DAG) of a Bayesian Network, given a dataset of observations. Based on recent advances extending this framework to non-discrete sample spaces, we propose in this paper to approximate the joint posterior over not only the structure of a Bayesian Network, but also the parameters of its conditional probability distributions. We use a single GFlowNet whose sampling policy follows a two-phase process: the DAG is first generated sequentially one edge at a time, and then the corresponding parameters are picked once the full structure is known. Since the parameters are included in the posterior distribution, this leaves more flexibility for the local probability models of the Bayesian Network, making our approach applicable even to non-linear models parametrized
+    We propose a comprehensive sample-based method for assessing the quality of generative models. The proposed approach enables the estimation of the probability that two sets of samples are drawn from the same distribution, providing a statistically rigorous method for assessing the performance of a single generative model or the comparison of multiple competing models trained on the same dataset. This comparison can be conducted by dividing the space into non-overlapping regions and comparing the number of data samples in each region. The method only requires samples from the generative model and the test data. It is capable of functioning directly on high-dimensional data, obviating the need for dimensionality reduction. Significantly, the proposed method does not depend on assumptions regarding the density of the true distribution, and it does not rely on training or fitting any auxiliary models. Instead, it focuses on approximating the integral of the density (probability mass) acros
     
-[^3]: 利用GFlowNets解决图形组合优化问题
+[^2]: PhyloGFN: 基于生成流网络的系统发育推断
 
-    Let the Flows Tell: Solving Graph Combinatorial Optimization Problems with GFlowNets. (arXiv:2305.17010v1 [cs.LG])
+    PhyloGFN: Phylogenetic inference with generative flow networks. (arXiv:2310.08774v1 [q-bio.PE])
 
-    [http://arxiv.org/abs/2305.17010](http://arxiv.org/abs/2305.17010)
+    [http://arxiv.org/abs/2310.08774](http://arxiv.org/abs/2310.08774)
 
-    本文提出了一种名为GFlowNets的机器，可以有效地解决组合优化问题，同时在训练方面进行了优化，结果表明其可以高效地找到高质量的解决方案。
-
-    
-
-    组合优化问题通常是NP难题，因此不适用于精确算法，这使它们成为应用机器学习方法的理想领域。这些问题中高度结构化的限制可能会直接阻碍优化或采样解决方案的空间。另一方面，GFlowNets最近被发现是一种强大的机器，可以顺序地从复合非规范化密度中有效地采样，并具有在CO中分摊此类解决方案搜索过程以及生成不同的解决方案候选项的潜力。在本文中，我们设计了适用于不同组合问题的马尔科夫决策过程（MDP），并提出训练有条件的GFlowNets从解空间中采样的策略。还开发了高效的训练技术来受益于远程信用分配。通过对各种使用合成和实际数据的不同CO任务的广泛实验，我们证明了GFlowNet策略可以有效地找到高质量的解。
-
-    Combinatorial optimization (CO) problems are often NP-hard and thus out of reach for exact algorithms, making them a tempting domain to apply machine learning methods. The highly structured constraints in these problems can hinder either optimization or sampling directly in the solution space. On the other hand, GFlowNets have recently emerged as a powerful machinery to efficiently sample from composite unnormalized densities sequentially and have the potential to amortize such solution-searching processes in CO, as well as generate diverse solution candidates. In this paper, we design Markov decision processes (MDPs) for different combinatorial problems and propose to train conditional GFlowNets to sample from the solution space. Efficient training techniques are also developed to benefit long-range credit assignment. Through extensive experiments on a variety of different CO tasks with synthetic and realistic data, we demonstrate that GFlowNet policies can efficiently find high-quali
-    
-[^4]: 轨迹平衡：改进了GFlowNets中的信用分配
-
-    Trajectory balance: Improved credit assignment in GFlowNets. (arXiv:2201.13259v3 [cs.LG] UPDATED)
-
-    [http://arxiv.org/abs/2201.13259](http://arxiv.org/abs/2201.13259)
-
-    GFlowNets使用轨迹平衡作为一种更高效的学习目标，解决了先前学习目标中信用传播效率低下的问题，并且在实验中证明了其在收敛性、生成样本多样性以及鲁棒性方面的优势。
+    PhyloGFN是一种基于生成流网络的系统发育推断方法，通过采样复杂的组合结构，能够产生多样且高质量的进化假设，并在边缘似然估计方面具有竞争力。
 
     
 
-    生成流网络（GFlowNets）是一种学习使用动作序列生成组合对象（如图形或字符串）的随机策略的方法，其中许多可能的动作序列可能导致相同的对象。我们发现先前提出的GFlowNets学习目标，即流匹配和详细平衡，类似于时间差分学习，容易在长的动作序列中出现信用传播效率低下的问题。因此，我们提出了一种新的学习目标，即轨迹平衡，作为先前使用目标的更高效的替代方法。我们证明了轨迹平衡目标的任何全局极小值可以定义一个从目标分布精确采样的策略。在四个不同领域的实验中，我们从实证上证明了轨迹平衡目标对于GFlowNet收敛性、生成样本的多样性以及对长动作序列和噪声的鲁棒性的益处。
+    系统发育学是计算生物学的一个分支，研究生物实体之间的进化关系。尽管有着悠久的历史和众多应用，但从序列数据推断系统发育树仍然具有挑战性：树空间的高复杂性对当前的组合和概率技术构成了重要障碍。在本文中，我们采用生成流网络（GFlowNets）的框架来解决系统发育学中的两个核心问题：基于最简原则的和贝叶斯的系统发育推断。由于GFlowNets适用于采样复杂的组合结构，它们是探索和采样树拓扑和进化距离的多模态后验分布的自然选择。我们证明了我们的摊还后验采样器PhyloGFN在真实基准数据集上产生多样且高质量的进化假设。PhyloGFN在边缘似然估计方面与之前的工作相比具有竞争力。
 
-    Generative flow networks (GFlowNets) are a method for learning a stochastic policy for generating compositional objects, such as graphs or strings, from a given unnormalized density by sequences of actions, where many possible action sequences may lead to the same object. We find previously proposed learning objectives for GFlowNets, flow matching and detailed balance, which are analogous to temporal difference learning, to be prone to inefficient credit propagation across long action sequences. We thus propose a new learning objective for GFlowNets, trajectory balance, as a more efficient alternative to previously used objectives. We prove that any global minimizer of the trajectory balance objective can define a policy that samples exactly from the target distribution. In experiments on four distinct domains, we empirically demonstrate the benefits of the trajectory balance objective for GFlowNet convergence, diversity of generated samples, and robustness to long action sequences and
+    Phylogenetics is a branch of computational biology that studies the evolutionary relationships among biological entities. Its long history and numerous applications notwithstanding, inference of phylogenetic trees from sequence data remains challenging: the high complexity of tree space poses a significant obstacle for the current combinatorial and probabilistic techniques. In this paper, we adopt the framework of generative flow networks (GFlowNets) to tackle two core problems in phylogenetics: parsimony-based and Bayesian phylogenetic inference. Because GFlowNets are well-suited for sampling complex combinatorial structures, they are a natural choice for exploring and sampling from the multimodal posterior distribution over tree topologies and evolutionary distances. We demonstrate that our amortized posterior sampler, PhyloGFN, produces diverse and high-quality evolutionary hypotheses on real benchmark datasets. PhyloGFN is competitive with prior works in marginal likelihood estimat
+    
+[^3]: Delta-AI: 稀疏图模型的摊还推理中的局部目标
+
+    Delta-AI: Local objectives for amortized inference in sparse graphical models. (arXiv:2310.02423v1 [cs.LG])
+
+    [http://arxiv.org/abs/2310.02423](http://arxiv.org/abs/2310.02423)
+
+    Delta-AI算法提出了一种基于稀疏图模型的摊还推理方法，通过局部信用分配和离策略训练加快了训练速度。
+
+    
+
+    我们提出了一种新的算法，用于稀疏概率图模型（PGMs）的摊还推理，我们称之为Delta-AI。我们的方法基于这样的观察：当PGM中的变量采样被视为一个代理人采取的动作序列时，PGM的稀疏性使得代理人的策略学习目标能够进行局部信用分配。这导致了一个局部约束，可以转化为类似生成流网络（GFlowNets）中的局部损失，从而实现了离策略训练，但避免了每个参数更新需要实例化所有随机变量的需求，从而大大加快了训练速度。Delta-AI目标与一个可计算的学习采样器中的变量给定其马尔可夫毯子的条件分布相匹配，该采样器的结构类似于贝叶斯网络，在目标PGM下具有相同的条件分布。因此，训练后的采样器可以恢复感兴趣变量的边际分布和条件分布。
+
+    We present a new algorithm for amortized inference in sparse probabilistic graphical models (PGMs), which we call $\Delta$-amortized inference ($\Delta$-AI). Our approach is based on the observation that when the sampling of variables in a PGM is seen as a sequence of actions taken by an agent, sparsity of the PGM enables local credit assignment in the agent's policy learning objective. This yields a local constraint that can be turned into a local loss in the style of generative flow networks (GFlowNets) that enables off-policy training but avoids the need to instantiate all the random variables for each parameter update, thus speeding up training considerably. The $\Delta$-AI objective matches the conditional distribution of a variable given its Markov blanket in a tractable learned sampler, which has the structure of a Bayesian network, with the same conditional distribution under the target PGM. As such, the trained sampler recovers marginals and conditional distributions of intere
+    
+[^4]: 量子经济的势能优势
+
+    Potential Energy Advantage of Quantum Economy. (arXiv:2308.08025v1 [quant-ph])
+
+    [http://arxiv.org/abs/2308.08025](http://arxiv.org/abs/2308.08025)
+
+    量子计算在能源效率方面具有优势，并且能够在盈利和能源效率上超越经典计算。这使得量子计算成为计算行业更可持续的选择。
+
+    
+
+    随着大规模机器学习模型和语言模型的广泛部署，能源成本越来越关键。对于提供计算服务的公司来说，低能耗对于市场增长和政府法规来说都非常重要。本文研究了量子计算与经典计算之间的能源优势。我们在能源效率的背景下重新定义优势，与仅基于计算复杂性的传统量子优势不同。通过一个以能量使用为约束条件的Cournot竞争模型，我们证明量子计算公司在Nash均衡点上在盈利能力和能源效率方面都能超越经典对手。因此，量子计算可能代表计算行业更可持续的发展路径。此外，我们发现量子计算经济的能源利益取决于大规模计算。
+
+    Energy cost is increasingly crucial in the modern computing industry with the wide deployment of large-scale machine learning models and language models. For the firms that provide computing services, low energy consumption is important both from the perspective of their own market growth and the government's regulations. In this paper, we study the energy benefits of quantum computing vis-a-vis classical computing. Deviating from the conventional notion of quantum advantage based solely on computational complexity, we redefine advantage in an energy efficiency context. Through a Cournot competition model constrained by energy usage, we demonstrate quantum computing firms can outperform classical counterparts in both profitability and energy efficiency at Nash equilibrium. Therefore quantum computing may represent a more sustainable pathway for the computing industry. Moreover, we discover that the energy benefits of quantum computing economies are contingent on large-scale computation
+    
+[^5]: 深度图核点过程
+
+    Deep graph kernel point processes. (arXiv:2306.11313v1 [stat.ML])
+
+    [http://arxiv.org/abs/2306.11313](http://arxiv.org/abs/2306.11313)
+
+    本文提出了一种基于潜在图拓扑的图点过程方法，并开发了一种新颖的深度图核来描述事件之间的触发和抑制效应，该方法在合成和实际数据集上具有优越性。
+
+    
+
+    点过程模型广泛用于分析图中异步事件，反映不同类型事件之间的相互影响。预测未来事件的时间和类型是一项关键任务，并且图的大小和拓扑结构增加了问题的难度。最近的神经点过程模型揭示了捕捉复杂的事件类别之间依赖关系的可能性。然而，这些方法在每个目标事件类型的强度计算中使用了包括所有事件类别在内的未经滤波的事件记录。在本文中，我们提出了一种基于潜在图拓扑的图点过程方法。对应的无向图具有代表事件类别的节点和表示潜在贡献关系的边。然后，我们开发了一种新颖的深度图核来描述事件之间的触发和抑制效应。本质影响结构通过图神经网络-based的局部邻域信息聚合进行了融合。我们在合成和实际数据集上展示了我们提出的方法比最先进的模型更具优越性。
+
+    Point process models are widely used to analyze asynchronous events occurring within a graph that reflect how different types of events influence one another. Predicting future events' times and types is a crucial task, and the size and topology of the graph add to the challenge of the problem. Recent neural point process models unveil the possibility of capturing intricate inter-event-category dependencies. However, such methods utilize an unfiltered history of events, including all event categories in the intensity computation for each target event type. In this work, we propose a graph point process method where event interactions occur based on a latent graph topology. The corresponding undirected graph has nodes representing event categories and edges indicating potential contribution relationships. We then develop a novel deep graph kernel to characterize the triggering and inhibiting effects between events. The intrinsic influence structures are incorporated via the graph neural
     
 

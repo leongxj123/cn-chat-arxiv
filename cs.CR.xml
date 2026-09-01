@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CR</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CR</description><item><title>&#35813;&#30740;&#31350;&#39318;&#27425;&#25581;&#31034;&#20102;&#25915;&#20987;&#32773;&#22312;&#22810;&#26234;&#33021;&#20307;&#31454;&#20105;&#29615;&#22659;&#20013;&#21363;&#20351;&#21463;&#38480;&#20110;&#21463;&#23475;&#32773;&#30340;&#37096;&#20998;&#35266;&#27979;&#20063;&#33021;&#29983;&#25104;&#23545;&#25239;&#31574;&#30053;&#30340;&#33021;&#21147;&#12290;</title><link>https://arxiv.org/abs/2402.03741</link><description>&lt;p&gt;
+SUB-PLAY&#65306;&#38024;&#23545;&#37096;&#20998;&#35266;&#27979;&#30340;&#22810;&#26234;&#33021;&#20307;&#24378;&#21270;&#23398;&#20064;&#31995;&#32479;&#30340;&#23545;&#25239;&#31574;&#30053;
+&lt;/p&gt;
+&lt;p&gt;
+SUB-PLAY: Adversarial Policies against Partially Observed Multi-Agent Reinforcement Learning Systems
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2402.03741
+&lt;/p&gt;
+&lt;p&gt;
+&#35813;&#30740;&#31350;&#39318;&#27425;&#25581;&#31034;&#20102;&#25915;&#20987;&#32773;&#22312;&#22810;&#26234;&#33021;&#20307;&#31454;&#20105;&#29615;&#22659;&#20013;&#21363;&#20351;&#21463;&#38480;&#20110;&#21463;&#23475;&#32773;&#30340;&#37096;&#20998;&#35266;&#27979;&#20063;&#33021;&#29983;&#25104;&#23545;&#25239;&#31574;&#30053;&#30340;&#33021;&#21147;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#26368;&#36817;&#22312;&#22810;&#26234;&#33021;&#20307;&#24378;&#21270;&#23398;&#20064;&#65288;MARL&#65289;&#39046;&#22495;&#21462;&#24471;&#30340;&#36827;&#23637;&#20026;&#26080;&#20154;&#26426;&#30340;&#32676;&#20307;&#25511;&#21046;&#12289;&#26426;&#26800;&#33218;&#30340;&#21327;&#20316;&#25805;&#32437;&#20197;&#21450;&#22810;&#30446;&#26631;&#21253;&#22260;&#31561;&#24320;&#36767;&#20102;&#24191;&#38420;&#30340;&#24212;&#29992;&#21069;&#26223;&#12290;&#28982;&#32780;&#65292;&#22312;MARL&#37096;&#32626;&#36807;&#31243;&#20013;&#23384;&#22312;&#28508;&#22312;&#30340;&#23433;&#20840;&#23041;&#32961;&#38656;&#35201;&#26356;&#22810;&#20851;&#27880;&#21644;&#28145;&#20837;&#35843;&#26597;&#12290;&#26368;&#36817;&#30340;&#30740;&#31350;&#34920;&#26126;&#65292;&#25915;&#20987;&#32773;&#21487;&#20197;&#36805;&#36895;&#21033;&#29992;&#21463;&#23475;&#32773;&#30340;&#28431;&#27934;&#29983;&#25104;&#23545;&#25239;&#31574;&#30053;&#65292;&#23548;&#33268;&#21463;&#23475;&#32773;&#22312;&#29305;&#23450;&#20219;&#21153;&#20013;&#22833;&#36133;&#12290;&#20363;&#22914;&#65292;&#23558;&#36229;&#20154;&#32423;&#21035;&#30340;&#22260;&#26827;AI&#30340;&#33719;&#32988;&#29575;&#38477;&#20302;&#21040;&#32422;20%&#12290;&#36825;&#20123;&#30740;&#31350;&#20027;&#35201;&#20851;&#27880;&#20004;&#20154;&#31454;&#20105;&#29615;&#22659;&#65292;&#24182;&#20551;&#35774;&#25915;&#20987;&#32773;&#20855;&#26377;&#23436;&#25972;&#30340;&#20840;&#23616;&#29366;&#24577;&#35266;&#27979;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+Recent advances in multi-agent reinforcement learning (MARL) have opened up vast application prospects, including swarm control of drones, collaborative manipulation by robotic arms, and multi-target encirclement. However, potential security threats during the MARL deployment need more attention and thorough investigation. Recent researches reveal that an attacker can rapidly exploit the victim's vulnerabilities and generate adversarial policies, leading to the victim's failure in specific tasks. For example, reducing the winning rate of a superhuman-level Go AI to around 20%. They predominantly focus on two-player competitive environments, assuming attackers possess complete global state observation.   In this study, we unveil, for the first time, the capability of attackers to generate adversarial policies even when restricted to partial observations of the victims in multi-agent competitive environments. Specifically, we propose a novel black-box attack (SUB-PLAY), which incorporate
+&lt;/p&gt;</description></item></channel></rss>
