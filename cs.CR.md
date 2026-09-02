@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [SUB-PLAY: Adversarial Policies against Partially Observed Multi-Agent Reinforcement Learning Systems](https://arxiv.org/abs/2402.03741) | 该研究首次揭示了攻击者在多智能体竞争环境中即使受限于受害者的部分观测也能生成对抗策略的能力。 |
+| [^1] | [FedReview: A Review Mechanism for Rejecting Poisoned Updates in Federated Learning](https://arxiv.org/abs/2402.16934) | 提出了FedReview机制，通过随机分配评审员客户端来识别和拒绝联邦学习中的潜在毒化更新，并采用多数表决机制来整合排名并移除这些更新。 |
 
 # 详细
 
-[^1]: SUB-PLAY：针对部分观测的多智能体强化学习系统的对抗策略
+[^1]: FedReview: 一种用于拒绝毒化更新的联邦学习审查机制
 
-    SUB-PLAY: Adversarial Policies against Partially Observed Multi-Agent Reinforcement Learning Systems
+    FedReview: A Review Mechanism for Rejecting Poisoned Updates in Federated Learning
 
-    [https://arxiv.org/abs/2402.03741](https://arxiv.org/abs/2402.03741)
+    [https://arxiv.org/abs/2402.16934](https://arxiv.org/abs/2402.16934)
 
-    该研究首次揭示了攻击者在多智能体竞争环境中即使受限于受害者的部分观测也能生成对抗策略的能力。
+    提出了FedReview机制，通过随机分配评审员客户端来识别和拒绝联邦学习中的潜在毒化更新，并采用多数表决机制来整合排名并移除这些更新。
 
     
 
-    最近在多智能体强化学习（MARL）领域取得的进展为无人机的群体控制、机械臂的协作操纵以及多目标包围等开辟了广阔的应用前景。然而，在MARL部署过程中存在潜在的安全威胁需要更多关注和深入调查。最近的研究表明，攻击者可以迅速利用受害者的漏洞生成对抗策略，导致受害者在特定任务中失败。例如，将超人级别的围棋AI的获胜率降低到约20%。这些研究主要关注两人竞争环境，并假设攻击者具有完整的全局状态观测。
+    Federated learning最近已经被提出作为一种去中心化的方法，在不访问用户数据的情况下学习一个高性能模型。尽管其有效性，但联邦学习给恶意用户提供了机会通过向服务器上传毒化模型更新来操纵模型。在本文中，我们提出了一种名为FedReview的审查机制，用于识别和拒绝联邦学习中潜在的毒化更新。在我们的机制下，服务器每轮随机分配子集客户端作为评审员，在其训练数据集上评估模型更新。评审员根据评价结果对模型更新进行排名，统计相对低质量的更新数量作为估计的毒化更新数量。基于审查报告，服务器采用多数表决机制整合排名并在模型聚合过程中去除潜在的毒化更新。
 
-    Recent advances in multi-agent reinforcement learning (MARL) have opened up vast application prospects, including swarm control of drones, collaborative manipulation by robotic arms, and multi-target encirclement. However, potential security threats during the MARL deployment need more attention and thorough investigation. Recent researches reveal that an attacker can rapidly exploit the victim's vulnerabilities and generate adversarial policies, leading to the victim's failure in specific tasks. For example, reducing the winning rate of a superhuman-level Go AI to around 20%. They predominantly focus on two-player competitive environments, assuming attackers possess complete global state observation.   In this study, we unveil, for the first time, the capability of attackers to generate adversarial policies even when restricted to partial observations of the victims in multi-agent competitive environments. Specifically, we propose a novel black-box attack (SUB-PLAY), which incorporate
+    arXiv:2402.16934v1 Announce Type: cross  Abstract: Federated learning has recently emerged as a decentralized approach to learn a high-performance model without access to user data. Despite its effectiveness, federated learning gives malicious users opportunities to manipulate the model by uploading poisoned model updates to the server. In this paper, we propose a review mechanism called FedReview to identify and decline the potential poisoned updates in federated learning. Under our mechanism, the server randomly assigns a subset of clients as reviewers to evaluate the model updates on their training datasets in each round. The reviewers rank the model updates based on the evaluation results and count the number of the updates with relatively low quality as the estimated number of poisoned updates. Based on review reports, the server employs a majority voting mechanism to integrate the rankings and remove the potential poisoned updates in the model aggregation process. Extensive evalu
     
 
