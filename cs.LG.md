@@ -2,37 +2,37 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [FedReview: A Review Mechanism for Rejecting Poisoned Updates in Federated Learning](https://arxiv.org/abs/2402.16934) | 提出了FedReview机制，通过随机分配评审员客户端来识别和拒绝联邦学习中的潜在毒化更新，并采用多数表决机制来整合排名并移除这些更新。 |
-| [^2] | [Building Expressive and Tractable Probabilistic Generative Models: A Review](https://arxiv.org/abs/2402.00759) | 本文综述了富有表现力和可处理的概率生成建模领域的进展和技术，并重点关注了概率电路。文章提供了关于表达能力和可处理性之间权衡的统一视角，并说明了设计原则和算法扩展，成功地构建了富有表现力和高效的概率电路。此外，文章还讨论了最新的深度和混合概率电路研究，并概述了未来研究的挑战和开放性问题。 |
+| [^1] | [Clustering Three-Way Data with Outliers.](http://arxiv.org/abs/2310.05288) | 这项研究提出了一种用于聚类矩阵形式数据的方法，可以处理其中的异常值。 |
+| [^2] | [Generalized Regret Analysis of Thompson Sampling using Fractional Posteriors.](http://arxiv.org/abs/2309.06349) | 这项研究对使用分数后验概率的汤普森抽样算法进行了广义遗憾分析，获得了依赖于实例和实例独立的频率遗憾界。这对多臂赌博问题的解决有重要意义。 |
 
 # 详细
 
-[^1]: FedReview: 一种用于拒绝毒化更新的联邦学习审查机制
+[^1]: 带有异常值的三元数据聚类
 
-    FedReview: A Review Mechanism for Rejecting Poisoned Updates in Federated Learning
+    Clustering Three-Way Data with Outliers. (arXiv:2310.05288v1 [stat.ML])
 
-    [https://arxiv.org/abs/2402.16934](https://arxiv.org/abs/2402.16934)
+    [http://arxiv.org/abs/2310.05288](http://arxiv.org/abs/2310.05288)
 
-    提出了FedReview机制，通过随机分配评审员客户端来识别和拒绝联邦学习中的潜在毒化更新，并采用多数表决机制来整合排名并移除这些更新。
-
-    
-
-    Federated learning最近已经被提出作为一种去中心化的方法，在不访问用户数据的情况下学习一个高性能模型。尽管其有效性，但联邦学习给恶意用户提供了机会通过向服务器上传毒化模型更新来操纵模型。在本文中，我们提出了一种名为FedReview的审查机制，用于识别和拒绝联邦学习中潜在的毒化更新。在我们的机制下，服务器每轮随机分配子集客户端作为评审员，在其训练数据集上评估模型更新。评审员根据评价结果对模型更新进行排名，统计相对低质量的更新数量作为估计的毒化更新数量。基于审查报告，服务器采用多数表决机制整合排名并在模型聚合过程中去除潜在的毒化更新。
-
-    arXiv:2402.16934v1 Announce Type: cross  Abstract: Federated learning has recently emerged as a decentralized approach to learn a high-performance model without access to user data. Despite its effectiveness, federated learning gives malicious users opportunities to manipulate the model by uploading poisoned model updates to the server. In this paper, we propose a review mechanism called FedReview to identify and decline the potential poisoned updates in federated learning. Under our mechanism, the server randomly assigns a subset of clients as reviewers to evaluate the model updates on their training datasets in each round. The reviewers rank the model updates based on the evaluation results and count the number of the updates with relatively low quality as the estimated number of poisoned updates. Based on review reports, the server employs a majority voting mechanism to integrate the rankings and remove the potential poisoned updates in the model aggregation process. Extensive evalu
-    
-[^2]: 构建富有表现力和可处理的概率生成模型：一项综述
-
-    Building Expressive and Tractable Probabilistic Generative Models: A Review
-
-    [https://arxiv.org/abs/2402.00759](https://arxiv.org/abs/2402.00759)
-
-    本文综述了富有表现力和可处理的概率生成建模领域的进展和技术，并重点关注了概率电路。文章提供了关于表达能力和可处理性之间权衡的统一视角，并说明了设计原则和算法扩展，成功地构建了富有表现力和高效的概率电路。此外，文章还讨论了最新的深度和混合概率电路研究，并概述了未来研究的挑战和开放性问题。
+    这项研究提出了一种用于聚类矩阵形式数据的方法，可以处理其中的异常值。
 
     
 
-    我们对可处理的概率生成建模领域中的进展和技术进行了全面的调查，重点关注概率电路（PCs）。我们提供了关于表达能力和可处理性之间固有权衡的统一视角，突出了使PCs富有表现力和高效的设计原则和算法扩展，并提供了该领域的分类法。我们还讨论了最近通过融合深度神经模型概念来构建深度和混合PCs的努力，并概述了指导未来研究的挑战和开放性问题。
+    矩阵变量分布是模型聚类领域的最新添加，从而可以分析具有复杂结构（如图像和时间序列）的矩阵形式数据。由于其最近的出现，关于矩阵变量数据的文献有限，对于处理这些模型中的异常值的文献更少。本文讨论了一种用于聚类矩阵变量正态数据的方法。该方法使用子集对数似然的分布，将OCLUST算法扩展到矩阵变量正态数据，并使用迭代方法检测和剪裁异常值。
 
-    We present a comprehensive survey of the advancements and techniques in the field of tractable probabilistic generative modeling, primarily focusing on Probabilistic Circuits (PCs). We provide a unified perspective on the inherent trade-offs between expressivity and the tractability, highlighting the design principles and algorithmic extensions that have enabled building expressive and efficient PCs, and provide a taxonomy of the field. We also discuss recent efforts to build deep and hybrid PCs by fusing notions from deep neural models, and outline the challenges and open questions that can guide future research in this evolving field.
+    Matrix-variate distributions are a recent addition to the model-based clustering field, thereby making it possible to analyze data in matrix form with complex structure such as images and time series. Due to its recent appearance, there is limited literature on matrix-variate data, with even less on dealing with outliers in these models. An approach for clustering matrix-variate normal data with outliers is discussed. The approach, which uses the distribution of subset log-likelihoods, extends the OCLUST algorithm to matrix-variate normal data and uses an iterative approach to detect and trim outliers.
+    
+[^2]: 使用分数后验概率对汤普森抽样进行广义遗憾分析
+
+    Generalized Regret Analysis of Thompson Sampling using Fractional Posteriors. (arXiv:2309.06349v1 [stat.ML])
+
+    [http://arxiv.org/abs/2309.06349](http://arxiv.org/abs/2309.06349)
+
+    这项研究对使用分数后验概率的汤普森抽样算法进行了广义遗憾分析，获得了依赖于实例和实例独立的频率遗憾界。这对多臂赌博问题的解决有重要意义。
+
+    
+
+    汤普森抽样（TS）是解决随机多臂赌博问题的最流行和最早的算法之一。我们考虑了TS的一个变种，称为α-TS，其中我们使用分数或α-后验（α∈（0,1））代替标准后验分布。为了计算α-后验，标准后验的定义中的似然函数被一个因子α搅拌。对于α-TS，我们在非常温和的先验和奖励分布条件下获得了既依赖于实例的Ο（∑_{k≠i^*}Δ_k（\frac{\log(T)}{C(α)Δ_k^2}+\frac{1}{2}））也依赖于实例独立的Ο（\sqrt{KT\log K}）频率遗憾界，其中Δ_k是第k个和最好的臂的真实均值奖励之间的差，而C(α)是已知的常数。子高斯和指数族模型都满足我们对奖励分布的一般条件。我们对先验的条件是...
+
+    Thompson sampling (TS) is one of the most popular and earliest algorithms to solve stochastic multi-armed bandit problems. We consider a variant of TS, named $\alpha$-TS, where we use a fractional or $\alpha$-posterior ($\alpha\in(0,1)$) instead of the standard posterior distribution. To compute an $\alpha$-posterior, the likelihood in the definition of the standard posterior is tempered with a factor $\alpha$. For $\alpha$-TS we obtain both instance-dependent $\mathcal{O}\left(\sum_{k \neq i^*} \Delta_k\left(\frac{\log(T)}{C(\alpha)\Delta_k^2} + \frac{1}{2} \right)\right)$ and instance-independent $\mathcal{O}(\sqrt{KT\log K})$ frequentist regret bounds under very mild conditions on the prior and reward distributions, where $\Delta_k$ is the gap between the true mean rewards of the $k^{th}$ and the best arms, and $C(\alpha)$ is a known constant. Both the sub-Gaussian and exponential family models satisfy our general conditions on the reward distribution. Our conditions on the prior di
     
 
