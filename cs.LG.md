@@ -2,97 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [KTO: Model Alignment as Prospect Theoretic Optimization](https://rss.arxiv.org/abs/2402.01306) | 本文提出了一种名为KTO的方法，将模型对齐视为展望理论优化。与当前方法相比，KTO直接最大化生成效用而不是最大化偏好对数似然。在多个规模上，KTO的性能与基于偏好的方法相当甚至更好。 |
-| [^2] | [Provable Multi-Party Reinforcement Learning with Diverse Human Feedback](https://arxiv.org/abs/2403.05006) | 该研究首次提出了多方协作强化学习的理论研究，通过整合多个个体不同偏好的元学习与不同社会福利函数的采用，克服了传统RLHF方法无法捕捉并平衡多个个体偏好的局限性。 |
-| [^3] | [High-dimensional Linear Bandits with Knapsacks.](http://arxiv.org/abs/2311.01327) | 本文研究了具有背包约束的高维线性赌臂问题，利用稀疏结构实现改进遗憾。通过开发在线硬阈值算法和原始-对偶框架结合的方法，实现了对特征维度的对数改进的次线性遗憾。 |
-| [^4] | [Latent class analysis by regularized spectral clustering.](http://arxiv.org/abs/2310.18727) | 本文提出了两种新的算法用于分类数据的潜在类别模型，并通过新定义的正则化拉普拉斯矩阵计算潜在类别分析，结果表明算法具有理论收敛速度和稳定的一致性。同时提出了一个衡量潜在类别分析强度的度量标准及相关程序，通过模拟实验验证了算法的效率和准确性，并应用于实际分类数据。 |
-| [^5] | [Instance-wise Linearization of Neural Network for Model Interpretation.](http://arxiv.org/abs/2310.16295) | 这项研究提出了一种实例化线性化的方法，用于解释神经网络模型。通过给模型内部的每个输入特征分配重要得分，揭示了模型如何使用特征做出决策。这种方法有助于解决当前特征归因方法中的局限性，并提高了模型解释的准确性。 |
-| [^6] | [Understanding Uncertainty Sampling.](http://arxiv.org/abs/2307.02719) | 本研究通过系统研究流式和池式主动学习下的不确定性采样算法，提出了一个等效损失的概念，并证明不确定性采样算法实质上是针对该等效损失进行优化。 |
+| [^1] | [Fisher-Rao Gradient Flows of Linear Programs and State-Action Natural Policy Gradients](https://arxiv.org/abs/2403.19448) | 研究了基于Fisher信息矩阵的自然梯度方法在线性规划中的应用，展示了线性收敛性，提出了改进现有结果的熵正则化误差估计，并对扰动的Fisher-Rao梯度流和自然梯度流的次线性收敛性进行了研究。 |
+| [^2] | [Label Differential Privacy via Aggregation.](http://arxiv.org/abs/2310.10092) | 以前研究表明朴素的LBA和LLP不能提供标签差分隐私。但本研究显示，使用具有随机抽样的加权LBA可以提供标签差分隐私。 |
+| [^3] | [Three Factors to Improve Out-of-Distribution Detection.](http://arxiv.org/abs/2308.01030) | 本论文提出了三个因素来改善离群检测问题。首先，引入自我知识蒸馏损失以提高网络的准确性；其次，在训练过程中采样半困难离群数据以改善离群检测性能；最后，引入新型监督对比学习以同时提高离群检测性能和网络的准确性。通过结合这三个因素，我们的方法在分类和离群检测之间取得了良好的平衡，提高了准确性和离群检测性能。 |
 
 # 详细
 
-[^1]: KTO: 模型对齐视为展望理论优化
+[^1]: Fisher-Rao线性规划和状态-动作自然策略梯度的梯度流
 
-    KTO: Model Alignment as Prospect Theoretic Optimization
+    Fisher-Rao Gradient Flows of Linear Programs and State-Action Natural Policy Gradients
 
-    [https://rss.arxiv.org/abs/2402.01306](https://rss.arxiv.org/abs/2402.01306)
+    [https://arxiv.org/abs/2403.19448](https://arxiv.org/abs/2403.19448)
 
-    本文提出了一种名为KTO的方法，将模型对齐视为展望理论优化。与当前方法相比，KTO直接最大化生成效用而不是最大化偏好对数似然。在多个规模上，KTO的性能与基于偏好的方法相当甚至更好。
-
-    
-
-    凯恩曼与特沃斯基的展望理论告诉我们，人类以有偏见但明确的方式看待随机变量；例如，人们通常都是厌恶损失的。我们证明了将LLMs与人工反馈进行对齐的目标隐含地融合了许多这些偏见 - 这些目标 (例如 DPO) 的成功部分可归因于它们是"人类感知损失函数"(HALOs)。然而，这些方法所归因给人类的效用函数仍与展望理论文献中的不同。利用凯恩曼-特沃斯基人类效用的模型，我们提出了一种直接最大化生成效用而不是最大化偏好对数似然的HALO。我们将这种方法称为凯恩曼-特沃斯基优化(KTO)，并且它在从1B到30B的规模上与基于偏好的方法的性能相匹配或超过。关键是，KTO不需要偏好 - 只需要一个是否的二进制信号。
-
-    Kahneman & Tversky's $\textit{prospect theory}$ tells us that humans perceive random variables in a biased but well-defined manner; for example, humans are famously loss-averse. We show that objectives for aligning LLMs with human feedback implicitly incorporate many of these biases -- the success of these objectives (e.g., DPO) over cross-entropy minimization can partly be ascribed to them being $\textit{human-aware loss functions}$ (HALOs). However, the utility functions these methods attribute to humans still differ from those in the prospect theory literature. Using a Kahneman-Tversky model of human utility, we propose a HALO that directly maximizes the utility of generations instead of maximizing the log-likelihood of preferences, as current methods do. We call this approach Kahneman-Tversky Optimization (KTO), and it matches or exceeds the performance of preference-based methods at scales from 1B to 30B. Crucially, KTO does not need preferences -- only a binary signal of whether 
-    
-[^2]: 具有多元人类反馈的可证明多方协作强化学习
-
-    Provable Multi-Party Reinforcement Learning with Diverse Human Feedback
-
-    [https://arxiv.org/abs/2403.05006](https://arxiv.org/abs/2403.05006)
-
-    该研究首次提出了多方协作强化学习的理论研究，通过整合多个个体不同偏好的元学习与不同社会福利函数的采用，克服了传统RLHF方法无法捕捉并平衡多个个体偏好的局限性。
+    研究了基于Fisher信息矩阵的自然梯度方法在线性规划中的应用，展示了线性收敛性，提出了改进现有结果的熵正则化误差估计，并对扰动的Fisher-Rao梯度流和自然梯度流的次线性收敛性进行了研究。
 
     
 
-    用人类反馈进行强化学习（RLHF）是一种新兴范式，旨在将模型与人类偏好进行匹配。我们的工作探索了明确建模多个个体不同偏好的多方RLHF的理论研究。我们展示了传统RLHF方法如何失败，因为学习单一奖励函数无法捕捉和平衡多个个体的偏好。为了克服这些局限性，我们结合元学习来学习多个偏好，并采用不同的社会福利函数来整合多方的偏好。我们关注离线学习设置，并为优化不同社会福利函数（如Nash、Utilitarian和Leximin福利）建立样本复杂度界限，同时提供效率和公平性保证。
+    Kakade的自然策略梯度方法近年来得到广泛研究，表明在有或无正则化的情况下具有线性收敛性。我们研究了另一种基于状态-动作分布的Fisher信息矩阵的自然梯度方法，但在理论方面接受度较低。在这里，状态-动作分布在状态-动作多面体内遵循Fisher-Rao梯度流，相对于线性势。因此，我们更全面地研究线性规划的Fisher-Rao梯度流，并显示了线性收敛性，其速率取决于线性规划的几何特性。换句话说，这提供了线性规划的熵正则化引起的误差估计，这改进了现有结果。我们拓展了这些结果，并展示了对扰动的Fisher-Rao梯度流和自然梯度流的次线性收敛性，直到逼近误差。
 
-    arXiv:2403.05006v1 Announce Type: cross  Abstract: Reinforcement learning with human feedback (RLHF) is an emerging paradigm to align models with human preferences. Typically, RLHF aggregates preferences from multiple individuals who have diverse viewpoints that may conflict with each other. Our work \textit{initiates} the theoretical study of multi-party RLHF that explicitly models the diverse preferences of multiple individuals. We show how traditional RLHF approaches can fail since learning a single reward function cannot capture and balance the preferences of multiple individuals. To overcome such limitations, we incorporate meta-learning to learn multiple preferences and adopt different social welfare functions to aggregate the preferences across multiple parties. We focus on the offline learning setting and establish sample complexity bounds, along with efficiency and fairness guarantees, for optimizing diverse social welfare functions such as Nash, Utilitarian, and Leximin welfa
+    arXiv:2403.19448v1 Announce Type: cross  Abstract: Kakade's natural policy gradient method has been studied extensively in the last years showing linear convergence with and without regularization. We study another natural gradient method which is based on the Fisher information matrix of the state-action distributions and has received little attention from the theoretical side. Here, the state-action distributions follow the Fisher-Rao gradient flow inside the state-action polytope with respect to a linear potential. Therefore, we study Fisher-Rao gradient flows of linear programs more generally and show linear convergence with a rate that depends on the geometry of the linear program. Equivalently, this yields an estimate on the error induced by entropic regularization of the linear program which improves existing results. We extend these results and show sublinear convergence for perturbed Fisher-Rao gradient flows and natural gradient flows up to an approximation error. In particul
     
-[^3]: 具有背包约束的高维线性赌臂问题研究
+[^2]: 通过聚合实现标签差分隐私
 
-    High-dimensional Linear Bandits with Knapsacks. (arXiv:2311.01327v1 [cs.LG])
+    Label Differential Privacy via Aggregation. (arXiv:2310.10092v1 [cs.LG])
 
-    [http://arxiv.org/abs/2311.01327](http://arxiv.org/abs/2311.01327)
+    [http://arxiv.org/abs/2310.10092](http://arxiv.org/abs/2310.10092)
 
-    本文研究了具有背包约束的高维线性赌臂问题，利用稀疏结构实现改进遗憾。通过开发在线硬阈值算法和原始-对偶框架结合的方法，实现了对特征维度的对数改进的次线性遗憾。
-
-    
-
-    我们研究了在特征维度较大的高维设置下的具有背包约束的上下文赌臂问题。每个手臂拉动的奖励等于稀疏高维权重向量与当前到达的特征的乘积，加上额外的随机噪声。在本文中，我们研究如何利用这种稀疏结构来实现CBwK问题的改进遗憾。为此，我们首先开发了一种在线的硬阈值算法的变体，以在线方式进行稀疏估计。我们进一步将我们的在线估计器与原始-对偶框架结合起来，在每个背包约束上分配一个对偶变量，并利用在线学习算法来更新对偶变量，从而控制背包容量的消耗。我们证明了这种集成方法使我们能够实现对特征维度的对数改进的次线性遗憾，从而改进了多项式相关性。
-
-    We study the contextual bandits with knapsack (CBwK) problem under the high-dimensional setting where the dimension of the feature is large. The reward of pulling each arm equals the multiplication of a sparse high-dimensional weight vector and the feature of the current arrival, with additional random noise. In this paper, we investigate how to exploit this sparsity structure to achieve improved regret for the CBwK problem. To this end, we first develop an online variant of the hard thresholding algorithm that performs the sparse estimation in an online manner. We further combine our online estimator with a primal-dual framework, where we assign a dual variable to each knapsack constraint and utilize an online learning algorithm to update the dual variable, thereby controlling the consumption of the knapsack capacity. We show that this integrated approach allows us to achieve a sublinear regret that depends logarithmically on the feature dimension, thus improving the polynomial depend
-    
-[^4]: 通过正则化谱聚类进行潜在类别分析
-
-    Latent class analysis by regularized spectral clustering. (arXiv:2310.18727v1 [cs.LG])
-
-    [http://arxiv.org/abs/2310.18727](http://arxiv.org/abs/2310.18727)
-
-    本文提出了两种新的算法用于分类数据的潜在类别模型，并通过新定义的正则化拉普拉斯矩阵计算潜在类别分析，结果表明算法具有理论收敛速度和稳定的一致性。同时提出了一个衡量潜在类别分析强度的度量标准及相关程序，通过模拟实验验证了算法的效率和准确性，并应用于实际分类数据。
+    以前研究表明朴素的LBA和LLP不能提供标签差分隐私。但本研究显示，使用具有随机抽样的加权LBA可以提供标签差分隐私。
 
     
 
-    潜在类别模型是在社会、心理和行为科学领域识别具有共同特征的潜在类别的强大工具。在本文中，我们提出了两种新的算法来估计用于分类数据的潜在类别模型。我们的算法利用响应矩阵计算出的新定义的正则化拉普拉斯矩阵进行开发。我们通过考虑稀疏参数给出了算法的理论收敛速度，并表明在适度条件下我们的算法稳定地产生一致的潜在类别分析结果。此外，我们提出了一个衡量潜在类别分析强度的度量标准，并基于该度量标准设计了几个推断在实际分类数据中应该使用多少潜在类别的程序。通过广泛的模拟实验验证了我们算法的效率和准确性，同时将我们的算法进一步应用于实际分类数据。
+    在许多现实应用中，特别是由于隐私领域的最新发展，训练数据可以进行聚合，以保护敏感训练标签的隐私。在标签比例学习(LLP)框架中，数据集被划分为特征向量的包，只能获得每个包中标签的总和。进一步限制的限制学习(LBA)是只能获得包的特征向量的总和（可能是加权的）。我们研究这种聚合技术是否能够在标签差分隐私(label-DP)的概念下提供隐私保证，该概念之前在[Chaudhuri-Hsu'11, Ghazi et al.'21, Esfandiari et al.'22]中进行了研究。很容易看出，朴素的LBA和LLP不能提供标签差分隐私。然而，我们的主要结果表明，使用具有$m$个随机抽样的不相交$k$-大小包的加权LBA实际上是$(\varepsilon,
 
-    The latent class model is a powerful tool for identifying latent classes within populations that share common characteristics for categorical data in social, psychological, and behavioral sciences. In this article, we propose two new algorithms to estimate a latent class model for categorical data. Our algorithms are developed by using a newly defined regularized Laplacian matrix calculated from the response matrix. We provide theoretical convergence rates of our algorithms by considering a sparsity parameter and show that our algorithms stably yield consistent latent class analysis under mild conditions. Additionally, we propose a metric to capture the strength of latent class analysis and several procedures designed based on this metric to infer how many latent classes one should use for real-world categorical data. The efficiency and accuracy of our algorithms are verified by extensive simulated experiments, and we further apply our algorithms to real-world categorical data with pro
+    In many real-world applications, in particular due to recent developments in the privacy landscape, training data may be aggregated to preserve the privacy of sensitive training labels. In the learning from label proportions (LLP) framework, the dataset is partitioned into bags of feature-vectors which are available only with the sum of the labels per bag. A further restriction, which we call learning from bag aggregates (LBA) is where instead of individual feature-vectors, only the (possibly weighted) sum of the feature-vectors per bag is available. We study whether such aggregation techniques can provide privacy guarantees under the notion of label differential privacy (label-DP) previously studied in for e.g. [Chaudhuri-Hsu'11, Ghazi et al.'21, Esfandiari et al.'22].  It is easily seen that naive LBA and LLP do not provide label-DP. Our main result however, shows that weighted LBA using iid Gaussian weights with $m$ randomly sampled disjoint $k$-sized bags is in fact $(\varepsilon, 
     
-[^5]: 对于模型解释的神经网络实例化线性化
+[^3]: 提高离群检测的三个因素
 
-    Instance-wise Linearization of Neural Network for Model Interpretation. (arXiv:2310.16295v1 [cs.LG])
+    Three Factors to Improve Out-of-Distribution Detection. (arXiv:2308.01030v1 [cs.LG])
 
-    [http://arxiv.org/abs/2310.16295](http://arxiv.org/abs/2310.16295)
+    [http://arxiv.org/abs/2308.01030](http://arxiv.org/abs/2308.01030)
 
-    这项研究提出了一种实例化线性化的方法，用于解释神经网络模型。通过给模型内部的每个输入特征分配重要得分，揭示了模型如何使用特征做出决策。这种方法有助于解决当前特征归因方法中的局限性，并提高了模型解释的准确性。
-
-    
-
-    神经网络在许多科学领域取得了显著的成功。然而，神经网络模型的可解释性仍然是将这种技术应用于我们日常生活的主要瓶颈。挑战在于神经网络的非线性行为，这提出了一个关键性问题，即模型如何使用输入特征进行决策。解决这一挑战的经典方法是特征归因，它为每个输入特征分配一个重要得分，并揭示其对当前预测的重要性。然而，当前的特征归因方法经常指示每个输入特征的重要性，而没有详细说明它们在模型内部实际上是如何处理的。这些归因方法常常引发一个关注点，即它们是否正确地强调了模型预测的特征。对于神经网络模型，非线性行为通常是由模型的非线性激活单元引起的。然而，预测的计算行为往往是复杂的，这使得解释和理解模型的决策变得困难。
-
-    Neural network have achieved remarkable successes in many scientific fields. However, the interpretability of the neural network model is still a major bottlenecks to deploy such technique into our daily life. The challenge can dive into the non-linear behavior of the neural network, which rises a critical question that how a model use input feature to make a decision. The classical approach to address this challenge is feature attribution, which assigns an important score to each input feature and reveal its importance of current prediction. However, current feature attribution approaches often indicate the importance of each input feature without detail of how they are actually processed by a model internally. These attribution approaches often raise a concern that whether they highlight correct features for a model prediction.  For a neural network model, the non-linear behavior is often caused by non-linear activation units of a model. However, the computation behavior of a predict
-    
-[^6]: 理解不确定性采样
-
-    Understanding Uncertainty Sampling. (arXiv:2307.02719v1 [cs.LG])
-
-    [http://arxiv.org/abs/2307.02719](http://arxiv.org/abs/2307.02719)
-
-    本研究通过系统研究流式和池式主动学习下的不确定性采样算法，提出了一个等效损失的概念，并证明不确定性采样算法实质上是针对该等效损失进行优化。
+    本论文提出了三个因素来改善离群检测问题。首先，引入自我知识蒸馏损失以提高网络的准确性；其次，在训练过程中采样半困难离群数据以改善离群检测性能；最后，引入新型监督对比学习以同时提高离群检测性能和网络的准确性。通过结合这三个因素，我们的方法在分类和离群检测之间取得了良好的平衡，提高了准确性和离群检测性能。
 
     
 
-    不确定性采样是一种常见的主动学习算法，它顺序地查询当前预测模型对数据样本的不确定性。然而，不确定性采样的使用往往是启发式的：（i）关于在特定任务和特定损失函数下对“不确定性”的准确定义没有共识；（ii）没有理论保证能够给出一个标准协议来实施该算法，例如，在随机梯度下降等优化算法框架下如何处理顺序到达的注释数据。在本研究中，我们系统地研究了流式和池式主动学习下的不确定性采样算法。我们提出了一个等效损失的概念，该概念取决于使用的不确定性度量和原始损失函数，并确立了不确定性采样算法本质上是针对这种等效损失进行优化。这一观点验证了算法的适当性。
+    在离群检测问题中，利用辅助数据作为异常数据进行微调已经显示出令人鼓舞的性能。然而，先前的方法在分类准确性（ACC）和离群检测性能（AUROC、FPR、AUPR）之间存在权衡。为了改善这种权衡，我们做出了三个贡献：（i）引入自我知识蒸馏损失可以增强网络的准确性；（ii）采样半困难离群数据进行训练可以在对准确性影响最小的情况下改善离群检测性能；（iii）引入我们的新型监督对比学习可以同时改善离群检测性能和网络的准确性。通过结合这三个因素，我们的方法通过解决分类和离群检测之间的权衡，提高了准确性和离群检测性能。我们的方法在性能指标上都取得了比以前的方法更好的成绩。
 
-    Uncertainty sampling is a prevalent active learning algorithm that queries sequentially the annotations of data samples which the current prediction model is uncertain about. However, the usage of uncertainty sampling has been largely heuristic: (i) There is no consensus on the proper definition of "uncertainty" for a specific task under a specific loss; (ii) There is no theoretical guarantee that prescribes a standard protocol to implement the algorithm, for example, how to handle the sequentially arrived annotated data under the framework of optimization algorithms such as stochastic gradient descent. In this work, we systematically examine uncertainty sampling algorithms under both stream-based and pool-based active learning. We propose a notion of equivalent loss which depends on the used uncertainty measure and the original loss function and establish that an uncertainty sampling algorithm essentially optimizes against such an equivalent loss. The perspective verifies the properne
+    In the problem of out-of-distribution (OOD) detection, the usage of auxiliary data as outlier data for fine-tuning has demonstrated encouraging performance. However, previous methods have suffered from a trade-off between classification accuracy (ACC) and OOD detection performance (AUROC, FPR, AUPR). To improve this trade-off, we make three contributions: (i) Incorporating a self-knowledge distillation loss can enhance the accuracy of the network; (ii) Sampling semi-hard outlier data for training can improve OOD detection performance with minimal impact on accuracy; (iii) The introduction of our novel supervised contrastive learning can simultaneously improve OOD detection performance and the accuracy of the network. By incorporating all three factors, our approach enhances both accuracy and OOD detection performance by addressing the trade-off between classification and OOD detection. Our method achieves improvements over previous approaches in both performance metrics.
     
 
