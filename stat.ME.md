@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Distributionally Robust Transfer Learning.](http://arxiv.org/abs/2309.06534) | 这篇论文介绍了一种分布鲁棒的迁移学习方法，通过优化一个不确定性集合内最具对抗性的损失来实现，该集合是由源分布的凸组合生成的目标人口集合，能够有效地将迁移学习和分布鲁棒的预测模型联系起来。 |
+| [^1] | [Generalised Covariances and Correlations.](http://arxiv.org/abs/2307.03594) | 该论文广义化了协方差的概念，并用其他统计函数替代了均值，构造了广义相关性来衡量随机变量之间的依赖关系。这些新的依赖度量具有有利的特性，可以用于显示整个依赖结构，并且可以取代传统的尾部依赖系数。 |
 
 # 详细
 
-[^1]: 分布鲁棒的迁移学习
+[^1]: 广义协方差和相关性
 
-    Distributionally Robust Transfer Learning. (arXiv:2309.06534v1 [cs.LG])
+    Generalised Covariances and Correlations. (arXiv:2307.03594v1 [stat.ME] CROSS LISTED)
 
-    [http://arxiv.org/abs/2309.06534](http://arxiv.org/abs/2309.06534)
+    [http://arxiv.org/abs/2307.03594](http://arxiv.org/abs/2307.03594)
 
-    这篇论文介绍了一种分布鲁棒的迁移学习方法，通过优化一个不确定性集合内最具对抗性的损失来实现，该集合是由源分布的凸组合生成的目标人口集合，能够有效地将迁移学习和分布鲁棒的预测模型联系起来。
+    该论文广义化了协方差的概念，并用其他统计函数替代了均值，构造了广义相关性来衡量随机变量之间的依赖关系。这些新的依赖度量具有有利的特性，可以用于显示整个依赖结构，并且可以取代传统的尾部依赖系数。
 
     
 
-    许多现有的迁移学习方法依赖于利用与目标数据相似的源数据的信息。然而，这种方法经常忽视了可能存在于不同但潜在相关的辅助样本中的有价值的知识。当处理有限的目标数据和多样化的源模型时，我们的论文引入了一种新颖的方法，分布鲁棒迁移学习（TransDRO），它摆脱了严格的相似性约束。TransDRO通过在一个不确定性集合内优化最具对抗性的损失来设计，该集合定义为由源分布的凸组合生成的目标人口的集合，保证了对目标数据的出色预测性能。TransDRO有效地将迁移学习和分布鲁棒的预测模型联系起来。我们建立了TransDRO的可辨识性和其作为最接近源模型的加权平均值的解释。
+    两个随机变量的协方差衡量它们相对于各自均值的联合偏差的平均值。我们通过用其他统计函数（如分位数、期望量、或阈值）替代均值来推广这个众所周知的度量。这些函数的偏差通过广义误差定义，通常由识别或矩函数引发。作为一种归一化的依赖度量，我们构造了广义相关性。通过用一种新颖的Fr\'echet-Hoeffding归一化替代常见的Cauchy-Schwarz归一化，我们获得了对于任何给定边缘分布，整个区间$[-1, 1]$的可达性。我们发现了这些新的依赖度量的有利特性。分位数和阈值相关性的家族产生了函数值分布相关性，显示了整个依赖结构。它们导致了尾部相关性，这可能应该取代尾部依赖系数。最后，我们构造了摘要协方差（corre）
 
-    Many existing transfer learning methods rely on leveraging information from source data that closely resembles the target data. However, this approach often overlooks valuable knowledge that may be present in different yet potentially related auxiliary samples. When dealing with a limited amount of target data and a diverse range of source models, our paper introduces a novel approach, Distributionally Robust Optimization for Transfer Learning (TransDRO), that breaks free from strict similarity constraints. TransDRO is designed to optimize the most adversarial loss within an uncertainty set, defined as a collection of target populations generated as a convex combination of source distributions that guarantee excellent prediction performances for the target data. TransDRO effectively bridges the realms of transfer learning and distributional robustness prediction models. We establish the identifiability of TransDRO and its interpretation as a weighted average of source models closest to
+    The covariance of two random variables measures the average joint deviations from their respective means. We generalise this well-known measure by replacing the means with other statistical functionals such as quantiles, expectiles, or thresholds. Deviations from these functionals are defined via generalised errors, often induced by identification or moment functions. As a normalised measure of dependence, a generalised correlation is constructed. Replacing the common Cauchy-Schwarz normalisation by a novel Fr\'echet-Hoeffding normalisation, we obtain attainability of the entire interval $[-1, 1]$ for any given marginals. We uncover favourable properties of these new dependence measures. The families of quantile and threshold correlations give rise to function-valued distributional correlations, exhibiting the entire dependence structure. They lead to tail correlations, which should arguably supersede the coefficients of tail dependence. Finally, we construct summary covariances (corre
     
 
