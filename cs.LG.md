@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Dynamic deep-reinforcement-learning algorithm in Partially Observed Markov Decision Processes.](http://arxiv.org/abs/2307.15931) | 本研究研究了在部分可观测马尔可夫决策过程中解决的动作序列的好处，并提出了几种扩展深度强化学习算法的结构和方法。 |
+| [^1] | [Reliable Learning for Test-time Attacks and Distribution Shift.](http://arxiv.org/abs/2304.03370) | 本文提出了可靠的学习方法以抵御测试时攻击和分布偏移，在测试时引入了新的可靠性保障方法，确保预测结果正确。同时，该学习方法能够适应任意测试点，具有非常好的可靠性。 |
 
 # 详细
 
-[^1]: 部分可观测马尔可夫决策过程中的动态深度强化学习算法
+[^1]: 可靠的学习方法应对测试时攻击与分布偏移
 
-    Dynamic deep-reinforcement-learning algorithm in Partially Observed Markov Decision Processes. (arXiv:2307.15931v1 [cs.LG])
+    Reliable Learning for Test-time Attacks and Distribution Shift. (arXiv:2304.03370v1 [cs.LG])
 
-    [http://arxiv.org/abs/2307.15931](http://arxiv.org/abs/2307.15931)
+    [http://arxiv.org/abs/2304.03370](http://arxiv.org/abs/2304.03370)
 
-    本研究研究了在部分可观测马尔可夫决策过程中解决的动作序列的好处，并提出了几种扩展深度强化学习算法的结构和方法。
+    本文提出了可靠的学习方法以抵御测试时攻击和分布偏移，在测试时引入了新的可靠性保障方法，确保预测结果正确。同时，该学习方法能够适应任意测试点，具有非常好的可靠性。
 
     
 
-    在最近的研究中，强化学习取得了很大的进步，并且在实际应用中引起了越来越多的兴趣。在许多情况下，由于非静态干扰，使得智能体难以保持性能。这种干扰产生了被称为部分可观测马尔可夫决策过程的环境。在实践中，部分可观测马尔可夫决策过程通过引入额外的估计器或在强化学习的上下文中使用递归神经网络来处理。这两种情况都需要处理轨迹上的序列信息。然而，目前只有很少有研究探讨要考虑的信息的影响以及处理它们的网络结构。本研究展示了在解决部分可观测马尔可夫决策过程时包含动作序列的好处，并提出了几种结构和方法来扩展最新的深度强化学习算法。
+    机器学习算法经常被用于即使经过精心获得的训练数据也无法准确捕捉的环境中，这既可能是由于测试时的“对抗性”攻击，也可能是因为“自然”的数据分布偏移。针对测试时攻击，我们提出并分析一种新颖的稳健性可靠性保证方法，要求学习器输出一个可靠半径 $\eta$ 的预测结果，意味着只要对手没有扰动测试点超过距离 $\eta$，它的预测结果就是正确的。我们提供了在任意测试点上都能输出最佳可靠性半径的最优学习器，并且特征化了可靠区域即可达到给定可靠性半径的点集。我们还分析了在分布偏移下的可靠学习方法，其中测试点可能来自于一个与训练分布不同的任意分布 $Q$。
 
-    Reinforcement learning has been greatly improved in recent studies and an increased interest in real-world implementation has emerged in recent years. In many cases, due to the non-static disturbances, it becomes challenging for the agent to keep the performance. The disturbance results in the environment called Partially Observable Markov Decision Process. In common practice, Partially Observable Markov Decision Process is handled by introducing an additional estimator, or Recurrent Neural Network is utilized in the context of reinforcement learning. Both of the cases require to process sequential information on the trajectory. However, there are only a few studies investigating the effect of information to consider and the network structure to handle them. This study shows the benefit of action sequence inclusion in order to solve Partially Observable Markov Decision Process. Several structures and approaches are proposed to extend one of the latest deep reinforcement learning algori
+    Machine learning algorithms are often used in environments which are not captured accurately even by the most carefully obtained training data, either due to the possibility of `adversarial' test-time attacks, or on account of `natural' distribution shift. For test-time attacks, we introduce and analyze a novel robust reliability guarantee, which requires a learner to output predictions along with a reliability radius $\eta$, with the meaning that its prediction is guaranteed to be correct as long as the adversary has not perturbed the test point farther than a distance $\eta$. We provide learners that are optimal in the sense that they always output the best possible reliability radius on any test point, and we characterize the reliable region, i.e. the set of points where a given reliability radius is attainable. We additionally analyze reliable learners under distribution shift, where the test points may come from an arbitrary distribution Q different from the training distribution 
     
 
