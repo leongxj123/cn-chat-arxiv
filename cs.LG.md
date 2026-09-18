@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Reliable Learning for Test-time Attacks and Distribution Shift.](http://arxiv.org/abs/2304.03370) | 本文提出了可靠的学习方法以抵御测试时攻击和分布偏移，在测试时引入了新的可靠性保障方法，确保预测结果正确。同时，该学习方法能够适应任意测试点，具有非常好的可靠性。 |
+| [^1] | [Estimation of multiple mean vectors in high dimension](https://arxiv.org/abs/2403.15038) | 通过凸组合的方法估计高维空间中不同概率分布的多维均值，引入了两种权重确定策略：一种通过测试程序识别低方差的相邻均值，提出了封闭形式插补公式；另一种通过最小化二次风险的上置信界确定权重，通过理论分析得出方法对经验均值的二次风险改进，在维度渐近的角度上渐近地接近 Oracle（Minimax）改进。 |
 
 # 详细
 
-[^1]: 可靠的学习方法应对测试时攻击与分布偏移
+[^1]: 高维情况下多个均值向量的估计
 
-    Reliable Learning for Test-time Attacks and Distribution Shift. (arXiv:2304.03370v1 [cs.LG])
+    Estimation of multiple mean vectors in high dimension
 
-    [http://arxiv.org/abs/2304.03370](http://arxiv.org/abs/2304.03370)
+    [https://arxiv.org/abs/2403.15038](https://arxiv.org/abs/2403.15038)
 
-    本文提出了可靠的学习方法以抵御测试时攻击和分布偏移，在测试时引入了新的可靠性保障方法，确保预测结果正确。同时，该学习方法能够适应任意测试点，具有非常好的可靠性。
+    通过凸组合的方法估计高维空间中不同概率分布的多维均值，引入了两种权重确定策略：一种通过测试程序识别低方差的相邻均值，提出了封闭形式插补公式；另一种通过最小化二次风险的上置信界确定权重，通过理论分析得出方法对经验均值的二次风险改进，在维度渐近的角度上渐近地接近 Oracle（Minimax）改进。
 
     
 
-    机器学习算法经常被用于即使经过精心获得的训练数据也无法准确捕捉的环境中，这既可能是由于测试时的“对抗性”攻击，也可能是因为“自然”的数据分布偏移。针对测试时攻击，我们提出并分析一种新颖的稳健性可靠性保证方法，要求学习器输出一个可靠半径 $\eta$ 的预测结果，意味着只要对手没有扰动测试点超过距离 $\eta$，它的预测结果就是正确的。我们提供了在任意测试点上都能输出最佳可靠性半径的最优学习器，并且特征化了可靠区域即可达到给定可靠性半径的点集。我们还分析了在分布偏移下的可靠学习方法，其中测试点可能来自于一个与训练分布不同的任意分布 $Q$。
+    我们致力于基于独立样本在一个共同空间中估计来自不同概率分布的多维均值。我们的方法是通过对这些样本导出的经验均值进行凸组合来形成估计量。我们引入了两种策略来找到适当的依赖于数据的凸组合权重：第一种利用测试程序来识别具有低方差的相邻均值，从而产生了一个关于权重的封闭形式插补公式；第二种通过最小化二次风险的上置信区间来确定权重。通过理论分析，我们评估了我们的方法相对于经验均值提供的二次风险改进。我们的分析集中在维度渐近的角度上，显示我们的方法在数据的有效维度增加时渐近地接近于一个 Oracle（Minimax）改进。我们展示了通过提出的方法在均值估计中的应用。
 
-    Machine learning algorithms are often used in environments which are not captured accurately even by the most carefully obtained training data, either due to the possibility of `adversarial' test-time attacks, or on account of `natural' distribution shift. For test-time attacks, we introduce and analyze a novel robust reliability guarantee, which requires a learner to output predictions along with a reliability radius $\eta$, with the meaning that its prediction is guaranteed to be correct as long as the adversary has not perturbed the test point farther than a distance $\eta$. We provide learners that are optimal in the sense that they always output the best possible reliability radius on any test point, and we characterize the reliable region, i.e. the set of points where a given reliability radius is attainable. We additionally analyze reliable learners under distribution shift, where the test points may come from an arbitrary distribution Q different from the training distribution 
+    arXiv:2403.15038v1 Announce Type: cross  Abstract: We endeavour to estimate numerous multi-dimensional means of various probability distributions on a common space based on independent samples. Our approach involves forming estimators through convex combinations of empirical means derived from these samples. We introduce two strategies to find appropriate data-dependent convex combination weights: a first one employing a testing procedure to identify neighbouring means with low variance, which results in a closed-form plug-in formula for the weights, and a second one determining weights via minimization of an upper confidence bound on the quadratic risk.Through theoretical analysis, we evaluate the improvement in quadratic risk offered by our methods compared to the empirical means. Our analysis focuses on a dimensional asymptotics perspective, showing that our methods asymptotically approach an oracle (minimax) improvement as the effective dimension of the data increases.We demonstrat
     
 
