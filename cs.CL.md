@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Hierarchical attention interpretation: an interpretable speech-level transformer for bi-modal depression detection.](http://arxiv.org/abs/2309.13476) | 本文提出了一种双模式语音级变换器，通过引入分层解释方法解决了自动抑郁症检测工具中的标注噪声和模型解释性问题，同时展示了其在性能上的优势。该模型通过梯度加权注意力图追踪输入特征之间的交互作用，可以提供语音级和句子级的解释。 |
+| [^1] | [VOLTA: Improving Generative Diversity by Variational Mutual Information Maximizing Autoencoder](https://arxiv.org/abs/2307.00852) | VOLTA通过Transformer与VAE框架的更有效连接，InfoGAN风格潜在编码以及支持离散输入，提升了生成多样性 |
 
 # 详细
 
-[^1]: 分层注意解释：一种用于双模式抑郁症检测的可解释性语音级变换器
+[^1]: 通过最大化变分互信息的自编码器改进生成多样性的VOLTA
 
-    Hierarchical attention interpretation: an interpretable speech-level transformer for bi-modal depression detection. (arXiv:2309.13476v2 [cs.CL] UPDATED)
+    VOLTA: Improving Generative Diversity by Variational Mutual Information Maximizing Autoencoder
 
-    [http://arxiv.org/abs/2309.13476](http://arxiv.org/abs/2309.13476)
+    [https://arxiv.org/abs/2307.00852](https://arxiv.org/abs/2307.00852)
 
-    本文提出了一种双模式语音级变换器，通过引入分层解释方法解决了自动抑郁症检测工具中的标注噪声和模型解释性问题，同时展示了其在性能上的优势。该模型通过梯度加权注意力图追踪输入特征之间的交互作用，可以提供语音级和句子级的解释。
+    VOLTA通过Transformer与VAE框架的更有效连接，InfoGAN风格潜在编码以及支持离散输入，提升了生成多样性
 
     
 
-    抑郁症是一种常见的心理障碍。使用机器学习实现的语音自动抑郁症检测工具有助于早期筛查抑郁症。本文针对这类工具可能存在的两个限制进行了探讨：由分段级标注导致的噪声和模型解释性的缺乏。我们提出了一种双模式语音级变换器来避免分段级标注，同时引入了一种层次化解释方法，根据从所有注意力层导出的梯度加权注意力图来追踪输入特征之间的交互作用，以提供语音级和句子级解释。我们展示了所提出的模型优于在分段级学习的模型（$p$=0.854, $r$=0.947, $F1$=0.897，与$p$=0.732, $r$=0.808, $F1$=0.768相比）。在模型解释方面，使用一个真实阳性样本，我们展示了哪些句子对于抑郁症检测相关性最高，以及哪些文本标记和Mel声谱图与之相关。
+    自然语言生成领域得益于Transformer模型取得了巨大成功。虽然它们实现了最先进的生成质量，但往往忽视了生成多样性。先前尝试解决这一问题的方法要么容量较低，要么结构过于复杂。一些最近的方法采用VAE框架增强多样性，但它们的潜在变量完全依赖于输入上下文，限制了潜在空间的探索。在本文中，我们介绍了VOLTA，通过更有效的基于交叉注意力的连接将Transformer与VAE联系起来，从传统的嵌入连接或求和中脱颖而出，提升了生成多样性。此外，我们提议整合InfoGAN风格的潜在编码以实现输入独立的变化性，进一步使生成多样化。此外，我们的框架除了支持现有的连续输入外，还支持离散输入。
 
-    Depression is a common mental disorder. Automatic depression detection tools using speech, enabled by machine learning, help early screening of depression. This paper addresses two limitations that may hinder the clinical implementations of such tools: noise resulting from segment-level labelling and a lack of model interpretability. We propose a bi-modal speech-level transformer to avoid segment-level labelling and introduce a hierarchical interpretation approach to provide both speech-level and sentence-level interpretations, based on gradient-weighted attention maps derived from all attention layers to track interactions between input features. We show that the proposed model outperforms a model that learns at a segment level ($p$=0.854, $r$=0.947, $F1$=0.897 compared to $p$=0.732, $r$=0.808, $F1$=0.768). For model interpretation, using one true positive sample, we show which sentences within a given speech are most relevant to depression detection; and which text tokens and Mel-spe
+    arXiv:2307.00852v2 Announce Type: replace  Abstract: The natural language generation domain has witnessed great success thanks to Transformer models. Although they have achieved state-of-the-art generative quality, they often neglect generative diversity. Prior attempts to tackle this issue suffer from either low model capacity or over-complicated architectures. Some recent methods employ the VAE framework to enhance diversity, but their latent variables fully depend on the input context, restricting exploration of the latent space. In this paper, we introduce VOLTA, a framework that elevates generative diversity by bridging Transformer with VAE via a more effective cross-attention-based connection, departing from conventional embedding concatenation or summation. Additionally, we propose integrating InfoGAN-style latent codes to enable input-independent variability, further diversifying the generation. Moreover, our framework accommodates discrete inputs alongside its existing support
     
 
