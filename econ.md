@@ -2,52 +2,52 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Moen Meets Rotemberg: An Earthly Model of the Divine Coincidence.](http://arxiv.org/abs/2401.12475) | 本文提出了一个关于神圣巧合的模型，解释了其在美国数据中的最近出现。该模型通过Moen的有向搜索和Rotemberg的价格调整成本，建立了失业与通胀之间的菲利普斯曲线，并保证了充分就业和价格稳定任务的一致性。 |
-| [^2] | [Switchback Experiments under Geometric Mixing.](http://arxiv.org/abs/2209.00197) | 本文研究了几何混合条件下的切换试验性质，并发现在该设置下，标准的切换设计受到了延续偏差的影响，但是通过谨慎使用初始燃烧期可以显著改善情况，实现误差以更慢的速度衰减。 |
-| [^3] | [Optimal Stratification of Survey Experiments.](http://arxiv.org/abs/2111.08157) | 本文研究了调查实验的最优分层设计，引入了细致分层设计方法，并提供了解决具有异质成本和固定预算的最优设计问题的简单启发式方法。这种设计能够减小治疗效应估计的方差，并提供了高效的一致估计和渐近确切推断方法。 |
+| [^1] | [Distributional Treatment Effect with Finite Mixture](https://arxiv.org/abs/2403.18503) | 本文提出了使用有限混合模型和控制协变量来处理处理效应分布的方法。 |
+| [^2] | [Difference-in-Differences with Unpoolable Data](https://arxiv.org/abs/2403.15910) | 该研究提出了一种创新方法 UN--DID，用于估计具有不可混合数据的差异中的差异，并通过调整附加协变量、多组和错开采纳来提供有关受试者平均处理效应（ATT）的估计。 |
+| [^3] | [Beta-Sorted Portfolios.](http://arxiv.org/abs/2208.10974) | 该论文对Beta分类组合投资组合进行了研究，通过将过程形式化为一个由非参数第一步和Beta自适应投资组合构建组成的两步非参数估计器，解释了该估计算法的关键特征，并提供了条件以确保一致性和渐近正态性。 |
 
 # 详细
 
-[^1]: Moen遇到Rotemberg: 一个关于神圣巧合的实际模型
+[^1]: 具有有限混合的分布式处理效应
 
-    Moen Meets Rotemberg: An Earthly Model of the Divine Coincidence. (arXiv:2401.12475v1 [econ.TH])
+    Distributional Treatment Effect with Finite Mixture
 
-    [http://arxiv.org/abs/2401.12475](http://arxiv.org/abs/2401.12475)
+    [https://arxiv.org/abs/2403.18503](https://arxiv.org/abs/2403.18503)
 
-    本文提出了一个关于神圣巧合的模型，解释了其在美国数据中的最近出现。该模型通过Moen的有向搜索和Rotemberg的价格调整成本，建立了失业与通胀之间的菲利普斯曲线，并保证了充分就业和价格稳定任务的一致性。
-
-    
-
-    本文提出了一个关于神圣巧合的模型，解释了其在美国数据中的最近出现。神圣巧合的重要性在于，它有助于解释疫情后通胀的行为，并保证了美联储的充分就业和价格稳定任务的一致性。在该模型中，失业与通胀之间的菲利普斯曲线源自Moen（1997）的有向搜索。由于Rotemberg（1982）的价格调整成本，该菲利普斯曲线是非垂直的。该模型的菲利普斯曲线保证了在失业率有效时通胀率保持在目标水平上，从而产生了神圣巧合。如果我们假设工资的降低（降低了员工的士气）对生产者来说比价格的上涨（使顾客不满意）更加成本高昂，那么菲利普斯曲线在神圣巧合点也会显示出一个拐点。
-
-    This paper proposes a model of the divine coincidence, explaining its recent appearance in US data. The divine coincidence matters because it helps explain the behavior of inflation after the pandemic, and it guarantees that the full-employment and price-stability mandates of the Federal Reserve coincide. In the model, a Phillips curve relating unemployment to inflation arises from Moen's (1997) directed search. The Phillips curve is nonvertical thanks to Rotemberg's (1982) price-adjustment costs. The model's Phillips curve guarantees that the rate of inflation is on target whenever the rate of unemployment is efficient, generating the divine coincidence. If we assume that wage decreases -- which reduce workers' morale -- are more costly to producers than price increases -- which upset customers -- the Phillips curve also displays a kink at the point of divine coincidence.
-    
-[^2]: 几何混合条件下的切换试验
-
-    Switchback Experiments under Geometric Mixing. (arXiv:2209.00197v2 [stat.ME] UPDATED)
-
-    [http://arxiv.org/abs/2209.00197](http://arxiv.org/abs/2209.00197)
-
-    本文研究了几何混合条件下的切换试验性质，并发现在该设置下，标准的切换设计受到了延续偏差的影响，但是通过谨慎使用初始燃烧期可以显著改善情况，实现误差以更慢的速度衰减。
+    本文提出了使用有限混合模型和控制协变量来处理处理效应分布的方法。
 
     
 
-    切换试验是一种通过反复对整个系统开启和关闭干预来测量治疗效果的实验设计。切换试验是克服单元间溢出效应的一种强大方法；然而，它们容易受到时间延续的偏差影响。本文研究在几何混合条件下的马尔可夫系统中的切换试验性质。我们发现，在这种情况下，标准的切换设计在延续偏差方面受到了较大的影响：它们的估计误差随着实验时间跨度$T$的增加而衰减为$T^{-1/3}$，而在没有延续效应的情况下，更快的$T^{-1/2}$衰减速度是可能的。然而，我们还展示了谨慎使用初始燃烧期可以大大改善情况，并且实现误差以$\log(T)^{1/2}T^{-1/2}$的速度衰减。我们的形式结果在实证评估中得到了验证。
+    处理效应的异质性在评估治疗时非常重要。然而，即使在二元处理的简单情况下，由于我们无法观察到给定个体的已处理潜在结果和未处理潜在结果的基本限制，处理效应的分布也很难确定。本文在潜在结果上假设了一个有限混合模型和一个控制协变量向量，以解决处理内生性，并对每种类型的潜在结果和协变量施加了马尔可夫条件，以确定处理效应分布。有限混合模型的混合权重通过非负矩阵分解算法一致估计，从而使我们能够一致地估计组件分布参数，包括处理效应分布的参数。
 
-    The switchback is an experimental design that measures treatment effects by repeatedly turning an intervention on and off for a whole system. Switchback experiments are a robust way to overcome cross-unit spillover effects; however, they are vulnerable to bias from temporal carryovers. In this paper, we consider properties of switchback experiments in Markovian systems that mix at a geometric rate. We find that, in this setting, standard switchback designs suffer considerably from carryover bias: Their estimation error decays as $T^{-1/3}$ in terms of the experiment horizon $T$, whereas in the absence of carryovers a faster rate of $T^{-1/2}$ would have been possible. We also show, however, that judicious use of burn-in periods can considerably improve the situation, and enables errors that decay as $\log(T)^{1/2}T^{-1/2}$. Our formal results are mirrored in an empirical evaluation.
+    arXiv:2403.18503v1 Announce Type: new  Abstract: Treatment effect heterogeneity is of a great concern when evaluating the treatment. However, even with a simple case of a binary treatment, the distribution of treatment effect is difficult to identify due to the fundamental limitation that we cannot observe both treated potential outcome and untreated potential outcome for a given individual. This paper assumes a finite mixture model on the potential outcomes and a vector of control covariates to address treatment endogeneity and imposes a Markov condition on the potential outcomes and covariates within each type to identify the treatment effect distribution. The mixture weights of the finite mixture model are consistently estimated with a nonnegative matrix factorization algorithm, thus allowing us to consistently estimate the component distribution parameters, including ones for the treatment effect distribution.
     
-[^3]: 调查实验的最优分层
+[^2]: 具有不可混合数据的差异中的差异
 
-    Optimal Stratification of Survey Experiments. (arXiv:2111.08157v2 [econ.EM] UPDATED)
+    Difference-in-Differences with Unpoolable Data
 
-    [http://arxiv.org/abs/2111.08157](http://arxiv.org/abs/2111.08157)
+    [https://arxiv.org/abs/2403.15910](https://arxiv.org/abs/2403.15910)
 
-    本文研究了调查实验的最优分层设计，引入了细致分层设计方法，并提供了解决具有异质成本和固定预算的最优设计问题的简单启发式方法。这种设计能够减小治疗效应估计的方差，并提供了高效的一致估计和渐近确切推断方法。
+    该研究提出了一种创新方法 UN--DID，用于估计具有不可混合数据的差异中的差异，并通过调整附加协变量、多组和错开采纳来提供有关受试者平均处理效应（ATT）的估计。
 
     
 
-    本文研究了一个两阶段的实验模型，研究人员首先从一个符合条件的样本池中抽取代表性单位，然后将每个抽样单位分配到治疗组或对照组。为了实现平衡抽样和分配，我们引入了一种新的细致分层设计，将匹配对随机分配推广到概率p(x)不等于1/2的情况。我们展示了两阶段分层非参数地减小了治疗效应估计的方差。我们制定并解决了具有异质成本和固定预算的最优分层问题，提供了简单的启发式方法来确定最优设计。在具有试点数据的情况下，我们展示了实施这种设计的一致估计也是高效的，可以在预算约束条件下最小化渐近方差。我们还提供了新的渐近确切推断方法，使实验者能够充分利用分层抽样和分配带来的效率提高。应用于
+    在本研究中，我们确定并放宽了差异中的差异（DID）估计中数据“可混合性”的假设。由于数据隐私问题，往往无法组合来自受试者和对照组的观测数据，因此可混合性不可行。例如，存储在安全设施中的行政健康数据往往无法跨不同司法管辖区组合。我们提出了一种创新方法来估计具有不可混合数据的DID：UN--DID。我们的方法包括对附加协变量、多组和错开采纳进行调整。在没有协变量的情况下，UN--DID和传统DID给出了相同的受试者平均处理效应（ATT）估计。有协变量时，我们通过数学和模拟表明UN--DID和传统DID提供了不同但同样信息丰富的ATT估计。一个实证示例进一步强调了我们方法的实用性。
 
-    This paper studies a two-stage model of experimentation, where the researcher first samples representative units from an eligible pool, then assigns each sampled unit to treatment or control. To implement balanced sampling and assignment, we introduce a new family of finely stratified designs that generalize matched pairs randomization to propensities p(x) not equal to 1/2. We show that two-stage stratification nonparametrically dampens the variance of treatment effect estimation. We formulate and solve the optimal stratification problem with heterogeneous costs and fixed budget, providing simple heuristics for the optimal design. In settings with pilot data, we show that implementing a consistent estimate of this design is also efficient, minimizing asymptotic variance subject to the budget constraint. We also provide new asymptotically exact inference methods, allowing experimenters to fully exploit the efficiency gains from both stratified sampling and assignment. An application to 
+    arXiv:2403.15910v1 Announce Type: new  Abstract: In this study, we identify and relax the assumption of data "poolability" in difference-in-differences (DID) estimation. Poolability, or the combination of observations from treated and control units into one dataset, is often not possible due to data privacy concerns. For instance, administrative health data stored in secure facilities is often not combinable across jurisdictions. We propose an innovative approach to estimate DID with unpoolable data: UN--DID. Our method incorporates adjustments for additional covariates, multiple groups, and staggered adoption. Without covariates, UN--DID and conventional DID give identical estimates of the average treatment effect on the treated (ATT). With covariates, we show mathematically and through simulations that UN--DID and conventional DID provide different, but equally informative, estimates of the ATT. An empirical example further underscores the utility of our methodology. The UN--DID meth
+    
+[^3]: Beta分类组合投资组合研究
+
+    Beta-Sorted Portfolios. (arXiv:2208.10974v2 [econ.EM] UPDATED)
+
+    [http://arxiv.org/abs/2208.10974](http://arxiv.org/abs/2208.10974)
+
+    该论文对Beta分类组合投资组合进行了研究，通过将过程形式化为一个由非参数第一步和Beta自适应投资组合构建组成的两步非参数估计器，解释了该估计算法的关键特征，并提供了条件以确保一致性和渐近正态性。
+
+    
+
+    Beta分类组合投资组合是由与选择的风险因素具有类似协变性的资产组成的，是经济金融领域中分析(条件)预期收益模型的常用工具。尽管使用广泛，但与可比的两步回归等程序相比，对其统计性质知之甚少。我们通过将该过程作为一个由非参数第一步和Beta自适应投资组合构建组成的两步非参数估计器来形式化研究Beta分类组合投资组合回报的性质。我们的框架基于一般数据生成过程上的精确经济和统计假设，从而解释了众所周知的估计算法，并揭示了其关键特征。我们研究了单个截面和随时间聚合（例如总体均值）的Beta分类组合投资组合，提供了确保一致性和渐近正态性的条件，同时还提供了新的均一推断过程，允许不确定性。
+
+    Beta-sorted portfolios -- portfolios comprised of assets with similar covariation to selected risk factors -- are a popular tool in empirical finance to analyze models of (conditional) expected returns. Despite their widespread use, little is known of their statistical properties in contrast to comparable procedures such as two-pass regressions. We formally investigate the properties of beta-sorted portfolio returns by casting the procedure as a two-step nonparametric estimator with a nonparametric first step and a beta-adaptive portfolios construction. Our framework rationalize the well-known estimation algorithm with precise economic and statistical assumptions on the general data generating process and characterize its key features. We study beta-sorted portfolios for both a single cross-section as well as for aggregation over time (e.g., the grand mean), offering conditions that ensure consistency and asymptotic normality along with new uniform inference procedures allowing for unc
     
 
