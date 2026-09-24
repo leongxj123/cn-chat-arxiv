@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Subgoal Search For Complex Reasoning Tasks](https://arxiv.org/abs/2108.11204) | 提出了子目标搜索（kSubS）方法，通过学习的子目标生成器产生多样性的子目标，减少搜索空间并在Sokoban、魔方和不等式证明三个领域取得了强大的结果。 |
+| [^1] | [Asynchronous Perception-Action-Communication with Graph Neural Networks.](http://arxiv.org/abs/2309.10164) | 该论文提出了使用图神经网络实现异步感知-动作-通信的方法，解决了在大型机器人群体中协作和通信的挑战。现有的框架假设顺序执行，该方法是完全分散的，但在评估和部署方面仍存在一些限制。 |
 
 # 详细
 
-[^1]: 复杂推理任务的子目标搜索
+[^1]: 异步感知-动作-通信与图神经网络
 
-    Subgoal Search For Complex Reasoning Tasks
+    Asynchronous Perception-Action-Communication with Graph Neural Networks. (arXiv:2309.10164v1 [cs.RO])
 
-    [https://arxiv.org/abs/2108.11204](https://arxiv.org/abs/2108.11204)
+    [http://arxiv.org/abs/2309.10164](http://arxiv.org/abs/2309.10164)
 
-    提出了子目标搜索（kSubS）方法，通过学习的子目标生成器产生多样性的子目标，减少搜索空间并在Sokoban、魔方和不等式证明三个领域取得了强大的结果。
+    该论文提出了使用图神经网络实现异步感知-动作-通信的方法，解决了在大型机器人群体中协作和通信的挑战。现有的框架假设顺序执行，该方法是完全分散的，但在评估和部署方面仍存在一些限制。
 
     
 
-    人类擅长通过从一个想法移动到相关的想法的思维过程来解决复杂的推理任务。受此启发，我们提出了子目标搜索（kSubS）方法。其关键组件是一个学习的子目标生成器，产生多样性的既可实现又接近解决方案的子目标。使用子目标可以减少搜索空间，并引入适合高效规划的高级搜索图。本文中，我们使用基于Transformer的子目标模块结合经典的最佳优先搜索框架来实现kSubS。我们展示了一种简单的生成第$k$步子目标的方法在三个具有挑战性的领域上表现出惊人的效率：两个流行的益智游戏Sokoban和魔方以及不等式证明基准INT。kSubS在适度的计算预算内取得了强大的结果，包括在INT上的最新成果。
+    在大型机器人群体中实现共同的全局目标的协作是一个具有挑战性的问题，因为机器人的感知和通信能力有限。机器人必须执行感知-动作-通信（PAC）循环-它们感知局部环境，与其他机器人通信，并实时采取行动。分散的PAC系统面临的一个基本挑战是决定与相邻机器人通信的信息以及如何在利用邻居共享的信息的同时采取行动。最近，使用图神经网络（GNNs）来解决这个问题已经取得了一些进展，比如在群集和覆盖控制等应用中。虽然在概念上，GNN策略是完全分散的，但评估和部署这样的策略主要仍然是集中式的或具有限制性的分散式。此外，现有的框架假设感知和动作推理的顺序执行，这在现实世界的应用中非常限制性。
 
-    arXiv:2108.11204v3 Announce Type: replace  Abstract: Humans excel in solving complex reasoning tasks through a mental process of moving from one idea to a related one. Inspired by this, we propose Subgoal Search (kSubS) method. Its key component is a learned subgoal generator that produces a diversity of subgoals that are both achievable and closer to the solution. Using subgoals reduces the search space and induces a high-level search graph suitable for efficient planning. In this paper, we implement kSubS using a transformer-based subgoal module coupled with the classical best-first search framework. We show that a simple approach of generating $k$-th step ahead subgoals is surprisingly efficient on three challenging domains: two popular puzzle games, Sokoban and the Rubik's Cube, and an inequality proving benchmark INT. kSubS achieves strong results including state-of-the-art on INT within a modest computational budget.
+    Collaboration in large robot swarms to achieve a common global objective is a challenging problem in large environments due to limited sensing and communication capabilities. The robots must execute a Perception-Action-Communication (PAC) loop -- they perceive their local environment, communicate with other robots, and take actions in real time. A fundamental challenge in decentralized PAC systems is to decide what information to communicate with the neighboring robots and how to take actions while utilizing the information shared by the neighbors. Recently, this has been addressed using Graph Neural Networks (GNNs) for applications such as flocking and coverage control. Although conceptually, GNN policies are fully decentralized, the evaluation and deployment of such policies have primarily remained centralized or restrictively decentralized. Furthermore, existing frameworks assume sequential execution of perception and action inference, which is very restrictive in real-world applica
     
 
