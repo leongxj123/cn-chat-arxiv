@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Asynchronous Perception-Action-Communication with Graph Neural Networks.](http://arxiv.org/abs/2309.10164) | 该论文提出了使用图神经网络实现异步感知-动作-通信的方法，解决了在大型机器人群体中协作和通信的挑战。现有的框架假设顺序执行，该方法是完全分散的，但在评估和部署方面仍存在一些限制。 |
+| [^1] | [DCRMTA: Unbiased Causal Representation for Multi-touch Attribution.](http://arxiv.org/abs/2401.08875) | DCRMTA提出了一种无偏的多触点归因方法，通过建立转化预测模型和构建对照触点序列来减轻偏差的影响。 |
 
 # 详细
 
-[^1]: 异步感知-动作-通信与图神经网络
+[^1]: DCRMTA: 无偏的多触点归因的因果表示
 
-    Asynchronous Perception-Action-Communication with Graph Neural Networks. (arXiv:2309.10164v1 [cs.RO])
+    DCRMTA: Unbiased Causal Representation for Multi-touch Attribution. (arXiv:2401.08875v1 [cs.LG])
 
-    [http://arxiv.org/abs/2309.10164](http://arxiv.org/abs/2309.10164)
+    [http://arxiv.org/abs/2401.08875](http://arxiv.org/abs/2401.08875)
 
-    该论文提出了使用图神经网络实现异步感知-动作-通信的方法，解决了在大型机器人群体中协作和通信的挑战。现有的框架假设顺序执行，该方法是完全分散的，但在评估和部署方面仍存在一些限制。
+    DCRMTA提出了一种无偏的多触点归因方法，通过建立转化预测模型和构建对照触点序列来减轻偏差的影响。
 
     
 
-    在大型机器人群体中实现共同的全局目标的协作是一个具有挑战性的问题，因为机器人的感知和通信能力有限。机器人必须执行感知-动作-通信（PAC）循环-它们感知局部环境，与其他机器人通信，并实时采取行动。分散的PAC系统面临的一个基本挑战是决定与相邻机器人通信的信息以及如何在利用邻居共享的信息的同时采取行动。最近，使用图神经网络（GNNs）来解决这个问题已经取得了一些进展，比如在群集和覆盖控制等应用中。虽然在概念上，GNN策略是完全分散的，但评估和部署这样的策略主要仍然是集中式的或具有限制性的分散式。此外，现有的框架假设感知和动作推理的顺序执行，这在现实世界的应用中非常限制性。
+    多触点归因（MTA）在实现对每个广告触点对于转化行为的贡献的公正估计方面起着关键作用，深刻影响预算分配和广告推荐。传统的多触点归因方法首先构建一个转化预测模型，通过历史数据学习触点序列和用户购买行为之间的内在关系。在此基础上，从原始序列子集中构建对照触点序列，并使用预测模型估计转化，从而计算广告贡献。这些方法的一个隐含假设是转化预测模型的无偏性。然而，由于用户偏好和互联网推荐机制（如过去的购物记录导致的广告推荐同质化）引起的混杂变量因素，转化中很容易产生偏差。
 
-    Collaboration in large robot swarms to achieve a common global objective is a challenging problem in large environments due to limited sensing and communication capabilities. The robots must execute a Perception-Action-Communication (PAC) loop -- they perceive their local environment, communicate with other robots, and take actions in real time. A fundamental challenge in decentralized PAC systems is to decide what information to communicate with the neighboring robots and how to take actions while utilizing the information shared by the neighbors. Recently, this has been addressed using Graph Neural Networks (GNNs) for applications such as flocking and coverage control. Although conceptually, GNN policies are fully decentralized, the evaluation and deployment of such policies have primarily remained centralized or restrictively decentralized. Furthermore, existing frameworks assume sequential execution of perception and action inference, which is very restrictive in real-world applica
+    Multi-touch attribution (MTA) currently plays a pivotal role in achieving a fair estimation of the contributions of each advertising touchpoint to-wards conversion behavior, deeply influencing budget allocation and advertising recommenda-tion. Traditional multi-touch attribution methods initially build a conversion prediction model, an-ticipating learning the inherent relationship be-tween touchpoint sequences and user purchasing behavior through historical data. Based on this, counterfactual touchpoint sequences are con-structed from the original sequence subset, and conversions are estimated using the prediction model, thus calculating advertising contributions. A covert assumption of these methods is the un-biased nature of conversion prediction models. However, due to confounding variables factors arising from user preferences and internet recom-mendation mechanisms such as homogenization of ad recommendations resulting from past shop-ping records, bias can easily occur in conversi
     
 
