@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv stat.ML</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for stat.ML</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv stat.ML</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for stat.ML</description><item><title>&#30740;&#31350;&#20102;&#21463;&#38480;&#20998;&#31867;&#21644;&#31574;&#30053;&#23398;&#20064;&#20013;&#26367;&#20195;&#25439;&#22833;&#31243;&#24207;&#30340;&#19968;&#33268;&#24615;&#21644;&#36866;&#29992;&#24615;&#12290;</title><link>http://arxiv.org/abs/2106.12886</link><description>&lt;p&gt;
+&#21463;&#38480;&#20998;&#31867;&#21644;&#31574;&#30053;&#23398;&#20064;
+&lt;/p&gt;
+&lt;p&gt;
+Constrained Classification and Policy Learning. (arXiv:2106.12886v2 [econ.EM] UPDATED)
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2106.12886
+&lt;/p&gt;
+&lt;p&gt;
+&#30740;&#31350;&#20102;&#21463;&#38480;&#20998;&#31867;&#21644;&#31574;&#30053;&#23398;&#20064;&#20013;&#26367;&#20195;&#25439;&#22833;&#31243;&#24207;&#30340;&#19968;&#33268;&#24615;&#21644;&#36866;&#29992;&#24615;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#29616;&#20195;&#26426;&#22120;&#23398;&#20064;&#26041;&#27861;&#23545;&#20110;&#20998;&#31867;&#38382;&#39064;&#20351;&#29992;&#20102;&#19968;&#20123;&#26367;&#20195;&#25439;&#22833;&#25216;&#26415;&#65292;&#22914;AdaBoost&#12289;&#25903;&#25345;&#21521;&#37327;&#26426;&#21644;&#28145;&#24230;&#31070;&#32463;&#32593;&#32476;&#65292;&#20197;&#32469;&#36807;&#26368;&#23567;&#21270;&#32463;&#39564;&#20998;&#31867;&#39118;&#38505;&#30340;&#35745;&#31639;&#22797;&#26434;&#24615;&#12290;&#36825;&#20123;&#25216;&#26415;&#22312;&#22240;&#26524;&#31574;&#30053;&#23398;&#20064;&#38382;&#39064;&#20013;&#20063;&#24456;&#26377;&#29992;&#65292;&#22240;&#20026;&#20010;&#24615;&#21270;&#27835;&#30103;&#35268;&#21017;&#30340;&#20272;&#35745;&#21487;&#20197;&#34987;&#35270;&#20026;&#19968;&#31181;&#21152;&#26435;&#65288;&#25104;&#26412;&#25935;&#24863;&#65289;&#20998;&#31867;&#38382;&#39064;&#12290;Zhang&#65288;2004&#24180;&#65289;&#21644;Bartlett&#31561;&#20154;&#65288;2006&#24180;&#65289;&#30740;&#31350;&#30340;&#26367;&#20195;&#25439;&#22833;&#26041;&#27861;&#30340;&#19968;&#33268;&#24615;&#20851;&#38190;&#20381;&#36182;&#20110;&#27491;&#30830;&#35268;&#33539;&#30340;&#20551;&#35774;&#65292;&#21363;&#25351;&#23450;&#30340;&#20998;&#31867;&#22120;&#38598;&#21512;&#36275;&#22815;&#20016;&#23500;&#65292;&#21253;&#21547;&#19968;&#20010;&#26368;&#20339;&#20998;&#31867;&#22120;&#12290;&#28982;&#32780;&#65292;&#24403;&#20998;&#31867;&#22120;&#38598;&#21512;&#21463;&#21040;&#21487;&#35299;&#37322;&#24615;&#25110;&#20844;&#24179;&#24615;&#30340;&#38480;&#21046;&#26102;&#65292;&#36825;&#20010;&#20551;&#35774;&#36739;&#19981;&#21487;&#38752;&#65292;&#36825;&#23548;&#33268;&#22312;&#36825;&#31181;&#27425;&#20339;&#24773;&#26223;&#19979;&#26367;&#20195;&#25439;&#22833;&#26041;&#27861;&#30340;&#36866;&#29992;&#24615;&#26410;&#30693;&#12290;&#26412;&#25991;&#30740;&#31350;&#20102;&#22312;&#21463;&#38480;&#31867;&#38598;&#21512;&#26465;&#20214;&#19979;&#30340;&#26367;&#20195;&#25439;&#22833;&#31243;&#24207;&#30340;&#19968;&#33268;&#24615;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+Modern machine learning approaches to classification, including AdaBoost, support vector machines, and deep neural networks, utilize surrogate loss techniques to circumvent the computational complexity of minimizing empirical classification risk. These techniques are also useful for causal policy learning problems, since estimation of individualized treatment rules can be cast as a weighted (cost-sensitive) classification problem. Consistency of the surrogate loss approaches studied in Zhang (2004) and Bartlett et al. (2006) crucially relies on the assumption of correct specification, meaning that the specified set of classifiers is rich enough to contain a first-best classifier. This assumption is, however, less credible when the set of classifiers is constrained by interpretability or fairness, leaving the applicability of surrogate loss based algorithms unknown in such second-best scenarios. This paper studies consistency of surrogate loss procedures under a constrained set of class
+&lt;/p&gt;</description></item></channel></rss>

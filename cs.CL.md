@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [MONOVAB : An Annotated Corpus for Bangla Multi-label Emotion Detection.](http://arxiv.org/abs/2309.15670) | 这个研究构建了一个基于孟加拉语的注释语料库，用于多标签情感检测。通过使用基于上下文的方法以及BERT模型，填补了这一学科领域的空白。 |
+| [^1] | [ETHER: Aligning Emergent Communication for Hindsight Experience Replay.](http://arxiv.org/abs/2307.15494) | 本文提出了ETHER，通过对齐紧急沟通来解决回顾性经验重演中的问题，克服了先前架构依赖预设函数的限制，并提高了数据效率和性能。 |
 
 # 详细
 
-[^1]: MONOVAB: 用于孟加拉语多标签情感检测的注释语料库
+[^1]: ETHER: 对于回顾性经验重演的紧密沟通对齐
 
-    MONOVAB : An Annotated Corpus for Bangla Multi-label Emotion Detection. (arXiv:2309.15670v1 [cs.LG])
+    ETHER: Aligning Emergent Communication for Hindsight Experience Replay. (arXiv:2307.15494v1 [cs.CL])
 
-    [http://arxiv.org/abs/2309.15670](http://arxiv.org/abs/2309.15670)
+    [http://arxiv.org/abs/2307.15494](http://arxiv.org/abs/2307.15494)
 
-    这个研究构建了一个基于孟加拉语的注释语料库，用于多标签情感检测。通过使用基于上下文的方法以及BERT模型，填补了这一学科领域的空白。
+    本文提出了ETHER，通过对齐紧急沟通来解决回顾性经验重演中的问题，克服了先前架构依赖预设函数的限制，并提高了数据效率和性能。
 
     
 
-    近年来，情感分析(SA)和情感识别(ER)在孟加拉语中越来越流行，孟加拉语是世界上第七大使用人数最多的语言。然而，孟加拉语的结构复杂，这使得准确提取情绪变得困难。在这个研究领域中，已经采用了一些不同的方法，例如提取积极和消极情感以及多类情绪。然而，在这种语言中提取多种情绪几乎是未开发的领域，它涉及基于一段文本识别出多种情感。因此，本研究展示了一种基于从Facebook上抓取的数据构建注释语料库的详细方法，以填补这个学科领域的空白，克服挑战。为了使这种注释更有成果，采用了基于上下文的方法。转换器中的双向编码器表示(BERT)。
+    自然语言指令的跟随对于实现人工智能代理和人类之间的合作至关重要。自然语言条件下的强化学习代理展示了自然语言的特性，如组合性，能够提供学习复杂策略的强归纳偏好。先前的架构如HIGhER结合了语言条件与回顾性经验重演（HER）来处理稀疏奖励环境。然而，与HER类似，HIGhER依赖于一个预设的函数来提供反馈信号，指示哪种语言描述在哪种状态下有效。这种依赖于预设函数的限制限制了其应用。此外，HIGhER只利用成功的强化学习轨迹中包含的语言信息，从而影响了其最终性能和数据效率。没有早期成功轨迹，HIGhER并不比其构建于之上的DQN更好。在本文中，我们提出了紧密文本回顾性经验。
 
-    In recent years, Sentiment Analysis (SA) and Emotion Recognition (ER) have been increasingly popular in the Bangla language, which is the seventh most spoken language throughout the entire world. However, the language is structurally complicated, which makes this field arduous to extract emotions in an accurate manner. Several distinct approaches such as the extraction of positive and negative sentiments as well as multiclass emotions, have been implemented in this field of study. Nevertheless, the extraction of multiple sentiments is an almost untouched area in this language. Which involves identifying several feelings based on a single piece of text. Therefore, this study demonstrates a thorough method for constructing an annotated corpus based on scrapped data from Facebook to bridge the gaps in this subject area to overcome the challenges. To make this annotation more fruitful, the context-based approach has been used. Bidirectional Encoder Representations from Transformers (BERT),
+    Natural language instruction following is paramount to enable collaboration between artificial agents and human beings. Natural language-conditioned reinforcement learning (RL) agents have shown how natural languages' properties, such as compositionality, can provide a strong inductive bias to learn complex policies. Previous architectures like HIGhER combine the benefit of language-conditioning with Hindsight Experience Replay (HER) to deal with sparse rewards environments. Yet, like HER, HIGhER relies on an oracle predicate function to provide a feedback signal highlighting which linguistic description is valid for which state. This reliance on an oracle limits its application. Additionally, HIGhER only leverages the linguistic information contained in successful RL trajectories, thus hurting its final performance and data-efficiency. Without early successful trajectories, HIGhER is no better than DQN upon which it is built. In this paper, we propose the Emergent Textual Hindsight Ex
     
 
