@@ -2,22 +2,9 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Identification of Nonseparable Models with Endogenous Control Variables.](http://arxiv.org/abs/2401.14395) | 我们研究了一类非可分离模型中处理效应的鉴定问题，发现在处理变量和控制变量可测分离的情况下，可以通过条件独立性条件或排除工具的可用性进行鉴定。 |
+
 
 # 详细
 
-[^1]: 用自生控制变量鉴定不可分离模型
 
-    Identification of Nonseparable Models with Endogenous Control Variables. (arXiv:2401.14395v1 [econ.EM])
-
-    [http://arxiv.org/abs/2401.14395](http://arxiv.org/abs/2401.14395)
-
-    我们研究了一类非可分离模型中处理效应的鉴定问题，发现在处理变量和控制变量可测分离的情况下，可以通过条件独立性条件或排除工具的可用性进行鉴定。
-
-    
-
-    我们研究了在存在潜在内生控制变量的一类不可分离模型中的处理效应鉴定问题。我们证明，在处理变量和控制变量可测分离的情况下，通常的条件独立性条件或排除工具的可用性足以进行鉴定。
-
-    We study identification of the treatment effects in a class of nonseparable models with the presence of potentially endogenous control variables. We show that given the treatment variable and the controls are measurably separated, the usual conditional independence condition or availability of excluded instrument suffices for identification.
-    
 
