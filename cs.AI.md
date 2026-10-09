@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [FreDF: Learning to Forecast in Frequency Domain](https://arxiv.org/abs/2402.02399) | FreDF是一种在频域中学习预测的方法，解决了时间序列建模中标签序列的自相关问题，相比现有方法有更好的性能表现，并且与各种预测模型兼容。 |
+| [^1] | [Machine learning and information theory concepts towards an AI Mathematician](https://arxiv.org/abs/2403.04571) | 当前的深度学习在系统1能力上成功，但在系统2能力上仍然缺少重要内容，本文以信息理论的观点，探讨有趣的数学陈述构成，并致力于发现新颖猜想，以此指导未来打造AI数学家。 |
 
 # 详细
 
-[^1]: FreDF: 在频域中学习预测
+[^1]: 机器学习和信息理论概念对AI数学家的影响
 
-    FreDF: Learning to Forecast in Frequency Domain
+    Machine learning and information theory concepts towards an AI Mathematician
 
-    [https://arxiv.org/abs/2402.02399](https://arxiv.org/abs/2402.02399)
+    [https://arxiv.org/abs/2403.04571](https://arxiv.org/abs/2403.04571)
 
-    FreDF是一种在频域中学习预测的方法，解决了时间序列建模中标签序列的自相关问题，相比现有方法有更好的性能表现，并且与各种预测模型兼容。
+    当前的深度学习在系统1能力上成功，但在系统2能力上仍然缺少重要内容，本文以信息理论的观点，探讨有趣的数学陈述构成，并致力于发现新颖猜想，以此指导未来打造AI数学家。
 
     
 
-    时间序列建模在历史序列和标签序列中都面临自相关的挑战。当前的研究主要集中在处理历史序列中的自相关问题，但往往忽视了标签序列中的自相关存在。具体来说，新兴的预测模型主要遵循直接预测（DF）范式，在标签序列中假设条件独立性下生成多步预测。这种假设忽视了标签序列中固有的自相关性，从而限制了基于DF的模型的性能。针对这一问题，我们引入了频域增强直接预测（FreDF），通过在频域中学习预测来避免标签自相关的复杂性。我们的实验证明，FreDF在性能上大大超过了包括iTransformer在内的现有最先进方法，并且与各种预测模型兼容。
+    arXiv:2403.04571v1 发表类型：新的 摘要：目前人工智能的最新技术令人印象深刻，特别是在语言掌握方面，但在数学推理方面却不那么令人满意。究竟缺少了什么？我们是否可以从数学家的大脑如何处理问题中，学到有关这一差距的一些有用知识？这篇文章构建在一个观念之上，即目前的深度学习主要成功于系统1能力 -- 这相对应于我们的直觉和习惯性行为 -- 但仍然缺少有关系统2能力的一些重要内容 -- 这包括推理能力和稳健的不确定性估计。它采取了信息理论的立场来探讨什么构成了一个有趣的数学陈述，这可以指导未来打造AI数学家的工作。重点不在于证明一个给定定理，而在于发现新的有趣猜想。中心假设是，一个理想的定理体系更好地总结了这个
 
-    Time series modeling is uniquely challenged by the presence of autocorrelation in both historical and label sequences. Current research predominantly focuses on handling autocorrelation within the historical sequence but often neglects its presence in the label sequence. Specifically, emerging forecast models mainly conform to the direct forecast (DF) paradigm, generating multi-step forecasts under the assumption of conditional independence within the label sequence. This assumption disregards the inherent autocorrelation in the label sequence, thereby limiting the performance of DF-based models. In response to this gap, we introduce the Frequency-enhanced Direct Forecast (FreDF), which bypasses the complexity of label autocorrelation by learning to forecast in the frequency domain. Our experiments demonstrate that FreDF substantially outperforms existing state-of-the-art methods including iTransformer and is compatible with a variety of forecast models.
+    arXiv:2403.04571v1 Announce Type: new  Abstract: The current state-of-the-art in artificial intelligence is impressive, especially in terms of mastery of language, but not so much in terms of mathematical reasoning. What could be missing? Can we learn something useful about that gap from how the brains of mathematicians go about their craft? This essay builds on the idea that current deep learning mostly succeeds at system 1 abilities -- which correspond to our intuition and habitual behaviors -- but still lacks something important regarding system 2 abilities -- which include reasoning and robust uncertainty estimation. It takes an information-theoretical posture to ask questions about what constitutes an interesting mathematical statement, which could guide future work in crafting an AI mathematician. The focus is not on proving a given theorem but on discovering new and interesting conjectures. The central hypothesis is that a desirable body of theorems better summarizes the set of 
     
 
