@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.CC</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CC</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.CC</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.CC</description><item><title>&#26412;&#35770;&#25991;&#20171;&#32461;&#20102;&#36229;&#27169;&#25968;&#31209;&#30340;&#27010;&#24565;&#65292;&#24182;&#20351;&#29992;&#23376;&#27169;&#20989;&#25968;&#20998;&#35299;&#20248;&#21270;&#38598;&#21512;&#20989;&#25968;&#65292;&#25552;&#39640;&#20102;&#20960;&#20010;&#31639;&#27861;&#30340;&#36924;&#36817;&#27604;&#20445;&#35777;&#12290;</title><link>http://arxiv.org/abs/2305.14632</link><description>&lt;p&gt;
+&#36229;&#27169;&#25968;&#31209;&#65306;&#38598;&#21512;&#20989;&#25968;&#20998;&#35299;&#19982;&#20248;&#21270;
+&lt;/p&gt;
+&lt;p&gt;
+Supermodular Rank: Set Function Decomposition and Optimization. (arXiv:2305.14632v1 [math.CO])
+&lt;/p&gt;
+&lt;p&gt;
+http://arxiv.org/abs/2305.14632
+&lt;/p&gt;
+&lt;p&gt;
+&#26412;&#35770;&#25991;&#20171;&#32461;&#20102;&#36229;&#27169;&#25968;&#31209;&#30340;&#27010;&#24565;&#65292;&#24182;&#20351;&#29992;&#23376;&#27169;&#20989;&#25968;&#20998;&#35299;&#20248;&#21270;&#38598;&#21512;&#20989;&#25968;&#65292;&#25552;&#39640;&#20102;&#20960;&#20010;&#31639;&#27861;&#30340;&#36924;&#36817;&#27604;&#20445;&#35777;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&#25105;&#20204;&#23450;&#20041;&#20102;&#26684;&#19978;&#20989;&#25968;&#30340;&#36229;&#27169;&#25968;&#31209;&#12290;&#36825;&#26159;&#23558;&#20854;&#20998;&#35299;&#20026;&#36229;&#27169;&#20989;&#25968;&#20043;&#21644;&#25152;&#38656;&#30340;&#26368;&#23569;&#39033;&#25968;&#12290;&#36229;&#27169;&#21644;&#24335;&#26681;&#25454;&#19981;&#21516;&#30340;&#20559;&#24207;&#23450;&#20041;&#12290;&#25105;&#20204;&#34920;&#24449;&#20102;&#36229;&#27169;&#25968;&#31209;&#30340;&#26368;&#22823;&#21487;&#33021;&#20540;&#65292;&#24182;&#25551;&#36848;&#20102;&#20855;&#26377;&#22266;&#23450;&#36229;&#27169;&#25968;&#31209;&#30340;&#20989;&#25968;&#12290;&#25105;&#20204;&#21516;&#26679;&#23450;&#20041;&#20102;&#27425;&#27169;&#25968;&#31209;&#65292;&#24182;&#20351;&#29992;&#27425;&#27169;&#20989;&#25968;&#30340;&#20998;&#35299;&#26469;&#20248;&#21270;&#38598;&#21512;&#20989;&#25968;&#12290;&#32473;&#23450;&#38598;&#21512;&#20989;&#25968;&#30340;&#27425;&#27169;&#25968;&#31209;&#19978;&#30028;&#65292;&#25105;&#20204;&#21046;&#23450;&#20102;&#19968;&#20010;&#31639;&#27861;&#65292;&#23558;&#20248;&#21270;&#38382;&#39064;&#20998;&#35299;&#20026;&#23376;&#27169;&#20989;&#25968;&#23376;&#38382;&#39064;&#12290;&#25105;&#20204;&#23637;&#31034;&#20102;&#35813;&#26041;&#27861;&#25552;&#39640;&#20102;&#20960;&#20010;&#21333;&#35843;&#38598;&#21512;&#20989;&#25968;&#26368;&#22823;&#21270;&#21644;&#38598;&#21512;&#20989;&#25968;&#27604;&#20540;&#26497;&#23567;&#21270;&#31639;&#27861;&#30340;&#36924;&#36817;&#27604;&#20445;&#35777;&#65292;&#35745;&#31639;&#24320;&#38144;&#21462;&#20915;&#20110;&#27425;&#27169;&#25968;&#31209;&#12290;
+&lt;/p&gt;
+&lt;p&gt;
+We define the supermodular rank of a function on a lattice. This is the smallest number of terms needed to decompose it into a sum of supermodular functions. The supermodular summands are defined with respect to different partial orders. We characterize the maximum possible value of the supermodular rank and describe the functions with fixed supermodular rank. We analogously define the submodular rank. We use submodular decompositions to optimize set functions. Given a bound on the submodular rank of a set function, we formulate an algorithm that splits an optimization problem into submodular subproblems. We show that this method improves the approximation ratio guarantees of several algorithms for monotone set function maximization and ratio of set functions minimization, at a computation overhead that depends on the submodular rank.
+&lt;/p&gt;</description></item></channel></rss>

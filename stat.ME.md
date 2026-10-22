@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Quasi-Score Matching Estimation for Spatial Autoregressive Model with Random Weights Matrix and Regressors.](http://arxiv.org/abs/2305.19721) | 本研究提出了一种基于准得分匹配的SAR模型估计方法，可以解决现实应用中权重矩阵和回归变量随机带来的问题，并且计算复杂度相对较低。 |
+| [^1] | [Bias-Aware Inference in Regularized Regression Models.](http://arxiv.org/abs/2012.14823) | 本文研究了在控制系数幅值约束下的标量回归系数推论问题。我们提出了一个基于正则化倾向得分回归的估计器类，能够在最坏情况下权衡偏差和方差。通过导出偏差感知的置信区间，我们展示了估计器可能偏差的考虑。在均方误差和置信区间长度方面，这些估计器在同方差高斯误差下在有限样本中接近最优。我们还证明了在未知和可能异方差的误差分布下置信区间的渐近有效性，并在高维情况下导出了新的最优收敛速率，允许回归变量数量比观测数增长更快。大量的模拟实验和实证应用证明了我们方法的性能。 |
 
 # 详细
 
-[^1]: 随机权重矩阵和回归变量的空间自回归模型的准得分匹配估计
+[^1]: 基于正则化回归模型的偏差感知推论
 
-    Quasi-Score Matching Estimation for Spatial Autoregressive Model with Random Weights Matrix and Regressors. (arXiv:2305.19721v1 [econ.EM])
+    Bias-Aware Inference in Regularized Regression Models. (arXiv:2012.14823v2 [econ.EM] UPDATED)
 
-    [http://arxiv.org/abs/2305.19721](http://arxiv.org/abs/2305.19721)
+    [http://arxiv.org/abs/2012.14823](http://arxiv.org/abs/2012.14823)
 
-    本研究提出了一种基于准得分匹配的SAR模型估计方法，可以解决现实应用中权重矩阵和回归变量随机带来的问题，并且计算复杂度相对较低。
+    本文研究了在控制系数幅值约束下的标量回归系数推论问题。我们提出了一个基于正则化倾向得分回归的估计器类，能够在最坏情况下权衡偏差和方差。通过导出偏差感知的置信区间，我们展示了估计器可能偏差的考虑。在均方误差和置信区间长度方面，这些估计器在同方差高斯误差下在有限样本中接近最优。我们还证明了在未知和可能异方差的误差分布下置信区间的渐近有效性，并在高维情况下导出了新的最优收敛速率，允许回归变量数量比观测数增长更快。大量的模拟实验和实证应用证明了我们方法的性能。
 
     
 
-    随着数据收集技术的快速发展，空间自回归（SAR）模型在实际分析中越来越普遍，特别是在处理大规模数据集时。然而，常用的准最大似然估计（QMLE）对于处理大型数据不具备可扩展性。此外，在经典的空间计量经济学中，建立SAR模型参数估计量的渐近特性时，假设权重矩阵和回归变量均为非随机的，这在实际应用中可能不太现实。本文受到机器学习文献的启发，提出了SAR模型的准得分匹配估计方法。这种新的估计方法仍然基于似然，但显著降低了QMLE的计算复杂度。建立了随机权重矩阵和回归变量下参数估计的渐近特性。
+    本文考虑在控制系数幅值约束下对标量回归系数进行推论。我们展示了一类基于正则化倾向得分回归的估计器能够精确地解决最坏情况下偏差和方差之间的权衡。我们基于这些估计器导出了偏差感知的置信区间(CIs)，它们考虑了估计器的可能偏差。在均方误差(MSE)和置信区间长度方面，对于同方差的高斯误差，这些估计器和CIs在有限样本中接近最优。我们还提供了在未知和可能异方差的误差分布下置信区间的渐近有效性条件，并导出了高维渐近下允许回归变量数量比观测数增长更快的新的最优收敛速率。大量的模拟实验和实证应用验证了我们方法的性能。
 
-    With the rapid advancements in technology for data collection, the application of the spatial autoregressive (SAR) model has become increasingly prevalent in real-world analysis, particularly when dealing with large datasets. However, the commonly used quasi-maximum likelihood estimation (QMLE) for the SAR model is not computationally scalable to handle the data with a large size. In addition, when establishing the asymptotic properties of the parameter estimators of the SAR model, both weights matrix and regressors are assumed to be nonstochastic in classical spatial econometrics, which is perhaps not realistic in real applications. Motivated by the machine learning literature, this paper proposes quasi-score matching estimation for the SAR model. This new estimation approach is still likelihood-based, but significantly reduces the computational complexity of the QMLE. The asymptotic properties of parameter estimators under the random weights matrix and regressors are established, whi
+    We consider inference on a scalar regression coefficient under a constraint on the magnitude of the control coefficients. A class of estimators based on a regularized propensity score regression is shown to exactly solve a tradeoff between worst-case bias and variance. We derive confidence intervals (CIs) based on these estimators that are bias-aware: they account for the possible bias of the estimator. Under homoskedastic Gaussian errors, these estimators and CIs are near-optimal in finite samples for MSE and CI length. We also provide conditions for asymptotic validity of the CI with unknown and possibly heteroskedastic error distribution, and derive novel optimal rates of convergence under high-dimensional asymptotics that allow the number of regressors to increase more quickly than the number of observations. Extensive simulations and an empirical application illustrate the performance of our methods.
     
 

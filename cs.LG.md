@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [On existence, uniqueness and scalability of adversarial robustness measures for AI classifiers.](http://arxiv.org/abs/2310.14421) | 本文研究了针对AI分类器的对抗鲁棒性度量的存在性、唯一性和可扩展性，提出了可以验证的数学条件，并在合成基准测试和生物医学应用中进行了实际计算和解释。 |
+| [^1] | [Supermodular Rank: Set Function Decomposition and Optimization.](http://arxiv.org/abs/2305.14632) | 本论文介绍了超模数秩的概念，并使用子模函数分解优化集合函数，提高了几个算法的逼近比保证。 |
 
 # 详细
 
-[^1]: 对AI分类器的对抗鲁棒性度量的存在性，唯一性和可扩展性研究
+[^1]: 超模数秩：集合函数分解与优化
 
-    On existence, uniqueness and scalability of adversarial robustness measures for AI classifiers. (arXiv:2310.14421v1 [stat.ML])
+    Supermodular Rank: Set Function Decomposition and Optimization. (arXiv:2305.14632v1 [math.CO])
 
-    [http://arxiv.org/abs/2310.14421](http://arxiv.org/abs/2310.14421)
+    [http://arxiv.org/abs/2305.14632](http://arxiv.org/abs/2305.14632)
 
-    本文研究了针对AI分类器的对抗鲁棒性度量的存在性、唯一性和可扩展性，提出了可以验证的数学条件，并在合成基准测试和生物医学应用中进行了实际计算和解释。
+    本论文介绍了超模数秩的概念，并使用子模函数分解优化集合函数，提高了几个算法的逼近比保证。
 
     
 
-    本文提出并证明了针对（局部）唯一可逆分类器、广义线性模型（GLM）和熵AI（EAI）具有最小对抗路径（MAP）和最小对抗距离（MAD）的存在性、唯一性和明确的分析计算的简单可验证的数学条件。在常见的合成基准测试数据集上，针对神经网络、提升随机森林、GLM和EAI等各类AI工具进行MAP和MAD的实际计算、比较和解释，包括双卷状螺旋线及其扩展以及两个生物医学数据问题（用于健康保险理赔预测和心脏病发作致死率分类）。在生物医学应用中，展示了MAP如何在预定义的可访问控制变量子集中提供唯一的最小患者特定风险缓解干预措施。
+    我们定义了格上函数的超模数秩。这是将其分解为超模函数之和所需的最少项数。超模和式根据不同的偏序定义。我们表征了超模数秩的最大可能值，并描述了具有固定超模数秩的函数。我们同样定义了次模数秩，并使用次模函数的分解来优化集合函数。给定集合函数的次模数秩上界，我们制定了一个算法，将优化问题分解为子模函数子问题。我们展示了该方法提高了几个单调集合函数最大化和集合函数比值极小化算法的逼近比保证，计算开销取决于次模数秩。
 
-    Simply-verifiable mathematical conditions for existence, uniqueness and explicit analytical computation of minimal adversarial paths (MAP) and minimal adversarial distances (MAD) for (locally) uniquely-invertible classifiers, for generalized linear models (GLM), and for entropic AI (EAI) are formulated and proven. Practical computation of MAP and MAD, their comparison and interpretations for various classes of AI tools (for neuronal networks, boosted random forests, GLM and EAI) are demonstrated on the common synthetic benchmarks: on a double Swiss roll spiral and its extensions, as well as on the two biomedical data problems (for the health insurance claim predictions, and for the heart attack lethality classification). On biomedical applications it is demonstrated how MAP provides unique minimal patient-specific risk-mitigating interventions in the predefined subsets of accessible control variables.
+    We define the supermodular rank of a function on a lattice. This is the smallest number of terms needed to decompose it into a sum of supermodular functions. The supermodular summands are defined with respect to different partial orders. We characterize the maximum possible value of the supermodular rank and describe the functions with fixed supermodular rank. We analogously define the submodular rank. We use submodular decompositions to optimize set functions. Given a bound on the submodular rank of a set function, we formulate an algorithm that splits an optimization problem into submodular subproblems. We show that this method improves the approximation ratio guarantees of several algorithms for monotone set function maximization and ratio of set functions minimization, at a computation overhead that depends on the submodular rank.
     
 
