@@ -2,22 +2,22 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Bias-Aware Inference in Regularized Regression Models.](http://arxiv.org/abs/2012.14823) | 本文研究了在控制系数幅值约束下的标量回归系数推论问题。我们提出了一个基于正则化倾向得分回归的估计器类，能够在最坏情况下权衡偏差和方差。通过导出偏差感知的置信区间，我们展示了估计器可能偏差的考虑。在均方误差和置信区间长度方面，这些估计器在同方差高斯误差下在有限样本中接近最优。我们还证明了在未知和可能异方差的误差分布下置信区间的渐近有效性，并在高维情况下导出了新的最优收敛速率，允许回归变量数量比观测数增长更快。大量的模拟实验和实证应用证明了我们方法的性能。 |
+| [^1] | [Marital Sorting, Household Inequality and Selection.](http://arxiv.org/abs/2310.07839) | 本文利用CPS数据研究了婚姻匹配、家庭不平等和选择的关系，发现夫妻工资不平等增加，而正向匹配加剧了个人工资增长所导致的不平等，同时也反映了夫妻工资受不可观察因素的相关性影响。研究结果有助于理解收入不平等的形成以及婚姻对个人经济状况的影响。 |
 
 # 详细
 
-[^1]: 基于正则化回归模型的偏差感知推论
+[^1]: 婚姻匹配、家庭不平等和选择
 
-    Bias-Aware Inference in Regularized Regression Models. (arXiv:2012.14823v2 [econ.EM] UPDATED)
+    Marital Sorting, Household Inequality and Selection. (arXiv:2310.07839v1 [econ.EM])
 
-    [http://arxiv.org/abs/2012.14823](http://arxiv.org/abs/2012.14823)
+    [http://arxiv.org/abs/2310.07839](http://arxiv.org/abs/2310.07839)
 
-    本文研究了在控制系数幅值约束下的标量回归系数推论问题。我们提出了一个基于正则化倾向得分回归的估计器类，能够在最坏情况下权衡偏差和方差。通过导出偏差感知的置信区间，我们展示了估计器可能偏差的考虑。在均方误差和置信区间长度方面，这些估计器在同方差高斯误差下在有限样本中接近最优。我们还证明了在未知和可能异方差的误差分布下置信区间的渐近有效性，并在高维情况下导出了新的最优收敛速率，允许回归变量数量比观测数增长更快。大量的模拟实验和实证应用证明了我们方法的性能。
+    本文利用CPS数据研究了婚姻匹配、家庭不平等和选择的关系，发现夫妻工资不平等增加，而正向匹配加剧了个人工资增长所导致的不平等，同时也反映了夫妻工资受不可观察因素的相关性影响。研究结果有助于理解收入不平等的形成以及婚姻对个人经济状况的影响。
 
     
 
-    本文考虑在控制系数幅值约束下对标量回归系数进行推论。我们展示了一类基于正则化倾向得分回归的估计器能够精确地解决最坏情况下偏差和方差之间的权衡。我们基于这些估计器导出了偏差感知的置信区间(CIs)，它们考虑了估计器的可能偏差。在均方误差(MSE)和置信区间长度方面，对于同方差的高斯误差，这些估计器和CIs在有限样本中接近最优。我们还提供了在未知和可能异方差的误差分布下置信区间的渐近有效性条件，并导出了高维渐近下允许回归变量数量比观测数增长更快的新的最优收敛速率。大量的模拟实验和实证应用验证了我们方法的性能。
+    利用CPS数据，我们研究了从1976年到2022年期间以夫妻双方全职工作为基础的夫妻工资不平等的演变，并探讨了其对家庭收入不平等的影响。我们还调查了婚姻匹配模式在这一时期如何变化。为了确定影响收入不平等的因素，我们估计了一个解释工资联合分布的模型，考虑了配偶的就业决策。我们发现，这些家庭的收入不平等增加了，并且工资的同类配对加剧了个人工资增长所导致的不平等。我们发现，正向匹配部分反映了影响夫妻工资的不可观察因素之间的相关性。我们将样本中47年内的匹配模式变化分解为结构、构成和选择效应，并发现正向匹配的增加主要反映了观察到的技能溢价的增加。
 
-    We consider inference on a scalar regression coefficient under a constraint on the magnitude of the control coefficients. A class of estimators based on a regularized propensity score regression is shown to exactly solve a tradeoff between worst-case bias and variance. We derive confidence intervals (CIs) based on these estimators that are bias-aware: they account for the possible bias of the estimator. Under homoskedastic Gaussian errors, these estimators and CIs are near-optimal in finite samples for MSE and CI length. We also provide conditions for asymptotic validity of the CI with unknown and possibly heteroskedastic error distribution, and derive novel optimal rates of convergence under high-dimensional asymptotics that allow the number of regressors to increase more quickly than the number of observations. Extensive simulations and an empirical application illustrate the performance of our methods.
+    Using CPS data for 1976 to 2022 we explore how wage inequality has evolved for married couples with both spouses working full time full year, and its impact on household income inequality. We also investigate how marriage sorting patterns have changed over this period. To determine the factors driving income inequality we estimate a model explaining the joint distribution of wages which accounts for the spouses' employment decisions. We find that income inequality has increased for these households and increased assortative matching of wages has exacerbated the inequality resulting from individual wage growth. We find that positive sorting partially reflects the correlation across unobservables influencing both members' of the marriage wages. We decompose the changes in sorting patterns over the 47 years comprising our sample into structural, composition and selection effects and find that the increase in positive sorting primarily reflects the increased skill premia for both observed 
     
 

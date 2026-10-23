@@ -1,1 +1,21 @@
-<rss version="2.0"><channel><title>Chat Arxiv cs.RO</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.RO</description></channel></rss>
+<rss version="2.0"><channel><title>Chat Arxiv cs.RO</title><link>https://github.com/qhduan/cn-chat-arxiv</link><description>This is arxiv RSS feed for cs.RO</description><item><title>&#39057;&#35889;&#32676;&#20307;&#26426;&#22120;&#20154;&#21487;&#20197;&#36890;&#36807;&#27169;&#25311;&#20449;&#24687;&#25193;&#25955;&#26469;&#37325;&#24314;&#31454;&#25216;&#22330;&#30340;&#20960;&#20309;&#24418;&#29366;</title><link>https://arxiv.org/abs/2403.17147</link><description>&lt;p&gt;
+&#29992;&#39057;&#35889;&#32676;&#20307;&#26426;&#22120;&#20154;&#21548;&#21040;&#19968;&#20010;&#31454;&#25216;&#22330;&#30340;&#24418;&#29366;
+&lt;/p&gt;
+&lt;p&gt;
+Hearing the shape of an arena with spectral swarm robotics
+&lt;/p&gt;
+&lt;p&gt;
+https://arxiv.org/abs/2403.17147
+&lt;/p&gt;
+&lt;p&gt;
+&#39057;&#35889;&#32676;&#20307;&#26426;&#22120;&#20154;&#21487;&#20197;&#36890;&#36807;&#27169;&#25311;&#20449;&#24687;&#25193;&#25955;&#26469;&#37325;&#24314;&#31454;&#25216;&#22330;&#30340;&#20960;&#20309;&#24418;&#29366;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+Swarm&#26426;&#22120;&#20154;&#25216;&#26415;&#25215;&#35834;&#36866;&#24212;&#26410;&#30693;&#24773;&#20917;&#65292;&#24182;&#19988;&#23545;&#20110;&#25925;&#38556;&#20855;&#26377;&#40065;&#26834;&#24615;&#12290;&#28982;&#32780;&#65292;&#23427;&#20173;&#28982;&#22312;&#38656;&#35201;&#29702;&#35299;&#26426;&#22120;&#20154;&#25805;&#20316;&#30340;&#26356;&#24191;&#27867;&#32972;&#26223;&#30340;&#20840;&#23616;&#20219;&#21153;&#20013;&#36935;&#21040;&#22256;&#38590;&#65292;&#27604;&#22914;&#35782;&#21035;&#26426;&#22120;&#20154;&#23884;&#20837;&#30340;&#31454;&#25216;&#22330;&#30340;&#24418;&#29366;&#12290;&#29983;&#29289;&#32676;&#20307;&#65292;&#27604;&#22914;&#40060;&#32676;&#12289;&#40479;&#32676;&#21644;&#26118;&#34411;&#32676;&#65292;&#36890;&#36807;&#23616;&#37096;&#25552;&#31034;&#30340;&#25193;&#25955;&#20363;&#34892;&#35299;&#20915;&#20840;&#23616;&#20960;&#20309;&#38382;&#39064;&#12290;&#36825;&#19968;&#33539;&#24335;&#21487;&#20197;&#36890;&#36807;&#25968;&#23398;&#27169;&#22411;&#26126;&#30830;&#25551;&#36848;&#65292;&#21487;&#20197;&#36890;&#36807;&#26426;&#22120;&#20154;&#32676;&#20307;&#30452;&#25509;&#35745;&#31639;&#21644;&#21033;&#29992;&#12290;&#22495;&#19978;&#30340;&#25193;&#25955;&#22312;&#25968;&#23398;&#19978;&#30001;&#25289;&#26222;&#25289;&#26031;&#31639;&#23376;&#36827;&#34892;&#23553;&#35013;&#65292;&#35813;&#31639;&#23376;&#29992;&#20110;&#24230;&#37327;&#20989;&#25968;&#30340;&#23616;&#37096;&#26354;&#29575;&#12290;&#20851;&#38190;&#26159;&#65292;&#19968;&#20010;&#21306;&#22495;&#30340;&#20960;&#20309;&#24418;&#29366;&#36890;&#24120;&#21487;&#20197;&#20174;&#20854;&#25289;&#26222;&#25289;&#26031;&#31639;&#23376;&#30340;&#29305;&#24449;&#35889;&#20013;&#37325;&#24314;&#12290;&#22312;&#36825;&#37324;&#65292;&#25105;&#20204;&#20171;&#32461;&#20102;&#39057;&#35889;&#32676;&#20307;&#26426;&#22120;&#20154;&#25216;&#26415;&#65292;&#20854;&#20013;&#26426;&#22120;&#20154;&#23558;&#20449;&#24687;&#25193;&#25955;&#32473;&#20182;&#20204;&#30340;&#37051;&#23621;&#26469;&#27169;&#25311;&#25289;&#26222;&#25289;
+&lt;/p&gt;
+&lt;p&gt;
+arXiv:2403.17147v1 Announce Type: cross  Abstract: Swarm robotics promises adaptability to unknown situations and robustness against failures. However, it still struggles with global tasks that require understanding the broader context in which the robots operate, such as identifying the shape of the arena in which the robots are embedded. Biological swarms, such as shoals of fish, flocks of birds, and colonies of insects, routinely solve global geometrical problems through the diffusion of local cues. This paradigm can be explicitly described by mathematical models that could be directly computed and exploited by a robotic swarm. Diffusion over a domain is mathematically encapsulated by the Laplacian, a linear operator that measures the local curvature of a function. Crucially the geometry of a domain can generally be reconstructed from the eigenspectrum of its Laplacian. Here we introduce spectral swarm robotics where robots diffuse information to their neighbors to emulate the Lapla
+&lt;/p&gt;</description></item></channel></rss>

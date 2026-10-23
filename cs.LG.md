@@ -2,22 +2,9 @@
 
 | Ref | Title | Summary |
 | --- | --- | --- |
-| [^1] | [Supermodular Rank: Set Function Decomposition and Optimization.](http://arxiv.org/abs/2305.14632) | 本论文介绍了超模数秩的概念，并使用子模函数分解优化集合函数，提高了几个算法的逼近比保证。 |
+
 
 # 详细
 
-[^1]: 超模数秩：集合函数分解与优化
 
-    Supermodular Rank: Set Function Decomposition and Optimization. (arXiv:2305.14632v1 [math.CO])
-
-    [http://arxiv.org/abs/2305.14632](http://arxiv.org/abs/2305.14632)
-
-    本论文介绍了超模数秩的概念，并使用子模函数分解优化集合函数，提高了几个算法的逼近比保证。
-
-    
-
-    我们定义了格上函数的超模数秩。这是将其分解为超模函数之和所需的最少项数。超模和式根据不同的偏序定义。我们表征了超模数秩的最大可能值，并描述了具有固定超模数秩的函数。我们同样定义了次模数秩，并使用次模函数的分解来优化集合函数。给定集合函数的次模数秩上界，我们制定了一个算法，将优化问题分解为子模函数子问题。我们展示了该方法提高了几个单调集合函数最大化和集合函数比值极小化算法的逼近比保证，计算开销取决于次模数秩。
-
-    We define the supermodular rank of a function on a lattice. This is the smallest number of terms needed to decompose it into a sum of supermodular functions. The supermodular summands are defined with respect to different partial orders. We characterize the maximum possible value of the supermodular rank and describe the functions with fixed supermodular rank. We analogously define the submodular rank. We use submodular decompositions to optimize set functions. Given a bound on the submodular rank of a set function, we formulate an algorithm that splits an optimization problem into submodular subproblems. We show that this method improves the approximation ratio guarantees of several algorithms for monotone set function maximization and ratio of set functions minimization, at a computation overhead that depends on the submodular rank.
-    
 
